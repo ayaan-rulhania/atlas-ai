@@ -1,0 +1,1512 @@
+{
+  "letter": "V",
+  "keywords": [
+    "variable",
+    "var",
+    "vision",
+    "virtual",
+    "vue.js",
+    "versioning",
+    "version",
+    "visualization",
+    "vector",
+    "variational",
+    "vulnerability",
+    "virtualization",
+    "vmware",
+    "vehicles",
+    "vectorization",
+    "video",
+    "vitals",
+    "visual",
+    "validation",
+    "variance",
+    "vs",
+    "velocity",
+    "vim",
+    "volatile",
+    "variables",
+    "voting",
+    "value",
+    "volume",
+    "voice",
+    "voc",
+    "vendor",
+    "visibility",
+    "verify",
+    "vr",
+    "varied",
+    "vicarious",
+    "view",
+    "versatile",
+    "viable",
+    "valuable",
+    "valid",
+    "variety",
+    "volcanology",
+    "vulnerable",
+    "vote",
+    "vertical",
+    "venezuela",
+    "virat"
+  ],
+  "knowledge": [
+    {
+      "title": "Shop machine learning computer vision - Amazon.com Official Site",
+      "content": "Find deals and low prices on machine learning computer vision at Amazon.com. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "query": "computer vision",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:15:40.806678"
+    },
+    {
+      "title": "Computer vision - Wikipedia",
+      "content": "Computer vision is an interdisciplinary field that deals with how computers can be made to gain high-level understanding from digital images or videos. From the perspective of engineering, it seeks to automate tasks that the human visual system can do. [5][6][7] \"Computer vision is concerned with the automatic extraction, analysis, and understanding of useful information from a single image or ...",
+      "query": "computer vision",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:15:40.806753"
+    },
+    {
+      "title": "What is computer vision? - IBM",
+      "content": "Computer vision is a subfield of artificial intelligence (AI) that equips machines with the ability to process, analyze and interpret visual inputs such as images and videos. It uses machine learning to help computers and other systems derive meaningful information from visual data.",
+      "query": "computer vision",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:15:40.806810"
+    },
+    {
+      "title": "Computer Vision Tutorial - GeeksforGeeks",
+      "content": "Computer Vision (CV) is a branch of Artificial Intelligence (AI) that helps computers to interpret and understand visual information much like humans. This tutorial is designed for both beginners and experienced professionals and covers key concepts such as Image Processing, Feature Extraction, Object Detection, Image Segmentation and other core techniques in CV.",
+      "query": "computer vision",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:15:40.806867"
+    },
+    {
+      "title": "What Is Computer Vision and How Does It Work with AI?",
+      "content": "Computer vision is the science of enabling computers to interpret and understand the visual world using AI. Learn how it works, what tasks it can perform, and what real-world problems it can solve.",
+      "query": "computer vision",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:15:40.806923"
+    },
+    {
+      "title": "venv \u2014 Creation of virtual environments \u2014 Python 3.14.0 documentation",
+      "content": "Source code: Lib/venv/ The venv module supports creating lightweight \"virtual environments\", each with their own independent set of Python packages installed in their site directories. A virtual en...",
+      "query": "python virtual environments",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:24:52.269335"
+    },
+    {
+      "title": "Python Virtual Environments: A Primer",
+      "content": "Create isolated project setups on all platforms, and gain a deep understanding of Python's virtual environments created with the venv module.",
+      "query": "python virtual environments",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:24:52.269376"
+    },
+    {
+      "title": "Python venv: How To Create, Activate, Deactivate, And Delete",
+      "content": "Learn how to use the Python venv, a tool to create isolated Python environments for different projects. See the advantages, commands, and internals of virtual environments.",
+      "query": "python virtual environments",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:24:52.269406"
+    },
+    {
+      "title": "How to Create a Python Virtual Environment (Step-by-Step Guide)",
+      "content": "A Python virtual environment is like a personal workspace for your project. It lets you create a separate space where you can install and manage packages without affecting other Python projects on your system. This is especially useful when you're working on multiple projects with different dependencies or package versions. The built-in venv module in Python makes it easy to set up these ...",
+      "query": "python virtual environments",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:24:52.269434"
+    },
+    {
+      "title": "Python Virtual Environment - venv - W3Schools",
+      "content": "Learn how to create, activate, deactivate and delete virtual environments in Python using the built-in venv module. Virtual environments allow you to run and test your Python projects with different packages and Python versions.",
+      "query": "python virtual environments",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:24:52.269459"
+    },
+    {
+      "title": "Vue.js - The Progressive JavaScript Framework | Vue.js",
+      "content": "Vue.js - The Progressive JavaScript FrameworkThe Progressive JavaScript Framework An approachable, performant and versatile framework for building web user interfaces.",
+      "query": "vue.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:31:57.323672"
+    },
+    {
+      "title": "Vue.js - Wikipedia",
+      "content": "Vue.js (commonly referred to as Vue; pronounced \"view\" [6]) is an open-source model-view-viewmodel front end JavaScript framework for building user interfaces and single-page applications. [12]",
+      "query": "vue.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:31:57.323736"
+    },
+    {
+      "title": "Vue.js",
+      "content": "Versatile An incrementally adoptable ecosystem that scales between a library and a full-featured framework.",
+      "query": "vue.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:31:57.323784"
+    },
+    {
+      "title": "11 Best Vue.js Frameworks for Web Development in 2025 - Crossover",
+      "content": "In 2025, Vue.js remains a game-changer in web development. With these 11 frameworks in your arsenal, you're equipped to tackle a wide range of projects, from mobile apps to complex web applications. But don't forget - the best framework for you depends on your project's specific needs and goals.",
+      "query": "vue.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:31:57.323834"
+    },
+    {
+      "title": "What is VueJS ? - GeeksforGeeks",
+      "content": "Vue.js is a free JavaScript framework for building interactive and dynamic user interfaces. It provides a special helper for JavaScript developers, similar to React. Vue.js is maintained by developers from various communities, including its creator Evan You, and is continuously updated to ensure its awesomeness. With Vue.js, websites can become highly interactive and lively, especially ...",
+      "query": "vue.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:31:57.323884"
+    },
+    {
+      "title": "What is API versioning? Benefits, types & best practices - Postmann",
+      "content": "What is API versioning? API versioning is the process of managing and tracking changes to an API. It also involves communicating those changes to the API's consumers. Change is a natural part of API development.",
+      "query": "API versioning",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:36:55.729671"
+    },
+    {
+      "title": "REST API Versioning: How to Version a REST API?",
+      "content": "Learn the basics of REST API versioning, when and how to version an API, and the common approaches to versioning using URI, custom header, or Accept header. See examples of versioned APIs from Stripe, Facebook, and GitHub.",
+      "query": "API versioning",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:36:55.729715"
+    },
+    {
+      "title": "REST API Versioning Best Practices: Complete Guide with Examples",
+      "content": "Table of Contents Why API Versioning Matters for REST APIs REST API Versioning Best... Tagged with backend, node, api, javascript.",
+      "query": "API versioning",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:36:55.729747"
+    },
+    {
+      "title": "API Versioning Strategies: Best Practices Guide - daily.dev",
+      "content": "Learn how to manage API changes without breaking user experiences. Explore common versioning methods, benefits, problems, and best practices with examples and tools.",
+      "query": "API versioning",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:36:55.729782"
+    },
+    {
+      "title": "API Versioning How to Manage API Changes Effectively",
+      "content": "Learn to manage API changes with strategies, best practices, and tools. Ensure compatibility and build trust with this API versioning guide.",
+      "query": "API versioning",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:36:55.729812"
+    },
+    {
+      "title": "Version control - Wikipedia",
+      "content": "Learn what version control is, how it evolved, and how it works. Version control is the software engineering practice of managing different versions of computer files, especially source code.",
+      "query": "version control",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:42:28.834720"
+    },
+    {
+      "title": "Version Control Systems - GeeksforGeeks",
+      "content": "A Version Control System (VCS) is a tool used in software development and collaborative projects to track and manage changes to source code. It allows developers to: Record and track every update to the codebase Collaborate on code without overwriting each other's work Revert to earlier states of the project if needed Maintain a detailed and structured history of the project's evolution If ...",
+      "query": "version control",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:42:28.834784"
+    },
+    {
+      "title": "What is version control | Atlassian Git Tutorial",
+      "content": "Learn how version control systems help software teams manage changes to source code over time. Find out the benefits of using Git, a popular distributed version control tool, and how to get started with it.",
+      "query": "version control",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:42:28.834833"
+    },
+    {
+      "title": "What is version control? - Azure DevOps | Microsoft Learn",
+      "content": "Version control systems are software that help track changes made in code over time and create snapshots of code that a team can roll back to if necessary.",
+      "query": "version control",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:42:28.834880"
+    },
+    {
+      "title": "Git - About Version Control",
+      "content": "Learn what version control is and why you should use it. Compare local, centralized and distributed version control systems and how Git works.",
+      "query": "version control",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:42:28.834926"
+    },
+    {
+      "title": "Low prices on best sellers - Amazon.com Official Site",
+      "content": "Browse & discover thousands of unique brands. Read customer reviews & best sellers. Find deals and compare prices on Best Sellers at Amazon.com",
+      "query": "data visualization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:49:10.343721"
+    },
+    {
+      "title": "think-cell Suite - Visualize Data Like a Pro",
+      "content": "Enhance your data visualizations for presentations. Integrates PPT & Excel. Turn data into professional slides fast. Try our top-rated add-in free for 30 days.",
+      "query": "data visualization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:49:10.343780"
+    },
+    {
+      "title": "What Is Data Visualization? Definition & Examples | Tableau",
+      "content": "Learn what data visualization is, why it is important, and how to create effective visualizations with Tableau. Explore different types of visualizations, examples, and resources to get started.",
+      "query": "data visualization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:49:10.343822"
+    },
+    {
+      "title": "What is Data Visualization and Why is It Important?",
+      "content": "Data visualization uses charts, graphs and maps to present information clearly and simply. It turns complex data into visuals that are easy to understand. With large amounts of data in every industry, visualization helps spot patterns and trends quickly, leading to faster and smarter decisions.",
+      "query": "data visualization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:49:10.343866"
+    },
+    {
+      "title": "What is Data Visualization? A Complete Guide to Tools ... - DataCamp",
+      "content": "Learn what data visualization is, why it is important, and how to master it. Explore tools, techniques, and best practices for creating and interpreting visualizations.",
+      "query": "data visualization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:49:10.343908"
+    },
+    {
+      "title": "Support vector machine - Wikipedia",
+      "content": "In machine learning, support vector machines (SVMs, also support vector networks[1]) are supervised max-margin models with associated learning algorithms that analyze data for classification and regression analysis. Developed at AT&T Bell Laboratories, [1][2] SVMs are one of the most studied models, being based on statistical learning frameworks of VC theory proposed by Vapnik (1982, 1995) and ...",
+      "query": "support vector machines",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:50:42.755256"
+    },
+    {
+      "title": "Support Vector Machine (SVM) Algorithm - GeeksforGeeks",
+      "content": "Support Vector Machine (SVM) is a supervised machine learning algorithm used for classification and regression tasks. It tries to find the best boundary known as hyperplane that separates different classes in the data.",
+      "query": "support vector machines",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:50:42.755311"
+    },
+    {
+      "title": "What Is Support Vector Machine? | IBM",
+      "content": "A support vector machine (SVM) is a supervised machine learning algorithm that classifies data by finding an optimal line or hyperplane that maximizes the distance between each class in an N-dimensional space.",
+      "query": "support vector machines",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:50:42.755354"
+    },
+    {
+      "title": "Support Vector Machines (SVM): An Intuitive Explanation",
+      "content": "Support Vector Machines (SVMs) are a type of supervised machine learning algorithm used for classification and regression tasks. They are widely used in various fields, including pattern ...",
+      "query": "support vector machines",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:50:42.755395"
+    },
+    {
+      "title": "1.4. Support Vector Machines \u2014 scikit-learn 1.7.2 documentation",
+      "content": "Learn how to use support vector machines (SVMs) for classification, regression and outliers detection with scikit-learn. Find out the advantages, disadvantages, parameters and examples of SVMs and their variants.",
+      "query": "support vector machines",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:50:42.755436"
+    },
+    {
+      "title": "Variational autoencoder - Wikipedia",
+      "content": "A variational autoencoder (VAE) is a neural network architecture that learns a probabilistic latent representation of data. It consists of an encoder and a decoder that map data to and from a low-dimensional space, using a variational distribution and a noise distribution.",
+      "query": "variational autoencoders",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:52:18.072722"
+    },
+    {
+      "title": "Variational AutoEncoders - GeeksforGeeks",
+      "content": "Variational Autoencoders (VAEs) are type of generative model in machine learning that create new data similar to the input they are trained on. They not only compress and reconstruct data like traditional autoencoders but also learn a continuous probabilistic representation of the underlying features.",
+      "query": "variational autoencoders",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:52:18.072800"
+    },
+    {
+      "title": "What is a variational autoencoder? - IBM",
+      "content": "What is a variational autoencoder? Variational autoencoders (VAEs) are generative models used in machine learning (ML) to generate new data in the form of variations of the input data they're trained on. In addition to this, they also perform tasks common to other autoencoders, such as denoising.",
+      "query": "variational autoencoders",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:52:18.072859"
+    },
+    {
+      "title": "Variational Autoencoders: How They Work and Why They Matter",
+      "content": "Explore Variational Autoencoders (VAEs) in this comprehensive guide. Learn their theoretical concept, architecture, applications, and implementation with PyTorch.",
+      "query": "variational autoencoders",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:52:18.072915"
+    },
+    {
+      "title": "[1906.02691] An Introduction to Variational Autoencoders",
+      "content": "A paper by Diederik P. Kingma and Max Welling that explains variational autoencoders and some extensions. The paper is published in Foundations and Trends in Machine Learning and available on arXiv with DOI.",
+      "query": "variational autoencoders",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:52:18.072969"
+    },
+    {
+      "title": "Fast Assessment Tools - Full Risk Assessment",
+      "content": "Detect vulnerabilities faster and strengthen overall security posture. Improve readiness with platforms designed for complete vulnerability review.",
+      "query": "vulnerability assessment",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:13:34.121605"
+    },
+    {
+      "title": "Vulnerability mgmt made easy - Assess, prioritize & eliminate",
+      "content": "A single interface to detect, assess and remediate vulnerabilities. Features: Vulnerability assessment, patch management, security configuration management.",
+      "query": "vulnerability assessment",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:13:34.121695"
+    },
+    {
+      "title": "What Is Vulnerability Assessment? Types & Benefits - SentinelOne",
+      "content": "Learn what vulnerability assessment is, its types, benefits, and key steps to identify and mitigate security risks effectively.",
+      "query": "vulnerability assessment",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:13:34.121763"
+    },
+    {
+      "title": "What Is Vulnerability Assessment? How is it Conducted? | Fortinet",
+      "content": "Vulnerability assessment is an evaluation method that enables organizations to review their systems for potential security weaknesses. It performs a vulnerability analysis process that aims to discover whether the organization is at risk of known vulnerabilities, assigns a level of severity to those vulnerabilities, and recommends whether a threat should be mitigated or remediated ...",
+      "query": "vulnerability assessment",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:13:34.121831"
+    },
+    {
+      "title": "What Is a Vulnerability Assessment? And How to Conduct One",
+      "content": "Vulnerability assessment is the process of identifying, classifying, and prioritizing security vulnerabilities in IT infrastructure. A comprehensive vulnerability assessment evaluates whether an IT system is exposed to known vulnerabilities, assigns severity levels to identified vulnerabilities, and recommends remediation or mitigation steps where required. Vulnerability assessments are a ...",
+      "query": "vulnerability assessment",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:13:34.121902"
+    },
+    {
+      "title": "Virtualization",
+      "content": "In computing, virtualization is a series of technologies that allows dividing of physical computing resources into a series of virtual machines, operating systems, processes or containers.\nVirtualization began in the 1960s with IBM CP/CMS. The control program CP provided each user with a simulated stand-alone System/360 computer.",
+      "query": "virtualization",
+      "source": "wikipedia",
+      "learned_at": "2025-11-23T21:18:01.205889"
+    },
+    {
+      "title": "Enable Virtualization on Windows - Microsoft Support",
+      "content": "Virtualization lets your Windows device emulate a different operating system, like Android or Linux. Enabling virtualization gives you access to a larger library of apps to use and install on your device. If you upgraded your device from Windows 10 to Windows 11, these steps help you enable virtualization.",
+      "query": "virtualization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:02.062501"
+    },
+    {
+      "title": "Virtualization - Wikipedia",
+      "content": "Virtualization is a technology that divides physical computing resources into virtual machines, operating systems, processes or containers. Learn about the origins, benefits and challenges of virtualization, and the different types of hardware and software virtualization.",
+      "query": "virtualization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:02.062573"
+    },
+    {
+      "title": "What is virtualization? - IBM",
+      "content": "What is virtualization? Virtualization is a technology that enables the creation of virtual environments from a single physical machine, allowing for more efficient use of resources by distributing them across computing environments.",
+      "query": "virtualization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:02.062635"
+    },
+    {
+      "title": "What Is Virtualization? Definition, Benefits & Examples - Forbes",
+      "content": "What Is Virtualization? Virtualization uses software called hypervisors to create multiple virtual computers (known as virtual machines or VMs) on a single physical machine.",
+      "query": "virtualization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:02.062696"
+    },
+    {
+      "title": "Virtualization in Cloud Computing and Types - GeeksforGeeks",
+      "content": "Virtualization is a way to use one computer as if it were many. Before virtualization, most computers were only doing one job at a time, and a lot of their power was wasted. Virtualization lets you run several virtual computers on one real computer, so you can use its full power and do more tasks at once. In cloud computing, this idea is taken further. Cloud providers use virtualization to ...",
+      "query": "virtualization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:02.062758"
+    },
+    {
+      "title": "VMware",
+      "content": "VMware LLC is an American cloud computing and virtualization technology company headquartered in Palo Alto, California, USA. On November 22, 2023, Broadcom acquired VMware in a cash-and-stock transaction valued at $69 billion, with the End-User Computing division of VMware then sold to KKR and rebranded to Omnissa. VMware was the first commercially successful company to virtualize the x86 architecture.",
+      "query": "VMware",
+      "source": "wikipedia",
+      "learned_at": "2025-11-23T21:18:12.262294"
+    },
+    {
+      "title": "VMware by Broadcom - Cloud Computing for the Enterprise",
+      "content": "Optimize cloud infrastructure with VMware for app platforms, private cloud, edge, networking, and security.",
+      "query": "VMware",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:13.119259"
+    },
+    {
+      "title": "VMware - Wikipedia",
+      "content": "VMware is an American subsidiary of Broadcom that provides cloud computing and virtualization software and services. Founded in 1998, it was acquired by EMC in 2004 and spun off in 2023, and has products such as vSphere, Fusion, and Horizon.",
+      "query": "VMware",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:13.119332"
+    },
+    {
+      "title": "VMware Workstation Pro Download Free - 17.6.4 25H2 | TechSpot",
+      "content": "VMware Workstation Pro is a software for running multiple operating systems and containers on a single PC. It offers features for development, testing, deployment, security and isolation of virtual machines.",
+      "query": "VMware",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:13.119393"
+    },
+    {
+      "title": "Downloading VMware Workstation Pro - myBroadcom",
+      "content": "After successful login, access the VMware Workstation Pro downloads using the link, Download VMware Workstation Pro. Note: For the free versions of VMware Workstation Pro, use this link, Download VMware Workstation Pro (Free) Expand \"VMware Workstation Pro <version> for Windows\" Select the version you want to download under the release column.",
+      "query": "VMware",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:13.119457"
+    },
+    {
+      "title": "What is VMware and How Does it Work? - TechTarget",
+      "content": "Learn about VMware, a virtualization and cloud computing software company, its history, current products and technologies, including available alternatives.",
+      "query": "VMware",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:13.119515"
+    },
+    {
+      "title": "Autonomous vehicle | Meaning, Technology, Levels, & Facts - Britannica",
+      "content": "An autonomous vehicle is an automobile that employs driver assistance technologies to remove the need for a human operator.",
+      "query": "autonomous vehicles",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:02:00.216035"
+    },
+    {
+      "title": "Self-driving car - Wikipedia",
+      "content": "A self-driving car, also known as an autonomous car (AC), driverless car, robotic car or robo-car, [1][2][3] is a car that is capable of operating with reduced or no human input. [4][5] They are sometimes called robotaxis, though this term refers specifically to self-driving cars operated for a ridesharing company.",
+      "query": "autonomous vehicles",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:02:00.216082"
+    },
+    {
+      "title": "Autonomous Vehicles (Self-Driving Cars) & How They Work? - NVIDIA",
+      "content": "Autonomous Vehicles (AVs)\u2014also known as self-driving cars or self-driving vehicles\u2014 are vehicles that can navigate and operate safely with little or no human input or intervention. Autonomous vehicles are equipped with autonomous driving systems that use a combination of sensors (such as cameras, radar, and/or lidar), compute, and software to safely perceive their environment and execute ...",
+      "query": "autonomous vehicles",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:02:00.216120"
+    },
+    {
+      "title": "Future Of Autonomous Vehicles: Self-Driving Cars Explained",
+      "content": "What exactly is a self-driving car? Uncover the technology, challenges, and advancements shaping the future of the automotive revolution.",
+      "query": "autonomous vehicles",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:02:00.216154"
+    },
+    {
+      "title": "The Future of Self-Driving Cars and Autonomous Vehicles",
+      "content": "Autonomous vehicles could slash the cost of logistics, making goods cheaper to transport and reshaping global supply chains. Long-haul trucking could become a 24/7 operation without human fatigue. For ride-hailing services, removing the cost of the driver could make on-demand transportation cheaper than owning a car.",
+      "query": "autonomous vehicles",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:02:00.216188"
+    },
+    {
+      "title": "Vectorize Image Free - Vectorize Your Images for Free",
+      "content": "Select Your Image to Convert to svg or Vectorize Online. Vectorizer Image - Convert images to svg online for free",
+      "query": "vectorization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:55:04.361615"
+    },
+    {
+      "title": "Online Image Vectorizer",
+      "content": "Vectorize your black and white images into scalable and clear art. Convert raster images into SVG, EPS, PS, PDF, DXF formats with this free image autotracer.",
+      "query": "vectorization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:55:04.361681"
+    },
+    {
+      "title": "Vectorizer - Free Image Vectorization",
+      "content": "Vectorizer is a free online tool that converts raster images (PNG, JPG, BMP) into vector images (SVG) without registration or software installation. It is fast, easy and high quality, suitable for visual design, technical drawing and artistic work.",
+      "query": "vectorization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:55:04.361735"
+    },
+    {
+      "title": "Vectorization (mathematics) - Wikipedia",
+      "content": "Vectorization is a unitary transformation from the space of n \u00d7 n matrices with the Frobenius (or Hilbert-Schmidt) inner product to Cn2: where the superscript \u2020 denotes the conjugate transpose.",
+      "query": "vectorization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:55:04.361790"
+    },
+    {
+      "title": "Convert PNG, JPG files to SVG vectors online - Vectorizer.AI",
+      "content": "Most of them are based on the same old algorithms that have been around for decades, and they frankly don't work very well. Vectorizer.AI is a new approach to vectorization, and we are confident that you will be impressed with the results.",
+      "query": "vectorization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:55:04.361844"
+    },
+    {
+      "title": "Virtual Scrolling?. When you have a 50 list of items\u2026. We\u2026 | by ...",
+      "content": "fig1 3. In virtual scrolling\u2026 we will just first display items that we want. Suppose we can show the first 6 items\u2026 Here first row contains 1 value, the second row contains 2 values, and the ...",
+      "query": "virtual scrolling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:27:44.493001"
+    },
+    {
+      "title": "Virtual scrolling: Core principles and basic implementation in React",
+      "content": "The virtual scrolling technique can be frustrating, but ultimately fun and rewarding to develop. Learn how to implement virtual scrolling in React.",
+      "query": "virtual scrolling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:27:44.493078"
+    },
+    {
+      "title": "Scrolling | Angular Material",
+      "content": "Virtual scrolling is different from strategies like infinite scroll where it renders a set amount of elements and then when you hit the end renders the rest. link Creating items in the viewport *cdkVirtualFor replaces *ngFor inside of a <cdk-virtual-scroll-viewport>, supporting the exact same API as *ngFor.",
+      "query": "virtual scrolling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:27:44.493135"
+    },
+    {
+      "title": "Virtual Scrolling: Boost Web App Performance with Large Datasets",
+      "content": "Virtual Scrolling: Boost Web App Performance with Large Datasets Boost your web app performance with our virtual scrolling guide. Learn to render only visible items in large datasets, reducing DOM size and memory usage while maintaining smooth scrolling. Includes implementation examples for vanilla JS, React, Angular, and Vue. #WebPerformance #FrontendDev",
+      "query": "virtual scrolling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:27:44.493194"
+    },
+    {
+      "title": "How to Implement Virtual Scrolling Beyond the Browser's Limit",
+      "content": "Virtual Scrolling as a Solution To solve this problem, virtual scrolling is often used. Virtual scrolling is a technique where only the items visible based on the scroll position are dynamically generated using JavaScript, thereby reducing the load on the browser.",
+      "query": "virtual scrolling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:27:44.493262"
+    },
+    {
+      "title": "Video Resolution Enhancer - 4k AI Upscaler - Best for Beginners",
+      "content": "Turn Your Low-res Videos Into 4k, 8k with AI-based Video Upscalling software. Use AI Technology to Improve Video Quality, More Real, More Natural Results.",
+      "query": "video optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:17.265966"
+    },
+    {
+      "title": "Video Compressor | Reduce Video File Size Online - FreeConvert",
+      "content": "A fast online video compressor to reduce video file size. You can compress video to a desired file size or a quality level. Supports MP4, FLV, MKV and more.",
+      "query": "video optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:17.266045"
+    },
+    {
+      "title": "Free AI Video Quality Enhancer | Online | Flixier",
+      "content": "Make your video's quality better with Flixier's AI-powdered video enhancer. Upgrade any video to 4k quality!",
+      "query": "video optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:17.266112"
+    },
+    {
+      "title": "Guide to Video Optimization for Business: 8 Tips - Vimeo",
+      "content": "Discover 8 expert strategies for video optimization that'll help you refine the viewing experience, drive more engagement, and reach a broader audience.",
+      "query": "video optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:17.266176"
+    },
+    {
+      "title": "Video Optimization: Why You Need It and 5 Critical Best Practices",
+      "content": "Video optimization refers to the process of making adjustments to a video to improve its visibility and performance on various platforms.",
+      "query": "video optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:17.266244"
+    },
+    {
+      "title": "Core Web Vitals - Scan Your Website in 5 Minutes",
+      "content": "Traditional SEO tools miss AI search visibility\u2014Semrush doesn't. Stay visible in AI search with tools built for today's SEO pros.",
+      "query": "Core Web Vitals",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:32:54.661819"
+    },
+    {
+      "title": "Understanding Core Web Vitals and Google search results",
+      "content": "Core Web Vitals is a set of metrics that measure real-world user experience. Learn more about Google Search and Core Web Vitals.",
+      "query": "Core Web Vitals",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:32:54.661884"
+    },
+    {
+      "title": "WebVitals - Free Core Web Vitals Analysis Tool",
+      "content": "Analyze your website's Core Web Vitals instantly. Get detailed insights into LCP, FID, CLS, FCP, INP, and TTFB performance metrics. Improve your SEO and user experience with real-world data.",
+      "query": "Core Web Vitals",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:32:54.661932"
+    },
+    {
+      "title": "Core Web Vitals",
+      "content": "Learn Core Web Vitals An initiative to provide unified guidance for quality signals that are essential to delivering a great user experience on the web.",
+      "query": "Core Web Vitals",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:32:54.661980"
+    },
+    {
+      "title": "Core Web Vitals: Essential Guide to Improving Site Performance",
+      "content": "What Are Core Web Vitals? Core Web Vitals is a set of metrics that measure the speed, interactivity, and visual stability of a webpage. They're a subset of factors that are part of Google's \"page experience\" ranking signals (basically, Google's way of sizing up your page's overall user experience, or UX). And so improving them can help your website rank higher in search results and ...",
+      "query": "Core Web Vitals",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:32:54.662031"
+    },
+    {
+      "title": "Free Graphic Design Templates - Easy Drag & Drop Design Tool",
+      "content": "Canva Free Makes It Easy To Create Professional Graphic Designs. Create On-brand Designs With Canva's High Quality Graphic Design Platform.",
+      "query": "visual design",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:35:19.966415"
+    },
+    {
+      "title": "What is Visual Design? \u2014 updated 2025 | IxDF",
+      "content": "Visual design aims to improve a design's/product's aesthetic appeal and usability with suitable images, typography, space, layout and color.",
+      "query": "visual design",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:35:19.966485"
+    },
+    {
+      "title": "What Is a Visual Designer? (+ How to Become One in 5 Steps)",
+      "content": "Learn about the role and career path of a visual designer, including tips for getting started in the field.",
+      "query": "visual design",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:35:19.966546"
+    },
+    {
+      "title": "What is Visual Design? - GeeksforGeeks",
+      "content": "Visual design is about making things look good and easy to understand. It uses colors, shapes, text, and images to create attractive and effective designs. The goal is to communicate messages clearly and make the user experience enjoyable. Visual design is used in websites, apps, posters, and more to catch people's attention and guide them through information smoothly.",
+      "query": "visual design",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:35:19.966605"
+    },
+    {
+      "title": "The Visual Design Elements and Principles That Make Good Design",
+      "content": "In this detailed guide, we're sharing the top 14 visual design elements and principles every designer needs to know.",
+      "query": "visual design",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:35:19.966660"
+    },
+    {
+      "title": "Data Quality Visualization - Data Profling",
+      "content": "New generation data quality that uses AI to police AI & automate test generation at scale. Instantly Generate Hundreds Of Data Quality Tests Without Deep Data Expertise",
+      "query": "data visualization tools",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T11:19:44.269003"
+    },
+    {
+      "title": "Create AI-generated diagrams - Create Diagrams with AI",
+      "content": "Make pro-looking diagrams from text instantly. Free and online. Create beautiful mind maps and diagrams from prompts. No design needed.",
+      "query": "data visualization tools",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T11:19:44.269081"
+    },
+    {
+      "title": "25 Best Data Visualization Tools for 2025 - Scaler",
+      "content": "Explore the 25 best data visualization tools for 2025. Enhance your data analysis and storytelling with these top-notch visualization platforms.",
+      "query": "data visualization tools",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T11:19:44.269153"
+    },
+    {
+      "title": "The Best Data Visualization Tools - Forbes Advisor",
+      "content": "There are many data visualization tools available, and we've done the research to determine the best for small businesses.",
+      "query": "data visualization tools",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T11:19:44.269224"
+    },
+    {
+      "title": "23 Best Data Visualization Tools of 2025 (with Examples)",
+      "content": "Compare and choose from various data visualization tools for different purposes, such as creating maps, charts, dashboards, and infographics. Learn about the features, pricing, and pros of each tool, and see examples of data visualization in action.",
+      "query": "data visualization tools",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T11:19:44.269292"
+    },
+    {
+      "title": "Intro to MLOps: Data and Model Versioning - Weights & Biases",
+      "content": "Intro to MLOps: Data and Model Versioning In software engineering, it's common practice to use version control to keep track of changes, ensure traceability and enable collaboration. But version control isn't just useful in software development - it's vital in machine learning (ML).",
+      "query": "model versioning",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:30:17.929135"
+    },
+    {
+      "title": "Machine Learning Model Versioning Best Practices - ML Journey",
+      "content": "Machine learning model versioning encompasses the systematic tracking and management of model iterations, their associated training data, hyperparameters, and performance metrics. This practice ensures that teams can reliably reproduce results, compare model performance across versions, and maintain production stability while enabling continuous improvement. The complexity of ML versioning ...",
+      "query": "model versioning",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:30:17.929232"
+    },
+    {
+      "title": "Version Control for Machine Learning Models: Best Practices ... - Medium",
+      "content": "Version Control for Machine Learning Models: Best Practices and Tools Machine learning (ML) models are the engines that power intelligent applications. But their development is an iterative ...",
+      "query": "model versioning",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:30:17.929307"
+    },
+    {
+      "title": "Version Control for ML Models: What It Is and How To Implement It - Neptune",
+      "content": "Understanding version control for ML models, explaining the need, what to version in ML development, and how to implement it.",
+      "query": "model versioning",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:30:17.929377"
+    },
+    {
+      "title": "Model Versioning for ML Models: A Comprehensive Guide",
+      "content": "Model versioning, on the other hand, is a specific type of version control focused on tracking changes made to the ML model in a machine learning system. By versioning the model, teams can maintain a complete history of changes made to the model, enabling them to reproduce results, debug issues, and collaborate effectively.",
+      "query": "model versioning",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:30:17.929453"
+    },
+    {
+      "title": "Cross Validation in Machine Learning - GeeksforGeeks",
+      "content": "Cross-validation is a technique used to check how well a machine learning model performs on unseen data while preventing overfitting. It works by: Splitting the dataset into several parts. Training the model on some parts and testing it on the remaining part. Repeating this resampling process multiple times by choosing different parts of the dataset. Averaging the results from each validation ...",
+      "query": "cross validation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:26:47.548375"
+    },
+    {
+      "title": "Cross-validation (statistics) - Wikipedia",
+      "content": "Learn how to use cross-validation to assess the generalization and predictive performance of a statistical model. Compare different methods of cross-validation, such as leave-one-out, k-fold, and leave-p-out, with examples and diagrams.",
+      "query": "cross validation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:26:47.548435"
+    },
+    {
+      "title": "3.1. Cross-validation: evaluating estimator performance",
+      "content": "Learn how to use cross-validation to avoid overfitting and estimate the generalization performance of a machine learning model. See examples of k-fold cross-validation, cross-validation iterators and custom splits with scikit-learn.",
+      "query": "cross validation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:26:47.548485"
+    },
+    {
+      "title": "A Complete Guide to Cross-Validation - Statology",
+      "content": "Cross-validation is a statistical method used to assess the performance of advanced analytical models like machine learning ones systematically.",
+      "query": "cross validation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:26:47.548532"
+    },
+    {
+      "title": "Cross-validation | Definition, Methods, & Facts | Britannica",
+      "content": "Cross-validation is a resampling technique, a method in which new samples are created from an original sample, that is mainly used in the model-building stage of machine-learning. For prediction-based problems, the goal is to create a model that can predict future outcomes, such as a stock's price or a surgery's success.",
+      "query": "cross validation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:26:47.548578"
+    },
+    {
+      "title": "Bias-variance tradeoff - Wikipedia",
+      "content": "The bias-variance tradeoff is a central problem in supervised learning. Ideally, one wants to choose a model that both accurately captures the regularities in its training data, but also generalizes well to unseen data. Unfortunately, it is typically impossible to do both simultaneously.",
+      "query": "bias variance tradeoff",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:39:27.690512"
+    },
+    {
+      "title": "Bias-Variance Trade Off - Machine Learning - GeeksforGeeks",
+      "content": "There is a tradeoff between a model's ability to minimize bias and variance which is referred to as the best solution for selecting a value of Regularization constant. A proper understanding of these errors would help to avoid the overfitting and underfitting of a data set while training the algorithm. What is Bias?",
+      "query": "bias variance tradeoff",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:39:27.690614"
+    },
+    {
+      "title": "What is bias-variance tradeoff? - IBM",
+      "content": "Bias-variance tradeoff is a fundamental principle that governs the performance of machine learning models. Understanding the core concept of bias-variance tradeoff will help practitioners build robust AI systems that are strike a balance between high training accuracy and high testing accuracy. The article aims to show details and example of bias-variance tradeoff.",
+      "query": "bias variance tradeoff",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:39:27.690684"
+    },
+    {
+      "title": "Understanding the Bias-Variance Tradeoff in Machine Learning ... - Medium",
+      "content": "In this comprehensive guide, we will explore the bias-variance tradeoff in detail, provide examples to illustrate these concepts, and offer practical solutions to address bias and variance issues.",
+      "query": "bias variance tradeoff",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:39:27.690748"
+    },
+    {
+      "title": "The Bias-Variance Trade-Off: A Visual Explainer",
+      "content": "The bias-variance trade-off isn't just theoretical knowledge. It's a practical framework for building better models. Every time you adjust regularization, change algorithms, or modify features, you're navigating this trade-off. So the next time you're building a model, ask yourself: Are my predictions consistently off in one direction?",
+      "query": "bias variance tradeoff",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:39:27.690813"
+    },
+    {
+      "title": "K- Fold Cross Validation in Machine Learning - GeeksforGeeks",
+      "content": "K-Fold Cross Validation is a statistical technique to measure the performance of a machine learning model by dividing the dataset into K subsets of equal size (folds). The model is trained on K \u2212 1 folds and tested on the last fold. This process is repeated K times, with each fold being used as the testing set exactly once.",
+      "query": "k-fold cross validation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:57:07.637193"
+    },
+    {
+      "title": "A Gentle Introduction to k-fold Cross-Validation",
+      "content": "Learn how to use k-fold cross-validation to estimate the skill of machine learning models on limited data. This tutorial covers the procedure, the configuration of k, the cross-validation API, and the variations on cross-validation.",
+      "query": "k-fold cross validation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:57:07.637260"
+    },
+    {
+      "title": "KFold \u2014 scikit-learn 1.7.2 documentation",
+      "content": "KFold is a class that splits data into k consecutive folds for k-fold cross-validation. Learn how to use it, its parameters, and its examples in the scikit-learn User Guide.",
+      "query": "k-fold cross validation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:57:07.637311"
+    },
+    {
+      "title": "Determining the \ud835\udc3e in \ud835\udc3e-fold cross-validation - arXiv.org",
+      "content": "Abstract Cross-validation is a standard technique used across science to test how well a model predicts new data. Data are split into K \"folds,\" where one fold (i.e., hold-out set) is used to evaluate a model's predictive ability. Researchers typically rely on conventions when choosing K, commonly K = 5, or 80: 20 split, even though the choice of K can affect inference and model ...",
+      "query": "k-fold cross validation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:57:07.637366"
+    },
+    {
+      "title": "A Comprehensive Guide to K-Fold Cross Validation - DataCamp",
+      "content": "Learn how K-Fold Cross-Validation works and its advantages and disadvantages. Discover how to implement K-Fold Cross-Validation in Python with scikit-learn.",
+      "query": "k-fold cross validation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:57:07.637416"
+    },
+    {
+      "title": "Timeline visualization - Bring timelines to life",
+      "content": "The leading toolkit for advanced visual timeline analytics. Try it for free today. Power your timeline visualization projects with our JavaScript software tool kit",
+      "query": "time series visualization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:19:44.973108"
+    },
+    {
+      "title": "How to visualize time-series data: best practices",
+      "content": "Here's a guide to best practices in time-series visualization, covering chart selection, data structure, and advanced techniques. We'll skip the mechanics of creating charts, and focus on the principles behind building clear and impactful time-based visualizations,",
+      "query": "time series visualization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:19:44.973186"
+    },
+    {
+      "title": "Time Series Analysis & Visualization in Python - GeeksforGeeks",
+      "content": "Time series data is information collected in sequence over time. It shows how things change at different points, like stock prices every day or temperature every hour. It is used in industries such as finance, pharmaceuticals, social media, and research. Analyzing and visualizing this data helps us find trends, seasonal patterns, and behaviors. These insights support forecasting and guide ...",
+      "query": "time series visualization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:19:44.973246"
+    },
+    {
+      "title": "How to visualize time series data - InfluxData",
+      "content": "Time series data can be queried and graphed in line graphs, gauges, tables and more. Using time series visualization and analytics, you can generate forecasts and make sense of your data. Time series data provides significant value to organizations because it enables them to analyze important real-time and historical metrics.",
+      "query": "time series visualization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:19:44.973307"
+    },
+    {
+      "title": "How to Visualize Time Series Data (With Examples)",
+      "content": "7 Time Series Data Visualization Examples Now that we've given you the resources to learn how to visualize time series data and shown you the best platforms to use, we'll show you seven different visualizations with a dashboard example for each.",
+      "query": "time series visualization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:19:44.973366"
+    },
+    {
+      "title": "Understanding Correlation and Causation - Statology",
+      "content": "Causation (a causal link between two variables) always implies a correlation between them Let's see some examples where correlation between two variables does not imply causation, starting with another summer-themed one. Suppose X is the daily temperature recorded, and Y is the number of visitors to a beach.",
+      "query": "causation vs correlation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T17:14:24.715738"
+    },
+    {
+      "title": "Correlation vs. Causation | Difference, Designs & Examples",
+      "content": "Learn how to distinguish between correlation and causation in research, and why correlation doesn't imply causation. Find out the problems and solutions of correlational and causal research designs, and see examples of spurious and directional correlations.",
+      "query": "causation vs correlation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T17:14:24.715792"
+    },
+    {
+      "title": "Causation vs. Correlation Explained With 10 Examples",
+      "content": "Learn the difference between causation and correlation, and how to measure and interpret them. See 10 examples of common mistakes and misconceptions in science and everyday life.",
+      "query": "causation vs correlation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T17:14:24.715834"
+    },
+    {
+      "title": "Correlation vs. Causation: What's the Difference? - Coursera",
+      "content": "Learn how to distinguish between correlation and causation, two terms that describe relationships between variables in analytics. Find out the limitations of correlation, the conditions of causation, and the methods to prove causality.",
+      "query": "causation vs correlation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T17:14:24.716770"
+    },
+    {
+      "title": "Correlation vs Causation: Understanding the Differences - Statistics by Jim",
+      "content": "Learn the definitions and examples of correlation and causation in statistics, and why correlation doesn't imply causation. Find out how to identify spurious correlations and how to establish causality with experiments.",
+      "query": "causation vs correlation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T17:14:24.716818"
+    },
+    {
+      "title": "TRACKING - Express Velocity Courier",
+      "content": "TRACKING Track Your Shipment",
+      "query": "velocity tracking",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:21:18.741020"
+    },
+    {
+      "title": "Velocity Express Courier Tracking",
+      "content": "Velocity Express Courier Tracking Enter Velocity Courier Tracking number in following tracker system to track and trace your Parcel, Express Cargo, Shipping delivery status details online quickly. Web tracking helps you and the recipient to keep track of the delivery progress.",
+      "query": "velocity tracking",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:21:18.741107"
+    },
+    {
+      "title": "Sprint Velocity in Scrum | Atlassian",
+      "content": "Sprint velocity is a speedometer for your Agile project, providing unparalleled insight into the work capacity of your Agile and software development teams. By tracking the amount of work a team completes in each sprint, velocity helps teams set realistic goals and forecast future progress. Understanding sprint velocity empowers teams to plan more effectively, identify bottlenecks early, and ...",
+      "query": "velocity tracking",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:21:18.741176"
+    },
+    {
+      "title": "What is Velocity Tracking in Agile? - Mission Control",
+      "content": "Velocity tracking is a popular practice in industries that adopt Agile methodologies, such as software development, marketing, and product design. It's particularly useful in projects where iterative development, continuous improvement, and adaptability are crucial to success.",
+      "query": "velocity tracking",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:21:18.741243"
+    },
+    {
+      "title": "Velocity Courier Tracking - Track and Trace",
+      "content": "Enter Velocity Courier Tracking AWB number in below online tracker form to track and trace your Express Courier, Order, Consignment, Shipment delivery status information immediately.",
+      "query": "velocity tracking",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:21:18.741308"
+    },
+    {
+      "title": "About vulnerability testing",
+      "content": "vulnerability testing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "vulnerability testing",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:26:20.013425"
+    },
+    {
+      "title": "About VS Code",
+      "content": "VS Code is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "VS Code",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:33:50.463214"
+    },
+    {
+      "title": "About Vim",
+      "content": "Vim is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Vim",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:34:11.609557"
+    },
+    {
+      "title": "About version control systems",
+      "content": "version control systems is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "version control systems",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:36:21.470684"
+    },
+    {
+      "title": "About video processing",
+      "content": "video processing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "video processing",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:20:08.713300"
+    },
+    {
+      "title": "About vector processing",
+      "content": "vector processing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "vector processing",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:05:49.853548"
+    },
+    {
+      "title": "About volatile variables",
+      "content": "volatile variables is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "volatile variables",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:10:21.300327"
+    },
+    {
+      "title": "About condition variables",
+      "content": "condition variables is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "condition variables",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:10:41.533240"
+    },
+    {
+      "title": "About instrumental variables",
+      "content": "instrumental variables is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "instrumental variables",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:00:08.630101"
+    },
+    {
+      "title": "About voting systems",
+      "content": "voting systems is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "voting systems",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:04:01.401435"
+    },
+    {
+      "title": "About value based pricing",
+      "content": "value based pricing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "value based pricing",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:08:34.636732"
+    },
+    {
+      "title": "About volume discounts",
+      "content": "volume discounts is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "volume discounts",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:10:36.094795"
+    },
+    {
+      "title": "About customer lifetime value",
+      "content": "customer lifetime value is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "customer lifetime value",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:11:16.662211"
+    },
+    {
+      "title": "About voice of customer",
+      "content": "voice of customer is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "voice of customer",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:16:30.273820"
+    },
+    {
+      "title": "About VOC",
+      "content": "VOC is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "VOC",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:16:40.384160"
+    },
+    {
+      "title": "About lifetime value analytics",
+      "content": "lifetime value analytics is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "lifetime value analytics",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:19:52.688519"
+    },
+    {
+      "title": "About value chain",
+      "content": "value chain is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "value chain",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:24:56.011993"
+    },
+    {
+      "title": "About vendor management",
+      "content": "vendor management is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "vendor management",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:28:38.563235"
+    },
+    {
+      "title": "About vendor evaluation",
+      "content": "vendor evaluation is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "vendor evaluation",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:29:59.462337"
+    },
+    {
+      "title": "About visibility",
+      "content": "visibility is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "visibility",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:32:31.094607"
+    },
+    {
+      "title": "About supply chain visibility",
+      "content": "supply chain visibility is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "supply chain visibility",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:32:41.198503"
+    },
+    {
+      "title": "About end-to-end visibility",
+      "content": "end-to-end visibility is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "end-to-end visibility",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:32:51.309557"
+    },
+    {
+      "title": "About define measure analyze design verify",
+      "content": "define measure analyze design verify is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "define measure analyze design verify",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:36:43.898528"
+    },
+    {
+      "title": "Santa or Superman? The Astonishing Physics That Makes Christmas ...",
+      "content": "The Astonishing Physics That Makes Christmas Possible Physics | Space Milenka Men December 13, 2024 Reading Time - 5 Minutes, Difficulty Level - 3/5 It's the most wonderful time of the year again! Time to the wish lists out and the stockings on the fireplace mantel. The holiday season has always been my favorite time of the year.",
+      "query": "What is physics what is Christmas day ind vs sa",
+      "source": "research",
+      "learned_at": "2025-11-25T20:51:42.232618"
+    },
+    {
+      "title": "IND vs SA LIVE: It's Christmas time for Indian Cricketers",
+      "content": "IND vs SA LIVE: Indian players are currently in South Africa prepping up for the three-match Test series starting from Sunday. The preparations are in full flow as Virat Kohli and Co. eye their maiden series win in the Rainbow Nation. However, amid high-intensity practice sessions, the Indian players also took their movements to celebrate the festival of Christmas a day before the Boxing Day ...",
+      "query": "What is physics what is Christmas day ind vs sa",
+      "source": "research",
+      "learned_at": "2025-11-25T20:51:42.232886"
+    },
+    {
+      "title": "The Physics of Christmas - New York Science Teacher",
+      "content": "A 250-pound Santa (which seems ludicrously slim) would be pinned to the back of his sleigh by 4,315,015 pounds of force. Adapted from: The Physics of Christmas: From the Aerodynamics of Reindeer to the Thermodynamics of Turkey , SPY Magazine January, 1990 and by Chris Sheehan (newyorkscienceteacher.com)",
+      "query": "What is physics what is Christmas day ind vs sa",
+      "source": "research",
+      "learned_at": "2025-11-25T20:51:42.233088"
+    },
+    {
+      "title": "IND vs SA Records \u2014 Head To Head Stats in All Formats",
+      "content": "IND vs SA Records show complete head-to-head cricket stats between India and South Africa in Tests, ODIs, and T20 matches.",
+      "query": "What is physics what is Christmas day ind vs sa",
+      "source": "research",
+      "learned_at": "2025-11-25T20:51:42.233210"
+    },
+    {
+      "title": "What is a Boxing Day match? Why is IND vs SA & AUS vs PAK called Boxing ...",
+      "content": "The Boxing Day Test is a cricket event that takes place every year at the famous Melbourne Cricket Ground in Australia, starting on December 26, right after Christmas. While it mainly happens at the MCG, similar matches also occur in other parts of the world. The timing of the match coincides with Boxing Day, celebrated on December 26.",
+      "query": "What is physics what is Christmas day ind vs sa",
+      "source": "research",
+      "learned_at": "2025-11-25T20:51:42.233406"
+    },
+    {
+      "title": "India vs South Africa, 1st Test - Live Cricket Score, Commentary",
+      "content": "Follow IND 189 & 93 vs RSA 159 & 153 (Jasprit Bumrah 0(4) ) | India vs South Africa, 1st Test, Fri, Nov 14, South Africa tour of India, 2025 with live Cricket score, ball by ball commentary ...",
+      "query": "What is physics what is Christmas day ind vs sa",
+      "source": "research",
+      "learned_at": "2025-11-25T20:51:42.233606"
+    },
+    {
+      "title": "Jansen and Harmer take South Africa closer to 2-0 sweep of India",
+      "content": "IND vs SA 2025/26, India vs South Africa Match Report: The visitors have a cushion of 522 runs to pick up the eight wickets they need on the final day of the Guwahati Test",
+      "query": "India vs South Africa cricket!",
+      "source": "research",
+      "learned_at": "2025-11-25T20:53:36.622572"
+    },
+    {
+      "title": "India vs South Africa Highlights 2nd Test Day 4: India 27/2 at stumps ...",
+      "content": "India vs South Africa Highlights 2nd Test Day 4 (South Africa national cricket team vs India national cricket team scorecard): Bad light brought an end to play with India struggling at 27/2 after 15.5 overs. KL Rahul (6) and Yashasvi Jaiswal (13) fell early to Simon Harmer and Marco Jansen, leaving Sai Sudharsan and Kuldeep Yadav battling at the crease. Chasing 549, India face a near ...",
+      "query": "India vs South Africa cricket!",
+      "source": "research",
+      "learned_at": "2025-11-25T20:53:36.623093"
+    },
+    {
+      "title": "India vs South Africa 2nd Test Match - Live Cricket Score, Full Scorecard",
+      "content": "India : 59/5(32.0) | IND vs SA 2nd Test Match - Live Cricket Score, Full Scorecard:Catch the Live Cricket Score of India vs South Africa along with Match Result, Scorecard Updates, Match Summary and Report at The Indian Express.",
+      "query": "India vs South Africa cricket!",
+      "source": "research",
+      "learned_at": "2025-11-25T20:53:36.623518"
+    },
+    {
+      "title": "Cricket 2025: India vs South Africa second Test day four scorecard and ...",
+      "content": "South Africa's Tristan Stubbs plays a shot during the fourth day of the second Test cricket match between India and South Africa at the Barsapara Cricket Stadium in Guwahati on November 25, 2025.",
+      "query": "India vs South Africa cricket!",
+      "source": "research",
+      "learned_at": "2025-11-25T20:53:36.623746"
+    },
+    {
+      "title": "IND vs SA highlights, 2nd Test Day 4: India 27/2 at Stumps ... - Sportstar",
+      "content": "IND vs SA: Catch the ball-by-ball commentary, updates and highlights from Day 4 of the second Test between India and South Africa being played at the ACA Stadium in Guwahati.",
+      "query": "India vs South Africa cricket!",
+      "source": "research",
+      "learned_at": "2025-11-25T20:53:36.623941"
+    },
+    {
+      "title": "India Vs South Africa Highlights, 2nd Test Day 3: IND's Disastrous ...",
+      "content": "India vs South Africa Highlights, 2nd Test Day 3: Welcome to the highlights of the third day of the second Test between India and South Africa at the Barsapara Cricket Stadium in Guwahati on ...",
+      "query": "India vs South Africa cricket!",
+      "source": "research",
+      "learned_at": "2025-11-25T20:53:36.624146"
+    },
+    {
+      "title": "India vs South Africa Day 3 Highlights: Markram, Rickelton remain ...",
+      "content": "India vs South Africa Highlights, 2nd Test Day 3: Aiden Markram and Ryan Rickelton stayed unbeaten at stumps, extending South Africa's lead to a commanding 314. | Cricket",
+      "query": "India vs South Africa cricket!",
+      "source": "research",
+      "learned_at": "2025-11-25T20:53:36.624344"
+    },
+    {
+      "title": "About virtual classrooms",
+      "content": "virtual classrooms is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "virtual classrooms",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:13:14.712934"
+    },
+    {
+      "title": "About vendor certifications",
+      "content": "vendor certifications is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "vendor certifications",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:15:46.466694"
+    },
+    {
+      "title": "About virtual worlds",
+      "content": "virtual worlds is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "virtual worlds",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:27:34.583407"
+    },
+    {
+      "title": "About virtual reality",
+      "content": "virtual reality is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "virtual reality",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:27:44.675395"
+    },
+    {
+      "title": "About VR",
+      "content": "VR is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "VR",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:27:54.791233"
+    },
+    {
+      "title": "About virtual environments",
+      "content": "virtual environments is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "virtual environments",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:29:25.783934"
+    },
+    {
+      "title": "About virtual prototyping",
+      "content": "virtual prototyping is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "virtual prototyping",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:29:56.129518"
+    },
+    {
+      "title": "About virtual testing",
+      "content": "virtual testing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "virtual testing",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:30:06.235691"
+    },
+    {
+      "title": "About virtual training",
+      "content": "virtual training is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "virtual training",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:30:16.333907"
+    },
+    {
+      "title": "About virtual simulations",
+      "content": "virtual simulations is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "virtual simulations",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:30:26.440794"
+    },
+    {
+      "title": "About varied practice",
+      "content": "varied practice is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "varied practice",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:33:59.135425"
+    },
+    {
+      "title": "About vicarious learning",
+      "content": "vicarious learning is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "vicarious learning",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:55:32.618318"
+    },
+    {
+      "title": "About resource based view",
+      "content": "resource based view is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "resource based view",
+      "source": "structured",
+      "learned_at": "2025-11-26T09:17:35.477642"
+    },
+    {
+      "title": "About versatile",
+      "content": "versatile is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "versatile",
+      "source": "structured",
+      "learned_at": "2025-11-26T11:56:52.692275"
+    },
+    {
+      "title": "About viable",
+      "content": "viable is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "viable",
+      "source": "structured",
+      "learned_at": "2025-11-26T12:13:27.134842"
+    },
+    {
+      "title": "About valuable",
+      "content": "valuable is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "valuable",
+      "source": "structured",
+      "learned_at": "2025-11-26T13:14:53.540684"
+    },
+    {
+      "title": "About valid",
+      "content": "valid is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "valid",
+      "source": "structured",
+      "learned_at": "2025-11-26T14:16:30.695265"
+    },
+    {
+      "title": "About varied",
+      "content": "varied is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "varied",
+      "source": "structured",
+      "learned_at": "2025-11-26T15:18:09.054334"
+    },
+    {
+      "title": "About variety",
+      "content": "variety is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "variety",
+      "source": "structured",
+      "learned_at": "2025-11-26T15:33:26.547822"
+    },
+    {
+      "title": "About volcanology",
+      "content": "volcanology is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "volcanology",
+      "source": "structured",
+      "learned_at": "2025-11-26T17:47:06.286810"
+    },
+    {
+      "title": "About vulnerable species",
+      "content": "vulnerable species is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "vulnerable species",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:26:02.968346"
+    },
+    {
+      "title": "About right to vote",
+      "content": "right to vote is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "right to vote",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:36:40.229944"
+    },
+    {
+      "title": "About vertical farming",
+      "content": "vertical farming is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "vertical farming",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:10:22.691495"
+    },
+    {
+      "title": "About mathematical visualization",
+      "content": "mathematical visualization is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "mathematical visualization",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:15:56.332528"
+    },
+    {
+      "title": "About Venezuela",
+      "content": "Venezuela is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Venezuela",
+      "source": "structured",
+      "learned_at": "2025-11-26T23:12:21.469539"
+    },
+    {
+      "title": "About value",
+      "content": "value is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "value",
+      "source": "structured",
+      "learned_at": "2025-11-27T21:58:46.025572"
+    },
+    {
+      "title": "About version",
+      "content": "version is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "version",
+      "source": "structured",
+      "learned_at": "2025-11-27T21:58:56.132081"
+    },
+    {
+      "title": "About view",
+      "content": "view is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "view",
+      "source": "structured",
+      "learned_at": "2025-11-27T21:59:06.231050"
+    },
+    {
+      "title": "About vision",
+      "content": "vision is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "vision",
+      "source": "structured",
+      "learned_at": "2025-11-27T21:59:16.332914"
+    },
+    {
+      "title": "About volume",
+      "content": "volume is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "volume",
+      "source": "structured",
+      "learned_at": "2025-11-27T21:59:26.436896"
+    },
+    {
+      "title": "About computer vision",
+      "content": "computer vision is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "computer vision",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:02:38.483621"
+    },
+    {
+      "title": "About python virtual environments",
+      "content": "python virtual environments is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "python virtual environments",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:10:43.846999"
+    },
+    {
+      "title": "About vue.js framework",
+      "content": "vue.js framework is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "vue.js framework",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:16:57.984879"
+    },
+    {
+      "title": "About API versioning",
+      "content": "API versioning is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "API versioning",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:21:20.930012"
+    },
+    {
+      "title": "About version control",
+      "content": "version control is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "version control",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:26:14.406801"
+    },
+    {
+      "title": "About data visualization",
+      "content": "data visualization is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "data visualization",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:32:08.255342"
+    },
+    {
+      "title": "About support vector machines",
+      "content": "support vector machines is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "support vector machines",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:33:29.198367"
+    },
+    {
+      "title": "About variational autoencoders",
+      "content": "variational autoencoders is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "variational autoencoders",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:34:50.092233"
+    },
+    {
+      "title": "About vulnerability assessment",
+      "content": "vulnerability assessment is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "vulnerability assessment",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:44:16.293038"
+    },
+    {
+      "title": "About virtualization",
+      "content": "virtualization is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "virtualization",
+      "source": "structured",
+      "learned_at": "2025-11-28T05:37:54.751049"
+    },
+    {
+      "title": "About VMware",
+      "content": "VMware is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "VMware",
+      "source": "structured",
+      "learned_at": "2025-11-28T05:55:11.626765"
+    },
+    {
+      "title": "About autonomous vehicles",
+      "content": "autonomous vehicles is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "autonomous vehicles",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:05:32.642801"
+    },
+    {
+      "title": "Virat Kohli - Wikipedia",
+      "content": "Virat Kohli (Hindi pronunciation: [\u028b\u026a\u02c8\u027ea\u02d0\u0288\u1d4a \u02c8ko\u02d0\u0266\u1d4ali\u02d0] \u24d8, born 5 November 1988) is an Indian international cricketer and the former captain of the Indian national cricket team.",
+      "query": "Who is Virat Kohli?",
+      "source": "research",
+      "learned_at": "2025-11-29T12:11:14.232806"
+    },
+    {
+      "title": "Virat Kohli | Life, Career, Cricket, Awards, T20I and Test Retirement ...",
+      "content": "Virat Kohli (b. 1988) is an Indian international cricketer and a former captain of the Indian cricket team in all three international formats. Kohli plays for (and previously captained) the Royal Challengers Bangalore (RCB) in the Indian Premier League (IPL). Kohli is considered by many as one of the greatest batsmen in the history of the game. He is also one of the most successful captains ...",
+      "query": "Who is Virat Kohli?",
+      "source": "research",
+      "learned_at": "2025-11-29T12:11:14.233128"
+    },
+    {
+      "title": "Virat Kohli Biography: Records, Achievements & Early Life - Vedantu",
+      "content": "Virat Kohli is a legendary Indian cricketer renowned for his exceptional batting skills, leadership, and extraordinary consistency across all formats of the game. Known as one of modern cricket's greatest batsmen, his journey from a young enthusiast in Delhi to captaining the Indian national team has inspired millions worldwide. In this article, we his early life, stunning career ...",
+      "query": "Who is Virat Kohli?",
+      "source": "research",
+      "learned_at": "2025-11-29T12:11:14.233486"
+    }
+  ],
+  "last_updated": "2025-11-29T12:11:14.258645"
+}

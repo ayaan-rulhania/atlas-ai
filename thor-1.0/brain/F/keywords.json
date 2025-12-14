@@ -1,0 +1,2899 @@
+{
+  "letter": "F",
+  "keywords": [
+    "function",
+    "for",
+    "if",
+    "fire",
+    "federated",
+    "functions",
+    "file",
+    "framework",
+    "fastify",
+    "frontend",
+    "full",
+    "first",
+    "forests",
+    "fuck",
+    "facial",
+    "flutter",
+    "firewall",
+    "factor",
+    "fundamentals",
+    "fairness",
+    "feature",
+    "f1",
+    "forecasting",
+    "frequentist",
+    "frameworks",
+    "fuzz",
+    "features",
+    "flow",
+    "flags",
+    "funnel",
+    "focus",
+    "field",
+    "fiction",
+    "forest",
+    "functional",
+    "formatting",
+    "free",
+    "fair",
+    "faas",
+    "fog",
+    "fences",
+    "fork",
+    "futures",
+    "filtering",
+    "filter",
+    "factorial",
+    "freemium",
+    "feedback",
+    "firmographic",
+    "frequency",
+    "fulfillment",
+    "form",
+    "financial",
+    "footprint",
+    "finance",
+    "fiscal",
+    "federal",
+    "forward",
+    "fail",
+    "fdic",
+    "flipped",
+    "forums",
+    "fairs",
+    "festivals",
+    "flight",
+    "focused",
+    "far",
+    "fading",
+    "factual",
+    "flexible",
+    "feasible",
+    "favorable",
+    "fitting",
+    "fusion",
+    "folklore",
+    "food",
+    "freedom",
+    "from",
+    "foreign",
+    "fossil",
+    "fuels",
+    "fracking",
+    "fracturing",
+    "farming",
+    "formulas",
+    "france",
+    "football",
+    "fact",
+    "failure",
+    "faith",
+    "fear",
+    "feeling",
+    "figure",
+    "force",
+    "foundation",
+    "frame",
+    "friendship",
+    "future"
+  ],
+  "knowledge": [
+    {
+      "title": "ON FIRE | English meaning - Cambridge Dictionary",
+      "content": "Learn the meaning and usage of the idiom on fire, which can describe something burning, a part of the body feeling hot, or a person playing well. See synonyms, related words, and translations of on fire.",
+      "query": "You are on fire",
+      "source": "research",
+      "learned_at": "2025-11-23T17:56:25.139935"
+    },
+    {
+      "title": "You Are On Fire GIFs | Tenor",
+      "content": "With Tenor, maker of GIF Keyboard, add popular You Are On Fire animated GIFs to your conversations. Share the best GIFs now >>>",
+      "query": "You are on fire",
+      "source": "research",
+      "learned_at": "2025-11-23T17:56:25.139972"
+    },
+    {
+      "title": "Understanding the Idiom: \"on fire\" - Meaning, Origins, and Usage",
+      "content": "Learn the history and variations of the idiom \"on fire\", which means to be enthusiastic or excited. Find out how to use it in different contexts and avoid common mistakes.",
+      "query": "You are on fire",
+      "source": "research",
+      "learned_at": "2025-11-23T17:56:25.139997"
+    },
+    {
+      "title": "you are on fire | English examples in context | Ludwig",
+      "content": "High quality example sentences with \"you are on fire\" in context from reliable sources - Ludwig, your English writing platform",
+      "query": "You are on fire",
+      "source": "research",
+      "learned_at": "2025-11-23T17:56:25.140021"
+    },
+    {
+      "title": "on fire - Idioms by The Free Dictionary",
+      "content": "Learn the meaning and usage of the phrase \"on fire\" in different contexts. It can mean literally burning, having a burning sensation, performing well, or being attractive.",
+      "query": "You are on fire",
+      "source": "research",
+      "learned_at": "2025-11-23T17:56:25.140044"
+    },
+    {
+      "title": "Federated learning - Wikipedia",
+      "content": "Federated learning is a machine learning technique that trains a model on decentralized data across multiple entities, such as smartphones or IoT devices. Learn about its mathematical formulation, centralized and decentralized settings, heterogeneous clients, and examples of domains where it is used.",
+      "query": "federated learning",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:16:38.181676"
+    },
+    {
+      "title": "What is Federated Learning? - GeeksforGeeks",
+      "content": "Federated Learning Federated Learning is a technique of training machine learning models on decentralized data, where the data is distributed across multiple devices or nodes, such as smartphones, IoT devices, edge devices, etc.",
+      "query": "federated learning",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:16:38.181710"
+    },
+    {
+      "title": "Federated learning: what it is and how it works | Google Cloud",
+      "content": "Federated learning (FL) is a machine learning approach that enables the training of a shared AI model using data from numerous decentralized edge devices or servers. This process occurs without the need to exchange the local data samples. Think of it as a collaborative learning process where individual participants contribute to a common goal without revealing their private information. This ...",
+      "query": "federated learning",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:16:38.181737"
+    },
+    {
+      "title": "What is federated learning? - IBM",
+      "content": "Federated learning is a decentralized approach to training machine learning (ML) models. Each node across a distributed network trains a global model using its local data, with a central server aggregating node updates to improve the global model.",
+      "query": "federated learning",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:16:38.181762"
+    },
+    {
+      "title": "Federated learning: Overview, strategies, applications, tools and ...",
+      "content": "Federated learning (FL) is a distributed machine learning process, which allows multiple nodes to work together to train a shared model without exchanging raw data. It offers several key advantages, such as data privacy, security, efficiency, and scalability, by keeping data local and only exchanging model updates through the communication network. This review paper provides a comprehensive ...",
+      "query": "federated learning",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:16:38.181788"
+    },
+    {
+      "title": "Shop learn python for dummies - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on learn python for dummies at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "query": "python functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:22:56.539995"
+    },
+    {
+      "title": "Python Functions - W3Schools",
+      "content": "Python Functions A function is a block of code which only runs when it is called. A function can return data as a result. A function helps avoiding code repetition.",
+      "query": "python functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:22:56.540048"
+    },
+    {
+      "title": "Built-in Functions \u2014 Python 3.14.0 documentation",
+      "content": "Learn about the functions and types that are always available in the Python interpreter. See the alphabetical list of built-in functions with descriptions, examples, and links to related topics.",
+      "query": "python functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:22:56.540092"
+    },
+    {
+      "title": "Python Functions - GeeksforGeeks",
+      "content": "Python Functions are a block of statements that does a specific task. The idea is to put some commonly or repeatedly done task together and make a function so that instead of writing the same code again and again for different inputs, we can do the function calls to reuse code contained in it over and over again. Defining a Function We can define a function in Python, using the def keyword. A ...",
+      "query": "python functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:22:56.540136"
+    },
+    {
+      "title": "Python Functions (With Examples) - Programiz",
+      "content": "Learn how to create, call, and use functions in Python, including user-defined and standard library functions. See how to pass arguments, return values, and handle variable numbers of arguments with *args and **kwargs.",
+      "query": "python functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:22:56.540178"
+    },
+    {
+      "title": "Python File Open - W3Schools",
+      "content": "Learn how to use the open() function and different modes to create, read, update, and delete files in Python. See examples of text and binary files, and how to handle errors.",
+      "query": "python file handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:25:38.785022"
+    },
+    {
+      "title": "File Handling in Python - GeeksforGeeks",
+      "content": "File handling refers to the process of performing operations on a file, such as creating, opening, reading, writing and closing it through a programming interface.",
+      "query": "python file handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:25:38.785086"
+    },
+    {
+      "title": "File and Directory Access \u2014 Python 3.14.0 documentation",
+      "content": "Learn how to use Python modules to work with disk files and directories, such as pathlib, os.path, stat, shutil, and more. Find examples, exceptions, methods, and properties for file and directory operations.",
+      "query": "python file handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:25:38.785135"
+    },
+    {
+      "title": "Working With Files in Python",
+      "content": "Python has several built-in modules and functions for handling files. These functions are spread out over several modules such as os, os.path, shutil, and pathlib, to name a few. This article gathers in one place many of the functions you need to know in order to perform the most common operations on files in Python. In this tutorial, you'll learn how to: Retrieve file properties Create ...",
+      "query": "python file handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:25:38.785186"
+    },
+    {
+      "title": "File Handling in Python",
+      "content": "Learn how to work with files on your computer's file system using Python's built-in functions and modules. Find examples of basic and advanced file operations, such as reading, writing, appending, CSV, JSON, binary, and directory management.",
+      "query": "python file handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:25:38.785234"
+    },
+    {
+      "title": "JavaScript Functions - W3Schools",
+      "content": "Function Invocation () The code inside the function will execute when \"something\" invokes (calls) the function: When it is invoked (called) from JavaScript code When an event occurs (a user clicks a button) Automatically (self invoked) The () operator invokes a the function.",
+      "query": "javascript functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:26:36.043437"
+    },
+    {
+      "title": "Functions - JavaScript | MDN",
+      "content": "Learn how to define, use, and create functions in JavaScript, a fundamental building block of the language. Explore different types of functions, such as declarations, expressions, recursive, and arrow functions, and their syntax and examples.",
+      "query": "javascript functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:26:36.043467"
+    },
+    {
+      "title": "Functions in JavaScript - GeeksforGeeks",
+      "content": "Functions in JavaScript are reusable blocks of code designed to perform specific tasks. They allow you to organize, reuse, and modularize code. It can take inputs, perform actions, and return outputs.",
+      "query": "javascript functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:26:36.043489"
+    },
+    {
+      "title": "JavaScript Functions",
+      "content": "Learn how to declare, call, return, and use arguments in JavaScript functions. See how to structure your code into smaller and reusable units with examples and explanations.",
+      "query": "javascript functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:26:36.043512"
+    },
+    {
+      "title": "JavaScript Functions: From Basics to Advanced",
+      "content": "Learn how to define, call, and return values from functions in JavaScript. Explore different types of functions, such as anonymous, arrow, and nested functions, with examples and videos.",
+      "query": "javascript functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:26:36.043534"
+    },
+    {
+      "title": "Arrow function expressions - JavaScript | MDN",
+      "content": "An arrow function expression is a compact alternative to a traditional function expression, with some semantic differences and deliberate limitations in usage:",
+      "query": "javascript arrow functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:26:47.262056"
+    },
+    {
+      "title": "JavaScript Arrow Functions - W3Schools",
+      "content": "Arrow Functions were introduced in ES6. Arrow Functions allow a shorter syntax for function expressions. You ca skip the function keyword, the return keyword, and the curly brackets:",
+      "query": "javascript arrow functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:26:47.262140"
+    },
+    {
+      "title": "Arrow functions in JavaScript - GeeksforGeeks",
+      "content": "Arrow functions in JavaScript are a concise way to write functions using the => syntax, automatically binding this from the surrounding context. The following code defines an arrow function that takes two numbers and returns their sum.",
+      "query": "javascript arrow functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:26:47.262201"
+    },
+    {
+      "title": "How to Use JavaScript Arrow Functions - Explained in Detail",
+      "content": "Learn how to use the arrow function syntax in JavaScript, which is a concise and convenient way to create functions. Compare the arrow function with the regular function, see how to convert them, and understand the advantages and disadvantages of arrow functions.",
+      "query": "javascript arrow functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:26:47.262265"
+    },
+    {
+      "title": "Arrow Functions in JavaScript\u2014What They Are & Why They Matter",
+      "content": "Master arrow functions in JavaScript with this beginner-friendly guide. Learn syntax, practical examples, and tips to write cleaner, more efficient code.",
+      "query": "javascript arrow functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:26:47.262322"
+    },
+    {
+      "title": "Top 10 React Frameworks to Use in 2025 - GeeksforGeeks",
+      "content": "\"The Best 10 React Frameworks to Use in 2025\" React is a widely used library of JavaScript for frontend development, that uses components to make the UI more interactive and help the developers in making the process more simple.",
+      "query": "react framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:30:24.861860"
+    },
+    {
+      "title": "React",
+      "content": "Go full-stack with a framework React is a library. It lets you put components together, but it doesn't prescribe how to do routing and data fetching. To build an entire app with React, we recommend a full-stack React framework like Next.js or React Router.",
+      "query": "react framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:30:24.861926"
+    },
+    {
+      "title": "Top 10 Best React Frameworks for Web Development in 2025",
+      "content": "Conclusion React frameworks for web development continue to evolve, offering developers powerful tools for creating fast, scalable, and SEO-friendly applications. Whether you need a web development framework for server-side rendering, static site generation, or full-stack capabilities, there's a solution that fits your needs.",
+      "query": "react framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:30:24.861976"
+    },
+    {
+      "title": "The 9 Best React Frameworks and Features [Updated for 2026]",
+      "content": "Explore the top React frameworks in 2025 like Next.js, Remix & Gatsby and more. Compare features to choose the best fit for your web and app.",
+      "query": "react framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:30:24.862025"
+    },
+    {
+      "title": "13 Best React Frameworks and Libraries to Use in 2025 - Medium",
+      "content": "13 Best React Frameworks and Libraries to Use in 2025 React or ReactJs is one of the most popular JavaScript front-end libraries for developing amazing user interfaces.",
+      "query": "react framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:30:24.862073"
+    },
+    {
+      "title": "Vue.js - The Progressive JavaScript Framework | Vue.js",
+      "content": "Vue.js - The Progressive JavaScript FrameworkThe Progressive JavaScript Framework An approachable, performant and versatile framework for building web user interfaces.",
+      "query": "vue.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:31:57.323672"
+    },
+    {
+      "title": "Vue.js - Wikipedia",
+      "content": "Vue.js (commonly referred to as Vue; pronounced \"view\" [6]) is an open-source model-view-viewmodel front end JavaScript framework for building user interfaces and single-page applications. [12]",
+      "query": "vue.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:31:57.323736"
+    },
+    {
+      "title": "Vue.js",
+      "content": "Versatile An incrementally adoptable ecosystem that scales between a library and a full-featured framework.",
+      "query": "vue.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:31:57.323784"
+    },
+    {
+      "title": "11 Best Vue.js Frameworks for Web Development in 2025 - Crossover",
+      "content": "In 2025, Vue.js remains a game-changer in web development. With these 11 frameworks in your arsenal, you're equipped to tackle a wide range of projects, from mobile apps to complex web applications. But don't forget - the best framework for you depends on your project's specific needs and goals.",
+      "query": "vue.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:31:57.323834"
+    },
+    {
+      "title": "What is VueJS ? - GeeksforGeeks",
+      "content": "Vue.js is a free JavaScript framework for building interactive and dynamic user interfaces. It provides a special helper for JavaScript developers, similar to React. Vue.js is maintained by developers from various communities, including its creator Evan You, and is continuously updated to ensure its awesomeness. With Vue.js, websites can become highly interactive and lively, especially ...",
+      "query": "vue.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:31:57.323884"
+    },
+    {
+      "title": "Home \u2022 Angular",
+      "content": "The web development framework for building modern apps.",
+      "query": "angular framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:09.090009"
+    },
+    {
+      "title": "Angular (web framework) - Wikipedia",
+      "content": "Angular (also referred to as Angular 2+) [4] is a TypeScript -based free and open-source single-page web application framework. It is developed by Google and by a community of individuals and corporations.",
+      "query": "angular framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:09.090060"
+    },
+    {
+      "title": "Angular - Introduction to the Angular docs",
+      "content": "Angular is an application-design framework and development platform for creating efficient and sophisticated single-page apps. These Angular docs help you learn and use the Angular framework and development platform, from your first application to optimizing complex single-page applications for enterprises.",
+      "query": "angular framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:09.090104"
+    },
+    {
+      "title": "Angular Tutorial - GeeksforGeeks",
+      "content": "Angular is a powerful, open-source web application framework for building dynamic and scalable single-page applications (SPAs). Developed by Google, Angular provides a comprehensive solution for front-end development with tools for routing, form handling, HTTP services, and more. Designed for building scalable web applications Component-based architecture for efficient development Supports ...",
+      "query": "angular framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:09.090145"
+    },
+    {
+      "title": "Getting started with Angular - Learn web development | MDN",
+      "content": "Getting started with Angular Overview: JavaScript frameworks and libraries Next It is now time to look at Google's Angular framework, another popular option that you'll come across often. In this article we look at what Angular has to offer, install the prerequisites and set up a sample app, and look at Angular's basic architecture.",
+      "query": "angular framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:09.090189"
+    },
+    {
+      "title": "Svelte \u2022 Web development for the rest of us",
+      "content": "Svelte is a UI framework that uses a compiler to let you write breathtakingly concise components that do minimal work in the browser, using languages you already know \u2014 HTML, CSS and JavaScript. It's a love letter to web development. But don't take our word for it. Developers consistently rank Svelte as the framework they're most excited about using.",
+      "query": "svelte framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:20.275650"
+    },
+    {
+      "title": "Svelte - Wikipedia",
+      "content": "Svelte is a free and open-source component-based front-end software framework [2] and language [3] created by Rich Harris and maintained by the Svelte core team. [4] Svelte is not a monolithic JavaScript library imported by applications: instead, Svelte compiles HTML templates to specialized code that manipulates the DOM directly, which may reduce the size of transferred files and give better ...",
+      "query": "svelte framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:20.275687"
+    },
+    {
+      "title": "Getting started with Svelte - Learn web development | MDN",
+      "content": "Getting started with Svelte Overview: JavaScript frameworks and libraries Next In this article we'll provide a quick introduction to the Svelte framework. We will see how Svelte works and what sets it apart from the rest of the frameworks and tools we've seen so far. Then we will learn how to set up our development environment, create a sample app, understand the structure of the project, and ...",
+      "query": "svelte framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:20.275717"
+    },
+    {
+      "title": "GitHub - sveltejs/svelte: web development for the rest of us",
+      "content": "web development for the rest of us. Contribute to sveltejs/svelte development by creating an account on GitHub.",
+      "query": "svelte framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:20.275743"
+    },
+    {
+      "title": "Getting started \u2022 Svelte Docs",
+      "content": "Getting started \u2022 Svelte documentationWe recommend using SvelteKit, which lets you build almost anything. It's the official application framework from the Svelte team and powered by Vite. Create a new project with:",
+      "query": "svelte framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:20.275770"
+    },
+    {
+      "title": "Next.js by Vercel - The React Framework",
+      "content": "The React Framework for the Web Used by some of the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components.",
+      "query": "next.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:31.718734"
+    },
+    {
+      "title": "Next.js - Wikipedia",
+      "content": "Next.js is an open-source web development framework created by the private company Vercel providing React -based web applications with server-side rendering and static rendering.",
+      "query": "next.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:31.718764"
+    },
+    {
+      "title": "Introduction | Next.js English",
+      "content": "Welcome to the Next.js Documentation.What is Next.js? Next.js is a React framework for building full-stack web applications. You use React Components to build user interfaces, and Next.js for additional features and optimizations. It also automatically configures lower-level tools like bundlers and compilers. You can instead focus on building your product and shipping quickly. Whether you're ...",
+      "query": "next.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:31.718789"
+    },
+    {
+      "title": "Next.js on Vercel",
+      "content": "Next.js is a fullstack React framework for the web, maintained by Vercel.",
+      "query": "next.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:31.718814"
+    },
+    {
+      "title": "What Is Next.js? A Look at the Popular JavaScript Framework",
+      "content": "There are plenty of reasons Next.js is used by so many of the top apps today. Learn all about this popular JavaScript framework.",
+      "query": "next.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:31.718838"
+    },
+    {
+      "title": "Nuxt: The Progressive Web Framework",
+      "content": "Create high-quality web applications with Nuxt, the open source framework that makes full-stack development with Vue.js intuitive.",
+      "query": "nuxt.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:43.199473"
+    },
+    {
+      "title": "Nuxt - Wikipedia",
+      "content": "Nuxt is a free and open source JavaScript library based on Vue.js, Nitro, and Vite. Nuxt is inspired by Next.js, [4] which is a similar framework based on React rather than Vue.",
+      "query": "nuxt.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:43.199556"
+    },
+    {
+      "title": "GitHub - nuxt/nuxt: The Progressive Web Framework.",
+      "content": "Nuxt is a free and open-source framework with an intuitive and extendable way to create type-safe, performant and production-grade full-stack web applications and websites with Vue.js.",
+      "query": "nuxt.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:43.199612"
+    },
+    {
+      "title": "Nuxt Explained: The Vue.js Framework Guide for 2025",
+      "content": "Nuxt or Nuxt.js is a meta-framework built on Vue.js that handles the production setup you'd otherwise configure manually. While Vue gives you reactive components and the Composition API, Nuxt adds server-side rendering, static site generation, automatic code splitting, and file-based routing without the usual webpack configuration headaches.",
+      "query": "nuxt.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:43.199670"
+    },
+    {
+      "title": "What Is Nuxt.js? Learn More About the Intuitive Vue Framework",
+      "content": "Nuxt.js is the most intuitive Vue framework available today. It combines the power of Vue.js with server-side rendering features to make it more powerful. You can build a complete Vue.js client-side rendering application, a comprehensive static generated application, and a monolith application.",
+      "query": "nuxt.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:43.199726"
+    },
+    {
+      "title": "Express - Node.js web application framework",
+      "content": "Express is a fast, unopinionated, minimalist web framework for Node.js, providing a robust set of features for web and mobile applications.",
+      "query": "express.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:06.028207"
+    },
+    {
+      "title": "Express.js Tutorial - GeeksforGeeks",
+      "content": "Express.js is a minimal and flexible Node.js web application framework that provides a list of features for building web and mobile applications easily. It simplifies the development of server-side applications by offering an easy-to-use API for routing, middleware, and HTTP utilities. Built on Node.js for fast and scalable server-side development. Simplifies routing and middleware handling ...",
+      "query": "express.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:06.028268"
+    },
+    {
+      "title": "Express web framework (Node.js/JavaScript) - MDN Web Docs",
+      "content": "Express is a popular unopinionated web framework, written in JavaScript and hosted within the Node.js runtime environment. This module explains some of the key benefits of the framework, how to set up your development environment and how to perform common web development and deployment tasks.",
+      "query": "express.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:06.028317"
+    },
+    {
+      "title": "Is Express.js Still The Best Backend Framework In 2025? ... - Medium",
+      "content": "Express.js Has Been The Go-To Web Framework For Node.js Developers Since 2010 \ud83d\udcbb. It's Minimal, Fast, And Extremely Flexible \u2699\ufe0f. But In\u2026",
+      "query": "express.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:06.028366"
+    },
+    {
+      "title": "Express.js - Wikipedia",
+      "content": "Express.js, or simply Express, is a back end web application framework for Node.js, released as free and open-source software under the MIT License. It is designed for building web applications and APIs. [2]",
+      "query": "express.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:06.028412"
+    },
+    {
+      "title": "NestJS - A progressive Node.js framework",
+      "content": "Hello, nest! A progressive Node.js framework for building efficient, reliable and scalable server-side applications.",
+      "query": "nest.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:17.282293"
+    },
+    {
+      "title": "GitHub - nestjs/nest: A progressive Node.js framework for building ...",
+      "content": "Nest is a framework for building efficient, scalable Node.js server-side applications. It uses modern JavaScript, is built with TypeScript (preserves compatibility with pure JavaScript) and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming). Under the hood, Nest makes use of Express, but also provides compatibility ...",
+      "query": "nest.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:17.282342"
+    },
+    {
+      "title": "The NestJS Handbook - Learn to Use Nest with Code Examples",
+      "content": "NestJS is a progressive Node.js framework for building efficient, reliable, and scalable server-side applications. Combining the best ideas from OOP (Object-Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming)...",
+      "query": "nest.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:17.282384"
+    },
+    {
+      "title": "NestJS - Wikipedia",
+      "content": "NestJS, or simply Nest, is a server-side Node.js -based web framework, released as free and open-source software under an MIT License. [3][4]",
+      "query": "nest.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:17.282424"
+    },
+    {
+      "title": "What is NestJS? - GeeksforGeeks",
+      "content": "What is NestJS? NestJS is a progressive Node.js framework for building server-side applications. It uses TypeScript by default, providing strong typing and modern JavaScript features, but it also supports pure JavaScript. NestJS is designed to help developers create highly testable, scalable, and maintainable applications. Prerequisites for NestJS To effectively learn and use NestJS, you ...",
+      "query": "nest.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:17.282467"
+    },
+    {
+      "title": "Fast and low overhead web framework, for Node.js | Fastify",
+      "content": "Enter Fastify. Fastify is a web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture. It is inspired by Hapi and Express and as far as we know, it is one of the fastest web frameworks in town.",
+      "query": "fastify framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:28.514269"
+    },
+    {
+      "title": "fastify - npm",
+      "content": "Enter Fastify. Fastify is a web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture. It is inspired by Hapi and Express and as far as we know, it is one of the fastest web frameworks in town. The main branch refers to the Fastify v5 release. Check out the 4.x branch for v4.",
+      "query": "fastify framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:28.514334"
+    },
+    {
+      "title": "Introduction to Fastify: A practical guide to building Node.js web apps",
+      "content": "Fastify is a lightweight and flexible Node.js web framework used to build dynamically generated web pages and high-performance API back ends. It focuses on being developer-friendly and helps bootstrap your apps with a high-performance, extensible framework to base your own code on. This post explains Fastify and its advantages and use cases, and it provides practical tutorial steps to get you ...",
+      "query": "fastify framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:28.514359"
+    },
+    {
+      "title": "Fastify - Wikipedia",
+      "content": "Fastify is a performance-oriented backend web framework for Node.js, released as free and open-source software under an MIT License. Its development was inspired by Hapi and Express.",
+      "query": "fastify framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:28.514383"
+    },
+    {
+      "title": "Building Node.js Apps with Fastify: A Beginner's Guide",
+      "content": "Fastify is a high-performance web framework for Node.js, designed with a focus on speed, security, and a great developer experience.",
+      "query": "fastify framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:28.514406"
+    },
+    {
+      "title": "Koa - next generation web framework for node.js",
+      "content": "Introduction Koa is a new web framework designed by the team behind Express, which aims to be a smaller, more expressive, and more robust foundation for web applications and APIs. By leveraging async functions, Koa allows you to ditch callbacks and greatly increase error-handling.",
+      "query": "koa.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:40.166708"
+    },
+    {
+      "title": "koa - npm",
+      "content": "Expressive HTTP middleware framework for node.js to make web applications and APIs more enjoyable to write. Koa's middleware stack flows in a stack-like manner, allowing you to perform actions downstream then filter and manipulate the response upstream. Only methods that are common to nearly all HTTP servers are integrated directly into Koa's small ~570 SLOC codebase. This includes things like ...",
+      "query": "koa.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:40.166738"
+    },
+    {
+      "title": "Koa.js \u00b7 GitHub",
+      "content": "Next generation web framework for Node.js. Koa.js has 104 repositories available. Follow their code on GitHub.",
+      "query": "koa.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:40.166762"
+    },
+    {
+      "title": "Koa.js Tutorial",
+      "content": "Koa.js is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. It is an open source framework developed and maintained by the creators of Express.js, the most popular node web framework.",
+      "query": "koa.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:40.166787"
+    },
+    {
+      "title": "Koa.js: A Clean and Modern Web Framework for Node.js",
+      "content": "Koa.js is a lightweight and modern framework built for Node.js. Created by the same team behind Express, Koa offers a cleaner and more flexible approach to building web applications and APIs. In ...",
+      "query": "koa.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:40.166810"
+    },
+    {
+      "title": "Front End - Web Developer Prep - Front-End Domain Course",
+      "content": "Nail Front-End Engineering interviews at FAANG and Tier-1 Tech Companies. Get 1-1 classes with top FAANG mentors on coding & Interview Preperation",
+      "query": "frontend development",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:34:03.334185"
+    },
+    {
+      "title": "Pantheon: Scalable & Supported - Efficient Site Management",
+      "content": "See how Pantheon's WebOps Platform helps you build, host, & manage better web experiences. Build & manage WordPress and Drupal sites in one place - Pantheon\u00ae WebOps platform.",
+      "query": "frontend development",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:34:03.334248"
+    },
+    {
+      "title": "Frontend Developer Roadmap: What is Frontend Development?",
+      "content": "Learn what frontend development is, what skills and tools you need, and how to become a modern frontend developer in 2024. Explore the roadmap, quizzes, and community resources on roadmap.sh.",
+      "query": "frontend development",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:34:03.334291"
+    },
+    {
+      "title": "What is a Front-End Developer? - W3Schools",
+      "content": "A Front-End Developer is someone who creates websites and web applications. The difference between Front-End and Back-End is that Front-End refers to how a web page looks, while back-end refers to how it works.",
+      "query": "frontend development",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:34:03.334332"
+    },
+    {
+      "title": "What is Frontend Development? Skills, Salary and Roles",
+      "content": "Frontend developers also use various other tools and technologies to build a completely functional website. Enroll in this Full Stack Development with React & Node JS - Live Program which has live classes and hands-on projects. This course is the best one for anyone be they beginners and experienced developers. Who's a Frontend Developer?",
+      "query": "frontend development",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:34:03.334374"
+    },
+    {
+      "title": "Shop full stack development book - Amazon\u00ae Official Site",
+      "content": "Free shipping on qualified orders. Free, easy returns on millions of items. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "query": "full stack development",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:34:25.862797"
+    },
+    {
+      "title": "What is Full Stack Development - GeeksforGeeks",
+      "content": "Full Stack Development refers to the development of both front end (client side) and back end (server side) portions of web applications. If you want to learn in full structure form then you should enrol in our Full stack devloper course! You'll learn to create powerful web applications from scratch, mastering both front-end and back-end skills.",
+      "query": "full stack development",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:34:25.862893"
+    },
+    {
+      "title": "What is Full Stack - W3Schools",
+      "content": "Full-stack Web Developer A full-stack web developer is a person who can develop both client and server software. In addition to mastering HTML and CSS, he/she also knows how to: Program a browser (e.g. using JavaScript, jQuery, Angular, or Vue) Program a server (e.g. using PHP, ASP, Python, or Node) Program a database (e.g. using SQL, SQLite, or MongoDB)",
+      "query": "full stack development",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:34:25.862962"
+    },
+    {
+      "title": "What is Full Stack Development? - aws.amazon.com",
+      "content": "Full stack development is the process of developing both the frontend and backend of applications. Any application has a frontend (user-facing) component and a backend (database and logic) component. The frontend contains the user interface and code related to user interactions with the application. The backend contains all the code required for the application to run, including integrations ...",
+      "query": "full stack development",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:34:25.863029"
+    },
+    {
+      "title": "What Is a Full-Stack Developer? - Coursera",
+      "content": "Learn what a full-stack developer does, what skills they need, and how to become one. Explore the average salary, job outlook, and courses to get started on Coursera.",
+      "query": "full stack development",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:34:25.863096"
+    },
+    {
+      "title": "Mobile First Design: What it is and How to Implement it",
+      "content": "Learn what mobile first design is and why it is crucial for web development. Find out how to design for mobile screens first and scale up to larger devices with examples and tips.",
+      "query": "mobile first design",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:34:48.638622"
+    },
+    {
+      "title": "What is Mobile First Design? - GeeksforGeeks",
+      "content": "Mobile-first design is a way of creating websites that focuses on making them work well on smartphones and tablets before designing for computers. This approach is important because most people now use their mobile devices to browse the internet. By starting with mobile-friendly design, you ensure your website provides a great user experience on smaller screens, which can lead to more visitors ...",
+      "query": "mobile first design",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:34:48.638672"
+    },
+    {
+      "title": "What is Mobile First? \u2014 updated 2025 | IxDF - The Interaction Design ...",
+      "content": "Mobile first design is an approach that embraces the constraints of smaller screens and focuses on what's indispensable for users to improve the overall mobile User Experience (UX). The mobile first design approach involves starting the product design process by designing for the smallest device first and progressively enhancing the design features for larger layouts\u2014e.g., start designing ...",
+      "query": "mobile first design",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:34:48.638715"
+    },
+    {
+      "title": "Mobile First Design: Principles, Examples And Best Practices",
+      "content": "Learn Mobile First Design with core principles, best practices, and examples to create responsive, fast, and user-focused websites.",
+      "query": "mobile first design",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:34:48.638753"
+    },
+    {
+      "title": "Mobile-First Design: Examples + Strategies | Figma",
+      "content": "Explore mobile-first design principles, best practices, and examples to enhance your mobile website development and craft a rewarding user experience.",
+      "query": "mobile first design",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:34:48.638790"
+    },
+    {
+      "title": "Low priced agile scrum for dummies - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on agile scrum for dummies at Amazon.com. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "query": "scrum framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:40:34.665583"
+    },
+    {
+      "title": "What is Scrum? | Scrum.org",
+      "content": "Scrum is an agile framework for team collaboration and problem solving, inspired by the sport of rugby. Learn the basics of Scrum, the Scrum Guide, the Scrum Values and Professional Scrum from the Scrum community.",
+      "query": "scrum framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:40:34.665628"
+    },
+    {
+      "title": "What is Scrum? Understanding the Agile Framework for ... - GeeksforGeeks",
+      "content": "The Scrum framework has been used since the early 1990s. Scrum is a framework that can be used for building products. This article focuses on discussing Scrum in detail. So, let's delve deeper into what Scrum entails, its key principles, and how it revolutionizes the way teams work together to deliver high-quality results.",
+      "query": "scrum framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:40:34.665663"
+    },
+    {
+      "title": "What is scrum? - Scrum Alliance",
+      "content": "Discover how the scrum framework can revolutionize the way you work. Support teams to innovate and solve complex problems with scrum events, artifacts, and accountabilities.",
+      "query": "scrum framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:40:34.665695"
+    },
+    {
+      "title": "What is Scrum? - Main Components of Scrum Framework",
+      "content": "What is Scrum? Main Components of the Scrum Framework Definition of Scrum: Scrum is a lightweight agile project management framework mainly used for software development. It describes an iterative and incremental approach to deliver work, solve problems for commercial and non-profit projects across all industries and fields in life. Scrum is a set of components that gives structure to agile ...",
+      "query": "scrum framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:40:34.665728"
+    },
+    {
+      "title": "Random forest - Wikipedia",
+      "content": "Random forest is a technique that creates multiple decision trees from random subsets of the training data and combines their predictions. It reduces the variance of the model and improves its accuracy for classification, regression and other tasks.",
+      "query": "random forests",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:50:31.298697"
+    },
+    {
+      "title": "Random Forest Algorithm in Machine Learning - GeeksforGeeks",
+      "content": "Random Forest is a machine learning algorithm that uses many decision trees to make better predictions. Each tree looks at different random parts of the data and their results are combined by voting for classification or averaging for regression which makes it as ensemble learning technique. This helps in improving accuracy and reducing errors.",
+      "query": "random forests",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:50:31.298732"
+    },
+    {
+      "title": "Random Forests | Machine Learning - Springer",
+      "content": "Random forests are a combination of tree predictors such that each tree depends on the values of a random vector sampled independently and with the same distribution for all trees in the forest.",
+      "query": "random forests",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:50:31.298758"
+    },
+    {
+      "title": "What is random forest? - IBM",
+      "content": "Random forest is a commonly-used machine learning algorithm that combines the output of multiple decision trees to reach a single result.",
+      "query": "random forests",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:50:31.298784"
+    },
+    {
+      "title": "PDF Random Forests",
+      "content": "Random Forests Random forests is an ensemble learning algorithm. The basic premise of the algorithm is that building a small decision-tree with few features is a computa-tionally cheap process. If we can build many small, weak decision trees in parallel, we can then combine the trees to form a single, strong learner by averaging or tak-ing the majority vote. In practice, random forests are ...",
+      "query": "random forests",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:50:31.298812"
+    },
+    {
+      "title": "Fuck - Wikipedia",
+      "content": "Fuck (/ f\u028ck /) is a profanity in the English language that often refers to the act of sexual intercourse, but is also commonly used as an intensifier or to convey disdain. While its origin is obscure, it is usually considered to be first attested to around 1475. [2] In modern usage, the term fuck and its derivatives (such as fucker and fucking) are used as a noun, a verb, an adjective, an ...",
+      "query": "fuck",
+      "source": "research",
+      "learned_at": "2025-11-23T18:50:41.050626"
+    },
+    {
+      "title": "FUCK Definition & Meaning - Merriam-Webster",
+      "content": "The meaning of FUCK is copulate. How to use fuck in a sentence.",
+      "query": "fuck",
+      "source": "research",
+      "learned_at": "2025-11-23T18:50:41.050676"
+    },
+    {
+      "title": "FUCK | English meaning - Cambridge Dictionary",
+      "content": "FUCK definition: 1. a rude word meaning to have sex with someone 2. a rude word used when expressing extreme anger\u2026. Learn more.",
+      "query": "fuck",
+      "source": "research",
+      "learned_at": "2025-11-23T18:50:41.050712"
+    },
+    {
+      "title": "50 uses of the word fuck with phrases and examples",
+      "content": "50 uses of the word fuck with phrases and examples The term \"fuck\" is short and punchy; its usage limitless. Perhaps its most impressive quality is its versatility: it can be used as a noun, an adverb, a verb, an adjective, an interjection, or really anything you want it to be. Updated for 2025 with even more ways to use the F* word!",
+      "query": "fuck",
+      "source": "research",
+      "learned_at": "2025-11-23T18:50:41.050747"
+    },
+    {
+      "title": "fuck verb - Definition, pictures, pronunciation and usage notes ...",
+      "content": "Definition of fuck verb in Oxford Advanced Learner's Dictionary. Meaning, pronunciation, picture, example sentences, grammar, usage notes, synonyms and more.",
+      "query": "fuck",
+      "source": "research",
+      "learned_at": "2025-11-23T18:50:41.050779"
+    },
+    {
+      "title": "Facial Detection For Security - Facial Recognition AI Tech",
+      "content": "Clearview AI's 99%+ accurate facial recognition platform identifies faces instantly. Advanced technology designed to speed up investigations and identify faces accurately",
+      "query": "facial recognition",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:57:16.557419"
+    },
+    {
+      "title": "Face Recognition - Learn with Face Recognition",
+      "content": "Check Face Recognition: Review, Screenshots, Pros, Contras and Faq. Download Face Recognition from official stores with updated features and fixes",
+      "query": "facial recognition",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:57:16.557520"
+    },
+    {
+      "title": "Facial recognition system - Wikipedia",
+      "content": "Facial recognition software at a US airport Automatic ticket gate with face recognition system in Osaka Metro Morinomiya Station A facial recognition system[1] is a technology potentially capable of matching a human face from a digital image or a video frame against a database of faces. Such a system is typically employed to authenticate users through ID verification services, and works by ...",
+      "query": "facial recognition",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:57:16.557570"
+    },
+    {
+      "title": "Facial Recognition Technology: How It Works, Where It's Used, and What ...",
+      "content": "How Facial Recognition Works At its core, facial recognition uses software to determine similarity between two face images. It's a form of biometric identification that automatically recognizes individuals based on unique biological characteristics.",
+      "query": "facial recognition",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:57:16.557620"
+    },
+    {
+      "title": "ICE agents have new tools to track and ID people : NPR",
+      "content": "The growing use of facial recognition technology comes as DHS published a proposed rule that would expand the agency's ability to ask for biometric data from noncitizens and their U.S. citizen ...",
+      "query": "facial recognition",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:57:16.557668"
+    },
+    {
+      "title": "Flutter - Build apps for any screen",
+      "content": "Flutter transforms the entire app development process. Build, test, and deploy beautiful mobile, web, desktop, and embedded apps from a single codebase.",
+      "query": "Flutter framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:00:10.731538"
+    },
+    {
+      "title": "Flutter (software) - Wikipedia",
+      "content": "Flutter is an open-source UI software development kit created by Google. It can be used to develop cross platform applications from a single codebase for the web, [4] Fuchsia, Android, iOS, Linux, macOS, and Windows. [5]",
+      "query": "Flutter framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:00:10.731579"
+    },
+    {
+      "title": "Flutter Tutorial - GeeksforGeeks",
+      "content": "This Flutter Tutorial is specifically designed for beginners and experienced professionals. It covers both the basics and advanced concepts of the Flutter framework. Flutter is Google's mobile SDK that builds native Android and iOS apps from a single codebase. It was developed in December 2017. When building applications with Flutter, everything is geared towards Widgets - the blocks with ...",
+      "query": "Flutter framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:00:10.731616"
+    },
+    {
+      "title": "Flutter documentation",
+      "content": "Get started with Flutter. Widgets, examples, updates, and API docs to help you write your first Flutter app.",
+      "query": "Flutter framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:00:10.731648"
+    },
+    {
+      "title": "Get started with Flutter",
+      "content": "Install the Flutter SDK, set up any initial target platform, and get started learning and developing with Flutter!",
+      "query": "Flutter framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:00:10.731679"
+    },
+    {
+      "title": "Mobile development with Xamarin | .NET",
+      "content": "See the Xamarin support policy for details. We recommend you use .NET Multi-platform App UI (.NET MAUI), the evolution of Xamarin.Forms, which lets you create Android, iOS, macOS, and Windows apps with a modern, cross-platform framework.",
+      "query": "Xamarin framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:00:22.414988"
+    },
+    {
+      "title": "Xamarin - Wikipedia",
+      "content": "Xamarin is a Microsoft-owned subsidiary that develops tools and libraries for building apps with C# across multiple platforms. Learn about its history, products, funding, acquisition, and end of support for Xamarin.",
+      "query": "Xamarin framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:00:22.415060"
+    },
+    {
+      "title": "Introduction to Xamarin | A Software for Mobile App ... - GeeksforGeeks",
+      "content": "Xamarin.Forms Xamarin provides developers two ways to build a mobile app. Either by using Xamarin.iOS and Xamarin.Android (main approach) or by using Xamarin.Forms which is a framework for simple apps and prototypes. Xamarin.Forms, the Visual Studio Library facilitates for rapid prototyping or building apps with few platform-specific ...",
+      "query": "Xamarin framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:00:22.415121"
+    },
+    {
+      "title": "Xamarin Open Source SDK",
+      "content": "Xamarin brings open source .NET to mobile development, enabling every developer to build truly native apps for any device in C# and F#. We're excited for your contributions in continuing our mission to make it fast, easy, and fun to build great mobile apps.",
+      "query": "Xamarin framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:00:22.415175"
+    },
+    {
+      "title": "Xamarin: Complete Definition & Examples [2025]",
+      "content": "A Microsoft framework for building iOS, Android, and Windows apps with .NET. Overview Xamarin is a fundamental concept in mobile development that every developer should understand. It provides a robust foundation for building modern applications and is widely used across the industry. Key Characteristics Xamarin offers several important features: Simplicity: Easy to understand and implement ...",
+      "query": "Xamarin framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:00:22.415232"
+    },
+    {
+      "title": "Hash function - Wikipedia",
+      "content": "A hash function is a function that maps data of arbitrary size to fixed-size values, used to index a hash table or perform other operations. Learn about the types, design, implementation and applications of hash functions, as well as their advantages and limitations.",
+      "query": "hash functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:01:53.812926"
+    },
+    {
+      "title": "Hash Functions and Types of Hash functions - GeeksforGeeks",
+      "content": "Hash functions are a fundamental concept in computer science and play a crucial role in various applications such as data storage, retrieval, and cryptography. A hash function creates a mapping from an input key to an index in hash table.",
+      "query": "hash functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:01:53.812993"
+    },
+    {
+      "title": "What Is a Hash Function? Simple Guide for Beginners",
+      "content": "Learn what a hash function is, how it works, and why it matters for cybersecurity. Explore common hashing algorithms, their strengths and limitations, and how they power digital signatures, blockchain, and more.",
+      "query": "hash functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:01:53.813042"
+    },
+    {
+      "title": "What Are Hash Functions? - codefinity.com",
+      "content": "Hash functions are a fundamental aspect of computer science, pivotal in cryptography, data security, and efficient data handling. They are vital for securing passwords, powering blockchain technology, and much more. This article delves into the concept, applications, and mechanics of hash functions to provide a clearer understanding of their role in modern technology.",
+      "query": "hash functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:01:53.813091"
+    },
+    {
+      "title": "Hash Functions | Practical Cryptography for Developers - Nakov",
+      "content": "Learn what hash functions are, how they work, and why they are important in cryptography. See examples of hash functions such as SHA-256 and SHA3-256, and how to use them in Python and JavaScript.",
+      "query": "hash functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:01:53.813139"
+    },
+    {
+      "title": "About firewall configuration",
+      "content": "firewall configuration is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "firewall configuration",
+      "source": "structured",
+      "learned_at": "2025-11-23T20:47:52.559164"
+    },
+    {
+      "title": "Shop fido u2f security key - Amazon.com\u00ae Official Site",
+      "content": "Find deals and compare prices on fido u2f security key at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "query": "two factor authentication",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:15:08.941683"
+    },
+    {
+      "title": "Authenticate Without Friction - One Dashboard for Access",
+      "content": "Enable passwordless access to vaults and workstations with Authenticator. Add MFA to vaults and business apps to block unauthorized use",
+      "query": "two factor authentication",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:15:08.941756"
+    },
+    {
+      "title": "What Is Two-Factor Authentication (2FA)? | Microsoft Security",
+      "content": "Learn what 2FA is, how it works, and why businesses use it to protect their data and networks. Compare 2FA with multi-factor authentication (MFA) and find out how to implement 2FA with Microsoft's Authenticator app.",
+      "query": "two factor authentication",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:15:08.941822"
+    },
+    {
+      "title": "What is Two-Factor Authentication (2FA), and How can it be Enabled?",
+      "content": "Learn what 2FA is, how it works, and why it is important for cybersecurity. Explore the different types of 2FA factors, such as hardware tokens, SMS, push notifications, and biometrics.",
+      "query": "two factor authentication",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:15:08.941883"
+    },
+    {
+      "title": "Two-Factor Authentication (2FA): What it is, how it works, and ... - ESET",
+      "content": "What is Two-Factor Authentication (2FA): What it is, how it works, and why it matters Two-factor authentication (2FA) adds a second layer of login security. Discover the best methods and how to enable them.",
+      "query": "two factor authentication",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:15:08.941945"
+    },
+    {
+      "title": "Multi Factor Authentication - Try it 30 days free of charge",
+      "content": "Looking for an affordable alternative to Google Optimize? Try Varify.io\u00ae for 30 days. Quick A/B testing with no limits. Efficient and straightforward. Try it free for 30 days.",
+      "query": "multi factor authentication",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:15:20.219966"
+    },
+    {
+      "title": "What is: Multifactor Authentication - Microsoft Support",
+      "content": "Multifactor authentication is a way of confirming your identity when you sign into online accounts with more than just a username and password. Learn how it works, why it's important, and how to enable it for your Microsoft account and other services.",
+      "query": "multi factor authentication",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:15:20.220001"
+    },
+    {
+      "title": "What is MFA (multifactor authentication)? - IBM",
+      "content": "Multifactor authentication (MFA) verifies a user's identity by requiring at least two forms of proof, such as a password, fingerprint or other biometric data.",
+      "query": "multi factor authentication",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:15:20.220027"
+    },
+    {
+      "title": "What is multi-factor authentication (MFA)? - Cisco",
+      "content": "Learn what MFA is, how it works, and why it is needed to protect your applications and data. Cisco provides examples, benefits, methods, and tips for using MFA effectively.",
+      "query": "multi factor authentication",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:15:20.220050"
+    },
+    {
+      "title": "What is multifactor authentication? - TechTarget",
+      "content": "Learn what multifactor authentication is, how it works and the different methods. Examine its pros and cons and best practices for implementing MFA.",
+      "query": "multi factor authentication",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:15:20.220075"
+    },
+    {
+      "title": "What is function as a service (FaaS)? - IBM",
+      "content": "Function as a service (FaaS) is a cloud-computing service that allows customers to run code in response to events, without managing the complex infrastructure typically associated with building and launching microservices applications.",
+      "query": "function as a service",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:17:04.617527"
+    },
+    {
+      "title": "Function as a service - Wikipedia",
+      "content": "Function as a service is a cloud capability that enables microservices applications with low scalability investment. Learn about its anti-patterns, portability issues, and related concepts such as serverless computing and hexagonal architecture.",
+      "query": "function as a service",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:17:04.617564"
+    },
+    {
+      "title": "Function as a Service (Faas) - System Design - GeeksforGeeks",
+      "content": "Function as a Service (Faas) is an important approach to software development where you create small, specialized functions to handle specific tasks. Instead of building entire applications, developers focus on writing these functions, which are then executed in response to events or requests. This article is your go-to resource for understanding and implementing Function as a Service.",
+      "query": "function as a service",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:17:04.617599"
+    },
+    {
+      "title": "What is Function-as-a-Service (FaaS)? | Cloudflare",
+      "content": "What is Function-as-a-Service? Function-as-a-Service (FaaS) is a serverless way to execute modular pieces of code on the edge. FaaS lets developers write and update a piece of code on the fly, which can then be executed in response to an event, such as a user clicking on an element in a web application.",
+      "query": "function as a service",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:17:04.617630"
+    },
+    {
+      "title": "What is Function-as-a-Service (FaaS)? - Red Hat",
+      "content": "FaaS is a kind of cloud computing service that allows developers to build, run, and manage application packages as functions without maintaining the infrastructure.",
+      "query": "function as a service",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:17:04.617658"
+    },
+    {
+      "title": "Shop basic networking book - Amazon\u00ae Official Site",
+      "content": "Browse & discover thousands of unique brands. Read customer reviews & best sellers. Find deals and compare prices on basic networking book at Amazon.com",
+      "query": "networking fundamentals",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:35.953133"
+    },
+    {
+      "title": "Basics of Computer Networking - GeeksforGeeks",
+      "content": "A computer network is a collection of interconnected devices that share resources and information. These devices can include computers, servers, printers, and other hardware. Networks allow for the efficient exchange of data, enabling various applications such as email, file sharing, and internet browsing. Basic Terminologies of Computer Networks Basic if computer Networks Network: A group of ...",
+      "query": "networking fundamentals",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:35.953206"
+    },
+    {
+      "title": "Fundamentals of computer networking - Training | Microsoft Learn",
+      "content": "Learn the fundamental principles of computer networking to prepare you for the Azure admin and developer learning paths.",
+      "query": "networking fundamentals",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:35.953266"
+    },
+    {
+      "title": "PDF Networking Fundamentals - Cisco",
+      "content": "Learn the basics of networking, including hubs, switches, routers, firewalls, gateways, and the OSI model. This document covers the objectives, topics, and definitions of networking fundamentals for small and medium businesses.",
+      "query": "networking fundamentals",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:35.953328"
+    },
+    {
+      "title": "Networking Basic Concepts and Fundamentals Explained",
+      "content": "Learn the essential components and classification of computer networks with examples. This tutorial covers end devices, media, protocols, networking devices, and more.",
+      "query": "networking fundamentals",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:35.953388"
+    },
+    {
+      "title": "File system - Wikipedia",
+      "content": "File system ... In computing, a file system or filesystem (often abbreviated to FS or fs) governs file organization and access. A local file system is a capability of an operating system that services the applications running on the same computer. [1][2] A distributed file system is a protocol that provides file access between networked computers.",
+      "query": "file systems",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:23:12.972311"
+    },
+    {
+      "title": "File Systems in Operating System - GeeksforGeeks",
+      "content": "File systems are a crucial part of any operating system, providing a structured way to store, organize and manage data on storage devices such as hard drives, SSDs and USB drives.",
+      "query": "file systems",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:23:12.972348"
+    },
+    {
+      "title": "What Is a File System? Types of Computer File Systems and How they Work ...",
+      "content": "Learn what file systems are, why they are essential, and how they work with various storage devices and operating systems. Explore different file system types, their key components, features, and interactions with examples.",
+      "query": "file systems",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:23:12.972375"
+    },
+    {
+      "title": "What Is a File System? File System Types and Examples Explained",
+      "content": "Learn what a file system is and how it works. Explore different types of file systems, such as disk, flash, tape, database, and network file systems, and their features and examples.",
+      "query": "file systems",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:23:12.972402"
+    },
+    {
+      "title": "What Is a File System? Types of Computer File Systems and How they Work ...",
+      "content": "Learn what a file system is and how it works on different storage devices and operating systems. Discover the concepts of partitioning, booting, firmware, and file systems architecture with examples.",
+      "query": "file systems",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:23:12.972427"
+    },
+    {
+      "title": "Depth-first search - Wikipedia",
+      "content": "Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structures. Learn about its properties, applications, examples, and vertex orderings.",
+      "query": "depth first search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:28:52.919977"
+    },
+    {
+      "title": "Depth First Search or DFS for a Graph - GeeksforGeeks",
+      "content": "Given a graph, traverse the graph using Depth First Search and find the order in which nodes are visited. Depth First Search (DFS) is a graph traversal method that starts from a source vertex and explores each path completely before backtracking and exploring other paths.",
+      "query": "depth first search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:28:52.920070"
+    },
+    {
+      "title": "Depth First Search (DFS) Algorithm - Programiz",
+      "content": "Learn how to use DFS to traverse all the vertices of a graph or tree data structure. See the pseudocode, implementation, example, and applications of DFS in Python, Java, and C/C++.",
+      "query": "depth first search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:28:52.920134"
+    },
+    {
+      "title": "Depth First Search (DFS) - Iterative and Recursive Implementation",
+      "content": "Learn how to traverse or search tree or graph data structures using depth first search (DFS) algorithm. See recursive and iterative code examples in C++, Java and Python, and explore the applications of DFS in AI and computer science.",
+      "query": "depth first search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:28:52.920202"
+    },
+    {
+      "title": "Depth-First Search (DFS) Algorithm Explained - Codecademy",
+      "content": "Learn Depth-First Search (DFS) algorithm with step-by-step explanations, pseudocode, and Python examples in this complete, beginner-friendly guide.",
+      "query": "depth first search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:28:52.920260"
+    },
+    {
+      "title": "Breadth First Search or BFS for a Graph - GeeksforGeeks",
+      "content": "Breadth First Search (BFS) is a graph traversal algorithm that starts from a source node and explores the graph level by level. First, it visits all nodes directly adjacent to the source.",
+      "query": "breadth first search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:29:04.087539"
+    },
+    {
+      "title": "Breadth-first search - Wikipedia",
+      "content": "Learn about breadth-first search (BFS), an algorithm for searching a tree or a graph for a node that satisfies a given property. See examples, pseudocode, complexity, applications and variations of BFS.",
+      "query": "breadth first search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:29:04.087598"
+    },
+    {
+      "title": "Breadth first search",
+      "content": "Learn how to use Breadth First Search (BFS) to visit all the vertices of a graph or tree data structure. See the pseudocode, examples, and applications of BFS in Python, Java, and C/C++.",
+      "query": "breadth first search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:29:04.087647"
+    },
+    {
+      "title": "Breadth-First Search - University of San Francisco",
+      "content": "Interactive visualization of the Breadth-First Search algorithm to understand its working and applications effectively.",
+      "query": "breadth first search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:29:04.087692"
+    },
+    {
+      "title": "Breadth-First Search (BFS) Algorithm Explained - Codecademy",
+      "content": "Master breadth-first search (BFS) with this beginner-friendly guide. Explore its algorithm, implementation, time complexity, and real-world applications.",
+      "query": "breadth first search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:29:04.087738"
+    },
+    {
+      "title": "EY - AI Regulation - Read Our Latest AI Insights",
+      "content": "Learn More About the Future of AI and How to Thrive in Different Future Scenarios. Navigate the Futures of AI with Our Latest Insights. Which Future Aligns with Your Vision?",
+      "query": "fairness in AI",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T12:29:26.148011"
+    },
+    {
+      "title": "Fairness and Bias in Artificial Intelligence - GeeksforGeeks",
+      "content": "Fairness and bias in artificial intelligence (AI) are critical issues that have gained significant attention in recent years. As AI systems are increasingly being used in various domains and applications, it is crucial to ensure that these systems are fair, unbiased, and equitable. Here's a detailed overview of fairness and bias in AI.",
+      "query": "fairness in AI",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T12:29:26.148063"
+    },
+    {
+      "title": "Fairness (machine learning) - Wikipedia",
+      "content": "Fairness in machine learning (ML) refers to the various attempts to correct algorithmic bias in automated decision processes based on ML models. Decisions made by such models after a learning process may be considered unfair if they were based on variables considered sensitive (e.g., gender, ethnicity, sexual orientation, or disability). As is the case with many ethical concepts, definitions ...",
+      "query": "fairness in AI",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T12:29:26.148100"
+    },
+    {
+      "title": "Understanding Bias and Fairness in AI Systems - Towards Data Science",
+      "content": "Learn how bias and fairness affect AI applications and how to address them. Explore examples of bias in data, modeling, and human review, and the trade-offs between group and individual fairness.",
+      "query": "fairness in AI",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T12:29:26.148136"
+    },
+    {
+      "title": "AI Fairness: from Principles to Practice - arXiv.org",
+      "content": "This paper summarizes and evaluates various approaches, methods, and techniques for pursuing fairness in artificial intelligence (AI) systems. It examines the merits and shortcomings of these measures and proposes practical guidelines for defining, measuring, and preventing bias in AI.",
+      "query": "fairness in AI",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T12:29:26.148175"
+    },
+    {
+      "title": "Feature Importance with Random Forests - GeeksforGeeks",
+      "content": "Feature Importance in Random Forests measures how much each feature contributes to the model's prediction accuracy. It helps in identifying the most influential input variables, improving performance, interpretability and computational efficiency. It enhances model transparency by ranking influential features.",
+      "query": "feature importance",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T12:54:21.408292"
+    },
+    {
+      "title": "Feature importances with a forest of trees - scikit-learn",
+      "content": "Learn how to use a random forest classifier to compute the feature importances of an artificial dataset. Compare the impurity-based and permutation-based methods and see the plots of feature importance.",
+      "query": "feature importance",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T12:54:21.408357"
+    },
+    {
+      "title": "What Is Feature Importance in Machine Learning? - Baeldung",
+      "content": "Learn what feature importance is and how to measure it in ML models. Explore different methods such as correlation, prediction, permutation, and model-specific techniques.",
+      "query": "feature importance",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T12:54:21.408406"
+    },
+    {
+      "title": "How to Calculate Feature Importance With Python ...",
+      "content": "Learn how to assign scores to input features based on how useful they are at predicting a target variable. Explore different types and sources of feature importance scores, such as coefficients, decision trees, and permutation testing, for regression and classification problems.",
+      "query": "feature importance",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T12:54:21.408454"
+    },
+    {
+      "title": "Understanding Feature Importance in Machine Learning - Medium",
+      "content": "What is Feature Importance? Feature importance is a technique that determines the contribution of each feature (or variable) in a dataset toward a machine learning model's predictions.",
+      "query": "feature importance",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T12:54:21.408504"
+    },
+    {
+      "title": "What is Feature Engineering? - GeeksforGeeks",
+      "content": "Feature Engineering is the process of selecting, creating or modifying features like input variables or data to help machine learning models learn patterns more effectively. It involves transforming raw data into meaningful inputs that improve model accuracy and performance. Feature Engineering Architecture This step may include handling missing values, encoding categories, scaling numbers ...",
+      "query": "feature engineering",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:38:28.925129"
+    },
+    {
+      "title": "What is a feature engineering? | IBM",
+      "content": "What is feature engineering? Feature engineering preprocesses raw data into a machine-readable format. It optimizes ML model performance by transforming and selecting relevant features. Feature engineering is the process of transforming raw data into relevant information for use by machine learning models.",
+      "query": "feature engineering",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:38:28.925191"
+    },
+    {
+      "title": "Feature engineering - Wikipedia",
+      "content": "Feature engineering is a preprocessing step in supervised machine learning and statistical modeling [1] which transforms raw data into a more effective set of inputs. Each input comprises several attributes, known as features. By providing models with relevant information, feature engineering significantly enhances their predictive accuracy and decision-making capability. [2][3][4] Beyond ...",
+      "query": "feature engineering",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:38:28.925234"
+    },
+    {
+      "title": "Feature Engineering for Machine Learning Models: Techniques, Examples ...",
+      "content": "Feature engineering focuses on gathering key variables from data, which are specific to your use case. You can work with machine learning models in high-demand careers, such as a machine learning engineer and a data scientist. Learn more about how feature engineering can help train machine learning models and lead to more accurate predictions.",
+      "query": "feature engineering",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:38:28.925276"
+    },
+    {
+      "title": "What is Feature Engineering? - Feature Engineering Explained - AWS",
+      "content": "Feature engineering is challenging because it involves a combination of data analysis, business domain knowledge, and some intuition. When creating features, it's tempting to go immediately to available data, but often you should start by considering which data is required by speaking with experts, brainstorming, and doing third-party research.",
+      "query": "feature engineering",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:38:28.925324"
+    },
+    {
+      "title": "Feature Selection Techniques in Machine Learning",
+      "content": "Feature selection is a core step in preparing data for machine learning where the goal is to identify and keep only the input features that contribute most to accurate predictions. By focusing on the most relevant variables, feature selection helps build models that are simpler, faster, less prone to overfitting and easier to interpret especially when we use datasets containing many features ...",
+      "query": "feature selection",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:38:40.265456"
+    },
+    {
+      "title": "A Complete Guide to Feature Selection Methods - Statology",
+      "content": "Feature selection is an essential step in the building of robust, efficient, and interpretable machine learning models. With the proper application of methods and adherence to best practices, one will be able to shrink model complexity, enhance accuracy, and gain computational efficiency.",
+      "query": "feature selection",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:38:40.265506"
+    },
+    {
+      "title": "Feature selection - Wikipedia",
+      "content": "Learn about feature selection, the process of choosing relevant features for machine learning models. Compare different methods (wrappers, filters, embedded) and metrics (correlation, mutual information, error rate) for evaluating feature subsets.",
+      "query": "feature selection",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:38:40.265545"
+    },
+    {
+      "title": "1.13. Feature selection \u2014 scikit-learn 1.7.2 documentation",
+      "content": "Learn how to use various feature selection techniques in scikit-learn, a Python machine learning library. Compare different approaches such as variance threshold, univariate tests, recursive elimination, and select from model.",
+      "query": "feature selection",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:38:40.265581"
+    },
+    {
+      "title": "What is feature selection? - IBM",
+      "content": "Feature selection is the process of selecting the most relevant features of a dataset to use when building and training a machine learning model.",
+      "query": "feature selection",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:38:40.265618"
+    },
+    {
+      "title": "Feature Engineering: Scaling, Normalization and Standardization",
+      "content": "Feature engineering is the process of creating, transforming or selecting the most relevant variables (features) from raw data to improve model performance. Effective features help the model capture important patterns and relationships in the data.",
+      "query": "feature scaling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:54:51.941460"
+    },
+    {
+      "title": "Feature scaling - Wikipedia",
+      "content": "Feature scaling is a method used to normalize the range of independent variables or features of data. In data processing, it is also known as data normalization and is generally performed during the data preprocessing step.",
+      "query": "feature scaling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:54:51.941894"
+    },
+    {
+      "title": "Importance of Feature Scaling \u2014 scikit-learn 1.7.2 documentation",
+      "content": "Learn how feature scaling through standardization affects machine learning algorithms such as KNeighborsClassifier and PCA. See examples and visualizations of the impact of scaling on decision boundaries and principal components.",
+      "query": "feature scaling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:54:51.941945"
+    },
+    {
+      "title": "What is Feature Scaling and Why Does Machine Learning Need It?",
+      "content": "Discover the significance of feature scaling in machine learning. Understand how normalizing data can accelerate model training, enhance accuracy, and why algorithms require it for optimal ...",
+      "query": "feature scaling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:54:51.941994"
+    },
+    {
+      "title": "What is Feature Scaling and Why is it Important?",
+      "content": "Learn what feature scaling is, why it is important, and how to apply it to different types of data and algorithms. Compare normalization and standardization techniques and see how they affect model performance and convergence.",
+      "query": "feature scaling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:54:51.942040"
+    },
+    {
+      "title": "2025 RACE RESULTS - Formula 1",
+      "content": "Enter the world of Formula 1. Your go-to source for the latest F1 news, video highlights, GP results, live timing, in-depth analysis and expert commentary.",
+      "query": "F1 score",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:40:27.288509"
+    },
+    {
+      "title": "F1 results: Las Vegas GP standings, how the World Championship stands ...",
+      "content": "Formula 1 F1 results: Las Vegas GP standings, how the World Championship stands after McLaren's disqualification Verstappen took the win after Norris's poor start; Norris finished second.",
+      "query": "F1 score",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:40:27.288590"
+    },
+    {
+      "title": "F1 Las Vegas Grand Prix results: Who won, full ... - Sporting News",
+      "content": "The full race results and updated standings after the Las Vegas Grand Prix under the lights of the city streets.",
+      "query": "F1 score",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:40:27.288655"
+    },
+    {
+      "title": "F1 standings after Las Vegas Grand Prix disqualification, Lando Norris ...",
+      "content": "F1 standings after Las Vegas Grand Prix disqualification, Lando Norris leads Oscar Piastri and Max Verstappen M By Michael Doyle Formula 1 Sun 23 Nov",
+      "query": "F1 score",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:40:27.288719"
+    },
+    {
+      "title": "Formula 1 on ESPN - Grand Prix Results, News and Standings",
+      "content": "Visit ESPN for live scores, highlights and sports news. Stream exclusive games on ESPN and play fantasy sports.",
+      "query": "F1 score",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:40:27.288782"
+    },
+    {
+      "title": "Forecasting",
+      "content": "Forecasting is the process of making predictions based on past and present data. Later these can be compared with what actually happens. For example, a company might estimate their revenue in the next year, then compare it against the actual results creating a variance actual analysis. Prediction is a similar but more general term. Forecasting might refer to specific formal statistical methods employing time series, cross-sectional or longitudinal data, or alternatively to less formal judgmental",
+      "query": "forecasting",
+      "source": "wikipedia",
+      "learned_at": "2025-11-24T16:02:55.801328"
+    },
+    {
+      "title": "Forecasting Solution \u2122 - Demand Forecasting Made Simple",
+      "content": "Maximize your market potential with accurate forecasts and insights from Forecast Pro. Boost accuracy and save time with Forecast Pro. Powerful statistical models.",
+      "query": "forecasting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:02:56.617813"
+    },
+    {
+      "title": "Forecasting - Wikipedia",
+      "content": "Forecasting is the process of making predictions based on past and present data. Learn about the different fields, methods and techniques of forecasting, as well as the challenges and benefits of forecasting accuracy and uncertainty.",
+      "query": "forecasting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:02:56.617891"
+    },
+    {
+      "title": "What is forecasting? - IBM",
+      "content": "Forecasting is a method of predicting a future event or condition by analyzing patterns and uncovering trends in previous and current data. It employs mathematical approaches and applies statistical models to generate predictions.",
+      "query": "forecasting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:02:56.617955"
+    },
+    {
+      "title": "Forecasting - Overview, Methods and Features, Steps",
+      "content": "Learn what forecasting is, how it differs from budgeting, and what methods and features are used in forecasting. Follow the process of forecasting and the sources of data for forecasting.",
+      "query": "forecasting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:02:56.618019"
+    },
+    {
+      "title": "10 Day Weather - USC, Los Angeles, California",
+      "content": "Be prepared with the most accurate 10-day forecast for USC, Los Angeles, California with highs, lows, chance of precipitation from The Weather Channel and Weather.com",
+      "query": "forecasting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:02:56.618081"
+    },
+    {
+      "title": "Shop frequentist statistics - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on frequentist statistics at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "query": "frequentist statistics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:37:45.701154"
+    },
+    {
+      "title": "Frequentist inference - Wikipedia",
+      "content": "Frequentist inference is a type of statistical inference based in frequentist probability, which treats \"probability\" in equivalent terms to \"frequency\" and draws conclusions from sample-data by means of emphasizing the frequency or proportion of findings in the data. Frequentist inference underlies frequentist statistics, in which the well-established methodologies of statistical hypothesis ...",
+      "query": "frequentist statistics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:37:45.701215"
+    },
+    {
+      "title": "Comparing Frequentist and Bayesian Approaches - Statology",
+      "content": "There are two primary approaches for inference: Frequentist and Bayesian. Each framework relies on a different philosophical perspective on probability and modeling, leading to different techniques and interpretations.",
+      "query": "frequentist statistics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:37:45.701263"
+    },
+    {
+      "title": "Frequentist Statistics: Definition, Simple Examples",
+      "content": "Frequentist statistics (sometimes called frequentist inference) is an approach to statistics. Frequentist statistics uses formal frameworks and rules to conduct hypothesis tests and find p-values and confidence Intervals.",
+      "query": "frequentist statistics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:37:45.701313"
+    },
+    {
+      "title": "Frequentist vs Bayesian Approaches in Machine Learning",
+      "content": "Frequentist and Bayesian approaches are two fundamental methodologies in machine learning and statistics, each with distinct principles and interpretations. Here, we will see how these two approaches differ.",
+      "query": "frequentist statistics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:37:45.701359"
+    },
+    {
+      "title": "About test frameworks",
+      "content": "test frameworks is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "test frameworks",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:27:04.004170"
+    },
+    {
+      "title": "About fuzz testing",
+      "content": "fuzz testing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "fuzz testing",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:29:23.749627"
+    },
+    {
+      "title": "About IDE features",
+      "content": "IDE features is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "IDE features",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:33:28.217315"
+    },
+    {
+      "title": "About GitHub Flow",
+      "content": "GitHub Flow is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "GitHub Flow",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:37:25.846904"
+    },
+    {
+      "title": "About feature branches",
+      "content": "feature branches is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "feature branches",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:37:47.354857"
+    },
+    {
+      "title": "About feature flags",
+      "content": "feature flags is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "feature flags",
+      "source": "structured",
+      "learned_at": "2025-11-24T20:49:23.867998"
+    },
+    {
+      "title": "About feature toggles",
+      "content": "feature toggles is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "feature toggles",
+      "source": "structured",
+      "learned_at": "2025-11-24T21:40:54.604476"
+    },
+    {
+      "title": "About funnel analysis",
+      "content": "funnel analysis is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "funnel analysis",
+      "source": "structured",
+      "learned_at": "2025-11-25T03:40:44.174981"
+    },
+    {
+      "title": "Focus Groups - Participate in Paid Research",
+      "content": "Earn Money from Paid Focus Groups and Marketing Research Online or in Your Local Area! Benefit From Our Exclusive Database of In-demand Side Hustles & Contingent Remote Work.",
+      "query": "focus groups",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-25T07:18:09.882988"
+    },
+    {
+      "title": "Find Focus Groups Facilities & other Studies in Your City | FocusGroups.org",
+      "content": "Click here to apply for studies - focus groups, clinical trials, online research, apps and earn $$$! Browse our listings to find paid market research studies in US. Visit our page & Sign up!",
+      "query": "focus groups",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-25T07:18:09.883068"
+    },
+    {
+      "title": "Focus Groups - Steps, Examples and Guide - Research Method",
+      "content": "Learn how to conduct focus groups, a qualitative research method to gather in-depth insights from a small group of people on a specific topic. Find out the key features, steps, tips, and applications of focus groups with examples and a guide.",
+      "query": "focus groups",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-25T07:18:09.883134"
+    },
+    {
+      "title": "Focus Group",
+      "content": "Some sites only reward you for online surveys. At Focus Group, you can also join focus groups, personal discussions, web chats, video diaries, product tests, telephone conversations, and more. With surveys, webcam focus groups, or discussions at a time that suits you. Chat with a friendly researcher for a personal interview or survey.",
+      "query": "focus groups",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-25T07:18:09.883202"
+    },
+    {
+      "title": "What is a Focus Group | Step-by-Step Guide & Examples - Scribbr",
+      "content": "Learn what a focus group is, how to choose your topic, questions, participants, and moderator, and how to analyze your data. A focus group is a qualitative research method that brings together a small group of people to answer questions in a moderated setting.",
+      "query": "focus groups",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-25T07:18:09.883267"
+    },
+    {
+      "title": "About field studies",
+      "content": "field studies is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "field studies",
+      "source": "structured",
+      "learned_at": "2025-11-25T07:27:24.960741"
+    },
+    {
+      "title": "About fiction writing",
+      "content": "fiction writing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "fiction writing",
+      "source": "structured",
+      "learned_at": "2025-11-25T10:36:24.170638"
+    },
+    {
+      "title": "About feature writing",
+      "content": "feature writing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "feature writing",
+      "source": "structured",
+      "learned_at": "2025-11-25T12:53:53.772544"
+    },
+    {
+      "title": "About forest conservation",
+      "content": "forest conservation is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "forest conservation",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:16:05.991973"
+    },
+    {
+      "title": "About functional programming",
+      "content": "functional programming is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "functional programming",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:21:19.458003"
+    },
+    {
+      "title": "About code formatting",
+      "content": "code formatting is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "code formatting",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:26:22.742728"
+    },
+    {
+      "title": "About free software",
+      "content": "free software is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "free software",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:49:21.940278"
+    },
+    {
+      "title": "About fair use",
+      "content": "fair use is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "fair use",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:03:38.470395"
+    },
+    {
+      "title": "About FaaS",
+      "content": "FaaS is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "FaaS",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:05:09.451042"
+    },
+    {
+      "title": "About fog computing",
+      "content": "fog computing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "fog computing",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:05:29.640152"
+    },
+    {
+      "title": "About fences",
+      "content": "fences is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "fences",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:10:11.199485"
+    },
+    {
+      "title": "About lock free data structures",
+      "content": "lock free data structures is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "lock free data structures",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:12:42.929814"
+    },
+    {
+      "title": "About lock free queues",
+      "content": "lock free queues is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "lock free queues",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:12:53.044671"
+    },
+    {
+      "title": "About lock free stacks",
+      "content": "lock free stacks is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "lock free stacks",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:13:03.156903"
+    },
+    {
+      "title": "About lock free hash tables",
+      "content": "lock free hash tables is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "lock free hash tables",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:13:13.256550"
+    },
+    {
+      "title": "About fork join framework",
+      "content": "fork join framework is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "fork join framework",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:14:24.068352"
+    },
+    {
+      "title": "About futures",
+      "content": "futures is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "futures",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:15:04.514224"
+    },
+    {
+      "title": "About message filtering",
+      "content": "message filtering is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "message filtering",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:19:37.402561"
+    },
+    {
+      "title": "About content filter",
+      "content": "content filter is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "content filter",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:21:18.544485"
+    },
+    {
+      "title": "About feature experimentation",
+      "content": "feature experimentation is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "feature experimentation",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:56:36.203057"
+    },
+    {
+      "title": "About factorial designs",
+      "content": "factorial designs is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "factorial designs",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:58:27.380076"
+    },
+    {
+      "title": "About field experiments",
+      "content": "field experiments is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "field experiments",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:00:59.229963"
+    },
+    {
+      "title": "About fair division",
+      "content": "fair division is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "fair division",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:04:11.517045"
+    },
+    {
+      "title": "About freemium model",
+      "content": "freemium model is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freemium model",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:09:55.626304"
+    },
+    {
+      "title": "About conversion funnel",
+      "content": "conversion funnel is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "conversion funnel",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:12:47.658559"
+    },
+    {
+      "title": "About sales funnel",
+      "content": "sales funnel is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "sales funnel",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:12:57.765418"
+    },
+    {
+      "title": "About marketing funnel",
+      "content": "marketing funnel is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "marketing funnel",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:13:07.876816"
+    },
+    {
+      "title": "About customer feedback",
+      "content": "customer feedback is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "customer feedback",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:16:50.499041"
+    },
+    {
+      "title": "About funnel analytics",
+      "content": "funnel analytics is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "funnel analytics",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:19:22.398260"
+    },
+    {
+      "title": "About firmographic segmentation",
+      "content": "firmographic segmentation is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "firmographic segmentation",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:20:53.299206"
+    },
+    {
+      "title": "About recency frequency monetary",
+      "content": "recency frequency monetary is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "recency frequency monetary",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:21:23.689124"
+    },
+    {
+      "title": "About fulfillment",
+      "content": "fulfillment is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "fulfillment",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:25:56.667510"
+    },
+    {
+      "title": "About demand forecasting",
+      "content": "demand forecasting is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "demand forecasting",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:27:07.471576"
+    },
+    {
+      "title": "About fair trade",
+      "content": "fair trade is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "fair trade",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:30:49.998543"
+    },
+    {
+      "title": "About form processing",
+      "content": "form processing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "form processing",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:41:41.182796"
+    },
+    {
+      "title": "About sales forecasting",
+      "content": "sales forecasting is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "sales forecasting",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:16:16.878303"
+    },
+    {
+      "title": "About revenue forecasting",
+      "content": "revenue forecasting is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "revenue forecasting",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:16:26.987283"
+    },
+    {
+      "title": "About budget forecasting",
+      "content": "budget forecasting is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "budget forecasting",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:16:37.092840"
+    },
+    {
+      "title": "About financial forecasting",
+      "content": "financial forecasting is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "financial forecasting",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:16:47.205189"
+    },
+    {
+      "title": "About cash flow forecasting",
+      "content": "cash flow forecasting is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "cash flow forecasting",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:16:57.313398"
+    },
+    {
+      "title": "About financial risk",
+      "content": "financial risk is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "financial risk",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:18:38.430997"
+    },
+    {
+      "title": "About carbon footprint",
+      "content": "carbon footprint is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "carbon footprint",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:22:30.943882"
+    },
+    {
+      "title": "About sustainable finance",
+      "content": "sustainable finance is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "sustainable finance",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:23:41.768028"
+    },
+    {
+      "title": "About climate finance",
+      "content": "climate finance is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "climate finance",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:25:32.996695"
+    },
+    {
+      "title": "About green finance",
+      "content": "green finance is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "green finance",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:25:43.107230"
+    },
+    {
+      "title": "About development finance",
+      "content": "development finance is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "development finance",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:26:03.334725"
+    },
+    {
+      "title": "About project finance",
+      "content": "project finance is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "project finance",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:26:13.453997"
+    },
+    {
+      "title": "About infrastructure finance",
+      "content": "infrastructure finance is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "infrastructure finance",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:26:23.565273"
+    },
+    {
+      "title": "About public finance",
+      "content": "public finance is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "public finance",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:26:53.919065"
+    },
+    {
+      "title": "About government finance",
+      "content": "government finance is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "government finance",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:27:59.412497"
+    },
+    {
+      "title": "About fiscal policy",
+      "content": "fiscal policy is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "fiscal policy",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:30:15.168755"
+    },
+    {
+      "title": "About Federal Reserve",
+      "content": "Federal Reserve is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Federal Reserve",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:41:16.313239"
+    },
+    {
+      "title": "About forward guidance",
+      "content": "forward guidance is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "forward guidance",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:49:41.139306"
+    },
+    {
+      "title": "About financial stability",
+      "content": "financial stability is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "financial stability",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:50:01.375541"
+    },
+    {
+      "title": "About too big to fail",
+      "content": "too big to fail is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "too big to fail",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:50:21.605398"
+    },
+    {
+      "title": "About financial crises",
+      "content": "financial crises is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "financial crises",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:50:41.819802"
+    },
+    {
+      "title": "About financial regulation",
+      "content": "financial regulation is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "financial regulation",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:51:22.279967"
+    },
+    {
+      "title": "About FDIC",
+      "content": "FDIC is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "FDIC",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:54:34.547527"
+    },
+    {
+      "title": "About financial safety net",
+      "content": "financial safety net is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "financial safety net",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:54:44.655273"
+    },
+    {
+      "title": "About financial authority",
+      "content": "financial authority is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "financial authority",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:55:25.104225"
+    },
+    {
+      "title": "About frameworks",
+      "content": "frameworks is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "frameworks",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:00:28.602409"
+    },
+    {
+      "title": "About federated architecture",
+      "content": "federated architecture is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "federated architecture",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:10:35.521895"
+    },
+    {
+      "title": "About 360 feedback",
+      "content": "360 feedback is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "360 feedback",
+      "source": "structured",
+      "learned_at": "2025-11-26T00:39:40.486508"
+    },
+    {
+      "title": "About flipped classroom",
+      "content": "flipped classroom is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "flipped classroom",
+      "source": "structured",
+      "learned_at": "2025-11-26T05:14:17.575406"
+    },
+    {
+      "title": "About forums",
+      "content": "forums is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "forums",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:20:49.701530"
+    },
+    {
+      "title": "About fairs",
+      "content": "fairs is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "fairs",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:22:51.065918"
+    },
+    {
+      "title": "About festivals",
+      "content": "festivals is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "festivals",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:23:01.192460"
+    },
+    {
+      "title": "About flight simulators",
+      "content": "flight simulators is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "flight simulators",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:30:36.546059"
+    },
+    {
+      "title": "About focused practice",
+      "content": "focused practice is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "focused practice",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:33:28.797641"
+    },
+    {
+      "title": "About far transfer",
+      "content": "far transfer is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "far transfer",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:35:09.930135"
+    },
+    {
+      "title": "About fading",
+      "content": "fading is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "fading",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:54:52.189530"
+    },
+    {
+      "title": "About factual knowledge",
+      "content": "factual knowledge is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "factual knowledge",
+      "source": "structured",
+      "learned_at": "2025-11-26T10:40:06.832630"
+    },
+    {
+      "title": "About functional expertise",
+      "content": "functional expertise is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "functional expertise",
+      "source": "structured",
+      "learned_at": "2025-11-26T11:35:30.994810"
+    },
+    {
+      "title": "About flexible",
+      "content": "flexible is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "flexible",
+      "source": "structured",
+      "learned_at": "2025-11-26T11:57:12.918852"
+    },
+    {
+      "title": "About feasible",
+      "content": "feasible is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "feasible",
+      "source": "structured",
+      "learned_at": "2025-11-26T12:29:05.397539"
+    },
+    {
+      "title": "About functional",
+      "content": "functional is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "functional",
+      "source": "structured",
+      "learned_at": "2025-11-26T12:57:49.447317"
+    },
+    {
+      "title": "About favorable",
+      "content": "favorable is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "favorable",
+      "source": "structured",
+      "learned_at": "2025-11-26T13:15:23.880947"
+    },
+    {
+      "title": "About fitting",
+      "content": "fitting is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "fitting",
+      "source": "structured",
+      "learned_at": "2025-11-26T13:59:44.367967"
+    },
+    {
+      "title": "About fusion",
+      "content": "fusion is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "fusion",
+      "source": "structured",
+      "learned_at": "2025-11-26T16:01:39.371575"
+    },
+    {
+      "title": "About folklore",
+      "content": "folklore is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "folklore",
+      "source": "structured",
+      "learned_at": "2025-11-26T18:35:56.447236"
+    },
+    {
+      "title": "About search for extraterrestrial intelligence",
+      "content": "search for extraterrestrial intelligence is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "search for extraterrestrial intelligence",
+      "source": "structured",
+      "learned_at": "2025-11-26T19:43:16.846406"
+    },
+    {
+      "title": "About right to food",
+      "content": "right to food is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "right to food",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:32:27.348459"
+    },
+    {
+      "title": "About freedom of information",
+      "content": "freedom of information is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freedom of information",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:34:08.488355"
+    },
+    {
+      "title": "About freedom of expression",
+      "content": "freedom of expression is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freedom of expression",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:34:18.601254"
+    },
+    {
+      "title": "About freedom of speech",
+      "content": "freedom of speech is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freedom of speech",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:34:28.716693"
+    },
+    {
+      "title": "About freedom of the press",
+      "content": "freedom of the press is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freedom of the press",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:34:38.828145"
+    },
+    {
+      "title": "About freedom of assembly",
+      "content": "freedom of assembly is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freedom of assembly",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:34:48.952079"
+    },
+    {
+      "title": "About freedom of association",
+      "content": "freedom of association is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freedom of association",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:34:59.059627"
+    },
+    {
+      "title": "About freedom of religion",
+      "content": "freedom of religion is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freedom of religion",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:35:09.179461"
+    },
+    {
+      "title": "About freedom of movement",
+      "content": "freedom of movement is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freedom of movement",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:35:19.289045"
+    },
+    {
+      "title": "About freedom from discrimination",
+      "content": "freedom from discrimination is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freedom from discrimination",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:35:29.405163"
+    },
+    {
+      "title": "About freedom from torture",
+      "content": "freedom from torture is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freedom from torture",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:35:39.522696"
+    },
+    {
+      "title": "About freedom from slavery",
+      "content": "freedom from slavery is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freedom from slavery",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:35:49.639217"
+    },
+    {
+      "title": "About freedom from arbitrary detention",
+      "content": "freedom from arbitrary detention is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freedom from arbitrary detention",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:35:59.750634"
+    },
+    {
+      "title": "About right to a fair trial",
+      "content": "right to a fair trial is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "right to a fair trial",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:36:09.880784"
+    },
+    {
+      "title": "About foreign policy",
+      "content": "foreign policy is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "foreign policy",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:49:59.104021"
+    },
+    {
+      "title": "About fossil fuels",
+      "content": "fossil fuels is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "fossil fuels",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:59:35.515639"
+    },
+    {
+      "title": "About fracking",
+      "content": "fracking is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "fracking",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:00:36.179050"
+    },
+    {
+      "title": "About hydraulic fracturing",
+      "content": "hydraulic fracturing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hydraulic fracturing",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:00:46.288183"
+    },
+    {
+      "title": "About food safety",
+      "content": "food safety is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "food safety",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:08:21.343211"
+    },
+    {
+      "title": "About food security",
+      "content": "food security is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "food security",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:08:31.449479"
+    },
+    {
+      "title": "About food systems",
+      "content": "food systems is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "food systems",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:08:41.555878"
+    },
+    {
+      "title": "About organic farming",
+      "content": "organic farming is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "organic farming",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:09:11.903643"
+    },
+    {
+      "title": "About smart farming",
+      "content": "smart farming is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "smart farming",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:10:02.472603"
+    },
+    {
+      "title": "About vertical farming",
+      "content": "vertical farming is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "vertical farming",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:10:22.691495"
+    },
+    {
+      "title": "About mathematical functions",
+      "content": "mathematical functions is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "mathematical functions",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:13:44.880283"
+    },
+    {
+      "title": "About mathematical formulas",
+      "content": "mathematical formulas is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "mathematical formulas",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:13:54.984913"
+    },
+    {
+      "title": "About France",
+      "content": "France is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "France",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:20:59.601366"
+    },
+    {
+      "title": "About Indian food",
+      "content": "Indian food is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Indian food",
+      "source": "structured",
+      "learned_at": "2025-11-27T00:19:13.066941"
+    },
+    {
+      "title": "About Indian food recipes",
+      "content": "Indian food recipes is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Indian food recipes",
+      "source": "structured",
+      "learned_at": "2025-11-27T00:35:45.173279"
+    },
+    {
+      "title": "About Indian food cooking",
+      "content": "Indian food cooking is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Indian food cooking",
+      "source": "structured",
+      "learned_at": "2025-11-27T00:35:55.288370"
+    },
+    {
+      "title": "About football game",
+      "content": "football game is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "football game",
+      "source": "structured",
+      "learned_at": "2025-11-27T02:09:53.438770"
+    },
+    {
+      "title": "About football match",
+      "content": "football match is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "football match",
+      "source": "structured",
+      "learned_at": "2025-11-27T02:10:03.550744"
+    },
+    {
+      "title": "About football tournament",
+      "content": "football tournament is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "football tournament",
+      "source": "structured",
+      "learned_at": "2025-11-27T02:10:13.650407"
+    },
+    {
+      "title": "About football league",
+      "content": "football league is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "football league",
+      "source": "structured",
+      "learned_at": "2025-11-27T02:10:23.750025"
+    },
+    {
+      "title": "About football team",
+      "content": "football team is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "football team",
+      "source": "structured",
+      "learned_at": "2025-11-27T02:10:33.850408"
+    },
+    {
+      "title": "About football player",
+      "content": "football player is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "football player",
+      "source": "structured",
+      "learned_at": "2025-11-27T02:27:10.340230"
+    },
+    {
+      "title": "About football coach",
+      "content": "football coach is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "football coach",
+      "source": "structured",
+      "learned_at": "2025-11-27T02:27:20.446849"
+    },
+    {
+      "title": "About football manager",
+      "content": "football manager is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "football manager",
+      "source": "structured",
+      "learned_at": "2025-11-27T02:27:30.552062"
+    },
+    {
+      "title": "About football referee",
+      "content": "football referee is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "football referee",
+      "source": "structured",
+      "learned_at": "2025-11-27T02:27:40.654134"
+    },
+    {
+      "title": "About fact",
+      "content": "fact is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "fact",
+      "source": "structured",
+      "learned_at": "2025-11-27T10:19:31.017954"
+    },
+    {
+      "title": "About factor",
+      "content": "factor is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "factor",
+      "source": "structured",
+      "learned_at": "2025-11-27T10:19:41.128348"
+    },
+    {
+      "title": "About failure",
+      "content": "failure is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "failure",
+      "source": "structured",
+      "learned_at": "2025-11-27T10:19:51.228958"
+    },
+    {
+      "title": "About faith",
+      "content": "faith is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "faith",
+      "source": "structured",
+      "learned_at": "2025-11-27T10:20:01.335032"
+    },
+    {
+      "title": "About fear",
+      "content": "fear is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "fear",
+      "source": "structured",
+      "learned_at": "2025-11-27T10:20:11.442829"
+    },
+    {
+      "title": "About feature",
+      "content": "feature is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "feature",
+      "source": "structured",
+      "learned_at": "2025-11-27T10:20:21.547284"
+    },
+    {
+      "title": "About feeling",
+      "content": "feeling is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "feeling",
+      "source": "structured",
+      "learned_at": "2025-11-27T10:20:31.645846"
+    },
+    {
+      "title": "About fiction",
+      "content": "fiction is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "fiction",
+      "source": "structured",
+      "learned_at": "2025-11-27T10:20:41.750457"
+    },
+    {
+      "title": "About field",
+      "content": "field is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "field",
+      "source": "structured",
+      "learned_at": "2025-11-27T10:38:13.917620"
+    },
+    {
+      "title": "About figure",
+      "content": "figure is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "figure",
+      "source": "structured",
+      "learned_at": "2025-11-27T10:38:23.991820"
+    },
+    {
+      "title": "About finance",
+      "content": "finance is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "finance",
+      "source": "structured",
+      "learned_at": "2025-11-27T10:38:34.098740"
+    },
+    {
+      "title": "About focus",
+      "content": "focus is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "focus",
+      "source": "structured",
+      "learned_at": "2025-11-27T10:38:44.198816"
+    },
+    {
+      "title": "About force",
+      "content": "force is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "force",
+      "source": "structured",
+      "learned_at": "2025-11-27T10:38:54.298031"
+    },
+    {
+      "title": "About form",
+      "content": "form is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "form",
+      "source": "structured",
+      "learned_at": "2025-11-27T10:40:40.820219"
+    },
+    {
+      "title": "About foundation",
+      "content": "foundation is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "foundation",
+      "source": "structured",
+      "learned_at": "2025-11-27T10:40:50.921254"
+    },
+    {
+      "title": "About frame",
+      "content": "frame is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "frame",
+      "source": "structured",
+      "learned_at": "2025-11-27T10:41:01.031235"
+    },
+    {
+      "title": "About freedom",
+      "content": "freedom is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freedom",
+      "source": "structured",
+      "learned_at": "2025-11-27T10:41:11.138947"
+    },
+    {
+      "title": "About friendship",
+      "content": "friendship is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "friendship",
+      "source": "structured",
+      "learned_at": "2025-11-27T10:57:23.739599"
+    },
+    {
+      "title": "About function",
+      "content": "function is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "function",
+      "source": "structured",
+      "learned_at": "2025-11-27T10:57:33.829738"
+    },
+    {
+      "title": "About future",
+      "content": "future is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "future",
+      "source": "structured",
+      "learned_at": "2025-11-27T10:57:43.922625"
+    },
+    {
+      "title": "About federated learning",
+      "content": "federated learning is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "federated learning",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:03:29.011451"
+    },
+    {
+      "title": "About python functions",
+      "content": "python functions is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "python functions",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:09:02.739699"
+    },
+    {
+      "title": "About python file handling",
+      "content": "python file handling is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "python file handling",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:11:24.271050"
+    },
+    {
+      "title": "About javascript functions",
+      "content": "javascript functions is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "javascript functions",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:12:14.881679"
+    },
+    {
+      "title": "About javascript arrow functions",
+      "content": "javascript arrow functions is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "javascript arrow functions",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:12:24.984091"
+    },
+    {
+      "title": "About react framework",
+      "content": "react framework is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "react framework",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:15:37.090760"
+    },
+    {
+      "title": "About vue.js framework",
+      "content": "vue.js framework is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "vue.js framework",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:16:57.984879"
+    },
+    {
+      "title": "About angular framework",
+      "content": "angular framework is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "angular framework",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:17:08.090760"
+    },
+    {
+      "title": "About svelte framework",
+      "content": "svelte framework is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "svelte framework",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:17:18.208290"
+    },
+    {
+      "title": "About next.js framework",
+      "content": "next.js framework is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "next.js framework",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:17:28.317677"
+    },
+    {
+      "title": "About nuxt.js framework",
+      "content": "nuxt.js framework is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "nuxt.js framework",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:17:38.427641"
+    },
+    {
+      "title": "About express.js framework",
+      "content": "express.js framework is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "express.js framework",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:17:58.645170"
+    },
+    {
+      "title": "About nest.js framework",
+      "content": "nest.js framework is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "nest.js framework",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:18:08.754442"
+    },
+    {
+      "title": "About fastify framework",
+      "content": "fastify framework is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "fastify framework",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:18:18.856393"
+    },
+    {
+      "title": "About koa.js framework",
+      "content": "koa.js framework is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "koa.js framework",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:18:28.963451"
+    },
+    {
+      "title": "About frontend development",
+      "content": "frontend development is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "frontend development",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:18:49.179309"
+    },
+    {
+      "title": "About full stack development",
+      "content": "full stack development is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "full stack development",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:19:09.406714"
+    },
+    {
+      "title": "About mobile first design",
+      "content": "mobile first design is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "mobile first design",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:19:29.634583"
+    },
+    {
+      "title": "About scrum framework",
+      "content": "scrum framework is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "scrum framework",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:24:33.275483"
+    },
+    {
+      "title": "About random forests",
+      "content": "random forests is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "random forests",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:33:19.091889"
+    },
+    {
+      "title": "About facial recognition",
+      "content": "facial recognition is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "facial recognition",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:39:13.016721"
+    },
+    {
+      "title": "About Flutter framework",
+      "content": "Flutter framework is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Flutter framework",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:41:44.683842"
+    },
+    {
+      "title": "About Xamarin framework",
+      "content": "Xamarin framework is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Xamarin framework",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:41:54.783616"
+    },
+    {
+      "title": "About hash functions",
+      "content": "hash functions is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hash functions",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:43:15.644270"
+    },
+    {
+      "title": "About two factor authentication",
+      "content": "two factor authentication is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "two factor authentication",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:45:37.166196"
+    },
+    {
+      "title": "About multi factor authentication",
+      "content": "multi factor authentication is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "multi factor authentication",
+      "source": "structured",
+      "learned_at": "2025-11-27T23:19:18.627065"
+    },
+    {
+      "title": "About function as a service",
+      "content": "function as a service is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "function as a service",
+      "source": "structured",
+      "learned_at": "2025-11-28T03:37:38.310882"
+    },
+    {
+      "title": "About networking fundamentals",
+      "content": "networking fundamentals is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "networking fundamentals",
+      "source": "structured",
+      "learned_at": "2025-11-28T06:41:47.622171"
+    },
+    {
+      "title": "About file systems",
+      "content": "file systems is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "file systems",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:10:25.801897"
+    },
+    {
+      "title": "About depth first search",
+      "content": "depth first search is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "depth first search",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:15:18.818672"
+    },
+    {
+      "title": "About breadth first search",
+      "content": "breadth first search is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "breadth first search",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:21:52.269781"
+    },
+    {
+      "title": "Newton's First Law of Motion - Science Notes and Projects",
+      "content": "Newton's first law of motion basically says that objects don't change their state of motion unless acted upon by a net external force. Newton's first law of motion is a cornerstone of classical mechanics, describing the natural behavior of objects to resist changes in their motion.",
+      "query": "what is life what is life state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:37.241642"
+    },
+    {
+      "title": "Newton's laws of motion - Wikipedia",
+      "content": "Newton's laws of motion are three physical laws that describe the relationship between the motion of an object and the forces acting on it. These laws, which provide the basis for Newtonian mechanics, can be paraphrased as follows: A body remains at rest, or in motion at a constant speed in a straight line, unless it is acted upon by a force.",
+      "query": "what is life what is life state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:37.241940"
+    },
+    {
+      "title": "Newton's First Law: Statement, Examples, and Equation",
+      "content": "What is Newton's first law of motion. its definition, significance, and formula, along with everyday real-life examples, applications, and diagrams.",
+      "query": "what is life what is life state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:37.242116"
+    },
+    {
+      "title": "Newton's First Law: Principle, Examples, Experiments, Applications",
+      "content": "Introduction to Newton's First Law Newton's First Law of Motion has two situations: first describes the reason for a state of any object and second defines inertia. It is a profound law given by Newton in the 17th century that rules all classical mechanics. A new era of science was evolved by the development of this law. Newton imagines the position of an object as its reaction towards the ...",
+      "query": "what is life what is life state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:37.242424"
+    },
+    {
+      "title": "What Is Newton's First Law? - Lesson - TeachEngineering",
+      "content": "Students are introduced to the concepts of force, inertia and Newton's first law of motion: objects at rest stay at rest and objects in motion stay in motion unless acted upon by an unbalanced force. Examples of contact and non-contact types of forces are provided, specifically applied, spring, drag, frictional forces, and magnetic, electric, gravitational forces. Students the difference ...",
+      "query": "what is life what is life state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:37.242713"
+    },
+    {
+      "title": "Understanding Newton's Laws of Motion - Encyclopedia Britannica",
+      "content": "Newton's first law states that unless a body (such as a rubber ball, car, or planet) is acted upon by some force, a body in motion tends to remain in motion and a body at rest tends to remain at rest. This postulate is known as the law of inertia. What this means, practically speaking, is that a rolling ball or other object only slows down because of forces like gravity and friction. Even ...",
+      "query": "what is life state Newton's first law of matter state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:50.986602"
+    },
+    {
+      "title": "2. Newton's first law - Conceptual Physics",
+      "content": "Newton's first law is sometimes referred to as the law of inertia, as it describes this property of matter. Newton's first law says that an object in motion tends to stay in motion, and an object at rest tends to stay at rest, unless acted upon by an outside force.",
+      "query": "what is life state Newton's first law of matter state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:50.987121"
+    },
+    {
+      "title": "PDF 8.01SC S22 Chapter 7: Newton s Laws of Motion - MIT OpenCourseWare",
+      "content": "Newton's First Law states that there is no physical way to distinguish between whether we are moving or the station is moving, because there is nearly zero total force acting on the body.",
+      "query": "what is life state Newton's first law of matter state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:50.987315"
+    }
+  ],
+  "last_updated": "2025-11-28T15:46:51.035110"
+}

@@ -1,0 +1,88 @@
+Atlas AI Internal Use License (Version 1.0)
+===========================================
+
+This license governs the use of the Atlas AI codebase, models, assets,
+and documentation (collectively, the “Software”). By accessing or using
+the Software, you agree to the terms below. If you do not agree, do not
+use the Software.
+
+1. Grant of Limited Rights
+   - You are granted a non-transferable, non-sublicensable, revocable
+     license to use and modify the Software solely for **internal
+     evaluation, research, and development** related to the Atlas AI /
+     Thor project.
+   - No other rights are granted by implication, estoppel, or otherwise.
+
+2. Restrictions
+   - **No Production or Commercial Use:** You may not use the Software to
+     provide services to third parties, to operate any commercial
+     product, or to deploy publicly without prior written permission.
+   - **No Redistribution:** You may not publish, distribute, sell, lease,
+     sublicense, or otherwise make the Software (or derivatives) available
+     to any third party.
+   - **No Model Training Outside Project Scope:** You may not train or
+     fine-tune separate models using the Software or its outputs, except
+     for work that directly targets the Thor/Atlas AI project.
+   - **No Removal of Notices:** You may not remove or alter copyright,
+     license, or attribution notices contained in the Software.
+   - **No Circumvention:** You may not circumvent, disable, or interfere
+     with security, access controls, or usage limitations.
+
+3. Derivative Works
+   - You may create internal modifications and derivative works for the
+     limited purposes described in Section 1.
+   - Any derivative works remain subject to this license and may not be
+     redistributed or commercialized.
+
+4. Ownership
+   - Atlas AI (and its licensors, if any) retain all right, title, and
+     interest in the Software, including all intellectual property rights.
+
+5. Confidentiality
+   - The Software and any non-public information derived from it are
+     considered confidential. You must protect them using at least
+     reasonable care and may not disclose them to third parties without
+     written permission.
+
+6. Warranty Disclaimer
+   - THE SOFTWARE IS PROVIDED “AS IS” AND “AS AVAILABLE” WITHOUT WARRANTY
+     OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE,
+     INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS
+     FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+
+7. Limitation of Liability
+   - TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT WILL ATLAS AI OR
+     ITS CONTRIBUTORS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL,
+     CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF
+     PROFITS, REVENUE, DATA, OR GOODWILL, ARISING OUT OF OR RELATED TO
+     THE USE OR INABILITY TO USE THE SOFTWARE, EVEN IF ADVISED OF THE
+     POSSIBILITY OF SUCH DAMAGES. LIABILITY IN THE AGGREGATE SHALL NOT
+     EXCEED ONE HUNDRED U.S. DOLLARS (USD $100).
+
+8. Indemnity
+   - You agree to indemnify and hold harmless Atlas AI and its
+     contributors from any claims, losses, liabilities, damages, costs,
+     and expenses (including reasonable attorneys’ fees) arising from
+     your use of the Software or violation of this license.
+
+9. Termination
+   - This license automatically terminates if you breach any term.
+   - Upon termination, you must cease all use of the Software and destroy
+     all copies and derivatives in your possession or control.
+
+10. Governing Law
+    - This license is governed by the laws of the State of California,
+      without regard to conflict of law principles.
+
+11. Updates to the License
+    - Atlas AI may publish updated versions of this license. Continued use
+      of the Software after an update constitutes acceptance of the new
+      terms.
+
+12. Contact
+    - For permissions, commercial use, or other inquiries, contact:
+      legal@atlasai.local (placeholder address; replace with your org’s
+      legal contact).
+
+By using the Software, you acknowledge that you have read and understood
+this License and agree to be bound by its terms.

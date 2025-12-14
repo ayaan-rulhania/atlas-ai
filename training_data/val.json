@@ -1,0 +1,120 @@
+[
+  {
+    "task": "sentiment_analysis",
+    "text": "I find deep learning interesting and valuable.",
+    "label": 1
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Create an image of blah",
+    "label": 2
+  },
+  {
+    "task": "text_classification",
+    "text": "Here is an image of dog I found: ![dog](https://source.unsplash.com/960x540/?dog) I can search again or adjust it - just tell me how you want it changed.",
+    "label": 1
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Which person is associated with Microsoft?",
+    "label": 1
+  },
+  {
+    "task": "text_classification",
+    "text": "What is machine learning?",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "create an image of ice cream",
+    "label": 1
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Load Office Suite",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "LEt's Play games!",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "What is deep learning?",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "Create an image",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Create an image of a cat",
+    "label": 0
+  },
+  {
+    "task": "text_generation",
+    "text": "Nothing much",
+    "label": null
+  },
+  {
+    "task": "text_classification",
+    "text": "Create an image of Thor",
+    "label": 1
+  },
+  {
+    "task": "question_answering",
+    "text": "What is computer science? computer science is an important concept.",
+    "label": {
+      "start": 26,
+      "end": 42
+    }
+  },
+  {
+    "task": "text_classification",
+    "text": "Explain the concept of physics",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "I find machine learning interesting and valuable.",
+    "label": 2
+  },
+  {
+    "task": "text_generation",
+    "text": "Load game suite",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "Load Game Suite",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "another angle",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "Create an image of dog.",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "I find natural language processing interesting and valuable.",
+    "label": 2
+  },
+  {
+    "task": "text_generation",
+    "text": "Create an image of cricket sport",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "I find computer science interesting and valuable.",
+    "label": 1
+  }
+]

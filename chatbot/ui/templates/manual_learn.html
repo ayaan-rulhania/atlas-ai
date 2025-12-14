@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thor 1.0 Manual Learning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Aboreto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+        
+        .dashboard {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+        
+        .header p {
+            font-size: 14px;
+            color: #666;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 30px;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+        
+        .section h2 {
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            color: #1a1a1a;
+            text-transform: uppercase;
+        }
+        
+        .input-group {
+            margin-bottom: 25px;
+        }
+        
+        label {
+            display: block;
+            font-weight: 400;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 15px 20px;
+            border: 1px solid #e5e5e5;
+            background: #fafafa;
+            font-size: 14px;
+            font-family: 'Aboreto', sans-serif;
+            color: #1a1a1a;
+            transition: all 0.2s ease;
+            letter-spacing: 0.5px;
+        }
+        
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #1a1a1a;
+            background: #ffffff;
+        }
+        
+        textarea {
+            width: 100%;
+            padding: 15px 20px;
+            border: 1px solid #e5e5e5;
+            background: #fafafa;
+            font-size: 14px;
+            font-family: 'Aboreto', sans-serif;
+            color: #1a1a1a;
+            transition: all 0.2s ease;
+            letter-spacing: 0.5px;
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        textarea:focus {
+            outline: none;
+            border-color: #1a1a1a;
+            background: #ffffff;
+        }
+        
+        .btn {
+            background: #1a1a1a;
+            color: white;
+            border: none;
+            padding: 15px 32px;
+            font-size: 12px;
+            font-family: 'Aboreto', sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+        }
+        
+        .btn:hover:not(:disabled) {
+            background: #333;
+        }
+        
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        .status {
+            margin-top: 25px;
+            padding: 20px;
+            display: none;
+            border: 1px solid #e5e5e5;
+            background: #fafafa;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+        
+        .status.success {
+            background: #fafafa;
+            border-color: #1a1a1a;
+            color: #1a1a1a;
+            display: block;
+        }
+        
+        .status.error {
+            background: #fafafa;
+            border-color: #cc0000;
+            color: #cc0000;
+            display: block;
+        }
+        
+        .status.loading {
+            background: #fafafa;
+            border-color: #1a1a1a;
+            color: #666;
+            display: block;
+        }
+        
+        .knowledge-preview {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid #e5e5e5;
+        }
+        
+        .knowledge-preview h3 {
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+        
+        .knowledge-item {
+            background: #fafafa;
+            padding: 20px;
+            border: 1px solid #e5e5e5;
+            margin-bottom: 15px;
+            transition: border-color 0.2s ease;
+        }
+        
+        .knowledge-item:hover {
+            border-color: #1a1a1a;
+        }
+        
+        .knowledge-item h4 {
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+        
+        .knowledge-item p {
+            color: #666;
+            font-size: 12px;
+            line-height: 1.6;
+            letter-spacing: 0.5px;
+        }
+        
+        .topic-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .topic-tag {
+            display: inline-block;
+            padding: 6px 12px;
+            background: #fafafa;
+            border: 1px solid #e5e5e5;
+            font-size: 11px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #1a1a1a;
+            transition: border-color 0.2s ease;
+        }
+        
+        .topic-tag:hover {
+            border-color: #1a1a1a;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+        
+        .loading-spinner {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .stat-card {
+            background: #fafafa;
+            padding: 30px 20px;
+            border: 1px solid #e5e5e5;
+            text-align: center;
+            transition: border-color 0.2s ease;
+            margin-bottom: 20px;
+        }
+        
+        .stat-card:hover {
+            border-color: #1a1a1a;
+        }
+        
+        .stat-value {
+            font-size: 36px;
+            font-weight: 400;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        
+        .follow-up-section {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid #e5e5e5;
+            display: none;
+        }
+        
+        .follow-up-section.show {
+            display: block;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #1a1a1a;
+            border: 1px solid #1a1a1a;
+            padding: 12px 24px;
+            font-size: 11px;
+            margin-top: 15px;
+        }
+        
+        .btn-secondary:hover:not(:disabled) {
+            background: #1a1a1a;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header">
+            <h1>Thor 1.0 Manual Learning</h1>
+            <p>Teach Thor any topic or keyword</p>
+        </div>
+        
+        <div class="section">
+            <h2>Learn New Topic</h2>
+            <form id="learnForm">
+                <div class="input-group">
+                    <label for="topicInput">Enter a topic or keyword to learn</label>
+                    <input 
+                        type="text" 
+                        id="topicInput" 
+                        placeholder="e.g., quantum computing, machine learning, Python programming..."
+                        required
+                        autocomplete="off"
+                    >
+                </div>
+                <button type="submit" class="btn" id="learnBtn">
+                    Teach Thor
+                </button>
+            </form>
+            
+            <div id="status" class="status"></div>
+            
+            <div id="knowledgePreview" class="knowledge-preview" style="display: none;"></div>
+            
+            <div id="followUpSection" class="follow-up-section">
+                <h2>Add Follow-up Notes</h2>
+                <p style="font-size: 12px; color: #666; margin-bottom: 15px; letter-spacing: 0.5px;">
+                    Add additional notes, corrections, or context about this topic
+                </p>
+                <form id="notesForm">
+                    <div class="input-group">
+                        <label for="notesInput">Your notes on "<span id="currentTopic"></span>"</label>
+                        <textarea 
+                            id="notesInput" 
+                            placeholder="Enter any additional information, corrections, context, or notes about this topic..."
+                            rows="6"
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="btn" id="saveNotesBtn">
+                        Save Notes
+                    </button>
+                    <button type="button" class="btn btn-secondary" id="skipNotesBtn" onclick="hideFollowUp()">
+                        Skip
+                    </button>
+                </form>
+                <div id="notesStatus" class="status" style="margin-top: 15px;"></div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Recently Learned Topics</h2>
+            <div id="recentTopics" class="topic-tags">
+                <div class="empty-state">Loading...</div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const form = document.getElementById('learnForm');
+        const topicInput = document.getElementById('topicInput');
+        const learnBtn = document.getElementById('learnBtn');
+        const status = document.getElementById('status');
+        const knowledgePreview = document.getElementById('knowledgePreview');
+        const recentTopics = document.getElementById('recentTopics');
+        const followUpSection = document.getElementById('followUpSection');
+        const notesForm = document.getElementById('notesForm');
+        const notesInput = document.getElementById('notesInput');
+        const currentTopicSpan = document.getElementById('currentTopic');
+        const saveNotesBtn = document.getElementById('saveNotesBtn');
+        const notesStatus = document.getElementById('notesStatus');
+        let lastLearnedTopic = null;
+        
+        // Load recent topics on page load
+        loadRecentTopics();
+        
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const topic = topicInput.value.trim();
+            if (!topic) return;
+            
+            // Show loading state
+            learnBtn.disabled = true;
+            learnBtn.innerHTML = '<span class="loading-spinner"></span>Teaching Thor...';
+            status.className = 'status loading';
+            status.textContent = `Learning about "${topic}"... This may take a few seconds.`;
+            knowledgePreview.style.display = 'none';
+            
+            try {
+                const response = await fetch('/api/learn', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ topic })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    status.className = 'status success';
+                    status.textContent = data.message;
+                    
+                    // Store the topic for follow-up notes
+                    lastLearnedTopic = data.topic;
+                    
+                    // Show knowledge preview
+                    if (data.knowledge && data.knowledge.length > 0) {
+                        let html = '<h3>Knowledge Preview</h3>';
+                        data.knowledge.forEach(item => {
+                            html += `
+                                <div class="knowledge-item">
+                                    <h4>${item.title || 'Knowledge Item'}</h4>
+                                    <p>${item.content ? item.content.substring(0, 300) + (item.content.length > 300 ? '...' : '') : 'No content'}</p>
+                                </div>
+                            `;
+                        });
+                        knowledgePreview.innerHTML = html;
+                        knowledgePreview.style.display = 'block';
+                    }
+                    
+                    // Show follow-up section
+                    currentTopicSpan.textContent = data.topic;
+                    followUpSection.classList.add('show');
+                    notesInput.value = '';
+                    notesInput.focus();
+                    
+                    // Clear main input
+                    topicInput.value = '';
+                    
+                    // Reload recent topics
+                    loadRecentTopics();
+                } else {
+                    status.className = 'status error';
+                    status.textContent = data.error || 'Failed to learn topic';
+                }
+            } catch (error) {
+                status.className = 'status error';
+                status.textContent = 'Error: ' + error.message;
+            } finally {
+                learnBtn.disabled = false;
+                learnBtn.textContent = 'Teach Thor';
+            }
+        });
+        
+        async function loadRecentTopics() {
+            try {
+                const response = await fetch('/api/recent');
+                const data = await response.json();
+                
+                if (data.success && data.topics.length > 0) {
+                    recentTopics.innerHTML = data.topics
+                        .map(topic => `<span class="topic-tag">${topic}</span>`)
+                        .join('');
+                } else {
+                    recentTopics.innerHTML = '<div class="empty-state">No topics learned yet</div>';
+                }
+            } catch (error) {
+                recentTopics.innerHTML = '<div class="empty-state">Error loading recent topics</div>';
+            }
+        }
+        
+        // Handle notes form submission
+        notesForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const notes = notesInput.value.trim();
+            if (!notes || !lastLearnedTopic) return;
+            
+            // Show loading state
+            saveNotesBtn.disabled = true;
+            saveNotesBtn.textContent = 'Saving...';
+            notesStatus.className = 'status loading';
+            notesStatus.textContent = 'Saving your notes...';
+            
+            try {
+                const response = await fetch('/api/add-notes', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ 
+                        topic: lastLearnedTopic,
+                        notes: notes
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    notesStatus.className = 'status success';
+                    notesStatus.textContent = data.message || 'Notes saved successfully!';
+                    
+                    // Hide follow-up section after a delay
+                    setTimeout(() => {
+                        hideFollowUp();
+                    }, 2000);
+                } else {
+                    notesStatus.className = 'status error';
+                    notesStatus.textContent = data.error || 'Failed to save notes';
+                }
+            } catch (error) {
+                notesStatus.className = 'status error';
+                notesStatus.textContent = 'Error: ' + error.message;
+            } finally {
+                saveNotesBtn.disabled = false;
+                saveNotesBtn.textContent = 'Save Notes';
+            }
+        });
+        
+        function hideFollowUp() {
+            followUpSection.classList.remove('show');
+            notesInput.value = '';
+            notesStatus.className = 'status';
+            notesStatus.textContent = '';
+            lastLearnedTopic = null;
+        }
+        
+        // Auto-focus input
+        topicInput.focus();
+    </script>
+</body>
+</html>

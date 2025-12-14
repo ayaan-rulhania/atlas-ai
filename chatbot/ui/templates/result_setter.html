@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thor 1.0 Result Setter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Aboreto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+        
+        .dashboard {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+        
+        .header p {
+            font-size: 14px;
+            color: #666;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 30px;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+        
+        .section h2 {
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            color: #1a1a1a;
+            text-transform: uppercase;
+        }
+        
+        .mode-toggle {
+            display: inline-flex;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        
+        .mode-btn {
+            border: 1px solid #1a1a1a;
+            background: transparent;
+            color: #1a1a1a;
+            padding: 10px 20px;
+            font-size: 11px;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .mode-btn.active {
+            background: #1a1a1a;
+            color: #fff;
+        }
+        
+        .mode-panel {
+            display: none;
+        }
+        
+        .mode-panel.active {
+            display: block;
+        }
+        
+        .input-group {
+            margin-bottom: 25px;
+        }
+        
+        label {
+            display: block;
+            font-weight: 400;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 15px 20px;
+            border: 1px solid #e5e5e5;
+            background: #fafafa;
+            font-size: 14px;
+            font-family: 'Aboreto', sans-serif;
+            color: #1a1a1a;
+            transition: all 0.2s ease;
+            letter-spacing: 0.5px;
+        }
+        
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #1a1a1a;
+            background: #ffffff;
+        }
+        
+        textarea {
+            width: 100%;
+            padding: 15px 20px;
+            border: 1px solid #e5e5e5;
+            background: #fafafa;
+            font-size: 14px;
+            font-family: 'Aboreto', sans-serif;
+            color: #1a1a1a;
+            transition: all 0.2s ease;
+            letter-spacing: 0.5px;
+            resize: vertical;
+            min-height: 150px;
+        }
+        
+        textarea:focus {
+            outline: none;
+            border-color: #1a1a1a;
+            background: #ffffff;
+        }
+        
+        .btn {
+            background: #1a1a1a;
+            color: white;
+            border: none;
+            padding: 15px 32px;
+            font-size: 12px;
+            font-family: 'Aboreto', sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+        }
+        
+        .btn:hover:not(:disabled) {
+            background: #333;
+        }
+        
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #1a1a1a;
+            border: 1px solid #1a1a1a;
+            padding: 12px 24px;
+            font-size: 11px;
+            margin-top: 15px;
+        }
+        
+        .btn-secondary:hover:not(:disabled) {
+            background: #1a1a1a;
+            color: white;
+        }
+        
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .btn-group .btn {
+            width: auto;
+            flex: 1;
+        }
+        
+        .status {
+            margin-top: 25px;
+            padding: 20px;
+            display: none;
+            border: 1px solid #e5e5e5;
+            background: #fafafa;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+        
+        .trainx-hint {
+            font-size: 12px;
+            color: #666;
+            margin-top: 12px;
+            line-height: 1.6;
+        }
+        
+        .trainx-hint code {
+            font-family: 'Courier New', monospace;
+            background: #efefef;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        
+        .status.success {
+            background: #fafafa;
+            border-color: #1a1a1a;
+            color: #1a1a1a;
+            display: block;
+        }
+        
+        .status.error {
+            background: #fafafa;
+            border-color: #cc0000;
+            color: #cc0000;
+            display: block;
+        }
+        
+        .status.loading {
+            background: #fafafa;
+            border-color: #1a1a1a;
+            color: #666;
+            display: block;
+        }
+        
+        .qa-item {
+            background: #fafafa;
+            padding: 25px;
+            border: 1px solid #e5e5e5;
+            margin-bottom: 20px;
+            transition: border-color 0.2s ease;
+            position: relative;
+        }
+        
+        .qa-item:hover {
+            border-color: #1a1a1a;
+        }
+        
+        .qa-item.editing {
+            border-color: #1a1a1a;
+            background: #ffffff;
+        }
+        
+        .qa-question {
+            font-size: 14px;
+            font-weight: 400;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+            line-height: 1.6;
+        }
+        
+        .qa-answer {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.7;
+            letter-spacing: 0.3px;
+            white-space: pre-wrap;
+        }
+
+        .qa-item-image {
+            border-color: #d8def7;
+            background: linear-gradient(180deg, rgba(90, 93, 240, 0.06), rgba(255, 255, 255, 0.9));
+        }
+
+        .qa-badge {
+            display: inline-block;
+            margin-left: 8px;
+            padding: 3px 8px;
+            border-radius: 999px;
+            font-size: 11px;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+            border: 1px solid #d8def7;
+            color: #4b4fc5;
+            background: rgba(90, 93, 240, 0.12);
+        }
+
+        .qa-image-preview {
+            margin-top: 12px;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 12px;
+        }
+
+        .qa-image-frame iframe {
+            width: 100%;
+            height: 320px;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+        }
+
+        .qa-image-still img {
+            max-width: 100%;
+            border-radius: 12px;
+            border: 1px solid #e5e5e5;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        
+        .qa-actions {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e5e5;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .qa-actions button {
+            background: transparent;
+            color: #1a1a1a;
+            border: 1px solid #e5e5e5;
+            padding: 8px 16px;
+            font-size: 10px;
+            font-family: 'Aboreto', sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .qa-actions button:hover {
+            border-color: #1a1a1a;
+            background: #1a1a1a;
+            color: white;
+        }
+        
+        .qa-actions button.delete-btn:hover {
+            border-color: #cc0000;
+            background: #cc0000;
+            color: white;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 60px 40px;
+            color: #999;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+        
+        .loading-spinner {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .stat-card {
+            background: #fafafa;
+            padding: 30px 20px;
+            border: 1px solid #e5e5e5;
+            text-align: center;
+            transition: border-color 0.2s ease;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card:hover {
+            border-color: #1a1a1a;
+        }
+        
+        .stat-value {
+            font-size: 36px;
+            font-weight: 400;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        
+        .edit-form {
+            display: none;
+        }
+        
+        .edit-form.active {
+            display: block;
+        }
+        
+        .view-content {
+            display: block;
+        }
+        
+        .view-content.hidden {
+            display: none;
+        }
+        
+        .search-box {
+            margin-bottom: 30px;
+        }
+        
+        .search-box input {
+            background: #fafafa;
+            border: 1px solid #e5e5e5;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header">
+            <h1>Thor 1.0 Result Setter</h1>
+            <p>Define authoritative responses for Thor before conversations begin</p>
+        </div>
+        
+        <div class="section">
+            <div class="stat-card">
+                <div class="stat-value" id="totalQA">0</div>
+                <div class="stat-label">Total Result Pairs</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Result Input Modes</h2>
+            <div class="mode-toggle">
+                <button type="button" class="mode-btn active" data-mode="pair">Single Pair</button>
+                <button type="button" class="mode-btn" data-mode="trainx">TrainX Code</button>
+            </div>
+            
+            <div id="pairMode" class="mode-panel active">
+                <form id="addQAForm">
+                    <div class="input-group">
+                        <label for="questionInput">Question / Query</label>
+                        <input 
+                            type="text" 
+                            id="questionInput" 
+                            placeholder="Enter the question or query..."
+                            required
+                            autocomplete="off"
+                        >
+                    </div>
+                    <div class="input-group">
+                        <label for="answerInput">Authoritative Answer / Response</label>
+                        <textarea 
+                            id="answerInput" 
+                            placeholder="Enter the authoritative answer or response..."
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="btn" id="addBtn">
+                        Add Result Pair
+                    </button>
+                </form>
+                <div id="pairStatus" class="status"></div>
+            </div>
+            
+            <div id="trainxMode" class="mode-panel">
+                <form id="trainxForm">
+                    <div class="input-group">
+                        <label for="trainxInput">TrainX Code</label>
+                        <textarea 
+                            id="trainxInput" 
+                            placeholder="Paste your TrainX instructions here. Example: List countries = [\"India\":\"New Delhi\"]; Q: What is the capital of {countries}? A: The capital of {countries} is {countries.object}."
+                            required
+                            rows="12"
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="btn" id="compileTrainXBtn">
+                        Generate with TrainX
+                    </button>
+                </form>
+                <div id="trainxStatus" class="status"></div>
+                <div class="trainx-hint">
+                    Need syntax help? Review the <code>trainx/trainx_1_0.md</code> guide. TrainX can fan-out aliases, iterate over lists, and produce entire datasets in a single run.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Result Library</h2>
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Search questions or answers..."
+                    autocomplete="off"
+                >
+            </div>
+            <div id="qaList">
+                <div class="empty-state">Loading...</div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const addForm = document.getElementById('addQAForm');
+        const questionInput = document.getElementById('questionInput');
+        const answerInput = document.getElementById('answerInput');
+        const addBtn = document.getElementById('addBtn');
+        const pairStatus = document.getElementById('pairStatus');
+        const trainxForm = document.getElementById('trainxForm');
+        const trainxInput = document.getElementById('trainxInput');
+        const trainxBtn = document.getElementById('compileTrainXBtn');
+        const trainxStatus = document.getElementById('trainxStatus');
+        const modeButtons = document.querySelectorAll('.mode-btn');
+        const modePanels = {
+            pair: document.getElementById('pairMode'),
+            trainx: document.getElementById('trainxMode')
+        };
+        const qaList = document.getElementById('qaList');
+        const totalQA = document.getElementById('totalQA');
+        const searchInput = document.getElementById('searchInput');
+        
+        let allQAPairs = [];
+        
+        function setStatus(target, state, message) {
+            if (!target) return;
+            if (!state) {
+                target.className = 'status';
+                target.textContent = '';
+                return;
+            }
+            target.className = `status ${state}`;
+            target.textContent = message || '';
+        }
+        
+        modeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const mode = button.dataset.mode;
+                modeButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                Object.entries(modePanels).forEach(([name, panel]) => {
+                    panel.classList.toggle('active', name === mode);
+                });
+            });
+        });
+        
+        loadQAPairs();
+        
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase().trim();
+            if (searchTerm === '') {
+                renderQAPairs(allQAPairs);
+            } else {
+                const filtered = allQAPairs.filter(qa => 
+                    qa.question.toLowerCase().includes(searchTerm) || 
+                    qa.answer.toLowerCase().includes(searchTerm)
+                );
+                renderQAPairs(filtered);
+            }
+        });
+        
+        addForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const question = questionInput.value.trim();
+            const answer = answerInput.value.trim();
+            if (!question || !answer) {
+                setStatus(pairStatus, 'error', 'Question and answer cannot be empty');
+                return;
+            }
+            
+            addBtn.disabled = true;
+            addBtn.innerHTML = '<span class="loading-spinner"></span>Adding...';
+            setStatus(pairStatus, 'loading', 'Adding result pair...');
+            
+            try {
+                const response = await fetch('/api/qa/add', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ question, answer })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    setStatus(pairStatus, 'success', 'Result pair added successfully!');
+                    questionInput.value = '';
+                    answerInput.value = '';
+                    loadQAPairs();
+                    setTimeout(() => setStatus(pairStatus, null, ''), 3000);
+                } else {
+                    setStatus(pairStatus, 'error', data.error || 'Failed to add result pair');
+                }
+            } catch (error) {
+                setStatus(pairStatus, 'error', 'Error: ' + error.message);
+            } finally {
+                addBtn.disabled = false;
+                addBtn.textContent = 'Add Result Pair';
+            }
+        });
+        
+        trainxForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const source = trainxInput.value.trim();
+            if (!source) {
+                setStatus(trainxStatus, 'error', 'TrainX code cannot be empty');
+                return;
+            }
+            
+            trainxBtn.disabled = true;
+            trainxBtn.innerHTML = '<span class="loading-spinner"></span>Generating...';
+            setStatus(trainxStatus, 'loading', 'Generating result pairs with TrainX...');
+            
+            try {
+                const response = await fetch('/api/trainx/compile', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ source })
+                });
+                
+                const data = await response.json();
+                if (data.success) {
+                    const count = data.count || (data.generated ? data.generated.length : 0);
+                    setStatus(
+                        trainxStatus,
+                        'success',
+                        `Generated ${count} result pair${count === 1 ? '' : 's'} via TrainX. Review them below.`
+                    );
+                    loadQAPairs();
+                } else {
+                    setStatus(trainxStatus, 'error', data.error || 'Failed to compile TrainX script');
+                }
+            } catch (error) {
+                setStatus(trainxStatus, 'error', 'Error: ' + error.message);
+            } finally {
+                trainxBtn.disabled = false;
+                trainxBtn.textContent = 'Generate with TrainX';
+            }
+        });
+        
+        async function loadQAPairs() {
+            try {
+                const response = await fetch('/api/qa/list');
+                const data = await response.json();
+                
+                if (data.success) {
+                    const basePairs = data.result_pairs || data.qa_pairs || [];
+                    // Force-tag image pairs client-side so the UI always renders them distinctly,
+                    // even if the stored data missed the type field.
+                    const pairs = basePairs.map((pair) => {
+                        if (isImagePair(pair) && (!pair.type || pair.type.toLowerCase() !== 'image')) {
+                            return { ...pair, type: 'image' };
+                        }
+                        return pair;
+                    });
+                    allQAPairs = pairs;
+                    renderQAPairs(allQAPairs);
+                    totalQA.textContent = pairs.length;
+                } else {
+                    qaList.innerHTML = '<div class="empty-state">Error loading result pairs</div>';
+                }
+            } catch (error) {
+                qaList.innerHTML = '<div class="empty-state">Error loading result pairs</div>';
+            }
+        }
+        
+        function renderQAPairs(pairs) {
+            if (pairs.length === 0) {
+                qaList.innerHTML = '<div class="empty-state">No result pairs yet. Add your first one above!</div>';
+                return;
+            }
+            
+            qaList.innerHTML = pairs.map(qa => {
+                const image = extractImageUrl(qa.answer || '');
+                const isImage = isImagePair(qa);
+                return `
+                <div class="qa-item ${isImage ? 'qa-item-image' : ''}" data-id="${qa.id}">
+                    <div class="view-content" id="view-${qa.id}">
+                        <div class="qa-question">
+                            <strong>Q:</strong> ${escapeHtml(qa.question)}
+                            ${isImage ? '<span class="qa-badge qa-badge-image">Image</span>' : ''}
+                        </div>
+                        ${renderAnswer(qa, image, isImage)}
+                        <div class="qa-actions">
+                            <button onclick="editQA('${qa.id}')">Edit</button>
+                            <button class="delete-btn" onclick="deleteQA('${qa.id}')">Delete</button>
+                        </div>
+                    </div>
+                    <div class="edit-form" id="edit-${qa.id}">
+                        <div class="input-group">
+                            <label>Question / Query</label>
+                            <input 
+                                type="text" 
+                                id="edit-question-${qa.id}" 
+                                value="${escapeHtml(qa.question)}"
+                            >
+                        </div>
+                        <div class="input-group">
+                            <label>Authoritative Answer / Response</label>
+                            <textarea id="edit-answer-${qa.id}">${escapeHtml(qa.answer)}</textarea>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" onclick="saveQA('${qa.id}')">Save</button>
+                            <button class="btn btn-secondary" onclick="cancelEdit('${qa.id}')">Cancel</button>
+                        </div>
+                    </div>
+                </div>`;
+            }).join('');
+        }
+
+        function extractImageUrl(rawAnswer) {
+            if (!rawAnswer) return '';
+            // TRAINX iframe token takes priority
+            const iframeMatch = rawAnswer.match(/\{\{TRAINX_IFRAME:([^}]+)\}\}/i);
+            if (iframeMatch && iframeMatch[1]) {
+                return iframeMatch[1].trim();
+            }
+            const IMAGE_EXT = /\.(png|jpg|jpeg|gif|webp|bmp|svg)(?=$|[?#&;,)\s])/i;
+            const urls = rawAnswer.match(/https?:\/\/[^\s"'<>]+/gi) || [];
+            for (const raw of urls) {
+                const cleaned = raw.replace(/[)>.,;]+$/, '');
+                if (IMAGE_EXT.test(cleaned)) {
+                    return cleaned;
+                }
+            }
+            return '';
+        }
+
+        function isImagePair(qa) {
+            const rawAnswer = (qa.answer || '').trim();
+            const hasType = qa.type && qa.type.toLowerCase() === 'image';
+            const hasIframeToken = rawAnswer.includes('{{TRAINX_IFRAME:');
+            const url = extractImageUrl(rawAnswer);
+            const looseUrlImage = /https?:\/\/[^\s"'<>]+/i.test(rawAnswer) && /\.(png|jpg|jpeg|gif|webp|bmp|svg)/i.test(rawAnswer);
+            return hasType || hasIframeToken || !!url || looseUrlImage;
+        }
+
+        function renderAnswer(qa, imageUrl, isImage) {
+            const rawAnswer = qa.answer || '';
+            const answerSafe = escapeHtml(rawAnswer);
+            if (!isImage) {
+                return `<div class="qa-answer"><strong>A:</strong> ${answerSafe}</div>`;
+            }
+            const url = imageUrl || rawAnswer;
+            const iframe = `
+                <div class="qa-answer">
+                    <strong>A:</strong> <a href="${url}" target="_blank" rel="noopener">${answerSafe}</a>
+                </div>`;
+            const preview = imageUrl ? `
+                <div class="qa-image-preview">
+                    <div class="qa-image-frame">
+                        <iframe src="${url}" loading="lazy" referrerpolicy="no-referrer"></iframe>
+                    </div>
+                    <div class="qa-image-still">
+                        <img src="${url}" alt="${answerSafe}" loading="lazy" onerror="this.style.display='none'">
+                    </div>
+                </div>
+            ` : '';
+            return iframe + preview;
+        }
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        function editQA(id) {
+            document.getElementById(`view-${id}`).classList.add('hidden');
+            document.getElementById(`edit-${id}`).classList.add('active');
+            document.querySelector(`[data-id="${id}"]`).classList.add('editing');
+        }
+        
+        function cancelEdit(id) {
+            document.getElementById(`view-${id}`).classList.remove('hidden');
+            document.getElementById(`edit-${id}`).classList.remove('active');
+            document.querySelector(`[data-id="${id}"]`).classList.remove('editing');
+        }
+        
+        async function saveQA(id) {
+            const question = document.getElementById(`edit-question-${id}`).value.trim();
+            const answer = document.getElementById(`edit-answer-${id}`).value.trim();
+            
+            if (!question || !answer) {
+                alert('Question and answer cannot be empty');
+                return;
+            }
+            
+            try {
+                const response = await fetch('/api/qa/update', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ id, question, answer })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    loadQAPairs();
+                } else {
+                    alert(data.error || 'Failed to update result pair');
+                }
+            } catch (error) {
+                alert('Error: ' + error.message);
+            }
+        }
+        
+        async function deleteQA(id) {
+            if (!confirm('Are you sure you want to delete this result pair?')) {
+                return;
+            }
+            
+            try {
+                const response = await fetch('/api/qa/delete', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ id })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    loadQAPairs();
+                } else {
+                    alert(data.error || 'Failed to delete result pair');
+                }
+            } catch (error) {
+                alert('Error: ' + error.message);
+            }
+        }
+        
+        questionInput.focus();
+    </script>
+</body>
+</html>
+

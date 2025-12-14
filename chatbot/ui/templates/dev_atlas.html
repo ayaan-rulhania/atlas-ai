@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Atlas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pEhc6H0r5C3yRyvCb4s46HoPazTA/gkGEXLJJLLfi5yRvCNrI6VsgGAaHo9dZYkTfLZNVVRhk1FdYzf+gj2R3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dev_atlas.css') }}?v=1">
+</head>
+<body>
+    <div class="dev-shell">
+        <header class="dev-header">
+            <h1 class="dev-title">Dev Atlas</h1>
+            <button id="newChatBtn" class="icon-btn" title="New chat">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </header>
+
+        <main class="dev-main">
+            <div id="messages" class="messages"></div>
+
+            <form id="promptForm" class="prompt-form">
+                <input
+                    id="promptInput"
+                    class="prompt-input"
+                    type="text"
+                    placeholder="Ask Thor 1.0 anything..."
+                    autocomplete="off"
+                    required
+                />
+                <button type="submit" class="send-btn" title="Send">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+            </form>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/dev_atlas.js') }}?v=1"></script>
+</body>
+</html>
+
+

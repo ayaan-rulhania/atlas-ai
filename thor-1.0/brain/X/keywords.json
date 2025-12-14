@@ -1,0 +1,102 @@
+{
+  "letter": "X",
+  "keywords": [
+    "xamarin",
+    "xgboost",
+    "xr"
+  ],
+  "knowledge": [
+    {
+      "title": "Mobile development with Xamarin | .NET",
+      "content": "See the Xamarin support policy for details. We recommend you use .NET Multi-platform App UI (.NET MAUI), the evolution of Xamarin.Forms, which lets you create Android, iOS, macOS, and Windows apps with a modern, cross-platform framework.",
+      "query": "Xamarin framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:00:22.414988"
+    },
+    {
+      "title": "Xamarin - Wikipedia",
+      "content": "Xamarin is a Microsoft-owned subsidiary that develops tools and libraries for building apps with C# across multiple platforms. Learn about its history, products, funding, acquisition, and end of support for Xamarin.",
+      "query": "Xamarin framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:00:22.415060"
+    },
+    {
+      "title": "Introduction to Xamarin | A Software for Mobile App ... - GeeksforGeeks",
+      "content": "Xamarin.Forms Xamarin provides developers two ways to build a mobile app. Either by using Xamarin.iOS and Xamarin.Android (main approach) or by using Xamarin.Forms which is a framework for simple apps and prototypes. Xamarin.Forms, the Visual Studio Library facilitates for rapid prototyping or building apps with few platform-specific ...",
+      "query": "Xamarin framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:00:22.415121"
+    },
+    {
+      "title": "Xamarin Open Source SDK",
+      "content": "Xamarin brings open source .NET to mobile development, enabling every developer to build truly native apps for any device in C# and F#. We're excited for your contributions in continuing our mission to make it fast, easy, and fun to build great mobile apps.",
+      "query": "Xamarin framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:00:22.415175"
+    },
+    {
+      "title": "Xamarin: Complete Definition & Examples [2025]",
+      "content": "A Microsoft framework for building iOS, Android, and Windows apps with .NET. Overview Xamarin is a fundamental concept in mobile development that every developer should understand. It provides a robust foundation for building modern applications and is widely used across the industry. Key Characteristics Xamarin offers several important features: Simplicity: Easy to understand and implement ...",
+      "query": "Xamarin framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:00:22.415232"
+    },
+    {
+      "title": "XGBoost",
+      "content": "XGBoost is an open-source software library which provides a regularizing gradient boosting framework for C++, Java, Python, R, Julia, Perl, and Scala. It works on Linux, Microsoft Windows, and macOS. From the project description, it aims to provide a \"Scalable, Portable and Distributed Gradient Boosting Library\". It runs on a single machine, as well as the distributed processing frameworks Apache Hadoop, Apache Spark, Apache Flink, and Dask.",
+      "query": "XGBoost",
+      "source": "wikipedia",
+      "learned_at": "2025-11-24T15:30:01.548060"
+    },
+    {
+      "title": "Xgboost - Best Brands Side by Side - Top Picks, Lowest Prices",
+      "content": "OneClearWinner.com - Stop browsing online stores for hours - we are doing it for you. OneClearWinner.com - Stop browsing online stores for hours",
+      "query": "XGBoost",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:30:02.625306"
+    },
+    {
+      "title": "XGBoost - Wikipedia",
+      "content": "XGBoost[2] (eXtreme Gradient Boosting) is an open-source software library which provides a regularizing gradient boosting framework for C++, Java, Python, [3] R, [4] Julia, [5] Perl, [6] and Scala. It works on Linux, Microsoft Windows, [7] and macOS. [8] From the project description, it aims to provide a \"Scalable, Portable and Distributed Gradient Boosting (GBM, GBRT, GBDT) Library\". It runs ...",
+      "query": "XGBoost",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:30:02.625374"
+    },
+    {
+      "title": "About - XGBoost",
+      "content": "XGBoost is a fast and accurate machine learning library that implements gradient boosting algorithms. It supports parallel tree boosting on major distributed environments and provides Python, R and Java APIs.",
+      "query": "XGBoost",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:30:02.625429"
+    },
+    {
+      "title": "XGBoost - GeeksforGeeks",
+      "content": "XGBoost uses decision trees as its base learners and combines them sequentially to improve the model's performance. Each new tree is trained to correct the errors made by the previous tree and this process is called boosting. It has built-in parallel processing to train models on large datasets quickly.",
+      "query": "XGBoost",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:30:02.625493"
+    },
+    {
+      "title": "GitHub - dmlc/xgboost: Scalable, Portable and Distributed Gradient ...",
+      "content": "XGBoost is an optimized distributed gradient boosting library designed to be highly efficient, flexible and portable. It implements machine learning algorithms under the Gradient Boosting framework. XGBoost provides a parallel tree boosting (also known as GBDT, GBM) that solve many data science problems in a fast and accurate way.",
+      "query": "XGBoost",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:30:02.625552"
+    },
+    {
+      "title": "About XR",
+      "content": "XR is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "XR",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:28:55.457442"
+    },
+    {
+      "title": "About Xamarin framework",
+      "content": "Xamarin framework is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Xamarin framework",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:41:54.783616"
+    }
+  ],
+  "last_updated": "2025-11-27T22:41:54.785093"
+}

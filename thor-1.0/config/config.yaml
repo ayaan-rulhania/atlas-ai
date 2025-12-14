@@ -1,0 +1,51 @@
+model:
+  name: "all_rounder_model"
+  architecture: "transformer"
+  hidden_size: 768
+  num_layers: 12
+  num_heads: 12
+  intermediate_size: 3072
+  max_position_embeddings: 512
+  vocab_size: 50257
+  dropout: 0.1
+
+training:
+  batch_size: 32
+  learning_rate: 1e-4
+  num_epochs: 10
+  warmup_steps: 1000
+  weight_decay: 0.01
+  gradient_accumulation_steps: 1
+  max_grad_norm: 1.0
+  save_steps: 1000
+  eval_steps: 500
+  logging_steps: 100
+
+tasks:
+  - name: "text_classification"
+    enabled: true
+    num_labels: 2
+  - name: "text_generation"
+    enabled: true
+    max_length: 128
+  - name: "question_answering"
+    enabled: true
+  - name: "sentiment_analysis"
+    enabled: true
+    num_labels: 3
+  - name: "named_entity_recognition"
+    enabled: true
+    num_labels: 9
+
+data:
+  train_path: "data/train.json"
+  val_path: "data/val.json"
+  test_path: "data/test.json"
+  cache_dir: "cache"
+
+output:
+  model_dir: "models"
+  log_dir: "logs"
+
+device: "cpu"  # Change to "cuda" if you have a GPU
+

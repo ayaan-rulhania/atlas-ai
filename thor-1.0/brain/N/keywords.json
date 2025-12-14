@@ -1,0 +1,1958 @@
+{
+  "letter": "N",
+  "keywords": [
+    "neural",
+    "networks",
+    "natural",
+    "news",
+    "node.js",
+    "nice.",
+    "norse",
+    "nicely",
+    "next.js",
+    "nuxt.js",
+    "nest.js",
+    "nosql",
+    "neo4j",
+    "normalization",
+    "network",
+    "named",
+    "native",
+    "networking",
+    "notation",
+    "navigation",
+    "net",
+    "npm",
+    "non-fiction",
+    "narrative",
+    "nuclear",
+    "naming",
+    "non-blocking",
+    "normalizer",
+    "null",
+    "nash",
+    "nps",
+    "nurturing",
+    "near",
+    "n-tier",
+    "note",
+    "negative",
+    "non-associative",
+    "novice",
+    "none",
+    "nimble",
+    "notable",
+    "neptune",
+    "neos",
+    "national",
+    "nature",
+    "nations",
+    "non-governmental",
+    "ngos",
+    "neutral",
+    "new",
+    "nigeria",
+    "nicaragua",
+    "nation",
+    "need",
+    "noise",
+    "norm",
+    "number",
+    "newton's",
+    "nepal?",
+    "nooo"
+  ],
+  "knowledge": [
+    {
+      "title": "Neural network - Wikipedia",
+      "content": "Learn about neural networks, groups of interconnected units that can perform complex tasks. Compare biological neural networks in brains and nervous systems with artificial neural networks in machine learning and artificial intelligence.",
+      "query": "neural networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:53:00.357939"
+    },
+    {
+      "title": "What is a Neural Network? - GeeksforGeeks",
+      "content": "Neural networks are machine learning models that mimic the complex functions of the human brain. These models consist of interconnected nodes or neurons that process data, learn patterns and enable tasks such as pattern recognition and decision-making.",
+      "query": "neural networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:53:00.357978"
+    },
+    {
+      "title": "What is a neural network? - IBM",
+      "content": "Neural networks allow programs to recognize patterns and solve common problems in artificial intelligence, machine learning and deep learning.",
+      "query": "neural networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:53:00.358005"
+    },
+    {
+      "title": "What is a neural network? | Types of neural networks",
+      "content": "A neural network, or artificial neural network, is a type of computing architecture used in advanced AI. Learn about the different types of neural networks.",
+      "query": "neural networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:53:00.358033"
+    },
+    {
+      "title": "Neural Networks - Intuitively and Exhaustively Explained",
+      "content": "Learn the fundamentals of neural networks, a cornerstone technology in modern AI, by exploring their inspiration from the human brain, their mathematical operations, and their training algorithm. This article is designed to be accessible to beginners and also contains thorough information for more experienced readers.",
+      "query": "neural networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:53:00.358059"
+    },
+    {
+      "title": "Natural language processing - Wikipedia",
+      "content": "Natural language processing (NLP) is the processing of natural language information by a computer. The study of NLP, a subfield of computer science, is generally associated with artificial intelligence. NLP is related to information retrieval, knowledge representation, computational linguistics, and more broadly with linguistics. [1] Major processing tasks in an NLP system include: speech ...",
+      "query": "natural language processing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:53:23.922566"
+    },
+    {
+      "title": "What is NLP (natural language processing)? - IBM",
+      "content": "Natural language processing (NLP) is a subfield of artificial intelligence (AI) that uses machine learning to help computers communicate with human language.",
+      "query": "natural language processing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:53:23.922630"
+    },
+    {
+      "title": "Natural Language Processing (NLP) - A Complete Guide",
+      "content": "What is Natural Language Processing (NLP) Natural language processing (NLP) is the discipline of building machines that can manipulate human language \u2014 or data that resembles human language \u2014 in the way that it is written, spoken, and organized. It evolved from computational linguistics, which uses computer science to understand the principles of language, but rather than developing ...",
+      "query": "natural language processing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:53:23.922688"
+    },
+    {
+      "title": "Natural Language Processing (NLP) - Overview - GeeksforGeeks",
+      "content": "Natural Language Processing (NLP) is a field that combines computer science, artificial intelligence and language studies. It helps computers understand, process and create human language in a way that makes sense and is useful. With the growing amount of text data from social media, websites and other sources, NLP is becoming a key tool to gain insights and automate tasks like analyzing text ...",
+      "query": "natural language processing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:53:23.922738"
+    },
+    {
+      "title": "What is Natural Language Processing? Definition and Examples",
+      "content": "Natural language processing definition Natural language processing (NLP) is a subset of artificial intelligence, computer science, and linguistics focused on making human communication, such as speech and text, comprehensible to computers. NLP is used in a wide variety of everyday products and services.",
+      "query": "natural language processing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:53:23.922786"
+    },
+    {
+      "title": "Tech News | Today's Latest Technology News | Reuters",
+      "content": "Find latest technology news from every corner of the globe at Reuters.com, your online source for breaking international news coverage.",
+      "query": "technology news",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:56:13.412494"
+    },
+    {
+      "title": "Technology: Latest Tech News Articles Today | AP News",
+      "content": "Don't miss an update on the latest tech news from The Associated Press. AP News has everything you need to know for technology news today.",
+      "query": "technology news",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:56:13.412533"
+    },
+    {
+      "title": "The Latest News in Technology | PCMag",
+      "content": "Get the latest technology news and in-depth analysis from the expert analysts at PCMag.",
+      "query": "technology news",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:56:13.412560"
+    },
+    {
+      "title": "Google News - Technology - Latest",
+      "content": "Explore the latest advancements, trends, and news in the world of technology, covering a wide range of topics and innovations.",
+      "query": "technology news",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:56:13.412587"
+    },
+    {
+      "title": "Tech | CNN Business",
+      "content": "View the latest technology headlines, gadget and smartphone trends, and insights from tech industry leaders.",
+      "query": "technology news",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:56:13.412613"
+    },
+    {
+      "title": "WIRED - The Latest in Technology, Science, Culture and Business",
+      "content": "We bring you the future as it happens. From the latest in science and technology to the big stories in business and culture, we've got you covered.",
+      "query": "technology news",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:59:21.034237"
+    },
+    {
+      "title": "TechCrunch | Startup and Technology News",
+      "content": "TechCrunch | Reporting on the business of technology, startups, venture capital funding, and Silicon Valley",
+      "query": "technology news",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:02:21.849441"
+    },
+    {
+      "title": "Node.js",
+      "content": "Node.js is a cross-platform, open-source JavaScript runtime environment that can run on Windows, Linux, Unix, macOS, and more. Node.js runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser. According to the Stack Overflow Developer Survey, Node.js is one of the most commonly used web technologies.",
+      "query": "node.js",
+      "source": "wikipedia",
+      "learned_at": "2025-11-23T12:08:22.891387"
+    },
+    {
+      "title": "Node.js \u2014 Run JavaScript Everywhere",
+      "content": "Node.js\u00ae is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts.",
+      "query": "node.js",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:08:23.594926"
+    },
+    {
+      "title": "Node.js - Wikipedia",
+      "content": "Node.js is a cross-platform, open-source JavaScript runtime environment that can run on Windows, Linux, Unix, macOS, and more. Node.js runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser. According to the Stack Overflow Developer Survey, Node.js is one of the most commonly used web technologies. [6] Node.js lets developers use JavaScript to write command line ...",
+      "query": "node.js",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:08:23.595000"
+    },
+    {
+      "title": "What Exactly is Node.js? Explained for Beginners",
+      "content": "Learn what Node.js is, how it differs from the browser runtime environment, and why you should learn it. Follow a simple step-by-step guide to create your first Node.js application.",
+      "query": "node.js",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:08:23.595058"
+    },
+    {
+      "title": "Node.js Tutorial - GeeksforGeeks",
+      "content": "Node.js is a powerful, open-source, and cross-platform JavaScript runtime environment built on Chrome's V8 engine. It allows you to run JavaScript code outside the browser, making it ideal for building scalable server-side and networking applications. JavaScript was mainly used for frontend development earlier.",
+      "query": "node.js",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:08:23.595115"
+    },
+    {
+      "title": "Node.js tutorial in Visual Studio Code",
+      "content": "Learn how to create and run Node.js applications using Visual Studio Code, a code editor with built-in support for JavaScript and TypeScript. Follow the steps to install Node.js, create a Hello World app, debug it, and use the Express framework.",
+      "query": "node.js",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:08:23.595169"
+    },
+    {
+      "title": "Node.js Introduction - W3Schools",
+      "content": "What is Node.js? Node.js is a free, open-source JavaScript runtime that runs on Windows, Mac, Linux, and more. It lets you execute JavaScript code outside of a web browser, enabling server-side development with JavaScript. Built on Chrome's V8 JavaScript engine, Node.js is designed for building scalable network applications efficiently.",
+      "query": "node.js",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:15:43.694676"
+    },
+    {
+      "title": "GitHub - nodejs/node: Node.js JavaScript runtime",
+      "content": "Node.js is an open-source, cross-platform JavaScript runtime environment. For information on using Node.js, see the Node.js website. The Node.js project uses an open governance model. The OpenJS Foundation provides support for the project. Contributors are expected to act in a collaborative manner to move the project forward. We encourage the constructive exchange of contrary opinions and ...",
+      "query": "node.js",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:15:43.694770"
+    },
+    {
+      "title": "What is a Neural Network & How Does It Work? | Google Cloud",
+      "content": "Learn how neural networks work, their types, applications, and advantages. Neural networks are machine learning algorithms inspired by the human brain that can solve complex problems like image recognition and natural language processing.",
+      "query": "neural networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:15:54.667247"
+    },
+    {
+      "title": "NodeJS Introduction - GeeksforGeeks",
+      "content": "NodeJS is a runtime environment for executing JavaScript outside the browser, built on the V8 JavaScript engine. It enables server-side development, supports asynchronous, event-driven programming, and efficiently handles scalable network applications.",
+      "query": "node.js",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:18:17.136981"
+    },
+    {
+      "title": "Downloading and installing Node.js and npm - npm Docs",
+      "content": "Learn how to download and install Node.js and npm using a Node version manager or a Node installer. Find out how to check your version of Node.js and npm and how to switch between different versions.",
+      "query": "node.js",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:28:22.697409"
+    },
+    {
+      "title": "Neural Networks | Journal | ScienceDirect.com by Elsevier",
+      "content": "Neural Networks is a peer-reviewed journal that covers all aspects of neural networks, deep learning, and artificial intelligence. It publishes articles, reviews, and letters on cognitive modeling, neuroscience, engineering, and applications of neural networks.",
+      "query": "neural networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:31:51.319320"
+    },
+    {
+      "title": "NodeJS Basics - GeeksforGeeks",
+      "content": "NodeJS is a JavaScript runtime environment built on Chrome's V8 JavaScript engine that allows developers to execute JavaScript code outside the browser. It can make console-based and web-based NodeJS applications.",
+      "query": "node.js",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:32:13.237592"
+    },
+    {
+      "title": "Node.js Tutorial - W3Schools",
+      "content": "Node.js is a free, open source tool that lets you run JavaScript outside the web browser. With Node.js, you can build fast and scalable applications like web servers, APIs, tools, and more.",
+      "query": "node.js",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:51:00.239914"
+    },
+    {
+      "title": "Technology Org - Science and technology news",
+      "content": "Explore the latest science and technology news, research, and innovations on Technology Org.",
+      "query": "technology news",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T13:31:48.063285"
+    },
+    {
+      "title": "Severe internet outages keep happening \u2014 and they might get worse",
+      "content": "Growing reliance on a handful of major internet infrastructure companies has led to major disruptions, sparking everything from political pressure to computer science memes.",
+      "query": "technology news",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T13:31:48.063315"
+    },
+    {
+      "title": "Global Tech Shares Surge as Nvidia's AI Boom Powers Market Rally",
+      "content": "(Reuters) -Global technology shares rallied on Thursday after Nvidia's blow-out quarterly results signaled that demand for artificial intelligence hardware remains strong even as concerns of the ...",
+      "query": "technology news",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T13:31:48.063337"
+    },
+    {
+      "title": "Why Can't People Shake Their AI Worries? Why Can't People Shake Their ...",
+      "content": "Why Can't People Shake Their Worries? It is a time of superlatives in the tech industry, with historic profits, stock prices and deal prices. It's enough to make some people very nervous.",
+      "query": "technology news",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T13:31:48.063359"
+    },
+    {
+      "title": "Latest AI Tech News: Mid-November 2025 Updates",
+      "content": "Comprehensive mid-November 2025 AI tech coverage: OpenAI's GPT-5.1, massive infrastructure deals, privacy-focused AI compute, and venture capital trends.",
+      "query": "technology news",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T13:31:48.063380"
+    },
+    {
+      "title": "Natural language processing (NLP) | Definition, History, & Facts ...",
+      "content": "Natural language processing is the use of operations, systems, and technologies that allow computers to process and respond to written and spoken language in a way that mirrors human ability.",
+      "query": "natural language processing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T13:46:13.287000"
+    },
+    {
+      "title": "What Are Neural Networks? The Backbone of Modern AI Explained",
+      "content": "Learn what neural networks are, how they work, and how they are used in various domains. Explore the types of neural networks, such as feedforward, convolutional, and recurrent, and their advantages and limitations.",
+      "query": "neural networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T13:53:46.856352"
+    },
+    {
+      "title": "Tech - The Verge",
+      "content": "The latest tech news about the world's best (and sometimes worst) hardware, apps, and much more. From top companies like Google and Apple to tiny startups vying for your attention, Verge Tech ...",
+      "query": "technology news",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T14:00:23.058520"
+    },
+    {
+      "title": "NICE Definition & Meaning - Merriam-Webster",
+      "content": "The meaning of NICE is polite, kind. How to use nice in a sentence. Synonym Discussion of Nice.",
+      "query": "Nice.",
+      "source": "research",
+      "learned_at": "2025-11-23T17:56:03.921537"
+    },
+    {
+      "title": "Nice - Wikipedia",
+      "content": "Nice[a] (/ ni\u02d0s / NEESS; French pronunciation: [nis] \u24d8) is a French city located in the prefecture of the Alpes-Maritimes department. The Nice agglomeration extends far beyond the administrative city limits, with a population of nearly one million [4][2] on an area of 744 km 2 (287 sq mi). [2] Located on the French Riviera, the southeastern coast of France on the Mediterranean Sea, at the ...",
+      "query": "Nice.",
+      "source": "research",
+      "learned_at": "2025-11-23T17:56:03.921589"
+    },
+    {
+      "title": "NICE Definition & Meaning | Dictionary.com",
+      "content": "Nice definition: pleasing; agreeable; delightful.. See examples of NICE used in a sentence.",
+      "query": "Nice.",
+      "source": "research",
+      "learned_at": "2025-11-23T17:56:03.921629"
+    },
+    {
+      "title": "22 Best Things to Do in Nice, France - U.S. News Travel",
+      "content": "Discover the best things to do in Nice, France, from relaxing on local beaches to embarking on day trips (including food and wine tours) in the French Riviera.",
+      "query": "Nice.",
+      "source": "research",
+      "learned_at": "2025-11-23T17:56:03.921665"
+    },
+    {
+      "title": "NICE | English meaning - Cambridge Dictionary",
+      "content": "NICE definition: 1. pleasant, enjoyable, or satisfactory: 2. pleasantly: 3. kind, friendly, or polite: . Learn more.",
+      "query": "Nice.",
+      "source": "research",
+      "learned_at": "2025-11-23T17:56:03.921700"
+    },
+    {
+      "title": "Thor - Wikipedia",
+      "content": "Thor's Fight with the Giants (Tors strid med j\u00e4ttarna) by M\u00e5rten Eskil Winge (1872). Thor (from Old Norse: \u00de\u00f3rr) is a prominent god in Germanic paganism. In Norse mythology, he is a hammer-wielding god associated with thunder, storms, strength, protection, fertility, farmers, and free people. [1][2] Besides Old Norse \u00de\u00f3rr, the deity occurs in Old English as Thunor, in Old Frisian as ...",
+      "query": "Who was Thor in norse myths?",
+      "source": "research",
+      "learned_at": "2025-11-23T18:03:27.952029"
+    },
+    {
+      "title": "8 Thor Myths and Stories from Norse Mythology - Myth Nerd",
+      "content": "Within Norse mythology, Thor is easily one of the most fascinating characters. He features in the majority of the major myths. Unlike his brother Loki, Thor does very little scheming and a great deal of fighting. For this reason he is thought of as one of the major defenders of Asgard and the Aesir and Vanir gods. What follows are just some of the major myths in which Thor plays some role ...",
+      "query": "Who was Thor in norse myths?",
+      "source": "research",
+      "learned_at": "2025-11-23T18:03:27.952147"
+    },
+    {
+      "title": "Thor | Norse god, Thunder, Hammer | Britannica",
+      "content": "Thor, deity common to all the early Germanic peoples, a great warrior represented as a red-bearded, middle-aged man of enormous strength, an implacable foe to the harmful race of giants but benevolent toward mankind. His figure was generally secondary to that of the god Odin, who in some traditions",
+      "query": "Who was Thor in norse myths?",
+      "source": "research",
+      "learned_at": "2025-11-23T18:03:27.952184"
+    },
+    {
+      "title": "Thor - Norse Mythology for Smart People",
+      "content": "Thor (Old Norse \u00de\u00f3rr, Old English \u0110unor, Old High German Donar, Proto-Germanic *\u00deunraz, \"Thunder\"[1]) is one of the most prominent figures in Norse mythology. He was a major god of all branches of the Germanic peoples before their conversion to Christianity, although he reached the height of his popularity among the Scandinavians of the late \u2026 Continue reading Thor \u2192",
+      "query": "Who was Thor in norse myths?",
+      "source": "research",
+      "learned_at": "2025-11-23T18:03:27.952212"
+    },
+    {
+      "title": "Thor - Mythopedia",
+      "content": "Thor was the fiercest of Norse deities, god of thunder and lightning and always raring for a fight. Wielding his powerful hammer Mj\u00f6lnir, he defeated many monsters and j\u00f6tnar in service of the Aesir.",
+      "query": "Who was Thor in norse myths?",
+      "source": "research",
+      "learned_at": "2025-11-23T18:03:27.952322"
+    },
+    {
+      "title": "Nicely Done Chapter 1, a Thor - FanFiction",
+      "content": "Loki has attempted to enslave the whole human race. The Avengers saved the day, and now he must face his punishment. The Council comes up with a rather odd sentence, beginning with an unexpected trip back to Midguard. Follow Loki while he carries out his orders and hopefully everything ends up nicely done.",
+      "query": "Nicely done, Thor!",
+      "source": "research",
+      "learned_at": "2025-11-23T18:03:51.894589"
+    },
+    {
+      "title": "Big Thor getting in some reps with his place command, and ... - Facebook",
+      "content": "Big Thor getting in some reps with his place command, and adding some distance. Nicely done Thor!",
+      "query": "Nicely done, Thor!",
+      "source": "research",
+      "learned_at": "2025-11-23T18:03:51.894644"
+    },
+    {
+      "title": "Nicely done Thor - YouTube",
+      "content": "About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy & Safety How YouTube works Test new features NFL Sunday Ticket \u00a9 2024 Google LLC",
+      "query": "Nicely done, Thor!",
+      "source": "research",
+      "learned_at": "2025-11-23T18:03:51.894686"
+    },
+    {
+      "title": "Thor/Transcript | Moviepedia | Fandom",
+      "content": "Thor: Enough! Loki: Look at you, the Mighty Thor, with all your strength, and what good does it do you now, huh? Do you hear me, Brother? There's nothing you can do! What are you doing?If you destroy the bridge, you'll never see her again! Thor: Forgive me, Jane. Loki: I could have done it, Father! I could have done it! For you! For all of us!",
+      "query": "Nicely done, Thor!",
+      "source": "research",
+      "learned_at": "2025-11-23T18:03:51.894733"
+    },
+    {
+      "title": "Nicely Done GIFs | Tenor",
+      "content": "With Tenor, maker of GIF Keyboard, add popular Nicely Done animated GIFs to your conversations. Share the best GIFs now >>>",
+      "query": "Nicely done, Thor!",
+      "source": "research",
+      "learned_at": "2025-11-23T18:03:51.894773"
+    },
+    {
+      "title": "Generative adversarial network - Wikipedia",
+      "content": "A generative adversarial network (GAN) is a class of machine learning frameworks and a prominent framework for approaching generative artificial intelligence. The concept was initially developed by Ian Goodfellow and his colleagues in June 2014. [1] In a GAN, two neural networks compete with each other in the form of a zero-sum game, where one agent's gain is another agent's loss. Given a ...",
+      "query": "generative adversarial networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:16:49.661555"
+    },
+    {
+      "title": "Generative Adversarial Network (GAN) - GeeksforGeeks",
+      "content": "Generative Adversarial Networks (GAN) help machines to create new, realistic data by learning from existing examples. It is introduced by Ian Goodfellow and his team in 2014 and they have transformed how computers generate images, videos, music and more. Unlike traditional models that only recognize or classify data, they take a creative way by generating entirely new content that closely ...",
+      "query": "generative adversarial networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:16:49.661591"
+    },
+    {
+      "title": "[1406.2661] Generative Adversarial Networks - arXiv.org",
+      "content": "A framework for estimating generative models via an adversarial process, where a generative model G captures the data distribution and a discriminative model D estimates the probability of a sample coming from G. The paper presents the theory, training procedure, and experiments of this framework, and provides a DOI for citation.",
+      "query": "generative adversarial networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:16:49.661618"
+    },
+    {
+      "title": "A Gentle Introduction to Generative Adversarial Networks (GANs)",
+      "content": "Learn what generative models are and how they differ from discriminative models in machine learning. Discover how Generative Adversarial Networks (GANs) use a generator and a discriminator to create realistic examples from input data.",
+      "query": "generative adversarial networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:16:49.661644"
+    },
+    {
+      "title": "What is a GAN? - Generative Adversarial Networks Explained - AWS",
+      "content": "A generative adversarial network (GAN) is a deep learning architecture. It trains two neural networks to compete against each other to generate more authentic new data from a given training dataset. For instance, you can generate new images from an existing image database or original music from a database of songs. A GAN is called adversarial because it trains two different networks and pits ...",
+      "query": "generative adversarial networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:16:49.661670"
+    },
+    {
+      "title": "Next.js by Vercel - The React Framework",
+      "content": "The React Framework for the Web Used by some of the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components.",
+      "query": "next.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:31.718734"
+    },
+    {
+      "title": "Next.js - Wikipedia",
+      "content": "Next.js is an open-source web development framework created by the private company Vercel providing React -based web applications with server-side rendering and static rendering.",
+      "query": "next.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:31.718764"
+    },
+    {
+      "title": "Introduction | Next.js English",
+      "content": "Welcome to the Next.js Documentation.What is Next.js? Next.js is a React framework for building full-stack web applications. You use React Components to build user interfaces, and Next.js for additional features and optimizations. It also automatically configures lower-level tools like bundlers and compilers. You can instead focus on building your product and shipping quickly. Whether you're ...",
+      "query": "next.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:31.718789"
+    },
+    {
+      "title": "Next.js on Vercel",
+      "content": "Next.js is a fullstack React framework for the web, maintained by Vercel.",
+      "query": "next.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:31.718814"
+    },
+    {
+      "title": "What Is Next.js? A Look at the Popular JavaScript Framework",
+      "content": "There are plenty of reasons Next.js is used by so many of the top apps today. Learn all about this popular JavaScript framework.",
+      "query": "next.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:31.718838"
+    },
+    {
+      "title": "Nuxt: The Progressive Web Framework",
+      "content": "Create high-quality web applications with Nuxt, the open source framework that makes full-stack development with Vue.js intuitive.",
+      "query": "nuxt.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:43.199473"
+    },
+    {
+      "title": "Nuxt - Wikipedia",
+      "content": "Nuxt is a free and open source JavaScript library based on Vue.js, Nitro, and Vite. Nuxt is inspired by Next.js, [4] which is a similar framework based on React rather than Vue.",
+      "query": "nuxt.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:43.199556"
+    },
+    {
+      "title": "GitHub - nuxt/nuxt: The Progressive Web Framework.",
+      "content": "Nuxt is a free and open-source framework with an intuitive and extendable way to create type-safe, performant and production-grade full-stack web applications and websites with Vue.js.",
+      "query": "nuxt.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:43.199612"
+    },
+    {
+      "title": "Nuxt Explained: The Vue.js Framework Guide for 2025",
+      "content": "Nuxt or Nuxt.js is a meta-framework built on Vue.js that handles the production setup you'd otherwise configure manually. While Vue gives you reactive components and the Composition API, Nuxt adds server-side rendering, static site generation, automatic code splitting, and file-based routing without the usual webpack configuration headaches.",
+      "query": "nuxt.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:43.199670"
+    },
+    {
+      "title": "What Is Nuxt.js? Learn More About the Intuitive Vue Framework",
+      "content": "Nuxt.js is the most intuitive Vue framework available today. It combines the power of Vue.js with server-side rendering features to make it more powerful. You can build a complete Vue.js client-side rendering application, a comprehensive static generated application, and a monolith application.",
+      "query": "nuxt.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:43.199726"
+    },
+    {
+      "title": "Download Node.js\u00ae",
+      "content": "Node.js\u00ae is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts.",
+      "query": "node.js runtime",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:54.666857"
+    },
+    {
+      "title": "NodeJS on Windows | Microsoft Learn",
+      "content": "Node.js is an open-source, cross-platform, server-side JavaScript runtime environment built on Chrome's V8 JavaScript engine originally authored by Ryan Dahl and released in 2009.",
+      "query": "node.js runtime",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:32:54.667068"
+    },
+    {
+      "title": "NestJS - A progressive Node.js framework",
+      "content": "Hello, nest! A progressive Node.js framework for building efficient, reliable and scalable server-side applications.",
+      "query": "nest.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:17.282293"
+    },
+    {
+      "title": "GitHub - nestjs/nest: A progressive Node.js framework for building ...",
+      "content": "Nest is a framework for building efficient, scalable Node.js server-side applications. It uses modern JavaScript, is built with TypeScript (preserves compatibility with pure JavaScript) and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming). Under the hood, Nest makes use of Express, but also provides compatibility ...",
+      "query": "nest.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:17.282342"
+    },
+    {
+      "title": "The NestJS Handbook - Learn to Use Nest with Code Examples",
+      "content": "NestJS is a progressive Node.js framework for building efficient, reliable, and scalable server-side applications. Combining the best ideas from OOP (Object-Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming)...",
+      "query": "nest.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:17.282384"
+    },
+    {
+      "title": "NestJS - Wikipedia",
+      "content": "NestJS, or simply Nest, is a server-side Node.js -based web framework, released as free and open-source software under an MIT License. [3][4]",
+      "query": "nest.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:17.282424"
+    },
+    {
+      "title": "What is NestJS? - GeeksforGeeks",
+      "content": "What is NestJS? NestJS is a progressive Node.js framework for building server-side applications. It uses TypeScript by default, providing strong typing and modern JavaScript features, but it also supports pure JavaScript. NestJS is designed to help developers create highly testable, scalable, and maintainable applications. Prerequisites for NestJS To effectively learn and use NestJS, you ...",
+      "query": "nest.js framework",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:33:17.282467"
+    },
+    {
+      "title": "NoSQL - Wikipedia",
+      "content": "NoSQL (originally meaning \" N ot o nly SQL \" or \"non-relational\") [1] refers to a type of database design that stores and retrieves data differently from the traditional table-based structure of relational databases. Unlike relational databases, which organize data into rows and columns like a spreadsheet, NoSQL databases use a single data structure\u2014such as key-value pairs, wide columns ...",
+      "query": "noSQL databases",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:44:46.973478"
+    },
+    {
+      "title": "What Is NoSQL? NoSQL Databases Explained | MongoDB",
+      "content": "Learn what NoSQL databases are, how they differ from relational databases, and when to use them. Explore the main types of NoSQL databases, their features, and examples.",
+      "query": "noSQL databases",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:44:46.973551"
+    },
+    {
+      "title": "Introduction to NoSQL - GeeksforGeeks",
+      "content": "NoSQL (Not Only SQL) databases are designed to handle large volumes of unstructured and semi-structured data. Unlike traditional relational databases that rely on fixed schemas and tables, NoSQL offers flexible data models and supports horizontal scaling.",
+      "query": "noSQL databases",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:44:46.973610"
+    },
+    {
+      "title": "What is a NoSQL database? - IBM",
+      "content": "NoSQL is an approach to database design that enables the storage and querying of data outside the traditional structures found in relational databases.",
+      "query": "noSQL databases",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:44:46.973666"
+    },
+    {
+      "title": "What is a NoSQL Database? - Nonrelational Databases Explained - AWS",
+      "content": "What is NoSQL? What are NoSQL databases? NoSQL databases, otherwise known as purpose-built databases, are designed for specific data models and stores data in flexible schemas that scale easily for modern applications. Many database workloads can benefit from the cost-effectiveness and performance of NoSQL databases.",
+      "query": "noSQL databases",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:44:46.973727"
+    },
+    {
+      "title": "Graph visualization tool - Visualize data from any source",
+      "content": "Create & explore powerful Neo4j graph visualizations with our scalable developer toolkits. Create custom graph visualization tools to reveal insights in your Neo4j data.",
+      "query": "Neo4j database",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:45:44.350370"
+    },
+    {
+      "title": "Neo4j Graph Database & Analytics | Graph Database Management System",
+      "content": "Connect data as it's stored with Neo4j. Perform powerful, complex queries at scale and speed with our graph data platform.",
+      "query": "Neo4j database",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:45:44.350432"
+    },
+    {
+      "title": "Neo4j - Wikipedia",
+      "content": "Neo4j is a graph database developed by Neo4j Inc. that stores nodes, edges and attributes. It is available in a non-open-source community edition and a closed-source commercial edition, and supports Cypher query language and Bolt protocol.",
+      "query": "Neo4j database",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:45:44.350482"
+    },
+    {
+      "title": "Neo4j Tutorial: Using And Querying Graph Databases in Python",
+      "content": "Learn how to create, manage, and query graph databases with Neo4j and Python in this comprehensive guide. You will set up a free cloud instance, write Cypher queries, and ingest data from a football dataset.",
+      "query": "Neo4j database",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:45:44.350530"
+    },
+    {
+      "title": "How to Build a Graph Database with Neo4j",
+      "content": "Conclusion Building a graph database with Neo4j is easy and powerful. With its ability to handle complex data relationships, Neo4j is the perfect choice for modern applications. In this article, we've covered the basics of building a graph database with Neo4j, from setting up the environment to creating nodes and relationships, and querying the ...",
+      "query": "Neo4j database",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:45:44.350580"
+    },
+    {
+      "title": "Database normalization - Wikipedia",
+      "content": "Learn about the process of structuring a relational database to reduce data redundancy and improve data integrity. Find out the objectives, normal forms, and examples of normalization.",
+      "query": "database normalization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:45:55.870389"
+    },
+    {
+      "title": "Introduction to Database Normalization - GeeksforGeeks",
+      "content": "Database normalization is the process of organizing the attributes of the database to reduce or eliminate data redundancy (having the same data but at different places). Data redundancy unnecessarily increases the size of the database as the same data is repeated in many places.",
+      "query": "database normalization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:45:55.870460"
+    },
+    {
+      "title": "Database Normalization - Normal Forms 1nf 2nf 3nf Table Examples",
+      "content": "Learn what database normalization is and why it is important for relational databases. Explore the three normal forms (1NF, 2NF, 3NF) with definitions and examples of how to design tables without redundancy or partial dependency.",
+      "query": "database normalization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:45:55.870510"
+    },
+    {
+      "title": "Database Normalization: 1NF, 2NF, 3NF & BCNF Examples",
+      "content": "Database normalization is a step by step approach to structuring data in a way that reduces redundancy and preserves data integrity. The process is organized into a series of normal forms 1NF, 2NF, 3NF, and BCNF, each designed to resolve specific types of data anomalies and structural problems.",
+      "query": "database normalization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:45:55.870559"
+    },
+    {
+      "title": "DBMS Normalization: 1NF, 2NF, 3NF Database Example - Guru99",
+      "content": "Normalization in Database 1NF, 2NF, 3NF, BCNF, 4NF, 5NF, 6NF. Normalization is a database design technique which organizes tables in a manner that reduces redundancy and dependency of data.",
+      "query": "database normalization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:45:55.870609"
+    },
+    {
+      "title": "Deep learning architectures - IBM Developer",
+      "content": "Discover the range and types of deep learning neural architectures and networks, including RNNs, LSTM/GRU networks, CNNs, DBNs, and DSN, and the frameworks to help get your neural network working quickly and well.",
+      "query": "neural network architectures",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:05.879351"
+    },
+    {
+      "title": "The Essential Guide to Neural Network Architectures - Medium",
+      "content": "Learn about different types of Neural Networks, their components, and how they work. Explore examples of Feed-Forward, Recurrent, Convolutional, Generative Adversarial, and Transformer Networks.",
+      "query": "neural network architectures",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:05.879396"
+    },
+    {
+      "title": "4 Types of Neural Network Architecture - Coursera",
+      "content": "Learn about different types of neural network architectures, such as feedforward, recurrent, convolutional, and generative adversarial networks. See how they work, what they are used for, and how they differ from each other.",
+      "query": "neural network architectures",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:05.879430"
+    },
+    {
+      "title": "[2304.05133] Lecture Notes: Neural Network Architectures",
+      "content": "A mathematical overview of Neural Network architectures as optimization problems, covering Feedforward, Convolutional, ResNet, and Recurrent Networks. The lecture notes are submitted by Evelyn Herberg and available as PDF on arXiv.org.",
+      "query": "neural network architectures",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:05.879462"
+    },
+    {
+      "title": "Neural Network Architectures: Top Frameworks Explained",
+      "content": "\ufe0f Explore types of neural network architectures, key use cases, and best practices for choosing the right model and framework.",
+      "query": "neural network architectures",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:05.879495"
+    },
+    {
+      "title": "Convolutional neural network - Wikipedia",
+      "content": "A convolutional neural network (CNN) is a type of feedforward neural network that learns features via filter (or kernel) optimization. This type of deep learning network has been applied to process and make predictions from many different types of data including text, images and audio. [1] CNNs are the de-facto standard in deep learning-based approaches to computer vision [2] and image ...",
+      "query": "convolutional neural networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:17.319437"
+    },
+    {
+      "title": "Introduction to Convolution Neural Network - GeeksforGeeks",
+      "content": "Convolutional Neural Network (CNN) is an advanced version of artificial neural networks (ANNs), primarily designed to extract features from grid-like matrix datasets. This is particularly useful for visual datasets such as images or videos, where data patterns play a crucial role.",
+      "query": "convolutional neural networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:17.319503"
+    },
+    {
+      "title": "Convolutional Neural Network: A Complete Guide - LearnOpenCV",
+      "content": "Learn how to use CNNs to process image data with VGG-16 architecture. Understand the basic structure, components and operations of convolutional blocks, pooling layers and fully connected layers.",
+      "query": "convolutional neural networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:17.319545"
+    },
+    {
+      "title": "What are convolutional neural networks? - IBM",
+      "content": "Convolutional neural networks use three-dimensional data to for image classification and object recognition tasks.",
+      "query": "convolutional neural networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:17.319586"
+    },
+    {
+      "title": "An Introduction to Convolutional Neural Networks (CNNs)",
+      "content": "An Introduction to Convolutional Neural Networks (CNNs) A complete guide to understanding CNNs, their impact on image analysis, and some key strategies to combat overfitting for robust CNN vs deep learning applications.",
+      "query": "convolutional neural networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:17.319628"
+    },
+    {
+      "title": "Recurrent neural network - Wikipedia",
+      "content": "In artificial neural networks, recurrent neural networks (RNNs) are designed for processing sequential data, such as text, speech, and time series, [1] where the order of elements is important. Unlike feedforward neural networks, which process inputs independently, RNNs utilize recurrent connections, where the output of a neuron at one time step is fed back as input to the network at the next ...",
+      "query": "recurrent neural networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:29.408021"
+    },
+    {
+      "title": "Introduction to Recurrent Neural Networks - GeeksforGeeks",
+      "content": "Recurrent Neural Networks (RNNs) differ from regular neural networks in how they process information. While standard neural networks pass information in one direction i.e. from input to output, RNNs feed information back into the network at each step.",
+      "query": "recurrent neural networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:29.408063"
+    },
+    {
+      "title": "What is a recurrent neural network (RNN)? - IBM",
+      "content": "A recurrent neural network or RNN is a deep neural network trained on sequential or time series data to create a machine learning (ML) model that can make sequential predictions or conclusions based on sequential inputs.",
+      "query": "recurrent neural networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:29.408094"
+    },
+    {
+      "title": "What is RNN? - Recurrent Neural Networks Explained - AWS",
+      "content": "RNN is a deep learning model that processes sequential data and converts it into specific output. Learn about RNN types, such as one-to-many, many-to-many, and bidirectional RNN, and their variants, such as LSTM and GRU.",
+      "query": "recurrent neural networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:29.408121"
+    },
+    {
+      "title": "CS 230 - Recurrent Neural Networks Cheatsheet",
+      "content": "A comprehensive guide to recurrent neural networks, covering their architecture, applications, loss function, backpropagation, gates, variants and word representation. Learn the pros and cons, advantages and drawbacks, and common techniques of RNNs with examples and equations.",
+      "query": "recurrent neural networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:29.408150"
+    },
+    {
+      "title": "What is LSTM - Long Short Term Memory? - GeeksforGeeks",
+      "content": "Long Short-Term Memory (LSTM) is an enhanced version of the Recurrent Neural Network (RNN) designed by Hochreiter and Schmidhuber. LSTMs can capture long-term dependencies in sequential data making them ideal for tasks like language translation, speech recognition and time series forecasting. Unlike traditional RNNs which use a single hidden state passed through time LSTMs introduce a memory ...",
+      "query": "LSTM networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:40.777083"
+    },
+    {
+      "title": "Long short-term memory - Wikipedia",
+      "content": "The long short-term memory (LSTM) cell can process data sequentially and keep its hidden state through time. Long short-term memory (LSTM) [1] is a type of recurrent neural network (RNN) aimed at mitigating the vanishing gradient problem [2] commonly encountered by traditional RNNs. Its relative insensitivity to gap length is its advantage over other RNNs, hidden Markov models, and other ...",
+      "query": "LSTM networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:40.777122"
+    },
+    {
+      "title": "A Beginner's Guide to LSTMs and Recurrent Neural Networks",
+      "content": "A Beginner's Guide to LSTMs and Recurrent Neural Networks Data can only be understood backwards; but it must be lived forwards. \u2014 S\u00f8ren Kierkegaard, Journals* Contents Feedforward Networks Recurrent Networks Backpropagation Through Time Vanishing and Exploding Gradients Long Short-Term Memory Units (LSTMs) Capturing Diverse Time Scales Code Sample & Comments Resources Introduction Recurrent ...",
+      "query": "LSTM networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:40.777155"
+    },
+    {
+      "title": "LSTM Networks | A Detailed Explanation - Towards Data Science",
+      "content": "Getting Started This post explains long short-term memory (LSTM) networks. I find that the best way to learn a topic is to read many different explanations and so I will link some other resources I found particularly helpful, at the end of this article. I would highly encourage you to check them out for varying perspectives and explanations of LSTMs! LSTM Diagram - This and all images below ...",
+      "query": "LSTM networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:40.777184"
+    },
+    {
+      "title": "What Is an LSTM Neural Network? - Coursera",
+      "content": "Learn what an LSTM neural network is, how it works, the benefits and limitations compared to other kinds of neural networks, common uses, and specific industry applications.",
+      "query": "LSTM networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:40.777214"
+    },
+    {
+      "title": "Gated recurrent unit - Wikipedia",
+      "content": "In artificial neural networks, the gated recurrent unit (GRU) is a gating mechanism used in recurrent neural networks, introduced in 2014 by Kyunghyun Cho et al. [1] The GRU is like a long short-term memory (LSTM) with a gating mechanism to input or forget certain features, [2] but lacks a context vector or output gate, resulting in fewer parameters than LSTM. [3] GRU's performance on certain ...",
+      "query": "GRU networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:52.652069"
+    },
+    {
+      "title": "Gated Recurrent Unit Networks - GeeksforGeeks",
+      "content": "To overcome this Gated Recurrent Unit (GRU) where introduced which uses LSTM architecture by merging its gating mechanisms offering a more efficient solution for many sequential tasks without sacrificing performance. What are Gated Recurrent Units (GRU) ? Gated Recurrent Units (GRUs) are a type of RNN introduced by Cho et al. in 2014.",
+      "query": "GRU networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:52.652132"
+    },
+    {
+      "title": "Understanding Gated Recurrent Unit (GRU) in Deep Learning",
+      "content": "GRU networks require careful tuning of hyperparameters, such as the number of hidden units and learning rate, to achieve good performance.",
+      "query": "GRU networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:52.652180"
+    },
+    {
+      "title": "10.2. Gated Recurrent Units (GRU) \u2014 Dive into Deep Learning 1.0 ... - D2L",
+      "content": "Modern Recurrent Neural Networks \u2014 Dive into Deep Learning 1.0.3 documentation Furthermore, we will expand the RNN architecture with a single undirectional hidden layer that has been discussed so far.",
+      "query": "GRU networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:52.652229"
+    },
+    {
+      "title": "GRU Recurrent Neural Networks - A Smart Way to Predict Sequences in ...",
+      "content": "Neural Networks Gated Recurrent Unit (GRU). Image by author. Intro Gated Recurrent Units (GRU) and Long Short-Term Memory (LSTM) have been introduced to tackle the issue of vanishing / exploding gradients in the standard Recurrent Neural Networks (RNNs). In this article, I will give you an overview of GRU architecture and provide you with a detailed Python example that you can use to build ...",
+      "query": "GRU networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:51:52.652278"
+    },
+    {
+      "title": "Shop introduction to nlp - Amazon\u00ae Official Site",
+      "content": "Browse & discover thousands of unique brands. Read customer reviews & best sellers. Find deals and compare prices on introduction to nlp at Amazon.com",
+      "query": "natural language understanding",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:54:36.301024"
+    },
+    {
+      "title": "Natural language understanding - Wikipedia",
+      "content": "Learn about the history, scope, and components of natural language understanding (NLU), a subset of natural language processing in artificial intelligence. NLU deals with machine reading comprehension and has applications to automated reasoning, machine translation, question answering, and more.",
+      "query": "natural language understanding",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:54:36.301082"
+    },
+    {
+      "title": "What is natural language understanding (NLU)? - IBM",
+      "content": "Natural language understanding (NLU) is a subset of artificial intelligence (AI) that uses semantic and syntactic analysis to enable computers to understand human-language inputs. NLU aims to holistically comprehend intent, meaning and context, rather than focusing on the meaning of individual words.",
+      "query": "natural language understanding",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:54:36.301124"
+    },
+    {
+      "title": "Natural Language Understanding - GeeksforGeeks",
+      "content": "Natural Language Understanding (NLU) is a subfield of Natural Language Processing that provides machines with the ability to interpret and extract meaning from human language. It enables systems to understand the intent behind linguistic inputs.",
+      "query": "natural language understanding",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:54:36.301168"
+    },
+    {
+      "title": "Natural language understanding (NLU) overview - Microsoft Copilot ...",
+      "content": "Natural Language Understanding (NLU) is a branch of artificial intelligence that enables computers to comprehend and interpret human language. This understanding goes beyond simply processing words. Copilot Studio provides different NLU options, based on the needs of your application.",
+      "query": "natural language understanding",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:54:36.301211"
+    },
+    {
+      "title": "Named-entity recognition - Wikipedia",
+      "content": "Named-entity recognition (NER) (also known as (named) entity identification, entity chunking, and entity extraction) is a subtask of information extraction that seeks to locate and classify named entities mentioned in unstructured text into pre-defined categories such as person names (PER), organizations (ORG), locations (LOC), geopolitical entities (GPE), vehicles (VEH), medical codes, time ...",
+      "query": "named entity recognition",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:54:47.777635"
+    },
+    {
+      "title": "Named Entity Recognition - GeeksforGeeks",
+      "content": "Named Entity Recognition (NER) in NLP focuses on identifying and categorizing important information known as entities in text. These entities can be names of people, places, organizations, dates, etc.",
+      "query": "named entity recognition",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:54:47.777710"
+    },
+    {
+      "title": "What is Named Entity Recognition (NER)? Methods, Use Cases, and ...",
+      "content": "What is Named Entity Recognition (NER)? Methods, Use Cases, and Challenges Explore the intricacies of Named Entity Recognition (NER), a key component in Natural Language Processing (NLP). Learn about its methods, applications, and challenges, and discover how it's revolutionizing data analysis, customer support, and more.",
+      "query": "named entity recognition",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:54:47.777771"
+    },
+    {
+      "title": "What is named entity recognition? - IBM",
+      "content": "Named entity recognition (NER) is a component of natural language processing (NLP) that identifies predefined categories of objects in a body of text.",
+      "query": "named entity recognition",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:54:47.777827"
+    },
+    {
+      "title": "A Comprehensive Guide to Named Entity Recognition (NER)",
+      "content": "Named Entity Recognition (NER) has become one of the most critical tasks in Natural Language Processing (NLP), serving as a backbone for many real-world applications \u2014 from improving search ...",
+      "query": "named entity recognition",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:54:47.777883"
+    },
+    {
+      "title": "React Native \u00b7 Learn once, write anywhere",
+      "content": "A framework for building native apps for Android, iOS, and more using React",
+      "query": "React Native",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:59:58.865563"
+    },
+    {
+      "title": "React Native - Wikipedia",
+      "content": "React Native is an open-source UI software framework developed by Meta Platforms (formerly Facebook Inc.). [3] It is used to develop applications for Android, [4]: \u00a7Chapter 1 [5][6] Android TV, [7] iOS, [4]: \u00a7Chapter 1 [6] macOS, [8] tvOS, [9] Web, [10] Windows [8] and UWP [11] by enabling developers to use the React framework along with ...",
+      "query": "React Native",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:59:58.865638"
+    },
+    {
+      "title": "Use React Native",
+      "content": "React Native v0.78. introduces breaking changes in Codegen, DevTools, and platform-specific APIs. Notable additions include new C++ functionality, improved logging features, and enhanced support for system fonts on iOS.",
+      "query": "React Native",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:59:58.865694"
+    },
+    {
+      "title": "GitHub - facebook/react-native: A framework for building native ...",
+      "content": "React Native brings React 's declarative UI framework to iOS and Android. With React Native, you use native UI controls and have full access to the native platform.",
+      "query": "React Native",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:59:58.865754"
+    },
+    {
+      "title": "Introduction to React Native - GeeksforGeeks",
+      "content": "React Native: It is a framework developed by Facebook for creating native-style apps for iOS & Android under one common language, JavaScript. Initially, Facebook only developed React Native to support iOS.",
+      "query": "React Native",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:59:58.865812"
+    },
+    {
+      "title": "Top 10 Network Security - Last Updated: 1 Day Ago",
+      "content": "Defend Your Devices Effectively - Choose Proven Virus Removal Solutions. Get Started! Enhanced Online Security & Premium Features. Best Virus Tools Verified for November 2025.",
+      "query": "network security",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:01:08.474693"
+    },
+    {
+      "title": "Fortinet Firewall Solutions - Explore All Fortinet Solutions",
+      "content": "Discover industry-leading threat protection & unmatched performance with Fortinet & CDW. Network security solutions provide powerful protection across the entire attack surface.",
+      "query": "network security",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:01:08.474769"
+    },
+    {
+      "title": "What Is Network Security? Definition and Types | Fortinet",
+      "content": "Network security protects organizations' data, employees, and customers from various attacks. Discover the types of network security and how it can help secure your networks.",
+      "query": "network security",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:01:08.474832"
+    },
+    {
+      "title": "What is Network Security? - GeeksforGeeks",
+      "content": "Physical Network Security: It is the foundational level of network protection, focused on preventing unauthorized individuals from gaining physical access to networking equipment and compromising the confidentiality of the network. This can be achieved through measures such as biometric systems, access cards, and other physical security devices.",
+      "query": "network security",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:01:08.474891"
+    },
+    {
+      "title": "What is network security? - Cisco",
+      "content": "Network security is the protection of the underlying networking infrastructure from unauthorized access, misuse, or theft. It involves creating a secure infrastructure for devices, applications, users, and applications to work in a secure manner.",
+      "query": "network security",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:01:08.474947"
+    },
+    {
+      "title": "Shop basic networking book - Amazon\u00ae Official Site",
+      "content": "Browse & discover thousands of unique brands. Read customer reviews & best sellers. Find deals and compare prices on basic networking book at Amazon.com",
+      "query": "networking fundamentals",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:35.953133"
+    },
+    {
+      "title": "Basics of Computer Networking - GeeksforGeeks",
+      "content": "A computer network is a collection of interconnected devices that share resources and information. These devices can include computers, servers, printers, and other hardware. Networks allow for the efficient exchange of data, enabling various applications such as email, file sharing, and internet browsing. Basic Terminologies of Computer Networks Basic if computer Networks Network: A group of ...",
+      "query": "networking fundamentals",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:35.953206"
+    },
+    {
+      "title": "Fundamentals of computer networking - Training | Microsoft Learn",
+      "content": "Learn the fundamental principles of computer networking to prepare you for the Azure admin and developer learning paths.",
+      "query": "networking fundamentals",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:35.953266"
+    },
+    {
+      "title": "PDF Networking Fundamentals - Cisco",
+      "content": "Learn the basics of networking, including hubs, switches, routers, firewalls, gateways, and the OSI model. This document covers the objectives, topics, and definitions of networking fundamentals for small and medium businesses.",
+      "query": "networking fundamentals",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:35.953328"
+    },
+    {
+      "title": "Networking Basic Concepts and Fundamentals Explained",
+      "content": "Learn the essential components and classification of computer networks with examples. This tutorial covers end devices, media, protocols, networking devices, and more.",
+      "query": "networking fundamentals",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:35.953388"
+    },
+    {
+      "title": "Enterprise Content Delivery - Enterprise Delivery at Scale",
+      "content": "Live internal video anywhere, anytime. Reliable enterprise eCDN for global teams. Scale enterprise video globally with Hive eCDN. Prevent overload and ensure quality.",
+      "query": "CDN networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:44:50.630059"
+    },
+    {
+      "title": "CacheFly CDN Services - Fast CDN Services",
+      "content": "159% Faster - Ranked fastest global throughput CDN by Citrix. We're confident you'll love our CDN service more than our competitors.",
+      "query": "CDN networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:44:50.630129"
+    },
+    {
+      "title": "Content delivery network - Wikipedia",
+      "content": "Content delivery network (Left) Single server distribution (Right) CDN scheme of distribution A content delivery network (CDN) or content distribution network is a geographically distributed network of proxy servers and corresponding data centers.",
+      "query": "CDN networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:44:50.630180"
+    },
+    {
+      "title": "What is a content delivery network (CDN)? | How do CDNs work?",
+      "content": "A content delivery network is a distributed group of servers that caches content near end users. Learn how CDNs improve load times and reduce costs.",
+      "query": "CDN networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:44:50.630227"
+    },
+    {
+      "title": "What is a CDN? - Content Delivery Network Explained - AWS",
+      "content": "The primary purpose of a content delivery network (CDN) is to reduce latency, or reduce the delay in communication created by a network's design. Because of the global and complex nature of the internet, communication traffic between websites (servers) and their users (clients) has to move over large physical distances. The communication is also two-way, with requests going from the client to ...",
+      "query": "CDN networks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:44:50.630274"
+    },
+    {
+      "title": "About network protocols",
+      "content": "network protocols is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "network protocols",
+      "source": "structured",
+      "learned_at": "2025-11-23T22:52:18.030641"
+    },
+    {
+      "title": "About network topology",
+      "content": "network topology is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "network topology",
+      "source": "structured",
+      "learned_at": "2025-11-24T00:33:50.837361"
+    },
+    {
+      "title": "About wireless networks",
+      "content": "wireless networks is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "wireless networks",
+      "source": "structured",
+      "learned_at": "2025-11-24T01:39:06.501274"
+    },
+    {
+      "title": "Big O notation - Wikipedia",
+      "content": "Big O notation is a mathematical notation that describes the approximate size of a function on a domain. Big O is a member of a family of notations invented by German mathematicians Paul Bachmann and [1] Edmund Landau [2] and expanded by others, collectively called Bachmann-Landau notation. The letter O was chosen by Bachmann to stand for Ordnung, meaning the order of approximation. In ...",
+      "query": "big O notation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:07:14.754180"
+    },
+    {
+      "title": "Big O Notation Tutorial - A Guide to Big O Analysis - GeeksforGeeks",
+      "content": "Big O notation is a powerful tool used in computer science to describe the time complexity or space complexity of algorithms. Big-O is a way to express the upper bound of an algorithm's time or space complexity.",
+      "query": "big O notation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:07:14.754249"
+    },
+    {
+      "title": "Big O Cheat Sheet - Time Complexity Chart - freeCodeCamp.org",
+      "content": "Big O Notation is a metric for determining the efficiency of an algorithm. It uses algebraic terms to describe the complexity of an algorithm as a function of its input size. Learn how to calculate and compare different time complexities with examples and a cheat sheet.",
+      "query": "big O notation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:07:14.754307"
+    },
+    {
+      "title": "Big-O Notation - NeetCode",
+      "content": "Learn the fundamentals of Big-O notation and how to analyze the time complexity of your code.",
+      "query": "big O notation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:07:14.754364"
+    },
+    {
+      "title": "Big O Notation | Brilliant Math & Science Wiki",
+      "content": "Big O notation is a notation used when talking about growth rates. It formalizes the notion that two functions &quot;grow at the same rate,&quot; or one function &quot;grows faster than the other,&quot; and such. It is very commonly used in computer science, when analyzing algorithms. Algorithms have a specific running time, usually declared as a function on its input size. However ...",
+      "query": "big O notation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:07:14.754419"
+    },
+    {
+      "title": "What is network optimization? - IBM",
+      "content": "Network optimization refers to a suite of strategies, tools, techniques and best practices to monitor, manage and improve network performance and reliability.",
+      "query": "network optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:25.635004"
+    },
+    {
+      "title": "What is Network Optimization? 9 Techniques for Improving Network ...",
+      "content": "Network optimization is a data-driven process aimed at enhancing network performance and efficiency. It involves measuring performance metrics such as latency, throughput, and packet loss, then making strategic changes to remove bottlenecks and optimize network resources. Learn more in our network optimization guide.",
+      "query": "network optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:25.635055"
+    },
+    {
+      "title": "What Is Network Optimization? Definition & Best Practices",
+      "content": "Network optimization refers to the process of optimizing network performance for speed through tools, techniques and practices. There are many different factors that can create a slow network.",
+      "query": "network optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:25.635095"
+    },
+    {
+      "title": "What is Network Optimization? 8 Reliable Techniques - Auvik",
+      "content": "Network optimization requires a set of tools and techniques to ensure efficient bandwidth management, latency, and network load management.",
+      "query": "network optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:25.635134"
+    },
+    {
+      "title": "What Is Network Optimization? - AEANET",
+      "content": "What Is Network Optimization? Unlocking Peak Performance Network optimization is the art and science of maximizing the efficiency and effectiveness of a computer network, ensuring it delivers optimal performance by minimizing latency, maximizing bandwidth utilization, and enhancing overall reliability. Essentially, it's about making your network faster, more stable, and more cost-effective ...",
+      "query": "network optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:25.635174"
+    },
+    {
+      "title": "How to Navigate Windows Using a Keyboard - Computer Hope",
+      "content": "Learn how to use keyboard shortcuts to perform common tasks in Windows, such as opening programs, closing windows, moving text, and more. This web page provides detailed instructions and examples for each method.",
+      "query": "keyboard navigation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:31:12.051618"
+    },
+    {
+      "title": "Keyboard shortcuts in Windows - Microsoft Support",
+      "content": "Learn how to navigate Windows using keyboard shortcuts. Explore a full list of taskbar, command prompt, and general Windows shortcuts.",
+      "query": "keyboard navigation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:31:12.051688"
+    },
+    {
+      "title": "Keyboard Accessibility - WebAIM",
+      "content": "Learn how to make web pages accessible to keyboard users with WebAIM's articles, testing tips, and examples. Find out how to avoid common problems, use focus indicators, tabindex, accesskey, and ARIA.",
+      "query": "keyboard navigation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:31:12.051743"
+    },
+    {
+      "title": "What Is Keyboard Navigation? - accessiBe",
+      "content": "Keyboard navigation is a method of controlling a computer interface through the use of keyboard keys, bypassing the need for a mouse or touchpad. This approach enables users to navigate through menus, select buttons, interact with various web elements, and input data within text fields, relying entirely on keystrokes. Essential for enhancing web accessibility, keyboard navigation provides an ...",
+      "query": "keyboard navigation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:31:12.051802"
+    },
+    {
+      "title": "How to Navigate Windows Without a Mouse or Touchpad",
+      "content": "Learn how to use keyboard keys and shortcuts to interact with Windows when your mouse or trackpad is not working. Also, enable the Mouse Keys feature to use the numpad as a mouse alternative.",
+      "query": "keyboard navigation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:31:12.051855"
+    },
+    {
+      "title": "Neural architecture search - Wikipedia",
+      "content": "Learn about the technique for automating the design of artificial neural networks (ANN), a widely used model in machine learning. Compare different methods for NAS, such as reinforcement learning, evolution, Bayesian optimization and hill-climbing.",
+      "query": "neural architecture search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:38:17.672147"
+    },
+    {
+      "title": "Neural Architecture Search Algorithm - GeeksforGeeks",
+      "content": "Neural Architecture Search (NAS) falls within the realm of automated machine learning (AutoML). AutoML is a comprehensive term encompassing the automation of diverse tasks in the application of machine learning to real-world challenges. The article explores the fundamentals, and applications of the NAS algorithm.",
+      "query": "neural architecture search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:38:17.672231"
+    },
+    {
+      "title": "Neural Architecture Search: Insights from 1000 Papers",
+      "content": "A survey of neural architecture search (NAS), the process of automating the design of neural architectures for a given task. The paper provides a taxonomy, a guide, and resources for NAS, covering search spaces, algorithms, speedup techniques, benchmarks, and more.",
+      "query": "neural architecture search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:38:17.672303"
+    },
+    {
+      "title": "Neural Architecture Search (NAS): Automating the Design of ... - Medium",
+      "content": "What is Neural Architecture Search (NAS)? Neural Architecture Search (NAS) is a technique in machine learning that automates the process of designing neural network architectures. Instead of ...",
+      "query": "neural architecture search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:38:17.672376"
+    },
+    {
+      "title": "Neural Architecture Search (NAS): basic principles and different ...",
+      "content": "Neural Architecture Search (NAS) is the process of automating the design of neural networks' topology in order to achieve the best performance on a specific task. The goal is to design the architecture using limited resources and with minimal human intervention.",
+      "query": "neural architecture search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:38:17.672443"
+    },
+    {
+      "title": "Shop elastic net fabric - Amazon.com Official Site",
+      "content": "Find deals and compare prices on elastic net fabric at Amazon.com. Browse & discover thousands of unique brands. Read customer reviews & best sellers.",
+      "query": "elastic net",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:58:38.593805"
+    },
+    {
+      "title": "Elastic net regularization - Wikipedia",
+      "content": "Elastic net is a regularized regression method that combines L1 and L2 penalties of lasso and ridge. It is used for linear or logistic regression, support vector machine, metric learning, portfolio optimization and cancer prognosis.",
+      "query": "elastic net",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:58:38.593862"
+    },
+    {
+      "title": "Lasso vs Ridge vs Elastic Net - ML - GeeksforGeeks",
+      "content": "Elastic Net Regression (L1 + L2 Regularization) Elastic Net regression combines both L1 (Lasso) and L2 (Ridge) penalties to perform feature selection, manage multicollinearity and balancing coefficient shrinkage.",
+      "query": "elastic net",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:58:38.593912"
+    },
+    {
+      "title": "ElasticNet \u2014 scikit-learn 1.7.2 documentation",
+      "content": "ElasticNet is a Python class that implements linear regression with combined L1 and L2 priors as regularizer. It minimizes an objective function that depends on the parameter l1_ratio, which controls the balance between the two penalties.",
+      "query": "elastic net",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:58:38.593957"
+    },
+    {
+      "title": "Elastic Net Regression Explained with Example and Application",
+      "content": "Elastic Net regression is a powerful and versatile tool for handling complex regression problems with high-dimensional data, multicollinearity, and the risk of overfitting.",
+      "query": "elastic net",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:58:38.594004"
+    },
+    {
+      "title": "Npm",
+      "content": "npm is a package manager for the JavaScript programming language maintained by npm, Inc., a subsidiary of GitHub. npm is the default package manager for the JavaScript runtime environment Node.js and is included as a recommended feature in the Node.js installer.",
+      "query": "npm",
+      "source": "wikipedia",
+      "learned_at": "2025-11-24T19:35:37.464803"
+    },
+    {
+      "title": "About non-fiction writing",
+      "content": "non-fiction writing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "non-fiction writing",
+      "source": "structured",
+      "learned_at": "2025-11-25T10:52:01.887286"
+    },
+    {
+      "title": "About news writing",
+      "content": "news writing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "news writing",
+      "source": "structured",
+      "learned_at": "2025-11-25T12:38:20.094089"
+    },
+    {
+      "title": "About narrative reviews",
+      "content": "narrative reviews is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "narrative reviews",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:07:09.973952"
+    },
+    {
+      "title": "About nuclear energy",
+      "content": "nuclear energy is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "nuclear energy",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:14:24.909535"
+    },
+    {
+      "title": "About network engineering",
+      "content": "network engineering is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "network engineering",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:19:28.264403"
+    },
+    {
+      "title": "About naming conventions",
+      "content": "naming conventions is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "naming conventions",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:25:22.068619"
+    },
+    {
+      "title": "About non-blocking queues",
+      "content": "non-blocking queues is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "non-blocking queues",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:14:03.853659"
+    },
+    {
+      "title": "About normalizer",
+      "content": "normalizer is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "normalizer",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:21:38.771629"
+    },
+    {
+      "title": "About null hypothesis",
+      "content": "null hypothesis is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "null hypothesis",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:57:06.516858"
+    },
+    {
+      "title": "About natural experiments",
+      "content": "natural experiments is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "natural experiments",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:00:49.121825"
+    },
+    {
+      "title": "About Nash equilibrium",
+      "content": "Nash equilibrium is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Nash equilibrium",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:02:50.561221"
+    },
+    {
+      "title": "About network effects",
+      "content": "network effects is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "network effects",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:05:22.320893"
+    },
+    {
+      "title": "About net promoter score",
+      "content": "net promoter score is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "net promoter score",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:15:49.781594"
+    },
+    {
+      "title": "About NPS",
+      "content": "NPS is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "NPS",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:15:59.922313"
+    },
+    {
+      "title": "About lead nurturing",
+      "content": "lead nurturing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "lead nurturing",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:14:25.696272"
+    },
+    {
+      "title": "About financial safety net",
+      "content": "financial safety net is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "financial safety net",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:54:44.655273"
+    },
+    {
+      "title": "About near real-time processing",
+      "content": "near real-time processing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "near real-time processing",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:08:44.181907"
+    },
+    {
+      "title": "About n-tier architecture",
+      "content": "n-tier architecture is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "n-tier architecture",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:09:55.008501"
+    },
+    {
+      "title": "About note taking",
+      "content": "note taking is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "note taking",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:06:10.131295"
+    },
+    {
+      "title": "About networking",
+      "content": "networking is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "networking",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:18:58.459816"
+    },
+    {
+      "title": "About professional networking",
+      "content": "professional networking is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "professional networking",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:19:08.570381"
+    },
+    {
+      "title": "About social networking",
+      "content": "social networking is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "social networking",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:19:18.686519"
+    },
+    {
+      "title": "About business networking",
+      "content": "business networking is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "business networking",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:19:28.798527"
+    },
+    {
+      "title": "About industry networking",
+      "content": "industry networking is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "industry networking",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:19:38.910859"
+    },
+    {
+      "title": "About near transfer",
+      "content": "near transfer is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "near transfer",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:34:59.827067"
+    },
+    {
+      "title": "About negative transfer",
+      "content": "negative transfer is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "negative transfer",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:35:30.149185"
+    },
+    {
+      "title": "About non-associative learning",
+      "content": "non-associative learning is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "non-associative learning",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:36:40.936448"
+    },
+    {
+      "title": "About negative reinforcement",
+      "content": "negative reinforcement is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "negative reinforcement",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:38:11.976210"
+    },
+    {
+      "title": "About negative punishment",
+      "content": "negative punishment is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "negative punishment",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:38:42.318705"
+    },
+    {
+      "title": "About novice knowledge",
+      "content": "novice knowledge is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "novice knowledge",
+      "source": "structured",
+      "learned_at": "2025-11-26T10:37:07.684934"
+    },
+    {
+      "title": "About master of none",
+      "content": "master of none is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "master of none",
+      "source": "structured",
+      "learned_at": "2025-11-26T11:41:19.303213"
+    },
+    {
+      "title": "About nimble",
+      "content": "nimble is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "nimble",
+      "source": "structured",
+      "learned_at": "2025-11-26T12:12:36.587698"
+    },
+    {
+      "title": "About notable",
+      "content": "notable is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "notable",
+      "source": "structured",
+      "learned_at": "2025-11-26T14:44:12.761620"
+    },
+    {
+      "title": "About Neptune",
+      "content": "Neptune is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Neptune",
+      "source": "structured",
+      "learned_at": "2025-11-26T20:39:00.105785"
+    },
+    {
+      "title": "About near Earth objects",
+      "content": "near Earth objects is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "near Earth objects",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:06:22.457558"
+    },
+    {
+      "title": "About NEOs",
+      "content": "NEOs is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "NEOs",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:06:32.584424"
+    },
+    {
+      "title": "About national parks",
+      "content": "national parks is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "national parks",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:26:43.459500"
+    },
+    {
+      "title": "About nature reserves",
+      "content": "nature reserves is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "nature reserves",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:26:53.584208"
+    },
+    {
+      "title": "About United Nations Educational Scientific and Cultural Organization",
+      "content": "United Nations Educational Scientific and Cultural Organization is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "United Nations Educational Scientific and Cultural Organization",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:27:44.175090"
+    },
+    {
+      "title": "About United Nations",
+      "content": "United Nations is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "United Nations",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:28:04.421194"
+    },
+    {
+      "title": "About non-governmental organizations",
+      "content": "non-governmental organizations is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "non-governmental organizations",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:28:44.861495"
+    },
+    {
+      "title": "About NGOs",
+      "content": "NGOs is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "NGOs",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:28:54.973377"
+    },
+    {
+      "title": "About network governance",
+      "content": "network governance is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "network governance",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:41:33.520409"
+    },
+    {
+      "title": "About net zero buildings",
+      "content": "net zero buildings is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "net zero buildings",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:56:53.777508"
+    },
+    {
+      "title": "About carbon neutral buildings",
+      "content": "carbon neutral buildings is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "carbon neutral buildings",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:57:03.883649"
+    },
+    {
+      "title": "About natural gas",
+      "content": "natural gas is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "natural gas",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:00:05.842640"
+    },
+    {
+      "title": "About nuclear safety",
+      "content": "nuclear safety is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "nuclear safety",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:07:20.689253"
+    },
+    {
+      "title": "About New Zealand",
+      "content": "New Zealand is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "New Zealand",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:20:19.146981"
+    },
+    {
+      "title": "About Nigeria",
+      "content": "Nigeria is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Nigeria",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:22:30.607305"
+    },
+    {
+      "title": "About Nicaragua",
+      "content": "Nicaragua is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Nicaragua",
+      "source": "structured",
+      "learned_at": "2025-11-26T23:45:04.065574"
+    },
+    {
+      "title": "About nation",
+      "content": "nation is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "nation",
+      "source": "structured",
+      "learned_at": "2025-11-27T14:45:13.626322"
+    },
+    {
+      "title": "About nature",
+      "content": "nature is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "nature",
+      "source": "structured",
+      "learned_at": "2025-11-27T15:01:45.198425"
+    },
+    {
+      "title": "About need",
+      "content": "need is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "need",
+      "source": "structured",
+      "learned_at": "2025-11-27T15:01:55.308477"
+    },
+    {
+      "title": "About news",
+      "content": "news is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "news",
+      "source": "structured",
+      "learned_at": "2025-11-27T15:02:05.421704"
+    },
+    {
+      "title": "About noise",
+      "content": "noise is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "noise",
+      "source": "structured",
+      "learned_at": "2025-11-27T15:02:15.524785"
+    },
+    {
+      "title": "About norm",
+      "content": "norm is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "norm",
+      "source": "structured",
+      "learned_at": "2025-11-27T15:02:25.634629"
+    },
+    {
+      "title": "About number",
+      "content": "number is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "number",
+      "source": "structured",
+      "learned_at": "2025-11-27T15:17:55.148435"
+    },
+    {
+      "title": "About neural networks",
+      "content": "neural networks is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "neural networks",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:02:18.278586"
+    },
+    {
+      "title": "About natural language processing",
+      "content": "natural language processing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "natural language processing",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:02:28.376489"
+    },
+    {
+      "title": "About generative adversarial networks",
+      "content": "generative adversarial networks is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "generative adversarial networks",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:03:39.113811"
+    },
+    {
+      "title": "About next.js framework",
+      "content": "next.js framework is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "next.js framework",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:17:28.317677"
+    },
+    {
+      "title": "About nuxt.js framework",
+      "content": "nuxt.js framework is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "nuxt.js framework",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:17:38.427641"
+    },
+    {
+      "title": "About node.js runtime",
+      "content": "node.js runtime is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "node.js runtime",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:17:48.539874"
+    },
+    {
+      "title": "About nest.js framework",
+      "content": "nest.js framework is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "nest.js framework",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:18:08.754442"
+    },
+    {
+      "title": "About noSQL databases",
+      "content": "noSQL databases is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "noSQL databases",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:28:15.732151"
+    },
+    {
+      "title": "About Neo4j database",
+      "content": "Neo4j database is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Neo4j database",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:29:06.269908"
+    },
+    {
+      "title": "About database normalization",
+      "content": "database normalization is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "database normalization",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:29:16.382004"
+    },
+    {
+      "title": "About neural network architectures",
+      "content": "neural network architectures is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "neural network architectures",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:33:49.407997"
+    },
+    {
+      "title": "About convolutional neural networks",
+      "content": "convolutional neural networks is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "convolutional neural networks",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:33:59.520552"
+    },
+    {
+      "title": "About recurrent neural networks",
+      "content": "recurrent neural networks is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "recurrent neural networks",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:34:09.623701"
+    },
+    {
+      "title": "About LSTM networks",
+      "content": "LSTM networks is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "LSTM networks",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:34:19.726782"
+    },
+    {
+      "title": "About GRU networks",
+      "content": "GRU networks is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "GRU networks",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:34:29.877576"
+    },
+    {
+      "title": "About natural language understanding",
+      "content": "natural language understanding is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "natural language understanding",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:36:51.401464"
+    },
+    {
+      "title": "About named entity recognition",
+      "content": "named entity recognition is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "named entity recognition",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:37:01.514636"
+    },
+    {
+      "title": "About React Native",
+      "content": "React Native is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "React Native",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:41:34.581992"
+    },
+    {
+      "title": "About network security",
+      "content": "network security is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "network security",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:42:35.212827"
+    },
+    {
+      "title": "About networking fundamentals",
+      "content": "networking fundamentals is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "networking fundamentals",
+      "source": "structured",
+      "learned_at": "2025-11-28T06:41:47.622171"
+    },
+    {
+      "title": "About CDN networks",
+      "content": "CDN networks is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "CDN networks",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:01:09.903786"
+    },
+    {
+      "title": "About big O notation",
+      "content": "big O notation is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "big O notation",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:26:15.187876"
+    },
+    {
+      "title": "Newton's First Law of Motion - Science Notes and Projects",
+      "content": "Newton's first law of motion basically says that objects don't change their state of motion unless acted upon by a net external force. Newton's first law of motion is a cornerstone of classical mechanics, describing the natural behavior of objects to resist changes in their motion.",
+      "query": "what is life what is life state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:37.241642"
+    },
+    {
+      "title": "Newton's laws of motion - Wikipedia",
+      "content": "Newton's laws of motion are three physical laws that describe the relationship between the motion of an object and the forces acting on it. These laws, which provide the basis for Newtonian mechanics, can be paraphrased as follows: A body remains at rest, or in motion at a constant speed in a straight line, unless it is acted upon by a force.",
+      "query": "what is life what is life state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:37.241940"
+    },
+    {
+      "title": "Newton's First Law: Statement, Examples, and Equation",
+      "content": "What is Newton's first law of motion. its definition, significance, and formula, along with everyday real-life examples, applications, and diagrams.",
+      "query": "what is life what is life state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:37.242116"
+    },
+    {
+      "title": "Newton's First Law: Principle, Examples, Experiments, Applications",
+      "content": "Introduction to Newton's First Law Newton's First Law of Motion has two situations: first describes the reason for a state of any object and second defines inertia. It is a profound law given by Newton in the 17th century that rules all classical mechanics. A new era of science was evolved by the development of this law. Newton imagines the position of an object as its reaction towards the ...",
+      "query": "what is life what is life state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:37.242424"
+    },
+    {
+      "title": "What Is Newton's First Law? - Lesson - TeachEngineering",
+      "content": "Students are introduced to the concepts of force, inertia and Newton's first law of motion: objects at rest stay at rest and objects in motion stay in motion unless acted upon by an unbalanced force. Examples of contact and non-contact types of forces are provided, specifically applied, spring, drag, frictional forces, and magnetic, electric, gravitational forces. Students the difference ...",
+      "query": "what is life what is life state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:37.242713"
+    },
+    {
+      "title": "Understanding Newton's Laws of Motion - Encyclopedia Britannica",
+      "content": "Newton's first law states that unless a body (such as a rubber ball, car, or planet) is acted upon by some force, a body in motion tends to remain in motion and a body at rest tends to remain at rest. This postulate is known as the law of inertia. What this means, practically speaking, is that a rolling ball or other object only slows down because of forces like gravity and friction. Even ...",
+      "query": "what is life state Newton's first law of matter state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:50.986602"
+    },
+    {
+      "title": "2. Newton's first law - Conceptual Physics",
+      "content": "Newton's first law is sometimes referred to as the law of inertia, as it describes this property of matter. Newton's first law says that an object in motion tends to stay in motion, and an object at rest tends to stay at rest, unless acted upon by an outside force.",
+      "query": "what is life state Newton's first law of matter state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:50.987121"
+    },
+    {
+      "title": "PDF 8.01SC S22 Chapter 7: Newton s Laws of Motion - MIT OpenCourseWare",
+      "content": "Newton's First Law states that there is no physical way to distinguish between whether we are moving or the station is moving, because there is nearly zero total force acting on the body.",
+      "query": "what is life state Newton's first law of matter state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:50.987315"
+    },
+    {
+      "title": "Kathmandu - Wikipedia",
+      "content": "Kathmandu[a] (Nepali: [\u02ccka\u0288\u02b0ma\u0273\u02c8\u0256u]) is the capital and largest city of Nepal, situated in the central part of the country within the Kathmandu Valley. As per the 2021 Nepal census, [3] it has a population of 845,767 residing in 105,649 households, with approximately 4 million people in the surrounding metropolitan area. The city stands at an elevation of 1,324 metres (4,344 ft) above ...",
+      "query": "What is the capital of Nepal?",
+      "source": "research",
+      "learned_at": "2025-11-28T15:53:19.198617"
+    },
+    {
+      "title": "Rivers, History, Population, Elevation, & Map - Britannica",
+      "content": "Kathmandu, capital of Nepal. It lies in a hilly region near the confluence of the Baghmati and Vishnumati rivers, at an elevation of 4,344 feet (1,324 metres) above sea level. It was founded in 723 by Raja Gunakamadeva. Its early name was Manju-Patan; the present name refers to a wooden temple",
+      "query": "What is the capital of Nepal?",
+      "source": "research",
+      "learned_at": "2025-11-28T15:53:19.198888"
+    },
+    {
+      "title": "What Is The Capital Of Nepal? - WorldAtlas",
+      "content": "The capital city of Nepal is Kathmandu, and it is also the largest city in the country, it is located in the World Heritage Site Kathmandu Valley. Kathmandu history which is inseparable from that of the Kathmandu valley dates back to the ancient time.",
+      "query": "What is the capital of Nepal?",
+      "source": "research",
+      "learned_at": "2025-11-28T15:53:19.199114"
+    },
+    {
+      "title": "What is the Capital of Nepal? Kathmandu - Countryaah.com",
+      "content": "Kathmandu, the political, cultural, and economic center of Nepal, located in the Kathmandu Valley surrounded by the Himalayas. its history, landmarks, climate, and other capital cities in Nepal's history.",
+      "query": "What is the capital of Nepal?",
+      "source": "research",
+      "learned_at": "2025-11-28T15:53:19.199310"
+    },
+    {
+      "title": "What is the Capital of Nepal? - Mappr",
+      "content": "Kathmandu is the capital of Nepal and the largest metropolis in the country. It has a rich and diverse cultural heritage, many UNESCO World Heritage Sites, and a vibrant urban life.",
+      "query": "What is the capital of Nepal?",
+      "source": "research",
+      "learned_at": "2025-11-28T15:53:19.199506"
+    },
+    {
+      "title": "Noooo Soundboard - Instant Sound Buttons | Myinstants",
+      "content": "Listen and share sounds of Noooo. Find more instant sound buttons on Myinstants!",
+      "query": "nooo hi ds",
+      "source": "research",
+      "learned_at": "2025-11-28T21:12:16.856937"
+    },
+    {
+      "title": "Noooo Sounds and Sound Effects - Voicy",
+      "content": "272 unique Noooo sounds. Play the sound buttons and listen, share and download as mp3 audio for free now!",
+      "query": "nooo hi ds",
+      "source": "research",
+      "learned_at": "2025-11-28T21:12:16.857063"
+    },
+    {
+      "title": "Noo nooo NOOOO ORIGINAL MEME SOUND EFFECT - Meme Sound Effect ... - TUNA",
+      "content": "The Noo nooo NOOOO ORIGINAL MEME SOUND EFFECT meme sound belongs to the memes. In this category you have all sound effects, voices and sound clips to play, download and share.",
+      "query": "nooo hi ds",
+      "source": "research",
+      "learned_at": "2025-11-28T21:12:16.857295"
+    }
+  ],
+  "last_updated": "2025-11-28T21:12:16.873183"
+}

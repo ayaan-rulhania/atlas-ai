@@ -1,0 +1,27 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+
+# Cursor / editor
+.cursor/
+
+# Local data (generated)
+chatbot/chats/
+chatbot/conversations/
+conversations/
+chatbot/history/history.json
+learning_stats.json
+chatbot/learning_stats.json
+chatbot/gems/gems.json
+
+# Large model artifacts
+*.pt
+models/
+chatbot/models/
+thor-1.0/models/
+
+# Vercel local folder
+.vercel/

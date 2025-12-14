@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thor 1.0 Image Mapping</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Aboreto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+        .dashboard { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        .header { text-align: center; margin-bottom: 60px; padding-bottom: 30px; border-bottom: 1px solid #e5e5e5; }
+        .header h1 { font-size: 32px; font-weight: 400; letter-spacing: 2px; margin-bottom: 10px; }
+        .header p { font-size: 14px; color: #666; font-weight: 300; letter-spacing: 1px; }
+        .section { margin-bottom: 50px; border-bottom: 1px solid #e5e5e5; padding-bottom: 30px; }
+        .section:last-child { border-bottom: none; }
+        .section h2 { font-size: 18px; font-weight: 400; letter-spacing: 2px; margin-bottom: 25px; text-transform: uppercase; }
+        .stat-card { background: #fafafa; padding: 30px 20px; border: 1px solid #e5e5e5; text-align: center; margin-bottom: 30px; }
+        .stat-number { font-size: 48px; letter-spacing: 3px; margin-bottom: 8px; }
+        .stat-label { font-size: 12px; letter-spacing: 2px; color: #777; text-transform: uppercase; }
+        .mode-toggle { display: inline-flex; gap: 10px; margin-bottom: 25px; }
+        .mode-btn { border: 1px solid #1a1a1a; background: transparent; color: #1a1a1a; padding: 10px 20px; font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase; cursor: pointer; transition: all 0.2s ease; }
+        .mode-btn.active { background: #1a1a1a; color: #fff; }
+        .mode-panel { display: none; }
+        .mode-panel.active { display: block; }
+        .input-group { margin-bottom: 25px; }
+        label { display: block; font-weight: 400; margin-bottom: 10px; color: #1a1a1a; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; }
+        input[type="text"], input[type="url"] { width: 100%; padding: 15px 20px; border: 1px solid #e5e5e5; background: #fafafa; font-size: 14px; font-family: 'Aboreto', sans-serif; color: #1a1a1a; letter-spacing: 0.5px; transition: all 0.2s ease; }
+        input[type="text"]:focus, input[type="url"]:focus { outline: none; border-color: #1a1a1a; background: #fff; }
+        textarea { width: 100%; padding: 15px 20px; border: 1px solid #e5e5e5; background: #fafafa; font-size: 14px; font-family: 'Aboreto', sans-serif; color: #1a1a1a; letter-spacing: 0.5px; resize: vertical; min-height: 150px; transition: all 0.2s ease; }
+        textarea:focus { outline: none; border-color: #1a1a1a; background: #fff; }
+        .btn { background: #1a1a1a; color: white; border: none; padding: 15px 32px; font-size: 12px; font-family: 'Aboreto', sans-serif; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: all 0.2s ease; width: 100%; }
+        .btn:hover:not(:disabled) { background: #333; }
+        .btn:disabled { opacity: 0.6; cursor: not-allowed; }
+        .status { margin-top: 10px; font-size: 12px; color: #666; }
+        .status.success { color: #2e7d32; }
+        .status.error { color: #b91c1c; }
+        .list { margin-top: 10px; }
+        .qa-item { background: #fafafa; padding: 25px; border: 1px solid #e5e5e5; margin-bottom: 20px; transition: border-color 0.2s ease; position: relative; }
+        .qa-item-image { border-color: #d8def7; background: linear-gradient(180deg, rgba(90, 93, 240, 0.06), rgba(255, 255, 255, 0.9)); }
+        .qa-question { font-size: 14px; font-weight: 400; color: #1a1a1a; margin-bottom: 15px; letter-spacing: 0.5px; line-height: 1.6; }
+        .qa-answer { font-size: 13px; color: #666; line-height: 1.7; letter-spacing: 0.3px; white-space: pre-wrap; }
+        .qa-badge { display: inline-block; margin-left: 8px; padding: 3px 8px; border-radius: 999px; font-size: 11px; letter-spacing: 0.5px; font-weight: 700; border: 1px solid #d8def7; color: #4b4fc5; background: rgba(90, 93, 240, 0.12); }
+        .qa-image-preview { margin-top: 12px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+        .qa-image-frame iframe { width: 100%; height: 320px; border: 1px solid #e5e5e5; border-radius: 12px; }
+        .qa-image-still img { max-width: 100%; border-radius: 12px; border: 1px solid #e5e5e5; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .empty-state { text-align: center; padding: 60px 40px; color: #999; font-size: 12px; letter-spacing: 1px; }
+        .qa-actions { margin-top: 20px; padding-top: 20px; border-top: 1px solid #e5e5e5; display: flex; gap: 10px; }
+        .qa-actions button { background: transparent; color: #1a1a1a; border: 1px solid #e5e5e5; padding: 8px 16px; font-size: 10px; font-family: 'Aboreto', sans-serif; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: all 0.2s ease; }
+        .qa-actions button:hover { border-color: #1a1a1a; background: #1a1a1a; color: white; }
+        .qa-actions .delete-btn:hover { border-color: #cc0000; background: #cc0000; color: white; }
+        .edit-form { display: none; margin-top: 15px; }
+        .edit-form.active { display: block; }
+        .edit-form .input-group { margin-bottom: 15px; }
+        .edit-form .btn-group { display: flex; gap: 10px; }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header">
+            <h1>Thor 1.0 Image Mapping</h1>
+            <p>Define curated images for “Create an image of …” with the same look and feel as the Result Setter.</p>
+        </div>
+
+        <div class="section">
+            <div class="stat-card">
+                <div class="stat-number" id="totalMappings">0</div>
+                <div class="stat-label">Total Image Mappings</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Result Input Modes</h2>
+            <div class="mode-toggle">
+                <button class="mode-btn active" data-target="single-mode">Single Pair</button>
+                <button class="mode-btn" data-target="trainx-mode">TrainX Code</button>
+            </div>
+
+            <div id="single-mode" class="mode-panel active">
+                <form id="imageForm">
+                    <div class="input-group">
+                        <label>Thing / Subject</label>
+                        <input type="text" id="thing" placeholder="Thor" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Image URL</label>
+                        <input type="url" id="imageUrl" placeholder="https://upload.wikimedia.org/.../Chris_Hemsworth_as_Thor.jpg" required>
+                    </div>
+                    <button type="submit" class="btn" id="addBtn">Add Image Pair</button>
+                    <div class="status" id="status"></div>
+                </form>
+            </div>
+
+            <div id="trainx-mode" class="mode-panel">
+                <form id="trainxForm">
+                    <div class="input-group">
+                        <label>TrainX Code</label>
+                        <textarea id="trainxSource" placeholder="Q (Image): Thor&#10;A: https://upload.wikimedia.org/wikipedia/en/3/3c/Chris_Hemsworth_as_Thor.jpg"></textarea>
+                    </div>
+                    <button type="submit" class="btn" id="trainxBtn">Generate with TrainX</button>
+                    <div class="status" id="trainxStatus"></div>
+                </form>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Result Library</h2>
+            <div id="list" class="list"></div>
+        </div>
+    </div>
+
+    <script>
+        const modeButtons = document.querySelectorAll('.mode-btn');
+        modeButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                modeButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const target = btn.getAttribute('data-target');
+                document.querySelectorAll('.mode-panel').forEach(panel => {
+                    panel.classList.toggle('active', panel.id === target);
+                });
+            });
+        });
+
+        const form = document.getElementById('imageForm');
+        const thingInput = document.getElementById('thing');
+        const urlInput = document.getElementById('imageUrl');
+        const statusEl = document.getElementById('status');
+        const listEl = document.getElementById('list');
+        const countEl = document.getElementById('totalMappings');
+        const trainxForm = document.getElementById('trainxForm');
+        const trainxSource = document.getElementById('trainxSource');
+        const trainxStatus = document.getElementById('trainxStatus');
+        const trainxBtn = document.getElementById('trainxBtn');
+        const addBtn = document.getElementById('addBtn');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            statusEl.textContent = 'Saving...';
+            statusEl.className = 'status';
+            addBtn.disabled = true;
+            const payload = {
+                thing: thingInput.value.trim(),
+                image_url: urlInput.value.trim(),
+            };
+            try {
+                const res = await fetch('/api/image-setter/add', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload),
+                });
+                const data = await res.json();
+                if (data.success) {
+                    statusEl.textContent = 'Saved';
+                    statusEl.className = 'status success';
+                    thingInput.value = '';
+                    urlInput.value = '';
+                    thingInput.focus();
+                    await loadList();
+                } else {
+                    statusEl.textContent = data.error || 'Failed to save';
+                    statusEl.className = 'status error';
+                }
+            } catch (err) {
+                statusEl.textContent = err.message || 'Error';
+                statusEl.className = 'status error';
+            } finally {
+                addBtn.disabled = false;
+            }
+        });
+
+        trainxForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            trainxStatus.textContent = 'Generating...';
+            trainxStatus.className = 'status';
+            trainxBtn.disabled = true;
+            const source = trainxSource.value.trim();
+            if (!source) {
+                trainxStatus.textContent = 'TrainX code cannot be empty';
+                trainxStatus.className = 'status error';
+                trainxBtn.disabled = false;
+                return;
+            }
+            try {
+                const res = await fetch('/api/image-setter/trainx/compile', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ source }),
+                });
+                const data = await res.json();
+                if (data.success) {
+                    const count = data.count || (data.entries ? data.entries.length : 0);
+                    trainxStatus.textContent = `Added ${count} mapping${count === 1 ? '' : 's'}`;
+                    trainxStatus.className = 'status success';
+                    trainxSource.value = '';
+                    await loadList();
+                } else {
+                    trainxStatus.textContent = data.error || 'Failed to compile';
+                    trainxStatus.className = 'status error';
+                }
+            } catch (err) {
+                trainxStatus.textContent = err.message || 'Error';
+                trainxStatus.className = 'status error';
+            } finally {
+                trainxBtn.disabled = false;
+            }
+        });
+
+        async function loadList() {
+            try {
+                const res = await fetch('/api/image-setter/list');
+                const data = await res.json();
+                const images = data.images || [];
+                countEl.textContent = images.length;
+                if (!images.length) {
+                    listEl.innerHTML = '<div class="empty-state">No image mappings yet. Add your first one above!</div>';
+                    return;
+                }
+                listEl.innerHTML = images.map(entry => renderItem(entry)).join('');
+            } catch (err) {
+                listEl.innerHTML = '<div class="empty-state">Error loading mappings</div>';
+            }
+        }
+
+        function renderItem(entry) {
+            const safeThing = escapeHtml(entry.thing || '');
+            const safeUrl = escapeHtml(entry.image_url || '');
+            const created = entry.created_at ? new Date(entry.created_at).toLocaleString() : '';
+            const question = escapeHtml(entry.question || `Create an image of ${safeThing}`);
+            return `
+                <div class="qa-item qa-item-image" data-id="${entry.id}">
+                    <div class="view-content" id="view-${entry.id}">
+                        <div class="qa-question">
+                            <strong>Q:</strong> ${question}
+                            <span class="qa-badge">Image</span>
+                        </div>
+                        <div class="qa-answer"><strong>A:</strong> <a href="${safeUrl}" target="_blank" rel="noopener">${safeUrl}</a></div>
+                        <div class="qa-image-preview">
+                            <div class="qa-image-frame">
+                                <iframe src="${safeUrl}" loading="lazy" referrerpolicy="no-referrer"></iframe>
+                            </div>
+                            <div class="qa-image-still">
+                                <img src="${safeUrl}" alt="${safeThing}" loading="lazy" onerror="this.style.display='none'">
+                            </div>
+                        </div>
+                        <div class="qa-answer" style="margin-top:10px;color:#999;font-size:12px;">Added: ${created}</div>
+                        <div class="qa-actions">
+                            <button onclick="editImage('${entry.id}')">Edit</button>
+                            <button class="delete-btn" onclick="deleteImage('${entry.id}')">Delete</button>
+                        </div>
+                    </div>
+                    <div class="edit-form" id="edit-${entry.id}">
+                        <div class="input-group">
+                            <label>Thing / Subject</label>
+                            <input type="text" id="edit-thing-${entry.id}" value="${safeThing}">
+                        </div>
+                        <div class="input-group">
+                            <label>Image URL</label>
+                            <input type="url" id="edit-url-${entry.id}" value="${safeUrl}">
+                        </div>
+                        <div class="input-group">
+                            <label>Question (optional)</label>
+                            <input type="text" id="edit-question-${entry.id}" value="${question}">
+                        </div>
+                        <div class="qa-image-preview">
+                            <div class="qa-image-frame">
+                                <iframe src="${safeUrl}" loading="lazy" referrerpolicy="no-referrer"></iframe>
+                            </div>
+                            <div class="qa-image-still">
+                                <img src="${safeUrl}" alt="${safeThing}" loading="lazy" onerror="this.style.display='none'">
+                            </div>
+                        </div>
+                        <div class="qa-actions">
+                            <button class="btn-secondary" type="button" onclick="cancelEdit('${entry.id}')">Cancel</button>
+                            <button class="btn" type="button" onclick="saveImage('${entry.id}')">Save</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        async function deleteImage(id) {
+            if (!confirm('Delete this image mapping?')) return;
+            try {
+                const res = await fetch('/api/image-setter/delete', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ id }),
+                });
+                const data = await res.json();
+                if (data.success) {
+                    await loadList();
+                } else {
+                    alert(data.error || 'Failed to delete');
+                }
+            } catch (err) {
+                alert(err.message || 'Error');
+            }
+        }
+
+        function editImage(id) {
+            document.getElementById(`view-${id}`).style.display = 'none';
+            document.getElementById(`edit-${id}`).classList.add('active');
+        }
+
+        function cancelEdit(id) {
+            document.getElementById(`view-${id}`).style.display = 'block';
+            document.getElementById(`edit-${id}`).classList.remove('active');
+        }
+
+        async function saveImage(id) {
+            const thing = document.getElementById(`edit-thing-${id}`).value.trim();
+            const image_url = document.getElementById(`edit-url-${id}`).value.trim();
+            const question = document.getElementById(`edit-question-${id}`).value.trim();
+            if (!thing || !image_url) {
+                alert('Thing and Image URL are required');
+                return;
+            }
+            try {
+                const res = await fetch('/api/image-setter/update', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ id, thing, image_url, question }),
+                });
+                const data = await res.json();
+                if (data.success) {
+                    await loadList();
+                } else {
+                    alert(data.error || 'Failed to save changes');
+                }
+            } catch (err) {
+                alert(err.message || 'Error');
+            }
+        }
+
+        loadList();
+    </script>
+</body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pEhc6H0r5C3yRyvCb4s46HoPazTA/gkGEXLJJLLfi5yRvCNrI6VsgGAaHo9dZYkTfLZNVVRhk1FdYzf+gj2R3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=13">
+</head>
+<body data-theme="light">
+    <div class="app-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-top">
+                <button class="sidebar-icon-btn" id="sidebarMenuBtn" title="Menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <button class="sidebar-icon-btn primary" id="newChatBtn" title="New chat">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="chats-section">
+                    <div class="section-title">Recent</div>
+                    <div class="chats-list" id="chatsList">
+                        <div class="chats-loading">No chats yet</div>
+                    </div>
+                </div>
+                
+                <div class="projects-section" id="projectsSection" style="display: none;">
+                    <div class="section-title">Projects</div>
+                    <button class="new-project-btn" id="newProjectBtn">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 3V13M3 8H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        New Project
+                    </button>
+                    <div class="projects-content" id="projectsContent">
+                        <div class="chats-loading">No projects yet</div>
+                    </div>
+                </div>
+
+                <!-- Gems -->
+                <div class="gems-section" id="gemsSection">
+                    <div class="section-title">Gems</div>
+                    <div class="gems-list" id="gemsSidebarList">
+                        <!-- gems injected by JS -->
+                    </div>
+                    <button class="new-project-btn" id="newGemBtn" type="button">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 3V13M3 8H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        New Gem +
+                    </button>
+                </div>
+            </div>
+            
+            <div class="sidebar-footer">
+                <button class="settings-link" id="settingsBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19.4 15C19.2669 15.3016 19.2272 15.6362 19.286 15.9606C19.3448 16.285 19.4995 16.5843 19.73 16.82L19.79 16.88C19.976 17.0657 20.1235 17.2863 20.2241 17.5291C20.3248 17.7719 20.3766 18.0322 20.3766 18.295C20.3766 18.5578 20.3248 18.8181 20.2241 19.0609C20.1235 19.3037 19.976 19.5243 19.79 19.71C19.6043 19.896 19.3837 20.0435 19.1409 20.1441C18.8981 20.2448 18.6378 20.2966 18.375 20.2966C18.1122 20.2966 17.8519 20.2448 17.6091 20.1441C17.3663 20.0435 17.1457 19.896 16.96 19.71L16.9 19.65C16.6643 19.4195 16.365 19.2648 16.0406 19.206C15.7162 19.1472 15.3816 19.1869 15.08 19.32C14.7842 19.4468 14.532 19.6572 14.3543 19.9255C14.1766 20.1938 14.0813 20.5082 14.08 20.83V21C14.08 21.5304 13.8693 22.0391 13.4942 22.4142C13.1191 22.7893 12.6104 23 12.08 23C11.5496 23 11.0409 22.7893 10.6658 22.4142C10.2907 22.0391 10.08 21.5304 10.08 21V20.91C10.0723 20.579 9.96512 20.258 9.77251 19.9887C9.5799 19.7194 9.31074 19.5143 9 19.4C8.69838 19.2669 8.36381 19.2272 8.03941 19.286C7.71502 19.3448 7.41568 19.4995 7.18 19.73L7.12 19.79C6.93425 19.976 6.71368 20.1235 6.47088 20.2241C6.22808 20.3248 5.96783 20.3766 5.705 20.3766C5.44217 20.3766 5.18192 20.3248 4.93912 20.2241C4.69632 20.1235 4.47575 19.976 4.29 19.79C4.10405 19.6043 3.95653 19.3837 3.85588 19.1409C3.75523 18.8981 3.70343 18.6378 3.70343 18.375C3.70343 18.1122 3.75523 17.8519 3.85588 17.6091C3.95653 17.3663 4.10405 17.1457 4.29 16.96L4.35 16.9C4.58054 16.6643 4.73519 16.365 4.794 16.0406C4.85282 15.7162 4.81312 15.3816 4.68 15.08C4.55324 14.7842 4.34276 14.532 4.07447 14.3543C3.80618 14.1766 3.49179 14.0813 3.17 14.08H3C2.46957 14.08 1.96086 13.8693 1.58579 13.4942C1.21071 13.1191 1 12.6104 1 12.08C1 11.5496 1.21071 11.0409 1.58579 10.6658C1.96086 10.2907 2.46957 10.08 3 10.08H3.09C3.42099 10.0723 3.742 9.96512 4.0113 9.77251C4.28059 9.5799 4.48572 9.31074 4.6 9C4.73312 8.69838 4.77282 8.36381 4.714 8.03941C4.65519 7.71502 4.50054 7.41568 4.27 7.18L4.21 7.12C4.02405 6.93425 3.87653 6.71368 3.77588 6.47088C3.67523 6.22808 3.62343 5.96783 3.62343 5.705C3.62343 5.44217 3.67523 5.18192 3.77588 4.93912C3.87653 4.69632 4.02405 4.47575 4.21 4.29C4.39575 4.10405 4.61632 3.95653 4.85912 3.85588C5.10192 3.75523 5.36217 3.70343 5.625 3.70343C5.88783 3.70343 6.14808 3.75523 6.39088 3.85588C6.63368 3.95653 6.85425 4.10405 7.04 4.29L7.1 4.35C7.33568 4.58054 7.63502 4.73519 7.95941 4.794C8.28381 4.85282 8.61838 4.81312 8.92 4.68H9C9.29577 4.55324 9.54802 4.34276 9.72569 4.07447C9.90337 3.80618 9.99872 3.49179 10 3.17V3C10 2.46957 10.2107 1.96086 10.5858 1.58579C10.9609 1.21071 11.4696 1 12 1C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V3.09C14.0013 3.41179 14.0966 3.72618 14.2743 3.99447C14.452 4.26276 14.7042 4.47324 15 4.6C15.3016 4.73312 15.6362 4.77282 15.9606 4.714C16.285 4.65519 16.5843 4.50054 16.82 4.27L16.88 4.21C17.0657 4.02405 17.2863 3.87653 17.5291 3.77588C17.7719 3.67523 18.0322 3.62343 18.295 3.62343C18.5578 3.62343 18.8181 3.67523 19.0609 3.77588C19.3037 3.87653 19.5243 4.02405 19.71 4.21C19.896 4.39575 20.0435 4.61632 20.1441 4.85912C20.2448 5.10192 20.2966 5.36217 20.2966 5.625C20.2966 5.88783 20.2448 6.14808 20.1441 6.39088C20.0435 6.63368 19.896 6.85425 19.71 7.04L19.65 7.1C19.4195 7.33568 19.2648 7.63502 19.206 7.95941C19.1472 8.28381 19.1869 8.61838 19.32 8.92V9C19.4468 9.29577 19.6572 9.54802 19.9255 9.72569C20.1938 9.90337 20.5082 9.99872 20.83 10H21C21.5304 10 22.0391 10.2107 22.4142 10.5858C22.7893 10.9609 23 11.4696 23 12C23 12.5304 22.7893 13.0391 22.4142 13.4142C22.0391 13.7893 21.5304 14 21 14H20.91C20.5882 14.0013 20.2738 14.0966 20.0055 14.2743C19.7372 14.452 19.5268 14.7042 19.4 15Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Settings & help</span>
+                </button>
+            </div>
+        </aside>
+        
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header -->
+            <div class="content-header">
+                <div class="header-left">
+                    <div class="logo-container">
+                        <svg class="atlas-logo" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="app-name">Atlas</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <button class="header-icon-btn" id="customizeBtn" title="Customize (Gems)">
+                        <i class="fa-solid fa-gem"></i>
+                    </button>
+                    <button class="header-icon-btn" id="helpBtn" title="Help">
+                        <i class="fa-regular fa-circle-question"></i>
+                    </button>
+                    <button class="theme-toggle-btn" id="themeToggleBtn" title="Toggle theme" data-theme="light">
+                        <span class="theme-icon sun-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 2V4M12 20V22M4 12H2M22 12H20M5.636 5.636L4.222 4.222M19.778 19.778L18.364 18.364M5.636 18.364L4.222 19.778M19.778 4.222L18.364 5.636" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <span class="theme-icon moon-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                <path d="M21 15.5C19.59 16.46 17.92 17 16.13 17C10.61 17 6.13 12.52 6.13 7C6.13 5.21 6.67 3.52 7.63 2.12C4.2 3.19 2 6.33 2 10C2 15.52 6.48 20 12 20C15.67 20 18.81 17.8 19.88 14.37C19.63 14.59 19.36 14.79 19.07 14.96C19.68 15.16 20.33 15.32 21 15.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="upgrade-btn" id="upgradeBtn">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 2L10 6L14 7L10 8L8 12L6 8L2 7L6 6L8 2Z" fill="currentColor"/>
+                        </svg>
+                        <span>Upgrade</span>
+                    </button>
+                    <div class="user-avatar" id="userAvatar">A</div>
+                </div>
+            </div>
+            
+            <!-- Chat Container -->
+            <div class="chat-container" id="chatContainer">
+                <div class="welcome-screen" id="welcomeScreen">
+                    <h1 class="welcome-title">Hello</h1>
+                    <p class="welcome-subtitle">I'm your AI assistant powered by Atlas. How can I help you today?</p>
+                </div>
+                
+                <div class="messages-container" id="messagesContainer" style="display: none;">
+                    <!-- Messages will be inserted here -->
+                </div>
+            </div>
+            
+            <!-- Input Container -->
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <div class="input-left-actions">
+                        <button class="input-icon-btn" id="attachBtn" title="Upload files" aria-label="Upload files">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 10L12 5L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 5V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <textarea 
+                        id="messageInput" 
+                        class="message-input" 
+                        placeholder="Ask Atlas"
+                        rows="1"
+                    ></textarea>
+                    <div class="input-right-actions">
+                        <button class="input-icon-btn" id="thinkDeeperToggle" title="Think Deeper Mode">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 2.5C6.96243 2.5 4.5 4.96243 4.5 8C4.5 9.92209 5.56683 11.5852 7.14944 12.4634C7.38096 12.5911 7.5 12.8458 7.5 13.107V14C7.5 14.5523 7.94772 15 8.5 15H11.5C12.0523 15 12.5 14.5523 12.5 14V13.107C12.5 12.8458 12.619 12.5911 12.8506 12.4634C14.4332 11.5852 15.5 9.92209 15.5 8C15.5 4.96243 13.0376 2.5 10 2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 17H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M9 19H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <button class="input-icon-btn" id="historyBtn" title="History">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M10 6V10L12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="model-selector" id="modelSelector">
+                            <span class="model-name">Thor 1.0</span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="model-dropdown" id="modelDropdown">
+                                <div class="model-option active" data-model="thor-1.0">
+                                    <div class="model-option-info">
+                                        <span class="model-option-name">Thor 1.0</span>
+                                        <span class="model-option-note">Default model</span>
+                                    </div>
+                                    <span class="model-option-status">✓</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="send-btn" id="sendBtn" title="Send">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <p class="input-disclaimer">Atlas can make mistakes, so double-check important information.</p>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Customize (Gems) Modal -->
+    <div class="modal" id="customizeModal" style="display: none;">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h2>Customize Thor — Gems</h2>
+                <button class="modal-close" id="closeCustomizeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="settings-section">
+                    <h3>Try a Gem (no save)</h3>
+                    <div class="gems-try-grid" id="gemsTryGrid"></div>
+                    <p class="input-disclaimer" style="text-align:left; margin-top:10px;">
+                        Trying a Gem won’t create or save it. You can save it later if you like.
+                    </p>
+                </div>
+
+                <div class="settings-section">
+                    <h3>My Gems</h3>
+                    <div class="gems-manage-list" id="gemsManageList">
+                        <div class="chats-loading">Loading gems...</div>
+                    </div>
+                    <div class="form-actions" style="justify-content:flex-start;">
+                        <button type="button" class="btn-primary" id="createGemBtn">Create Gem</button>
+                    </div>
+                </div>
+
+                <div class="settings-section hidden" id="gemEditorSection">
+                    <h3 id="gemEditorTitle">New Gem</h3>
+                    <form id="gemForm">
+                        <input type="hidden" id="gemId" />
+                        <div class="form-group">
+                            <label for="gemName">Name</label>
+                            <input type="text" id="gemName" placeholder="e.g., Study Buddy" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="gemDescription">Description</label>
+                            <input type="text" id="gemDescription" placeholder="Short tagline shown in the model dropdown" />
+                        </div>
+                        <div class="form-group">
+                            <label for="gemTone">Tone</label>
+                            <select id="gemTone">
+                                <option value="normal" selected>Normal</option>
+                                <option value="friendly">Friendly</option>
+                                <option value="calm">Calm</option>
+                                <option value="formal">Formal</option>
+                                <option value="critical">Critical</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="gemInstructions">Instructions</label>
+                            <textarea id="gemInstructions" rows="5" placeholder="How should this Gem behave? Tone, constraints, format, etc."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="gemLinks">Sources (links)</label>
+                            <textarea id="gemLinks" rows="3" placeholder="One URL per line"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="gemFiles">Sources (files)</label>
+                            <input type="file" id="gemFiles" multiple accept="text/*,.txt,.md,.json" />
+                            <p class="input-disclaimer" style="text-align:left; margin-top:8px;">
+                                Tip: keep files small. Text is used as extra context when this Gem is selected.
+                            </p>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="btn-secondary" id="cancelGemEditBtn">Cancel</button>
+                            <button type="button" class="btn-secondary" id="tryGemBtn">Try</button>
+                            <button type="submit" class="btn-primary" id="saveGemBtn">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div class="modal" id="settingsModal" style="display: none;">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h2>Settings</h2>
+                <button class="modal-close" id="closeSettingsModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="settings-section">
+                    <h3>Theme</h3>
+                    <div class="theme-options">
+                        <label class="theme-option">
+                            <input type="radio" name="theme" value="light" checked>
+                            <span>Light (Current)</span>
+                        </label>
+                        <label class="theme-option">
+                            <input type="radio" name="theme" value="dark">
+                            <span>Dark</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="settings-section">
+                    <h3>Tone</h3>
+                    <div class="theme-options" id="toneOptions">
+                        <label class="theme-option"><input type="radio" name="tone" value="normal" checked><span>Normal</span></label>
+                        <label class="theme-option"><input type="radio" name="tone" value="friendly"><span>Friendly</span></label>
+                        <label class="theme-option"><input type="radio" name="tone" value="calm"><span>Calm</span></label>
+                        <label class="theme-option"><input type="radio" name="tone" value="formal"><span>Formal</span></label>
+                        <label class="theme-option"><input type="radio" name="tone" value="critical"><span>Critical</span></label>
+                    </div>
+                </div>
+                <div class="settings-section">
+                    <h3>Default Model</h3>
+                    <div class="model-options">
+                        <label class="model-option-setting">
+                            <input type="radio" name="defaultModel" value="thor-1.0" checked>
+                            <span>Thor 1.0</span>
+                            <span class="status-badge">Active</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Help Modal -->
+    <div class="modal" id="helpModal" style="display: none;">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h2>How to use Atlas</h2>
+                <button class="modal-close" id="closeHelpModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="settings-section">
+                    <h3>Key commands</h3>
+                    <ul class="plan-features">
+                        <li><strong>Load Office Suite</strong> — opens the office iframe</li>
+                        <li><strong>Load Game Suite</strong> / <strong>Let's play games</strong> — opens the arcade iframe</li>
+                        <li><strong>Create an image of &lt;thing&gt;</strong> — fetches an image</li>
+                        <li><strong>Another angle/background/style</strong> — asks for a new image variant</li>
+                    </ul>
+                </div>
+                <div class="settings-section">
+                    <h3>Tips</h3>
+                    <ul class="plan-features">
+                        <li>Ask for <strong>bullets</strong> or <strong>steps</strong> only when you want structured output</li>
+                        <li>Use <strong>Think Deeper</strong> for more thorough answers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Upgrade Modal -->
+    <div class="modal" id="upgradeModal" style="display: none;">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h2>Upgrade Plan</h2>
+                <button class="modal-close" id="closeUpgradeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="plan-options">
+                        <div class="plan-card active" id="freePlanCard">
+                            <div class="plan-header">
+                                <h3>Free Plan</h3>
+                                <span class="plan-badge-current">Current</span>
+                            </div>
+                            <div class="plan-price">$0<span class="plan-period">/month</span></div>
+                            <ul class="plan-features">
+                                <li>✓ Basic AI assistance</li>
+                                <li>✓ Standard responses</li>
+                                <li>✓ Thor 1.0 model access</li>
+                                <li>✓ Think Deeper mode</li>
+                                <li>✓ Unlimited chats</li>
+                            </ul>
+                        </div>
+                        <div class="plan-card">
+                            <div class="plan-header">
+                                <h3>Pro Plan</h3>
+                                <span class="plan-badge-coming">Limited Access</span>
+                            </div>
+                            <div class="plan-price">$5<span class="plan-period">/month</span></div>
+                            <ul class="plan-features">
+                                <li>✓ Advanced AI capabilities</li>
+                                <li>✓ Priority responses</li>
+                                <li>✓ Priority support</li>
+                                <li>✓ Custom models</li>
+                                <li>✓ API access</li>
+                            </ul>
+                            <p class="plan-note">Limited access. Provide your access code to unlock.</p>
+                            <button class="upgrade-plan-btn" id="proAccessBtn">Limited Access</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal" style="display: none;">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h2 id="projectModalTitle">New Project</h2>
+                <button class="modal-close" id="closeProjectModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="projectForm">
+                    <input type="hidden" id="projectId">
+                    <div class="form-group">
+                        <label for="projectName">Project Name</label>
+                        <input type="text" id="projectName" placeholder="Enter project name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectDescription">Description</label>
+                        <textarea id="projectDescription" placeholder="Enter project description" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectContext">Context</label>
+                        <textarea id="projectContext" placeholder="Enter project context (shared knowledge for all chats in this project)" rows="4"></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn-secondary" id="cancelProjectBtn">Cancel</button>
+                        <button type="submit" class="btn-primary">Save Project</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- History Modal -->
+    <div class="modal" id="historyModal" style="display: none;">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h2>History</h2>
+                <button class="modal-close" id="closeHistoryModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="history-list" id="historyList">
+                    <div class="chats-loading">Loading history...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Cache-bust to ensure latest UI JS is loaded -->
+    <script src="{{ url_for('static', filename='js/app.js') }}?v=9"></script>
+</body>
+</html>

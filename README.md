@@ -1,0 +1,469 @@
+# Atlas AI - Comprehensive Documentation
+
+## 🚀 Overview
+
+Atlas AI is a sophisticated AI assistant platform powered by **Thor 1.0**. The platform provides a unified chat interface, econtinuous learning capabilities, and advanced features for knowledge management and conversation handling.
+
+## 📁 Project Structure
+
+```
+atlas-ai/
+├── chatbot/                # Main Flask app (UI + API)
+│   ├── app.py              # Main server (serves UI + /api/chat)
+│   ├── ui/                 # Frontend (templates + static)
+│   ├── refinement/         # Refinement + accuracy checks
+│   ├── handlers/           # Image + markdown helpers
+│   ├── gems/               # Gems store (custom sub-models)
+│   └── thor_result_setter_server.py  # Optional result-setter tool (port 5004)
+├── thor-1.0/               # Thor model + services (research, inference, etc.)
+├── trainx/                 # TrainX tooling (Q/A and image pairs)
+├── brain/                  # Knowledge store
+├── training_data/          # Training datasets
+├── VERSION.MD              # Major change log (keep updated)
+└── requirements.txt
+```
+
+## 🛠️ Installation & Setup
+
+### Prerequisites
+
+- **Python 3.8+** (Python 3.14 recommended)
+- **pip** (Python package manager)
+- **Virtual environment** support (venv)
+
+### Step-by-Step Installation
+
+1. **Clone or navigate to the project directory:**
+   ```bash
+   cd /Users/arulhania/Coding/atlas-ai
+   ```
+
+2. **Create and activate virtual environment:**
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate  # On macOS/Linux
+   # or
+   .venv\Scripts\activate  # On Windows
+   ```
+
+3. **Upgrade pip and install dependencies:**
+   ```bash
+   pip install --upgrade pip setuptools wheel
+   pip install -r requirements.txt
+   ```
+
+4. **Verify installation:**
+   ```bash
+   python3 -c "import torch; import flask; print('Dependencies installed successfully')"
+   ```
+
+## 🚀 Running the Servers
+
+### Starting All Servers
+
+The platform consists of three main servers:
+
+#### 1. Main Chatbot Server (Port 5000)
+```bash
+cd /Users/arulhania/Coding/atlas-ai/chatbot
+../.venv/bin/python3 app.py
+```
+
+**Access:** http://localhost:5000
+
+**Features:**
+- Unified chat interface for Thor 1.0
+- Conversation history management
+- Project management
+- Image processing
+- Continuous learning integration
+
+#### 2. Thor Result Setter Server (Port 5004)
+```bash
+cd /Users/arulhania/Coding/atlas-ai/chatbot
+../.venv/bin/python3 thor_result_setter_server.py
+```
+
+**Access:** http://localhost:5004
+
+**Features:**
+- Manual Q&A pair entry
+- TrainX compilation support
+- Edit, delete, and search curated responses
+- Data stored in: `chatbot/thor_result_setter.json`
+
+### Starting All Servers at Once
+
+Create a startup script (`start_all_servers.sh`):
+
+```bash
+#!/bin/bash
+cd /Users/arulhania/Coding/atlas-ai
+
+# Activate virtual environment
+source .venv/bin/activate
+
+# Start Chatbot Server
+cd chatbot
+python3 app.py > ../logs/chatbot.log 2>&1 &
+CHATBOT_PID=$!
+echo "Chatbot started (PID: $CHATBOT_PID)"
+
+# Start Thor Result Setter
+python3 thor_result_setter_server.py > ../logs/thor_result_setter.log 2>&1 &
+THOR_PID=$!
+echo "Thor Result Setter started (PID: $THOR_PID)"
+
+echo ""
+echo "All servers started!"
+echo "Chatbot: http://localhost:5000"
+echo "Thor Result Setter: http://localhost:5004"
+echo ""
+echo "To stop all servers: kill $CHATBOT_PID $THOR_PID"
+```
+
+Make it executable:
+```bash
+chmod +x start_all_servers.sh
+```
+
+## 🎯 Key Features
+
+### 1. Model Support
+
+- **Thor 1.0**: Default model with comprehensive capabilities
+- Streamlined single-model experience in the UI
+
+### 2. Continuous Learning
+
+- **Auto-Trainer**: Automatically trains on conversations every 30 minutes
+- **Brain System**: Organized knowledge storage by letter/keyword
+- **Research Engine**: Web search integration for unknown topics
+- **Learning Tracker**: Monitors and records learning progress
+
+### 3. TrainX Language
+
+A domain-specific language for defining Q&A pairs with advanced features:
+
+#### Basic Syntax:
+```trainx
+Q: What is Python?
+A: Python is a high-level programming language known for its simplicity and readability.
+```
+
+#### Alias Syntax (Alternative Question Phrasing):
+```trainx
+Q: {"What is Python?" / "Tell me about Python" / "Python info"}?
+A: Python is a high-level programming language known for its simplicity and readability.
+```
+
+This generates three Q&A pairs:
+- Q: "What is Python?" → A: [answer]
+- Q: "Tell me about Python" → A: [answer]
+- Q: "Python info" → A: [answer]
+
+The first alias is treated as canonical for internal reference.
+
+#### Image Syntax (Q (Image)):
+```trainx
+Q (Image): Thor
+A: https://upload.wikimedia.org/wikipedia/en/3/3c/Chris_Hemsworth_as_Thor.jpg
+```
+
+- The question is stored as `Create an image of Thor` for clarity.
+- The pair is tagged as `type: image` and the Result Setter renders an
+  iframe + still preview from the URL.
+- Aliases work too: `Q (Image): {"puppy" / "dog"}` will generate image
+  pairs for each alias.
+
+### 4. Result Setter System
+
+- **Authoritative Answers**: Pre-set responses for specific questions
+- **Fuzzy Matching**: Handles variations in question phrasing
+- **TrainX Integration**: Bulk import via TrainX compilation
+- **Manual Management**: Web interface for editing Q&A pairs
+
+### 5. Conversation Management
+
+- **Chat History**: All conversations saved in `chatbot/chats/`
+- **Conversation Archive**: Backup copies in `chatbot/conversations/`
+- **Project Organization**: Group related chats into projects
+- **History Tracking**: Comprehensive history system
+
+### 6. Advanced Features
+
+- **Think Deeper Mode**: Enhanced reasoning for complex queries
+- **Image Processing**: Upload and analyze images
+- **Code Mode**: Specialized code assistance
+- **Semantic Relevance**: Intelligent knowledge filtering
+- **Response Cleaning**: Automatic response validation and cleaning
+
+### 7. Easter Egg
+
+Type exactly `"I am in C5."` in the chat interface to trigger a celebratory animation! 🎉
+
+## 📚 API Endpoints
+
+### Chatbot Server (Port 5000)
+
+- `GET /` - Main chat interface
+- `POST /api/chat` - Send chat message
+- `GET /api/chats` - List all chats
+- `GET /api/chats/<chat_id>` - Get specific chat
+- `DELETE /api/chats/<chat_id>` - Delete chat
+- `GET /api/projects` - List projects
+- `POST /api/projects` - Create project
+- `GET /api/history` - Get history
+- `GET /api/model/status` - Check model status
+
+### Result Setter Servers (Ports 5004 & 5005)
+
+- `GET /` - Result setter interface
+- `GET /api/qa/list` - List all Q&A pairs
+- `POST /api/qa/add` - Add new Q&A pair
+- `POST /api/qa/update` - Update existing Q&A pair
+- `POST /api/qa/delete` - Delete Q&A pair
+- `POST /api/qa/search` - Search Q&A pairs
+- `POST /api/trainx/compile` - Compile TrainX code
+
+## 🔧 Configuration
+
+### Model Configuration
+
+**Thor 1.0:** `thor-1.0/config/config.yaml`
+
+### Chatbot Configuration
+
+Configuration is managed in `chatbot/app.py`:
+- Model directories
+- Chat storage paths
+- Result setter file paths
+- Port settings
+
+### Environment Variables
+
+Create a `.env` file in the root directory (optional):
+```env
+FLASK_ENV=development
+SECRET_KEY=your-secret-key-here
+MODEL_PATH=path/to/models
+```
+
+## 🧠 Brain System
+
+The Brain System organizes knowledge by letters and keywords:
+
+```
+brain/
+├── A/
+│   └── keywords.json
+├── B/
+│   └── keywords.json
+...
+└── Z/
+    └── keywords.json
+```
+
+Each `keywords.json` contains:
+- Letter identifier
+- Keywords list
+- Knowledge entries with content, source, and timestamps
+- Last updated timestamp
+
+## 📝 TrainX Language Reference
+
+### Basic Q&A Block
+```trainx
+Q: Your question here?
+A: Your answer here.
+```
+
+### List Declaration
+```trainx
+List myList = [
+    "key1": "value1",
+    "key2": "value2"
+]
+```
+
+### Alias Syntax
+```trainx
+Q: {"Canonical Question" / "Alias 1" / "Alias 2"}?
+A: Single answer for all variations.
+```
+
+### Comments
+```trainx
+# This is a comment
+Q: Question?
+A: Answer.
+```
+
+## 📄 License
+
+This project is released under the **Atlas AI Internal Use License**
+(`LICENSE` in the repo root). In short: internal evaluation and research
+use are allowed; redistribution, commercial hosting, or model-training
+derivatives outside this project are prohibited without written
+permission. See the full LICENSE text for all terms, conditions,
+limitations, and warranty disclaimers.
+
+## 🐛 Troubleshooting
+
+### Server Won't Start
+
+1. **Check if port is in use:**
+   ```bash
+   lsof -i :5000  # For chatbot
+   lsof -i :5004  # For Thor result setter
+   ```
+
+2. **Kill existing processes:**
+   ```bash
+   pkill -f "app.py"
+   pkill -f "result_setter_server"
+   ```
+
+3. **Check virtual environment:**
+   ```bash
+   source .venv/bin/activate
+   which python3  # Should point to .venv/bin/python3
+   ```
+
+### Import Errors
+
+1. **Verify sys.path setup:**
+   - Check that `thor-1.0` is added before `odin-0.5` in sys.path
+   - Verify all required modules exist
+
+2. **Reinstall dependencies:**
+   ```bash
+   pip install -r requirements.txt --force-reinstall
+   ```
+
+### Model Loading Issues
+
+1. **Check model files exist:**
+   ```bash
+   ls -la thor-1.0/models/final_model.pt
+   ls -la thor-1.0/models/tokenizer.json
+   ```
+
+2. **Verify config paths:**
+   - Check `config/config.yaml` exists
+   - Verify paths in `app.py` are correct
+
+### Conversation Not Saving
+
+1. **Check directory permissions:**
+   ```bash
+   ls -la chatbot/chats/
+   ls -la chatbot/conversations/
+   ```
+
+2. **Verify directory creation:**
+   - Directories should be created automatically
+   - Check logs for permission errors
+
+## 📊 Monitoring & Logs
+
+### Log Locations
+
+- **Chatbot:** `/tmp/chatbot.log` or `logs/chatbot.log`
+- **Thor Result Setter:** `/tmp/thor_result_setter.log` or `logs/thor_result_setter.log`
+
+### Viewing Logs
+
+```bash
+# Real-time log viewing
+tail -f /tmp/chatbot.log
+
+# Last 50 lines
+tail -50 /tmp/chatbot.log
+
+# Search for errors
+grep -i error /tmp/chatbot.log
+```
+
+## 🔒 Security Considerations
+
+1. **Development Server Warning:**
+   - Flask's development server is NOT suitable for production
+   - Use a production WSGI server (Gunicorn, uWSGI) for deployment
+
+2. **Secret Key:**
+   - Change `app.secret_key` in production
+   - Use environment variables for sensitive data
+
+3. **CORS:**
+   - Currently allows all origins (`CORS(app)`)
+   - Restrict in production: `CORS(app, origins=["https://yourdomain.com"])`
+
+## 🚀 Deployment
+
+### Production Setup
+
+1. **Use Production WSGI Server:**
+   ```bash
+   pip install gunicorn
+   gunicorn -w 4 -b 0.0.0.0:5000 app:app
+   ```
+
+2. **Set Environment Variables:**
+   ```bash
+   export FLASK_ENV=production
+   export SECRET_KEY=your-production-secret-key
+   ```
+
+3. **Use Process Manager:**
+   - **systemd** (Linux)
+   - **supervisor**
+   - **PM2** (Node.js process manager)
+
+### Docker Deployment (Future)
+
+```dockerfile
+FROM python:3.14-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY . .
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "chatbot.app:app"]
+```
+
+## 🤝 Contributing
+
+1. Follow the existing code structure
+2. Add comments for complex logic
+3. Update documentation for new features
+4. Test changes thoroughly before committing
+
+## 📄 License
+This software is Proprietary and Confidential (P&C). The Licensor grants the 
+Licensee a limited, non-exclusive, and non-transferable right to Use the compiled, 
+object-code version of this software solely for its intended purpose. The Licensee
+is strictly prohibited from accessing, viewing, copying, distributing, or 
+modifying the Source Code. Furthermore, the Licensee shall not reverse engineer, 
+decompile, or disassemble the software, nor shall they distribute, sublicense, or 
+publicly display the software or any derivative works. All rights, title, and 
+intellectual property ownership remain solely with the Licensor.
+
+## 📞 Support
+
+For issues, questions, or contributions:
+- Check the troubleshooting section
+- Review logs for error messages
+- Verify all dependencies are installed
+- Ensure virtual environment is activated
+
+## 🔄 Version History
+
+- **v1.0.0** - Initial release with Thor 1.0
+- TrainX alias syntax support
+- Continuous learning system
+- Result setter integration
+
+---
+
+**Last Updated:** November 30, 2024
+**Maintained by:** Atlas AI Development Team
