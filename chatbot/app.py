@@ -164,11 +164,23 @@ def _gem_sources_to_knowledge(gem: dict) -> list[dict]:
     knowledge = []
     now = datetime.now().isoformat()
     sources = gem.get("sources") or {}
-    links = sources.get("links") if isinstance(sources.get("links"), list) else []
-    files = sources.get("files") if isinstance(sources.get("files"), list) else []
+    
+    # Handle both dict and direct list formats
+    if isinstance(sources, list):
+        # Old format: sources is a list of links
+        links = [s for s in sources if isinstance(s, str)]
+        files = []
+    elif isinstance(sources, dict):
+        links = sources.get("links") if isinstance(sources.get("links"), list) else []
+        files = sources.get("files") if isinstance(sources.get("files"), list) else []
+    else:
+        links = []
+        files = []
+    
+    print(f"[Gem Sources] Processing {len(links)} links and {len(files)} files")
 
     # Files: already stored as text content
-    for f in files[:6]:
+    for f in files[:10]:  # Increased limit for more sources
         if not isinstance(f, dict):
             continue
         filename = (f.get("filename") or "").strip()
@@ -176,36 +188,63 @@ def _gem_sources_to_knowledge(gem: dict) -> list[dict]:
         if filename and content and len(content) > 20:
             knowledge.append({
                 "title": f"Gem Source — {filename}",
-                "content": content[:1200],
+                "content": content[:2500],  # Increased from 1200 to 2500 for better context
                 "query": gem.get("name", ""),
                 "source": "gem_source",
                 "learned_at": now,
+                "priority": 1,  # High priority flag for gem sources
             })
 
     # Links: best-effort fetch (lightweight)
-    for link in links[:3]:
+    for link in links[:5]:  # Increased from 3 to 5
         try:
             url = str(link).strip()
             if not url.startswith(("http://", "https://")):
                 continue
-            r = requests.get(url, timeout=8, headers={"User-Agent": "AtlasAI/Dev", "Accept-Language": "en-US,en;q=0.9"})
+            r = requests.get(url, timeout=10, headers={"User-Agent": "AtlasAI/Dev", "Accept-Language": "en-US,en;q=0.9"})
             if r.status_code != 200:
                 continue
             soup = BeautifulSoup(r.text, "html.parser")
+            # Remove script and style elements
+            for script in soup(["script", "style", "nav", "footer", "header"]):
+                script.decompose()
             title = (soup.title.get_text().strip() if soup.title else url)
-            text = soup.get_text(" ", strip=True)
+            # Try to get main content first (article, main, or content divs)
+            main_content = soup.find("article") or soup.find("main") or soup.find("div", class_=re.compile("content|main|article|post|entry", re.I))
+            if main_content:
+                text = main_content.get_text(" ", strip=True)
+            else:
+                # Fallback: try to find body or a large text container
+                body = soup.find("body")
+                if body:
+                    # Remove common non-content elements
+                    for elem in body.find_all(["nav", "footer", "header", "aside", "script", "style"]):
+                        elem.decompose()
+                    text = body.get_text(" ", strip=True)
+                else:
+                    text = soup.get_text(" ", strip=True)
+            
+            # Clean up whitespace and normalize
             text = re.sub(r"\s{2,}", " ", text)
+            text = re.sub(r"\n\s*\n", "\n", text)  # Remove excessive newlines
+            
+            # Extract meaningful paragraphs (skip very short lines)
+            lines = [line.strip() for line in text.split("\n") if len(line.strip()) > 20]
+            text = " ".join(lines[:50])  # Take first 50 meaningful lines
+            
             if len(text) < 100:
                 continue
             knowledge.append({
                 "title": f"Gem Source — {title[:80]}",
-                "content": text[:1200],
+                "content": text[:2500],  # Increased from 1200 to 2500 for better context
                 "query": gem.get("name", ""),
                 "source": "gem_source",
                 "learned_at": now,
                 "url": url,
+                "priority": 1,  # High priority flag for gem sources
             })
-        except Exception:
+        except Exception as e:
+            print(f"[Gem Source] Error fetching {link}: {e}")
             continue
 
     return knowledge
@@ -663,6 +702,7 @@ def chat():
         code_language = data.get('code_language', 'python')  # Code language (python, javascript, html)
         image_data = data.get('image_data')  # Image data if attached
         requested_model = (data.get('model') or 'thor-1.0').strip()
+        requested_tone = (data.get('tone') or 'normal').strip()
         model_name = 'thor-1.0'  # Underlying model (Thor) for inference
         gem_config = None
         gem_knowledge = []
@@ -677,6 +717,7 @@ def chat():
                     "name": (draft.get("name") or "Gem").strip()[:60],
                     "description": (draft.get("description") or "").strip(),
                     "instructions": (draft.get("instructions") or "").strip(),
+                    "tone": (draft.get("tone") or requested_tone or "normal").strip(),
                     "sources": draft.get("sources") or {"links": [], "files": []},
                 }
                 model_label_for_ui = f"Gem: {gem_config.get('name')} (Try)"
@@ -691,9 +732,22 @@ def chat():
 
         if gem_config:
             try:
+                # Debug: print gem config to see what we're working with
+                print(f"[Gem] Loading sources for gem: {gem_config.get('name', 'unknown')}")
+                print(f"[Gem] Sources structure: {gem_config.get('sources', {})}")
                 gem_knowledge = _gem_sources_to_knowledge(gem_config)
-            except Exception:
+                print(f"[Gem] Extracted {len(gem_knowledge)} knowledge items from sources")
+                if gem_knowledge:
+                    for k in gem_knowledge[:3]:
+                        print(f"[Gem]   - {k.get('title', 'no title')[:60]} ({len(k.get('content', ''))} chars)")
+            except Exception as e:
+                print(f"[Gem] Error converting sources to knowledge: {e}")
+                import traceback
+                traceback.print_exc()
                 gem_knowledge = []
+
+        effective_tone = (gem_config.get("tone") if gem_config else requested_tone) or "normal"
+        effective_tone = str(effective_tone).strip().lower() or "normal"
         
         if not message:
             return jsonify({"error": "Message is required"}), 400
@@ -778,7 +832,9 @@ def chat():
             tweak_phrases = [
                 "another style", "different style", "another angle", "different angle",
                 "different background", "another background", "different size", "change size",
-                "bigger", "smaller", "another one", "another image", "change subject", "make it"
+                "bigger", "smaller", "another one", "another image", "change subject", "make it",
+                # broadened: allow more natural image tweak phrasing
+                "angle", "view", "perspective", "style", "watercolor", "colour", "color", "background"
             ]
             wants_tweak = any(p in message_lower for p in tweak_phrases)
             if wants_tweak:
@@ -805,24 +861,104 @@ def chat():
                 if m_subj:
                     new_subject = m_subj.group(1).strip(" .!?")
                 subject_for_image = new_subject or last_subject
+                
+                # Extract richer tweak modifiers (angle/style/color/background) so requests like
+                # "give me a top-down angle", "watercolor style", "make it red" actually work.
+                mods: List[str] = []
 
-                # Apply light modifiers so "another angle/background/style" actually changes results
-                modifier = ""
-                if "angle" in message_lower or "view" in message_lower:
-                    modifier = "different angle"
-                elif "background" in message_lower:
-                    modifier = "different background"
+                # Angle / view / perspective
+                angle_phrase = None
+                m_angle = re.search(
+                    r"\b(?:give me|show me|make it|render it|give it|in|from)\s+(?:a|an|the)?\s*([a-z0-9\s\-\']{0,48}?)\s*(?:angle|view|perspective)\b",
+                    message,
+                    flags=re.IGNORECASE,
+                )
+                if m_angle:
+                    cand = (m_angle.group(1) or "").strip(" .,!?:;\"'")
+                    if cand:
+                        angle_phrase = cand
+                angle_keywords = [
+                    "top down", "top-down", "overhead", "bird's eye", "birds eye",
+                    "side view", "front view", "rear view", "back view",
+                    "3/4 view", "three quarter", "close up", "close-up", "wide shot",
+                    "isometric", "first person", "third person",
+                ]
+                if not angle_phrase:
+                    for kw in angle_keywords:
+                        if kw in message_lower:
+                            angle_phrase = kw
+                            break
+                if angle_phrase:
+                    mods.append(f"{angle_phrase} angle")
+                elif any(k in message_lower for k in ["angle", "view", "perspective"]):
+                    mods.append("different angle")
+
+                # Style
+                style_phrase = None
+                style_keywords = [
+                    "watercolor", "water colour", "oil painting", "sketch", "pencil sketch",
+                    "anime", "pixel art", "3d", "3d render", "cinematic", "photorealistic",
+                    "cartoon", "comic", "minimalist", "line art", "noir",
+                ]
+                for kw in style_keywords:
+                    if kw in message_lower:
+                        style_phrase = kw
+                        break
+                m_style = re.search(r"\b(?:in|as|with)\s+([a-z0-9\s\-]{3,40})\s+style\b", message, flags=re.IGNORECASE)
+                if m_style:
+                    cand = (m_style.group(1) or "").strip(" .,!?:;\"'")
+                    # Avoid overly generic captures like "a" / "the"
+                    if cand and len(cand.split()) <= 5:
+                        style_phrase = cand
+                if style_phrase:
+                    mods.append(f"{style_phrase} style")
                 elif "style" in message_lower:
-                    modifier = "different style"
-                if modifier and subject_for_image and modifier not in subject_for_image.lower():
-                    subject_for_image = f"{subject_for_image} {modifier}"
+                    mods.append("different style")
+
+                # Background
+                bg_phrase = None
+                m_bg = re.search(r"\bbackground\s*(?:of|with|:)?\s*([a-z0-9\s\-]{3,60})", message, flags=re.IGNORECASE)
+                if m_bg:
+                    cand = (m_bg.group(1) or "").strip(" .,!?:;\"'")
+                    if cand and len(cand.split()) <= 10:
+                        bg_phrase = cand
+                if bg_phrase:
+                    mods.append(f"background {bg_phrase}")
+                elif "background" in message_lower:
+                    mods.append("different background")
+
+                # Color
+                color_phrase = None
+                hex_match = re.search(r"#([0-9a-fA-F]{6})\b", message)
+                if hex_match:
+                    color_phrase = f"#{hex_match.group(1)}"
+                else:
+                    color_words = [
+                        "red", "blue", "green", "yellow", "orange", "purple", "pink",
+                        "black", "white", "gray", "grey", "brown", "teal", "cyan",
+                    ]
+                    m_color = re.search(
+                        r"\b(?:in|with|using|make it|give it|color it|colour it)\s+(?:a\s+)?(" + "|".join(color_words) + r")\b",
+                        message_lower,
+                    )
+                    if m_color:
+                        color_phrase = m_color.group(1)
+                if color_phrase:
+                    mods.append(f"color {color_phrase}")
+
+                # Apply modifiers to the subject so the image request actually changes
+                if subject_for_image and mods:
+                    mods_text = ", ".join(dict.fromkeys(mods))  # stable dedupe
+                    if mods_text.lower() not in subject_for_image.lower():
+                        subject_for_image = f"{subject_for_image} ({mods_text})"
                 
                 if subject_for_image:
                     # Size override if provided (e.g., 1024x768)
                     size_match = re.search(r"(\d{2,4})\s*[xX]\s*(\d{2,4})", message)
                     size_str = f"{size_match.group(1)}x{size_match.group(2)}" if size_match else "960x540"
                     # Force a new variant so "another angle/style/background" actually changes output.
-                    variant_key = f"{int(time.time() * 1000)}:{modifier or 'variant'}"
+                    variant_hint = "-".join([m.replace(" ", "_") for m in mods]) if mods else "variant"
+                    variant_key = f"{int(time.time() * 1000)}:{variant_hint}"
                     img_url, img_source = image_handler.get_image(subject_for_image, size_str, variant=variant_key)
                     response = image_handler.format_image_response(
                         subject_for_image,
@@ -837,8 +973,21 @@ def chat():
         
         # QUICK PATH: Interactive iframe for office suite
         if response is None:
-            normalized_cmd = re.sub(r"[^a-z0-9\\s]+", "", (normalized_message or "").lower()).strip()
-            if normalized_cmd == "load office suite":
+            # NOTE: previously used r"[^a-z0-9\\s]+" which *removed spaces* (\\s was literal).
+            # This prevented command matching and caused fall-through into web search.
+            normalized_cmd = re.sub(r"[^a-z0-9\s]+", " ", (normalized_message or "").lower())
+            normalized_cmd = re.sub(r"\s+", " ", normalized_cmd).strip()
+            tokens = set(normalized_cmd.split())
+
+            wants_office_suite = ("office" in tokens and "suite" in tokens) or normalized_cmd == "load office suite"
+            wants_game_suite = (
+                ("game" in tokens and "suite" in tokens) or ("games" in tokens and "suite" in tokens)
+                or ("arcade" in tokens)
+                or ("play" in tokens and ("game" in tokens or "games" in tokens))
+                or normalized_cmd in {"load game suite", "lets play games"}
+            )
+
+            if wants_office_suite:
                 office_url = "https://quantumwebsolutions.netlify.app"
                 response = (
                     "## Office Suite\n\n"
@@ -847,7 +996,7 @@ def chat():
                 )
                 skip_refinement = True  # keep iframe token intact
                 print("[Office Suite] Served interactive iframe for office suite request")
-            elif normalized_cmd in {"load game suite", "lets play games"}:
+            elif wants_game_suite:
                 games_url = "https://arcade-indol-six.vercel.app"
                 response = (
                     "## Game Suite\n\n"
@@ -1059,10 +1208,16 @@ I'm always learning and improving through our conversations. How can I help you 
                         research_knowledge = research_engine.search_and_learn(search_query)
                         if research_knowledge:
                             print(f"[Research] Learned {len(research_knowledge)} items from Google")
-                            # Use the newly learned knowledge for response
-                            knowledge = research_knowledge
+                            # PRIORITIZE gem sources: prepend gem_knowledge so it's used first
+                            if gem_knowledge:
+                                knowledge = list(gem_knowledge) + research_knowledge
+                            else:
+                                knowledge = research_knowledge
                         else:
                             print(f"[Research] No knowledge retrieved, will use existing brain knowledge if available")
+                            # Still preserve gem_knowledge even if research failed
+                            if gem_knowledge and not knowledge:
+                                knowledge = list(gem_knowledge)
                     except Exception as e:
                         print(f"[Research] Error during research: {e}")
                         import traceback
@@ -1102,9 +1257,14 @@ I'm always learning and improving through our conversations. How can I help you 
                             knowledge = research_knowledge
                         
                         # Rerank any knowledge we have to prioritize the most relevant/ recent
+                        # BUT preserve gem sources at the front (they have priority=1)
                         if knowledge:
-                            knowledge = knowledge_reranker.rerank(context_query, knowledge, query_intent)
-                            print(f"[Refinement] Reranked knowledge items: {len(knowledge)}")
+                            gem_sources = [k for k in knowledge if k.get("source") == "gem_source" or k.get("priority") == 1]
+                            other_knowledge = [k for k in knowledge if k.get("source") != "gem_source" and k.get("priority") != 1]
+                            if other_knowledge:
+                                other_knowledge = knowledge_reranker.rerank(context_query, other_knowledge, query_intent)
+                            knowledge = gem_sources + other_knowledge  # Gem sources always first
+                            print(f"[Refinement] Reranked knowledge: {len(gem_sources)} gem sources + {len(other_knowledge)} other items")
 
                         # Early clarification if we still have nothing confident
                         if response is None and (not knowledge or len(knowledge) == 0):
@@ -1431,15 +1591,28 @@ I'm always learning and improving through our conversations. How can I help you 
                                 print(f"[Model] Using conversation context ({len(recent_context)} previous messages)")
                         
                         # Apply Gem instructions as a lightweight "system prompt" prefix.
+                        tone_line = _tone_profile(effective_tone)
                         if gem_config and (gem_config.get("instructions") or "").strip():
                             gem_name = (gem_config.get("name") or "Gem").strip()
                             gem_instr = (gem_config.get("instructions") or "").strip()
-                            gem_titles = [k.get("title") for k in (gem_knowledge or []) if k.get("title")][:4]
-                            gem_sources_line = f"Gems sources: {', '.join(gem_titles)}" if gem_titles else ""
-                            prefix = f"System: You are {gem_name}. {gem_instr}".strip()
-                            if gem_sources_line:
-                                prefix = prefix + "\n" + gem_sources_line
+                            
+                            # Build gem sources context - include actual content snippets, not just titles
+                            gem_sources_context = ""
+                            if gem_knowledge and len(gem_knowledge) > 0:
+                                gem_titles = [k.get("title", "Source") for k in gem_knowledge[:3]]
+                                gem_sources_context = f"\n\nGem Sources Available ({len(gem_knowledge)} items): {', '.join(gem_titles)}"
+                                # Add key content snippets from first 2 sources for context
+                                for idx, k in enumerate(gem_knowledge[:2]):
+                                    content_preview = (k.get("content", "") or "")[:200].strip()
+                                    if content_preview:
+                                        gem_sources_context += f"\n\nSource {idx+1} ({k.get('title', 'Unknown')}): {content_preview}..."
+                            
+                            prefix = f"System: {tone_line} You are {gem_name}. {gem_instr}{gem_sources_context}".strip()
                             contextual_input = prefix + "\n\n" + contextual_input
+                            print(f"[Gem] Using gem '{gem_name}' with {len(gem_knowledge or [])} source(s) in context")
+                        else:
+                            # Global tone (no gem): still guide style strongly
+                            contextual_input = f"System: {tone_line}\n\n" + contextual_input
 
                         result = model.predict(contextual_input, task=task)
                         
@@ -1872,6 +2045,7 @@ I'm always learning and improving through our conversations. How can I help you 
                     user_message=message,
                     hints={
                         "task": task,
+                        "tone": effective_tone if 'effective_tone' in locals() else (data.get('tone') or 'normal'),
                     },
                 )
             except Exception as e:
@@ -1891,6 +2065,14 @@ I'm always learning and improving through our conversations. How can I help you 
                     response = final_cleaner.fix_incomplete_sentences(response)
             except Exception as e:
                 print(f"[Final Check] Error in final cleanup: {e}")
+
+        # Accuracy guardrail: strip ungrounded numeric claims when we used retrieved knowledge.
+        if not skip_refinement:
+            try:
+                if refinement_knowledge_used:
+                    response = verify_response_accuracy(response, refinement_knowledge_used, query=message)
+            except Exception as e:
+                print(f"[Accuracy Check] Error: {e}")
         
         return jsonify({
             "response": response,

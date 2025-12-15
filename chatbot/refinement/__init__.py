@@ -18,26 +18,19 @@ from typing import Dict, Any, Callable, List
 
 from .question_normalizer import get_question_normalizer  # noqa: F401
 from .intent_router import get_intent_router  # noqa: F401
+from .knowledge_reranker import get_knowledge_reranker  # noqa: F401
 from .answer_refiner import get_answer_refiner  # noqa: F401
 from .clarifier import get_clarifier  # noqa: F401
 from .accuracy_checker import verify_response_accuracy  # noqa: F401
-
-# Optional stage: in lightweight/serverless deployments we may not ship all dependencies.
-try:  # pragma: no cover
-    from .knowledge_reranker import get_knowledge_reranker  # noqa: F401
-except Exception:  # pragma: no cover
-    get_knowledge_reranker = None
 
 
 REFINEMENT_REGISTRY = {
     "normalizer": get_question_normalizer,
     "intent_router": get_intent_router,
+    "reranker": get_knowledge_reranker,
     "clarifier": get_clarifier,
     "answer_refiner": get_answer_refiner,
 }
-
-if get_knowledge_reranker is not None:
-    REFINEMENT_REGISTRY["reranker"] = get_knowledge_reranker
 
 
 def get_refinement_stage(name: str) -> Callable[..., Any]:
@@ -47,10 +40,7 @@ def get_refinement_stage(name: str) -> Callable[..., Any]:
 
 def all_refinement_stages() -> List[str]:
     """Return the ordered list of available refinement stages."""
-    base = ["normalizer", "intent_router", "clarifier", "answer_refiner"]
-    if "reranker" in REFINEMENT_REGISTRY:
-        base.insert(2, "reranker")
-    return base
+    return ["normalizer", "intent_router", "reranker", "clarifier", "answer_refiner"]
 
 
 # Extensive inline documentation / guidelines for maintainers.

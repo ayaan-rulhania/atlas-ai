@@ -91,8 +91,54 @@ class FinalResponseFormatter:
         out = _normalize_whitespace(out)
         out = _fix_punctuation_spacing(out)
         out = _strip_overformatting(out)
+        out = _apply_tone(out, (hints or {}).get("tone") or "")
         out = _debullet_if_not_requested(out, user_message=user_message)
         return out
+
+
+def _apply_tone(text: str, tone: str) -> str:
+    t = (tone or "").strip().lower()
+    if not t or t == "normal":
+        return text
+
+    # Keep content, but reshape voice/structure in a clearly different way.
+    if t == "friendly":
+        if not text.lower().startswith(("sure", "of course", "yes", "absolutely")):
+            return f"Sure — here’s the helpful version.\n\n{text}"
+        return text
+
+    if t == "calm":
+        prefix = "Let’s take this step by step.\n\n"
+        return prefix + text
+
+    if t == "formal":
+        # Reduce contractions lightly and add a formal lead-in.
+        replacements = {
+            "can't": "cannot",
+            "won't": "will not",
+            "don't": "do not",
+            "isn't": "is not",
+            "aren't": "are not",
+            "I'm": "I am",
+            "you're": "you are",
+            "it's": "it is",
+        }
+        out = text
+        for k, v in replacements.items():
+            out = re.sub(rf"\b{re.escape(k)}\b", v, out)
+        if not out.lower().startswith(("certainly", "here is", "below is")):
+            out = "Certainly.\n\n" + out
+        return out
+
+    if t == "critical":
+        # Make it direct: remove softeners and add an action-oriented framing.
+        out = re.sub(r"\b(maybe|perhaps|might|could be|possibly)\b", "", text, flags=re.IGNORECASE)
+        out = _normalize_whitespace(out)
+        if not out.lower().startswith(("direct answer", "bluntly")):
+            out = "Bluntly:\n\n" + out
+        return out
+
+    return text
 
 
 _instance: Optional[FinalResponseFormatter] = None

@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function initializeApp() {
     initializeTheme();
+    initializeTone();
     restoreModelPreference();
     await loadGems();
     loadChats();
@@ -31,7 +32,7 @@ async function initializeApp() {
         applyProUnlockedUI();
     }
 
-    // Restore tone
+    // Restore tone (initializeTone wires UI listeners)
     currentTone = localStorage.getItem('atlasTone') || 'normal';
 }
 
@@ -40,6 +41,8 @@ function restoreModelPreference() {
     const savedModel = localStorage.getItem('selectedModel') || 'thor-1.0';
     currentModel = savedModel || 'thor-1.0';
     // UI will be updated after `loadGems()` rebuilds the dropdown.
+    // Apply a default tone immediately; `loadGems()` may override with a Gem tone.
+    document.body.setAttribute('data-tone', currentTone || 'normal');
 }
 
 function setupEventListeners() {
@@ -412,7 +415,7 @@ async function handleSendMessage() {
             task: 'text_generation',
             think_deeper: thinkDeeperMode,
             model: currentModel,  // Include selected model
-            tone: currentTone,
+            tone: getEffectiveTone(),
         };
 
         // If we're trying a Gem (preview), include the draft config
@@ -801,6 +804,8 @@ function toggleModelDropdown(e) {
     
     // Toggle this dropdown
     if (!isOpen) {
+        // Ensure dropdown reflects current gem/preview state
+        rebuildModelDropdown();
         dropdown.classList.add('open');
         
         // Close when clicking outside
@@ -817,23 +822,25 @@ function selectModel(e) {
     const modelOption = e.currentTarget;
     const selectedModel = modelOption.getAttribute('data-model');
     if (!selectedModel) return;
+    const wasPreview = currentModel === 'gem:preview';
     currentModel = selectedModel;
     
-    // Update UI
-    const dropdown = document.getElementById('modelDropdown');
-    document.querySelectorAll('.model-option').forEach(opt => {
-        opt.classList.remove('active');
-    });
-    modelOption.classList.add('active');
-    
-    // Update model name display
-    updateModelDisplay();
-    
-    // Close dropdown
-    dropdown.classList.remove('open');
-    
+    // If leaving preview, drop it from the dropdown (so it doesn't "stick")
+    if (wasPreview && selectedModel !== 'gem:preview') {
+        activeGemDraft = null;
+    }
+
     // Save preference to localStorage
     localStorage.setItem('selectedModel', selectedModel);
+    
+    // Rebuild to reflect any preview removal + correct active state
+    rebuildModelDropdown();
+    updateModelDisplay();
+    renderGemsSidebar();
+    
+    // Close dropdown
+    const dropdown = document.getElementById('modelDropdown');
+    dropdown.classList.remove('open');
     
     console.log('Switched to model:', selectedModel);
 }
@@ -1095,13 +1102,29 @@ function initializeTheme() {
 function initializeTone() {
     const saved = localStorage.getItem('atlasTone') || 'normal';
     currentTone = saved;
+    document.body.setAttribute('data-tone', currentTone);
     document.querySelectorAll('input[name="tone"]').forEach(input => {
         input.checked = input.value === saved;
         input.addEventListener('change', (e) => {
             currentTone = e.target.value;
             localStorage.setItem('atlasTone', currentTone);
+            document.body.setAttribute('data-tone', currentTone);
         });
     });
+}
+
+function getEffectiveTone() {
+    // Try-preview gem tone
+    if (currentModel === 'gem:preview' && activeGemDraft) {
+        return (activeGemDraft.tone || currentTone || 'normal');
+    }
+    // Saved gem tone
+    if (currentModel && currentModel.startsWith('gem:') && currentModel !== 'gem:preview') {
+        const id = currentModel.replace(/^gem:/, '');
+        const g = gems.find(x => x.id === id);
+        if (g && g.tone) return g.tone;
+    }
+    return currentTone || 'normal';
 }
 
 function setTheme(theme) {
@@ -1401,6 +1424,13 @@ async function loadGems() {
         const data = await res.json();
         gems = Array.isArray(data.gems) ? data.gems : [];
 
+        // Preview gems are ephemeral and can't survive reload without the draft config.
+        // If a stale preference points to gem:preview, fall back to the default model.
+        if (currentModel === 'gem:preview' && !activeGemDraft) {
+            currentModel = 'thor-1.0';
+            localStorage.setItem('selectedModel', currentModel);
+        }
+
         // Validate saved selection once we know which gems exist
         if (currentModel && currentModel.startsWith('gem:') && currentModel !== 'gem:preview') {
             const id = currentModel.replace(/^gem:/, '');
@@ -1409,6 +1439,21 @@ async function loadGems() {
                 currentModel = 'thor-1.0';
                 localStorage.setItem('selectedModel', currentModel);
             }
+        }
+
+        // Reflect effective tone in UI accent on load (covers saved Gem selections).
+        try {
+            if (currentModel === 'gem:preview' && activeGemDraft?.tone) {
+                document.body.setAttribute('data-tone', activeGemDraft.tone);
+            } else if (currentModel && currentModel.startsWith('gem:') && currentModel !== 'gem:preview') {
+                const id = currentModel.replace(/^gem:/, '');
+                const g = gems.find(x => x.id === id);
+                document.body.setAttribute('data-tone', (g?.tone || currentTone || 'normal'));
+            } else {
+                document.body.setAttribute('data-tone', currentTone || 'normal');
+            }
+        } catch (e) {
+            document.body.setAttribute('data-tone', currentTone || 'normal');
         }
 
         rebuildModelDropdown();
@@ -1428,11 +1473,11 @@ async function loadGems() {
 function getModelDisplayName(modelId) {
     if (!modelId) return 'Thor 1.0';
     if (modelId === 'thor-1.0') return 'Thor 1.0';
-    if (modelId === 'gem:preview' && activeGemDraft) return `Gem: ${activeGemDraft.name} (Try)`;
+    if (modelId === 'gem:preview' && activeGemDraft) return `Gem: ${toTitleCase(activeGemDraft.name || 'Gem')} (Try)`;
     if (modelId.startsWith('gem:')) {
         const id = modelId.replace(/^gem:/, '');
         const gem = gems.find(g => g.id === id);
-        return gem ? `Gem: ${gem.name}` : 'Gem';
+        return gem ? `Gem: ${toTitleCase(gem.name || 'Gem')}` : 'Gem';
     }
     return modelId;
 }
@@ -1469,10 +1514,11 @@ function rebuildModelDropdown() {
 
     dropdown.innerHTML = items.map(it => {
         const active = it.id === currentModel ? 'active' : '';
+        const displayName = toTitleCase(it.name || '');
         return `
             <div class="model-option ${active}" data-model="${it.id}">
                 <div class="model-option-info">
-                    <span class="model-option-name">${escapeHtml(it.name)}</span>
+                    <span class="model-option-name">${escapeHtml(displayName)}</span>
                     <span class="model-option-note">${escapeHtml(it.note)}</span>
                 </div>
                 <span class="model-option-status">${active ? '✓' : ''}</span>
@@ -1482,6 +1528,13 @@ function rebuildModelDropdown() {
 
     dropdown.querySelectorAll('.model-option').forEach(opt => {
         opt.addEventListener('click', selectModel);
+    });
+}
+
+function toTitleCase(str) {
+    if (!str) return '';
+    return str.replace(/\w\S*/g, (txt) => {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
     });
 }
 
@@ -1496,9 +1549,14 @@ function renderGemsSidebar() {
 
     el.innerHTML = gems.map(g => {
         const isActive = currentModel === `gem:${g.id}`;
+        const tone = (g.tone || 'normal').toLowerCase();
+        const displayName = toTitleCase(g.name || 'Gem');
         return `
             <button class="gem-item ${isActive ? 'active' : ''}" data-gem-id="${g.id}">
-                <span class="gem-item-title">${escapeHtml(g.name)}</span>
+                <span class="gem-item-content">
+                    <span class="gem-item-title">${escapeHtml(displayName)}</span>
+                    <span class="gem-tone-badge tone-${tone}">${toTitleCase(tone)}</span>
+                </span>
                 <span class="gem-actions">
                     <button class="gem-action-btn" data-action="edit" title="Edit" aria-label="Edit Gem">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -1575,10 +1633,16 @@ function renderGemTryTemplates() {
     const grid = document.getElementById('gemsTryGrid');
     if (!grid) return;
     grid.innerHTML = GEM_TRY_TEMPLATES.map(t => {
+        const tone = (t.tone || 'normal').toLowerCase();
+        const sources = (t.sources && Array.isArray(t.sources.links)) ? t.sources.links.length : 0;
         return `
-            <button class="gem-try-card" type="button" data-template-id="${t.id}">
-                <div class="gem-try-name">${escapeHtml(t.name)}</div>
+            <button class="gem-try-card tone-${tone}" type="button" data-template-id="${t.id}">
+                <div class="gem-try-name">${escapeHtml(toTitleCase(t.name))}</div>
                 <div class="gem-try-desc">${escapeHtml(t.description)}</div>
+                <div class="gem-try-meta">
+                    <span class="gem-tone-badge tone-${tone}">${escapeHtml(toTitleCase(tone))}</span>
+                    <span class="gem-sources-badge">${sources} source${sources === 1 ? '' : 's'}</span>
+                </div>
             </button>
         `;
     }).join('');
@@ -1607,6 +1671,9 @@ function setPreviewGem(template) {
     rebuildModelDropdown();
     updateModelDisplay();
     renderGemsSidebar();
+    if (activeGemDraft && activeGemDraft.tone) {
+        document.body.setAttribute('data-tone', activeGemDraft.tone);
+    }
 }
 
 function selectGemModel(gemId) {
@@ -1616,6 +1683,11 @@ function selectGemModel(gemId) {
     rebuildModelDropdown();
     updateModelDisplay();
     renderGemsSidebar();
+    // Reflect the gem tone in the UI accent
+    const g = gems.find(x => x.id === gemId);
+    if (g && g.tone) {
+        document.body.setAttribute('data-tone', g.tone);
+    }
 }
 
 function openGemEditor(gemId = null) {
@@ -1627,7 +1699,7 @@ function openGemEditor(gemId = null) {
     const instrEl = document.getElementById('gemInstructions');
     const linksEl = document.getElementById('gemLinks');
     const filesEl = document.getElementById('gemFiles');
-    const toneEl = document.getElementById('gemTone');
+    const toneEl = document.querySelector('input[name="gemTone"]:checked');
     if (!section || !title || !idEl || !nameEl || !linksEl) return;
 
     section.classList.remove('hidden');
@@ -1640,7 +1712,9 @@ function openGemEditor(gemId = null) {
         if (descEl) descEl.value = '';
         if (instrEl) instrEl.value = '';
         linksEl.value = '';
-        if (toneEl) toneEl.value = 'normal';
+        document.querySelectorAll('input[name="gemTone"]').forEach(r => {
+            r.checked = (r.value === (currentTone || 'normal'));
+        });
         return;
     }
 
@@ -1651,7 +1725,9 @@ function openGemEditor(gemId = null) {
     nameEl.value = g.name || '';
     if (descEl) descEl.value = g.description || '';
     if (instrEl) instrEl.value = g.instructions || '';
-    if (toneEl) toneEl.value = g.tone || 'normal';
+    document.querySelectorAll('input[name="gemTone"]').forEach(r => {
+        r.checked = (r.value === (g.tone || 'normal'));
+    });
     const links = (g.sources && Array.isArray(g.sources.links)) ? g.sources.links : [];
     linksEl.value = links.join('\n');
 }
@@ -1683,7 +1759,7 @@ function collectGemDraftFromEditor() {
     const descEl = document.getElementById('gemDescription');
     const instrEl = document.getElementById('gemInstructions');
     const linksEl = document.getElementById('gemLinks');
-    const toneEl = document.getElementById('gemTone');
+    const toneEl = document.querySelector('input[name="gemTone"]:checked');
     if (!nameEl) return null;
     const name = (nameEl.value || '').trim();
     if (!name) return null;

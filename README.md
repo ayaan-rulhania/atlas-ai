@@ -132,7 +132,12 @@ chmod +x start_all_servers.sh
 ### 1. Model Support
 
 - **Thor 1.0**: Default model with comprehensive capabilities
-- Streamlined single-model experience in the UI
+- **Gems**: Custom sub-models that you can create, customize, and use for specialized tasks
+  - **Try Before Create**: Test gem configurations without saving
+  - **Custom Instructions**: Define how each gem should behave
+  - **Tone Control**: Set tone (Normal, Friendly, Calm, Formal, Critical) for consistent style
+  - **Source Integration**: Add links and files as knowledge sources that are prioritized over web search
+  - **One-Line Management**: View and manage gems in the sidebar with name, tone badge, and actions all on one line
 
 ### 2. Continuous Learning
 
@@ -190,15 +195,35 @@ A: https://upload.wikimedia.org/wikipedia/en/3/3c/Chris_Hemsworth_as_Thor.jpg
 - **Project Organization**: Group related chats into projects
 - **History Tracking**: Comprehensive history system
 
-### 6. Advanced Features
+### 6. Gems (Custom Sub-Models)
+
+Gems allow you to create specialized AI assistants tailored to specific tasks or domains:
+
+- **Create Gems**: Define custom instructions, tone, and knowledge sources
+- **Try Before Save**: Test gem configurations without committing
+- **Source Integration**: 
+  - Add **links** (up to 5 URLs) — automatically fetched and parsed for content
+  - Add **files** (up to 10 text files) — uploaded content used as context
+  - Gem sources are **always prioritized** over web search results
+- **Tone Control**: Choose from Normal, Friendly, Calm, Formal, or Critical tones
+- **Model Dropdown**: Select gems from the model selector alongside Thor 1.0
+- **Sidebar Management**: View all gems with name, tone badge, and quick edit/delete actions
+
+**Example Use Cases:**
+- **Study Buddy**: Explains concepts step-by-step, then quizzes you
+- **Product Manager**: Turns ideas into PRDs, risks, and roadmaps
+- **Design Critic**: Provides direct UI/UX critique with actionable fixes
+- **Custom Domain Expert**: Add specialized knowledge via sources for domain-specific assistance
+
+### 7. Advanced Features
 
 - **Think Deeper Mode**: Enhanced reasoning for complex queries
-- **Image Processing**: Upload and analyze images
+- **Image Processing**: Upload and analyze images with support for style/angle/color tweaks
 - **Code Mode**: Specialized code assistance
 - **Semantic Relevance**: Intelligent knowledge filtering
 - **Response Cleaning**: Automatic response validation and cleaning
 
-### 7. Easter Egg
+### 8. Easter Egg
 
 Type exactly `"I am in C5."` in the chat interface to trigger a celebratory animation! 🎉
 
@@ -215,6 +240,11 @@ Type exactly `"I am in C5."` in the chat interface to trigger a celebratory anim
 - `POST /api/projects` - Create project
 - `GET /api/history` - Get history
 - `GET /api/model/status` - Check model status
+- `GET /api/gems` - List all gems
+- `POST /api/gems` - Create a new gem
+- `GET /api/gems/<gem_id>` - Get specific gem
+- `PUT /api/gems/<gem_id>` - Update gem
+- `DELETE /api/gems/<gem_id>` - Delete gem
 
 ### Result Setter Servers (Ports 5004 & 5005)
 
