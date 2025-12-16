@@ -26,6 +26,7 @@ async function initializeApp() {
     loadChats();
     setupEventListeners();
     checkModelStatus();
+    initializePoseidon();
     
     // Restore Pro unlock UI if previously unlocked
     if (localStorage.getItem('proUnlocked') === 'true') {
@@ -1552,44 +1553,61 @@ function renderGemsSidebar() {
         const tone = (g.tone || 'normal').toLowerCase();
         const displayName = toTitleCase(g.name || 'Gem');
         return `
-            <button class="gem-item ${isActive ? 'active' : ''}" data-gem-id="${g.id}">
-                <span class="gem-item-content">
-                    <span class="gem-item-title">${escapeHtml(displayName)}</span>
-                    <span class="gem-tone-badge tone-${tone}">${toTitleCase(tone)}</span>
-                </span>
+            <div class="gem-item-wrapper ${isActive ? 'active' : ''}" data-gem-id="${g.id}" data-tone="${tone}">
+                <button class="gem-item" data-gem-id="${g.id}">
+                    <span class="gem-item-content">
+                        <span class="gem-item-title gem-tone-${tone}">${escapeHtml(displayName)}</span>
+                    </span>
+                </button>
                 <span class="gem-actions">
-                    <button class="gem-action-btn" data-action="edit" title="Edit" aria-label="Edit Gem">
+                    <button class="gem-action-btn" data-action="edit" data-gem-id="${g.id}" title="Edit" aria-label="Edit Gem" type="button">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                             <path d="M8.5 2.5L11.5 5.5M10 1L13 4L5 12H2V9L10 1Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
-                    <button class="gem-action-btn danger" data-action="delete" title="Delete" aria-label="Delete Gem">
+                    <button class="gem-action-btn danger" data-action="delete" data-gem-id="${g.id}" title="Delete" aria-label="Delete Gem" type="button">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                             <path d="M3.5 3.5L10.5 10.5M10.5 3.5L3.5 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
                         </svg>
                     </button>
                 </span>
-            </button>
+            </div>
         `;
     }).join('');
 
+    // Handle gem selection (clicking on the gem name)
     el.querySelectorAll('.gem-item').forEach(btn => {
         btn.addEventListener('click', (e) => {
-            const actionBtn = e.target.closest('.gem-action-btn');
+            e.stopPropagation();
             const gemId = btn.getAttribute('data-gem-id');
-            if (!gemId) return;
-            if (actionBtn) {
-                e.stopPropagation();
-                const action = actionBtn.getAttribute('data-action');
-                if (action === 'edit') {
-                    openCustomizeModal();
-                    openGemEditor(gemId);
-                } else if (action === 'delete') {
-                    deleteGem(gemId);
-                }
-                return;
+            if (gemId) {
+                selectGemModel(gemId);
             }
-            selectGemModel(gemId);
+        });
+    });
+
+    // Handle edit button
+    el.querySelectorAll('.gem-action-btn[data-action="edit"]').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            const gemId = btn.getAttribute('data-gem-id');
+            if (gemId) {
+                openCustomizeModal();
+                openGemEditor(gemId);
+            }
+        });
+    });
+
+    // Handle delete button
+    el.querySelectorAll('.gem-action-btn[data-action="delete"]').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            const gemId = btn.getAttribute('data-gem-id');
+            if (gemId) {
+                deleteGem(gemId);
+            }
         });
     });
 }
@@ -1975,6 +1993,442 @@ function showEasterEgg() {
             overlay.remove();
             document.getElementById('easterEggStyles')?.remove();
         }
-    }, 10000);
+        }, 10000);
 }
+
+// ==================== POSEIDON VOICE ASSISTANT ====================
+
+let poseidonActive = false;
+let poseidonPaused = false;
+let recognition = null;
+let synthesis = null;
+let currentVoice = null;
+let voiceSettings = {
+    accent: 'en-US',
+    gender: 'male'
+};
+let poseidonOverlay = null;
+let poseidonVisualizer = null;
+let poseidonStatusIndicator = null;
+let poseidonStatusText = null;
+let poseidonUserTranscript = null;
+let poseidonAssistantTranscript = null;
+
+// Initialize Poseidon
+function initializePoseidon() {
+    // Load saved voice settings
+    const savedAccent = localStorage.getItem('poseidonAccent') || 'en-US';
+    const savedGender = localStorage.getItem('poseidonGender') || 'male';
+    voiceSettings.accent = savedAccent;
+    voiceSettings.gender = savedGender;
+    
+    // Update UI
+    const accentSelect = document.getElementById('voiceAccent');
+    const genderSelect = document.getElementById('voiceGender');
+    if (accentSelect) accentSelect.value = savedAccent;
+    if (genderSelect) genderSelect.value = savedGender;
+    
+    // Setup event listeners for settings
+    if (accentSelect) {
+        accentSelect.addEventListener('change', (e) => {
+            voiceSettings.accent = e.target.value;
+            localStorage.setItem('poseidonAccent', e.target.value);
+            updateVoiceSelection();
+        });
+    }
+    if (genderSelect) {
+        genderSelect.addEventListener('change', (e) => {
+            voiceSettings.gender = e.target.value;
+            localStorage.setItem('poseidonGender', e.target.value);
+            updateVoiceSelection();
+        });
+    }
+    
+    // Check browser support
+    if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
+        console.warn('Speech recognition not supported');
+        const poseidonLaunchBtn = document.getElementById('poseidonLaunchBtn');
+        if (poseidonLaunchBtn) {
+            poseidonLaunchBtn.disabled = true;
+            poseidonLaunchBtn.title = 'Voice assistant not supported in this browser';
+        }
+        return;
+    }
+    
+    // Initialize speech recognition
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    recognition = new SpeechRecognition();
+    recognition.continuous = false;
+    recognition.interimResults = false;
+    recognition.lang = voiceSettings.accent;
+    
+    recognition.onstart = () => {
+        console.log('Poseidon: Listening...');
+        updatePoseidonStatus('listening', 'Listening...');
+        if (poseidonUserTranscript) {
+            poseidonUserTranscript.textContent = '';
+        }
+    };
+    
+    recognition.onresult = async (event) => {
+        const transcript = event.results[0][0].transcript;
+        console.log('Poseidon: Heard:', transcript);
+        
+        // Update transcript
+        if (poseidonUserTranscript) {
+            poseidonUserTranscript.textContent = transcript;
+        }
+        updatePoseidonStatus('processing', 'Processing...');
+        
+        // Send to chat API
+        try {
+            const requestBody = {
+                message: transcript,
+                chat_id: currentChatId,
+                task: 'text_generation',
+                think_deeper: thinkDeeperMode,
+                model: currentModel,
+                tone: getEffectiveTone(),
+            };
+            
+            if (currentModel === 'gem:preview' && activeGemDraft) {
+                requestBody.gem_draft = activeGemDraft;
+            }
+            
+            const response = await fetch('/api/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(requestBody)
+            });
+            
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+            
+            const data = await response.json();
+            currentChatId = data.chat_id;
+            
+            // Add messages to UI
+            addMessageToUI('user', transcript);
+            const responseText = data.response || 'No response received';
+            addMessageToUI('assistant', responseText);
+            
+            // Update assistant transcript
+            if (poseidonAssistantTranscript) {
+                poseidonAssistantTranscript.textContent = responseText.substring(0, 200) + (responseText.length > 200 ? '...' : '');
+            }
+            
+            // Speak the response
+            speakText(responseText);
+            
+        } catch (error) {
+            console.error('Poseidon: Error:', error);
+            const errorMsg = 'Sorry, I encountered an error processing your request.';
+            if (poseidonAssistantTranscript) {
+                poseidonAssistantTranscript.textContent = errorMsg;
+            }
+            speakText(errorMsg);
+            addMessageToUI('assistant', errorMsg);
+            updatePoseidonStatus('ready', 'Ready');
+        }
+    };
+    
+    recognition.onerror = (event) => {
+        console.error('Poseidon: Recognition error:', event.error);
+        updatePoseidonStatus('ready', 'Ready');
+        
+        let errorMsg = 'Sorry, I had trouble understanding.';
+        if (event.error === 'no-speech') {
+            errorMsg = 'I didn\'t hear anything. Please try again.';
+        } else if (event.error === 'not-allowed') {
+            errorMsg = 'Microphone permission denied. Please enable microphone access.';
+            alert('Please enable microphone access in your browser settings to use Poseidon.');
+        } else if (event.error === 'network') {
+            errorMsg = 'Network error. Please check your connection.';
+        }
+        
+        if (poseidonAssistantTranscript) {
+            poseidonAssistantTranscript.textContent = errorMsg;
+        }
+        speakText(errorMsg);
+    };
+    
+    recognition.onend = () => {
+        if (!poseidonActive || poseidonPaused) {
+            updatePoseidonStatus('ready', 'Ready');
+        } else if (poseidonActive && !poseidonPaused) {
+            // Auto-restart if still active
+            setTimeout(() => {
+                if (poseidonActive && !poseidonPaused) {
+                    recognition.start();
+                }
+            }, 100);
+        }
+    };
+    
+    // Setup speech synthesis
+    updateVoiceSelection();
+    
+    // Setup launch button
+    const poseidonLaunchBtn = document.getElementById('poseidonLaunchBtn');
+    if (poseidonLaunchBtn) {
+        poseidonLaunchBtn.addEventListener('click', openPoseidonOverlay);
+    }
+    
+    // Setup overlay elements
+    poseidonOverlay = document.getElementById('poseidonOverlay');
+    poseidonVisualizer = document.getElementById('poseidonVisualizer');
+    poseidonStatusIndicator = document.getElementById('poseidonStatusIndicator');
+    poseidonStatusText = document.getElementById('poseidonStatusText');
+    poseidonUserTranscript = document.getElementById('poseidonUserTranscript');
+    poseidonAssistantTranscript = document.getElementById('poseidonAssistantTranscript');
+    
+    // Setup overlay controls
+    const poseidonCloseBtn = document.getElementById('poseidonCloseBtn');
+    const poseidonHoldBtn = document.getElementById('poseidonHoldBtn');
+    const poseidonEndBtn = document.getElementById('poseidonEndBtn');
+    
+    if (poseidonCloseBtn) {
+        poseidonCloseBtn.addEventListener('click', closePoseidonOverlay);
+    }
+    if (poseidonHoldBtn) {
+        poseidonHoldBtn.addEventListener('click', togglePoseidonPause);
+    }
+    if (poseidonEndBtn) {
+        poseidonEndBtn.addEventListener('click', closePoseidonOverlay);
+    }
+}
+
+function updateVoiceSelection() {
+    if (!('speechSynthesis' in window)) {
+        console.warn('Speech synthesis not supported');
+        return;
+    }
+    
+    // Wait for voices to load
+    const loadVoices = () => {
+        const voices = speechSynthesis.getVoices();
+        if (voices.length === 0) {
+            setTimeout(loadVoices, 100);
+            return;
+        }
+        
+        // Filter voices by accent and gender
+        const accentMap = {
+            'en-US': ['en-US', 'en_US'],
+            'en-GB': ['en-GB', 'en_GB'],
+            'en-AU': ['en-AU', 'en_AU'],
+            'en-IN': ['en-IN', 'en_IN']
+        };
+        
+        const targetLocales = accentMap[voiceSettings.accent] || ['en-US'];
+        const targetGender = voiceSettings.gender === 'male' ? 'male' : 'female';
+        
+        // Find matching voice
+        let selectedVoice = null;
+        
+        // First try exact locale match
+        for (const voice of voices) {
+            const voiceLocale = voice.lang.toLowerCase();
+            if (targetLocales.some(locale => voiceLocale.startsWith(locale.toLowerCase()))) {
+                // Check gender (some voices have gender info in name)
+                const voiceName = voice.name.toLowerCase();
+                const isMale = voiceName.includes('male') || voiceName.includes('david') || 
+                              voiceName.includes('daniel') || voiceName.includes('james') ||
+                              voiceName.includes('thomas') || voiceName.includes('mark');
+                const isFemale = voiceName.includes('female') || voiceName.includes('samantha') ||
+                                voiceName.includes('karen') || voiceName.includes('susan') ||
+                                voiceName.includes('victoria') || voiceName.includes('zira');
+                
+                if (targetGender === 'male' && (isMale || (!isFemale && !isMale))) {
+                    selectedVoice = voice;
+                    break;
+                } else if (targetGender === 'female' && isFemale) {
+                    selectedVoice = voice;
+                    break;
+                }
+            }
+        }
+        
+        // Fallback: any voice with matching locale
+        if (!selectedVoice) {
+            for (const voice of voices) {
+                const voiceLocale = voice.lang.toLowerCase();
+                if (targetLocales.some(locale => voiceLocale.startsWith(locale.toLowerCase()))) {
+                    selectedVoice = voice;
+                    break;
+                }
+            }
+        }
+        
+        // Final fallback: default voice
+        if (!selectedVoice && voices.length > 0) {
+            selectedVoice = voices[0];
+        }
+        
+        currentVoice = selectedVoice;
+        console.log('Poseidon: Selected voice:', selectedVoice ? selectedVoice.name : 'none');
+    };
+    
+    loadVoices();
+    speechSynthesis.onvoiceschanged = loadVoices;
+}
+
+function speakText(text) {
+    if (!('speechSynthesis' in window) || !currentVoice) {
+        console.warn('Speech synthesis not available');
+        return;
+    }
+    
+    // Stop any ongoing speech
+    speechSynthesis.cancel();
+    
+    // Clean text for speech (remove markdown formatting)
+    const cleanText = text
+        .replace(/\*\*(.*?)\*\*/g, '$1') // Remove bold
+        .replace(/\*(.*?)\*/g, '$1') // Remove italic
+        .replace(/`(.*?)`/g, '$1') // Remove code
+        .replace(/#{1,6}\s+/g, '') // Remove headers
+        .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1') // Remove links
+        .replace(/\n{2,}/g, '. ') // Replace multiple newlines with period
+        .replace(/\n/g, ' ') // Replace single newlines with space
+        .trim();
+    
+    const utterance = new SpeechSynthesisUtterance(cleanText);
+    utterance.voice = currentVoice;
+    utterance.rate = 1.0;
+    utterance.pitch = 1.0;
+    utterance.volume = 1.0;
+    
+    utterance.onstart = () => {
+        console.log('Poseidon: Speaking...');
+        updatePoseidonStatus('speaking', 'Speaking...');
+    };
+    
+    utterance.onend = () => {
+        console.log('Poseidon: Finished speaking');
+        if (poseidonActive && !poseidonPaused) {
+            updatePoseidonStatus('ready', 'Ready');
+            // Auto-restart listening
+            setTimeout(() => {
+                if (poseidonActive && !poseidonPaused && recognition) {
+                    recognition.start();
+                }
+            }, 500);
+        } else {
+            updatePoseidonStatus('ready', 'Ready');
+        }
+    };
+    
+    utterance.onerror = (event) => {
+        console.error('Poseidon: Speech error:', event.error);
+        updatePoseidonStatus('ready', 'Ready');
+        if (!poseidonPaused && poseidonActive) {
+            // Try to continue listening
+            setTimeout(() => {
+                if (poseidonActive && !poseidonPaused && recognition) {
+                    recognition.start();
+                }
+            }, 500);
+        }
+    };
+    
+    speechSynthesis.speak(utterance);
+}
+
+function openPoseidonOverlay() {
+    if (!recognition) {
+        alert('Voice assistant is not supported in this browser. Please use Chrome, Edge, or Safari.');
+        return;
+    }
+    
+    if (poseidonOverlay) {
+        poseidonOverlay.style.display = 'flex';
+        poseidonActive = true;
+        poseidonPaused = false;
+        updatePoseidonStatus('ready', 'Ready');
+        
+        // Start listening
+        recognition.lang = voiceSettings.accent;
+        recognition.start();
+    }
+}
+
+function closePoseidonOverlay() {
+    if (poseidonOverlay) {
+        poseidonOverlay.style.display = 'none';
+    }
+    
+    // Stop everything
+    if (recognition) {
+        recognition.stop();
+    }
+    if (speechSynthesis) {
+        speechSynthesis.cancel();
+    }
+    
+    poseidonActive = false;
+    poseidonPaused = false;
+    updatePoseidonStatus('ready', 'Ready');
+    
+    // Clear transcripts
+    if (poseidonUserTranscript) {
+        poseidonUserTranscript.textContent = '';
+    }
+    if (poseidonAssistantTranscript) {
+        poseidonAssistantTranscript.textContent = '';
+    }
+}
+
+function togglePoseidonPause() {
+    poseidonPaused = !poseidonPaused;
+    
+    if (poseidonPaused) {
+        // Pause
+        if (recognition) {
+            recognition.stop();
+        }
+        if (speechSynthesis) {
+            speechSynthesis.pause();
+        }
+        updatePoseidonStatus('paused', 'Paused');
+    } else {
+        // Resume
+        if (speechSynthesis && speechSynthesis.paused) {
+            speechSynthesis.resume();
+        }
+        if (poseidonActive && recognition) {
+            recognition.start();
+        }
+        updatePoseidonStatus('ready', 'Ready');
+    }
+}
+
+function updatePoseidonStatus(status, text) {
+    if (poseidonStatusIndicator) {
+        poseidonStatusIndicator.className = 'poseidon-status-indicator';
+        if (status === 'listening') {
+            poseidonStatusIndicator.classList.add('listening');
+        } else if (status === 'speaking') {
+            poseidonStatusIndicator.classList.add('speaking');
+        }
+    }
+    
+    if (poseidonStatusText) {
+        poseidonStatusText.textContent = text;
+    }
+    
+    if (poseidonVisualizer) {
+        poseidonVisualizer.className = 'poseidon-visualizer';
+        if (status === 'listening') {
+            poseidonVisualizer.classList.add('listening');
+        } else if (status === 'speaking') {
+            poseidonVisualizer.classList.add('speaking');
+        }
+    }
+}
+
+// Poseidon is initialized in initializeApp()
 

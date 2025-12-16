@@ -253,14 +253,14 @@ def _gem_sources_to_knowledge(gem: dict) -> list[dict]:
 def _tone_profile(tone: str) -> str:
     t = (tone or "normal").strip().lower()
     if t == "friendly":
-        return "Tone: Friendly, warm, and supportive. Use short paragraphs. Avoid forced bullets unless requested."
+        return "CRITICAL INSTRUCTION: You MUST adopt a friendly, warm, and supportive tone throughout your entire response. Use conversational language, show enthusiasm when appropriate, and make the user feel welcomed. Use short paragraphs (2-3 sentences max). Avoid forced bullets unless explicitly requested. Include encouraging phrases like 'Great question!' or 'I'd be happy to help!' when natural. This tone should be CONSISTENT and PERVASIVE in every sentence."
     if t == "critical":
-        return "Tone: Critical and direct. Call out issues clearly, propose concrete fixes. Avoid fluff."
+        return "CRITICAL INSTRUCTION: You MUST adopt a critical and direct tone throughout your entire response. Be analytical, point out flaws or issues clearly, and propose concrete fixes. Avoid fluff, pleasantries, or unnecessary padding. Be straightforward and honest. Use direct language. If something is wrong, say it's wrong. If something could be better, explain how. This tone should be CONSISTENT and PERVASIVE in every sentence."
     if t == "calm":
-        return "Tone: Calm, steady, reassuring. Keep sentences short and avoid intensity."
+        return "CRITICAL INSTRUCTION: You MUST adopt a calm, steady, and reassuring tone throughout your entire response. Keep sentences short and clear. Avoid intensity, urgency, or emotional language. Speak as if everything is under control. Use phrases like 'Take your time' or 'No need to worry' when appropriate. Maintain a peaceful, measured pace in your writing. This tone should be CONSISTENT and PERVASIVE in every sentence."
     if t == "formal":
-        return "Tone: Formal and professional. Use precise wording and structured paragraphs."
-    return "Tone: Normal. Clear and concise."
+        return "CRITICAL INSTRUCTION: You MUST adopt a formal and professional tone throughout your entire response. Use precise, academic wording. Structure your response with clear paragraphs. Avoid contractions (use 'do not' instead of 'don't'). Use formal address when appropriate. Maintain a scholarly, authoritative voice. This tone should be CONSISTENT and PERVASIVE in every sentence."
+    return "Tone: Normal. Clear and concise. Maintain a balanced, neutral tone throughout."
 
 # Global model instances
 model_instances = {

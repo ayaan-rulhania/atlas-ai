@@ -9,6 +9,25 @@ This file tracks **major changes** made to this project over time.
 
 ---
 
+## 2025-12-15
+- **Gems UI**: Fixed gem sidebar layout — edit and delete buttons now work correctly and are aligned on the same line as gem names. Removed separate tone badge display; gem names now use metallic gradient colors based on tone (friendly=green, calm=blue, formal=purple, critical=red, normal=default). "New Gem" button is now properly center-aligned.
+- **Poseidon Voice Assistant**: Added comprehensive voice assistant feature named "Poseidon" (Greek spelling) with full-screen overlay interface similar to Gemini Live. Features include:
+  - **Live Voice Interaction**: Real-time speech recognition and text-to-speech responses
+  - **Visual Feedback**: Animated waveform visualizer, status indicators (listening/speaking/ready), and live transcript display
+  - **Voice Settings**: Configurable accents (US, UK, Australian, Indian English) and gender (Male/Female) in Settings modal
+  - **Controls**: Hold/Pause and End buttons for session management
+  - **Auto-restart**: Continuous listening mode that automatically restarts after responses
+  - **Integration**: Fully integrated with existing chat API, supports all models (Thor 1.0 and Gems), tones, and features
+- **Tone Enhancement**: Significantly strengthened tone impact on responses — each tone now includes "CRITICAL INSTRUCTION" directives to ensure consistent, pervasive application throughout entire responses.
+- **UI Improvements**: Enhanced gem item wrapper structure for better event handling and visual consistency.
+
+### Notes
+- **Poseidon Launch**: Accessible via prominent "Poseidon" button in the input area (left side, before attach button)
+- **Voice Browser Support**: Requires Chrome, Edge, or Safari (Web Speech API)
+- **Gem Actions**: Edit/delete buttons now properly isolated from gem selection click events
+
+---
+
 ## 2025-12-14
 - **Research**: Hardened web research to pull from **Google + Bing + DuckDuckGo + Wikipedia** (always-on, with SerpAPI/Brave optional) and improved deduplication/metadata.
 - **Accuracy**: Added a conservative final "accuracy check" pass to reduce ungrounded numeric claims when sources are present.

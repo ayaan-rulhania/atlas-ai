@@ -135,9 +135,9 @@ chmod +x start_all_servers.sh
 - **Gems**: Custom sub-models that you can create, customize, and use for specialized tasks
   - **Try Before Create**: Test gem configurations without saving
   - **Custom Instructions**: Define how each gem should behave
-  - **Tone Control**: Set tone (Normal, Friendly, Calm, Formal, Critical) for consistent style
+  - **Tone Control**: Set tone (Normal, Friendly, Calm, Formal, Critical) for consistent style with enhanced impact on responses
   - **Source Integration**: Add links and files as knowledge sources that are prioritized over web search
-  - **One-Line Management**: View and manage gems in the sidebar with name, tone badge, and actions all on one line
+  - **One-Line Management**: View and manage gems in the sidebar with metallic-colored gem names (based on tone) and edit/delete actions on the same line
 
 ### 2. Continuous Learning
 
@@ -215,15 +215,39 @@ Gems allow you to create specialized AI assistants tailored to specific tasks or
 - **Design Critic**: Provides direct UI/UX critique with actionable fixes
 - **Custom Domain Expert**: Add specialized knowledge via sources for domain-specific assistance
 
-### 7. Advanced Features
+### 7. Poseidon Voice Assistant
+
+Poseidon is a comprehensive voice assistant feature that provides live, conversational interactions similar to Gemini Live:
+
+- **Live Voice Interaction**: Real-time speech recognition and text-to-speech responses
+- **Full-Screen Interface**: Immersive overlay with visual feedback
+  - Animated waveform visualizer that responds to listening/speaking states
+  - Status indicators (Ready/Listening/Speaking/Processing)
+  - Live transcript display for both user input and assistant responses
+- **Voice Customization**: Configure in Settings modal
+  - **Accents**: US English, UK English, Australian English, Indian English
+  - **Gender**: Male or Female voices
+  - Settings persist across sessions
+- **Session Controls**:
+  - **Hold/Pause**: Temporarily pause listening and speaking
+  - **End**: Close Poseidon and return to text chat
+- **Auto-Continuation**: Automatically restarts listening after each response for seamless conversation flow
+- **Full Integration**: Works with all models (Thor 1.0 and Gems), tones, Think Deeper mode, and all existing features
+
+**Access**: Click the "Poseidon" button in the input area (left side, before the attach button)
+
+**Browser Support**: Requires Chrome, Edge, or Safari (uses Web Speech API)
+
+### 8. Advanced Features
 
 - **Think Deeper Mode**: Enhanced reasoning for complex queries
 - **Image Processing**: Upload and analyze images with support for style/angle/color tweaks
 - **Code Mode**: Specialized code assistance
 - **Semantic Relevance**: Intelligent knowledge filtering
 - **Response Cleaning**: Automatic response validation and cleaning
+- **Enhanced Tone Impact**: Tones now have significantly stronger, more consistent impact on response style and content
 
-### 8. Easter Egg
+### 9. Easter Egg
 
 Type exactly `"I am in C5."` in the chat interface to trigger a celebratory animation! 🎉
 

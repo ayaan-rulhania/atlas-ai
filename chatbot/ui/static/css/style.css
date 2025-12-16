@@ -407,33 +407,51 @@ body.sidebar-collapsed .main-content {
     padding: 0 16px 10px;
 }
 
+.gem-item-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    padding: 4px 0;
+    width: 100%;
+    min-width: 0;
+}
+
+.gem-item-wrapper.active {
+    background: var(--bg-elevated);
+    border-radius: var(--radius-md);
+    padding: 4px 10px;
+}
+
 .gem-item {
-    padding: 8px 10px;
+    padding: 4px 0;
     border-radius: var(--radius-md);
     cursor: pointer;
     transition: all var(--transition-base);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 6px;
+    flex: 1;
+    min-width: 0;
     color: var(--text-secondary);
     font-size: 13px;
     border: none;
     background: transparent;
-    width: 100%;
     text-align: left;
     flex-wrap: nowrap;
     overflow: hidden;
-    min-width: 0;
 }
 
-.gem-item:hover {
+.gem-item-wrapper:hover {
     background: var(--bg-hover);
+    border-radius: var(--radius-md);
+    padding: 4px 10px;
+}
+
+.gem-item-wrapper:hover .gem-item {
     color: var(--text-primary);
 }
 
-.gem-item.active {
-    background: var(--bg-elevated);
+.gem-item-wrapper.active .gem-item {
     color: var(--text-primary);
     font-weight: 500;
 }
@@ -446,17 +464,100 @@ body.sidebar-collapsed .main-content {
     gap: 8px;
     overflow: hidden;
     flex-wrap: nowrap;
+    margin-right: 8px;
 }
 
 .gem-item-title {
     flex: 0 1 auto;
     min-width: 0;
-    max-width: 40%;
+    max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     line-height: 1.4;
     font-weight: 500;
+    transition: all var(--transition-base);
+}
+
+/* Metallic tone colors for gem names */
+.gem-item-title.gem-tone-friendly {
+    background: linear-gradient(135deg, #16a34a 0%, #22c55e 50%, #4ade80 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 20px rgba(22, 163, 74, 0.3);
+    filter: drop-shadow(0 1px 2px rgba(22, 163, 74, 0.4));
+}
+
+.gem-item-title.gem-tone-calm {
+    background: linear-gradient(135deg, #2563eb 0%, #3b82f6 50%, #60a5fa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
+    filter: drop-shadow(0 1px 2px rgba(37, 99, 235, 0.4));
+}
+
+.gem-item-title.gem-tone-formal {
+    background: linear-gradient(135deg, #7c3aed 0%, #8b5cf6 50%, #a78bfa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+    filter: drop-shadow(0 1px 2px rgba(124, 58, 237, 0.4));
+}
+
+.gem-item-title.gem-tone-critical {
+    background: linear-gradient(135deg, #dc2626 0%, #ef4444 50%, #f87171 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 20px rgba(220, 38, 38, 0.3);
+    filter: drop-shadow(0 1px 2px rgba(220, 38, 38, 0.4));
+}
+
+.gem-item-title.gem-tone-normal {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .gem-item-title.gem-tone-friendly {
+    background: linear-gradient(135deg, #22c55e 0%, #4ade80 50%, #86efac 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
+    filter: drop-shadow(0 1px 2px rgba(34, 197, 94, 0.5));
+}
+
+[data-theme="dark"] .gem-item-title.gem-tone-calm {
+    background: linear-gradient(135deg, #60a5fa 0%, #93c5fd 50%, #bfdbfe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 20px rgba(96, 165, 250, 0.4);
+    filter: drop-shadow(0 1px 2px rgba(96, 165, 250, 0.5));
+}
+
+[data-theme="dark"] .gem-item-title.gem-tone-formal {
+    background: linear-gradient(135deg, #a78bfa 0%, #c4b5fd 50%, #ddd6fe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 20px rgba(167, 139, 250, 0.4);
+    filter: drop-shadow(0 1px 2px rgba(167, 139, 250, 0.5));
+}
+
+[data-theme="dark"] .gem-item-title.gem-tone-critical {
+    background: linear-gradient(135deg, #f87171 0%, #fca5a5 50%, #fecaca 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 20px rgba(248, 113, 113, 0.4);
+    filter: drop-shadow(0 1px 2px rgba(248, 113, 113, 0.5));
+}
+
+[data-theme="dark"] .gem-item-title.gem-tone-normal {
+    color: var(--text-secondary);
 }
 
 .gem-tone-badge {
@@ -534,10 +635,17 @@ body.sidebar-collapsed .main-content {
 
 .gem-actions {
     display: inline-flex;
-    gap: 6px;
+    gap: 4px;
     flex-shrink: 0;
     align-items: center;
     flex-wrap: nowrap;
+    opacity: 0;
+    transition: opacity var(--transition-base);
+}
+
+.gem-item-wrapper:hover .gem-actions,
+.gem-item-wrapper.active .gem-actions {
+    opacity: 1;
 }
 
 .gem-action-btn {
@@ -1184,8 +1292,10 @@ body.sidebar-collapsed .main-content {
 /* Gems sidebar */
 .new-gem-btn {
     justify-content: center;
-    width: 100%;
-    margin-top: 8px;
+    width: calc(100% - 32px);
+    margin: 8px 16px 12px;
+    display: flex;
+    align-items: center;
 }
 
 /* Tone options UI (Settings + Gem editor) */
@@ -2326,6 +2436,299 @@ body.pro-unlocked .message.ai .message-avatar {
     color: var(--text-primary);
     background: var(--bg-secondary);
     transition: all var(--transition-base);
+}
+
+.form-group select.form-select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    font-size: 14px;
+    font-family: var(--font-ui);
+    transition: all var(--transition-base);
+    cursor: pointer;
+}
+
+.form-group select.form-select:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(26, 26, 26, 0.1);
+}
+
+[data-theme="dark"] .form-group select.form-select:focus {
+    box-shadow: 0 0 0 3px rgba(245, 245, 245, 0.1);
+}
+
+.input-icon-btn.active.poseidon-listening {
+    background: rgba(220, 38, 38, 0.1);
+    color: #dc2626;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+[data-theme="dark"] .input-icon-btn.active.poseidon-listening {
+    background: rgba(248, 113, 113, 0.15);
+    color: #f87171;
+}
+
+.input-icon-btn.active.poseidon-speaking {
+    background: rgba(37, 99, 235, 0.1);
+    color: #2563eb;
+}
+
+[data-theme="dark"] .input-icon-btn.active.poseidon-speaking {
+    background: rgba(96, 165, 250, 0.15);
+    color: #60a5fa;
+}
+
+.poseidon-launch-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border-radius: var(--radius-md);
+    background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+    color: white;
+    border: none;
+    font-weight: 500;
+    transition: all var(--transition-base);
+}
+
+.poseidon-launch-btn:hover {
+    background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.poseidon-label {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Poseidon Overlay */
+.poseidon-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.poseidon-container {
+    width: 90%;
+    max-width: 500px;
+    background: var(--bg-elevated);
+    border-radius: var(--radius-xl);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    animation: scaleIn 0.3s ease;
+}
+
+.poseidon-header {
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-color);
+    background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+    color: white;
+}
+
+.poseidon-status {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.poseidon-status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #22c55e;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.poseidon-status-indicator.listening {
+    background: #ef4444;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+.poseidon-status-indicator.speaking {
+    background: #3b82f6;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.poseidon-status-text {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.poseidon-close-btn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-md);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-base);
+}
+
+.poseidon-close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.poseidon-content {
+    padding: 32px 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    min-height: 300px;
+    background: linear-gradient(180deg, var(--bg-elevated) 0%, var(--bg-secondary) 100%);
+}
+
+.poseidon-visualizer {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.poseidon-wave {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    height: 60px;
+}
+
+.wave-bar {
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(180deg, #2563eb 0%, #60a5fa 100%);
+    border-radius: 2px;
+    animation: wave 1.2s ease-in-out infinite;
+}
+
+.wave-bar:nth-child(1) { animation-delay: 0s; }
+.wave-bar:nth-child(2) { animation-delay: 0.1s; }
+.wave-bar:nth-child(3) { animation-delay: 0.2s; }
+.wave-bar:nth-child(4) { animation-delay: 0.3s; }
+.wave-bar:nth-child(5) { animation-delay: 0.4s; }
+
+.poseidon-visualizer.listening .wave-bar {
+    background: linear-gradient(180deg, #ef4444 0%, #f87171 100%);
+    animation-duration: 0.8s;
+}
+
+.poseidon-visualizer.speaking .wave-bar {
+    background: linear-gradient(180deg, #3b82f6 0%, #60a5fa 100%);
+    animation-duration: 1s;
+}
+
+@keyframes wave {
+    0%, 100% {
+        height: 20px;
+        opacity: 0.5;
+    }
+    50% {
+        height: 60px;
+        opacity: 1;
+    }
+}
+
+.poseidon-transcript {
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 16px;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-lg);
+    font-size: 14px;
+}
+
+.transcript-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.transcript-text {
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 20px;
+}
+
+.poseidon-controls {
+    padding: 20px 24px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    border-top: 1px solid var(--border-color);
+    background: var(--bg-elevated);
+}
+
+.poseidon-control-btn {
+    flex: 1;
+    max-width: 150px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: var(--radius-lg);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all var(--transition-base);
+}
+
+.poseidon-control-btn.hold-btn {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.poseidon-control-btn.hold-btn:hover {
+    background: var(--bg-hover);
+}
+
+.poseidon-control-btn.end-btn {
+    background: #dc2626;
+    color: white;
+}
+
+.poseidon-control-btn.end-btn:hover {
+    background: #b91c1c;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+}
+
+.poseidon-control-btn svg {
+    width: 20px;
+    height: 20px;
 }
 
 .form-group input:focus,

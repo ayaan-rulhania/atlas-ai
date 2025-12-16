@@ -143,6 +143,13 @@
             <div class="input-container">
                 <div class="input-wrapper">
                     <div class="input-left-actions">
+                        <button class="input-icon-btn poseidon-launch-btn" id="poseidonLaunchBtn" title="Launch Poseidon Voice Assistant" aria-label="Launch Poseidon Voice Assistant">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 1C8.13 1 5 4.13 5 8C5 10.38 6.19 12.47 8 13.74V17C8 17.55 8.45 18 9 18H15C15.55 18 16 17.55 16 17V13.74C17.81 12.47 19 10.38 19 8C19 4.13 15.87 1 12 1Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 20V21C9 21.55 9.45 22 10 22H14C14.55 22 15 21.55 15 21V20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="poseidon-label">Poseidon</span>
+                        </button>
                         <button class="input-icon-btn" id="attachBtn" title="Upload files" aria-label="Upload files">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                                 <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -196,6 +203,54 @@
                 <p class="input-disclaimer">Atlas can make mistakes, so double-check important information.</p>
             </div>
         </main>
+    </div>
+    
+    <!-- Poseidon Voice Assistant Overlay -->
+    <div class="poseidon-overlay" id="poseidonOverlay" style="display: none;">
+        <div class="poseidon-container">
+            <div class="poseidon-header">
+                <div class="poseidon-status">
+                    <div class="poseidon-status-indicator" id="poseidonStatusIndicator"></div>
+                    <span class="poseidon-status-text" id="poseidonStatusText">Ready</span>
+                </div>
+                <button class="poseidon-close-btn" id="poseidonCloseBtn" title="Close Poseidon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="poseidon-content">
+                <div class="poseidon-visualizer" id="poseidonVisualizer">
+                    <div class="poseidon-wave">
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                    </div>
+                </div>
+                <div class="poseidon-transcript" id="poseidonTranscript">
+                    <div class="transcript-label">Your message:</div>
+                    <div class="transcript-text" id="poseidonUserTranscript"></div>
+                    <div class="transcript-label" style="margin-top: 16px;">Poseidon:</div>
+                    <div class="transcript-text" id="poseidonAssistantTranscript"></div>
+                </div>
+            </div>
+            <div class="poseidon-controls">
+                <button class="poseidon-control-btn hold-btn" id="poseidonHoldBtn" title="Hold">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 4H10V20H6V4ZM14 4H18V20H14V4Z" fill="currentColor"/>
+                    </svg>
+                    <span>Hold</span>
+                </button>
+                <button class="poseidon-control-btn end-btn" id="poseidonEndBtn" title="End">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>End</span>
+                </button>
+            </div>
+        </div>
     </div>
     
     <!-- Customize (Gems) Modal -->
@@ -313,7 +368,29 @@
                         <label class="tone-option tone-critical"><input type="radio" name="tone" value="critical"><span>Critical</span></label>
                     </div>
                     <p class="input-disclaimer" style="text-align:left; margin-top:8px;">
-                        Tone changes the style of Thor’s replies. Gems can override this.
+                        Tone changes the style of Thor's replies. Gems can override this.
+                    </p>
+                </div>
+                <div class="settings-section">
+                    <h3>Poseidon Voice Assistant</h3>
+                    <div class="form-group">
+                        <label for="voiceAccent">Accent</label>
+                        <select id="voiceAccent" class="form-select">
+                            <option value="en-US">US English</option>
+                            <option value="en-GB">UK English</option>
+                            <option value="en-AU">Australian English</option>
+                            <option value="en-IN">Indian English</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="voiceGender">Voice Gender</label>
+                        <select id="voiceGender" class="form-select">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <p class="input-disclaimer" style="text-align:left; margin-top:8px;">
+                        Configure Poseidon's voice settings. Changes take effect on the next voice interaction.
                     </p>
                 </div>
             </div>
