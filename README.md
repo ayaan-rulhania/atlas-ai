@@ -215,7 +215,16 @@ Gems allow you to create specialized AI assistants tailored to specific tasks or
 - **Design Critic**: Provides direct UI/UX critique with actionable fixes
 - **Custom Domain Expert**: Add specialized knowledge via sources for domain-specific assistance
 
-### 7. Poseidon Voice Assistant
+### 7. Command Shortcuts
+
+For faster access to common features, use these command shortcuts:
+- `/office` - Opens the Office Suite interface
+- `/arcade` - Opens the Game Suite interface
+- `/image {description}` - Generates an image based on description (e.g., `/image beautiful sunset`)
+
+These commands work alongside natural language requests (e.g., "Load Office Suite" still works).
+
+### 8. Poseidon Voice Assistant
 
 Poseidon is a comprehensive voice assistant feature that provides live, conversational interactions similar to Gemini Live:
 
@@ -243,8 +252,18 @@ Poseidon is a comprehensive voice assistant feature that provides live, conversa
 - **Permission Handling**: Explicitly requests microphone permission before starting
 - **Error Recovery**: Intelligent error handling with automatic retry for common issues
 - **Large Text Support**: Backend automatically refines large text chunks for better understanding
+- **Secure Context**: Automatically checks for HTTPS/localhost and provides helpful error messages
 
-### 8. Advanced Features
+**Command Shortcuts**:
+- `/office` - Quickly open Office Suite
+- `/arcade` - Quickly open Game Suite  
+- `/image {description}` - Generate an image (e.g., `/image sunset over mountains`)
+
+**Settings Options**:
+- **Stable Mode**: Use older, thoroughly tested version for maximum stability (some latest features unavailable)
+- **Simpler UI Mode**: Minimalist interface hiding non-essential buttons for a cleaner experience
+
+### 9. Advanced Features
 
 - **Think Deeper Mode**: Enhanced reasoning for complex queries
 - **Image Processing**: Upload and analyze images with support for style/angle/color tweaks
@@ -253,7 +272,7 @@ Poseidon is a comprehensive voice assistant feature that provides live, conversa
 - **Response Cleaning**: Automatic response validation and cleaning
 - **Enhanced Tone Impact**: Tones now have significantly stronger, more consistent impact on response style and content
 
-### 9. Easter Egg
+### 10. Easter Egg
 
 Type exactly `"I am in C5."` in the chat interface to trigger a celebratory animation! 🎉
 

@@ -8,6 +8,8 @@ let themePreference = 'system';
 let currentModel = 'thor-1.0';  // Track selected model
 const PRO_ACCESS_CODE = 'QUANTUM4FUTURE';
 let currentTone = 'normal';
+let systemMode = localStorage.getItem('systemMode') || 'latest';
+let uiMode = localStorage.getItem('uiMode') || 'standard';
 
 // Gems (custom sub-models)
 let gems = [];
@@ -21,6 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
 async function initializeApp() {
     initializeTheme();
     initializeTone();
+    initializeSystemMode();
+    initializeUIMode();
     restoreModelPreference();
     await loadGems();
     loadChats();
@@ -376,6 +380,27 @@ async function handleSendMessage() {
         showEasterEgg();
         messageInput.value = '';
         return;
+    }
+    
+    // Check for command shortcuts
+    const messageLower = message.toLowerCase().trim();
+    if (messageLower === '/office' || messageLower.startsWith('/office ')) {
+        messageInput.value = 'Load Office Suite';
+        handleSendMessage();
+        return;
+    }
+    if (messageLower === '/arcade' || messageLower.startsWith('/arcade ')) {
+        messageInput.value = 'Load Game Suite';
+        handleSendMessage();
+        return;
+    }
+    if (messageLower.startsWith('/image ')) {
+        const imageDesc = message.substring(7).trim();
+        if (imageDesc) {
+            messageInput.value = `Create an image of ${imageDesc}`;
+            handleSendMessage();
+            return;
+        }
     }
     
     isLoading = true;
@@ -1112,6 +1137,56 @@ function initializeTone() {
             document.body.setAttribute('data-tone', currentTone);
         });
     });
+}
+
+function initializeSystemMode() {
+    const savedMode = localStorage.getItem('systemMode') || 'latest';
+    systemMode = savedMode;
+    const modeSelect = document.getElementById('systemMode');
+    if (modeSelect) {
+        modeSelect.value = savedMode;
+        modeSelect.addEventListener('change', (e) => {
+            systemMode = e.target.value;
+            localStorage.setItem('systemMode', systemMode);
+            if (systemMode === 'stable') {
+                alert('Stable mode enabled. Some latest features may be unavailable. Page will reload.');
+                window.location.reload();
+            }
+        });
+    }
+}
+
+function initializeUIMode() {
+    const savedUIMode = localStorage.getItem('uiMode') || 'standard';
+    uiMode = savedUIMode;
+    const uiModeSelect = document.getElementById('uiMode');
+    if (uiModeSelect) {
+        uiModeSelect.value = savedUIMode;
+        uiModeSelect.addEventListener('change', (e) => {
+            uiMode = e.target.value;
+            localStorage.setItem('uiMode', uiMode);
+            document.body.setAttribute('data-ui-mode', uiMode);
+            applyUIMode(uiMode);
+        });
+    }
+    applyUIMode(uiMode);
+}
+
+function applyUIMode(mode) {
+    if (mode === 'simple') {
+        document.body.classList.add('ui-simple');
+        // Hide non-essential elements
+        const elementsToHide = document.querySelectorAll('.think-deeper-toggle, .history-btn, .customize-btn');
+        elementsToHide.forEach(el => {
+            if (el) el.style.display = 'none';
+        });
+    } else {
+        document.body.classList.remove('ui-simple');
+        const elementsToShow = document.querySelectorAll('.think-deeper-toggle, .history-btn, .customize-btn');
+        elementsToShow.forEach(el => {
+            if (el) el.style.display = '';
+        });
+    }
 }
 
 function getEffectiveTone() {
@@ -2057,106 +2132,126 @@ function initializePoseidon() {
     
     // Initialize speech recognition
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    recognition = new SpeechRecognition();
-    recognition.continuous = true;  // Keep listening continuously
-    recognition.interimResults = true;  // Show interim results
-    recognition.lang = voiceSettings.accent;
-    recognition.maxAlternatives = 1;
     
-    recognition.onstart = () => {
-        console.log('Poseidon: Listening...');
-        updatePoseidonStatus('listening', 'Listening...');
-        if (poseidonUserTranscript) {
-            poseidonUserTranscript.textContent = '';
-        }
-    };
-    
-    recognition.onresult = async (event) => {
-        // Get final transcript (not interim)
-        let finalTranscript = '';
-        let interimTranscript = '';
+    // Store handlers for reuse
+    function setupRecognitionHandlers() {
+        recognition.continuous = true;  // Keep listening continuously
+        recognition.interimResults = true;  // Show interim results
+        recognition.lang = voiceSettings.accent;
+        recognition.maxAlternatives = 1;
         
-        for (let i = event.resultIndex; i < event.results.length; i++) {
-            const transcript = event.results[i][0].transcript;
-            if (event.results[i].isFinal) {
-                finalTranscript += transcript + ' ';
-            } else {
-                interimTranscript += transcript;
+        recognition.onstart = () => {
+            console.log('Poseidon: Listening...');
+            updatePoseidonStatus('listening', 'Listening...');
+            if (poseidonUserTranscript) {
+                poseidonUserTranscript.textContent = '';
             }
-        }
+        };
         
-        // Update transcript with interim results
-        if (poseidonUserTranscript) {
-            poseidonUserTranscript.textContent = finalTranscript.trim() || interimTranscript;
-        }
-        
-        // Only process if we have a final result
-        if (!finalTranscript.trim()) {
-            return;  // Still listening, wait for final result
-        }
-        
-        const transcript = finalTranscript.trim();
-        console.log('Poseidon: Heard (final):', transcript);
-        
-        // Stop recognition temporarily while processing
-        recognition.stop();
-        updatePoseidonStatus('processing', 'Processing...');
-        
-        // Send to chat API
-        try {
-            const requestBody = {
-                message: transcript,
-                chat_id: currentChatId,
-                task: 'text_generation',
-                think_deeper: thinkDeeperMode,
-                model: currentModel,
-                tone: getEffectiveTone(),
-            };
+        recognition.onresult = async (event) => {
+            // Get final transcript (not interim)
+            let finalTranscript = '';
+            let interimTranscript = '';
             
-            if (currentModel === 'gem:preview' && activeGemDraft) {
-                requestBody.gem_draft = activeGemDraft;
+            for (let i = event.resultIndex; i < event.results.length; i++) {
+                const transcript = event.results[i][0].transcript;
+                if (event.results[i].isFinal) {
+                    finalTranscript += transcript + ' ';
+                } else {
+                    interimTranscript += transcript;
+                }
             }
             
-            const response = await fetch('/api/chat', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(requestBody)
-            });
-            
-            if (!response.ok) {
-                throw new Error(`HTTP ${response.status}`);
+            // Update transcript with interim results
+            if (poseidonUserTranscript) {
+                poseidonUserTranscript.textContent = finalTranscript.trim() || interimTranscript;
             }
             
-            const data = await response.json();
-            currentChatId = data.chat_id;
-            
-            // Add messages to UI
-            addMessageToUI('user', transcript);
-            const responseText = data.response || 'No response received';
-            addMessageToUI('assistant', responseText);
-            
-            // Update assistant transcript
-            if (poseidonAssistantTranscript) {
-                poseidonAssistantTranscript.textContent = responseText.substring(0, 200) + (responseText.length > 200 ? '...' : '');
+            // Only process if we have a final result
+            if (!finalTranscript.trim()) {
+                return;  // Still listening, wait for final result
             }
             
-            // Speak the response
-            speakText(responseText);
+            const transcript = finalTranscript.trim();
+            console.log('Poseidon: Heard (final):', transcript);
             
-        } catch (error) {
-            console.error('Poseidon: Error:', error);
-            const errorMsg = 'Sorry, I encountered an error processing your request.';
-            if (poseidonAssistantTranscript) {
-                poseidonAssistantTranscript.textContent = errorMsg;
+            // Stop recognition temporarily while processing
+            recognition.stop();
+            updatePoseidonStatus('processing', 'Processing...');
+            
+            // Send to chat API
+            try {
+                const requestBody = {
+                    message: transcript,
+                    chat_id: currentChatId,
+                    task: 'text_generation',
+                    think_deeper: thinkDeeperMode,
+                    model: currentModel,
+                    tone: getEffectiveTone(),
+                };
+                
+                if (currentModel === 'gem:preview' && activeGemDraft) {
+                    requestBody.gem_draft = activeGemDraft;
+                }
+                
+                const response = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(requestBody)
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                
+                const data = await response.json();
+                currentChatId = data.chat_id;
+                
+                // Add messages to UI
+                addMessageToUI('user', transcript);
+                const responseText = data.response || 'No response received';
+                addMessageToUI('assistant', responseText);
+                
+                // Update assistant transcript
+                if (poseidonAssistantTranscript) {
+                    poseidonAssistantTranscript.textContent = responseText.substring(0, 200) + (responseText.length > 200 ? '...' : '');
+                }
+                
+                // Speak the response
+                speakText(responseText);
+                
+            } catch (error) {
+                console.error('Poseidon: Error:', error);
+                const errorMsg = 'Sorry, I encountered an error processing your request.';
+                if (poseidonAssistantTranscript) {
+                    poseidonAssistantTranscript.textContent = errorMsg;
+                }
+                speakText(errorMsg);
+                addMessageToUI('assistant', errorMsg);
+                updatePoseidonStatus('ready', 'Ready');
+            } finally {
+                // Restart listening if still active
+                if (poseidonActive && !poseidonPaused) {
+                    setTimeout(() => {
+                        if (poseidonActive && !poseidonPaused && recognition) {
+                            try {
+                                recognition.start();
+                            } catch (err) {
+                                console.error('Poseidon: Error restarting:', err);
+                            }
+                        }
+                    }, 1000);
+                }
             }
-            speakText(errorMsg);
-            addMessageToUI('assistant', errorMsg);
-            updatePoseidonStatus('ready', 'Ready');
-        } finally {
-            // Restart listening if still active
-            if (poseidonActive && !poseidonPaused) {
+        };
+        
+        recognition.onend = () => {
+            if (!poseidonActive || poseidonPaused) {
+                updatePoseidonStatus('ready', 'Ready');
+            } else if (poseidonActive && !poseidonPaused) {
+                // Auto-restart if still active
                 setTimeout(() => {
                     if (poseidonActive && !poseidonPaused && recognition) {
                         try {
@@ -2165,55 +2260,216 @@ function initializePoseidon() {
                             console.error('Poseidon: Error restarting:', err);
                         }
                     }
-                }, 1000);
+                }, 100);
             }
-        }
-    };
+        };
+    }
+    
+    // Create initial recognition instance
+    recognition = new SpeechRecognition();
+    setupRecognitionHandlers();
     
     recognition.onerror = (event) => {
         console.error('Poseidon: Recognition error:', event.error, event);
-        updatePoseidonStatus('ready', 'Ready');
         
         let errorMsg = '';
         let shouldSpeak = true;
+        let shouldRestart = false;
         
         if (event.error === 'no-speech') {
-            errorMsg = 'I didn\'t hear anything. Please try again.';
-            // Don't speak for no-speech, just restart
+            // Don't show error for no-speech, just silently restart
             shouldSpeak = false;
-            if (poseidonActive && !poseidonPaused) {
-                setTimeout(() => {
-                    if (poseidonActive && !poseidonPaused && recognition) {
-                        try {
-                            recognition.start();
-                        } catch (err) {
-                            console.error('Poseidon: Error restarting after no-speech:', err);
-                        }
-                    }
-                }, 500);
-            }
+            shouldRestart = true;
         } else if (event.error === 'not-allowed') {
             errorMsg = 'Microphone permission denied. Please enable microphone access.';
             alert('Please enable microphone access in your browser settings to use Poseidon.');
+            updatePoseidonStatus('ready', 'Permission Required');
         } else if (event.error === 'network') {
             errorMsg = 'Network error. Please check your connection.';
+            shouldRestart = true;
         } else if (event.error === 'aborted') {
             // Recognition was stopped, don't show error
             console.log('Poseidon: Recognition aborted (normal)');
             return;
         } else if (event.error === 'audio-capture') {
             errorMsg = 'No microphone found. Please connect a microphone.';
+        } else if (event.error === 'service-not-allowed') {
+            // Service not available - check if we're on secure context
+            const isSecure = window.isSecureContext || location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+            if (!isSecure) {
+                errorMsg = 'Speech recognition requires HTTPS or localhost. Please use a secure connection.';
+            } else {
+                // Try to recreate recognition with different settings
+                console.warn('Poseidon: Service not allowed, recreating recognition');
+                try {
+                    recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+                    setupRecognitionHandlers();
+                    // Wait a bit before restarting
+                    setTimeout(() => {
+                        if (poseidonActive && !poseidonPaused) {
+                            recognition.start();
+                        }
+                    }, 500);
+                    return; // Don't show error, just retry
+                } catch (err) {
+                    errorMsg = 'Speech recognition service is not available. Please try refreshing the page or use a different browser.';
+                }
+            }
         } else {
             errorMsg = `Recognition error: ${event.error}. Please try again.`;
+            shouldRestart = true;
         }
         
         if (errorMsg && shouldSpeak) {
+            updatePoseidonStatus('ready', 'Ready');
             if (poseidonAssistantTranscript) {
                 poseidonAssistantTranscript.textContent = errorMsg;
             }
             speakText(errorMsg);
         }
+        
+        if (shouldRestart && poseidonActive && !poseidonPaused) {
+            setTimeout(() => {
+                if (poseidonActive && !poseidonPaused && recognition) {
+                    try {
+                        recognition.start();
+                    } catch (err) {
+                        console.error('Poseidon: Error restarting:', err);
+                    }
+                }
+            }, 1000);
+        }
     };
+    
+    // Store handlers for reuse
+    function setupRecognitionHandlers() {
+        recognition.onstart = () => {
+            console.log('Poseidon: Listening...');
+            updatePoseidonStatus('listening', 'Listening...');
+            if (poseidonUserTranscript) {
+                poseidonUserTranscript.textContent = '';
+            }
+        };
+        
+        recognition.onresult = async (event) => {
+            // Get final transcript (not interim)
+            let finalTranscript = '';
+            let interimTranscript = '';
+            
+            for (let i = event.resultIndex; i < event.results.length; i++) {
+                const transcript = event.results[i][0].transcript;
+                if (event.results[i].isFinal) {
+                    finalTranscript += transcript + ' ';
+                } else {
+                    interimTranscript += transcript;
+                }
+            }
+            
+            // Update transcript with interim results
+            if (poseidonUserTranscript) {
+                poseidonUserTranscript.textContent = finalTranscript.trim() || interimTranscript;
+            }
+            
+            // Only process if we have a final result
+            if (!finalTranscript.trim()) {
+                return;  // Still listening, wait for final result
+            }
+            
+            const transcript = finalTranscript.trim();
+            console.log('Poseidon: Heard (final):', transcript);
+            
+            // Stop recognition temporarily while processing
+            recognition.stop();
+            updatePoseidonStatus('processing', 'Processing...');
+            
+            // Send to chat API
+            try {
+                const requestBody = {
+                    message: transcript,
+                    chat_id: currentChatId,
+                    task: 'text_generation',
+                    think_deeper: thinkDeeperMode,
+                    model: currentModel,
+                    tone: getEffectiveTone(),
+                };
+                
+                if (currentModel === 'gem:preview' && activeGemDraft) {
+                    requestBody.gem_draft = activeGemDraft;
+                }
+                
+                const response = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(requestBody)
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                
+                const data = await response.json();
+                currentChatId = data.chat_id;
+                
+                // Add messages to UI
+                addMessageToUI('user', transcript);
+                const responseText = data.response || 'No response received';
+                addMessageToUI('assistant', responseText);
+                
+                // Update assistant transcript
+                if (poseidonAssistantTranscript) {
+                    poseidonAssistantTranscript.textContent = responseText.substring(0, 200) + (responseText.length > 200 ? '...' : '');
+                }
+                
+                // Speak the response
+                speakText(responseText);
+                
+            } catch (error) {
+                console.error('Poseidon: Error:', error);
+                const errorMsg = 'Sorry, I encountered an error processing your request.';
+                if (poseidonAssistantTranscript) {
+                    poseidonAssistantTranscript.textContent = errorMsg;
+                }
+                speakText(errorMsg);
+                addMessageToUI('assistant', errorMsg);
+                updatePoseidonStatus('ready', 'Ready');
+            } finally {
+                // Restart listening if still active
+                if (poseidonActive && !poseidonPaused) {
+                    setTimeout(() => {
+                        if (poseidonActive && !poseidonPaused && recognition) {
+                            try {
+                                recognition.start();
+                            } catch (err) {
+                                console.error('Poseidon: Error restarting:', err);
+                            }
+                        }
+                    }, 1000);
+                }
+            }
+        };
+        
+        recognition.onend = () => {
+            if (!poseidonActive || poseidonPaused) {
+                updatePoseidonStatus('ready', 'Ready');
+            } else if (poseidonActive && !poseidonPaused) {
+                // Auto-restart if still active
+                setTimeout(() => {
+                    if (poseidonActive && !poseidonPaused && recognition) {
+                        try {
+                            recognition.start();
+                        } catch (err) {
+                            console.error('Poseidon: Error restarting:', err);
+                        }
+                    }
+                }, 100);
+            }
+        };
+    }
+    
+    // Setup handlers
+    setupRecognitionHandlers();
     
     recognition.onend = () => {
         if (!poseidonActive || poseidonPaused) {

@@ -144,8 +144,8 @@
                 <div class="input-wrapper">
                     <div class="input-left-actions">
                         <button class="poseidon-launch-btn" id="poseidonLaunchBtn" title="Launch Poseidon Voice Assistant" aria-label="Launch Poseidon Voice Assistant">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <!-- Golden Trident -->
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
+                                <!-- Golden Trident (rotated 180deg) -->
                                 <path d="M12 2L12 8M12 8L9 11M12 8L15 11M9 11L9 22M15 11L15 22M6 14L18 14" stroke="#FFD700" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
                                 <path d="M6 14L6 16M18 14L18 16" stroke="#FFD700" stroke-width="2.5" stroke-linecap="round"/>
                             </svg>
@@ -372,6 +372,34 @@
                     </p>
                 </div>
                 <div class="settings-section">
+                    <h3>System Mode</h3>
+                    <div class="form-group">
+                        <label for="systemMode">Mode</label>
+                        <select id="systemMode" class="form-select">
+                            <option value="latest">Latest (Default)</option>
+                            <option value="stable">Stable Mode</option>
+                        </select>
+                        <p class="input-disclaimer" style="text-align:left; margin-top:8px;">
+                            <strong>Latest:</strong> Access to all newest features and improvements.<br>
+                            <strong>Stable:</strong> Older, thoroughly tested version with guaranteed stability. Some latest features may be unavailable.
+                        </p>
+                    </div>
+                </div>
+                <div class="settings-section">
+                    <h3>UI Mode</h3>
+                    <div class="form-group">
+                        <label for="uiMode">Interface Style</label>
+                        <select id="uiMode" class="form-select">
+                            <option value="standard">Standard UI</option>
+                            <option value="simple">Simpler UI Mode</option>
+                        </select>
+                        <p class="input-disclaimer" style="text-align:left; margin-top:8px;">
+                            <strong>Standard:</strong> Full-featured interface with all options visible.<br>
+                            <strong>Simpler UI:</strong> Minimalist interface with essential features only for a cleaner experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="settings-section">
                     <h3>Poseidon Voice Assistant</h3>
                     <div class="form-group">
                         <label for="voiceAccent">Accent</label>
@@ -406,19 +434,20 @@
             </div>
             <div class="modal-body">
                 <div class="settings-section">
-                    <h3>Key commands</h3>
+                    <h3>Command Reference</h3>
                     <ul class="plan-features">
-                        <li><strong>Load Office Suite</strong> — opens the office iframe</li>
-                        <li><strong>Load Game Suite</strong> / <strong>Let's play games</strong> — opens the arcade iframe</li>
-                        <li><strong>Create an image of &lt;thing&gt;</strong> — fetches an image</li>
-                        <li><strong>Another angle</strong> / <strong>Give me a top-down angle</strong> / <strong>Watercolor style</strong> / <strong>Make it red</strong> — generates a new image variant</li>
+                        <li><strong>/office</strong> or <strong>Load Office Suite</strong> — Opens the integrated office suite interface</li>
+                        <li><strong>/arcade</strong> or <strong>Load Game Suite</strong> / <strong>Let's play games</strong> — Opens the integrated arcade interface</li>
+                        <li><strong>/image &lt;description&gt;</strong> or <strong>Create an image of &lt;thing&gt;</strong> — Generates and displays an image based on the provided description</li>
+                        <li><strong>Another angle</strong> / <strong>Give me a top-down angle</strong> / <strong>Watercolor style</strong> / <strong>Make it red</strong> — Generates a new image variant with the specified modifications</li>
                     </ul>
                 </div>
                 <div class="settings-section">
-                    <h3>Tips</h3>
+                    <h3>Usage Guidelines</h3>
                     <ul class="plan-features">
-                        <li>Ask for <strong>bullets</strong> or <strong>steps</strong> only when you want structured output</li>
-                        <li>Use <strong>Think Deeper</strong> for more thorough answers</li>
+                        <li>Request <strong>bullets</strong> or <strong>steps</strong> only when structured output is specifically required</li>
+                        <li>Utilize <strong>Think Deeper</strong> mode for comprehensive and thorough responses to complex queries</li>
+                        <li>Voice commands are available through the Poseidon voice assistant interface</li>
                     </ul>
                 </div>
             </div>

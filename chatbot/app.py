@@ -826,6 +826,11 @@ def chat():
             message = _refine_large_text(message)
             print(f"[Refinement] Processed large text chunk ({len(message)} chars)")
         
+        # Refine large text chunks for better understanding
+        if len(message) > 500:
+            message = _refine_large_text(message)
+            print(f"[Refinement] Processed large text chunk ({len(message)} chars)")
+        
         # Get or create chat ID
         if not chat_id:
             chat_id = str(uuid.uuid4())

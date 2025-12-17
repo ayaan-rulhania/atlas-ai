@@ -9,6 +9,32 @@ This file tracks **major changes** made to this project over time.
 
 ---
 
+## 2025-12-15 (Final Update)
+- **Poseidon Critical Fixes**: 
+  - Fixed "service-not-allowed" error with proper secure context checking and recognition instance recreation
+  - Improved error handling to prevent false error messages
+  - Fixed trident icon rotation (180 degrees - was upside down)
+  - Enhanced recognition restart logic for seamless conversation flow
+- **Poseidon Folder Structure**: Created dedicated `/poseidon` folder with modular voice handler structure
+- **Command Shortcuts**: Added `/office`, `/arcade`, and `/image {description}` commands for faster access
+- **UI Improvements**:
+  - Fixed floating sidebar toggle button styling (gradient blue button with proper shadows)
+  - Added more gradients throughout UI (buttons, welcome title, etc.)
+  - Enhanced dark mode with black background, gold/white/cream accents
+  - Made "How to Use Atlas" help text more formal and professional
+- **Settings Enhancements**:
+  - Added **Stable Mode**: Access to older, thoroughly tested version (compromises latest features for stability)
+  - Added **Simpler UI Mode**: Minimalist interface hiding non-essential elements for cleaner experience
+- **Dark Mode Redesign**: Complete dark mode overhaul with black (#000000) background, gold (#FFD700) primary text, cream (#FFF8DC) secondary text, and enhanced gradients
+
+### Notes
+- **Poseidon Structure**: Voice assistant code organized in `/chatbot/poseidon/` folder
+- **Stable Mode**: When enabled, page reloads to apply older version settings
+- **Simpler UI**: Hides Think Deeper, History, and Customize buttons for minimal interface
+- **Command Shortcuts**: `/office`, `/arcade`, `/image {desc}` work alongside natural language commands
+
+---
+
 ## 2025-12-15 (Updated)
 - **Poseidon Fixes**: Fixed critical speech recognition issues:
   - Changed to continuous recognition mode with interim results for better accuracy
