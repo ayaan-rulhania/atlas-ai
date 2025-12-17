@@ -9,6 +9,12 @@ This file tracks **major changes** made to this project over time.
 
 ---
 
+## 2025-12-15 (Server Fix)
+- **Server Startup**: Fixed localhost server startup by ensuring virtual environment is activated and dependencies are installed
+- **Server Status**: Atlas AI main page now accessible at http://localhost:5000
+
+---
+
 ## 2025-12-15 (Final Update - UI Polish)
 - **Dark Mode Hello Text**: Removed gold gradient, now uses white/cream gradient for better readability
 - **Light Mode Upgrades**: 
