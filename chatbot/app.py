@@ -250,6 +250,75 @@ def _gem_sources_to_knowledge(gem: dict) -> list[dict]:
     return knowledge
 
 
+def _refine_large_text(text: str, max_chunk_size: int = 500) -> str:
+    """
+    Refine large text chunks by breaking them into manageable pieces
+    and extracting key information for better model understanding.
+    """
+    if len(text) <= max_chunk_size:
+        return text
+    
+    # Split by sentences first
+    import re
+    sentences = re.split(r'(?<=[.!?])\s+', text)
+    
+    # Group sentences into chunks
+    chunks = []
+    current_chunk = []
+    current_length = 0
+    
+    for sentence in sentences:
+        sentence = sentence.strip()
+        if not sentence:
+            continue
+        
+        sentence_length = len(sentence)
+        
+        # If adding this sentence would exceed max_chunk_size, save current chunk
+        if current_length + sentence_length > max_chunk_size and current_chunk:
+            chunks.append(' '.join(current_chunk))
+            current_chunk = [sentence]
+            current_length = sentence_length
+        else:
+            current_chunk.append(sentence)
+            current_length += sentence_length + 1  # +1 for space
+    
+    # Add remaining chunk
+    if current_chunk:
+        chunks.append(' '.join(current_chunk))
+    
+    # If still too large, extract key phrases
+    if len(chunks) > 10:
+        # Extract key sentences (longer sentences often contain more information)
+        key_sentences = sorted(sentences, key=lambda s: len(s), reverse=True)[:20]
+        # Reorder to maintain some context
+        refined_text = ' '.join(key_sentences[:15])
+        if len(refined_text) > 2000:
+            refined_text = refined_text[:2000] + "..."
+        return refined_text
+    
+    # Join chunks with context markers
+    if len(chunks) > 1:
+        refined_text = ' '.join(chunks[:5])  # Use first 5 chunks
+        if len(refined_text) > 2000:
+            refined_text = refined_text[:2000] + "..."
+        return refined_text
+    
+    # Fallback: truncate intelligently
+    if len(text) > 2000:
+        # Try to cut at sentence boundary
+        truncated = text[:2000]
+        last_period = truncated.rfind('.')
+        last_question = truncated.rfind('?')
+        last_exclamation = truncated.rfind('!')
+        last_boundary = max(last_period, last_question, last_exclamation)
+        if last_boundary > 1500:  # Only use if we keep most of the text
+            return text[:last_boundary + 1] + "..."
+        return text[:2000] + "..."
+    
+    return text
+
+
 def _tone_profile(tone: str) -> str:
     t = (tone or "normal").strip().lower()
     if t == "friendly":
@@ -751,6 +820,11 @@ def chat():
         
         if not message:
             return jsonify({"error": "Message is required"}), 400
+        
+        # Refine large text chunks for better understanding
+        if len(message) > 500:
+            message = _refine_large_text(message)
+            print(f"[Refinement] Processed large text chunk ({len(message)} chars)")
         
         # Get or create chat ID
         if not chat_id:

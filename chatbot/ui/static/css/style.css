@@ -2483,27 +2483,33 @@ body.pro-unlocked .message.ai .message-avatar {
 }
 
 .poseidon-launch-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+    border: none;
     display: flex;
     align-items: center;
-    gap: 6px;
-    padding: 8px 12px;
-    border-radius: var(--radius-md);
-    background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
-    color: white;
-    border: none;
-    font-weight: 500;
+    justify-content: center;
+    cursor: pointer;
     transition: all var(--transition-base);
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+    flex-shrink: 0;
 }
 
 .poseidon-launch-btn:hover {
     background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.4);
 }
 
-.poseidon-label {
-    font-size: 13px;
-    font-weight: 500;
+.poseidon-launch-btn:active {
+    transform: translateY(0) scale(0.98);
+}
+
+.poseidon-launch-btn svg {
+    width: 24px;
+    height: 24px;
 }
 
 /* Poseidon Overlay */

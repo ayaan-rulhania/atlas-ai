@@ -2058,9 +2058,10 @@ function initializePoseidon() {
     // Initialize speech recognition
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     recognition = new SpeechRecognition();
-    recognition.continuous = false;
-    recognition.interimResults = false;
+    recognition.continuous = true;  // Keep listening continuously
+    recognition.interimResults = true;  // Show interim results
     recognition.lang = voiceSettings.accent;
+    recognition.maxAlternatives = 1;
     
     recognition.onstart = () => {
         console.log('Poseidon: Listening...');
@@ -2071,13 +2072,34 @@ function initializePoseidon() {
     };
     
     recognition.onresult = async (event) => {
-        const transcript = event.results[0][0].transcript;
-        console.log('Poseidon: Heard:', transcript);
+        // Get final transcript (not interim)
+        let finalTranscript = '';
+        let interimTranscript = '';
         
-        // Update transcript
-        if (poseidonUserTranscript) {
-            poseidonUserTranscript.textContent = transcript;
+        for (let i = event.resultIndex; i < event.results.length; i++) {
+            const transcript = event.results[i][0].transcript;
+            if (event.results[i].isFinal) {
+                finalTranscript += transcript + ' ';
+            } else {
+                interimTranscript += transcript;
+            }
         }
+        
+        // Update transcript with interim results
+        if (poseidonUserTranscript) {
+            poseidonUserTranscript.textContent = finalTranscript.trim() || interimTranscript;
+        }
+        
+        // Only process if we have a final result
+        if (!finalTranscript.trim()) {
+            return;  // Still listening, wait for final result
+        }
+        
+        const transcript = finalTranscript.trim();
+        console.log('Poseidon: Heard (final):', transcript);
+        
+        // Stop recognition temporarily while processing
+        recognition.stop();
         updatePoseidonStatus('processing', 'Processing...');
         
         // Send to chat API
@@ -2132,27 +2154,65 @@ function initializePoseidon() {
             speakText(errorMsg);
             addMessageToUI('assistant', errorMsg);
             updatePoseidonStatus('ready', 'Ready');
+        } finally {
+            // Restart listening if still active
+            if (poseidonActive && !poseidonPaused) {
+                setTimeout(() => {
+                    if (poseidonActive && !poseidonPaused && recognition) {
+                        try {
+                            recognition.start();
+                        } catch (err) {
+                            console.error('Poseidon: Error restarting:', err);
+                        }
+                    }
+                }, 1000);
+            }
         }
     };
     
     recognition.onerror = (event) => {
-        console.error('Poseidon: Recognition error:', event.error);
+        console.error('Poseidon: Recognition error:', event.error, event);
         updatePoseidonStatus('ready', 'Ready');
         
-        let errorMsg = 'Sorry, I had trouble understanding.';
+        let errorMsg = '';
+        let shouldSpeak = true;
+        
         if (event.error === 'no-speech') {
             errorMsg = 'I didn\'t hear anything. Please try again.';
+            // Don't speak for no-speech, just restart
+            shouldSpeak = false;
+            if (poseidonActive && !poseidonPaused) {
+                setTimeout(() => {
+                    if (poseidonActive && !poseidonPaused && recognition) {
+                        try {
+                            recognition.start();
+                        } catch (err) {
+                            console.error('Poseidon: Error restarting after no-speech:', err);
+                        }
+                    }
+                }, 500);
+            }
         } else if (event.error === 'not-allowed') {
             errorMsg = 'Microphone permission denied. Please enable microphone access.';
             alert('Please enable microphone access in your browser settings to use Poseidon.');
         } else if (event.error === 'network') {
             errorMsg = 'Network error. Please check your connection.';
+        } else if (event.error === 'aborted') {
+            // Recognition was stopped, don't show error
+            console.log('Poseidon: Recognition aborted (normal)');
+            return;
+        } else if (event.error === 'audio-capture') {
+            errorMsg = 'No microphone found. Please connect a microphone.';
+        } else {
+            errorMsg = `Recognition error: ${event.error}. Please try again.`;
         }
         
-        if (poseidonAssistantTranscript) {
-            poseidonAssistantTranscript.textContent = errorMsg;
+        if (errorMsg && shouldSpeak) {
+            if (poseidonAssistantTranscript) {
+                poseidonAssistantTranscript.textContent = errorMsg;
+            }
+            speakText(errorMsg);
         }
-        speakText(errorMsg);
     };
     
     recognition.onend = () => {
@@ -2338,21 +2398,43 @@ function speakText(text) {
     speechSynthesis.speak(utterance);
 }
 
-function openPoseidonOverlay() {
+async function openPoseidonOverlay() {
     if (!recognition) {
         alert('Voice assistant is not supported in this browser. Please use Chrome, Edge, or Safari.');
         return;
     }
     
-    if (poseidonOverlay) {
-        poseidonOverlay.style.display = 'flex';
-        poseidonActive = true;
-        poseidonPaused = false;
-        updatePoseidonStatus('ready', 'Ready');
+    // Request microphone permission first
+    try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        // Permission granted, stop the stream (we just needed permission)
+        stream.getTracks().forEach(track => track.stop());
         
-        // Start listening
-        recognition.lang = voiceSettings.accent;
-        recognition.start();
+        if (poseidonOverlay) {
+            poseidonOverlay.style.display = 'flex';
+            poseidonActive = true;
+            poseidonPaused = false;
+            updatePoseidonStatus('ready', 'Ready');
+            
+            // Start listening
+            recognition.lang = voiceSettings.accent;
+            try {
+                recognition.start();
+            } catch (err) {
+                console.error('Poseidon: Error starting recognition:', err);
+                if (err.name === 'InvalidStateError') {
+                    // Recognition already started, ignore
+                    console.log('Poseidon: Recognition already active');
+                } else {
+                    updatePoseidonStatus('ready', 'Error starting');
+                    alert('Error starting voice recognition. Please try again.');
+                }
+            }
+        }
+    } catch (error) {
+        console.error('Poseidon: Microphone permission denied:', error);
+        alert('Microphone permission is required to use Poseidon. Please enable it in your browser settings and try again.');
+        updatePoseidonStatus('ready', 'Permission Required');
     }
 }
 

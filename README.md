@@ -234,9 +234,15 @@ Poseidon is a comprehensive voice assistant feature that provides live, conversa
 - **Auto-Continuation**: Automatically restarts listening after each response for seamless conversation flow
 - **Full Integration**: Works with all models (Thor 1.0 and Gems), tones, Think Deeper mode, and all existing features
 
-**Access**: Click the "Poseidon" button in the input area (left side, before the attach button)
+**Access**: Click the golden trident icon button (round blue button) in the input area (left side, before the attach button)
 
 **Browser Support**: Requires Chrome, Edge, or Safari (uses Web Speech API)
+
+**Features**:
+- **Continuous Recognition**: Automatically continues listening after each response
+- **Permission Handling**: Explicitly requests microphone permission before starting
+- **Error Recovery**: Intelligent error handling with automatic retry for common issues
+- **Large Text Support**: Backend automatically refines large text chunks for better understanding
 
 ### 8. Advanced Features
 

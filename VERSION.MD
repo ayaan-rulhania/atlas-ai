@@ -9,6 +9,24 @@ This file tracks **major changes** made to this project over time.
 
 ---
 
+## 2025-12-15 (Updated)
+- **Poseidon Fixes**: Fixed critical speech recognition issues:
+  - Changed to continuous recognition mode with interim results for better accuracy
+  - Added explicit microphone permission request before starting recognition
+  - Improved error handling to prevent false "trouble understanding" messages
+  - Fixed recognition restart logic to automatically continue listening after responses
+  - Better handling of no-speech and aborted states
+- **Poseidon UI**: Updated button design with golden trident icon in round blue button (replacing microphone icon)
+- **Text Refinement**: Added `_refine_large_text()` function to process large text chunks (>500 chars) by intelligently chunking sentences, extracting key information, and maintaining context for better model understanding
+- **Error Handling**: Enhanced Poseidon error messages with specific guidance for different error types (no-speech, not-allowed, network, audio-capture)
+
+### Notes
+- **Continuous Recognition**: Poseidon now uses continuous mode for seamless conversation flow
+- **Permission Flow**: Microphone permission is explicitly requested via `getUserMedia()` before starting recognition
+- **Large Text**: Messages over 500 characters are automatically refined to extract key information while preserving context
+
+---
+
 ## 2025-12-15
 - **Gems UI**: Fixed gem sidebar layout — edit and delete buttons now work correctly and are aligned on the same line as gem names. Removed separate tone badge display; gem names now use metallic gradient colors based on tone (friendly=green, calm=blue, formal=purple, critical=red, normal=default). "New Gem" button is now properly center-aligned.
 - **Poseidon Voice Assistant**: Added comprehensive voice assistant feature named "Poseidon" (Greek spelling) with full-screen overlay interface similar to Gemini Live. Features include:
