@@ -1008,9 +1008,15 @@ body.sidebar-collapsed .main-content {
 }
 
 [data-theme="dark"] .welcome-title {
-    background: linear-gradient(120deg, #ffffff, #f5f5dc, #fff8dc, #ffffff, #f5f5dc, #ffffff);
-    background-size: 300% 300%;
-    filter: drop-shadow(0 2px 4px rgba(255, 255, 255, 0.2));
+    background: linear-gradient(120deg, #FFD700, #FFA500, #FFD700, #FFED4E, #FFD700, #FFA500);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 2px 4px rgba(255, 215, 0, 0.4));
+    font-family: 'Aboreto', cursive;
+    animation: helloGradient 9s ease-in-out infinite;
 }
 
 .welcome-subtitle {
