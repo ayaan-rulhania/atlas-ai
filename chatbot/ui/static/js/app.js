@@ -2160,37 +2160,21 @@ let poseidonAssistantTranscript = null;
 
 // Initialize Poseidon
 function initializePoseidon() {
-    // Load saved voice settings
-    const savedAccent = localStorage.getItem('poseidonAccent') || 'en-US';
-    const savedGender = localStorage.getItem('poseidonGender') || 'male';
-    voiceSettings.accent = savedAccent;
-    voiceSettings.gender = savedGender;
+    console.log('[Poseidon] Initializing...');
     
-    // Update UI
-    const accentSelect = document.getElementById('voiceAccent');
-    const genderSelect = document.getElementById('voiceGender');
-    if (accentSelect) accentSelect.value = savedAccent;
-    if (genderSelect) genderSelect.value = savedGender;
+    // Backend check 1: Verify browser support
+    const hasSpeechRecognition = 'webkitSpeechRecognition' in window || 'SpeechRecognition' in window;
+    const hasSpeechSynthesis = 'speechSynthesis' in window;
+    const hasMediaDevices = 'mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices;
     
-    // Setup event listeners for settings
-    if (accentSelect) {
-        accentSelect.addEventListener('change', (e) => {
-            voiceSettings.accent = e.target.value;
-            localStorage.setItem('poseidonAccent', e.target.value);
-            updateVoiceSelection();
-        });
-    }
-    if (genderSelect) {
-        genderSelect.addEventListener('change', (e) => {
-            voiceSettings.gender = e.target.value;
-            localStorage.setItem('poseidonGender', e.target.value);
-            updateVoiceSelection();
-        });
-    }
+    console.log('[Poseidon] Browser support check:', {
+        speechRecognition: hasSpeechRecognition,
+        speechSynthesis: hasSpeechSynthesis,
+        mediaDevices: hasMediaDevices
+    });
     
-    // Check browser support
-    if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
-        console.warn('Speech recognition not supported');
+    if (!hasSpeechRecognition) {
+        console.error('[Poseidon] Speech recognition not supported');
         const poseidonLaunchBtn = document.getElementById('poseidonLaunchBtn');
         if (poseidonLaunchBtn) {
             poseidonLaunchBtn.disabled = true;
@@ -2199,11 +2183,90 @@ function initializePoseidon() {
         return;
     }
     
-    // Recognition instance will be created when overlay opens
-    // This ensures handlers are properly attached
+    if (!hasSpeechSynthesis) {
+        console.warn('[Poseidon] Speech synthesis not supported');
+    }
+    
+    if (!hasMediaDevices) {
+        console.error('[Poseidon] MediaDevices API not available');
+        return;
+    }
+    
+    // Backend check 2: Verify secure context
+    const isSecure = window.isSecureContext || location.protocol === 'https:' || 
+                     location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+    console.log('[Poseidon] Secure context:', isSecure, location.protocol, location.hostname);
+    
+    if (!isSecure) {
+        console.warn('[Poseidon] Not in secure context - may have limited functionality');
+    }
+    
+    // Backend check 3: Load and validate saved voice settings
+    const savedAccent = localStorage.getItem('poseidonAccent') || 'en-US';
+    const savedGender = localStorage.getItem('poseidonGender') || 'male';
+    
+    // Validate accent
+    const validAccents = ['en-US', 'en-GB', 'en-AU', 'en-IN'];
+    voiceSettings.accent = validAccents.includes(savedAccent) ? savedAccent : 'en-US';
+    
+    // Validate gender
+    voiceSettings.gender = (savedGender === 'male' || savedGender === 'female') ? savedGender : 'male';
+    
+    console.log('[Poseidon] Voice settings:', voiceSettings);
+    
+    // Update UI
+    const accentSelect = document.getElementById('voiceAccent');
+    const genderSelect = document.getElementById('voiceGender');
+    if (accentSelect) {
+        accentSelect.value = voiceSettings.accent;
+        accentSelect.addEventListener('change', (e) => {
+            const newAccent = e.target.value;
+            if (validAccents.includes(newAccent)) {
+                voiceSettings.accent = newAccent;
+                localStorage.setItem('poseidonAccent', newAccent);
+                updateVoiceSelection();
+                // Update recognition language if active
+                if (recognition && poseidonActive) {
+                    recognition.lang = newAccent;
+                }
+            }
+        });
+    }
+    if (genderSelect) {
+        genderSelect.value = voiceSettings.gender;
+        genderSelect.addEventListener('change', (e) => {
+            const newGender = e.target.value;
+            if (newGender === 'male' || newGender === 'female') {
+                voiceSettings.gender = newGender;
+                localStorage.setItem('poseidonGender', newGender);
+                updateVoiceSelection();
+            }
+        });
+    }
+    
+    // Backend check 4: Verify DOM elements exist
+    const requiredElements = {
+        poseidonLaunchBtn: document.getElementById('poseidonLaunchBtn'),
+        poseidonOverlay: document.getElementById('poseidonOverlay'),
+        poseidonStatusText: document.getElementById('poseidonStatusText'),
+        poseidonUserTranscript: document.getElementById('poseidonUserTranscript'),
+        poseidonAssistantTranscript: document.getElementById('poseidonAssistantTranscript')
+    };
+    
+    const missingElements = Object.entries(requiredElements)
+        .filter(([name, el]) => !el)
+        .map(([name]) => name);
+    
+    if (missingElements.length > 0) {
+        console.warn('[Poseidon] Missing DOM elements:', missingElements);
+    } else {
+        console.log('[Poseidon] All required DOM elements found');
+    }
     
     // Setup speech synthesis
     updateVoiceSelection();
+    
+    console.log('[Poseidon] Initialization complete');
     
     // Setup launch button
     const poseidonLaunchBtn = document.getElementById('poseidonLaunchBtn');
@@ -2412,29 +2475,56 @@ async function openPoseidonOverlay() {
             recognition.lang = voiceSettings.accent;
             recognition.maxAlternatives = 1;
             
-            // Start listening
+            // Start listening with validation
             try {
+                // Verify recognition is properly configured
+                if (!recognition.continuous) recognition.continuous = true;
+                if (!recognition.interimResults) recognition.interimResults = true;
+                recognition.lang = voiceSettings.accent;
+                recognition.maxAlternatives = 1;
+                
+                console.log('[Poseidon] Starting recognition with config:', {
+                    continuous: recognition.continuous,
+                    interimResults: recognition.interimResults,
+                    lang: recognition.lang
+                });
+                
                 recognition.start();
-                console.log('Poseidon: Started successfully');
+                console.log('[Poseidon] Started successfully');
                 updatePoseidonStatus('listening', 'Listening...');
+                
+                // Verify it actually started
+                setTimeout(() => {
+                    if (poseidonActive && !poseidonPaused) {
+                        // Check if recognition is actually listening
+                        console.log('[Poseidon] Status check - active:', poseidonActive);
+                    }
+                }, 500);
+                
             } catch (err) {
-                console.error('Poseidon: Error starting recognition:', err);
+                console.error('[Poseidon] Error starting recognition:', err);
                 if (err.name === 'InvalidStateError') {
                     // Recognition already started, try to stop and restart
                     try {
                         recognition.stop();
                         setTimeout(() => {
-                            recognition.start();
-                            updatePoseidonStatus('listening', 'Listening...');
-                        }, 200);
+                            try {
+                                recognition.start();
+                                updatePoseidonStatus('listening', 'Listening...');
+                                console.log('[Poseidon] Restarted after InvalidStateError');
+                            } catch (startErr) {
+                                console.error('[Poseidon] Failed to restart:', startErr);
+                                updatePoseidonStatus('ready', 'Error starting');
+                            }
+                        }, 100); // Reduced delay
                     } catch (restartErr) {
-                        console.error('Poseidon: Error restarting:', restartErr);
+                        console.error('[Poseidon] Error during restart:', restartErr);
                         updatePoseidonStatus('ready', 'Error starting');
                         alert('Error starting voice recognition. Please try again.');
                     }
                 } else {
                     updatePoseidonStatus('ready', 'Error starting');
-                    alert('Error starting voice recognition. Please try again.');
+                    alert('Error starting voice recognition: ' + err.message);
                 }
             }
         }
@@ -2476,13 +2566,28 @@ function setupRecognitionHandlers() {
             poseidonUserTranscript.textContent = finalTranscript.trim() || interimTranscript;
         }
         
-        // Only process if we have a final result
-        if (!finalTranscript.trim()) {
-            return;  // Still listening, wait for final result
+        // Process immediately if we have any transcript (faster response)
+        // Use final transcript if available, otherwise use interim after a short delay
+        const transcript = finalTranscript.trim() || interimTranscript.trim();
+        
+        if (!transcript) {
+            return;  // No transcript yet, keep listening
         }
         
-        const transcript = finalTranscript.trim();
-        console.log('Poseidon: Heard (final):', transcript);
+        // If we have final transcript, process immediately
+        // If only interim, wait a bit for final (but process faster)
+        if (!finalTranscript.trim() && interimTranscript.trim()) {
+            // Wait briefly for final result, but not too long (faster)
+            setTimeout(() => {
+                if (recognition && poseidonActive) {
+                    // Check if we got final result in the meantime
+                    return;
+                }
+            }, 300); // Reduced from waiting indefinitely
+            return;
+        }
+        
+        console.log('[Poseidon] Processing transcript:', transcript);
         
         // Stop recognition temporarily while processing
         recognition.stop();
@@ -2541,38 +2646,61 @@ function setupRecognitionHandlers() {
             addMessageToUI('assistant', errorMsg);
             updatePoseidonStatus('ready', 'Ready');
         } finally {
-            // Restart listening if still active
+            // Restart listening if still active (faster restart)
             if (poseidonActive && !poseidonPaused) {
                 setTimeout(() => {
                     if (poseidonActive && !poseidonPaused && recognition) {
                         try {
                             recognition.start();
-                            console.log('Poseidon: Restarted listening');
+                            console.log('[Poseidon] Restarted listening');
                         } catch (err) {
-                            console.error('Poseidon: Error restarting:', err);
+                            console.error('[Poseidon] Error restarting:', err);
+                            // Try again after brief delay
+                            setTimeout(() => {
+                                if (poseidonActive && !poseidonPaused && recognition) {
+                                    try {
+                                        recognition.start();
+                                    } catch (retryErr) {
+                                        console.error('[Poseidon] Retry failed:', retryErr);
+                                    }
+                                }
+                            }, 500);
                         }
                     }
-                }, 1000);
+                }, 300); // Reduced from 1000ms to 300ms for faster restart
             }
         }
     };
     
     recognition.onend = () => {
-        console.log('Poseidon: Recognition ended');
+        console.log('[Poseidon] Recognition ended');
         if (!poseidonActive || poseidonPaused) {
             updatePoseidonStatus('ready', 'Ready');
-        } else if (poseidonActive && !poseidonPaused) {
-            // Auto-restart if still active
+            return;
+        }
+        
+        // Auto-restart if still active (faster restart)
+        if (poseidonActive && !poseidonPaused) {
             setTimeout(() => {
                 if (poseidonActive && !poseidonPaused && recognition) {
                     try {
                         recognition.start();
-                        console.log('Poseidon: Auto-restarted');
+                        console.log('[Poseidon] Auto-restarted');
                     } catch (err) {
-                        console.error('Poseidon: Error auto-restarting:', err);
+                        console.error('[Poseidon] Error auto-restarting:', err);
+                        // Retry once
+                        setTimeout(() => {
+                            if (poseidonActive && !poseidonPaused && recognition) {
+                                try {
+                                    recognition.start();
+                                } catch (retryErr) {
+                                    console.error('[Poseidon] Auto-restart retry failed:', retryErr);
+                                }
+                            }
+                        }, 200);
                     }
                 }
-            }, 100);
+            }, 50); // Reduced from 100ms to 50ms for faster restart
         }
     };
     
