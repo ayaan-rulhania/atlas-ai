@@ -260,8 +260,8 @@ Poseidon is a comprehensive voice assistant feature that provides live, conversa
 - `/image {description}` - Generate an image (e.g., `/image sunset over mountains`)
 
 **Settings Options**:
-- **Stable Mode**: Use older, thoroughly tested version for maximum stability (some latest features unavailable)
-- **Simpler UI Mode**: Minimalist interface hiding non-essential buttons for a cleaner experience
+- **Stable Mode**: Disables latest features (Poseidon, Think Deeper) and automatically applies simpler UI for maximum stability
+- **Simpler UI Mode**: Minimalist interface hiding non-essential buttons (Think Deeper, History, Customize, Help, Upgrade, Model Selector) for a cleaner experience
 
 ### 9. Advanced Features
 

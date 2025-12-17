@@ -1148,11 +1148,44 @@ function initializeSystemMode() {
         modeSelect.addEventListener('change', (e) => {
             systemMode = e.target.value;
             localStorage.setItem('systemMode', systemMode);
-            if (systemMode === 'stable') {
-                alert('Stable mode enabled. Some latest features may be unavailable. Page will reload.');
-                window.location.reload();
-            }
+            applyStableMode(systemMode);
         });
+    }
+    applyStableMode(systemMode);
+}
+
+function applyStableMode(mode) {
+    if (mode === 'stable') {
+        document.body.classList.add('stable-mode');
+        // Disable latest features
+        const poseidonBtn = document.getElementById('poseidonLaunchBtn');
+        if (poseidonBtn) {
+            poseidonBtn.style.display = 'none';
+        }
+        // Hide advanced features
+        const thinkDeeperBtn = document.getElementById('thinkDeeperToggle');
+        if (thinkDeeperBtn) {
+            thinkDeeperBtn.style.display = 'none';
+        }
+        // Use simpler UI by default in stable mode
+        if (uiMode === 'standard') {
+            uiMode = 'simple';
+            localStorage.setItem('uiMode', 'simple');
+            const uiModeSelect = document.getElementById('uiMode');
+            if (uiModeSelect) uiModeSelect.value = 'simple';
+            applyUIMode('simple');
+        }
+    } else {
+        document.body.classList.remove('stable-mode');
+        // Re-enable features
+        const poseidonBtn = document.getElementById('poseidonLaunchBtn');
+        if (poseidonBtn) {
+            poseidonBtn.style.display = '';
+        }
+        const thinkDeeperBtn = document.getElementById('thinkDeeperToggle');
+        if (thinkDeeperBtn) {
+            thinkDeeperBtn.style.display = '';
+        }
     }
 }
 
@@ -1176,15 +1209,51 @@ function applyUIMode(mode) {
     if (mode === 'simple') {
         document.body.classList.add('ui-simple');
         // Hide non-essential elements
-        const elementsToHide = document.querySelectorAll('.think-deeper-toggle, .history-btn, .customize-btn');
-        elementsToHide.forEach(el => {
-            if (el) el.style.display = 'none';
+        const thinkDeeperBtn = document.getElementById('thinkDeeperToggle');
+        const historyBtn = document.getElementById('historyBtn');
+        const customizeBtn = document.getElementById('customizeBtn');
+        const helpBtn = document.getElementById('helpBtn');
+        const upgradeBtn = document.getElementById('upgradeBtn');
+        const modelSelector = document.getElementById('modelSelector');
+        
+        if (thinkDeeperBtn) thinkDeeperBtn.style.display = 'none';
+        if (historyBtn) historyBtn.style.display = 'none';
+        if (customizeBtn) customizeBtn.style.display = 'none';
+        if (helpBtn) helpBtn.style.display = 'none';
+        if (upgradeBtn) upgradeBtn.style.display = 'none';
+        if (modelSelector) modelSelector.style.display = 'none';
+        
+        // Simplify sidebar
+        const sidebar = document.getElementById('sidebar');
+        if (sidebar) sidebar.classList.add('ui-simple');
+        
+        // Hide gem actions in sidebar
+        document.querySelectorAll('.gem-actions').forEach(el => {
+            el.style.display = 'none';
         });
     } else {
         document.body.classList.remove('ui-simple');
-        const elementsToShow = document.querySelectorAll('.think-deeper-toggle, .history-btn, .customize-btn');
-        elementsToShow.forEach(el => {
-            if (el) el.style.display = '';
+        const thinkDeeperBtn = document.getElementById('thinkDeeperToggle');
+        const historyBtn = document.getElementById('historyBtn');
+        const customizeBtn = document.getElementById('customizeBtn');
+        const helpBtn = document.getElementById('helpBtn');
+        const upgradeBtn = document.getElementById('upgradeBtn');
+        const modelSelector = document.getElementById('modelSelector');
+        
+        if (thinkDeeperBtn) thinkDeeperBtn.style.display = '';
+        if (historyBtn) historyBtn.style.display = '';
+        if (customizeBtn) customizeBtn.style.display = '';
+        if (helpBtn) helpBtn.style.display = '';
+        if (upgradeBtn) upgradeBtn.style.display = '';
+        if (modelSelector) modelSelector.style.display = '';
+        
+        // Restore sidebar
+        const sidebar = document.getElementById('sidebar');
+        if (sidebar) sidebar.classList.remove('ui-simple');
+        
+        // Show gem actions
+        document.querySelectorAll('.gem-actions').forEach(el => {
+            el.style.display = '';
         });
     }
 }
@@ -2813,6 +2882,3 @@ function updatePoseidonStatus(status, text) {
         }
     }
 }
-
-// Poseidon is initialized in initializeApp()
-

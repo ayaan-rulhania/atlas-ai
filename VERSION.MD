@@ -9,6 +9,22 @@ This file tracks **major changes** made to this project over time.
 
 ---
 
+## 2025-12-15 (Final Update - UI Polish)
+- **Dark Mode Hello Text**: Removed gold gradient, now uses white/cream gradient for better readability
+- **Light Mode Upgrades**: 
+  - Upgrade button now white with gradient (was black)
+  - Added more gradients throughout light mode UI (send button, sidebar icons, model selector, etc.)
+  - Enhanced visual consistency with gradient theme
+- **Stable Mode Implementation**: Now actually disables latest features (Poseidon, Think Deeper) and applies simpler UI automatically
+- **Simpler UI Mode Fix**: Now properly hides non-essential buttons (Think Deeper, History, Customize, Help, Upgrade, Model Selector) and gem action buttons
+
+### Notes
+- **Stable Mode**: Automatically switches to simpler UI and disables Poseidon and Think Deeper features
+- **Simpler UI**: Hides 6+ buttons for truly minimal interface
+- **Light Mode Gradients**: Send button, sidebar elements, and interactive components now use purple/pink gradients
+
+---
+
 ## 2025-12-15 (Final Update)
 - **Poseidon Critical Fixes**: 
   - Fixed "service-not-allowed" error with proper secure context checking and recognition instance recreation
