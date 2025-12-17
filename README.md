@@ -253,6 +253,8 @@ Poseidon is a comprehensive voice assistant feature that provides live, conversa
 - **Error Recovery**: Intelligent error handling with automatic retry for common issues
 - **Large Text Support**: Backend automatically refines large text chunks for better understanding
 - **Secure Context**: Automatically checks for HTTPS/localhost and provides helpful error messages
+- **Fast Response**: Optimized for speed with reduced delays (300ms restart, 50ms auto-restart)
+- **Backend Validation**: Comprehensive checks for browser support, secure context, and DOM elements
 
 **Command Shortcuts**:
 - `/office` - Quickly open Office Suite
