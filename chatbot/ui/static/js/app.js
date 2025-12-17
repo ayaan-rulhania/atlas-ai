@@ -2404,23 +2404,6 @@ function initializePoseidon() {
                     }
                 }, 100);
             }
-        };
-    }
-    
-    // Setup handlers
-    setupRecognitionHandlers();
-    
-    recognition.onend = () => {
-        if (!poseidonActive || poseidonPaused) {
-            updatePoseidonStatus('ready', 'Ready');
-        } else if (poseidonActive && !poseidonPaused) {
-            // Auto-restart if still active
-            setTimeout(() => {
-                if (poseidonActive && !poseidonPaused) {
-                    recognition.start();
-                }
-            }, 100);
-        }
     };
     
     // Setup speech synthesis
