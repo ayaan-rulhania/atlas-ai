@@ -2388,23 +2388,6 @@ function initializePoseidon() {
                 }
             }
         };
-        
-        recognition.onend = () => {
-            if (!poseidonActive || poseidonPaused) {
-                updatePoseidonStatus('ready', 'Ready');
-            } else if (poseidonActive && !poseidonPaused) {
-                // Auto-restart if still active
-                setTimeout(() => {
-                    if (poseidonActive && !poseidonPaused && recognition) {
-                        try {
-                            recognition.start();
-                        } catch (err) {
-                            console.error('Poseidon: Error restarting:', err);
-                        }
-                    }
-                }, 100);
-            }
-        };
     }
     
     // Setup speech synthesis
