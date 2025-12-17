@@ -2404,7 +2404,8 @@ function initializePoseidon() {
                     }
                 }, 100);
             }
-    };
+        };
+    }
     
     // Setup speech synthesis
     updateVoiceSelection();
