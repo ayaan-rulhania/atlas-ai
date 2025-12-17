@@ -2298,21 +2298,41 @@ function initializePoseidon() {
             const isSecure = window.isSecureContext || location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1';
             if (!isSecure) {
                 errorMsg = 'Speech recognition requires HTTPS or localhost. Please use a secure connection.';
+                updatePoseidonStatus('ready', 'HTTPS Required');
             } else {
-                // Try to recreate recognition with different settings
-                console.warn('Poseidon: Service not allowed, recreating recognition');
+                // Service might be temporarily unavailable - try to recreate
+                console.warn('Poseidon: Service not allowed, attempting to recreate recognition');
                 try {
-                    recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+                    // Stop current recognition
+                    if (recognition) {
+                        recognition.stop();
+                    }
+                    // Create new instance
+                    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+                    recognition = new SpeechRecognition();
                     setupRecognitionHandlers();
                     // Wait a bit before restarting
                     setTimeout(() => {
                         if (poseidonActive && !poseidonPaused) {
-                            recognition.start();
+                            try {
+                                recognition.start();
+                                console.log('Poseidon: Restarted recognition after service-not-allowed');
+                                return; // Successfully restarted
+                            } catch (startErr) {
+                                console.error('Poseidon: Failed to start after recreation:', startErr);
+                                errorMsg = 'Speech recognition service is unavailable. Please refresh the page or try again later.';
+                                updatePoseidonStatus('ready', 'Service Unavailable');
+                                if (poseidonAssistantTranscript) {
+                                    poseidonAssistantTranscript.textContent = errorMsg;
+                                }
+                            }
                         }
-                    }, 500);
-                    return; // Don't show error, just retry
+                    }, 1000);
+                    return; // Don't show error immediately, wait for retry
                 } catch (err) {
-                    errorMsg = 'Speech recognition service is not available. Please try refreshing the page or use a different browser.';
+                    console.error('Poseidon: Failed to recreate recognition:', err);
+                    errorMsg = 'Speech recognition service is not available. Please refresh the page or use a different browser.';
+                    updatePoseidonStatus('ready', 'Service Unavailable');
                 }
             }
         } else {
@@ -2660,6 +2680,13 @@ async function openPoseidonOverlay() {
         return;
     }
     
+    // Check secure context first
+    const isSecure = window.isSecureContext || location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+    if (!isSecure) {
+        alert('Poseidon requires a secure connection (HTTPS) or localhost. Please access the site via HTTPS or localhost.');
+        return;
+    }
+    
     // Request microphone permission first
     try {
         const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
@@ -2672,15 +2699,34 @@ async function openPoseidonOverlay() {
             poseidonPaused = false;
             updatePoseidonStatus('ready', 'Ready');
             
-            // Start listening
+            // Ensure recognition is properly configured
+            if (!recognition.continuous) {
+                recognition.continuous = true;
+            }
+            if (!recognition.interimResults) {
+                recognition.interimResults = true;
+            }
             recognition.lang = voiceSettings.accent;
+            recognition.maxAlternatives = 1;
+            
+            // Start listening
             try {
                 recognition.start();
+                console.log('Poseidon: Started successfully');
             } catch (err) {
                 console.error('Poseidon: Error starting recognition:', err);
                 if (err.name === 'InvalidStateError') {
-                    // Recognition already started, ignore
-                    console.log('Poseidon: Recognition already active');
+                    // Recognition already started, try to stop and restart
+                    try {
+                        recognition.stop();
+                        setTimeout(() => {
+                            recognition.start();
+                        }, 100);
+                    } catch (restartErr) {
+                        console.error('Poseidon: Error restarting:', restartErr);
+                        updatePoseidonStatus('ready', 'Error starting');
+                        alert('Error starting voice recognition. Please try again.');
+                    }
                 } else {
                     updatePoseidonStatus('ready', 'Error starting');
                     alert('Error starting voice recognition. Please try again.');

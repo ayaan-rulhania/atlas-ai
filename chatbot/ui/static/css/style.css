@@ -1179,9 +1179,6 @@ body.ui-simple .settings-section {
     box-shadow: none;
 }
 
-[data-theme="dark"] .welcome-title {
-    text-shadow: 0 6px 18px rgba(0, 0, 0, 0.42);
-}
 
 [data-theme="dark"] .welcome-subtitle {
     color: #c9d2e4;
