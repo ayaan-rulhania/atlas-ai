@@ -2703,6 +2703,8 @@ function startAudioLevelMonitoring() {
                         pendingTranscript = '';
                     }
                 }
+            }
+        }
             } catch (audioErr) {
                 console.error('[Poseidon] ERROR in audio level monitoring:', audioErr);
                 console.error('[Poseidon] Audio monitoring error details:', {
