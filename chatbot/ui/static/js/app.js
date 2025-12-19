@@ -3295,10 +3295,33 @@ function setupRecognitionHandlers() {
         } else if (combinedInterim.length > 0) {
             // We have interim results but no final yet
             console.log('[Poseidon] Interim results only - setting up silence timeout');
-            // Set up timeout to process interim if no final comes
-            resetSilenceTimeout();
+            console.log('[Poseidon] Interim transcript:', combinedInterim, 'length:', combinedInterim.length);
+            
+            // If interim is substantial (more than a few words), process it after a shorter timeout
+            const wordCount = combinedInterim.split(/\s+/).filter(w => w.length > 0).length;
+            console.log('[Poseidon] Interim word count:', wordCount);
+            
+            if (wordCount >= 3) {
+                // Substantial interim - process after shorter timeout
+                console.log('[Poseidon] Substantial interim detected, will process after shorter timeout');
+                clearTimeout(silenceTimeout);
+                silenceTimeout = setTimeout(() => {
+                    if (poseidonActive && !poseidonPaused && !transcriptProcessing) {
+                        const currentInterim = combinedInterim;
+                        if (currentInterim && currentInterim.length > 0) {
+                            console.log('[Poseidon] Processing substantial interim after timeout:', currentInterim);
+                            handlePoseidonTranscript(currentInterim);
+                            pendingTranscript = '';
+                        }
+                    }
+                }, 1500); // Shorter timeout for substantial interim
+            } else {
+                // Set up normal timeout to process interim if no final comes
+                resetSilenceTimeout();
+            }
         } else {
             console.warn('[Poseidon] WARNING: No final or interim transcript to process!');
+            console.warn('[Poseidon] This might indicate speech recognition is not detecting speech');
         }
         
         console.log('[Poseidon] ===== onresult COMPLETE =====');
@@ -3334,21 +3357,33 @@ function setupRecognitionHandlers() {
     };
     
     recognition.onsoundstart = () => {
-        console.log('[Poseidon] Sound detected');
+        console.log('[Poseidon] ===== SOUND START DETECTED =====');
         speechDetected = true;
         lastSpeechTime = Date.now();
+        updatePoseidonStatus('listening', 'Listening... (sound detected)');
     };
     
     recognition.onsoundend = () => {
-        console.log('[Poseidon] Sound ended');
+        console.log('[Poseidon] ===== SOUND END DETECTED =====');
+        // Check if we have pending transcript to process
+        setTimeout(() => {
+            const currentPending = pendingTranscript?.trim() || '';
+            if (currentPending.length > 0 && !transcriptProcessing && poseidonActive) {
+                console.log('[Poseidon] Processing pending transcript after sound end:', currentPending);
+                handlePoseidonTranscript(currentPending);
+                pendingTranscript = '';
+            }
+        }, 600);
     };
     
     recognition.onaudiostart = () => {
-        console.log('[Poseidon] Audio input started');
+        console.log('[Poseidon] ===== AUDIO INPUT STARTED =====');
+        console.log('[Poseidon] Microphone is now receiving audio');
     };
     
     recognition.onaudioend = () => {
-        console.log('[Poseidon] Audio input ended');
+        console.log('[Poseidon] ===== AUDIO INPUT ENDED =====');
+        console.log('[Poseidon] Microphone input stopped');
     };
     
     recognition.onnomatch = () => {
