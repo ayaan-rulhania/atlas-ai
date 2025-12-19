@@ -13,7 +13,7 @@ let uiMode = localStorage.getItem('uiMode') || 'standard';
 
 // Gems (custom sub-models)
 let gems = [];
-let activeGemDraft = null; // used for "Try before create" (gem:preview)
+let activeGemDraft = null; 
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
@@ -2150,6 +2150,9 @@ let poseidonStatusIndicator = null;
 let poseidonStatusText = null;
 let poseidonUserTranscript = null;
 let poseidonAssistantTranscript = null;
+let silenceTimeout = null;
+let lastSpeechTime = null;
+const SILENCE_TIMEOUT_MS = 3000; // Stop listening after 3 seconds of silence
 
 // Initialize Poseidon
 function initializePoseidon() {
@@ -2462,19 +2465,24 @@ async function openPoseidonOverlay() {
             // Setup handlers
             setupRecognitionHandlers();
             
-            // Configure recognition
-            recognition.continuous = true;
-            recognition.interimResults = true;
+            // Configure recognition - use non-continuous mode for better silence detection
+            // Non-continuous mode automatically stops after speech ends, which is better for conversation
+            recognition.continuous = false;  // Changed to false - stops after speech ends
+            recognition.interimResults = true;  // Show interim results for real-time feedback
             recognition.lang = voiceSettings.accent;
             recognition.maxAlternatives = 1;
             
             // Start listening with validation
             try {
                 // Verify recognition is properly configured
-                if (!recognition.continuous) recognition.continuous = true;
-                if (!recognition.interimResults) recognition.interimResults = true;
+                recognition.continuous = false;  // Non-continuous for better silence handling
+                recognition.interimResults = true;  // Show interim results
                 recognition.lang = voiceSettings.accent;
                 recognition.maxAlternatives = 1;
+                
+                // Reset silence tracking
+                lastSpeechTime = Date.now();
+                clearTimeout(silenceTimeout);
                 
                 console.log('[Poseidon] Starting recognition with config:', {
                     continuous: recognition.continuous,
@@ -2528,6 +2536,105 @@ async function openPoseidonOverlay() {
     }
 }
 
+// Helper function to process transcript (accessible from recognition handlers)
+async function handlePoseidonTranscript(transcript) {
+    if (!transcript || transcript.trim().length === 0) {
+        return;
+    }
+    
+    // Update UI to show we're processing the transcript
+    if (poseidonUserTranscript) {
+        poseidonUserTranscript.textContent = transcript;
+    }
+    
+    // Stop recognition while processing
+    if (recognition) {
+        recognition.stop();
+    }
+    clearTimeout(silenceTimeout);
+    updatePoseidonStatus('processing', 'Processing your request...');
+    
+    // Send to chat API
+    try {
+        const requestBody = {
+            message: transcript,
+            chat_id: currentChatId,
+            task: 'text_generation',
+            think_deeper: thinkDeeperMode,
+            model: currentModel,
+            tone: getEffectiveTone(),
+        };
+        
+        if (currentModel === 'gem:preview' && activeGemDraft) {
+            requestBody.gem_draft = activeGemDraft;
+        }
+        
+        const response = await fetch('/api/chat', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(requestBody)
+        });
+        
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+        }
+        
+        const data = await response.json();
+        currentChatId = data.chat_id;
+        
+        // Add messages to UI
+        addMessageToUI('user', transcript);
+        const responseText = data.response || 'No response received';
+        addMessageToUI('assistant', responseText);
+        
+        // Update assistant transcript
+        if (poseidonAssistantTranscript) {
+            poseidonAssistantTranscript.textContent = responseText.substring(0, 200) + (responseText.length > 200 ? '...' : '');
+        }
+        
+        // Speak the response
+        speakText(responseText);
+        
+    } catch (error) {
+        console.error('Poseidon: Error:', error);
+        const errorMsg = 'Sorry, I encountered an error processing your request.';
+        if (poseidonAssistantTranscript) {
+            poseidonAssistantTranscript.textContent = errorMsg;
+        }
+        speakText(errorMsg);
+        addMessageToUI('assistant', errorMsg);
+        updatePoseidonStatus('ready', 'Ready');
+    } finally {
+        // Restart listening if still active (non-continuous mode requires manual restart)
+        if (poseidonActive && !poseidonPaused) {
+            setTimeout(() => {
+                if (poseidonActive && !poseidonPaused && recognition) {
+                    try {
+                        recognition.start();
+                        lastSpeechTime = Date.now();
+                        console.log('[Poseidon] Restarted listening');
+                    } catch (err) {
+                        console.error('[Poseidon] Error restarting:', err);
+                        // Try again after brief delay
+                        setTimeout(() => {
+                            if (poseidonActive && !poseidonPaused && recognition) {
+                                try {
+                                    recognition.start();
+                                    lastSpeechTime = Date.now();
+                                } catch (retryErr) {
+                                    console.error('[Poseidon] Retry failed:', retryErr);
+                                }
+                            }
+                        }, 500);
+                    }
+                }
+            }, 500); // Wait a bit after response before restarting
+        }
+    }
+}
+
 // Setup recognition handlers (called when overlay opens)
 function setupRecognitionHandlers() {
     if (!recognition) return;
@@ -2535,12 +2642,37 @@ function setupRecognitionHandlers() {
     recognition.onstart = () => {
         console.log('Poseidon: Listening...');
         updatePoseidonStatus('listening', 'Listening...');
+        lastSpeechTime = Date.now();
+        clearTimeout(silenceTimeout);
+        
+        // Set up silence detection timeout
+        silenceTimeout = setTimeout(() => {
+            if (poseidonActive && !poseidonPaused && recognition) {
+                const currentInterim = poseidonUserTranscript?.textContent?.trim() || '';
+                if (currentInterim && currentInterim.length > 0) {
+                    // Process interim transcript if we have one
+                    console.log('[Poseidon] Silence detected, processing interim transcript:', currentInterim);
+                    handlePoseidonTranscript(currentInterim);
+                } else {
+                    // No speech detected, just restart
+                    console.log('[Poseidon] Silence timeout - no speech detected, restarting');
+                    if (recognition) {
+                        recognition.stop();
+                    }
+                }
+            }
+        }, SILENCE_TIMEOUT_MS);
+        
         if (poseidonUserTranscript) {
             poseidonUserTranscript.textContent = '';
         }
     };
     
     recognition.onresult = async (event) => {
+        // Update last speech time - user is speaking
+        lastSpeechTime = Date.now();
+        clearTimeout(silenceTimeout);
+        
         // Get final transcript (not interim)
         let finalTranscript = '';
         let interimTranscript = '';
@@ -2554,41 +2686,50 @@ function setupRecognitionHandlers() {
             }
         }
         
-        // Update transcript with interim results
+        // Update transcript with interim results for real-time feedback
         if (poseidonUserTranscript) {
-            poseidonUserTranscript.textContent = finalTranscript.trim() || interimTranscript;
+            const displayText = finalTranscript.trim() || interimTranscript;
+            poseidonUserTranscript.textContent = displayText;
         }
         
-        // Process immediately if we have any transcript (faster response)
-        // Use final transcript if available, otherwise use interim after a short delay
-        const transcript = finalTranscript.trim() || interimTranscript.trim();
-        
-        if (!transcript) {
-            return;  // No transcript yet, keep listening
-        }
-        
-        // If we have final transcript, process immediately
-        // If only interim, wait a bit for final (but process faster)
-        if (!finalTranscript.trim() && interimTranscript.trim()) {
-            // Wait briefly for final result, but not too long (faster)
-            setTimeout(() => {
-                if (recognition && poseidonActive) {
-                    // Check if we got final result in the meantime
-                    return;
+        // Only process if we have a final transcript (non-continuous mode stops after speech)
+        if (!finalTranscript.trim()) {
+            // Still listening, show interim results
+            // Set up silence timeout in case user stops speaking
+            silenceTimeout = setTimeout(() => {
+                if (poseidonActive && !poseidonPaused && recognition) {
+                    // If we have interim results but no final after timeout, process interim
+                    const currentInterim = poseidonUserTranscript?.textContent?.trim() || '';
+                    if (currentInterim && currentInterim.length > 0) {
+                        console.log('[Poseidon] Processing interim transcript after silence timeout:', currentInterim);
+                        handlePoseidonTranscript(currentInterim);
+                    }
                 }
-            }, 300); // Reduced from waiting indefinitely
+            }, SILENCE_TIMEOUT_MS);
+            return;  // Wait for final result
+        }
+        
+        // We have a final transcript - process it
+        const transcript = finalTranscript.trim();
+        console.log('[Poseidon] Processing final transcript:', transcript);
+        
+        // Process the transcript
+        handlePoseidonTranscript(transcript);
+    };
+        if (!transcript || transcript.trim().length === 0) {
             return;
         }
-        
-        console.log('[Poseidon] Processing transcript:', transcript);
         
         // Update UI to show we're processing the transcript
         if (poseidonUserTranscript) {
             poseidonUserTranscript.textContent = transcript;
         }
         
-        // Stop recognition temporarily while processing
-        recognition.stop();
+        // Stop recognition while processing
+        if (recognition) {
+            recognition.stop();
+        }
+        clearTimeout(silenceTimeout);
         updatePoseidonStatus('processing', 'Processing your request...');
         
         // Send to chat API
@@ -2672,18 +2813,23 @@ function setupRecognitionHandlers() {
     
     recognition.onend = () => {
         console.log('[Poseidon] Recognition ended');
+        clearTimeout(silenceTimeout);
+        
         if (!poseidonActive || poseidonPaused) {
             updatePoseidonStatus('ready', 'Ready');
             return;
         }
         
-        // Auto-restart if still active (faster restart)
+        // Auto-restart if still active (non-continuous mode requires manual restart after each utterance)
+        // This is actually good - it means recognition stopped after detecting speech end
         if (poseidonActive && !poseidonPaused) {
             setTimeout(() => {
                 if (poseidonActive && !poseidonPaused && recognition) {
                     try {
                         recognition.start();
-                        console.log('[Poseidon] Auto-restarted');
+                        lastSpeechTime = Date.now();
+                        console.log('[Poseidon] Auto-restarted after speech ended');
+                        updatePoseidonStatus('listening', 'Listening...');
                     } catch (err) {
                         console.error('[Poseidon] Error auto-restarting:', err);
                         // Retry once
@@ -2691,14 +2837,17 @@ function setupRecognitionHandlers() {
                             if (poseidonActive && !poseidonPaused && recognition) {
                                 try {
                                     recognition.start();
+                                    lastSpeechTime = Date.now();
+                                    updatePoseidonStatus('listening', 'Listening...');
                                 } catch (retryErr) {
                                     console.error('[Poseidon] Auto-restart retry failed:', retryErr);
+                                    updatePoseidonStatus('ready', 'Error restarting');
                                 }
                             }
-                        }, 200);
+                        }, 500);
                     }
                 }
-            }, 50); // Reduced from 100ms to 50ms for faster restart
+            }, 300); // Wait a bit before restarting to avoid immediate re-trigger
         }
     };
     
@@ -2801,6 +2950,7 @@ function closePoseidonOverlay() {
     }
     
     // Stop everything
+    clearTimeout(silenceTimeout);
     if (recognition) {
         recognition.stop();
     }
@@ -2810,6 +2960,7 @@ function closePoseidonOverlay() {
     
     poseidonActive = false;
     poseidonPaused = false;
+    lastSpeechTime = null;
     updatePoseidonStatus('ready', 'Ready');
     
     // Clear transcripts
