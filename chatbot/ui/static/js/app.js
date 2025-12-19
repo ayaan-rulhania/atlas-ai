@@ -2524,10 +2524,23 @@ async function openPoseidonOverlay() {
             clearTimeout(silenceTimeout);
             clearTimeout(recognitionRestartTimeout);
             
-            // CRITICAL: Wait a moment after getting permission before creating recognition
-            // This ensures the browser has fully processed the permission grant
-            console.log('[Poseidon] Waiting for permission to fully process...');
-            await new Promise(resolve => setTimeout(resolve, 500));
+            // CRITICAL: Wait longer after getting permission before creating recognition
+            // The browser needs time to fully process permissions and make the service available
+            // Also ensure the audio stream is actually active
+            console.log('[Poseidon] Waiting for permission and service to be ready...');
+            
+            // Verify stream is active
+            if (stream && stream.active) {
+                console.log('[Poseidon] Audio stream is active');
+                // Keep at least one track active to maintain permission
+                const audioTracks = stream.getAudioTracks();
+                if (audioTracks.length > 0 && audioTracks[0].readyState === 'live') {
+                    console.log('[Poseidon] Audio track is live');
+                }
+            }
+            
+            // Wait longer - browser needs time to make speech recognition service available
+            await new Promise(resolve => setTimeout(resolve, 1500)); // Increased from 500ms
             
             // Create or recreate recognition instance
             const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -2617,8 +2630,29 @@ async function openPoseidonOverlay() {
                 console.log('[Poseidon] Forced configuration reset');
             }
             
-            // CRITICAL: Wait another moment before starting to ensure everything is ready
-            await new Promise(resolve => setTimeout(resolve, 300));
+            // CRITICAL: Wait longer before starting to ensure service is fully available
+            // The speech recognition service needs time to initialize after permissions
+            console.log('[Poseidon] Waiting for speech recognition service to be ready...');
+            await new Promise(resolve => setTimeout(resolve, 1000)); // Increased from 300ms
+            
+            // Verify audio stream is still active before starting
+            if (window.poseidonAudioStream) {
+                const tracks = window.poseidonAudioStream.getAudioTracks();
+                const activeTracks = tracks.filter(t => t.readyState === 'live');
+                if (activeTracks.length === 0) {
+                    console.error('[Poseidon] ERROR: Audio stream is not active! Re-requesting...');
+                    // Re-request stream
+                    try {
+                        window.poseidonAudioStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                        console.log('[Poseidon] Audio stream re-requested');
+                        await new Promise(resolve => setTimeout(resolve, 500));
+                    } catch (streamErr) {
+                        console.error('[Poseidon] ERROR re-requesting stream:', streamErr);
+                    }
+                } else {
+                    console.log('[Poseidon] Audio stream verified active with', activeTracks.length, 'live track(s)');
+                }
+            }
             
             // Start recognition with retry logic
             startRecognitionWithRetry();
@@ -2656,6 +2690,23 @@ function startRecognitionWithRetry(maxRetries = 3) {
         console.warn('[Poseidon] Cannot start recognition - Poseidon is not active');
         return;
     }
+    
+    // Verify audio stream is active before starting recognition
+    if (!window.poseidonAudioStream) {
+        console.error('[Poseidon] ERROR: No audio stream available!');
+        updatePoseidonStatus('ready', 'Error: No microphone access');
+        return;
+    }
+    
+    const tracks = window.poseidonAudioStream.getAudioTracks();
+    const activeTracks = tracks.filter(t => t.readyState === 'live');
+    if (activeTracks.length === 0) {
+        console.error('[Poseidon] ERROR: Audio stream has no active tracks!');
+        updatePoseidonStatus('ready', 'Error: Microphone not active');
+        return;
+    }
+    
+    console.log('[Poseidon] Audio stream verified -', activeTracks.length, 'active track(s) before starting recognition');
     
     let retryCount = 0;
     
@@ -2715,10 +2766,27 @@ function startRecognitionWithRetry(maxRetries = 3) {
                 continuous: recognition.continuous,
                 interimResults: recognition.interimResults,
                 lang: recognition.lang,
-                maxAlternatives: recognition.maxAlternatives
+                maxAlternatives: recognition.maxAlternatives,
+                hasAudioStream: !!window.poseidonAudioStream,
+                audioStreamActive: window.poseidonAudioStream ? window.poseidonAudioStream.active : false
             });
             
+            // Final verification: ensure audio stream is still active
+            if (window.poseidonAudioStream && window.poseidonAudioStream.active) {
+                const tracks = window.poseidonAudioStream.getAudioTracks();
+                console.log('[Poseidon] Audio tracks status:', tracks.map(t => ({
+                    label: t.label,
+                    readyState: t.readyState,
+                    enabled: t.enabled,
+                    muted: t.muted
+                })));
+            }
+            
             recognitionState = 'starting';
+            
+            // Small delay before starting to ensure everything is ready
+            await new Promise(resolve => setTimeout(resolve, 200));
+            
             recognition.start();
             console.log('[Poseidon] Recognition.start() called successfully');
             
@@ -3512,8 +3580,16 @@ function setupRecognitionHandlers() {
                             window.poseidonAudioStream = stream;
                         }
                         
-                        // Wait for permission to process
-                        await new Promise(resolve => setTimeout(resolve, 800)); // Increased delay
+                        // Store stream globally
+                        window.poseidonAudioStream = stream;
+                        
+                        // Verify stream is active
+                        const tracks = stream.getAudioTracks();
+                        const activeTracks = tracks.filter(t => t.readyState === 'live');
+                        console.log('[Poseidon] Stream tracks:', activeTracks.length, 'active out of', tracks.length);
+                        
+                        // Wait longer for permission to process and service to be available
+                        await new Promise(resolve => setTimeout(resolve, 1500)); // Increased delay
                         
                         // Create new instance
                         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -3547,8 +3623,15 @@ function setupRecognitionHandlers() {
                                 lang: recognition.lang
                             });
                             
-                            // Wait before starting
-                            await new Promise(resolve => setTimeout(resolve, 500)); // Increased delay
+                            // Wait longer before starting - service needs time
+                            await new Promise(resolve => setTimeout(resolve, 1000)); // Increased delay
+                            
+                            // Verify stream is still active
+                            if (window.poseidonAudioStream && window.poseidonAudioStream.active) {
+                                console.log('[Poseidon] Stream verified active before starting');
+                            } else {
+                                console.error('[Poseidon] ERROR: Stream not active before starting!');
+                            }
                             
                             // Try to start
                             if (poseidonActive && !poseidonPaused) {
