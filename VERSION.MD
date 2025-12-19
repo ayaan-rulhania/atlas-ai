@@ -25,6 +25,13 @@ This file tracks **major changes** made to this project over time.
 
 ---
 
+## 2025-12-18 (Major Algorithm Improvements)
+- **Answer Cleanup**: Removed noisy `_Sources:_ …` lines and the `_Context-aware: follow-up detected` footer from responses so they read like natural replies instead of debug output.
+- **Numeric Guardrail Tuning**: Adjusted the accuracy checker so casual queries (like “bye” or “learn sometimes”) no longer get an unnecessary numeric disclaimer, and the warning now only appears when numeric sentences are actually removed.
+- **Small-Talk & Lite Mode Fixes**: Added quick paths for goodbyes and short nudges (“learn sometimes”) so they don’t trigger web search, and improved the lite `/api/chat` behavior for weather-style questions to explain limitations instead of parroting raw search snippets.
+
+---
+
 ## 2025-12-15 (Final Update)
 - **Poseidon Critical Fixes**: 
   - Fixed "service-not-allowed" error with proper secure context checking and recognition instance recreation

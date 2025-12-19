@@ -135,6 +135,32 @@ def _gem_sources_to_knowledge(gem: Dict[str, Any]) -> List[Dict[str, Any]]:
 
 def _synthesize_lite(query: str, knowledge_items: List[Dict[str, Any]]) -> str:
     """Lightweight synthesis from snippets."""
+    q_lower = (query or "").strip().lower()
+
+    # Very short chit-chat / closing phrases should not trigger web search.
+    smalltalk_map = {
+        "hi": "Hi! How can I help you?",
+        "hello": "Hello! What would you like to explore?",
+        "hey": "Hey! What can I help you with?",
+        "thanks": "You’re welcome — happy to help.",
+        "thank you": "You’re welcome — happy to help.",
+        "bye": "Bye! Talk to you soon.",
+        "goodbye": "Goodbye! Feel free to come back any time.",
+        "see you": "See you later!",
+    }
+    if q_lower in smalltalk_map:
+        return smalltalk_map[q_lower]
+
+    # If this looks like a weather query, avoid parroting search snippets and be
+    # explicit about the limitation instead of pretending to be a live weather API.
+    if "weather" in q_lower and (" in " in q_lower or "at " in q_lower):
+        return (
+            "I can look up weather pages for that location, but I don’t have a trusted, "
+            "real‑time weather API. For the most accurate current conditions and forecast, "
+            "check a dedicated weather site (like your local meteorological service or a "
+            "weather app). If you paste a forecast here, I can help interpret it."
+        )
+
     if not knowledge_items:
         return "I couldn’t find enough reliable info. What exact aspect should I focus on?"
 
@@ -320,7 +346,20 @@ def chat():
 
     # Final refinement + accuracy check
     refiner = get_answer_refiner()
-    refined = refiner.refine(response_text, knowledge_used=knowledge, query_intent={'is_follow_up': False, 'hints': {}}, model_name=model_label)
+    refined = refiner.refine(
+        response_text,
+        knowledge_used=knowledge,
+        query_intent={
+            'is_follow_up': False,
+            'hints': {
+                # Lite mode does not run the full intent analyzer, but we can
+                # still pass through a basic tone hint so the final formatter
+                # can avoid over-casual prefixes.
+                'tone': 'neutral',
+            },
+        },
+        model_name=model_label,
+    )
     refined = verify_response_accuracy(refined, knowledge, query=message)
 
     return jsonify({'response': refined, 'chat_id': None, 'task': 'text_generation'})

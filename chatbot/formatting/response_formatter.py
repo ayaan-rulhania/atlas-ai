@@ -103,8 +103,10 @@ def _apply_tone(text: str, tone: str) -> str:
 
     # Keep content, but reshape voice/structure in a clearly different way.
     if t == "friendly":
-        if not text.lower().startswith(("sure", "of course", "yes", "absolutely")):
-            return f"Sure — here’s the helpful version.\n\n{text}"
+        # Older behavior prepended "Sure — here’s the helpful version." to
+        # every friendly response, which quickly became repetitive and
+        # artificial. We now leave the content unchanged and rely on wording in
+        # earlier layers (model + refiner) to convey friendliness.
         return text
 
     if t == "calm":

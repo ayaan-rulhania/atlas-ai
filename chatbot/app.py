@@ -888,6 +888,33 @@ def chat():
         if response is None and len(message_lower.split()) <= 2 and message_lower in short_ack_terms:
             response = "👍 Got it. What would you like to do next?"
             skip_refinement = True
+
+        # QUICK PATH: simple goodbyes / closings – do not hit web search.
+        goodbye_terms = {
+            "bye",
+            "goodbye",
+            "bye bye",
+            "see you",
+            "see you later",
+            "cya",
+            "good night",
+        }
+        if response is None and message_lower in goodbye_terms:
+            response = "Goodbye! It was nice chatting — come back any time."
+            skip_refinement = True
+
+        # QUICK PATH: short non-question nudges like "learn sometimes!"
+        if (
+            response is None
+            and "learn" in message_lower
+            and "?" not in message_lower
+            and len(message_lower.split()) <= 4
+        ):
+            response = (
+                "I’m always learning from what you ask and the sources I read. "
+                "Ask me something you care about, and I’ll do my best to give a useful answer."
+            )
+            skip_refinement = True
         
         # QUICK PATH: Web image search when asked to "Create an image of..."
         image_handler = get_image_handler()
@@ -1223,6 +1250,12 @@ I'm always learning and improving through our conversations. How can I help you 
                                 contextual_message = f"{previous_topic} {message}"
                                 print(f"[Context] Follow-up detected: {message} -> {contextual_message}")
                 
+                # Detect if this is a question vs command/statement
+                is_question = (
+                    message.strip().endswith('?') or
+                    any(word in message_lower for word in ['what', 'how', 'why', 'when', 'where', 'who', 'which', 'can', 'could', 'should', 'would', 'does', 'do', 'did', 'is', 'are', 'was', 'were', 'will'])
+                )
+                
                 # Do not blend unrelated context for fresh questions; keep the user's prompt primary
                 if not is_follow_up:
                     contextual_message = normalized_message
@@ -1230,6 +1263,21 @@ I'm always learning and improving through our conversations. How can I help you 
                 context_query = (contextual_message or message).strip()
                 if not context_query:
                     context_query = message
+                
+                # ENHANCED: Check if this is actually a searchable question before proceeding
+                # Skip search for simple statements, commands, or acknowledgments
+                requires_search = True
+                if not is_question and len(message_lower.split()) <= 4:
+                    # Short non-questions are likely commands/statements, not search queries
+                    simple_patterns = [
+                        r'^(that\'s|this is|here\'s|there\'s|it\'s|nice|good|great|ok|okay|yes|no|sure)',
+                        r'^(thanks|thank you|got it|cool|awesome|alright)',
+                        r'^(learn|think|remember|forget)',
+                    ]
+                    for pattern in simple_patterns:
+                        if re.match(pattern, message_lower):
+                            requires_search = False
+                            break
                 
                 # Use query intent analyzer for intelligent query understanding
                 intent_analyzer = get_query_intent_analyzer()
@@ -1247,8 +1295,14 @@ I'm always learning and improving through our conversations. How can I help you 
                 research_done = False
                 research_knowledge = []
                 
+                # ENHANCED: Only proceed with search/knowledge retrieval if this is actually a searchable query
+                if not requires_search:
+                    # This is a command/statement, not a search query - skip search entirely
+                    print(f"[Intent] Non-searchable command/statement detected: {message}")
+                    knowledge = []
+                    needs_research = False
                 # Check if query should force web search
-                if query_intent.get('should_search_web'):
+                elif query_intent.get('should_search_web'):
                     print(f"[Query Intent] {query_intent.get('intent', 'unknown').upper()} query detected, forcing web search: {message}")
                     knowledge = list(gem_knowledge) if gem_knowledge else []  # Keep gem sources, force web search otherwise
                 else:
@@ -1271,7 +1325,10 @@ I'm always learning and improving through our conversations. How can I help you 
                 
                 # In think deeper mode, always research for comprehensive information
                 # For "tell me more" follow-ups, don't research if we already have knowledge from previous query
-                if is_tell_me_more and knowledge and len(knowledge) > 0:
+                if not requires_search:
+                    # Commands/statements don't need research
+                    needs_research = False
+                elif is_tell_me_more and knowledge and len(knowledge) > 0:
                     needs_research = False  # Use existing knowledge for follow-up
                     print(f"[Context] 'Tell me more' detected with existing knowledge, skipping research")
                 else:
@@ -1342,6 +1399,8 @@ I'm always learning and improving through our conversations. How can I help you 
                             other_knowledge = [k for k in knowledge if k.get("source") != "gem_source" and k.get("priority") != 1]
                             if other_knowledge:
                                 other_knowledge = knowledge_reranker.rerank(context_query, other_knowledge, query_intent)
+                            # IMPORTANT: Gem sources should be synthesized, not used verbatim
+                            # They'll be processed through synthesize_knowledge later, so keep them in the list
                             knowledge = gem_sources + other_knowledge  # Gem sources always first
                             print(f"[Refinement] Reranked knowledge: {len(gem_sources)} gem sources + {len(other_knowledge)} other items")
 
@@ -1553,13 +1612,15 @@ I'm always learning and improving through our conversations. How can I help you 
                                             cleaned_content = clean_promotional_text(content)
                                             response += cleaned_content[:400]
                                     else:
-                                        # Regular questions - synthesize knowledge instead of using verbatim
-                                        # Try to synthesize multiple knowledge items into a coherent response
+                                        # Regular questions - ALWAYS synthesize knowledge instead of using verbatim
+                                        # This ensures gem sources and search results are processed intelligently
                                         synthesized = synthesize_knowledge(context_query, filtered_knowledge, query_intent)
                                         
                                         if synthesized:
-                                            # Add natural conversation starters based on context
-                                            if is_follow_up:
+                                            # Ensure synthesized response is clean and not just raw source content
+                                            synthesized = clean_promotional_text(synthesized)
+                                            # Add natural conversation starters based on context (but don't hardcode)
+                                            if is_follow_up and not synthesized.lower().startswith(('sure', 'absolutely', 'great', 'i\'d')):
                                                 starters = [
                                                     "Sure! ",
                                                     "Absolutely. ",
@@ -1574,11 +1635,29 @@ I'm always learning and improving through our conversations. How can I help you 
                                             response = starter + synthesized
                                         else:
                                             # Fallback to single knowledge item if synthesis fails
+                                            # But still try to process it intelligently, not verbatim
                                             top_knowledge = filtered_knowledge[0]
                                             content = top_knowledge.get('content', '').strip()
                                             
+                                            # Clean and process the content intelligently
+                                            cleaned_content = clean_promotional_text(content)
+                                            
+                                            # Extract key information instead of using entire snippet verbatim
+                                            # Take first meaningful sentences (up to 2-3 sentences)
+                                            sentences = [s.strip() for s in cleaned_content.split('.') if len(s.strip()) > 20]
+                                            if sentences:
+                                                # Use first 2-3 meaningful sentences, not entire block
+                                                processed_content = '. '.join(sentences[:2])
+                                                if len(sentences) > 2 and len(processed_content) < 200:
+                                                    processed_content = '. '.join(sentences[:3])
+                                                processed_content = processed_content[:400].strip()
+                                                if processed_content and not processed_content.endswith('.'):
+                                                    processed_content += '.'
+                                            else:
+                                                processed_content = cleaned_content[:400] if cleaned_content else content[:400]
+                                            
                                             # Add natural conversation starters based on context
-                                            if is_follow_up:
+                                            if is_follow_up and not processed_content.lower().startswith(('sure', 'absolutely', 'great', 'i\'d')):
                                                 starters = [
                                                     "Sure! ",
                                                     "Absolutely. ",
@@ -1590,43 +1669,54 @@ I'm always learning and improving through our conversations. How can I help you 
                                             else:
                                                 starter = ""
                                             
-                                            # Clean promotional text from content
-                                            cleaned_content = clean_promotional_text(content)
-                                            
                                             # For definition queries, use clearer format
                                             if query_intent.get('intent') == 'definition':
                                                 entity = query_intent.get('entity', message)
                                                 # Format as direct definition
-                                                if cleaned_content:
-                                                    response = f"{starter}**{entity.title()}** is {cleaned_content[:400].lstrip('is ').lstrip('Is ')}"
+                                                if processed_content:
+                                                    # Remove entity name if it's at the start to avoid repetition
+                                                    if processed_content.lower().startswith(entity.lower()):
+                                                        response = f"{starter}**{entity.title()}** {processed_content[len(entity):].lstrip(' ').lstrip('is ').lstrip('Is ')}"
+                                                    else:
+                                                        response = f"{starter}**{entity.title()}** is {processed_content.lstrip('is ').lstrip('Is ')}"
                                                 else:
-                                                    response = f"{starter}**{entity.title()}** {content[:400]}"
+                                                    response = f"{starter}**{entity.title()}** {processed_content}"
                                             else:
-                                                # For other queries, provide direct answer
-                                                if cleaned_content:
-                                                    response = f"{starter}{cleaned_content[:400]}"
-                                                else:
-                                                    response = f"{starter}{content[:400]}"
+                                                # For other queries, provide processed answer
+                                                response = f"{starter}{processed_content}"
                             else:
                                 # If we already researched but got no usable results, use the research results anyway
                                 if research_done and research_knowledge and len(research_knowledge) > 0:
                                     print(f"[Fallback] Using research results despite filtering: {len(research_knowledge)} items")
-                                    # Synthesize research results instead of using verbatim
+                                    # ALWAYS synthesize research results instead of using verbatim
                                     synthesized = synthesize_knowledge(context_query, research_knowledge, query_intent)
                                     if synthesized:
+                                        synthesized = clean_promotional_text(synthesized)
                                         response = synthesized
                                     else:
-                                        # Fallback to first result if synthesis fails
+                                        # Fallback to first result if synthesis fails, but still process it
                                         content = research_knowledge[0].get('content', '')
                                         cleaned_content = clean_promotional_text(content)
-                                        if cleaned_content:
+                                        # Extract key sentences, don't use entire snippet verbatim
+                                        sentences = [s.strip() for s in cleaned_content.split('.') if len(s.strip()) > 20]
+                                        if sentences:
+                                            processed_content = '. '.join(sentences[:2])[:400].strip()
+                                            if processed_content and not processed_content.endswith('.'):
+                                                processed_content += '.'
+                                        else:
+                                            processed_content = cleaned_content[:400] if cleaned_content else content[:400]
+                                        
+                                        if processed_content:
                                             if query_intent.get('intent') == 'definition':
                                                 entity = query_intent.get('entity', message)
-                                                response = f"**{entity.title()}** is {cleaned_content[:400].lstrip('is ').lstrip('Is ')}"
+                                                if processed_content.lower().startswith(entity.lower()):
+                                                    response = f"**{entity.title()}** {processed_content[len(entity):].lstrip(' ').lstrip('is ').lstrip('Is ')}"
+                                                else:
+                                                    response = f"**{entity.title()}** is {processed_content.lstrip('is ').lstrip('Is ')}"
                                             else:
-                                                response = cleaned_content[:400]
+                                                response = processed_content
                                         else:
-                                            response = content[:400] if content else None
+                                            response = processed_content if processed_content else None
                                 
                                 # If still no response, use friendly fallback
                                 if not response:
@@ -1674,6 +1764,7 @@ I'm always learning and improving through our conversations. How can I help you 
                         if gem_config and (gem_config.get("instructions") or "").strip():
                             gem_name = (gem_config.get("name") or "Gem").strip()
                             gem_instr = (gem_config.get("instructions") or "").strip()
+                            gem_desc = (gem_config.get("description") or "").strip()
                             
                             # Build gem sources context - include actual content snippets, not just titles
                             gem_sources_context = ""
@@ -1686,7 +1777,9 @@ I'm always learning and improving through our conversations. How can I help you 
                                     if content_preview:
                                         gem_sources_context += f"\n\nSource {idx+1} ({k.get('title', 'Unknown')}): {content_preview}..."
                             
-                            prefix = f"System: {tone_line} You are {gem_name}. {gem_instr}{gem_sources_context}".strip()
+                            # Include description in the system prompt if available
+                            desc_line = f" Description: {gem_desc}" if gem_desc else ""
+                            prefix = f"System: {tone_line} You are {gem_name}.{desc_line} {gem_instr}{gem_sources_context}".strip()
                             contextual_input = prefix + "\n\n" + contextual_input
                             print(f"[Gem] Using gem '{gem_name}' with {len(gem_knowledge or [])} source(s) in context")
                         else:

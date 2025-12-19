@@ -98,7 +98,17 @@ def synthesize_knowledge(
     definitions: List[str] = []
     examples: List[str] = []
 
-    for item in knowledge_items[:8]:
+    # ENHANCED: Process gem sources and other knowledge items intelligently
+    # Prioritize gem sources if present
+    gem_items = [k for k in knowledge_items if k.get("source") == "gem_source" or k.get("priority") == 1]
+    other_items = [k for k in knowledge_items if k.get("source") != "gem_source" and k.get("priority") != 1]
+    
+    # Process gem sources first, then others
+    items_to_process = gem_items[:5] + other_items[:5]  # Up to 5 gem + 5 other
+    if not items_to_process:
+        items_to_process = knowledge_items[:8]  # Fallback
+    
+    for item in items_to_process:
         content = item.get('content', '').strip()
         if not content or len(content) < 20:
             continue
@@ -111,10 +121,19 @@ def synthesize_knowledge(
         if not cleaned:
             continue
 
+        # ENHANCED: Extract key sentences more intelligently
+        # For long content (like gem sources), extract first few meaningful sentences
         sentences = [s.strip() for s in cleaned.split('.') if len(s.strip()) > 15]
-
-        for sentence in sentences[:3]:
+        
+        # For very long content, prioritize first sentences which are usually most relevant
+        max_sentences_per_item = 5 if len(cleaned) > 500 else 3
+        
+        for sentence in sentences[:max_sentences_per_item]:
             sentence_lower = sentence.lower()
+            
+            # Skip if sentence is just promotional/ad copy
+            if any(phrase in sentence_lower for phrase in ['click here', 'visit our', 'sign up', 'subscribe now']):
+                continue
 
             if any(word in sentence_lower for word in ['is', 'are', 'was', 'were', 'means', 'refers to', 'defined as']):
                 if sentence not in definitions:

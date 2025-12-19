@@ -539,12 +539,14 @@ For issues, questions, or contributions:
 
 ## 🔄 Version History
 
-- **v1.0.0** - Initial release with Thor 1.0
-- TrainX alias syntax support
-- Continuous learning system
-- Result setter integration
+- **v1.0.2** – Major algorithm improvements: Gems now intelligently synthesize sources instead of reading verbatim, Thor search results are properly synthesized from multiple sources, improved intent detection to avoid treating commands as search queries, and removed hardcoded context labels.
+- **v1.0.1** – Refinement pass for responses (removed debug-style footers like `_Sources:_ …` and `_Context-aware: follow-up detected`, and made small-talk/goodbye handling less likely to trigger web search).
+- **v1.0.0** – Initial release with Thor 1.0
+  - TrainX alias syntax support
+  - Continuous learning system
+  - Result setter integration
 
 ---
 
-**Last Updated:** November 30, 2024
+**Last Updated:** December 18, 2025
 **Maintained by:** Atlas AI Development Team

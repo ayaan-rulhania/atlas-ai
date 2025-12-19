@@ -4,7 +4,8 @@
     "what's up",
     "whats up",
     "want",
-    "what"
+    "what",
+    "weather"
   ],
   "knowledge": [
     {
@@ -118,7 +119,39 @@
       "query": "so what is up",
       "source": "research",
       "learned_at": "2025-12-08T20:19:47.847384"
+    },
+    {
+      "title": "DuckDuckGo \u2014 Sunnyvale, CA Weather Forecast | AccuWeather",
+      "content": "Sunnyvale, CA Weather Forecast, with current conditions, wind, air quality, and what to expect for the next 3 days.",
+      "query": "what is the weather in sunnyvale",
+      "source": "duckduckgo",
+      "learned_at": "2025-12-17T17:37:29.733150",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.accuweather.com%2Fen%2Fus%2Fsunnyvale%2F94087%2Fweather%2Dforecast%2F331979&rut=9aaa77609dd19757d362e73906404109f883cc3a3029da378e8c7b23951dfadb"
+    },
+    {
+      "title": "DuckDuckGo \u2014 10 Day Weather - Lakewood, Sunnyvale, California",
+      "content": "Be prepared with the most accurate 10-day forecast for Lakewood, Sunnyvale, California with highs, lows, chance of precipitation from The Weather Channel and Weather.com...",
+      "query": "what is the weather in sunnyvale",
+      "source": "duckduckgo",
+      "learned_at": "2025-12-17T17:37:29.733668",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fweather.com%2Fweather%2Ftenday%2Fl%2FLakewood%2BSunnyvale%2BCalifornia%3FcanonicalCityId%3D81084951e62bd911793c6235b4857b5e&rut=7f26378afda7d223f5a6049fc22271a0f48eec760c80dbd4ad094c2342d974af"
+    },
+    {
+      "title": "DuckDuckGo \u2014 Weather for Sunnyvale, California, USA - timeanddate.com",
+      "content": "Current weather in Sunnyvale and forecast for today, tomorrow, and next 14 days...",
+      "query": "what is the weather in sunnyvale",
+      "source": "duckduckgo",
+      "learned_at": "2025-12-17T17:37:29.733900",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.timeanddate.com%2Fweather%2Fusa%2Fsunnyvale&rut=34d6bcaa82c9e773c87849e3c494274a8bf02f06d13ae9279523c71b6506aba6"
+    },
+    {
+      "title": "DuckDuckGo \u2014 Sunnyvale, CA Hourly Forecast - The Weather Network",
+      "content": "Sunnyvale, CA current weather report with temperature, feels like, wind, humidity, pressure, UV and more from TheWeatherNetwork.com.",
+      "query": "what is the weather in sunnyvale",
+      "source": "duckduckgo",
+      "learned_at": "2025-12-17T17:37:29.734171",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.theweathernetwork.com%2Fen%2Fcity%2Fus%2Fcalifornia%2Fsunnyvale%2Fhourly&rut=61994ff9acf6905446fdb5f61750e5c0f6fe40c5354b9cffc2b7a6e957064e58"
     }
   ],
-  "last_updated": "2025-12-15T07:24:47.423930"
+  "last_updated": "2025-12-17T17:37:29.826541"
 }

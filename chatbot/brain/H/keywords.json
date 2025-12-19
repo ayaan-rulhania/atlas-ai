@@ -5,7 +5,8 @@
     "hello",
     "hey",
     "howdy",
-    "how"
+    "how",
+    "hwy"
   ],
   "knowledge": [
     {
@@ -175,7 +176,39 @@
       "query": "Hey How are you? Do you know Ayaan?",
       "source": "research",
       "learned_at": "2025-12-06T14:37:06.840465"
+    },
+    {
+      "title": "DuckDuckGo \u2014 Traffic - California Highway Patrol",
+      "content": "Traffic How was the traffic? It's a subject we're concerned with every day. Was there a delay in your commute that could've been handled better? Do you see an issue on your drive that we might be able to solve? Let us know when and where the issue occurred by using this notification system. If it's a chronic issue, we'll look for solutions to alleviate the problem. For up-to-date information .",
+      "query": "hwy",
+      "source": "duckduckgo",
+      "learned_at": "2025-12-16T20:53:57.030009",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.chp.ca.gov%2Ftraffic&rut=f099fea2dc26c69633be057db9552534deeb031d0dd0cfd6d0143d7e7b09c593"
+    },
+    {
+      "title": "DuckDuckGo \u2014 HWY Definition & Meaning - Merriam-Webster",
+      "content": "What does the abbreviation HWY stand for? Meaning: highway.",
+      "query": "hwy",
+      "source": "duckduckgo",
+      "learned_at": "2025-12-16T20:53:57.030334",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.merriam%2Dwebster.com%2Fdictionary%2Fhwy&rut=d7361b54e8892ed223baf7f4b8d5fa89249c7e0203547320abbeb8f8c00fe799"
+    },
+    {
+      "title": "DuckDuckGo \u2014 Hwy Meaning: Definition, Examples & How to Use - wikiHow",
+      "content": "Hwy is an abbreviation of \"how were you?\" The phrase is often used via text or social media to ask how someone is doing in the past tense.",
+      "query": "hwy",
+      "source": "duckduckgo",
+      "learned_at": "2025-12-16T20:53:57.030810",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.wikihow.com%2FHwy%2DMeaning%2DText&rut=430b1b00a9bbf577cf1ca5afae7fe20b6823535d59fee56385e4a330db03395b"
+    },
+    {
+      "title": "DuckDuckGo \u2014 Driving directions, live traffic & road conditions updates - Waze",
+      "content": "Realtime driving directions based on live traffic updates from Waze - the best route to your destination from fellow drivers...",
+      "query": "hwy",
+      "source": "duckduckgo",
+      "learned_at": "2025-12-16T20:53:57.031213",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.waze.com%2Flive%2Dmap%2Fdirections&rut=df22c9c337cc210fde35d648d7b495dc50e81536b6e4d60d011ca1a152c5892b"
     }
   ],
-  "last_updated": "2025-12-06T14:44:23.868946"
+  "last_updated": "2025-12-16T20:53:57.116553"
 }

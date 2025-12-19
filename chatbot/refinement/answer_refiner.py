@@ -47,11 +47,15 @@ def _truncate(text: str, limit: int = 2400) -> str:
 
 
 def _format_sources(knowledge_used: List[Dict], limit: int = 3) -> Optional[str]:
-    titles = [k.get("title") for k in knowledge_used if k.get("title")]
-    if not titles:
-        return None
-    unique_titles = list(dict.fromkeys(titles))
-    return f"_Sources:_ {', '.join(unique_titles[:limit])}"
+    """
+    Previously, this rendered a visible `_Sources:_` line with titles for the
+    top knowledge items. In practice this was noisy and felt like debug output
+    to users, so we now hide it by default.
+
+    The function is kept for backwards compatibility and future UI hooks, but
+    returns ``None`` so no explicit sources footer is added to answers.
+    """
+    return None
 
 
 def _shorten_code_blocks(text: str, max_lines: int = 40) -> str:
@@ -65,8 +69,14 @@ def _shorten_code_blocks(text: str, max_lines: int = 40) -> str:
 
 
 def _prepend_follow_up_note(hints: Dict) -> Optional[str]:
-    if hints.get("is_follow_up"):
-        return "_Context-aware:_ follow-up detected"
+    """
+    Older versions surfaced an explicit `_Context-aware:_ follow-up detected`
+    line for follow-up turns. This read like internal debug text in the UI, so
+    we now suppress it entirely.
+
+    Follow-up awareness is still used internally via `hints`; it just is no
+    longer rendered as a visible note.
+    """
     return None
 
 
@@ -273,9 +283,10 @@ def annotate_model(answer: str, model_name: str) -> str:
 
 
 def add_follow_up_marker(answer: str, is_follow_up: bool) -> str:
-    if not is_follow_up:
-        return answer
-    return f"{answer}\n\n_Context-aware:_ follow-up detected"
+    # Follow-up awareness should be handled naturally in the response content,
+    # not as a visible label. This function is kept for backwards compatibility
+    # but no longer adds visible markers.
+    return answer
 
 
 def sanitize(answer: str) -> str:

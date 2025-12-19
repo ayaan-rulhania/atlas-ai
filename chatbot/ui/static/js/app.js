@@ -2589,9 +2589,14 @@ function setupRecognitionHandlers() {
         
         console.log('[Poseidon] Processing transcript:', transcript);
         
+        // Update UI to show we're processing the transcript
+        if (poseidonUserTranscript) {
+            poseidonUserTranscript.textContent = transcript;
+        }
+        
         // Stop recognition temporarily while processing
         recognition.stop();
-        updatePoseidonStatus('processing', 'Processing...');
+        updatePoseidonStatus('processing', 'Processing your request...');
         
         // Send to chat API
         try {
