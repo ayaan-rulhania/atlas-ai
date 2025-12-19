@@ -128,11 +128,31 @@ def synthesize_knowledge(
         # For very long content, prioritize first sentences which are usually most relevant
         max_sentences_per_item = 5 if len(cleaned) > 500 else 3
         
+        # Remove source attribution lines that make responses look like raw output
+        # Patterns like "Sources: DuckDuckGo — ..." or "Model: Thor 1.0..."
+        source_patterns = [
+            r'^Sources?:.*$',
+            r'^Model:.*$',
+            r'^Context-aware:.*$',
+            r'^Note:.*$',
+            r'DuckDuckGo\s*—',
+            r'Google\s*—',
+            r'Bing\s*—',
+        ]
+        
         for sentence in sentences[:max_sentences_per_item]:
             sentence_lower = sentence.lower()
             
+            # Skip source attribution lines
+            if any(re.search(pattern, sentence, re.IGNORECASE) for pattern in source_patterns):
+                continue
+            
             # Skip if sentence is just promotional/ad copy
             if any(phrase in sentence_lower for phrase in ['click here', 'visit our', 'sign up', 'subscribe now']):
+                continue
+            
+            # Skip sentences that are just metadata
+            if sentence_lower.startswith(('sources:', 'model:', 'context-aware:', 'note:')):
                 continue
 
             if any(word in sentence_lower for word in ['is', 'are', 'was', 'were', 'means', 'refers to', 'defined as']):
@@ -175,8 +195,27 @@ def synthesize_knowledge(
         response_parts.append(f"\\n\\nFor example, {examples[0]}")
 
     synthesized = "".join(response_parts)
+    
+    # Remove any remaining source attribution patterns
+    source_patterns = [
+        r'Sources?:.*?(?=\n|$)',
+        r'Model:.*?(?=\n|$)',
+        r'Context-aware:.*?(?=\n|$)',
+        r'Note:.*?(?=\n|$)',
+        r'DuckDuckGo\s*—.*?(?=\n|$)',
+        r'Google\s*—.*?(?=\n|$)',
+        r'Bing\s*—.*?(?=\n|$)',
+    ]
+    for pattern in source_patterns:
+        synthesized = re.sub(pattern, '', synthesized, flags=re.IGNORECASE | re.MULTILINE)
+    
     synthesized = response_cleaner.fix_grammar_issues(synthesized)
     synthesized = response_cleaner.fix_incomplete_sentences(synthesized)
+    
+    # Clean up multiple spaces and newlines
+    synthesized = re.sub(r'\s+', ' ', synthesized)
+    synthesized = re.sub(r'\n\s*\n', '\n\n', synthesized)
+    synthesized = synthesized.strip()
 
     if len(synthesized) > 500:
         last_period = synthesized[:500].rfind('.')
@@ -185,9 +224,10 @@ def synthesize_knowledge(
         else:
             synthesized = synthesized[:497] + "..."
 
+    # Only add starters if it's a follow-up, and only if the response doesn't already start with one
     if synthesized and query_intent:
-        starters = ["Sure! ", "Absolutely. ", "Great question! ", "I'd be happy to explain. ", ""]
-        if query_intent.get('is_follow_up'):
+        if query_intent.get('is_follow_up') and not synthesized.lower().startswith(('sure', 'absolutely', 'great', "i'd", 'here')):
+            starters = ["Sure! ", "Absolutely. ", "Great question! ", "I'd be happy to explain. ", ""]
             synthesized = random.choice(starters) + synthesized
 
     return synthesized or None

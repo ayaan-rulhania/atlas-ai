@@ -890,21 +890,67 @@ def chat():
             skip_refinement = True
 
         # QUICK PATH: simple goodbyes / closings – do not hit web search.
-        goodbye_terms = {
-            "bye",
-            "goodbye",
-            "bye bye",
-            "see you",
-            "see you later",
-            "cya",
-            "good night",
-        }
-        if response is None and message_lower in goodbye_terms:
+        # Enhanced goodbye detection with pattern matching
+        def is_goodbye(msg_lower):
+            goodbye_terms = {
+                "bye", "goodbye", "bye bye", "see you", "see you later", "cya", 
+                "good night", "goodnight", "farewell", "later", "catch you later",
+                "talk later", "gotta go", "have to go", "take care", "ttyl", "ttys"
+            }
+            if msg_lower.strip() in goodbye_terms:
+                return True
+            for term in goodbye_terms:
+                if msg_lower.startswith(term + " ") or msg_lower == term:
+                    if not any(q in msg_lower for q in ['who', 'what', 'where', 'when', 'why', 'how']):
+                        return True
+            goodbye_patterns = [
+                r'^(bye|goodbye|see you|later|farewell)',
+                r'(bye|goodbye|see you|later|farewell)$',
+                r'\b(gotta go|have to go|take care|talk later)\b'
+            ]
+            for pattern in goodbye_patterns:
+                if re.search(pattern, msg_lower):
+                    if not msg_lower.strip().endswith('?') and len(msg_lower.split()) <= 6:
+                        return True
+            return False
+        
+        if response is None and is_goodbye(message_lower):
             response = "Goodbye! It was nice chatting — come back any time."
             skip_refinement = True
 
-        # QUICK PATH: short non-question nudges like "learn sometimes!"
-        if (
+        # QUICK PATH: Enhanced non-question detection
+        def is_non_question_statement(msg_lower):
+            if len(msg_lower.split()) <= 4 and not msg_lower.strip().endswith('?'):
+                if "learn" in msg_lower and not any(q in msg_lower for q in ['what', 'how', 'why', 'when', 'where']):
+                    return True
+                casual_patterns = [
+                    r'^(cool|nice|great|awesome|ok|okay|thanks|thank you|got it|alright|sure)',
+                    r'^(that\'s|this is|here\'s|there\'s|it\'s)',
+                    r'^(i see|i understand|gotcha|roger)',
+                ]
+                for pattern in casual_patterns:
+                    if re.match(pattern, msg_lower):
+                        return True
+            if msg_lower.endswith('!') and not msg_lower.strip().endswith('?'):
+                exclamation_patterns = [
+                    r'learn\s+\w+\s*!$',
+                    r'^(wow|nice|great|awesome|cool)\s*!?$',
+                ]
+                for pattern in exclamation_patterns:
+                    if re.search(pattern, msg_lower):
+                        return True
+            return False
+        
+        if response is None and is_non_question_statement(message_lower):
+            if "learn" in message_lower:
+                response = (
+                    "I'm always learning from what you ask and the sources I read. "
+                    "Ask me something you care about, and I'll do my best to give a useful answer."
+                )
+            else:
+                response = "👍 Got it. What would you like to do next?"
+            skip_refinement = True
+        elif (
             response is None
             and "learn" in message_lower
             and "?" not in message_lower

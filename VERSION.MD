@@ -25,6 +25,16 @@ This file tracks **major changes** made to this project over time.
 
 ---
 
+## 2025-12-18 (Comprehensive Reasoning Improvements - Major Update)
+- **Enhanced Goodbye Detection**: Implemented comprehensive pattern matching for farewells (bye, goodbye, see you, later, etc.) with context-aware detection that prevents false positives in questions. Handles variations like "goodnight", "ttyl", "take care", etc.
+- **Improved Non-Question Detection**: Added intelligent detection for statements, commands, and casual remarks (like "learn sometimes!") that shouldn't trigger web search, with pattern-based matching for exclamations and short statements.
+- **Answer Synthesis Improvements**: Enhanced knowledge synthesis to remove source attribution lines (Sources:, Model:, Context-aware:, etc.) that made responses look like raw debug output. Improved sentence extraction and content processing for gem sources and research results.
+- **Gem Source Processing**: Ensured gem sources are always intelligently synthesized rather than read verbatim, with better extraction of key sentences and removal of promotional content and source metadata.
+- **Research Result Processing**: Improved synthesis function to better handle factual queries (like weather) by removing source metadata and extracting meaningful content instead of returning raw search snippets.
+- **Context-Aware Message Cleanup**: Removed all instances of "Context-aware: follow-up detected" and similar debug messages from responses.
+
+---
+
 ## 2025-12-18 (Major Algorithm Improvements)
 - **Answer Cleanup**: Removed noisy `_Sources:_ …` lines and the `_Context-aware: follow-up detected` footer from responses so they read like natural replies instead of debug output.
 - **Numeric Guardrail Tuning**: Adjusted the accuracy checker so casual queries (like “bye” or “learn sometimes”) no longer get an unnecessary numeric disclaimer, and the warning now only appears when numeric sentences are actually removed.
