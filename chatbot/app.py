@@ -2419,14 +2419,44 @@ def model_status():
     if thor_model and hasattr(thor_model, 'model') and hasattr(thor_model.model, 'task_heads'):
         thor_tasks = list(thor_model.model.task_heads.keys())
     
+    # Check why model might not be loaded
+    model_info = {
+        "loaded": thor_model is not None,
+        "available_tasks": thor_tasks
+    }
+    
+    if not thor_model:
+        # Provide diagnostic information
+        model_info["reason"] = "not_loaded"
+        model_info["diagnostics"] = {}
+        
+        # Check if torch is available
+        if torch is None:
+            model_info["diagnostics"]["torch_available"] = False
+            model_info["diagnostics"]["message"] = "PyTorch not available (normal in serverless/lite deployments)"
+        else:
+            model_info["diagnostics"]["torch_available"] = True
+            
+            # Check if model files exist
+            model_dir = MODEL_DIR
+            model_path = os.path.join(model_dir, "final_model.pt")
+            tokenizer_path = os.path.join(model_dir, "tokenizer.json")
+            
+            model_info["diagnostics"]["model_file_exists"] = os.path.exists(model_path)
+            model_info["diagnostics"]["tokenizer_file_exists"] = os.path.exists(tokenizer_path)
+            
+            if not os.path.exists(model_path) or not os.path.exists(tokenizer_path):
+                model_info["diagnostics"]["message"] = "Model files not found (expected in thor-1.0/models/)"
+            else:
+                model_info["diagnostics"]["message"] = "Model files exist but loading failed (check server logs)"
+    
     return jsonify({
         "models": {
-            "thor-1.0": {
-                "loaded": thor_model is not None,
-                "available_tasks": thor_tasks
-            }
+            "thor-1.0": model_info
         },
-        "available_models": ["thor-1.0"]
+        "available_models": ["thor-1.0"],
+        "fallback_available": True,  # App can work without model using research engine
+        "message": "Chat will work using research engine and knowledge base even if model is not loaded"
     })
 
 

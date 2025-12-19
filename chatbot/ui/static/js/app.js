@@ -239,11 +239,43 @@ async function checkModelStatus() {
         const response = await fetch('/api/model/status');
         const data = await response.json();
         
-        if (!data.loaded) {
-            console.warn('Model not loaded');
+        // Check Thor 1.0 model status
+        const thorModel = data.models?.['thor-1.0'];
+        if (thorModel) {
+            if (!thorModel.loaded) {
+                console.warn('[Model Status] ⚠️ Thor 1.0 model is not loaded');
+                
+                // Show diagnostic information if available
+                if (thorModel.diagnostics) {
+                    console.warn('[Model Status] Diagnostics:', thorModel.diagnostics);
+                    if (thorModel.diagnostics.message) {
+                        console.warn('[Model Status] Reason:', thorModel.diagnostics.message);
+                    }
+                }
+                
+                if (data.fallback_available) {
+                    console.info('[Model Status] ✅ Chat will still work using research engine and knowledge base');
+                    console.info('[Model Status] This is normal in serverless deployments or lightweight setups');
+                } else {
+                    console.error('[Model Status] ❌ Model required and not available');
+                }
+            } else {
+                console.log('[Model Status] ✅ Thor 1.0 model is loaded and ready');
+                if (thorModel.available_tasks && thorModel.available_tasks.length > 0) {
+                    console.log('[Model Status] Available tasks:', thorModel.available_tasks);
+                }
+            }
+        } else {
+            console.warn('[Model Status] Could not determine model status from response');
+        }
+        
+        // Show overall message if available
+        if (data.message) {
+            console.info('[Model Status]', data.message);
         }
     } catch (error) {
-        console.error('Error checking model status:', error);
+        console.error('[Model Status] Error checking model status:', error);
+        console.warn('[Model Status] Continuing without model status check - app will still function');
     }
 }
 

@@ -1,64 +1,128 @@
 [
   {
     "task": "sentiment_analysis",
-    "text": "Create an image",
+    "text": "Learn sometimes!",
+    "label": 1
+  },
+  {
+    "task": "text_classification",
+    "text": "What is machine learning?",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "Create an image of dog.",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "I came back.",
     "label": 2
   },
   {
     "task": "sentiment_analysis",
-    "text": "What is a shield volcano?",
+    "text": "who is ayaan",
     "label": 0
   },
   {
     "task": "text_classification",
-    "text": "Create an image",
+    "text": "Load Office Suite",
     "label": 0
   },
   {
     "task": "sentiment_analysis",
-    "text": "Load Office Suite",
+    "text": "who is sharukh khan",
+    "label": 2
+  },
+  {
+    "task": "text_generation",
+    "text": "create an image of ice cream",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "Another angle",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "Create an image of a cat",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "Explain computer science",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Do you know Ayaan?",
     "label": 1
   },
   {
-    "task": "question_answering",
-    "text": "What is artificial intelligence? artificial intelligence is an important concept.",
-    "label": {
-      "start": 33,
-      "end": 56
-    }
+    "task": "text_generation",
+    "text": "Create an image of shit",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "Load Office Suite",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "Create an image",
+    "label": null
   },
   {
     "task": "text_classification",
-    "text": "who is sharukh khan",
-    "label": 0
-  },
-  {
-    "task": "text_generation",
-    "text": "Create image of dog",
-    "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "How are you?",
-    "label": null
+    "text": "who is niharika",
+    "label": 1
   },
   {
     "task": "sentiment_analysis",
-    "text": "Learn sometimes!",
+    "text": "I find programming interesting and valuable.",
+    "label": 2
+  },
+  {
+    "task": "text_generation",
+    "text": "Load Game Suite",
+    "label": null
+  },
+  {
+    "task": "text_classification",
+    "text": "Create an image of boy",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "oled vs amoled",
     "label": 0
   },
   {
     "task": "text_generation",
-    "text": "What's the weather in Sunnyvale?",
+    "text": "create an image of india",
     "label": null
   },
   {
-    "task": "question_answering",
-    "text": "What is machine learning? machine learning is an important concept.",
-    "label": {
-      "start": 26,
-      "end": 42
-    }
+    "task": "text_generation",
+    "text": "What is science?",
+    "label": null
+  },
+  {
+    "task": "text_classification",
+    "text": "Create an image of map",
+    "label": 1
+  },
+  {
+    "task": "text_classification",
+    "text": "Create image of a dog",
+    "label": 0
+  },
+  {
+    "task": "text_generation",
+    "text": "who is Amitabh bachchan",
+    "label": null
   },
   {
     "task": "text_generation",
@@ -67,31 +131,8 @@
   },
   {
     "task": "text_generation",
-    "text": "Here is an image of dog I found: ![dog](https://source.unsplash.com/960x540/?dog) I can search again or adjust it - just tell me how you want it changed.",
+    "text": "who is ayaan",
     "label": null
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "What's the weather in Sunnyvale?",
-    "label": 0
-  },
-  {
-    "task": "text_classification",
-    "text": "How are you?",
-    "label": 1
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "How are you?",
-    "label": 0
-  },
-  {
-    "task": "question_answering",
-    "text": "What is deep learning? deep learning is an important concept.",
-    "label": {
-      "start": 23,
-      "end": 36
-    }
   },
   {
     "task": "text_classification",
@@ -99,66 +140,13 @@
     "label": 1
   },
   {
-    "task": "text_classification",
-    "text": "what is computer",
+    "task": "sentiment_analysis",
+    "text": "Create an image of boy",
     "label": 0
   },
   {
     "task": "text_classification",
-    "text": "Create an image of shit",
-    "label": 1
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "I find computer science interesting and valuable.",
-    "label": 2
-  },
-  {
-    "task": "question_answering",
-    "text": "What is natural language processing? natural language processing is an important concept.",
-    "label": {
-      "start": 37,
-      "end": 64
-    }
-  },
-  {
-    "task": "text_classification",
-    "text": "Create an image of dog",
-    "label": 1
-  },
-  {
-    "task": "text_generation",
-    "text": "who is sharukh khan",
-    "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "Create an image of boy",
-    "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "Create an image",
-    "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "What can you do for me",
-    "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "Explain machine learning",
-    "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "who is niharika",
-    "label": null
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "Do you know Niharika?",
-    "label": 2
+    "text": "How are you?",
+    "label": 0
   }
 ]
