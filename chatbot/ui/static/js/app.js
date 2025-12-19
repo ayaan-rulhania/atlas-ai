@@ -42,9 +42,15 @@ async function initializeApp() {
 }
 
 function restoreModelPreference() {
-    // Load saved model preference (Gems are allowed; validated once gems load)
+    // Load saved model preference - Gems are not in dropdown, only accessible via sidebar
     const savedModel = localStorage.getItem('selectedModel') || 'thor-1.0';
-    currentModel = savedModel || 'thor-1.0';
+    // If a gem is saved, keep it (for sidebar access) but default dropdown to Thor 1.0
+    // Gems can still be selected via sidebar, just not shown in dropdown
+    if (savedModel && savedModel.startsWith('gem:')) {
+        currentModel = savedModel; // Keep gem selection for sidebar
+    } else {
+        currentModel = savedModel || 'thor-1.0';
+    }
     // UI will be updated after `loadGems()` rebuilds the dropdown.
     // Apply a default tone immediately; `loadGems()` may override with a Gem tone.
     document.body.setAttribute('data-tone', currentTone || 'normal');
@@ -1639,26 +1645,13 @@ function rebuildModelDropdown() {
 
     const items = [];
 
+    // Only show Thor 1.0 in dropdown - Gems are accessible via sidebar
     items.push({ id: 'thor-1.0', name: 'Thor 1.0', note: 'Default model' });
 
-    if (activeGemDraft) {
-        items.push({
-            id: 'gem:preview',
-            name: `Gem (Try): ${activeGemDraft.name}`,
-            note: 'Preview (not saved)'
-        });
-    }
-
-    gems.forEach(g => {
-        items.push({
-            id: `gem:${g.id}`,
-            name: g.name,
-            note: g.description || 'Custom Gem'
-        });
-    });
-
     dropdown.innerHTML = items.map(it => {
-        const active = it.id === currentModel ? 'active' : '';
+        // Only mark as active if it's Thor 1.0 and no gem is selected
+        // (Gems selected via sidebar won't show as active in dropdown, which is fine)
+        const active = (it.id === currentModel && !currentModel.startsWith('gem:')) ? 'active' : '';
         const displayName = toTitleCase(it.name || '');
         return `
             <div class="model-option ${active}" data-model="${it.id}">
