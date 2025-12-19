@@ -3141,6 +3141,10 @@ async function handlePoseidonTranscript(transcript) {
         }
         currentChatId = data.chat_id;
         
+        // Status is already "Thinking" - now we have the response
+        // Update to show we're preparing to speak
+        updatePoseidonStatus('thinking', 'Got response, preparing to speak...');
+        
         // Add messages to UI
         try {
             addMessageToUI('user', transcript);
@@ -3174,7 +3178,7 @@ async function handlePoseidonTranscript(transcript) {
             console.error('[Poseidon] ERROR updating assistant transcript:', transcriptErr);
         }
         
-        // Speak the response
+        // Speak the response - this will update status to "Speaking"
         try {
             speakText(responseText);
             console.log('[Poseidon] Started speaking response');
@@ -3185,6 +3189,8 @@ async function handlePoseidonTranscript(transcript) {
                 message: speakErr?.message,
                 responseLength: responseText.length
             });
+            // If speaking fails, go back to listening
+            updatePoseidonStatus('listening', 'Listening...');
         }
         
     } catch (error) {
