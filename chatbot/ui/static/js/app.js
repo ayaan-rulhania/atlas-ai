@@ -2451,35 +2451,46 @@ function speakText(text) {
     utterance.volume = 1.0;
     
     utterance.onstart = () => {
-        console.log('Poseidon: Speaking...');
+        console.log('[Poseidon] 🗣️ Speaking started');
         updatePoseidonStatus('speaking', 'Speaking...');
+        
+        // Ensure recognition is still running (it should be in continuous mode)
+        // Don't restart here - continuous mode should keep it running
+        if (recognition && recognitionState !== 'listening' && poseidonActive && !poseidonPaused) {
+            console.log('[Poseidon] Ensuring recognition continues during speech');
+        }
     };
     
     utterance.onend = () => {
-        console.log('Poseidon: Finished speaking');
+        console.log('[Poseidon] ✅ Finished speaking');
+        
+        // After speaking, return to listening
         if (poseidonActive && !poseidonPaused) {
-            updatePoseidonStatus('ready', 'Ready');
-            // Auto-restart listening
-            setTimeout(() => {
-                if (poseidonActive && !poseidonPaused && recognition) {
-                    recognition.start();
-                }
-            }, 500);
-        } else {
-            updatePoseidonStatus('ready', 'Ready');
+            // Check if recognition is still running
+            if (recognition) {
+                // In continuous mode, it should still be running
+                // Just update status
+                recognitionState = 'listening';
+                updatePoseidonStatus('listening', 'Listening...');
+                console.log('[Poseidon] Returned to listening mode');
+            } else {
+                // Recognition stopped, restart it
+                console.log('[Poseidon] Recognition stopped, restarting...');
+                setTimeout(() => {
+                    if (poseidonActive && !poseidonPaused) {
+                        startRecognitionWithRetry();
+                    }
+                }, 300);
+            }
         }
     };
     
     utterance.onerror = (event) => {
-        console.error('Poseidon: Speech error:', event.error);
-        updatePoseidonStatus('ready', 'Ready');
-        if (!poseidonPaused && poseidonActive) {
-            // Try to continue listening
-            setTimeout(() => {
-                if (poseidonActive && !poseidonPaused && recognition) {
-                    recognition.start();
-                }
-            }, 500);
+        console.error('[Poseidon] ERROR in speech synthesis:', event);
+        // Return to listening on error
+        if (poseidonActive && !poseidonPaused) {
+            recognitionState = 'listening';
+            updatePoseidonStatus('listening', 'Listening...');
         }
     };
     
