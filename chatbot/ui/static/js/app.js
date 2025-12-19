@@ -2482,31 +2482,6 @@ async function openPoseidonOverlay() {
         // Store it globally so it doesn't get garbage collected
         window.poseidonAudioStream = stream;
         
-        // Set up audio context for level monitoring
-        try {
-            audioContext = new (window.AudioContext || window.webkitAudioContext)();
-            analyser = audioContext.createAnalyser();
-            microphone = audioContext.createMediaStreamSource(stream);
-            analyser.fftSize = 256;
-            analyser.smoothingTimeConstant = 0.8;
-            microphone.connect(analyser);
-            
-            // Start audio level monitoring
-            startAudioLevelMonitoring();
-            console.log('[Poseidon] Audio context and monitoring setup complete');
-        } catch (audioErr) {
-            console.error('[Poseidon] ERROR setting up audio context:', audioErr);
-            console.error('[Poseidon] Audio context error details:', {
-                name: audioErr?.name,
-                message: audioErr?.message,
-                stack: audioErr?.stack,
-                hasAudioContext: !!window.AudioContext,
-                hasWebkitAudioContext: !!window.webkitAudioContext,
-                hasMediaDevices: !!navigator.mediaDevices,
-                hasGetUserMedia: !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia)
-            });
-        }
-        
         if (poseidonOverlay) {
             poseidonOverlay.style.display = 'flex';
             poseidonActive = true;
@@ -2524,23 +2499,19 @@ async function openPoseidonOverlay() {
             clearTimeout(silenceTimeout);
             clearTimeout(recognitionRestartTimeout);
             
-            // CRITICAL: Wait longer after getting permission before creating recognition
-            // The browser needs time to fully process permissions and make the service available
-            // Also ensure the audio stream is actually active
-            console.log('[Poseidon] Waiting for permission and service to be ready...');
+            // CRITICAL: Start recognition IMMEDIATELY after permission
+            // Browsers require speech recognition to start in direct response to user action
+            // Don't delay - start right away while we still have the user gesture context
+            console.log('[Poseidon] Starting recognition immediately after permission...');
             
             // Verify stream is active
             if (stream && stream.active) {
                 console.log('[Poseidon] Audio stream is active');
-                // Keep at least one track active to maintain permission
                 const audioTracks = stream.getAudioTracks();
                 if (audioTracks.length > 0 && audioTracks[0].readyState === 'live') {
                     console.log('[Poseidon] Audio track is live');
                 }
             }
-            
-            // Wait longer - browser needs time to make speech recognition service available
-            await new Promise(resolve => setTimeout(resolve, 1500)); // Increased from 500ms
             
             // Create or recreate recognition instance
             const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -2554,10 +2525,8 @@ async function openPoseidonOverlay() {
                 try {
                     console.log('[Poseidon] Stopping existing recognition instance');
                     recognition.stop();
-                    // Wait a bit for it to fully stop
-                    await new Promise(resolve => setTimeout(resolve, 200));
                 } catch (e) {
-                    console.warn('[Poseidon] Error stopping existing recognition (non-critical):', e);
+                    // Ignore - might not be running
                 }
             }
             
@@ -2565,97 +2534,74 @@ async function openPoseidonOverlay() {
                 recognition = new SpeechRecognition();
                 console.log('[Poseidon] Created new SpeechRecognition instance');
                 
-                // CRITICAL: Configure IMMEDIATELY after creation, before anything else
+                // CRITICAL: Configure IMMEDIATELY after creation
                 recognition.continuous = true;
                 recognition.interimResults = true;
                 recognition.lang = voiceSettings.accent;
                 recognition.maxAlternatives = 1;
                 
-                console.log('[Poseidon] Configuration set immediately after creation:', {
+                console.log('[Poseidon] Configuration set:', {
                     continuous: recognition.continuous,
                     interimResults: recognition.interimResults,
-                    lang: recognition.lang,
-                    maxAlternatives: recognition.maxAlternatives
+                    lang: recognition.lang
                 });
             } catch (createErr) {
                 console.error('[Poseidon] ERROR creating SpeechRecognition instance:', createErr);
-                console.error('[Poseidon] Recognition creation error details:', {
-                    name: createErr?.name,
-                    message: createErr?.message,
-                    hasSpeechRecognition: !!window.SpeechRecognition,
-                    hasWebkitSpeechRecognition: !!window.webkitSpeechRecognition
-                });
                 throw createErr;
             }
             
-            // Setup handlers AFTER configuring (handlers might access config)
+            // Setup handlers
             try {
                 setupRecognitionHandlers();
                 console.log('[Poseidon] Recognition handlers setup complete');
             } catch (handlerErr) {
                 console.error('[Poseidon] ERROR setting up recognition handlers:', handlerErr);
-                console.error('[Poseidon] Handler setup error details:', {
-                    name: handlerErr?.name,
-                    message: handlerErr?.message,
-                    stack: handlerErr?.stack
-                });
                 throw handlerErr;
             }
             
-            // RE-CONFIGURE recognition to ensure settings persist (some browsers reset them)
-            // This is critical - some browsers reset properties when handlers are set
+            // RE-CONFIGURE to ensure settings persist
             recognition.continuous = true;
             recognition.interimResults = true;
             recognition.lang = voiceSettings.accent;
             recognition.maxAlternatives = 1;
             
-            // Verify configuration was set correctly
-            const configCheck = {
-                continuous: recognition.continuous,
-                interimResults: recognition.interimResults,
-                lang: recognition.lang,
-                maxAlternatives: recognition.maxAlternatives
-            };
-            
-            console.log('[Poseidon] Final recognition configuration:', configCheck);
-            
-            // Validate configuration
-            if (!recognition.continuous || !recognition.interimResults || !recognition.lang) {
-                console.error('[Poseidon] ERROR: Configuration not properly set!', configCheck);
-                // Force set again
-                recognition.continuous = true;
-                recognition.interimResults = true;
-                recognition.lang = voiceSettings.accent;
-                recognition.maxAlternatives = 1;
-                console.log('[Poseidon] Forced configuration reset');
-            }
-            
-            // CRITICAL: Wait longer before starting to ensure service is fully available
-            // The speech recognition service needs time to initialize after permissions
-            console.log('[Poseidon] Waiting for speech recognition service to be ready...');
-            await new Promise(resolve => setTimeout(resolve, 1000)); // Increased from 300ms
-            
-            // Verify audio stream is still active before starting
-            if (window.poseidonAudioStream) {
-                const tracks = window.poseidonAudioStream.getAudioTracks();
-                const activeTracks = tracks.filter(t => t.readyState === 'live');
-                if (activeTracks.length === 0) {
-                    console.error('[Poseidon] ERROR: Audio stream is not active! Re-requesting...');
-                    // Re-request stream
-                    try {
-                        window.poseidonAudioStream = await navigator.mediaDevices.getUserMedia({ audio: true });
-                        console.log('[Poseidon] Audio stream re-requested');
-                        await new Promise(resolve => setTimeout(resolve, 500));
-                    } catch (streamErr) {
-                        console.error('[Poseidon] ERROR re-requesting stream:', streamErr);
+            // START IMMEDIATELY - don't wait, browsers need this in user gesture context
+            console.log('[Poseidon] Starting recognition immediately...');
+            try {
+                recognition.start();
+                console.log('[Poseidon] Recognition.start() called');
+                updatePoseidonStatus('listening', 'Listening...');
+            } catch (startErr) {
+                console.error('[Poseidon] ERROR starting recognition:', startErr);
+                // If it fails, try once more after a brief delay
+                setTimeout(() => {
+                    if (poseidonActive && recognition) {
+                        try {
+                            recognition.start();
+                            console.log('[Poseidon] Recognition started on retry');
+                        } catch (retryErr) {
+                            console.error('[Poseidon] ERROR on retry:', retryErr);
+                            updatePoseidonStatus('ready', 'Error starting');
+                        }
                     }
-                } else {
-                    console.log('[Poseidon] Audio stream verified active with', activeTracks.length, 'live track(s)');
-                }
+                }, 300);
             }
             
-            // Start recognition with retry logic
-            startRecognitionWithRetry();
+            // Set up audio context AFTER starting recognition (non-blocking)
+            setTimeout(() => {
+                try {
+                    audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                    analyser = audioContext.createAnalyser();
+                    microphone = audioContext.createMediaStreamSource(stream);
+                    analyser.fftSize = 256;
+                    analyser.smoothingTimeConstant = 0.8;
+                    microphone.connect(analyser);
+                    startAudioLevelMonitoring();
+                    console.log('[Poseidon] Audio context and monitoring setup complete');
+                } catch (audioErr) {
+                    console.warn('[Poseidon] Audio context setup failed (non-critical):', audioErr);
+                }
+            }, 100);
         }
     } catch (error) {
         console.error('[Poseidon] ERROR in openPoseidonOverlay:', error);
@@ -2784,9 +2730,7 @@ function startRecognitionWithRetry(maxRetries = 3) {
             
             recognitionState = 'starting';
             
-            // Small delay before starting to ensure everything is ready
-            await new Promise(resolve => setTimeout(resolve, 200));
-            
+            // Start immediately - no delay, we need to maintain user gesture context
             recognition.start();
             console.log('[Poseidon] Recognition.start() called successfully');
             
