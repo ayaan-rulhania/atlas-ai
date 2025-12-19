@@ -2463,6 +2463,7 @@ async function openPoseidonOverlay() {
     
     // Request microphone permission and set up audio monitoring
     try {
+        console.log('[Poseidon] Requesting microphone permission...');
         const stream = await navigator.mediaDevices.getUserMedia({ 
             audio: {
                 echoCancellation: true,
@@ -2470,6 +2471,10 @@ async function openPoseidonOverlay() {
                 autoGainControl: true
             } 
         });
+        console.log('[Poseidon] Microphone permission granted');
+        
+        // IMPORTANT: Keep the stream alive for speech recognition to work
+        // Don't stop it immediately - speech recognition needs active microphone access
         
         // Set up audio context for level monitoring
         try {
@@ -2482,6 +2487,7 @@ async function openPoseidonOverlay() {
             
             // Start audio level monitoring
             startAudioLevelMonitoring();
+            console.log('[Poseidon] Audio context and monitoring setup complete');
         } catch (audioErr) {
             console.error('[Poseidon] ERROR setting up audio context:', audioErr);
             console.error('[Poseidon] Audio context error details:', {
@@ -2510,14 +2516,25 @@ async function openPoseidonOverlay() {
             clearTimeout(silenceTimeout);
             clearTimeout(recognitionRestartTimeout);
             
+            // CRITICAL: Wait a moment after getting permission before creating recognition
+            // This ensures the browser has fully processed the permission grant
+            console.log('[Poseidon] Waiting for permission to fully process...');
+            await new Promise(resolve => setTimeout(resolve, 500));
+            
             // Create or recreate recognition instance
             const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            
+            if (!SpeechRecognition) {
+                throw new Error('SpeechRecognition API not available');
+            }
             
             // Always create a fresh instance for reliability
             if (recognition) {
                 try {
                     console.log('[Poseidon] Stopping existing recognition instance');
                     recognition.stop();
+                    // Wait a bit for it to fully stop
+                    await new Promise(resolve => setTimeout(resolve, 200));
                 } catch (e) {
                     console.warn('[Poseidon] Error stopping existing recognition (non-critical):', e);
                 }
@@ -2552,42 +2569,93 @@ async function openPoseidonOverlay() {
             }
             
             // Configure recognition - use CONTINUOUS mode for better speech detection
+            // Set these properties BEFORE starting
             recognition.continuous = true;  // Continuous mode for better detection
             recognition.interimResults = true;  // Show interim results
             recognition.lang = voiceSettings.accent;
             recognition.maxAlternatives = 1;
             
+            // Verify configuration was set
             console.log('[Poseidon] Recognition configured:', {
+                continuous: recognition.continuous,
+                interimResults: recognition.interimResults,
+                lang: recognition.lang,
+                maxAlternatives: recognition.maxAlternatives,
+                serviceURI: recognition.serviceURI || 'default'
+            });
+            
+            // CRITICAL: Wait another moment before starting to ensure everything is ready
+            await new Promise(resolve => setTimeout(resolve, 300));
+            
+            // Start recognition with retry logic
+            startRecognitionWithRetry();
+        }
+    } catch (error) {
+        console.error('[Poseidon] ERROR in openPoseidonOverlay:', error);
+        console.error('[Poseidon] Error details:', {
+            name: error?.name,
+            message: error?.message,
+            stack: error?.stack
+        });
+        
+        if (error.name === 'NotAllowedError' || error.name === 'PermissionDeniedError') {
+            alert('Microphone permission is required to use Poseidon. Please:\n\n1. Click the lock icon in your browser\'s address bar\n2. Allow microphone access\n3. Refresh the page and try again');
+            updatePoseidonStatus('ready', 'Permission Required');
+        } else if (error.name === 'NotFoundError' || error.name === 'DevicesNotFoundError') {
+            alert('No microphone found. Please connect a microphone and try again.');
+            updatePoseidonStatus('ready', 'No Microphone');
+        } else {
+            alert('Error starting Poseidon: ' + (error.message || 'Unknown error') + '\n\nPlease check your browser settings and try again.');
+            updatePoseidonStatus('ready', 'Error');
+        }
+        recognitionState = 'idle';
+    }
+}
+
+function startRecognitionWithRetry(maxRetries = 3) {
+    if (!recognition) {
+        console.error('[Poseidon] ERROR: Cannot start recognition - recognition is null');
+        updatePoseidonStatus('ready', 'Error: Recognition not initialized');
+        return;
+    }
+    
+    if (!poseidonActive) {
+        console.warn('[Poseidon] Cannot start recognition - Poseidon is not active');
+        return;
+    }
+    
+    let retryCount = 0;
+    
+    const attemptStart = async () => {
+        if (!poseidonActive || poseidonPaused) {
+            console.log('[Poseidon] Start attempt cancelled - inactive or paused');
+            recognitionState = 'idle';
+            return;
+        }
+        
+        // Verify recognition is properly configured before starting
+        if (!recognition.continuous) {
+            console.warn('[Poseidon] Recognition continuous mode not set, fixing...');
+            recognition.continuous = true;
+        }
+        if (!recognition.interimResults) {
+            console.warn('[Poseidon] Recognition interimResults not set, fixing...');
+            recognition.interimResults = true;
+        }
+        if (!recognition.lang) {
+            console.warn('[Poseidon] Recognition lang not set, fixing...');
+            recognition.lang = voiceSettings.accent;
+        }
+        
+        try {
+            console.log(`[Poseidon] Starting recognition attempt ${retryCount + 1}/${maxRetries + 1}...`);
+            console.log('[Poseidon] Recognition state before start:', {
                 continuous: recognition.continuous,
                 interimResults: recognition.interimResults,
                 lang: recognition.lang,
                 maxAlternatives: recognition.maxAlternatives
             });
             
-            // Start recognition with retry logic
-            startRecognitionWithRetry();
-        }
-    } catch (error) {
-        console.error('[Poseidon] Microphone permission denied:', error);
-        alert('Microphone permission is required to use Poseidon. Please enable it in your browser settings and try again.');
-        updatePoseidonStatus('ready', 'Permission Required');
-        recognitionState = 'idle';
-    }
-}
-
-function startRecognitionWithRetry(maxRetries = 3) {
-    if (!recognition || !poseidonActive) return;
-    
-    let retryCount = 0;
-    
-    const attemptStart = () => {
-        if (!poseidonActive || poseidonPaused) {
-            recognitionState = 'idle';
-            return;
-        }
-        
-        try {
-            console.log(`[Poseidon] Starting recognition attempt ${retryCount + 1}...`);
             recognitionState = 'starting';
             recognition.start();
             console.log('[Poseidon] Recognition.start() called successfully');
@@ -2606,13 +2674,28 @@ function startRecognitionWithRetry(maxRetries = 3) {
             }, 500);
             
         } catch (err) {
-            console.error(`[Poseidon] Error starting recognition (attempt ${retryCount + 1}):`, err);
+            console.error(`[Poseidon] ERROR starting recognition (attempt ${retryCount + 1}):`, err);
+            console.error('[Poseidon] Start error details:', {
+                name: err?.name,
+                message: err?.message,
+                stack: err?.stack,
+                recognitionState: recognitionState,
+                hasRecognition: !!recognition,
+                recognitionConfig: recognition ? {
+                    continuous: recognition.continuous,
+                    interimResults: recognition.interimResults,
+                    lang: recognition.lang
+                } : null
+            });
             
             if (err.name === 'InvalidStateError') {
                 // Recognition might already be running, try to stop and restart
+                console.log('[Poseidon] InvalidStateError - recognition may already be running');
                 try {
                     recognition.stop();
                     console.log('[Poseidon] Stopped existing recognition, will retry...');
+                    // Wait for it to fully stop
+                    await new Promise(resolve => setTimeout(resolve, 300));
                 } catch (stopErr) {
                     console.error('[Poseidon] ERROR stopping recognition:', stopErr);
                     console.error('[Poseidon] Stop error details:', {
@@ -2624,7 +2707,7 @@ function startRecognitionWithRetry(maxRetries = 3) {
                 
                 if (retryCount < maxRetries) {
                     retryCount++;
-                    const delay = 200 * retryCount;
+                    const delay = 300 * retryCount; // Increased delay
                     console.log(`[Poseidon] Retrying in ${delay}ms (attempt ${retryCount + 1}/${maxRetries + 1})`);
                     setTimeout(attemptStart, delay); // Exponential backoff
                 } else {
@@ -2641,8 +2724,14 @@ function startRecognitionWithRetry(maxRetries = 3) {
                     updatePoseidonStatus('ready', 'Error starting');
                     recognitionState = 'idle';
                 }
+            } else if (err.name === 'NotAllowedError' || err.message?.includes('permission')) {
+                console.error('[Poseidon] Permission error - user needs to grant microphone access');
+                updatePoseidonStatus('ready', 'Permission Required');
+                recognitionState = 'idle';
+                alert('Microphone permission is required. Please allow microphone access and try again.');
             } else {
-                updatePoseidonStatus('ready', 'Error: ' + err.message);
+                console.error('[Poseidon] Unknown error starting recognition');
+                updatePoseidonStatus('ready', 'Error: ' + (err.message || 'Unknown'));
                 recognitionState = 'idle';
             }
         }
@@ -2674,37 +2763,37 @@ function startAudioLevelMonitoring() {
                 analyser.getByteFrequencyData(dataArray);
                 const average = dataArray.reduce((a, b) => a + b) / dataArray.length;
                 const audioLevel = average / 255;
-        
-        // Update visualizer if available
-        if (poseidonVisualizer) {
-            const level = Math.min(audioLevel * 100, 100);
-            poseidonVisualizer.style.setProperty('--audio-level', `${level}%`);
-        }
-        
-        // Detect speech based on audio level
-        if (audioLevel > 0.05) { // Threshold for speech detection
-            if (!speechDetected) {
-                speechDetected = true;
-                lastSpeechTime = Date.now();
-                consecutiveNoSpeechCount = 0;
-                console.log('[Poseidon] Speech detected via audio level');
-            }
-            lastSpeechTime = Date.now();
-        } else {
-            if (speechDetected) {
-                const silenceDuration = Date.now() - lastSpeechTime;
-                if (silenceDuration > SILENCE_TIMEOUT_MS) {
-                    speechDetected = false;
-                    console.log('[Poseidon] Speech ended (silence detected)');
-                    // Process pending transcript if any
-                    if (pendingTranscript && pendingTranscript.trim().length > 0 && !transcriptProcessing) {
-                        console.log('[Poseidon] Processing pending transcript after silence:', pendingTranscript);
-                        handlePoseidonTranscript(pendingTranscript.trim());
-                        pendingTranscript = '';
+                
+                // Update visualizer if available
+                if (poseidonVisualizer) {
+                    const level = Math.min(audioLevel * 100, 100);
+                    poseidonVisualizer.style.setProperty('--audio-level', `${level}%`);
+                }
+                
+                // Detect speech based on audio level
+                if (audioLevel > 0.05) { // Threshold for speech detection
+                    if (!speechDetected) {
+                        speechDetected = true;
+                        lastSpeechTime = Date.now();
+                        consecutiveNoSpeechCount = 0;
+                        console.log('[Poseidon] Speech detected via audio level');
+                    }
+                    lastSpeechTime = Date.now();
+                } else {
+                    if (speechDetected) {
+                        const silenceDuration = Date.now() - lastSpeechTime;
+                        if (silenceDuration > SILENCE_TIMEOUT_MS) {
+                            speechDetected = false;
+                            console.log('[Poseidon] Speech ended (silence detected)');
+                            // Process pending transcript if any
+                            if (pendingTranscript && pendingTranscript.trim().length > 0 && !transcriptProcessing) {
+                                console.log('[Poseidon] Processing pending transcript after silence:', pendingTranscript);
+                                handlePoseidonTranscript(pendingTranscript.trim());
+                                pendingTranscript = '';
+                            }
+                        }
                     }
                 }
-            }
-        }
             } catch (audioErr) {
                 console.error('[Poseidon] ERROR in audio level monitoring:', audioErr);
                 console.error('[Poseidon] Audio monitoring error details:', {
