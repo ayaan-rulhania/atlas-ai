@@ -3166,13 +3166,18 @@ function togglePoseidonPause() {
         updatePoseidonStatus('paused', 'Paused');
     } else {
         // Resume
+        console.log('[Poseidon] Resuming...');
+        
         if (speechSynthesis && speechSynthesis.paused) {
             speechSynthesis.resume();
         }
+        
         if (poseidonActive && recognition) {
-            recognition.start();
+            // Restart recognition
+            startRecognitionWithRetry();
         }
-        updatePoseidonStatus('ready', 'Ready');
+        
+        updatePoseidonStatus('listening', 'Listening...');
     }
 }
 
