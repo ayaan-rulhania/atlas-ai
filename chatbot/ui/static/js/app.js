@@ -2551,6 +2551,19 @@ async function openPoseidonOverlay() {
             try {
                 recognition = new SpeechRecognition();
                 console.log('[Poseidon] Created new SpeechRecognition instance');
+                
+                // CRITICAL: Configure IMMEDIATELY after creation, before anything else
+                recognition.continuous = true;
+                recognition.interimResults = true;
+                recognition.lang = voiceSettings.accent;
+                recognition.maxAlternatives = 1;
+                
+                console.log('[Poseidon] Configuration set immediately after creation:', {
+                    continuous: recognition.continuous,
+                    interimResults: recognition.interimResults,
+                    lang: recognition.lang,
+                    maxAlternatives: recognition.maxAlternatives
+                });
             } catch (createErr) {
                 console.error('[Poseidon] ERROR creating SpeechRecognition instance:', createErr);
                 console.error('[Poseidon] Recognition creation error details:', {
@@ -2562,7 +2575,7 @@ async function openPoseidonOverlay() {
                 throw createErr;
             }
             
-            // Setup handlers BEFORE configuring
+            // Setup handlers AFTER configuring (handlers might access config)
             try {
                 setupRecognitionHandlers();
                 console.log('[Poseidon] Recognition handlers setup complete');
@@ -2576,21 +2589,33 @@ async function openPoseidonOverlay() {
                 throw handlerErr;
             }
             
-            // Configure recognition - use CONTINUOUS mode for better speech detection
-            // Set these properties BEFORE starting
-            recognition.continuous = true;  // Continuous mode for better detection
-            recognition.interimResults = true;  // Show interim results
+            // RE-CONFIGURE recognition to ensure settings persist (some browsers reset them)
+            // This is critical - some browsers reset properties when handlers are set
+            recognition.continuous = true;
+            recognition.interimResults = true;
             recognition.lang = voiceSettings.accent;
             recognition.maxAlternatives = 1;
             
-            // Verify configuration was set
-            console.log('[Poseidon] Recognition configured:', {
+            // Verify configuration was set correctly
+            const configCheck = {
                 continuous: recognition.continuous,
                 interimResults: recognition.interimResults,
                 lang: recognition.lang,
-                maxAlternatives: recognition.maxAlternatives,
-                serviceURI: recognition.serviceURI || 'default'
-            });
+                maxAlternatives: recognition.maxAlternatives
+            };
+            
+            console.log('[Poseidon] Final recognition configuration:', configCheck);
+            
+            // Validate configuration
+            if (!recognition.continuous || !recognition.interimResults || !recognition.lang) {
+                console.error('[Poseidon] ERROR: Configuration not properly set!', configCheck);
+                // Force set again
+                recognition.continuous = true;
+                recognition.interimResults = true;
+                recognition.lang = voiceSettings.accent;
+                recognition.maxAlternatives = 1;
+                console.log('[Poseidon] Forced configuration reset');
+            }
             
             // CRITICAL: Wait another moment before starting to ensure everything is ready
             await new Promise(resolve => setTimeout(resolve, 300));
@@ -2641,19 +2666,48 @@ function startRecognitionWithRetry(maxRetries = 3) {
             return;
         }
         
-        // Verify recognition is properly configured before starting
-        if (!recognition.continuous) {
-            console.warn('[Poseidon] Recognition continuous mode not set, fixing...');
+        // CRITICAL: Verify and FORCE configuration before starting
+        // Some browsers reset properties, so we must set them right before start
+        let configChanged = false;
+        
+        if (recognition.continuous !== true) {
+            console.warn('[Poseidon] Recognition continuous mode incorrect, fixing...', {
+                current: recognition.continuous,
+                expected: true
+            });
             recognition.continuous = true;
+            configChanged = true;
         }
-        if (!recognition.interimResults) {
-            console.warn('[Poseidon] Recognition interimResults not set, fixing...');
+        if (recognition.interimResults !== true) {
+            console.warn('[Poseidon] Recognition interimResults incorrect, fixing...', {
+                current: recognition.interimResults,
+                expected: true
+            });
             recognition.interimResults = true;
+            configChanged = true;
         }
-        if (!recognition.lang) {
-            console.warn('[Poseidon] Recognition lang not set, fixing...');
+        if (recognition.lang !== voiceSettings.accent) {
+            console.warn('[Poseidon] Recognition lang incorrect, fixing...', {
+                current: recognition.lang,
+                expected: voiceSettings.accent
+            });
             recognition.lang = voiceSettings.accent;
+            configChanged = true;
         }
+        if (recognition.maxAlternatives !== 1) {
+            recognition.maxAlternatives = 1;
+            configChanged = true;
+        }
+        
+        if (configChanged) {
+            console.log('[Poseidon] Configuration was corrected before start');
+        }
+        
+        // Set configuration one more time to be absolutely sure
+        recognition.continuous = true;
+        recognition.interimResults = true;
+        recognition.lang = voiceSettings.accent;
+        recognition.maxAlternatives = 1;
         
         try {
             console.log(`[Poseidon] Starting recognition attempt ${retryCount + 1}/${maxRetries + 1}...`);
@@ -3103,6 +3157,22 @@ function setupRecognitionHandlers() {
     
     recognition.onstart = () => {
         console.log('[Poseidon] Recognition started - onstart fired');
+        
+        // CRITICAL: Verify and fix configuration in onstart
+        // Some browsers reset properties when recognition actually starts
+        if (recognition.continuous !== true || recognition.interimResults !== true) {
+            console.warn('[Poseidon] Configuration reset detected in onstart, fixing...', {
+                continuous: recognition.continuous,
+                interimResults: recognition.interimResults,
+                lang: recognition.lang
+            });
+            recognition.continuous = true;
+            recognition.interimResults = true;
+            recognition.lang = voiceSettings.accent;
+            recognition.maxAlternatives = 1;
+            console.log('[Poseidon] Configuration fixed in onstart');
+        }
+        
         recognitionState = 'listening';
         updatePoseidonStatus('listening', 'Listening...');
         lastSpeechTime = Date.now();
@@ -3449,15 +3519,29 @@ function setupRecognitionHandlers() {
                         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
                         if (SpeechRecognition) {
                             recognition = new SpeechRecognition();
-                            setupRecognitionHandlers();
                             
-                            // Configure properly
+                            // CRITICAL: Configure IMMEDIATELY after creation
                             recognition.continuous = true;
                             recognition.interimResults = true;
                             recognition.lang = voiceSettings.accent;
                             recognition.maxAlternatives = 1;
                             
-                            console.log('[Poseidon] Recognition recreated with config:', {
+                            console.log('[Poseidon] Recognition created and configured:', {
+                                continuous: recognition.continuous,
+                                interimResults: recognition.interimResults,
+                                lang: recognition.lang
+                            });
+                            
+                            // Setup handlers AFTER configuration
+                            setupRecognitionHandlers();
+                            
+                            // RE-CONFIGURE to ensure settings persist
+                            recognition.continuous = true;
+                            recognition.interimResults = true;
+                            recognition.lang = voiceSettings.accent;
+                            recognition.maxAlternatives = 1;
+                            
+                            console.log('[Poseidon] Recognition recreated with final config:', {
                                 continuous: recognition.continuous,
                                 interimResults: recognition.interimResults,
                                 lang: recognition.lang
