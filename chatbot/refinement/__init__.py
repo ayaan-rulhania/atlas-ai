@@ -22,11 +22,13 @@ from .knowledge_reranker import get_knowledge_reranker  # noqa: F401
 from .answer_refiner import get_answer_refiner  # noqa: F401
 from .clarifier import get_clarifier  # noqa: F401
 from .accuracy_checker import verify_response_accuracy  # noqa: F401
+from .conversational_context import get_conversational_analyzer  # noqa: F401
 
 
 REFINEMENT_REGISTRY = {
     "normalizer": get_question_normalizer,
     "intent_router": get_intent_router,
+    "conversational_context": get_conversational_analyzer,
     "reranker": get_knowledge_reranker,
     "clarifier": get_clarifier,
     "answer_refiner": get_answer_refiner,

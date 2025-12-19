@@ -51,6 +51,7 @@ from refinement import (
     get_answer_refiner,
     get_clarifier,
     verify_response_accuracy,
+    get_conversational_analyzer,
 )
 from handlers import ImageHandler, ResponseFormatter, MarkdownHandler
 from handlers.image_handler import get_image_handler
@@ -872,12 +873,37 @@ def chat():
         knowledge_reranker = get_knowledge_reranker()
         answer_refiner = get_answer_refiner()
         clarifier = get_clarifier()
+        conversational_analyzer = get_conversational_analyzer()
         
         normalized = normalizer.normalize(message, conversation_context)
         normalized_message = normalized.get("normalized_query", message)
         
         # Initialize common sense handler
         common_sense_handler = get_common_sense_handler()
+        
+        # CRITICAL: Analyze conversational context BEFORE other processing
+        # This prevents conversational statements from being treated as literal queries
+        conversational_analysis = conversational_analyzer.analyze_context(
+            message,
+            conversation_context,
+            normalized_message
+        )
+        
+        # If this is a conversational statement that references context, handle it conversationally
+        if response is None and conversational_analysis.get('is_conversational') and conversational_analysis.get('confidence', 0) >= 0.7:
+            conversational_response = conversational_analyzer.generate_conversational_response(
+                message,
+                conversational_analysis,
+                conversation_context
+            )
+            if conversational_response:
+                response = conversational_response
+                skip_refinement = True
+                print(f"[Conversational Context] Detected {conversational_analysis.get('conversational_response_type')} "
+                      f"(confidence: {conversational_analysis.get('confidence', 0):.2f})")
+                if conversational_analysis.get('is_context_reference'):
+                    print(f"[Conversational Context] References previous message: "
+                          f"{conversational_analysis.get('related_previous_message', '')[:60]}...")
         
         # Initialize follow-up detection variables early (accessible everywhere)
         message_lower = normalized_message.lower().strip()
@@ -1312,8 +1338,15 @@ I'm always learning and improving through our conversations. How can I help you 
                 
                 # ENHANCED: Check if this is actually a searchable question before proceeding
                 # Skip search for simple statements, commands, or acknowledgments
+                # Also respect conversational context analysis
                 requires_search = True
-                if not is_question and len(message_lower.split()) <= 4:
+                
+                # If conversational analyzer determined this doesn't need search, respect that
+                if conversational_analysis.get('requires_search') == False:
+                    requires_search = False
+                    print(f"[Conversational Context] Skipping search - conversational statement detected")
+                
+                if requires_search and not is_question and len(message_lower.split()) <= 4:
                     # Short non-questions are likely commands/statements, not search queries
                     simple_patterns = [
                         r'^(that\'s|this is|here\'s|there\'s|it\'s|nice|good|great|ok|okay|yes|no|sure)',
@@ -1347,6 +1380,18 @@ I'm always learning and improving through our conversations. How can I help you 
                     print(f"[Intent] Non-searchable command/statement detected: {message}")
                     knowledge = []
                     needs_research = False
+                    
+                    # If conversational but no response generated yet, generate one
+                    if response is None and conversational_analysis.get('is_conversational'):
+                        conversational_response = conversational_analyzer.generate_conversational_response(
+                            message,
+                            conversational_analysis,
+                            conversation_context
+                        )
+                        if conversational_response:
+                            response = conversational_response
+                            skip_refinement = True
+                            print(f"[Conversational Context] Generated response for conversational statement")
                 # Check if query should force web search
                 elif query_intent.get('should_search_web'):
                     print(f"[Query Intent] {query_intent.get('intent', 'unknown').upper()} query detected, forcing web search: {message}")
