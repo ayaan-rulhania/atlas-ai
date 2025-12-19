@@ -2196,12 +2196,18 @@ let speechDetected = false;
 let consecutiveNoSpeechCount = 0;
 let serviceNotAllowedRetryCount = 0; // Track retries for service-not-allowed errors
 let lastServiceNotAllowedTime = 0; // Track when last service-not-allowed occurred
-const SILENCE_TIMEOUT_MS = 2500; // Process after 2.5 seconds of silence
+let lastHighVolumeTime = 0; // Track when we last detected high volume
+let currentAudioLevel = 0; // Current audio level (0-1)
+let audioLevelHistory = []; // History of audio levels for trend analysis
+const SILENCE_TIMEOUT_MS = 2000; // Process after 2 seconds of silence (reduced for faster response)
 const MIN_SPEECH_DURATION_MS = 300; // Minimum speech duration to process
 const MAX_NO_SPEECH_COUNT = 3; // Max consecutive no-speech events before restart
 const MAX_SERVICE_NOT_ALLOWED_RETRIES = 2; // Max retries for service-not-allowed
 const SERVICE_NOT_ALLOWED_COOLDOWN_MS = 5000; // Cooldown period between retries (5 seconds)
 const AUDIO_CHECK_INTERVAL_MS = 100; // Check audio levels every 100ms
+const AUDIO_LEVEL_THRESHOLD = 0.05; // Minimum audio level to consider as speech
+const VOLUME_DECLINE_THRESHOLD = 0.02; // Volume must drop below this to trigger processing
+const MIN_VOLUME_DECLINE_DURATION = 800; // How long volume must be low before processing (ms)
 
 // Initialize Poseidon
 function initializePoseidon() {
@@ -2857,10 +2863,17 @@ function startAudioLevelMonitoring() {
         return;
     }
     
-    console.log('[Poseidon] Starting audio level monitoring');
+    console.log('[Poseidon] Starting audio level monitoring with volume decline detection');
+    
+    // Reset audio tracking
+    lastHighVolumeTime = Date.now();
+    currentAudioLevel = 0;
+    audioLevelHistory = [];
     
     try {
         const dataArray = new Uint8Array(analyser.frequencyBinCount);
+        let volumeDeclineStartTime = null;
+        let wasSpeaking = false;
         
         audioLevelCheckInterval = setInterval(() => {
             if (!analyser || !poseidonActive || poseidonPaused) return;
@@ -2869,6 +2882,13 @@ function startAudioLevelMonitoring() {
                 analyser.getByteFrequencyData(dataArray);
                 const average = dataArray.reduce((a, b) => a + b) / dataArray.length;
                 const audioLevel = average / 255;
+                currentAudioLevel = audioLevel;
+                
+                // Keep history (last 20 samples = ~2 seconds)
+                audioLevelHistory.push(audioLevel);
+                if (audioLevelHistory.length > 20) {
+                    audioLevelHistory.shift();
+                }
                 
                 // Update visualizer if available
                 if (poseidonVisualizer) {
@@ -2876,29 +2896,57 @@ function startAudioLevelMonitoring() {
                     poseidonVisualizer.style.setProperty('--audio-level', `${level}%`);
                 }
                 
-                // Detect speech based on audio level
-                if (audioLevel > 0.05) { // Threshold for speech detection
-                    if (!speechDetected) {
+                // Detect speech and volume decline
+                const isSpeaking = audioLevel > AUDIO_LEVEL_THRESHOLD;
+                const isSilent = audioLevel < VOLUME_DECLINE_THRESHOLD;
+                
+                if (isSpeaking) {
+                    // High volume detected - user is speaking
+                    if (!wasSpeaking) {
+                        wasSpeaking = true;
                         speechDetected = true;
+                        lastHighVolumeTime = Date.now();
                         lastSpeechTime = Date.now();
+                        volumeDeclineStartTime = null;
                         consecutiveNoSpeechCount = 0;
-                        console.log('[Poseidon] Speech detected via audio level');
+                        console.log('[Poseidon] 🔊 Speech detected - volume:', audioLevel.toFixed(3));
+                        updatePoseidonStatus('listening', 'Listening... (speaking detected)');
                     }
+                    lastHighVolumeTime = Date.now();
                     lastSpeechTime = Date.now();
-                } else {
-                    if (speechDetected) {
-                        const silenceDuration = Date.now() - lastSpeechTime;
-                        if (silenceDuration > SILENCE_TIMEOUT_MS) {
-                            speechDetected = false;
-                            console.log('[Poseidon] Speech ended (silence detected)');
-                            // Process pending transcript if any
-                            if (pendingTranscript && pendingTranscript.trim().length > 0 && !transcriptProcessing) {
-                                console.log('[Poseidon] Processing pending transcript after silence:', pendingTranscript);
-                                handlePoseidonTranscript(pendingTranscript.trim());
-                                pendingTranscript = '';
-                            }
+                } else if (wasSpeaking && isSilent) {
+                    // Volume declined - user stopped speaking
+                    if (volumeDeclineStartTime === null) {
+                        volumeDeclineStartTime = Date.now();
+                        console.log('[Poseidon] 🔇 Volume declined - starting silence timer');
+                    }
+                    
+                    const silenceDuration = Date.now() - volumeDeclineStartTime;
+                    const timeSinceLastSpeech = Date.now() - lastHighVolumeTime;
+                    
+                    // Process if silence has been sustained
+                    if (silenceDuration >= MIN_VOLUME_DECLINE_DURATION && timeSinceLastSpeech >= MIN_VOLUME_DECLINE_DURATION) {
+                        wasSpeaking = false;
+                        speechDetected = false;
+                        
+                        // Check if we have a transcript to process
+                        const currentTranscript = poseidonUserTranscript?.textContent?.trim() || pendingTranscript?.trim() || '';
+                        
+                        if (currentTranscript && currentTranscript.length > 0 && !transcriptProcessing) {
+                            console.log('[Poseidon] 📊 Volume decline detected - processing transcript:', currentTranscript);
+                            console.log('[Poseidon] Silence duration:', silenceDuration, 'ms, Time since speech:', timeSinceLastSpeech, 'ms');
+                            
+                            // Process the transcript
+                            handlePoseidonTranscript(currentTranscript);
+                            pendingTranscript = '';
+                            volumeDeclineStartTime = null;
+                        } else if (!transcriptProcessing) {
+                            console.log('[Poseidon] Volume declined but no transcript available yet');
                         }
                     }
+                } else if (!isSpeaking && !wasSpeaking) {
+                    // Already silent, no action needed
+                    volumeDeclineStartTime = null;
                 }
             } catch (audioErr) {
                 console.error('[Poseidon] ERROR in audio level monitoring:', audioErr);
@@ -2996,7 +3044,9 @@ async function handlePoseidonTranscript(transcript) {
     // Don't stop recognition in continuous mode - just mark as processing
     clearTimeout(silenceTimeout);
     clearTimeout(recognitionRestartTimeout);
-    updatePoseidonStatus('processing', 'Processing your request...');
+    
+    // Update status to "Thinking" - we're analyzing the request
+    updatePoseidonStatus('thinking', 'Thinking...');
     
     // Send to chat API
     try {
@@ -3906,12 +3956,24 @@ function togglePoseidonPause() {
 }
 
 function updatePoseidonStatus(status, text) {
+    console.log(`[Poseidon] Status update: ${status} - "${text}"`);
+    
     if (poseidonStatusIndicator) {
         poseidonStatusIndicator.className = 'poseidon-status-indicator';
+        // Remove all status classes
+        poseidonStatusIndicator.classList.remove('listening', 'thinking', 'speaking', 'processing', 'ready', 'paused');
+        
+        // Add appropriate class
         if (status === 'listening') {
             poseidonStatusIndicator.classList.add('listening');
+        } else if (status === 'thinking' || status === 'processing') {
+            poseidonStatusIndicator.classList.add('thinking');
         } else if (status === 'speaking') {
             poseidonStatusIndicator.classList.add('speaking');
+        } else if (status === 'paused') {
+            poseidonStatusIndicator.classList.add('paused');
+        } else {
+            poseidonStatusIndicator.classList.add('ready');
         }
     }
     
@@ -3921,10 +3983,20 @@ function updatePoseidonStatus(status, text) {
     
     if (poseidonVisualizer) {
         poseidonVisualizer.className = 'poseidon-visualizer';
+        // Remove all status classes
+        poseidonVisualizer.classList.remove('listening', 'thinking', 'speaking', 'processing', 'ready', 'paused');
+        
+        // Add appropriate class
         if (status === 'listening') {
             poseidonVisualizer.classList.add('listening');
+        } else if (status === 'thinking' || status === 'processing') {
+            poseidonVisualizer.classList.add('thinking');
         } else if (status === 'speaking') {
             poseidonVisualizer.classList.add('speaking');
+        } else if (status === 'paused') {
+            poseidonVisualizer.classList.add('paused');
+        } else {
+            poseidonVisualizer.classList.add('ready');
         }
     }
 }
