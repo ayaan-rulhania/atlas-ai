@@ -3353,54 +3353,101 @@ function setupRecognitionHandlers() {
             console.error('[Poseidon] ERROR: No microphone found');
             errorMsg = 'No microphone found. Please connect a microphone.';
         } else if (event.error === 'service-not-allowed') {
-            console.error('[Poseidon] ERROR: Service not allowed');
+            console.error('[Poseidon] ERROR: service-not-allowed - Speech recognition service permission check failed');
+            
             // Service not available - check if we're on secure context
-            const isSecure = window.isSecureContext || location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+            const isSecure = window.isSecureContext || location.protocol === 'https:' || 
+                           location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+            
             if (!isSecure) {
+                console.error('[Poseidon] Not in secure context - HTTPS required');
                 errorMsg = 'Speech recognition requires HTTPS or localhost. Please use a secure connection.';
                 updatePoseidonStatus('ready', 'HTTPS Required');
+                shouldSpeak = true;
             } else {
-                // Service might be temporarily unavailable - try to recreate
-                console.warn('Poseidon: Service not allowed, attempting to recreate recognition');
-                try {
-                    // Stop current recognition
-                    if (recognition) {
-                        recognition.stop();
-                    }
-                    // Create new instance
-                    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-                    recognition = new SpeechRecognition();
-                    setupRecognitionHandlers();
-                    // Wait a bit before restarting
-                    setTimeout(() => {
-                        if (poseidonActive && !poseidonPaused) {
+                // We're in a secure context, but service is still not allowed
+                // This usually means microphone permission wasn't properly granted
+                console.warn('[Poseidon] Service not allowed despite secure context - likely permission issue');
+                console.warn('[Poseidon] Attempting to recover by requesting permission again...');
+                
+                // Try to request permission again (async operation)
+                (async () => {
+                    try {
+                        // Stop current recognition
+                        if (recognition) {
                             try {
-                                recognition.start();
-                                console.log('Poseidon: Restarted recognition after service-not-allowed');
-                                return; // Successfully restarted
-                            } catch (startErr) {
-                                console.error('Poseidon: Failed to start after recreation:', startErr);
-                                errorMsg = 'Speech recognition service is unavailable. Please refresh the page or try again later.';
-                                updatePoseidonStatus('ready', 'Service Unavailable');
-                                if (poseidonAssistantTranscript) {
-                                    poseidonAssistantTranscript.textContent = errorMsg;
-                                }
+                                recognition.stop();
+                                console.log('[Poseidon] Stopped recognition for permission retry');
+                                await new Promise(resolve => setTimeout(resolve, 200));
+                            } catch (stopErr) {
+                                console.warn('[Poseidon] Error stopping recognition:', stopErr);
                             }
                         }
-                    }, 1000);
-                    return; // Don't show error immediately, wait for retry
-                } catch (err) {
-                    console.error('[Poseidon] ERROR: Failed to recreate recognition:', err);
-                    console.error('[Poseidon] Recreation error details:', {
-                        name: err?.name,
-                        message: err?.message,
-                        stack: err?.stack,
-                        hasSpeechRecognition: !!window.SpeechRecognition,
-                        hasWebkitSpeechRecognition: !!window.webkitSpeechRecognition
-                    });
-                    errorMsg = 'Speech recognition service is not available. Please refresh the page or use a different browser.';
-                    updatePoseidonStatus('ready', 'Service Unavailable');
-                }
+                        
+                        // Request microphone permission again
+                        console.log('[Poseidon] Re-requesting microphone permission...');
+                        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                        console.log('[Poseidon] Permission re-granted, recreating recognition...');
+                        
+                        // Wait for permission to process
+                        await new Promise(resolve => setTimeout(resolve, 500));
+                        
+                        // Create new instance
+                        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+                        if (SpeechRecognition) {
+                            recognition = new SpeechRecognition();
+                            setupRecognitionHandlers();
+                            
+                            // Configure properly
+                            recognition.continuous = true;
+                            recognition.interimResults = true;
+                            recognition.lang = voiceSettings.accent;
+                            recognition.maxAlternatives = 1;
+                            
+                            console.log('[Poseidon] Recognition recreated with config:', {
+                                continuous: recognition.continuous,
+                                interimResults: recognition.interimResults,
+                                lang: recognition.lang
+                            });
+                            
+                            // Wait before starting
+                            await new Promise(resolve => setTimeout(resolve, 300));
+                            
+                            // Try to start
+                            if (poseidonActive && !poseidonPaused) {
+                                try {
+                                    recognition.start();
+                                    console.log('[Poseidon] Successfully restarted recognition after permission retry');
+                                    updatePoseidonStatus('listening', 'Listening...');
+                                    shouldSpeak = false; // Don't speak error message
+                                    return; // Successfully restarted
+                                } catch (startErr) {
+                                    console.error('[Poseidon] ERROR: Failed to start after permission retry:', startErr);
+                                    errorMsg = 'Speech recognition service is unavailable. Please:\n\n1. Check browser microphone permissions\n2. Refresh the page\n3. Try again';
+                                    updatePoseidonStatus('ready', 'Service Unavailable');
+                                    shouldSpeak = true;
+                                }
+                            }
+                        } else {
+                            throw new Error('SpeechRecognition API not available');
+                        }
+                    } catch (recoveryErr) {
+                        console.error('[Poseidon] ERROR: Failed to recover from service-not-allowed:', recoveryErr);
+                        console.error('[Poseidon] Recovery error details:', {
+                            name: recoveryErr?.name,
+                            message: recoveryErr?.message,
+                            stack: recoveryErr?.stack
+                        });
+                        
+                        errorMsg = 'Speech recognition service is not available. Please:\n\n1. Allow microphone access in browser settings\n2. Ensure you\'re using HTTPS or localhost\n3. Refresh the page and try again';
+                        updatePoseidonStatus('ready', 'Service Unavailable');
+                        shouldSpeak = true;
+                    }
+                })();
+                
+                // Don't show error immediately, wait for recovery attempt
+                shouldSpeak = false;
+                return;
             }
         } else {
             console.error('[Poseidon] ERROR: Unknown recognition error:', event.error);
