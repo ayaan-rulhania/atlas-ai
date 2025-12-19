@@ -2686,22 +2686,65 @@ function startRecognitionWithRetry(maxRetries = 3) {
         return;
     }
     
-    // Verify audio stream is active before starting recognition
+    // CRITICAL: Verify audio stream is active before starting recognition
     if (!window.poseidonAudioStream) {
         console.error('[Poseidon] ERROR: No audio stream available!');
         updatePoseidonStatus('ready', 'Error: No microphone access');
         return;
     }
     
-    const tracks = window.poseidonAudioStream.getAudioTracks();
-    const activeTracks = tracks.filter(t => t.readyState === 'live');
-    if (activeTracks.length === 0) {
-        console.error('[Poseidon] ERROR: Audio stream has no active tracks!');
-        updatePoseidonStatus('ready', 'Error: Microphone not active');
-        return;
+    // Check stream and tracks
+    const stream = window.poseidonAudioStream;
+    const tracks = stream.getAudioTracks();
+    const activeTracks = tracks.filter(t => t.readyState === 'live' && t.enabled && !t.muted);
+    
+    console.log('[Poseidon] Stream verification:', {
+        streamActive: stream.active,
+        totalTracks: tracks.length,
+        activeTracks: activeTracks.length,
+        tracksState: tracks.map(t => ({
+            label: t.label,
+            readyState: t.readyState,
+            enabled: t.enabled,
+            muted: t.muted
+        }))
+    });
+    
+    if (!stream.active || activeTracks.length === 0) {
+        console.error('[Poseidon] ERROR: Audio stream is not active!');
+        console.error('[Poseidon] Stream state:', {
+            active: stream.active,
+            activeTracks: activeTracks.length,
+            allTracks: tracks.length
+        });
+        
+        // Try to re-enable tracks
+        if (tracks.length > 0) {
+            console.log('[Poseidon] Attempting to re-enable tracks...');
+            tracks.forEach(track => {
+                if (track.readyState !== 'ended') {
+                    track.enabled = true;
+                    console.log('[Poseidon] Re-enabled track:', track.label, 'state:', track.readyState);
+                }
+            });
+            
+            // Wait a moment and check again
+            await new Promise(resolve => setTimeout(resolve, 300));
+            const recheckTracks = stream.getAudioTracks().filter(t => t.readyState === 'live' && t.enabled);
+            if (recheckTracks.length > 0 && stream.active) {
+                console.log('[Poseidon] Stream recovered after re-enabling tracks');
+            } else {
+                console.error('[Poseidon] Stream still not active after re-enabling');
+                updatePoseidonStatus('ready', 'Error: Microphone not active');
+                return;
+            }
+        } else {
+            updatePoseidonStatus('ready', 'Error: No microphone tracks');
+            return;
+        }
     }
     
-    console.log('[Poseidon] Audio stream verified -', activeTracks.length, 'active track(s) before starting recognition');
+    console.log('[Poseidon] ✅ Audio stream verified -', activeTracks.length, 'active track(s) before starting recognition');
     
     let retryCount = 0;
     
@@ -3714,14 +3757,27 @@ function setupRecognitionHandlers() {
                         const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
                         console.log('[Poseidon] Permission re-granted, recreating recognition...');
                         
-                        // IMPORTANT: Keep the stream alive
-                        // Store it so it doesn't get garbage collected
-                        if (!window.poseidonAudioStream) {
-                            window.poseidonAudioStream = stream;
+                        // CRITICAL: Keep the stream alive - don't let old stream be garbage collected
+                        // Stop old stream tracks if they exist
+                        if (window.poseidonAudioStream) {
+                            try {
+                                window.poseidonAudioStream.getTracks().forEach(track => track.stop());
+                                console.log('[Poseidon] Stopped old stream tracks');
+                            } catch (e) {
+                                console.warn('[Poseidon] Error stopping old stream:', e);
+                            }
                         }
                         
-                        // Store stream globally
+                        // Store new stream globally - CRITICAL to keep reference alive
                         window.poseidonAudioStream = stream;
+                        
+                        // Prevent stream from being garbage collected
+                        // Keep at least one track active
+                        const streamTracks = stream.getAudioTracks();
+                        if (streamTracks.length > 0) {
+                            streamTracks[0].enabled = true;
+                            console.log('[Poseidon] Ensured stream track is enabled');
+                        }
                         
                         // Verify stream is active
                         const tracks = stream.getAudioTracks();
@@ -3766,11 +3822,67 @@ function setupRecognitionHandlers() {
                             // Wait longer before starting - service needs time
                             await new Promise(resolve => setTimeout(resolve, 1000)); // Increased delay
                             
-                            // Verify stream is still active
-                            if (window.poseidonAudioStream && window.poseidonAudioStream.active) {
-                                console.log('[Poseidon] Stream verified active before starting');
+                            // CRITICAL: Verify stream is still active, re-request if needed
+                            let streamActive = false;
+                            if (window.poseidonAudioStream) {
+                                const tracks = window.poseidonAudioStream.getAudioTracks();
+                                const activeTracks = tracks.filter(t => t.readyState === 'live' && t.enabled && !t.muted);
+                                streamActive = window.poseidonAudioStream.active && activeTracks.length > 0;
+                                
+                                console.log('[Poseidon] Stream check before starting:', {
+                                    streamActive: window.poseidonAudioStream.active,
+                                    activeTracks: activeTracks.length,
+                                    totalTracks: tracks.length,
+                                    tracksState: tracks.map(t => ({
+                                        readyState: t.readyState,
+                                        enabled: t.enabled,
+                                        muted: t.muted
+                                    }))
+                                });
+                            }
+                            
+                            if (!streamActive) {
+                                console.error('[Poseidon] ERROR: Stream not active before starting! Re-requesting...');
+                                
+                                // Re-request stream
+                                try {
+                                    const newStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                                    window.poseidonAudioStream = newStream;
+                                    
+                                    // Verify new stream
+                                    const newTracks = newStream.getAudioTracks();
+                                    const newActiveTracks = newTracks.filter(t => t.readyState === 'live');
+                                    console.log('[Poseidon] Stream re-requested:', {
+                                        active: newStream.active,
+                                        activeTracks: newActiveTracks.length
+                                    });
+                                    
+                                    // Wait a moment for stream to stabilize
+                                    await new Promise(resolve => setTimeout(resolve, 500));
+                                    
+                                    // Update audio context if needed
+                                    if (audioContext && audioContext.state !== 'closed') {
+                                        try {
+                                            // Reconnect to new stream
+                                            if (microphone) {
+                                                microphone.disconnect();
+                                            }
+                                            microphone = audioContext.createMediaStreamSource(newStream);
+                                            analyser = audioContext.createAnalyser();
+                                            analyser.fftSize = 256;
+                                            analyser.smoothingTimeConstant = 0.8;
+                                            microphone.connect(analyser);
+                                            console.log('[Poseidon] Audio context reconnected to new stream');
+                                        } catch (audioErr) {
+                                            console.warn('[Poseidon] Could not reconnect audio context:', audioErr);
+                                        }
+                                    }
+                                } catch (streamErr) {
+                                    console.error('[Poseidon] ERROR re-requesting stream:', streamErr);
+                                    throw new Error('Failed to get active audio stream');
+                                }
                             } else {
-                                console.error('[Poseidon] ERROR: Stream not active before starting!');
+                                console.log('[Poseidon] ✅ Stream verified active before starting');
                             }
                             
                             // Try to start
@@ -3881,45 +3993,48 @@ function setupRecognitionHandlers() {
 function closePoseidonOverlay() {
     console.log('[Poseidon] Closing overlay...');
     
-    if (poseidonOverlay) {
-        poseidonOverlay.style.display = 'none';
-    }
-    
-    // Stop everything
+    // Set inactive FIRST to prevent any async operations from continuing
     poseidonActive = false;
     poseidonPaused = false;
     transcriptProcessing = false;
     recognitionState = 'idle';
     
+    // Clear all timeouts
     clearTimeout(silenceTimeout);
     clearTimeout(recognitionRestartTimeout);
     
-    // Stop audio monitoring
-    stopAudioLevelMonitoring();
-    
-    // Stop and release audio stream
-    if (window.poseidonAudioStream) {
-        try {
-            window.poseidonAudioStream.getTracks().forEach(track => track.stop());
-            window.poseidonAudioStream = null;
-            console.log('[Poseidon] Audio stream released');
-        } catch (e) {
-            console.warn('[Poseidon] Error releasing audio stream:', e);
-        }
-    }
-    
-    // Stop recognition
+    // Stop recognition FIRST (before stopping stream)
     if (recognition) {
         try {
             recognition.stop();
+            console.log('[Poseidon] Recognition stopped');
         } catch (e) {
-            // Ignore errors
+            console.warn('[Poseidon] Error stopping recognition:', e);
         }
     }
     
     // Stop speech synthesis
     if (speechSynthesis) {
         speechSynthesis.cancel();
+        console.log('[Poseidon] Speech synthesis cancelled');
+    }
+    
+    // Stop audio monitoring
+    stopAudioLevelMonitoring();
+    
+    // Stop and release audio stream LAST
+    if (window.poseidonAudioStream) {
+        try {
+            const tracks = window.poseidonAudioStream.getAudioTracks();
+            tracks.forEach(track => {
+                track.stop();
+                console.log('[Poseidon] Stopped audio track:', track.label);
+            });
+            window.poseidonAudioStream = null;
+            console.log('[Poseidon] Audio stream released');
+        } catch (e) {
+            console.warn('[Poseidon] Error releasing audio stream:', e);
+        }
     }
     
     // Reset state
@@ -3929,6 +4044,14 @@ function closePoseidonOverlay() {
     consecutiveNoSpeechCount = 0;
     serviceNotAllowedRetryCount = 0; // Reset retry counter
     lastServiceNotAllowedTime = 0;
+    lastHighVolumeTime = 0;
+    currentAudioLevel = 0;
+    audioLevelHistory = [];
+    
+    // Hide overlay
+    if (poseidonOverlay) {
+        poseidonOverlay.style.display = 'none';
+    }
     
     updatePoseidonStatus('ready', 'Ready');
     
@@ -3940,7 +4063,7 @@ function closePoseidonOverlay() {
         poseidonAssistantTranscript.textContent = '';
     }
     
-    console.log('[Poseidon] Overlay closed');
+    console.log('[Poseidon] Overlay closed and all resources released');
 }
 
 function togglePoseidonPause() {
