@@ -4,6 +4,12 @@
 
 Atlas AI is a sophisticated AI assistant platform powered by **Thor 1.1** (latest) with **Thor 1.0** available in stable mode. The platform provides a unified chat interface, continuous learning capabilities, and advanced features for knowledge management and conversation handling.
 
+**Latest Updates (2025-12-19):**
+- ✅ Thor 1.1 released with enhanced model architecture and improved inference
+- ✅ Poseidon voice assistant with circuit breaker to prevent infinite error loops
+- ✅ Enhanced error handling with browser-specific troubleshooting guidance
+- ✅ Comprehensive debugging logs for speech recognition
+
 ## 📁 Project Structure
 
 ```
@@ -264,8 +270,15 @@ Poseidon is a comprehensive voice assistant feature that provides live, conversa
 - `/image {description}` - Generate an image (e.g., `/image sunset over mountains`)
 
 **Settings Options**:
-- **Stable Mode**: Disables latest features (Poseidon, Think Deeper) and automatically applies simpler UI for maximum stability
+- **Stable Mode**: Disables latest features (Poseidon, Think Deeper) and automatically applies simpler UI for maximum stability. Uses Thor 1.0 model.
 - **Simpler UI Mode**: Minimalist interface hiding non-essential buttons (Think Deeper, History, Customize, Help, Upgrade, Model Selector) for a cleaner experience
+
+**Troubleshooting Poseidon**:
+- If you see "Service Unavailable", check browser microphone permissions
+- Circuit breaker automatically stops infinite error loops
+- Browser-specific guidance is provided in error messages
+- Requires HTTPS or localhost for security
+- Supported browsers: Chrome, Edge, Safari
 
 ### 9. Advanced Features
 

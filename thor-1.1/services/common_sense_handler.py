@@ -35,11 +35,7 @@ class CommonSenseHandler:
         self.casual_patterns = [
             r'\b(hi|hello|hey|hiya)\s+(there|again|back)\b',
             r'\b(how\s+)?(are\s+)?(you|u)\s+(doing|today|feeling)\b',
-            r'\b(how\s+)?(is\s+)?(your|ur)\s+(day|week|morning|afternoon|evening)\s+(going|been)\b',
-            r'\b(how\'s|hows)\s+(your|ur)\s+(day|week|morning|afternoon|evening)\s*(going|been)?\b',
             r'\b(what\s+)?(are\s+)?(you|u)\s+(up to|doing)\b',
-            r'\b(how\s+)?(are\s+)?(things|stuff)\s+(going|with you)\b',
-            r'\b(what\'s|whats)\s+(up|new|good|happening)\b',
         ]
         
     def is_compliment(self, message: str) -> bool:

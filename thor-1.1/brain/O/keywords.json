@@ -1,0 +1,2597 @@
+{
+  "letter": "O",
+  "keywords": [
+    "on",
+    "optimization",
+    "operator",
+    "object",
+    "orchestration",
+    "oracle",
+    "optical",
+    "oauth",
+    "of",
+    "operating",
+    "o",
+    "opencl",
+    "operations",
+    "outlier",
+    "overfitting",
+    "observational",
+    "open",
+    "owner",
+    "on-call",
+    "observability",
+    "opinion",
+    "oriented",
+    "observable",
+    "observer",
+    "online",
+    "order",
+    "ocr",
+    "opportunity",
+    "operational",
+    "offsetting",
+    "okrs",
+    "objectives",
+    "olap",
+    "oltp",
+    "onboarding",
+    "organizations",
+    "operant",
+    "organizational",
+    "organization",
+    "outstanding",
+    "oceanography",
+    "occultism",
+    "outer",
+    "objects",
+    "ordovician",
+    "ocean",
+    "otec",
+    "oil",
+    "offshore",
+    "ore",
+    "occupational",
+    "organic",
+    "objective",
+    "obligation",
+    "observation",
+    "occasion",
+    "option",
+    "origin",
+    "outcome",
+    "output",
+    "ownership",
+    "odin"
+  ],
+  "knowledge": [
+    {
+      "title": "ON FIRE | English meaning - Cambridge Dictionary",
+      "content": "Learn the meaning and usage of the idiom on fire, which can describe something burning, a part of the body feeling hot, or a person playing well. See synonyms, related words, and translations of on fire.",
+      "query": "You are on fire",
+      "source": "research",
+      "learned_at": "2025-11-23T17:56:25.139935"
+    },
+    {
+      "title": "You Are On Fire GIFs | Tenor",
+      "content": "With Tenor, maker of GIF Keyboard, add popular You Are On Fire animated GIFs to your conversations. Share the best GIFs now >>>",
+      "query": "You are on fire",
+      "source": "research",
+      "learned_at": "2025-11-23T17:56:25.139972"
+    },
+    {
+      "title": "Understanding the Idiom: \"on fire\" - Meaning, Origins, and Usage",
+      "content": "Learn the history and variations of the idiom \"on fire\", which means to be enthusiastic or excited. Find out how to use it in different contexts and avoid common mistakes.",
+      "query": "You are on fire",
+      "source": "research",
+      "learned_at": "2025-11-23T17:56:25.139997"
+    },
+    {
+      "title": "you are on fire | English examples in context | Ludwig",
+      "content": "High quality example sentences with \"you are on fire\" in context from reliable sources - Ludwig, your English writing platform",
+      "query": "You are on fire",
+      "source": "research",
+      "learned_at": "2025-11-23T17:56:25.140021"
+    },
+    {
+      "title": "on fire - Idioms by The Free Dictionary",
+      "content": "Learn the meaning and usage of the phrase \"on fire\" in different contexts. It can mean literally burning, having a burning sensation, performing well, or being attractive.",
+      "query": "You are on fire",
+      "source": "research",
+      "learned_at": "2025-11-23T17:56:25.140044"
+    },
+    {
+      "title": "Optimization Algorithms in Machine Learning - GeeksforGeeks",
+      "content": "Optimization algorithms in machine learning are mathematical techniques used to adjust a model's parameters to minimize errors and improve accuracy. These algorithms help models learn from data by finding the best possible solution through iterative updates.",
+      "query": "optimization algorithms",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:18:21.602432"
+    },
+    {
+      "title": "Mathematical optimization - Wikipedia",
+      "content": "Mathematical optimization (alternatively spelled optimisation) or mathematical programming is the selection of a best element, with regard to some criteria, from some set of available alternatives. [1][2] It is generally divided into two subfields: discrete optimization and continuous optimization.",
+      "query": "optimization algorithms",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:18:21.602480"
+    },
+    {
+      "title": "PDF Algorithms for Optimization",
+      "content": "This book covers various methods and techniques for solving optimization problems, such as gradient descent, Newton's method, genetic algorithms, and surrogate models. It also discusses the history, process, and challenges of optimization, as well as applications in engineering and science.",
+      "query": "optimization algorithms",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:18:21.602519"
+    },
+    {
+      "title": "How to Choose an Optimization Algorithm - Machine Learning Mastery",
+      "content": "Learn how to choose an optimization algorithm for differentiable and non-differentiable objective functions. Explore the major groups and examples of optimization algorithms, such as bracketing, local descent, first-order, and second-order methods.",
+      "query": "optimization algorithms",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:18:21.602556"
+    },
+    {
+      "title": "Top 10 Optimization Algorithms for Machine Learning",
+      "content": "The class of optimization algorithms in machine learning is capable of tuning model parameters to minimize arguments of loss functions, for better prediction accuracy. Familiarity with these optimization algorithms can more or less influence the machine learning models. This work presents the top 10 optimization algorithms applied to machine learning, a short description of the features ...",
+      "query": "optimization algorithms",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:18:21.602596"
+    },
+    {
+      "title": "10 Tips to Maximize Your Python Code Performance",
+      "content": "In this post, we'll cover 10 easy and effective tips to boost your Python code's performance. Whether you're building an app, script, or automation tool, these tricks will help you write faster, smoother Python code\u2014without the headache. Maximize your Python Code Performance Master Python with GeeksforGeeks' 'Python Foundation' course!",
+      "query": "python performance optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:26:24.411332"
+    },
+    {
+      "title": "PythonSpeed/PerformanceTips - Python Wiki",
+      "content": "This page is devoted to various tips and tricks that help improve the performance of your Python programs. Wherever the information comes from someone else, I've tried to identify the source. Python has changed in some significant ways since I first wrote my \"fast python\" page in about 1996, which means that some of the orderings will have changed. I migrated it to the Python wiki in hopes ...",
+      "query": "python performance optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:26:24.411374"
+    },
+    {
+      "title": "Python Performance Optimization: A Comprehensive Guide",
+      "content": "Table of Contents Introduction and Overview Profiling Your Python Code Code Optimization Techniques Memory Management Concurrency and Parallelism Using Built-in Functions and Libraries Caching and Memoization Just-in-Time Compilation with PyPy C Extensions for Performance-Critical Parts Best Practices and Common Pitfalls Conclusion Introduction and Overview Python, known for its simplicity and ...",
+      "query": "python performance optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:26:24.411412"
+    },
+    {
+      "title": "7 Powerful Python Performance Optimization Techniques for Faster Code",
+      "content": "Discover 7 powerful Python optimization techniques to boost code performance. Learn practical methods for faster execution and improved memory efficiency. Enhance your development skills now. Tagged with programming, devto, python, softwareengineering.",
+      "query": "python performance optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:26:24.411449"
+    },
+    {
+      "title": "7 Ways to Speed Up Your Python Code | Rayean's Creative Lab",
+      "content": "\ud83d\ude80 Writing efficient Python code is essential for developers working on performance-sensitive tasks like data processing, web applications, or machine learning. In this post, you'll explore 7 proven techniques to boost Python performance \u2014 with examples, explanations, and quick wins you can implement right away.",
+      "query": "python performance optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:26:24.411490"
+    },
+    {
+      "title": "Spread syntax (...) - JavaScript - MDN",
+      "content": "The spread (...) syntax allows an iterable, such as an array or string, to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected. In an object literal, the spread syntax enumerates the properties of an object and adds the key-value pairs to the object being created.",
+      "query": "javascript spread operator",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:29:16.284540"
+    },
+    {
+      "title": "How To Use the Spread Operator (...) in JavaScript - W3Schools",
+      "content": "The Spread Operator The JavaScript spread operator (...) expands an iterable (like an array) into more elements. This allows us to quickly copy all or parts of an existing array into another array:",
+      "query": "javascript spread operator",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:29:16.284589"
+    },
+    {
+      "title": "JavaScript Spread Operator - GeeksforGeeks",
+      "content": "The Spread operator (represented as three dots or \u2026) is used on iterables like array and string, or properties of Objects, to expand wherever zero or more elements are required to be copied or assigned. 1. Adding Multiple Elements Using Spread Operator Even though we get the content on one array inside the other one, actually it is an array inside another array which is definitely what we ...",
+      "query": "javascript spread operator",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:29:16.284627"
+    },
+    {
+      "title": "JavaScript Spread and Rest Operators - Explained with Code Examples",
+      "content": "Learn how to use the spread and rest operators to simplify array manipulation and function parameters in modern JavaScript. See code examples, use cases, and explanations for each operator.",
+      "query": "javascript spread operator",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:29:16.284664"
+    },
+    {
+      "title": "The Practical Usages of JavaScript Spread Operator",
+      "content": "Learn how to use the spread operator (...) to spread out elements of an iterable object such as an array, map, or set. See how to apply the spread operator to functions, arrays, strings, and objects with code examples.",
+      "query": "javascript spread operator",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:29:16.285551"
+    },
+    {
+      "title": "Object - JavaScript | MDN",
+      "content": "Learn how to create and manipulate objects in JavaScript using the Object type and its methods. Find out the differences between objects with null and non-null prototypes, and how to avoid common pitfalls and bugs.",
+      "query": "javascript object methods",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:29:50.521024"
+    },
+    {
+      "title": "JavaScript Object Methods - W3Schools",
+      "content": "Object methods are actions that can be performed on objects. A method is a function definition stored as a property value.",
+      "query": "javascript object methods",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:29:50.521102"
+    },
+    {
+      "title": "JavaScript Object Methods",
+      "content": "Learn how to define and use methods for an object in JavaScript. A method is a function that describes the object's behavior and can access its properties using the this value.",
+      "query": "javascript object methods",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:29:50.521162"
+    },
+    {
+      "title": "JavaScript Object Methods - GeeksforGeeks",
+      "content": "Object Methods in JavaScript can be accessed by using functions. Functions in JavaScript are stored as property values. The objects can also be called without using brackets (). In a method, 'this' refers to the owner object. Additional information can also be added along with the object method. Syntax: objectName.methodName() Properties: A function may be divided into different property ...",
+      "query": "javascript object methods",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:29:50.521226"
+    },
+    {
+      "title": "JavaScript - Object Methods - Online Tutorials Library",
+      "content": "JavaScript Object Methods JavaScript object methods are object properties that contains function definitions. An object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function; in that case the property is known as a method.",
+      "query": "javascript object methods",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:29:50.521288"
+    },
+    {
+      "title": "Kubernetes Documentation",
+      "content": "Kubernetes is an open source container orchestration engine for automating deployment, scaling, and management of containerized applications. The open source project is hosted by the Cloud Native Computing Foundation.",
+      "query": "kubernetes orchestration",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:41:43.548036"
+    },
+    {
+      "title": "What is Kubernetes Orchestration? - Mirantis",
+      "content": "Kubernetes orchestration is a system that automates the management of complex, multi-container applications across clusters of container hosts. Learn what orchestration is, how Kubernetes provides it, and what other orchestration tools exist.",
+      "query": "kubernetes orchestration",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:41:43.548111"
+    },
+    {
+      "title": "What is container orchestration? - Red Hat",
+      "content": "Kubernetes is an open source container orchestration tool that was originally developed and designed by engineers at Google. Google donated the Kubernetes project to the newly formed Cloud Native Computing Foundation in 2015.",
+      "query": "kubernetes orchestration",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:41:43.548169"
+    },
+    {
+      "title": "Kubernetes Orchestration: The Ultimate 2025 Guide",
+      "content": "Master Kubernetes orchestration in 2025! This comprehensive guide covers everything from its core concepts to best practices, ensuring your applications thrive in the cloud.",
+      "query": "kubernetes orchestration",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:41:43.548226"
+    },
+    {
+      "title": "Orchestration with Kubernetes: Beginner's Guide - Medium",
+      "content": "Orchestration with Kubernetes: Beginner's Guide In the world of cloud-native applications, Kubernetes has emerged as the leading container orchestration platform. Originally developed by Google ...",
+      "query": "kubernetes orchestration",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:41:43.548282"
+    },
+    {
+      "title": "AI Database | Oracle",
+      "content": "Discover advanced database features like AI, security, and cloud solutions, and optimize your data with Oracle's robust technologies.",
+      "query": "Oracle database",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:44:24.136956"
+    },
+    {
+      "title": "Oracle Database - Wikipedia",
+      "content": "Oracle Database (commonly referred to as Oracle DBMS, Oracle Autonomous Database, or simply as Oracle) is a proprietary multi-model [4] database management system produced and marketed by Oracle Corporation.",
+      "query": "Oracle database",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:44:24.137013"
+    },
+    {
+      "title": "What Is Oracle Database",
+      "content": "Learn what Oracle Database is, how it differs from other databases, and what features it offers. This tutorial covers the basics of Oracle Database architecture, editions, and installation.",
+      "query": "Oracle database",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:44:24.137057"
+    },
+    {
+      "title": "Oracle Database Reviews & Ratings 2025 | Gartner Peer Insights",
+      "content": "Oracle Database is a software that provides a multi-model database management system designed for data storage, retrieval and processing. It supports a range of data models including relational, document, graph and spatial data.",
+      "query": "Oracle database",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:44:24.137098"
+    },
+    {
+      "title": "Database Software Downloads | Oracle",
+      "content": "Oracle AI Database Software Downloads Whether you are a developer, a data scientist, a DBA, an educator, or just interested in databases, Oracle AI Database 26ai is the ideal way to get started. It provides native support for all modern data types, analytics, and the latest development paradigms\u2014all built into one product. Explore the perfect database solution for your upcoming project ...",
+      "query": "Oracle database",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:44:24.137142"
+    },
+    {
+      "title": "How to Optimize Your Relational Database Performance",
+      "content": "Conclusion Optimizing relational database performance is essential to maintain the responsiveness, scalability, and reliability of the relational database system. By implementing techniques like Query optimization, indexing, Logging, etc. organizations can identify and address performance bottlenecks, improve query time, and overall performance.",
+      "query": "database optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:46:18.819505"
+    },
+    {
+      "title": "10 Essential Database Optimization Techniques for 2025",
+      "content": "Discover 10 powerful database optimization techniques to boost performance. Learn about indexing, query tuning, caching, and more with expert tips.",
+      "query": "database optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:46:18.819569"
+    },
+    {
+      "title": "The Ultimate Guide to Database Optimization: Tips and Best Practices",
+      "content": "Master database optimization with proven techniques, indexing strategies, query tuning, and performance best practices. Transform your database from slow to lightning-fast with expert tips.",
+      "query": "database optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:46:18.819627"
+    },
+    {
+      "title": "8 Best Database Optimization Techniques - DNSstuff",
+      "content": "Gain valuable insights that will enable you to optimize your database performance, and keep up with users' expectations of your business.",
+      "query": "database optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:46:18.819675"
+    },
+    {
+      "title": "What is Database Optimization? - Learn.org",
+      "content": "Database optimization involves maximizing the speed and efficiency with which data is retrieved. Database designers, administrators and analysts work together to optimize system performance through diverse methods. Thoughtful design that carefully addresses functional needs is the foundation of performance enhancement.",
+      "query": "database optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:46:18.819722"
+    },
+    {
+      "title": "AI Object Detection Training - Image Classification for AI",
+      "content": "Accurate, high-quality datasets tailored to your AI model training needs. Classification, bounding box, polygon, lines + splines, point cloud, keypoint, and more.",
+      "query": "object detection",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:56:53.567251"
+    },
+    {
+      "title": "Object detection - Wikipedia",
+      "content": "Object detection is a computer technology related to computer vision and image processing that deals with detecting instances of semantic objects of a certain class (such as humans, buildings, or cars) in digital images and videos. [1] Well-researched domains of object detection include face detection and pedestrian detection.",
+      "query": "object detection",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:56:53.567287"
+    },
+    {
+      "title": "What is Object Detection in Computer Vision? - GeeksforGeeks",
+      "content": "Object Detection is a fundamental task in computer vision that involves identifying and locating multiple objects within an image or video. Unlike image classification which labels an entire image, object detection not only classifies each object but also draws bounding boxes around them to indicate their position.",
+      "query": "object detection",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:56:53.567314"
+    },
+    {
+      "title": "What is object detection? - IBM",
+      "content": "Object detection is a technique that uses neural networks to localize and classify objects in images. This computer vision task has a wide range of applications, from medical imaging to self-driving cars.",
+      "query": "object detection",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:56:53.567339"
+    },
+    {
+      "title": "What is Object Detection? A Beginner's Guide to How AI Sees the World",
+      "content": "Final Thoughts Object detection is a foundational component of computer vision, enabling machines to interpret and interact with the world around them. Advances in deep learning, from two-stage pipelines to real-time one-stage models and cutting-edge transformer-based systems, have pushed the boundaries of what's possible, allowing machines to \"see\" with unprecedented accuracy and ...",
+      "query": "object detection",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:56:53.567364"
+    },
+    {
+      "title": "Optical Character Recognition - The Best OCR Software",
+      "content": "Accurate OCR for all languages! Soda PDF recognizes text in PDFs with high accuracy. Can't edit text in scanned PDFs? Soda PDF OCR unlocks the text & makes it editable.",
+      "query": "optical character recognition",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:57:28.081773"
+    },
+    {
+      "title": "OCR Scanner Software - OCR Scan Software",
+      "content": "OCR scan software reads labels at any angle perfectly. OCR API maintains full GDPR compliance for data protection.",
+      "query": "optical character recognition",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:57:28.081815"
+    },
+    {
+      "title": "Optical character recognition - Wikipedia",
+      "content": "Optical character recognition or optical character reader (OCR) is the electronic or mechanical conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document, a scene photo (for example the text on signs and billboards in a landscape photo) or from subtitle text ...",
+      "query": "optical character recognition",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:57:28.081847"
+    },
+    {
+      "title": "OCR - Optical Character Recognition - Foundry Tools",
+      "content": "Learn how the optical character recognition (OCR) services extract print and handwritten text from images and documents in global languages.",
+      "query": "optical character recognition",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:57:28.081879"
+    },
+    {
+      "title": "What is optical character recognition (OCR)? - IBM",
+      "content": "Optical character recognition saves time, cost and other resources by utilizing automated data extraction and storage capabilities.",
+      "query": "optical character recognition",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:57:28.081908"
+    },
+    {
+      "title": "OAuth - Wikipedia",
+      "content": "OAuth (short for open authorization[1][2]) is an open standard for access delegation, commonly used as a way for internet users to grant websites or applications access to their information on other websites but without giving them the passwords. [3][4] This mechanism is used by companies such as Amazon, [5] Google, Meta Platforms, Microsoft, and Twitter to permit users to share information ...",
+      "query": "OAuth protocol",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:14:22.637319"
+    },
+    {
+      "title": "OAuth 2.0 \u2014 OAuth",
+      "content": "OAuth 2.0 OAuth 2.0 is the industry-standard protocol for authorization. OAuth 2.0 focuses on client developer simplicity while providing specific authorization flows for web applications, desktop applications, mobile phones, and living room devices. This specification and its extensions are being developed within the IETF OAuth Working Group. OAuth 2.1 is an in-progress effort to consolidate ...",
+      "query": "OAuth protocol",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:14:22.637402"
+    },
+    {
+      "title": "What Is OAuth? | Microsoft Security",
+      "content": "OAuth is a standard that authorizes access between apps and services without revealing passwords. Learn how OAuth works, its benefits, examples, and how to use it with Microsoft Entra ID.",
+      "query": "OAuth protocol",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:14:22.637467"
+    },
+    {
+      "title": "What is OAuth 2.0 and what does it do for you? - Auth0",
+      "content": "OAuth 2.0 is a standard for online authorization that allows a client app to access resources on behalf of a user without sharing credentials. Learn the principles, roles, scopes, grant types and flows of OAuth 2.0 with examples and diagrams.",
+      "query": "OAuth protocol",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:14:22.637531"
+    },
+    {
+      "title": "What is OAuth (Open Authorization) - GeeksforGeeks",
+      "content": "HTTP (Hyper Text Transfer Protocol) and it allows access tokens to be issued to the third party application by an authorization server with the approval from the owner. There are 3 Components in OAuth Mechanism - OAuth Provider - This is the OAuth provider Eg. Google, FaceBook etc.",
+      "query": "OAuth protocol",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:14:22.637601"
+    },
+    {
+      "title": "Container Management at Scale - Manage Your Containers",
+      "content": "Automated Management and Serverless Deployments with AWS Containers Services. Run Your Containers in the Most Secure, Reliable and Scalable Environment.",
+      "query": "container orchestration",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:17:39.326937"
+    },
+    {
+      "title": "What is Container Orchestration? - Container Orchestration Explained - AWS",
+      "content": "Container orchestration is the process of automating the networking and management of containers so you can deploy applications at scale. Containerization bundles an application's code with all the files and libraries it needs to run on any infrastructure. Microservices architectures can have hundreds, or even thousands, of containers as applications grow and become more complex. Container ...",
+      "query": "container orchestration",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:17:39.327073"
+    },
+    {
+      "title": "What is container orchestration? - IBM",
+      "content": "Container orchestration automatically provisions, deploys, scales and manages the lifecycle of containerized applications. Developers use container orchestration to streamline agile or DevOps workflows, providing the flexibility and speed needed to support modern hybrid multicloud infrastructure.",
+      "query": "container orchestration",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:17:39.327133"
+    },
+    {
+      "title": "16 Best Container Orchestration Tools and Services",
+      "content": "Learn about the best container orchestration tools and services for managing complex applications at scale. Compare features, benefits, and drawbacks of Kubernetes, Openshift, Nomad, Docker Swarm, and more.",
+      "query": "container orchestration",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:17:39.327192"
+    },
+    {
+      "title": "Proof of work - Wikipedia",
+      "content": "Proof of work Proof of work (also written as proof-of-work, an abbreviated PoW) is a form of cryptographic proof in which one party (the prover) proves to others (the verifiers) that a certain amount of a specific computational effort has been expended. [1] Verifiers can subsequently confirm this expenditure with minimal effort on their part.",
+      "query": "proof of work",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T04:17:53.783348"
+    },
+    {
+      "title": "Understanding Proof of Work (PoW) in Blockchain: Key ... - Investopedia",
+      "content": "What Is Proof of Work (PoW)? Proof of Work (PoW) is a foundational consensus mechanism in blockchain technology. It requires substantial computational effort to validate transactions, ensuring the ...",
+      "query": "proof of work",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T04:17:53.783435"
+    },
+    {
+      "title": "Blockchain - Proof of Work (PoW) - GeeksforGeeks",
+      "content": "Proof of Work consensus is the mechanism of choice for the majority of cryptocurrencies currently in circulation. The algorithm is used to verify the transaction and create a new block in the blockchain. The idea for Proof of Work (PoW) was first published in 1993 by Cynthia Dwork and Moni Naor and was later applied by Satoshi Nakamoto in the Bitcoin paper in 2008. The term \"proof of work ...",
+      "query": "proof of work",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T04:17:53.783511"
+    },
+    {
+      "title": "What is \"proof of work\" or \"proof of stake\"? | Coinbase",
+      "content": "Learn how proof of work and proof of stake are the two major ways cryptocurrencies verify transactions, add them to the blockchain, and create new tokens. Compare their advantages, disadvantages, and examples of cryptocurrencies that use them.",
+      "query": "proof of work",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T04:17:53.783578"
+    },
+    {
+      "title": "Proof of Work vs Proof of Stake: Which Are The Differences?",
+      "content": "Proof of Work (PoW) is the original consensus mechanism used by Bitcoin, relying on computational competition to secure the network. Proof of Stake (PoS), in contrast, selects validators based on the amount of cryptocurrency they lock up as collateral. Both aim to achieve the same goal\u2014secure, decentralized transaction validation\u2014but they do so in fundamentally different ways.",
+      "query": "proof of work",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T04:17:53.783648"
+    },
+    {
+      "title": "Buy and sell 350+ top tokens - Start trading in no time",
+      "content": "Getting started with Crypto.com takes just 5 minutes, and you can trade with just US$10. Applying for a Crypto.com account is quick, and you can trade 350+ top tokens right after.",
+      "query": "proof of stake",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T04:50:17.249224"
+    },
+    {
+      "title": "Understanding Proof-of-Stake: How PoS Transforms Cryptocurrency",
+      "content": "Explore how Proof-of-Stake (PoS) enhances blockchain efficiency by using coin holders as validators, reducing energy use, and securing transactions seamlessly.",
+      "query": "proof of stake",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T04:50:17.249295"
+    },
+    {
+      "title": "Proof of stake - Wikipedia",
+      "content": "Proof of stake (PoS) is a class of blockchain protocols that select validators based on their cryptocurrency holdings, avoiding the computational cost of proof of work (PoW). Learn about the types, advantages, attacks and variants of PoS, such as delegated proof of stake (DPoS) and liquid proof of stake (LPoS).",
+      "query": "proof of stake",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T04:50:17.249365"
+    },
+    {
+      "title": "What Is Proof of Stake (PoS) in Crypto? Is It Better Than PoW?",
+      "content": "Proof of stake is a consensus mechanism to secure blockchain networks and validate crypto transactions. Learn how PoS works, along with its pros and cons.",
+      "query": "proof of stake",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T04:50:17.249423"
+    },
+    {
+      "title": "What Is Proof-of-Stake (PoS)? - Ledger",
+      "content": "Learn what proof-of-stake is, how it works, and its advantages over proof-of-work. Discover the different types of proof-of-stake, such as delegated, nominated, and liquid, and how to stake your coins.",
+      "query": "proof of stake",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T04:50:17.249481"
+    },
+    {
+      "title": "Advanced IoT Technology - IoT Connectivity Experts",
+      "content": "Secure IoT devices and networks with trusted cybersecurity solutions. Protect your IoT network from threats with advanced security solutions.",
+      "query": "Internet of Things",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:19:22.833433"
+    },
+    {
+      "title": "Shop internet of things book - Amazon.com Official Site",
+      "content": "Browse & discover thousands of unique brands. Read customer reviews & best sellers. Find deals and compare prices on internet of things book at Amazon.com",
+      "query": "Internet of Things",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:19:22.833517"
+    },
+    {
+      "title": "Internet of things - Wikipedia",
+      "content": "The Internet of things (IoT) describes physical objects that are embedded with sensors, processing ability, software, and other technologies that connect and exchange data with other devices and systems over the Internet or other communication networks. [1][2][3][4][5] The IoT encompasses electronics, communication, and computer science ...",
+      "query": "Internet of Things",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:19:22.833583"
+    },
+    {
+      "title": "What is the Internet of Things (IoT)? - IBM",
+      "content": "What is the IoT? The Internet of Things (IoT) refers to a network of physical devices, vehicles, appliances, and other physical objects that are embedded with sensors, software, and network connectivity, allowing them to collect and share data.",
+      "query": "Internet of Things",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:19:22.833642"
+    },
+    {
+      "title": "Internet of Things | Definition, History, Examples, & Privacy Concerns ...",
+      "content": "Internet of Things (IoT), the vast array of physical objects equipped with sensors and software that enable them to interact with little human intervention by collecting and exchanging data via a network. The Internet of Things (IoT) includes the many \"smart,\" computer-like devices so commonplace",
+      "query": "Internet of Things",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:19:22.833705"
+    },
+    {
+      "title": "Shop computer operating systems book - Amazon.com Official Site",
+      "content": "Browse & discover thousands of brands. Read customer reviews & find best sellers. Find deals and low prices on computer operating systems book at Amazon.com",
+      "query": "operating systems",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:21:42.084166"
+    },
+    {
+      "title": "Operating systems - Best Brands Side by Side",
+      "content": "OneClearWinner.com - Stop browsing online stores for hours - we are doing it for you. OneClearWinner.com - Stop browsing online stores for hours",
+      "query": "operating systems",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:21:42.084217"
+    },
+    {
+      "title": "Operating system - Wikipedia",
+      "content": "Learn about operating systems, system software that manages computer hardware and software resources, and provides common services for computer programs. Explore different types of operating systems, such as multicomputer, distributed, embedded, real-time, and hypervisor.",
+      "query": "operating systems",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:21:42.084257"
+    },
+    {
+      "title": "10 Best Operating Systems for Laptops and Computers [2024 LIST]",
+      "content": "Compare the features, market share, and prices of 10 popular operating systems, including Windows, Mac OS, Ubuntu, and Linux. Learn the differences between server OS and everyday OS, and the free alternatives for home and business use.",
+      "query": "operating systems",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:21:42.084294"
+    },
+    {
+      "title": "What is an Operating System? - GeeksforGeeks",
+      "content": "An Operating System is a System software that manages all the resources of the computing device. Acts as an interface between the software and different parts of the computer or the computer hardware.",
+      "query": "operating systems",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:21:42.084331"
+    },
+    {
+      "title": "launch linux 8.10 instance - Pre-Configured & Optimized",
+      "content": "Launch Oracle Linux 8.10 on AWS with secure, cloud-ready AMIs by Ntegral. Deploy Oracle Linux 8.10 on AWS in minutes. Reliable and production-ready",
+      "query": "Linux operating system",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:21:53.514042"
+    },
+    {
+      "title": "Linux operating system - Smart Shoppers Use This",
+      "content": "OneClearWinner.com - Stop browsing online stores for hours - we are doing it for you. OneClearWinner.com - Stop browsing online stores for hours",
+      "query": "Linux operating system",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:21:53.514096"
+    },
+    {
+      "title": "Linux - Wikipedia",
+      "content": "Linux is the predominant operating system for servers and is also used on all of the world's 500 fastest supercomputers. [g] When combined with Android, which is Linux-based and designed for smartphones, they have the largest installed base of all general-purpose operating systems.",
+      "query": "Linux operating system",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:21:53.514141"
+    },
+    {
+      "title": "Download Linux | Linux.org",
+      "content": "Find links to download 24 popular Linux distributions, such as Ubuntu, CentOS, Debian, Fedora, and more. Explore different Linux options and choose the one that suits your needs.",
+      "query": "Linux operating system",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:21:53.514182"
+    },
+    {
+      "title": "Shop Electronics - Amazon.com\u00ae Official Site",
+      "content": "Browse & discover thousands of brands. Read customer reviews & find best sellers. Find deals and compare prices on electronics at Amazon.com",
+      "query": "Windows operating system",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:22:05.373086"
+    },
+    {
+      "title": "Get Windows 11 Pro Cheaper - Get your Windows 11 pro now",
+      "content": "Looking for Windows key? Get either the Home or Pro version of Windows 11 up to -80%. Make sure you're running your PC on the latest version of Windows - get a new OS on G2A",
+      "query": "Windows operating system",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:22:05.373134"
+    },
+    {
+      "title": "Get Windows 10 | Shop & Buy New Windows Devices | Microsoft",
+      "content": "Learn how to check if your PC is eligible for an upgrade to Windows 11, the newest version of Windows with continuous innovations and improved performance. Find out the minimum system requirements, FAQs, and where to shop for Windows 11 PCs.",
+      "query": "Windows operating system",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:22:05.373173"
+    },
+    {
+      "title": "Microsoft Windows - Wikipedia",
+      "content": "Microsoft Windows ... Microsoft Windows, commonly known as Windows, is a proprietary graphical operating system developed and marketed by Microsoft. It is grouped into families that cater to particular sectors of the computing industry - Windows for personal computers, Windows Server for servers, and Windows IoT for embedded systems.",
+      "query": "Windows operating system",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:22:05.373215"
+    },
+    {
+      "title": "What version of Windows am I running? | Microsoft Learn",
+      "content": "Discover which version of Windows you're running to determine whether or not your device is enrolled in the Long-Term Servicing Channel or General Availability Channel.",
+      "query": "Windows operating system",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:22:05.373251"
+    },
+    {
+      "title": "macOS - Wikipedia",
+      "content": "macOS (previously OS X and originally Mac OS X) is a proprietary Unix-based [7][8] operating system, derived from OPENSTEP for Mach and FreeBSD, which has been marketed and developed by Apple since 2001.",
+      "query": "macOS operating system",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:22:16.869380"
+    },
+    {
+      "title": "How to download and install macOS - Apple Support",
+      "content": "Download and install current or previous versions of the Mac operating system on compatible Mac computers.",
+      "query": "macOS operating system",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:22:16.869457"
+    },
+    {
+      "title": "The full list of all macOS versions until 2025 - Setapp",
+      "content": "As Apple grew and strengthened the ecosystem through the years, macOS operating system version history evolved too. In this article, we guide you through the evolution of Apple's operating system, from its first public release in 2001 to the latest 2025 macOS Tahoe release date on September 15.",
+      "query": "macOS operating system",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:22:16.869524"
+    },
+    {
+      "title": "Latest macOS version and every Mac operating system in order | Macworld",
+      "content": "Here's everything you need to know about the latest version of macOS and every version of the Mac operating system from Cheetah to Tahoe.",
+      "query": "macOS operating system",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:22:16.869581"
+    },
+    {
+      "title": "What is macOS? - GeeksforGeeks",
+      "content": "macOS is built on a Unix based architecture and provides users with a reliable and user friendly experience. In this article, we will understand macOS in detail. What is macOS? macOS operating system that Apple Inc. developed especially for its Macintosh computer series. It is the replacement for the classic MacOS. The reliability, security features, ease of use, and compatibility with other ...",
+      "query": "macOS operating system",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:22:16.869644"
+    },
+    {
+      "title": "Optimization | Definition, Techniques, & Facts | Britannica",
+      "content": "Optimization, collection of mathematical principles and methods used for solving quantitative problems. Optimization problems typically have three fundamental elements: a quantity to be maximized or minimized, a collection of variables, and a set of constraints that restrict the variables.",
+      "query": "optimization techniques",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:25:30.316073"
+    },
+    {
+      "title": "Introduction to Optimization: Concepts, Techniques, and Applications ...",
+      "content": "Common Optimization Techniques There are numerous methods to solve optimization problems, depending on the nature and complexity of the problem.",
+      "query": "optimization techniques",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:25:30.316142"
+    },
+    {
+      "title": "PDF Introduction to Mathematical Optimization - Stanford University",
+      "content": "Learn the basics of optimization problems, methods and applications in this course for high school students. Explore topics such as vectors, iteration, programming, linear programming, calculus and Lagrange multipliers.",
+      "query": "optimization techniques",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:25:30.316208"
+    },
+    {
+      "title": "How to Write a Book Report (Guide, Examples & Templates)",
+      "content": "Don't let a book report intimidate you. With this step-by-step guide, you'll learn how to write a book report to ace your assignment!",
+      "query": "Write a book report on Homecoming.",
+      "source": "research",
+      "learned_at": "2025-11-24T07:26:18.235397"
+    },
+    {
+      "title": "How to Write a Book Report, With Examples | Grammarly",
+      "content": "Writing a book report can be a daunting task, but it doesn't have to be. In essence, a book report is a summary of a book's content, structure, and analysis. It is a way for you to demonstrate your understanding of the book and its themes. A well-written book report can showcase your attention to detail, comprehension, and critical thinking skills.",
+      "query": "Write a book report on Homecoming.",
+      "source": "research",
+      "learned_at": "2025-11-24T07:26:18.235457"
+    },
+    {
+      "title": "How to Write a Book Report: A Step-by-Step Guide - wikiHow",
+      "content": "A book report is a short essay that summarizes and analyzes a work of fiction or nonfiction. Writing a book report may not seem fun at first, but it gives you a great chance to fully understand a work and its author. In this article, we'll teach you everything you need to know about how to write a book report, from choosing a book and outlining to drafting and editing your final paper.",
+      "query": "Write a book report on Homecoming.",
+      "source": "research",
+      "learned_at": "2025-11-24T07:26:18.235499"
+    },
+    {
+      "title": "Homecoming: Full Book Summary | SparkNotes",
+      "content": "A short summary of Cynthia Voigt&#39;s Homecoming. This free synopsis covers all the crucial plot points of Homecoming.",
+      "query": "Write a book report on Homecoming.",
+      "source": "research",
+      "learned_at": "2025-11-24T07:26:18.235534"
+    },
+    {
+      "title": "Book Report 101: How to Start, Write & Nail It Every Time",
+      "content": "Learn what a book report is and how to write one that stands out. Get step-by-step tips, templates, and examples to make your next book report easy and A+ worthy.",
+      "query": "Write a book report on Homecoming.",
+      "source": "research",
+      "learned_at": "2025-11-24T07:26:18.235569"
+    },
+    {
+      "title": "Big O notation - Wikipedia",
+      "content": "Big O notation is a mathematical notation that describes the approximate size of a function on a domain. Big O is a member of a family of notations invented by German mathematicians Paul Bachmann and [1] Edmund Landau [2] and expanded by others, collectively called Bachmann-Landau notation. The letter O was chosen by Bachmann to stand for Ordnung, meaning the order of approximation. In ...",
+      "query": "big O notation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:07:14.754180"
+    },
+    {
+      "title": "Big O Notation Tutorial - A Guide to Big O Analysis - GeeksforGeeks",
+      "content": "Big O notation is a powerful tool used in computer science to describe the time complexity or space complexity of algorithms. Big-O is a way to express the upper bound of an algorithm's time or space complexity.",
+      "query": "big O notation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:07:14.754249"
+    },
+    {
+      "title": "Big O Cheat Sheet - Time Complexity Chart - freeCodeCamp.org",
+      "content": "Big O Notation is a metric for determining the efficiency of an algorithm. It uses algebraic terms to describe the complexity of an algorithm as a function of its input size. Learn how to calculate and compare different time complexities with examples and a cheat sheet.",
+      "query": "big O notation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:07:14.754307"
+    },
+    {
+      "title": "Big-O Notation - NeetCode",
+      "content": "Learn the fundamentals of Big-O notation and how to analyze the time complexity of your code.",
+      "query": "big O notation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:07:14.754364"
+    },
+    {
+      "title": "Big O Notation | Brilliant Math & Science Wiki",
+      "content": "Big O notation is a notation used when talking about growth rates. It formalizes the notion that two functions &quot;grow at the same rate,&quot; or one function &quot;grows faster than the other,&quot; and such. It is very commonly used in computer science, when analyzing algorithms. Algorithms have a specific running time, usually declared as a function on its input size. However ...",
+      "query": "big O notation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:07:14.754419"
+    },
+    {
+      "title": "AI Model Optimization - Optimize AI with DPO",
+      "content": "RLHF for better AI model performance, safety, accuracy, and trust. Optimize LLMs with RLHF, DPO, and preference learning to enhance AI performance.",
+      "query": "algorithm optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:07:26.057751"
+    },
+    {
+      "title": "How to Choose an Optimization Algorithm - MachineLearningMastery.com",
+      "content": "Optimization is the problem of finding a set of inputs to an objective function that results in a maximum or minimum function evaluation. It is the challenging problem that underlies many machine learning algorithms, from fitting logistic regression models to training artificial neural networks. There are perhaps hundreds of popular optimization algorithms, and perhaps tens [\u2026]",
+      "query": "algorithm optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:07:26.057890"
+    },
+    {
+      "title": "Understanding Optimization Algorithms in Machine Learning",
+      "content": "In this article, we discussed Optimization algorithms like Gradient Descent and Stochastic Gradient Descent and their application in Logistic Regression. SGD is the most important optimization algorithm in Machine Learning.",
+      "query": "algorithm optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:07:26.057931"
+    },
+    {
+      "title": "A guide to help developers get up and running quickly with the OpenCL ...",
+      "content": "This guide is written to help developers get up and running quickly with the Khronos\u00ae Group's OpenCL\u2122 programming framework. It is an introductory read that covers the background and key concepts of OpenCL, but also contains links to more detailed materials that developers can use to explore the capabilities of OpenCL that interest them most.",
+      "query": "OpenCL programming",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:54:52.991088"
+    },
+    {
+      "title": "OpenCL for Parallel Programming of Heterogeneous Systems",
+      "content": "OpenCL for Parallel Programming of Heterogeneous Systems OpenCL\u2122 (Open Computing Language) is an open, royalty-free standard for cross-platform, parallel programming of diverse accelerators found in supercomputers, cloud servers, personal computers, mobile devices and embedded platforms. OpenCL greatly improves the speed and responsiveness of a wide spectrum of applications in numerous ...",
+      "query": "OpenCL programming",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:54:52.991163"
+    },
+    {
+      "title": "Introduction to OpenCL Programming - UL HPC Tutorials",
+      "content": "Programming Pre-requisites: C/C++ language and, due to the lower level of OpenCL, (preferable) knowledge in other frameworks for heterogeneous programming, such as CUDA, OpenACC or SYCL.",
+      "query": "OpenCL programming",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:54:52.991220"
+    },
+    {
+      "title": "OpenCL - Wikipedia",
+      "content": "OpenCL (Open Computing Language) is a framework for writing programs that execute across heterogeneous platforms consisting of central processing units (CPUs), graphics processing units (GPUs), digital signal processors (DSPs), field-programmable gate arrays (FPGAs) and other processors or hardware accelerators. OpenCL specifies a programming language (based on C99) for programming these ...",
+      "query": "OpenCL programming",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:54:52.991277"
+    },
+    {
+      "title": "PDF OpenCL Programming Guide - pearsoncmg.com",
+      "content": "An OpenCL program is similar to a dynamic library, and an OpenCL kernel is similar to an exported function from the dynamic library. Applications directly call the functions exported by a dynamic library from their code.",
+      "query": "OpenCL programming",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:54:52.991334"
+    },
+    {
+      "title": "Best PC Tune Up Software - Restore Maximum PC Speed",
+      "content": "Only System Mechanic\u00ae delivers performance, protection, & privacy tools you can count on. Speed up, secure, and simplify your digital life with System Mechanic\u00ae. Download now!",
+      "query": "performance optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:55:15.944450"
+    },
+    {
+      "title": "Tune-up, Clean, & Optimize PC - Speed-Up, Optimize & Clean PC",
+      "content": "Clean, Speed-Up & Optimize Your PC with Fortect\u00ae - 100% Safe & Easy. Download Now. Limited Time Offer: Save Up To 50% on Fortect\u00ae. Repair, Optimize and Update PC.",
+      "query": "performance optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:55:15.944526"
+    },
+    {
+      "title": "Tips to improve PC performance in Windows - Microsoft Support",
+      "content": "Learn how to speed up your PC with 10 suggestions, such as updating Windows and drivers, restarting, using ReadyBoost, and disabling unnecessary programs. Find out how to restore your PC from a system restore point if needed.",
+      "query": "performance optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:55:15.944582"
+    },
+    {
+      "title": "How to Optimize Your PC Performance: 16 Easy Tricks - wikiHow",
+      "content": "Disabling it temporarily is a great way to optimize your PC during gameplay, while downloading, or doing anything else that requires faster internet speeds and more processing power.",
+      "query": "performance optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:55:15.944636"
+    },
+    {
+      "title": "7 simple tweaks to reduce CPU usage on Windows",
+      "content": "A reboot also helps establish a baseline for your CPU usage on a fresh start, making it easier to track how much subsequent tweaks improve performance. A reboot works in several ways: it kills runaway processes (tasks that hang or get stuck in a loop), stops unnecessary background apps and updates, resolves temporary software glitches, and even ...",
+      "query": "performance optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:55:15.944693"
+    },
+    {
+      "title": "Code Optimization in Compiler Design - GeeksforGeeks",
+      "content": "Code optimization is a crucial phase in compiler design aimed at enhancing the performance and efficiency of the executable code. By improving the quality of the generated machine code optimizations can reduce execution time, minimize resource usage, and improve overall system performance.",
+      "query": "code optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:10:38.260234"
+    },
+    {
+      "title": "What Is Code Optimization? Definition, Goals, and Best Tools",
+      "content": "Code optimization improves performance, speed, and stability. This guide covers goals, techniques, and the best tools for developers in 2025.",
+      "query": "code optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:10:38.260319"
+    },
+    {
+      "title": "Free Online Code Optimizers for 62+ Programming Languages",
+      "content": "Improve your code efficiency with our free online code optimizers. Supports a wide range of programming languages.",
+      "query": "code optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:10:38.260383"
+    },
+    {
+      "title": "PDF Code Optimization - UC Davis",
+      "content": "Learn the goals, issues, and techniques of code optimization for reducing execution speed and code size. Explore the sources, types, and scopes of optimization, and the impact of language design and hardware features.",
+      "query": "code optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:10:38.260461"
+    },
+    {
+      "title": "How to Optimize Your Code for Better Performance: A Comprehensive Guide",
+      "content": "Performance optimization is a critical aspect of software development. Efficient code not only runs faster but also consumes fewer resources, provides better user experience, and can save significant costs in production environments. Whether you're developing a mobile app, a web application, or an enterprise system, understanding how to optimize your code is an essential skill. In this ...",
+      "query": "code optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:10:38.260526"
+    },
+    {
+      "title": "Mac Performance Optimizer - Bring Your Mac to Its Prime",
+      "content": "Enjoy smooth and trouble-free Mac performance. Clean up RAM and remove malware. Free up GBs of space wihtout deleting a single important file. Powerful antivirus included",
+      "query": "memory optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:10:50.010682"
+    },
+    {
+      "title": "Top 5 Best Memory Supplements - We Reviewed the Top 5 Brands",
+      "content": "Our experts have done the research for you to identify the best choices for better memory. Our research found 5 key ingredients that a good supplement must include to improve memory",
+      "query": "memory optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:10:50.010742"
+    },
+    {
+      "title": "7 Ways to Clear Memory and Boost RAM on Windows - Help Desk Geek",
+      "content": "In this article, you'll learn seven of the most effective ways to clear out old memory and boost available RAM in a Windows machine that's suffering from performance issues.",
+      "query": "memory optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:10:50.010833"
+    },
+    {
+      "title": "Wise Memory Optimizer - Free Up More Memory with One-Click",
+      "content": "The best free RAM (memory) cleaning and optimization tool for Windows computers. It can help you free up memory in use, increase available memory, defrag memory, and empty standby memory to get your computer running smoothly again.",
+      "query": "memory optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:10:50.010882"
+    },
+    {
+      "title": "CPU Optimizer: Gaming CPU Optimization Resources | Intel",
+      "content": "CPU optimizer tools and resources. Here's how to use Intel's CPU optimization tools to get the most out of your hardware.",
+      "query": "CPU optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:01.685057"
+    },
+    {
+      "title": "Bitsum. Real-time CPU Optimization and Automation",
+      "content": "Process Lasso is a tool that lets you control and tweak how applications run on your PC. It offers features such as ProBalance, CPU affinities, power plans, watchdog rules, instance balancing and more to improve system responsiveness and performance.",
+      "query": "CPU optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:01.685180"
+    },
+    {
+      "title": "Quick CPU - Real time performance optimization and Sensor monitor",
+      "content": "Quick CPU is a real-time CPU performance tuning and monitoring tool that lets you optimize power, core behavior, voltage, and thermal settings for maximum efficiency and control.",
+      "query": "CPU optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:01.685234"
+    },
+    {
+      "title": "Advanced Tips to Improve Disk IO Performance in Linux",
+      "content": "Explore comprehensive strategies to improve disk IO performance, from optimizing kernel parameters to leveraging virtualization tools. Unlock the full potential of your system and achieve faster, more efficient disk operations.",
+      "query": "I/O optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:14.158455"
+    },
+    {
+      "title": "Optimizing Disk I/O for High-Performance Applications",
+      "content": "In this post, we'll delve into the world of disk I/O optimization, discussing techniques to minimize disk usage, leveraging caching, and using asynchronous I/O. Learn how to squeeze the last bits of performance out of your disk-bound applications.",
+      "query": "I/O optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:14.158504"
+    },
+    {
+      "title": "ION: Navigating the HPC I/O Optimization Journey using Large Language ...",
+      "content": "We also demonstrate that ION can match state-of-the-art I/O optimization tools and provide more insightful and adaptive diagnoses for real applications. We believe ION, with its full capabilities, has the potential to become a powerful tool for scientists to navigate through complex I/O subsystems in the future.",
+      "query": "I/O optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:14.158543"
+    },
+    {
+      "title": "Resource Utilization: Complete Guide to CPU, Memory, and I/O Optimization",
+      "content": "Master resource utilization with comprehensive CPU, memory, and I/O optimization techniques. Learn monitoring tools, bottleneck identification, and performance tuning strategies.",
+      "query": "I/O optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:14.158579"
+    },
+    {
+      "title": "AIO: Automating I/O Optimization Pipeline for Data-Intensive ...",
+      "content": "High-performance computing (HPC) systems has entered the exascale era, but I/O performance has lagged behind due to storage hardware limitations, creating a \"storage wall effect\" that hinders HPC systems full potential. Modern HPC storage systems employ a layered storage architecture with local node storage, burst buffers, and global parallel file systems to improve I/O performance. However ...",
+      "query": "I/O optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:14.158616"
+    },
+    {
+      "title": "What is network optimization? - IBM",
+      "content": "Network optimization refers to a suite of strategies, tools, techniques and best practices to monitor, manage and improve network performance and reliability.",
+      "query": "network optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:25.635004"
+    },
+    {
+      "title": "What is Network Optimization? 9 Techniques for Improving Network ...",
+      "content": "Network optimization is a data-driven process aimed at enhancing network performance and efficiency. It involves measuring performance metrics such as latency, throughput, and packet loss, then making strategic changes to remove bottlenecks and optimize network resources. Learn more in our network optimization guide.",
+      "query": "network optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:25.635055"
+    },
+    {
+      "title": "What Is Network Optimization? Definition & Best Practices",
+      "content": "Network optimization refers to the process of optimizing network performance for speed through tools, techniques and practices. There are many different factors that can create a slow network.",
+      "query": "network optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:25.635095"
+    },
+    {
+      "title": "What is Network Optimization? 8 Reliable Techniques - Auvik",
+      "content": "Network optimization requires a set of tools and techniques to ensure efficient bandwidth management, latency, and network load management.",
+      "query": "network optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:25.635134"
+    },
+    {
+      "title": "What Is Network Optimization? - AEANET",
+      "content": "What Is Network Optimization? Unlocking Peak Performance Network optimization is the art and science of maximizing the efficiency and effectiveness of a computer network, ensuring it delivers optimal performance by minimizing latency, maximizing bandwidth utilization, and enhancing overall reliability. Essentially, it's about making your network faster, more stable, and more cost-effective ...",
+      "query": "network optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:25.635174"
+    },
+    {
+      "title": "SQL Query Optimization: 15 Techniques for Better Performance",
+      "content": "Learn the top SQL query optimization techniques, including indexing, efficient joins, and subqueries, to improve performance and reduce database load.",
+      "query": "query optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:37.223308"
+    },
+    {
+      "title": "SQL Query Optimizations - GeeksforGeeks",
+      "content": "It shows how the SQL engine processes your query. Example: EXPLAIN SELECT * FROM orders WHERE user_id = 42; Why This Matters: Helps identify full table scans Reveals if indexes are used Guides optimization decisions 12. Use UNION ALL Instead of UNION (if possible) UNION removes duplicates, which adds sorting overhead.",
+      "query": "query optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:37.223367"
+    },
+    {
+      "title": "SQL Query Optimization: 23 Proven Techniques | IDERA",
+      "content": "Learn about the most popular ways to optimize SQL queries to improve database performance, plus get best practices and tips for SQL query optimization.",
+      "query": "query optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:37.223415"
+    },
+    {
+      "title": "Understanding Database Query Optimization: A Complete Guide",
+      "content": "Discover what database query optimization is and learn effective techniques to enhance performance in our comprehensive blog post. Optimize your queries today!",
+      "query": "query optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:37.223463"
+    },
+    {
+      "title": "12 SQL Query Optimization Techniques to Follow - ThoughtSpot",
+      "content": "Learn how to optimize SQL queries with filters, row limits, and native features. Speed up your workloads with practical SQL query optimization tips.",
+      "query": "query optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:11:37.223510"
+    },
+    {
+      "title": "Optimize index maintenance to improve query performance and reduce ...",
+      "content": "This article describes index maintenance concepts, and a recommended strategy to maintain indexes.",
+      "query": "index optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:26:47.652236"
+    },
+    {
+      "title": "SQL Server Index and Statistics Maintenance",
+      "content": "Award-Winning SQL Server Maintenance Solution for running index and statistics maintenance in SQL Server 2008, 2008 R2, 2012, 2014, 2016, 2017, and 2019",
+      "query": "index optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:26:47.652331"
+    },
+    {
+      "title": "Index Optimization - GeeksforGeeks",
+      "content": "Index Optimization in SQL refers to creating and managing indexes on database tables to speed up data retrieval. An index works like the index of a book; instead of searching every page (full table scan), the database can quickly jump to the exact location where the data is stored.",
+      "query": "index optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:26:47.652407"
+    },
+    {
+      "title": "Optimizing SQL Server index strategies",
+      "content": "Index strategies overview This article is about techniques for optimizing the SQL Server indexes strategy. It is an appendix of the SQL index overview and strategy article in which I covered different areas like what indexes actually do, how to create them, and I briefly mentioned some index design guidelines. Furthermore, I also presented an example of how to design them by tuning and ...",
+      "query": "index optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:26:47.652479"
+    },
+    {
+      "title": "Index Optimization: Everything You Need to Know When Assessing Index ...",
+      "content": "Index optimization is the process of improving the performance of a database by managing and enhancing its indexes. An index helps speed up data retrieval processes, making it quicker to search and access information within a database.",
+      "query": "index optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:26:47.652672"
+    },
+    {
+      "title": "Photo Resolution Enhancer - Upscale Photo Resolution",
+      "content": "Fotor's AI photo quality enhancer also offers photo solutions for the real estate industry. Blurry pictures make you irritable\uff1fFotor's AI image enhancement tools can help you out.",
+      "query": "image optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:05.893618"
+    },
+    {
+      "title": "Image Upscaler & Enhancer - AI Photo Quality Enhancer",
+      "content": "Improve Image Quality Instantly. Unblur, Sharpen, and Increase Size Without Quality Loss. Upscale to High Resolution Image. Increase Size Up to 400% (e.g., 480px to 1920px)",
+      "query": "image optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:05.893680"
+    },
+    {
+      "title": "Online Image Compressor",
+      "content": "Optimizilla is a free tool that uses lossy compression to shrink JPEG, GIF and PNG images to the minimum possible size while keeping the quality. You can upload up to 20 images, control the compression level, and download the compressed files individually or as a ZIP file.",
+      "query": "image optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:05.893727"
+    },
+    {
+      "title": "TinyPNG - Compress AVIF, WebP, PNG and JPEG images",
+      "content": "TinyPNG reduces the file size of your AVIF, WebP, PNG and JPEG images without visible quality loss. It also offers CDN, API, WordPress plugin and other solutions for faster websites and SEO optimization.",
+      "query": "image optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:05.893774"
+    },
+    {
+      "title": "Image Compressor - Compress Images Online in High Quality",
+      "content": "Compress image files while preserving quality. Easily reduce image size by up to 80% with lossy compressions using this free tool.",
+      "query": "image optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:05.893826"
+    },
+    {
+      "title": "Video Resolution Enhancer - 4k AI Upscaler - Best for Beginners",
+      "content": "Turn Your Low-res Videos Into 4k, 8k with AI-based Video Upscalling software. Use AI Technology to Improve Video Quality, More Real, More Natural Results.",
+      "query": "video optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:17.265966"
+    },
+    {
+      "title": "Video Compressor | Reduce Video File Size Online - FreeConvert",
+      "content": "A fast online video compressor to reduce video file size. You can compress video to a desired file size or a quality level. Supports MP4, FLV, MKV and more.",
+      "query": "video optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:17.266045"
+    },
+    {
+      "title": "Free AI Video Quality Enhancer | Online | Flixier",
+      "content": "Make your video's quality better with Flixier's AI-powdered video enhancer. Upgrade any video to 4k quality!",
+      "query": "video optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:17.266112"
+    },
+    {
+      "title": "Guide to Video Optimization for Business: 8 Tips - Vimeo",
+      "content": "Discover 8 expert strategies for video optimization that'll help you refine the viewing experience, drive more engagement, and reach a broader audience.",
+      "query": "video optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:17.266176"
+    },
+    {
+      "title": "Video Optimization: Why You Need It and 5 Critical Best Practices",
+      "content": "Video optimization refers to the process of making adjustments to a video to improve its visibility and performance on various platforms.",
+      "query": "video optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:17.266244"
+    },
+    {
+      "title": "Enterprise Content Delivery - Enterprise Delivery at Scale",
+      "content": "Supercharge IT with Hive eCDN. Save on bandwidth costs, ensure superior video experiences. Scale enterprise video globally with Hive eCDN. Prevent overload and ensure quality.",
+      "query": "CDN optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:29.172254"
+    },
+    {
+      "title": "CacheFly CDN Services - Fast CDN Services",
+      "content": "159% Faster - Ranked fastest global throughput CDN by Citrix. We're confident you'll love our CDN service more than our competitors.",
+      "query": "CDN optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:29.172328"
+    },
+    {
+      "title": "How to Use a CDN to Improve Web Performance - GeeksforGeeks",
+      "content": "Choose a CDN that supports advanced content optimization techniques such as image and video optimization, content compression, and HTTP/2 support. Look for features like intelligent caching and cache purging mechanisms to ensure efficient content delivery.",
+      "query": "CDN optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:29.172388"
+    },
+    {
+      "title": "12 CDN Optimization Techniques to Boost Website Speed",
+      "content": "Boost your website speed with these 12 CDN optimization techniques. how to fine-tune caching, compression, & delivery for faster performance.",
+      "query": "CDN optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:29.172445"
+    },
+    {
+      "title": "CDN (Content Delivery Network) Optimization & Multi-CDN Strategy | Dynadot",
+      "content": "Boost your website speed and reliability with advanced CDN strategies, multi-CDN setups, smart caching, and edge computing for global performance in 2025.",
+      "query": "CDN optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:29.172499"
+    },
+    {
+      "title": "AI-Proof Your SEO - Get a Full Week Free - Try for Free",
+      "content": "Traditional SEO tools miss AI search visibility\u2014Semrush doesn't. Stay visible in AI search with tools built for today's SEO pros.",
+      "query": "SEO optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:31:34.925778"
+    },
+    {
+      "title": "Search Engine Optimization - Optimize Your Site for SEO",
+      "content": "Wix Gives You a Strong Technical SEO Foundation to Optimize Your Site for Search. Wix SEO - Stay Updated with Tools, Guidance & Expert Resources to Boost Organic Traffic.",
+      "query": "SEO optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:31:34.925831"
+    },
+    {
+      "title": "Search Engine Optimization (SEO) Starter Guide - Google Developers",
+      "content": "A knowledge of basic SEO can have a noticeable impact. Explore the Google SEO starter guide for an overview of search engine optimization essentials.",
+      "query": "SEO optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:31:34.925874"
+    },
+    {
+      "title": "What Is SEO? Search Engine Optimization Best Practices - Moz",
+      "content": "Learn how SEO works and why it is important for your website. Discover the types and best practices of SEO, from on-page to technical optimization, and how to use AI insights to improve your rankings.",
+      "query": "SEO optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:31:34.925917"
+    },
+    {
+      "title": "Search engine optimization - Wikipedia",
+      "content": "Learn about the history, methods, and goals of SEO, the process of improving website traffic from search engines. Find out how SEO relates to Google, PageRank, and other factors that affect search results.",
+      "query": "SEO optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:31:34.925957"
+    },
+    {
+      "title": "Improve SEO & Get Free Reports - Search Engine Optimization Tool Free",
+      "content": "Imagine what you can achieve if you have the insights your competitors don't. 30% of Fortune 500 companies use Semrush as their go-to marketing tool. Discover why.",
+      "query": "search engine optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:31:46.458509"
+    },
+    {
+      "title": "What Is SEO - Search Engine Optimization?",
+      "content": "Get started learning the basics of search engine optimization - how SEO works, why it's important, the different types of SEO and much more.",
+      "query": "search engine optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:31:46.458753"
+    },
+    {
+      "title": "Improve Page Speed - Improve Your Website Traffic",
+      "content": "Audit & improve your site for users and search engines. Get a no-brainer fix-it list now. Traditional SEO tools miss AI search visibility\u2014Semrush doesn't.",
+      "query": "page speed optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:32:43.299768"
+    },
+    {
+      "title": "PageSpeed Insights",
+      "content": "Make your web pages fast on all devices Check out",
+      "query": "page speed optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:32:43.299837"
+    },
+    {
+      "title": "15 Website Speed Optimization Techniques: A 2025 Guide for ... - Elementor",
+      "content": "15 Website Speed Optimization Techniques for 2025 Now that we know how to measure performance, let's get into the 15 essential techniques you can use to make your site faster.",
+      "query": "page speed optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:32:43.299895"
+    },
+    {
+      "title": "Make the Web Faster | Google for Developers",
+      "content": "Speed up with the PageSpeed Modules Run the open source PageSpeed Modules on your Apache or Nginx server to automatically rewrite and optimize resources on your web site.",
+      "query": "page speed optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:32:43.299951"
+    },
+    {
+      "title": "Page Speed Optimization: Metrics, Tools, and How to Improve - Moz",
+      "content": "Page speed has always been a crucial part of SEO work, and as more companies make the shift to online operations, optimization becomes more important than ever. However, it's a complex subject that tends to be very technical. What are the most crucial things to understand about your site's page speed, and how can you begin to improve? To help you answer these questions, we're sharing this ...",
+      "query": "page speed optimization",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:32:43.300008"
+    },
+    {
+      "title": "Save on machine learning dummies - Amazon\u00ae Official Site",
+      "content": "Browse & discover thousands of brands. Read customer reviews & find best sellers. Find deals and low prices on machine learning dummies at Amazon.com",
+      "query": "machine learning operations",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:12:22.584097"
+    },
+    {
+      "title": "Microsoft Azure Official Site - Azure Machine Learning",
+      "content": "Reliable and Innovative Cloud Solutions For Your Needs. No Upfront Costs. Our Products and Cloud Services Are Designed To Help You Bring New Ideas To Life.",
+      "query": "machine learning operations",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:12:22.584165"
+    },
+    {
+      "title": "What is MLOps? - Machine Learning Operations Explained - AWS",
+      "content": "Machine learning operations (MLOps) are a set of practices that automate and simplify machine learning (ML) workflows and deployments. Machine learning and artificial intelligence (AI) are core capabilities that you can implement to solve complex real-world problems and deliver value to your customers. MLOps is an ML culture and practice that unifies ML application development (Dev) with ML ...",
+      "query": "machine learning operations",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:12:22.584226"
+    },
+    {
+      "title": "Introduction to machine learning operations (MLOps) - Training",
+      "content": "Machine learning operations (MLOps) applies DevOps principles to machine learning projects. Learn about which DevOps principles help in scaling a machine learning project from experimentation to production.",
+      "query": "machine learning operations",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:12:22.584287"
+    },
+    {
+      "title": "What is machine learning operations (MLOps)? - IBM",
+      "content": "Machine Learning Operations (MLOps), is a set of practices designed to create an assembly line for building and running machine learning models that help organizations automate tasks and deploy models quickly.",
+      "query": "machine learning operations",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:12:22.584344"
+    },
+    {
+      "title": "Outliers and Outlier Detection - GeeksforGeeks",
+      "content": "Identifying and analyzing outliers can lead to valuable insights, such as detecting emerging trends, understanding rare events, or uncovering potential opportunities or threats. Methods for Outlier Detection Outlier detection is a critical task in data analysis, crucial for ensuring the quality and reliability of conclusions drawn from data.",
+      "query": "outlier detection",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:10:50.628898"
+    },
+    {
+      "title": "2.7. Novelty and Outlier Detection - scikit-learn",
+      "content": "Learn how to use scikit-learn tools for unsupervised anomaly detection, also known as outlier detection and novelty detection. Compare different methods, such as One-Class SVM, Isolation Forest, Local Outlier Factor and Elliptic Envelope.",
+      "query": "outlier detection",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:10:50.628952"
+    },
+    {
+      "title": "Top 5 Statistical Techniques to Detect and Handle Outliers in Data",
+      "content": "This article covers five common statistical techniques for outlier detection. Specifically, we'll look at the following: Z-score Interquartile Range (IQR) Local Outlier Factor (LOF) Isolation Forest Mahalanobis Distance For each method, we'll look at how it works, and write some code to detect outliers on a sample dataset. Let's get started.",
+      "query": "outlier detection",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:10:50.628997"
+    },
+    {
+      "title": "10 Statistical Outlier Detection Methods for Accurate Analytics",
+      "content": "Explore 10 statistical methods designed to detect outliers and improve accuracy in your analytics. Dive into quantitative insights and robust data analysis.",
+      "query": "outlier detection",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:10:50.629038"
+    },
+    {
+      "title": "An Introduction to Using PCA for Outlier Detection",
+      "content": "We also looked at two outlier detectors provided by PyOD for outlier detection based on PCA (both using reconstruction error), PCA and KPCA, and provided an example using the former. PCA-based outlier detection can be very effective, but does suffer from low interpretability.",
+      "query": "outlier detection",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:10:50.629081"
+    },
+    {
+      "title": "Overfitting",
+      "content": "In mathematical modeling, overfitting is the production of an analysis that corresponds too closely or exactly to a particular set of data, and may therefore fail to fit to additional data or predict future observations reliably. An overfitted model is a mathematical model that contains more parameters than can be justified by the data. In the special case of a model that consists of a polynomial function, these parameters represent the degree of a polynomial. The essence of overfitting is to un",
+      "query": "overfitting",
+      "source": "wikipedia",
+      "learned_at": "2025-11-24T14:39:01.489964"
+    },
+    {
+      "title": "Overfitting - Wikipedia",
+      "content": "Overfitting is the use of models or procedures that violate Occam's razor, for example by including more adjustable parameters than are ultimately optimal, or by using a more complicated approach than is ultimately optimal.",
+      "query": "overfitting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:39:02.470410"
+    },
+    {
+      "title": "ML | Underfitting and Overfitting - GeeksforGeeks",
+      "content": "High variance typically leads to overfitting, where the model performs well on training data but poorly on testing data. Overfitting and Underfitting: The Core Issues 1. Overfitting in Machine Learning Overfitting happens when a model learns too much from the training data, including details that don't matter (like noise or outliers).",
+      "query": "overfitting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:39:02.470497"
+    },
+    {
+      "title": "What is overfitting? - IBM",
+      "content": "Overfitting occurs when an algorithm fits too closely to its training data, resulting in a model that can't make accurate predictions or conclusions.",
+      "query": "overfitting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:39:02.470564"
+    },
+    {
+      "title": "What is Overfitting? - Overfitting in Machine Learning Explained - AWS",
+      "content": "Another overfitting example is a machine learning algorithm that predicts a university student's academic performance and graduation outcome by analyzing several factors like family income, past academic performance, and academic qualifications of parents. However, the test data only includes candidates from a specific gender or ethnic group.",
+      "query": "overfitting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:39:02.470629"
+    },
+    {
+      "title": "Overfitting | Machine Learning | Google for Developers",
+      "content": "Overfitting means creating a model that matches (memorizes) the training set so closely that the model fails to make correct predictions on new data. An overfit model is analogous to an invention that performs well in the lab but is worthless in the real world. Tip: Overfitting is a common problem in machine learning, not an academic hypothetical. In Figure 11, imagine that each geometric ...",
+      "query": "overfitting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:39:02.470696"
+    },
+    {
+      "title": "What is an Observational Study: Definition & Examples",
+      "content": "Learn what an observational study is, how it differs from an experiment, and why it is useful for some research questions. Explore the types of observational studies, such as cohort, case-control, and cross-sectional, and their advantages and drawbacks.",
+      "query": "observational studies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T17:32:15.864067"
+    },
+    {
+      "title": "Observational and interventional study design types; an overview",
+      "content": "Observational study designs include ecological designs, cross sectional, case-control, case-crossover, retrospective and prospective cohorts. An important subset of observational studies is diagnostic study designs, which evaluate the accuracy of diagnostic procedures and tests as compared to other diagnostic measures.",
+      "query": "observational studies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T17:32:15.864119"
+    },
+    {
+      "title": "Observational study - Wikipedia",
+      "content": "An observational study is a research method that draws inferences from a sample to a population where the independent variable is not under the control of the researcher. Learn about the motivation, types and challenges of observational studies, such as selection bias, omitted variable bias and multiple comparison bias.",
+      "query": "observational studies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T17:32:15.864162"
+    },
+    {
+      "title": "What Is an Observational Study? | Guide & Examples - Scribbr",
+      "content": "Learn what an observational study is, how to design and conduct one, and what are the advantages and disadvantages of this research method. Compare observational studies with experiments and see examples of different types of observation.",
+      "query": "observational studies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T17:32:15.864204"
+    },
+    {
+      "title": "7 Types of Observational Studies (With Examples) - Indeed",
+      "content": "Learn what observational studies are, how they differ from experimental studies, and the seven main types of observational studies with examples. Find out how observational studies can help researchers understand natural behaviors or phenomena in various fields.",
+      "query": "observational studies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T17:32:15.864247"
+    },
+    {
+      "title": "Open science - Wikipedia",
+      "content": "Open science is the movement to make scientific research and its dissemination accessible to all levels of society. It encompasses practices such as open access, open data, open source, open peer review, and open educational resources.",
+      "query": "open science",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T18:15:11.455838"
+    },
+    {
+      "title": "Open science - UNESCO",
+      "content": "UNESCO promotes open science, which aims to make scientific knowledge openly available, accessible and reusable. Learn about the UNESCO Recommendation on Open Science, the first global framework of its kind, and how to get involved in open science initiatives.",
+      "query": "open science",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T18:15:11.455923"
+    },
+    {
+      "title": "Open Science at NASA",
+      "content": "Open Science at NASA NASA is making a long-term commitment to building an open science community over the next decade. Open science is a collaborative culture enabled by technology that empowers the open sharing of data, information, and knowledge within the scientific community and the wider public to accelerate scientific research and understanding.",
+      "query": "open science",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T18:15:11.455995"
+    },
+    {
+      "title": "Open Science: Challenges, Possible Solutions and the Way Forward",
+      "content": "The purpose of this white paper is to reflect upon the challenges to open science, possible solutions and the way forward. Meaning of Open Science \"Open Science\" encompasses the broad concept of dissemination of all components of scientific research to all sectors of the society including experts and non-experts.",
+      "query": "open science",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T18:15:11.456062"
+    },
+    {
+      "title": "What is open science? - Opensource.com",
+      "content": "Open science is the movement to make science open, reproducible, and accessible to everyone. Learn about its origins, components, benefits, and challenges in this comprehensive guide from Opensource.com.",
+      "query": "open science",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T18:15:11.456130"
+    },
+    {
+      "title": "What is a Product Owner? - Scrum.org",
+      "content": "Learn what a Product Owner is, what they do, and how they maximize the value of the product in Scrum. Find out the preferred and misunderstood stances of a Product Owner, and the learning opportunities to become one.",
+      "query": "product owner",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:00:23.308979"
+    },
+    {
+      "title": "Product Owner | Introduction, Roles & Responsibilities, and Skills",
+      "content": "The product owner is also responsible for defining user stories and creating product backlog, which includes: Define and communicate the Product Goal effectively. Create and clearly explain Product Backlog Items. Prioritize the Product Backlog Items. Ensure the Product Backlog remains transparent, visible, and well-understood.",
+      "query": "product owner",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:00:23.309041"
+    },
+    {
+      "title": "What Is a Product Owner? Secret to Scrum Success [2025] \u2022 Asana",
+      "content": "A product owner is a standard role on Scrum teams that focuses on delivering the best possible product. They connect the Scrum team to stakeholders and advocate for the needs of end users, so everyone understands what the product is trying to achieve and why. In this article, learn about the five key responsibilities of product owners and how they help Scrum teams accomplish their best work.",
+      "query": "product owner",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:00:23.309490"
+    },
+    {
+      "title": "What is a Product Owner: Key Roles and Responsibilities Explained",
+      "content": "Learn what a product owner does in scrum methodologies, how to create and prioritize a product backlog, and what skills are required for this role. Simplilearn offers certified scrum product owner courses and programs to help you advance your career.",
+      "query": "product owner",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:00:23.309542"
+    },
+    {
+      "title": "Product Owner - Project Management Institute",
+      "content": "Learn about the product owner role in DAD, the pivotal role that connects business and development teams. The product owner defines and prioritizes the team backlog, represents the customer and stakeholders, and facilitates value realization.",
+      "query": "product owner",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:00:23.309591"
+    },
+    {
+      "title": "About on-call rotation",
+      "content": "on-call rotation is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "on-call rotation",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:30:27.759990"
+    },
+    {
+      "title": "Observability",
+      "content": "Observability is a measure of how well internal states of a system can be inferred from knowledge of its external outputs.\nIn control theory, the observability and controllability of a linear system are mathematical duals.",
+      "query": "observability",
+      "source": "wikipedia",
+      "learned_at": "2025-11-24T19:31:31.085597"
+    },
+    {
+      "title": "About content optimization",
+      "content": "content optimization is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "content optimization",
+      "source": "structured",
+      "learned_at": "2025-11-25T08:24:22.751288"
+    },
+    {
+      "title": "About opinion writing",
+      "content": "opinion writing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "opinion writing",
+      "source": "structured",
+      "learned_at": "2025-11-25T13:39:24.875575"
+    },
+    {
+      "title": "About risk of bias",
+      "content": "risk of bias is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "risk of bias",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:08:10.620615"
+    },
+    {
+      "title": "About levels of evidence",
+      "content": "levels of evidence is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "levels of evidence",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:08:40.941790"
+    },
+    {
+      "title": "About object oriented programming",
+      "content": "object oriented programming is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "object oriented programming",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:21:29.565133"
+    },
+    {
+      "title": "About aspect oriented programming",
+      "content": "aspect oriented programming is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "aspect oriented programming",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:22:50.429224"
+    },
+    {
+      "title": "About open source",
+      "content": "open source is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "open source",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:31:36.034430"
+    },
+    {
+      "title": "About atomic operations",
+      "content": "atomic operations is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "atomic operations",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:08:30.120523"
+    },
+    {
+      "title": "About CAS operations",
+      "content": "CAS operations is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "CAS operations",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:12:32.823137"
+    },
+    {
+      "title": "About observable patterns",
+      "content": "observable patterns is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "observable patterns",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:16:35.474172"
+    },
+    {
+      "title": "About observer pattern",
+      "content": "observer pattern is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "observer pattern",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:16:55.688289"
+    },
+    {
+      "title": "About service oriented architecture",
+      "content": "service oriented architecture is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "service oriented architecture",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:22:29.301568"
+    },
+    {
+      "title": "About online experiments",
+      "content": "online experiments is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "online experiments",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:01:19.482329"
+    },
+    {
+      "title": "About conversion optimization",
+      "content": "conversion optimization is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "conversion optimization",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:12:27.442038"
+    },
+    {
+      "title": "About moments of truth",
+      "content": "moments of truth is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "moments of truth",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:14:38.957483"
+    },
+    {
+      "title": "About voice of customer",
+      "content": "voice of customer is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "voice of customer",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:16:30.273820"
+    },
+    {
+      "title": "About order management",
+      "content": "order management is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "order management",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:26:06.773071"
+    },
+    {
+      "title": "About supply chain optimization",
+      "content": "supply chain optimization is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "supply chain optimization",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:26:57.351329"
+    },
+    {
+      "title": "About inventory optimization",
+      "content": "inventory optimization is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "inventory optimization",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:27:17.597291"
+    },
+    {
+      "title": "About economic order quantity",
+      "content": "economic order quantity is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "economic order quantity",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:27:47.979917"
+    },
+    {
+      "title": "About chain of custody",
+      "content": "chain of custody is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "chain of custody",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:33:31.747116"
+    },
+    {
+      "title": "About process optimization",
+      "content": "process optimization is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "process optimization",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:37:04.133297"
+    },
+    {
+      "title": "About OCR",
+      "content": "OCR is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "OCR",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:39:35.848514"
+    },
+    {
+      "title": "About opportunity management",
+      "content": "opportunity management is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "opportunity management",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:15:56.631345"
+    },
+    {
+      "title": "About operational risk",
+      "content": "operational risk is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "operational risk",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:18:28.323187"
+    },
+    {
+      "title": "About carbon offsetting",
+      "content": "carbon offsetting is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "carbon offsetting",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:22:41.061029"
+    },
+    {
+      "title": "About Bank of Japan",
+      "content": "Bank of Japan is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Bank of Japan",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:47:03.855828"
+    },
+    {
+      "title": "About Bank of England",
+      "content": "Bank of England is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Bank of England",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:47:13.964883"
+    },
+    {
+      "title": "About lender of last resort",
+      "content": "lender of last resort is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "lender of last resort",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:54:54.755634"
+    },
+    {
+      "title": "About college of supervisors",
+      "content": "college of supervisors is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "college of supervisors",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:58:17.156829"
+    },
+    {
+      "title": "About OKRs",
+      "content": "OKRs is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "OKRs",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:04:00.892772"
+    },
+    {
+      "title": "About objectives and key results",
+      "content": "objectives and key results is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "objectives and key results",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:04:11.001903"
+    },
+    {
+      "title": "About OLAP",
+      "content": "OLAP is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "OLAP",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:05:11.676378"
+    },
+    {
+      "title": "About online analytical processing",
+      "content": "online analytical processing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "online analytical processing",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:05:21.786488"
+    },
+    {
+      "title": "About OLTP",
+      "content": "OLTP is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "OLTP",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:05:31.906170"
+    },
+    {
+      "title": "About online transaction processing",
+      "content": "online transaction processing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "online transaction processing",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:05:42.023993"
+    },
+    {
+      "title": "About operational data",
+      "content": "operational data is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "operational data",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:07:33.389681"
+    },
+    {
+      "title": "About onboarding",
+      "content": "onboarding is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "onboarding",
+      "source": "structured",
+      "learned_at": "2025-11-25T22:41:55.150519"
+    },
+    {
+      "title": "About online learning",
+      "content": "online learning is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "online learning",
+      "source": "structured",
+      "learned_at": "2025-11-26T04:06:23.041245"
+    },
+    {
+      "title": "About online courses",
+      "content": "online courses is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "online courses",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:13:24.811879"
+    },
+    {
+      "title": "About massive open online courses",
+      "content": "massive open online courses is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "massive open online courses",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:13:45.011506"
+    },
+    {
+      "title": "About small private online courses",
+      "content": "small private online courses is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "small private online courses",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:14:05.241749"
+    },
+    {
+      "title": "List of heads of state of Sudan - Wikipedia",
+      "content": "Since independence was proclaimed on 1 January 1956, six individuals (and three multi-member sovereignty councils) have served as head of state of Sudan, currently under the title President of the Republic of Sudan. Prior to independence, Sudan was governed as a condominium by Egypt and the United Kingdom, under the name Anglo-Egyptian Sudan.",
+      "query": "Who is the President of Sudan?",
+      "source": "research",
+      "learned_at": "2025-11-26T08:15:28.897231"
+    },
+    {
+      "title": "Sudan Divided Again Tests Trump's Peace Plan and Puts ... - Newsweek",
+      "content": "With Sudan's warring parties effectively splitting the country in half, insecurity and instability are poised to spread across the region.",
+      "query": "Who is the President of Sudan?",
+      "source": "research",
+      "learned_at": "2025-11-26T08:15:28.897614"
+    },
+    {
+      "title": "List Of Sudan's Head Of State Since 1956 - History Rep",
+      "content": "Sudan's head of state has changed many times since the country gained independence in 1956. At first, Sudan was ruled by the Queen of the UK and Egypt's leader. Later, military leaders like Ibrahim Abboud and Jaafar Nimeiry took control. In 1989 Omar al-Bashir became president, leading Sudan for nearly 30 years.",
+      "query": "Who is the President of Sudan?",
+      "source": "research",
+      "learned_at": "2025-11-26T08:15:28.897843"
+    },
+    {
+      "title": "Abdel Fattah al-Burhan - Wikipedia",
+      "content": "Abdel Fattah al-Burhan Abdelrahman al-Burhan[b] (born 1960) is a Sudanese military officer who has been the de facto leader of Sudan since 2019. Following the Sudanese Revolution in April 2019, he was handed control of the military junta, the Transitional Military Council, a day after it was formed, due to protesters' dissatisfaction with the establishment ties of initial leader Ahmed Awad Ibn ...",
+      "query": "Who is the President of Sudan?",
+      "source": "research",
+      "learned_at": "2025-11-26T08:15:28.898050"
+    },
+    {
+      "title": "List of heads of government of Sudan - Wikipedia",
+      "content": "This article lists the heads of government of Sudan since the establishment of the office of Chief Minister of the Anglo-Egyptian Sudan in 1952. The office of prime minister was abolished after the 1989 coup d'\u00e9tat, [1] and reestablished in 2017 as deputy head of government when Bakri Hassan Saleh was appointed prime minister by President Omar al-Bashir. [2] The current prime minister is ...",
+      "query": "Who is the President of Sudan?",
+      "source": "research",
+      "learned_at": "2025-11-26T08:15:28.898249"
+    },
+    {
+      "title": "About membership organizations",
+      "content": "membership organizations is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "membership organizations",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:18:48.349409"
+    },
+    {
+      "title": "About massively multiplayer online games",
+      "content": "massively multiplayer online games is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "massively multiplayer online games",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:27:04.231234"
+    },
+    {
+      "title": "About transfer of learning",
+      "content": "transfer of learning is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "transfer of learning",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:34:49.716219"
+    },
+    {
+      "title": "About operant conditioning",
+      "content": "operant conditioning is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "operant conditioning",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:37:31.549189"
+    },
+    {
+      "title": "About observational learning",
+      "content": "observational learning is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "observational learning",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:55:22.512989"
+    },
+    {
+      "title": "About operational thinking",
+      "content": "operational thinking is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "operational thinking",
+      "source": "structured",
+      "learned_at": "2025-11-26T09:15:34.110013"
+    },
+    {
+      "title": "About operational planning",
+      "content": "operational planning is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "operational planning",
+      "source": "structured",
+      "learned_at": "2025-11-26T09:16:04.444398"
+    },
+    {
+      "title": "About organizational learning",
+      "content": "organizational learning is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "organizational learning",
+      "source": "structured",
+      "learned_at": "2025-11-26T09:33:14.512185"
+    },
+    {
+      "title": "About learning organization",
+      "content": "learning organization is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "learning organization",
+      "source": "structured",
+      "learned_at": "2025-11-26T09:33:24.624113"
+    },
+    {
+      "title": "About jack of all trades",
+      "content": "jack of all trades is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "jack of all trades",
+      "source": "structured",
+      "learned_at": "2025-11-26T11:41:09.173969"
+    },
+    {
+      "title": "About master of none",
+      "content": "master of none is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "master of none",
+      "source": "structured",
+      "learned_at": "2025-11-26T11:41:19.303213"
+    },
+    {
+      "title": "About operational",
+      "content": "operational is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "operational",
+      "source": "structured",
+      "learned_at": "2025-11-26T12:57:39.341247"
+    },
+    {
+      "title": "About outstanding",
+      "content": "outstanding is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "outstanding",
+      "source": "structured",
+      "learned_at": "2025-11-26T15:00:07.667960"
+    },
+    {
+      "title": "About oceanography",
+      "content": "oceanography is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "oceanography",
+      "source": "structured",
+      "learned_at": "2025-11-26T17:02:29.129966"
+    },
+    {
+      "title": "About philosophy of religion",
+      "content": "philosophy of religion is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "philosophy of religion",
+      "source": "structured",
+      "learned_at": "2025-11-26T18:47:54.364712"
+    },
+    {
+      "title": "About occultism",
+      "content": "occultism is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "occultism",
+      "source": "structured",
+      "learned_at": "2025-11-26T19:25:03.324512"
+    },
+    {
+      "title": "About observational astronomy",
+      "content": "observational astronomy is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "observational astronomy",
+      "source": "structured",
+      "learned_at": "2025-11-26T19:25:53.887513"
+    },
+    {
+      "title": "About outer planets",
+      "content": "outer planets is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "outer planets",
+      "source": "structured",
+      "learned_at": "2025-11-26T20:21:20.677663"
+    },
+    {
+      "title": "About near Earth objects",
+      "content": "near Earth objects is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "near Earth objects",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:06:22.457558"
+    },
+    {
+      "title": "About Ordovician Silurian extinction",
+      "content": "Ordovician Silurian extinction is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Ordovician Silurian extinction",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:24:01.547664"
+    },
+    {
+      "title": "About United Nations Educational Scientific and Cultural Organization",
+      "content": "United Nations Educational Scientific and Cultural Organization is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "United Nations Educational Scientific and Cultural Organization",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:27:44.175090"
+    },
+    {
+      "title": "About international organizations",
+      "content": "international organizations is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "international organizations",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:28:14.526447"
+    },
+    {
+      "title": "About intergovernmental organizations",
+      "content": "intergovernmental organizations is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "intergovernmental organizations",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:28:24.632806"
+    },
+    {
+      "title": "About non-governmental organizations",
+      "content": "non-governmental organizations is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "non-governmental organizations",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:28:44.861495"
+    },
+    {
+      "title": "About freedom of information",
+      "content": "freedom of information is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freedom of information",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:34:08.488355"
+    },
+    {
+      "title": "About freedom of expression",
+      "content": "freedom of expression is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freedom of expression",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:34:18.601254"
+    },
+    {
+      "title": "About freedom of speech",
+      "content": "freedom of speech is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freedom of speech",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:34:28.716693"
+    },
+    {
+      "title": "About freedom of the press",
+      "content": "freedom of the press is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freedom of the press",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:34:38.828145"
+    },
+    {
+      "title": "About freedom of assembly",
+      "content": "freedom of assembly is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freedom of assembly",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:34:48.952079"
+    },
+    {
+      "title": "About freedom of association",
+      "content": "freedom of association is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freedom of association",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:34:59.059627"
+    },
+    {
+      "title": "About freedom of religion",
+      "content": "freedom of religion is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freedom of religion",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:35:09.179461"
+    },
+    {
+      "title": "About freedom of movement",
+      "content": "freedom of movement is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "freedom of movement",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:35:19.289045"
+    },
+    {
+      "title": "About ocean thermal energy",
+      "content": "ocean thermal energy is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "ocean thermal energy",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:58:34.871576"
+    },
+    {
+      "title": "About OTEC",
+      "content": "OTEC is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "OTEC",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:58:44.990100"
+    },
+    {
+      "title": "About oil",
+      "content": "oil is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "oil",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:59:55.734890"
+    },
+    {
+      "title": "About offshore drilling",
+      "content": "offshore drilling is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "offshore drilling",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:00:56.407361"
+    },
+    {
+      "title": "About open pit mining",
+      "content": "open pit mining is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "open pit mining",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:02:07.195628"
+    },
+    {
+      "title": "About iron ore mining",
+      "content": "iron ore mining is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "iron ore mining",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:03:38.219226"
+    },
+    {
+      "title": "About occupational safety",
+      "content": "occupational safety is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "occupational safety",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:05:49.658127"
+    },
+    {
+      "title": "About organic farming",
+      "content": "organic farming is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "organic farming",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:09:11.903643"
+    },
+    {
+      "title": "About aircraft operations",
+      "content": "aircraft operations is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "aircraft operations",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:12:03.800288"
+    },
+    {
+      "title": "About mathematical operations",
+      "content": "mathematical operations is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "mathematical operations",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:13:34.774798"
+    },
+    {
+      "title": "About mathematical optimization",
+      "content": "mathematical optimization is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "mathematical optimization",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:15:26.011912"
+    },
+    {
+      "title": "About object",
+      "content": "object is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "object",
+      "source": "structured",
+      "learned_at": "2025-11-27T15:18:05.262374"
+    },
+    {
+      "title": "About objective",
+      "content": "objective is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "objective",
+      "source": "structured",
+      "learned_at": "2025-11-27T15:18:15.369550"
+    },
+    {
+      "title": "About obligation",
+      "content": "obligation is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "obligation",
+      "source": "structured",
+      "learned_at": "2025-11-27T15:18:25.480539"
+    },
+    {
+      "title": "About observation",
+      "content": "observation is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "observation",
+      "source": "structured",
+      "learned_at": "2025-11-27T15:18:35.589932"
+    },
+    {
+      "title": "About occasion",
+      "content": "occasion is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "occasion",
+      "source": "structured",
+      "learned_at": "2025-11-27T15:18:45.702247"
+    },
+    {
+      "title": "About opinion",
+      "content": "opinion is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "opinion",
+      "source": "structured",
+      "learned_at": "2025-11-27T15:34:31.491617"
+    },
+    {
+      "title": "About opportunity",
+      "content": "opportunity is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "opportunity",
+      "source": "structured",
+      "learned_at": "2025-11-27T15:34:41.585254"
+    },
+    {
+      "title": "About option",
+      "content": "option is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "option",
+      "source": "structured",
+      "learned_at": "2025-11-27T15:34:51.684675"
+    },
+    {
+      "title": "About order",
+      "content": "order is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "order",
+      "source": "structured",
+      "learned_at": "2025-11-27T15:35:01.791549"
+    },
+    {
+      "title": "About organization",
+      "content": "organization is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "organization",
+      "source": "structured",
+      "learned_at": "2025-11-27T15:35:11.891842"
+    },
+    {
+      "title": "About origin",
+      "content": "origin is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "origin",
+      "source": "structured",
+      "learned_at": "2025-11-27T15:45:41.396521"
+    },
+    {
+      "title": "About outcome",
+      "content": "outcome is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "outcome",
+      "source": "structured",
+      "learned_at": "2025-11-27T15:45:51.506487"
+    },
+    {
+      "title": "About output",
+      "content": "output is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "output",
+      "source": "structured",
+      "learned_at": "2025-11-27T15:46:01.618412"
+    },
+    {
+      "title": "About ownership",
+      "content": "ownership is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "ownership",
+      "source": "structured",
+      "learned_at": "2025-11-27T15:46:11.727528"
+    },
+    {
+      "title": "About optimization algorithms",
+      "content": "optimization algorithms is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "optimization algorithms",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:05:00.021724"
+    },
+    {
+      "title": "About python performance optimization",
+      "content": "python performance optimization is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "python performance optimization",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:12:04.774497"
+    },
+    {
+      "title": "About javascript spread operator",
+      "content": "javascript spread operator is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "javascript spread operator",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:14:36.420581"
+    },
+    {
+      "title": "About javascript object methods",
+      "content": "javascript object methods is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "javascript object methods",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:15:06.757565"
+    },
+    {
+      "title": "About kubernetes orchestration",
+      "content": "kubernetes orchestration is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "kubernetes orchestration",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:25:33.974771"
+    },
+    {
+      "title": "About Oracle database",
+      "content": "Oracle database is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Oracle database",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:27:55.492880"
+    },
+    {
+      "title": "About database optimization",
+      "content": "database optimization is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "database optimization",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:29:36.591436"
+    },
+    {
+      "title": "About object detection",
+      "content": "object detection is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "object detection",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:38:52.805171"
+    },
+    {
+      "title": "About optical character recognition",
+      "content": "optical character recognition is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "optical character recognition",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:39:23.121513"
+    },
+    {
+      "title": "About OAuth protocol",
+      "content": "OAuth protocol is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "OAuth protocol",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:44:56.735993"
+    },
+    {
+      "title": "About container orchestration",
+      "content": "container orchestration is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "container orchestration",
+      "source": "structured",
+      "learned_at": "2025-11-28T05:18:10.274674"
+    },
+    {
+      "title": "About proof of work",
+      "content": "proof of work is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "proof of work",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:03:31.372133"
+    },
+    {
+      "title": "About proof of stake",
+      "content": "proof of stake is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "proof of stake",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:03:41.477850"
+    },
+    {
+      "title": "About Internet of Things",
+      "content": "Internet of Things is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Internet of Things",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:07:03.643410"
+    },
+    {
+      "title": "About operating systems",
+      "content": "operating systems is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "operating systems",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:09:04.965892"
+    },
+    {
+      "title": "About Linux operating system",
+      "content": "Linux operating system is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Linux operating system",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:09:15.077168"
+    },
+    {
+      "title": "About Windows operating system",
+      "content": "Windows operating system is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Windows operating system",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:09:25.191974"
+    },
+    {
+      "title": "About macOS operating system",
+      "content": "macOS operating system is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "macOS operating system",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:09:35.299852"
+    },
+    {
+      "title": "About optimization techniques",
+      "content": "optimization techniques is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "optimization techniques",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:12:27.056970"
+    },
+    {
+      "title": "About big O notation",
+      "content": "big O notation is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "big O notation",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:26:15.187876"
+    },
+    {
+      "title": "About algorithm optimization",
+      "content": "algorithm optimization is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "algorithm optimization",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:26:25.277230"
+    },
+    {
+      "title": "Newton's First Law of Motion - Science Notes and Projects",
+      "content": "Newton's first law of motion basically says that objects don't change their state of motion unless acted upon by a net external force. Newton's first law of motion is a cornerstone of classical mechanics, describing the natural behavior of objects to resist changes in their motion.",
+      "query": "what is life what is life state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:37.241642"
+    },
+    {
+      "title": "Newton's laws of motion - Wikipedia",
+      "content": "Newton's laws of motion are three physical laws that describe the relationship between the motion of an object and the forces acting on it. These laws, which provide the basis for Newtonian mechanics, can be paraphrased as follows: A body remains at rest, or in motion at a constant speed in a straight line, unless it is acted upon by a force.",
+      "query": "what is life what is life state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:37.241940"
+    },
+    {
+      "title": "Newton's First Law: Statement, Examples, and Equation",
+      "content": "What is Newton's first law of motion. its definition, significance, and formula, along with everyday real-life examples, applications, and diagrams.",
+      "query": "what is life what is life state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:37.242116"
+    },
+    {
+      "title": "Newton's First Law: Principle, Examples, Experiments, Applications",
+      "content": "Introduction to Newton's First Law Newton's First Law of Motion has two situations: first describes the reason for a state of any object and second defines inertia. It is a profound law given by Newton in the 17th century that rules all classical mechanics. A new era of science was evolved by the development of this law. Newton imagines the position of an object as its reaction towards the ...",
+      "query": "what is life what is life state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:37.242424"
+    },
+    {
+      "title": "What Is Newton's First Law? - Lesson - TeachEngineering",
+      "content": "Students are introduced to the concepts of force, inertia and Newton's first law of motion: objects at rest stay at rest and objects in motion stay in motion unless acted upon by an unbalanced force. Examples of contact and non-contact types of forces are provided, specifically applied, spring, drag, frictional forces, and magnetic, electric, gravitational forces. Students the difference ...",
+      "query": "what is life what is life state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:37.242713"
+    },
+    {
+      "title": "Understanding Newton's Laws of Motion - Encyclopedia Britannica",
+      "content": "Newton's first law states that unless a body (such as a rubber ball, car, or planet) is acted upon by some force, a body in motion tends to remain in motion and a body at rest tends to remain at rest. This postulate is known as the law of inertia. What this means, practically speaking, is that a rolling ball or other object only slows down because of forces like gravity and friction. Even ...",
+      "query": "what is life state Newton's first law of matter state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:50.986602"
+    },
+    {
+      "title": "2. Newton's first law - Conceptual Physics",
+      "content": "Newton's first law is sometimes referred to as the law of inertia, as it describes this property of matter. Newton's first law says that an object in motion tends to stay in motion, and an object at rest tends to stay at rest, unless acted upon by an outside force.",
+      "query": "what is life state Newton's first law of matter state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:50.987121"
+    },
+    {
+      "title": "PDF 8.01SC S22 Chapter 7: Newton s Laws of Motion - MIT OpenCourseWare",
+      "content": "Newton's First Law states that there is no physical way to distinguish between whether we are moving or the station is moving, because there is nearly zero total force acting on the body.",
+      "query": "what is life state Newton's first law of matter state Newton's first law of matter",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:50.987315"
+    },
+    {
+      "title": "Kathmandu - Wikipedia",
+      "content": "Kathmandu[a] (Nepali: [\u02ccka\u0288\u02b0ma\u0273\u02c8\u0256u]) is the capital and largest city of Nepal, situated in the central part of the country within the Kathmandu Valley. As per the 2021 Nepal census, [3] it has a population of 845,767 residing in 105,649 households, with approximately 4 million people in the surrounding metropolitan area. The city stands at an elevation of 1,324 metres (4,344 ft) above ...",
+      "query": "What is the capital of Nepal?",
+      "source": "research",
+      "learned_at": "2025-11-28T15:53:19.198617"
+    },
+    {
+      "title": "Rivers, History, Population, Elevation, & Map - Britannica",
+      "content": "Kathmandu, capital of Nepal. It lies in a hilly region near the confluence of the Baghmati and Vishnumati rivers, at an elevation of 4,344 feet (1,324 metres) above sea level. It was founded in 723 by Raja Gunakamadeva. Its early name was Manju-Patan; the present name refers to a wooden temple",
+      "query": "What is the capital of Nepal?",
+      "source": "research",
+      "learned_at": "2025-11-28T15:53:19.198888"
+    },
+    {
+      "title": "What Is The Capital Of Nepal? - WorldAtlas",
+      "content": "The capital city of Nepal is Kathmandu, and it is also the largest city in the country, it is located in the World Heritage Site Kathmandu Valley. Kathmandu history which is inseparable from that of the Kathmandu valley dates back to the ancient time.",
+      "query": "What is the capital of Nepal?",
+      "source": "research",
+      "learned_at": "2025-11-28T15:53:19.199114"
+    },
+    {
+      "title": "What is the Capital of Nepal? Kathmandu - Countryaah.com",
+      "content": "Kathmandu, the political, cultural, and economic center of Nepal, located in the Kathmandu Valley surrounded by the Himalayas. its history, landmarks, climate, and other capital cities in Nepal's history.",
+      "query": "What is the capital of Nepal?",
+      "source": "research",
+      "learned_at": "2025-11-28T15:53:19.199310"
+    },
+    {
+      "title": "What is the Capital of Nepal? - Mappr",
+      "content": "Kathmandu is the capital of Nepal and the largest metropolis in the country. It has a rich and diverse cultural heritage, many UNESCO World Heritage Sites, and a vibrant urban life.",
+      "query": "What is the capital of Nepal?",
+      "source": "research",
+      "learned_at": "2025-11-28T15:53:19.199506"
+    },
+    {
+      "title": "Haryana - Wikipedia",
+      "content": "Haryana surrounds the country's capital territory of Delhi on three sides (north, west and south), consequently, a large area of Haryana state is included in the economically important National Capital Region of India for the purposes of planning and development.",
+      "query": "What's the capital of Haryana?",
+      "source": "research",
+      "learned_at": "2025-11-28T15:53:35.790045"
+    },
+    {
+      "title": "Haryana | History, Capital, Population, Map, & Government - Britannica",
+      "content": "Haryana, state in north-central India. The city of Chandigarh, within the Chandigarh union territory, serves as the capital of that territory and also the states of Haryana and Punjab. Haryana was created in 1966 from the partition of the former state of Punjab into Punjabi-speaking Punjab and Hindi-speaking Haryana.",
+      "query": "What's the capital of Haryana?",
+      "source": "research",
+      "learned_at": "2025-11-28T15:53:35.790355"
+    },
+    {
+      "title": "What is the Capital of Haryana? - Chandigarh - Rau's IAS",
+      "content": "The High Court of Punjab and Haryana, which is based in Chandigarh, caters to the needs of the states of Punjab and Haryana and the union territory of Chandigarh.",
+      "query": "What's the capital of Haryana?",
+      "source": "research",
+      "learned_at": "2025-11-28T15:53:35.790537"
+    },
+    {
+      "title": "Why Chandigarh Is The Joint Capital of Punjab And Haryana",
+      "content": "According to the resolution, Haryana was carved out of Punjab in 1966 and, whenever a state has been divided in the past, the capital remains with the parent state. Punjab, therefore, has been laying its claim for the complete transfer of Chandigarh to the state.",
+      "query": "What's the capital of Haryana?",
+      "source": "research",
+      "learned_at": "2025-11-28T15:53:35.790778"
+    },
+    {
+      "title": "Capital of Haryana: City, Map, and History Explained - Vedantu",
+      "content": "Why Chandigarh is the capital of Haryana. map details, history, and key facts\u2014perfect for students and exam prep.",
+      "query": "What's the capital of Haryana?",
+      "source": "research",
+      "learned_at": "2025-11-28T15:53:35.790944"
+    },
+    {
+      "title": "Brawler's Guild Fight Strategies Guide - Wowhead",
+      "content": "The Brawler's Guild is back for Patch 11.2.7, and Season 5 brings in a couple new fights and a few new challenges for players! In this guide, we will go through strategies for all bosses in the Brawler's Guild, as well as take a look at the new Broker Challenges feature. There are several types of fight in the Brawler's Guild, allowing you to face challenges in the Brawler's Guild in several ways.",
+      "query": "Hey, Thor 1.0 What can you do? who Is bawler sjof",
+      "source": "research",
+      "learned_at": "2025-11-28T21:21:10.285566"
+    },
+    {
+      "title": "Bawler - Definition, Meaning & Synonyms | Vocabulary.com",
+      "content": "A loud weeper\"Bawler.\" Vocabulary.com Dictionary, Vocabulary.com, https://www.vocabulary.com/dictionary/bawler. Accessed 26 Nov. 2025. Copy citation",
+      "query": "Hey, Thor 1.0 What can you do? who Is bawler sjof",
+      "source": "research",
+      "learned_at": "2025-11-28T21:21:10.285787"
+    },
+    {
+      "title": "What Is the Law of Diminishing Marginal Utility? - Investopedia",
+      "content": "The law of diminishing marginal utility states that as the marginal utility derived from each additional unit that's used declines as consumption increases. more.",
+      "query": "What is Law of Diminishing Marginal Utility",
+      "source": "research",
+      "learned_at": "2025-11-28T21:22:27.714024"
+    },
+    {
+      "title": "Law of Diminishing Marginal Utility (DMU) - GeeksforGeeks",
+      "content": "What is Diminishing Marginal Utility (DMU)? According to the Law of Diminishing Marginal Utility (DMU), with the consumption of more and more units of a commodity, the utility obtained from each successive unit decreases. Most consumers spread their income among different varieties of goods when making choices.",
+      "query": "What is Law of Diminishing Marginal Utility",
+      "source": "research",
+      "learned_at": "2025-11-28T21:22:27.714300"
+    },
+    {
+      "title": "The Law of Diminishing Marginal Utility: A Detailed Explanation",
+      "content": "This article explains the law of diminishing marginal utility with the help of a table and diagram. It also states the assumptions involved and exceptions to the law.",
+      "query": "What is Law of Diminishing Marginal Utility",
+      "source": "research",
+      "learned_at": "2025-11-28T21:22:27.714488"
+    },
+    {
+      "title": "Law of Diminishing Marginal Utility - Definition, Examples",
+      "content": "The law of diminishing marginal utility states that the amount of satisfaction provided by the consumption of every additional unit of good decreases as we increase that good's consumption. Marginal utility is the change in the utility derived from consuming another unit of a good.",
+      "query": "What is Law of Diminishing Marginal Utility",
+      "source": "research",
+      "learned_at": "2025-11-28T21:22:27.714727"
+    },
+    {
+      "title": "Law of Diminishing Marginal Utility: Total vs Marginal",
+      "content": "The Law of Diminishing Marginal Utility is a concept that lies at the very core of economics, explaining how satisfaction or utility gained from the consumption of additional units of a good or service tends to decrease as more units are consumed. In other words, it shows that the more a person consumes a product, the lesser satisfaction he or she will derive from each additional unit. This ...",
+      "query": "What is Law of Diminishing Marginal Utility",
+      "source": "research",
+      "learned_at": "2025-11-28T21:22:27.715030"
+    }
+  ],
+  "last_updated": "2025-11-28T21:22:27.729984"
+}

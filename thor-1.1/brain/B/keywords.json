@@ -1,0 +1,3264 @@
+{
+  "letter": "B",
+  "keywords": [
+    "business",
+    "basics",
+    "best",
+    "blockchain",
+    "bert",
+    "backpropagation",
+    "backend",
+    "behavior",
+    "branching",
+    "backup",
+    "balancing",
+    "bitcoin",
+    "book",
+    "binary",
+    "black",
+    "b",
+    "breadth",
+    "bubble",
+    "backtracking",
+    "big",
+    "brotli",
+    "browser",
+    "batch",
+    "bi",
+    "by",
+    "bias",
+    "bagging",
+    "boosting",
+    "bayesian",
+    "backlog",
+    "burndown",
+    "boards",
+    "based",
+    "build",
+    "branches",
+    "bitbucket",
+    "blue",
+    "behavioral",
+    "brainstorming",
+    "blog",
+    "biostatistics",
+    "biomedical",
+    "bioinformatics",
+    "biology",
+    "biodiversity",
+    "bsd",
+    "before",
+    "barriers",
+    "blocking",
+    "brokers",
+    "bus",
+    "breaker",
+    "bulkhead",
+    "backoff",
+    "between",
+    "bundle",
+    "baseball?",
+    "buyer",
+    "blueprints",
+    "barcode",
+    "bpm",
+    "budget",
+    "bonds",
+    "banking",
+    "bank",
+    "bailouts",
+    "basel",
+    "bail-in",
+    "bail-out",
+    "branch",
+    "benchmarks",
+    "balanced",
+    "blended",
+    "behaviorism",
+    "badges",
+    "bodies",
+    "blocked",
+    "background",
+    "beneficial",
+    "believable",
+    "blend",
+    "biotechnology",
+    "bioengineering",
+    "biological",
+    "buddhism",
+    "biosphere",
+    "building",
+    "breeam",
+    "buildings",
+    "biomass",
+    "bauxite",
+    "biosafety",
+    "biosecurity",
+    "burundi",
+    "brazil",
+    "bolivia",
+    "bahamas",
+    "barbados",
+    "belize",
+    "basketball",
+    "baseball",
+    "balance",
+    "basis",
+    "beauty",
+    "belief",
+    "benefit",
+    "birth",
+    "bottom",
+    "boundary",
+    "burden",
+    "bachchan?",
+    "bro",
+    "bawler"
+  ],
+  "knowledge": [
+    {
+      "title": "17 Types of Business Strategies (With Real Examples)",
+      "content": "In this article, we'll break down 17 essential types of business strategies, with real-world examples to help you understand when and how each one is used \u2014 from Amazon's global expansion moves to Patagonia's sustainability commitments.",
+      "query": "business strategies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:54:55.927260"
+    },
+    {
+      "title": "What Is Business Strategy & Why Is It Important?",
+      "content": "Learn what business strategy is and why it's essential for a company's success. Discover how to create value for customers, employees, suppliers, and the firm using the value stick tool and the return on invested capital metric.",
+      "query": "business strategies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:54:55.927315"
+    },
+    {
+      "title": "10 Business Strategy Examples (And Why It Helps To Have One)",
+      "content": "In this article, you'll learn the key components of a business strategy, plus 10 different examples of business strategies to help you create your own.",
+      "query": "business strategies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:54:55.927363"
+    },
+    {
+      "title": "What is Strategy? Definition, Components & Examples Explained",
+      "content": "Learn what a business strategy is, how to formulate one, and what types of strategies exist. This article covers the difference between strategy and tactics, the levels of business strategies, and how to measure strategy success.",
+      "query": "business strategies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:54:55.927410"
+    },
+    {
+      "title": "What is Business Strategy? Definition and Examples",
+      "content": "Discover what business strategy is and real-world examples. Learn how effective strategies drive growth, and long-term success.",
+      "query": "business strategies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:54:55.927457"
+    },
+    {
+      "title": "JavaScript Tutorial - W3Schools",
+      "content": "W3Schools offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.",
+      "query": "javascript basics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:58:25.959547"
+    },
+    {
+      "title": "The Modern JavaScript Tutorial",
+      "content": "A comprehensive guide to JavaScript, covering the language basics, browser environment, advanced topics and more. Learn with simple, but detailed explanations and examples, and practice with tasks and exercises.",
+      "query": "javascript basics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:58:25.959618"
+    },
+    {
+      "title": "JavaScript Cheat Sheet - A Basic Guide to JavaScript",
+      "content": "A JavaScript Cheat Sheet is a concise reference guide that provides a quick overview of essential JavaScript concepts, syntax, and commands. It is designed to help developers, especially beginners, recall important topics or features of the language without delving into detailed documentation.",
+      "query": "javascript basics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:58:25.959675"
+    },
+    {
+      "title": "Learn JavaScript for Beginners - JS Basics Handbook",
+      "content": "A free tutorial that covers the essential building blocks of JavaScript, such as variables, data types, functions, objects, arrays, and classes. You'll also learn how to set up your computer, run code in the console, and practice with exercises.",
+      "query": "javascript basics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:58:25.959728"
+    },
+    {
+      "title": "JavaScript Tutorial",
+      "content": "This website offers a comprehensive guide to learn JavaScript programming language from the basics to advanced topics. You can find sections on syntax, variables, data types, operators, control flow, functions, objects, classes, and more.",
+      "query": "javascript basics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T11:58:25.959782"
+    },
+    {
+      "title": "Coding Best Practices and Guidelines for Better Code",
+      "content": "Learn coding best practices to improve your programming skills. Explore coding guidelines for collaboration, code structure, efficiency, and more.",
+      "query": "coding best practices",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:01:36.881241"
+    },
+    {
+      "title": "Coding best practices - Wikipedia",
+      "content": "Learn about the informal rules and guidelines that software developers follow to improve software quality. Explore the attributes, objectives, prerequisites, and methodologies of coding best practices.",
+      "query": "coding best practices",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:01:36.881330"
+    },
+    {
+      "title": "7 Common Programming Principles That Every Developer Must Follow",
+      "content": "7 Common Programming Principles Programming principles are guidelines and best practices that help developers write clean, maintainable, and efficient code. Here are 7 common programming principles 1. KISS (Keep It Simple, Stupid) Nobody in programming loves to debug, maintain, or make changes in complex code.",
+      "query": "coding best practices",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:01:36.881398"
+    },
+    {
+      "title": "Coding Standards and Best Practices: Guide & Implementation Tips",
+      "content": "This guide explains the most common coding standards and best practices in software engineering. Discover how to enforce coding rules and guidelines easily.",
+      "query": "coding best practices",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:01:36.881467"
+    },
+    {
+      "title": "Top 10 Best Practices for Coding That Every Developer Should Follow",
+      "content": "Coding is an essential part of software development, and it is essential to write clean, efficient, and maintainable code. In this article, we will discuss the top 10 best practices that every developer should follow while coding.",
+      "query": "coding best practices",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:01:36.881532"
+    },
+    {
+      "title": "What is Business Strategy? Definition, Importance, Levels, and Examples",
+      "content": "Learn what business strategy is, why it is important, and how it differs from business plan and business model. Explore the three levels of business strategy and how to implement a successful one with examples and steps.",
+      "query": "business strategies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:09:07.287876"
+    },
+    {
+      "title": "Blockchain",
+      "content": "A blockchain is a distributed ledger with growing lists of records (blocks) that are securely linked together via cryptographic hashes. Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data. Since each block contains information about the previous block, they effectively form a chain, with each additional block linking to the ones before it. Consequently, blockchain transactions are resistant to alteration because, once recorded, the data in any given ",
+      "query": "blockchain",
+      "source": "wikipedia",
+      "learned_at": "2025-11-23T12:12:57.481736"
+    },
+    {
+      "title": "Blockchain.com | Be early to the future of finance",
+      "content": "Be early to the future of finance Buy Bitcoin, Ethereum, and other leading cryptocurrencies on a platform trusted by millions.",
+      "query": "blockchain",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:12:58.304036"
+    },
+    {
+      "title": "Blockchain - Wikipedia",
+      "content": "Blockchain formation. The main chain (black) consists of the longest series of blocks from the genesis block (green) to the current block. Orphan blocks (purple) exist outside of the main chain. A blockchain is a decentralized, distributed, and often public, digital ledger consisting of records called blocks that are used to record transactions across many computers so that any involved block ...",
+      "query": "blockchain",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:12:58.304146"
+    },
+    {
+      "title": "Blockchain Facts: What Is It, How It Works, and How It Can Be Used",
+      "content": "A blockchain is a digitally distributed, decentralized, public ledger that exists across a network. It is most noteworthy in its use with cryptocurrencies and NFTs.",
+      "query": "blockchain",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:12:58.304213"
+    },
+    {
+      "title": "What Is Blockchain and How Does It Work? | Britannica Money",
+      "content": "Blockchain is an emerging technology that has the potential to disrupt and revolutionize the way we conduct business, make commercial transactions, enforce legal contracts, and even enact government policy.",
+      "query": "blockchain",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:12:58.304277"
+    },
+    {
+      "title": "What is blockchain? - IBM",
+      "content": "What is blockchain? Blockchain is a shared, immutable digital ledger, enabling the recording of transactions and the tracking of assets within a business network and providing a single source of truth. Blockchain operates as a decentralized distributed database, with data stored across multiple computers, making it resistant to tampering.",
+      "query": "blockchain",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:12:58.304348"
+    },
+    {
+      "title": "JavaScript Basics - GeeksforGeeks",
+      "content": "Known as the scripting language for web pages, JavaScript supports variables, data types, operators, conditional statements, loops, functions, arrays, and objects. With JavaScript, you can create dynamic, interactive, and engaging websites. These are the basics that you need to learn before deep dive into JavaScript:",
+      "query": "javascript basics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:26:54.882082"
+    },
+    {
+      "title": "Coding Standards and Best Practices to Follow - BrowserStack",
+      "content": "Poor coding practices don't just cause bugs\u2014they slow teams down, increase maintenance costs, and make collaboration unnecessarily difficult. Establishing clear coding standards and following best practices ensures that every line of code contributes to performance, scalability, and long-term maintainability.",
+      "query": "coding best practices",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T12:39:47.275384"
+    },
+    {
+      "title": "6. JavaScript fundamentals - MDN Web Docs",
+      "content": "6.8 JavaScript object basics Learning outcomes: Understand that in JavaScript most things are objects, and you've probably used objects every time you've touched JavaScript. Basic syntax: Object literals. Properties and methods. Nesting objects and arrays in objects. Using constructors to create a new object. Object scope, and this.",
+      "query": "javascript basics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T13:30:18.879448"
+    },
+    {
+      "title": "What is Blockchain?",
+      "content": "Learn what Blockchain is, how it works, and why it is important for various industries. Explore the different types of Blockchain, such as public, consortium, and hybrid, and the key components, such as blocks, nodes, ledgers, and wallets.",
+      "query": "blockchain",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T14:02:35.674586"
+    },
+    {
+      "title": "JavaScript - MDN Web Docs",
+      "content": "JavaScript (JS) is a lightweight interpreted (or just-in-time compiled) programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, garbage-collected, dynamic language, supporting multiple paradigms such as ...",
+      "query": "javascript basics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T14:14:30.262754"
+    },
+    {
+      "title": "A complete Guide to Coding Standards and Best Practices",
+      "content": "Unlock essential coding standards and best practices for superior code quality. Learn through examples and elevate your coding skills.",
+      "query": "coding best practices",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T14:30:29.151009"
+    },
+    {
+      "title": "Business Strategy - Definition, Explained, Examples, Levels",
+      "content": "Learn what business strategy is, how it is developed, and why it is important for organizations. Explore different types and levels of business strategy with examples and comparisons.",
+      "query": "business strategies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T14:48:07.822952"
+    },
+    {
+      "title": "BERT (language model) - Wikipedia",
+      "content": "BERT (language model) ... Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. [1][2] It learns to represent text as a sequence of vectors using self-supervised learning. It uses the encoder-only transformer architecture.",
+      "query": "BERT model",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:17:35.851818"
+    },
+    {
+      "title": "BERT - Hugging Face",
+      "content": "BERT is a bidirectional transformer pretrained on unlabeled text to predict masked tokens in a sentence and to predict whether one sentence follows another. The main idea is that by randomly masking some tokens, the model can train on text to the left and right, giving it a more thorough understanding. BERT is also very versatile because its learned language representations can be adapted for ...",
+      "query": "BERT model",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:17:35.851854"
+    },
+    {
+      "title": "BERT Model - NLP - GeeksforGeeks",
+      "content": "BERT (Bidirectional Encoder Representations from Transformers) stands as an open-source machine learning framework designed for the natural language processing (NLP). The article aims to explore the architecture, working and applications of BERT. Illustration of BERT Model Use Case What is BERT?",
+      "query": "BERT model",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:17:35.851881"
+    },
+    {
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language ...",
+      "content": "BERT is a bidirectional transformer model that pre-trains deep representations from unlabeled text and fine-tunes them for various natural language tasks. The paper introduces BERT, its design, and its performance on eleven benchmarks, achieving new state-of-the-art results.",
+      "query": "BERT model",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:17:35.851907"
+    },
+    {
+      "title": "BERT Models and Its Variants - MachineLearningMastery.com",
+      "content": "BERT is a transformer-based model for NLP tasks that was released by Google in 2018. It is found to be useful for a wide range of NLP tasks. In this article, we will overview the architecture of BERT and how it is trained. Then, you will learn about some of its variants that are released later. Let's get started.",
+      "query": "BERT model",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:17:35.851934"
+    },
+    {
+      "title": "Backpropagation",
+      "content": "In machine learning, backpropagation is a gradient computation method commonly used for training a neural network in computing parameter updates.",
+      "query": "backpropagation",
+      "source": "wikipedia",
+      "learned_at": "2025-11-23T18:17:57.461925"
+    },
+    {
+      "title": "Backpropagation - Wikipedia",
+      "content": "Backpropagation then consists essentially of evaluating this expression from right to left (equivalently, multiplying the previous expression for the derivative from left to right), computing the gradient at each layer on the way; there is an added step, because the gradient of the weights is not just a subexpression: there's an extra ...",
+      "query": "backpropagation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:17:58.292231"
+    },
+    {
+      "title": "Backpropagation in Neural Network - GeeksforGeeks",
+      "content": "Backpropagation, short for Backward Propagation of Errors, is a key algorithm used to train neural networks by minimizing the difference between predicted and actual outputs. It works by propagating errors backward through the network, using the chain rule of calculus to compute gradients and then iteratively updating the weights and biases.",
+      "query": "backpropagation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:17:58.292294"
+    },
+    {
+      "title": "What is backpropagation? - IBM",
+      "content": "Backpropagation is a machine learning algorithm for training neural networks by using the chain rule to compute how network weights contribute to a loss function.",
+      "query": "backpropagation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:17:58.292340"
+    },
+    {
+      "title": "14 Backpropagation - Foundations of Computer Vision",
+      "content": "Learn how to use backpropagation to compute the gradients of the loss with respect to the parameters of a neural network. The web page explains the trick of reusing computation, the generic layer formula, and the backward operation for different types of layers.",
+      "query": "backpropagation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:17:58.292385"
+    },
+    {
+      "title": "What is backpropagation really doing? - 3Blue1Brown",
+      "content": "An overview of backpropagation, the algorithm behind how neural networks learn.",
+      "query": "backpropagation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:17:58.292430"
+    },
+    {
+      "title": "Shop backend development books - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on backend development books at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "query": "backend development",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:34:14.578365"
+    },
+    {
+      "title": "Pantheon: Scalable & Supported - Efficient Site Management",
+      "content": "Build & manage WordPress and Drupal sites in one place - Pantheon\u00ae WebOps platform. See how Pantheon's WebOps Platform helps you build, host, & manage better web experiences.",
+      "query": "backend development",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:34:14.578411"
+    },
+    {
+      "title": "Backend Development - GeeksforGeeks",
+      "content": "Backend development handles the server-side logic, database, and core functionality of web applications. It ensures smooth communication between the server and client using languages and frameworks like Node.js, Django, and Spring.",
+      "query": "backend development",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:34:14.578447"
+    },
+    {
+      "title": "Backend Developer Roadmap: What is Backend Development",
+      "content": "A comprehensive guide to becoming a modern backend developer in 2024, covering languages, databases, web frameworks, APIs, security, testing, scaling and more. See the roadmap, resources, quizzes and FAQs on roadmap.sh.",
+      "query": "backend development",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:34:14.578480"
+    },
+    {
+      "title": "What Does a Back-End Developer Do? - Coursera",
+      "content": "Learn what back-end developers do, what tools they use, and how to become one. Explore the salary, job outlook, and skills needed for this in-demand role.",
+      "query": "backend development",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:34:14.578515"
+    },
+    {
+      "title": "What is Behavior-Driven Development (BDD)? - GeeksforGeeks",
+      "content": "Behavior-Driven Development (BDD) testing is a software development approach that focuses on the behavior of the system from the end user's perspective. It emphasizes collaboration among stakeholders, including developers, QA engineers, and business analysts, to ensure that the software meets both business requirements and user expectations.",
+      "query": "behavior driven development",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:40:11.752131"
+    },
+    {
+      "title": "Behavior-driven development - Wikipedia",
+      "content": "Learn about BDD, a software development process that uses natural-language statements to describe the behavior and outcomes of code. BDD involves collaboration, domain-specific language, and tools to automate tests and specifications.",
+      "query": "behavior driven development",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:40:11.752189"
+    },
+    {
+      "title": "What is BDD (Behavior Driven Development)? | Agile Alliance",
+      "content": "Behavior Driven Development (BDD) is a software engineering process that stems from Test Driven Development (TDD) and Acceptance Test Driven Development (ATDD).",
+      "query": "behavior driven development",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:40:11.752220"
+    },
+    {
+      "title": "What is behavior-driven development (BDD)? - TechTarget",
+      "content": "Behavior-driven development (BDD) is an Agile development methodology that documents, designs and develops software around the behavior a user expects to experience when interacting with an app. BDD extends the capabilities of test-driven development (TDD) and acceptance test-driven development (ATDD) by encouraging collaboration among ...",
+      "query": "behavior driven development",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:40:11.752251"
+    },
+    {
+      "title": "Behaviour-Driven Development | Cucumber",
+      "content": "Learn how BDD helps software teams collaborate, work in small iterations, and produce system documentation that is automatically checked against the system's behaviour. Discover the three practices of BDD: discovery, formulation, and automation, and how to use Cucumber to support them.",
+      "query": "behavior driven development",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:40:11.752285"
+    },
+    {
+      "title": "Branching Strategies in Git - GeeksforGeeks",
+      "content": "A branching strategy is a set of rules or guidelines that development teams use to manage the process of writing, merging, and deploying code with the help of a version control system like Git. It defines how developers interact with a shared codebase. Strategies like these are essential as they help in keeping project repositories organized, error-free, and avoid the unwanted merge conflicts ...",
+      "query": "git branching strategies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:42:52.043238"
+    },
+    {
+      "title": "6 Types of Git Branching Strategy for DevOps - DEV Community",
+      "content": "Git branching strategies are like roadmaps that teams use to organize their work, keep track of different code versions, and work together smoothly in version control. And guess what? Having a consistent naming convention for branches is like having a secret code that makes communication and collaboration a breeze within the team. But here's the thing, the best branching strategy for your ...",
+      "query": "git branching strategies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:42:52.043304"
+    },
+    {
+      "title": "Git branching guidance - Azure Repos | Microsoft Learn",
+      "content": "Keep your branch strategy simple. Build your strategy from these three concepts: Use feature branches for all new features and bug fixes. Merge feature branches into the main branch using pull requests. Keep a high quality, up-to-date main branch. A strategy that extends these concepts and avoids contradictions will result in a version control workflow for your team that is consistent and easy ...",
+      "query": "git branching strategies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:42:52.043351"
+    },
+    {
+      "title": "Git Branching Strategy: A Complete Guide - DataCamp",
+      "content": "Effective Git branching strategies are essential for managing the complexities of software development. This article explores the strengths and trade-offs of commonly used branching strategies to help you implement the branching strategy that is right for your team. For overviews of Git, I recommend the following DataCamp resources: Complete Git Cheat Sheet GitHub Foundations Skill Track What ...",
+      "query": "git branching strategies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:42:52.043405"
+    },
+    {
+      "title": "Choosing the Right Git Branching Strategy: A Comparative Analysis",
+      "content": "Effective branch management is crucial for successful collaboration and efficient development with Git. In this article, we will explore four popular branching strategies \u2014 Git-Flow, GitHub-Flow ...",
+      "query": "git branching strategies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:42:52.043453"
+    },
+    {
+      "title": "Database Backup and Recovery Strategies - NamasteDev Blogs",
+      "content": "Database Backup and Recovery Strategies In today's world, databases are crucial for almost every application. However, protecting these databases from data loss due to various risks\u2014be it hardware failures, human errors, or natural disasters\u2014is paramount. In this blog post, we will explore essential database backup and recovery strategies, equipping developers and database administrators ...",
+      "query": "database backup strategies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:47:16.383219"
+    },
+    {
+      "title": "8 Essential Database Backup Strategies for 2025 - Cloudvara",
+      "content": "Explore 8 essential database backup strategies, from full and incremental to snapshot-based. Secure your data with our expert guide for 2025.",
+      "query": "database backup strategies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:47:16.383306"
+    },
+    {
+      "title": "8 data backup strategies and best practices you need to know",
+      "content": "Does your backup strategy need improvement? 3-2-1 backup and the cloud are a start, but these eight best practices are indispensable for enterprise backup.",
+      "query": "database backup strategies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:47:16.383376"
+    },
+    {
+      "title": "Top 10 Database Backup And Recovery Strategies - Techyv.com",
+      "content": "Others Top 10 Database Backup And Recovery Strategies Autumn Implementing a comprehensive backup and recovery strategy is crucial for any database environment. Unplanned downtime or data loss can have devastating consequences for an organization. However, many database administrators fail to prioritize backups until disaster strikes.",
+      "query": "database backup strategies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:47:16.383448"
+    },
+    {
+      "title": "Database Backup and Recovery Strategies: A Beginner's Guide",
+      "content": "Discover essential database backup and recovery strategies in this beginner's guide, including practical methods for various DBMS.",
+      "query": "database backup strategies",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:47:16.383514"
+    },
+    {
+      "title": "How to Generate Word Embedding using BERT? - GeeksforGeeks",
+      "content": "How BERT is better than Word2vec? BERT and Word2vec both are famous for generating word-embeddings for different NLP tasks. But somehow BERT outperforms over Word2vec. The reasons are discussed below: Contextual Understanding: BERT model can capture the contextual meaning of each word based on their surrounding words in a sentence.",
+      "query": "BERT embeddings",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:54:00.765533"
+    },
+    {
+      "title": "A Complete Guide to BERT with Code - Towards Data Science",
+      "content": "2.4 - Input Embeddings in BERT The input embedding process for BERT is made up of three stages: positional encoding, segment embedding, and token embedding (as shown in the diagram below).",
+      "query": "BERT embeddings",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:54:00.765644"
+    },
+    {
+      "title": "How to Create Bert Vector Embeddings? A Comprehensive Tutorial",
+      "content": "Learn how to create BERT vector embeddings with a step-by-step guide and improve your natural language processing skills.",
+      "query": "BERT embeddings",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:54:00.765675"
+    },
+    {
+      "title": "Cyber Security Solution Tips - Keep Your Business Secure",
+      "content": "Get help for evolving your security to meet the threats of today's connected world. Learn how to protect your organization from cyber threats with the help of Verizon.",
+      "query": "security best practices",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:13:46.724815"
+    },
+    {
+      "title": "Save on cybersecurity guide - Amazon\u00ae Official Site",
+      "content": "Browse & discover thousands of unique brands. Read customer reviews & best sellers. Find deals and compare prices on cybersecurity guide at Amazon.com",
+      "query": "security best practices",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:13:46.724882"
+    },
+    {
+      "title": "10 cybersecurity best practices for organizations in 2025",
+      "content": "Looking to improve your organization's cybersecurity program? Study these 10 cybersecurity best practices and tips.",
+      "query": "security best practices",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:13:46.724919"
+    },
+    {
+      "title": "Cybersecurity Best Practices | Cybersecurity and Infrastructure ... - CISA",
+      "content": "CISA provides information on cybersecurity best practices to help individuals and organizations implement preventative measures and manage cyber risks.",
+      "query": "security best practices",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:13:46.724952"
+    },
+    {
+      "title": "9 Cybersecurity Best Practices for Businesses in 2025",
+      "content": "Learn how to protect your organization from cyber threats and attacks with these nine best practices. Find out how to train employees, update policies, backup data, use strong passwords, and more.",
+      "query": "security best practices",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:13:46.724986"
+    },
+    {
+      "title": "Shop dual wan load balancer - Amazon.com\u00ae Official Site",
+      "content": "Find deals and compare prices on dual wan load balancer at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "query": "load balancing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:28:21.581306"
+    },
+    {
+      "title": "What is Load Balancer & How Load Balancing works?",
+      "content": "A load balancer is a networking device or software application that distributes and balances the incoming traffic among the servers to provide high availability, efficient utilization of servers and high performance.",
+      "query": "load balancing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:28:21.581369"
+    },
+    {
+      "title": "What is Load Balancing? - Load Balancing Algorithm Explained - AWS",
+      "content": "Load balancing is the method of distributing network traffic equally across a pool of resources that support an application. Modern applications must process millions of users simultaneously and return the correct text, videos, images, and other data to each user in a fast and reliable manner. To handle such high volumes of traffic, most applications have many resource servers with duplicate ...",
+      "query": "load balancing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:28:21.581422"
+    },
+    {
+      "title": "Load balancing (computing) - Wikipedia",
+      "content": "Learn about the process of distributing tasks over resources to optimize performance and efficiency in parallel computing. Compare static and dynamic algorithms, and their approaches, challenges and applications.",
+      "query": "load balancing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:28:21.581474"
+    },
+    {
+      "title": "What is load balancing? | How load balancers work - Cloudflare",
+      "content": "Load balancing is the process of distributing traffic among multiple servers to improve a service or application's performance. Learn how load balancers work.",
+      "query": "load balancing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:28:21.581521"
+    },
+    {
+      "title": "Shop intro to blockchain - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on intro to blockchain at Amazon.com. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "query": "blockchain technology",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T01:58:44.110265"
+    },
+    {
+      "title": "Blockchain Technology",
+      "content": "Learn what Blockchain technology is, how it works, and why it is beneficial for various applications. Explore the different types of Blockchain networks and their use cases in finance, supply chain, and more.",
+      "query": "blockchain technology",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T01:58:44.110508"
+    },
+    {
+      "title": "Top Cryptocurrency App - Most Trusted Crypto Exchange",
+      "content": "Coinbase is the Safe and Trusted Place to Buy and Sell Bitcoin, Ethereum, and More. Millions Of People Use Coinbase to Buy, Sell and Store Their Cryptocurrency.",
+      "query": "bitcoin cryptocurrency",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T02:30:46.098825"
+    },
+    {
+      "title": "Bitcoin price today, BTC to USD live price, marketcap and chart ...",
+      "content": "The live Bitcoin price today is $84,607.19 USD with a 24-hour trading volume of $42,488,436,450.77 USD. We update our BTC to USD price in real-time.",
+      "query": "bitcoin cryptocurrency",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T02:30:46.098900"
+    },
+    {
+      "title": "Bitcoin - Wikipedia",
+      "content": "Bitcoin (abbreviation: BTC; sign: \u20bf) is the first decentralized cryptocurrency. Based on a free-market ideology, bitcoin was invented in 2008 when an unknown entity published a white paper under the pseudonym of Satoshi Nakamoto. [4] Use of bitcoin as a currency began in 2009, [5] with the release of its open-source implementation. [6]: ch. 1 From 2021 to 2025, El Salvador adopted it as ...",
+      "query": "bitcoin cryptocurrency",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T02:30:46.098964"
+    },
+    {
+      "title": "Why is Bitcoin and crypto crashing? Reasons behind the bad month",
+      "content": "Bitcoin and other crypto have dropped more than 30%, putting them firmly into bear markets. What's happening and what it means for investors.",
+      "query": "bitcoin cryptocurrency",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T02:30:46.099023"
+    },
+    {
+      "title": "Bitcoin (BTC) Price | BTC to USD Price and Live Chart - CoinDesk",
+      "content": "Live Bitcoin price movements from all markets and BTC market cap, use our charts and see when there is an opportunity to buy or sell.",
+      "query": "bitcoin cryptocurrency",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T02:30:46.099078"
+    },
+    {
+      "title": "What is Ethereum? (A Complete Guide) | ethereum.org",
+      "content": "Ethereum is an open, public blockchain launched in July 2015 by a software developer called Vitalik Buterin and a small team of co-founders. The idea behind Ethereum was simple. While Bitcoin let you send and receive digital cash, Ethereum would build on this with open-source programs called smart contracts.",
+      "query": "ethereum blockchain",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T02:44:39.093287"
+    },
+    {
+      "title": "Ethereum (ETH) Blockchain Explorer",
+      "content": "Explore Ethereum blockchain data, transactions, and smart contracts with Etherscan, the leading Ethereum block explorer.",
+      "query": "ethereum blockchain",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T02:44:39.093362"
+    },
+    {
+      "title": "Ethereum - Wikipedia",
+      "content": "Ethereum is a decentralized blockchain with smart contract functionality. Ether (abbreviation: ETH[a]) is the native cryptocurrency of the platform. Among cryptocurrencies, ether is second only to bitcoin in market capitalization. [2][3] It is open-source software. Ethereum was conceived in 2013 by programmer Vitalik Buterin. [4]",
+      "query": "ethereum blockchain",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T02:44:39.093419"
+    },
+    {
+      "title": "Ethereum Explained: Blockchain, Smart Contracts, and Its Future",
+      "content": "Learn how Ethereum's blockchain, smart contracts, and proof-of-stake work. Discover its impact on decentralized applications and the future of digital finance.",
+      "query": "ethereum blockchain",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T02:44:39.093476"
+    },
+    {
+      "title": "Blockchain | Ethereum",
+      "content": "Learn what Ethereum is, how it works, and what you can do with it. Ethereum is a decentralized blockchain platform for building dApps, creating cryptocurrencies, and using smart contracts.",
+      "query": "ethereum blockchain",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T02:44:39.093530"
+    },
+    {
+      "title": "Save on blockchain fundamentals - Amazon.com Official Site",
+      "content": "Browse & discover thousands of unique brands. Read customer reviews & best sellers. Find deals and compare prices on blockchain fundamentals at Amazon.com",
+      "query": "blockchain consensus",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T03:59:48.726318"
+    },
+    {
+      "title": "Consensus Algorithms in Blockchain - GeeksforGeeks",
+      "content": "A consensus algorithm is a procedure through which all the peers of the Blockchain network reach a common agreement about the present state of the distributed ledger. In this way, consensus algorithms achieve reliability in the Blockchain network and establish trust between unknown peers in a distributed computing environment.",
+      "query": "blockchain consensus",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T03:59:48.726372"
+    },
+    {
+      "title": "Discover Consensus Mechanisms: Blockchain and Cryptocurrency Essentials",
+      "content": "Explore consensus mechanisms in blockchain and cryptocurrency. Learn how they secure data, enhance trust, and support digital ledgers efficiently.",
+      "query": "blockchain consensus",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T03:59:48.726414"
+    },
+    {
+      "title": "What Are Consensus Mechanisms in Blockchain? - code-b.dev",
+      "content": "2. Decentralization: Consensus mechanisms are at the heart of decentralization, a key principle of blockchain technology. They allow a wide and diverse network of independent nodes\u2014often located in different parts of the world\u2014to collaborate and reach agreement on the state of the blockchain without the need for a central governing authority.",
+      "query": "blockchain consensus",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T03:59:48.726456"
+    },
+    {
+      "title": "What is Blockchain Consensus Mechanisms: Complete Guide to PoW, PoS ...",
+      "content": "Blockchain Consensus Mechanisms: Complete Guide to PoW, PoS & BFT [2025] definition: Master blockchain consensus mechanisms including Proof of Work, Proof of Stake, and Byzantine Fault Tolerance. Learn how distributed networks reach agreement. Learn the meaning, use cases, related concepts, and when to use Blockchain Consensus Mechanisms: Complete Guide to PoW, PoS & BFT [2025] in blockchain ...",
+      "query": "blockchain consensus",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T03:59:48.726501"
+    },
+    {
+      "title": "How to Write a Book Report (Guide, Examples & Templates)",
+      "content": "Don't let a book report intimidate you. With this step-by-step guide, you'll learn how to write a book report to ace your assignment!",
+      "query": "Write a book report on Homecoming.",
+      "source": "research",
+      "learned_at": "2025-11-24T07:26:18.235397"
+    },
+    {
+      "title": "How to Write a Book Report, With Examples | Grammarly",
+      "content": "Writing a book report can be a daunting task, but it doesn't have to be. In essence, a book report is a summary of a book's content, structure, and analysis. It is a way for you to demonstrate your understanding of the book and its themes. A well-written book report can showcase your attention to detail, comprehension, and critical thinking skills.",
+      "query": "Write a book report on Homecoming.",
+      "source": "research",
+      "learned_at": "2025-11-24T07:26:18.235457"
+    },
+    {
+      "title": "How to Write a Book Report: A Step-by-Step Guide - wikiHow",
+      "content": "A book report is a short essay that summarizes and analyzes a work of fiction or nonfiction. Writing a book report may not seem fun at first, but it gives you a great chance to fully understand a work and its author. In this article, we'll teach you everything you need to know about how to write a book report, from choosing a book and outlining to drafting and editing your final paper.",
+      "query": "Write a book report on Homecoming.",
+      "source": "research",
+      "learned_at": "2025-11-24T07:26:18.235499"
+    },
+    {
+      "title": "Homecoming: Full Book Summary | SparkNotes",
+      "content": "A short summary of Cynthia Voigt&#39;s Homecoming. This free synopsis covers all the crucial plot points of Homecoming.",
+      "query": "Write a book report on Homecoming.",
+      "source": "research",
+      "learned_at": "2025-11-24T07:26:18.235534"
+    },
+    {
+      "title": "Book Report 101: How to Start, Write & Nail It Every Time",
+      "content": "Learn what a book report is and how to write one that stands out. Get step-by-step tips, templates, and examples to make your next book report easy and A+ worthy.",
+      "query": "Write a book report on Homecoming.",
+      "source": "research",
+      "learned_at": "2025-11-24T07:26:18.235569"
+    },
+    {
+      "title": "Binary Tree Data Structure - GeeksforGeeks",
+      "content": "A Binary Tree Data Structure is a hierarchical data structure in which each node has at most two children, referred to as the left child and the right child. It is commonly used in computer science for efficient storage and retrieval of data, with various operations such as insertion, deletion, and traversal.",
+      "query": "binary trees",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:27:01.046010"
+    },
+    {
+      "title": "Binary tree - Wikipedia",
+      "content": "A labeled binary tree of size 9 (the number of nodes in the tree) and height 3 (the height of a tree defined as the number of edges or links from the top-most or root node to the farthest leaf node), with a root node whose value is 1. The above tree is unbalanced and not sorted. In computer science, a binary tree is a tree data structure in which each node has at most two children, referred to ...",
+      "query": "binary trees",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:27:01.046090"
+    },
+    {
+      "title": "DSA Binary Trees - W3Schools",
+      "content": "Learn what a binary tree is, how it differs from arrays and linked lists, and how to implement and traverse it. Explore the different types of binary trees, such as balanced, complete, full and perfect, and see examples and exercises.",
+      "query": "binary trees",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:27:01.046150"
+    },
+    {
+      "title": "Binary Trees - Stanford University",
+      "content": "Learn the basic concepts of binary trees, a recursive pointer structure used for dictionary problems. See practice problems and solution code in C/C++ and Java, with binary search trees and pointer changing techniques.",
+      "query": "binary trees",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:27:01.046206"
+    },
+    {
+      "title": "8.2. Binary Trees \u2014 Data Structures & Algorithms",
+      "content": "8. 2. Binary Trees \u00b6 8. 2.1. Definitions and Properties \u00b6 A binary tree is made up of a finite set of elements called nodes. This set either is empty or consists of a node called the root together with two binary trees, called the left and right subtrees, which are disjoint from each other and from the root.",
+      "query": "binary trees",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:27:01.046266"
+    },
+    {
+      "title": "Binary Search Tree - GeeksforGeeks",
+      "content": "A Binary Search Tree (BST) is a type of binary tree data structure in which each node contains a unique key and satisfies a specific ordering property: All nodes in the left subtree of a node contain values strictly less than the node's value. All nodes in the right subtree of a node contain values strictly greater than the node's value. This structure enables efficient operations for ...",
+      "query": "binary search trees",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:27:12.639822"
+    },
+    {
+      "title": "Binary search tree - Wikipedia",
+      "content": "Learn about the definition, history, operations, and applications of binary search trees, a rooted binary tree data structure with the key of each internal node being greater than all the keys in the respective node's left subtree and less than the ones in its right subtree.",
+      "query": "binary search trees",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:27:12.639876"
+    },
+    {
+      "title": "DSA Binary Search Trees - W3Schools",
+      "content": "Learn what a Binary Search Tree (BST) is, how to traverse, search, and delete nodes in a BST, and how to find the lowest value in a subtree. See examples, animations, and code in Python.",
+      "query": "binary search trees",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:27:12.639916"
+    },
+    {
+      "title": "Binary Search Tree - Programiz",
+      "content": "A binary search tree is a data structure that quickly allows us to maintain a sorted list of numbers. Also, you will find working examples of Binary Search Tree in C, C++, Java, and Python.",
+      "query": "binary search trees",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:27:12.639955"
+    },
+    {
+      "title": "PDF 1 Binary search trees - Stanford University",
+      "content": "1.0.1 Runtime Binary search trees support several operations, including Search, Minimum, Maximum, Pre-decessor, Successor, Insert, and Delete. These operations run in time proportional to the height of the tree. In the best case scenario, the tree is a complete binary tree, and the height of the tree is (log n). In the worst case scenario, the tree is a linear chain, so the height of the tree ...",
+      "query": "binary search trees",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:27:12.639998"
+    },
+    {
+      "title": "Introduction to Red-Black Tree - GeeksforGeeks",
+      "content": "Why Red-Black Trees? Most of the BST operations (e.g., search, max, min, insert, delete.. etc) take O (h) time where h is the height of the BST. The cost of these operations may become O (n) for a skewed Binary Search Tree. In Red Black Tree, we make sure that the height of the tree remains O (log n) after every insertion and deletion, then we can guarantee an upper bound of O (log n) for all ...",
+      "query": "red black trees",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:27:38.867337"
+    },
+    {
+      "title": "Red-black tree - Wikipedia",
+      "content": "Red-black tree ... Example of a red-black tree In computer science, a red-black tree is a self-balancing binary search tree data structure noted for fast storage and retrieval of ordered information. The nodes in a red-black tree hold an extra \"color\" bit, often drawn as red and black, which help ensure that the tree is always approximately ...",
+      "query": "red black trees",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:27:38.867405"
+    },
+    {
+      "title": "Red/Black Tree Visualization - University of San Francisco",
+      "content": "Explore the structure and properties of red/black trees, a type of self-balancing binary search tree, with this interactive visualization tool. Adjust the animation speed and see how the tree changes as elements are inserted, deleted, or searched.",
+      "query": "red black trees",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:27:38.867457"
+    },
+    {
+      "title": "Red-Black Tree | Brilliant Math & Science Wiki",
+      "content": "Learn about red-black trees, a type of self-balancing binary search tree with nodes labeled as red or black. See how they are balanced, how they perform operations, and how they are implemented in Python.",
+      "query": "red black trees",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:27:38.867508"
+    },
+    {
+      "title": "Red Black Trees - Online Tutorials Library",
+      "content": "Learn how to implement and balance red black trees, a type of self-balancing binary search tree with red and black nodes. See examples of insertion, deletion and search operations and their algorithms.",
+      "query": "red black trees",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:27:38.867558"
+    },
+    {
+      "title": "B+ tree",
+      "content": "A B+ tree is an m-ary tree with a variable but often large number of children per node. A B+ tree consists of a root, internal nodes and leaves. The root may be either a leaf or a node with two or more children.",
+      "query": "B trees",
+      "source": "wikipedia",
+      "learned_at": "2025-11-24T07:27:49.539455"
+    },
+    {
+      "title": "B-tree - Wikipedia",
+      "content": "In computer science, a B-tree is a self-balancing tree data structure that maintains sorted data and allows searches, sequential access, insertions, and deletions in logarithmic time. The B-tree generalizes the binary search tree, allowing nodes to have more than two children. [2] By allowing more children under one node than a regular self-balancing binary search tree, the B-tree reduces the ...",
+      "query": "B trees",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:27:50.572474"
+    },
+    {
+      "title": "Introduction of B Tree - GeeksforGeeks",
+      "content": "A B-Tree is a specialized m-way tree designed to optimize data access, especially on disk-based storage systems. In a B-Tree of order m, each node can have up to m children and m-1 keys, allowing it to efficiently manage large datasets.",
+      "query": "B trees",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:27:50.572508"
+    },
+    {
+      "title": "B Trees - Online Tutorials Library",
+      "content": "B trees are extended binary search trees that are specialized in m-way searching, since the order of B trees is 'm'. Order of a tree is defined as the maximum number of children a node can accommodate. Therefore, the height of a b tree is relatively smaller than the height of AVL tree and RB tree.",
+      "query": "B trees",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:27:50.572537"
+    },
+    {
+      "title": "B-Tree vs B+ Tree: Key Differences Explained",
+      "content": "B+Tree is an extension of B-Tree with some modifications. B+Tree is also a self-balancing tree that maintains sorted data and allows searches, insertions, and deletions in logarithmic time.",
+      "query": "B trees",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:27:50.572562"
+    },
+    {
+      "title": "B-tree Data Structure | Baeldung on Computer Science",
+      "content": "Learn about B-tree, a self-balancing tree data structure that can store multiple keys and children per node. See the properties, operations, and examples of B-tree with different orders.",
+      "query": "B trees",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:27:50.572587"
+    },
+    {
+      "title": "Breadth First Search or BFS for a Graph - GeeksforGeeks",
+      "content": "Breadth First Search (BFS) is a graph traversal algorithm that starts from a source node and explores the graph level by level. First, it visits all nodes directly adjacent to the source.",
+      "query": "breadth first search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:29:04.087539"
+    },
+    {
+      "title": "Breadth-first search - Wikipedia",
+      "content": "Learn about breadth-first search (BFS), an algorithm for searching a tree or a graph for a node that satisfies a given property. See examples, pseudocode, complexity, applications and variations of BFS.",
+      "query": "breadth first search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:29:04.087598"
+    },
+    {
+      "title": "Breadth first search",
+      "content": "Learn how to use Breadth First Search (BFS) to visit all the vertices of a graph or tree data structure. See the pseudocode, examples, and applications of BFS in Python, Java, and C/C++.",
+      "query": "breadth first search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:29:04.087647"
+    },
+    {
+      "title": "Breadth-First Search - University of San Francisco",
+      "content": "Interactive visualization of the Breadth-First Search algorithm to understand its working and applications effectively.",
+      "query": "breadth first search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:29:04.087692"
+    },
+    {
+      "title": "Breadth-First Search (BFS) Algorithm Explained - Codecademy",
+      "content": "Master breadth-first search (BFS) with this beginner-friendly guide. Explore its algorithm, implementation, time complexity, and real-world applications.",
+      "query": "breadth first search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:29:04.087738"
+    },
+    {
+      "title": "Bubble Sort Algorithm - GeeksforGeeks",
+      "content": "Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity are quite high. We sort the array using multiple passes. After the first pass, the maximum element goes to end (its correct position). Same way, after second pass ...",
+      "query": "bubble sort",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:33:18.418811"
+    },
+    {
+      "title": "Bubble sort - Wikipedia",
+      "content": "Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the input list element by element, comparing the current element with the one after it, swapping their values if needed.",
+      "query": "bubble sort",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:33:18.418850"
+    },
+    {
+      "title": "Bubble Sort (With Code in Python/C++/Java/C) - Programiz",
+      "content": "The bubble sort algorithm compares two adjacent elements and swaps them if they are not in the intended order. In this tutorial, we will learn about the working of the bubble sort algorithm along with its implementations in Python, Java and C/C++.",
+      "query": "bubble sort",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:33:18.418876"
+    },
+    {
+      "title": "DSA Bubble Sort - W3Schools",
+      "content": "Learn how Bubble Sort works, how to code it in Python and how to improve it. See the time complexity graph and examples of Bubble Sort simulation.",
+      "query": "bubble sort",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:33:18.418900"
+    },
+    {
+      "title": "Bubble Sort Algorithm - Online Tutorials Library",
+      "content": "Bubble sort is a simple sorting algorithm. This sorting algorithm is comparison-based algorithm in which each pair of adjacent elements is compared and the elements are swapped if they are not in order. This algorithm is not suitable for large data sets as its average and worst case complexity are of O (n 2) where n is the number of items.",
+      "query": "bubble sort",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:33:18.418924"
+    },
+    {
+      "title": "Binary Search - GeeksforGeeks",
+      "content": "Binary Search is a searching algorithm that operates on a sorted or monotonic search space, repeatedly dividing it into halves to find a target value or optimal answer in logarithmic time O (log N).",
+      "query": "binary search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:50:22.104358"
+    },
+    {
+      "title": "Binary search - Wikipedia",
+      "content": "Binary search runs in logarithmic time in the worst case, making comparisons, where is the number of elements in the array. [a][6] Binary search is faster than linear search except for small arrays. However, the array must be sorted first to be able to apply binary search.",
+      "query": "binary search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:50:22.104429"
+    },
+    {
+      "title": "Binary Search (With Code) - Programiz",
+      "content": "Learn how to use binary search to find an element's position in a sorted array. See the iterative and recursive methods, the time and space complexity, and the applications of binary search in various programming languages.",
+      "query": "binary search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:50:22.104489"
+    },
+    {
+      "title": "DSA Binary Search - W3Schools",
+      "content": "Learn how to use binary search to find a value in a sorted array. See the steps, speed and code of the algorithm, and run a simulation to test it.",
+      "query": "binary search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:50:22.104543"
+    },
+    {
+      "title": "Binary Search Explained Simply & Visually | CodeToDeploy - Medium",
+      "content": "Learn how binary search works with an intuitive example, a graph, and Python code. Understand its O (log n) time complexity and real-world use.",
+      "query": "binary search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:50:22.104599"
+    },
+    {
+      "title": "Backtracking",
+      "content": "Backtracking is a class of algorithms for finding solutions to some computational problems, notably constraint satisfaction or enumeration problems, that incrementally builds candidates to the solutions, and abandons a candidate (\"backtracks\") as soon as it determines that the candidate cannot possibly be completed to a valid solution.",
+      "query": "backtracking",
+      "source": "wikipedia",
+      "learned_at": "2025-11-24T07:51:18.419664"
+    },
+    {
+      "title": "Backtracking Algorithm - GeeksforGeeks",
+      "content": "Backtracking is a problem-solving algorithmic technique that involves finding a solution incrementally by trying different options and undoing them if they lead to a dead end. It is commonly used in situations where you need to explore multiple possibilities to solve a problem, like searching for a path in a maze or solving puzzles like Sudoku.",
+      "query": "backtracking",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:51:19.260149"
+    },
+    {
+      "title": "Backtracking - Wikipedia",
+      "content": "Backtracking is a method of finding solutions to computational problems by building and pruning candidates incrementally. It is used for constraint satisfaction problems, puzzles, parsing, and optimization.",
+      "query": "backtracking",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:51:19.260227"
+    },
+    {
+      "title": "Backtracking: What is it? How do I use it? - DataScientest.com",
+      "content": "Backtracking is a search technique for solving complex problems by recursively exploring combinations of possible choices to arrive at a solution. It is commonly used to solve search, optimization, planning and gaming problems.",
+      "query": "backtracking",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:51:19.260294"
+    },
+    {
+      "title": "Backtracking Algorithm: Explained With Examples",
+      "content": "Backtracking algorithms are simple yet powerful, making them an essential tool for problems that require exhaustive search and combinatorial optimization. It is particularly useful in solving puzzles, finding combinations, and exploring decision trees. Let's learn in detail about the concept of the backtracking algorithm, its examples, practical applications, and more.",
+      "query": "backtracking",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:51:19.260361"
+    },
+    {
+      "title": "Understanding Backtracking Algorithms: A Comprehensive Guide",
+      "content": "Backtracking is a powerful algorithmic technique that allows us to solve complex problems by systematically exploring all possible solutions. While it can be computationally expensive, various optimization techniques can make it highly efficient for many real-world applications.",
+      "query": "backtracking",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:51:19.260423"
+    },
+    {
+      "title": "Big O notation - Wikipedia",
+      "content": "Big O notation is a mathematical notation that describes the approximate size of a function on a domain. Big O is a member of a family of notations invented by German mathematicians Paul Bachmann and [1] Edmund Landau [2] and expanded by others, collectively called Bachmann-Landau notation. The letter O was chosen by Bachmann to stand for Ordnung, meaning the order of approximation. In ...",
+      "query": "big O notation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:07:14.754180"
+    },
+    {
+      "title": "Big O Notation Tutorial - A Guide to Big O Analysis - GeeksforGeeks",
+      "content": "Big O notation is a powerful tool used in computer science to describe the time complexity or space complexity of algorithms. Big-O is a way to express the upper bound of an algorithm's time or space complexity.",
+      "query": "big O notation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:07:14.754249"
+    },
+    {
+      "title": "Big O Cheat Sheet - Time Complexity Chart - freeCodeCamp.org",
+      "content": "Big O Notation is a metric for determining the efficiency of an algorithm. It uses algebraic terms to describe the complexity of an algorithm as a function of its input size. Learn how to calculate and compare different time complexities with examples and a cheat sheet.",
+      "query": "big O notation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:07:14.754307"
+    },
+    {
+      "title": "Big-O Notation - NeetCode",
+      "content": "Learn the fundamentals of Big-O notation and how to analyze the time complexity of your code.",
+      "query": "big O notation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:07:14.754364"
+    },
+    {
+      "title": "Big O Notation | Brilliant Math & Science Wiki",
+      "content": "Big O notation is a notation used when talking about growth rates. It formalizes the notion that two functions &quot;grow at the same rate,&quot; or one function &quot;grows faster than the other,&quot; and such. It is very commonly used in computer science, when analyzing algorithms. Algorithms have a specific running time, usually declared as a function on its input size. However ...",
+      "query": "big O notation",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:07:14.754419"
+    },
+    {
+      "title": "Brotli - Wikipedia",
+      "content": "Brotli is a lossless data compression algorithm developed by Jyrki Alakuijala and Zolt\u00e1n Szabadka. It uses a combination of the general-purpose LZ77 lossless compression algorithm, Huffman coding and 2nd-order context modelling. Brotli is primarily used by web servers and content delivery networks to compress HTTP content, making internet websites load faster. As successor to gzip, it is ...",
+      "query": "brotli compression",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:28:54.531487"
+    },
+    {
+      "title": "GitHub - google/brotli: Brotli compression format",
+      "content": "Introduction Brotli is a generic-purpose lossless compression algorithm that compresses data using a combination of a modern variant of the LZ77 algorithm, Huffman coding and 2nd order context modeling, with a compression ratio comparable to the best currently available general-purpose compression methods.",
+      "query": "brotli compression",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:28:54.531573"
+    },
+    {
+      "title": "Brotli Compression: A Fast Alternative to GZIP Compression - Kinsta",
+      "content": "Learn what Brotli compression is, how it works, and why it can improve your website speed and performance. Compare Brotli with GZIP compression and find out how to enable it for your site.",
+      "query": "brotli compression",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:28:54.531638"
+    },
+    {
+      "title": "Brotli",
+      "content": "Brotli is a modern and fast compression method that can achieve high compression ratios. It is widely supported by web browsers, servers, and CDNs, and has a standard format defined by RFC 7932.",
+      "query": "brotli compression",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:28:54.531700"
+    },
+    {
+      "title": "Why you should consider using brotli compression with SSE",
+      "content": "Compression algorithms often use a context window shared between the decompressor (client) and the compressor (server). In the case of gzip that window is a fixed 32kb. This represents the memory both the client and the server maintain for forward and sometime backward references. Unlike, gzip, brotli lets you tune this window.",
+      "query": "brotli compression",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:28:54.531761"
+    },
+    {
+      "title": "HTTP caching - MDN Web Docs",
+      "content": "Learn how HTTP caching works and how to control it with Cache-Control headers. Understand the types of caches, heuristic caching, and freshness of responses.",
+      "query": "browser caching",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:40.717182"
+    },
+    {
+      "title": "How to manage and clear your cache and cookies",
+      "content": "Learn how to clear your browser cache and cookies in minutes. Improve your Internet speed and performance by deleting your browser history, cache, and cookies.",
+      "query": "browser caching",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:40.717277"
+    },
+    {
+      "title": "Browser Caching Explained (Beginner's Guide - 2025)",
+      "content": "Learn how browser caching works and how to implement HTTP caching headers (Cache-Control, ETag, Expires) to speed up your website for repeat visitors.",
+      "query": "browser caching",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:40.717357"
+    },
+    {
+      "title": "Web Caching: What It Is, How It Works & Why It's Key for ... - Bluehost",
+      "content": "Learn what web caching is, how it works and why it matters for site speed, user experience and SEO. Discover types, benefits and setup tips.",
+      "query": "browser caching",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:40.717433"
+    },
+    {
+      "title": "How to Clear Your Browser Cache in All Major Browsers (Fast Way)",
+      "content": "Do you want to clear your browser cache? See our step by step beginners guide to clear your browser cache for all major browsers.",
+      "query": "browser caching",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:29:40.717507"
+    },
+    {
+      "title": "What is business analytics? - IBM",
+      "content": "Business analytics involves companies that use data created by their operations or publicly available data to solve business problems, monitor their business fundamentals, identify new growth opportunities, and better serve their customers. Business analytics uses data exploration, data visualization, integrated dashboards, and more to provide users with access to actionable data and business ...",
+      "query": "business analytics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T10:36:03.486712"
+    },
+    {
+      "title": "Business analytics - Wikipedia",
+      "content": "Business analytics Business analytics (BA) refers to the skills, technologies, and practices for iterative exploration and investigation of past business performance to gain insight and drive business planning. Business analytics focuses on developing new insights and understanding of business performance based on data and statistical methods.",
+      "query": "business analytics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T10:36:03.486788"
+    },
+    {
+      "title": "What is Business Analytics? - Tableau",
+      "content": "Learn what business analytics is, how it differs from business intelligence and data analytics, and what tools and methods are used to turn data into insights. See how business analytics can help companies improve their operations, customers, and markets.",
+      "query": "business analytics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T10:36:03.486850"
+    },
+    {
+      "title": "What Is Business Analytics? | Definition from TechTarget",
+      "content": "What is business analytics? Business analytics (BA) is a set of disciplines and technologies for solving business problems using data analysis, statistical models and other quantitative methods. It involves an iterative, methodical exploration of an organization's data, with an emphasis on statistical analysis, to drive decision-making. Data-driven companies treat their data as a business ...",
+      "query": "business analytics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T10:36:03.486912"
+    },
+    {
+      "title": "What Is Business Analytics? An Overview | Park University",
+      "content": "Learn what business analytics is, how it works, its types, benefits, and how it differs from data science. A complete guide for beginners and professionals.",
+      "query": "business analytics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T10:36:03.486968"
+    },
+    {
+      "title": "Big Data Quality - Data Profling - Real Results, Fast Impact",
+      "content": "New generation data quality that uses AI to police AI & automate test generation at scale. Instantly Generate Hundreds Of Data Quality Tests Without Deep Data Expertise",
+      "query": "big data",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T10:53:43.220501"
+    },
+    {
+      "title": "Big data - Wikipedia",
+      "content": "Big data Not to be confused with Big Data (band). A diagram of the generation and common application of big data. Big data primarily refers to data sets that are too large or complex to be dealt with by traditional data-processing software.",
+      "query": "big data",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T10:53:43.220559"
+    },
+    {
+      "title": "What is big data? - IBM",
+      "content": "What is big data? Big data refers to massive, complex data sets that traditional data management systems cannot handle. When properly collected, managed and analyzed, big data can help organizations discover new insights and make better business decisions.",
+      "query": "big data",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T10:53:43.220607"
+    },
+    {
+      "title": "What Is Big Data? - Oracle",
+      "content": "What Is Big Data? Big Data Defined Big data refers to extremely large and complex data sets that cannot be easily managed or analyzed with traditional data processing tools, particularly spreadsheets. Big data includes structured data, like an inventory database or list of financial transactions; unstructured data, such as social posts or videos; and mixed data sets, like those used to train ...",
+      "query": "big data",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T10:53:43.220658"
+    },
+    {
+      "title": "Big data | Definition, Uses, Tools, Challenges, & Facts | Britannica",
+      "content": "Big data, in technology, a term for large datasets. The term originated in the mid-1990s and was likely coined by Doug Mashey, who was chief scientist at the American workstation manufacturer SGI (Silicon Graphics, Inc.). Big data is traditionally characterized by the \"three V's\": volume, velocity,",
+      "query": "big data",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T10:53:43.220701"
+    },
+    {
+      "title": "What is Batch Processing? - Batch Processing Systems Explained - AWS",
+      "content": "Batch processing is the method computers use to periodically complete high-volume, repetitive data jobs. Learn the history, benefits, use cases, and examples of batch processing systems, and how AWS can help you with batch processing.",
+      "query": "batch processing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T10:54:06.962605"
+    },
+    {
+      "title": "Batch processing - Wikipedia",
+      "content": "Batch processing In computing, batch processing is the running of a software job in an automated and unattended way. A user schedules a job to run and then waits for a processing system to run it. Typically, a job is scheduled to run at a configured time of day or when an event occurs or when computer resources are available.",
+      "query": "batch processing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T10:54:06.962662"
+    },
+    {
+      "title": "Batch Processing Operating System - GeeksforGeeks",
+      "content": "The Batch operating system is a real-time operating system intended for batch processing. It structures a segmental architecture, which permits the addition of new segments without touching the current codebase.",
+      "query": "batch processing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T10:54:06.962705"
+    },
+    {
+      "title": "Understanding Batch Processing: Function, Benefits, and ... - Investopedia",
+      "content": "Batch processing is a technique for automating and processing multiple transactions as a single group. Learn how it works, its advantages and disadvantages, and its history from punch cards to modern software.",
+      "query": "batch processing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T10:54:06.962747"
+    },
+    {
+      "title": "What Is Batch Processing?",
+      "content": "Learn what batch processing is, how it works, and its common use cases. Explore batch vs. real-time data streaming, key differences, and when to combine both.",
+      "query": "batch processing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T10:54:06.962788"
+    },
+    {
+      "title": "Learn Business Intelligence - Get Data Insights Quickly",
+      "content": "Identify & Evaluate Data From POS & Human Resource Systems to Optimize Capital Resources. Build a Meaningful Business Intelligence Strategy to Meet Your Organizational Needs.",
+      "query": "business intelligence",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T11:19:32.828454"
+    },
+    {
+      "title": "Shop ai business intelligence - Amazon.com Official Site",
+      "content": "Browse & discover thousands of brands. Read customer reviews & find best sellers. Find deals and low prices on ai business intelligence at Amazon.com",
+      "query": "business intelligence",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T11:19:32.828539"
+    },
+    {
+      "title": "Business Intelligence (BI): Tools, Types, Benefits, and Applications",
+      "content": "Discover how business intelligence tools transform data into insights, facilitating smarter decisions. Learn about BI types, benefits, and examples of successful applications.",
+      "query": "business intelligence",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T11:19:32.828606"
+    },
+    {
+      "title": "What is business intelligence (BI)? - IBM",
+      "content": "What is business intelligence? Business intelligence (BI) is a set of technological processes for collecting, managing and analyzing organizational data to yield insights that inform business strategies and operations.",
+      "query": "business intelligence",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T11:19:32.828671"
+    },
+    {
+      "title": "Business intelligence - Wikipedia",
+      "content": "Business intelligence (BI) consists of strategies, methodologies, and technologies used by enterprises for data analysis and management of business information to inform business strategies and business operations. [1][2] Common functions of BI technologies include reporting, online analytical processing, analytics, dashboard development, data ...",
+      "query": "business intelligence",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T11:19:32.828737"
+    },
+    {
+      "title": "Power BI Reporting Solution - Business Central Reports",
+      "content": "Leverage Microsoft Fabric and Power BI for powerful data analytics solutions. Experience the power of real-time data insights with Business Central Analytics.",
+      "query": "Power BI",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T11:36:14.026516"
+    },
+    {
+      "title": "Power BI Governance - Data Governance",
+      "content": "Increase Transparency In Your Power BI Estate To Comply With Data Regulations. Enquire Now. Ensure Data Governance of Your Power BI Estate With Power BI Sentinel",
+      "query": "Power BI",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T11:36:14.026578"
+    },
+    {
+      "title": "Sign in | Microsoft Power BI",
+      "content": "Sign in to Microsoft Power BI for intuitive data visualization, detailed analytics, and interactive dashboards. Unlock your data's full potential.",
+      "query": "Power BI",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T11:36:14.026627"
+    },
+    {
+      "title": "Power BI - Data Visualization | Microsoft Power Platform",
+      "content": "Learn how Power BI, a unified platform for self-service and business intelligence, helps you visualize data into the apps you use every day.",
+      "query": "Power BI",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T11:36:14.026674"
+    },
+    {
+      "title": "Power BI Desktop | Microsoft Power Platform",
+      "content": "Power BI Desktop lets you create interactive reports with advanced analytics and AI-driven insights. Connect to various data sources, use Power Query to prep data, and publish to the cloud or on-premises with Power BI Pro.",
+      "query": "Power BI",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T11:36:14.026722"
+    },
+    {
+      "title": "What Is Privacy-by-Design and Why It's Important? - IEEE",
+      "content": "The overarching concept behind privacy by design is to directly embed privacy defenses and data safeguards into the technical designs, organizational practices, and processes involved in developing technologies, business practices, and systems. Rather than treating privacy issues as an afterthought or bolt-on feature, it becomes the default setting that is built-in from the ground up. This ...",
+      "query": "privacy by design",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T12:11:13.731100"
+    },
+    {
+      "title": "Privacy by design - Wikipedia",
+      "content": "Privacy by design is an approach to systems engineering that takes privacy into account throughout the whole process. It is based on seven principles and has been adopted by the European GDPR regulation and ISO standard.",
+      "query": "privacy by design",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T12:11:13.731183"
+    },
+    {
+      "title": "The 7 principles of privacy by design - Blog | OneTrust",
+      "content": "Learn how to incorporate Privacy by Design into your business strategy with seven foundational principles that ensure robust privacy protections and enhance trust. Privacy by Design is a holistic approach that embeds privacy into products, services, and system designs by default.",
+      "query": "privacy by design",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T12:11:13.731257"
+    },
+    {
+      "title": "Privacy by Design: Meaning and Its Importance - GDPR Local",
+      "content": "Yes, the GDPR mandates privacy by design and default, requiring organisations to incorporate data protection principles from the outset of product development to ensure compliance and minimise privacy risks. This includes proactively implementing measures such as data minimisation and encryption. What is the meaning of private by design?",
+      "query": "privacy by design",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T12:11:13.731328"
+    },
+    {
+      "title": "PDF Privacy By Design: The Seven Foundational Principles",
+      "content": "Privacy by Design rejects taking such an approach - it embraces legitimate non-privacy objectives and accommodates them, in an innovative positive-sum manner.",
+      "query": "privacy by design",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T12:11:13.731399"
+    },
+    {
+      "title": "What is algorithmic bias? - IBM",
+      "content": "Algorithmic bias occurs when systematic errors in machine learning algorithms produce unfair or discriminatory outcomes.",
+      "query": "algorithmic bias",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T12:29:14.680343"
+    },
+    {
+      "title": "Algorithmic bias - Wikipedia",
+      "content": "Algorithmic bias describes systematic and repeatable harmful tendency in a computerized sociotechnical system to create \"unfair\" outcomes, such as \"privileging\" one category over another in ways different from the intended function of the algorithm.",
+      "query": "algorithmic bias",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T12:29:14.680401"
+    },
+    {
+      "title": "Algorithmic Bias - The Decision Lab",
+      "content": "Algorithmic bias occurs when computer programs, machine learning models, or artificial intelligence (AI) systems produce unfair or discriminatory results. These biases often stem from unrepresentative training data or built-in assumptions in the algorithm's design, and they reinforce existing social inequities such as those based on race, gender, or socioeconomic status",
+      "query": "algorithmic bias",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T12:29:14.680449"
+    },
+    {
+      "title": "What is Algorithmic Bias? - DataCamp",
+      "content": "Algorithmic bias results in unfair outcomes due to skewed or limited input data, unfair algorithms, or exclusionary practices during AI development.",
+      "query": "algorithmic bias",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T12:29:14.680495"
+    },
+    {
+      "title": "Algorithmic Bias - Ethics Unwrapped",
+      "content": "Learn what algorithmic bias is and how it affects AI systems and society. Explore examples, causes, consequences, and solutions for reducing algorithmic bias and promoting algorithmic justice.",
+      "query": "algorithmic bias",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T12:29:14.680543"
+    },
+    {
+      "title": "Bias-variance tradeoff - Wikipedia",
+      "content": "The bias-variance tradeoff is a central problem in supervised learning. Ideally, one wants to choose a model that both accurately captures the regularities in its training data, but also generalizes well to unseen data. Unfortunately, it is typically impossible to do both simultaneously.",
+      "query": "bias variance tradeoff",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:39:27.690512"
+    },
+    {
+      "title": "Bias-Variance Trade Off - Machine Learning - GeeksforGeeks",
+      "content": "There is a tradeoff between a model's ability to minimize bias and variance which is referred to as the best solution for selecting a value of Regularization constant. A proper understanding of these errors would help to avoid the overfitting and underfitting of a data set while training the algorithm. What is Bias?",
+      "query": "bias variance tradeoff",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:39:27.690614"
+    },
+    {
+      "title": "What is bias-variance tradeoff? - IBM",
+      "content": "Bias-variance tradeoff is a fundamental principle that governs the performance of machine learning models. Understanding the core concept of bias-variance tradeoff will help practitioners build robust AI systems that are strike a balance between high training accuracy and high testing accuracy. The article aims to show details and example of bias-variance tradeoff.",
+      "query": "bias variance tradeoff",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:39:27.690684"
+    },
+    {
+      "title": "Understanding the Bias-Variance Tradeoff in Machine Learning ... - Medium",
+      "content": "In this comprehensive guide, we will explore the bias-variance tradeoff in detail, provide examples to illustrate these concepts, and offer practical solutions to address bias and variance issues.",
+      "query": "bias variance tradeoff",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:39:27.690748"
+    },
+    {
+      "title": "The Bias-Variance Trade-Off: A Visual Explainer",
+      "content": "The bias-variance trade-off isn't just theoretical knowledge. It's a practical framework for building better models. Every time you adjust regularization, change algorithms, or modify features, you're navigating this trade-off. So the next time you're building a model, ask yourself: Are my predictions consistently off in one direction?",
+      "query": "bias variance tradeoff",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:39:27.690813"
+    },
+    {
+      "title": "Bagging",
+      "content": "Bagging may refer to:In statistics, data mining and machine learning, bootstrap aggregating\nThe random subspace method, also called attribute bagging\nIn mountaineering, peak bagging\nIn medicine, ventilating a patient with a bag valve mask\nIn agriculture, the bagging hook, a form of reap hook or sickle\nIn drug slang, bagging is a form of drug abuse akin to huffing\nTeabagging, a sexual act\n\n",
+      "query": "bagging",
+      "source": "wikipedia",
+      "learned_at": "2025-11-24T15:11:55.500961"
+    },
+    {
+      "title": "Bootstrap aggregating - Wikipedia",
+      "content": "Bootstrap aggregating, also called bagging, is a technique to improve the stability and accuracy of ML algorithms by generating multiple models from bootstrap samples. It can reduce variance and overfitting, and is often applied to decision tree methods.",
+      "query": "bagging",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:11:56.352357"
+    },
+    {
+      "title": "What is Bagging in Machine Learning? A Guide With Examples",
+      "content": "Learn what bagging is, how it works, and why it is useful for reducing variance and improving accuracy in machine learning. See a bagging example with a decision tree classifier on a telecom customer churn dataset and compare it to boosting.",
+      "query": "bagging",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:11:56.352408"
+    },
+    {
+      "title": "Bagging vs Boosting in Machine Learning - GeeksforGeeks",
+      "content": "Bagging Bootstrap Aggregating, also known as bagging, is a machine learning ensemble meta-algorithm designed to improve the stability and accuracy of machine learning algorithms used in statistical classification and regression.",
+      "query": "bagging",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:11:56.352450"
+    },
+    {
+      "title": "What is bagging? - IBM",
+      "content": "Bagging, also known as bootstrap aggregation, is the ensemble learning method that is commonly used to reduce variance within a noisy dataset.",
+      "query": "bagging",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:11:56.352489"
+    },
+    {
+      "title": "What Is Bagging in Machine Learning and How to Perform Bagging",
+      "content": "Bagging is an ensemble learning technique that reduces variance and improves accuracy by training multiple models on different subsets of data. Learn how to perform bagging, its advantages, and its applications in classification, regression, and anomaly detection.",
+      "query": "bagging",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:11:56.352533"
+    },
+    {
+      "title": "Boosting (machine learning) - Wikipedia",
+      "content": "Boosting (machine learning) ... In machine learning (ML), boosting is an ensemble learning method that combines a set of less accurate models (called \"weak learners\") to create a single, highly accurate model (a \"strong learner\"). Unlike other ensemble methods that build models in parallel (such as bagging), boosting algorithms build models ...",
+      "query": "boosting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:12:07.534713"
+    },
+    {
+      "title": "What is boosting? - IBM",
+      "content": "What is boosting? In machine learning, boosting is an ensemble learning method that combines a set of weak learners into a strong learner to minimize training errors. Boosting algorithms can improve the predictive power of image, object and feature identification, sentiment analysis, data mining and more.",
+      "query": "boosting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:12:07.534762"
+    },
+    {
+      "title": "What is Boosting? - Boosting in Machine Learning Explained - AWS",
+      "content": "Boosting is a method used in machine learning to reduce errors in predictive data analysis. Data scientists train machine learning software, called machine learning models, on labeled data to make guesses about unlabeled data. A single machine learning model might make prediction errors depending on the accuracy of the training dataset. For example, if a cat-identifying model has been trained ...",
+      "query": "boosting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:12:07.534799"
+    },
+    {
+      "title": "What is Boosting in Machine Learning? | DataCamp",
+      "content": "Boosting is an ensemble learning technique that improves model accuracy by combining multiple weak learners into a strong one. Learn how boosting works, its advantages and disadvantages, and some popular algorithms like AdaBoost, Gradient Boosting, and XGBoost.",
+      "query": "boosting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:12:07.534872"
+    },
+    {
+      "title": "Gradient boosting - Wikipedia",
+      "content": "Gradient boosting is a machine learning technique that combines weak learners into a strong learner by minimizing a loss function. It can be applied to various problems such as regression, classification and ranking, and uses decision trees as base learners.",
+      "query": "gradient boosting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:12:29.846507"
+    },
+    {
+      "title": "Gradient Boosting in ML - GeeksforGeeks",
+      "content": "Gradient Boosting is an effective and widely-used machine learning technique for both classification and regression problems. It builds models sequentially focusing on correcting errors made by previous models which leads to improved performance.",
+      "query": "gradient boosting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:12:29.846565"
+    },
+    {
+      "title": "What is Gradient Boosting? - IBM",
+      "content": "Gradient boosting is an ensemble learning algorithm that produces accurate predictions by combining multiple decision trees into a single model. This algorithmic approach to predictive modeling, introduced by Jerome Friedman, uses base models to build upon their strengths, correcting errors and improving predictive capabilities. By capturing complex patterns in data, gradient boosting excels ...",
+      "query": "gradient boosting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:12:29.846615"
+    },
+    {
+      "title": "A Guide to The Gradient Boosting Algorithm - DataCamp",
+      "content": "Learn the inner workings of gradient boosting in detail without much mathematical headache and how to tune the hyperparameters of the algorithm.",
+      "query": "gradient boosting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:12:29.846663"
+    },
+    {
+      "title": "Gradient Boosting Machines (GBM): Concepts, Examples",
+      "content": "One example is gradient boosted trees, which can be used as an efficient method for solving complex problems such as weather prediction or medical diagnosis. Other examples include gradient boosted decision tree learning (GBDT) for detecting fraudulent credit card transactions and gradient boosting machines for facial recognition systems.",
+      "query": "gradient boosting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T15:12:29.846712"
+    },
+    {
+      "title": "Bayesian statistics - Wikipedia",
+      "content": "Learn about the theory and methods of Bayesian statistics, which uses Bayes' theorem to update probabilities after obtaining new data. Find out the history, philosophy, and applications of Bayesian statistics in various fields.",
+      "query": "Bayesian statistics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:37:34.299977"
+    },
+    {
+      "title": "A Complete Guide to Bayesian Statistics - Statology",
+      "content": "Conclusion Bayesian statistical methods are useful tools to add to your toolkit, and include a variety of methods that combine prior knowledge with new data to make decisions. Bayesian statistics help practitioners update beliefs as new information comes in, an approach that works well in many fields like healthcare, finance, and machine learning.",
+      "query": "Bayesian statistics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:37:34.300060"
+    },
+    {
+      "title": "What Is Bayesian Statistics? A Complete Guide for Beginners",
+      "content": "Bayesian statistics is a powerful tool for making sense of data through probability. Unlike traditional statistics, which focuses on frequency or likelihood of events, Bayesian statistics incorporates existing beliefs, or priors, and updates these beliefs as new data is available.",
+      "query": "Bayesian statistics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:37:34.300128"
+    },
+    {
+      "title": "Bayesian Statistics & Probability - GeeksforGeeks",
+      "content": "Bayesian statistics incorporates prior beliefs and updates them as data accumulates, offering more nuanced probability statements. This is especially useful for unique events or when data is limited.",
+      "query": "Bayesian statistics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:37:34.300194"
+    },
+    {
+      "title": "What is Bayesian Analysis?",
+      "content": "Bayesian analysis is a statistical paradigm that uses Bayes' theorem to update probabilities of unknown parameters based on data and prior information. Learn about the history, philosophy, and applications of Bayesian methods, as well as the challenges and controversies they face.",
+      "query": "Bayesian statistics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:37:34.300260"
+    },
+    {
+      "title": "What is Product Backlog Management? | Scrum.org",
+      "content": "Product Backlog Management is the act of adjusting and ordering items on the Product Backlog so that the Scrum Team can deliver the most valuable product possible. A Product Owner is accountable for managing the Product Backlog. They do so as often as they see fit and can also delegate the responsibility to others. However, the Product Owner ultimately decides on what work to pursue now, later ...",
+      "query": "backlog management",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:20:21.625493"
+    },
+    {
+      "title": "Backlog Management | A Complete Visual Guide to Get You Started - Creately",
+      "content": "Learn what a product backlog is, what it includes, and how to manage it effectively using visual tools. Find out the core principles, tips, and templates for backlog management in Agile development.",
+      "query": "backlog management",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:20:21.625553"
+    },
+    {
+      "title": "Product backlog: Tips for creation and prioritization - Atlassian",
+      "content": "What is a product backlog in agile or scrum? Learn about the best practices for managing and prioritizing a healthy product backlog.",
+      "query": "backlog management",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:20:21.625600"
+    },
+    {
+      "title": "What Is a Product Backlog? (How to Create One) [2025] \u2022 Asana",
+      "content": "A product backlog is a list of tasks, features, or items to be completed as part of your product roadmap. This guide goes over how to create one and manage it.",
+      "query": "backlog management",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:20:21.625648"
+    },
+    {
+      "title": "Comparing Agile/Lean Backlog Management Strategies",
+      "content": "Learn how to manage your backlog of work using four strategies: lean, agile, requirements, and unsequenced. Compare their effectiveness, advantages, and disadvantages in the Intake Work process goal diagram.",
+      "query": "backlog management",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:20:21.625693"
+    },
+    {
+      "title": "Burndown Chart: What it is, How to Use it, Example [2025] \u2022 Asana",
+      "content": "A burndown chart streamlines Agile workflows and visualizes progress. Learn to create, read, and use burndown charts for faster results.",
+      "query": "burndown charts",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:21:29.925184"
+    },
+    {
+      "title": "Burndown chart - Wikipedia",
+      "content": "A burndown chart is a graphical representation of work left to do versus time, often used in agile software development. Learn how to read, create and interpret burndown charts, and compare them with burnup charts.",
+      "query": "burndown charts",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:21:29.925280"
+    },
+    {
+      "title": "Burndown Chart: What Is It, Examples & How to Use One for Agile",
+      "content": "Learn what a burndown chart is, how to use it for agile project management and see different types and examples. A burndown chart shows the remaining work and the time left in a project or sprint.",
+      "query": "burndown charts",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:21:29.925351"
+    },
+    {
+      "title": "What is Burndown Chart in Scrum? - Visual Paradigm",
+      "content": "What is Burndown Chart in Scrum? A burn down chart is a graphical representation of work left to do versus time. It is often used in agile software development methodologies such as Scrum. However, burn down charts can be applied to any project containing measurable progress over time.",
+      "query": "burndown charts",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:21:29.925440"
+    },
+    {
+      "title": "Learn how to use burndown charts in Jira Tutorial | Agile",
+      "content": "A burndown chart shows the amount of work that has been completed in an epic or sprint, and the total work remaining. Burndown charts are used to predict your team's likelihood of completing their work in the time available.",
+      "query": "burndown charts",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:21:29.925507"
+    },
+    {
+      "title": "Top 10 Kanban Software (2025) - 10 Best Kanban Software",
+      "content": "Compare the Best Kanban Project Management Software and Maximize Your Team Efficiency. Expert Reviews & Analysis. Ratings Updated November. Trusted by Over 1,000,000 Customers",
+      "query": "kanban boards",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:21:41.646272"
+    },
+    {
+      "title": "Kanban Boards - Interactive Kanban Board",
+      "content": "Save time with templates and create dashboards quickly and easily. Peakboard Designer is a powerful tool that can help businesses streamline their processes.",
+      "query": "kanban boards",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:21:41.646360"
+    },
+    {
+      "title": "What is a kanban board? - Atlassian",
+      "content": "A kanban board is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow). It can help both agile and DevOps teams establish order in their daily work. Kanban boards use cards, columns, and continuous improvement to help technology and service teams commit to the right amount of work, and get it done!",
+      "query": "kanban boards",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:21:41.646429"
+    },
+    {
+      "title": "Kanban board - Wikipedia",
+      "content": "Kanban board A kanban board A kanban board is one of the tools that can be used to implement the kanban work management system, at a personal or organizational level. Kanban boards visually depict work at various stages of a process using cards to represent work items and columns to represent each stage of the process.",
+      "query": "kanban boards",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:21:41.646502"
+    },
+    {
+      "title": "What is Kanban Board? Definition and Overview - GeeksforGeeks",
+      "content": "Kanban, a popular agile framework, originated from manufacturing practices in Japan and has found extensive application. Central to the Kanban approach is the Kanban Board, a visual tool that aids in managing work and improving efficiency. In this article, we will delve into the definition and overview of Kanban Boards, exploring their elements, and types, providing an example, and comparing ...",
+      "query": "kanban boards",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T19:21:41.646575"
+    },
+    {
+      "title": "About business process automation",
+      "content": "business process automation is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "business process automation",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:23:07.220256"
+    },
+    {
+      "title": "About business analysis",
+      "content": "business analysis is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "business analysis",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:23:28.435314"
+    },
+    {
+      "title": "About property based testing",
+      "content": "property based testing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "property based testing",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:29:12.825299"
+    },
+    {
+      "title": "About logging best practices",
+      "content": "logging best practices is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "logging best practices",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:32:55.979562"
+    },
+    {
+      "title": "About build tools",
+      "content": "build tools is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "build tools",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:35:04.816872"
+    },
+    {
+      "title": "About trunk based development",
+      "content": "trunk based development is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "trunk based development",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:37:36.450760"
+    },
+    {
+      "title": "About feature branches",
+      "content": "feature branches is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "feature branches",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:37:47.354857"
+    },
+    {
+      "title": "Bitbucket",
+      "content": "Bitbucket is a Git-based source code repository hosting service owned by Atlassian. Bitbucket offers both commercial plans and free accounts with an unlimited number of private repositories.",
+      "query": "Bitbucket",
+      "source": "wikipedia",
+      "learned_at": "2025-11-24T19:39:00.947671"
+    },
+    {
+      "title": "About build automation",
+      "content": "build automation is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "build automation",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:40:36.911505"
+    },
+    {
+      "title": "About blue green deployment",
+      "content": "blue green deployment is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "blue green deployment",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:44:09.968015"
+    },
+    {
+      "title": "What is Behavioral Analytics? | Microsoft Dynamics 365",
+      "content": "Behavioral analytics provides user-level behavioral data about user reactions to and interactions with your digital channels. User data from across multiple digital sources and devices, known as cross-channel analytics, is commonly grouped into three categories.",
+      "query": "behavioral analytics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-25T01:44:42.638284"
+    },
+    {
+      "title": "Behavioral analytics - Wikipedia",
+      "content": "Learn about behavioral analytics, a recent advancement in business analytics that reveals new insights into the behavior of consumers on digital platforms. Find out how it works, what it is used for, and what are the privacy concerns.",
+      "query": "behavioral analytics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-25T01:44:42.638364"
+    },
+    {
+      "title": "What Is Behavioral Analytics? Definition, Examples, & Tools",
+      "content": "Behavioral analytics refers to the method of tracking and analyzing user behavior in order to better understand what they want from your product or service. Data generated from behavioral analytics can be used to improve your product, satisfy customers, and boost key performance indicators.",
+      "query": "behavioral analytics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-25T01:44:42.638432"
+    },
+    {
+      "title": "What is Behavioral Analytics? A Complete Guide - Datarundown",
+      "content": "Learn what behavioral analytics is, how it works, and why it matters for digital products. Discover the data types, sources, techniques, and applications of behavioral analytics with examples and use cases.",
+      "query": "behavioral analytics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-25T01:44:42.638498"
+    },
+    {
+      "title": "Behavioral Analytics: Meaning, Types, Criticism - Investopedia",
+      "content": "Behavioral analytics is a sector of data analytics geared toward providing insight into the actions of human beings.",
+      "query": "behavioral analytics",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-25T01:44:42.638562"
+    },
+    {
+      "title": "About brainstorming",
+      "content": "brainstorming is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "brainstorming",
+      "source": "structured",
+      "learned_at": "2025-11-25T07:28:25.585619"
+    },
+    {
+      "title": "About blog writing",
+      "content": "blog writing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "blog writing",
+      "source": "structured",
+      "learned_at": "2025-11-25T09:35:23.519865"
+    },
+    {
+      "title": "About risk of bias",
+      "content": "risk of bias is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "risk of bias",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:08:10.620615"
+    },
+    {
+      "title": "About evidence based practice",
+      "content": "evidence based practice is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "evidence based practice",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:08:51.046889"
+    },
+    {
+      "title": "About biostatistics",
+      "content": "biostatistics is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "biostatistics",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:09:51.699501"
+    },
+    {
+      "title": "About biomedical research",
+      "content": "biomedical research is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "biomedical research",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:10:32.200629"
+    },
+    {
+      "title": "About bioinformatics",
+      "content": "bioinformatics is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "bioinformatics",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:11:12.761378"
+    },
+    {
+      "title": "About computational biology",
+      "content": "computational biology is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "computational biology",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:11:22.885566"
+    },
+    {
+      "title": "About systems biology",
+      "content": "systems biology is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "systems biology",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:11:33.010671"
+    },
+    {
+      "title": "About molecular biology",
+      "content": "molecular biology is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "molecular biology",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:11:43.116995"
+    },
+    {
+      "title": "About cell biology",
+      "content": "cell biology is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "cell biology",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:11:53.226446"
+    },
+    {
+      "title": "About developmental biology",
+      "content": "developmental biology is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "developmental biology",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:12:03.324714"
+    },
+    {
+      "title": "About evolutionary biology",
+      "content": "evolutionary biology is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "evolutionary biology",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:12:13.442482"
+    },
+    {
+      "title": "About biodiversity",
+      "content": "biodiversity is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "biodiversity",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:15:25.559371"
+    },
+    {
+      "title": "About biomedical engineering",
+      "content": "biomedical engineering is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "biomedical engineering",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:18:27.583282"
+    },
+    {
+      "title": "About specification by example",
+      "content": "specification by example is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "specification by example",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:23:20.773832"
+    },
+    {
+      "title": "About BSD license",
+      "content": "BSD license is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "BSD license",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:03:18.238900"
+    },
+    {
+      "title": "About happens before",
+      "content": "happens before is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "happens before",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:09:30.761077"
+    },
+    {
+      "title": "About memory barriers",
+      "content": "memory barriers is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "memory barriers",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:10:01.091679"
+    },
+    {
+      "title": "About barriers",
+      "content": "barriers is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "barriers",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:10:51.676687"
+    },
+    {
+      "title": "About cyclic barriers",
+      "content": "cyclic barriers is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "cyclic barriers",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:11:21.990362"
+    },
+    {
+      "title": "About blocking queues",
+      "content": "blocking queues is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "blocking queues",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:13:53.749659"
+    },
+    {
+      "title": "About message brokers",
+      "content": "message brokers is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "message brokers",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:17:56.342984"
+    },
+    {
+      "title": "About Azure Service Bus",
+      "content": "Azure Service Bus is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Azure Service Bus",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:18:26.663152"
+    },
+    {
+      "title": "About content based routing",
+      "content": "content based routing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "content based routing",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:20:07.730158"
+    },
+    {
+      "title": "About circuit breaker",
+      "content": "circuit breaker is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "circuit breaker",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:23:29.938131"
+    },
+    {
+      "title": "About bulkhead",
+      "content": "bulkhead is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "bulkhead",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:35:26.860153"
+    },
+    {
+      "title": "About exponential backoff",
+      "content": "exponential backoff is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "exponential backoff",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:54:24.808544"
+    },
+    {
+      "title": "About blue green deployments",
+      "content": "blue green deployments is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "blue green deployments",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:55:55.785210"
+    },
+    {
+      "title": "About blocking",
+      "content": "blocking is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "blocking",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:58:17.276819"
+    },
+    {
+      "title": "About between subjects",
+      "content": "between subjects is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "between subjects",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:59:07.849950"
+    },
+    {
+      "title": "About behavioral economics",
+      "content": "behavioral economics is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "behavioral economics",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:02:20.217258"
+    },
+    {
+      "title": "About value based pricing",
+      "content": "value based pricing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "value based pricing",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:08:34.636732"
+    },
+    {
+      "title": "About bundle pricing",
+      "content": "bundle pricing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "bundle pricing",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:09:45.514250"
+    },
+    {
+      "title": "About usage based pricing",
+      "content": "usage based pricing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "usage based pricing",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:10:15.854400"
+    },
+    {
+      "title": "Baseball - Wikipedia",
+      "content": "Baseball is a bat-and-ball sport played between two teams of nine players each, taking turns batting and fielding. The game occurs over the course of several plays, with each play beginning when a player on the fielding team, called the pitcher, throws a ball that a player on the batting team, called the batter, tries to hit with a bat. The objective of the offensive team (batting team) is to ...",
+      "query": "What about baseball?",
+      "source": "research",
+      "learned_at": "2025-11-25T19:13:56.558655"
+    },
+    {
+      "title": "Baseball | History, Definition, & Facts | Britannica",
+      "content": "Baseball is a game played with a bat, a ball, and gloves between two teams of nine players each on a field with four bases laid out in a diamond. Long called America's 'national pastime' and thought to have been invented in the U.S., the game was actually derived from the English game of rounders.",
+      "query": "What about baseball?",
+      "source": "research",
+      "learned_at": "2025-11-25T19:13:56.558783"
+    },
+    {
+      "title": "65 Interesting Facts About Baseball That You Should Know",
+      "content": "Interesting baseball facts. In Major League Baseball, special mud is used to rub baseballs before each game to reduce their luster and make them easier to grip. Cal Hubbard is the only player to be a member of both the baseball and the football Hall of Fame.",
+      "query": "What about baseball?",
+      "source": "research",
+      "learned_at": "2025-11-25T19:13:56.558868"
+    },
+    {
+      "title": "Baseball for Beginners | Understand Game Terms | PBS | Baseball & The ...",
+      "content": "Baseball is a game played between 2 teams of 9 players each. The team with more runs at the end of nine innings is the winner of the game.",
+      "query": "What about baseball?",
+      "source": "research",
+      "learned_at": "2025-11-25T19:13:56.558947"
+    },
+    {
+      "title": "Baseball History, American History and You - Baseball Hall of Fame",
+      "content": "(National Baseball Hall of Fame and Museum) Within the African-American community, baseball was a great source of pride as dozens of barnstorming teams traveled from town to town to entertain crowds. The Negro Leagues fielded outstanding players, many of whom have been inducted into the Hall of Fame.",
+      "query": "What about baseball?",
+      "source": "research",
+      "learned_at": "2025-11-25T19:13:56.559118"
+    },
+    {
+      "title": "About batch analytics",
+      "content": "batch analytics is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "batch analytics",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:18:41.966991"
+    },
+    {
+      "title": "About behavioral segmentation",
+      "content": "behavioral segmentation is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "behavioral segmentation",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:20:12.880778"
+    },
+    {
+      "title": "About buyer personas",
+      "content": "buyer personas is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "buyer personas",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:22:24.362968"
+    },
+    {
+      "title": "About service blueprints",
+      "content": "service blueprints is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "service blueprints",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:23:25.026612"
+    },
+    {
+      "title": "About blockchain in supply chain",
+      "content": "blockchain in supply chain is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "blockchain in supply chain",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:31:30.434317"
+    },
+    {
+      "title": "About barcode systems",
+      "content": "barcode systems is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "barcode systems",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:32:00.767975"
+    },
+    {
+      "title": "About business process management",
+      "content": "business process management is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "business process management",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:37:14.246422"
+    },
+    {
+      "title": "About BPM",
+      "content": "BPM is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "BPM",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:37:24.360314"
+    },
+    {
+      "title": "About budget forecasting",
+      "content": "budget forecasting is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "budget forecasting",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:16:37.092840"
+    },
+    {
+      "title": "About green bonds",
+      "content": "green bonds is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "green bonds",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:23:31.654463"
+    },
+    {
+      "title": "About central banking",
+      "content": "central banking is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "central banking",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:35:33.658566"
+    },
+    {
+      "title": "About European Central Bank",
+      "content": "European Central Bank is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "European Central Bank",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:46:53.706302"
+    },
+    {
+      "title": "About Bank of Japan",
+      "content": "Bank of Japan is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Bank of Japan",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:47:03.855828"
+    },
+    {
+      "title": "About Bank of England",
+      "content": "Bank of England is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Bank of England",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:47:13.964883"
+    },
+    {
+      "title": "About too big to fail",
+      "content": "too big to fail is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "too big to fail",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:50:21.605398"
+    },
+    {
+      "title": "About bailouts",
+      "content": "bailouts is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "bailouts",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:50:31.712677"
+    },
+    {
+      "title": "About banking crises",
+      "content": "banking crises is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "banking crises",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:50:51.932552"
+    },
+    {
+      "title": "About banking regulation",
+      "content": "banking regulation is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "banking regulation",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:51:32.398239"
+    },
+    {
+      "title": "About Basel III",
+      "content": "Basel III is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Basel III",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:51:42.501264"
+    },
+    {
+      "title": "About bail-in",
+      "content": "bail-in is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "bail-in",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:54:04.116458"
+    },
+    {
+      "title": "About bail-out",
+      "content": "bail-out is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "bail-out",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:54:14.226063"
+    },
+    {
+      "title": "About central bank",
+      "content": "central bank is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "central bank",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:55:04.881291"
+    },
+    {
+      "title": "About branch supervision",
+      "content": "branch supervision is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "branch supervision",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:57:46.794105"
+    },
+    {
+      "title": "About best practices",
+      "content": "best practices is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "best practices",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:59:48.173792"
+    },
+    {
+      "title": "About benchmarks",
+      "content": "benchmarks is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "benchmarks",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:03:20.436940"
+    },
+    {
+      "title": "About balanced scorecard",
+      "content": "balanced scorecard is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "balanced scorecard",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:04:21.122704"
+    },
+    {
+      "title": "About BI",
+      "content": "BI is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "BI",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:04:51.457917"
+    },
+    {
+      "title": "About batch data",
+      "content": "batch data is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "batch data",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:08:13.829760"
+    },
+    {
+      "title": "About knowledge based systems",
+      "content": "knowledge based systems is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "knowledge based systems",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:15:28.987522"
+    },
+    {
+      "title": "About rule based systems",
+      "content": "rule based systems is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "rule based systems",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:15:39.095552"
+    },
+    {
+      "title": "About blended learning",
+      "content": "blended learning is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "blended learning",
+      "source": "structured",
+      "learned_at": "2025-11-26T05:10:29.799948"
+    },
+    {
+      "title": "About competency based learning",
+      "content": "competency based learning is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "competency based learning",
+      "source": "structured",
+      "learned_at": "2025-11-26T06:15:17.739294"
+    },
+    {
+      "title": "About project based learning",
+      "content": "project based learning is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "project based learning",
+      "source": "structured",
+      "learned_at": "2025-11-26T06:33:01.391301"
+    },
+    {
+      "title": "About problem based learning",
+      "content": "problem based learning is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "problem based learning",
+      "source": "structured",
+      "learned_at": "2025-11-26T07:07:12.143165"
+    },
+    {
+      "title": "About inquiry based learning",
+      "content": "inquiry based learning is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "inquiry based learning",
+      "source": "structured",
+      "learned_at": "2025-11-26T07:16:19.826125"
+    },
+    {
+      "title": "About behaviorism",
+      "content": "behaviorism is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "behaviorism",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:08:41.793183"
+    },
+    {
+      "title": "About computer based training",
+      "content": "computer based training is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "computer based training",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:12:34.351477"
+    },
+    {
+      "title": "About web based training",
+      "content": "web based training is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "web based training",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:12:54.522920"
+    },
+    {
+      "title": "About badges",
+      "content": "badges is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "badges",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:14:25.501005"
+    },
+    {
+      "title": "About accreditation bodies",
+      "content": "accreditation bodies is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "accreditation bodies",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:16:57.226345"
+    },
+    {
+      "title": "About certification bodies",
+      "content": "certification bodies is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "certification bodies",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:17:07.321045"
+    },
+    {
+      "title": "About standards bodies",
+      "content": "standards bodies is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "standards bodies",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:17:17.410510"
+    },
+    {
+      "title": "About professional bodies",
+      "content": "professional bodies is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "professional bodies",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:17:27.494002"
+    },
+    {
+      "title": "About business networking",
+      "content": "business networking is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "business networking",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:19:28.798527"
+    },
+    {
+      "title": "About business plan competitions",
+      "content": "business plan competitions is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "business plan competitions",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:24:32.229040"
+    },
+    {
+      "title": "About game based learning",
+      "content": "game based learning is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "game based learning",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:25:43.352072"
+    },
+    {
+      "title": "About blocked practice",
+      "content": "blocked practice is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "blocked practice",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:34:19.377217"
+    },
+    {
+      "title": "About business planning",
+      "content": "business planning is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "business planning",
+      "source": "structured",
+      "learned_at": "2025-11-26T09:16:14.554969"
+    },
+    {
+      "title": "About business strategy",
+      "content": "business strategy is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "business strategy",
+      "source": "structured",
+      "learned_at": "2025-11-26T09:16:24.665791"
+    },
+    {
+      "title": "About resource based view",
+      "content": "resource based view is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "resource based view",
+      "source": "structured",
+      "learned_at": "2025-11-26T09:17:35.477642"
+    },
+    {
+      "title": "About background knowledge",
+      "content": "background knowledge is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "background knowledge",
+      "source": "structured",
+      "learned_at": "2025-11-26T10:37:27.893749"
+    },
+    {
+      "title": "About evidence based knowledge",
+      "content": "evidence based knowledge is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "evidence based knowledge",
+      "source": "structured",
+      "learned_at": "2025-11-26T11:02:31.790334"
+    },
+    {
+      "title": "About practice based knowledge",
+      "content": "practice based knowledge is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "practice based knowledge",
+      "source": "structured",
+      "learned_at": "2025-11-26T11:02:41.898678"
+    },
+    {
+      "title": "About beneficial",
+      "content": "beneficial is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "beneficial",
+      "source": "structured",
+      "learned_at": "2025-11-26T13:15:03.652433"
+    },
+    {
+      "title": "About believable",
+      "content": "believable is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "believable",
+      "source": "structured",
+      "learned_at": "2025-11-26T14:32:53.620140"
+    },
+    {
+      "title": "About blend",
+      "content": "blend is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "blend",
+      "source": "structured",
+      "learned_at": "2025-11-26T16:19:21.348790"
+    },
+    {
+      "title": "About biotechnology",
+      "content": "biotechnology is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "biotechnology",
+      "source": "structured",
+      "learned_at": "2025-11-26T16:46:17.954690"
+    },
+    {
+      "title": "About bioengineering",
+      "content": "bioengineering is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "bioengineering",
+      "source": "structured",
+      "learned_at": "2025-11-26T16:46:28.060466"
+    },
+    {
+      "title": "About synthetic biology",
+      "content": "synthetic biology is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "synthetic biology",
+      "source": "structured",
+      "learned_at": "2025-11-26T17:01:48.680093"
+    },
+    {
+      "title": "About environmental biology",
+      "content": "environmental biology is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "environmental biology",
+      "source": "structured",
+      "learned_at": "2025-11-26T17:01:58.796745"
+    },
+    {
+      "title": "About marine biology",
+      "content": "marine biology is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "marine biology",
+      "source": "structured",
+      "learned_at": "2025-11-26T17:02:08.905690"
+    },
+    {
+      "title": "About biological anthropology",
+      "content": "biological anthropology is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "biological anthropology",
+      "source": "structured",
+      "learned_at": "2025-11-26T18:19:40.354135"
+    },
+    {
+      "title": "About Buddhism",
+      "content": "Buddhism is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Buddhism",
+      "source": "structured",
+      "learned_at": "2025-11-26T18:48:24.718288"
+    },
+    {
+      "title": "About biodiversity loss",
+      "content": "biodiversity loss is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "biodiversity loss",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:25:22.492949"
+    },
+    {
+      "title": "About biosphere reserves",
+      "content": "biosphere reserves is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "biosphere reserves",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:27:13.821650"
+    },
+    {
+      "title": "About evidence based governance",
+      "content": "evidence based governance is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "evidence based governance",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:44:55.739325"
+    },
+    {
+      "title": "About business continuity",
+      "content": "business continuity is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "business continuity",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:52:00.492085"
+    },
+    {
+      "title": "About green building",
+      "content": "green building is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "green building",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:56:03.203998"
+    },
+    {
+      "title": "About BREEAM",
+      "content": "BREEAM is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "BREEAM",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:56:23.430570"
+    },
+    {
+      "title": "About energy efficient buildings",
+      "content": "energy efficient buildings is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "energy efficient buildings",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:56:33.539146"
+    },
+    {
+      "title": "About net zero buildings",
+      "content": "net zero buildings is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "net zero buildings",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:56:53.777508"
+    },
+    {
+      "title": "About carbon neutral buildings",
+      "content": "carbon neutral buildings is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "carbon neutral buildings",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:57:03.883649"
+    },
+    {
+      "title": "About renewable energy buildings",
+      "content": "renewable energy buildings is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "renewable energy buildings",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:57:14.001323"
+    },
+    {
+      "title": "About solar buildings",
+      "content": "solar buildings is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "solar buildings",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:57:24.108282"
+    },
+    {
+      "title": "About wind powered buildings",
+      "content": "wind powered buildings is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "wind powered buildings",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:57:34.217894"
+    },
+    {
+      "title": "About geothermal buildings",
+      "content": "geothermal buildings is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "geothermal buildings",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:57:44.335584"
+    },
+    {
+      "title": "About biomass buildings",
+      "content": "biomass buildings is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "biomass buildings",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:57:54.434728"
+    },
+    {
+      "title": "About bauxite mining",
+      "content": "bauxite mining is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "bauxite mining",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:03:48.337189"
+    },
+    {
+      "title": "About biosafety",
+      "content": "biosafety is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "biosafety",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:08:01.122435"
+    },
+    {
+      "title": "About biosecurity",
+      "content": "biosecurity is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "biosecurity",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:08:11.232553"
+    },
+    {
+      "title": "About biology",
+      "content": "biology is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "biology",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:16:46.865814"
+    },
+    {
+      "title": "About Burundi",
+      "content": "Burundi is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Burundi",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:55:12.895070"
+    },
+    {
+      "title": "About Brazil",
+      "content": "Brazil is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Brazil",
+      "source": "structured",
+      "learned_at": "2025-11-26T23:11:30.907034"
+    },
+    {
+      "title": "About Bolivia",
+      "content": "Bolivia is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Bolivia",
+      "source": "structured",
+      "learned_at": "2025-11-26T23:28:17.085688"
+    },
+    {
+      "title": "About Bahamas",
+      "content": "Bahamas is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Bahamas",
+      "source": "structured",
+      "learned_at": "2025-11-27T00:18:42.731006"
+    },
+    {
+      "title": "About Barbados",
+      "content": "Barbados is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Barbados",
+      "source": "structured",
+      "learned_at": "2025-11-27T00:18:52.848332"
+    },
+    {
+      "title": "About Belize",
+      "content": "Belize is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Belize",
+      "source": "structured",
+      "learned_at": "2025-11-27T00:19:02.957078"
+    },
+    {
+      "title": "About basketball game",
+      "content": "basketball game is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "basketball game",
+      "source": "structured",
+      "learned_at": "2025-11-27T01:37:43.604747"
+    },
+    {
+      "title": "About basketball match",
+      "content": "basketball match is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "basketball match",
+      "source": "structured",
+      "learned_at": "2025-11-27T01:37:53.701974"
+    },
+    {
+      "title": "About basketball tournament",
+      "content": "basketball tournament is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "basketball tournament",
+      "source": "structured",
+      "learned_at": "2025-11-27T01:38:03.798637"
+    },
+    {
+      "title": "About basketball league",
+      "content": "basketball league is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "basketball league",
+      "source": "structured",
+      "learned_at": "2025-11-27T01:38:13.897851"
+    },
+    {
+      "title": "About basketball team",
+      "content": "basketball team is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "basketball team",
+      "source": "structured",
+      "learned_at": "2025-11-27T01:53:30.406301"
+    },
+    {
+      "title": "About basketball player",
+      "content": "basketball player is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "basketball player",
+      "source": "structured",
+      "learned_at": "2025-11-27T01:53:40.488635"
+    },
+    {
+      "title": "About basketball coach",
+      "content": "basketball coach is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "basketball coach",
+      "source": "structured",
+      "learned_at": "2025-11-27T01:53:50.591575"
+    },
+    {
+      "title": "About basketball manager",
+      "content": "basketball manager is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "basketball manager",
+      "source": "structured",
+      "learned_at": "2025-11-27T01:54:00.695393"
+    },
+    {
+      "title": "About basketball referee",
+      "content": "basketball referee is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "basketball referee",
+      "source": "structured",
+      "learned_at": "2025-11-27T01:54:10.799826"
+    },
+    {
+      "title": "About baseball game",
+      "content": "baseball game is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "baseball game",
+      "source": "structured",
+      "learned_at": "2025-11-27T03:32:15.201488"
+    },
+    {
+      "title": "About baseball match",
+      "content": "baseball match is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "baseball match",
+      "source": "structured",
+      "learned_at": "2025-11-27T03:32:25.314063"
+    },
+    {
+      "title": "About baseball tournament",
+      "content": "baseball tournament is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "baseball tournament",
+      "source": "structured",
+      "learned_at": "2025-11-27T03:32:35.419723"
+    },
+    {
+      "title": "About baseball league",
+      "content": "baseball league is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "baseball league",
+      "source": "structured",
+      "learned_at": "2025-11-27T03:49:27.984530"
+    },
+    {
+      "title": "About baseball team",
+      "content": "baseball team is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "baseball team",
+      "source": "structured",
+      "learned_at": "2025-11-27T03:49:38.093359"
+    },
+    {
+      "title": "About baseball player",
+      "content": "baseball player is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "baseball player",
+      "source": "structured",
+      "learned_at": "2025-11-27T03:49:48.198847"
+    },
+    {
+      "title": "About baseball coach",
+      "content": "baseball coach is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "baseball coach",
+      "source": "structured",
+      "learned_at": "2025-11-27T03:49:58.305771"
+    },
+    {
+      "title": "About baseball manager",
+      "content": "baseball manager is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "baseball manager",
+      "source": "structured",
+      "learned_at": "2025-11-27T03:50:08.406911"
+    },
+    {
+      "title": "About baseball referee",
+      "content": "baseball referee is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "baseball referee",
+      "source": "structured",
+      "learned_at": "2025-11-27T04:05:50.976153"
+    },
+    {
+      "title": "About balance",
+      "content": "balance is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "balance",
+      "source": "structured",
+      "learned_at": "2025-11-27T05:37:26.518363"
+    },
+    {
+      "title": "About basis",
+      "content": "basis is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "basis",
+      "source": "structured",
+      "learned_at": "2025-11-27T05:37:36.628486"
+    },
+    {
+      "title": "About beauty",
+      "content": "beauty is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "beauty",
+      "source": "structured",
+      "learned_at": "2025-11-27T05:37:46.742665"
+    },
+    {
+      "title": "About behavior",
+      "content": "behavior is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "behavior",
+      "source": "structured",
+      "learned_at": "2025-11-27T05:37:56.851206"
+    },
+    {
+      "title": "About belief",
+      "content": "belief is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "belief",
+      "source": "structured",
+      "learned_at": "2025-11-27T05:38:06.951002"
+    },
+    {
+      "title": "About benefit",
+      "content": "benefit is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "benefit",
+      "source": "structured",
+      "learned_at": "2025-11-27T05:54:53.446613"
+    },
+    {
+      "title": "About birth",
+      "content": "birth is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "birth",
+      "source": "structured",
+      "learned_at": "2025-11-27T05:55:03.562824"
+    },
+    {
+      "title": "About bottom",
+      "content": "bottom is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "bottom",
+      "source": "structured",
+      "learned_at": "2025-11-27T05:55:13.669824"
+    },
+    {
+      "title": "About boundary",
+      "content": "boundary is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "boundary",
+      "source": "structured",
+      "learned_at": "2025-11-27T05:55:23.777613"
+    },
+    {
+      "title": "About breadth",
+      "content": "breadth is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "breadth",
+      "source": "structured",
+      "learned_at": "2025-11-27T06:11:16.366733"
+    },
+    {
+      "title": "About burden",
+      "content": "burden is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "burden",
+      "source": "structured",
+      "learned_at": "2025-11-27T06:11:26.464362"
+    },
+    {
+      "title": "About business",
+      "content": "business is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "business",
+      "source": "structured",
+      "learned_at": "2025-11-27T06:11:36.572599"
+    },
+    {
+      "title": "About BERT model",
+      "content": "BERT model is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "BERT model",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:04:19.545184"
+    },
+    {
+      "title": "About backpropagation",
+      "content": "backpropagation is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "backpropagation",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:04:39.787702"
+    },
+    {
+      "title": "About backend development",
+      "content": "backend development is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "backend development",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:18:59.304859"
+    },
+    {
+      "title": "About behavior driven development",
+      "content": "behavior driven development is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "behavior driven development",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:24:13.051016"
+    },
+    {
+      "title": "About git branching strategies",
+      "content": "git branching strategies is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "git branching strategies",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:26:34.607793"
+    },
+    {
+      "title": "About database backup strategies",
+      "content": "database backup strategies is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "database backup strategies",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:30:27.120019"
+    },
+    {
+      "title": "About BERT embeddings",
+      "content": "BERT embeddings is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "BERT embeddings",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:36:21.068503"
+    },
+    {
+      "title": "About security best practices",
+      "content": "security best practices is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "security best practices",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:44:26.403266"
+    },
+    {
+      "title": "About load balancing",
+      "content": "load balancing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "load balancing",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:00:59.805227"
+    },
+    {
+      "title": "About blockchain technology",
+      "content": "blockchain technology is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "blockchain technology",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:02:20.605518"
+    },
+    {
+      "title": "About bitcoin cryptocurrency",
+      "content": "bitcoin cryptocurrency is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "bitcoin cryptocurrency",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:02:30.703758"
+    },
+    {
+      "title": "About ethereum blockchain",
+      "content": "ethereum blockchain is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "ethereum blockchain",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:02:40.817900"
+    },
+    {
+      "title": "About blockchain consensus",
+      "content": "blockchain consensus is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "blockchain consensus",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:03:21.268673"
+    },
+    {
+      "title": "About binary trees",
+      "content": "binary trees is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "binary trees",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:13:47.861544"
+    },
+    {
+      "title": "About binary search trees",
+      "content": "binary search trees is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "binary search trees",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:13:57.969279"
+    },
+    {
+      "title": "About red black trees",
+      "content": "red black trees is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "red black trees",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:14:18.187231"
+    },
+    {
+      "title": "About B trees",
+      "content": "B trees is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "B trees",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:14:28.297143"
+    },
+    {
+      "title": "About breadth first search",
+      "content": "breadth first search is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "breadth first search",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:21:52.269781"
+    },
+    {
+      "title": "About bubble sort",
+      "content": "bubble sort is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "bubble sort",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:22:53.014459"
+    },
+    {
+      "title": "About binary search",
+      "content": "binary search is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "binary search",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:24:34.136765"
+    },
+    {
+      "title": "About backtracking",
+      "content": "backtracking is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "backtracking",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:25:24.676612"
+    },
+    {
+      "title": "About big O notation",
+      "content": "big O notation is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "big O notation",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:26:15.187876"
+    },
+    {
+      "title": "When Amitabh Bachchan Failed in Physics, Superstar Shares Tales from ...",
+      "content": "Did You Know that Amitabh Bachchan once failed in Physics Exam? Megastar Amitabh Bachchan, who is known to share anecdotes from his personal life on the sets of 'Kaun Banega Crorepati', has now revealed that he failed in a subject in his graduation exams, but somehow passed it later.",
+      "query": "Hey What is physics? Who is Amitabh Bachchan?",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:19.233285"
+    },
+    {
+      "title": "Bollywood icon Amitabh Bachchan candidly admits to failing Physics exam ...",
+      "content": "Bollywood actor reveals he failed an exam but managed to clear it later Also In This Package Amitabh Bachchan dreams of playing KBC on the moon Why did Big B hitch a bike ride from a stranger ...",
+      "query": "Hey What is physics? Who is Amitabh Bachchan?",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:19.233551"
+    },
+    {
+      "title": "Amitabh Bachchan recalls failing in Physics - Times of India",
+      "content": "Amitabh Bachchan shares that he regretted taking up science in college and how he used to mug up answers two months before the exam.",
+      "query": "Hey What is physics? Who is Amitabh Bachchan?",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:19.233749"
+    },
+    {
+      "title": "Amitabh Bachchan Confesses Failing In Physics: 'I Took BSc & Was ...",
+      "content": "Megastar Amitabh Bachchan recently revealed he failed his Physics examination during BSc days. In one of the latest episodes of Kaun Banega Crorepati (KBC), Big B also revealed that he was ...",
+      "query": "Hey What is physics? Who is Amitabh Bachchan?",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:19.233986"
+    },
+    {
+      "title": "Amitabh Bachchan recalls failing his Physics exam during BSc days: 'I ...",
+      "content": "Amitabh Bachchan was a science student during his graduation days and in a recent episode of Kaun Banega Crorepati, the veteran actor shared that he really regretted taking up science during his college years. The actor, who studied at Kirori Mal College, University of Delhi graduated in 1962 with a BSc degree.",
+      "query": "Hey What is physics? Who is Amitabh Bachchan?",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:19.234289"
+    },
+    {
+      "title": "60 Funny Ways to Say Bro (Brother) - GrammarVocab",
+      "content": "Every sibling relationship is unique, but one thing is constant: the never-ending search for creative ways to tease, annoy, or lovingly refer to our brothers. Whether you want to make him laugh, roll his eyes, or scratch his head in confusion, here are some funny ways to say bro.",
+      "query": "That's interesting to hear... bro bro",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:51.694857"
+    },
+    {
+      "title": "yo where'd u get this?? : r/copypasta - Reddit",
+      "content": "I find mfs like u really interesting bro. i ain't gon lie this spot is kinda like a personal thing to me you what i'm saying. it's just like a personal vibe u feel me. what's really crazy is you wouldn't even wanted this if u ain't see me post it u what i'm saving. i don't even think u really hungry like that tbh bro. so go ahead find yourself something to eat bro go open your fridge ...",
+      "query": "That's interesting to hear... bro bro",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:51.695204"
+    },
+    {
+      "title": "Like a Stereotypical Frat Dude: The Ultimate Guide to Bro-speak and Laughs",
+      "content": "How to talk like a stereotypical frat dude, in slang! Find the origins, usage tips, and funniest online moments of bro-speak.",
+      "query": "That's interesting to hear... bro bro",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:51.695369"
+    },
+    {
+      "title": "80+ Funny Ways to Say Bro - Inject Humor into Your Conversations",
+      "content": "A treasure trove of funny ways to say bro that will inject humor into your everyday banter and strengthen your brotherly bonds with laughter.",
+      "query": "That's interesting to hear... bro bro",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:51.695628"
+    },
+    {
+      "title": "bro wtf is this animation",
+      "content": "Bro wtf is this animation. This is a meme about the \"Are You Lost in the World Like Me?\" animation.",
+      "query": "bro wth wtf",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:58.641239"
+    },
+    {
+      "title": "Bro Wtf Clips - Find & Share on GIPHY",
+      "content": "GIPHY animates your world. Find Bro Wtf Clips and GIFs with Sound that make your conversations more positive, more expressive, and more you.",
+      "query": "bro wth wtf",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:58.641464"
+    },
+    {
+      "title": "Bro Wtf Wtf Bro Meme - Bro wtf Wtf bro Man you disgusting - Tenor",
+      "content": "The perfect Bro wtf Wtf bro Man you disgusting Animated GIF for your conversation. and Share the best GIFs on Tenor.",
+      "query": "bro wth wtf",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:58.641655"
+    },
+    {
+      "title": "BRO WTF?! Meme Generator - Imgflip",
+      "content": "Featured BRO WTF?! Memes See All What is the Meme Generator? It's a free online image maker that lets you add custom resizable text, images, and much more to templates. People often use the generator to customize established memes, such as those found in Imgflip's collection of Meme Templates.",
+      "query": "bro wth wtf",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:58.641947"
+    },
+    {
+      "title": "Brawler's Guild Fight Strategies Guide - Wowhead",
+      "content": "The Brawler's Guild is back for Patch 11.2.7, and Season 5 brings in a couple new fights and a few new challenges for players! In this guide, we will go through strategies for all bosses in the Brawler's Guild, as well as take a look at the new Broker Challenges feature. There are several types of fight in the Brawler's Guild, allowing you to face challenges in the Brawler's Guild in several ways.",
+      "query": "Hey, Thor 1.0 What can you do? who Is bawler sjof",
+      "source": "research",
+      "learned_at": "2025-11-28T21:21:10.285566"
+    },
+    {
+      "title": "Bawler - Definition, Meaning & Synonyms | Vocabulary.com",
+      "content": "A loud weeper\"Bawler.\" Vocabulary.com Dictionary, Vocabulary.com, https://www.vocabulary.com/dictionary/bawler. Accessed 26 Nov. 2025. Copy citation",
+      "query": "Hey, Thor 1.0 What can you do? who Is bawler sjof",
+      "source": "research",
+      "learned_at": "2025-11-28T21:21:10.285787"
+    },
+    {
+      "title": "All Brawlers in Brawl Stars | Characters, Rarity, Data",
+      "content": "Characters in Brawl Stars are called Brawlers and here you can check each brawler, their stats, data, star powers, gadgets or gears to how to play with them better. We collect battle logs to provide statistics on which brawlers work on individual maps best!",
+      "query": "who Is bawler sjof",
+      "source": "research",
+      "learned_at": "2025-11-28T21:21:24.138196"
+    },
+    {
+      "title": "bawler-Definition and Meaning - Infronx",
+      "content": "The word \"bawler\" refers to a person who cries or wails loudly. It can also describe someone who shouts or screams, particularly in a noisy or emotional manner. In some contexts, it may refer to someone who is very vocal about their feelings or opinions.",
+      "query": "who Is bawler sjof",
+      "source": "research",
+      "learned_at": "2025-11-28T21:21:24.138585"
+    },
+    {
+      "title": "BAWLER Definition & Meaning - Merriam-Webster",
+      "content": "The meaning of BAWL is to cry out loudly and unrestrainedly. How to use bawl in a sentence.",
+      "query": "who Is bawler sjof",
+      "source": "research",
+      "learned_at": "2025-11-28T21:21:24.138721"
+    },
+    {
+      "title": "What does bawler mean? - Definitions.net",
+      "content": "Definition of bawler in the Definitions.net dictionary. Meaning of bawler. What does bawler mean? Information and translations of bawler in the most comprehensive dictionary definitions resource on the web.",
+      "query": "who Is bawler sjof",
+      "source": "research",
+      "learned_at": "2025-11-28T21:21:24.138985"
+    },
+    {
+      "title": "Amitabh Bachchan - Wikipedia",
+      "content": "Amitabh Bachchan . Amitabh Bachchan is an Indian actor who works in Hindi cinema. He is considered one of the greatest, most accomplished and commercially successful actors in the history of Indian cinema. With a cinematic career spanning over five decades, he has played in over 200 films.",
+      "query": "Who is Amitabh Bachchan?",
+      "source": "research",
+      "learned_at": "2025-11-29T12:25:26.225587"
+    },
+    {
+      "title": "Amitabh Bachchan | Movies, KBC, Biography, Family, Sholay, & Facts ...",
+      "content": "Amitabh Bachchan is perhaps the most popular star in the history of Indian cinema, known primarily for his roles in action films. He has received numerous awards for his performances. More about Bachchan's life and career, including his notable movies.",
+      "query": "Who is Amitabh Bachchan?",
+      "source": "research",
+      "learned_at": "2025-11-29T12:25:26.226068"
+    },
+    {
+      "title": "Amitabh Bachchan Height, Age, Caste, Wife, Children, Family, Biography",
+      "content": "Amitabh Bachchan, one of the most popular actors of Bollywood. Check this page to read his biography in detail- his age, love affairs, marriage, controversies & more!",
+      "query": "Who is Amitabh Bachchan?",
+      "source": "research",
+      "learned_at": "2025-11-29T12:25:26.226399"
+    },
+    {
+      "title": "Amitabh Bachchan - Biography - IMDb",
+      "content": "Amitabh Bachchan. Actor: Black. Amitabh Bachchan was born on October 11, 1942 in Allahabad, British India (present-day Prayagraj, Uttar Pradesh, India) to legendary poet Harivansh Rai Bachchan & Teji Bachchan. He also has a brother named Ajitabh. He completed his education from Uttar Pradesh and moved to Bombay to find work as a film star, in vain though, as film-makers preferred someone with .",
+      "query": "Who is Amitabh Bachchan?",
+      "source": "research",
+      "learned_at": "2025-11-29T12:25:26.226975"
+    },
+    {
+      "title": "Amitabh Bachchan: Biography, Bollywood Actor, Politician",
+      "content": "Bollywood actor Amitabh Bachchan is known for his roles in action movies like Zanjeer and for hosting the Indian version of Who Wants to Be a Millionaire?",
+      "query": "Who is Amitabh Bachchan?",
+      "source": "research",
+      "learned_at": "2025-11-29T12:25:26.227352"
+    },
+    {
+      "title": "Sundar Pichai - Wikipedia",
+      "content": "Pichai Sundararajan , better known as Sundar Pichai (pronounced: ), is an Indian-American business executive. He is the chief executive officer (CEO) of Alphabet Inc. And its subsidiary Google.",
+      "query": "What is soccer? Who is Amitabh Bachchan? Who is Sundar Pichai",
+      "source": "research",
+      "learned_at": "2025-11-29T12:25:45.162451"
+    },
+    {
+      "title": "Jhund: Meet Vijay Barsi, the Hero Who Inspired Amitabh Bachchan's Role",
+      "content": "Jhund: Meet Vijay Barse, the Hero Who Inspired Amitabh Bachchan's Role As Amitabh Bachchan-starrer, 'Jhund' hits the theatres, we trace the story of Vijay Barse, an inspiring coach from Nagpur whose organisation Slum Soccer is nurturing talented football players from the slums of India.",
+      "query": "What is soccer? Who is Amitabh Bachchan? Who is Sundar Pichai",
+      "source": "research",
+      "learned_at": "2025-11-29T12:25:45.163124"
+    },
+    {
+      "title": "Amazing! Meet the real-life football coach who inspired Amitabh ...",
+      "content": "MUMBAI: Jhund starring Amitabh Bachchan has been creating quite the stir ever since its release on the 4th of March. Directed by Nagraj Manjule, the biographical sports drama follows the story of a football coach named Vijay Barse, who teaches the sport to children and youth living in slums. The film has been garnering appreciation from critics and viewers alike. Now here is the story of the .",
+      "query": "What is soccer? Who is Amitabh Bachchan? Who is Sundar Pichai",
+      "source": "research",
+      "learned_at": "2025-11-29T12:25:45.163917"
+    },
+    {
+      "title": "Legendary actor Amitabh Bachchan is a soccer coach who's ... - Facebook",
+      "content": "Legendary actor Amitabh Bachchan is a soccer coach who's determined to uplift slum-dwelling kids by providing life opportunities through playing soccer in the Hindi film Jhund!",
+      "query": "What is soccer? Who is Amitabh Bachchan? Who is Sundar Pichai",
+      "source": "research",
+      "learned_at": "2025-11-29T12:25:45.193312"
+    }
+  ],
+  "last_updated": "2025-11-29T12:25:46.219442"
+}

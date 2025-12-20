@@ -123,17 +123,6 @@ class GreetingsHandler:
                 if not any(q in message_lower for q in ['who', 'what', 'where', 'when', 'why', 'how']):
                     return True
         
-        # Check conversational greetings like "How's your day going?"
-        conversational_patterns = [
-            r'\b(how\'s|hows)\s+(your|ur)\s+(day|week|morning|afternoon|evening)\s*(going|been)?\??\s*$',
-            r'\b(how\s+)?(is\s+)?(your|ur)\s+(day|week|morning|afternoon|evening)\s+(going|been)\??\s*$',
-            r'\b(how\s+)?(are\s+)?(things|stuff)\s+(going|with you)\??\s*$',
-            r'\b(what\'s|whats)\s+(up|new|good|happening)\??\s*$',
-        ]
-        for pattern in conversational_patterns:
-            if re.search(pattern, message_lower, re.IGNORECASE):
-                return True
-        
         # Check name greetings (hey name, hi name, etc.)
         name_pattern = r'\b(hey|hi|hello|good morning|good afternoon|good evening)\s+([A-Z][a-z]+)\b'
         if re.search(name_pattern, message, re.IGNORECASE):
@@ -152,30 +141,8 @@ class GreetingsHandler:
     
     def get_response(self, message):
         """Get appropriate greeting response"""
-        import random
         message_lower = message.lower().strip()
         name = self.extract_name(message)
-        
-        # Check for conversational greetings like "How's your day going?"
-        conversational_responses = {
-            r'\b(how\'s|hows)\s+(your|ur)\s+(day|week)\s*(going|been)?\??\s*$': [
-                "I'm doing great, thanks for asking! How can I help you today?",
-                "I'm here and ready to help! What can I do for you?",
-                "Doing well! What would you like to know or work on?",
-            ],
-            r'\b(how\s+)?(are\s+)?(things|stuff)\s+(going|with you)\??\s*$': [
-                "Things are going well! How can I assist you?",
-                "All good here! What can I help you with?",
-            ],
-            r'\b(what\'s|whats)\s+(up|new|good|happening)\??\s*$': [
-                "Not much! Just here to help. What can I do for you?",
-                "All good! How can I assist you today?",
-            ],
-        }
-        
-        for pattern, responses_list in conversational_responses.items():
-            if re.search(pattern, message_lower, re.IGNORECASE):
-                return random.choice(responses_list)
         
         # Check contextual responses first
         contextual = self.greetings_data.get("greetings", {}).get("contextual_responses", {})

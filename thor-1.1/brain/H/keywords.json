@@ -1,0 +1,1997 @@
+{
+  "letter": "H",
+  "keywords": [
+    "hi",
+    "hello",
+    "hey",
+    "hey there",
+    "howdy",
+    "helmet",
+    "hey,",
+    "haskell",
+    "handling",
+    "hoisting",
+    "hooks",
+    "history",
+    "how",
+    "hash",
+    "hypervisors",
+    "http",
+    "https",
+    "home",
+    "homecoming.",
+    "heaps",
+    "heap",
+    "high",
+    "html",
+    "hadoop",
+    "hyperparameter",
+    "hypothesis",
+    "haiku",
+    "hosting",
+    "human",
+    "headless",
+    "harvard",
+    "hierarchy",
+    "health",
+    "hydroelectric",
+    "hipaa",
+    "happens",
+    "heatmaps",
+    "hierarchical",
+    "hyperautomation",
+    "host",
+    "harmonization",
+    "historical",
+    "hrm",
+    "hcm",
+    "hiring",
+    "hands-on",
+    "humanism",
+    "hackathons",
+    "habituation",
+    "helpful",
+    "heterogeneity",
+    "homogeneity",
+    "hybrid",
+    "hybridization",
+    "hydrology",
+    "hydrogeology",
+    "hinduism",
+    "hermeticism",
+    "haumea",
+    "hazardous",
+    "holocene",
+    "heritage",
+    "healthy",
+    "housing",
+    "healthcare",
+    "humanitarian",
+    "house",
+    "hydropower",
+    "hydraulic",
+    "hard",
+    "hydroponics",
+    "hardware",
+    "honduras",
+    "haiti",
+    "hockey",
+    "habit",
+    "harmony",
+    "height",
+    "honor",
+    "hope",
+    "horror",
+    "hi\\",
+    "haryana?",
+    "hear..."
+  ],
+  "knowledge": [
+    {
+      "title": "Atlas",
+      "content": "Atlas is your go-to benefits platform, designed specifically for global tech teams.",
+      "query": "Hey, atlas",
+      "source": "research",
+      "learned_at": "2025-11-23T18:04:09.318389"
+    },
+    {
+      "title": "Atlas AI Shopify Store Builder | Launch a Store in 2 Minutes",
+      "content": "Use the Atlas AI Store Builder to create high-converting Shopify stores\u2014no code. Paste a product link and Atlas AI builds your store, theme, copy, and design in seconds.",
+      "query": "Hey, atlas",
+      "source": "research",
+      "learned_at": "2025-11-23T18:04:09.318514"
+    },
+    {
+      "title": "Atlas Gateway",
+      "content": "All your benefits in one place From healthcare to wellness and everyday perks, discover and enjoy everything your company offers you, right from Atlas.",
+      "query": "Hey, atlas",
+      "source": "research",
+      "learned_at": "2025-11-23T18:04:09.318583"
+    },
+    {
+      "title": "FAQs for Team Members | Help Center",
+      "content": "FAQs for Team Members How does the sign-up process work? When your employer enrolls you, you'll get an email to activate your Atlas account. Click \"Activate account,\" create your password, and download our app. Then log in to the app with your email and the password you created. You're all set to start using Atlas!",
+      "query": "Hey, atlas",
+      "source": "research",
+      "learned_at": "2025-11-23T18:04:09.318650"
+    },
+    {
+      "title": "Login - Atlas Health",
+      "content": "Welcome back Sign in to access Atlas HealthUsername",
+      "query": "Hey, atlas",
+      "source": "research",
+      "learned_at": "2025-11-23T18:04:09.318717"
+    },
+    {
+      "title": "Shop haskell programming book - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on haskell programming book at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "query": "Haskell programming",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:21:11.764524"
+    },
+    {
+      "title": "Haskell Language",
+      "content": "Why Haskell? A new paradigm Express your ideas clearly and learn a new way of thinking about programming. Based on lambda calculus Haskell is a purely functional programming language that features referential transparency, immutability and lazy evaluation. Concepts that will blow your mind \u2014 relearn programming while having an absolute blast.",
+      "query": "Haskell programming",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:21:11.764557"
+    },
+    {
+      "title": "Haskell - Wikipedia",
+      "content": "Haskell is a general-purpose, statically-typed, purely functional language with type inference and lazy evaluation. It has influenced and been influenced by many other languages, and has a rich history of research and applications since 1990.",
+      "query": "Haskell programming",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:21:11.764580"
+    },
+    {
+      "title": "Haskell Tutorial - Online Tutorials Library",
+      "content": "Haskell is a widely used purely functional language. Functional programming is based on mathematical functions. Besides Haskell, some of the other popular languages that follow Functional Programming paradigm include: Lisp, Python, Erlang, Racket, F#, Clojure, etc. Haskell is more intelligent than other popular programming languages such as Java, C, C++, PHP, etc. In this tutorial, we will ...",
+      "query": "Haskell programming",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:21:11.764605"
+    },
+    {
+      "title": "Getting started with Haskell A beginners guide",
+      "content": "Learn the basics of Haskell, a functional programming language, and write your first program. This guide covers installation, syntax, types, lists, and pattern matching in Haskell.",
+      "query": "Haskell programming",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:21:11.764629"
+    },
+    {
+      "title": "Python File Open - W3Schools",
+      "content": "Learn how to use the open() function and different modes to create, read, update, and delete files in Python. See examples of text and binary files, and how to handle errors.",
+      "query": "python file handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:25:38.785022"
+    },
+    {
+      "title": "File Handling in Python - GeeksforGeeks",
+      "content": "File handling refers to the process of performing operations on a file, such as creating, opening, reading, writing and closing it through a programming interface.",
+      "query": "python file handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:25:38.785086"
+    },
+    {
+      "title": "File and Directory Access \u2014 Python 3.14.0 documentation",
+      "content": "Learn how to use Python modules to work with disk files and directories, such as pathlib, os.path, stat, shutil, and more. Find examples, exceptions, methods, and properties for file and directory operations.",
+      "query": "python file handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:25:38.785135"
+    },
+    {
+      "title": "Working With Files in Python",
+      "content": "Python has several built-in modules and functions for handling files. These functions are spread out over several modules such as os, os.path, shutil, and pathlib, to name a few. This article gathers in one place many of the functions you need to know in order to perform the most common operations on files in Python. In this tutorial, you'll learn how to: Retrieve file properties Create ...",
+      "query": "python file handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:25:38.785186"
+    },
+    {
+      "title": "File Handling in Python",
+      "content": "Learn how to work with files on your computer's file system using Python's built-in functions and modules. Find examples of basic and advanced file operations, such as reading, writing, appending, CSV, JSON, binary, and directory management.",
+      "query": "python file handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:25:38.785234"
+    },
+    {
+      "title": "8. Errors and Exceptions \u2014 Python 3.14.0 documentation",
+      "content": "Learn how to handle syntax errors and exceptions in Python programs. See examples of try/except statements, exception types, arguments and classes.",
+      "query": "python exception handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:25:50.111244"
+    },
+    {
+      "title": "Python Exception Handling - GeeksforGeeks",
+      "content": "Python Exception Handling allows a program to gracefully handle unexpected events (like invalid input or missing files) without crashing. Instead of terminating abruptly, Python lets you detect the problem, respond to it, and continue execution when possible.",
+      "query": "python exception handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:25:50.111307"
+    },
+    {
+      "title": "Python Try Except - W3Schools",
+      "content": "Learn how to use the try, except, else and finally blocks to handle errors in Python. See examples of raising, catching and defining exceptions, and how to close resources in the finally block.",
+      "query": "python exception handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:25:50.111361"
+    },
+    {
+      "title": "Python Try Except: Examples And Best Practices",
+      "content": "Learn how to handle errors in Python by using the try and except keywords. See how to catch different types of exceptions, create custom exceptions, and print exception messages.",
+      "query": "python exception handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:25:50.111411"
+    },
+    {
+      "title": "Python Exceptions: An Introduction - Real Python",
+      "content": "Learn how to handle errors in Python using exceptions, try and except blocks, assertions, and custom exceptions. This tutorial covers the basics of exception handling with examples and a quiz.",
+      "query": "python exception handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:25:50.111468"
+    },
+    {
+      "title": "JavaScript Hoisting - W3Schools",
+      "content": "Learn what hoisting is and how it affects variables, functions and let/const declarations in JavaScript. See examples, explanations and tips to avoid bugs caused by hoisting.",
+      "query": "javascript hoisting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:27:56.470665"
+    },
+    {
+      "title": "Hoisting - Glossary | MDN",
+      "content": "JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, prior to execution of the code.",
+      "query": "javascript hoisting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:27:56.470727"
+    },
+    {
+      "title": "JavaScript Hoisting - GeeksforGeeks",
+      "content": "Hoisting refers to the behavior where JavaScript moves the declarations of variables, functions, and classes to the top of their scope during the compilation phase. This can sometimes lead to surprising results, especially when using var, let, const, or function expressions. Javascript Hoisting Hoisting applies to variable and function ...",
+      "query": "javascript hoisting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:27:56.470780"
+    },
+    {
+      "title": "JavaScript Hoisting Explained By Examples",
+      "content": "Learn what JavaScript hoisting is and how it affects variables and functions. See how the JavaScript engine moves declarations to the top of the script and initializes them during execution.",
+      "query": "javascript hoisting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:27:56.470828"
+    },
+    {
+      "title": "What is Hoisting in JavaScript? - freeCodeCamp.org",
+      "content": "Learn how hoisting works for variables and functions in JavaScript, and how it affects the temporal dead zone and the typeof operator. See examples of hoisting with var, let, const, and function declarations.",
+      "query": "javascript hoisting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:27:56.470884"
+    },
+    {
+      "title": "JavaScript Events - W3Schools",
+      "content": "Learn how to use JavaScript to react on HTML events, such as clicks, changes, and keyboard inputs. Find examples, descriptions, and references of common HTML events and event handlers.",
+      "query": "javascript event handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:30:13.192278"
+    },
+    {
+      "title": "DOM events - Web APIs | MDN - MDN Web Docs",
+      "content": "Registering event handlers There are two recommended approaches for registering handlers. Event handler code can be made to run when an event is triggered either by assigning it to the target element's corresponding onevent property or by registering the handler as a listener for the element using the addEventListener() method. In either case, the handler will receive an object that conforms ...",
+      "query": "javascript event handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:30:13.193755"
+    },
+    {
+      "title": "JavaScript Events - GeeksforGeeks",
+      "content": "Learn about JavaScript events, their types, and how to use them to create interactive web applications on GeeksforGeeks.",
+      "query": "javascript event handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:30:13.193813"
+    },
+    {
+      "title": "Handling Events in JavaScript",
+      "content": "Learn the various ways to perform event handling in JavaScript using HTML attributes, DOM properties, and addEventListener() method. See examples, advantages, and disadvantages of each method.",
+      "query": "javascript event handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:30:13.193870"
+    },
+    {
+      "title": "Event Handling in JavaScript - Tutorial Republic",
+      "content": "Learn how to handle events in JavaScript with this comprehensive tutorial. Find out the definition, types, and examples of mouse, keyboard, form, and document/window events.",
+      "query": "javascript event handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:30:13.193926"
+    },
+    {
+      "title": "Built-in React Hooks",
+      "content": "Hooks let you use different React features from your components. You can either use the built-in Hooks or combine them to build your own. This page lists all built-in Hooks in React.",
+      "query": "react hooks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:30:36.477289"
+    },
+    {
+      "title": "React Hooks - W3Schools",
+      "content": "Hooks allow functions to have access to state and other React features without using classes. They provide a more direct API to React concepts like props, state, context, refs, and lifecycle.",
+      "query": "react hooks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:30:36.477330"
+    },
+    {
+      "title": "React Hooks - GeeksforGeeks",
+      "content": "Hooks streamline code, improve readability, and promote a functional programming style, making functional components as powerful\u2014if not more\u2014than their class-based counterparts. Types of React Hooks React offers various hooks to handle state, side effects, and other functionalities in functional components.",
+      "query": "react hooks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:30:36.477367"
+    },
+    {
+      "title": "Learn React Hooks - Common Hooks Explained with Code Examples",
+      "content": "React hooks can seem overwhelming at first, but with this guide, you're well-equipped to handle them. Mastering these hooks improves your React skills and makes your development process smoother and more efficient.",
+      "query": "react hooks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:30:36.477403"
+    },
+    {
+      "title": "A Complete Guide to All React Hooks for Beginners",
+      "content": "React hooks revolutionized the way we build components by allowing us to use state and other features in functional components. In this tutorial, we'll dive deep into all the current React hooks, walking you through practical examples. By the end of this article, you'll have a solid understanding of how each hook works and how you can use them to build better React applications. If you want ...",
+      "query": "react hooks",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:30:36.477439"
+    },
+    {
+      "title": "Thanksgiving - Wikipedia",
+      "content": "Learn about the origins and evolution of Thanksgiving, a national holiday celebrated in various countries and dates. Explore the religious, cultural, and harvest aspects of this festival, as well as its connections to the United States and Canada.",
+      "query": "thanksgiving history",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:43:56.736716"
+    },
+    {
+      "title": "Thanksgiving Day | Meaning, History, & Facts | Britannica",
+      "content": "Thanksgiving Day is an annual national holiday in the United States and Canada celebrating the harvest and other blessings of the past year. Americans generally believe that their Thanksgiving is modeled on a 1621 harvest feast shared by the European colonists (Pilgrims) of Plymouth and the Wampanoag people.",
+      "query": "thanksgiving history",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:43:56.736804"
+    },
+    {
+      "title": "Thanksgiving 2025 - Tradition, Origins & Meaning | HISTORY",
+      "content": "Thanksgiving Day is a federal holiday in the United States, and in 2025, it falls on Thursday, November 27. In 1621, the Plymouth colonists from England and the Native American Wampanoag people ...",
+      "query": "thanksgiving history",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:43:56.736870"
+    },
+    {
+      "title": "Thanksgiving Day: A Brief History - World History Encyclopedia",
+      "content": "Learn about the origins and evolution of the American holiday of Thanksgiving, from the 1621 harvest feast of the pilgrims and the Wampanoag to the modern celebration of family and football. Explore the sources, myths, and controversies of the First Thanksgiving story.",
+      "query": "thanksgiving history",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:43:56.736944"
+    },
+    {
+      "title": "A historian explains how the Pilgrims took over Thanksgiving - PBS",
+      "content": "Communal rituals of giving thanks have a longer history in North America, and it was only around the turn of the 20th century that most people in the U.S. came to associate Thanksgiving with ...",
+      "query": "thanksgiving history",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T18:43:56.737010"
+    },
+    {
+      "title": "Additional Notes on thanksgiving history",
+      "content": "feast",
+      "query": "thanksgiving history",
+      "source": "manual_notes",
+      "learned_at": "2025-11-23T18:44:22.275431",
+      "type": "follow_up_notes"
+    },
+    {
+      "title": "Easy Guacamole Recipe",
+      "content": "This easy guacamole recipe is quick to make and delicious to eat! Try it if you're learning how to make guac or simply need to whip up some to share.",
+      "query": "How to make guacomole",
+      "source": "research",
+      "learned_at": "2025-11-23T18:47:56.911741"
+    },
+    {
+      "title": "How to Make Perfect Guacamole Every Time - Martha Stewart",
+      "content": "Learn how to make the best guacamole. It's not difficult, a Tex-Mex chef and an avocado expert share their secrets so you can enjoy fresh-tasting guac every time.",
+      "query": "How to make guacomole",
+      "source": "research",
+      "learned_at": "2025-11-23T18:47:56.911777"
+    },
+    {
+      "title": "The Best Guacamole Recipe - Simply Recipes",
+      "content": "The best guacamole keeps it simple: just ripe avocados and a handful of flavorful mix-ins. Serve it as a dip at your next party or spoon it on top of tacos for an easy dinner upgrade.",
+      "query": "How to make guacomole",
+      "source": "research",
+      "learned_at": "2025-11-23T18:47:56.911803"
+    },
+    {
+      "title": "Easy Guacamole Recipe - How to Make the Best Guacamole",
+      "content": "This guacamole recipe makes the perfect party dip, healthy snack, or taco topper! It's made with avocado, tomato, onion, lime juice, cilantro, and jalape\u00f1o.",
+      "query": "How to make guacomole",
+      "source": "research",
+      "learned_at": "2025-11-23T18:47:56.911837"
+    },
+    {
+      "title": "The Best Guacamole Recipe | Easy & Authentic - Taste of Home",
+      "content": "This easy guacamole recipe rivals the tableside guac from your favorite restaurant. It only contains eight ingredients, so make sure each one is high-quality for the freshest results.",
+      "query": "How to make guacomole",
+      "source": "research",
+      "learned_at": "2025-11-23T18:47:56.911863"
+    },
+    {
+      "title": "Hash function - Wikipedia",
+      "content": "A hash function is a function that maps data of arbitrary size to fixed-size values, used to index a hash table or perform other operations. Learn about the types, design, implementation and applications of hash functions, as well as their advantages and limitations.",
+      "query": "hash functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:01:53.812926"
+    },
+    {
+      "title": "Hash Functions and Types of Hash functions - GeeksforGeeks",
+      "content": "Hash functions are a fundamental concept in computer science and play a crucial role in various applications such as data storage, retrieval, and cryptography. A hash function creates a mapping from an input key to an index in hash table.",
+      "query": "hash functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:01:53.812993"
+    },
+    {
+      "title": "What Is a Hash Function? Simple Guide for Beginners",
+      "content": "Learn what a hash function is, how it works, and why it matters for cybersecurity. Explore common hashing algorithms, their strengths and limitations, and how they power digital signatures, blockchain, and more.",
+      "query": "hash functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:01:53.813042"
+    },
+    {
+      "title": "What Are Hash Functions? - codefinity.com",
+      "content": "Hash functions are a fundamental aspect of computer science, pivotal in cryptography, data security, and efficient data handling. They are vital for securing passwords, powering blockchain technology, and much more. This article delves into the concept, applications, and mechanics of hash functions to provide a clearer understanding of their role in modern technology.",
+      "query": "hash functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:01:53.813091"
+    },
+    {
+      "title": "Hash Functions | Practical Cryptography for Developers - Nakov",
+      "content": "Learn what hash functions are, how they work, and why they are important in cryptography. See examples of hash functions such as SHA-256 and SHA3-256, and how to use them in Python and JavaScript.",
+      "query": "hash functions",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T19:01:53.813139"
+    },
+    {
+      "title": "Hypervisor",
+      "content": "A hypervisor, also known as a virtual machine monitor (VMM) or virtualizer, is a type of computer software, firmware or hardware that creates and runs virtual machines. A computer on which a hypervisor runs one or more virtual machines is called a host machine or virtualization server, and each virtual machine is called a guest machine. The hypervisor presents the guest operating systems with a virtual operating platform and manages the execution of the guest operating systems. Unlike an emulato",
+      "query": "hypervisors",
+      "source": "wikipedia",
+      "learned_at": "2025-11-23T21:18:23.552993"
+    },
+    {
+      "title": "Hypervisor - Wikipedia",
+      "content": "Type-1 and type-2 hypervisors In his 1973 thesis, \"Architectural Principles for Virtual Computer Systems,\" Robert P. Goldberg classified two types of hypervisor: [1] Type-1, native or bare-metal hypervisors These hypervisors run directly on the host's hardware to control the hardware and to manage guest operating systems. For this reason, they are sometimes called bare-metal hypervisors. The ...",
+      "query": "hypervisors",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:24.310119"
+    },
+    {
+      "title": "What is a Hypervisor? - Hypervisor Explained - AWS",
+      "content": "Learn what a hypervisor is, why it is important, and how it works. Compare type 1 and type 2 hypervisors, and understand the benefits of cloud hypervisors.",
+      "query": "hypervisors",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:24.310195"
+    },
+    {
+      "title": "What are hypervisors? - IBM",
+      "content": "Hypervisors provide the foundation for modern virtualization practices and are crucial to modern data center, cloud computing and desktop environments. Today, virtualization is standard practice in enterprise IT infrastructure and is the technology that drives cloud computing economics.",
+      "query": "hypervisors",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:24.310255"
+    },
+    {
+      "title": "What is a Hypervisor? - VMware",
+      "content": "Hypervisor, also known as a virtual machine monitor, is a process that creates and runs virtual machines (VMs).",
+      "query": "hypervisors",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:24.310314"
+    },
+    {
+      "title": "Hypervisor - GeeksforGeeks",
+      "content": "Types of Hypervisor There are two main types of hypervisors, each with a different architecture: 1. Type 1 Hypervisor A Type 1 hypervisor runs directly on the host's hardware. It doesn't rely on a host operating system. This architecture offers better performance and security because there is no intermediary OS.",
+      "query": "hypervisors",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:24.310376"
+    },
+    {
+      "title": "HTTP - Wikipedia",
+      "content": "HTTP (Hypertext Transfer Protocol) is an application layer protocol in the Internet protocol suite model for distributed, collaborative, hypermedia information systems. [1] HTTP is the foundation of data communication for the World Wide Web, where hypertext documents include hyperlinks to other resources that the user can easily access, for example by a mouse click or by tapping the screen in ...",
+      "query": "HTTP protocol",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:59.599727"
+    },
+    {
+      "title": "Overview of HTTP - MDN Web Docs",
+      "content": "Overview of HTTP HTTP is a protocol for fetching resources such as HTML documents. It is the foundation of any data exchange on the Web and it is a client-server protocol, which means requests are initiated by the recipient, usually the Web browser. A complete document is typically constructed from resources such as text content, layout instructions, images, videos, scripts, and more. Clients ...",
+      "query": "HTTP protocol",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:59.599801"
+    },
+    {
+      "title": "Hypertext Transfer Protocol - HTTP - GeeksforGeeks",
+      "content": "HTTP (Hypertext Transfer Protocol) is a fundamental protocol of the Internet, enabling the transfer of data between a client and a server. It is the foundation of data communication for the World Wide Web.",
+      "query": "HTTP protocol",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:59.599862"
+    },
+    {
+      "title": "HTTP - Hypertext Transfer Protocol Overview",
+      "content": "Learn about the history, specifications, and extensions of HTTP, the protocol for transferring hypertext documents on the web. Find out the latest updates on HTTP/1.1, HTTP/2, and HTTP/3 from the IETF and W3C.",
+      "query": "HTTP protocol",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:59.599922"
+    },
+    {
+      "title": "RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1",
+      "content": "Hypertext Transfer Protocol -- HTTP/1.1 Status of this Memo This document specifies an Internet standards track protocol for the Internet community, and requests discussion and suggestions for improvements. Please refer to the current edition of the \"Internet Official Protocol Standards\" (STD 1) for the standardization state and status of this ...",
+      "query": "HTTP protocol",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:18:59.599982"
+    },
+    {
+      "title": "HTTPS - Wikipedia",
+      "content": "Hypertext Transfer Protocol Secure (HTTPS) is an extension of the Hypertext Transfer Protocol (HTTP). It uses encryption for secure communication over a computer network, and is widely used on the Internet. [1][2] In HTTPS, the communication protocol is encrypted using Transport Layer Security (TLS) or, formerly, Secure Sockets Layer (SSL).",
+      "query": "HTTPS protocol",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:19:11.369527"
+    },
+    {
+      "title": "What is HTTPS? - Cloudflare",
+      "content": "What is HTTPS? Hypertext transfer protocol secure (HTTPS) is the secure version of HTTP, which is the primary protocol used to send data between a web browser and a website. HTTPS is encrypted in order to increase security of data transfer.",
+      "query": "HTTPS protocol",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:19:11.369605"
+    },
+    {
+      "title": "HyperText Transfer Protocol Secure - HTTPS - GeeksforGeeks",
+      "content": "HTTPS establishes the communication between the browser and the web server. It uses the Secure Socket Layer (SSL) and Transport Layer Security (TLS) protocol for establishing communication.",
+      "query": "HTTPS protocol",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:19:11.369667"
+    },
+    {
+      "title": "What is HTTPS? How it Works and Why It's So Important",
+      "content": "HTTPS (Hypertext Transfer Protocol Secure) allows users to safely send information via the Web through encryption. Learn more about its uses and benefits.",
+      "query": "HTTPS protocol",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:19:11.369728"
+    },
+    {
+      "title": "HTTP vs HTTPS: Key Differences and Why It Matters for Security",
+      "content": "Learn the difference between HTTP and HTTPS, why HTTPS is safer, and how it impacts browsing, SEO, and security best practices.",
+      "query": "HTTPS protocol",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-23T21:19:11.369788"
+    },
+    {
+      "title": "How to Respond to Greetings: The 43 Best Ways - Lost at Say",
+      "content": "We've compiled the best ways to respond to greetings, plus tips to help you choose the right response for your situation.",
+      "query": "How to respond to a greeting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:19:50.066535"
+    },
+    {
+      "title": "Responses To Greetings: 9 Ways To Sound Interesting",
+      "content": "Looking for creative ways to reply to greetings? Discover 9 fun and engaging responses to sound interesting and keep your conversations lively.",
+      "query": "How to respond to a greeting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:19:50.066620"
+    },
+    {
+      "title": "85+ Best Responses to \"Hello\" for Every Situation - asktotalks",
+      "content": "Why Your Response to \"Hello\" Matters While \"Hello\" might seem like a straightforward greeting, how you reply can convey your mood, set expectations, and reflect your personality. how to respond to hey thoughtfully can help strengthen relationships, add humor, or create a professional impression.",
+      "query": "How to respond to a greeting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:19:50.066687"
+    },
+    {
+      "title": "How to Respond to a Greeting - layneria.com",
+      "content": "How to Respond to a Greeting Layneria 4 juil. 2019 3 min de lecture Greeting cards",
+      "query": "How to respond to a greeting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:19:50.066748"
+    },
+    {
+      "title": "How to Reply Hello: Top Tips for Engaging Responses",
+      "content": "Ways To Respond To Hello When someone says \"hello\", you can respond by saying \"hi\" or \"hello\" back to acknowledge their greeting and open up the conversation. You can also ask a question or comment on something to continue the interaction.",
+      "query": "How to respond to a greeting",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:19:50.066806"
+    },
+    {
+      "title": "Shop cool smart home devices - Amazon.com Official Site",
+      "content": "Browse & discover thousands of brands. Read customer reviews & find best sellers. Find deals and low prices on cool smart home devices at Amazon.com",
+      "query": "smart home technology",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:20:08.153539"
+    },
+    {
+      "title": "The Best Smart Home Devices We've Tested for 2025 | PCMag",
+      "content": "We've tested hundreds of smart home products in more than 20 categories to help determine which ones are best for every room in (and out of) the house.",
+      "query": "smart home technology",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:20:08.153612"
+    },
+    {
+      "title": "Best Smart Home Devices 2025 - Forbes Vetted",
+      "content": "The best smart home devices will make your life easier, more efficient and more secure. We rounded up smart home devices based on testing, research and expert input.",
+      "query": "smart home technology",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:20:08.153671"
+    },
+    {
+      "title": "What is a smart home? Everything you need to know - TechTarget",
+      "content": "A smart home is a residence that uses internet-connected devices to enable the remote monitoring and management of appliances and systems, such as lighting and heating. Smart home technology -- also often referred to as home automation or domotics from the Latin word \"domus, \" meaning home -- provides homeowners security, comfort, convenience and energy efficiency by letting them control smart ...",
+      "query": "smart home technology",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:20:08.153733"
+    },
+    {
+      "title": "The best smart home devices 2025: smart speakers, lights, hubs, and ...",
+      "content": "With smart home tech, you can minimize the energy consumption of your smart lights by having them turn off automatically at certain times of day (or just change color for ambiance).",
+      "query": "smart home technology",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:20:08.153790"
+    },
+    {
+      "title": "How to Write a Book Report (Guide, Examples & Templates)",
+      "content": "Don't let a book report intimidate you. With this step-by-step guide, you'll learn how to write a book report to ace your assignment!",
+      "query": "Write a book report on Homecoming.",
+      "source": "research",
+      "learned_at": "2025-11-24T07:26:18.235397"
+    },
+    {
+      "title": "How to Write a Book Report, With Examples | Grammarly",
+      "content": "Writing a book report can be a daunting task, but it doesn't have to be. In essence, a book report is a summary of a book's content, structure, and analysis. It is a way for you to demonstrate your understanding of the book and its themes. A well-written book report can showcase your attention to detail, comprehension, and critical thinking skills.",
+      "query": "Write a book report on Homecoming.",
+      "source": "research",
+      "learned_at": "2025-11-24T07:26:18.235457"
+    },
+    {
+      "title": "How to Write a Book Report: A Step-by-Step Guide - wikiHow",
+      "content": "A book report is a short essay that summarizes and analyzes a work of fiction or nonfiction. Writing a book report may not seem fun at first, but it gives you a great chance to fully understand a work and its author. In this article, we'll teach you everything you need to know about how to write a book report, from choosing a book and outlining to drafting and editing your final paper.",
+      "query": "Write a book report on Homecoming.",
+      "source": "research",
+      "learned_at": "2025-11-24T07:26:18.235499"
+    },
+    {
+      "title": "Homecoming: Full Book Summary | SparkNotes",
+      "content": "A short summary of Cynthia Voigt&#39;s Homecoming. This free synopsis covers all the crucial plot points of Homecoming.",
+      "query": "Write a book report on Homecoming.",
+      "source": "research",
+      "learned_at": "2025-11-24T07:26:18.235534"
+    },
+    {
+      "title": "Book Report 101: How to Start, Write & Nail It Every Time",
+      "content": "Learn what a book report is and how to write one that stands out. Get step-by-step tips, templates, and examples to make your next book report easy and A+ worthy.",
+      "query": "Write a book report on Homecoming.",
+      "source": "research",
+      "learned_at": "2025-11-24T07:26:18.235569"
+    },
+    {
+      "title": "Heap Data Structure - GeeksforGeeks",
+      "content": "A Heap is a complete binary tree data structure that satisfies the heap property: for every node, the value of its children is greater than or equal to its own value. Heaps are usually used to implement priority queues, where the smallest (or largest) element is always at the root of the tree.",
+      "query": "heaps",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:28:02.566225"
+    },
+    {
+      "title": "Heap (data structure) - Wikipedia",
+      "content": "A heap is a tree-based data structure that satisfies the heap property: the key of a node is greater than or equal to the key of its parent in a max heap, or vice versa in a min heap. Learn about the operations, implementation, and variants of heaps, and how they are used in sorting and graph algorithms.",
+      "query": "heaps",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:28:02.566272"
+    },
+    {
+      "title": "Heaps | Brilliant Math & Science Wiki",
+      "content": "Heaps are tree-based data structures constrained by a heap property. Heaps are used in many famous algorithms such as Dijkstra's algorithm for finding the shortest path, the heap sort sorting algorithm, implementing priority queues, and more. Essentially, heaps are the data structure you want to use when you want to be able to access the maximum or minimum element very quickly. There are ...",
+      "query": "heaps",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:28:02.566310"
+    },
+    {
+      "title": "HEAPS Definition & Meaning - Merriam-Webster",
+      "content": "The meaning of HEAP is a collection of things thrown one on another : pile. How to use heap in a sentence.",
+      "query": "heaps",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:28:02.566344"
+    },
+    {
+      "title": "HEAPS | English meaning - Cambridge Dictionary",
+      "content": "HEAPS definition: 1. a lot: 2. a lot: . Learn more.",
+      "query": "heaps",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:28:02.566377"
+    },
+    {
+      "title": "Hash Table Data Structure - GeeksforGeeks",
+      "content": "What is Hash Table? A Hash table is defined as a data structure used to insert, look up, and remove key-value pairs quickly. It operates on the hashing concept, where each key is translated by a hash function into a distinct index in an array. The index functions as a storage location for the matching value.",
+      "query": "hash tables",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:28:13.875168"
+    },
+    {
+      "title": "Hash table - Wikipedia",
+      "content": "A small phone book as a hash table In computer science, a hash table is a data structure that implements an associative array, also called a dictionary or simply map; an associative array is an abstract data type that maps keys to values. [3] A hash table uses a hash function to compute an index, also called a hash code, into an array of buckets or slots, from which the desired value can be ...",
+      "query": "hash tables",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:28:13.875239"
+    },
+    {
+      "title": "Hash Tables - Princeton University",
+      "content": "Learn how to use arrays to store key-value pairs using hash functions that transform keys into indices. Explore different methods of handling collisions, such as linear probing, and their performance analysis.",
+      "query": "hash tables",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:28:13.875286"
+    },
+    {
+      "title": "Hash Tables with Python - W3Schools",
+      "content": "Hash Table A Hash Table is a data structure designed to be fast to work with. The reason Hash Tables are sometimes preferred instead of arrays or linked lists is because searching for, adding, and deleting data can be done really quickly, even for large amounts of data. In a Linked List, finding a person \"Bob\" takes time because we would have to go from one node to the next, checking each node ...",
+      "query": "hash tables",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:28:13.875335"
+    },
+    {
+      "title": "PDF 15-445/645 Database Systems (Spring 2024) - Lecture Notes - 07 Hash Tables",
+      "content": "Specialized hash table implementations based on the data type or size of keys: These could differ in the way they store data, perform splits, etc. For example, if we have string keys, we could store smaller strings in the original hash table and only a pointer or hash for larger strings.",
+      "query": "hash tables",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:28:13.875384"
+    },
+    {
+      "title": "Heap Sort - GeeksforGeeks",
+      "content": "Heap Sort is a comparison-based sorting algorithm based on the Binary Heap data structure. It is an optimized version of selection sort. The algorithm repeatedly finds the maximum (or minimum) element and swaps it with the last (or first) element.",
+      "query": "heap sort",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:34:16.348878"
+    },
+    {
+      "title": "Heapsort - Wikipedia",
+      "content": "Heapsort is a comparison-based sorting algorithm that builds a heap and extracts the largest element repeatedly. Learn how it works, its worst-case and average complexity, and its implementation in pseudocode.",
+      "query": "heap sort",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:34:16.348947"
+    },
+    {
+      "title": "Heap Sort (With Code in Python, C++, Java and C) - Programiz",
+      "content": "Learn how to implement heap sort, a popular and efficient sorting algorithm, using arrays and trees. Understand the concepts of heap data structure, heapify, and heap sort steps with examples and code in Python, C++, Java and C.",
+      "query": "heap sort",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:34:16.349016"
+    },
+    {
+      "title": "Heap Sort Algorithm - Online Tutorials Library",
+      "content": "Learn how to sort elements using a heap data structure, which is a nearly-complete binary tree with minimum or maximum parent nodes. See the algorithm, analysis, example, and implementation in C, C++, Java, and Python.",
+      "query": "heap sort",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:34:16.349075"
+    },
+    {
+      "title": "Heapsort Explained: Algorithm, Implementation, and Complexity Analysis",
+      "content": "Heapsort is a comparison-based sorting algorithm which uses a binary heap to efficiently sort arrays in O (n log n) time complexity. Heapsort sorts arrays by inserting the data into the heap and then repeatedly extracting the root of the heap.",
+      "query": "heap sort",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:34:16.349133"
+    },
+    {
+      "title": "Decrypt MD5, SHA1, MySQL, NTLM, SHA256, MD5 Email, SHA256 Email, SHA512 ...",
+      "content": "Hashes.com is a hash lookup service that allows you to input and search for plaintext corresponding to MD5, SHA1, MySQL, NTLM, SHA256, MD5 Email, SHA256 Email, SHA512, Wordpress, Bcrypt hashes. It uses a database of already-cracked hashes from many sources and shows the algorithm and salt of founds.",
+      "query": "hash search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:50:33.347840"
+    },
+    {
+      "title": "Hash decoder and calculator (hash and unhash) - MD5Hashing",
+      "content": "Try various hashing functions, discover hash database, and decode/unhash hash digest via reverse lookup",
+      "query": "hash search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:50:33.347871"
+    },
+    {
+      "title": "Hash Decrypter - Unhash Password (+Salt) - Online Decoder",
+      "content": "A hash function is an algorithm that takes data of any size as input and transforms it into a fixed-size value, called a fingerprint or hash. This transformation is unidirectional, which means that it is difficult (if not impossible) to return to the original data from the hash (which is very useful in computer science and cryptography).",
+      "query": "hash search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:50:33.347895"
+    },
+    {
+      "title": "Online Hash Recovery & Decoding \u2014 MD5, SHA256, NTLM, bcrypt",
+      "content": "Online hash decoding and recovery tool. Detect hash type, decode passwords, and assess strength \u2014 for security teams, pentesters, and sysadmins",
+      "query": "hash search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:50:33.347918"
+    },
+    {
+      "title": "Hash Analyzer - TunnelsUp",
+      "content": "The aim of this online tool is to help identify a hash type. The tool can look at the characters that make up the hash to possibly identify which type of hash it is and what it may be used for.",
+      "query": "hash search",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T07:50:33.347940"
+    },
+    {
+      "title": "High-performance Computing - High-Performance VNX",
+      "content": "Achieve modular, reliable VNX performance\u2014trusted by industry leaders. Elma masters scalable, compliant VNX architecture for mission-critical needs.",
+      "query": "high performance computing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:39:19.875248"
+    },
+    {
+      "title": "Fastest AI-Ready Performance - Quobyte\u00ae",
+      "content": "Quobyte's converged AI storage lowers latencies, power consumption and cost. Quobyte delivers performance, bulletproof resiliency, and smartphone-like simplicity.",
+      "query": "high performance computing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:39:19.875284"
+    },
+    {
+      "title": "High-performance computing - Wikipedia",
+      "content": "High-performance computing The Center for Nanoscale Materials at the Advanced Photon Source High-performance computing (HPC) is the use of supercomputers and computer clusters to solve advanced problems.",
+      "query": "high performance computing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:39:19.875314"
+    },
+    {
+      "title": "What is high-performance computing (HPC)? - IBM",
+      "content": "What is high-performance computing (HPC)? HPC is a technology that uses clusters of powerful processors that work in parallel to process massive, multidimensional data sets and solve complex problems at extremely high speeds. HPC solves some of today's most complex computing problems in real-time.",
+      "query": "high performance computing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:39:19.875343"
+    },
+    {
+      "title": "WAVE HPC - Santa Clara University",
+      "content": "The WAVE High Performance Computing (HPC) Center is a state-of-the-art computing facility serving the research computational needs of the Santa Clara University community. The center is a central part of WAVE within the university. Comprising high-performance computing resources, large data storage, and an advanced visualization laboratory, WAVE enables a diverse range of faculty research as ...",
+      "query": "high performance computing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T08:39:19.875376"
+    },
+    {
+      "title": "HTML Semantic Elements - W3Schools",
+      "content": "Learn how to use semantic elements in HTML to clearly describe the meaning of your content to browsers and developers. See examples of elements and how to style them with CSS.",
+      "query": "semantic HTML",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:31:23.427806"
+    },
+    {
+      "title": "2. Semantic HTML - MDN Web Docs",
+      "content": "HTML is the technology that defines the content and structure of any website. Written properly, it should also define the semantics (meaning) of the content in a machine-readable way, which is vital for accessibility, search engine optimization, and making use of the built-in features browsers provide for content to work optimally.",
+      "query": "semantic HTML",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:31:23.427876"
+    },
+    {
+      "title": "Semantic HTML - web.dev",
+      "content": "Semantic means \"relating to meaning\". Writing semantic HTML means using HTML elements to structure your content based on each element's meaning, not its appearance. This series hasn't covered many HTML elements yet, but even without knowing HTML, the following two code snippets show how semantic markup can give content context.",
+      "query": "semantic HTML",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:31:23.427938"
+    },
+    {
+      "title": "What Is Semantic HTML and Why You Should Use It - ThoughtCo",
+      "content": "Learn how semantic HTML helps web pages communicate their meaning to humans and search engines. Find out which HTML tags are semantic and how to use them correctly.",
+      "query": "semantic HTML",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:31:23.427998"
+    },
+    {
+      "title": "What is Semantic HTML & Why Is It Important for Accessibility?",
+      "content": "Semantic HTML is a way of writing HTML elements that describe their meaning and purpose, such as , , , and . Learn why semantic HTML is important for accessibility, SEO, and readability, and see examples of semantic HTML tags.",
+      "query": "semantic HTML",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T09:31:23.428058"
+    },
+    {
+      "title": "Official site",
+      "content": "hadoop.apache.org Apache Hadoop",
+      "query": "Apache Hadoop",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T11:03:37.807840"
+    },
+    {
+      "title": "Apache Hadoop",
+      "content": "Apache Hadoop is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models. Learn more about its features, modules, releases, and related projects on the official website.",
+      "query": "Apache Hadoop",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T11:03:37.807924"
+    },
+    {
+      "title": "Apache Hadoop - Wikipedia",
+      "content": "Apache Hadoop is a framework for distributed computing and storage of big data using the MapReduce model. Learn about its history, modules, components, and ecosystem from this comprehensive article.",
+      "query": "Apache Hadoop",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T11:03:37.807989"
+    },
+    {
+      "title": "Apache Hadoop: What is it and how can you use it? - Databricks",
+      "content": "Apache Hadoop is an open source platform for big data processing and storage that distributes jobs across a cluster of nodes. Learn about Hadoop's history, programming, database, impact and applications in various industries.",
+      "query": "Apache Hadoop",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T11:03:37.808053"
+    },
+    {
+      "title": "Introduction to Hadoop - GeeksforGeeks",
+      "content": "Hadoop is an open-source software framework that is used for storing and processing large amounts of data in a distributed computing environment. It is designed to handle big data and is based on the MapReduce programming model, which allows for the parallel processing of large datasets.",
+      "query": "Apache Hadoop",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T11:03:37.808117"
+    },
+    {
+      "title": "Hyperparameter Tuning - GeeksforGeeks",
+      "content": "Hyperparameter tuning is the process of selecting the optimal values for a machine learning model's hyperparameters. These are typically set before the actual training process begins and control aspects of the learning process itself. Effective tuning helps the model learn better patterns, avoid overfitting or underfitting and achieve higher accuracy on unseen data. Techniques for ...",
+      "query": "hyperparameter tuning",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:30:41.157320"
+    },
+    {
+      "title": "A Comprehensive Guide to Hyperparameter Tuning in Machine Learning",
+      "content": "Hyperparameter tuning is one of the most crucial steps in building high-performing machine learning models. Unlike model parameters, which are learned from the data, hyperparameters control how a ...",
+      "query": "hyperparameter tuning",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:30:41.157382"
+    },
+    {
+      "title": "What is hyperparameter tuning? - IBM",
+      "content": "Hyperparameter tuning is the practice of identifying and selecting the optimal hyperparameters for use in training a machine learning model. When performed correctly, hyperparameter tuning minimizes the loss function of a machine learning model, which means that the model performance is trained to be as accurate as possible.",
+      "query": "hyperparameter tuning",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:30:41.157431"
+    },
+    {
+      "title": "What is Hyperparameter Tuning? - Hyperparameter Tuning Methods ...",
+      "content": "Hyperparameter tuning allows data scientists to tweak model performance for optimal results. This process is an essential part of machine learning, and choosing appropriate hyperparameter values is crucial for success. For example, assume you're using the learning rate of the model as a hyperparameter.",
+      "query": "hyperparameter tuning",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:30:41.157480"
+    },
+    {
+      "title": "Hyperparameter optimization - Wikipedia",
+      "content": "Learn about the problem and methods of choosing optimal hyperparameters for machine learning algorithms. Compare grid search, random search, Bayesian optimization, gradient-based optimization, evolutionary optimization and population-based training.",
+      "query": "hyperparameter tuning",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T13:30:41.157525"
+    },
+    {
+      "title": "Handling Missing Data Better: A Decision Tree Approach - Statology",
+      "content": "In this article, we'll walk through a systematic approach to handling missing data, helping you make informed choices at each step of the process.",
+      "query": "missing data handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:10:39.349671"
+    },
+    {
+      "title": "Top Techniques to Handle Missing Values Every Data Scientist Should ...",
+      "content": "The Handling Missing Data with Imputations in R course is a great resource to learn more about strategies to handle missing values. It covers how to apply visualization and statistical tests to recognize missing data patterns and how to impute them with both statistical and machine learning technics.",
+      "query": "missing data handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:10:39.349730"
+    },
+    {
+      "title": "ML | Handling Missing Values - GeeksforGeeks",
+      "content": "Data processing issues: Errors that occur during data preparation. By identifying the reason behind the missing data, we can better assess its impact whether it's causing bias or affecting the analysis and select the proper handling method such as imputation or removal.",
+      "query": "missing data handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:10:39.349776"
+    },
+    {
+      "title": "Missing Values in Data: What It Is and How to Handle It",
+      "content": "In this guide, we'll cover all the fundamentals: what missing values are, why they matter, and how to handle missing data.",
+      "query": "missing data handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:10:39.349818"
+    },
+    {
+      "title": "Procedure for Handling Missing Data in Statistical Analysis",
+      "content": "Procedure for Handling Missing Data in Statistical Analysis by Brice GUTHE, Gabriel Mabou, Peter Ebasone | Nov 24, 2025 | Biostatistics A problem frequently encountered by many researchers and unfortunately not well documented is how to handle missing data within a dataset to ensure optimal analysis.",
+      "query": "missing data handling",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T14:10:39.349861"
+    },
+    {
+      "title": "Hypothesis Testing - GeeksforGeeks",
+      "content": "Hypothesis testing compares two opposite ideas about a group of people or things and uses data from a small part of that group (a sample) to decide which idea is more likely true. We collect and study the sample data to check if the claim is correct. Hypothesis Testing For example, if a company says its website gets 50 visitors each day on average, we use hypothesis testing to look at past ...",
+      "query": "hypothesis testing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:20:19.936016"
+    },
+    {
+      "title": "Hypothesis Testing: Uses, Steps & Example - Statistics by Jim",
+      "content": "Learn how to use hypothesis testing to evaluate the validity of new theories and effects in populations. Follow the five steps of significance testing with a practical example of a new educational program.",
+      "query": "hypothesis testing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:20:19.936090"
+    },
+    {
+      "title": "Hypothesis Testing | A Step-by-Step Guide with Easy Examples",
+      "content": "Learn how to test your research ideas using statistics and hypothesis testing. Follow the 5 main steps: state your null and alternate hypothesis, collect data, perform a statistical test, decide whether to reject or fail to reject your null hypothesis, and present your findings.",
+      "query": "hypothesis testing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:20:19.936148"
+    },
+    {
+      "title": "Hypothesis Testing - Definition, Examples, Formula, Types",
+      "content": "Learn how to perform hypothesis testing to make statistical inferences about the population data. Find out the types, steps, formulas, and examples of hypothesis testing with z, t, and chi-square tests.",
+      "query": "hypothesis testing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:20:19.936206"
+    },
+    {
+      "title": "Hypothesis Testing - Statistics How To",
+      "content": "What is a Hypothesis Testing? Explained in simple terms with step by step examples. Hundreds of articles, videos and definitions. Statistics made easy!",
+      "query": "hypothesis testing",
+      "source": "duckduckgo",
+      "learned_at": "2025-11-24T16:20:19.936260"
+    },
+    {
+      "title": "About Haiku 4.5",
+      "content": "Haiku 4.5 is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Haiku 4.5",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:22:40.535403"
+    },
+    {
+      "title": "About error handling",
+      "content": "error handling is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "error handling",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:32:34.836151"
+    },
+    {
+      "title": "About exception handling",
+      "content": "exception handling is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "exception handling",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:32:45.408642"
+    },
+    {
+      "title": "About code hosting",
+      "content": "code hosting is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "code hosting",
+      "source": "structured",
+      "learned_at": "2025-11-24T19:39:12.068931"
+    },
+    {
+      "title": "About human centered design",
+      "content": "human centered design is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "human centered design",
+      "source": "structured",
+      "learned_at": "2025-11-25T07:27:55.262103"
+    },
+    {
+      "title": "About headless CMS",
+      "content": "headless CMS is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "headless CMS",
+      "source": "structured",
+      "learned_at": "2025-11-25T07:51:11.392424"
+    },
+    {
+      "title": "About Harvard style",
+      "content": "Harvard style is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Harvard style",
+      "source": "structured",
+      "learned_at": "2025-11-25T16:59:30.510051"
+    },
+    {
+      "title": "About evidence hierarchy",
+      "content": "evidence hierarchy is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "evidence hierarchy",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:08:30.837862"
+    },
+    {
+      "title": "About health research",
+      "content": "health research is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "health research",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:09:21.372534"
+    },
+    {
+      "title": "About public health",
+      "content": "public health is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "public health",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:09:31.505984"
+    },
+    {
+      "title": "About hydroelectric power",
+      "content": "hydroelectric power is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hydroelectric power",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:14:04.660616"
+    },
+    {
+      "title": "About HIPAA",
+      "content": "HIPAA is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "HIPAA",
+      "source": "structured",
+      "learned_at": "2025-11-25T17:30:05.070971"
+    },
+    {
+      "title": "About happens before",
+      "content": "happens before is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "happens before",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:09:30.761077"
+    },
+    {
+      "title": "About lock free hash tables",
+      "content": "lock free hash tables is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "lock free hash tables",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:13:13.256550"
+    },
+    {
+      "title": "About concurrent hash maps",
+      "content": "concurrent hash maps is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "concurrent hash maps",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:13:43.600280"
+    },
+    {
+      "title": "About health checks",
+      "content": "health checks is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "health checks",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:54:45.018811"
+    },
+    {
+      "title": "About null hypothesis",
+      "content": "null hypothesis is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "null hypothesis",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:57:06.516858"
+    },
+    {
+      "title": "About alternative hypothesis",
+      "content": "alternative hypothesis is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "alternative hypothesis",
+      "source": "structured",
+      "learned_at": "2025-11-25T18:57:16.623671"
+    },
+    {
+      "title": "The Physics of Soccer: Unlocking the Science Behind the Game",
+      "content": "Soccer isn't just about agility and skill; it's a showcase of real-world physics in motion. From the player's kick to the ball's flight path, every movement is governed by fundamental principles of physics. Let's explore the fascinating science behind soccer, diving deeper into the mechanics of kicks, playing surfaces, and the iconic Magnus Effect. Differentiating Newton's Second ...",
+      "query": "Hello What is physics? What is soccer?",
+      "source": "research",
+      "learned_at": "2025-11-25T19:13:45.889415"
+    },
+    {
+      "title": "The Physics of Soccer - SoccerManiak",
+      "content": "In the physics of soccer unbalanced force is usually the player's foot. The player will use muscle in the body to create a force to move the leg and kick the ball. Because the ball is at rest, it will continue to stay at rest but once kicked, it will keep moving in a straight line without any intent of stopping because of the physics of soccer.",
+      "query": "Hello What is physics? What is soccer?",
+      "source": "research",
+      "learned_at": "2025-11-25T19:13:45.889519"
+    },
+    {
+      "title": "The Science Behind Soccer: Physics and Football",
+      "content": "Soccer is more than just a game\u2014it's a science. The physics behind the trajectory of a shot, the Magnus effect of spin, the momentum in passing, and the role of friction all contribute to the excitement and skill of the sport.",
+      "query": "Hello What is physics? What is soccer?",
+      "source": "research",
+      "learned_at": "2025-11-25T19:13:45.889595"
+    },
+    {
+      "title": "Physics Of Soccer",
+      "content": "The Physics Of Soccer - Kicking Kicking is fundamental to soccer. It is informative to analyze a soccer kick using physics. The schematic below illustrates a kick in action. To analyze the kick we can treat it as an inelastic collision in one dimension, between soccer ball and foot. For inelastic collisions there exists an equation which accounts for the inelastic nature of the collision ...",
+      "query": "Hello What is physics? What is soccer?",
+      "source": "research",
+      "learned_at": "2025-11-25T19:13:45.889671"
+    },
+    {
+      "title": "PDF The Simple Physics of Soccer",
+      "content": "The Simple Physics of Soccer Everyone knows that kicking a soccer ball causes it to roll across the grass. But what makes this happen? What is required to make the ball move faster? What's the difference, in other words, between passing the soccer ball to a teammate and shooting for the goal?",
+      "query": "Hello What is physics? What is soccer?",
+      "source": "research",
+      "learned_at": "2025-11-25T19:13:45.889749"
+    },
+    {
+      "title": "About heatmaps",
+      "content": "heatmaps is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "heatmaps",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:17:00.737902"
+    },
+    {
+      "title": "About hierarchical clustering",
+      "content": "hierarchical clustering is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hierarchical clustering",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:21:43.899396"
+    },
+    {
+      "title": "About hyperautomation",
+      "content": "hyperautomation is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hyperautomation",
+      "source": "structured",
+      "learned_at": "2025-11-25T19:37:54.704944"
+    },
+    {
+      "title": "About host country supervision",
+      "content": "host country supervision is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "host country supervision",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:57:56.921102"
+    },
+    {
+      "title": "About home country supervision",
+      "content": "home country supervision is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "home country supervision",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:58:07.047462"
+    },
+    {
+      "title": "About harmonization",
+      "content": "harmonization is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "harmonization",
+      "source": "structured",
+      "learned_at": "2025-11-25T20:59:07.727710"
+    },
+    {
+      "title": "About historical data",
+      "content": "historical data is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "historical data",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:07:43.476359"
+    },
+    {
+      "title": "About human resource management",
+      "content": "human resource management is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "human resource management",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:18:10.824590"
+    },
+    {
+      "title": "About HRM",
+      "content": "HRM is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "HRM",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:18:20.931276"
+    },
+    {
+      "title": "About human capital management",
+      "content": "human capital management is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "human capital management",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:18:31.049731"
+    },
+    {
+      "title": "About HCM",
+      "content": "HCM is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "HCM",
+      "source": "structured",
+      "learned_at": "2025-11-25T21:18:41.173301"
+    },
+    {
+      "title": "About hiring",
+      "content": "hiring is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hiring",
+      "source": "structured",
+      "learned_at": "2025-11-25T22:07:47.732949"
+    },
+    {
+      "title": "About hands-on learning",
+      "content": "hands-on learning is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hands-on learning",
+      "source": "structured",
+      "learned_at": "2025-11-26T07:49:27.373013"
+    },
+    {
+      "title": "About humanism",
+      "content": "humanism is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "humanism",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:09:02.006580"
+    },
+    {
+      "title": "11 Phrases Brilliant People Use To Politely Say 'Are You Stupid?'",
+      "content": "Many of the phrases brilliant people use to politely say \"Are you stupid?\" actually call people back into conversations, urging them to expand their knowledge, consider things they hadn't thought ...",
+      "query": "So who is it Hello are you dumb",
+      "source": "research",
+      "learned_at": "2025-11-26T08:16:01.147685"
+    },
+    {
+      "title": "17 Ways To Tell Someone \"You're Stupid\" Politely.",
+      "content": "But you can't because that's very impolite. But how are they going to know they're stupid if nobody mentions it? Well, you can subtly say it in more euphemistic ways. Reddit user u/lientubay started the following Reddit thread: \"What's the best euphemism for telling people that they're stupid?\"",
+      "query": "So who is it Hello are you dumb",
+      "source": "research",
+      "learned_at": "2025-11-26T08:16:01.147974"
+    },
+    {
+      "title": "Am I Stupid? This 100% Honest Quiz is Going to Reveal It",
+      "content": "The Am I Stupid QUIZ Is Not for Shaming You! All the ideas and the questions presented in this quiz are not meant to be for shaming. The kind of foolishness that we talk about is not related to your IQ or any other characteristics. The only purpose of the Am I Dumb test is to see if your deeds are unnecessarily damaging or not.",
+      "query": "So who is it Hello are you dumb",
+      "source": "research",
+      "learned_at": "2025-11-26T08:16:01.148273"
+    },
+    {
+      "title": "Dumb Test: Am I Dumb? Let's Test! - ProProfs Quiz",
+      "content": "Are you curious to if your decision-making or problem-solving skills could use some improvement? The \"Am I Dumb?\" quiz is designed to assess various cognitive abilities and reactions to everyday situations. This quiz challenges your memory, reasoning, and quick-thinking capabilities, helping you understand how you approach tasks and decision-making. This dumb test is not about ...",
+      "query": "So who is it Hello are you dumb",
+      "source": "research",
+      "learned_at": "2025-11-26T08:16:01.148590"
+    },
+    {
+      "title": "How to use polite alternatives for calling someone \"dumb\" in English",
+      "content": "We all know that calling someone \"dumb,\" \"stupid,\" or \"dimwitted\" isn't exactly nice, polite, or politically correct. But let's face it, there are times when certain individuals make us want to use those words. So, how can we express our thoughts tactfully? In this article, we'll the art of calling someone \"dumb\" in English in a more polite way \u2014 the right way. Finding polite ...",
+      "query": "So who is it Hello are you dumb",
+      "source": "research",
+      "learned_at": "2025-11-26T08:16:01.148917"
+    },
+    {
+      "title": "About hackathons",
+      "content": "hackathons is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hackathons",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:23:31.521634"
+    },
+    {
+      "title": "About habituation",
+      "content": "habituation is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "habituation",
+      "source": "structured",
+      "learned_at": "2025-11-26T08:36:51.047968"
+    },
+    {
+      "title": "About helpful",
+      "content": "helpful is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "helpful",
+      "source": "structured",
+      "learned_at": "2025-11-26T13:31:01.698110"
+    },
+    {
+      "title": "About heterogeneity",
+      "content": "heterogeneity is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "heterogeneity",
+      "source": "structured",
+      "learned_at": "2025-11-26T15:33:46.771989"
+    },
+    {
+      "title": "About homogeneity",
+      "content": "homogeneity is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "homogeneity",
+      "source": "structured",
+      "learned_at": "2025-11-26T15:33:56.886139"
+    },
+    {
+      "title": "About hybrid",
+      "content": "hybrid is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hybrid",
+      "source": "structured",
+      "learned_at": "2025-11-26T16:20:01.780804"
+    },
+    {
+      "title": "About hybridization",
+      "content": "hybridization is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hybridization",
+      "source": "structured",
+      "learned_at": "2025-11-26T16:34:10.534919"
+    },
+    {
+      "title": "About hydrology",
+      "content": "hydrology is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hydrology",
+      "source": "structured",
+      "learned_at": "2025-11-26T17:19:28.819877"
+    },
+    {
+      "title": "About hydrogeology",
+      "content": "hydrogeology is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hydrogeology",
+      "source": "structured",
+      "learned_at": "2025-11-26T17:19:38.938478"
+    },
+    {
+      "title": "About Hinduism",
+      "content": "Hinduism is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Hinduism",
+      "source": "structured",
+      "learned_at": "2025-11-26T19:06:03.436181"
+    },
+    {
+      "title": "About hermeticism",
+      "content": "hermeticism is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hermeticism",
+      "source": "structured",
+      "learned_at": "2025-11-26T19:25:13.437603"
+    },
+    {
+      "title": "About Haumea",
+      "content": "Haumea is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Haumea",
+      "source": "structured",
+      "learned_at": "2025-11-26T20:49:54.170048"
+    },
+    {
+      "title": "About potentially hazardous asteroids",
+      "content": "potentially hazardous asteroids is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "potentially hazardous asteroids",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:22:20.380207"
+    },
+    {
+      "title": "About Holocene extinction",
+      "content": "Holocene extinction is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Holocene extinction",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:24:31.917673"
+    },
+    {
+      "title": "About human impact",
+      "content": "human impact is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "human impact",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:25:02.272267"
+    },
+    {
+      "title": "About World Heritage Sites",
+      "content": "World Heritage Sites is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "World Heritage Sites",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:27:23.936469"
+    },
+    {
+      "title": "About human rights",
+      "content": "human rights is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "human rights",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:30:15.879285"
+    },
+    {
+      "title": "About right to a healthy environment",
+      "content": "right to a healthy environment is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "right to a healthy environment",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:31:56.993553"
+    },
+    {
+      "title": "About right to housing",
+      "content": "right to housing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "right to housing",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:32:37.466078"
+    },
+    {
+      "title": "About right to healthcare",
+      "content": "right to healthcare is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "right to healthcare",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:32:57.690791"
+    },
+    {
+      "title": "About health policy",
+      "content": "health policy is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "health policy",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:46:46.972225"
+    },
+    {
+      "title": "About humanitarian policy",
+      "content": "humanitarian policy is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "humanitarian policy",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:51:20.022468"
+    },
+    {
+      "title": "About temporary housing",
+      "content": "temporary housing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "temporary housing",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:54:32.177698"
+    },
+    {
+      "title": "About permanent housing",
+      "content": "permanent housing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "permanent housing",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:54:42.293646"
+    },
+    {
+      "title": "About housing policy",
+      "content": "housing policy is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "housing policy",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:54:52.409167"
+    },
+    {
+      "title": "About affordable housing",
+      "content": "affordable housing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "affordable housing",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:55:02.518613"
+    },
+    {
+      "title": "About social housing",
+      "content": "social housing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "social housing",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:55:12.639523"
+    },
+    {
+      "title": "About public housing",
+      "content": "public housing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "public housing",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:55:22.751036"
+    },
+    {
+      "title": "About cooperative housing",
+      "content": "cooperative housing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "cooperative housing",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:55:32.861367"
+    },
+    {
+      "title": "About community housing",
+      "content": "community housing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "community housing",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:55:42.976848"
+    },
+    {
+      "title": "About sustainable housing",
+      "content": "sustainable housing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "sustainable housing",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:55:53.092657"
+    },
+    {
+      "title": "About passive house",
+      "content": "passive house is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "passive house",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:56:43.654446"
+    },
+    {
+      "title": "About hydropower",
+      "content": "hydropower is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hydropower",
+      "source": "structured",
+      "learned_at": "2025-11-26T21:58:04.540502"
+    },
+    {
+      "title": "About hydraulic fracturing",
+      "content": "hydraulic fracturing is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hydraulic fracturing",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:00:46.288183"
+    },
+    {
+      "title": "About hard rock mining",
+      "content": "hard rock mining is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hard rock mining",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:02:47.658802"
+    },
+    {
+      "title": "About hydroponics",
+      "content": "hydroponics is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hydroponics",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:10:32.797698"
+    },
+    {
+      "title": "About hardware engineering",
+      "content": "hardware engineering is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hardware engineering",
+      "source": "structured",
+      "learned_at": "2025-11-26T22:17:47.503296"
+    },
+    {
+      "title": "About Honduras",
+      "content": "Honduras is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Honduras",
+      "source": "structured",
+      "learned_at": "2025-11-26T23:45:14.177199"
+    },
+    {
+      "title": "About Haiti",
+      "content": "Haiti is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Haiti",
+      "source": "structured",
+      "learned_at": "2025-11-27T00:01:17.996624"
+    },
+    {
+      "title": "About hockey game",
+      "content": "hockey game is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hockey game",
+      "source": "structured",
+      "learned_at": "2025-11-27T02:59:52.584751"
+    },
+    {
+      "title": "About hockey match",
+      "content": "hockey match is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hockey match",
+      "source": "structured",
+      "learned_at": "2025-11-27T03:15:31.051294"
+    },
+    {
+      "title": "About hockey tournament",
+      "content": "hockey tournament is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hockey tournament",
+      "source": "structured",
+      "learned_at": "2025-11-27T03:15:41.161170"
+    },
+    {
+      "title": "About hockey league",
+      "content": "hockey league is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hockey league",
+      "source": "structured",
+      "learned_at": "2025-11-27T03:15:51.264942"
+    },
+    {
+      "title": "About hockey team",
+      "content": "hockey team is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hockey team",
+      "source": "structured",
+      "learned_at": "2025-11-27T03:16:01.372239"
+    },
+    {
+      "title": "About hockey player",
+      "content": "hockey player is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hockey player",
+      "source": "structured",
+      "learned_at": "2025-11-27T03:16:11.474752"
+    },
+    {
+      "title": "About hockey coach",
+      "content": "hockey coach is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hockey coach",
+      "source": "structured",
+      "learned_at": "2025-11-27T03:16:21.580386"
+    },
+    {
+      "title": "About hockey manager",
+      "content": "hockey manager is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hockey manager",
+      "source": "structured",
+      "learned_at": "2025-11-27T03:31:54.986313"
+    },
+    {
+      "title": "About hockey referee",
+      "content": "hockey referee is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hockey referee",
+      "source": "structured",
+      "learned_at": "2025-11-27T03:32:05.097665"
+    },
+    {
+      "title": "About habit",
+      "content": "habit is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "habit",
+      "source": "structured",
+      "learned_at": "2025-11-27T11:14:23.091250"
+    },
+    {
+      "title": "About harmony",
+      "content": "harmony is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "harmony",
+      "source": "structured",
+      "learned_at": "2025-11-27T11:19:32.065657"
+    },
+    {
+      "title": "About health",
+      "content": "health is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "health",
+      "source": "structured",
+      "learned_at": "2025-11-27T11:19:42.177102"
+    },
+    {
+      "title": "About height",
+      "content": "height is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "height",
+      "source": "structured",
+      "learned_at": "2025-11-27T11:19:52.278815"
+    },
+    {
+      "title": "About history",
+      "content": "history is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "history",
+      "source": "structured",
+      "learned_at": "2025-11-27T11:20:02.387585"
+    },
+    {
+      "title": "About honor",
+      "content": "honor is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "honor",
+      "source": "structured",
+      "learned_at": "2025-11-27T11:20:12.487958"
+    },
+    {
+      "title": "About hope",
+      "content": "hope is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hope",
+      "source": "structured",
+      "learned_at": "2025-11-27T11:36:08.087080"
+    },
+    {
+      "title": "About horror",
+      "content": "horror is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "horror",
+      "source": "structured",
+      "learned_at": "2025-11-27T11:36:18.194477"
+    },
+    {
+      "title": "About Haskell programming",
+      "content": "Haskell programming is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "Haskell programming",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:07:31.701435"
+    },
+    {
+      "title": "About python file handling",
+      "content": "python file handling is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "python file handling",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:11:24.271050"
+    },
+    {
+      "title": "About python exception handling",
+      "content": "python exception handling is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "python exception handling",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:11:34.397281"
+    },
+    {
+      "title": "About javascript hoisting",
+      "content": "javascript hoisting is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "javascript hoisting",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:13:25.645114"
+    },
+    {
+      "title": "About javascript event handling",
+      "content": "javascript event handling is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "javascript event handling",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:15:26.978200"
+    },
+    {
+      "title": "About react hooks",
+      "content": "react hooks is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "react hooks",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:15:47.204020"
+    },
+    {
+      "title": "About hash functions",
+      "content": "hash functions is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hash functions",
+      "source": "structured",
+      "learned_at": "2025-11-27T22:43:15.644270"
+    },
+    {
+      "title": "About hypervisors",
+      "content": "hypervisors is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hypervisors",
+      "source": "structured",
+      "learned_at": "2025-11-28T06:11:34.230329"
+    },
+    {
+      "title": "About HTTP protocol",
+      "content": "HTTP protocol is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "HTTP protocol",
+      "source": "structured",
+      "learned_at": "2025-11-28T07:38:46.624562"
+    },
+    {
+      "title": "About HTTPS protocol",
+      "content": "HTTPS protocol is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "HTTPS protocol",
+      "source": "structured",
+      "learned_at": "2025-11-28T07:56:12.486641"
+    },
+    {
+      "title": "About smart home technology",
+      "content": "smart home technology is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "smart home technology",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:07:44.117140"
+    },
+    {
+      "title": "About heaps",
+      "content": "heaps is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "heaps",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:14:38.393364"
+    },
+    {
+      "title": "About hash tables",
+      "content": "hash tables is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hash tables",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:14:48.498035"
+    },
+    {
+      "title": "About heap sort",
+      "content": "heap sort is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "heap sort",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:23:43.597149"
+    },
+    {
+      "title": "About hash search",
+      "content": "hash search is an important topic in technology and science. It involves various concepts, principles, and applications that are relevant to modern computing and innovation.",
+      "query": "hash search",
+      "source": "structured",
+      "learned_at": "2025-11-28T08:24:44.239164"
+    },
+    {
+      "title": "HI | English meaning - Cambridge Dictionary",
+      "content": "HI definition: 1. used as an informal greeting, usually to people who you know: 2. written abbreviation for the\u2026. more.",
+      "query": "hi\\",
+      "source": "research",
+      "learned_at": "2025-11-28T09:17:29.021348"
+    },
+    {
+      "title": "HI Definition & Meaning - Merriam-Webster",
+      "content": "The meaning of HI is \u2014used especially as a greeting. How to use hi in a sentence.",
+      "query": "hi\\",
+      "source": "research",
+      "learned_at": "2025-11-28T09:17:29.021477"
+    },
+    {
+      "title": "Hi - meaning, definition, etymology, examples and more<br/> \u2014 Self ...",
+      "content": "The full meaning of \"hi,\" its surprising etymology, and common uses. This entry covers definitions, examples, and phrases, offering a comprehensive look at this everyday greeting.",
+      "query": "hi\\",
+      "source": "research",
+      "learned_at": "2025-11-28T09:17:29.021612"
+    },
+    {
+      "title": "Hi Definition & Meaning | YourDictionary",
+      "content": "Hi definition: Used to express greeting.Origin of Hi American English (first recorded reference is to speech of a Kansas Indian), originally to attract attention, probably a variant of Middle English hy, hey (circa 1475) also an exclamation to call attention. From Wiktionary",
+      "query": "hi\\",
+      "source": "research",
+      "learned_at": "2025-11-28T09:17:29.021773"
+    },
+    {
+      "title": "HI definition and meaning | Collins English Dictionary",
+      "content": "The meaning, pronunciation, and usage of 'hi' and other words that 'hi' in English. Find synonyms, examples, and translations of 'hi' in different languages.",
+      "query": "hi\\",
+      "source": "research",
+      "learned_at": "2025-11-28T09:17:29.021895"
+    },
+    {
+      "title": "George Harrison - What Is Life Lyrics | Genius Lyrics",
+      "content": "What Is Life Lyrics: What I feel / I can't say / But my love is there for you anytime of day / But if it's not love / That you need / Then I'll try my best to make everything succeed / Tell me ...",
+      "query": "hey what is life what is life",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:12.916259"
+    },
+    {
+      "title": "What Is Life by George Harrison Lyrics Meaning - The Anthemic Search ...",
+      "content": "At its core, 'What Is Life' is a reflection of Harrison's personal growth during a period that saw the end of the Beatles and the beginning of his solo career. The lyrics, beaming with vulnerability and desire, delve into the singer's search for meaning within and without the context of a significant relationship.",
+      "query": "hey what is life what is life",
+      "source": "research",
+      "learned_at": "2025-11-28T15:46:12.916547"
+    },
+    {
+      "title": "Haryana - Wikipedia",
+      "content": "Haryana surrounds the country's capital territory of Delhi on three sides (north, west and south), consequently, a large area of Haryana state is included in the economically important National Capital Region of India for the purposes of planning and development.",
+      "query": "What's the capital of Haryana?",
+      "source": "research",
+      "learned_at": "2025-11-28T15:53:35.790045"
+    },
+    {
+      "title": "Haryana | History, Capital, Population, Map, & Government - Britannica",
+      "content": "Haryana, state in north-central India. The city of Chandigarh, within the Chandigarh union territory, serves as the capital of that territory and also the states of Haryana and Punjab. Haryana was created in 1966 from the partition of the former state of Punjab into Punjabi-speaking Punjab and Hindi-speaking Haryana.",
+      "query": "What's the capital of Haryana?",
+      "source": "research",
+      "learned_at": "2025-11-28T15:53:35.790355"
+    },
+    {
+      "title": "What is the Capital of Haryana? - Chandigarh - Rau's IAS",
+      "content": "The High Court of Punjab and Haryana, which is based in Chandigarh, caters to the needs of the states of Punjab and Haryana and the union territory of Chandigarh.",
+      "query": "What's the capital of Haryana?",
+      "source": "research",
+      "learned_at": "2025-11-28T15:53:35.790537"
+    },
+    {
+      "title": "Why Chandigarh Is The Joint Capital of Punjab And Haryana",
+      "content": "According to the resolution, Haryana was carved out of Punjab in 1966 and, whenever a state has been divided in the past, the capital remains with the parent state. Punjab, therefore, has been laying its claim for the complete transfer of Chandigarh to the state.",
+      "query": "What's the capital of Haryana?",
+      "source": "research",
+      "learned_at": "2025-11-28T15:53:35.790778"
+    },
+    {
+      "title": "Capital of Haryana: City, Map, and History Explained - Vedantu",
+      "content": "Why Chandigarh is the capital of Haryana. map details, history, and key facts\u2014perfect for students and exam prep.",
+      "query": "What's the capital of Haryana?",
+      "source": "research",
+      "learned_at": "2025-11-28T15:53:35.790944"
+    },
+    {
+      "title": "When Amitabh Bachchan Failed in Physics, Superstar Shares Tales from ...",
+      "content": "Did You Know that Amitabh Bachchan once failed in Physics Exam? Megastar Amitabh Bachchan, who is known to share anecdotes from his personal life on the sets of 'Kaun Banega Crorepati', has now revealed that he failed in a subject in his graduation exams, but somehow passed it later.",
+      "query": "Hey What is physics? Who is Amitabh Bachchan?",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:19.233285"
+    },
+    {
+      "title": "Bollywood icon Amitabh Bachchan candidly admits to failing Physics exam ...",
+      "content": "Bollywood actor reveals he failed an exam but managed to clear it later Also In This Package Amitabh Bachchan dreams of playing KBC on the moon Why did Big B hitch a bike ride from a stranger ...",
+      "query": "Hey What is physics? Who is Amitabh Bachchan?",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:19.233551"
+    },
+    {
+      "title": "Amitabh Bachchan recalls failing in Physics - Times of India",
+      "content": "Amitabh Bachchan shares that he regretted taking up science in college and how he used to mug up answers two months before the exam.",
+      "query": "Hey What is physics? Who is Amitabh Bachchan?",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:19.233749"
+    },
+    {
+      "title": "Amitabh Bachchan Confesses Failing In Physics: 'I Took BSc & Was ...",
+      "content": "Megastar Amitabh Bachchan recently revealed he failed his Physics examination during BSc days. In one of the latest episodes of Kaun Banega Crorepati (KBC), Big B also revealed that he was ...",
+      "query": "Hey What is physics? Who is Amitabh Bachchan?",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:19.233986"
+    },
+    {
+      "title": "Amitabh Bachchan recalls failing his Physics exam during BSc days: 'I ...",
+      "content": "Amitabh Bachchan was a science student during his graduation days and in a recent episode of Kaun Banega Crorepati, the veteran actor shared that he really regretted taking up science during his college years. The actor, who studied at Kirori Mal College, University of Delhi graduated in 1962 with a BSc degree.",
+      "query": "Hey What is physics? Who is Amitabh Bachchan?",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:19.234289"
+    },
+    {
+      "title": "60 Funny Ways to Say Bro (Brother) - GrammarVocab",
+      "content": "Every sibling relationship is unique, but one thing is constant: the never-ending search for creative ways to tease, annoy, or lovingly refer to our brothers. Whether you want to make him laugh, roll his eyes, or scratch his head in confusion, here are some funny ways to say bro.",
+      "query": "That's interesting to hear... bro bro",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:51.694857"
+    },
+    {
+      "title": "yo where'd u get this?? : r/copypasta - Reddit",
+      "content": "I find mfs like u really interesting bro. i ain't gon lie this spot is kinda like a personal thing to me you what i'm saying. it's just like a personal vibe u feel me. what's really crazy is you wouldn't even wanted this if u ain't see me post it u what i'm saving. i don't even think u really hungry like that tbh bro. so go ahead find yourself something to eat bro go open your fridge ...",
+      "query": "That's interesting to hear... bro bro",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:51.695204"
+    },
+    {
+      "title": "Like a Stereotypical Frat Dude: The Ultimate Guide to Bro-speak and Laughs",
+      "content": "How to talk like a stereotypical frat dude, in slang! Find the origins, usage tips, and funniest online moments of bro-speak.",
+      "query": "That's interesting to hear... bro bro",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:51.695369"
+    },
+    {
+      "title": "80+ Funny Ways to Say Bro - Inject Humor into Your Conversations",
+      "content": "A treasure trove of funny ways to say bro that will inject humor into your everyday banter and strengthen your brotherly bonds with laughter.",
+      "query": "That's interesting to hear... bro bro",
+      "source": "research",
+      "learned_at": "2025-11-28T21:11:51.695628"
+    },
+    {
+      "title": "Noooo Soundboard - Instant Sound Buttons | Myinstants",
+      "content": "Listen and share sounds of Noooo. Find more instant sound buttons on Myinstants!",
+      "query": "nooo hi ds",
+      "source": "research",
+      "learned_at": "2025-11-28T21:12:16.856937"
+    },
+    {
+      "title": "Noooo Sounds and Sound Effects - Voicy",
+      "content": "272 unique Noooo sounds. Play the sound buttons and listen, share and download as mp3 audio for free now!",
+      "query": "nooo hi ds",
+      "source": "research",
+      "learned_at": "2025-11-28T21:12:16.857063"
+    },
+    {
+      "title": "Noo nooo NOOOO ORIGINAL MEME SOUND EFFECT - Meme Sound Effect ... - TUNA",
+      "content": "The Noo nooo NOOOO ORIGINAL MEME SOUND EFFECT meme sound belongs to the memes. In this category you have all sound effects, voices and sound clips to play, download and share.",
+      "query": "nooo hi ds",
+      "source": "research",
+      "learned_at": "2025-11-28T21:12:16.857295"
+    },
+    {
+      "title": "Brawler's Guild Fight Strategies Guide - Wowhead",
+      "content": "The Brawler's Guild is back for Patch 11.2.7, and Season 5 brings in a couple new fights and a few new challenges for players! In this guide, we will go through strategies for all bosses in the Brawler's Guild, as well as take a look at the new Broker Challenges feature. There are several types of fight in the Brawler's Guild, allowing you to face challenges in the Brawler's Guild in several ways.",
+      "query": "Hey, Thor 1.0 What can you do? who Is bawler sjof",
+      "source": "research",
+      "learned_at": "2025-11-28T21:21:10.285566"
+    },
+    {
+      "title": "Bawler - Definition, Meaning & Synonyms | Vocabulary.com",
+      "content": "A loud weeper\"Bawler.\" Vocabulary.com Dictionary, Vocabulary.com, https://www.vocabulary.com/dictionary/bawler. Accessed 26 Nov. 2025. Copy citation",
+      "query": "Hey, Thor 1.0 What can you do? who Is bawler sjof",
+      "source": "research",
+      "learned_at": "2025-11-28T21:21:10.285787"
+    },
+    {
+      "title": "Atlas AI - Your Doctor. In One Tap.",
+      "content": "Atlas AI matches you with the right doctor instantly \u2014 all from your phone. the waitlist today.",
+      "query": "Hey, Atlas",
+      "source": "research",
+      "learned_at": "2025-11-29T12:03:04.860301"
+    }
+  ],
+  "last_updated": "2025-11-30T16:20:07.046389"
+}

@@ -2537,10 +2537,66 @@ function speakText(text) {
 async function openPoseidonOverlay() {
     console.log('[Poseidon] Opening overlay...');
     
+    // Detect browser
+    const isSafari = /Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent);
+    const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    const isEdge = /Edg/.test(navigator.userAgent);
+    
+    console.log('[Poseidon] Browser detection:', {
+        isSafari: isSafari,
+        isChrome: isChrome,
+        isEdge: isEdge,
+        userAgent: navigator.userAgent
+    });
+    
     // Check browser support
-    if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
+    const hasWebkitSpeech = 'webkitSpeechRecognition' in window;
+    const hasSpeech = 'SpeechRecognition' in window;
+    
+    if (!hasWebkitSpeech && !hasSpeech) {
         alert('Voice assistant is not supported in this browser. Please use Chrome, Edge, or Safari.');
         return;
+    }
+    
+    // Safari-specific: Must use webkitSpeechRecognition and check if it actually works
+    if (isSafari) {
+        if (!hasWebkitSpeech) {
+            alert('Safari requires webkitSpeechRecognition. Please use Safari 14.1 or later.');
+            return;
+        }
+        
+        // Safari speech recognition has very limited support
+        // Test if we can actually create an instance
+        try {
+            const testRecognition = new window.webkitSpeechRecognition();
+            console.log('[Poseidon] Safari: Successfully created test recognition instance');
+            // Clean up test instance
+            if (testRecognition) {
+                try {
+                    testRecognition.abort();
+                } catch (e) {
+                    // Ignore
+                }
+            }
+        } catch (testErr) {
+            console.error('[Poseidon] Safari: Cannot create speech recognition instance:', testErr);
+            alert('⚠️ Safari Speech Recognition Not Available\n\n' +
+                  'Safari speech recognition is not available on this system.\n\n' +
+                  'Safari has very limited and unreliable support for speech recognition.\n' +
+                  'The Web Speech API in Safari is experimental and may not work.\n\n' +
+                  'For the best experience, please use:\n' +
+                  '• Chrome (recommended)\n' +
+                  '• Edge\n\n' +
+                  'If you must use Safari, ensure:\n' +
+                  '1. Safari 14.1 or later\n' +
+                  '2. Using HTTPS (not HTTP)\n' +
+                  '3. Microphone permissions allowed\n\n' +
+                  'Even with these settings, Safari speech recognition may not work.');
+            return;
+        }
+        
+        console.log('[Poseidon] Safari: Speech recognition appears to be available (but may still not work)');
+        console.warn('[Poseidon] Safari: Even if available, speech recognition may fail due to Safari limitations');
     }
     
     // Check secure context
@@ -2549,6 +2605,19 @@ async function openPoseidonOverlay() {
     if (!isSecure) {
         alert('Poseidon requires a secure connection (HTTPS) or localhost. Please access the site via HTTPS or localhost.');
         return;
+    }
+    
+    // Safari-specific: Additional security check
+    if (isSafari && location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+        alert('Safari requires HTTPS for speech recognition. Please use HTTPS or localhost.');
+        return;
+    }
+    
+    // Safari warning: Speech recognition support is very limited
+    if (isSafari) {
+        console.warn('[Poseidon] ⚠️ Safari detected - speech recognition support is very limited and unreliable');
+        console.warn('[Poseidon] Safari may not support continuous recognition or may have other limitations');
+        console.warn('[Poseidon] For best results, use Chrome or Edge');
     }
     
     // Request microphone permission and set up audio monitoring
@@ -2617,17 +2686,40 @@ async function openPoseidonOverlay() {
             }
             
             // Create or recreate recognition instance
-            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            // Safari requires webkitSpeechRecognition specifically - MUST use webkit prefix
+            let SpeechRecognition;
+            if (isSafari) {
+                // Safari MUST use webkitSpeechRecognition
+                if (!window.webkitSpeechRecognition) {
+                    throw new Error('Safari requires webkitSpeechRecognition API. Please use Safari 14.1 or later.');
+                }
+                SpeechRecognition = window.webkitSpeechRecognition;
+                console.log('[Poseidon] Safari detected - using webkitSpeechRecognition (required)');
+            } else {
+                // Chrome/Edge can use either
+                SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            }
             
             if (!SpeechRecognition) {
                 throw new Error('SpeechRecognition API not available');
             }
+            
+            console.log('[Poseidon] Using SpeechRecognition:', {
+                hasSpeechRecognition: !!window.SpeechRecognition,
+                hasWebkitSpeechRecognition: !!window.webkitSpeechRecognition,
+                using: isSafari ? 'webkitSpeechRecognition (Safari)' : (window.SpeechRecognition ? 'SpeechRecognition' : 'webkitSpeechRecognition'),
+                isSafari: isSafari
+            });
             
             // Always create a fresh instance for reliability
             if (recognition) {
                 try {
                     console.log('[Poseidon] Stopping existing recognition instance');
                     recognition.stop();
+                    // Safari needs a moment to fully stop
+                    if (isSafari) {
+                        await new Promise(resolve => setTimeout(resolve, 100));
+                    }
                 } catch (e) {
                     // Ignore - might not be running
                 }
@@ -2638,22 +2730,30 @@ async function openPoseidonOverlay() {
                 console.log('[Poseidon] Created new SpeechRecognition instance');
                 
                 // CRITICAL: Configure IMMEDIATELY after creation
+                // Safari-specific: May need different configuration
                 recognition.continuous = true;
                 recognition.interimResults = true;
                 recognition.lang = voiceSettings.accent;
                 recognition.maxAlternatives = 1;
                 
+                // Safari-specific: Some versions may need serviceURI set
+                if (isSafari && 'serviceURI' in recognition) {
+                    // Don't set serviceURI - let Safari use default
+                    console.log('[Poseidon] Safari detected - using default serviceURI');
+                }
+                
                 console.log('[Poseidon] Configuration set:', {
                     continuous: recognition.continuous,
                     interimResults: recognition.interimResults,
-                    lang: recognition.lang
+                    lang: recognition.lang,
+                    isSafari: isSafari
                 });
             } catch (createErr) {
                 console.error('[Poseidon] ERROR creating SpeechRecognition instance:', createErr);
                 throw createErr;
             }
             
-            // Setup handlers
+            // Setup handlers BEFORE starting (Safari requirement)
             try {
                 setupRecognitionHandlers();
                 console.log('[Poseidon] Recognition handlers setup complete');
@@ -2662,7 +2762,7 @@ async function openPoseidonOverlay() {
                 throw handlerErr;
             }
             
-            // RE-CONFIGURE to ensure settings persist
+            // RE-CONFIGURE to ensure settings persist (especially important for Safari)
             recognition.continuous = true;
             recognition.interimResults = true;
             recognition.lang = voiceSettings.accent;
@@ -2691,9 +2791,35 @@ async function openPoseidonOverlay() {
             console.log('[Poseidon] Stream verified active, starting recognition NOW...');
             
             // START IMMEDIATELY - this must happen in the user gesture context
+            // Safari is especially strict about this - no delays allowed
             try {
+                // Safari-specific: Ensure we're still in user gesture context
+                if (isSafari) {
+                    console.log('[Poseidon] Safari detected - starting recognition synchronously in user gesture context');
+                    console.log('[Poseidon] Safari: Pre-start check:', {
+                        hasRecognition: !!recognition,
+                        continuous: recognition?.continuous,
+                        interimResults: recognition?.interimResults,
+                        lang: recognition?.lang,
+                        streamActive: stream?.active,
+                        hasStream: !!stream
+                    });
+                    
+                    // Double-check configuration for Safari
+                    recognition.continuous = true;
+                    recognition.interimResults = true;
+                    recognition.lang = voiceSettings.accent;
+                    
+                    // Safari may not support continuous mode - try without it if it fails
+                    console.log('[Poseidon] Safari: Attempting to start with continuous mode');
+                }
+                
                 recognition.start();
-                console.log('[Poseidon] Recognition.start() called successfully');
+                console.log('[Poseidon] Recognition.start() called successfully', {
+                    isSafari: isSafari,
+                    continuous: recognition.continuous,
+                    lang: recognition.lang
+                });
                 updatePoseidonStatus('listening', 'Listening...');
             } catch (startErr) {
                 console.error('[Poseidon] ERROR starting recognition:', startErr);
@@ -2705,7 +2831,36 @@ async function openPoseidonOverlay() {
                 });
                 
                 // If it fails immediately, it's likely a permission or service issue
-                // The error handler will try to recover automatically
+                // Safari: Don't try to recover - it's likely not supported
+                if (isSafari) {
+                    console.error('[Poseidon] Safari: Recognition.start() failed immediately:', startErr);
+                    console.error('[Poseidon] Safari: This indicates Safari speech recognition is not available');
+                    
+                    const safariErrorMsg = 'Safari speech recognition is not available.\n\n' +
+                                         'Safari has very limited support for the Web Speech API.\n\n' +
+                                         'For the best experience, please use Chrome or Edge.\n\n' +
+                                         'If you must use Safari:\n' +
+                                         '1. Ensure Safari 14.1+\n' +
+                                         '2. Use HTTPS (not HTTP)\n' +
+                                         '3. Allow microphone in Safari Settings\n' +
+                                         '4. Speech recognition may still not work due to Safari limitations';
+                    
+                    updatePoseidonStatus('ready', 'Safari Not Supported');
+                    if (poseidonAssistantTranscript) {
+                        poseidonAssistantTranscript.textContent = safariErrorMsg;
+                    }
+                    
+                    // Try to speak the error
+                    try {
+                        speakText('Safari speech recognition is not available. Please use Chrome or Edge for better compatibility.');
+                    } catch (speakErr) {
+                        console.warn('[Poseidon] Could not speak error message:', speakErr);
+                    }
+                    
+                    return; // Don't try to recover for Safari
+                }
+                
+                // For Chrome/Edge: The error handler will try to recover automatically
                 if (startErr.name === 'NotAllowedError' || startErr.message?.includes('permission') || startErr.message?.includes('service')) {
                     console.warn('[Poseidon] Initial start failed - error handler will attempt recovery');
                     updatePoseidonStatus('ready', 'Starting...');
@@ -3891,6 +4046,54 @@ function setupRecognitionHandlers() {
         } else if (event.error === 'service-not-allowed') {
             console.error('[Poseidon] ERROR: service-not-allowed - Speech recognition service permission check failed');
             
+            const isSafari = /Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent);
+            
+            // Safari-specific: Handle immediately - don't retry
+            if (isSafari) {
+                console.error('[Poseidon] Safari service-not-allowed error - diagnostic info:', {
+                    hasWebkitSpeechRecognition: 'webkitSpeechRecognition' in window,
+                    hasSpeechRecognition: 'SpeechRecognition' in window,
+                    isSecureContext: window.isSecureContext,
+                    protocol: location.protocol,
+                    hostname: location.hostname,
+                    recognitionExists: !!recognition,
+                    recognitionContinuous: recognition?.continuous,
+                    recognitionLang: recognition?.lang
+                });
+                
+                // Safari: Show message immediately - don't retry
+                console.error('[Poseidon] Safari: Showing Safari-specific error message immediately');
+                errorMsg = '⚠️ Safari Speech Recognition Limitation\n\n' +
+                          'Safari has very limited and unreliable support for speech recognition.\n\n' +
+                          'The Web Speech API in Safari is experimental and may not work on your system.\n\n' +
+                          'For the best experience, please use:\n' +
+                          '• Chrome (recommended - full support)\n' +
+                          '• Edge (full support)\n\n' +
+                          'If you must use Safari, try:\n' +
+                          '1. Safari > Settings > Websites > Microphone - Allow for this site\n' +
+                          '2. Ensure you\'re using HTTPS (not HTTP)\n' +
+                          '3. Use Safari 14.1 or later\n' +
+                          '4. Speech recognition may still not work due to Safari limitations\n\n' +
+                          'Unfortunately, Safari\'s speech recognition support is unreliable and may not work at all.';
+                
+                updatePoseidonStatus('ready', 'Safari Limited Support');
+                if (poseidonAssistantTranscript) {
+                    poseidonAssistantTranscript.textContent = errorMsg;
+                }
+                
+                // Try to speak the message
+                try {
+                    speakText('Safari speech recognition is not available. Please use Chrome or Edge for better compatibility.');
+                } catch (speakErr) {
+                    console.warn('[Poseidon] Could not speak Safari error message:', speakErr);
+                }
+                
+                shouldSpeak = false; // Already spoke
+                shouldRestart = false;
+                serviceNotAllowedDisabled = true; // Disable retries for Safari
+                return; // Exit immediately for Safari
+            }
+            
             const now = Date.now();
             const timeSinceLastError = now - lastServiceNotAllowedTime;
             
@@ -3906,11 +4109,44 @@ function setupRecognitionHandlers() {
                     console.error('[Poseidon] Stopping all retry attempts to prevent infinite loop');
                     serviceNotAllowedDisabled = true;
                     
-                    // Show user-friendly error
+                    // Show user-friendly error with helpful guidance
                     updatePoseidonStatus('ready', 'Service Unavailable');
                     if (poseidonAssistantTranscript) {
-                        poseidonAssistantTranscript.textContent = 
-                            'Speech recognition service is not available. Please refresh the page and try again.';
+                        const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+                        const isEdge = /Edg/.test(navigator.userAgent);
+                        const isSafariCheck = /Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent);
+                        
+                        let errorMsg = 'Speech recognition service is not available.\n\n';
+                        
+                        if (isChrome || isEdge) {
+                            errorMsg += 'For Chrome/Edge:\n';
+                            errorMsg += '1. Click the lock icon (🔒) in the address bar\n';
+                            errorMsg += '2. Allow microphone access\n';
+                            errorMsg += '3. Make sure you\'re using HTTPS or localhost\n';
+                            errorMsg += '4. Try refreshing the page\n\n';
+                            errorMsg += 'If it still doesn\'t work, your browser may not support speech recognition.';
+                        } else if (isSafariCheck) {
+                            errorMsg = '⚠️ Safari Speech Recognition Limitation\n\n';
+                            errorMsg += 'Safari has very limited and unreliable support for speech recognition.\n\n';
+                            errorMsg += 'The Web Speech API in Safari is experimental and may not work on your system.\n\n';
+                            errorMsg += 'For the best experience, please use:\n';
+                            errorMsg += '• Chrome (recommended - full support)\n';
+                            errorMsg += '• Edge (full support)\n\n';
+                            errorMsg += 'If you must use Safari, try:\n';
+                            errorMsg += '1. Safari > Settings > Websites > Microphone - Allow for this site\n';
+                            errorMsg += '2. Ensure you\'re using HTTPS (not HTTP)\n';
+                            errorMsg += '3. Use Safari 14.1 or later\n';
+                            errorMsg += '4. Speech recognition may still not work due to Safari limitations\n\n';
+                            errorMsg += 'Unfortunately, Safari\'s speech recognition support is unreliable and may not work at all.';
+                        } else {
+                            errorMsg += 'Please:\n';
+                            errorMsg += '1. Check browser microphone permissions\n';
+                            errorMsg += '2. Ensure you\'re using HTTPS or localhost\n';
+                            errorMsg += '3. Refresh the page and try again\n\n';
+                            errorMsg += 'Note: Speech recognition requires Chrome, Edge, or Safari.';
+                        }
+                        
+                        poseidonAssistantTranscript.textContent = errorMsg;
                     }
                 }
                 return; // Stop processing this error
@@ -3970,10 +4206,57 @@ function setupRecognitionHandlers() {
             } else {
                 // We're in a secure context and should retry
                 // This usually means microphone permission wasn't properly granted
+                // Safari-specific: May need different handling
+                const isSafari = /Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent);
+                
+                // Safari: Be very conservative - Safari speech recognition is unreliable
+                // Show message immediately without retrying
+                if (isSafari) {
+                    console.error('[Poseidon] Safari: service-not-allowed error detected');
+                    console.error('[Poseidon] Safari speech recognition has very limited and unreliable support');
+                    console.error('[Poseidon] This is a known Safari limitation - speech recognition may not work');
+                    console.error('[Poseidon] Skipping retry attempts for Safari - showing user message immediately');
+                    
+                    // Don't retry for Safari - it's likely not supported
+                    errorMsg = '⚠️ Safari Speech Recognition Limitation\n\n' +
+                              'Safari has very limited and unreliable support for speech recognition.\n\n' +
+                              'The Web Speech API in Safari is experimental and may not work on your system.\n\n' +
+                              'For the best experience, please use:\n' +
+                              '• Chrome (recommended - full support)\n' +
+                              '• Edge (full support)\n\n' +
+                              'If you must use Safari, try:\n' +
+                              '1. Safari > Settings > Websites > Microphone - Allow for this site\n' +
+                              '2. Ensure you\'re using HTTPS (not HTTP)\n' +
+                              '3. Use Safari 14.1 or later\n' +
+                              '4. Speech recognition may still not work due to Safari limitations\n\n' +
+                              'Unfortunately, Safari\'s speech recognition support is unreliable and may not work at all.';
+                    
+                    updatePoseidonStatus('ready', 'Safari Limited Support');
+                    if (poseidonAssistantTranscript) {
+                        poseidonAssistantTranscript.textContent = errorMsg;
+                    }
+                    
+                    // Try to speak the message
+                    try {
+                        speakText('Safari speech recognition is not available. Please use Chrome or Edge for better compatibility.');
+                    } catch (speakErr) {
+                        console.warn('[Poseidon] Could not speak Safari error message:', speakErr);
+                    }
+                    
+                    shouldSpeak = false; // Already spoke
+                    shouldRestart = false;
+                    
+                    // Disable circuit breaker for Safari to prevent further errors
+                    serviceNotAllowedDisabled = true;
+                    return;
+                }
+                
                 serviceNotAllowedRetryCount++;
                 lastServiceNotAllowedTime = now;
                 
-                console.warn(`[Poseidon] Service not allowed - retry attempt ${serviceNotAllowedRetryCount}/${MAX_SERVICE_NOT_ALLOWED_RETRIES}`);
+                console.warn(`[Poseidon] Service not allowed - retry attempt ${serviceNotAllowedRetryCount}/${MAX_SERVICE_NOT_ALLOWED_RETRIES}`, {
+                    isSafari: isSafari
+                });
                 console.warn('[Poseidon] Attempting to recover by requesting permission again...');
                 
                 // Try to request permission again (async operation)
@@ -3984,7 +4267,9 @@ function setupRecognitionHandlers() {
                             try {
                                 recognition.stop();
                                 console.log('[Poseidon] Stopped recognition for permission retry');
-                                await new Promise(resolve => setTimeout(resolve, 300));
+                                // Safari needs more time to fully stop
+                                const waitTime = isSafari ? 500 : 300;
+                                await new Promise(resolve => setTimeout(resolve, waitTime));
                             } catch (stopErr) {
                                 console.warn('[Poseidon] Error stopping recognition:', stopErr);
                             }
@@ -3992,7 +4277,13 @@ function setupRecognitionHandlers() {
                         
                         // Request microphone permission again
                         console.log('[Poseidon] Re-requesting microphone permission...');
-                        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                        const stream = await navigator.mediaDevices.getUserMedia({ 
+                            audio: {
+                                echoCancellation: true,
+                                noiseSuppression: true,
+                                autoGainControl: true
+                            }
+                        });
                         console.log('[Poseidon] Permission re-granted, recreating recognition...');
                         
                         // CRITICAL: Keep the stream alive - don't let old stream be garbage collected
@@ -4028,9 +4319,28 @@ function setupRecognitionHandlers() {
                         console.log('[Poseidon] Permission re-granted, attempting to start recognition immediately...');
                         
                         // Create new instance
-                        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+                        // Safari requires webkitSpeechRecognition - MUST use webkit prefix
+                        const isSafariRecovery = /Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent);
+                        let SpeechRecognition;
+                        
+                        if (isSafariRecovery) {
+                            // Safari MUST use webkitSpeechRecognition
+                            if (!window.webkitSpeechRecognition) {
+                                throw new Error('Safari requires webkitSpeechRecognition API');
+                            }
+                            SpeechRecognition = window.webkitSpeechRecognition;
+                            console.log('[Poseidon] Safari detected in recovery - using webkitSpeechRecognition (required)');
+                        } else {
+                            SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+                        }
+                        
                         if (SpeechRecognition) {
                             recognition = new SpeechRecognition();
+                            
+                            // Safari-specific configuration
+                            if (isSafariRecovery) {
+                                console.log('[Poseidon] Safari detected in recovery - applying Safari-specific config');
+                            }
                             
                             // CRITICAL: Configure IMMEDIATELY after creation
                             recognition.continuous = true;
@@ -4047,16 +4357,22 @@ function setupRecognitionHandlers() {
                             // Setup handlers AFTER configuration
                             setupRecognitionHandlers();
                             
-                            // RE-CONFIGURE to ensure settings persist
+                            // RE-CONFIGURE to ensure settings persist (critical for Safari)
                             recognition.continuous = true;
                             recognition.interimResults = true;
                             recognition.lang = voiceSettings.accent;
                             recognition.maxAlternatives = 1;
                             
+                            // Safari-specific: Ensure serviceURI is not set (let Safari use default)
+                            if (isSafariRecovery && 'serviceURI' in recognition) {
+                                console.log('[Poseidon] Safari detected - ensuring default serviceURI');
+                            }
+                            
                             console.log('[Poseidon] Recognition recreated with final config:', {
                                 continuous: recognition.continuous,
                                 interimResults: recognition.interimResults,
-                                lang: recognition.lang
+                                lang: recognition.lang,
+                                isSafari: isSafariRecovery
                             });
                             
                             // Verify stream is still active
@@ -4107,10 +4423,21 @@ function setupRecognitionHandlers() {
                             }
                             
                             // Try to start recognition immediately (might still be in gesture context)
+                            // Safari is especially strict - must start synchronously
                             if (poseidonActive && !poseidonPaused) {
                                 try {
+                                    // Safari-specific: Re-verify configuration before starting
+                                    if (isSafariRecovery) {
+                                        recognition.continuous = true;
+                                        recognition.interimResults = true;
+                                        recognition.lang = voiceSettings.accent;
+                                        console.log('[Poseidon] Safari: Re-verified config before start in recovery');
+                                    }
+                                    
                                     recognition.start();
-                                    console.log('[Poseidon] ✅ Recognition started successfully after recovery!');
+                                    console.log('[Poseidon] ✅ Recognition started successfully after recovery!', {
+                                        isSafari: isSafari
+                                    });
                                     updatePoseidonStatus('listening', 'Listening...');
                                     
                                     // Reset retry counter on success

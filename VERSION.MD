@@ -9,19 +9,29 @@ This file tracks **major changes** made to this project over time.
 
 ---
 
-## 2025-12-19 (Thor 1.1 Release - Major Update)
+## 2025-12-19 (Thor 1.1 Release & Poseidon Circuit Breaker - Major Update)
 - **Thor 1.1 Release**: Created Thor 1.1 as the latest model with enhanced features, defaulting to Thor 1.1 for all new conversations
+  - Enhanced model architecture: 1024 hidden size, 16 layers, 16 attention heads, 1024 max position embeddings
+  - Improved inference with temperature sampling and top-k filtering for better text generation
+  - Enhanced training configuration with better hyperparameters
 - **Stable Mode Support**: Thor 1.0 is automatically used when stable mode is enabled via main Atlas page settings
 - **Base Knowledge Import**: Thor 1.1 imports base knowledge from Thor 1.0, ensuring backward compatibility and knowledge continuity
 - **Result Setter & Image Mapping**: Updated all references from Thor 1.0 to Thor 1.1, with separate files for each version
-- **Poseidon Fixes**: Fixed infinite listening problem where Poseidon would stay in listening mode without responding
-- **Enhanced Debugging**: Added comprehensive console logging for what Poseidon hears (🎤 [Poseidon HEARD] logs)
+- **Poseidon Critical Fixes**:
+  - **Circuit Breaker**: Added intelligent circuit breaker to prevent infinite error loops (stops after 5 rapid errors in 3 seconds)
+  - **Improved Error Handling**: Enhanced service-not-allowed error handling with browser-specific guidance
+  - **Better State Management**: Fixed overlay visibility detection using multiple methods to ensure poseidonActive is set correctly
+  - **Enhanced Debugging**: Added comprehensive console logging for what Poseidon hears (🎤 [Poseidon HEARD] logs)
+  - **User-Friendly Error Messages**: Browser-specific troubleshooting guidance for Chrome, Edge, and Safari
 
 ### Notes
 - **Model Selection**: System automatically uses Thor 1.1 by default, switches to Thor 1.0 in stable mode
 - **File Structure**: Created `thor-1.1/` directory with all services, `thor_1_1_result_setter.json`, and `thor_1_1_image_setter.json`
 - **Backward Compatibility**: Thor 1.0 remains fully functional and is used in stable mode
 - **Knowledge Base**: Thor 1.1 result setter automatically imports Q&A pairs from Thor 1.0 for base knowledge
+- **Poseidon Circuit Breaker**: Prevents infinite error loops by automatically stopping retry attempts after detecting rapid failures
+- **Git Repository**: Local git repository exists but no remote URL configured
+- **Vercel Deployment**: Configuration file exists at `chatbot/vercel.json` for serverless deployment
 
 ---
 
