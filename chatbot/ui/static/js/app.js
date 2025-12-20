@@ -2199,7 +2199,7 @@ let lastServiceNotAllowedTime = 0; // Track when last service-not-allowed occurr
 let lastHighVolumeTime = 0; // Track when we last detected high volume
 let currentAudioLevel = 0; // Current audio level (0-1)
 let audioLevelHistory = []; // History of audio levels for trend analysis
-const SILENCE_TIMEOUT_MS = 2000; // Process after 2 seconds of silence (reduced for faster response)
+const SILENCE_TIMEOUT_MS = 1500; // Process after 1.5 seconds of silence (reduced for faster response)
 const MIN_SPEECH_DURATION_MS = 300; // Minimum speech duration to process
 const MAX_NO_SPEECH_COUNT = 3; // Max consecutive no-speech events before restart
 const MAX_SERVICE_NOT_ALLOWED_RETRIES = 2; // Max retries for service-not-allowed
@@ -2674,7 +2674,7 @@ async function openPoseidonOverlay() {
     }
 }
 
-function startRecognitionWithRetry(maxRetries = 3) {
+async function startRecognitionWithRetry(maxRetries = 3) {
     if (!recognition) {
         console.error('[Poseidon] ERROR: Cannot start recognition - recognition is null');
         updatePoseidonStatus('ready', 'Error: Recognition not initialized');
