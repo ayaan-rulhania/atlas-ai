@@ -1,47 +1,27 @@
 [
   {
-    "task": "text_generation",
-    "text": "I understand",
-    "label": null
+    "task": "text_classification",
+    "text": "Create an image of tomatoe",
+    "label": 1
   },
   {
     "task": "sentiment_analysis",
-    "text": "I find natural language processing interesting and valuable.",
-    "label": 2
-  },
-  {
-    "task": "text_generation",
-    "text": "'\ud83d\udcc1' : '\ud83d\udcdd';\n        \n        return `\n            <div class=\"history-item\" data-entry-id=\"${entry.id}\">\n                <div class=\"history-icon\">${typeIcon}</div>\n                <div class=\"history-content\">\n                    <div class=\"history-title\">${escapeHtml(entry.title || entry.description || 'Untitled')}</div>\n                    <div class=\"history-meta\">\n                        <span class=\"history-type\">${entry.type}</span>\n                        <span class=\"history-date\">${dat",
-    "label": null
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "I find artificial intelligence interesting and valuable.",
-    "label": 2
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "What is science?",
-    "label": 2
+    "text": "Create an image of fuck",
+    "label": 0
   },
   {
     "task": "text_classification",
-    "text": "who are you",
+    "text": "How's it going!",
+    "label": 1
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "tell her that's good Carla canopy",
     "label": 1
   },
   {
     "task": "text_generation",
-    "text": "Do you know Niharika?",
-    "label": null
-  },
-  {
-    "task": "text_classification",
-    "text": "What is computer science?",
-    "label": 1
-  },
-  {
-    "task": "text_generation",
-    "text": "Create an image of dog",
+    "text": "What are earthquakes?",
     "label": null
   },
   {
@@ -51,22 +31,110 @@
   },
   {
     "task": "text_generation",
-    "text": "Create an image of map",
+    "text": "Create an image",
+    "label": null
+  },
+  {
+    "task": "question_answering",
+    "text": "What is computer science? computer science is an important concept.",
+    "label": {
+      "start": 26,
+      "end": 42
+    }
+  },
+  {
+    "task": "text_generation",
+    "text": "hello to continue",
     "label": null
   },
   {
     "task": "text_classification",
-    "text": "What is artificial intelligence?",
+    "text": "who is ayaan",
     "label": 1
   },
   {
     "task": "text_generation",
-    "text": "do you know Niharika",
+    "text": "hello I'm feeling pretty good today",
+    "label": null
+  },
+  {
+    "task": "text_classification",
+    "text": "create an image of india",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "What can you do for me",
+    "label": 1
+  },
+  {
+    "task": "text_classification",
+    "text": "Create an image of Thor",
+    "label": 1
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Create an image of a cat",
+    "label": 1
+  },
+  {
+    "task": "text_generation",
+    "text": "Create an image of dog",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "create an image of india",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "tell her that's good Carla canopy",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "who is niharika",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "Do you know Niharika?",
     "label": null
   },
   {
     "task": "sentiment_analysis",
-    "text": "Create image of a dog",
+    "text": "'\ud83d\udcc1' : '\ud83d\udcdd';\n        \n        return `\n            <div class=\"history-item\" data-entry-id=\"${entry.id}\">\n                <div class=\"history-icon\">${typeIcon}</div>\n                <div class=\"history-content\">\n                    <div class=\"history-title\">${escapeHtml(entry.title || entry.description || 'Untitled')}</div>\n                    <div class=\"history-meta\">\n                        <span class=\"history-type\">${entry.type}</span>\n                        <span class=\"history-date\">${dat",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Create an image of dog",
+    "label": 1
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "How are you?",
+    "label": 2
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "What is a shield volcano?",
+    "label": 2
+  },
+  {
+    "task": "text_classification",
+    "text": "Learn sometimes!",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "create an image of india",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "who is sharukh khan",
     "label": 0
   },
   {
@@ -76,107 +144,42 @@
   },
   {
     "task": "text_classification",
-    "text": "What is science?",
+    "text": "What are earthquakes?",
     "label": 1
+  },
+  {
+    "task": "text_classification",
+    "text": "What can you do for me",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "who is sharukh khan",
+    "label": 2
+  },
+  {
+    "task": "text_classification",
+    "text": "Create an image",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "how are you",
+    "label": 1
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Another angle",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "What are earthquakes?",
+    "label": 0
   },
   {
     "task": "text_generation",
     "text": "Create an image of blah",
     "label": null
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "who is Ayaan",
-    "label": 0
-  },
-  {
-    "task": "text_generation",
-    "text": "who is sharukh khan",
-    "label": null
-  },
-  {
-    "task": "text_classification",
-    "text": "Who are you?",
-    "label": 1
-  },
-  {
-    "task": "text_classification",
-    "text": "'\ud83d\udcc1' : '\ud83d\udcdd';\n        \n        return `\n            <div class=\"history-item\" data-entry-id=\"${entry.id}\">\n                <div class=\"history-icon\">${typeIcon}</div>\n                <div class=\"history-content\">\n                    <div class=\"history-title\">${escapeHtml(entry.title || entry.description || 'Untitled')}</div>\n                    <div class=\"history-meta\">\n                        <span class=\"history-type\">${entry.type}</span>\n                        <span class=\"history-date\">${dat",
-    "label": 0
-  },
-  {
-    "task": "text_classification",
-    "text": "Create image of dog",
-    "label": 1
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "to continue",
-    "label": 1
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "I find programming interesting and valuable.",
-    "label": 2
-  },
-  {
-    "task": "text_generation",
-    "text": "who is niharika",
-    "label": null
-  },
-  {
-    "task": "text_classification",
-    "text": "How's your day going?",
-    "label": 1
-  },
-  {
-    "task": "text_classification",
-    "text": "I understand",
-    "label": 0
-  },
-  {
-    "task": "text_generation",
-    "text": "create an image of india",
-    "label": null
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "Load Office Suite",
-    "label": 1
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "Create an image of fuck",
-    "label": 0
-  },
-  {
-    "task": "text_generation",
-    "text": "How are you?",
-    "label": null
-  },
-  {
-    "task": "text_classification",
-    "text": "What is deep learning?",
-    "label": 1
-  },
-  {
-    "task": "text_classification",
-    "text": "tell her that's good Carla canopy",
-    "label": 1
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "tell her that's good Carla canopy",
-    "label": 2
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "create an image of ice cream",
-    "label": 0
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "Summarize this in 3 bullet points: Thor 1.0 Result Setter\nDefine authoritative responses for Thor before conversations begin\n810\nTOTAL RESULT PAIRS\nRESULT INPUT MODES\n\nSINGLE PAIR\nTRAINX CODE\nTRAINX CODE\n\nGENERATE WITH TRAINX\nGenerated 1 result pair via TrainX. Review them below.\nNeed syntax help? Review the trainx/trainx_1_0.md guide. TrainX can fan-out aliases, iterate over lists, and produce entire datasets in a single run.\nRESULT LIBRARY\n\n\nQ: Do you know Ayaan?\nA: Yes, Yes.\nEDIT\nDELETE\nQ: Ho",
-    "label": 1
   }
 ]
