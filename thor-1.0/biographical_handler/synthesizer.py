@@ -113,6 +113,34 @@ def synthesize_knowledge(
         if not content or len(content) < 20:
             continue
 
+        # CRITICAL: Filter out JavaScript code, Wikipedia metadata, and irrelevant content
+        content_lower = content.lower()
+        
+        # Skip if content is mostly code
+        if any(pattern in content_lower[:200] for pattern in [
+            'export const', 'export let', 'export var', 'function(', '=> {',
+            'const ', 'let ', 'var ', 'import ', 'module.exports'
+        ]) and content.count('{') > 3:
+            continue  # Likely JavaScript code, skip
+        
+        # Skip Wikipedia error messages
+        if any(pattern in content_lower for pattern in [
+            'this article contains one or more duplicated citations',
+            'references script detected',
+            'systematic endeavour to gain knowledge',
+            'from wikipedia, the free encyclopedia'
+        ]):
+            # Try to extract actual content after error message
+            error_end = max(
+                content_lower.find('this article contains'),
+                content_lower.find('references script'),
+                content_lower.find('from wikipedia, the free encyclopedia')
+            )
+            if error_end > 0:
+                content = content[error_end + 100:]  # Skip past error message
+            else:
+                continue  # Skip if we can't find actual content
+
         cleaned = response_cleaner.clean_response(content)
         if not cleaned or len(cleaned) < 20:
             continue
@@ -140,6 +168,10 @@ def synthesize_knowledge(
             r'Bing\s*—',
         ]
         
+        # Check query relevance - only use sentences that relate to the query
+        query_lower = query.lower()
+        query_words = set(query_lower.split())
+        
         for sentence in sentences[:max_sentences_per_item]:
             sentence_lower = sentence.lower()
             
@@ -152,8 +184,32 @@ def synthesize_knowledge(
                 continue
             
             # Skip sentences that are just metadata
-            if sentence_lower.startswith(('sources:', 'model:', 'context-aware:', 'note:')):
+            if sentence_lower.startswith(('sources:', 'model:', 'context-aware:', 'note:', 'export', 'const', 'let', 'var')):
                 continue
+            
+            # Skip JavaScript code patterns
+            if any(pattern in sentence_lower for pattern in ['export const', 'function(', '=> {', 'module.exports']):
+                continue
+            
+            # Skip Wikipedia error messages
+            if any(pattern in sentence_lower for pattern in ['duplicated citations', 'references script', 'systematic endeavour']):
+                continue
+            
+            # RELEVANCE CHECK: Only include sentences that relate to the query
+            # Check if sentence contains query words or related terms
+            sentence_words = set(sentence_lower.split())
+            common_words = sentence_words & query_words
+            
+            # If entity is specified, check if sentence mentions it
+            if entity:
+                entity_lower = entity.lower()
+                if entity_lower not in sentence_lower and len(common_words) == 0:
+                    continue  # Skip if sentence doesn't mention entity or share words with query
+            
+            # For gem sources, be more strict - only use highly relevant sentences
+            if item.get("source") == "gem_source" or item.get("priority") == 1:
+                if not common_words and (not entity or entity_lower not in sentence_lower):
+                    continue  # Skip irrelevant sentences from gem sources
 
             if any(word in sentence_lower for word in ['is', 'are', 'was', 'were', 'means', 'refers to', 'defined as']):
                 if sentence not in definitions:

@@ -2531,6 +2531,21 @@ async function openPoseidonOverlay() {
         // Store it globally so it doesn't get garbage collected
         window.poseidonAudioStream = stream;
         
+        // CRITICAL: Ensure stream stays active - prevent garbage collection
+        // Keep a reference to at least one track to prevent it from being stopped
+        const audioTracks = stream.getAudioTracks();
+        if (audioTracks.length > 0) {
+            // Ensure track is enabled and not muted
+            audioTracks[0].enabled = true;
+            audioTracks[0].muted = false;
+            console.log('[Poseidon] Stream track ensured active:', {
+                label: audioTracks[0].label,
+                readyState: audioTracks[0].readyState,
+                enabled: audioTracks[0].enabled,
+                muted: audioTracks[0].muted
+            });
+        }
+        
         if (poseidonOverlay) {
             poseidonOverlay.style.display = 'flex';
             poseidonActive = true;
@@ -2614,26 +2629,55 @@ async function openPoseidonOverlay() {
             recognition.lang = voiceSettings.accent;
             recognition.maxAlternatives = 1;
             
-            // START IMMEDIATELY - don't wait, browsers need this in user gesture context
-            console.log('[Poseidon] Starting recognition immediately...');
+            // CRITICAL: Start recognition IMMEDIATELY - no delays!
+            // Web Speech API requires recognition.start() to be called in direct response to user gesture
+            // Any setTimeout breaks the user gesture context and causes service-not-allowed errors
+            console.log('[Poseidon] Starting recognition IMMEDIATELY (must be in user gesture context)...');
+            
+            // Verify stream is active
+            if (!stream.active) {
+                console.error('[Poseidon] ERROR: Stream not active before starting recognition');
+                updatePoseidonStatus('ready', 'Error: Stream not active');
+                return;
+            }
+            
+            const streamTracks = stream.getAudioTracks();
+            const activeTracks = streamTracks.filter(t => t.readyState === 'live' && t.enabled && !t.muted);
+            if (activeTracks.length === 0) {
+                console.error('[Poseidon] ERROR: No active tracks before starting recognition');
+                updatePoseidonStatus('ready', 'Error: No active tracks');
+                return;
+            }
+            
+            console.log('[Poseidon] Stream verified active, starting recognition NOW...');
+            
+            // START IMMEDIATELY - this must happen in the user gesture context
             try {
                 recognition.start();
-                console.log('[Poseidon] Recognition.start() called');
+                console.log('[Poseidon] Recognition.start() called successfully');
                 updatePoseidonStatus('listening', 'Listening...');
             } catch (startErr) {
                 console.error('[Poseidon] ERROR starting recognition:', startErr);
-                // If it fails, try once more after a brief delay
-                setTimeout(() => {
-                    if (poseidonActive && recognition) {
-                        try {
-                            recognition.start();
-                            console.log('[Poseidon] Recognition started on retry');
-                        } catch (retryErr) {
-                            console.error('[Poseidon] ERROR on retry:', retryErr);
-                            updatePoseidonStatus('ready', 'Error starting');
-                        }
-                    }
-                }, 300);
+                console.error('[Poseidon] Start error details:', {
+                    name: startErr?.name,
+                    message: startErr?.message,
+                    streamActive: window.poseidonAudioStream?.active,
+                    hasStream: !!window.poseidonAudioStream
+                });
+                
+                // If it fails immediately, it's likely a permission or service issue
+                if (startErr.name === 'NotAllowedError' || startErr.message?.includes('permission') || startErr.message?.includes('service')) {
+                    const errorMsg = 'Speech recognition permission is required.\n\n' +
+                                   'Please:\n' +
+                                   '1. Click the lock icon in your browser\'s address bar\n' +
+                                   '2. Allow microphone and speech recognition access\n' +
+                                   '3. Refresh the page\n' +
+                                   '4. Click the Poseidon button again';
+                    alert(errorMsg);
+                    updatePoseidonStatus('ready', 'Permission Required');
+                } else {
+                    updatePoseidonStatus('ready', 'Error starting: ' + (startErr.message || startErr.name));
+                }
             }
             
             // Set up audio context AFTER starting recognition (non-blocking)
@@ -2718,29 +2762,90 @@ async function startRecognitionWithRetry(maxRetries = 3) {
             allTracks: tracks.length
         });
         
-        // Try to re-enable tracks
+        // Try to re-enable tracks first
         if (tracks.length > 0) {
             console.log('[Poseidon] Attempting to re-enable tracks...');
             tracks.forEach(track => {
                 if (track.readyState !== 'ended') {
                     track.enabled = true;
+                    track.muted = false;
                     console.log('[Poseidon] Re-enabled track:', track.label, 'state:', track.readyState);
                 }
             });
             
             // Wait a moment and check again
-            await new Promise(resolve => setTimeout(resolve, 300));
-            const recheckTracks = stream.getAudioTracks().filter(t => t.readyState === 'live' && t.enabled);
+            await new Promise(resolve => setTimeout(resolve, 500));
+            const recheckTracks = stream.getAudioTracks().filter(t => t.readyState === 'live' && t.enabled && !t.muted);
             if (recheckTracks.length > 0 && stream.active) {
                 console.log('[Poseidon] Stream recovered after re-enabling tracks');
             } else {
-                console.error('[Poseidon] Stream still not active after re-enabling');
-                updatePoseidonStatus('ready', 'Error: Microphone not active');
-                return;
+                console.error('[Poseidon] Stream still not active after re-enabling - re-requesting stream...');
+                
+                // Re-request the stream
+                try {
+                    // Stop old tracks
+                    tracks.forEach(track => track.stop());
+                    
+                    const newStream = await navigator.mediaDevices.getUserMedia({ 
+                        audio: {
+                            echoCancellation: true,
+                            noiseSuppression: true,
+                            autoGainControl: true
+                        }
+                    });
+                    
+                    window.poseidonAudioStream = newStream;
+                    
+                    // Verify new stream
+                    const newTracks = newStream.getAudioTracks();
+                    const newActiveTracks = newTracks.filter(t => t.readyState === 'live' && t.enabled && !t.muted);
+                    
+                    if (!newStream.active || newActiveTracks.length === 0) {
+                        console.error('[Poseidon] Re-requested stream is still not active!');
+                        updatePoseidonStatus('ready', 'Error: Microphone not active');
+                        return;
+                    }
+                    
+                    console.log('[Poseidon] Stream re-requested and verified active');
+                    
+                    // Update audio context if needed
+                    if (audioContext && audioContext.state !== 'closed') {
+                        try {
+                            if (microphone) {
+                                microphone.disconnect();
+                            }
+                            microphone = audioContext.createMediaStreamSource(newStream);
+                            analyser = audioContext.createAnalyser();
+                            analyser.fftSize = 256;
+                            analyser.smoothingTimeConstant = 0.8;
+                            microphone.connect(analyser);
+                        } catch (audioErr) {
+                            console.warn('[Poseidon] Could not reconnect audio context:', audioErr);
+                        }
+                    }
+                } catch (streamErr) {
+                    console.error('[Poseidon] ERROR re-requesting stream:', streamErr);
+                    updatePoseidonStatus('ready', 'Error: Microphone not active');
+                    return;
+                }
             }
         } else {
-            updatePoseidonStatus('ready', 'Error: No microphone tracks');
-            return;
+            console.error('[Poseidon] No tracks available - re-requesting stream...');
+            try {
+                const newStream = await navigator.mediaDevices.getUserMedia({ 
+                    audio: {
+                        echoCancellation: true,
+                        noiseSuppression: true,
+                        autoGainControl: true
+                    }
+                });
+                window.poseidonAudioStream = newStream;
+                console.log('[Poseidon] Stream re-requested successfully');
+            } catch (streamErr) {
+                console.error('[Poseidon] ERROR re-requesting stream:', streamErr);
+                updatePoseidonStatus('ready', 'Error: No microphone tracks');
+                return;
+            }
         }
     }
     
@@ -2800,25 +2905,42 @@ async function startRecognitionWithRetry(maxRetries = 3) {
         
         try {
             console.log(`[Poseidon] Starting recognition attempt ${retryCount + 1}/${maxRetries + 1}...`);
+            
+            // CRITICAL: Final verification - ensure audio stream is active before starting
+            if (!window.poseidonAudioStream) {
+                throw new Error('Audio stream is null - cannot start recognition');
+            }
+            
+            if (!window.poseidonAudioStream.active) {
+                console.error('[Poseidon] ERROR: Stream is not active before start!');
+                throw new Error('Audio stream is not active - cannot start recognition');
+            }
+            
+            const finalTracks = window.poseidonAudioStream.getAudioTracks();
+            const finalActiveTracks = finalTracks.filter(t => t.readyState === 'live' && t.enabled && !t.muted);
+            
+            if (finalActiveTracks.length === 0) {
+                console.error('[Poseidon] ERROR: No active tracks before start!');
+                throw new Error('No active audio tracks - cannot start recognition');
+            }
+            
             console.log('[Poseidon] Recognition state before start:', {
                 continuous: recognition.continuous,
                 interimResults: recognition.interimResults,
                 lang: recognition.lang,
                 maxAlternatives: recognition.maxAlternatives,
                 hasAudioStream: !!window.poseidonAudioStream,
-                audioStreamActive: window.poseidonAudioStream ? window.poseidonAudioStream.active : false
+                audioStreamActive: window.poseidonAudioStream.active,
+                activeTracks: finalActiveTracks.length,
+                totalTracks: finalTracks.length
             });
             
-            // Final verification: ensure audio stream is still active
-            if (window.poseidonAudioStream && window.poseidonAudioStream.active) {
-                const tracks = window.poseidonAudioStream.getAudioTracks();
-                console.log('[Poseidon] Audio tracks status:', tracks.map(t => ({
-                    label: t.label,
-                    readyState: t.readyState,
-                    enabled: t.enabled,
-                    muted: t.muted
-                })));
-            }
+            console.log('[Poseidon] Audio tracks status:', finalTracks.map(t => ({
+                label: t.label,
+                readyState: t.readyState,
+                enabled: t.enabled,
+                muted: t.muted
+            })));
             
             recognitionState = 'starting';
             
@@ -3784,10 +3906,16 @@ function setupRecognitionHandlers() {
                         const activeTracks = tracks.filter(t => t.readyState === 'live');
                         console.log('[Poseidon] Stream tracks:', activeTracks.length, 'active out of', tracks.length);
                         
-                        // Wait longer for permission to process and service to be available
-                        await new Promise(resolve => setTimeout(resolve, 1500)); // Increased delay
+                        // CRITICAL: Don't wait - we need to start in user gesture context
+                        // But we're in an async function now, so we can't start directly
+                        // Instead, we'll show a message asking user to click again
+                        console.log('[Poseidon] Permission re-granted, but cannot start recognition here (lost user gesture context)');
+                        console.log('[Poseidon] User must click Poseidon button again to start recognition');
                         
-                        // Create new instance
+                        // Show user-friendly message
+                        updatePoseidonStatus('ready', 'Click to start listening');
+                        
+                        // Create new instance for next attempt
                         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
                         if (SpeechRecognition) {
                             recognition = new SpeechRecognition();
@@ -3819,94 +3947,21 @@ function setupRecognitionHandlers() {
                                 lang: recognition.lang
                             });
                             
-                            // Wait longer before starting - service needs time
-                            await new Promise(resolve => setTimeout(resolve, 1000)); // Increased delay
+                            // Reset retry counter - user will click again
+                            serviceNotAllowedRetryCount = 0;
+                            lastServiceNotAllowedTime = 0;
                             
-                            // CRITICAL: Verify stream is still active, re-request if needed
-                            let streamActive = false;
-                            if (window.poseidonAudioStream) {
-                                const tracks = window.poseidonAudioStream.getAudioTracks();
-                                const activeTracks = tracks.filter(t => t.readyState === 'live' && t.enabled && !t.muted);
-                                streamActive = window.poseidonAudioStream.active && activeTracks.length > 0;
-                                
-                                console.log('[Poseidon] Stream check before starting:', {
-                                    streamActive: window.poseidonAudioStream.active,
-                                    activeTracks: activeTracks.length,
-                                    totalTracks: tracks.length,
-                                    tracksState: tracks.map(t => ({
-                                        readyState: t.readyState,
-                                        enabled: t.enabled,
-                                        muted: t.muted
-                                    }))
-                                });
+                            // Show message to user
+                            if (poseidonAssistantTranscript) {
+                                poseidonAssistantTranscript.textContent = 'Permission granted! Please click the microphone button again to start listening.';
                             }
                             
-                            if (!streamActive) {
-                                console.error('[Poseidon] ERROR: Stream not active before starting! Re-requesting...');
-                                
-                                // Re-request stream
-                                try {
-                                    const newStream = await navigator.mediaDevices.getUserMedia({ audio: true });
-                                    window.poseidonAudioStream = newStream;
-                                    
-                                    // Verify new stream
-                                    const newTracks = newStream.getAudioTracks();
-                                    const newActiveTracks = newTracks.filter(t => t.readyState === 'live');
-                                    console.log('[Poseidon] Stream re-requested:', {
-                                        active: newStream.active,
-                                        activeTracks: newActiveTracks.length
-                                    });
-                                    
-                                    // Wait a moment for stream to stabilize
-                                    await new Promise(resolve => setTimeout(resolve, 500));
-                                    
-                                    // Update audio context if needed
-                                    if (audioContext && audioContext.state !== 'closed') {
-                                        try {
-                                            // Reconnect to new stream
-                                            if (microphone) {
-                                                microphone.disconnect();
-                                            }
-                                            microphone = audioContext.createMediaStreamSource(newStream);
-                                            analyser = audioContext.createAnalyser();
-                                            analyser.fftSize = 256;
-                                            analyser.smoothingTimeConstant = 0.8;
-                                            microphone.connect(analyser);
-                                            console.log('[Poseidon] Audio context reconnected to new stream');
-                                        } catch (audioErr) {
-                                            console.warn('[Poseidon] Could not reconnect audio context:', audioErr);
-                                        }
-                                    }
-                                } catch (streamErr) {
-                                    console.error('[Poseidon] ERROR re-requesting stream:', streamErr);
-                                    throw new Error('Failed to get active audio stream');
-                                }
-                            } else {
-                                console.log('[Poseidon] ✅ Stream verified active before starting');
-                            }
-                            
-                            // Try to start
-                            if (poseidonActive && !poseidonPaused) {
-                                try {
-                                    recognition.start();
-                                    console.log('[Poseidon] Successfully restarted recognition after permission retry');
-                                    updatePoseidonStatus('listening', 'Listening...');
-                                    
-                                    // Reset retry counter on success
-                                    serviceNotAllowedRetryCount = 0;
-                                    lastServiceNotAllowedTime = 0;
-                                    
-                                    shouldSpeak = false; // Don't speak error message
-                                    return; // Successfully restarted
-                                } catch (startErr) {
-                                    console.error('[Poseidon] ERROR: Failed to start after permission retry:', startErr);
-                                    // Will trigger another service-not-allowed if permission still not working
-                                    // The retry counter will prevent infinite loop
-                                }
-                            }
-                        } else {
-                            throw new Error('SpeechRecognition API not available');
+                            shouldSpeak = false;
+                            return; // Exit - user must click again
                         }
+                        
+                        // If we get here, SpeechRecognition is not available
+                        throw new Error('SpeechRecognition API not available');
                     } catch (recoveryErr) {
                         console.error('[Poseidon] ERROR: Failed to recover from service-not-allowed:', recoveryErr);
                         console.error('[Poseidon] Recovery error details:', {

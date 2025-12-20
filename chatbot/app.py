@@ -187,6 +187,60 @@ def _gem_sources_to_knowledge(gem: dict) -> list[dict]:
         filename = (f.get("filename") or "").strip()
         content = (f.get("content") or "").strip()
         if filename and content and len(content) > 20:
+            # SPECIAL HANDLING: Filter JavaScript code from .js files
+            if filename.endswith('.js') or 'javascript' in filename.lower():
+                # Extract only data/content, not code
+                # Look for export const/let/var patterns and extract object/array content
+                # Remove function definitions, imports, etc.
+                
+                # Remove code patterns
+                content = re.sub(r'^import\s+.*?$', '', content, flags=re.MULTILINE)
+                content = re.sub(r'^export\s+(const|let|var|function|class)\s+', '', content, flags=re.MULTILINE)
+                content = re.sub(r'function\s+\w+\s*\([^)]*\)\s*\{[^}]*\}', '', content, flags=re.DOTALL)
+                content = re.sub(r'const\s+\w+\s*=\s*\([^)]*\)\s*=>\s*\{[^}]*\}', '', content, flags=re.DOTALL)
+                content = re.sub(r'=\s*\{[^}]*\};?', '', content)  # Remove object assignments
+                
+                # Try to extract JSON-like structures or data objects
+                json_match = re.search(r'(\{.*\}|\[.*\])', content, re.DOTALL)
+                if json_match:
+                    try:
+                        import json
+                        data = json.loads(json_match.group(1))
+                        # Convert structured data to text
+                        if isinstance(data, dict):
+                            content = ' '.join([f"{k}: {v}" if not isinstance(v, (dict, list)) else f"{k}" 
+                                               for k, v in list(data.items())[:20]])
+                        elif isinstance(data, list):
+                            content = ' '.join([str(item) if not isinstance(item, (dict, list)) else str(item)[:100] 
+                                               for item in data[:20]])
+                    except:
+                        pass  # If JSON parsing fails, use cleaned content
+                
+                # Remove remaining code syntax
+                content = re.sub(r'[{}();=]', ' ', content)
+                content = re.sub(r'\b(const|let|var|function|export|import|return|if|else|for|while)\b', '', content, flags=re.IGNORECASE)
+            
+            # Clean content with response cleaner
+            cleaner = get_response_cleaner()
+            content = cleaner.clean_wikipedia_artifacts(content)
+            content = cleaner.clean_promotional_content(content)
+            
+            # Remove metadata/error messages
+            content = re.sub(r'This article contains.*?\.', '', content, flags=re.IGNORECASE | re.DOTALL)
+            content = re.sub(r'References script detected.*?\.', '', content, flags=re.IGNORECASE | re.DOTALL)
+            content = re.sub(r'From Wikipedia.*?encyclopedia\s*', '', content, flags=re.IGNORECASE)
+            
+            # Extract meaningful sentences only
+            sentences = [s.strip() for s in content.split('.') 
+                        if len(s.strip()) > 20 
+                        and not s.strip().lower().startswith(('sources:', 'model:', 'context-aware:', 'note:', 'export', 'const', 'let', 'var'))
+                        and 'duplicate' not in s.lower()[:50]
+                        and 'references script' not in s.lower()]
+            content = '. '.join(sentences[:15])  # First 15 meaningful sentences
+            
+            if len(content) < 50:
+                continue
+                
             knowledge.append({
                 "title": f"Gem Source — {filename}",
                 "content": content[:2500],  # Increased from 1200 to 2500 for better context
@@ -202,6 +256,54 @@ def _gem_sources_to_knowledge(gem: dict) -> list[dict]:
             url = str(link).strip()
             if not url.startswith(("http://", "https://")):
                 continue
+            
+            # SPECIAL HANDLING: Use Wikipedia API for Wikipedia URLs
+            if "wikipedia.org" in url.lower():
+                try:
+                    # Extract page title from URL
+                    page_title = url.split("/wiki/")[-1].split("#")[0].split("?")[0]
+                    page_title = page_title.replace("_", " ")
+                    # Use Wikipedia REST API for clean summary
+                    api_url = f"https://en.wikipedia.org/api/rest_v1/page/summary/{quote_plus(page_title)}"
+                    api_r = requests.get(api_url, timeout=10, headers={"User-Agent": "AtlasAI/Dev"})
+                    if api_r.status_code == 200:
+                        data = api_r.json()
+                        extract = data.get("extract", "")
+                        title = data.get("title", page_title)
+                        
+                        if extract and len(extract) > 100:
+                            # Clean Wikipedia artifacts
+                            cleaner = get_response_cleaner()
+                            extract = cleaner.clean_wikipedia_artifacts(extract)
+                            extract = cleaner.clean_promotional_content(extract)
+                            
+                            # Remove Wikipedia metadata/error messages
+                            extract = re.sub(r'This article contains.*?\.', '', extract, flags=re.IGNORECASE | re.DOTALL)
+                            extract = re.sub(r'References script detected.*?\.', '', extract, flags=re.IGNORECASE | re.DOTALL)
+                            extract = re.sub(r'It is recommended to.*?\.', '', extract, flags=re.IGNORECASE | re.DOTALL)
+                            extract = re.sub(r'From Wikipedia.*?encyclopedia\s*', '', extract, flags=re.IGNORECASE)
+                            extract = re.sub(r'Systematic endeavour.*?\.', '', extract, flags=re.IGNORECASE | re.DOTALL)
+                            
+                            # Extract first few meaningful sentences
+                            sentences = [s.strip() for s in extract.split('.') if len(s.strip()) > 30]
+                            extract = '. '.join(sentences[:8])  # First 8 meaningful sentences
+                            
+                            if len(extract) > 100:
+                                knowledge.append({
+                                    "title": f"Gem Source — {title[:80]}",
+                                    "content": extract[:2000],
+                                    "query": gem.get("name", ""),
+                                    "source": "gem_source",
+                                    "learned_at": now,
+                                    "url": url,
+                                    "priority": 1,
+                                })
+                                continue  # Successfully processed Wikipedia, skip HTML scraping
+                except Exception as wiki_err:
+                    print(f"[Gem Source] Wikipedia API failed for {url}, falling back to HTML: {wiki_err}")
+                    # Fall through to HTML scraping
+            
+            # For non-Wikipedia or if Wikipedia API fails, use HTML scraping
             r = requests.get(url, timeout=10, headers={"User-Agent": "AtlasAI/Dev", "Accept-Language": "en-US,en;q=0.9"})
             if r.status_code != 200:
                 continue
@@ -229,9 +331,23 @@ def _gem_sources_to_knowledge(gem: dict) -> list[dict]:
             text = re.sub(r"\s{2,}", " ", text)
             text = re.sub(r"\n\s*\n", "\n", text)  # Remove excessive newlines
             
-            # Extract meaningful paragraphs (skip very short lines)
-            lines = [line.strip() for line in text.split("\n") if len(line.strip()) > 20]
+            # Remove Wikipedia metadata/error messages
+            text = re.sub(r'This article contains.*?\.', '', text, flags=re.IGNORECASE | re.DOTALL)
+            text = re.sub(r'References script detected.*?\.', '', text, flags=re.IGNORECASE | re.DOTALL)
+            text = re.sub(r'From Wikipedia.*?encyclopedia\s*', '', text, flags=re.IGNORECASE)
+            
+            # Extract meaningful paragraphs (skip very short lines and metadata)
+            lines = [line.strip() for line in text.split("\n") 
+                    if len(line.strip()) > 20 
+                    and not line.strip().lower().startswith(('sources:', 'model:', 'context-aware:', 'note:'))
+                    and 'duplicate' not in line.lower()[:50]
+                    and 'references script' not in line.lower()]
             text = " ".join(lines[:50])  # Take first 50 meaningful lines
+            
+            # Clean with response cleaner
+            cleaner = get_response_cleaner()
+            text = cleaner.clean_wikipedia_artifacts(text)
+            text = cleaner.clean_promotional_content(text)
             
             if len(text) < 100:
                 continue
