@@ -25,12 +25,25 @@ from typing import Any, Dict, List
 from flask import Flask, jsonify, render_template, request
 from flask_cors import CORS
 
-from handlers.image_handler import get_image_handler
-from refinement.answer_refiner import get_answer_refiner
-from refinement.accuracy_checker import verify_response_accuracy
-from services.research_engine_lite import get_research_engine_lite
-
+# Ensure proper path resolution for imports
+import sys
 BASE_DIR = Path(__file__).parent.resolve()
+if str(BASE_DIR) not in sys.path:
+    sys.path.insert(0, str(BASE_DIR))
+
+try:
+    from handlers.image_handler import get_image_handler
+    from refinement.answer_refiner import get_answer_refiner
+    from refinement.accuracy_checker import verify_response_accuracy
+    from services.research_engine_lite import get_research_engine_lite
+except ImportError as e:
+    # Log the error for debugging
+    import traceback
+    print(f"[lite_app] Import error: {e}")
+    print(f"[lite_app] sys.path: {sys.path}")
+    print(f"[lite_app] BASE_DIR: {BASE_DIR}")
+    traceback.print_exc()
+    raise
 UI_TEMPLATE_DIR = BASE_DIR / "ui" / "templates"
 UI_STATIC_DIR = BASE_DIR / "ui" / "static"
 
