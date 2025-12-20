@@ -1,0 +1,51 @@
+model:
+  name: "all_rounder_model_v1_1"
+  architecture: "transformer"
+  hidden_size: 1024  # Increased from 768 for better capacity
+  num_layers: 16  # Increased from 12 for deeper understanding
+  num_heads: 16  # Increased from 12 for better attention
+  intermediate_size: 4096  # Increased from 3072
+  max_position_embeddings: 1024  # Increased from 512 for longer context
+  vocab_size: 50257
+  dropout: 0.08  # Slightly reduced for better learning
+
+training:
+  batch_size: 24  # Adjusted for larger model
+  learning_rate: 8e-5  # Slightly lower for more stable training
+  num_epochs: 12  # Increased from 10
+  warmup_steps: 1500  # Increased warmup
+  weight_decay: 0.01
+  gradient_accumulation_steps: 2  # Increased for better gradient estimates
+  max_grad_norm: 1.0
+  save_steps: 800  # More frequent saves
+  eval_steps: 400  # More frequent evaluation
+  logging_steps: 50  # More frequent logging
+
+tasks:
+  - name: "text_classification"
+    enabled: true
+    num_labels: 2
+  - name: "text_generation"
+    enabled: true
+    max_length: 128
+  - name: "question_answering"
+    enabled: true
+  - name: "sentiment_analysis"
+    enabled: true
+    num_labels: 3
+  - name: "named_entity_recognition"
+    enabled: true
+    num_labels: 9
+
+data:
+  train_path: "data/train.json"
+  val_path: "data/val.json"
+  test_path: "data/test.json"
+  cache_dir: "cache"
+
+output:
+  model_dir: "models"
+  log_dir: "logs"
+
+device: "cpu"  # Change to "cuda" if you have a GPU
+

@@ -9,6 +9,22 @@ This file tracks **major changes** made to this project over time.
 
 ---
 
+## 2025-12-19 (Thor 1.1 Release - Major Update)
+- **Thor 1.1 Release**: Created Thor 1.1 as the latest model with enhanced features, defaulting to Thor 1.1 for all new conversations
+- **Stable Mode Support**: Thor 1.0 is automatically used when stable mode is enabled via main Atlas page settings
+- **Base Knowledge Import**: Thor 1.1 imports base knowledge from Thor 1.0, ensuring backward compatibility and knowledge continuity
+- **Result Setter & Image Mapping**: Updated all references from Thor 1.0 to Thor 1.1, with separate files for each version
+- **Poseidon Fixes**: Fixed infinite listening problem where Poseidon would stay in listening mode without responding
+- **Enhanced Debugging**: Added comprehensive console logging for what Poseidon hears (🎤 [Poseidon HEARD] logs)
+
+### Notes
+- **Model Selection**: System automatically uses Thor 1.1 by default, switches to Thor 1.0 in stable mode
+- **File Structure**: Created `thor-1.1/` directory with all services, `thor_1_1_result_setter.json`, and `thor_1_1_image_setter.json`
+- **Backward Compatibility**: Thor 1.0 remains fully functional and is used in stable mode
+- **Knowledge Base**: Thor 1.1 result setter automatically imports Q&A pairs from Thor 1.0 for base knowledge
+
+---
+
 ## 2025-12-15 (Final Update - UI Polish)
 - **Dark Mode Hello Text**: Removed gold gradient, now uses white/cream gradient for better readability
 - **Light Mode Upgrades**: 

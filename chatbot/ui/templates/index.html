@@ -179,17 +179,24 @@
                             </svg>
                         </button>
                         <div class="model-selector" id="modelSelector">
-                            <span class="model-name">Thor 1.0</span>
+                            <span class="model-name">Thor 1.1</span>
                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                                 <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <div class="model-dropdown" id="modelDropdown">
-                                <div class="model-option active" data-model="thor-1.0">
+                                <div class="model-option active" data-model="thor-1.1">
                                     <div class="model-option-info">
-                                        <span class="model-option-name">Thor 1.0</span>
-                                        <span class="model-option-note">Default model</span>
+                                        <span class="model-option-name">Thor 1.1</span>
+                                        <span class="model-option-note">Latest model</span>
                                     </div>
                                     <span class="model-option-status">✓</span>
+                                </div>
+                                <div class="model-option" data-model="thor-1.0">
+                                    <div class="model-option-info">
+                                        <span class="model-option-name">Thor 1.0</span>
+                                        <span class="model-option-note">Stable version</span>
+                                    </div>
+                                    <span class="model-option-status"></span>
                                 </div>
                             </div>
                         </div>
@@ -352,8 +359,10 @@
                     <h3>Default Model</h3>
                     <div class="model-options">
                         <label class="model-option-setting">
-                            <input type="radio" name="defaultModel" value="thor-1.0" checked>
-                            <span>Thor 1.0</span>
+                            <input type="radio" name="defaultModel" value="thor-1.1" checked>
+                            <span>Thor 1.1</span>
+                            <input type="radio" name="defaultModel" value="thor-1.0">
+                            <span>Thor 1.0 (Stable)</span>
                             <span class="status-badge">Active</span>
                         </label>
                     </div>
@@ -472,7 +481,7 @@
                             <ul class="plan-features">
                                 <li>✓ Basic AI assistance</li>
                                 <li>✓ Standard responses</li>
-                                <li>✓ Thor 1.0 model access</li>
+                                <li>✓ Thor 1.1 model access (Thor 1.0 in stable mode)</li>
                                 <li>✓ Think Deeper mode</li>
                                 <li>✓ Unlimited chats</li>
                             </ul>

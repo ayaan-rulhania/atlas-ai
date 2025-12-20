@@ -1,11 +1,11 @@
-// Atlas AI - Thor 1.0 Frontend
+// Atlas AI - Thor 1.1 Frontend
 let currentChatId = null;
 let isLoading = false;
 let thinkDeeperMode = false;
 let allChats = [];
 let currentTheme = 'light';
 let themePreference = 'system';
-let currentModel = 'thor-1.0';  // Track selected model
+let currentModel = 'thor-1.1';
 const PRO_ACCESS_CODE = 'QUANTUM4FUTURE';
 let currentTone = 'normal';
 let systemMode = localStorage.getItem('systemMode') || 'latest';
@@ -43,13 +43,19 @@ async function initializeApp() {
 
 function restoreModelPreference() {
     // Load saved model preference - Gems are not in dropdown, only accessible via sidebar
-    const savedModel = localStorage.getItem('selectedModel') || 'thor-1.0';
-    // If a gem is saved, keep it (for sidebar access) but default dropdown to Thor 1.0
+    // In stable mode, use Thor 1.0; otherwise use Thor 1.1
+    const defaultModel = (systemMode === 'stable') ? 'thor-1.0' : 'thor-1.1';
+    const savedModel = localStorage.getItem('selectedModel') || defaultModel;
+    // If a gem is saved, keep it (for sidebar access) but default dropdown to Thor 1.1 (or 1.0 in stable)
     // Gems can still be selected via sidebar, just not shown in dropdown
     if (savedModel && savedModel.startsWith('gem:')) {
         currentModel = savedModel; // Keep gem selection for sidebar
+    } else if (savedModel && (savedModel === 'thor-1.0' || savedModel === 'thor-1.1')) {
+        // Respect saved model if it's a valid Thor model
+        currentModel = savedModel;
     } else {
-        currentModel = savedModel || 'thor-1.0';
+        // Use default based on system mode
+        currentModel = defaultModel;
     }
     // UI will be updated after `loadGems()` rebuilds the dropdown.
     // Apply a default tone immediately; `loadGems()` may override with a Gem tone.
@@ -239,34 +245,40 @@ async function checkModelStatus() {
         const response = await fetch('/api/model/status');
         const data = await response.json();
         
-        // Check Thor 1.0 model status
-        const thorModel = data.models?.['thor-1.0'];
-        if (thorModel) {
-            if (!thorModel.loaded) {
-                console.warn('[Model Status] ⚠️ Thor 1.0 model is not loaded');
+        // Check Thor 1.1 model status (latest)
+        const thor11Model = data.models?.['thor-1.1'];
+        if (thor11Model) {
+            if (!thor11Model.loaded) {
+                console.warn('[Model Status] ⚠️ Thor 1.1 model is not loaded');
                 
                 // Show diagnostic information if available
-                if (thorModel.diagnostics) {
-                    console.warn('[Model Status] Diagnostics:', thorModel.diagnostics);
-                    if (thorModel.diagnostics.message) {
-                        console.warn('[Model Status] Reason:', thorModel.diagnostics.message);
+                if (thor11Model.diagnostics) {
+                    console.warn('[Model Status] Diagnostics:', thor11Model.diagnostics);
+                    if (thor11Model.diagnostics.message) {
+                        console.warn('[Model Status] Reason:', thor11Model.diagnostics.message);
                     }
                 }
-                
-                if (data.fallback_available) {
-                    console.info('[Model Status] ✅ Chat will still work using research engine and knowledge base');
-                    console.info('[Model Status] This is normal in serverless deployments or lightweight setups');
-                } else {
-                    console.error('[Model Status] ❌ Model required and not available');
-                }
             } else {
-                console.log('[Model Status] ✅ Thor 1.0 model is loaded and ready');
-                if (thorModel.available_tasks && thorModel.available_tasks.length > 0) {
-                    console.log('[Model Status] Available tasks:', thorModel.available_tasks);
+                console.log('[Model Status] ✅ Thor 1.1 model is loaded and ready');
+                if (thor11Model.available_tasks && thor11Model.available_tasks.length > 0) {
+                    console.log('[Model Status] Available tasks:', thor11Model.available_tasks);
                 }
             }
-        } else {
-            console.warn('[Model Status] Could not determine model status from response');
+        }
+        
+        // Check Thor 1.0 model status (stable)
+        const thor10Model = data.models?.['thor-1.0'];
+        if (thor10Model) {
+            if (!thor10Model.loaded) {
+                console.warn('[Model Status] ⚠️ Thor 1.0 (stable) model is not loaded');
+            } else {
+                console.log('[Model Status] ✅ Thor 1.0 (stable) model is loaded and ready');
+            }
+        }
+        
+        if (data.fallback_available) {
+            console.info('[Model Status] ✅ Chat will still work using research engine and knowledge base');
+            console.info('[Model Status] This is normal in serverless deployments or lightweight setups');
         }
         
         // Show overall message if available
@@ -480,6 +492,7 @@ async function handleSendMessage() {
             think_deeper: thinkDeeperMode,
             model: currentModel,  // Include selected model
             tone: getEffectiveTone(),
+            system_mode: systemMode,  // Include system mode (latest/stable)
         };
 
         // If we're trying a Gem (preview), include the draft config
@@ -1195,6 +1208,13 @@ function initializeSystemMode() {
 function applyStableMode(mode) {
     if (mode === 'stable') {
         document.body.classList.add('stable-mode');
+        // Switch to Thor 1.0 in stable mode
+        if (currentModel === 'thor-1.1' || !currentModel.startsWith('gem:')) {
+            currentModel = 'thor-1.0';
+            localStorage.setItem('selectedModel', 'thor-1.0');
+            updateModelDisplay();
+            rebuildModelDropdown();
+        }
         // Disable latest features
         const poseidonBtn = document.getElementById('poseidonLaunchBtn');
         if (poseidonBtn) {
@@ -1215,6 +1235,13 @@ function applyStableMode(mode) {
         }
     } else {
         document.body.classList.remove('stable-mode');
+        // Switch to Thor 1.1 in latest mode (unless gem is selected)
+        if (currentModel === 'thor-1.0' || (!currentModel.startsWith('gem:') && currentModel !== 'thor-1.1')) {
+            currentModel = 'thor-1.1';
+            localStorage.setItem('selectedModel', 'thor-1.1');
+            updateModelDisplay();
+            rebuildModelDropdown();
+        }
         // Re-enable features
         const poseidonBtn = document.getElementById('poseidonLaunchBtn');
         if (poseidonBtn) {
@@ -1654,8 +1681,9 @@ async function loadGems() {
 }
 
 function getModelDisplayName(modelId) {
-    if (!modelId) return 'Thor 1.0';
+    if (!modelId) return 'Thor 1.1';
     if (modelId === 'thor-1.0') return 'Thor 1.0';
+    if (modelId === 'thor-1.1') return 'Thor 1.1';
     if (modelId === 'gem:preview' && activeGemDraft) return `Gem: ${toTitleCase(activeGemDraft.name || 'Gem')} (Try)`;
     if (modelId.startsWith('gem:')) {
         const id = modelId.replace(/^gem:/, '');
@@ -1677,11 +1705,16 @@ function rebuildModelDropdown() {
 
     const items = [];
 
-    // Only show Thor 1.0 in dropdown - Gems are accessible via sidebar
-    items.push({ id: 'thor-1.0', name: 'Thor 1.0', note: 'Default model' });
+    // Show both Thor 1.1 (latest) and Thor 1.0 (stable) - Gems are accessible via sidebar
+    if (systemMode === 'stable') {
+        items.push({ id: 'thor-1.0', name: 'Thor 1.0', note: 'Stable mode' });
+    } else {
+        items.push({ id: 'thor-1.1', name: 'Thor 1.1', note: 'Latest model' });
+        items.push({ id: 'thor-1.0', name: 'Thor 1.0', note: 'Stable version' });
+    }
 
     dropdown.innerHTML = items.map(it => {
-        // Only mark as active if it's Thor 1.0 and no gem is selected
+        // Mark as active if it matches current model and no gem is selected
         // (Gems selected via sidebar won't show as active in dropdown, which is fine)
         const active = (it.id === currentModel && !currentModel.startsWith('gem:')) ? 'active' : '';
         const displayName = toTitleCase(it.name || '');
@@ -2196,6 +2229,8 @@ let speechDetected = false;
 let consecutiveNoSpeechCount = 0;
 let serviceNotAllowedRetryCount = 0; // Track retries for service-not-allowed errors
 let lastServiceNotAllowedTime = 0; // Track when last service-not-allowed occurred
+let rapidErrorTimes = []; // Track recent error times for circuit breaker
+let serviceNotAllowedDisabled = false; // Circuit breaker flag - stop retrying if too many rapid errors
 let lastHighVolumeTime = 0; // Track when we last detected high volume
 let currentAudioLevel = 0; // Current audio level (0-1)
 let audioLevelHistory = []; // History of audio levels for trend analysis
@@ -2203,7 +2238,9 @@ const SILENCE_TIMEOUT_MS = 1500; // Process after 1.5 seconds of silence (reduce
 const MIN_SPEECH_DURATION_MS = 300; // Minimum speech duration to process
 const MAX_NO_SPEECH_COUNT = 3; // Max consecutive no-speech events before restart
 const MAX_SERVICE_NOT_ALLOWED_RETRIES = 2; // Max retries for service-not-allowed
-const SERVICE_NOT_ALLOWED_COOLDOWN_MS = 5000; // Cooldown period between retries (5 seconds)
+const SERVICE_NOT_ALLOWED_COOLDOWN_MS = 10000; // Cooldown period between retries (10 seconds - increased to prevent loops)
+const MAX_RAPID_ERRORS = 5; // Stop if we get this many errors in quick succession (circuit breaker)
+const RAPID_ERROR_WINDOW_MS = 3000; // Time window for rapid error detection (3 seconds)
 const AUDIO_CHECK_INTERVAL_MS = 100; // Check audio levels every 100ms
 const AUDIO_LEVEL_THRESHOLD = 0.05; // Minimum audio level to consider as speech
 const VOLUME_DECLINE_THRESHOLD = 0.02; // Volume must drop below this to trigger processing
@@ -2559,6 +2596,8 @@ async function openPoseidonOverlay() {
             consecutiveNoSpeechCount = 0;
             serviceNotAllowedRetryCount = 0; // Reset retry counter
             lastServiceNotAllowedTime = 0;
+            rapidErrorTimes = []; // Reset rapid error tracking
+            serviceNotAllowedDisabled = false; // Reset circuit breaker
             lastSpeechTime = Date.now();
             clearTimeout(silenceTimeout);
             clearTimeout(recognitionRestartTimeout);
@@ -2666,15 +2705,12 @@ async function openPoseidonOverlay() {
                 });
                 
                 // If it fails immediately, it's likely a permission or service issue
+                // The error handler will try to recover automatically
                 if (startErr.name === 'NotAllowedError' || startErr.message?.includes('permission') || startErr.message?.includes('service')) {
-                    const errorMsg = 'Speech recognition permission is required.\n\n' +
-                                   'Please:\n' +
-                                   '1. Click the lock icon in your browser\'s address bar\n' +
-                                   '2. Allow microphone and speech recognition access\n' +
-                                   '3. Refresh the page\n' +
-                                   '4. Click the Poseidon button again';
-                    alert(errorMsg);
-                    updatePoseidonStatus('ready', 'Permission Required');
+                    console.warn('[Poseidon] Initial start failed - error handler will attempt recovery');
+                    updatePoseidonStatus('ready', 'Starting...');
+                    // Don't show alert - let the error handler try to recover automatically
+                    // The onerror handler will be triggered and attempt recovery
                 } else {
                     updatePoseidonStatus('ready', 'Error starting: ' + (startErr.message || startErr.name));
                 }
@@ -2725,8 +2761,42 @@ async function startRecognitionWithRetry(maxRetries = 3) {
         return;
     }
     
+    // CRITICAL: Ensure poseidonActive is true if overlay is open
+    // This prevents the infinite listening issue where recognition can't start
+    // This is the PRIMARY fix for the infinite listening problem
+    // Check multiple ways to detect if overlay is open
+    const overlayVisible = poseidonOverlay && (
+        poseidonOverlay.style.display !== 'none' ||
+        poseidonOverlay.style.display === 'flex' ||
+        poseidonOverlay.offsetParent !== null || // Element is visible
+        window.getComputedStyle(poseidonOverlay).display !== 'none'
+    );
+    
+    if (overlayVisible) {
+        poseidonActive = true;
+        poseidonPaused = false;
+        console.log('[Poseidon] ✅ Ensured poseidonActive=true (overlay is visible) - PRIMARY FIX for infinite listening');
+    } else {
+        console.warn('[Poseidon] ⚠️ Overlay check failed in startRecognitionWithRetry:', {
+            overlayExists: !!poseidonOverlay,
+            displayStyle: poseidonOverlay?.style?.display,
+            computedDisplay: poseidonOverlay ? window.getComputedStyle(poseidonOverlay).display : 'N/A',
+            offsetParent: poseidonOverlay?.offsetParent !== null
+        });
+    }
+    
+    // Double-check and force if needed
+    if (!poseidonActive && poseidonOverlay && poseidonOverlay.style.display !== 'none') {
+        console.error('[Poseidon] ❌ CRITICAL: poseidonActive is false but overlay is open! Forcing active...');
+        poseidonActive = true;
+        poseidonPaused = false;
+    }
+    
     if (!poseidonActive) {
-        console.warn('[Poseidon] Cannot start recognition - Poseidon is not active');
+        console.warn('[Poseidon] Cannot start recognition - Poseidon is not active', {
+            overlayOpen: poseidonOverlay && poseidonOverlay.style.display !== 'none',
+            overlayExists: !!poseidonOverlay
+        });
         return;
     }
     
@@ -3233,6 +3303,7 @@ async function handlePoseidonTranscript(transcript) {
             think_deeper: thinkDeeperMode,
             model: currentModel,
             tone: getEffectiveTone(),
+            system_mode: systemMode,  // Include system mode (latest/stable)
         };
         
         if (currentModel === 'gem:preview' && activeGemDraft) {
@@ -3502,6 +3573,12 @@ function setupRecognitionHandlers() {
             const isFinal = result.isFinal || false;
             const confidence = result[0].confidence || 0;
             
+            // DEBUG: Log what Poseidon hears
+            console.log(`🎤 [Poseidon HEARD] Result ${i}: isFinal=${isFinal}, transcript="${transcript}", confidence=${confidence}, length=${transcript.length}`);
+            if (transcript.trim().length > 0) {
+                console.log(`🎤 [Poseidon HEARD] "${transcript}"`);
+            }
+            
             console.log(`[Poseidon] Result ${i}: isFinal=${isFinal}, transcript="${transcript}", confidence=${confidence}, length=${transcript.length}`);
             
             if (isFinal) {
@@ -3518,6 +3595,14 @@ function setupRecognitionHandlers() {
         const combinedFinal = finalTranscript.trim();
         const combinedInterim = interimTranscript.trim();
         const displayText = combinedFinal || combinedInterim;
+        
+        // DEBUG: Log what Poseidon hears (clear summary)
+        if (combinedFinal.length > 0) {
+            console.log(`🎤 [Poseidon HEARD - FINAL] "${combinedFinal}"`);
+        }
+        if (combinedInterim.length > 0 && combinedFinal.length === 0) {
+            console.log(`🎤 [Poseidon HEARD - INTERIM] "${combinedInterim}"`);
+        }
         
         console.log('[Poseidon] ===== TRANSCRIPT SUMMARY =====');
         console.log('[Poseidon] Final transcript:', combinedFinal, `(${combinedFinal.length} chars)`);
@@ -3809,16 +3894,47 @@ function setupRecognitionHandlers() {
             const now = Date.now();
             const timeSinceLastError = now - lastServiceNotAllowedTime;
             
+            // CIRCUIT BREAKER: Track rapid errors to prevent infinite loops
+            rapidErrorTimes.push(now);
+            // Remove errors older than the window
+            rapidErrorTimes = rapidErrorTimes.filter(time => now - time < RAPID_ERROR_WINDOW_MS);
+            
+            // If we're getting too many errors too quickly, disable retries
+            if (rapidErrorTimes.length >= MAX_RAPID_ERRORS) {
+                if (!serviceNotAllowedDisabled) {
+                    console.error(`[Poseidon] 🛑 CIRCUIT BREAKER TRIGGERED: ${rapidErrorTimes.length} errors in ${RAPID_ERROR_WINDOW_MS}ms`);
+                    console.error('[Poseidon] Stopping all retry attempts to prevent infinite loop');
+                    serviceNotAllowedDisabled = true;
+                    
+                    // Show user-friendly error
+                    updatePoseidonStatus('ready', 'Service Unavailable');
+                    if (poseidonAssistantTranscript) {
+                        poseidonAssistantTranscript.textContent = 
+                            'Speech recognition service is not available. Please refresh the page and try again.';
+                    }
+                }
+                return; // Stop processing this error
+            }
+            
+            // Check if circuit breaker is disabled
+            if (serviceNotAllowedDisabled) {
+                console.warn('[Poseidon] Circuit breaker is active - ignoring service-not-allowed error');
+                return;
+            }
+            
             // Check if we should retry (cooldown period and retry limit)
             const shouldRetry = serviceNotAllowedRetryCount < MAX_SERVICE_NOT_ALLOWED_RETRIES && 
-                               timeSinceLastError > SERVICE_NOT_ALLOWED_COOLDOWN_MS;
+                               timeSinceLastError > SERVICE_NOT_ALLOWED_COOLDOWN_MS &&
+                               !serviceNotAllowedDisabled;
             
             console.log('[Poseidon] Service-not-allowed retry check:', {
                 retryCount: serviceNotAllowedRetryCount,
                 maxRetries: MAX_SERVICE_NOT_ALLOWED_RETRIES,
                 timeSinceLastError: timeSinceLastError,
                 cooldown: SERVICE_NOT_ALLOWED_COOLDOWN_MS,
-                shouldRetry: shouldRetry
+                shouldRetry: shouldRetry,
+                rapidErrors: rapidErrorTimes.length,
+                circuitBreakerActive: serviceNotAllowedDisabled
             });
             
             // Service not available - check if we're on secure context
@@ -3906,16 +4022,12 @@ function setupRecognitionHandlers() {
                         const activeTracks = tracks.filter(t => t.readyState === 'live');
                         console.log('[Poseidon] Stream tracks:', activeTracks.length, 'active out of', tracks.length);
                         
-                        // CRITICAL: Don't wait - we need to start in user gesture context
-                        // But we're in an async function now, so we can't start directly
-                        // Instead, we'll show a message asking user to click again
-                        console.log('[Poseidon] Permission re-granted, but cannot start recognition here (lost user gesture context)');
-                        console.log('[Poseidon] User must click Poseidon button again to start recognition');
+                        // CRITICAL: Try to start recognition immediately after recovery
+                        // We're still in the async function, but if the error happened quickly,
+                        // we might still be within the user gesture context window
+                        console.log('[Poseidon] Permission re-granted, attempting to start recognition immediately...');
                         
-                        // Show user-friendly message
-                        updatePoseidonStatus('ready', 'Click to start listening');
-                        
-                        // Create new instance for next attempt
+                        // Create new instance
                         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
                         if (SpeechRecognition) {
                             recognition = new SpeechRecognition();
@@ -3947,17 +4059,124 @@ function setupRecognitionHandlers() {
                                 lang: recognition.lang
                             });
                             
-                            // Reset retry counter - user will click again
-                            serviceNotAllowedRetryCount = 0;
-                            lastServiceNotAllowedTime = 0;
-                            
-                            // Show message to user
-                            if (poseidonAssistantTranscript) {
-                                poseidonAssistantTranscript.textContent = 'Permission granted! Please click the microphone button again to start listening.';
+                            // Verify stream is still active
+                            if (!window.poseidonAudioStream || !window.poseidonAudioStream.active) {
+                                console.error('[Poseidon] ERROR: Stream not active after recovery');
+                                throw new Error('Stream not active after recovery');
                             }
                             
-                            shouldSpeak = false;
-                            return; // Exit - user must click again
+                            const streamTracks = window.poseidonAudioStream.getAudioTracks();
+                            const activeTracks = streamTracks.filter(t => t.readyState === 'live' && t.enabled && !t.muted);
+                            if (activeTracks.length === 0) {
+                                console.error('[Poseidon] ERROR: No active tracks after recovery');
+                                throw new Error('No active tracks after recovery');
+                            }
+                            
+                            console.log('[Poseidon] ✅ Stream verified active, attempting to start recognition...');
+                            
+                            // CRITICAL: Ensure poseidonActive is true if overlay is open
+                            // The recovery flow might happen after overlay opens but before poseidonActive is set
+                            // This is the ROOT CAUSE of the infinite listening problem
+                            // Check multiple ways to detect if overlay is open
+                            const overlayVisible = poseidonOverlay && (
+                                poseidonOverlay.style.display !== 'none' ||
+                                poseidonOverlay.style.display === 'flex' ||
+                                poseidonOverlay.offsetParent !== null || // Element is visible
+                                window.getComputedStyle(poseidonOverlay).display !== 'none'
+                            );
+                            
+                            if (overlayVisible) {
+                                poseidonActive = true;
+                                poseidonPaused = false;
+                                console.log('[Poseidon] ✅ Ensured poseidonActive=true (overlay is visible) - this fixes infinite listening');
+                            } else {
+                                console.warn('[Poseidon] ⚠️ Overlay check failed - overlay not visible:', {
+                                    overlayExists: !!poseidonOverlay,
+                                    displayStyle: poseidonOverlay?.style?.display,
+                                    computedDisplay: poseidonOverlay ? window.getComputedStyle(poseidonOverlay).display : 'N/A',
+                                    offsetParent: poseidonOverlay?.offsetParent !== null
+                                });
+                            }
+                            
+                            // Double-check poseidonActive after ensuring it
+                            if (!poseidonActive) {
+                                console.error('[Poseidon] ❌ CRITICAL: poseidonActive is still false after overlay check!');
+                                console.error('[Poseidon] This indicates a state management bug. Forcing active state...');
+                                poseidonActive = true;
+                                poseidonPaused = false;
+                            }
+                            
+                            // Try to start recognition immediately (might still be in gesture context)
+                            if (poseidonActive && !poseidonPaused) {
+                                try {
+                                    recognition.start();
+                                    console.log('[Poseidon] ✅ Recognition started successfully after recovery!');
+                                    updatePoseidonStatus('listening', 'Listening...');
+                                    
+                                    // Reset retry counter on success
+                                    serviceNotAllowedRetryCount = 0;
+                                    lastServiceNotAllowedTime = 0;
+                                    
+                                    shouldSpeak = false;
+                                    return; // Successfully started
+                                } catch (startErr) {
+                                    console.warn('[Poseidon] Could not start immediately after recovery:', startErr);
+                                    console.warn('[Poseidon] This is normal if we lost user gesture context - will auto-retry');
+                                    
+                                    // If we can't start here, the error handler will trigger again
+                                    // and we'll retry (up to MAX_SERVICE_NOT_ALLOWED_RETRIES)
+                                    // But for now, just continue - the recognition instance is ready
+                                    // and will be started on the next user interaction or error retry
+                                    
+                                    // Reset retry counter to allow one more attempt
+                                    serviceNotAllowedRetryCount = Math.max(0, serviceNotAllowedRetryCount - 1);
+                                    
+                                    // Update status to show we're ready
+                                    updatePoseidonStatus('ready', 'Ready - will start automatically');
+                                    
+                                    shouldSpeak = false;
+                                    return; // Exit - will retry on next error or user action
+                                }
+                            } else {
+                                // FINAL FALLBACK: If overlay is open but poseidonActive is false, force it
+                                // This is a critical fix for the infinite listening bug
+                                const overlayVisible = poseidonOverlay && (
+                                    poseidonOverlay.style.display !== 'none' ||
+                                    poseidonOverlay.style.display === 'flex' ||
+                                    poseidonOverlay.offsetParent !== null ||
+                                    window.getComputedStyle(poseidonOverlay).display !== 'none'
+                                );
+                                
+                                if (overlayVisible) {
+                                    console.error('[Poseidon] ❌ CRITICAL BUG: Overlay is open but poseidonActive is false!');
+                                    console.error('[Poseidon] Forcing poseidonActive=true to fix infinite listening bug');
+                                    poseidonActive = true;
+                                    poseidonPaused = false;
+                                    
+                                    // Try again now that we've forced the state
+                                    try {
+                                        recognition.start();
+                                        console.log('[Poseidon] ✅ Recognition started after forcing active state!');
+                                        updatePoseidonStatus('listening', 'Listening...');
+                                        serviceNotAllowedRetryCount = 0;
+                                        lastServiceNotAllowedTime = 0;
+                                        shouldSpeak = false;
+                                        return;
+                                    } catch (forceStartErr) {
+                                        console.error('[Poseidon] Still failed after forcing state:', forceStartErr);
+                                    }
+                                }
+                                
+                                console.warn('[Poseidon] Cannot start - Poseidon inactive or paused', {
+                                    poseidonActive: poseidonActive,
+                                    poseidonPaused: poseidonPaused,
+                                    overlayOpen: poseidonOverlay && poseidonOverlay.style.display !== 'none',
+                                    overlayExists: !!poseidonOverlay
+                                });
+                                updatePoseidonStatus('ready', 'Ready');
+                                shouldSpeak = false;
+                                return;
+                            }
                         }
                         
                         // If we get here, SpeechRecognition is not available
@@ -4099,6 +4318,8 @@ function closePoseidonOverlay() {
     consecutiveNoSpeechCount = 0;
     serviceNotAllowedRetryCount = 0; // Reset retry counter
     lastServiceNotAllowedTime = 0;
+    rapidErrorTimes = []; // Reset rapid error tracking
+    serviceNotAllowedDisabled = false; // Reset circuit breaker
     lastHighVolumeTime = 0;
     currentAudioLevel = 0;
     audioLevelHistory = [];

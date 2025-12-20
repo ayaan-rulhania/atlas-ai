@@ -1,5 +1,5 @@
 """
-Flask backend for Atlas AI - Thor 1.0 Model Interface
+Flask backend for Atlas AI - Thor 1.1 Model Interface
 """
 from flask import Flask, render_template, request, jsonify, session
 from flask_cors import CORS
@@ -17,13 +17,21 @@ from bs4 import BeautifulSoup
 # Add parent directories to path for imports
 BASE_DIR = Path(__file__).parent.resolve()
 ATLAS_ROOT = BASE_DIR.parent
-THOR_DIR = ATLAS_ROOT / "thor-1.0"
+THOR_1_0_DIR = ATLAS_ROOT / "thor-1.0"
+THOR_1_1_DIR = ATLAS_ROOT / "thor-1.1"
 
-# Ensure THOR_DIR is first for imports
-thor_path = str(THOR_DIR)
+# Default to Thor 1.1, but support both
+THOR_DIR = THOR_1_1_DIR  # Default to latest
+
+# Ensure THOR_DIR is first for imports (will be set based on model selection)
+thor_path = str(THOR_1_1_DIR)
 if thor_path in sys.path:
     sys.path.remove(thor_path)
 sys.path.insert(0, thor_path)
+# Also add thor-1.0 to path for stable mode
+thor_1_0_path = str(THOR_1_0_DIR)
+if thor_1_0_path not in sys.path:
+    sys.path.insert(1, thor_1_0_path)
 
 try:
     import torch  # type: ignore
@@ -78,14 +86,17 @@ if os.environ.get("VERCEL") == "1" or os.environ.get("ATLAS_DEPLOYMENT_MODE") in
     except Exception:
         pass
 
-MODEL_DIR = str(THOR_DIR / "models")
-TOKENIZER_DIR = str(THOR_DIR / "models")
-CONFIG_PATH = str(THOR_DIR / "config" / "config.yaml")
+# Model paths - will be set based on selected model
+MODEL_DIR = str(THOR_1_1_DIR / "models")  # Default to Thor 1.1
+TOKENIZER_DIR = str(THOR_1_1_DIR / "models")
+CONFIG_PATH = str(THOR_1_1_DIR / "config" / "config.yaml")
 CHATS_DIR = str(DATA_ROOT / "chats")
 CONVERSATIONS_DIR = str(DATA_ROOT / "conversations")
 PROJECTS_DIR = str(DATA_ROOT / "projects")
 HISTORY_DIR = str(DATA_ROOT / "history")
-THOR_RESULT_SETTER_FILE = str(BASE_DIR / "thor_result_setter.json")
+THOR_1_0_RESULT_SETTER_FILE = str(BASE_DIR / "thor_result_setter.json")
+THOR_1_1_RESULT_SETTER_FILE = str(BASE_DIR / "thor_1_1_result_setter.json")
+THOR_RESULT_SETTER_FILE = THOR_1_1_RESULT_SETTER_FILE  # Default to latest
 
 # Gems (custom sub-models)
 GEMS_DIR = DATA_ROOT / "gems"
@@ -450,31 +461,50 @@ def _tone_profile(tone: str) -> str:
 
 # Global model instances
 model_instances = {
-    'thor-1.0': None
+    'thor-1.0': None,
+    'thor-1.1': None
 }
 
 # Brain connector
 brain_connector = BrainConnector()
 
 
-def check_result_setter(query, model_name='thor-1.0'):
+def check_result_setter(query, model_name='thor-1.1'):
     """
     Check if the query has a pre-set answer in the Result Setter.
     Returns the authoritative answer if found, None otherwise.
     
     Uses fuzzy matching to handle variations in how questions are asked.
+    Supports both Thor 1.0 and Thor 1.1 result setters.
     """
     try:
-        # Single source of truth now (Thor only); keep signature for compatibility
-        rs_file = THOR_RESULT_SETTER_FILE
+        # Use appropriate result setter file based on model
+        # Thor 1.1 imports base knowledge from Thor 1.0
+        qa_pairs = []
         
-        if not os.path.exists(rs_file):
-            return None
+        # First, check model-specific file
+        if model_name == 'thor-1.0':
+            rs_file = THOR_1_0_RESULT_SETTER_FILE
+        else:
+            rs_file = THOR_1_1_RESULT_SETTER_FILE
         
-        with open(rs_file, 'r', encoding='utf-8') as f:
-            qa_data = json.load(f)
+        if os.path.exists(rs_file):
+            with open(rs_file, 'r', encoding='utf-8') as f:
+                qa_data = json.load(f)
+                qa_pairs.extend(qa_data.get('qa_pairs', []))
         
-        qa_pairs = qa_data.get('qa_pairs', [])
+        # For Thor 1.1, also import base knowledge from Thor 1.0
+        if model_name == 'thor-1.1' and os.path.exists(THOR_1_0_RESULT_SETTER_FILE):
+            with open(THOR_1_0_RESULT_SETTER_FILE, 'r', encoding='utf-8') as f:
+                qa_data_1_0 = json.load(f)
+                # Merge, avoiding duplicates by question
+                existing_questions = {qa.get('question', '').lower().strip() for qa in qa_pairs}
+                for qa in qa_data_1_0.get('qa_pairs', []):
+                    question_lower = qa.get('question', '').lower().strip()
+                    if question_lower and question_lower not in existing_questions:
+                        qa_pairs.append(qa)
+                        existing_questions.add(question_lower)
+        
         if not qa_pairs:
             return None
         
@@ -569,31 +599,47 @@ def check_result_setter(query, model_name='thor-1.0'):
         return None
 
 
-def get_model(model_name='thor-1.0', force_reload=False):
+def get_model(model_name='thor-1.1', force_reload=False):
     """Get or initialize the model instance.
     
     Args:
-        model_name: only 'thor-1.0' is supported
+        model_name: 'thor-1.0' or 'thor-1.1' (default: thor-1.1)
         force_reload: Force reload of the model
     """
-    global model_instances
+    global model_instances, MODEL_DIR, TOKENIZER_DIR, CONFIG_PATH, THOR_DIR
     
     # Validate model name
     if model_name not in model_instances:
-        model_name = 'thor-1.0'
+        model_name = 'thor-1.1'  # Default to latest
+    
+    # Set paths based on model version
+    if model_name == 'thor-1.0':
+        THOR_DIR = THOR_1_0_DIR
+        model_dir = str(THOR_1_0_DIR / "models")
+        tokenizer_dir = str(THOR_1_0_DIR / "models")
+        config_file = str(THOR_1_0_DIR / "config" / "config.yaml")
+    else:  # thor-1.1
+        THOR_DIR = THOR_1_1_DIR
+        model_dir = str(THOR_1_1_DIR / "models")
+        tokenizer_dir = str(THOR_1_1_DIR / "models")
+        config_file = str(THOR_1_1_DIR / "config" / "config.yaml")
     
     if model_instances[model_name] is None or force_reload:
         # In serverless/lite deployments we may not ship torch/model weights.
         if torch is None:
             return None
-        model_dir = MODEL_DIR
-        config_file = CONFIG_PATH
         
         model_path = os.path.join(model_dir, "final_model.pt")
-        tokenizer_path = os.path.join(model_dir, "tokenizer.json")
+        tokenizer_path = os.path.join(tokenizer_dir, "tokenizer.json")
         
         if os.path.exists(model_path) and os.path.exists(tokenizer_path):
             try:
+                # Ensure correct path is in sys.path for imports
+                current_thor_path = str(THOR_DIR)
+                if current_thor_path in sys.path:
+                    sys.path.remove(current_thor_path)
+                sys.path.insert(0, current_thor_path)
+                
                 # Lazy import to avoid hard dependency in lightweight deployments.
                 from inference import AllRounderInference  # type: ignore
                 model_instances[model_name] = AllRounderInference(
@@ -887,12 +933,25 @@ def chat():
         code_mode = data.get('code_mode', False)  # Code mode
         code_language = data.get('code_language', 'python')  # Code language (python, javascript, html)
         image_data = data.get('image_data')  # Image data if attached
-        requested_model = (data.get('model') or 'thor-1.0').strip()
+        requested_model = (data.get('model') or 'thor-1.1').strip()
         requested_tone = (data.get('tone') or 'normal').strip()
-        model_name = 'thor-1.0'  # Underlying model (Thor) for inference
+        
+        # Check for stable mode - use Thor 1.0 in stable mode
+        system_mode = data.get('system_mode', 'latest')  # 'latest' or 'stable'
+        if system_mode == 'stable':
+            model_name = 'thor-1.0'  # Use stable version
+            model_label_for_ui = "Thor 1.0 (Stable)"
+        else:
+            model_name = 'thor-1.1'  # Use latest version by default
+            model_label_for_ui = "Thor 1.1"
+        
+        # Override if explicitly requested
+        if requested_model in ['thor-1.0', 'thor-1.1']:
+            model_name = requested_model
+            model_label_for_ui = "Thor 1.0" if requested_model == 'thor-1.0' else "Thor 1.1"
+        
         gem_config = None
         gem_knowledge = []
-        model_label_for_ui = "Thor 1.0"
 
         # Resolve gem selection (saved gem or preview gem)
         try:
@@ -1325,7 +1384,7 @@ def chat():
             ]
             
             if any(q in message_lower for q in identity_questions):
-                response = """I'm **Thor 1.0**, your AI assistant powered by Atlas! 
+                response = """I'm **Thor 1.1**, your AI assistant powered by Atlas! 
 
 I'm designed to help you with:
 - **Coding**: Python, JavaScript, and more
@@ -2528,49 +2587,62 @@ def delete_chat(chat_id):
 @app.route('/api/model/status', methods=['GET'])
 def model_status():
     """Get model status."""
-    thor_model = get_model(model_name='thor-1.0')
+    # Check both models
+    thor_1_0_model = get_model(model_name='thor-1.0')
+    thor_1_1_model = get_model(model_name='thor-1.1')
     
-    # Get available tasks from the model
-    thor_tasks = []
-    if thor_model and hasattr(thor_model, 'model') and hasattr(thor_model.model, 'task_heads'):
-        thor_tasks = list(thor_model.model.task_heads.keys())
+    # Get available tasks from the models
+    thor_1_0_tasks = []
+    if thor_1_0_model and hasattr(thor_1_0_model, 'model') and hasattr(thor_1_0_model.model, 'task_heads'):
+        thor_1_0_tasks = list(thor_1_0_model.model.task_heads.keys())
     
-    # Check why model might not be loaded
-    model_info = {
-        "loaded": thor_model is not None,
-        "available_tasks": thor_tasks
-    }
+    thor_1_1_tasks = []
+    if thor_1_1_model and hasattr(thor_1_1_model, 'model') and hasattr(thor_1_1_model.model, 'task_heads'):
+        thor_1_1_tasks = list(thor_1_1_model.model.task_heads.keys())
     
-    if not thor_model:
-        # Provide diagnostic information
-        model_info["reason"] = "not_loaded"
-        model_info["diagnostics"] = {}
+    # Check why models might not be loaded
+    def get_model_info(model, model_dir_path, model_name_str):
+        info = {
+            "loaded": model is not None,
+            "available_tasks": thor_1_0_tasks if model_name_str == 'thor-1.0' else thor_1_1_tasks
+        }
         
-        # Check if torch is available
-        if torch is None:
-            model_info["diagnostics"]["torch_available"] = False
-            model_info["diagnostics"]["message"] = "PyTorch not available (normal in serverless/lite deployments)"
-        else:
-            model_info["diagnostics"]["torch_available"] = True
+        if not model:
+            info["reason"] = "not_loaded"
+            info["diagnostics"] = {}
             
-            # Check if model files exist
-            model_dir = MODEL_DIR
-            model_path = os.path.join(model_dir, "final_model.pt")
-            tokenizer_path = os.path.join(model_dir, "tokenizer.json")
-            
-            model_info["diagnostics"]["model_file_exists"] = os.path.exists(model_path)
-            model_info["diagnostics"]["tokenizer_file_exists"] = os.path.exists(tokenizer_path)
-            
-            if not os.path.exists(model_path) or not os.path.exists(tokenizer_path):
-                model_info["diagnostics"]["message"] = "Model files not found (expected in thor-1.0/models/)"
+            # Check if torch is available
+            if torch is None:
+                info["diagnostics"]["torch_available"] = False
+                info["diagnostics"]["message"] = "PyTorch not available (normal in serverless/lite deployments)"
             else:
-                model_info["diagnostics"]["message"] = "Model files exist but loading failed (check server logs)"
+                info["diagnostics"]["torch_available"] = True
+                
+                # Check if model files exist
+                model_path = os.path.join(model_dir_path, "final_model.pt")
+                tokenizer_path = os.path.join(model_dir_path, "tokenizer.json")
+                
+                info["diagnostics"]["model_file_exists"] = os.path.exists(model_path)
+                info["diagnostics"]["tokenizer_file_exists"] = os.path.exists(tokenizer_path)
+                
+                if not os.path.exists(model_path) or not os.path.exists(tokenizer_path):
+                    info["diagnostics"]["message"] = f"Model files not found (expected in {model_name_str}/models/)"
+                else:
+                    info["diagnostics"]["message"] = "Model files exist but loading failed (check server logs)"
+        
+        return info
+    
+    thor_1_0_info = get_model_info(thor_1_0_model, str(THOR_1_0_DIR / "models"), "thor-1.0")
+    thor_1_1_info = get_model_info(thor_1_1_model, str(THOR_1_1_DIR / "models"), "thor-1.1")
     
     return jsonify({
         "models": {
-            "thor-1.0": model_info
+            "thor-1.0": thor_1_0_info,
+            "thor-1.1": thor_1_1_info
         },
-        "available_models": ["thor-1.0"],
+        "available_models": ["thor-1.0", "thor-1.1"],
+        "default_model": "thor-1.1",
+        "stable_model": "thor-1.0",
         "fallback_available": True,  # App can work without model using research engine
         "message": "Chat will work using research engine and knowledge base even if model is not loaded"
     })
@@ -2984,7 +3056,9 @@ def delete_history_entry(entry_id):
 if __name__ == '__main__':
     # Try to load models on startup
     print("Initializing Atlas AI...")
-    print("Loading Thor 1.0...")
+    print("Loading Thor 1.1 (latest)...")
+    get_model(model_name='thor-1.1')
+    print("Loading Thor 1.0 (stable)...")
     get_model(model_name='thor-1.0')
     
     # Start auto-trainer

@@ -2,7 +2,7 @@
 
 ## 🚀 Overview
 
-Atlas AI is a sophisticated AI assistant platform powered by **Thor 1.0**. The platform provides a unified chat interface, econtinuous learning capabilities, and advanced features for knowledge management and conversation handling.
+Atlas AI is a sophisticated AI assistant platform powered by **Thor 1.1** (latest) with **Thor 1.0** available in stable mode. The platform provides a unified chat interface, continuous learning capabilities, and advanced features for knowledge management and conversation handling.
 
 ## 📁 Project Structure
 
@@ -15,7 +15,8 @@ atlas-ai/
 │   ├── handlers/           # Image + markdown helpers
 │   ├── gems/               # Gems store (custom sub-models)
 │   └── thor_result_setter_server.py  # Optional result-setter tool (port 5004)
-├── thor-1.0/               # Thor model + services (research, inference, etc.)
+├── thor-1.0/               # Thor 1.0 model (stable mode)
+├── thor-1.1/               # Thor 1.1 model (latest, default)
 ├── trainx/                 # TrainX tooling (Q/A and image pairs)
 ├── brain/                  # Knowledge store
 ├── training_data/          # Training datasets
@@ -131,7 +132,8 @@ chmod +x start_all_servers.sh
 
 ### 1. Model Support
 
-- **Thor 1.0**: Default model with comprehensive capabilities
+- **Thor 1.1**: Latest model with enhanced features (default)
+- **Thor 1.0**: Stable model with proven reliability (used in stable mode)
 - **Gems**: Custom sub-models that you can create, customize, and use for specialized tasks
   - **Try Before Create**: Test gem configurations without saving
   - **Custom Instructions**: Define how each gem should behave
