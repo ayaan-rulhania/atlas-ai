@@ -917,13 +917,50 @@ def index():
 
 @app.route('/dev-atlas')
 def dev_atlas():
-    """Render the minimal Dev Atlas interface."""
+    """Render the Dev Atlas debugging interface."""
     return render_template('dev_atlas.html')
+
+
+@app.route('/api/dev-chat', methods=['POST'])
+def dev_chat():
+    """Handle chat messages with detailed debugging information."""
+    # Get the original request data and add debug_mode flag
+    original_data = request.get_json(force=True, silent=True) or {}
+    original_data['debug_mode'] = True
+    
+    # Create a new request context with the modified data
+    from flask import has_request_context, _request_ctx_stack
+    import copy
+    
+    # Store original json
+    original_json = request.json
+    
+    # Temporarily replace request.json by modifying the request context
+    # We'll pass debug_mode through the data and check it in chat()
+    with app.test_request_context(json=original_data, method='POST'):
+        # Now call chat() which will read from the modified request context
+        return chat()
 
 
 @app.route('/api/chat', methods=['POST'])
 def chat():
     """Handle chat messages."""
+    # Check if debug mode is enabled
+    debug_mode = request.json and request.json.get('debug_mode', False)
+    debug_log = []
+    
+    def log_debug(step_name, data=None, status="info"):
+        """Log debug information if debug mode is enabled"""
+        if debug_mode:
+            entry = {
+                "timestamp": datetime.now().isoformat(),
+                "step": step_name,
+                "status": status,
+                "data": data
+            }
+            debug_log.append(entry)
+            print(f"[DEV] {step_name}: {data if data else 'OK'}")
+    
     try:
         data = request.json
         message = data.get('message', '').strip()
@@ -935,6 +972,13 @@ def chat():
         image_data = data.get('image_data')  # Image data if attached
         requested_model = (data.get('model') or 'thor-1.1').strip()
         requested_tone = (data.get('tone') or 'normal').strip()
+        
+        log_debug("Request Received", {
+            "message": message[:100],
+            "chat_id": chat_id,
+            "model": requested_model,
+            "tone": requested_tone
+        })
         
         # Check for stable mode - use Thor 1.0 in stable mode
         system_mode = data.get('system_mode', 'latest')  # 'latest' or 'stable'
@@ -1052,6 +1096,11 @@ def chat():
         
         normalized = normalizer.normalize(message, conversation_context)
         normalized_message = normalized.get("normalized_query", message)
+        log_debug("Query Normalized", {
+            "original": message[:100],
+            "normalized": normalized_message[:100],
+            "changes": normalized.get("changes", [])
+        })
         
         # Initialize common sense handler
         common_sense_handler = get_common_sense_handler()
@@ -1063,6 +1112,7 @@ def chat():
             conversation_context,
             normalized_message
         )
+        log_debug("Conversational Analysis", conversational_analysis)
         
         # If this is a conversational statement that references context, handle it conversationally
         if response is None and conversational_analysis.get('is_conversational') and conversational_analysis.get('confidence', 0) >= 0.7:
@@ -1607,9 +1657,14 @@ I'm always learning and improving through our conversations. How can I help you 
                     print(f"[Research] {search_type.upper()}, PRIORITIZING Google search: {search_query}")
                     research_done = True
                     try:
+                        log_debug("Starting Web Search", {"query": search_query[:100]})
                         research_knowledge = research_engine.search_and_learn(search_query)
                         if research_knowledge:
                             print(f"[Research] Learned {len(research_knowledge)} items from Google")
+                            log_debug("Web Search Complete", {
+                                "results_count": len(research_knowledge),
+                                "top_results": [{"title": r.get("title", "")[:50]} for r in research_knowledge[:3]]
+                            })
                             # PRIORITIZE gem sources: prepend gem_knowledge so it's used first
                             if gem_knowledge:
                                 knowledge = list(gem_knowledge) + research_knowledge
@@ -2226,7 +2281,12 @@ I'm always learning and improving through our conversations. How can I help you 
                                     research_knowledge = research_engine.search_and_learn(context_query)
                                     
                                     # Step 2: Get related knowledge from brain
+                                    log_debug("Retrieving Knowledge from Brain", {"query": context_query[:100]})
                                     knowledge = brain_connector.get_relevant_knowledge(context_query)
+                                    log_debug("Knowledge Retrieved", {
+                                        "items_count": len(knowledge) if knowledge else 0,
+                                        "top_items": [{"title": k.get("title", "")[:50]} for k in (knowledge or [])[:3]]
+                                    })
                                     if gem_knowledge:
                                         knowledge = list(gem_knowledge) + (knowledge or [])
                                     
@@ -2512,11 +2572,17 @@ I'm always learning and improving through our conversations. How can I help you 
             except Exception as e:
                 print(f"[Accuracy Check] Error: {e}")
         
-        return jsonify({
+        response_data = {
             "response": response,
             "chat_id": chat_id,
             "task": task
-        }), 200
+        }
+        
+        # Add debug log if debug mode is enabled
+        if debug_mode and debug_log:
+            response_data["debug_log"] = debug_log
+        
+        return jsonify(response_data), 200
             
     except Exception as e:
         print(f"❌ ERROR in chat endpoint: {e}")
