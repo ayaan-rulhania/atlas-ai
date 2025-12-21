@@ -31,19 +31,54 @@ BASE_DIR = Path(__file__).parent.resolve()
 if str(BASE_DIR) not in sys.path:
     sys.path.insert(0, str(BASE_DIR))
 
+# Import with individual error handling for each module (more resilient)
+def _safe_import(module_path, function_name, fallback_factory=None):
+    """Safely import a function, with fallback if needed."""
+    try:
+        module = __import__(module_path, fromlist=[function_name])
+        return getattr(module, function_name)
+    except (ImportError, AttributeError) as e:
+        print(f"[lite_app] Failed to import {module_path}.{function_name}: {e}")
+        if fallback_factory:
+            print(f"[lite_app] Using fallback for {function_name}")
+            return fallback_factory()
+        raise
+
+# Import each module individually with fallbacks
 try:
     from handlers.image_handler import get_image_handler
+except Exception as e:
+    print(f"[lite_app] Image handler import failed: {e}")
+    def get_image_handler(*args, **kwargs):
+        class FallbackImageHandler:
+            def extract_image_request(self, msg): return None
+            def get_image(self, subject, size, variant=None): return ("", "placeholder")
+            def format_image_response(self, subject, url, is_trainx=False): return f"Image: {subject}"
+        return FallbackImageHandler()
+
+try:
     from refinement.answer_refiner import get_answer_refiner
+except Exception as e:
+    print(f"[lite_app] Answer refiner import failed: {e}")
+    def get_answer_refiner(*args, **kwargs):
+        class FallbackRefiner:
+            def refine(self, text, **kwargs): return text
+        return FallbackRefiner()
+
+try:
     from refinement.accuracy_checker import verify_response_accuracy
+except Exception as e:
+    print(f"[lite_app] Accuracy checker import failed: {e}")
+    def verify_response_accuracy(text, *args, **kwargs): return text
+
+try:
     from services.research_engine_lite import get_research_engine_lite
-except ImportError as e:
-    # Log the error for debugging
-    import traceback
-    print(f"[lite_app] Import error: {e}")
-    print(f"[lite_app] sys.path: {sys.path}")
-    print(f"[lite_app] BASE_DIR: {BASE_DIR}")
-    traceback.print_exc()
-    raise
+except Exception as e:
+    print(f"[lite_app] Research engine import failed: {e}")
+    def get_research_engine_lite(*args, **kwargs):
+        class FallbackEngine:
+            def search(self, query, max_results=5): return []
+        return FallbackEngine()
 UI_TEMPLATE_DIR = BASE_DIR / "ui" / "templates"
 UI_STATIC_DIR = BASE_DIR / "ui" / "static"
 
@@ -205,6 +240,12 @@ def _synthesize_lite(query: str, knowledge_items: List[Dict[str, Any]]) -> str:
         out += "\n\n" + "\n".join(f"- {p}" for p in picked[1:])
     return out
 
+
+@app.route('/favicon.ico')
+def favicon():
+    """Serve favicon."""
+    from flask import send_from_directory
+    return send_from_directory(str(UI_STATIC_DIR), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 @app.route('/')
 def index():

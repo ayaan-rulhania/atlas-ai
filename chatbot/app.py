@@ -928,17 +928,9 @@ def dev_chat():
     original_data = request.get_json(force=True, silent=True) or {}
     original_data['debug_mode'] = True
     
-    # Create a new request context with the modified data
-    from flask import has_request_context, _request_ctx_stack
-    import copy
-    
-    # Store original json
-    original_json = request.json
-    
-    # Temporarily replace request.json by modifying the request context
-    # We'll pass debug_mode through the data and check it in chat()
+    # Use Flask's test_request_context to create a new request with modified data
     with app.test_request_context(json=original_data, method='POST'):
-        # Now call chat() which will read from the modified request context
+        # Now call chat() which will read from this new request context
         return chat()
 
 
@@ -1627,9 +1619,23 @@ I'm always learning and improving through our conversations. How can I help you 
                         print(f"[Recipe Query] Detected recipe query: {message}")
                         knowledge = list(gem_knowledge) if gem_knowledge else []  # Keep gem sources, force web search otherwise
                     else:
+                        log_debug("Retrieving Knowledge from Brain", {
+                            "query": contextual_message[:100],
+                            "description": f"Searching internal knowledge base for: \"{contextual_message}\". Checking stored information from previous conversations."
+                        })
                         knowledge = brain_connector.get_relevant_knowledge(contextual_message)
                         if gem_knowledge:
                             knowledge = list(gem_knowledge) + (knowledge or [])
+                        if knowledge:
+                            log_debug("Knowledge Retrieved from Brain", {
+                                "items_count": len(knowledge),
+                                "description": f"Found {len(knowledge)} relevant knowledge item{'s' if len(knowledge) != 1 else ''} in internal knowledge base",
+                                "items": [{"title": k.get("title", "")[:60], "score": k.get("score", 0)} for k in knowledge[:5]]
+                            })
+                        else:
+                            log_debug("No Knowledge Found in Brain", {
+                                "description": "No relevant information found in internal knowledge base. Will search the web for accurate information."
+                            })
                 
                 # Detect relationship/comparison questions - always research these
                 is_relationship_query = any(phrase in context_query.lower() for phrase in [
@@ -1657,13 +1663,40 @@ I'm always learning and improving through our conversations. How can I help you 
                     print(f"[Research] {search_type.upper()}, PRIORITIZING Google search: {search_query}")
                     research_done = True
                     try:
-                        log_debug("Starting Web Search", {"query": search_query[:100]})
+                        log_debug("Starting Web Search", {
+                            "query": search_query[:100],
+                            "description": f"Searching multiple engines (Google, Bing, DuckDuckGo, Wikipedia) for: \"{search_query}\""
+                        })
                         research_knowledge = research_engine.search_and_learn(search_query)
                         if research_knowledge:
                             print(f"[Research] Learned {len(research_knowledge)} items from Google")
+                            
+                            # Group results by source for better display
+                            results_by_source = {}
+                            for r in research_knowledge:
+                                source = r.get("source", "unknown")
+                                if source not in results_by_source:
+                                    results_by_source[source] = []
+                                results_by_source[source].append({
+                                    "title": r.get("title", "")[:80],
+                                    "url": r.get("url", "")[:100] if r.get("url") else None
+                                })
+                            
+                            # Prepare detailed results with source information
+                            detailed_results = []
+                            for r in research_knowledge[:10]:
+                                detailed_results.append({
+                                    "title": r.get("title", ""),
+                                    "url": r.get("url", ""),
+                                    "source": r.get("source", "unknown"),
+                                    "content": r.get("content", "")[:200] if r.get("content") else None
+                                })
+                            
                             log_debug("Web Search Complete", {
                                 "results_count": len(research_knowledge),
-                                "top_results": [{"title": r.get("title", "")[:50]} for r in research_knowledge[:3]]
+                                "description": f"Found {len(research_knowledge)} search results from multiple sources",
+                                "sources": {k: len(v) for k, v in results_by_source.items()},
+                                "results": detailed_results  # Include full results with source info
                             })
                             # PRIORITIZE gem sources: prepend gem_knowledge so it's used first
                             if gem_knowledge:
@@ -2107,6 +2140,12 @@ I'm always learning and improving through our conversations. How can I help you 
                             # Global tone (no gem): still guide style strongly
                             contextual_input = f"System: {tone_line}\n\n" + contextual_input
 
+                        log_debug("Generating Response", {
+                            "description": "Synthesizing information from web search and knowledge base to generate a comprehensive answer. Using the AI model to create a natural, helpful response.",
+                            "context_length": len(contextual_input),
+                            "has_knowledge": len(knowledge) > 0 if 'knowledge' in locals() else False,
+                            "knowledge_items": len(knowledge) if 'knowledge' in locals() and knowledge else 0
+                        })
                         result = model.predict(contextual_input, task=task)
                         
                         # Get response cleaner for validation
@@ -2145,6 +2184,10 @@ I'm always learning and improving through our conversations. How can I help you 
                                     response = response_cleaner.clean_response(response, message)
                                     if response and len(response.strip()) > 10:
                                         print(f"[Model] Generated response using own knowledge ({len(response)} chars)")
+                                        log_debug("Response Generated", {
+                                            "length": len(response),
+                                            "description": f"Generated response ({len(response)} characters). Combining information from multiple sources to provide an accurate answer."
+                                        })
                                     else:
                                         response = None
                                 else:
@@ -2537,6 +2580,9 @@ I'm always learning and improving through our conversations. How can I help you 
         # FINAL FORMATTER: light-touch grammar/format cleanup (no forced bullets)
         if not skip_refinement:
             try:
+                log_debug("Formatting Response", {
+                    "description": "Formatting the response with proper markdown, code blocks, and structure for better readability."
+                })
                 final_formatter = get_final_response_formatter()
                 response = final_formatter.format(
                     response,
@@ -2546,8 +2592,12 @@ I'm always learning and improving through our conversations. How can I help you 
                         "tone": effective_tone if 'effective_tone' in locals() else (data.get('tone') or 'normal'),
                     },
                 )
+                log_debug("Response Formatted", {
+                    "description": "Response formatting complete. The answer is ready to be sent."
+                })
             except Exception as e:
                 print(f"[Final Formatter] Error: {e}")
+                log_debug("Formatting Error", {"error": str(e)}, "warning")
 
         # FINAL CLEANUP: Apply response cleaner to catch any remaining issues
         if not skip_refinement:
@@ -2581,6 +2631,21 @@ I'm always learning and improving through our conversations. How can I help you 
         # Add debug log if debug mode is enabled
         if debug_mode and debug_log:
             response_data["debug_log"] = debug_log
+        
+        # Add search results if available (for debugging)
+        if debug_mode:
+            # Extract search results from knowledge items if they exist
+            search_results = []
+            if 'knowledge' in locals() and knowledge:
+                for k in knowledge:
+                    if k.get("source") in ["google", "bing", "duckduckgo", "wikipedia", "brave"]:
+                        search_results.append({
+                            "title": k.get("title", ""),
+                            "url": k.get("url", ""),
+                            "source": k.get("source", "unknown")
+                        })
+            if search_results:
+                response_data["search_results"] = search_results
         
         return jsonify(response_data), 200
             
