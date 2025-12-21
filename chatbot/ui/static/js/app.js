@@ -425,8 +425,9 @@ async function handleSendMessage() {
     
     if (!message || isLoading) return;
     
-    // Check for easter egg: "I am in C5."
-    if (message === "I am in C5.") {
+    // Check for easter egg: "I am in C5." (case-insensitive, flexible punctuation)
+    const easterEggPattern = /^i\s+am\s+in\s+c5\.?$/i;
+    if (easterEggPattern.test(message)) {
         showEasterEgg();
         messageInput.value = '';
         return;
