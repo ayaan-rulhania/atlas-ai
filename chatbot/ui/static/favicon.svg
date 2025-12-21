@@ -1,48 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <defs>
-    <linearGradient id="compassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
-    </linearGradient>
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
-    </filter>
-  </defs>
+  <!-- Outer circle - hollow outline -->
+  <circle cx="50" cy="50" r="48" fill="none" stroke="#6B7280" stroke-width="2"/>
+  <circle cx="50" cy="50" r="45" fill="none" stroke="#9CA3AF" stroke-width="1" opacity="0.5"/>
   
-  <!-- Outer circle -->
-  <circle cx="50" cy="50" r="48" fill="url(#compassGrad)" filter="url(#shadow)"/>
-  <circle cx="50" cy="50" r="45" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.3"/>
-  
-  <!-- Compass rose - 8 directions -->
-  <!-- North -->
-  <line x1="50" y1="8" x2="50" y2="18" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
-  <text x="50" y="6" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">N</text>
+  <!-- Compass rose - 8 directions with distinct lines -->
+  <!-- North - main direction -->
+  <line x1="50" y1="5" x2="50" y2="20" stroke="#6B7280" stroke-width="3" stroke-linecap="round"/>
+  <text x="50" y="4" text-anchor="middle" fill="#6B7280" font-size="14" font-weight="bold" font-family="Arial, sans-serif">N</text>
   
   <!-- South -->
-  <line x1="50" y1="92" x2="50" y2="82" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
-  <text x="50" y="96" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">S</text>
+  <line x1="50" y1="95" x2="50" y2="80" stroke="#6B7280" stroke-width="3" stroke-linecap="round"/>
+  <text x="50" y="98" text-anchor="middle" fill="#6B7280" font-size="14" font-weight="bold" font-family="Arial, sans-serif">S</text>
   
   <!-- East -->
-  <line x1="92" y1="50" x2="82" y2="50" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
-  <text x="96" y="54" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">E</text>
+  <line x1="95" y1="50" x2="80" y2="50" stroke="#6B7280" stroke-width="3" stroke-linecap="round"/>
+  <text x="98" y="54" text-anchor="middle" fill="#6B7280" font-size="14" font-weight="bold" font-family="Arial, sans-serif">E</text>
   
   <!-- West -->
-  <line x1="8" y1="50" x2="18" y2="50" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
-  <text x="4" y="54" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">W</text>
+  <line x1="5" y1="50" x2="20" y2="50" stroke="#6B7280" stroke-width="3" stroke-linecap="round"/>
+  <text x="2" y="54" text-anchor="middle" fill="#6B7280" font-size="14" font-weight="bold" font-family="Arial, sans-serif">W</text>
   
-  <!-- NE, SE, SW, NW - smaller lines -->
-  <line x1="70" y1="30" x2="75" y2="25" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
-  <line x1="70" y1="70" x2="75" y2="75" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
-  <line x1="30" y1="70" x2="25" y2="75" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
-  <line x1="30" y1="30" x2="25" y2="25" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+  <!-- Secondary directions - NE, SE, SW, NW -->
+  <line x1="72" y1="28" x2="78" y2="22" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+  <line x1="72" y1="72" x2="78" y2="78" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+  <line x1="28" y1="72" x2="22" y2="78" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+  <line x1="28" y1="28" x2="22" y2="22" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
   
-  <!-- Compass needle - pointing North -->
-  <!-- North needle (red) -->
-  <path d="M 50 25 L 45 40 L 50 35 L 55 40 Z" fill="#EF4444" stroke="#ffffff" stroke-width="0.5"/>
-  <!-- South needle (white) -->
-  <path d="M 50 75 L 45 60 L 50 65 L 55 60 Z" fill="#ffffff" stroke="#E5E7EB" stroke-width="0.5"/>
+  <!-- Compass needle - hollow outline pointing North -->
+  <!-- North needle (triangle outline) -->
+  <path d="M 50 22 L 42 38 L 50 32 L 58 38 Z" fill="none" stroke="#6B7280" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="50" y1="22" x2="50" y2="32" stroke="#6B7280" stroke-width="2"/>
   
-  <!-- Center circle -->
-  <circle cx="50" cy="50" r="6" fill="#ffffff" opacity="0.9"/>
-  <circle cx="50" cy="50" r="3" fill="#4F46E5"/>
+  <!-- South needle (triangle outline) -->
+  <path d="M 50 78 L 42 62 L 50 68 L 58 62 Z" fill="none" stroke="#9CA3AF" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="50" y1="78" x2="50" y2="68" stroke="#9CA3AF" stroke-width="1.5"/>
+  
+  <!-- Center pivot circle - hollow -->
+  <circle cx="50" cy="50" r="8" fill="none" stroke="#6B7280" stroke-width="2"/>
+  <circle cx="50" cy="50" r="4" fill="none" stroke="#9CA3AF" stroke-width="1.5"/>
+  <circle cx="50" cy="50" r="1.5" fill="#6B7280"/>
 </svg>
