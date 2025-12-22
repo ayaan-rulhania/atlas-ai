@@ -1630,10 +1630,36 @@ const GEM_TRY_TEMPLATES = [
 ];
 
 async function loadGems() {
+    // First, try to load from localStorage for instant display
+    try {
+        const cachedGems = localStorage.getItem('atlasGems');
+        if (cachedGems) {
+            const parsed = JSON.parse(cachedGems);
+            if (Array.isArray(parsed)) {
+                gems = parsed;
+                // Update UI immediately with cached data
+                rebuildModelDropdown();
+                updateModelDisplay();
+                renderGemsSidebar();
+                renderGemsManageList();
+            }
+        }
+    } catch (e) {
+        console.warn('Error loading cached gems from localStorage:', e);
+    }
+
+    // Then fetch fresh data from API and update
     try {
         const res = await fetch('/api/gems');
         const data = await res.json();
         gems = Array.isArray(data.gems) ? data.gems : [];
+        
+        // Save to localStorage for next time
+        try {
+            localStorage.setItem('atlasGems', JSON.stringify(gems));
+        } catch (e) {
+            console.warn('Error saving gems to localStorage:', e);
+        }
 
         // Preview gems are ephemeral and can't survive reload without the draft config.
         // If a stale preference points to gem:preview, fall back to the default model.
@@ -1672,12 +1698,15 @@ async function loadGems() {
         renderGemsSidebar();
         renderGemsManageList();
     } catch (e) {
-        console.error('Error loading gems:', e);
-        gems = [];
-        rebuildModelDropdown();
-        updateModelDisplay();
-        renderGemsSidebar();
-        renderGemsManageList();
+        console.error('Error loading gems from API:', e);
+        // If API fails but we have cached gems, keep using them
+        if (!gems || gems.length === 0) {
+            gems = [];
+            rebuildModelDropdown();
+            updateModelDisplay();
+            renderGemsSidebar();
+            renderGemsManageList();
+        }
     }
 }
 
@@ -2234,7 +2263,7 @@ let rapidErrorTimes = []; // Track recent error times for circuit breaker
 let serviceNotAllowedDisabled = false; // Circuit breaker flag - stop retrying if too many rapid errors
 let lastHighVolumeTime = 0; // Track when we last detected high volume
 let currentAudioLevel = 0; // Current audio level (0-1)
-let audioLevelHistory = []; // History of audio levels for trend analysis
+let audioLevelHistory = []; // History of audio levels for trend analysis and adaptive sensitivity (v3.0.0)
 const SILENCE_TIMEOUT_MS = 1500; // Process after 1.5 seconds of silence (reduced for faster response)
 const MIN_SPEECH_DURATION_MS = 300; // Minimum speech duration to process
 const MAX_NO_SPEECH_COUNT = 3; // Max consecutive no-speech events before restart
@@ -2246,6 +2275,23 @@ const AUDIO_CHECK_INTERVAL_MS = 100; // Check audio levels every 100ms
 const AUDIO_LEVEL_THRESHOLD = 0.05; // Minimum audio level to consider as speech
 const VOLUME_DECLINE_THRESHOLD = 0.02; // Volume must drop below this to trigger processing
 const MIN_VOLUME_DECLINE_DURATION = 800; // How long volume must be low before processing (ms)
+let isSpeaking = false; // Track if Poseidon is currently speaking
+let lastSpokenText = ''; // Track the last text that Poseidon spoke (cleaned version)
+let lastSpokenTime = 0; // Track when Poseidon last finished speaking
+let lastAssistantResponse = ''; // Track last assistant response for repeat command
+let voiceCommandHandlers = {}; // Voice command handlers
+let audioQualityIndicator = null; // Audio quality indicator element
+
+// Version 3.0.0: New features
+let currentSpeechSpeed = 1.0; // Speech synthesis speed (0.5 - 2.0)
+let currentSpeechVolume = 1.0; // Speech synthesis volume (0.0 - 1.0)
+let currentLanguage = 'en-US'; // Current language setting
+let interruptionEnabled = true; // Allow user to interrupt
+let adaptiveSensitivity = 0.01; // Adaptive audio threshold
+let conversationSummaries = []; // Store conversation summaries
+let emotionHistory = []; // Track emotion history for adaptation
+let canInterrupt = false; // Flag to enable interruption
+const SPEECH_MATCH_WINDOW_MS = 10000; // Time window to check for matching speech (10 seconds)
 
 // Initialize Poseidon
 function initializePoseidon() {
@@ -2290,12 +2336,25 @@ function initializePoseidon() {
         console.warn('[Poseidon] Not in secure context - may have limited functionality');
     }
     
-    // Backend check 3: Load and validate saved voice settings
+    // Backend check 3: Load and validate saved voice settings (v3.0.0: Enhanced)
     const savedAccent = localStorage.getItem('poseidonAccent') || 'en-US';
     const savedGender = localStorage.getItem('poseidonGender') || 'male';
+    const savedSpeed = localStorage.getItem('poseidonSpeechSpeed');
+    const savedVolume = localStorage.getItem('poseidonSpeechVolume');
+    
+    // Version 3.0.0: Load saved settings
+    if (savedSpeed) {
+        currentSpeechSpeed = parseFloat(savedSpeed) || 1.0;
+    }
+    if (savedVolume) {
+        currentSpeechVolume = parseFloat(savedVolume) || 1.0;
+    }
+    if (savedAccent) {
+        currentLanguage = savedAccent;
+    }
     
     // Validate accent
-    const validAccents = ['en-US', 'en-GB', 'en-AU', 'en-IN'];
+    const validAccents = ['en-US', 'en-GB', 'en-AU', 'en-IN', 'es-ES', 'es-MX', 'fr-FR', 'de-DE', 'it-IT', 'pt-BR', 'ja-JP', 'ko-KR', 'zh-CN'];
     voiceSettings.accent = validAccents.includes(savedAccent) ? savedAccent : 'en-US';
     
     // Validate gender
@@ -2462,14 +2521,18 @@ function updateVoiceSelection() {
     speechSynthesis.onvoiceschanged = loadVoices;
 }
 
-function speakText(text) {
+// Version 3.0.0: Enhanced speakText with adaptive parameters and interruption support
+function speakText(text, speed = null, volume = null) {
     if (!('speechSynthesis' in window) || !currentVoice) {
         console.warn('Speech synthesis not available');
         return;
     }
     
-    // Stop any ongoing speech
-    speechSynthesis.cancel();
+    // Version 3.0.0: Stop any ongoing speech (allows interruption)
+    if (interruptionEnabled && isSpeaking) {
+        console.log('[Poseidon] Interrupting current speech');
+        speechSynthesis.cancel();
+    }
     
     // Clean text for speech (remove markdown formatting)
     const cleanText = text
@@ -2482,15 +2545,39 @@ function speakText(text) {
         .replace(/\n/g, ' ') // Replace single newlines with space
         .trim();
     
+    // Store the cleaned text that will be spoken (for filtering self-hearing)
+    lastSpokenText = cleanText;
+    isSpeaking = true;
+    console.log('[Poseidon] Storing spoken text for filtering:', cleanText.substring(0, 100) + (cleanText.length > 100 ? '...' : ''));
+    
+    // Version 3.0.0: Use adaptive parameters
+    const speechSpeed = speed !== null ? speed : currentSpeechSpeed;
+    const speechVolume = volume !== null ? volume : currentSpeechVolume;
+    
+    // Emotion-based adaptation (v3.0.0)
+    const recentEmotions = emotionHistory.slice(-5);
+    if (recentEmotions.length > 0) {
+        const dominantEmotion = getDominantEmotion(recentEmotions);
+        const emotionGuidance = getEmotionBasedGuidance(dominantEmotion);
+        // Adjust speed based on emotion
+        const adaptedSpeed = speechSpeed * emotionGuidance.speed;
+        currentSpeechSpeed = Math.max(0.5, Math.min(2.0, adaptedSpeed));
+    }
+    
     const utterance = new SpeechSynthesisUtterance(cleanText);
     utterance.voice = currentVoice;
-    utterance.rate = 1.0;
+    utterance.rate = currentSpeechSpeed;
     utterance.pitch = 1.0;
-    utterance.volume = 1.0;
+    utterance.volume = currentSpeechVolume;
+    utterance.lang = currentLanguage;
+    
+    // Version 3.0.0: Enable interruption detection
+    canInterrupt = true;
     
     utterance.onstart = () => {
         console.log('[Poseidon] 🗣️ Speaking started');
         updatePoseidonStatus('speaking', 'Speaking...');
+        isSpeaking = true;
         
         // Ensure recognition is still running (it should be in continuous mode)
         // Don't restart here - continuous mode should keep it running
@@ -2501,6 +2588,9 @@ function speakText(text) {
     
     utterance.onend = () => {
         console.log('[Poseidon] ✅ Finished speaking');
+        isSpeaking = false;
+        lastSpokenTime = Date.now();
+        console.log('[Poseidon] Marked speech as finished, will filter matching transcripts for', SPEECH_MATCH_WINDOW_MS, 'ms');
         
         // After speaking, return to listening
         if (poseidonActive && !poseidonPaused) {
@@ -2525,6 +2615,8 @@ function speakText(text) {
     
     utterance.onerror = (event) => {
         console.error('[Poseidon] ERROR in speech synthesis:', event);
+        isSpeaking = false;
+        lastSpokenTime = Date.now();
         // Return to listening on error
         if (poseidonActive && !poseidonPaused) {
             recognitionState = 'listening';
@@ -2537,6 +2629,11 @@ function speakText(text) {
 
 async function openPoseidonOverlay() {
     console.log('[Poseidon] Opening overlay...');
+    
+    // Version 3.0.0: Initialize session
+    window.poseidonSessionStart = Date.now();
+    emotionHistory = [];
+    conversationSummaries = [];
     
     // Detect browser
     const isSafari = /Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent);
@@ -3286,10 +3383,15 @@ function startAudioLevelMonitoring() {
                 const audioLevel = average / 255;
                 currentAudioLevel = audioLevel;
                 
-                // Keep history (last 20 samples = ~2 seconds)
+                // Keep history (last 20 samples = ~2 seconds) - v3.0.0: Enhanced
                 audioLevelHistory.push(audioLevel);
                 if (audioLevelHistory.length > 20) {
                     audioLevelHistory.shift();
+                }
+                
+                // Version 3.0.0: Adaptive sensitivity
+                if (audioLevelHistory.length >= 10) {
+                    adaptListeningSensitivity(audioLevelHistory);
                 }
                 
                 // Update visualizer if available
@@ -3313,6 +3415,15 @@ function startAudioLevelMonitoring() {
                         consecutiveNoSpeechCount = 0;
                         console.log('[Poseidon] 🔊 Speech detected - volume:', audioLevel.toFixed(3));
                         updatePoseidonStatus('listening', 'Listening... (speaking detected)');
+                        
+                        // Version 3.0.0: Handle interruption
+                        if (canInterrupt && isSpeaking && speechSynthesis.speaking) {
+                            console.log('[Poseidon] 🛑 User interrupting - stopping speech');
+                            speechSynthesis.cancel();
+                            isSpeaking = false;
+                            canInterrupt = false;
+                            updatePoseidonStatus('listening', 'Listening... (interrupted)');
+                        }
                     }
                     lastHighVolumeTime = Date.now();
                     lastSpeechTime = Date.now();
@@ -3414,6 +3525,369 @@ function stopAudioLevelMonitoring() {
     }
 }
 
+// Helper function to check if a transcript matches what Poseidon just spoke
+function isTranscriptSelfSpeech(transcript) {
+    // If we're currently speaking, ignore all transcripts
+    if (isSpeaking) {
+        console.log('[Poseidon] 🔇 Ignoring transcript - currently speaking:', transcript);
+        return true;
+    }
+    
+    // Check if we're within the time window where we should filter
+    const timeSinceLastSpeech = Date.now() - lastSpokenTime;
+    if (timeSinceLastSpeech > SPEECH_MATCH_WINDOW_MS) {
+        return false; // Too much time has passed, treat as real user input
+    }
+    
+    // Normalize both texts for comparison (lowercase, remove extra spaces, punctuation)
+    const normalize = (text) => {
+        return text.toLowerCase()
+            .replace(/[^\w\s]/g, '') // Remove punctuation
+            .replace(/\s+/g, ' ') // Normalize whitespace
+            .trim();
+    };
+    
+    const normalizedTranscript = normalize(transcript);
+    const normalizedSpoken = normalize(lastSpokenText);
+    
+    // If either is empty, no match
+    if (!normalizedTranscript || !normalizedSpoken) {
+        return false;
+    }
+    
+    // Check for exact match
+    if (normalizedTranscript === normalizedSpoken) {
+        console.log('[Poseidon] 🔇 Exact match detected - ignoring self-speech:', transcript.substring(0, 100));
+        return true;
+    }
+    
+    // Check if transcript is a substring of spoken text (common when speech is cut off)
+    if (normalizedSpoken.includes(normalizedTranscript) && normalizedTranscript.length > 10) {
+        console.log('[Poseidon] 🔇 Transcript is substring of spoken text - ignoring self-speech:', transcript.substring(0, 100));
+        return true;
+    }
+    
+    // Check if spoken text is a substring of transcript (common when recognition adds words)
+    if (normalizedTranscript.includes(normalizedSpoken) && normalizedSpoken.length > 10) {
+        console.log('[Poseidon] 🔇 Spoken text is substring of transcript - ignoring self-speech:', transcript.substring(0, 100));
+        return true;
+    }
+    
+    // Calculate similarity using simple word overlap
+    const transcriptWords = new Set(normalizedTranscript.split(' ').filter(w => w.length > 2));
+    const spokenWords = new Set(normalizedSpoken.split(' ').filter(w => w.length > 2));
+    
+    if (transcriptWords.size === 0 || spokenWords.size === 0) {
+        return false;
+    }
+    
+    // Count overlapping words
+    let overlapCount = 0;
+    for (const word of transcriptWords) {
+        if (spokenWords.has(word)) {
+            overlapCount++;
+        }
+    }
+    
+    // If more than 70% of words overlap, consider it a match
+    const overlapRatio = overlapCount / Math.max(transcriptWords.size, spokenWords.size);
+    if (overlapRatio > 0.7 && overlapCount >= 3) {
+        console.log('[Poseidon] 🔇 High word overlap detected (' + Math.round(overlapRatio * 100) + '%) - ignoring self-speech:', transcript.substring(0, 100));
+        return true;
+    }
+    
+    return false;
+}
+
+// Voice command detection and handling (v3.0.0: Enhanced with parameters)
+function detectVoiceCommand(transcript) {
+    const lower = transcript.toLowerCase().trim();
+    let params = {};
+    
+    // Wake words
+    const wakeWords = ['hey poseidon', 'poseidon', 'wake up', 'activate', 'start listening'];
+    for (const wake of wakeWords) {
+        if (lower.includes(wake)) {
+            const remaining = lower.replace(wake, '').trim();
+            return { type: 'wake', remaining: remaining || null, params: null };
+        }
+    }
+    
+    // Version 3.0.0: Parameter-based commands
+    // Speed command with value
+    const speedMatch = lower.match(/\b(speed|faster|slower|talk (faster|slower))\s*(up|down|to)?\s*(\d+\.?\d*|slow|normal|fast)?/);
+    if (speedMatch) {
+        if (speedMatch[4]) {
+            if (speedMatch[4] === 'slow') params.speed = 0.75;
+            else if (speedMatch[4] === 'fast') params.speed = 1.5;
+            else if (speedMatch[4] === 'normal') params.speed = 1.0;
+            else params.speed = parseFloat(speedMatch[4]) || (lower.includes('faster') ? 1.5 : 0.75);
+        } else {
+            params.speed = lower.includes('faster') ? 1.5 : 0.75;
+        }
+        return { type: 'speed', remaining: null, params: params };
+    }
+    
+    // Volume command with value
+    const volumeMatch = lower.match(/\b(volume|louder|quieter|softer)\s*(up|down|to)?\s*(\d+\.?\d*|low|medium|high)?/);
+    if (volumeMatch) {
+        if (volumeMatch[3]) {
+            if (volumeMatch[3] === 'low') params.volume = 0.5;
+            else if (volumeMatch[3] === 'high') params.volume = 1.0;
+            else if (volumeMatch[3] === 'medium') params.volume = 0.75;
+            else params.volume = parseFloat(volumeMatch[3]) || (lower.includes('louder') ? 1.0 : 0.5);
+        } else {
+            params.volume = lower.includes('louder') ? 1.0 : 0.5;
+        }
+        return { type: 'volume', remaining: null, params: params };
+    }
+    
+    // Language command
+    const langMatch = lower.match(/\b(speak|use|change to|switch to|language)\s*(english|spanish|french|german|italian|portuguese|japanese|korean|chinese)?/);
+    if (langMatch) {
+        const langMap = {
+            'english': 'en-US', 'spanish': 'es-ES', 'french': 'fr-FR', 'german': 'de-DE',
+            'italian': 'it-IT', 'portuguese': 'pt-BR', 'japanese': 'ja-JP',
+            'korean': 'ko-KR', 'chinese': 'zh-CN'
+        };
+        if (langMatch[2] && langMap[langMatch[2].toLowerCase()]) {
+            params.language = langMap[langMatch[2].toLowerCase()];
+        }
+        return { type: 'language', remaining: null, params: params };
+    }
+    
+    // Settings command
+    if (/\b(settings|configure|preferences|options)\b/.test(lower)) {
+        return { type: 'settings', remaining: null, params: null };
+    }
+    
+    // Basic command patterns
+    if (/\b(pause|stop listening|hold on|wait|quiet|silence|shush)\b/.test(lower)) {
+        return { type: 'pause', remaining: null, params: null };
+    }
+    if (/\b(resume|continue|keep going|go on|listen|start listening again)\b/.test(lower)) {
+        return { type: 'resume', remaining: null, params: null };
+    }
+    if (/\b(stop|end|exit|close|shut down|that's enough|all done|finished)\b/.test(lower)) {
+        return { type: 'stop', remaining: null, params: null };
+    }
+    if (/\b(repeat|say that again|what did you say|pardon|can you repeat|one more time)\b/.test(lower)) {
+        return { type: 'repeat', remaining: null, params: null };
+    }
+    if (/\b(clear|reset|start over|forget|clear history|reset conversation)\b/.test(lower)) {
+        return { type: 'clear', remaining: null, params: null };
+    }
+    if (/\b(help|what can you do|commands|assistance|how do i|what are|show me)\b/.test(lower)) {
+        return { type: 'help', remaining: null, params: null };
+    }
+    
+    return { type: 'none', remaining: null, params: null };
+}
+
+// Emotion detection
+function detectEmotion(transcript) {
+    const lower = transcript.toLowerCase();
+    const emotions = {
+        happy: /\b(great|awesome|wonderful|excellent|fantastic|amazing|love|happy|joy|thank you|thanks|appreciate|grateful)\b|!+/,
+        excited: /\b(wow|yes|yeah|yay|woohoo|cool|neat|sweet|rad|epic)\b/,
+        sad: /\b(sad|depressed|down|unhappy|disappointed|sorry|can't|unable|failed|wrong|bad)\b/,
+        angry: /\b(angry|mad|furious|annoyed|frustrated|upset|stupid|idiot|hate|damn|hell)\b/,
+        frustrated: /\b(why|how come|doesn't work|not working|broken|confused|don't understand|unclear)\b/,
+        questioning: /\?+|\b(what|why|how|when|where|who|which|can you|will you|could you|would you)\b/,
+        calm: /\b(okay|ok|sure|fine|alright|calm|relax|please|kindly|gently)\b/
+    };
+    
+    let maxScore = 0;
+    let detectedEmotion = 'neutral';
+    
+    for (const [emotion, pattern] of Object.entries(emotions)) {
+        const matches = (lower.match(pattern) || []).length;
+        if (matches > maxScore) {
+            maxScore = matches;
+            detectedEmotion = emotion;
+        }
+    }
+    
+    return detectedEmotion;
+}
+
+// Version 3.0.0: Helper functions for emotion-based adaptation
+function getDominantEmotion(emotionHistory) {
+    if (!emotionHistory || emotionHistory.length === 0) return 'neutral';
+    const counts = {};
+    emotionHistory.forEach(entry => {
+        const emotion = typeof entry === 'string' ? entry : entry.emotion;
+        counts[emotion] = (counts[emotion] || 0) + 1;
+    });
+    return Object.keys(counts).reduce((a, b) => counts[a] > counts[b] ? a : b, 'neutral');
+}
+
+function getEmotionBasedGuidance(emotion) {
+    const guidanceMap = {
+        'happy': { speed: 1.1, tone: 'enthusiastic' },
+        'excited': { speed: 1.2, tone: 'energetic' },
+        'sad': { speed: 0.9, tone: 'compassionate' },
+        'angry': { speed: 0.95, tone: 'calm' },
+        'frustrated': { speed: 0.9, tone: 'patient' },
+        'questioning': { speed: 1.0, tone: 'clear' },
+        'calm': { speed: 1.0, tone: 'gentle' },
+        'neutral': { speed: 1.0, tone: 'neutral' }
+    };
+    return guidanceMap[emotion] || guidanceMap['neutral'];
+}
+
+// Version 3.0.0: Adaptive listening sensitivity
+function adaptListeningSensitivity(levels) {
+    if (!levels || levels.length < 10) return;
+    
+    const avgLevel = levels.reduce((a, b) => a + b, 0) / levels.length;
+    const maxLevel = Math.max(...levels);
+    
+    // Adjust threshold based on environment
+    if (avgLevel < 0.01) {
+        // Very quiet environment - lower threshold
+        adaptiveSensitivity = Math.max(0.005, adaptiveSensitivity * 0.9);
+    } else if (avgLevel > 0.1) {
+        // Noisy environment - raise threshold
+        adaptiveSensitivity = Math.min(0.05, adaptiveSensitivity * 1.1);
+    }
+    
+    // Update global threshold (if needed in future)
+    console.log('[Poseidon] Adaptive sensitivity:', adaptiveSensitivity.toFixed(4), 'avg level:', avgLevel.toFixed(4));
+}
+
+// Version 3.0.0: Generate conversation summary
+function generateConversationSummary() {
+    const userMessages = emotionHistory.filter(e => e.role === 'user' || true).length;
+    const emotions = emotionHistory.map(e => e.emotion || 'neutral');
+    const emotionCounts = {};
+    emotions.forEach(emo => {
+        emotionCounts[emo] = (emotionCounts[emo] || 0) + 1;
+    });
+    
+    const dominantEmotion = Object.keys(emotionCounts).reduce((a, b) => 
+        emotionCounts[a] > emotionCounts[b] ? a : b, 'neutral');
+    
+    const summary = {
+        timestamp: new Date().toISOString(),
+        totalInteractions: emotionHistory.length,
+        dominantEmotion: dominantEmotion,
+        emotionDistribution: emotionCounts,
+        sessionDuration: Date.now() - (window.poseidonSessionStart || Date.now()),
+        settings: {
+            speed: currentSpeechSpeed,
+            volume: currentSpeechVolume,
+            language: currentLanguage
+        }
+    };
+    
+    conversationSummaries.push(summary);
+    if (conversationSummaries.length > 20) {
+        conversationSummaries = conversationSummaries.slice(-20);
+    }
+    
+    console.log('[Poseidon] Conversation summary generated:', summary);
+    return summary;
+}
+
+// Handle voice commands (v3.0.0: Enhanced with parameters)
+async function handleVoiceCommand(command) {
+    console.log('[Poseidon] Voice command detected:', command.type, command.params);
+    
+    switch (command.type) {
+        case 'pause':
+            togglePoseidonPause();
+            speakText('Paused. Say resume to continue.');
+            break;
+            
+        case 'resume':
+            if (poseidonPaused) {
+                togglePoseidonPause();
+                speakText('Resumed. I\'m listening.');
+            }
+            break;
+            
+        case 'stop':
+            closePoseidonOverlay();
+            speakText('Goodbye!');
+            break;
+            
+        case 'repeat':
+            if (lastAssistantResponse) {
+                speakText(lastAssistantResponse);
+            } else {
+                speakText('I haven\'t said anything yet. Ask me something!');
+            }
+            break;
+            
+        case 'clear':
+            if (poseidonUserTranscript) {
+                poseidonUserTranscript.textContent = '';
+            }
+            if (poseidonAssistantTranscript) {
+                poseidonAssistantTranscript.textContent = '';
+            }
+            lastAssistantResponse = '';
+            emotionHistory = [];
+            speakText('Conversation cleared.');
+            break;
+            
+        case 'speed':
+            if (command.params && command.params.speed !== undefined) {
+                currentSpeechSpeed = Math.max(0.5, Math.min(2.0, command.params.speed));
+                localStorage.setItem('poseidonSpeechSpeed', currentSpeechSpeed.toString());
+                speakText(`Speech speed set to ${Math.round(currentSpeechSpeed * 100)}%`, currentSpeechSpeed);
+            }
+            break;
+            
+        case 'volume':
+            if (command.params && command.params.volume !== undefined) {
+                currentSpeechVolume = Math.max(0.0, Math.min(1.0, command.params.volume));
+                localStorage.setItem('poseidonSpeechVolume', currentSpeechVolume.toString());
+                speakText(`Volume set to ${Math.round(currentSpeechVolume * 100)}%`, currentSpeechSpeed, currentSpeechVolume);
+            }
+            break;
+            
+        case 'language':
+            if (command.params && command.params.language) {
+                currentLanguage = command.params.language;
+                voiceSettings.accent = currentLanguage;
+                localStorage.setItem('poseidonAccent', currentLanguage);
+                if (recognition) {
+                    recognition.lang = currentLanguage;
+                }
+                updateVoiceSelection();
+                const langNames = {
+                    'en-US': 'English', 'es-ES': 'Spanish', 'fr-FR': 'French', 'de-DE': 'German',
+                    'it-IT': 'Italian', 'pt-BR': 'Portuguese', 'ja-JP': 'Japanese',
+                    'ko-KR': 'Korean', 'zh-CN': 'Chinese'
+                };
+                speakText(`Language changed to ${langNames[currentLanguage] || currentLanguage}`);
+            }
+            break;
+            
+        case 'settings':
+            const settingsText = `Current settings: Speed ${Math.round(currentSpeechSpeed * 100)}%, Volume ${Math.round(currentSpeechVolume * 100)}%, Language ${currentLanguage}. Say "faster" or "slower" to adjust speed, "louder" or "quieter" for volume, or "speak English" to change language.`;
+            speakText(settingsText);
+            break;
+            
+        case 'help':
+            const helpText = `Voice Commands: "pause" to pause, "resume" to continue, "stop" to end, "repeat" for last response, "clear" to reset. New in v3.0: "faster" or "slower" for speed, "louder" or "quieter" for volume, "speak English/Spanish/French" to change language, "settings" for current settings.`;
+            speakText(helpText);
+            break;
+            
+        case 'wake':
+            if (command.remaining) {
+                // Process the remaining text as a normal query
+                return false; // Don't handle as command, process as normal
+            }
+            speakText('I\'m listening. How can I help you?');
+            break;
+    }
+    
+    return true; // Command was handled
+}
+
 // Helper function to process transcript (accessible from recognition handlers)
 async function handlePoseidonTranscript(transcript) {
     if (!transcript || transcript.trim().length === 0) {
@@ -3434,14 +3908,62 @@ async function handlePoseidonTranscript(transcript) {
         return;
     }
     
-    console.log('[Poseidon] Processing transcript:', trimmed);
+    // Check if this transcript matches what Poseidon just spoke (self-hearing prevention)
+    if (isTranscriptSelfSpeech(trimmed)) {
+        console.log('[Poseidon] 🔇 Filtered out self-speech transcript:', trimmed.substring(0, 100));
+        return;
+    }
+    
+    // Detect voice command
+    const command = detectVoiceCommand(trimmed);
+    
+    // If it's a wake word with remaining text, use the remaining text
+    let textToProcess = trimmed;
+    if (command.type === 'wake' && command.remaining) {
+        textToProcess = command.remaining;
+    }
+    
+    // Handle voice commands (except wake with remaining text)
+    if (command.type !== 'none' && (!command.remaining || command.type !== 'wake')) {
+        const handled = await handleVoiceCommand(command);
+        if (handled) {
+            transcriptProcessing = false;
+            return; // Command was handled, don't process as normal query
+        }
+    }
+    
+    // Detect emotion (v3.0.0: Track history)
+    const emotion = detectEmotion(textToProcess);
+    console.log('[Poseidon] Detected emotion:', emotion);
+    
+    // Version 3.0.0: Track emotion history for adaptation
+    emotionHistory.push({
+        emotion: emotion,
+        timestamp: Date.now()
+    });
+    if (emotionHistory.length > 50) {
+        emotionHistory = emotionHistory.slice(-50);
+    }
+    
+    // Update UI with emotion indicator (if element exists)
+    if (poseidonUserTranscript) {
+        const emotionEmoji = {
+            happy: '😊',
+            excited: '🎉',
+            sad: '😢',
+            angry: '😠',
+            frustrated: '😤',
+            questioning: '❓',
+            calm: '😌',
+            neutral: ''
+        };
+        const emoji = emotionEmoji[emotion] || '';
+        poseidonUserTranscript.textContent = emoji ? `${emoji} ${textToProcess}` : textToProcess;
+    }
+    
+    console.log('[Poseidon] Processing transcript:', textToProcess);
     transcriptProcessing = true;
     recognitionState = 'processing';
-    
-    // Update UI to show we're processing the transcript
-    if (poseidonUserTranscript) {
-        poseidonUserTranscript.textContent = trimmed;
-    }
     
     // Don't stop recognition in continuous mode - just mark as processing
     clearTimeout(silenceTimeout);
@@ -3453,7 +3975,7 @@ async function handlePoseidonTranscript(transcript) {
     // Send to chat API
     try {
         const requestBody = {
-            message: transcript,
+            message: textToProcess, // Use processed text (after wake word removal)
             chat_id: currentChatId,
             task: 'text_generation',
             think_deeper: thinkDeeperMode,
@@ -3539,7 +4061,7 @@ async function handlePoseidonTranscript(transcript) {
         
         // Add messages to UI
         try {
-            addMessageToUI('user', transcript);
+            addMessageToUI('user', textToProcess); // Use processed text
             console.log('[Poseidon] Added user message to UI');
         } catch (uiErr) {
             console.error('[Poseidon] ERROR adding user message to UI:', uiErr);
@@ -3550,6 +4072,9 @@ async function handlePoseidonTranscript(transcript) {
             length: responseText.length,
             preview: responseText.substring(0, 100)
         });
+        
+        // Store response for repeat command
+        lastAssistantResponse = responseText;
         
         try {
             addMessageToUI('assistant', responseText);
