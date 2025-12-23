@@ -2481,7 +2481,15 @@ function initializePoseidon() {
     // Setup launch button
     const poseidonLaunchBtn = document.getElementById('poseidonLaunchBtn');
     if (poseidonLaunchBtn) {
-        poseidonLaunchBtn.addEventListener('click', openPoseidonOverlay);
+        console.log('[Poseidon] Launch button found, attaching click listener');
+        poseidonLaunchBtn.addEventListener('click', (e) => {
+            console.log('[Poseidon] Launch button clicked!');
+            e.preventDefault();
+            e.stopPropagation();
+            openPoseidonOverlay();
+        });
+    } else {
+        console.error('[Poseidon] Launch button NOT FOUND! Check HTML element ID.');
     }
     
     // Setup overlay elements
@@ -2906,8 +2914,14 @@ async function openPoseidonOverlay() {
         }
         
         if (poseidonOverlay) {
+            console.log('[Poseidon] Setting overlay display to flex');
             poseidonOverlay.style.display = 'flex';
+            // Force visibility in case of CSS conflicts
+            poseidonOverlay.style.visibility = 'visible';
+            poseidonOverlay.style.opacity = '1';
+            poseidonOverlay.style.zIndex = '9999';
             poseidonActive = true;
+            console.log('[Poseidon] Overlay should now be visible. Computed display:', window.getComputedStyle(poseidonOverlay).display);
             poseidonPaused = false;
             recognitionState = 'starting';
             
