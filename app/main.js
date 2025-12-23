@@ -42,7 +42,9 @@ function createWindow() {
 
   // Show window when ready
   mainWindow.once('ready-to-show', () => {
-    mainWindow.show();
+    if (mainWindow && !mainWindow.isDestroyed()) {
+      mainWindow.show();
+    }
   });
   
   // Log when page finishes loading to help debug
