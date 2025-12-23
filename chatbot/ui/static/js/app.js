@@ -2325,7 +2325,7 @@ let adaptiveSensitivity = 0.01; // Adaptive audio threshold
 let conversationSummaries = []; // Store conversation summaries
 let emotionHistory = []; // Track emotion history for adaptation
 let canInterrupt = false; // Flag to enable interruption
-const SPEECH_MATCH_WINDOW_MS = 10000; // Time window to check for matching speech (10 seconds)
+const SPEECH_MATCH_WINDOW_MS = 15000; // Time window to check for matching speech (15 seconds - increased to catch delayed echoes)
 
 // Initialize Poseidon
 function initializePoseidon() {
@@ -2690,10 +2690,15 @@ function speakText(text, speed = null, volume = null) {
         updatePoseidonStatus('speaking', 'Speaking...');
         isSpeaking = true;
         
-        // Ensure recognition is still running (it should be in continuous mode)
-        // Don't restart here - continuous mode should keep it running
-        if (recognition && recognitionState !== 'listening' && poseidonActive && !poseidonPaused) {
-            console.log('[Poseidon] Ensuring recognition continues during speech');
+        // Stop recognition while speaking to prevent hearing itself
+        if (recognition && recognitionState === 'listening') {
+            try {
+                console.log('[Poseidon] Stopping recognition to prevent self-hearing');
+                recognition.stop();
+                recognitionState = 'paused';
+            } catch (e) {
+                console.warn('[Poseidon] Error stopping recognition:', e);
+            }
         }
     };
     
@@ -2707,24 +2712,29 @@ function speakText(text, speed = null, volume = null) {
         }
         console.log('[Poseidon] Marked speech as finished, will filter matching transcripts for', SPEECH_MATCH_WINDOW_MS, 'ms');
         
-        // After speaking, return to listening
+        // After speaking, wait a moment before resuming recognition to prevent hearing echo
         if (poseidonActive && !poseidonPaused) {
-            // Check if recognition is still running
-            if (recognition) {
-                // In continuous mode, it should still be running
-                // Just update status
-                recognitionState = 'listening';
-                updatePoseidonStatus('listening', 'Listening...');
-                console.log('[Poseidon] Returned to listening mode');
-            } else {
-                // Recognition stopped, restart it
-                console.log('[Poseidon] Recognition stopped, restarting...');
-                setTimeout(() => {
-                    if (poseidonActive && !poseidonPaused) {
+            // Wait 1.5 seconds after speech ends before resuming recognition
+            // This prevents the mic from picking up echo/resonance
+            setTimeout(() => {
+                if (poseidonActive && !poseidonPaused && !isSpeaking) {
+                    if (recognition) {
+                        try {
+                            console.log('[Poseidon] Resuming recognition after speech ended');
+                            recognitionState = 'listening';
+                            updatePoseidonStatus('listening', 'Listening...');
+                            recognition.start();
+                            console.log('[Poseidon] Recognition resumed after speech');
+                        } catch (e) {
+                            console.warn('[Poseidon] Error resuming recognition, will restart:', e);
+                            startRecognitionWithRetry();
+                        }
+                    } else {
+                        console.log('[Poseidon] Recognition instance missing, restarting...');
                         startRecognitionWithRetry();
                     }
-                }, 300);
-            }
+                }
+            }, 1500); // 1.5 second delay to prevent echo
         }
     };
     
@@ -2755,6 +2765,14 @@ async function openPoseidonOverlay() {
         }
         console.log('[Poseidon] Found overlay element on-demand');
     }
+    
+    // Show overlay immediately (before requesting permissions) for faster UI response
+    poseidonOverlay.style.display = 'flex';
+    poseidonOverlay.style.visibility = 'visible';
+    poseidonOverlay.style.opacity = '1';
+    poseidonOverlay.style.zIndex = '10000';
+    poseidonOverlay.classList.add('active');
+    updatePoseidonStatus('ready', 'Initializing...');
     
     try {
         // Version 3.0.0: Initialize session
@@ -2925,14 +2943,9 @@ async function openPoseidonOverlay() {
         }
         
         if (poseidonOverlay) {
-            console.log('[Poseidon] Setting overlay display to flex');
-            poseidonOverlay.style.display = 'flex';
-            // Force visibility in case of CSS conflicts
-            poseidonOverlay.style.visibility = 'visible';
-            poseidonOverlay.style.opacity = '1';
-            poseidonOverlay.style.zIndex = '9999';
+            // Overlay already shown at the start of function
             poseidonActive = true;
-            console.log('[Poseidon] Overlay should now be visible. Computed display:', window.getComputedStyle(poseidonOverlay).display);
+            console.log('[Poseidon] Overlay visible, setting poseidonActive=true');
             poseidonPaused = false;
             recognitionState = 'starting';
             
@@ -4326,16 +4339,28 @@ async function handlePoseidonTranscript(transcript) {
                 currentUrl: window.location.href
             });
             
-            // Check if we're in Electron and provide helpful error message
+            // Check if we're in Electron and retry with delay for server startup
             const isElectron = window.electronAPI !== undefined;
-            if (isElectron) {
-                const errorMsg = fetchErr.message || 'Network error';
-                if (errorMsg.includes('Failed to fetch') || errorMsg.includes('NetworkError')) {
-                    throw new Error(`Server not ready. Please wait a moment and try again. If the problem persists, check that the Flask server is running on port 5000.`);
+            if (isElectron && (fetchErr.message.includes('Failed to fetch') || fetchErr.message.includes('NetworkError'))) {
+                // Retry once after a short delay (server might still be starting)
+                console.log('[Poseidon] Electron: Retrying request after brief delay...');
+                await new Promise(resolve => setTimeout(resolve, 1000));
+                try {
+                    response = await fetch('/api/chat', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(requestBody)
+                    });
+                    console.log('[Poseidon] Retry successful');
+                } catch (retryErr) {
+                    console.error('[Poseidon] Retry also failed:', retryErr);
+                    throw new Error(`Server not ready. Please wait a moment and try again. If the problem persists, the Flask server may not be running on port 5000.`);
                 }
+            } else {
+                throw new Error(`Network error: ${fetchErr.message}`);
             }
-            
-            throw new Error(`Network error: ${fetchErr.message}`);
         }
         
         if (!response.ok) {

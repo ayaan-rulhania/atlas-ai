@@ -3871,3 +3871,107 @@ IndexError: index out of range in self
 127.0.0.1 - - [23/Dec/2025 10:42:40] "GET /api/gems HTTP/1.1" 200 -
 127.0.0.1 - - [23/Dec/2025 10:42:40] "GET /api/model/status HTTP/1.1" 200 -
 127.0.0.1 - - [23/Dec/2025 10:42:40] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 12:34:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 12:34:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 12:34:19] "[36mGET /static/js/poseidon3d.js?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 12:34:19] "[36mGET /static/css/poseidon3d.css?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 12:34:19] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 12:34:19] "[36mGET /static/js/app.js?v=10 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 12:34:19] "GET /api/gems HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 12:34:19] "GET /api/model/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 12:34:19] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 12:35:21] "DELETE /api/chats/ddf54191-d50d-4460-9a17-4bdd2d14df68 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 12:35:21] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:02] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:18:02] "[36mGET /static/css/poseidon3d.css?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:18:02] "[36mGET /static/js/poseidon3d.js?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:18:02] "GET /static/js/app.js?v=10 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:02] "GET /api/gems HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:02] "GET /api/model/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:02] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:02] "GET /static/favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:03] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:03] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:18:03] "[36mGET /static/js/poseidon3d.js?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:18:03] "[36mGET /static/css/poseidon3d.css?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:18:03] "[36mGET /static/js/app.js?v=10 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:18:03] "GET /api/gems HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:03] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:03] "GET /api/model/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:03] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:18:25] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:25] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:18:25] "[36mGET /static/css/poseidon3d.css?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:18:25] "[36mGET /static/js/poseidon3d.js?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:18:25] "[36mGET /static/js/app.js?v=10 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:18:26] "GET /api/gems HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:26] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:26] "GET /api/model/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:26] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:18:29] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:29] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:18:29] "[36mGET /static/css/poseidon3d.css?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:18:29] "[36mGET /static/js/poseidon3d.js?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:18:29] "[36mGET /static/js/app.js?v=10 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:18:29] "GET /api/gems HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:29] "GET /api/model/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:29] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:29] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:18:43] "GET /update HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:43] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:18:43] "GET /api/version HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:55] "GET /api/version HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:18:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:19:00] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:19:02] "[36mGET /static/css/poseidon3d.css?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:19:02] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:19:02] "[36mGET /static/js/poseidon3d.js?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:19:02] "[36mGET /static/js/app.js?v=10 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:19:02] "GET /api/gems HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:19:03] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:19:03] "GET /api/model/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:19:05] "GET /update HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:19:05] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:19:05] "GET /api/version HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:20:31] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:20:31] "[36mGET /static/css/poseidon3d.css?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:20:31] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:20:31] "[36mGET /static/js/poseidon3d.js?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:20:31] "[36mGET /static/js/app.js?v=10 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:20:32] "GET /api/gems HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:20:32] "GET /api/model/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:20:32] "GET /api/chats HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self

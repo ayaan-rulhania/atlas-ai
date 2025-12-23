@@ -1,7 +1,22 @@
 [
   {
+    "task": "text_generation",
+    "text": "What is bold text",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Load Game Suite",
+    "label": 0
+  },
+  {
     "task": "text_classification",
-    "text": "What is programming?",
+    "text": "Create an image of cricket sport",
+    "label": 1
+  },
+  {
+    "task": "text_classification",
+    "text": "Nothing much",
     "label": 0
   },
   {
@@ -10,87 +25,59 @@
     "label": null
   },
   {
-    "task": "text_generation",
-    "text": "What's the weather in Sunnyvale?",
-    "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "Create an image of dog.",
-    "label": null
+    "task": "text_classification",
+    "text": "Load game suite",
+    "label": 0
   },
   {
     "task": "text_classification",
-    "text": "Create an image",
+    "text": "What is programming?",
     "label": 1
   },
   {
-    "task": "text_generation",
-    "text": "Create an image of dog",
-    "label": null
-  },
-  {
-    "task": "text_classification",
-    "text": "Create an image of map",
+    "task": "sentiment_analysis",
+    "text": "Load Office Suite",
     "label": 0
   },
   {
     "task": "sentiment_analysis",
-    "text": "Let's play games",
+    "text": "create an image of ice cream",
+    "label": 1
+  },
+  {
+    "task": "text_generation",
+    "text": "Create an image of thor",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "What's the weather in Sunnyvale?",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Create an image of thor",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "create an image of fun*",
+    "label": 1
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Create an image of cricket sport",
     "label": 1
   },
   {
     "task": "text_classification",
-    "text": "Create an image of a cat",
-    "label": 1
-  },
-  {
-    "task": "text_generation",
-    "text": "Create an image of boy",
-    "label": null
-  },
-  {
-    "task": "question_answering",
-    "text": "What is computer science? computer science is an important concept.",
-    "label": {
-      "start": 26,
-      "end": 42
-    }
-  },
-  {
-    "task": "text_generation",
-    "text": "Create an image of Thor",
-    "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "Create an image of a cat",
-    "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "Nothing much",
-    "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "Explain the concept of physics",
-    "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "hey Atlas what's the date today",
-    "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "Load game suite",
-    "label": null
+    "text": "What is artificial intelligence?",
+    "label": 0
   },
   {
     "task": "text_classification",
-    "text": "So what's up",
-    "label": 1
+    "text": "Is Ayaan is a silly guy ?",
+    "label": 0
   },
   {
     "task": "text_generation",
@@ -99,37 +86,47 @@
   },
   {
     "task": "text_generation",
-    "text": "Explain machine learning",
-    "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "Load Game Suite",
+    "text": "What's the weather in Sunnyvale?",
     "label": null
   },
   {
     "task": "sentiment_analysis",
-    "text": "create an image of india",
-    "label": 1
+    "text": "What is bold text",
+    "label": 2
+  },
+  {
+    "task": "text_generation",
+    "text": "Explain artificial intelligence",
+    "label": null
   },
   {
     "task": "text_classification",
     "text": "Load Office Suite",
-    "label": 0
+    "label": 1
   },
   {
     "task": "sentiment_analysis",
-    "text": "Create an image",
+    "text": "What is a shield volcano?",
     "label": 2
   },
   {
     "task": "sentiment_analysis",
-    "text": "another angle",
-    "label": 1
+    "text": "Create an image of tomatoe",
+    "label": 2
+  },
+  {
+    "task": "text_generation",
+    "text": "Create an image of Thor",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Create an image of map",
+    "label": 2
   },
   {
     "task": "text_classification",
-    "text": "create an image of india",
-    "label": 1
+    "text": "hey Atlas what's the date today",
+    "label": 0
   }
 ]
