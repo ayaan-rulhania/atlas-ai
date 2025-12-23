@@ -1,0 +1,13 @@
+{
+  "buildCommand": "pip install -r requirements.txt",
+  "devCommand": "python chatbot/app.py",
+  "installCommand": "pip install -r requirements.txt",
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/chatbot/api/index.py"
+    }
+  ]
+}
+
