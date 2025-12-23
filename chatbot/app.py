@@ -2527,7 +2527,61 @@ I'm always learning and improving through our conversations. How can I help you 
                                     # Apply cleaning to fix minor grammar issues
                                     response = response_cleaner.clean_response(response, message)
                                     if response and len(response.strip()) > 10:
-                                        print(f"[Model] Generated response using own knowledge ({len(response)} chars)")
+                                        # Check if response is too vague or unhelpful (fallback trigger)
+                                        response_lower = response.lower()
+                                        vague_phrases = [
+                                            "i understand your message",
+                                            "i'm continuously learning",
+                                            "let me think about that",
+                                            "that's an interesting question",
+                                            "i'm having trouble",
+                                            "could you tell me more",
+                                            "what would you like to know",
+                                            "how can i help"
+                                        ]
+                                        is_vague = any(phrase in response_lower for phrase in vague_phrases)
+                                        is_too_short = len(response.strip()) < 30  # Very short responses
+                                        
+                                        # If Thor 1.1 gives vague/short response and we're using Thor 1.1, try Thor 1.0 fallback
+                                        if model_name == 'thor-1.1' and (is_vague or is_too_short) and not skip_refinement:
+                                            print(f"[Model] Thor 1.1 response too vague/short, trying Thor 1.0 fallback...")
+                                            try:
+                                                # Get Thor 1.0 model
+                                                thor_1_0_model = get_model('thor-1.0', force_reload=False)
+                                                if thor_1_0_model:
+                                                    # Try with Thor 1.0
+                                                    fallback_result = thor_1_0_model.predict(contextual_input, task=task)
+                                                    if fallback_result and 'generated_text' in fallback_result:
+                                                        fallback_response = fallback_result['generated_text']
+                                                        if fallback_response and len(fallback_response.strip()) > 10:
+                                                            # Validate fallback response
+                                                            if not response_cleaner.is_corrupted(fallback_response):
+                                                                fallback_response = response_cleaner.clean_response(fallback_response, message)
+                                                                if fallback_response and len(fallback_response.strip()) > 10:
+                                                                    # Check if fallback is better (not vague)
+                                                                    fallback_lower = fallback_response.lower()
+                                                                    fallback_is_vague = any(phrase in fallback_lower for phrase in vague_phrases)
+                                                                    if not fallback_is_vague or len(fallback_response.strip()) > len(response.strip()):
+                                                                        print(f"[Model] Using Thor 1.0 fallback (better response: {len(fallback_response)} chars)")
+                                                                        response = fallback_response
+                                                                        model_label_for_ui = "Thor 1.0 (Fallback)"
+                                                                    else:
+                                                                        print(f"[Model] Thor 1.0 fallback also vague, keeping Thor 1.1 response")
+                                                                else:
+                                                                    print(f"[Model] Thor 1.0 fallback too short after cleaning")
+                                                            else:
+                                                                print(f"[Model] Thor 1.0 fallback corrupted, keeping Thor 1.1 response")
+                                                        else:
+                                                            print(f"[Model] Thor 1.0 fallback too short")
+                                                    else:
+                                                        print(f"[Model] Thor 1.0 model not available for fallback")
+                                                else:
+                                                    print(f"[Model] Could not load Thor 1.0 for fallback")
+                                            except Exception as fallback_error:
+                                                print(f"[Model] Error trying Thor 1.0 fallback: {fallback_error}")
+                                                # Keep original Thor 1.1 response
+                                        
+                                        print(f"[Model] Generated response using {model_name} ({len(response)} chars)")
                                         log_debug("Response Generated", {
                                             "length": len(response),
                                             "description": f"Generated response ({len(response)} characters). Combining information from multiple sources to provide an accurate answer."
@@ -2536,6 +2590,25 @@ I'm always learning and improving through our conversations. How can I help you 
                                         response = None
                                 else:
                                     response = None
+                                    
+                            # If Thor 1.1 completely failed (no response), try Thor 1.0 fallback
+                            if not response and model_name == 'thor-1.1' and not skip_refinement:
+                                print(f"[Model] Thor 1.1 failed to generate response, trying Thor 1.0 fallback...")
+                                try:
+                                    thor_1_0_model = get_model('thor-1.0', force_reload=False)
+                                    if thor_1_0_model:
+                                        fallback_result = thor_1_0_model.predict(contextual_input, task=task)
+                                        if fallback_result and 'generated_text' in fallback_result:
+                                            fallback_response = fallback_result['generated_text']
+                                            if fallback_response and len(fallback_response.strip()) > 10:
+                                                if not response_cleaner.is_corrupted(fallback_response):
+                                                    fallback_response = response_cleaner.clean_response(fallback_response, message)
+                                                    if fallback_response and len(fallback_response.strip()) > 10:
+                                                        print(f"[Model] Using Thor 1.0 fallback (Thor 1.1 failed)")
+                                                        response = fallback_response
+                                                        model_label_for_ui = "Thor 1.0 (Fallback)"
+                                except Exception as fallback_error:
+                                    print(f"[Model] Error trying Thor 1.0 fallback: {fallback_error}")
                         elif task == 'sentiment_analysis':
                             sentiment_labels = ['Negative', 'Neutral', 'Positive']
                             pred = result.get('prediction', 1)
@@ -2551,8 +2624,27 @@ I'm always learning and improving through our conversations. How can I help you 
                         elif 'answer' in result:
                             response = result['answer']
                         else:
-                            # If model doesn't have good response, try to use its own processing
-                            response = "I understand your message. Let me think about that..."
+                            # If model doesn't have good response, try Thor 1.0 fallback if using Thor 1.1
+                            if model_name == 'thor-1.1' and not skip_refinement:
+                                print(f"[Model] Thor 1.1 returned no valid response, trying Thor 1.0 fallback...")
+                                try:
+                                    thor_1_0_model = get_model('thor-1.0', force_reload=False)
+                                    if thor_1_0_model:
+                                        fallback_result = thor_1_0_model.predict(contextual_input, task=task)
+                                        if fallback_result and 'generated_text' in fallback_result:
+                                            fallback_response = fallback_result['generated_text']
+                                            if fallback_response and len(fallback_response.strip()) > 10:
+                                                if not response_cleaner.is_corrupted(fallback_response):
+                                                    fallback_response = response_cleaner.clean_response(fallback_response, message)
+                                                    if fallback_response and len(fallback_response.strip()) > 10:
+                                                        print(f"[Model] Using Thor 1.0 fallback (Thor 1.1 returned no response)")
+                                                        response = fallback_response
+                                                        model_label_for_ui = "Thor 1.0 (Fallback)"
+                                except Exception as fallback_error:
+                                    print(f"[Model] Error trying Thor 1.0 fallback: {fallback_error}")
+                            
+                            if not response:
+                                response = "I understand your message. Let me think about that..."
                         
                         # Enhance response with brain knowledge only if model's response is weak
                         try:
@@ -2985,7 +3077,8 @@ I'm always learning and improving through our conversations. How can I help you 
         response_data = {
             "response": response,
             "chat_id": chat_id,
-            "task": task
+            "task": task,
+            "model_used": model_label_for_ui  # Include which model was actually used
         }
         
         # Add debug log if debug mode is enabled
