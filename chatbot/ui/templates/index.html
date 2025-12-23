@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=14">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/poseidon3d.css') }}?v=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body data-theme="light">
     <div class="app-container">
@@ -97,6 +99,13 @@
                             <path d="M6 3H18L21 9L12 21L3 9L6 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
                             <path d="M3 9H21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
                             <path d="M10 9L12 21L14 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="header-icon-btn" id="installBtn" title="Install for macOS">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="7 10 12 15 17 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
                         </svg>
                     </button>
                     <button class="header-icon-btn" id="helpBtn" title="Help">
@@ -413,12 +422,24 @@
                 <div class="settings-section">
                     <h3>Poseidon Voice Assistant</h3>
                     <div class="form-group">
-                        <label for="voiceAccent">Accent</label>
+                        <label for="voiceAccent">Language</label>
                         <select id="voiceAccent" class="form-select">
-                            <option value="en-US">US English</option>
-                            <option value="en-GB">UK English</option>
-                            <option value="en-AU">Australian English</option>
-                            <option value="en-IN">Indian English</option>
+                            <optgroup label="English">
+                                <option value="en-US">US English</option>
+                                <option value="en-GB">UK English</option>
+                                <option value="en-AU">Australian English</option>
+                                <option value="en-IN">Indian English</option>
+                            </optgroup>
+                            <optgroup label="Indian Languages">
+                                <option value="hi-IN">Hindi</option>
+                                <option value="ta-IN">Tamil</option>
+                                <option value="te-IN">Telugu</option>
+                            </optgroup>
+                            <optgroup label="Other Languages">
+                                <option value="es-ES">Spanish</option>
+                                <option value="fr-FR">French</option>
+                                <option value="zh-CN">Mandarin (Chinese)</option>
+                            </optgroup>
                         </select>
                     </div>
                     <div class="form-group">
@@ -427,6 +448,15 @@
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                         </select>
+                    </div>
+                    <div class="form-group">
+                        <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                            <input type="checkbox" id="poseidon3DEnabled" style="width: 18px; height: 18px; cursor: pointer;">
+                            <div style="flex: 1;">
+                                <div style="font-weight: 500; margin-bottom: 4px;">3D Poseidon UI (Beta)</div>
+                                <div style="font-size: 12px; color: var(--text-tertiary);">Enable advanced 3D animation. Experimental feature.</div>
+                            </div>
+                        </label>
                     </div>
                     <p class="input-disclaimer" style="text-align:left; margin-top:8px;">
                         Configure Poseidon's voice settings. Changes take effect on the next voice interaction.
@@ -438,28 +468,119 @@
 
     <!-- Help Modal -->
     <div class="modal" id="helpModal" style="display: none;">
-        <div class="modal-content glass-card">
+        <div class="modal-content glass-card" style="max-width: 700px;">
             <div class="modal-header">
                 <h2>How to use Atlas</h2>
                 <button class="modal-close" id="closeHelpModal">&times;</button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" style="max-height: 80vh; overflow-y: auto;">
                 <div class="settings-section">
-                    <h3>Command Reference</h3>
-                    <ul class="plan-features">
-                        <li><strong>/office</strong> or <strong>Load Office Suite</strong> — Opens the integrated office suite interface</li>
-                        <li><strong>/arcade</strong> or <strong>Load Game Suite</strong> / <strong>Let's play games</strong> — Opens the integrated arcade interface</li>
-                        <li><strong>/image &lt;description&gt;</strong> or <strong>Create an image of &lt;thing&gt;</strong> — Generates and displays an image based on the provided description</li>
-                        <li><strong>Another angle</strong> / <strong>Give me a top-down angle</strong> / <strong>Watercolor style</strong> / <strong>Make it red</strong> — Generates a new image variant with the specified modifications</li>
+                    <h3 style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px;">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10 2.5C6.96243 2.5 4.5 4.96243 4.5 8C4.5 9.92209 5.56683 11.5852 7.14944 12.4634C7.38096 12.5911 7.5 12.8458 7.5 13.107V14C7.5 14.5523 7.94772 15 8.5 15H11.5C12.0523 15 12.5 14.5523 12.5 14V13.107C12.5 12.8458 12.619 12.5911 12.8506 12.4634C14.4332 11.5852 15.5 9.92209 15.5 8C15.5 4.96243 13.0376 2.5 10 2.5Z"/>
+                            <path d="M8 17H12" stroke-linecap="round"/>
+                        </svg>
+                        Getting Started
+                    </h3>
+                    <p style="margin-bottom: 16px; color: var(--text-secondary); line-height: 1.6;">
+                        Atlas is an AI assistant powered by Thor models. Simply type your question or request in the input field and press Enter or click Send. You can ask questions, request help with tasks, generate content, and much more.
+                    </p>
+                </div>
+                
+                <div class="settings-section">
+                    <h3 style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px; margin-top: 24px;">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="14" height="12" rx="2"/>
+                            <path d="M3 8H17M7 12H13" stroke-linecap="round"/>
+                        </svg>
+                        Quick Commands
+                    </h3>
+                    <div style="display: grid; gap: 12px;">
+                        <div style="padding: 12px; background: var(--bg-tertiary); border-radius: var(--radius-md); border-left: 3px solid var(--accent-primary);">
+                            <div style="font-weight: 600; margin-bottom: 4px; color: var(--text-primary);">
+                                <code style="background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px; font-size: 13px;">/office</code> or <code style="background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px; font-size: 13px;">Load Office Suite</code>
+                            </div>
+                            <div style="color: var(--text-secondary); font-size: 14px;">Opens the integrated office suite interface with productivity tools</div>
+                        </div>
+                        <div style="padding: 12px; background: var(--bg-tertiary); border-radius: var(--radius-md); border-left: 3px solid var(--accent-primary);">
+                            <div style="font-weight: 600; margin-bottom: 4px; color: var(--text-primary);">
+                                <code style="background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px; font-size: 13px;">/arcade</code> or <code style="background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px; font-size: 13px;">Load Game Suite</code>
+                            </div>
+                            <div style="color: var(--text-secondary); font-size: 14px;">Opens the integrated arcade interface for interactive games</div>
+                        </div>
+                        <div style="padding: 12px; background: var(--bg-tertiary); border-radius: var(--radius-md); border-left: 3px solid var(--accent-primary);">
+                            <div style="font-weight: 600; margin-bottom: 4px; color: var(--text-primary);">
+                                <code style="background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px; font-size: 13px;">/image &lt;description&gt;</code>
+                            </div>
+                            <div style="color: var(--text-secondary); font-size: 14px;">Generates and displays an image based on your description. You can refine with phrases like "Another angle", "Watercolor style", or "Make it red"</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="settings-section">
+                    <h3 style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px; margin-top: 24px;">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10 2.5V10M10 17.5C13.866 17.5 17 14.366 17 10.5C17 6.63401 13.866 3.5 10 3.5C6.13401 3.5 3 6.63401 3 10.5C3 14.366 6.13401 17.5 10 17.5Z"/>
+                            <circle cx="10" cy="10" r="1.5" fill="currentColor"/>
+                        </svg>
+                        Features & Tips
+                    </h3>
+                    <ul class="plan-features" style="list-style: none; padding: 0; display: grid; gap: 10px;">
+                        <li style="padding: 10px; background: var(--bg-tertiary); border-radius: var(--radius-md); display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: var(--accent-primary); font-weight: 600; flex-shrink: 0;">✓</span>
+                            <div>
+                                <strong>Think Deeper Mode</strong> — Toggle this for more comprehensive, thorough responses to complex queries. Great for detailed analysis and deep reasoning.
+                            </div>
+                        </li>
+                        <li style="padding: 10px; background: var(--bg-tertiary); border-radius: var(--radius-md); display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: var(--accent-primary); font-weight: 600; flex-shrink: 0;">✓</span>
+                            <div>
+                                <strong>Custom Gems</strong> — Create personalized AI models tailored to your needs. Access via the sidebar or Customize button.
+                            </div>
+                        </li>
+                        <li style="padding: 10px; background: var(--bg-tertiary); border-radius: var(--radius-md); display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: var(--accent-primary); font-weight: 600; flex-shrink: 0;">✓</span>
+                            <div>
+                                <strong>Voice Assistant (Poseidon)</strong> — Click the microphone icon to start voice conversations. Perfect for hands-free interactions.
+                            </div>
+                        </li>
+                        <li style="padding: 10px; background: var(--bg-tertiary); border-radius: var(--radius-md); display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: var(--accent-primary); font-weight: 600; flex-shrink: 0;">✓</span>
+                            <div>
+                                <strong>Model Selection</strong> — Switch between Thor 1.1 (latest) and Thor 1.0 (stable) from the model dropdown.
+                            </div>
+                        </li>
+                        <li style="padding: 10px; background: var(--bg-tertiary); border-radius: var(--radius-md); display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: var(--accent-primary); font-weight: 600; flex-shrink: 0;">✓</span>
+                            <div>
+                                <strong>Structured Output</strong> — Request bullets, steps, lists, or tables when you need organized information.
+                            </div>
+                        </li>
+                        <li style="padding: 10px; background: var(--bg-tertiary); border-radius: var(--radius-md); display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: var(--accent-primary); font-weight: 600; flex-shrink: 0;">✓</span>
+                            <div>
+                                <strong>Chat History</strong> — All your conversations are saved. Access them via the History button or sidebar.
+                            </div>
+                        </li>
                     </ul>
                 </div>
+                
                 <div class="settings-section">
-                    <h3>Usage Guidelines</h3>
-                    <ul class="plan-features">
-                        <li>Request <strong>bullets</strong> or <strong>steps</strong> only when structured output is specifically required</li>
-                        <li>Utilize <strong>Think Deeper</strong> mode for comprehensive and thorough responses to complex queries</li>
-                        <li>Voice commands are available through the Poseidon voice assistant interface</li>
-                    </ul>
+                    <h3 style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px; margin-top: 24px;">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10 2.5L3 6.5V10C3 14.9706 7.02944 19 12 19C16.9706 19 21 14.9706 21 10V6.5L14 2.5M10 2.5L17 6.5M10 2.5V19"/>
+                        </svg>
+                        Best Practices
+                    </h3>
+                    <div style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                        <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 8px;">
+                            <li style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">• Be specific in your requests — the more details you provide, the better the response</li>
+                            <li style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">• Use natural language — you don't need to use special syntax or commands</li>
+                            <li style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">• Ask follow-up questions to refine responses or dive deeper into topics</li>
+                            <li style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">• Take advantage of projects to organize related conversations with shared context</li>
+                            <li style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">• Experiment with different models and tones to find what works best for your needs</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -501,7 +622,7 @@
                                 <li>✓ Custom models</li>
                                 <li>✓ API access</li>
                             </ul>
-                            <p class="plan-note">Limited access. Provide your access code to unlock.</p>
+                            <p class="plan-note" style="margin-bottom: 20px;">Limited access. Provide your access code to unlock.</p>
                             <button class="upgrade-plan-btn" id="proAccessBtn">Limited Access</button>
                         </div>
                 </div>
@@ -555,6 +676,8 @@
         </div>
     </div>
     
+    <!-- Poseidon 3D Animation System -->
+    <script src="{{ url_for('static', filename='js/poseidon3d.js') }}?v=1"></script>
     <!-- Cache-bust to ensure latest UI JS is loaded -->
     <script src="{{ url_for('static', filename='js/app.js') }}?v=10"></script>
 </body>

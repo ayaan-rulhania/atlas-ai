@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check for Updates - Atlas</title>
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <link rel="alternate icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=14">
+    <style>
+        /* Override body styles from main CSS to allow scrolling on update page */
+        body {
+            height: auto !important;
+            overflow: auto !important;
+        }
+        
+        html {
+            height: auto !important;
+            overflow: auto !important;
+        }
+        
+        .update-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+            background: var(--bg-primary);
+        }
+        
+        .update-content {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .update-logo {
+            margin-bottom: 32px;
+        }
+        
+        .update-logo svg {
+            width: 64px;
+            height: 64px;
+            color: var(--accent-primary);
+        }
+        
+        .update-title {
+            font-family: var(--font-ui);
+            font-size: 32px;
+            font-weight: 400;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+        }
+        
+        .update-status {
+            font-family: var(--font-chat);
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+        
+        .update-status.checking {
+            color: var(--text-secondary);
+        }
+        
+        .update-status.up-to-date {
+            color: var(--accent-success);
+        }
+        
+        .update-status.available {
+            color: var(--accent-primary);
+        }
+        
+        .update-status.error {
+            color: var(--accent-danger);
+        }
+        
+        .update-progress {
+            width: 100%;
+            max-width: 400px;
+            margin: 24px auto;
+            display: none;
+        }
+        
+        .update-progress.active {
+            display: block;
+        }
+        
+        .progress-bar-container {
+            width: 100%;
+            height: 8px;
+            background: var(--bg-tertiary);
+            border-radius: var(--radius-full);
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background: var(--accent-primary);
+            border-radius: var(--radius-full);
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+        
+        .progress-text {
+            font-family: var(--font-chat);
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        
+        .status-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 24px;
+            display: none;
+        }
+        
+        .status-icon.active {
+            display: block;
+        }
+        
+        .status-icon svg {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .status-icon.checking svg {
+            color: var(--text-secondary);
+            animation: spin 1s linear infinite;
+        }
+        
+        .status-icon.up-to-date svg {
+            color: var(--accent-success);
+        }
+        
+        .status-icon.error svg {
+            color: var(--accent-danger);
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .back-link {
+            position: absolute;
+            top: 24px;
+            left: 24px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            font-family: var(--font-ui);
+            font-size: 14px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-radius: var(--radius-md);
+            transition: all var(--transition-base);
+        }
+        
+        .back-link:hover {
+            color: var(--text-primary);
+            background: var(--bg-secondary);
+        }
+        
+        .back-link svg {
+            width: 16px;
+            height: 16px;
+        }
+        
+        .update-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 16px 32px;
+            font-family: var(--font-ui);
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--bg-primary);
+            background: var(--accent-primary);
+            border: none;
+            border-radius: var(--radius-lg);
+            cursor: pointer;
+            transition: all var(--transition-base);
+            text-decoration: none;
+            min-width: 200px;
+            margin-top: 24px;
+        }
+        
+        .update-button:hover:not(:disabled) {
+            background: var(--accent-primary-hover);
+            transform: translateY(-2px);
+        }
+        
+        .update-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .update-button svg {
+            width: 24px;
+            height: 24px;
+        }
+        
+        .updates-list {
+            display: grid;
+            gap: 24px;
+        }
+        
+        .update-item {
+            padding: 20px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+        }
+        
+        .update-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .update-version {
+            font-family: var(--font-ui);
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--accent-primary);
+        }
+        
+        .update-date {
+            font-family: var(--font-chat);
+            font-size: 12px;
+            color: var(--text-tertiary);
+        }
+        
+        .update-description {
+            font-family: var(--font-chat);
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        
+        .update-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 8px;
+        }
+        
+        .update-features li {
+            font-family: var(--font-chat);
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .update-features li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+        }
+    </style>
+</head>
+<body data-theme="light">
+    <a href="/" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Back to Atlas
+    </a>
+    
+    <div class="update-container">
+        <div class="update-content">
+            <div class="update-logo">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            
+            <h1 class="update-title">Check for Updates</h1>
+            
+            <div class="status-icon checking active" id="checkingIcon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" stroke-opacity="0.25"/>
+                    <path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"/>
+                </svg>
+            </div>
+            
+            <div class="status-icon up-to-date" id="upToDateIcon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="9 12 11 14 15 10"/>
+                </svg>
+            </div>
+            
+            <div class="status-icon error" id="errorIcon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="12" y1="8" x2="12" y2="12"/>
+                    <line x1="12" y1="16" x2="12.01" y2="16"/>
+                </svg>
+            </div>
+            
+            <p class="update-status checking" id="updateStatus">Checking for updates...</p>
+            
+            <div class="update-progress" id="updateProgress">
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <div class="progress-text" id="progressText">0%</div>
+            </div>
+            
+            <button class="update-button" id="updateButton" style="display: none;">Download Update</button>
+            
+            <div id="updatesList" class="updates-list" style="margin-top: 48px; text-align: left; max-width: 600px; width: 100%;"></div>
+            
+            <div style="margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border-color);">
+                <a href="https://atlas-ai.vercel.app" target="_blank" style="font-family: var(--font-chat); font-size: 12px; color: var(--text-tertiary); text-decoration: none; transition: color var(--transition-base);">
+                    Atlas Website
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Initialize theme - use same logic as main app
+        function initializeTheme() {
+            const savedTheme = localStorage.getItem('atlasTheme') || 'system';
+            let theme = savedTheme;
+            
+            // Resolve system theme if needed
+            if (theme === 'system') {
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    theme = 'dark';
+                } else {
+                    theme = 'light';
+                }
+            }
+            
+            document.body.setAttribute('data-theme', theme);
+        }
+        
+        // Initialize theme on load
+        initializeTheme();
+        
+        // Listen for system theme changes if using system preference
+        if (localStorage.getItem('atlasTheme') === 'system') {
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', initializeTheme);
+        }
+        
+        // Check if running in Electron
+        const isElectron = window.electronAPI !== undefined;
+        
+        // Update checking logic
+        let currentVersion = '1.0.0'; // This would come from the app
+        const checkForUpdates = async () => {
+            const statusEl = document.getElementById('updateStatus');
+            const checkingIcon = document.getElementById('checkingIcon');
+            const upToDateIcon = document.getElementById('upToDateIcon');
+            const errorIcon = document.getElementById('errorIcon');
+            const updateButton = document.getElementById('updateButton');
+            const updateProgress = document.getElementById('updateProgress');
+            const updatesList = document.getElementById('updatesList');
+            
+            try {
+                // Fetch version info from server
+                const response = await fetch('/api/version');
+                const versionData = await response.json();
+                
+                checkingIcon.classList.remove('active');
+                
+                if (versionData.latestVersion && versionData.latestVersion !== currentVersion) {
+                    // Update available
+                    upToDateIcon.classList.remove('active');
+                    statusEl.textContent = `Update available: v${versionData.latestVersion}`;
+                    statusEl.className = 'update-status available';
+                    updateButton.style.display = 'inline-flex';
+                    updateButton.textContent = 'Download Update';
+                    
+                    // Show update details
+                    if (updatesList && versionData.updates && versionData.updates.length > 0) {
+                        updatesList.innerHTML = versionData.updates.map(update => `
+                            <div class="update-item">
+                                <div class="update-header">
+                                    <span class="update-version">v${update.version}</span>
+                                    <span class="update-date">${update.date}</span>
+                                </div>
+                                <div class="update-description">${update.description}</div>
+                                ${update.features ? `<ul class="update-features">${update.features.map(f => `<li>${f}</li>`).join('')}</ul>` : ''}
+                            </div>
+                        `).join('');
+                    }
+                } else {
+                    // Up to date
+                    upToDateIcon.classList.add('active');
+                    statusEl.textContent = `Atlas is up to date (v${currentVersion})`;
+                    statusEl.className = 'update-status up-to-date';
+                    updateButton.style.display = 'none';
+                }
+                
+            } catch (error) {
+                console.error('Error checking for updates:', error);
+                checkingIcon.classList.remove('active');
+                errorIcon.classList.add('active');
+                statusEl.textContent = 'Error checking for updates. Please try again later.';
+                statusEl.className = 'update-status error';
+            }
+        };
+        
+        // Start checking on load
+        checkForUpdates();
+        
+        // Handle update button click
+        document.getElementById('updateButton').addEventListener('click', async () => {
+            const updateProgress = document.getElementById('updateProgress');
+            const progressBar = document.getElementById('progressBar');
+            const progressText = document.getElementById('progressText');
+            const updateButton = document.getElementById('updateButton');
+            
+            updateProgress.classList.add('active');
+            updateButton.disabled = true;
+            updateButton.textContent = 'Downloading...';
+            
+            // Simulate download progress
+            for (let i = 0; i <= 100; i += 5) {
+                await new Promise(resolve => setTimeout(resolve, 200));
+                progressBar.style.width = i + '%';
+                progressText.textContent = i + '%';
+            }
+            
+            // After download, install and relaunch
+            progressText.textContent = 'Installing update...';
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            
+            progressText.textContent = 'Update installed! Relaunching...';
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            
+            // In Electron, you would use electron.remote.app.relaunch()
+            if (isElectron && window.electronAPI) {
+                // Relaunch app
+                window.location.href = '/';
+            } else {
+                alert('Update complete! Please restart the app.');
+            }
+        });
+    </script>
+</body>
+</html>
+

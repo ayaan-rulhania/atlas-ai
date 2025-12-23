@@ -159,10 +159,8 @@ This file tracks **major changes** made to this project over time.
 ## 2025-12-08
 - **UI**: Major redesign iterations for the main chat experience (layout, spacing, markdown rendering, theming), moving toward a more minimal, compact chat surface while preserving existing features.
 - **Images**: Added an image-request flow ("create an image of …") and hardened frontend rendering so markdown images reliably display as images (not raw markdown).
-- **Dev tooling**: Added **Dev Atlas** (`/dev-atlas`) — a minimal, no-history chat page for fast testing (single prompt box + plus button), backed by the same `/api/chat` Thor 1.0 endpoint.
 
 ### Notes
-- **Dev Atlas URL**: `/dev-atlas` (served by the same Flask app)
 - **Port override**: server can be started with `PORT=5001 ...` (defaults to 5000)
 
 ---

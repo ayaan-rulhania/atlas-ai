@@ -96,8 +96,8 @@ class PoseidonVoiceHandler:
                 r'\b(volume (up|down)|turn (up|down))\b'
             ],
             VoiceCommandType.LANGUAGE: [
-                r'\b(language|change language|switch language|speak (english|spanish|french|german))\b',
-                r'\b(use (english|spanish|french|german|japanese|korean|chinese))\b'
+                r'\b(language|change language|switch language|speak (english|spanish|french|german|hindi|tamil|telugu|mandarin|chinese))\b',
+                r'\b(use (english|spanish|french|german|hindi|tamil|telugu|mandarin|chinese|japanese|korean))\b'
             ]
         }
         
@@ -160,15 +160,56 @@ class PoseidonVoiceHandler:
             'en-GB': 'English (UK)',
             'en-AU': 'English (Australia)',
             'en-IN': 'English (India)',
+            'hi-IN': 'Hindi (India)',  # Version 3.x: Added
+            'ta-IN': 'Tamil (India)',  # Version 3.x: Added
+            'te-IN': 'Telugu (India)',  # Version 3.x: Added
             'es-ES': 'Spanish (Spain)',
             'es-MX': 'Spanish (Mexico)',
             'fr-FR': 'French',
+            'zh-CN': 'Mandarin (Simplified)',  # Version 3.x: Clarified
             'de-DE': 'German',
             'it-IT': 'Italian',
             'pt-BR': 'Portuguese (Brazil)',
             'ja-JP': 'Japanese',
-            'ko-KR': 'Korean',
-            'zh-CN': 'Chinese (Simplified)'
+            'ko-KR': 'Korean'
+        }
+        
+        # Version 3.x: Common speech recognition mis-sayings
+        self.mis_saying_corrections = {
+            # Common homophones and misrecognitions
+            'the': ['teh', 'da', 'de'],
+            'to': ['two', 'too', 'tu'],
+            'for': ['four', 'fore', 'fro'],
+            'you': ['u', 'yu', 'ew'],
+            'are': ['r', 'arr'],
+            'your': ['ur', 'yore'],
+            'their': ['there', 'they\'re'],
+            'there': ['their', 'they\'re'],
+            'they\'re': ['their', 'there'],
+            'it\'s': ['its', 'itz'],
+            'its': ['it\'s'],
+            'can\'t': ['cant', 'can t', 'cannot'],
+            'won\'t': ['wont', 'won t'],
+            'don\'t': ['dont', 'don t'],
+            'isn\'t': ['isnt', 'is n t'],
+            # Numbers
+            'one': ['won', 'wan'],
+            'two': ['to', 'too'],
+            'four': ['for', 'fore'],
+            # Common phrases
+            'what': ['wut', 'wat'],
+            'where': ['ware', 'wear'],
+            'when': ['wen'],
+            'why': ['y', 'wy'],
+            'how': ['ow', 'haw'],
+            # Common words
+            'hello': ['hallo', 'helo'],
+            'thanks': ['thx', 'thank'],
+            'please': ['pls', 'pleas'],
+            'sorry': ['sory', 'sore'],
+            'okay': ['ok', 'o k'],
+            'yes': ['yess', 'yas'],
+            'no': ['know', 'noe']
         }
         self.conversation_summaries: List[Dict] = []  # Conversation summaries
         self.interruptions = 0  # Count of user interruptions
@@ -236,8 +277,8 @@ class PoseidonVoiceHandler:
                 params['volume'] = 1.0 if 'louder' in cleaned else 0.5
             return VoiceCommandType.VOLUME, None, params
         
-        # Language command with language detection
-        lang_match = re.search(r'\b(speak|use|change to|switch to|language)\s*(english|spanish|french|german|italian|portuguese|japanese|korean|chinese)?\b', cleaned)
+        # Language command with language detection (v3.x: Enhanced)
+        lang_match = re.search(r'\b(speak|use|change to|switch to|language)\s*(english|spanish|french|german|hindi|tamil|telugu|mandarin|chinese|italian|portuguese|japanese|korean)?\b', cleaned)
         if lang_match:
             lang_name = lang_match.group(2)
             if lang_name:
@@ -246,11 +287,15 @@ class PoseidonVoiceHandler:
                     'spanish': 'es-ES',
                     'french': 'fr-FR',
                     'german': 'de-DE',
+                    'hindi': 'hi-IN',  # v3.x
+                    'tamil': 'ta-IN',  # v3.x
+                    'telugu': 'te-IN',  # v3.x
+                    'mandarin': 'zh-CN',  # v3.x
+                    'chinese': 'zh-CN',
                     'italian': 'it-IT',
                     'portuguese': 'pt-BR',
                     'japanese': 'ja-JP',
-                    'korean': 'ko-KR',
-                    'chinese': 'zh-CN'
+                    'korean': 'ko-KR'
                 }
                 if lang_name.lower() in lang_map:
                     params['language'] = lang_map[lang_name.lower()]
@@ -295,9 +340,42 @@ class PoseidonVoiceHandler:
         
         return EmotionType.NEUTRAL
     
+    def correct_mis_sayings(self, transcript: str) -> str:
+        """
+        Correct common speech recognition mis-sayings (v3.x).
+        
+        Args:
+            transcript: Raw transcript from speech recognition
+            
+        Returns:
+            Corrected transcript
+        """
+        words = transcript.split()
+        corrected_words = []
+        
+        for word in words:
+            word_lower = word.lower().strip('.,!?;:')
+            # Check if word needs correction
+            corrected = False
+            for correct_word, mis_sayings in self.mis_saying_corrections.items():
+                if word_lower in mis_sayings:
+                    # Preserve capitalization
+                    if word[0].isupper():
+                        corrected_words.append(correct_word.capitalize())
+                    else:
+                        corrected_words.append(correct_word)
+                    corrected = True
+                    break
+            
+            if not corrected:
+                corrected_words.append(word)
+        
+        return ' '.join(corrected_words)
+    
     def validate_transcript(self, transcript: str) -> Tuple[bool, Optional[str]]:
         """
         Validate and clean transcript before processing.
+        Version 3.x: Enhanced with mis-saying correction.
         
         Args:
             transcript: Raw transcript from speech recognition
@@ -310,6 +388,9 @@ class PoseidonVoiceHandler:
             
         # Clean transcript
         cleaned = transcript.strip()
+        
+        # Version 3.x: Correct mis-sayings first
+        cleaned = self.correct_mis_sayings(cleaned)
         
         # Remove excessive whitespace
         cleaned = re.sub(r'\s+', ' ', cleaned)
@@ -334,7 +415,7 @@ class PoseidonVoiceHandler:
             return False, None
         
         # Check for voice commands - if it's ONLY a command, don't process as regular transcript
-        cmd_type, _ = self.detect_voice_command(cleaned)
+        cmd_type, _, _ = self.detect_voice_command(cleaned)
         if cmd_type != VoiceCommandType.NONE and cmd_type != VoiceCommandType.WAKE:
             # It's a command, but we still want to process it
             pass

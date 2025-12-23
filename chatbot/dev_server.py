@@ -1,7 +1,7 @@
 """
-Dev Atlas server (minimal UI + API proxy).
+Lightweight Atlas server (minimal UI + API proxy).
 
-- Serves the Dev Atlas UI (Aboreto-styled, basic features).
+- Serves the main Atlas UI.
 - Proxies /api/chat to the main Atlas backend (port 5000 by default),
   so Thor 1.0 is only loaded once.
 """
@@ -26,7 +26,7 @@ ATLAS_API_BASE = os.environ.get("ATLAS_API_BASE", "http://127.0.0.1:5000").rstri
 
 @app.route("/")
 def index():
-    return render_template("dev_atlas.html")
+    return render_template("index.html")
 
 
 @app.route("/api/chat", methods=["POST"])
@@ -41,7 +41,7 @@ def proxy_chat():
         content_type = upstream.headers.get("Content-Type", "application/json")
         return upstream.content, upstream.status_code, {"Content-Type": content_type}
     except Exception as e:
-        return jsonify({"error": f"Dev Atlas proxy error: {e}"}), 502
+        return jsonify({"error": f"Atlas proxy error: {e}"}), 502
 
 
 if __name__ == "__main__":

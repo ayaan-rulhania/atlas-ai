@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Install Atlas for macOS</title>
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <link rel="alternate icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=14">
+    <style>
+        /* Override body styles from main CSS to allow scrolling on install page */
+        body {
+            height: auto !important;
+            overflow: auto !important;
+        }
+        
+        html {
+            height: auto !important;
+            overflow: auto !important;
+        }
+        
+        .install-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+            background: var(--bg-primary);
+        }
+        
+        .install-content {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .install-logo {
+            margin-bottom: 32px;
+        }
+        
+        .install-logo svg {
+            width: 64px;
+            height: 64px;
+            color: var(--accent-primary);
+        }
+        
+        .install-title {
+            font-family: var(--font-ui);
+            font-size: 32px;
+            font-weight: 400;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+        }
+        
+        .install-subtitle {
+            font-family: var(--font-chat);
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 48px;
+            line-height: 1.6;
+        }
+        
+        .install-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 16px 32px;
+            font-family: var(--font-ui);
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--bg-primary);
+            background: var(--accent-primary);
+            border: none;
+            border-radius: var(--radius-lg);
+            cursor: pointer;
+            transition: all var(--transition-base);
+            text-decoration: none;
+            min-width: 200px;
+        }
+        
+        .install-button:hover {
+            background: var(--accent-primary-hover);
+            transform: translateY(-2px);
+        }
+        
+        .install-button:active {
+            transform: translateY(0);
+        }
+        
+        .install-button svg {
+            width: 24px;
+            height: 24px;
+        }
+        
+        .install-features {
+            margin-top: 64px;
+            text-align: left;
+        }
+        
+        .install-features h3 {
+            font-family: var(--font-ui);
+            font-size: 20px;
+            font-weight: 400;
+            color: var(--text-primary);
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            gap: 16px;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 16px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+        }
+        
+        .feature-item svg {
+            width: 20px;
+            height: 20px;
+            color: var(--accent-primary);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        
+        .feature-item-content {
+            flex: 1;
+        }
+        
+        .feature-item-title {
+            font-family: var(--font-ui);
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+        
+        .feature-item-desc {
+            font-family: var(--font-chat);
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+        
+        .back-link {
+            position: absolute;
+            top: 24px;
+            left: 24px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            font-family: var(--font-ui);
+            font-size: 14px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-radius: var(--radius-md);
+            transition: all var(--transition-base);
+        }
+        
+        .back-link:hover {
+            color: var(--text-primary);
+            background: var(--bg-secondary);
+        }
+        
+        .back-link svg {
+            width: 16px;
+            height: 16px;
+        }
+        
+        @media (max-width: 768px) {
+            .install-title {
+                font-size: 24px;
+            }
+            
+            .install-subtitle {
+                font-size: 14px;
+            }
+            
+            .install-button {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body data-theme="light">
+    <a href="/" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Back to Atlas
+    </a>
+    
+    <div class="install-container">
+        <div class="install-content">
+            <div class="install-logo">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            
+            <h1 class="install-title">Install Atlas</h1>
+            <p class="install-subtitle">
+                Get the full Atlas experience as a native desktop application. 
+                Run Atlas offline, access it from your dock/taskbar, and enjoy a seamless desktop experience.
+            </p>
+            
+            <div class="os-selector" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; max-width: 700px; margin: 32px auto;">
+                <button class="os-button active" data-os="macos" style="padding: 20px; background: var(--bg-secondary); border: 2px solid var(--accent-primary); border-radius: var(--radius-md); cursor: pointer; transition: all var(--transition-base);">
+                    <div style="font-size: 32px; margin-bottom: 8px;">🍎</div>
+                    <div style="font-family: var(--font-ui); font-weight: 500; color: var(--text-primary);">macOS</div>
+                </button>
+                <button class="os-button" data-os="windows" style="padding: 20px; background: var(--bg-secondary); border: 2px solid var(--border-color); border-radius: var(--radius-md); cursor: pointer; transition: all var(--transition-base);">
+                    <div style="font-size: 32px; margin-bottom: 8px;">🪟</div>
+                    <div style="font-family: var(--font-ui); font-weight: 500; color: var(--text-primary);">Windows</div>
+                </button>
+                <button class="os-button" data-os="linux" style="padding: 20px; background: var(--bg-secondary); border: 2px solid var(--border-color); border-radius: var(--radius-md); cursor: pointer; transition: all var(--transition-base);">
+                    <div style="font-size: 32px; margin-bottom: 8px;">🐧</div>
+                    <div style="font-family: var(--font-ui); font-weight: 500; color: var(--text-primary);">Linux</div>
+                </button>
+            </div>
+            
+            <a href="/download/atlas-macos.dmg" class="install-button" id="downloadBtn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="7 10 12 15 17 10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                <span id="downloadText">Download for macOS</span>
+            </a>
+            
+            <div style="margin-top: 24px; padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); border-left: 3px solid var(--accent-primary); max-width: 600px; margin-left: auto; margin-right: auto;">
+                <div style="font-family: var(--font-ui); font-size: 14px; font-weight: 500; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="12" y1="16" x2="12" y2="12"/>
+                        <line x1="12" y1="8" x2="12.01" y2="8"/>
+                    </svg>
+                    Installation Note
+                </div>
+                <div style="font-family: var(--font-chat); font-size: 13px; color: var(--text-secondary); line-height: 1.5;" id="installNote">
+                    <div id="macosNote">
+                        After downloading, if macOS shows a security warning:
+                        <ol style="margin: 12px 0 0 20px; padding-left: 0;">
+                            <li style="margin-bottom: 8px;">When you see the security warning, click <strong>"Done"</strong></li>
+                            <li style="margin-bottom: 8px;">Go to <strong>System Settings</strong> &gt; <strong>Privacy & Security</strong></li>
+                            <li style="margin-bottom: 8px;">Scroll down to the security section</li>
+                            <li style="margin-bottom: 8px;">You should see a message about Atlas being blocked</li>
+                            <li style="margin-bottom: 8px;">Click <strong>"Open Anyway"</strong> next to the Atlas message</li>
+                        </ol>
+                        This is normal for unsigned applications and only needs to be done once.
+                    </div>
+                    <div id="windowsNote" style="display: none;">
+                        After downloading, run the installer and follow the setup wizard. Windows may show a security warning - click "More info" and then "Run anyway" if needed. This is normal for unsigned applications.
+                    </div>
+                    <div id="linuxNote" style="display: none;">
+                        After downloading, make the AppImage executable: <code style="background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px; font-size: 12px;">chmod +x Atlas-*.AppImage</code> then run it. For .deb packages, install with: <code style="background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px; font-size: 12px;">sudo dpkg -i Atlas-*.deb</code>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="install-features">
+                <h3>What you get</h3>
+                <ul class="feature-list">
+                    <li class="feature-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        <div class="feature-item-content">
+                            <div class="feature-item-title">Native macOS App</div>
+                            <div class="feature-item-desc">Full desktop application with native macOS integration</div>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        <div class="feature-item-content">
+                            <div class="feature-item-title">Offline Access</div>
+                            <div class="feature-item-desc">Use Atlas even when you're not connected to the internet</div>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        <div class="feature-item-content">
+                            <div class="feature-item-title">Dock Integration</div>
+                            <div class="feature-item-desc">Quick access from your macOS dock and menu bar</div>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        <div class="feature-item-content">
+                            <div class="feature-item-title">All Features Included</div>
+                            <div class="feature-item-desc">Full access to all Atlas features, including Gems, Poseidon, and more</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Initialize theme - use same logic as main app
+        function initializeTheme() {
+            const savedTheme = localStorage.getItem('atlasTheme') || 'system';
+            let theme = savedTheme;
+            
+            // Resolve system theme if needed
+            if (theme === 'system') {
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    theme = 'dark';
+                } else {
+                    theme = 'light';
+                }
+            }
+            
+            document.body.setAttribute('data-theme', theme);
+        }
+        
+        // Initialize theme on load
+        initializeTheme();
+        
+        // Listen for system theme changes if using system preference
+        if (localStorage.getItem('atlasTheme') === 'system') {
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', initializeTheme);
+        }
+        
+        // OS selector functionality
+        const osButtons = document.querySelectorAll('.os-button');
+        const downloadBtn = document.getElementById('downloadBtn');
+        const downloadText = document.getElementById('downloadText');
+        const macosNote = document.getElementById('macosNote');
+        const windowsNote = document.getElementById('windowsNote');
+        const linuxNote = document.getElementById('linuxNote');
+        
+        let selectedOS = 'macos';
+        
+        if (osButtons.length > 0) {
+            osButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update active state
+                    osButtons.forEach(b => {
+                        b.classList.remove('active');
+                        b.style.border = '2px solid var(--border-color)';
+                    });
+                    btn.classList.add('active');
+                    btn.style.border = '2px solid var(--accent-primary)';
+                    
+                    // Update selected OS
+                    selectedOS = btn.dataset.os;
+                    
+                    // Update download button
+                    if (selectedOS === 'macos') {
+                        downloadBtn.href = '/download/atlas-macos.dmg';
+                        downloadText.textContent = 'Download for macOS';
+                        if (macosNote) macosNote.style.display = 'block';
+                        if (windowsNote) windowsNote.style.display = 'none';
+                        if (linuxNote) linuxNote.style.display = 'none';
+                    } else if (selectedOS === 'windows') {
+                        downloadBtn.href = '/download/atlas-windows.exe';
+                        downloadText.textContent = 'Download for Windows';
+                        if (macosNote) macosNote.style.display = 'none';
+                        if (windowsNote) windowsNote.style.display = 'block';
+                        if (linuxNote) linuxNote.style.display = 'none';
+                    } else if (selectedOS === 'linux') {
+                        downloadBtn.href = '/download/atlas-linux.AppImage';
+                        downloadText.textContent = 'Download for Linux';
+                        if (macosNote) macosNote.style.display = 'none';
+                        if (windowsNote) windowsNote.style.display = 'none';
+                        if (linuxNote) linuxNote.style.display = 'block';
+                    }
+                });
+            });
+        }
+        
+        // Handle download button click
+        if (downloadBtn) {
+            downloadBtn.addEventListener('click', function(e) {
+                console.log('Downloading Atlas for', selectedOS, '...');
+            });
+        }
+    </script>
+</body>
+</html>
+

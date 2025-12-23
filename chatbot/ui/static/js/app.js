@@ -79,6 +79,7 @@ function setupEventListeners() {
     const themeToggleBtn = document.getElementById('themeToggleBtn');
     const helpBtn = document.getElementById('helpBtn');
     const customizeBtn = document.getElementById('customizeBtn');
+    const installBtn = document.getElementById('installBtn');
     const newGemBtn = document.getElementById('newGemBtn');
     
     sendBtn.addEventListener('click', handleSendMessage);
@@ -94,6 +95,15 @@ function setupEventListeners() {
     if (newProjectBtn) newProjectBtn.addEventListener('click', () => openProjectModal());
     if (helpBtn) helpBtn.addEventListener('click', openHelpModal);
     if (customizeBtn) customizeBtn.addEventListener('click', openCustomizeModal);
+    if (installBtn) installBtn.addEventListener('click', () => {
+        // Check if running in Electron app (macOS app)
+        const isElectron = window.electronAPI !== undefined;
+        if (isElectron) {
+            window.location.href = '/update';
+        } else {
+            window.location.href = '/install';
+        }
+    });
     if (newGemBtn) newGemBtn.addEventListener('click', () => {
         openCustomizeModal();
         openGemEditor(); // new gem
@@ -435,24 +445,46 @@ async function handleSendMessage() {
     
     // Check for command shortcuts
     const messageLower = message.toLowerCase().trim();
-    if (messageLower === '/office' || messageLower.startsWith('/office ')) {
+    
+    // Handle /emoji command
+    if (messageLower.startsWith('/emoji ')) {
+        const emojiRequest = message.substring(7).trim();
+        if (emojiRequest) {
+            messageInput.value = `Give me a ${emojiRequest} emoji`;
+            autoResizeTextarea(messageInput);
+            // Continue to send the message (don't return)
+        }
+    }
+    // Handle /office command
+    else if (messageLower === '/office' || messageLower.startsWith('/office ')) {
         messageInput.value = 'Load Office Suite';
-        handleSendMessage();
-        return;
+        autoResizeTextarea(messageInput);
+        // Continue to send the message (don't return)
     }
-    if (messageLower === '/arcade' || messageLower.startsWith('/arcade ')) {
+    // Handle /arcade command
+    else if (messageLower === '/arcade' || messageLower.startsWith('/arcade ')) {
         messageInput.value = 'Load Game Suite';
-        handleSendMessage();
-        return;
+        autoResizeTextarea(messageInput);
+        // Continue to send the message (don't return)
     }
-    if (messageLower.startsWith('/image ')) {
+    // Handle /image command
+    else if (messageLower.startsWith('/image ')) {
         const imageDesc = message.substring(7).trim();
         if (imageDesc) {
             messageInput.value = `Create an image of ${imageDesc}`;
-            handleSendMessage();
-            return;
+            autoResizeTextarea(messageInput);
+            // Continue to send the message (don't return)
+        } else {
+            return; // Invalid /image command
         }
     }
+    
+    // Get the final message value (may have been changed by commands above)
+    const finalMessage = messageInput.value.trim();
+    if (!finalMessage) return;
+    
+    // Use final message for sending (may have been transformed by commands)
+    const messageToSend = finalMessage;
     
     isLoading = true;
     updateSendButton(true);
@@ -466,8 +498,8 @@ async function handleSendMessage() {
         messagesContainer.style.display = 'block';
     }
     
-    // Add user message to UI
-    addMessageToUI('user', message);
+    // Add user message to UI (show the transformed command)
+    addMessageToUI('user', messageToSend);
     messageInput.value = '';
     autoResizeTextarea(messageInput);
     
@@ -487,7 +519,7 @@ async function handleSendMessage() {
     
     try {
         const requestBody = {
-            message: message,
+            message: messageToSend,
             chat_id: currentChatId,
             task: 'text_generation',
             think_deeper: thinkDeeperMode,
@@ -2065,7 +2097,7 @@ async function handleGemSubmit(e) {
             const err = await res.json().catch(() => ({}));
             throw new Error(err.error || `HTTP ${res.status}`);
         }
-        await loadGems();
+        await loadGems(); // This will save to localStorage
         closeGemEditor();
     } catch (err) {
         console.error('Error saving gem:', err);
@@ -2085,7 +2117,7 @@ async function deleteGem(gemId) {
             currentModel = 'thor-1.0';
             localStorage.setItem('selectedModel', currentModel);
         }
-        await loadGems();
+        await loadGems(); // This will save updated gems to localStorage
     } catch (err) {
         console.error('Error deleting gem:', err);
         alert(`Error deleting gem: ${err.message}`);
@@ -2241,6 +2273,8 @@ let voiceSettings = {
 };
 let poseidonOverlay = null;
 let poseidonVisualizer = null;
+let poseidon3D = null; // 3D animation instance
+let poseidon3DEnabled = false; // 3D UI enabled setting (loaded from localStorage)
 let poseidonStatusIndicator = null;
 let poseidonStatusText = null;
 let poseidonUserTranscript = null;
@@ -2353,9 +2387,14 @@ function initializePoseidon() {
         currentLanguage = savedAccent;
     }
     
-    // Validate accent
-    const validAccents = ['en-US', 'en-GB', 'en-AU', 'en-IN', 'es-ES', 'es-MX', 'fr-FR', 'de-DE', 'it-IT', 'pt-BR', 'ja-JP', 'ko-KR', 'zh-CN'];
+    // Validate accent (v3.x: Enhanced with new languages)
+    const validAccents = ['en-US', 'en-GB', 'en-AU', 'en-IN', 'hi-IN', 'ta-IN', 'te-IN', 'es-ES', 'es-MX', 'fr-FR', 'zh-CN', 'de-DE', 'it-IT', 'pt-BR', 'ja-JP', 'ko-KR'];
     voiceSettings.accent = validAccents.includes(savedAccent) ? savedAccent : 'en-US';
+    
+    // Ensure currentLanguage is synced with voiceSettings.accent
+    if (!currentLanguage || currentLanguage !== voiceSettings.accent) {
+        currentLanguage = voiceSettings.accent;
+    }
     
     // Validate gender
     voiceSettings.gender = (savedGender === 'male' || savedGender === 'female') ? savedGender : 'male';
@@ -2365,12 +2404,35 @@ function initializePoseidon() {
     // Update UI
     const accentSelect = document.getElementById('voiceAccent');
     const genderSelect = document.getElementById('voiceGender');
+    const poseidon3DCheckbox = document.getElementById('poseidon3DEnabled');
+    
+    // Initialize 3D Poseidon setting (default: false) - use global variable
+    poseidon3DEnabled = localStorage.getItem('poseidon3DEnabled') === 'true';
+    if (poseidon3DCheckbox) {
+        poseidon3DCheckbox.checked = poseidon3DEnabled;
+        poseidon3DCheckbox.addEventListener('change', (e) => {
+            poseidon3DEnabled = e.target.checked;
+            localStorage.setItem('poseidon3DEnabled', poseidon3DEnabled);
+            console.log('[Poseidon] 3D UI setting changed:', poseidon3DEnabled);
+            // If disabling, clean up 3D instance if overlay is open
+            if (!poseidon3DEnabled && poseidon3D) {
+                try {
+                    poseidon3D.dispose();
+                    poseidon3D = null;
+                } catch (error) {
+                    console.error('[Poseidon] Error disposing 3D animation:', error);
+                }
+            }
+        });
+    }
+    
     if (accentSelect) {
         accentSelect.value = voiceSettings.accent;
         accentSelect.addEventListener('change', (e) => {
             const newAccent = e.target.value;
             if (validAccents.includes(newAccent)) {
                 voiceSettings.accent = newAccent;
+                currentLanguage = newAccent; // Update currentLanguage for speech synthesis
                 localStorage.setItem('poseidonAccent', newAccent);
                 updateVoiceSelection();
                 // Update recognition language if active
@@ -2430,6 +2492,10 @@ function initializePoseidon() {
     poseidonUserTranscript = document.getElementById('poseidonUserTranscript');
     poseidonAssistantTranscript = document.getElementById('poseidonAssistantTranscript');
     
+    // Load 3D Poseidon UI setting (default: false)
+    poseidon3DEnabled = localStorage.getItem('poseidon3DEnabled') === 'true';
+    console.log('[Poseidon] 3D UI enabled:', poseidon3DEnabled);
+    
     // Setup overlay controls
     const poseidonCloseBtn = document.getElementById('poseidonCloseBtn');
     const poseidonHoldBtn = document.getElementById('poseidonHoldBtn');
@@ -2460,15 +2526,21 @@ function updateVoiceSelection() {
             return;
         }
         
-        // Filter voices by accent and gender
+        // Filter voices by accent and gender (v3.x: Enhanced with new languages + Hindi improvements)
         const accentMap = {
             'en-US': ['en-US', 'en_US'],
             'en-GB': ['en-GB', 'en_GB'],
             'en-AU': ['en-AU', 'en_AU'],
-            'en-IN': ['en-IN', 'en_IN']
+            'en-IN': ['en-IN', 'en_IN'],
+            'hi-IN': ['hi-IN', 'hi_IN', 'hi', 'hi-IN-Female', 'hi-IN-Male'],  // Enhanced Hindi support
+            'ta-IN': ['ta-IN', 'ta_IN', 'ta'],
+            'te-IN': ['te-IN', 'te_IN', 'te'],
+            'es-ES': ['es-ES', 'es_ES', 'es'],
+            'fr-FR': ['fr-FR', 'fr_FR', 'fr'],
+            'zh-CN': ['zh-CN', 'zh_CN', 'zh', 'cmn']  // v3.x: Mandarin
         };
         
-        const targetLocales = accentMap[voiceSettings.accent] || ['en-US'];
+        const targetLocales = accentMap[voiceSettings.accent] || [voiceSettings.accent] || ['en-US'];
         const targetGender = voiceSettings.gender === 'male' ? 'male' : 'female';
         
         // Find matching voice
@@ -2514,7 +2586,16 @@ function updateVoiceSelection() {
         }
         
         currentVoice = selectedVoice;
-        console.log('Poseidon: Selected voice:', selectedVoice ? selectedVoice.name : 'none');
+        console.log('Poseidon: Selected voice:', selectedVoice ? {
+            name: selectedVoice.name,
+            lang: selectedVoice.lang,
+            accent: voiceSettings.accent
+        } : 'none');
+        
+        // Ensure currentLanguage matches the selected accent
+        if (selectedVoice && voiceSettings.accent) {
+            currentLanguage = voiceSettings.accent;
+        }
     };
     
     loadVoices();
@@ -2554,22 +2635,44 @@ function speakText(text, speed = null, volume = null) {
     const speechSpeed = speed !== null ? speed : currentSpeechSpeed;
     const speechVolume = volume !== null ? volume : currentSpeechVolume;
     
-    // Emotion-based adaptation (v3.0.0)
+    // Version 3.x: Enhanced emotion-based adaptation with stress/tone variations
+    // Creative Enhancement: Better emotion detection and Hindi-specific improvements
     const recentEmotions = emotionHistory.slice(-5);
+    let emotionGuidance = { speed: 1.0, pitch: 1.0, tone: 'neutral' };
     if (recentEmotions.length > 0) {
         const dominantEmotion = getDominantEmotion(recentEmotions);
-        const emotionGuidance = getEmotionBasedGuidance(dominantEmotion);
+        emotionGuidance = getEmotionBasedGuidance(dominantEmotion);
         // Adjust speed based on emotion
         const adaptedSpeed = speechSpeed * emotionGuidance.speed;
         currentSpeechSpeed = Math.max(0.5, Math.min(2.0, adaptedSpeed));
     }
     
-    const utterance = new SpeechSynthesisUtterance(cleanText);
+    // Creative Enhancement: Better Hindi text processing
+    // Handle Hindi text more naturally by preserving sentence structure
+    if (voiceSettings.accent === 'hi-IN' || currentLanguage === 'hi-IN') {
+        // For Hindi, preserve natural pauses and sentence boundaries
+        const hindiCleanText = cleanText
+            .replace(/([।।])/g, '. ') // Hindi full stop
+            .replace(/([,])/g, ', ') // Hindi comma
+            .replace(/\s+/g, ' '); // Normalize spaces
+        // Use the cleaned Hindi text
+        cleanText = hindiCleanText;
+    }
+    
+    // Version 3.x: Add stress and tone variations to make speech more human-like
+    const enhancedText = addSpeechStressAndTone(cleanText, emotionGuidance);
+    
+    const utterance = new SpeechSynthesisUtterance(enhancedText);
     utterance.voice = currentVoice;
     utterance.rate = currentSpeechSpeed;
-    utterance.pitch = 1.0;
+    utterance.pitch = emotionGuidance.pitch || 1.0;  // v3.x: Variable pitch based on emotion
     utterance.volume = currentSpeechVolume;
-    utterance.lang = currentLanguage;
+    // Use voiceSettings.accent to ensure language matches the selected accent
+    utterance.lang = voiceSettings.accent || currentLanguage;
+    
+    // Version 3.x: Add pauses and emphasis for more natural speech
+    // This is done through text processing since Web Speech API has limited SSML support
+    // We'll adjust rate dynamically and add punctuation pauses
     
     // Version 3.0.0: Enable interruption detection
     canInterrupt = true;
@@ -2590,6 +2693,10 @@ function speakText(text, speed = null, volume = null) {
         console.log('[Poseidon] ✅ Finished speaking');
         isSpeaking = false;
         lastSpokenTime = Date.now();
+        // Stop 3D animation lip-sync (v3.x)
+        if (poseidon3D && typeof poseidon3D.stop === 'function') {
+            poseidon3D.stop();
+        }
         console.log('[Poseidon] Marked speech as finished, will filter matching transcripts for', SPEECH_MATCH_WINDOW_MS, 'ms');
         
         // After speaking, return to listening
@@ -2630,10 +2737,58 @@ function speakText(text, speed = null, volume = null) {
 async function openPoseidonOverlay() {
     console.log('[Poseidon] Opening overlay...');
     
-    // Version 3.0.0: Initialize session
-    window.poseidonSessionStart = Date.now();
-    emotionHistory = [];
-    conversationSummaries = [];
+    try {
+        // Version 3.0.0: Initialize session
+        window.poseidonSessionStart = Date.now();
+        emotionHistory = [];
+        conversationSummaries = [];
+        
+        // Initialize 3D animation if enabled in settings (Beta feature)
+        if (poseidon3DEnabled && poseidonVisualizer && !poseidon3D && typeof Poseidon3D !== 'undefined' && typeof THREE !== 'undefined') {
+            try {
+                // Clear wave animation and set up 3D container
+                poseidonVisualizer.innerHTML = '';
+                poseidonVisualizer.style.width = '100%';
+                poseidonVisualizer.style.height = '100%';
+                poseidonVisualizer.style.position = 'relative';
+                poseidonVisualizer.style.overflow = 'hidden';
+                poseidonVisualizer.style.backgroundColor = 'transparent';
+                poseidonVisualizer.classList.add('poseidon-3d-container');
+                
+                // Initialize 3D animation
+                poseidon3D = new Poseidon3D(poseidonVisualizer);
+                console.log('[Poseidon] 3D animation initialized (Beta)');
+            } catch (error) {
+                console.error('[Poseidon] Failed to initialize 3D animation (falling back to wave):', error);
+                poseidon3D = null;
+                poseidon3DEnabled = false;
+                // Restore wave animation on error
+                if (poseidonVisualizer) {
+                    poseidonVisualizer.innerHTML = '<div class="poseidon-wave"><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div></div>';
+                    poseidonVisualizer.classList.remove('poseidon-3d-container');
+                    poseidonVisualizer.style = '';
+                }
+            }
+        } else if (poseidon3DEnabled && (typeof THREE === 'undefined' || typeof Poseidon3D === 'undefined')) {
+            console.warn('[Poseidon] 3D UI enabled but Three.js or Poseidon3D not available');
+            poseidon3DEnabled = false;
+            localStorage.setItem('poseidon3DEnabled', 'false');
+            const checkbox = document.getElementById('poseidon3DEnabled');
+            if (checkbox) {
+                checkbox.checked = false;
+            }
+        } else if (!poseidon3DEnabled && poseidonVisualizer) {
+            // Ensure wave animation is shown when 3D is disabled
+            if (!poseidonVisualizer.querySelector('.poseidon-wave')) {
+                poseidonVisualizer.innerHTML = '<div class="poseidon-wave"><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div></div>';
+            }
+            poseidonVisualizer.classList.remove('poseidon-3d-container');
+            // Reset inline styles to allow CSS to control styling
+            poseidonVisualizer.removeAttribute('style');
+        }
+    } catch (initError) {
+        console.error('[Poseidon] Error in overlay initialization (continuing):', initError);
+    }
     
     // Detect browser
     const isSafari = /Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent);
@@ -3642,13 +3797,14 @@ function detectVoiceCommand(transcript) {
         return { type: 'volume', remaining: null, params: params };
     }
     
-    // Language command
-    const langMatch = lower.match(/\b(speak|use|change to|switch to|language)\s*(english|spanish|french|german|italian|portuguese|japanese|korean|chinese)?/);
+    // Language command (v3.x: Enhanced with new languages)
+    const langMatch = lower.match(/\b(speak|use|change to|switch to|language)\s*(english|spanish|french|german|hindi|tamil|telugu|mandarin|chinese|italian|portuguese|japanese|korean)?/);
     if (langMatch) {
         const langMap = {
             'english': 'en-US', 'spanish': 'es-ES', 'french': 'fr-FR', 'german': 'de-DE',
-            'italian': 'it-IT', 'portuguese': 'pt-BR', 'japanese': 'ja-JP',
-            'korean': 'ko-KR', 'chinese': 'zh-CN'
+            'hindi': 'hi-IN', 'tamil': 'ta-IN', 'telugu': 'te-IN', 'mandarin': 'zh-CN',
+            'chinese': 'zh-CN', 'italian': 'it-IT', 'portuguese': 'pt-BR', 
+            'japanese': 'ja-JP', 'korean': 'ko-KR'
         };
         if (langMatch[2] && langMap[langMatch[2].toLowerCase()]) {
             params.language = langMap[langMatch[2].toLowerCase()];
@@ -3682,6 +3838,64 @@ function detectVoiceCommand(transcript) {
     }
     
     return { type: 'none', remaining: null, params: null };
+}
+
+// Version 3.x: Mis-saying detection and correction
+const misSayingCorrections = {
+    'the': ['teh', 'da', 'de'],
+    'to': ['two', 'too', 'tu'],
+    'for': ['four', 'fore', 'fro'],
+    'you': ['u', 'yu', 'ew'],
+    'are': ['r', 'arr'],
+    'your': ['ur', 'yore'],
+    'their': ['there', 'they\'re'],
+    'there': ['their', 'they\'re'],
+    'they\'re': ['their', 'there'],
+    'it\'s': ['its', 'itz'],
+    'its': ['it\'s'],
+    'can\'t': ['cant', 'can t', 'cannot'],
+    'won\'t': ['wont', 'won t'],
+    'don\'t': ['dont', 'don t'],
+    'one': ['won', 'wan'],
+    'two': ['to', 'too'],
+    'four': ['for', 'fore'],
+    'what': ['wut', 'wat'],
+    'where': ['ware', 'wear'],
+    'when': ['wen'],
+    'why': ['y', 'wy'],
+    'hello': ['hallo', 'helo'],
+    'thanks': ['thx', 'thank'],
+    'please': ['pls', 'pleas'],
+    'sorry': ['sory', 'sore'],
+    'okay': ['ok', 'o k'],
+    'yes': ['yess', 'yas'],
+    'no': ['know', 'noe']
+};
+
+function correctMisSayings(transcript) {
+    const words = transcript.split(/\s+/);
+    const correctedWords = [];
+    
+    for (let word of words) {
+        const wordLower = word.toLowerCase().replace(/[.,!?;:]/g, '');
+        let corrected = false;
+        
+        for (const [correct, misSayings] of Object.entries(misSayingCorrections)) {
+            if (misSayings.includes(wordLower)) {
+                // Preserve capitalization
+                const isCapitalized = word[0] === word[0].toUpperCase();
+                correctedWords.push(isCapitalized ? correct.charAt(0).toUpperCase() + correct.slice(1) : correct);
+                corrected = true;
+                break;
+            }
+        }
+        
+        if (!corrected) {
+            correctedWords.push(word);
+        }
+    }
+    
+    return correctedWords.join(' ');
 }
 
 // Emotion detection
@@ -3723,17 +3937,76 @@ function getDominantEmotion(emotionHistory) {
 }
 
 function getEmotionBasedGuidance(emotion) {
+    // Version 3.x: Enhanced with pitch variations for more human-like speech
     const guidanceMap = {
-        'happy': { speed: 1.1, tone: 'enthusiastic' },
-        'excited': { speed: 1.2, tone: 'energetic' },
-        'sad': { speed: 0.9, tone: 'compassionate' },
-        'angry': { speed: 0.95, tone: 'calm' },
-        'frustrated': { speed: 0.9, tone: 'patient' },
-        'questioning': { speed: 1.0, tone: 'clear' },
-        'calm': { speed: 1.0, tone: 'gentle' },
-        'neutral': { speed: 1.0, tone: 'neutral' }
+        'happy': { speed: 1.1, pitch: 1.15, tone: 'enthusiastic' },  // Higher pitch, faster
+        'excited': { speed: 1.2, pitch: 1.2, tone: 'energetic' },   // Highest pitch, fastest
+        'sad': { speed: 0.9, pitch: 0.85, tone: 'compassionate' },  // Lower pitch, slower
+        'angry': { speed: 0.95, pitch: 0.9, tone: 'calm' },         // Lower pitch, slower (calming)
+        'frustrated': { speed: 0.9, pitch: 0.88, tone: 'patient' }, // Lower pitch, slower
+        'questioning': { speed: 1.0, pitch: 1.1, tone: 'clear' },   // Slightly higher (rising intonation)
+        'calm': { speed: 1.0, pitch: 1.0, tone: 'gentle' },         // Neutral
+        'neutral': { speed: 1.0, pitch: 1.0, tone: 'neutral' }
     };
     return guidanceMap[emotion] || guidanceMap['neutral'];
+}
+
+// Version 3.x: Add stress, pauses, and tone variations to make speech more human-like
+function addSpeechStressAndTone(text, emotionGuidance) {
+    let enhanced = text;
+    
+    // Add pauses after punctuation for more natural rhythm
+    enhanced = enhanced.replace(/([.!?])\s+/g, '$1 ... ');  // Longer pause after sentences
+    enhanced = enhanced.replace(/([,;:])\s+/g, '$1 .. ');   // Medium pause after commas
+    
+    // Add emphasis to important words (capitalized words, words with !, key phrases)
+    const emphasisWords = /\b(IMPORTANT|CRITICAL|WARNING|NOTE|REMEMBER|CAREFUL|STOP|YES|NO|OKAY|SURE|EXACTLY|DEFINITELY)\b/gi;
+    enhanced = enhanced.replace(emphasisWords, (match) => {
+        // Add slight pause before and after for emphasis
+        return '.. ' + match + ' ..';
+    });
+    
+    // Adjust for question intonation (raise pitch indicator)
+    if (enhanced.includes('?')) {
+        // Questions naturally have rising intonation, handled by pitch
+        // Add slight pause before question marks
+        enhanced = enhanced.replace(/\s+([?])/g, ' ..$1');
+    }
+    
+    // Exclamation emphasis (excited/urgent tone)
+    if (enhanced.includes('!')) {
+        // Add pause before exclamations for emphasis
+        enhanced = enhanced.replace(/\s+([!])/g, ' ..$1');
+    }
+    
+    // Add natural pauses in longer sentences (after ~15 words)
+    const sentences = enhanced.split(/[.!?]+/);
+    const processedSentences = sentences.map(sentence => {
+        const words = sentence.trim().split(/\s+/);
+        if (words.length > 15) {
+            // Add pause in the middle
+            const midPoint = Math.floor(words.length / 2);
+            words.splice(midPoint, 0, '..');
+            return words.join(' ');
+        }
+        return sentence;
+    });
+    enhanced = processedSentences.join('. ').replace(/\.\s*\./g, '.'); // Clean up double periods
+    
+    // Tone-specific adjustments
+    if (emotionGuidance.tone === 'compassionate' || emotionGuidance.tone === 'patient') {
+        // Slower, more deliberate pace - add more pauses
+        enhanced = enhanced.replace(/\s+/g, ' ... ');  // Longer pauses between words
+    } else if (emotionGuidance.tone === 'energetic' || emotionGuidance.tone === 'enthusiastic') {
+        // Faster, more dynamic - fewer pauses but emphasize key words
+        enhanced = enhanced.replace(/\.\.\.\s+/g, '. ');  // Shorter pauses
+    }
+    
+    // Clean up excessive pauses
+    enhanced = enhanced.replace(/(\.\s*){3,}/g, '... ');  // Max 3 dots for pause
+    enhanced = enhanced.replace(/\s+/g, ' ');  // Normalize spaces
+    
+    return enhanced.trim();
 }
 
 // Version 3.0.0: Adaptive listening sensitivity
@@ -3859,8 +4132,9 @@ async function handleVoiceCommand(command) {
                 updateVoiceSelection();
                 const langNames = {
                     'en-US': 'English', 'es-ES': 'Spanish', 'fr-FR': 'French', 'de-DE': 'German',
+                    'hi-IN': 'Hindi', 'ta-IN': 'Tamil', 'te-IN': 'Telugu', 'zh-CN': 'Mandarin',
                     'it-IT': 'Italian', 'pt-BR': 'Portuguese', 'ja-JP': 'Japanese',
-                    'ko-KR': 'Korean', 'zh-CN': 'Chinese'
+                    'ko-KR': 'Korean'
                 };
                 speakText(`Language changed to ${langNames[currentLanguage] || currentLanguage}`);
             }
@@ -3902,11 +4176,15 @@ async function handlePoseidonTranscript(transcript) {
     }
     
     // Validate transcript length
-    const trimmed = transcript.trim();
+    let trimmed = transcript.trim();
     if (trimmed.length < 2) {
         console.log('[Poseidon] Transcript too short, skipping:', trimmed);
         return;
     }
+    
+    // Version 3.x: Correct mis-sayings
+    trimmed = correctMisSayings(trimmed);
+    console.log('[Poseidon] After mis-saying correction:', trimmed);
     
     // Check if this transcript matches what Poseidon just spoke (self-hearing prevention)
     if (isTranscriptSelfSpeech(trimmed)) {
@@ -4018,8 +4296,20 @@ async function handlePoseidonTranscript(transcript) {
                 message: fetchErr?.message,
                 stack: fetchErr?.stack,
                 requestUrl: '/api/chat',
-                requestMethod: 'POST'
+                requestMethod: 'POST',
+                isElectron: window.electronAPI !== undefined,
+                currentUrl: window.location.href
             });
+            
+            // Check if we're in Electron and provide helpful error message
+            const isElectron = window.electronAPI !== undefined;
+            if (isElectron) {
+                const errorMsg = fetchErr.message || 'Network error';
+                if (errorMsg.includes('Failed to fetch') || errorMsg.includes('NetworkError')) {
+                    throw new Error(`Server not ready. Please wait a moment and try again. If the problem persists, check that the Flask server is running on port 5000.`);
+                }
+            }
+            
             throw new Error(`Network error: ${fetchErr.message}`);
         }
         
@@ -4098,6 +4388,10 @@ async function handlePoseidonTranscript(transcript) {
         // Speak the response - this will update status to "Speaking"
         try {
             speakText(responseText);
+            // Start 3D animation lip-sync (v3.x)
+            if (poseidon3D && typeof poseidon3D.speak === 'function') {
+                poseidon3D.speak(responseText, responseText.length * 0.1);
+            }
             console.log('[Poseidon] Started speaking response');
         } catch (speakErr) {
             console.error('[Poseidon] ERROR speaking response:', speakErr);
@@ -4124,7 +4418,24 @@ async function handlePoseidonTranscript(transcript) {
             transcriptProcessing: transcriptProcessing
         });
         
-        const errorMsg = 'Sorry, I encountered an error processing your request.';
+        // Provide more helpful error messages
+        let errorMsg = 'Sorry, I encountered an error processing your request.';
+        const isElectron = window.electronAPI !== undefined;
+        
+        if (error.message) {
+            if (error.message.includes('Network error') || error.message.includes('Failed to fetch')) {
+                if (isElectron) {
+                    errorMsg = 'Server not ready. Please wait a moment and try again. If the problem persists, the Flask server may not be running.';
+                } else {
+                    errorMsg = 'Network error. Please check your connection and try again.';
+                }
+            } else if (error.message.includes('Server not ready')) {
+                errorMsg = error.message; // Use the more specific message we set earlier
+            } else {
+                errorMsg = `Error: ${error.message}`;
+            }
+        }
+        
         if (poseidonAssistantTranscript) {
             poseidonAssistantTranscript.textContent = errorMsg;
         }
@@ -5164,6 +5475,24 @@ function closePoseidonOverlay() {
         }
     }
     
+    // Clean up 3D animation if enabled
+    if (poseidon3D) {
+        try {
+            poseidon3D.dispose();
+            poseidon3D = null;
+            console.log('[Poseidon] 3D animation disposed');
+        } catch (error) {
+            console.error('[Poseidon] Error disposing 3D animation:', error);
+        }
+    }
+    
+    // Restore wave animation if 3D was enabled
+    if (poseidonVisualizer && poseidon3DEnabled) {
+        poseidonVisualizer.innerHTML = '<div class="poseidon-wave"><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div></div>';
+        poseidonVisualizer.classList.remove('poseidon-3d-container');
+        poseidonVisualizer.style = '';
+    }
+    
     // Reset state
     lastSpeechTime = null;
     pendingTranscript = '';
@@ -5190,6 +5519,17 @@ function closePoseidonOverlay() {
     }
     if (poseidonAssistantTranscript) {
         poseidonAssistantTranscript.textContent = '';
+    }
+    
+    // Cleanup 3D animation (v3.x)
+    if (poseidon3D && typeof poseidon3D.dispose === 'function') {
+        try {
+            poseidon3D.dispose();
+            poseidon3D = null;
+            console.log('[Poseidon] 3D animation disposed');
+        } catch (error) {
+            console.error('[Poseidon] Error disposing 3D animation:', error);
+        }
     }
     
     console.log('[Poseidon] Overlay closed and all resources released');

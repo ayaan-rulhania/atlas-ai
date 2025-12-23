@@ -2,7 +2,7 @@
 
 Vercel's Python runtime will treat this module as a serverless function.
 Exporting the Flask WSGI app as `app` allows Vercel to route all requests
-through the Flask router (/, /api/chat, /dev-atlas, /static/*, etc.).
+through the Flask router (/, /api/chat, /static/*, etc.).
 
 This deployment uses `chatbot/lite_app.py` to avoid depending on `thor-1.0/`
 when the deployment root is `chatbot/`.
@@ -46,9 +46,12 @@ for dir_name in required_dirs:
         print(f"[api/index.py] WARNING: Required directory {dir_name} not found at {dir_path}")
 
 # Import lite_app with better error handling
+# Vercel Python runtime expects 'app' to be available at module level
+app = None
+
 try:
     # First, try importing as a module from the chatbot directory
-    from lite_app import app  # noqa: F401
+    from lite_app import app
     print("[api/index.py] Successfully imported lite_app")
 except ImportError as e:
     print(f"[api/index.py] Import error from lite_app: {e}")
@@ -57,7 +60,7 @@ except ImportError as e:
     
     # Try alternative import path (if deployed from root)
     try:
-        from chatbot.lite_app import app  # noqa: F401
+        from chatbot.lite_app import app
         print("[api/index.py] Successfully imported chatbot.lite_app")
     except ImportError as e2:
         print(f"[api/index.py] Import error from chatbot.lite_app: {e2}")
@@ -78,3 +81,15 @@ except ImportError as e:
             print(f"[api/index.py] All import attempts failed. Last error: {e3}")
             traceback.print_exc()
             raise ImportError(f"Failed to import lite_app: {e}. Alternative attempts also failed: {e2}, {e3}") from e
+
+# Ensure app is available for Vercel
+if app is None:
+    raise RuntimeError("Flask app could not be imported. Check import paths and dependencies.")
+
+# Verify app is a Flask application
+if not hasattr(app, 'route'):
+    raise RuntimeError(f"Imported object is not a Flask app: {type(app)}")
+
+# Vercel Python runtime will use this 'app' variable
+print(f"[api/index.py] Flask app ready: {type(app)}")
+print(f"[api/index.py] Flask app has {len(app.url_map._rules)} routes registered")

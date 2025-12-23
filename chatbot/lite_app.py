@@ -4,7 +4,7 @@ This version intentionally avoids importing `thor-1.0/` so it can run when the
 deployment root is `chatbot/` only.
 
 Features (subset of full app):
-- Main UI (/) and Dev Atlas (/dev-atlas)
+- Main UI (/)
 - /api/chat with multi-engine research + images + Gems
 - /api/gems CRUD (stored under /tmp on Vercel)
 
@@ -252,9 +252,6 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/dev-atlas')
-def dev_atlas():
-    return render_template('dev_atlas.html')
 
 
 @app.route('/api/gems', methods=['GET'])

@@ -1,7 +1,7 @@
 """
 Flask backend for Atlas AI - Thor 1.1 Model Interface
 """
-from flask import Flask, render_template, request, jsonify, session
+from flask import Flask, render_template, request, jsonify, session, send_file
 from flask_cors import CORS
 import os
 import json
@@ -19,6 +19,7 @@ BASE_DIR = Path(__file__).parent.resolve()
 ATLAS_ROOT = BASE_DIR.parent
 THOR_1_0_DIR = ATLAS_ROOT / "thor-1.0"
 THOR_1_1_DIR = ATLAS_ROOT / "thor-1.1"
+CHATBOT_DIR = BASE_DIR
 
 # Default to Thor 1.1, but support both
 THOR_DIR = THOR_1_1_DIR  # Default to latest
@@ -32,6 +33,10 @@ sys.path.insert(0, thor_path)
 thor_1_0_path = str(THOR_1_0_DIR)
 if thor_1_0_path not in sys.path:
     sys.path.insert(1, thor_1_0_path)
+# Add chatbot directory to path for chatbot services
+chatbot_path = str(CHATBOT_DIR)
+if chatbot_path not in sys.path:
+    sys.path.insert(0, chatbot_path)
 
 try:
     import torch  # type: ignore
@@ -50,6 +55,13 @@ from services import (
     get_code_handler,
     get_response_cleaner,
 )
+# Import user_memory from chatbot services (relative to this file)
+import importlib.util
+user_memory_path = BASE_DIR / "services" / "user_memory.py"
+spec = importlib.util.spec_from_file_location("user_memory", user_memory_path)
+user_memory_module = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(user_memory_module)
+get_user_memory = user_memory_module.get_user_memory
 from brain import BrainConnector
 from biographical_handler import synthesize_knowledge, clean_promotional_text
 from refinement import (
@@ -443,6 +455,65 @@ def _refine_large_text(text: str, max_chunk_size: int = 500) -> str:
         if last_boundary > 1500:  # Only use if we keep most of the text
             return text[:last_boundary + 1] + "..."
         return text[:2000] + "..."
+    
+    return text
+
+
+def _add_emoji_support(text: str, query: str) -> str:
+    """
+    Add emojis to response when relevant or requested.
+    Only adds emojis if:
+    1. User explicitly asks for an emoji (e.g., "give me a smile emoji")
+    2. Emoji is contextually relevant (celebration, success, etc.)
+    """
+    if not text:
+        return text
+    
+    query_lower = query.lower()
+    text_lower = text.lower()
+    
+    # Check if user explicitly requested an emoji
+    emoji_requests = {
+        'smile': '😊', 'happy': '😊', 'joy': '😊',
+        'sad': '😢', 'sadness': '😢',
+        'heart': '❤️', 'love': '❤️',
+        'thumbs up': '👍', 'thumbs down': '👎',
+        'fire': '🔥', 'hot': '🔥',
+        'star': '⭐', 'stars': '⭐',
+        'check': '✅', 'checkmark': '✅', 'correct': '✅',
+        'cross': '❌', 'wrong': '❌', 'incorrect': '❌',
+        'warning': '⚠️', 'alert': '⚠️',
+        'rocket': '🚀', 'launch': '🚀',
+        'party': '🎉', 'celebration': '🎉', 'congratulations': '🎉',
+        'lightbulb': '💡', 'idea': '💡',
+        'thumbs': '👍',
+        'cool': '😎',
+        'wink': '😉',
+        'laugh': '😂',
+        'thinking': '🤔',
+        'clap': '👏',
+        'wave': '👋',
+        'ok': '👌',
+    }
+    
+    # Check for explicit emoji requests
+    for keyword, emoji in emoji_requests.items():
+        if f'emoji {keyword}' in query_lower or f'{keyword} emoji' in query_lower or f'give me a {keyword}' in query_lower:
+            # Add emoji at the end if not already present
+            if emoji not in text:
+                return f"{text} {emoji}"
+            return text
+    
+    # Contextual emojis (only add if very relevant)
+    if any(word in text_lower for word in ['success', 'completed', 'done', 'finished', 'great job']):
+        if '✅' not in text:
+            return f"{text} ✅"
+    elif any(word in text_lower for word in ['error', 'failed', 'problem', 'issue', 'warning']):
+        if '⚠️' not in text:
+            return f"{text} ⚠️"
+    elif any(word in text_lower for word in ['congratulations', 'celebration', 'awesome', 'amazing']):
+        if '🎉' not in text:
+            return f"{text} 🎉"
     
     return text
 
@@ -915,10 +986,147 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/dev-atlas')
-def dev_atlas():
-    """Render the Dev Atlas debugging interface."""
-    return render_template('dev_atlas.html')
+@app.route('/install')
+def install():
+    """Render the macOS installation page."""
+    return render_template('install.html')
+
+
+@app.route('/update')
+def update():
+    """Render the update checker page (for macOS app only)."""
+    return render_template('update.html')
+
+
+@app.route('/api/version')
+def get_version():
+    """Get current and latest version information for update checking."""
+    import json
+    updates_file = ATLAS_ROOT / 'app' / 'updates.json'
+    
+    try:
+        if updates_file.exists():
+            with open(updates_file, 'r') as f:
+                version_data = json.load(f)
+                return jsonify(version_data)
+        else:
+            # Default version info
+            return jsonify({
+                'currentVersion': '1.0.0',
+                'latestVersion': '1.0.0',
+                'updates': []
+            })
+    except Exception as e:
+        print(f"Error reading version info: {e}")
+        return jsonify({
+            'currentVersion': '1.0.0',
+            'latestVersion': '1.0.0',
+            'updates': [],
+            'error': str(e)
+        }), 500
+
+
+@app.route('/download/atlas-windows.exe')
+def download_windows_app():
+    """Serve the Windows app installer."""
+    import os
+    dist_dir = ATLAS_ROOT / 'app' / 'dist'
+    exe_path = dist_dir / 'Atlas Setup 1.0.0.exe'
+    
+    if exe_path.exists():
+        return send_file(
+            str(exe_path),
+            as_attachment=True,
+            download_name='Atlas-Windows.exe',
+            mimetype='application/x-msdownload'
+        )
+    else:
+        return jsonify({
+            'error': 'Windows installer not found',
+            'message': 'The Windows app has not been built yet. Please run: cd app && npm run build:win'
+        }), 404
+
+
+@app.route('/download/atlas-linux.AppImage')
+def download_linux_app():
+    """Serve the Linux AppImage."""
+    import os
+    dist_dir = ATLAS_ROOT / 'app' / 'dist'
+    appimage_path = dist_dir / 'Atlas-1.0.0.AppImage'
+    
+    if appimage_path.exists():
+        return send_file(
+            str(appimage_path),
+            as_attachment=True,
+            download_name='Atlas-Linux.AppImage',
+            mimetype='application/x-executable'
+        )
+    else:
+        # Try .deb as fallback
+        deb_path = dist_dir / 'atlas_1.0.0_amd64.deb'
+        if deb_path.exists():
+            return send_file(
+                str(deb_path),
+                as_attachment=True,
+                download_name='Atlas-Linux.deb',
+                mimetype='application/vnd.debian.binary-package'
+            )
+        return jsonify({
+            'error': 'Linux app not found',
+            'message': 'The Linux app has not been built yet. Please run: cd app && npm run build:linux'
+        }), 404
+
+
+@app.route('/download/atlas-macos.dmg')
+def download_macos_app():
+    """Serve the macOS app DMG file for download."""
+    import os
+    dist_dir = ATLAS_ROOT / 'app' / 'dist'
+    
+    # Detect architecture from User-Agent (prefer arm64 for Apple Silicon)
+    user_agent = request.headers.get('User-Agent', '').lower()
+    is_apple_silicon = 'arm' in user_agent or 'aarch64' in user_agent
+    
+    # Try to find the appropriate DMG file
+    if dist_dir.exists():
+        # Prefer arm64 for Apple Silicon, x64 for Intel
+        if is_apple_silicon:
+            arm64_dmg = dist_dir / 'Atlas-1.0.0-arm64.dmg'
+            if arm64_dmg.exists():
+                dmg_path = arm64_dmg
+            else:
+                # Fallback to regular DMG
+                dmg_path = dist_dir / 'Atlas-1.0.0.dmg'
+        else:
+            # For Intel or unknown, prefer regular DMG, fallback to arm64
+            regular_dmg = dist_dir / 'Atlas-1.0.0.dmg'
+            if regular_dmg.exists():
+                dmg_path = regular_dmg
+            else:
+                dmg_path = dist_dir / 'Atlas-1.0.0-arm64.dmg'
+        
+        # If specific file doesn't exist, try any DMG
+        if not dmg_path.exists():
+            dmg_files = list(dist_dir.glob('*.dmg'))
+            if dmg_files:
+                dmg_path = dmg_files[0]
+    else:
+        dmg_path = None
+    
+    if dmg_path and dmg_path.exists():
+        return send_file(
+            str(dmg_path),
+            as_attachment=True,
+            download_name='Atlas-macOS.dmg',
+            mimetype='application/x-apple-diskimage'
+        )
+    else:
+        # Return a helpful message if DMG doesn't exist
+        return jsonify({
+            'error': 'DMG file not found',
+            'message': 'The macOS app has not been built yet. Please run the build script in the /app directory first.',
+            'build_instructions': 'cd app && npm install && npm run build:mac'
+        }), 404
 
 
 @app.route('/api/dev-chat', methods=['POST'])
@@ -1070,6 +1278,12 @@ def chat():
         
         # Get conversation context (previous messages)
         conversation_context = chat_data.get("messages", [])[-10:]  # Last 10 messages for context
+        
+        # Load user memory and add context to query
+        user_memory = get_user_memory()
+        user_context = user_memory.get_relevant_context(message)
+        if user_context:
+            print(f"[User Memory] Adding context: {user_context}")
         
         # Initialize response variable to None - will be set by one of the branches
         response = None
@@ -1366,6 +1580,104 @@ def chat():
                     response = "I can tweak the image—tell me the subject (and size if you want)!"
                     skip_refinement = True
         
+        # QUICK PATH: Commands (check before other processing)
+        if response is None:
+            message_lower_cmd = message.lower().strip()
+            
+            # Command: /help
+            if message_lower_cmd == '/help' or message_lower_cmd.startswith('/help '):
+                response = """# Available Commands
+
+**Core Commands:**
+- `/help` - Show this help message
+- `/clear` - Clear the current chat
+- `/history` - View chat history
+- `/settings` - Open settings
+
+**Content Commands:**
+- `/office` or `/office suite` - Open the Office Suite
+- `/arcade` or `/games` - Open the Game Suite
+- `/image <description>` - Generate an image
+- `/code <language>` - Switch to code mode (e.g., `/code python`)
+
+**Mode Commands:**
+- `/think` - Toggle Think Deeper mode
+- `/tone <style>` - Set response tone (friendly, calm, formal, critical, normal)
+
+**Utility Commands:**
+- `/remember <information>` - Save information for future reference
+- `/forget` - Clear saved preferences
+- `/info` - Show information about me
+
+You can also use natural language - just ask me anything!"""
+                skip_refinement = True
+                print("[Command] /help")
+            
+            # Command: /clear
+            elif message_lower_cmd == '/clear':
+                response = "Chat cleared. Starting fresh!"
+                skip_refinement = True
+                # Clear messages in current chat
+                chat_data["messages"] = []
+                save_chat(chat_id, chat_data["messages"], chat_data.get("name"))
+                print("[Command] /clear")
+            
+            # Command: /remember
+            elif message_lower_cmd.startswith('/remember '):
+                memory_text = message[10:].strip()
+                if memory_text:
+                    user_memory = get_user_memory()
+                    user_memory.extract_preferences_from_message(memory_text)
+                    user_memory.extract_facts_from_conversation(memory_text, "")
+                    user_memory.save()
+                    response = f"Got it! I'll remember: **{memory_text}**"
+                    skip_refinement = True
+                    print(f"[Command] /remember: {memory_text}")
+                else:
+                    response = "Usage: `/remember <information>` - Tell me what you'd like me to remember."
+                    skip_refinement = True
+            
+            # Command: /forget
+            elif message_lower_cmd == '/forget':
+                user_memory = get_user_memory()
+                user_memory.memory = user_memory._default_memory()
+                user_memory.save()
+                response = "I've cleared my memory of your preferences and information."
+                skip_refinement = True
+                print("[Command] /forget")
+            
+            # Command: /info
+            elif message_lower_cmd == '/info':
+                user_memory = get_user_memory()
+                context_str = user_memory.get_all_context_string()
+                if context_str:
+                    response = f"## About Me\n\nI'm Atlas, powered by Thor 1.1.\n\n**What I Know About You:**\n{context_str}\n\nHow can I help you today?"
+                else:
+                    response = "## About Me\n\nI'm Atlas, powered by Thor 1.1. I'm here to help you with questions, tasks, and information. Use `/remember <info>` to help me learn about your preferences!"
+                skip_refinement = True
+                print("[Command] /info")
+            
+            # Command: /think
+            elif message_lower_cmd == '/think':
+                think_deeper = not think_deeper
+                response = f"Think Deeper mode is now **{'ON' if think_deeper else 'OFF'}**."
+                skip_refinement = True
+                print(f"[Command] /think: {think_deeper}")
+            
+            # Command: /tone
+            elif message_lower_cmd.startswith('/tone '):
+                tone_arg = message[6:].strip().lower()
+                valid_tones = ['normal', 'friendly', 'calm', 'formal', 'critical']
+                if tone_arg in valid_tones:
+                    effective_tone = tone_arg
+                    requested_tone = tone_arg
+                    response = f"Response tone set to **{tone_arg}**."
+                    skip_refinement = True
+                    print(f"[Command] /tone: {tone_arg}")
+                else:
+                    response = f"Usage: `/tone <style>`\n\nAvailable tones: {', '.join(valid_tones)}"
+                    skip_refinement = True
+        
         # QUICK PATH: Interactive iframe for office suite
         if response is None:
             # NOTE: previously used r"[^a-z0-9\\s]+" which *removed spaces* (\\s was literal).
@@ -1437,14 +1749,19 @@ I'm designed to help you with:
 I'm always learning and improving through our conversations. How can I help you today?"""
                 print(f"[Identity question] Responding with introduction")
         
-        if response is None and common_sense_handler.should_skip_search(message):
-            # Check for compliments, praise, or casual conversation
-            response = common_sense_handler.get_response(message, conversation_context)
-            if response:
-                print(f"[Common Sense] Responding to compliment/casual conversation: {response[:50]}...")
-            else:
-                # Fallback if handler doesn't recognize it
+        # PRIORITY: Check common sense BEFORE research (enhanced common sense prioritization)
+        if response is None:
+            # Enhanced common sense check - prioritize common sense responses
+            common_sense_response = common_sense_handler.get_response(message, conversation_context)
+            if common_sense_response:
+                response = common_sense_response
+                print(f"[Common Sense] Responding with common sense: {response[:50]}...")
+                skip_refinement = True
+            elif common_sense_handler.should_skip_search(message):
+                # Should skip search but no response yet - use fallback
                 response = "Thank you! How can I help you?"
+                skip_refinement = True
+                print(f"[Common Sense] Skipping search for: {message[:50]}...")
         
         if response is None:
             if greetings_handler.is_greeting(message):
@@ -1552,6 +1869,14 @@ I'm always learning and improving through our conversations. How can I help you 
                 context_query = (contextual_message or message).strip()
                 if not context_query:
                     context_query = message
+                
+                # Add user memory context to query if available
+                user_memory = get_user_memory()
+                memory_context = user_memory.get_relevant_context(context_query)
+                if memory_context:
+                    # Inject user context into the knowledge synthesis process
+                    context_query = f"{context_query} [User context: {memory_context}]"
+                    print(f"[User Memory] Added context to query: {memory_context}")
                 
                 # ENHANCED: Check if this is actually a searchable question before proceeding
                 # Skip search for simple statements, commands, or acknowledgments
@@ -1968,7 +2293,13 @@ I'm always learning and improving through our conversations. How can I help you 
                                     else:
                                         # Regular questions - ALWAYS synthesize knowledge instead of using verbatim
                                         # This ensures gem sources and search results are processed intelligently
-                                        synthesized = synthesize_knowledge(context_query, filtered_knowledge, query_intent)
+                                        # Add user memory context to synthesis
+                                        user_memory = get_user_memory()
+                                        memory_context = user_memory.get_all_context_string()
+                                        synthesis_query = context_query
+                                        if memory_context:
+                                            synthesis_query = f"{context_query}\n\nUser context: {memory_context}"
+                                        synthesized = synthesize_knowledge(synthesis_query, filtered_knowledge, query_intent)
                                         
                                         if synthesized:
                                             # Ensure synthesized response is clean and not just raw source content
@@ -2520,6 +2851,16 @@ I'm always learning and improving through our conversations. How can I help you 
             "timestamp": datetime.now().isoformat()
         })
         
+        # Extract user preferences and facts from conversation
+        try:
+            user_memory = get_user_memory()
+            user_memory.extract_preferences_from_message(message, response)
+            user_memory.extract_facts_from_conversation(message, response)
+            user_memory.add_conversation_topic(message[:100])  # Add topic from message
+            user_memory.save()
+        except Exception as e:
+            print(f"[User Memory] Error extracting memory: {e}")
+        
         # Generate chat name if this is the first exchange
         chat_name = None
         if len(chat_data["messages"]) == 2:  # Just added user + assistant
@@ -2621,6 +2962,12 @@ I'm always learning and improving through our conversations. How can I help you 
                     response = verify_response_accuracy(response, refinement_knowledge_used, query=message)
             except Exception as e:
                 print(f"[Accuracy Check] Error: {e}")
+        
+        # Add emoji support (only when relevant or requested)
+        try:
+            response = _add_emoji_support(response, message)
+        except Exception as e:
+            print(f"[Emoji] Error adding emoji support: {e}")
         
         response_data = {
             "response": response,

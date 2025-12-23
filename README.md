@@ -253,7 +253,7 @@ Poseidon is a comprehensive voice assistant feature that provides live, conversa
 
 **Access**: Click the golden trident icon button (round blue button) in the input area (left side, before the attach button)
 
-**Browser Support**: Requires Chrome, Edge, or Safari (uses Web Speech API)
+**Browser Support**: Requires Chrome, Edge, or Safari (uses Web Speech API--in Beta)
 
 **Features**:
 - **Continuous Recognition**: Automatically continues listening after each response
@@ -278,7 +278,7 @@ Poseidon is a comprehensive voice assistant feature that provides live, conversa
 - Circuit breaker automatically stops infinite error loops
 - Browser-specific guidance is provided in error messages
 - Requires HTTPS or localhost for security
-- Supported browsers: Chrome, Edge, Safari
+- Supported browsers: Chrome, Edge
 
 ### 9. Advanced Features
 
