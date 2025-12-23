@@ -1,6 +1,12 @@
-<svg width="512" height="512" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
-    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Stack icon: Diamond on top, two curved rectangles below -->
+    
+    <!-- Top layer: Diamond/Rhombus shape -->
+    <path d="M256 120 L356 220 L256 320 L156 220 Z" fill="currentColor" stroke="currentColor" stroke-width="2"/>
+    
+    <!-- Middle layer: Curved rectangle -->
+    <path d="M120 340 Q120 340 120 360 L120 420 Q120 420 140 420 L372 420 Q392 420 392 400 L392 360 Q392 340 372 340 L140 340 Q120 340 120 360 Z" fill="currentColor" stroke="currentColor" stroke-width="2"/>
+    
+    <!-- Bottom layer: Curved rectangle -->
+    <path d="M100 380 Q100 380 100 400 L100 460 Q100 460 120 460 L392 460 Q412 460 412 440 L412 400 Q412 380 392 380 L120 380 Q100 380 100 400 Z" fill="currentColor" stroke="currentColor" stroke-width="2"/>
 </svg>
-

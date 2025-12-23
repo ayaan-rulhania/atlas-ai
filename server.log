@@ -3626,3 +3626,73 @@ Traceback (most recent call last):
     return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 IndexError: index out of range in self
+ * Detected change in '/Users/arulhania/Coding/atlas-ai/chatbot/app.py', reloading
+Initializing Atlas AI...
+Loading Thor 1.1 (latest)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.1/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.1 loaded successfully
+Loading Thor 1.0 (stable)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.0/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.0 loaded successfully
+Starting Auto-Trainer...
+Auto-Trainer initialized
+Auto-Trainer started - will train every 30 minutes
+Auto-Trainer is running in the background!
+Thor will continuously learn from conversations and improve itself.
+
+[Auto-Trainer] Ready to train: 106 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-23 09:30:43.960358
+[Auto-Trainer] Collecting training data...
+  Loaded 102 existing examples
+[Auto-Trainer] Processing 106 conversation files...
+[Auto-Trainer] Extracted 242 training examples
+  Extracted 242 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 128
+[Auto-Trainer] Training with 102 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 123-396-758
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
