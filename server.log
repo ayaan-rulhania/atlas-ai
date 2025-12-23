@@ -3202,3 +3202,15 @@ IndexError: index out of range in self
 127.0.0.1 - - [23/Dec/2025 09:16:42] "GET /api/gems HTTP/1.1" 200 -
 127.0.0.1 - - [23/Dec/2025 09:16:42] "GET /api/model/status HTTP/1.1" 200 -
 127.0.0.1 - - [23/Dec/2025 09:16:42] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 09:23:51] "GET /install HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 09:23:51] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 09:23:51] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 09:24:00] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 09:24:00] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 09:24:00] "[36mGET /static/css/poseidon3d.css?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 09:24:00] "[36mGET /static/js/poseidon3d.js?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 09:24:00] "GET /static/js/app.js?v=10 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 09:24:00] "GET /api/gems HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 09:24:00] "GET /api/model/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 09:24:00] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 09:24:00] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -

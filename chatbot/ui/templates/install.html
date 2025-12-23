@@ -346,48 +346,56 @@
         const osButtons = document.querySelectorAll('.os-button');
         const downloadBtn = document.getElementById('downloadBtn');
         const downloadText = document.getElementById('downloadText');
+        const installTitle = document.getElementById('installTitle');
         const macosNote = document.getElementById('macosNote');
         const windowsNote = document.getElementById('windowsNote');
         const linuxNote = document.getElementById('linuxNote');
+        const macosIcon = document.getElementById('macosIcon');
+        const windowsIcon = document.getElementById('windowsIcon');
+        const linuxIcon = document.getElementById('linuxIcon');
         
-        let selectedOS = 'macos';
+        // Auto-detect OS
+        const detectOS = () => {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            const platform = navigator.platform.toLowerCase();
+            
+            if (platform.includes('win') || userAgent.includes('Windows')) {
+                return 'windows';
+            } else if (platform.includes('linux') || userAgent.includes('Linux')) {
+                return 'linux';
+            } else if (platform.includes('mac') || userAgent.includes('Mac')) {
+                return 'macos';
+            }
+            return 'macos'; // Default
+        };
         
-        if (osButtons.length > 0) {
-            osButtons.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    // Update active state
-                    osButtons.forEach(b => {
-                        b.classList.remove('active');
-                        b.style.border = '2px solid var(--border-color)';
-                    });
-                    btn.classList.add('active');
-                    btn.style.border = '2px solid var(--accent-primary)';
-                    
-                    // Update selected OS
-                    selectedOS = btn.dataset.os;
-                    
-                    // Update download button
-                    if (selectedOS === 'macos') {
-                        downloadBtn.href = '/download/atlas-macos.dmg';
-                        downloadText.textContent = 'Download for macOS';
-                        if (macosNote) macosNote.style.display = 'block';
-                        if (windowsNote) windowsNote.style.display = 'none';
-                        if (linuxNote) linuxNote.style.display = 'none';
-                    } else if (selectedOS === 'windows') {
-                        downloadBtn.href = '/download/atlas-windows.exe';
-                        downloadText.textContent = 'Download for Windows';
-                        if (macosNote) macosNote.style.display = 'none';
-                        if (windowsNote) windowsNote.style.display = 'block';
-                        if (linuxNote) linuxNote.style.display = 'none';
-                    } else if (selectedOS === 'linux') {
-                        downloadBtn.href = '/download/atlas-linux.AppImage';
-                        downloadText.textContent = 'Download for Linux';
-                        if (macosNote) macosNote.style.display = 'none';
-                        if (windowsNote) windowsNote.style.display = 'none';
-                        if (linuxNote) linuxNote.style.display = 'block';
-                    }
-                });
-            });
+        const selectedOS = detectOS();
+        
+        // Update UI based on detected OS
+        if (selectedOS === 'macos') {
+            installTitle.textContent = 'Install Atlas for macOS';
+            downloadBtn.href = '/download/atlas-macos.dmg';
+            downloadText.textContent = 'Download for macOS';
+            if (macosIcon) macosIcon.style.display = 'block';
+            if (macosNote) macosNote.style.display = 'block';
+            if (windowsNote) windowsNote.style.display = 'none';
+            if (linuxNote) linuxNote.style.display = 'none';
+        } else if (selectedOS === 'windows') {
+            installTitle.textContent = 'Install Atlas for Windows';
+            downloadBtn.href = '/download/atlas-windows.exe';
+            downloadText.textContent = 'Download for Windows';
+            if (windowsIcon) windowsIcon.style.display = 'block';
+            if (macosNote) macosNote.style.display = 'none';
+            if (windowsNote) windowsNote.style.display = 'block';
+            if (linuxNote) linuxNote.style.display = 'none';
+        } else if (selectedOS === 'linux') {
+            installTitle.textContent = 'Install Atlas for Linux';
+            downloadBtn.href = '/download/atlas-linux.AppImage';
+            downloadText.textContent = 'Download for Linux';
+            if (linuxIcon) linuxIcon.style.display = 'block';
+            if (macosNote) macosNote.style.display = 'none';
+            if (windowsNote) windowsNote.style.display = 'none';
+            if (linuxNote) linuxNote.style.display = 'block';
         }
         
         // Handle download button click
