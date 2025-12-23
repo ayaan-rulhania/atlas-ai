@@ -2745,6 +2745,17 @@ function speakText(text, speed = null, volume = null) {
 async function openPoseidonOverlay() {
     console.log('[Poseidon] Opening overlay...');
     
+    // Ensure overlay element exists
+    if (!poseidonOverlay) {
+        poseidonOverlay = document.getElementById('poseidonOverlay');
+        if (!poseidonOverlay) {
+            console.error('[Poseidon] ERROR: poseidonOverlay element not found in DOM!');
+            alert('Poseidon overlay element not found. Please refresh the page.');
+            return;
+        }
+        console.log('[Poseidon] Found overlay element on-demand');
+    }
+    
     try {
         // Version 3.0.0: Initialize session
         window.poseidonSessionStart = Date.now();
