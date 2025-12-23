@@ -25,3 +25,4 @@ thor-1.0/models/
 
 # Vercel local folder
 .vercel/
+.vercel

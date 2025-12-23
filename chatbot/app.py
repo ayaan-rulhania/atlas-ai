@@ -1008,12 +1008,25 @@ def get_version():
         if updates_file.exists():
             with open(updates_file, 'r') as f:
                 version_data = json.load(f)
+                # Ensure currentVersion matches package.json if not specified
+                package_json = ATLAS_ROOT / 'app' / 'package.json'
+                if package_json.exists():
+                    with open(package_json, 'r') as pkg:
+                        pkg_data = json.load(pkg)
+                        if 'currentVersion' not in version_data:
+                            version_data['currentVersion'] = pkg_data.get('version', '1.0.0')
                 return jsonify(version_data)
         else:
             # Default version info
+            package_json = ATLAS_ROOT / 'app' / 'package.json'
+            current_ver = '1.0.0'
+            if package_json.exists():
+                with open(package_json, 'r') as pkg:
+                    pkg_data = json.load(pkg)
+                    current_ver = pkg_data.get('version', '1.0.0')
             return jsonify({
-                'currentVersion': '1.0.0',
-                'latestVersion': '1.0.0',
+                'currentVersion': current_ver,
+                'latestVersion': current_ver,
                 'updates': []
             })
     except Exception as e:

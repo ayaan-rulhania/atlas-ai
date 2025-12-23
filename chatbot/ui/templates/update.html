@@ -330,7 +330,7 @@
             <div id="updatesList" class="updates-list" style="margin-top: 48px; text-align: left; max-width: 600px; width: 100%;"></div>
             
             <div style="margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border-color);">
-                <a href="https://atlas-ai.vercel.app" target="_blank" style="font-family: var(--font-chat); font-size: 12px; color: var(--text-tertiary); text-decoration: none; transition: color var(--transition-base);">
+                <a href="https://atlas-ai-zeta.vercel.app/" target="_blank" style="font-family: var(--font-chat); font-size: 12px; color: var(--text-tertiary); text-decoration: none; transition: color var(--transition-base);">
                     Atlas Website
                 </a>
             </div>
@@ -367,8 +367,33 @@
         const isElectron = window.electronAPI !== undefined;
         
         // Update checking logic
-        let currentVersion = '1.0.0'; // This would come from the app
+        let currentVersion = '1.0.0';
+        
+        // Get actual app version from Electron
+        const getCurrentVersion = async () => {
+            if (isElectron && window.electronAPI && window.electronAPI.getAppVersion) {
+                try {
+                    currentVersion = await window.electronAPI.getAppVersion();
+                    console.log('[Update] Current app version:', currentVersion);
+                } catch (error) {
+                    console.error('[Update] Error getting app version:', error);
+                    // Fallback to stored version or default
+                    const storedVersion = localStorage.getItem('atlasAppVersion');
+                    if (storedVersion) currentVersion = storedVersion;
+                }
+            } else {
+                // Fallback for web or if Electron API not available
+                const storedVersion = localStorage.getItem('atlasAppVersion');
+                if (storedVersion) currentVersion = storedVersion;
+            }
+            // Store for persistence
+            localStorage.setItem('atlasAppVersion', currentVersion);
+        };
+        
         const checkForUpdates = async () => {
+            // First get the current version
+            await getCurrentVersion();
+            
             const statusEl = document.getElementById('updateStatus');
             const checkingIcon = document.getElementById('checkingIcon');
             const upToDateIcon = document.getElementById('upToDateIcon');
@@ -447,15 +472,42 @@
             progressText.textContent = 'Installing update...';
             await new Promise(resolve => setTimeout(resolve, 1000));
             
+            // Get the latest version from the server
+            const versionResponse = await fetch('/api/version');
+            const versionData = await versionResponse.json();
+            const newVersion = versionData.latestVersion || currentVersion;
+            
+            // Mark the version as installed
+            if (isElectron && window.electronAPI && window.electronAPI.installUpdate) {
+                try {
+                    await window.electronAPI.installUpdate(newVersion);
+                    // Update stored version
+                    localStorage.setItem('atlasAppVersion', newVersion);
+                    currentVersion = newVersion;
+                    console.log('[Update] Version updated to:', newVersion);
+                } catch (error) {
+                    console.error('[Update] Error installing update:', error);
+                }
+            } else {
+                // For web, just update localStorage
+                localStorage.setItem('atlasAppVersion', newVersion);
+                currentVersion = newVersion;
+            }
+            
             progressText.textContent = 'Update installed! Relaunching...';
             await new Promise(resolve => setTimeout(resolve, 1000));
             
-            // In Electron, you would use electron.remote.app.relaunch()
-            if (isElectron && window.electronAPI) {
-                // Relaunch app
-                window.location.href = '/';
+            // Relaunch app
+            if (isElectron && window.electronAPI && window.electronAPI.relaunch) {
+                try {
+                    await window.electronAPI.relaunch();
+                } catch (error) {
+                    console.error('[Update] Error relaunching:', error);
+                    window.location.href = '/';
+                }
             } else {
-                alert('Update complete! Please restart the app.');
+                // For web, just reload
+                window.location.href = '/';
             }
         });
     </script>

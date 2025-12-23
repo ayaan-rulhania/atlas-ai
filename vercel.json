@@ -1,12 +1,15 @@
 {
-  "buildCommand": "pip install -r requirements.txt",
-  "devCommand": "python chatbot/app.py",
-  "installCommand": "pip install -r requirements.txt",
-  "framework": null,
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/(.*)",
-      "destination": "/chatbot/api/index.py"
+      "src": "chatbot/api/index.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "chatbot/api/index.py"
     }
   ]
 }

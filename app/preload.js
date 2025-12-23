@@ -12,10 +12,12 @@ contextBridge.exposeInMainWorld('electronAPI', {
     chrome: process.versions.chrome,
     electron: process.versions.electron
   },
+  isElectron: true,
   // Expose IPC methods for update checking
+  getAppVersion: () => ipcRenderer.invoke('get-app-version'),
   checkForUpdates: () => ipcRenderer.invoke('check-for-updates'),
   downloadUpdate: () => ipcRenderer.invoke('download-update'),
-  installUpdate: () => ipcRenderer.invoke('install-update'),
+  installUpdate: (version) => ipcRenderer.invoke('install-update', version),
   relaunch: () => ipcRenderer.invoke('relaunch-app')
 });
 

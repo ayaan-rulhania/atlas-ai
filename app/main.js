@@ -1,6 +1,7 @@
 const { app, BrowserWindow, shell, ipcMain } = require('electron');
 const path = require('path');
 const { spawn } = require('child_process');
+const fs = require('fs');
 
 let mainWindow;
 let flaskProcess = null;
@@ -136,17 +137,61 @@ function startFlaskServer() {
 }
 
 // IPC handlers for update checking
+ipcMain.handle('get-app-version', () => {
+  // Check if there's a stored installed version (from previous update)
+  const versionFile = path.join(app.getPath('userData'), 'installed-version.json');
+  try {
+    if (fs.existsSync(versionFile)) {
+      const versionData = JSON.parse(fs.readFileSync(versionFile, 'utf8'));
+      // Use stored version if it's newer than package.json version
+      const packageVersion = app.getVersion();
+      const storedVersion = versionData.version;
+      // Compare versions (simple string comparison works for semantic versions)
+      if (storedVersion && storedVersion !== packageVersion) {
+        console.log(`[Update] Using stored version ${storedVersion} (package: ${packageVersion})`);
+        return storedVersion;
+      }
+    }
+  } catch (error) {
+    console.error('[Update] Error reading stored version:', error);
+  }
+  return app.getVersion();
+});
+
 ipcMain.handle('check-for-updates', async () => {
-  // In a real implementation, you would check against a version endpoint
-  // For now, return that app is up to date
   const currentVersion = app.getVersion();
   try {
-    // You would fetch latest version from your server here
-    // const latestVersion = await fetchLatestVersion();
-    // return { available: latestVersion !== currentVersion, version: latestVersion };
-    return { available: false, version: currentVersion, current: currentVersion };
+    // Fetch latest version from server
+    const http = require('http');
+    return new Promise((resolve) => {
+      const req = http.get(`${FLASK_URL}/api/version`, (res) => {
+        let data = '';
+        res.on('data', (chunk) => { data += chunk; });
+        res.on('end', () => {
+          try {
+            const versionData = JSON.parse(data);
+            const latestVersion = versionData.latestVersion || currentVersion;
+            resolve({
+              available: latestVersion !== currentVersion,
+              version: latestVersion,
+              current: currentVersion,
+              updates: versionData.updates || []
+            });
+          } catch (e) {
+            resolve({ available: false, version: currentVersion, current: currentVersion });
+          }
+        });
+      });
+      req.on('error', () => {
+        resolve({ available: false, version: currentVersion, current: currentVersion });
+      });
+      req.setTimeout(5000, () => {
+        req.destroy();
+        resolve({ available: false, version: currentVersion, current: currentVersion });
+      });
+    });
   } catch (error) {
-    return { available: false, error: error.message };
+    return { available: false, error: error.message, current: currentVersion };
   }
 });
 
@@ -156,10 +201,17 @@ ipcMain.handle('download-update', async () => {
   return { success: true };
 });
 
-ipcMain.handle('install-update', async () => {
-  // In a real implementation, install the downloaded update
-  // For now, return success
-  return { success: true };
+ipcMain.handle('install-update', async (event, newVersion) => {
+  // Store the new version in a file so it persists after relaunch
+  const versionFile = path.join(app.getPath('userData'), 'installed-version.json');
+  try {
+    fs.writeFileSync(versionFile, JSON.stringify({ version: newVersion, installedAt: new Date().toISOString() }));
+    console.log(`[Update] Marked version ${newVersion} as installed`);
+    return { success: true, version: newVersion };
+  } catch (error) {
+    console.error('[Update] Error saving version:', error);
+    return { success: false, error: error.message };
+  }
 });
 
 ipcMain.handle('relaunch-app', () => {
