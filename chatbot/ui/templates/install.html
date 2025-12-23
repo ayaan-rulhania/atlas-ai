@@ -216,25 +216,25 @@
                 </svg>
             </div>
             
-            <h1 class="install-title">Install Atlas</h1>
+            <h1 class="install-title" id="installTitle">Install Atlas</h1>
             <p class="install-subtitle">
                 Get the full Atlas experience as a native desktop application. 
                 Run Atlas offline, access it from your dock/taskbar, and enjoy a seamless desktop experience.
             </p>
             
-            <div class="os-selector" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; max-width: 700px; margin: 32px auto;">
-                <button class="os-button active" data-os="macos" style="padding: 20px; background: var(--bg-secondary); border: 2px solid var(--accent-primary); border-radius: var(--radius-md); cursor: pointer; transition: all var(--transition-base);">
-                    <div style="font-size: 32px; margin-bottom: 8px;">🍎</div>
-                    <div style="font-family: var(--font-ui); font-weight: 500; color: var(--text-primary);">macOS</div>
-                </button>
-                <button class="os-button" data-os="windows" style="padding: 20px; background: var(--bg-secondary); border: 2px solid var(--border-color); border-radius: var(--radius-md); cursor: pointer; transition: all var(--transition-base);">
-                    <div style="font-size: 32px; margin-bottom: 8px;">🪟</div>
-                    <div style="font-family: var(--font-ui); font-weight: 500; color: var(--text-primary);">Windows</div>
-                </button>
-                <button class="os-button" data-os="linux" style="padding: 20px; background: var(--bg-secondary); border: 2px solid var(--border-color); border-radius: var(--radius-md); cursor: pointer; transition: all var(--transition-base);">
-                    <div style="font-size: 32px; margin-bottom: 8px;">🐧</div>
-                    <div style="font-family: var(--font-ui); font-weight: 500; color: var(--text-primary);">Linux</div>
-                </button>
+            <div id="osIconContainer" style="margin: 32px 0; display: flex; justify-content: center; align-items: center; gap: 12px;">
+                <!-- macOS Icon -->
+                <svg id="macosIcon" style="display: none; width: 48px; height: 48px;" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                </svg>
+                <!-- Windows Icon -->
+                <svg id="windowsIcon" style="display: none; width: 48px; height: 48px;" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3 12V6.75l6-1.32v6.48L3 12zm17-9v8.75l-10 .15V5.21L20 3zM3 13l6 .09v6.81l-6-1.15V13zm17 .25V22L10 20.8v-7.55l10 .15z"/>
+                </svg>
+                <!-- Linux Icon -->
+                <svg id="linuxIcon" style="display: none; width: 48px; height: 48px;" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.504 0c-.155 0-.315.008-.48.021-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.052-1.008 2.299-.376 3.407.883 1.512 2.285 2.443 3.932 3.33 1.988 1.055 4.142 2.04 5.917 3.676 1.843 1.512 2.808 3.428 2.913 5.83.07 1.923-.312 3.938-1.448 5.53-1.008 1.512-2.495 2.812-4.255 3.238-2.188.536-4.44-.163-6.025-1.58-1.31-1.18-2.04-2.75-2.388-4.407-.062-.315-.095-.636-.12-.955-.023-.298-.045-.596-.03-.897.01-.2.01-.4-.01-.6-.08-1.08-.24-2.15-.5-3.2-.38-1.58-.38-3.16 0-4.74.26-1.05.42-2.12.5-3.2.02-.2.02-.4.01-.6-.015-.3.007-.6.03-.897.025-.32.058-.64.12-.955.348-1.657 1.078-3.227 2.388-4.407C7.813.563 9.3-.737 10.308-2.249c1.136-1.592 1.518-3.607 1.448-5.53-.023-.48-.095-.95-.21-1.4-.03-.12-.08-.23-.13-.35-.01-.03-.01-.06-.02-.09-.01-.03-.03-.06-.04-.09-.01-.02-.03-.04-.04-.06-.01-.02-.03-.04-.05-.06-.01-.01-.02-.03-.03-.04-.01-.01-.03-.02-.04-.03-.01-.01-.02-.02-.04-.03-.01 0-.03-.01-.04-.02-.01 0-.03-.01-.05-.01-.01 0-.02-.01-.04-.01H12.504zm.057 1.994c.075 0 .15.008.22.02 1.462.12 2.328 1.315 2.448 2.707.06.695.01 1.38-.15 2.04-.18.72-.38 1.41-.66 2.06-.52 1.22-1.21 2.28-2.1 3.15-.89.87-1.93 1.56-3.15 2.08-.65.28-1.34.48-2.06.66-.66.16-1.345.21-2.04.15-1.392-.12-2.587-.986-2.707-2.448-.12-1.462.698-2.647 2.05-2.767.695-.06 1.38-.01 2.04.15.72.18 1.41.38 2.06.66.63.27 1.22.63 1.75 1.06.53.43.99.93 1.38 1.48.39.55.71 1.14.96 1.75.25.61.43 1.24.53 1.88.1.64.12 1.29.06 1.93-.06.64-.2 1.27-.41 1.88-.21.61-.49 1.19-.84 1.73-.35.54-.76 1.03-1.22 1.47-.46.44-.95.85-1.47 1.22-.54.35-1.12.63-1.73.84-.61.21-1.24.35-1.88.41-.64.06-1.29.04-1.93-.06-.64-.1-1.27-.28-1.88-.53-.61-.25-1.2-.57-1.75-.96-.55-.39-1.05-.85-1.48-1.38-.43-.53-.79-1.12-1.06-1.75-.28-.65-.48-1.34-.66-2.06-.16-.66-.21-1.345-.15-2.04.12-1.392.986-2.587 2.448-2.707 1.462-.12 2.647.698 2.767 2.05.06.695.01 1.38-.15 2.04-.18.72-.38 1.41-.66 2.06-.27.63-.63 1.22-1.06 1.75-.43.53-.93.99-1.48 1.38-.55.39-1.14.71-1.75.96-.61.25-1.24.43-1.88.53-.64.1-1.29.12-1.93.06-.64-.06-1.27-.2-1.88-.41-.61-.21-1.19-.49-1.73-.84-.54-.35-1.03-.76-1.47-1.22-.44-.46-.85-.95-1.22-1.47-.35-.54-.63-1.12-.84-1.73-.21-.61-.35-1.24-.41-1.88-.06-.64-.04-1.29.06-1.93.1-.64.28-1.27.53-1.88.25-.61.57-1.2.96-1.75.39-.55.85-1.05 1.38-1.48.53-.43 1.12-.79 1.75-1.06.65-.28 1.34-.48 2.06-.66.66-.16 1.345-.21 2.04-.15z"/>
+                </svg>
             </div>
             
             <a href="/download/atlas-macos.dmg" class="install-button" id="downloadBtn">
@@ -257,15 +257,7 @@
                 </div>
                 <div style="font-family: var(--font-chat); font-size: 13px; color: var(--text-secondary); line-height: 1.5;" id="installNote">
                     <div id="macosNote">
-                        After downloading, if macOS shows a security warning:
-                        <ol style="margin: 12px 0 0 20px; padding-left: 0;">
-                            <li style="margin-bottom: 8px;">When you see the security warning, click <strong>"Done"</strong></li>
-                            <li style="margin-bottom: 8px;">Go to <strong>System Settings</strong> &gt; <strong>Privacy & Security</strong></li>
-                            <li style="margin-bottom: 8px;">Scroll down to the security section</li>
-                            <li style="margin-bottom: 8px;">You should see a message about Atlas being blocked</li>
-                            <li style="margin-bottom: 8px;">Click <strong>"Open Anyway"</strong> next to the Atlas message</li>
-                        </ol>
-                        This is normal for unsigned applications and only needs to be done once.
+                        After downloading, if macOS shows a security warning, click "Done" when you see the security warning, then go to System Settings &gt; Privacy & Security. Scroll down to the security section where you should see a message about Atlas being blocked. Click "Open Anyway" next to the Atlas message. This is normal for unsigned applications and only needs to be done once.
                     </div>
                     <div id="windowsNote" style="display: none;">
                         After downloading, run the installer and follow the setup wizard. Windows may show a security warning - click "More info" and then "Run anyway" if needed. This is normal for unsigned applications.
