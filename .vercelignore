@@ -1,0 +1,70 @@
+# Exclude large model files and directories
+thor-1.0/models/
+thor-1.1/models/
+thor-1.0/*.pt
+thor-1.1/*.pt
+*.pt
+*.pth
+*.onnx
+*.bin
+*.safetensors
+
+# Exclude node_modules (if any)
+node_modules/
+app/node_modules/
+
+# Exclude Electron app directory (not needed for web deployment)
+app/dist/
+app/assets/icon.icns
+app/assets/icon.png
+app/*.dmg
+app/*.exe
+app/*.AppImage
+app/*.deb
+
+# Exclude large data files
+training_data/
+brain/
+conversations/
+chatbot/conversations/
+chatbot/chats/
+*.json.bak
+*.log
+server.log
+*.sqlite
+*.db
+
+# Exclude build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Exclude virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# Exclude IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Exclude large static assets that aren't needed
+chatbot/ui/static/js/poseidon3d.js
+*.map
+
+# Exclude git files
+.git/
+.gitignore
+
