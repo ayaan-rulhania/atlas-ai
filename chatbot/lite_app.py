@@ -474,30 +474,77 @@ def install():
 
 
 @app.route('/download/atlas-macos.dmg')
-def download_macos_app():
-    """Download macOS app (not available in serverless deployment)."""
-    return jsonify({
-        'error': 'Download not available',
-        'message': 'Desktop app downloads are only available when running the full local version. For the serverless deployment, please use the web interface at the main URL.',
-        'note': 'To download the desktop app, please run the local version of Atlas AI on your machine.'
-    }), 404
-
-
 @app.route('/download/atlas-windows.exe')
-def download_windows_app():
-    """Download Windows app (not available in serverless deployment)."""
-    return jsonify({
-        'error': 'Download not available',
-        'message': 'Desktop app downloads are only available when running the full local version. For the serverless deployment, please use the web interface at the main URL.',
-        'note': 'To download the desktop app, please run the local version of Atlas AI on your machine.'
-    }), 404
-
-
 @app.route('/download/atlas-linux.AppImage')
-def download_linux_app():
-    """Download Linux app (not available in serverless deployment)."""
-    return jsonify({
-        'error': 'Download not available',
-        'message': 'Desktop app downloads are only available when running the full local version. For the serverless deployment, please use the web interface at the main URL.',
-        'note': 'To download the desktop app, please run the local version of Atlas AI on your machine.'
-    }), 404
+def download_app():
+    """Download desktop app (not available in serverless deployment)."""
+    # Return a user-friendly HTML page explaining the situation
+    html = """
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Download Not Available</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                margin: 0;
+                background: #f5f5f5;
+                color: #333;
+            }
+            .container {
+                max-width: 600px;
+                padding: 40px;
+                background: white;
+                border-radius: 12px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                text-align: center;
+            }
+            h1 {
+                font-size: 24px;
+                margin-bottom: 16px;
+                color: #d32f2f;
+            }
+            p {
+                font-size: 16px;
+                line-height: 1.6;
+                margin-bottom: 24px;
+                color: #666;
+            }
+            .back-link {
+                display: inline-block;
+                padding: 12px 24px;
+                background: #1976d2;
+                color: white;
+                text-decoration: none;
+                border-radius: 6px;
+                font-weight: 500;
+                transition: background 0.2s;
+            }
+            .back-link:hover {
+                background: #1565c0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Desktop App Download Not Available</h1>
+            <p>
+                Desktop app downloads are only available when running the full local version of Atlas AI. 
+                The serverless deployment (Vercel) does not include the desktop app files.
+            </p>
+            <p>
+                To download the desktop app, please run the local version of Atlas AI on your machine. 
+                The web interface is fully functional at the main URL.
+            </p>
+            <a href="/" class="back-link">Return to Atlas</a>
+        </div>
+    </body>
+    </html>
+    """
+    return html, 404
