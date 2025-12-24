@@ -1,10 +1,38 @@
 {
   "currentVersion": "1.0.0",
-  "latestVersion": "1.4.4",
+  "latestVersion": "1.4.5mini",
   "updates": [
     {
+      "version": "1.4.5mini",
+      "date": "2025-12-28",
+      "description": "Background Fixes & Simplified UI - Fixed custom backgrounds and removed search chat feature",
+      "features": [
+        "Fixed custom background upload and selection issues",
+        "Custom backgrounds now properly display and can be re-selected",
+        "Added full-page background option - apply backgrounds to entire webpage",
+        "Fixed preset backgrounds not working after custom upload",
+        "Removed search chat feature for cleaner, simpler interface",
+        "Improved background preview and active state management",
+        "Better visual feedback for selected backgrounds"
+      ]
+    },
+    {
+      "version": "1.4.5",
+      "date": "2025-12-28",
+      "description": "Background Customization Fixes & Full-Page Background - Fixed custom background selection and added full-page background option",
+      "features": [
+        "Fixed custom background upload and selection issues",
+        "Custom backgrounds now properly display and can be re-selected",
+        "Added full-page background option - apply backgrounds to entire webpage",
+        "Fixed preset backgrounds not working after custom upload",
+        "Improved background preview and active state management",
+        "Better visual feedback for selected backgrounds",
+        "Full-page background toggle in settings for complete customization"
+      ]
+    },
+    {
       "version": "1.4.4",
-      "date": "2025-12-27",
+      "date": "2024-12-24",
       "description": "Model Improvements & Security Enhancements - Better performance, response quality, and security",
       "features": [
         "Response caching system for faster repeated queries (5-minute TTL)",
@@ -19,7 +47,7 @@
     },
     {
       "version": "1.4.3o",
-      "date": "2025-12-27",
+      "date": "2024-12-24",
       "description": "Security & Structure Improvements - Enhanced security and code organization",
       "features": [
         "Input validation and sanitization to prevent XSS attacks",
@@ -32,7 +60,7 @@
     },
     {
       "version": "1.4.3",
-      "date": "2025-12-27",
+      "date": "2024-12-24",
       "description": "Custom Backgrounds - Personalize your chat space with beautiful presets and custom uploads",
       "features": [
         "Custom background customization for main chat space",

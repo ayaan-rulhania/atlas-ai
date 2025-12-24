@@ -17,17 +17,16 @@ let activeGemDraft = null;
 
 // Enhanced Features v1.4.2
 let keyboardShortcuts = {};
-let searchQuery = '';
-let filteredChats = [];
 let smartSuggestions = [];
 let notifications = [];
 let quickActionsMenu = null;
 
-// Background Customization v1.4.3
+// Background Customization v1.4.5
 let currentBackground = localStorage.getItem('chatBackground') || 'default';
 let currentBackgroundType = localStorage.getItem('chatBackgroundType') || 'default';
 let currentBackgroundOpacity = parseFloat(localStorage.getItem('chatBackgroundOpacity') || '1');
 let customBackgroundUrl = localStorage.getItem('customBackgroundUrl') || null;
+let fullPageBackground = localStorage.getItem('fullPageBackground') === 'true';
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
@@ -122,8 +121,8 @@ function setupEventListeners() {
         if (isElectron) {
             window.location.href = '/update';
         } else {
-            // On website, open main domain (Vercel deployment doesn't have /install route)
-            window.open('https://atlas-ai-zeta.vercel.app', '_blank');
+            // On website, navigate to install page normally
+            window.location.href = '/install';
         }
     });
     if (newGemBtn) newGemBtn.addEventListener('click', () => {
@@ -1198,6 +1197,7 @@ function openSettingsModal() {
                 const customUrl = localStorage.getItem('customBackgroundUrl');
                 const previewContainer = document.getElementById('customBackgroundPreview');
                 const previewImage = document.getElementById('customBackgroundImage');
+                const fullPageToggle = document.getElementById('fullPageBackgroundToggle');
                 if (customUrl && previewContainer && previewImage) {
                     previewImage.src = customUrl;
                     previewContainer.style.display = 'block';
@@ -1207,6 +1207,10 @@ function openSettingsModal() {
                     } else {
                         previewContainer.classList.remove('active');
                     }
+                }
+                // Update full page toggle
+                if (fullPageToggle) {
+                    fullPageToggle.checked = localStorage.getItem('fullPageBackground') === 'true';
                 }
             }
         }, 100);
@@ -1386,9 +1390,17 @@ function initializeBackgroundCustomization() {
     currentBackgroundType = localStorage.getItem('chatBackgroundType') || 'default';
     currentBackgroundOpacity = parseFloat(localStorage.getItem('chatBackgroundOpacity') || '1');
     customBackgroundUrl = localStorage.getItem('customBackgroundUrl');
+    const fullPageBackground = localStorage.getItem('fullPageBackground') === 'true';
+    
+    // Get DOM elements first
+    const uploadInput = document.getElementById('customBackgroundUpload');
+    const previewContainer = document.getElementById('customBackgroundPreview');
+    const previewImage = document.getElementById('customBackgroundImage');
+    const removeBtn = document.getElementById('removeCustomBg');
+    const fullPageToggle = document.getElementById('fullPageBackgroundToggle');
     
     // Apply saved background
-    applyBackground(currentBackground, currentBackgroundType, currentBackgroundOpacity, customBackgroundUrl);
+    applyBackground(currentBackground, currentBackgroundType, currentBackgroundOpacity, customBackgroundUrl, fullPageBackground);
     
     // Setup preset background selection
     document.querySelectorAll('.background-preset').forEach(preset => {
@@ -1407,14 +1419,11 @@ function initializeBackgroundCustomization() {
             currentBackground = bg;
             currentBackgroundType = bgType;
             // Don't clear customBackgroundUrl - keep it in localStorage so user can re-select it
-            // customBackgroundUrl = null; // Keep custom URL available for re-selection
             
             localStorage.setItem('chatBackground', bg);
             localStorage.setItem('chatBackgroundType', bgType);
-            // Don't remove customBackgroundUrl - keep it for re-selection
-            // localStorage.removeItem('customBackgroundUrl');
             
-            applyBackground(bg, bgType, currentBackgroundOpacity, null);
+            applyBackground(bg, bgType, currentBackgroundOpacity, null, fullPageBackground);
         });
     });
     
@@ -1432,12 +1441,6 @@ function initializeBackgroundCustomization() {
         if (previewContainer) previewContainer.classList.remove('active');
     }
     
-    // Setup custom background upload
-    const uploadInput = document.getElementById('customBackgroundUpload');
-    const previewContainer = document.getElementById('customBackgroundPreview');
-    const previewImage = document.getElementById('customBackgroundImage');
-    const removeBtn = document.getElementById('removeCustomBg');
-    
     if (uploadInput) {
         uploadInput.addEventListener('change', (e) => {
             const file = e.target.files[0];
@@ -1449,12 +1452,13 @@ function initializeBackgroundCustomization() {
                     
                     // Show preview
                     if (previewImage) previewImage.src = url;
-                    if (previewContainer) previewContainer.style.display = 'block';
+                    if (previewContainer) {
+                        previewContainer.style.display = 'block';
+                        previewContainer.classList.add('active');
+                    }
                     
                     // Update active state
                     document.querySelectorAll('.background-preset').forEach(p => p.classList.remove('active'));
-                    // Mark custom background as active
-                    if (previewContainer) previewContainer.classList.add('active');
                     
                     // Save and apply
                     localStorage.setItem('customBackgroundUrl', url);
@@ -1463,7 +1467,8 @@ function initializeBackgroundCustomization() {
                     currentBackground = 'custom';
                     currentBackgroundType = 'custom';
                     
-                    applyBackground('custom', 'custom', currentBackgroundOpacity, url);
+                    const currentFullPage = localStorage.getItem('fullPageBackground') === 'true';
+                    applyBackground('custom', 'custom', currentBackgroundOpacity, url, currentFullPage);
                 };
                 reader.readAsDataURL(file);
             }
@@ -1492,7 +1497,8 @@ function initializeBackgroundCustomization() {
                 localStorage.setItem('chatBackgroundType', 'custom');
                 
                 // Re-apply background
-                applyBackground('custom', 'custom', currentBackgroundOpacity, customBackgroundUrl);
+                const currentFullPage = localStorage.getItem('fullPageBackground') === 'true';
+                applyBackground('custom', 'custom', currentBackgroundOpacity, customBackgroundUrl, currentFullPage);
             }
         });
     }
@@ -1516,8 +1522,10 @@ function initializeBackgroundCustomization() {
             document.querySelectorAll('.background-preset').forEach(p => p.classList.remove('active'));
             const defaultPreset = document.querySelector('[data-bg="default"]');
             if (defaultPreset) defaultPreset.classList.add('active');
+            if (previewContainer) previewContainer.classList.remove('active');
             
-            applyBackground('default', 'default', currentBackgroundOpacity, null);
+            const currentFullPage = localStorage.getItem('fullPageBackground') === 'true';
+            applyBackground('default', 'default', currentBackgroundOpacity, null, currentFullPage);
         });
     }
     
@@ -1540,7 +1548,18 @@ function initializeBackgroundCustomization() {
             }
             
             localStorage.setItem('chatBackgroundOpacity', opacity.toString());
-            applyBackground(currentBackground, currentBackgroundType, opacity, customBackgroundUrl);
+            const currentFullPage = localStorage.getItem('fullPageBackground') === 'true';
+            applyBackground(currentBackground, currentBackgroundType, opacity, customBackgroundUrl, currentFullPage);
+        });
+    }
+    
+    // Setup full-page background toggle
+    if (fullPageToggle) {
+        fullPageToggle.checked = fullPageBackground;
+        fullPageToggle.addEventListener('change', (e) => {
+            const isFullPage = e.target.checked;
+            localStorage.setItem('fullPageBackground', isFullPage.toString());
+            applyBackground(currentBackground, currentBackgroundType, currentBackgroundOpacity, customBackgroundUrl, isFullPage);
         });
     }
     
@@ -1548,33 +1567,45 @@ function initializeBackgroundCustomization() {
     if (customBackgroundUrl && previewContainer && previewImage) {
         previewImage.src = customBackgroundUrl;
         previewContainer.style.display = 'block';
+        // Mark as active if custom is selected
+        if (currentBackground === 'custom') {
+            previewContainer.classList.add('active');
+        }
     }
 }
 
-function applyBackground(bg, bgType, opacity, customUrl) {
+function applyBackground(bg, bgType, opacity, customUrl, fullPage = false) {
     const chatContainer = document.getElementById('chatContainer');
     const mainContent = document.querySelector('.main-content');
-    const target = mainContent || chatContainer || document.body;
+    const body = document.body;
+    
+    // Determine target based on fullPage setting
+    const target = fullPage ? body : (mainContent || chatContainer || body);
+    const fullPageTarget = fullPage ? body : null;
     
     if (!target) {
         console.warn('[Background] Target element not found');
         return;
     }
     
-    console.log('[Background] Applying:', { bg, bgType, opacity, customUrl: customUrl ? 'yes' : 'no' });
+    console.log('[Background] Applying:', { bg, bgType, opacity, customUrl: customUrl ? 'yes' : 'no', fullPage });
     
-    // Remove all background classes
-    target.classList.remove(
-        'bg-default', 'bg-gradient-1', 'bg-gradient-2', 'bg-gradient-3', 
-        'bg-gradient-4', 'bg-gradient-5', 'bg-pattern-1', 'bg-pattern-2',
-        'bg-liquid', 'bg-custom'
-    );
-    
-    // Clear inline styles first
-    target.style.removeProperty('background-image');
-    target.style.removeProperty('background');
-    target.style.removeProperty('--custom-bg-image');
-    target.style.removeProperty('--bg-opacity');
+    // Remove all background classes from both targets
+    [target, body].forEach(el => {
+        if (el) {
+            el.classList.remove(
+                'bg-default', 'bg-gradient-1', 'bg-gradient-2', 'bg-gradient-3', 
+                'bg-gradient-4', 'bg-gradient-5', 'bg-pattern-1', 'bg-pattern-2',
+                'bg-liquid', 'bg-custom'
+            );
+            
+            // Clear inline styles
+            el.style.removeProperty('background-image');
+            el.style.removeProperty('background');
+            el.style.removeProperty('--custom-bg-image');
+            el.style.removeProperty('--bg-opacity');
+        }
+    });
     
     // Apply new background
     if (bgType === 'custom' && customUrl) {
@@ -1586,22 +1617,50 @@ function applyBackground(bg, bgType, opacity, customUrl) {
         target.style.backgroundSize = 'cover';
         target.style.backgroundPosition = 'center';
         target.style.backgroundRepeat = 'no-repeat';
-        console.log('[Background] Custom background applied:', customUrl.substring(0, 50) + '...');
+        
+        // If full page, also apply to body
+        if (fullPage && body !== target) {
+            body.classList.add('bg-custom');
+            body.style.setProperty('--custom-bg-image', `url(${customUrl})`);
+            body.style.setProperty('--bg-opacity', opacity);
+            body.style.backgroundImage = `url(${customUrl})`;
+            body.style.backgroundSize = 'cover';
+            body.style.backgroundPosition = 'center';
+            body.style.backgroundRepeat = 'no-repeat';
+            body.style.backgroundAttachment = 'fixed';
+        }
+        
+        console.log('[Background] Custom background applied:', customUrl.substring(0, 50) + '...', fullPage ? '(full page)' : '(chat area)');
     } else if (bgType === 'gradient') {
         target.classList.add(`bg-${bg}`);
         target.style.setProperty('--bg-opacity', opacity);
+        if (fullPage && body !== target) {
+            body.classList.add(`bg-${bg}`);
+            body.style.setProperty('--bg-opacity', opacity);
+        }
     } else if (bgType === 'pattern') {
         target.classList.add(`bg-${bg}`);
         target.style.setProperty('--bg-opacity', opacity);
+        if (fullPage && body !== target) {
+            body.classList.add(`bg-${bg}`);
+            body.style.setProperty('--bg-opacity', opacity);
+        }
     } else if (bgType === 'liquid') {
         target.classList.add('bg-liquid');
         target.style.setProperty('--bg-opacity', opacity);
+        if (fullPage && body !== target) {
+            body.classList.add('bg-liquid');
+            body.style.setProperty('--bg-opacity', opacity);
+        }
     } else {
         // Default
         target.classList.add('bg-default');
         target.style.removeProperty('background-image');
         target.style.removeProperty('--custom-bg-image');
         target.style.removeProperty('--bg-opacity');
+        if (fullPage && body !== target) {
+            body.classList.add('bg-default');
+        }
     }
 }
 
@@ -6538,7 +6597,6 @@ function initializeKeyboardShortcuts() {
         'toggleThinkDeeper': { key: 'd', ctrl: true, shift: false, alt: false },
         'openSettings': { key: ',', ctrl: true, shift: false, alt: false },
         'openHelp': { key: '/', ctrl: true, shift: false, alt: false },
-        'searchChats': { key: 'k', ctrl: true, shift: false, alt: false },
         'exportChat': { key: 'e', ctrl: true, shift: true, alt: false },
     };
     
@@ -6623,9 +6681,6 @@ function executeShortcut(action) {
         case 'openHelp':
             openHelpModal();
             break;
-        case 'searchChats':
-            openAdvancedSearch();
-            break;
         case 'exportChat':
             if (currentChatId) {
                 exportChat(currentChatId);
@@ -6682,73 +6737,11 @@ function formatActionName(action) {
         'toggleThinkDeeper': 'Toggle Think Deeper',
         'openSettings': 'Open Settings',
         'openHelp': 'Open Help',
-        'searchChats': 'Search Chats',
         'exportChat': 'Export Chat',
     };
     return names[action] || action;
 }
 
-// Advanced Search System
-function initializeAdvancedSearch() {
-    // Add search input to sidebar if it doesn't exist
-    const sidebarContent = document.querySelector('.sidebar-content');
-    if (sidebarContent && !document.getElementById('chatSearchInput')) {
-        const searchContainer = document.createElement('div');
-        searchContainer.className = 'chat-search-container';
-        searchContainer.innerHTML = `
-            <input 
-                type="text" 
-                id="chatSearchInput" 
-                class="chat-search-input" 
-                placeholder="Search chats... (Ctrl+K)"
-            />
-            <button class="chat-search-clear" id="chatSearchClear" style="display: none;">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path d="M12 4L4 12M4 4L12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
-            </button>
-        `;
-        sidebarContent.insertBefore(searchContainer, sidebarContent.firstChild);
-        
-        const searchInput = document.getElementById('chatSearchInput');
-        const searchClear = document.getElementById('chatSearchClear');
-        
-        searchInput.addEventListener('input', (e) => {
-            searchQuery = e.target.value.trim();
-            if (searchQuery) {
-                searchClear.style.display = 'block';
-                filterChats(searchQuery);
-            } else {
-                searchClear.style.display = 'none';
-                displayChats(allChats);
-            }
-        });
-        
-        searchClear.addEventListener('click', () => {
-            searchInput.value = '';
-            searchQuery = '';
-            searchClear.style.display = 'none';
-            displayChats(allChats);
-        });
-    }
-}
-
-function filterChats(query) {
-    const lowerQuery = query.toLowerCase();
-    filteredChats = allChats.filter(chat => {
-        const title = getChatTitle(chat).toLowerCase();
-        return title.includes(lowerQuery);
-    });
-    displayChats(filteredChats);
-}
-
-function openAdvancedSearch() {
-    const searchInput = document.getElementById('chatSearchInput');
-    if (searchInput) {
-        searchInput.focus();
-        searchInput.select();
-    }
-}
 
 // Smart Suggestions System
 function initializeSmartSuggestions() {
@@ -6934,7 +6927,6 @@ function toggleQuickActionsMenu() {
     const actions = [
         { label: 'New Chat', icon: 'plus', action: () => startNewChat() },
         { label: 'Export Chat', icon: 'download', action: () => currentChatId && exportChat(currentChatId) },
-        { label: 'Search Chats', icon: 'search', action: () => openAdvancedSearch() },
         { label: 'Analytics', icon: 'chart', action: () => openAnalyticsModal() },
         { label: 'Settings', icon: 'settings', action: () => openSettingsModal() },
         { label: 'Help', icon: 'help', action: () => openHelpModal() },

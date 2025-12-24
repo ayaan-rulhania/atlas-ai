@@ -464,5 +464,10 @@ def get_history():
 
 @app.route('/install')
 def install():
-    """Install page - redirects to main page for Vercel."""
-    return render_template('index.html')
+    """Install page."""
+    try:
+        return render_template('install.html')
+    except Exception as e:
+        print(f"[lite_app] Error rendering install.html: {e}")
+        # Fallback to index.html if install.html doesn't exist
+        return render_template('index.html')
