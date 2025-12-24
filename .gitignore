@@ -26,3 +26,7 @@ thor-1.0/models/
 # Vercel local folder
 .vercel/
 .vercel
+
+# Vercel deployment - use requirements-vercel.txt instead
+# (Keep requirements-full.txt as backup)
+requirements-full.txt
