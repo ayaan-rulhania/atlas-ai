@@ -15,9 +15,30 @@ let uiMode = localStorage.getItem('uiMode') || 'standard';
 let gems = [];
 let activeGemDraft = null; 
 
+// Enhanced Features v1.4.2
+let keyboardShortcuts = {};
+let searchQuery = '';
+let filteredChats = [];
+let smartSuggestions = [];
+let notifications = [];
+let quickActionsMenu = null;
+
+// Background Customization v1.4.3
+let currentBackground = localStorage.getItem('chatBackground') || 'default';
+let currentBackgroundType = localStorage.getItem('chatBackgroundType') || 'default';
+let currentBackgroundOpacity = parseFloat(localStorage.getItem('chatBackgroundOpacity') || '1');
+let customBackgroundUrl = localStorage.getItem('customBackgroundUrl') || null;
+
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     initializeApp();
+    initializeKeyboardShortcuts();
+    initializeAdvancedSearch();
+    initializeSmartSuggestions();
+    initializeNotifications();
+    initializeQuickActions();
+    initializeExportImport();
+    initializeBackgroundCustomization();
 });
 
 async function initializeApp() {
@@ -101,7 +122,8 @@ function setupEventListeners() {
         if (isElectron) {
             window.location.href = '/update';
         } else {
-            window.location.href = '/install';
+            // On website, open main domain (Vercel deployment doesn't have /install route)
+            window.open('https://atlas-ai-zeta.vercel.app', '_blank');
         }
     });
     if (newGemBtn) newGemBtn.addEventListener('click', () => {
@@ -1153,6 +1175,41 @@ function openSettingsModal() {
     const modal = document.getElementById('settingsModal');
     if (modal) {
         modal.style.display = 'flex';
+        // Re-initialize background customization when settings open
+        // This ensures elements exist and settings are properly loaded
+        setTimeout(() => {
+            if (typeof initializeBackgroundCustomization === 'function') {
+                // Just refresh the active state, don't re-setup all listeners
+                const activeBg = localStorage.getItem('chatBackground') || 'default';
+                const activePreset = document.querySelector(`[data-bg="${activeBg}"]`);
+                if (activePreset) {
+                    document.querySelectorAll('.background-preset').forEach(p => p.classList.remove('active'));
+                    activePreset.classList.add('active');
+                }
+                
+                // Update opacity slider
+                const opacity = parseFloat(localStorage.getItem('chatBackgroundOpacity') || '1');
+                const opacitySlider = document.getElementById('backgroundOpacity');
+                const opacityValue = document.getElementById('backgroundOpacityValue');
+                if (opacitySlider) opacitySlider.value = opacity;
+                if (opacityValue) opacityValue.textContent = Math.round(opacity * 100) + '%';
+                
+                // Show custom preview if exists
+                const customUrl = localStorage.getItem('customBackgroundUrl');
+                const previewContainer = document.getElementById('customBackgroundPreview');
+                const previewImage = document.getElementById('customBackgroundImage');
+                if (customUrl && previewContainer && previewImage) {
+                    previewImage.src = customUrl;
+                    previewContainer.style.display = 'block';
+                    // Mark as active if custom background is currently selected
+                    if (activeBg === 'custom') {
+                        previewContainer.classList.add('active');
+                    } else {
+                        previewContainer.classList.remove('active');
+                    }
+                }
+            }
+        }, 100);
     }
 }
 
@@ -1321,6 +1378,231 @@ function initializeUIMode() {
         });
     }
     applyUIMode(uiMode);
+}
+
+function initializeBackgroundCustomization() {
+    // Load saved background settings
+    currentBackground = localStorage.getItem('chatBackground') || 'default';
+    currentBackgroundType = localStorage.getItem('chatBackgroundType') || 'default';
+    currentBackgroundOpacity = parseFloat(localStorage.getItem('chatBackgroundOpacity') || '1');
+    customBackgroundUrl = localStorage.getItem('customBackgroundUrl');
+    
+    // Apply saved background
+    applyBackground(currentBackground, currentBackgroundType, currentBackgroundOpacity, customBackgroundUrl);
+    
+    // Setup preset background selection
+    document.querySelectorAll('.background-preset').forEach(preset => {
+        preset.addEventListener('click', () => {
+            const bg = preset.dataset.bg;
+            const bgType = preset.dataset.bgType;
+            
+            // Update active state
+            document.querySelectorAll('.background-preset').forEach(p => p.classList.remove('active'));
+            preset.classList.add('active');
+            
+            // Remove active state from custom background preview
+            if (previewContainer) previewContainer.classList.remove('active');
+            
+            // Apply background
+            currentBackground = bg;
+            currentBackgroundType = bgType;
+            // Don't clear customBackgroundUrl - keep it in localStorage so user can re-select it
+            // customBackgroundUrl = null; // Keep custom URL available for re-selection
+            
+            localStorage.setItem('chatBackground', bg);
+            localStorage.setItem('chatBackgroundType', bgType);
+            // Don't remove customBackgroundUrl - keep it for re-selection
+            // localStorage.removeItem('customBackgroundUrl');
+            
+            applyBackground(bg, bgType, currentBackgroundOpacity, null);
+        });
+    });
+    
+    // Mark active preset or custom background
+    if (currentBackground === 'custom' && customBackgroundUrl) {
+        // Custom background is active
+        if (previewContainer) previewContainer.classList.add('active');
+        document.querySelectorAll('.background-preset').forEach(p => p.classList.remove('active'));
+    } else {
+        // A preset is active
+        const activePreset = document.querySelector(`[data-bg="${currentBackground}"]`);
+        if (activePreset) {
+            activePreset.classList.add('active');
+        }
+        if (previewContainer) previewContainer.classList.remove('active');
+    }
+    
+    // Setup custom background upload
+    const uploadInput = document.getElementById('customBackgroundUpload');
+    const previewContainer = document.getElementById('customBackgroundPreview');
+    const previewImage = document.getElementById('customBackgroundImage');
+    const removeBtn = document.getElementById('removeCustomBg');
+    
+    if (uploadInput) {
+        uploadInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file && file.type.startsWith('image/')) {
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    const url = event.target.result;
+                    customBackgroundUrl = url;
+                    
+                    // Show preview
+                    if (previewImage) previewImage.src = url;
+                    if (previewContainer) previewContainer.style.display = 'block';
+                    
+                    // Update active state
+                    document.querySelectorAll('.background-preset').forEach(p => p.classList.remove('active'));
+                    // Mark custom background as active
+                    if (previewContainer) previewContainer.classList.add('active');
+                    
+                    // Save and apply
+                    localStorage.setItem('customBackgroundUrl', url);
+                    localStorage.setItem('chatBackground', 'custom');
+                    localStorage.setItem('chatBackgroundType', 'custom');
+                    currentBackground = 'custom';
+                    currentBackgroundType = 'custom';
+                    
+                    applyBackground('custom', 'custom', currentBackgroundOpacity, url);
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    }
+    
+    // Make custom background preview clickable to re-select it
+    if (previewContainer && previewImage) {
+        // Make the preview clickable (but not the remove button)
+        previewImage.style.cursor = 'pointer';
+        previewImage.addEventListener('click', (e) => {
+            // Don't trigger if clicking the remove button
+            if (e.target.closest('.remove-custom-bg')) {
+                return;
+            }
+            
+            if (customBackgroundUrl) {
+                // Re-apply custom background
+                document.querySelectorAll('.background-preset').forEach(p => p.classList.remove('active'));
+                previewContainer.classList.add('active');
+                
+                // Update state
+                currentBackground = 'custom';
+                currentBackgroundType = 'custom';
+                localStorage.setItem('chatBackground', 'custom');
+                localStorage.setItem('chatBackgroundType', 'custom');
+                
+                // Re-apply background
+                applyBackground('custom', 'custom', currentBackgroundOpacity, customBackgroundUrl);
+            }
+        });
+    }
+    
+    if (removeBtn) {
+        removeBtn.addEventListener('click', () => {
+            // Reset to default
+            customBackgroundUrl = null;
+            currentBackground = 'default';
+            currentBackgroundType = 'default';
+            
+            localStorage.removeItem('customBackgroundUrl');
+            localStorage.setItem('chatBackground', 'default');
+            localStorage.setItem('chatBackgroundType', 'default');
+            
+            // Hide preview
+            if (previewContainer) previewContainer.style.display = 'none';
+            if (uploadInput) uploadInput.value = '';
+            
+            // Update active state
+            document.querySelectorAll('.background-preset').forEach(p => p.classList.remove('active'));
+            const defaultPreset = document.querySelector('[data-bg="default"]');
+            if (defaultPreset) defaultPreset.classList.add('active');
+            
+            applyBackground('default', 'default', currentBackgroundOpacity, null);
+        });
+    }
+    
+    // Setup opacity slider
+    const opacitySlider = document.getElementById('backgroundOpacity');
+    const opacityValue = document.getElementById('backgroundOpacityValue');
+    
+    if (opacitySlider) {
+        opacitySlider.value = currentBackgroundOpacity;
+        if (opacityValue) {
+            opacityValue.textContent = Math.round(currentBackgroundOpacity * 100) + '%';
+        }
+        
+        opacitySlider.addEventListener('input', (e) => {
+            const opacity = parseFloat(e.target.value);
+            currentBackgroundOpacity = opacity;
+            
+            if (opacityValue) {
+                opacityValue.textContent = Math.round(opacity * 100) + '%';
+            }
+            
+            localStorage.setItem('chatBackgroundOpacity', opacity.toString());
+            applyBackground(currentBackground, currentBackgroundType, opacity, customBackgroundUrl);
+        });
+    }
+    
+    // Show custom preview if exists
+    if (customBackgroundUrl && previewContainer && previewImage) {
+        previewImage.src = customBackgroundUrl;
+        previewContainer.style.display = 'block';
+    }
+}
+
+function applyBackground(bg, bgType, opacity, customUrl) {
+    const chatContainer = document.getElementById('chatContainer');
+    const mainContent = document.querySelector('.main-content');
+    const target = mainContent || chatContainer || document.body;
+    
+    if (!target) {
+        console.warn('[Background] Target element not found');
+        return;
+    }
+    
+    console.log('[Background] Applying:', { bg, bgType, opacity, customUrl: customUrl ? 'yes' : 'no' });
+    
+    // Remove all background classes
+    target.classList.remove(
+        'bg-default', 'bg-gradient-1', 'bg-gradient-2', 'bg-gradient-3', 
+        'bg-gradient-4', 'bg-gradient-5', 'bg-pattern-1', 'bg-pattern-2',
+        'bg-liquid', 'bg-custom'
+    );
+    
+    // Clear inline styles first
+    target.style.removeProperty('background-image');
+    target.style.removeProperty('background');
+    target.style.removeProperty('--custom-bg-image');
+    target.style.removeProperty('--bg-opacity');
+    
+    // Apply new background
+    if (bgType === 'custom' && customUrl) {
+        target.classList.add('bg-custom');
+        // Set both CSS variable and direct style for better compatibility
+        target.style.setProperty('--custom-bg-image', `url(${customUrl})`);
+        target.style.setProperty('--bg-opacity', opacity);
+        target.style.backgroundImage = `url(${customUrl})`;
+        target.style.backgroundSize = 'cover';
+        target.style.backgroundPosition = 'center';
+        target.style.backgroundRepeat = 'no-repeat';
+        console.log('[Background] Custom background applied:', customUrl.substring(0, 50) + '...');
+    } else if (bgType === 'gradient') {
+        target.classList.add(`bg-${bg}`);
+        target.style.setProperty('--bg-opacity', opacity);
+    } else if (bgType === 'pattern') {
+        target.classList.add(`bg-${bg}`);
+        target.style.setProperty('--bg-opacity', opacity);
+    } else if (bgType === 'liquid') {
+        target.classList.add('bg-liquid');
+        target.style.setProperty('--bg-opacity', opacity);
+    } else {
+        // Default
+        target.classList.add('bg-default');
+        target.style.removeProperty('background-image');
+        target.style.removeProperty('--custom-bg-image');
+        target.style.removeProperty('--bg-opacity');
+    }
 }
 
 function applyUIMode(mode) {
@@ -6227,4 +6509,672 @@ function updatePoseidonStatus(status, text) {
             poseidonVisualizer.classList.add('ready');
         }
     }
+}
+
+// ============================================
+// ENHANCED FEATURES v1.4.2
+// ============================================
+
+// Keyboard Shortcuts System
+function initializeKeyboardShortcuts() {
+    // Load saved shortcuts from localStorage
+    const savedShortcuts = localStorage.getItem('keyboardShortcuts');
+    if (savedShortcuts) {
+        try {
+            keyboardShortcuts = JSON.parse(savedShortcuts);
+        } catch (e) {
+            console.warn('Failed to load keyboard shortcuts:', e);
+        }
+    }
+    
+    // Default shortcuts
+    const defaultShortcuts = {
+        'newChat': { key: 'n', ctrl: true, shift: false, alt: false },
+        'sendMessage': { key: 'Enter', ctrl: false, shift: false, alt: false },
+        'newLine': { key: 'Enter', ctrl: false, shift: true, alt: false },
+        'focusInput': { key: 'l', ctrl: true, shift: false, alt: false },
+        'toggleSidebar': { key: 'b', ctrl: true, shift: false, alt: false },
+        'toggleTheme': { key: 't', ctrl: true, shift: true, alt: false },
+        'toggleThinkDeeper': { key: 'd', ctrl: true, shift: false, alt: false },
+        'openSettings': { key: ',', ctrl: true, shift: false, alt: false },
+        'openHelp': { key: '/', ctrl: true, shift: false, alt: false },
+        'searchChats': { key: 'k', ctrl: true, shift: false, alt: false },
+        'exportChat': { key: 'e', ctrl: true, shift: true, alt: false },
+    };
+    
+    // Merge with saved shortcuts
+    keyboardShortcuts = { ...defaultShortcuts, ...keyboardShortcuts };
+    
+    // Add global keyboard listener
+    document.addEventListener('keydown', handleKeyboardShortcut);
+    
+    // Show shortcuts help
+    showNotification('Keyboard shortcuts enabled! Press Ctrl+/ to see all shortcuts.', 'info', 3000);
+}
+
+function handleKeyboardShortcut(e) {
+    // Don't trigger shortcuts when typing in input fields (unless it's a special shortcut)
+    const target = e.target;
+    const isInput = target.tagName === 'INPUT' || target.tagName === 'TEXTAREA';
+    const isContentEditable = target.contentEditable === 'true';
+    
+    // Special cases: allow shortcuts in input for certain actions
+    const allowedInInput = ['Enter', 'Escape'];
+    
+    if (isInput && !allowedInInput.includes(e.key) && !e.ctrlKey && !e.metaKey) {
+        return;
+    }
+    
+    // Check each shortcut
+    for (const [action, shortcut] of Object.entries(keyboardShortcuts)) {
+        if (matchesShortcut(e, shortcut)) {
+            e.preventDefault();
+            executeShortcut(action);
+            return;
+        }
+    }
+    
+    // Special: Ctrl+/ or Cmd+/ for help
+    if ((e.ctrlKey || e.metaKey) && e.key === '/') {
+        e.preventDefault();
+        openKeyboardShortcutsHelp();
+    }
+}
+
+function matchesShortcut(e, shortcut) {
+    const keyMatch = e.key === shortcut.key || 
+                     (shortcut.key === 'Enter' && e.key === 'Enter') ||
+                     (shortcut.key.toLowerCase() === e.key.toLowerCase());
+    const ctrlMatch = (e.ctrlKey || e.metaKey) === shortcut.ctrl;
+    const shiftMatch = e.shiftKey === shortcut.shift;
+    const altMatch = e.altKey === shortcut.alt;
+    
+    return keyMatch && ctrlMatch && shiftMatch && altMatch;
+}
+
+function executeShortcut(action) {
+    switch (action) {
+        case 'newChat':
+            startNewChat();
+            break;
+        case 'sendMessage':
+            if (!isLoading) {
+                handleSendMessage();
+            }
+            break;
+        case 'newLine':
+            // Allow new line in textarea (default behavior)
+            break;
+        case 'focusInput':
+            document.getElementById('messageInput')?.focus();
+            break;
+        case 'toggleSidebar':
+            toggleSidebar();
+            break;
+        case 'toggleTheme':
+            toggleTheme();
+            break;
+        case 'toggleThinkDeeper':
+            toggleThinkDeeper();
+            break;
+        case 'openSettings':
+            openSettingsModal();
+            break;
+        case 'openHelp':
+            openHelpModal();
+            break;
+        case 'searchChats':
+            openAdvancedSearch();
+            break;
+        case 'exportChat':
+            if (currentChatId) {
+                exportChat(currentChatId);
+            }
+            break;
+    }
+}
+
+function openKeyboardShortcutsHelp() {
+    const modal = document.createElement('div');
+    modal.className = 'modal';
+    modal.style.display = 'flex';
+    modal.innerHTML = `
+        <div class="modal-content glass-card" style="max-width: 600px;">
+            <div class="modal-header">
+                <h2>Keyboard Shortcuts</h2>
+                <button class="modal-close" onclick="this.closest('.modal').remove()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="shortcuts-list">
+                    ${Object.entries(keyboardShortcuts).map(([action, shortcut]) => {
+                        const keys = [];
+                        if (shortcut.ctrl) keys.push('Ctrl');
+                        if (shortcut.shift) keys.push('Shift');
+                        if (shortcut.alt) keys.push('Alt');
+                        keys.push(shortcut.key);
+                        return `
+                            <div class="shortcut-item">
+                                <div class="shortcut-keys">
+                                    ${keys.map(k => `<kbd>${k}</kbd>`).join(' + ')}
+                                </div>
+                                <div class="shortcut-action">${formatActionName(action)}</div>
+                            </div>
+                        `;
+                    }).join('')}
+                </div>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(modal);
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.remove();
+    });
+}
+
+function formatActionName(action) {
+    const names = {
+        'newChat': 'New Chat',
+        'sendMessage': 'Send Message',
+        'newLine': 'New Line',
+        'focusInput': 'Focus Input',
+        'toggleSidebar': 'Toggle Sidebar',
+        'toggleTheme': 'Toggle Theme',
+        'toggleThinkDeeper': 'Toggle Think Deeper',
+        'openSettings': 'Open Settings',
+        'openHelp': 'Open Help',
+        'searchChats': 'Search Chats',
+        'exportChat': 'Export Chat',
+    };
+    return names[action] || action;
+}
+
+// Advanced Search System
+function initializeAdvancedSearch() {
+    // Add search input to sidebar if it doesn't exist
+    const sidebarContent = document.querySelector('.sidebar-content');
+    if (sidebarContent && !document.getElementById('chatSearchInput')) {
+        const searchContainer = document.createElement('div');
+        searchContainer.className = 'chat-search-container';
+        searchContainer.innerHTML = `
+            <input 
+                type="text" 
+                id="chatSearchInput" 
+                class="chat-search-input" 
+                placeholder="Search chats... (Ctrl+K)"
+            />
+            <button class="chat-search-clear" id="chatSearchClear" style="display: none;">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M12 4L4 12M4 4L12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </button>
+        `;
+        sidebarContent.insertBefore(searchContainer, sidebarContent.firstChild);
+        
+        const searchInput = document.getElementById('chatSearchInput');
+        const searchClear = document.getElementById('chatSearchClear');
+        
+        searchInput.addEventListener('input', (e) => {
+            searchQuery = e.target.value.trim();
+            if (searchQuery) {
+                searchClear.style.display = 'block';
+                filterChats(searchQuery);
+            } else {
+                searchClear.style.display = 'none';
+                displayChats(allChats);
+            }
+        });
+        
+        searchClear.addEventListener('click', () => {
+            searchInput.value = '';
+            searchQuery = '';
+            searchClear.style.display = 'none';
+            displayChats(allChats);
+        });
+    }
+}
+
+function filterChats(query) {
+    const lowerQuery = query.toLowerCase();
+    filteredChats = allChats.filter(chat => {
+        const title = getChatTitle(chat).toLowerCase();
+        return title.includes(lowerQuery);
+    });
+    displayChats(filteredChats);
+}
+
+function openAdvancedSearch() {
+    const searchInput = document.getElementById('chatSearchInput');
+    if (searchInput) {
+        searchInput.focus();
+        searchInput.select();
+    }
+}
+
+// Smart Suggestions System
+function initializeSmartSuggestions() {
+    const messageInput = document.getElementById('messageInput');
+    if (!messageInput) return;
+    
+    let suggestionsContainer = document.getElementById('smartSuggestions');
+    if (!suggestionsContainer) {
+        suggestionsContainer = document.createElement('div');
+        suggestionsContainer.id = 'smartSuggestions';
+        suggestionsContainer.className = 'smart-suggestions';
+        messageInput.parentElement.appendChild(suggestionsContainer);
+    }
+    
+    messageInput.addEventListener('input', debounce(handleInputChange, 300));
+    messageInput.addEventListener('keydown', handleSuggestionKeydown);
+}
+
+function handleInputChange(e) {
+    const query = e.target.value.trim();
+    if (query.length < 2) {
+        hideSuggestions();
+        return;
+    }
+    
+    generateSuggestions(query);
+}
+
+function generateSuggestions(query) {
+    // Common suggestions based on query
+    const commonSuggestions = [
+        'Explain',
+        'Summarize',
+        'Write',
+        'Create',
+        'Help me with',
+        'What is',
+        'How to',
+        'Tell me about',
+    ];
+    
+    // Filter and generate suggestions
+    smartSuggestions = commonSuggestions
+        .filter(s => s.toLowerCase().includes(query.toLowerCase()) || query.toLowerCase().includes(s.toLowerCase()))
+        .slice(0, 5)
+        .map(s => `${s} ${query}`);
+    
+    showSuggestions(smartSuggestions);
+}
+
+function showSuggestions(suggestions) {
+    const container = document.getElementById('smartSuggestions');
+    if (!container || suggestions.length === 0) {
+        hideSuggestions();
+        return;
+    }
+    
+    container.innerHTML = suggestions.map((suggestion, index) => `
+        <div class="suggestion-item" data-index="${index}" onclick="applySuggestion('${escapeHtml(suggestion)}')">
+            ${escapeHtml(suggestion)}
+        </div>
+    `).join('');
+    
+    container.style.display = 'block';
+}
+
+function hideSuggestions() {
+    const container = document.getElementById('smartSuggestions');
+    if (container) {
+        container.style.display = 'none';
+    }
+}
+
+function applySuggestion(suggestion) {
+    const messageInput = document.getElementById('messageInput');
+    if (messageInput) {
+        messageInput.value = suggestion;
+        messageInput.focus();
+        hideSuggestions();
+    }
+}
+
+function handleSuggestionKeydown(e) {
+    const container = document.getElementById('smartSuggestions');
+    if (!container || container.style.display === 'none') return;
+    
+    const items = container.querySelectorAll('.suggestion-item');
+    const activeItem = container.querySelector('.suggestion-item.active');
+    let currentIndex = activeItem ? parseInt(activeItem.dataset.index) : -1;
+    
+    if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        currentIndex = (currentIndex + 1) % items.length;
+        items.forEach(item => item.classList.remove('active'));
+        items[currentIndex].classList.add('active');
+    } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        currentIndex = currentIndex <= 0 ? items.length - 1 : currentIndex - 1;
+        items.forEach(item => item.classList.remove('active'));
+        items[currentIndex].classList.add('active');
+    } else if (e.key === 'Enter' && activeItem) {
+        e.preventDefault();
+        applySuggestion(activeItem.textContent);
+    } else if (e.key === 'Escape') {
+        hideSuggestions();
+    }
+}
+
+// Notification System
+function initializeNotifications() {
+    // Create notification container if it doesn't exist
+    if (!document.getElementById('notificationsContainer')) {
+        const container = document.createElement('div');
+        container.id = 'notificationsContainer';
+        container.className = 'notifications-container';
+        document.body.appendChild(container);
+    }
+}
+
+function showNotification(message, type = 'info', duration = 5000) {
+    const container = document.getElementById('notificationsContainer');
+    if (!container) return;
+    
+    const notification = document.createElement('div');
+    notification.className = `notification notification-${type}`;
+    notification.innerHTML = `
+        <div class="notification-content">
+            <span class="notification-message">${escapeHtml(message)}</span>
+            <button class="notification-close" onclick="this.parentElement.parentElement.remove()">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M12 4L4 12M4 4L12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+    `;
+    
+    container.appendChild(notification);
+    
+    // Animate in
+    setTimeout(() => notification.classList.add('show'), 10);
+    
+    // Auto remove
+    if (duration > 0) {
+        setTimeout(() => {
+            notification.classList.remove('show');
+            setTimeout(() => notification.remove(), 300);
+        }, duration);
+    }
+}
+
+// Quick Actions Menu
+function initializeQuickActions() {
+    // Add quick actions button to input area
+    const inputWrapper = document.querySelector('.input-wrapper');
+    if (inputWrapper && !document.getElementById('quickActionsBtn')) {
+        const quickActionsBtn = document.createElement('button');
+        quickActionsBtn.id = 'quickActionsBtn';
+        quickActionsBtn.className = 'input-icon-btn quick-actions-btn';
+        quickActionsBtn.title = 'Quick Actions';
+        quickActionsBtn.innerHTML = `
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 2.5C6.96243 2.5 4.5 4.96243 4.5 8C4.5 9.92209 5.56683 11.5852 7.14944 12.4634C7.38096 12.5911 7.5 12.8458 7.5 13.107V14C7.5 14.5523 7.94772 15 8.5 15H11.5C12.0523 15 12.5 14.5523 12.5 14V13.107C12.5 12.8458 12.619 12.5911 12.8506 12.4634C14.4332 11.5852 15.5 9.92209 15.5 8C15.5 4.96243 13.0376 2.5 10 2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 17H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M9 19H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+        `;
+        quickActionsBtn.addEventListener('click', toggleQuickActionsMenu);
+        
+        const inputLeftActions = document.querySelector('.input-left-actions');
+        if (inputLeftActions) {
+            inputLeftActions.appendChild(quickActionsBtn);
+        }
+    }
+}
+
+function toggleQuickActionsMenu() {
+    if (quickActionsMenu && quickActionsMenu.style.display !== 'none') {
+        quickActionsMenu.remove();
+        quickActionsMenu = null;
+        return;
+    }
+    
+    const actions = [
+        { label: 'New Chat', icon: 'plus', action: () => startNewChat() },
+        { label: 'Export Chat', icon: 'download', action: () => currentChatId && exportChat(currentChatId) },
+        { label: 'Search Chats', icon: 'search', action: () => openAdvancedSearch() },
+        { label: 'Analytics', icon: 'chart', action: () => openAnalyticsModal() },
+        { label: 'Settings', icon: 'settings', action: () => openSettingsModal() },
+        { label: 'Help', icon: 'help', action: () => openHelpModal() },
+    ];
+    
+    quickActionsMenu = document.createElement('div');
+    quickActionsMenu.className = 'quick-actions-menu';
+    quickActionsMenu.innerHTML = actions.map(action => `
+        <button class="quick-action-item" onclick="this.closest('.quick-actions-menu').remove(); (${action.action.toString()})()">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                ${getActionIcon(action.icon)}
+            </svg>
+            <span>${action.label}</span>
+        </button>
+    `).join('');
+    
+    const btn = document.getElementById('quickActionsBtn');
+    if (btn) {
+        const rect = btn.getBoundingClientRect();
+        quickActionsMenu.style.top = `${rect.bottom + 8}px`;
+        quickActionsMenu.style.left = `${rect.left}px`;
+        document.body.appendChild(quickActionsMenu);
+        
+        // Close on outside click
+        setTimeout(() => {
+            document.addEventListener('click', function closeMenu(e) {
+                if (!quickActionsMenu.contains(e.target) && e.target !== btn) {
+                    quickActionsMenu.remove();
+                    document.removeEventListener('click', closeMenu);
+                }
+            }, { once: true });
+        }, 10);
+    }
+}
+
+function getActionIcon(icon) {
+    const icons = {
+        'plus': '<path d="M8 3V13M3 8H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>',
+        'download': '<path d="M8 2V10M8 10L5 7M8 10L11 7M3 12V13C3 13.5523 3.44772 14 4 14H12C12.5523 14 13 13.5523 13 13V12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>',
+        'search': '<circle cx="7" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M10 10L13 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>',
+        'settings': '<circle cx="8" cy="8" r="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 2V3M8 13V14M14 8H13M3 8H2M12.5 3.5L11.9 4.1M4.1 11.9L3.5 12.5M12.5 12.5L11.9 11.9M4.1 4.1L3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>',
+        'help': '<circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M6 6C6 4.89543 6.89543 4 8 4C9.10457 4 10 4.89543 10 6C10 7.10457 9.10457 8 8 8V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="12" r="1" fill="currentColor"/>',
+        'chart': '<path d="M3 12L6 9L9 11L13 5M3 12V14H13V5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>',
+    };
+    return icons[icon] || '';
+}
+
+// Export/Import System
+function initializeExportImport() {
+    // Add export/import to settings or quick actions
+    // This is handled in the quick actions menu
+}
+
+async function exportChat(chatId) {
+    try {
+        const response = await fetch(`/api/chats/${chatId}`);
+        const data = await response.json();
+        
+        const exportData = {
+            version: '1.4.2',
+            exported_at: new Date().toISOString(),
+            chat: data,
+        };
+        
+        const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `atlas-chat-${chatId}-${Date.now()}.json`;
+        a.click();
+        URL.revokeObjectURL(url);
+        
+        showNotification('Chat exported successfully!', 'success');
+    } catch (error) {
+        console.error('Error exporting chat:', error);
+        showNotification('Failed to export chat', 'error');
+    }
+}
+
+async function importChat(file) {
+    try {
+        const text = await file.text();
+        const data = JSON.parse(text);
+        
+        if (!data.chat || !data.chat.messages) {
+            throw new Error('Invalid chat file format');
+        }
+        
+        // Create new chat with imported messages
+        const response = await fetch('/api/chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                messages: data.chat.messages,
+                name: data.chat.name || 'Imported Chat',
+            }),
+        });
+        
+        const result = await response.json();
+        if (result.chat_id) {
+            showNotification('Chat imported successfully!', 'success');
+            loadChats();
+            loadChat(result.chat_id);
+        }
+    } catch (error) {
+        console.error('Error importing chat:', error);
+        showNotification('Failed to import chat', 'error');
+    }
+}
+
+// Utility Functions
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+// Analytics Dashboard
+function openAnalyticsModal() {
+    const modal = document.getElementById('analyticsModal');
+    if (modal) {
+        modal.style.display = 'flex';
+        loadAnalytics();
+    }
+}
+
+function closeAnalyticsModal() {
+    const modal = document.getElementById('analyticsModal');
+    if (modal) {
+        modal.style.display = 'none';
+    }
+}
+
+async function loadAnalytics() {
+    const dashboard = document.getElementById('analyticsDashboard');
+    if (!dashboard) return;
+    
+    try {
+        dashboard.innerHTML = '<div class="chats-loading">Loading analytics...</div>';
+        
+        const response = await fetch('/api/analytics');
+        const data = await response.json();
+        
+        // Format dates for display
+        const dates = Object.keys(data.chats_by_date || {}).sort();
+        const dateLabels = dates.map(d => {
+            const date = new Date(d);
+            return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        });
+        const dateValues = dates.map(d => data.chats_by_date[d]);
+        
+        dashboard.innerHTML = `
+            <div class="analytics-grid">
+                <div class="analytics-card">
+                    <div class="analytics-card-title">Total Chats</div>
+                    <div class="analytics-card-value">${data.total_chats || 0}</div>
+                </div>
+                <div class="analytics-card">
+                    <div class="analytics-card-title">Total Messages</div>
+                    <div class="analytics-card-value">${data.total_messages || 0}</div>
+                </div>
+                <div class="analytics-card">
+                    <div class="analytics-card-title">User Messages</div>
+                    <div class="analytics-card-value">${data.user_messages || 0}</div>
+                </div>
+                <div class="analytics-card">
+                    <div class="analytics-card-title">Assistant Messages</div>
+                    <div class="analytics-card-value">${data.assistant_messages || 0}</div>
+                </div>
+                <div class="analytics-card">
+                    <div class="analytics-card-title">Avg Messages/Chat</div>
+                    <div class="analytics-card-value">${data.average_messages_per_chat || 0}</div>
+                </div>
+            </div>
+            <div class="analytics-chart">
+                <h3>Chats Over Time</h3>
+                <div class="chart-container">
+                    ${dates.length > 0 ? `
+                        <div class="chart-bars">
+                            ${dates.map((date, i) => {
+                                const maxValue = Math.max(...dateValues);
+                                const height = maxValue > 0 ? (dateValues[i] / maxValue) * 100 : 0;
+                                return `
+                                    <div class="chart-bar-item">
+                                        <div class="chart-bar" style="height: ${height}%">
+                                            <span class="chart-bar-value">${dateValues[i]}</span>
+                                        </div>
+                                        <div class="chart-bar-label">${dateLabels[i]}</div>
+                                    </div>
+                                `;
+                            }).join('')}
+                        </div>
+                    ` : '<p class="text-muted">No data available</p>'}
+                </div>
+            </div>
+        `;
+    } catch (error) {
+        console.error('Error loading analytics:', error);
+        dashboard.innerHTML = '<div class="chats-loading">Error loading analytics</div>';
+    }
+}
+
+// Initialize analytics on DOM ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        const closeAnalyticsBtn = document.getElementById('closeAnalyticsModal');
+        if (closeAnalyticsBtn) {
+            closeAnalyticsBtn.addEventListener('click', closeAnalyticsModal);
+        }
+        
+        // Add keyboard shortcut for analytics (Ctrl+Shift+A)
+        document.addEventListener('keydown', (e) => {
+            if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'A') {
+                e.preventDefault();
+                openAnalyticsModal();
+            }
+        });
+    });
+} else {
+    const closeAnalyticsBtn = document.getElementById('closeAnalyticsModal');
+    if (closeAnalyticsBtn) {
+        closeAnalyticsBtn.addEventListener('click', closeAnalyticsModal);
+    }
+    
+    document.addEventListener('keydown', (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'A') {
+            e.preventDefault();
+            openAnalyticsModal();
+        }
+    });
 }

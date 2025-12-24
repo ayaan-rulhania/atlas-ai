@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=14">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=15">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/poseidon3d.css') }}?v=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
@@ -462,6 +462,77 @@
                         Configure Poseidon's voice settings. Changes take effect on the next voice interaction.
                     </p>
                 </div>
+                <div class="settings-section">
+                    <h3>Chat Background</h3>
+                    <div class="background-presets">
+                        <div class="background-preset-grid">
+                            <div class="background-preset" data-bg="default" data-bg-type="default" title="Default">
+                                <div class="background-preview" style="background: var(--bg-primary);"></div>
+                                <span>Default</span>
+                            </div>
+                            <div class="background-preset" data-bg="gradient-1" data-bg-type="gradient" title="Gradient 1">
+                                <div class="background-preview" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                                <span>Purple</span>
+                            </div>
+                            <div class="background-preset" data-bg="gradient-2" data-bg-type="gradient" title="Gradient 2">
+                                <div class="background-preview" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                                <span>Pink</span>
+                            </div>
+                            <div class="background-preset" data-bg="gradient-3" data-bg-type="gradient" title="Gradient 3">
+                                <div class="background-preview" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                                <span>Blue</span>
+                            </div>
+                            <div class="background-preset" data-bg="gradient-4" data-bg-type="gradient" title="Gradient 4">
+                                <div class="background-preview" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                                <span>Green</span>
+                            </div>
+                            <div class="background-preset" data-bg="gradient-5" data-bg-type="gradient" title="Gradient 5">
+                                <div class="background-preview" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                                <span>Sunset</span>
+                            </div>
+                            <div class="background-preset" data-bg="pattern-1" data-bg-type="pattern" title="Pattern 1">
+                                <div class="background-preview pattern-dots"></div>
+                                <span>Dots</span>
+                            </div>
+                            <div class="background-preset" data-bg="pattern-2" data-bg-type="pattern" title="Pattern 2">
+                                <div class="background-preview pattern-grid"></div>
+                                <span>Grid</span>
+                            </div>
+                            <div class="background-preset" data-bg="liquid" data-bg-type="liquid" title="Liquid">
+                                <div class="background-preview liquid-preview"></div>
+                                <span>Liquid</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top: 16px;">
+                        <label for="customBackgroundUpload" class="btn-secondary" style="display: inline-block; cursor: pointer; padding: 10px 16px;">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="margin-right: 8px; vertical-align: middle;">
+                                <path d="M8 2V10M8 10L5 7M8 10L11 7M3 12V13C3 13.5523 3.44772 14 4 14H12C12.5523 14 13 13.5523 13 13V12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Upload Custom Background
+                        </label>
+                        <input type="file" id="customBackgroundUpload" accept="image/*" style="display: none;">
+                        <div id="customBackgroundPreview" class="custom-background-preview" style="display: none; margin-top: 12px;">
+                            <div class="background-preview-large">
+                                <img id="customBackgroundImage" src="" alt="Custom background preview">
+                                <button class="remove-custom-bg" id="removeCustomBg" title="Remove custom background">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M12 4L4 12M4 4L12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top: 12px;">
+                        <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                            <input type="range" id="backgroundOpacity" min="0.1" max="1" step="0.1" value="1" style="flex: 1; cursor: pointer;">
+                            <span id="backgroundOpacityValue" style="min-width: 40px; text-align: right;">100%</span>
+                        </label>
+                        <p class="input-disclaimer" style="text-align:left; margin-top:8px;">
+                            Adjust background opacity for better readability. Lower values make the background more transparent.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -676,9 +747,24 @@
         </div>
     </div>
     
+    <!-- Analytics Dashboard Modal -->
+    <div class="modal" id="analyticsModal" style="display: none;">
+        <div class="modal-content glass-card" style="max-width: 800px;">
+            <div class="modal-header">
+                <h2>Conversation Analytics</h2>
+                <button class="modal-close" id="closeAnalyticsModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="analytics-dashboard" id="analyticsDashboard">
+                    <div class="chats-loading">Loading analytics...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!-- Poseidon 3D Animation System -->
     <script src="{{ url_for('static', filename='js/poseidon3d.js') }}?v=1"></script>
     <!-- Cache-bust to ensure latest UI JS is loaded -->
-    <script src="{{ url_for('static', filename='js/app.js') }}?v=11"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}?v=13"></script>
 </body>
 </html>

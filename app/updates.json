@@ -1,7 +1,50 @@
 {
   "currentVersion": "1.0.0",
-  "latestVersion": "1.4.1",
+  "latestVersion": "1.4.4",
   "updates": [
+    {
+      "version": "1.4.4",
+      "date": "2025-12-27",
+      "description": "Model Improvements & Security Enhancements - Better performance, response quality, and security",
+      "features": [
+        "Response caching system for faster repeated queries (5-minute TTL)",
+        "Improved response quality with better error handling and fallbacks",
+        "Enhanced input validation and sanitization for security",
+        "Rate limiting protection (60 requests per minute per IP)",
+        "Security headers (XSS protection, content type options, frame options)",
+        "Better error handling and recovery mechanisms",
+        "Performance optimizations for faster response times",
+        "Improved model fallback system (Thor 1.0 backup when 1.1 fails)"
+      ]
+    },
+    {
+      "version": "1.4.3o",
+      "date": "2025-12-27",
+      "description": "Security & Structure Improvements - Enhanced security and code organization",
+      "features": [
+        "Input validation and sanitization to prevent XSS attacks",
+        "Rate limiting to prevent abuse (60 requests/minute)",
+        "Security headers on all responses (XSS, frame options, content type)",
+        "Better error handling with specific error types",
+        "Improved code structure and organization",
+        "Enhanced logging for security events"
+      ]
+    },
+    {
+      "version": "1.4.3",
+      "date": "2025-12-27",
+      "description": "Custom Backgrounds - Personalize your chat space with beautiful presets and custom uploads",
+      "features": [
+        "Custom background customization for main chat space",
+        "9 beautiful preset backgrounds (gradients, patterns, liquid effects)",
+        "Custom background upload with image preview",
+        "Adjustable background opacity for better readability",
+        "Liquid transparent wallpaper effect with animated gradients",
+        "All backgrounds accessible in Settings modal",
+        "Backgrounds persist across sessions",
+        "Optimized for both light and dark themes"
+      ]
+    },
     {
       "version": "1.4.1",
       "date": "2025-12-26",

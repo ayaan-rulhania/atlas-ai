@@ -414,3 +414,55 @@ def chat():
     refined = verify_response_accuracy(refined, knowledge, query=message)
 
     return jsonify({'response': refined, 'chat_id': None, 'task': 'text_generation'})
+
+
+@app.route('/api/chats', methods=['GET'])
+def list_chats():
+    """List all chats (lite version - returns empty list)."""
+    return jsonify({'chats': []})
+
+
+@app.route('/api/chats/<chat_id>', methods=['GET'])
+def get_chat(chat_id):
+    """Get specific chat (lite version - returns empty)."""
+    return jsonify({'chat_id': chat_id, 'messages': []}), 404
+
+
+@app.route('/api/chats/<chat_id>', methods=['DELETE'])
+def delete_chat(chat_id):
+    """Delete chat (lite version - always succeeds)."""
+    return jsonify({'success': True})
+
+
+@app.route('/api/model/status', methods=['GET'])
+def model_status():
+    """Get model status (lite version - indicates fallback available)."""
+    return jsonify({
+        'models': {},
+        'fallback_available': True,
+        'message': 'Lite mode: Using research engine fallback (no local models available)'
+    })
+
+
+@app.route('/api/projects', methods=['GET'])
+def list_projects():
+    """List projects (lite version - returns empty list)."""
+    return jsonify({'projects': []})
+
+
+@app.route('/api/projects', methods=['POST'])
+def create_project():
+    """Create project (lite version - returns success)."""
+    return jsonify({'project': {'id': 'lite', 'name': 'Default', 'chat_ids': []}}), 201
+
+
+@app.route('/api/history', methods=['GET'])
+def get_history():
+    """Get history (lite version - returns empty list)."""
+    return jsonify({'history': []})
+
+
+@app.route('/install')
+def install():
+    """Install page - redirects to main page for Vercel."""
+    return render_template('index.html')

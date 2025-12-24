@@ -5095,3 +5095,671 @@ IndexError: index out of range in self
 127.0.0.1 - - [24/Dec/2025 11:45:11] "GET /api/model/status HTTP/1.1" 200 -
 127.0.0.1 - - [24/Dec/2025 11:45:11] "GET /api/chats HTTP/1.1" 200 -
 127.0.0.1 - - [24/Dec/2025 11:45:11] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+ * Detected change in '/Users/arulhania/Coding/atlas-ai/chatbot/app.py', reloading
+Initializing Atlas AI...
+Loading Thor 1.1 (latest)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.1/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.1 loaded successfully
+Loading Thor 1.0 (stable)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.0/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.0 loaded successfully
+Starting Auto-Trainer...
+Auto-Trainer initialized
+Auto-Trainer started - will train every 30 minutes
+Auto-Trainer is running in the background!
+Thor will continuously learn from conversations and improve itself.
+
+[Auto-Trainer] Ready to train: 121 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-23 16:28:55.247235
+[Auto-Trainer] Collecting training data...
+  Loaded 100 existing examples
+[Auto-Trainer] Processing 121 conversation files...
+[Auto-Trainer] Extracted 230 training examples
+  Extracted 230 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 129
+[Auto-Trainer] Training with 103 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Common Sense] Skipping search for: नमस्ते...
+[Auto-Trainer] Saved conversation with 2 messages
+[Learning] Conversation recorded: 2 messages
+[Research] TOPIC NOT IN BRAIN, PRIORITIZING Google search: धन्यवाद मैं आपकी कैसे मदद कर सकता हूं
+[Research Engine] Researching: धन्यवाद मैं आपकी कैसे मदद कर सकता हूं...
+[Research] Learned 4 items from Google
+[Model] Using conversation context (2 previous messages)
+[Language] Adding language instruction: Respond in Hindi
+Error generating model response: index out of range in self
+[Research Engine] Researching: धन्यवाद मैं आपकी कैसे मदद कर सकता हूं...
+[Auto-Trainer] Saved conversation with 4 messages
+[Learning] Conversation recorded: 4 messages
+[Auto-Trainer] Ready to train: 123 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-24 10:24:09.994168
+[Auto-Trainer] Collecting training data...
+  Loaded 103 existing examples
+[Auto-Trainer] Processing 123 conversation files...
+[Auto-Trainer] Extracted 230 training examples
+  Extracted 230 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 128
+[Auto-Trainer] Training with 102 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 123 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-24 11:49:08.639601
+[Auto-Trainer] Collecting training data...
+  Loaded 102 existing examples
+[Auto-Trainer] Processing 123 conversation files...
+[Auto-Trainer] Extracted 230 training examples
+  Extracted 230 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 128
+[Auto-Trainer] Training with 102 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 123-396-758
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+ * Detected change in '/Users/arulhania/Coding/atlas-ai/chatbot/app.py', reloading
+Initializing Atlas AI...
+Loading Thor 1.1 (latest)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.1/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.1 loaded successfully
+Loading Thor 1.0 (stable)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.0/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.0 loaded successfully
+Starting Auto-Trainer...
+Auto-Trainer initialized
+Auto-Trainer started - will train every 30 minutes
+Auto-Trainer is running in the background!
+Thor will continuously learn from conversations and improve itself.
+
+[Auto-Trainer] Ready to train: 123 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-24 11:50:32.421573
+[Auto-Trainer] Collecting training data...
+  Loaded 102 existing examples
+[Auto-Trainer] Processing 123 conversation files...
+[Auto-Trainer] Extracted 230 training examples
+  Extracted 230 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 128
+[Auto-Trainer] Training with 102 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 123-396-758
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+ * Detected change in '/Users/arulhania/Coding/atlas-ai/chatbot/app.py', reloading
+Initializing Atlas AI...
+Loading Thor 1.1 (latest)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.1/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.1 loaded successfully
+Loading Thor 1.0 (stable)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.0/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.0 loaded successfully
+Starting Auto-Trainer...
+Auto-Trainer initialized
+Auto-Trainer started - will train every 30 minutes
+Auto-Trainer is running in the background!
+Thor will continuously learn from conversations and improve itself.
+
+[Auto-Trainer] Ready to train: 123 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-24 11:51:57.647137
+[Auto-Trainer] Collecting training data...
+  Loaded 102 existing examples
+[Auto-Trainer] Processing 123 conversation files...
+[Auto-Trainer] Extracted 230 training examples
+  Extracted 230 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 128
+[Auto-Trainer] Training with 102 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 123-396-758
+127.0.0.1 - - [24/Dec/2025 12:01:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [24/Dec/2025 12:01:59] "[36mGET /static/js/poseidon3d.js?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [24/Dec/2025 12:01:59] "GET /static/css/style.css?v=15 HTTP/1.1" 200 -
+127.0.0.1 - - [24/Dec/2025 12:01:59] "[36mGET /static/css/poseidon3d.css?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [24/Dec/2025 12:01:59] "GET /static/js/app.js?v=13 HTTP/1.1" 200 -
+127.0.0.1 - - [24/Dec/2025 12:01:59] "GET /api/gems HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+127.0.0.1 - - [24/Dec/2025 12:01:59] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [24/Dec/2025 12:01:59] "GET /api/model/status HTTP/1.1" 200 -
+127.0.0.1 - - [24/Dec/2025 12:01:59] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+127.0.0.1 - - [24/Dec/2025 12:02:22] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [24/Dec/2025 12:02:22] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [24/Dec/2025 12:02:25] "DELETE /api/chats/7f5dfcdd-40ad-40fd-91a8-5ea715343eb5 HTTP/1.1" 200 -
+127.0.0.1 - - [24/Dec/2025 12:02:25] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [24/Dec/2025 12:02:25] "GET /api/chats HTTP/1.1" 200 -
+ * Detected change in '/Users/arulhania/Coding/atlas-ai/chatbot/app.py', reloading
+Initializing Atlas AI...
+Loading Thor 1.1 (latest)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.1/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.1 loaded successfully
+Loading Thor 1.0 (stable)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.0/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.0 loaded successfully
+Starting Auto-Trainer...
+Auto-Trainer initialized
+Auto-Trainer started - will train every 30 minutes
+Auto-Trainer is running in the background!
+Thor will continuously learn from conversations and improve itself.
+
+[Auto-Trainer] Ready to train: 123 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-24 12:01:58.853701
+[Auto-Trainer] Collecting training data...
+  Loaded 102 existing examples
+[Auto-Trainer] Processing 123 conversation files...
+[Auto-Trainer] Extracted 230 training examples
+  Extracted 230 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 128
+[Auto-Trainer] Training with 102 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Common Sense] Skipping search for: Hi...
+[Auto-Trainer] Saved conversation with 2 messages
+[Learning] Conversation recorded: 2 messages
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/chatbot/app.py", line 54, in <module>
+    from services import (
+    ...<11 lines>...
+    )
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/__init__.py", line 5, in <module>
+    from .auto_trainer import get_auto_trainer  # noqa: F401
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 15, in <module>
+    from utils import SimpleTokenizer, MultiTaskDataLoader
+ImportError: cannot import name 'SimpleTokenizer' from 'utils' (/Users/arulhania/Coding/atlas-ai/chatbot/utils/__init__.py)
+[Auto-Trainer] Extracted 263 training examples
+  Extracted 263 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 122
+[Auto-Trainer] Training with 97 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 92 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-21 17:41:57.210120
+[Auto-Trainer] Collecting training data...
+  Loaded 97 existing examples
+[Auto-Trainer] Processing 92 conversation files...
+[Auto-Trainer] Extracted 260 training examples
+  Extracted 260 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 122
+[Auto-Trainer] Training with 97 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 92 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-21 18:11:58.003109
+[Auto-Trainer] Collecting training data...
+  Loaded 97 existing examples
+[Auto-Trainer] Processing 92 conversation files...
+[Auto-Trainer] Extracted 260 training examples
+  Extracted 260 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 122
+[Auto-Trainer] Training with 97 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 92 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-21 19:47:27.081834
+[Auto-Trainer] Collecting training data...
+  Loaded 97 existing examples
+[Auto-Trainer] Processing 92 conversation files...
+[Auto-Trainer] Extracted 260 training examples
+  Extracted 260 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 122
+[Auto-Trainer] Training with 97 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 92 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-21 20:17:27.344299
+[Auto-Trainer] Collecting training data...
+  Loaded 97 existing examples
+[Auto-Trainer] Processing 92 conversation files...
+[Auto-Trainer] Extracted 260 training examples
+  Extracted 260 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 122
+[Auto-Trainer] Training with 97 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 92 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-22 08:16:30.613940
+[Auto-Trainer] Collecting training data...
+  Loaded 97 existing examples
+[Auto-Trainer] Processing 92 conversation files...
+[Auto-Trainer] Extracted 260 training examples
+  Extracted 260 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 122
+[Auto-Trainer] Training with 97 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 92 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-22 09:41:47.501890
+[Auto-Trainer] Collecting training data...
+  Loaded 97 existing examples
+[Auto-Trainer] Processing 92 conversation files...
+[Auto-Trainer] Extracted 260 training examples
+  Extracted 260 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 122
+[Auto-Trainer] Training with 97 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 92 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-22 10:22:12.343601
+[Auto-Trainer] Collecting training data...
+  Loaded 97 existing examples
+[Auto-Trainer] Processing 92 conversation files...
+[Auto-Trainer] Extracted 260 training examples
+  Extracted 260 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 122
+[Auto-Trainer] Training with 97 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 92 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-22 10:52:12.678527
+[Auto-Trainer] Collecting training data...
+  Loaded 97 existing examples
+[Auto-Trainer] Processing 92 conversation files...
+[Auto-Trainer] Extracted 260 training examples
+  Extracted 260 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 122
+[Auto-Trainer] Training with 97 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 95 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-22 16:08:54.087081
+[Auto-Trainer] Collecting training data...
+  Loaded 100 existing examples
+[Auto-Trainer] Processing 95 conversation files...
+[Auto-Trainer] Extracted 257 training examples
+  Extracted 257 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 125
+[Auto-Trainer] Training with 100 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 95 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-22 18:56:50.554449
+[Auto-Trainer] Collecting training data...
+  Loaded 100 existing examples
+[Auto-Trainer] Processing 95 conversation files...
+[Auto-Trainer] Extracted 257 training examples
+  Extracted 257 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 125
+[Auto-Trainer] Training with 100 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 99 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-22 19:36:59.716786
+[Auto-Trainer] Collecting training data...
+  Loaded 102 existing examples
+[Auto-Trainer] Processing 99 conversation files...
+[Auto-Trainer] Extracted 254 training examples
+  Extracted 254 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 128
+[Auto-Trainer] Training with 102 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 99 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-23 04:25:51.340649
+[Auto-Trainer] Collecting training data...
+  Loaded 102 existing examples
+[Auto-Trainer] Processing 99 conversation files...
+[Auto-Trainer] Extracted 254 training examples
+  Extracted 254 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 128
+[Auto-Trainer] Training with 102 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 100 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-23 09:25:28.799918
+[Auto-Trainer] Collecting training data...
+  Loaded 102 existing examples
+[Auto-Trainer] Processing 100 conversation files...
+[Auto-Trainer] Extracted 242 training examples
+  Extracted 242 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 128
+[Auto-Trainer] Training with 102 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 106 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-23 10:34:16.635669
+[Auto-Trainer] Collecting training data...
+  Loaded 102 existing examples
+[Auto-Trainer] Processing 106 conversation files...
+[Auto-Trainer] Extracted 242 training examples
+  Extracted 242 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 128
+[Auto-Trainer] Training with 102 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 106 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-23 13:29:37.937811
+[Auto-Trainer] Collecting training data...
+  Loaded 102 existing examples
+[Auto-Trainer] Processing 106 conversation files...
+[Auto-Trainer] Extracted 242 training examples
+  Extracted 242 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 128
+[Auto-Trainer] Training with 102 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 108 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-23 15:36:53.636084
+[Auto-Trainer] Collecting training data...
+  Loaded 102 existing examples
+[Auto-Trainer] Processing 108 conversation files...
+[Auto-Trainer] Extracted 242 training examples
+  Extracted 242 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 128
+[Auto-Trainer] Training with 102 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 117 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-23 16:09:43.560776
+[Auto-Trainer] Collecting training data...
+  Loaded 100 existing examples
+[Auto-Trainer] Processing 117 conversation files...
+[Auto-Trainer] Extracted 227 training examples
+  Extracted 227 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 126
+[Auto-Trainer] Training with 100 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 123 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-23 23:54:04.186207
+[Auto-Trainer] Collecting training data...
+  Loaded 103 existing examples
+[Auto-Trainer] Processing 123 conversation files...
+[Auto-Trainer] Extracted 230 training examples
+  Extracted 230 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 129
+[Auto-Trainer] Training with 103 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 123 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-24 10:34:58.317820
+[Auto-Trainer] Collecting training data...
+  Loaded 102 existing examples
+[Auto-Trainer] Processing 123 conversation files...
+[Auto-Trainer] Extracted 230 training examples
+  Extracted 230 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 128
+[Auto-Trainer] Training with 102 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 123 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-24 11:59:56.892056
+[Auto-Trainer] Collecting training data...
+  Loaded 102 existing examples
+[Auto-Trainer] Processing 123 conversation files...
+[Auto-Trainer] Extracted 230 training examples
+  Extracted 230 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 128
+[Auto-Trainer] Training with 102 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self

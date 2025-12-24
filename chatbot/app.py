@@ -14,17 +14,26 @@ from urllib.parse import quote_plus
 import requests
 from bs4 import BeautifulSoup
 
-# Add parent directories to path for imports
-BASE_DIR = Path(__file__).parent.resolve()
-ATLAS_ROOT = BASE_DIR.parent
-THOR_1_0_DIR = ATLAS_ROOT / "thor-1.0"
-THOR_1_1_DIR = ATLAS_ROOT / "thor-1.1"
-CHATBOT_DIR = BASE_DIR
+# Import centralized configuration
+from config import (
+    BASE_DIR, ATLAS_ROOT, THOR_1_0_DIR, THOR_1_1_DIR, CHATBOT_DIR, THOR_DIR,
+    SECRET_KEY, ALLOWED_ORIGINS,
+    MODEL_DIR, TOKENIZER_DIR, CONFIG_PATH,
+    CHATS_DIR, CONVERSATIONS_DIR, PROJECTS_DIR, HISTORY_DIR,
+    THOR_1_0_RESULT_SETTER_FILE, THOR_1_1_RESULT_SETTER_FILE, THOR_RESULT_SETTER_FILE,
+    GEMS_DIR, GEMS_FILE,
+    UI_TEMPLATE_DIR, UI_STATIC_DIR,
+)
 
-# Default to Thor 1.1, but support both
-THOR_DIR = THOR_1_1_DIR  # Default to latest
+# Import utilities
+from app_utils.math_evaluator import safe_evaluate_math
+from app_utils.path_manager import get_path_manager
 
-# Ensure THOR_DIR is first for imports (will be set based on model selection)
+# Path manager for cleaner imports (replaces sys.path manipulation)
+path_manager = get_path_manager()
+
+# Legacy sys.path manipulation (to be phased out gradually)
+# TODO: Remove this once all imports use path_manager
 thor_path = str(THOR_1_1_DIR)
 if thor_path in sys.path:
     sys.path.remove(thor_path)
@@ -81,53 +90,126 @@ from formatting import get_final_response_formatter
 import time
 import random
 
-UI_TEMPLATE_DIR = BASE_DIR / "ui" / "templates"
-UI_STATIC_DIR = BASE_DIR / "ui" / "static"
-
+# Initialize Flask app with centralized configuration
 app = Flask(__name__, template_folder=str(UI_TEMPLATE_DIR), static_folder=str(UI_STATIC_DIR))
-app.secret_key = os.urandom(24)
-CORS(app)
+app.secret_key = SECRET_KEY  # Use persistent secret key from config
 
-# Configuration - updated paths for new structure
-# Vercel/serverless environments have read-only project dirs; use /tmp for writes.
-DATA_ROOT = BASE_DIR
-if os.environ.get("VERCEL") == "1" or os.environ.get("ATLAS_DEPLOYMENT_MODE") in {"serverless", "lite"}:
-    DATA_ROOT = Path("/tmp/atlas-ai")
-    try:
-        DATA_ROOT.mkdir(parents=True, exist_ok=True)
-    except Exception:
-        pass
+# Configure CORS with specific allowed origins (security improvement)
+CORS(app, origins=ALLOWED_ORIGINS, supports_credentials=True)
 
-# Model paths - will be set based on selected model
-MODEL_DIR = str(THOR_1_1_DIR / "models")  # Default to Thor 1.1
-TOKENIZER_DIR = str(THOR_1_1_DIR / "models")
-CONFIG_PATH = str(THOR_1_1_DIR / "config" / "config.yaml")
-CHATS_DIR = str(DATA_ROOT / "chats")
-CONVERSATIONS_DIR = str(DATA_ROOT / "conversations")
-PROJECTS_DIR = str(DATA_ROOT / "projects")
-HISTORY_DIR = str(DATA_ROOT / "history")
-THOR_1_0_RESULT_SETTER_FILE = str(BASE_DIR / "thor_result_setter.json")
-THOR_1_1_RESULT_SETTER_FILE = str(BASE_DIR / "thor_1_1_result_setter.json")
-THOR_RESULT_SETTER_FILE = THOR_1_1_RESULT_SETTER_FILE  # Default to latest
+# Security headers (v1.4.3o)
+@app.after_request
+def set_security_headers(response):
+    """Add security headers to all responses."""
+    response.headers['X-Content-Type-Options'] = 'nosniff'
+    response.headers['X-Frame-Options'] = 'DENY'
+    response.headers['X-XSS-Protection'] = '1; mode=block'
+    response.headers['Referrer-Policy'] = 'strict-origin-when-cross-origin'
+    # Only add CSP in production
+    if os.environ.get('FLASK_ENV') == 'production':
+        response.headers['Content-Security-Policy'] = "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'"
+    return response
 
-# Gems (custom sub-models)
-GEMS_DIR = DATA_ROOT / "gems"
-GEMS_FILE = GEMS_DIR / "gems.json"
+# Response caching for improved performance (v1.4.4)
+from functools import lru_cache
+from hashlib import md5
 
-# Ensure directories exist
-os.makedirs(CHATS_DIR, exist_ok=True)
-os.makedirs(CONVERSATIONS_DIR, exist_ok=True)
-os.makedirs(MODEL_DIR, exist_ok=True)
-os.makedirs(PROJECTS_DIR, exist_ok=True)
-os.makedirs(HISTORY_DIR, exist_ok=True)
-os.makedirs(str(GEMS_DIR), exist_ok=True)
+# Simple in-memory cache for responses (TTL-based)
+_response_cache = {}
+_cache_ttl = 300  # 5 minutes
 
-if not GEMS_FILE.exists():
-    try:
-        with open(GEMS_FILE, "w", encoding="utf-8") as f:
-            json.dump({"gems": []}, f, indent=2)
-    except Exception:
-        pass
+def get_cache_key(query: str, model: str, tone: str) -> str:
+    """Generate cache key for query."""
+    key_string = f"{query}:{model}:{tone}"
+    return md5(key_string.encode()).hexdigest()
+
+def get_cached_response(query: str, model: str, tone: str):
+    """Get cached response if available and not expired."""
+    cache_key = get_cache_key(query, model, tone)
+    if cache_key in _response_cache:
+        cached_data, timestamp = _response_cache[cache_key]
+        if time.time() - timestamp < _cache_ttl:
+            return cached_data
+        else:
+            # Expired, remove from cache
+            del _response_cache[cache_key]
+    return None
+
+def cache_response(query: str, model: str, tone: str, response: str):
+    """Cache response for future use."""
+    cache_key = get_cache_key(query, model, tone)
+    _response_cache[cache_key] = (response, time.time())
+    # Limit cache size (keep last 100 entries)
+    if len(_response_cache) > 100:
+        oldest_key = min(_response_cache.keys(), key=lambda k: _response_cache[k][1])
+        del _response_cache[oldest_key]
+
+# Input validation and sanitization (v1.4.3o)
+def validate_and_sanitize_input(text: str, max_length: int = 10000) -> tuple:
+    """
+    Validate and sanitize user input.
+    Returns (sanitized_text, is_valid)
+    """
+    if not isinstance(text, str):
+        return "", False
+    
+    # Check length
+    if len(text) > max_length:
+        text = text[:max_length]
+    
+    # Remove potentially dangerous patterns
+    dangerous_patterns = [
+        r'<script[^>]*>.*?</script>',  # Script tags
+        r'javascript:',  # JavaScript protocol
+        r'on\w+\s*=',  # Event handlers
+        r'data:text/html',  # Data URLs with HTML
+    ]
+    
+    sanitized = text
+    for pattern in dangerous_patterns:
+        sanitized = re.sub(pattern, '', sanitized, flags=re.IGNORECASE | re.DOTALL)
+    
+    # Check for SQL injection patterns (basic)
+    sql_patterns = [r"(\b(SELECT|INSERT|UPDATE|DELETE|DROP|CREATE|ALTER|EXEC|EXECUTE)\b)", r"(--|;|/\*|\*/)"]
+    has_sql = any(re.search(pattern, sanitized, re.IGNORECASE) for pattern in sql_patterns)
+    
+    # For chat, we allow most text but log suspicious patterns
+    if has_sql:
+        print(f"[Security] Potential SQL pattern detected in input (logged, not blocked): {text[:100]}")
+    
+    return sanitized, True
+
+# Rate limiting (simple in-memory, v1.4.3o)
+_rate_limit_store = {}
+_rate_limit_max = 60  # requests per window
+_rate_limit_window = 60  # seconds
+
+def check_rate_limit(identifier: str) -> tuple:
+    """
+    Check if request is within rate limit.
+    Returns (is_allowed, remaining_requests)
+    """
+    now = time.time()
+    if identifier not in _rate_limit_store:
+        _rate_limit_store[identifier] = {'count': 1, 'window_start': now}
+        return True, _rate_limit_max - 1
+    
+    store = _rate_limit_store[identifier]
+    
+    # Reset window if expired
+    if now - store['window_start'] > _rate_limit_window:
+        store['count'] = 1
+        store['window_start'] = now
+        return True, _rate_limit_max - 1
+    
+    # Check limit
+    if store['count'] >= _rate_limit_max:
+        remaining = 0
+    else:
+        store['count'] += 1
+        remaining = _rate_limit_max - store['count']
+    
+    return store['count'] <= _rate_limit_max, remaining
 
 
 def _slugify(text: str) -> str:
@@ -810,65 +892,13 @@ def _is_pronoun_follow_up(message):
 
 
 def _evaluate_math(expression):
-    """Evaluate simple math expressions safely"""
-    import re
-    import math
+    """
+    Evaluate simple math expressions safely.
     
-    # Remove common question words and normalize
-    expr = expression.lower().strip()
-    
-    # Patterns: "what is 2 + 2", "calculate 10 * 5", "2+2", etc.
-    # Extract math expression
-    math_patterns = [
-        r'what\s+is\s+(.+?)(?:\?|$)',
-        r'calculate\s+(.+?)(?:\?|$)',
-        r'compute\s+(.+?)(?:\?|$)',
-        r'solve\s+(.+?)(?:\?|$)',
-        r'^\s*([0-9+\-*/().\s]+)\s*$',  # Pure math expression
-        r'=\s*([0-9+\-*/().\s]+)',  # "equals ..."
-    ]
-    
-    math_expr = None
-    for pattern in math_patterns:
-        match = re.search(pattern, expr)
-        if match:
-            math_expr = match.group(1).strip()
-            break
-    
-    if not math_expr:
-        # Check if it looks like a math expression directly
-        if re.match(r'^[\d+\-*/().\s]+$', expr):
-            math_expr = expr
-        else:
-            return None
-    
-    # Clean and validate the expression
-    math_expr = math_expr.replace(' ', '')
-    
-    # Only allow safe characters: digits, operators, parentheses, decimal point
-    if not re.match(r'^[\d+\-*/().]+$', math_expr):
-        return None
-    
-    # Check for dangerous operations (only allow basic math)
-    if any(op in math_expr for op in ['__', 'import', 'exec', 'eval', 'open']):
-        return None
-    
-    try:
-        # Safely evaluate the expression
-        # Replace common math functions
-        math_expr = math_expr.replace('^', '**')  # Power operator
-        
-        # Evaluate using a safe method
-        result = eval(math_expr, {"__builtins__": {}}, {"math": math})
-        
-        # Return formatted result
-        if isinstance(result, float):
-            if result.is_integer():
-                return int(result)
-            return round(result, 10)
-        return result
-    except:
-        return None
+    This function now uses safe_evaluate_math from utils instead of eval(),
+    preventing arbitrary code execution vulnerabilities.
+    """
+    return safe_evaluate_math(expression)
 
 
 def _extract_image_request(message: str) -> str:
@@ -1222,6 +1252,15 @@ def dev_chat():
 @app.route('/api/chat', methods=['POST'])
 def chat():
     """Handle chat messages."""
+    # Security: Rate limiting (v1.4.3o)
+    client_ip = request.remote_addr or 'unknown'
+    is_allowed, remaining = check_rate_limit(client_ip)
+    if not is_allowed:
+        return jsonify({
+            "error": "Rate limit exceeded. Please wait a moment before sending another message.",
+            "retry_after": _rate_limit_window
+        }), 429
+    
     # Check if debug mode is enabled
     debug_mode = request.json and request.json.get('debug_mode', False)
     debug_log = []
@@ -1240,7 +1279,16 @@ def chat():
     
     try:
         data = request.json
+        if not data:
+            return jsonify({"error": "Invalid request: JSON data required"}), 400
+        
         message = data.get('message', '').strip()
+        
+        # Security: Input validation and sanitization (v1.4.3o)
+        sanitized_message, is_valid = validate_and_sanitize_input(message)
+        if not is_valid:
+            return jsonify({"error": "Invalid input detected"}), 400
+        message = sanitized_message
         chat_id = data.get('chat_id')
         task = data.get('task', 'text_generation')  # Default to text generation for chat
         think_deeper = data.get('think_deeper', False)  # Think deeper mode
@@ -1319,10 +1367,26 @@ def chat():
         if not message:
             return jsonify({"error": "Message is required"}), 400
         
-        # Refine large text chunks for better understanding
-        if len(message) > 500:
-            message = _refine_large_text(message)
-            print(f"[Refinement] Processed large text chunk ({len(message)} chars)")
+        # Security: Input validation and sanitization (v1.4.3o)
+        sanitized_message, is_valid = validate_and_sanitize_input(message)
+        if not is_valid:
+            return jsonify({"error": "Invalid input detected"}), 400
+        message = sanitized_message
+        
+        # Model Improvement: Check cache first (v1.4.4)
+        cached_response = get_cached_response(message, model_name, effective_tone)
+        if cached_response:
+            print(f"[Cache] Returning cached response for query: {message[:50]}...")
+            # Still save to chat history
+            chat_data["messages"].append({"role": "user", "content": message})
+            chat_data["messages"].append({"role": "assistant", "content": cached_response})
+            save_chat(chat_id, chat_data["messages"], chat_data.get("name"))
+            return jsonify({
+                "response": cached_response,
+                "chat_id": chat_id,
+                "model": model_label_for_ui,
+                "from_cache": True
+            })
         
         # Refine large text chunks for better understanding
         if len(message) > 500:
@@ -3057,6 +3121,10 @@ I'm always learning and improving through our conversations. How can I help you 
         if len(chat_data["messages"]) == 2:  # Just added user + assistant
             chat_name = generate_chat_name(message, response)
         
+        # Model Improvement: Cache response for future use (v1.4.4)
+        if response and len(response.strip()) > 20 and not skip_refinement:
+            cache_response(message, model_name, effective_tone, response)
+        
         # Save chat
         save_chat(chat_id, chat_data["messages"], chat_name)
         
@@ -3160,6 +3228,10 @@ I'm always learning and improving through our conversations. How can I help you 
         except Exception as e:
             print(f"[Emoji] Error adding emoji support: {e}")
         
+        # Model Improvement: Cache response for future use (v1.4.4)
+        if response and len(response.strip()) > 20 and not skip_refinement:
+            cache_response(message, model_name, effective_tone, response)
+        
         response_data = {
             "response": response,
             "chat_id": chat_id,
@@ -3188,13 +3260,67 @@ I'm always learning and improving through our conversations. How can I help you 
         
         return jsonify(response_data), 200
             
-    except Exception as e:
-        print(f"❌ ERROR in chat endpoint: {e}")
+    except (ValueError, TypeError, KeyError) as e:
+        # Handle specific validation and data errors
+        error_type = type(e).__name__
+        error_msg = str(e) if str(e) else f"{error_type} occurred"
+        print(f"❌ Validation error in chat endpoint ({error_type}): {e}")
         import traceback
         traceback.print_exc()
-        # Get detailed error information
+        return jsonify({
+            "error": f"Invalid request: {error_msg}",
+            "error_type": error_type
+        }), 400
+    except (FileNotFoundError, PermissionError, OSError) as e:
+        # Handle file system errors
+        error_type = type(e).__name__
+        error_msg = str(e) if str(e) else f"{error_type} occurred"
+        print(f"❌ File system error in chat endpoint ({error_type}): {e}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({
+            "error": "File system error occurred",
+            "error_type": error_type
+        }), 500
+    except (ImportError, ModuleNotFoundError) as e:
+        # Handle import errors
+        error_type = type(e).__name__
+        error_msg = str(e) if str(e) else f"{error_type} occurred"
+        print(f"❌ Import error in chat endpoint ({error_type}): {e}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({
+            "error": "Module import error occurred",
+            "error_type": error_type
+        }), 500
+    except (requests.exceptions.RequestException, requests.exceptions.Timeout) as e:
+        # Handle network/API errors
+        error_type = type(e).__name__
+        error_msg = str(e) if str(e) else f"{error_type} occurred"
+        print(f"❌ Network error in chat endpoint ({error_type}): {e}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({
+            "error": "Network error occurred while processing request",
+            "error_type": error_type
+        }), 503
+    except MemoryError as e:
+        # Handle memory errors
+        error_type = type(e).__name__
+        print(f"❌ Memory error in chat endpoint: {e}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({
+            "error": "Insufficient memory to process request",
+            "error_type": error_type
+        }), 507
+    except Exception as e:
+        # Catch-all for unexpected errors (should be minimized)
         error_type = type(e).__name__
         error_msg = str(e) if str(e) else "Internal server error"
+        print(f"❌ Unexpected error in chat endpoint ({error_type}): {e}")
+        import traceback
+        traceback.print_exc()
         
         # If error message is too short or unclear, provide more context
         if len(error_msg) < 5 or error_msg.isdigit():
@@ -3721,6 +3847,162 @@ def delete_history_entry(entry_id):
     except Exception as e:
         print(f"Error deleting history entry: {e}")
         return jsonify({"error": "Error deleting history entry"}), 500
+
+
+# ==================== ENHANCED FEATURES v1.4.2 API ====================
+
+@app.route('/api/chats/<chat_id>/export', methods=['GET'])
+def export_chat(chat_id):
+    """Export a chat as JSON."""
+    try:
+        chat_file = os.path.join(CHATS_DIR, f"{chat_id}.json")
+        if not os.path.exists(chat_file):
+            return jsonify({"error": "Chat not found"}), 404
+        
+        with open(chat_file, 'r', encoding='utf-8') as f:
+            chat_data = json.load(f)
+        
+        export_data = {
+            "version": "1.4.2",
+            "exported_at": datetime.now().isoformat(),
+            "chat": chat_data
+        }
+        
+        return jsonify(export_data)
+    except Exception as e:
+        print(f"Error exporting chat: {e}")
+        return jsonify({"error": "Error exporting chat"}), 500
+
+
+@app.route('/api/chats/import', methods=['POST'])
+def import_chat():
+    """Import a chat from JSON."""
+    try:
+        data = request.json
+        if not data or "chat" not in data:
+            return jsonify({"error": "Invalid import data"}), 400
+        
+        chat_data = data["chat"]
+        chat_id = chat_data.get("chat_id") or str(uuid.uuid4())
+        
+        # Ensure chat_id is unique
+        chat_file = os.path.join(CHATS_DIR, f"{chat_id}.json")
+        counter = 1
+        while os.path.exists(chat_file):
+            chat_id = f"{chat_data.get('chat_id', str(uuid.uuid4()))}-imported-{counter}"
+            chat_file = os.path.join(CHATS_DIR, f"{chat_id}.json")
+            counter += 1
+        
+        chat_data["chat_id"] = chat_id
+        chat_data["imported_at"] = datetime.now().isoformat()
+        
+        with open(chat_file, 'w', encoding='utf-8') as f:
+            json.dump(chat_data, f, indent=2, ensure_ascii=False)
+        
+        return jsonify({"chat_id": chat_id, "success": True})
+    except Exception as e:
+        print(f"Error importing chat: {e}")
+        return jsonify({"error": "Error importing chat"}), 500
+
+
+@app.route('/api/analytics', methods=['GET'])
+def get_analytics():
+    """Get conversation analytics and statistics."""
+    try:
+        # Get all chats
+        chats = []
+        if os.path.exists(CHATS_DIR):
+            for filename in os.listdir(CHATS_DIR):
+                if filename.endswith('.json'):
+                    try:
+                        with open(os.path.join(CHATS_DIR, filename), 'r', encoding='utf-8') as f:
+                            chat = json.load(f)
+                            chats.append(chat)
+                    except:
+                        continue
+        
+        # Calculate statistics
+        total_chats = len(chats)
+        total_messages = sum(len(chat.get("messages", [])) for chat in chats)
+        
+        # Messages by role
+        user_messages = 0
+        assistant_messages = 0
+        for chat in chats:
+            for msg in chat.get("messages", []):
+                if msg.get("role") == "user":
+                    user_messages += 1
+                elif msg.get("role") == "assistant":
+                    assistant_messages += 1
+        
+        # Chats by date
+        chats_by_date = {}
+        for chat in chats:
+            created_at = chat.get("created_at", "")
+            if created_at:
+                date = created_at[:10]  # YYYY-MM-DD
+                chats_by_date[date] = chats_by_date.get(date, 0) + 1
+        
+        # Average messages per chat
+        avg_messages = total_messages / total_chats if total_chats > 0 else 0
+        
+        analytics = {
+            "total_chats": total_chats,
+            "total_messages": total_messages,
+            "user_messages": user_messages,
+            "assistant_messages": assistant_messages,
+            "average_messages_per_chat": round(avg_messages, 2),
+            "chats_by_date": chats_by_date,
+            "generated_at": datetime.now().isoformat()
+        }
+        
+        return jsonify(analytics)
+    except Exception as e:
+        print(f"Error getting analytics: {e}")
+        return jsonify({"error": "Error getting analytics"}), 500
+
+
+@app.route('/api/chats/search', methods=['GET'])
+def search_chats():
+    """Search chats by query."""
+    try:
+        query = request.args.get('q', '').lower()
+        if not query:
+            return jsonify({"chats": []})
+        
+        chats = []
+        if os.path.exists(CHATS_DIR):
+            for filename in os.listdir(CHATS_DIR):
+                if filename.endswith('.json'):
+                    try:
+                        with open(os.path.join(CHATS_DIR, filename), 'r', encoding='utf-8') as f:
+                            chat = json.load(f)
+                            
+                            # Search in title/name
+                            name = (chat.get("name") or "").lower()
+                            
+                            # Search in messages
+                            matches = False
+                            for msg in chat.get("messages", []):
+                                content = (msg.get("content") or "").lower()
+                                if query in content:
+                                    matches = True
+                                    break
+                            
+                            if query in name or matches:
+                                chats.append({
+                                    "chat_id": chat.get("chat_id"),
+                                    "name": chat.get("name"),
+                                    "created_at": chat.get("created_at"),
+                                    "message_count": len(chat.get("messages", []))
+                                })
+                    except:
+                        continue
+        
+        return jsonify({"chats": chats})
+    except Exception as e:
+        print(f"Error searching chats: {e}")
+        return jsonify({"error": "Error searching chats"}), 500
 
 
 if __name__ == '__main__':

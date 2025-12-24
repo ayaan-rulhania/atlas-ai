@@ -4,7 +4,15 @@
 
 Atlas AI is a sophisticated AI assistant platform powered by **Thor 1.1** (latest) with **Thor 1.0** available in stable mode. The platform provides a unified chat interface, continuous learning capabilities, and advanced features for knowledge management and conversation handling.
 
-**Latest Updates (Version 1.3.3 - 2025-12-26):**
+**Latest Updates (Version 1.4.4 - 2025-12-27):**
+- ✅ Response caching system for faster repeated queries (5-minute TTL)
+- ✅ Improved response quality with better error handling and fallbacks
+- ✅ Enhanced input validation and sanitization for security
+- ✅ Rate limiting protection (60 requests per minute per IP)
+- ✅ Security headers (XSS protection, content type options, frame options)
+- ✅ Better error handling and recovery mechanisms
+- ✅ Performance optimizations for faster response times
+- ✅ Improved model fallback system (Thor 1.0 backup when 1.1 fails)
 - ✅ Cross-chat memory system - Atlas remembers your preferences and information across all chats
 - ✅ Enhanced command system - Added /help, /clear, /remember, /forget, /info, /think, /tone commands
 - ✅ Improved "How to use Atlas" pop-up - Beautifully redesigned with comprehensive sections
