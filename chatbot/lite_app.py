@@ -471,3 +471,33 @@ def install():
         print(f"[lite_app] Error rendering install.html: {e}")
         # Fallback to index.html if install.html doesn't exist
         return render_template('index.html')
+
+
+@app.route('/download/atlas-macos.dmg')
+def download_macos_app():
+    """Download macOS app (not available in serverless deployment)."""
+    return jsonify({
+        'error': 'Download not available',
+        'message': 'Desktop app downloads are only available when running the full local version. For the serverless deployment, please use the web interface at the main URL.',
+        'note': 'To download the desktop app, please run the local version of Atlas AI on your machine.'
+    }), 404
+
+
+@app.route('/download/atlas-windows.exe')
+def download_windows_app():
+    """Download Windows app (not available in serverless deployment)."""
+    return jsonify({
+        'error': 'Download not available',
+        'message': 'Desktop app downloads are only available when running the full local version. For the serverless deployment, please use the web interface at the main URL.',
+        'note': 'To download the desktop app, please run the local version of Atlas AI on your machine.'
+    }), 404
+
+
+@app.route('/download/atlas-linux.AppImage')
+def download_linux_app():
+    """Download Linux app (not available in serverless deployment)."""
+    return jsonify({
+        'error': 'Download not available',
+        'message': 'Desktop app downloads are only available when running the full local version. For the serverless deployment, please use the web interface at the main URL.',
+        'note': 'To download the desktop app, please run the local version of Atlas AI on your machine.'
+    }), 404

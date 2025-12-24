@@ -1392,12 +1392,19 @@ function initializeBackgroundCustomization() {
     customBackgroundUrl = localStorage.getItem('customBackgroundUrl');
     const fullPageBackground = localStorage.getItem('fullPageBackground') === 'true';
     
-    // Get DOM elements first
+    // Get DOM elements first - wait a bit if modal isn't open yet
     const uploadInput = document.getElementById('customBackgroundUpload');
     const previewContainer = document.getElementById('customBackgroundPreview');
     const previewImage = document.getElementById('customBackgroundImage');
     const removeBtn = document.getElementById('removeCustomBg');
     const fullPageToggle = document.getElementById('fullPageBackgroundToggle');
+    
+    // If elements don't exist, they're probably in the settings modal which isn't loaded yet
+    // This is fine - the function will be called again when settings modal opens
+    if (!uploadInput && !previewContainer) {
+        console.log('[Background] Settings modal elements not found, will initialize when modal opens');
+        return;
+    }
     
     // Apply saved background
     applyBackground(currentBackground, currentBackgroundType, currentBackgroundOpacity, customBackgroundUrl, fullPageBackground);
@@ -1441,51 +1448,91 @@ function initializeBackgroundCustomization() {
         if (previewContainer) previewContainer.classList.remove('active');
     }
     
-    if (uploadInput) {
-        uploadInput.addEventListener('change', (e) => {
+    // Setup file upload - use the original input, not a clone
+    const actualUploadInput = document.getElementById('customBackgroundUpload');
+    if (actualUploadInput) {
+        // Remove old listeners by replacing with a new one
+        const newInput = actualUploadInput.cloneNode(true);
+        actualUploadInput.parentNode.replaceChild(newInput, actualUploadInput);
+        
+        newInput.addEventListener('change', (e) => {
             const file = e.target.files[0];
-            if (file && file.type.startsWith('image/')) {
-                const reader = new FileReader();
-                reader.onload = (event) => {
-                    const url = event.target.result;
-                    customBackgroundUrl = url;
-                    
-                    // Show preview
-                    if (previewImage) previewImage.src = url;
-                    if (previewContainer) {
-                        previewContainer.style.display = 'block';
-                        previewContainer.classList.add('active');
-                    }
-                    
-                    // Update active state
-                    document.querySelectorAll('.background-preset').forEach(p => p.classList.remove('active'));
-                    
-                    // Save and apply
-                    localStorage.setItem('customBackgroundUrl', url);
-                    localStorage.setItem('chatBackground', 'custom');
-                    localStorage.setItem('chatBackgroundType', 'custom');
-                    currentBackground = 'custom';
-                    currentBackgroundType = 'custom';
-                    
-                    const currentFullPage = localStorage.getItem('fullPageBackground') === 'true';
-                    applyBackground('custom', 'custom', currentBackgroundOpacity, url, currentFullPage);
-                };
-                reader.readAsDataURL(file);
+            if (!file) {
+                console.log('[Background] No file selected');
+                return;
             }
+            
+            if (!file.type.startsWith('image/')) {
+                alert('Please select an image file');
+                return;
+            }
+            
+            console.log('[Background] Processing uploaded file:', file.name, file.type);
+            const reader = new FileReader();
+            
+            reader.onload = (event) => {
+                const url = event.target.result;
+                console.log('[Background] File loaded, applying background');
+                customBackgroundUrl = url;
+                
+                // Show preview
+                const currentPreviewImage = document.getElementById('customBackgroundImage');
+                const currentPreviewContainer = document.getElementById('customBackgroundPreview');
+                
+                if (currentPreviewImage) currentPreviewImage.src = url;
+                if (currentPreviewContainer) {
+                    currentPreviewContainer.style.display = 'block';
+                    currentPreviewContainer.classList.add('active');
+                }
+                
+                // Update active state
+                document.querySelectorAll('.background-preset').forEach(p => p.classList.remove('active'));
+                
+                // Save and apply
+                localStorage.setItem('customBackgroundUrl', url);
+                localStorage.setItem('chatBackground', 'custom');
+                localStorage.setItem('chatBackgroundType', 'custom');
+                currentBackground = 'custom';
+                currentBackgroundType = 'custom';
+                
+                const currentFullPage = localStorage.getItem('fullPageBackground') === 'true';
+                applyBackground('custom', 'custom', currentBackgroundOpacity, url, currentFullPage);
+                console.log('[Background] Custom background applied successfully');
+            };
+            
+            reader.onerror = (error) => {
+                console.error('[Background] Error reading file:', error);
+                alert('Error reading image file. Please try again.');
+            };
+            
+            reader.readAsDataURL(file);
         });
+        
+        // Also add click handler to label as backup
+        const uploadLabel = document.querySelector('label[for="customBackgroundUpload"]');
+        if (uploadLabel) {
+            uploadLabel.addEventListener('click', (e) => {
+                // Prevent double-triggering
+                e.preventDefault();
+                newInput.click();
+            });
+        }
+    } else {
+        console.warn('[Background] Upload input not found - will retry when settings modal opens');
     }
     
     // Make custom background preview clickable to re-select it
-    if (previewContainer && previewImage) {
-        // Make the preview clickable (but not the remove button)
-        previewImage.style.cursor = 'pointer';
-        previewImage.addEventListener('click', (e) => {
+    if (previewContainer) {
+        // Make the entire preview container clickable
+        previewContainer.style.cursor = 'pointer';
+        previewContainer.addEventListener('click', (e) => {
             // Don't trigger if clicking the remove button
-            if (e.target.closest('.remove-custom-bg')) {
+            if (e.target.closest('.remove-custom-bg') || e.target.id === 'removeCustomBg') {
                 return;
             }
             
             if (customBackgroundUrl) {
+                console.log('[Background] Re-selecting custom background');
                 // Re-apply custom background
                 document.querySelectorAll('.background-preset').forEach(p => p.classList.remove('active'));
                 previewContainer.classList.add('active');
@@ -1499,8 +1546,15 @@ function initializeBackgroundCustomization() {
                 // Re-apply background
                 const currentFullPage = localStorage.getItem('fullPageBackground') === 'true';
                 applyBackground('custom', 'custom', currentBackgroundOpacity, customBackgroundUrl, currentFullPage);
+            } else {
+                console.log('[Background] No custom background URL found');
             }
         });
+        
+        // Also make the image clickable
+        if (previewImage) {
+            previewImage.style.cursor = 'pointer';
+        }
     }
     
     if (removeBtn) {
