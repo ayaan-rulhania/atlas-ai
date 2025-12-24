@@ -1,0 +1,1 @@
+For Vercel deployment, this file will be temporarily replaced with requirements-vercel.txt during build

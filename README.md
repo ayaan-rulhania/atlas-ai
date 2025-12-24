@@ -4,11 +4,15 @@
 
 Atlas AI is a sophisticated AI assistant platform powered by **Thor 1.1** (latest) with **Thor 1.0** available in stable mode. The platform provides a unified chat interface, continuous learning capabilities, and advanced features for knowledge management and conversation handling.
 
-**Latest Updates (2025-12-19):**
+**Latest Updates (Version 1.3.3 - 2025-12-26):**
+- ✅ Cross-chat memory system - Atlas remembers your preferences and information across all chats
+- ✅ Enhanced command system - Added /help, /clear, /remember, /forget, /info, /think, /tone commands
+- ✅ Improved "How to use Atlas" pop-up - Beautifully redesigned with comprehensive sections
+- ✅ Fixed gems localStorage saving - Gems now properly cached for faster loading
+- ✅ Major Hindi language enhancements - Advanced text processing, better voice selection, optimized speech
+- ✅ Enhanced common sense prioritization - Better reasoning before web searches for natural conversation
 - ✅ Thor 1.1 released with enhanced model architecture and improved inference
-- ✅ Poseidon voice assistant with circuit breaker to prevent infinite error loops
-- ✅ Enhanced error handling with browser-specific troubleshooting guidance
-- ✅ Comprehensive debugging logs for speech recognition
+- ✅ Poseidon voice assistant with comprehensive multi-language support
 
 ## 📁 Project Structure
 
@@ -253,7 +257,7 @@ Poseidon is a comprehensive voice assistant feature that provides live, conversa
 
 **Access**: Click the golden trident icon button (round blue button) in the input area (left side, before the attach button)
 
-**Browser Support**: Requires Chrome, Edge, or Safari (uses Web Speech API--in Beta)
+**Browser Support**: Requires Chrome, or Edge
 
 **Features**:
 - **Continuous Recognition**: Automatically continues listening after each response

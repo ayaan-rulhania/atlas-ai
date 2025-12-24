@@ -998,6 +998,70 @@ def update():
     return render_template('update.html')
 
 
+@app.route('/api/translate', methods=['POST'])
+def translate_text():
+    """Translate text to target language using Google Translate public API."""
+    try:
+        data = request.json
+        text = data.get('text', '').strip()
+        target_lang = data.get('target_language', 'en')
+        
+        if not text:
+            return jsonify({"error": "Text is required"}), 400
+        
+        # Map language codes to Google Translate codes
+        lang_map = {
+            'hi-IN': 'hi',  # Hindi
+            'ta-IN': 'ta',  # Tamil
+            'te-IN': 'te',  # Telugu
+            'es-ES': 'es',  # Spanish
+            'es-MX': 'es',  # Spanish (Mexico)
+            'fr-FR': 'fr',  # French
+            'de-DE': 'de',  # German
+            'zh-CN': 'zh-cn',  # Chinese Simplified
+            'ja-JP': 'ja',  # Japanese
+            'ko-KR': 'ko',  # Korean
+            'it-IT': 'it',  # Italian
+            'pt-BR': 'pt',  # Portuguese
+        }
+        
+        target_code = lang_map.get(target_lang, target_lang.split('-')[0] if '-' in target_lang else target_lang)
+        
+        # Use Google Translate public API (no key required for basic use)
+        import requests
+        import urllib.parse
+        
+        # Google Translate public endpoint
+        url = f"https://translate.googleapis.com/translate_a/single"
+        params = {
+            'client': 'gtx',
+            'sl': 'en',  # Source language (always English since model responds in English)
+            'tl': target_code,  # Target language
+            'dt': 't',
+            'q': text
+        }
+        
+        try:
+            response = requests.get(url, params=params, timeout=5)
+            if response.status_code == 200:
+                result = response.json()
+                if result and len(result) > 0 and len(result[0]) > 0:
+                    translated_text = ''.join([item[0] for item in result[0] if item[0]])
+                    return jsonify({"translated_text": translated_text, "original_text": text, "target_language": target_lang})
+                else:
+                    return jsonify({"error": "Translation failed: invalid response format"}), 500
+            else:
+                return jsonify({"error": f"Translation API error: {response.status_code}"}), 500
+        except requests.exceptions.RequestException as e:
+            print(f"[Translate] Error calling translation API: {e}")
+            return jsonify({"error": f"Translation service unavailable: {str(e)}"}), 500
+            
+    except Exception as e:
+        print(f"[Translate] Error in translate endpoint: {e}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({"error": f"Translation error: {str(e)}"}), 500
+
 @app.route('/api/version')
 def get_version():
     """Get current and latest version information for update checking."""
@@ -1185,6 +1249,7 @@ def chat():
         image_data = data.get('image_data')  # Image data if attached
         requested_model = (data.get('model') or 'thor-1.1').strip()
         requested_tone = (data.get('tone') or 'normal').strip()
+        response_language = data.get('response_language', 'en-US')  # Language to respond in (from Poseidon)
         
         log_debug("Request Received", {
             "message": message[:100],
@@ -2459,6 +2524,27 @@ I'm always learning and improving through our conversations. How can I help you 
                         
                         # Apply Gem instructions as a lightweight "system prompt" prefix.
                         tone_line = _tone_profile(effective_tone)
+                        
+                        # Add language instruction if response_language is specified and not English
+                        language_instruction = ""
+                        if response_language and response_language != 'en-US':
+                            language_map = {
+                                'hi-IN': 'Hindi',
+                                'ta-IN': 'Tamil',
+                                'te-IN': 'Telugu',
+                                'es-ES': 'Spanish',
+                                'fr-FR': 'French',
+                                'de-DE': 'German',
+                                'zh-CN': 'Mandarin Chinese',
+                                'ja-JP': 'Japanese',
+                                'ko-KR': 'Korean',
+                                'it-IT': 'Italian',
+                                'pt-BR': 'Portuguese'
+                            }
+                            lang_name = language_map.get(response_language, response_language)
+                            language_instruction = f" CRITICAL: You MUST respond entirely in {lang_name}. The user is speaking in {lang_name}, so respond in {lang_name} only. Do not use English unless the user explicitly asks a question in English."
+                            print(f"[Language] Adding language instruction: Respond in {lang_name}")
+                        
                         if gem_config and (gem_config.get("instructions") or "").strip():
                             gem_name = (gem_config.get("name") or "Gem").strip()
                             gem_instr = (gem_config.get("instructions") or "").strip()
@@ -2477,12 +2563,12 @@ I'm always learning and improving through our conversations. How can I help you 
                             
                             # Include description in the system prompt if available
                             desc_line = f" Description: {gem_desc}" if gem_desc else ""
-                            prefix = f"System: {tone_line} You are {gem_name}.{desc_line} {gem_instr}{gem_sources_context}".strip()
+                            prefix = f"System: {tone_line}{language_instruction} You are {gem_name}.{desc_line} {gem_instr}{gem_sources_context}".strip()
                             contextual_input = prefix + "\n\n" + contextual_input
                             print(f"[Gem] Using gem '{gem_name}' with {len(gem_knowledge or [])} source(s) in context")
                         else:
                             # Global tone (no gem): still guide style strongly
-                            contextual_input = f"System: {tone_line}\n\n" + contextual_input
+                            contextual_input = f"System: {tone_line}{language_instruction}\n\n" + contextual_input
 
                         log_debug("Generating Response", {
                             "description": "Synthesizing information from web search and knowledge base to generate a comprehensive answer. Using the AI model to create a natural, helpful response.",

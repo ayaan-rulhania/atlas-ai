@@ -7,7 +7,9 @@
     "howdy",
     "here",
     "how",
-    "hey,"
+    "hey,",
+    "hora",
+    "hay"
   ],
   "knowledge": [
     {
@@ -176,7 +178,39 @@
       "source": "duckduckgo",
       "learned_at": "2025-12-22T11:23:06.336606",
       "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Flanguagetool.org%2Finsights%2Fpost%2Fword%2Dchoice%2Dhow%2Dare%2Dyou%2F&rut=b5349092c5c1139d0a547c0cd504b77d19d6a66d391e70cec19a8e3a193bcb5a"
+    },
+    {
+      "title": "DuckDuckGo \u2014 Time.is - Hora exacta, cualquier zona horaria",
+      "content": "7 millones de ubicaciones, 58 lenguajes, sincronizados con la hora del reloj at\u00f3mico.",
+      "query": "hora hay pecho es",
+      "source": "duckduckgo",
+      "learned_at": "2025-12-23T16:22:43.372429",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime.is%2Fes%2F&rut=e6a0677d672872ef79b36a53f7c8faa6d6e9e1a129728c11745a878925dc0cb0"
+    },
+    {
+      "title": "DuckDuckGo \u2014 Reloj Mundial - hora actual en todo el mundo, hora exacta",
+      "content": "Consulta la hora local actual en todo el mundo con nuestro reloj internacional personalizable. Ver la diferencia horaria entre ciudades, fechas de cambio de reloj, horario de verano.",
+      "query": "hora hay pecho es",
+      "source": "duckduckgo",
+      "learned_at": "2025-12-23T16:22:43.373025",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2F24timezones.com%2Freloj_hora_exacta.php&rut=1025223535d0f80cfdb07ca04f5a4f8e5a6b69207b91b51bc5aad07873398e18"
+    },
+    {
+      "title": "DuckDuckGo \u2014 Hora exacta - Hora actual - Qu\u00e9 hora es - Reloj-Alarma.es",
+      "content": "Reloj Online. En este sitio web se puede averiguar la hora y la fecha actuales en cualquier pa\u00eds y ciudad del mundo. Horario hablado.",
+      "query": "hora hay pecho es",
+      "source": "duckduckgo",
+      "learned_at": "2025-12-23T16:22:43.373419",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Freloj%2Dalarma.es%2Fhora%2F&rut=75d849f89d92b5709193e09743fd8c145d76bd599b323048b03c911f4f727b15"
+    },
+    {
+      "title": "DuckDuckGo \u2014 Cu\u00e1l es la hora actual | The Time Now",
+      "content": "Averig\u00fce la hora local actual en cualquier zona horaria del mundo gracias a nuestro reloj mundial. Herramienta confiable para cuando se viaja, llama al extranjero con la hora local, mapas, el tiempo.",
+      "query": "hora hay pecho es",
+      "source": "duckduckgo",
+      "learned_at": "2025-12-23T16:22:43.373897",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fes.thetimenow.com%2F&rut=7e688dc92deb590d02ea07bd93b36bbac07ccd3c5a9e4501932ba17a57be4a43"
     }
   ],
-  "last_updated": "2025-12-23T09:24:41.036834"
+  "last_updated": "2025-12-23T16:29:16.646605"
 }

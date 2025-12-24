@@ -51,6 +51,35 @@ function createWindow() {
   mainWindow.webContents.on('did-finish-load', () => {
     console.log('Page loaded, Flask server should be ready');
   });
+  
+  // Handle failed page loads (network errors)
+  mainWindow.webContents.on('did-fail-load', (event, errorCode, errorDescription, validatedURL) => {
+    console.error('Page failed to load:', {
+      errorCode,
+      errorDescription,
+      validatedURL
+    });
+    
+    // Only show error for main frame loads, not sub-resources
+    if (errorCode === -105 || errorCode === -106) {
+      // ERR_NAME_NOT_RESOLVED or ERR_INTERNET_DISCONNECTED
+      console.error('Network error detected - Flask server may not be running');
+    } else if (errorCode === -118) {
+      // ERR_CONNECTION_TIMED_OUT
+      console.error('Connection timeout - Flask server may not be responding');
+    }
+  });
+  
+  // Handle certificate errors (for local development)
+  mainWindow.webContents.on('certificate-error', (event, url, error, certificate, callback) => {
+    if (url.startsWith('http://localhost') || url.startsWith('http://127.0.0.1')) {
+      // Ignore certificate errors for localhost
+      event.preventDefault();
+      callback(true);
+    } else {
+      callback(false);
+    }
+  });
 }
 
 // Start local Flask server if needed
@@ -251,7 +280,8 @@ app.on('before-quit', () => {
   }
 });
 
-// Handle certificate errors (for local development)
+// Handle certificate errors at app level (for local development)
+// Note: We also handle this at the window level above for better granularity
 app.on('certificate-error', (event, webContents, url, error, certificate, callback) => {
   if (url.startsWith('http://localhost') || url.startsWith('http://127.0.0.1')) {
     event.preventDefault();

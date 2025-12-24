@@ -540,13 +540,33 @@ async function handleSendMessage() {
             window.pendingImage = null;
         }
         
-        const response = await fetch('/api/chat', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(requestBody)
-        });
+        let response;
+        try {
+            // Create timeout controller for network error handling
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 300000); // 5 minute timeout
+            
+            response = await fetch('/api/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(requestBody),
+                signal: controller.signal
+            });
+            
+            clearTimeout(timeoutId);
+        } catch (fetchError) {
+            // Handle network errors (connection failures, timeouts, etc.)
+            console.error('Network error during fetch:', fetchError);
+            if (fetchError.name === 'AbortError' || fetchError.name === 'TimeoutError') {
+                throw new Error('Request timed out. The server may be taking too long to respond. Please try again.');
+            } else if (fetchError.name === 'TypeError' && fetchError.message.includes('Failed to fetch')) {
+                throw new Error('Network error: Could not connect to the server. Please check your connection and ensure the server is running.');
+            } else {
+                throw new Error(`Network error: ${fetchError.message || 'Unknown error occurred'}`);
+            }
+        }
         
         if (!response.ok) {
             // Try to get error message
@@ -2325,7 +2345,7 @@ let adaptiveSensitivity = 0.01; // Adaptive audio threshold
 let conversationSummaries = []; // Store conversation summaries
 let emotionHistory = []; // Track emotion history for adaptation
 let canInterrupt = false; // Flag to enable interruption
-const SPEECH_MATCH_WINDOW_MS = 15000; // Time window to check for matching speech (15 seconds - increased to catch delayed echoes)
+const SPEECH_MATCH_WINDOW_MS = 20000; // Time window to check for matching speech (20 seconds - increased for Electron app echo issues)
 
 // Initialize Poseidon
 function initializePoseidon() {
@@ -2428,16 +2448,96 @@ function initializePoseidon() {
     
     if (accentSelect) {
         accentSelect.value = voiceSettings.accent;
-        accentSelect.addEventListener('change', (e) => {
+        accentSelect.addEventListener('change', async (e) => {
             const newAccent = e.target.value;
             if (validAccents.includes(newAccent)) {
                 voiceSettings.accent = newAccent;
                 currentLanguage = newAccent; // Update currentLanguage for speech synthesis
                 localStorage.setItem('poseidonAccent', newAccent);
+                
+                console.log('[Poseidon] Language changed to:', newAccent);
+                
+                // Reload voices for new accent
                 updateVoiceSelection();
-                // Update recognition language if active
-                if (recognition && poseidonActive) {
+                
+                // Update recognition language - need to recreate instance for language change to work reliably
+                // Many browsers require recreating the SpeechRecognition instance for language changes to take effect
+                if (recognition && poseidonActive && !poseidonPaused) {
+                    console.log('[Poseidon] Language changed to:', newAccent, '- recreating recognition instance for language change');
+                    
+                    // Store current state
+                    const wasListening = (recognitionState === 'listening');
+                    
+                    try {
+                        // Stop current recognition
+                        if (wasListening) {
+                            recognition.stop();
+                            console.log('[Poseidon] Stopped recognition for language change');
+                        }
+                        
+                        // Clear handlers and recreate recognition instance
+                        recognition.onstart = null;
+                        recognition.onend = null;
+                        recognition.onresult = null;
+                        recognition.onerror = null;
+                        recognition.onnomatch = null;
+                        recognition.onaudiostart = null;
+                        recognition.onaudioend = null;
+                        recognition.onsoundstart = null;
+                        recognition.onsoundend = null;
+                        recognition.onspeechstart = null;
+                        recognition.onspeechend = null;
+                        
+                        recognition = null;
+                        recognitionState = 'idle';
+                        
+                        // Recreate recognition instance with new language
+                        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+                        if (SpeechRecognition) {
+                            setTimeout(async () => {
+                                if (poseidonActive && !poseidonPaused) {
+                                    try {
+                                        recognition = new SpeechRecognition();
+                                        recognition.continuous = true;
+                                        recognition.interimResults = true;
+                                        recognition.lang = newAccent; // Set the new language
+                                        recognition.maxAlternatives = 1;
+                                        
+                                        console.log('[Poseidon] Recognition instance recreated with language:', recognition.lang);
+                                        
+                                        // Setup handlers again
+                                        setupRecognitionHandlers();
+                                        
+                                        // Restart recognition if it was listening before
+                                        if (wasListening) {
+                                            setTimeout(() => {
+                                                startRecognitionWithRetry();
+                                            }, 500);
+                                        }
+                                    } catch (err) {
+                                        console.error('[Poseidon] Error recreating recognition with new language:', err);
+                                        // Try to continue with old instance if recreation fails
+                                        if (!recognition) {
+                                            recognition = new SpeechRecognition();
+                                            recognition.lang = newAccent;
+                                            setupRecognitionHandlers();
+                                        }
+                                    }
+                                }
+                            }, 500);
+                        }
+                    } catch (e) {
+                        console.warn('[Poseidon] Error stopping recognition for language change:', e);
+                        // Fallback: try to set language on existing instance
+                        if (recognition) {
+                            recognition.lang = newAccent;
+                            console.log('[Poseidon] Set language on existing instance:', recognition.lang);
+                        }
+                    }
+                } else if (recognition) {
+                    // Just set the language for future use (will take effect when recognition starts)
                     recognition.lang = newAccent;
+                    console.log('[Poseidon] Recognition language set to:', recognition.lang, '(not active, will use on next start)');
                 }
             }
         });
@@ -2534,18 +2634,24 @@ function updateVoiceSelection() {
             return;
         }
         
-        // Filter voices by accent and gender (v3.x: Enhanced with new languages + Hindi improvements)
+        // Filter voices by accent and gender (v3.x: Enhanced with new languages)
         const accentMap = {
-            'en-US': ['en-US', 'en_US'],
+            'en-US': ['en-US', 'en_US', 'en'],
             'en-GB': ['en-GB', 'en_GB'],
             'en-AU': ['en-AU', 'en_AU'],
             'en-IN': ['en-IN', 'en_IN'],
-            'hi-IN': ['hi-IN', 'hi_IN', 'hi', 'hi-IN-Female', 'hi-IN-Male'],  // Enhanced Hindi support
+            'hi-IN': ['hi-IN', 'hi_IN', 'hi'],
             'ta-IN': ['ta-IN', 'ta_IN', 'ta'],
             'te-IN': ['te-IN', 'te_IN', 'te'],
-            'es-ES': ['es-ES', 'es_ES', 'es'],
+            'es-ES': ['es-ES', 'es_ES', 'es', 'es-MX'],
+            'es-MX': ['es-MX', 'es_MX', 'es'],
             'fr-FR': ['fr-FR', 'fr_FR', 'fr'],
-            'zh-CN': ['zh-CN', 'zh_CN', 'zh', 'cmn']  // v3.x: Mandarin
+            'de-DE': ['de-DE', 'de_DE', 'de'],
+            'it-IT': ['it-IT', 'it_IT', 'it'],
+            'pt-BR': ['pt-BR', 'pt_BR', 'pt'],
+            'ja-JP': ['ja-JP', 'ja_JP', 'ja'],
+            'ko-KR': ['ko-KR', 'ko_KR', 'ko'],
+            'zh-CN': ['zh-CN', 'zh_CN', 'zh', 'cmn', 'zh-Hans-CN']  // v3.x: Mandarin
         };
         
         const targetLocales = accentMap[voiceSettings.accent] || [voiceSettings.accent] || ['en-US'];
@@ -2553,21 +2659,41 @@ function updateVoiceSelection() {
         
         // Find matching voice
         let selectedVoice = null;
+        let matchedVoices = [];
         
-        // First try exact locale match
+        // First, collect all voices matching the language/locale
         for (const voice of voices) {
             const voiceLocale = voice.lang.toLowerCase();
-            if (targetLocales.some(locale => voiceLocale.startsWith(locale.toLowerCase()))) {
-                // Check gender (some voices have gender info in name)
+            const voiceName = voice.name.toLowerCase();
+            
+            // Check if voice matches any of the target locales (using startsWith for partial matches)
+            const matches = targetLocales.some(locale => {
+                const localeLower = locale.toLowerCase();
+                return voiceLocale === localeLower || voiceLocale.startsWith(localeLower + '-') || voiceLocale.startsWith(localeLower + '_');
+            });
+            
+            if (matches) {
+                matchedVoices.push(voice);
+            }
+        }
+        
+        // If we found matching voices, try to match gender preference
+        if (matchedVoices.length > 0) {
+            // Check gender (some voices have gender info in name)
+            for (const voice of matchedVoices) {
                 const voiceName = voice.name.toLowerCase();
                 const isMale = voiceName.includes('male') || voiceName.includes('david') || 
                               voiceName.includes('daniel') || voiceName.includes('james') ||
-                              voiceName.includes('thomas') || voiceName.includes('mark');
+                              voiceName.includes('thomas') || voiceName.includes('mark') ||
+                              voiceName.includes('tom') || voiceName.includes('alex') ||
+                              voiceName.includes('fred') || voiceName.includes('ralph');
                 const isFemale = voiceName.includes('female') || voiceName.includes('samantha') ||
                                 voiceName.includes('karen') || voiceName.includes('susan') ||
-                                voiceName.includes('victoria') || voiceName.includes('zira');
+                                voiceName.includes('victoria') || voiceName.includes('zira') ||
+                                voiceName.includes('sarah') || voiceName.includes('anna') ||
+                                voiceName.includes('kate') || voiceName.includes('linda');
                 
-                if (targetGender === 'male' && (isMale || (!isFemale && !isMale))) {
+                if (targetGender === 'male' && isMale) {
                     selectedVoice = voice;
                     break;
                 } else if (targetGender === 'female' && isFemale) {
@@ -2575,33 +2701,62 @@ function updateVoiceSelection() {
                     break;
                 }
             }
+            
+            // If no gender match, use first matching voice
+            if (!selectedVoice) {
+                selectedVoice = matchedVoices[0];
+            }
         }
         
-        // Fallback: any voice with matching locale
+        // Final fallback: any voice with matching locale (without gender preference)
         if (!selectedVoice) {
             for (const voice of voices) {
                 const voiceLocale = voice.lang.toLowerCase();
-                if (targetLocales.some(locale => voiceLocale.startsWith(locale.toLowerCase()))) {
+                if (targetLocales.some(locale => {
+                    const localeLower = locale.toLowerCase();
+                    return voiceLocale === localeLower || voiceLocale.startsWith(localeLower + '-') || voiceLocale.startsWith(localeLower + '_');
+                })) {
                     selectedVoice = voice;
                     break;
                 }
             }
         }
         
-        // Final fallback: default voice
+        // Absolute fallback: use any voice if available
         if (!selectedVoice && voices.length > 0) {
-            selectedVoice = voices[0];
+            // Try to prefer a voice that at least matches the base language code
+            const baseLang = voiceSettings.accent.split('-')[0].toLowerCase();
+            for (const voice of voices) {
+                if (voice.lang.toLowerCase().startsWith(baseLang)) {
+                    selectedVoice = voice;
+                    break;
+                }
+            }
+            // If still no match, use first available voice
+            if (!selectedVoice) {
+                selectedVoice = voices[0];
+            }
         }
         
         currentVoice = selectedVoice;
-        console.log('Poseidon: Selected voice:', selectedVoice ? {
-            name: selectedVoice.name,
-            lang: selectedVoice.lang,
-            accent: voiceSettings.accent
-        } : 'none');
+        
+        if (selectedVoice) {
+            console.log('[Poseidon] Voice selection:', {
+                requestedAccent: voiceSettings.accent,
+                targetLocales: targetLocales,
+                matchedVoicesCount: matchedVoices.length,
+                selectedVoice: {
+                    name: selectedVoice.name,
+                    lang: selectedVoice.lang,
+                    accent: voiceSettings.accent
+                }
+            });
+        } else {
+            console.warn('[Poseidon] No voice selected for accent:', voiceSettings.accent);
+        }
         
         // Ensure currentLanguage matches the selected accent
-        if (selectedVoice && voiceSettings.accent) {
+        if (voiceSettings.accent) {
             currentLanguage = voiceSettings.accent;
         }
     };
@@ -2636,8 +2791,10 @@ function speakText(text, speed = null, volume = null) {
     
     // Store the cleaned text that will be spoken (for filtering self-hearing)
     lastSpokenText = cleanText;
-    isSpeaking = true;
     console.log('[Poseidon] Storing spoken text for filtering:', cleanText.substring(0, 100) + (cleanText.length > 100 ? '...' : ''));
+    
+    // Note: We'll stop recognition in utterance.onstart when speech actually begins
+    // This ensures recognition only stops when speech actually starts, not just when we queue it
     
     // Version 3.0.0: Use adaptive parameters
     const speechSpeed = speed !== null ? speed : currentSpeechSpeed;
@@ -2655,28 +2812,39 @@ function speakText(text, speed = null, volume = null) {
         currentSpeechSpeed = Math.max(0.5, Math.min(2.0, adaptedSpeed));
     }
     
-    // Creative Enhancement: Better Hindi text processing
-    // Handle Hindi text more naturally by preserving sentence structure
-    if (voiceSettings.accent === 'hi-IN' || currentLanguage === 'hi-IN') {
-        // For Hindi, preserve natural pauses and sentence boundaries
-        const hindiCleanText = cleanText
-            .replace(/([।।])/g, '. ') // Hindi full stop
-            .replace(/([,])/g, ', ') // Hindi comma
-            .replace(/\s+/g, ' '); // Normalize spaces
-        // Use the cleaned Hindi text
-        cleanText = hindiCleanText;
-    }
-    
     // Version 3.x: Add stress and tone variations to make speech more human-like
     const enhancedText = addSpeechStressAndTone(cleanText, emotionGuidance);
     
     const utterance = new SpeechSynthesisUtterance(enhancedText);
-    utterance.voice = currentVoice;
-    utterance.rate = currentSpeechSpeed;
-    utterance.pitch = emotionGuidance.pitch || 1.0;  // v3.x: Variable pitch based on emotion
+    
+    // Set voice first - this is critical for language support
+    if (currentVoice) {
+        utterance.voice = currentVoice;
+        // If voice has a language, use it; otherwise use the selected accent
+        utterance.lang = currentVoice.lang || voiceSettings.accent || currentLanguage;
+        
+        // Set rate and pitch for all languages
+        utterance.rate = currentSpeechSpeed;
+        utterance.pitch = emotionGuidance.pitch || 1.0;
+        
+        console.log('[Poseidon] Speech synthesis settings:', {
+            voiceName: currentVoice.name,
+            voiceLang: currentVoice.lang,
+            utteranceLang: utterance.lang,
+            selectedAccent: voiceSettings.accent,
+            currentLanguage: currentLanguage,
+            rate: utterance.rate,
+            pitch: utterance.pitch
+        });
+    } else {
+        // Fallback if no voice selected
+        utterance.lang = voiceSettings.accent || currentLanguage || 'en-US';
+        utterance.rate = currentSpeechSpeed;
+        utterance.pitch = emotionGuidance.pitch || 1.0;
+        console.warn('[Poseidon] No voice selected, using lang:', utterance.lang);
+    }
+    
     utterance.volume = currentSpeechVolume;
-    // Use voiceSettings.accent to ensure language matches the selected accent
-    utterance.lang = voiceSettings.accent || currentLanguage;
     
     // Version 3.x: Add pauses and emphasis for more natural speech
     // This is done through text processing since Web Speech API has limited SSML support
@@ -2690,14 +2858,23 @@ function speakText(text, speed = null, volume = null) {
         updatePoseidonStatus('speaking', 'Speaking...');
         isSpeaking = true;
         
-        // Stop recognition while speaking to prevent hearing itself
-        if (recognition && recognitionState === 'listening') {
+        // Stop recognition BEFORE speaking to prevent hearing itself
+        // CRITICAL: Must stop recognition BEFORE speech starts to prevent any queued results
+        if (recognition) {
             try {
-                console.log('[Poseidon] Stopping recognition to prevent self-hearing');
-                recognition.stop();
-                recognitionState = 'paused';
+                const currentState = recognitionState;
+                if (currentState === 'listening' || currentState === 'starting') {
+                    console.log('[Poseidon] Stopping recognition BEFORE speaking to prevent self-hearing (state:', currentState, ')');
+                    recognition.stop();
+                    recognitionState = 'paused';
+                    // Give recognition a moment to fully stop and clear any queued results
+                    // Use setTimeout instead of await since this is in a callback
+                    setTimeout(() => {
+                        console.log('[Poseidon] Recognition should be fully stopped now');
+                    }, 200);
+                }
             } catch (e) {
-                console.warn('[Poseidon] Error stopping recognition:', e);
+                console.warn('[Poseidon] Error stopping recognition before speech:', e);
             }
         }
     };
@@ -2712,40 +2889,85 @@ function speakText(text, speed = null, volume = null) {
         }
         console.log('[Poseidon] Marked speech as finished, will filter matching transcripts for', SPEECH_MATCH_WINDOW_MS, 'ms');
         
-        // After speaking, wait a moment before resuming recognition to prevent hearing echo
+        // After speaking, wait longer before resuming recognition to prevent hearing echo
+        // Increased delay for Electron app (more echo issues) and better self-hearing prevention
         if (poseidonActive && !poseidonPaused) {
-            // Wait 1.5 seconds after speech ends before resuming recognition
-            // This prevents the mic from picking up echo/resonance
+            const isElectron = window.electronAPI !== undefined;
+            // Use moderate delay to prevent echo - reduced from previous values for better responsiveness
+            const resumeDelay = isElectron ? 1500 : 1000;
+            
+            console.log(`[Poseidon] Will resume recognition after ${resumeDelay}ms delay to prevent echo`);
+            
             setTimeout(() => {
                 if (poseidonActive && !poseidonPaused && !isSpeaking) {
-                    if (recognition) {
-                        try {
-                            console.log('[Poseidon] Resuming recognition after speech ended');
-                            recognitionState = 'listening';
-                            updatePoseidonStatus('listening', 'Listening...');
-                            recognition.start();
-                            console.log('[Poseidon] Recognition resumed after speech');
-                        } catch (e) {
-                            console.warn('[Poseidon] Error resuming recognition, will restart:', e);
-                            startRecognitionWithRetry();
-                        }
-                    } else {
-                        console.log('[Poseidon] Recognition instance missing, restarting...');
-                        startRecognitionWithRetry();
-                    }
+                    restartRecognitionAfterSpeech();
+                } else {
+                    console.log('[Poseidon] Not restarting recognition:', {
+                        poseidonActive,
+                        poseidonPaused,
+                        isSpeaking
+                    });
                 }
-            }, 1500); // 1.5 second delay to prevent echo
+            }, resumeDelay);
+        }
+        
+        // Helper function to restart recognition after speech
+        function restartRecognitionAfterSpeech() {
+            // Check circuit breaker first
+            if (serviceNotAllowedDisabled) {
+                console.warn('[Poseidon] Circuit breaker active - not restarting recognition after speech');
+                return;
+            }
+            
+            if (!recognition || !poseidonActive || poseidonPaused || isSpeaking) {
+                console.log('[Poseidon] Cannot restart recognition - conditions not met:', {
+                    hasRecognition: !!recognition,
+                    poseidonActive: poseidonActive,
+                    poseidonPaused: poseidonPaused,
+                    isSpeaking: isSpeaking
+                });
+                return;
+            }
+            
+            try {
+                console.log('[Poseidon] Resuming recognition after speech ended');
+                // Use startRecognitionWithRetry instead of direct start for better error handling
+                // This ensures proper initialization and error handling
+                startRecognitionWithRetry();
+                console.log('[Poseidon] ✅ Recognition restart initiated after speech');
+            } catch (e) {
+                console.warn('[Poseidon] Error resuming recognition, will retry:', e);
+                startRecognitionWithRetry();
+            }
         }
     };
     
     utterance.onerror = (event) => {
         console.error('[Poseidon] ERROR in speech synthesis:', event);
+        console.error('[Poseidon] Speech error details:', {
+            error: event.error,
+            charIndex: event.charIndex,
+            type: event.type
+        });
         isSpeaking = false;
         lastSpokenTime = Date.now();
-        // Return to listening on error
-        if (poseidonActive && !poseidonPaused) {
-            recognitionState = 'listening';
-            updatePoseidonStatus('listening', 'Listening...');
+        
+        // Stop 3D animation on error
+        if (poseidon3D && typeof poseidon3D.stop === 'function') {
+            poseidon3D.stop();
+        }
+        
+        // Return to listening on error, but only restart if not in circuit breaker mode
+        if (poseidonActive && !poseidonPaused && !serviceNotAllowedDisabled) {
+            // Schedule restart after a delay using startRecognitionWithRetry (has circuit breaker checks)
+            setTimeout(() => {
+                if (poseidonActive && !poseidonPaused && !isSpeaking) {
+                    console.log('[Poseidon] Attempting to restart recognition after speech error');
+                    startRecognitionWithRetry();
+                }
+            }, 1000);
+        } else {
+            updatePoseidonStatus('ready', 'Speech Error');
         }
     };
     
@@ -2773,6 +2995,16 @@ async function openPoseidonOverlay() {
     poseidonOverlay.style.zIndex = '10000';
     poseidonOverlay.classList.add('active');
     updatePoseidonStatus('ready', 'Initializing...');
+    
+    // Reset circuit breaker for Electron apps - network errors shouldn't persist
+    const isElectron = window.electronAPI !== undefined;
+    if (isElectron && serviceNotAllowedDisabled) {
+        console.log('[Poseidon] Electron: Resetting circuit breaker on overlay open');
+        serviceNotAllowedDisabled = false;
+        rapidErrorTimes = []; // Clear error tracking
+        serviceNotAllowedRetryCount = 0;
+        lastServiceNotAllowedTime = 0;
+    }
     
     try {
         // Version 3.0.0: Initialize session
@@ -3024,7 +3256,13 @@ async function openPoseidonOverlay() {
                 // Safari-specific: May need different configuration
                 recognition.continuous = true;
                 recognition.interimResults = true;
-                recognition.lang = voiceSettings.accent;
+                // MAJOR ENHANCEMENT: Explicit Hindi recognition language
+                if (voiceSettings.accent === 'hi-IN' || currentLanguage === 'hi-IN') {
+                    recognition.lang = 'hi-IN';
+                    console.log('[Poseidon Hindi] Recognition language explicitly set to Hindi (hi-IN)');
+                } else {
+                    recognition.lang = voiceSettings.accent || currentLanguage || 'en-US';
+                }
                 recognition.maxAlternatives = 1;
                 
                 // Safari-specific: Some versions may need serviceURI set
@@ -3056,7 +3294,19 @@ async function openPoseidonOverlay() {
             // RE-CONFIGURE to ensure settings persist (especially important for Safari)
             recognition.continuous = true;
             recognition.interimResults = true;
-            recognition.lang = voiceSettings.accent;
+            // MAJOR ENHANCEMENT: Explicit Hindi recognition language
+            if (voiceSettings.accent === 'hi-IN' || currentLanguage === 'hi-IN') {
+                recognition.lang = 'hi-IN';
+                console.log('[Poseidon Hindi] Recognition language explicitly set to Hindi (hi-IN) in onstart');
+            } else {
+                // MAJOR ENHANCEMENT: Explicit Hindi recognition language
+                if (voiceSettings.accent === 'hi-IN' || currentLanguage === 'hi-IN') {
+                    recognition.lang = 'hi-IN';
+                    console.log('[Poseidon Hindi] Recognition language explicitly set to Hindi (hi-IN)');
+                } else {
+                    recognition.lang = voiceSettings.accent || currentLanguage || 'en-US';
+                }
+            }
             recognition.maxAlternatives = 1;
             
             // CRITICAL: Start recognition IMMEDIATELY - no delays!
@@ -3099,7 +3349,13 @@ async function openPoseidonOverlay() {
                     // Double-check configuration for Safari
                     recognition.continuous = true;
                     recognition.interimResults = true;
-                    recognition.lang = voiceSettings.accent;
+                    // MAJOR ENHANCEMENT: Explicit Hindi recognition language
+                if (voiceSettings.accent === 'hi-IN' || currentLanguage === 'hi-IN') {
+                    recognition.lang = 'hi-IN';
+                    console.log('[Poseidon Hindi] Recognition language explicitly set to Hindi (hi-IN)');
+                } else {
+                    recognition.lang = voiceSettings.accent || currentLanguage || 'en-US';
+                }
                     
                     // Safari may not support continuous mode - try without it if it fails
                     console.log('[Poseidon] Safari: Attempting to start with continuous mode');
@@ -3201,6 +3457,24 @@ async function openPoseidonOverlay() {
 }
 
 async function startRecognitionWithRetry(maxRetries = 3) {
+    // CRITICAL: Check circuit breaker FIRST to prevent infinite loops
+    // NOTE: Circuit breaker should NOT block Electron apps - network errors in Electron are often transient
+    const isElectron = window.electronAPI !== undefined;
+    if (serviceNotAllowedDisabled && !isElectron) {
+        // Only apply circuit breaker to browser, not Electron
+        console.warn('[Poseidon] 🛑 Circuit breaker is ACTIVE - stopping all recognition attempts to prevent infinite loop');
+        updatePoseidonStatus('ready', 'Service Unavailable (Circuit Breaker Active)');
+        if (poseidonAssistantTranscript) {
+            poseidonAssistantTranscript.textContent = 'Speech recognition service is temporarily unavailable. Please close and reopen Poseidon to try again.';
+        }
+        return; // Exit immediately - do not attempt to start
+    } else if (serviceNotAllowedDisabled && isElectron) {
+        // Reset circuit breaker for Electron - network errors shouldn't trigger it
+        console.log('[Poseidon] Electron: Resetting circuit breaker (network errors are transient in Electron)');
+        serviceNotAllowedDisabled = false;
+        rapidErrorTimes = []; // Clear error tracking
+    }
+    
     if (!recognition) {
         console.error('[Poseidon] ERROR: Cannot start recognition - recognition is null');
         updatePoseidonStatus('ready', 'Error: Recognition not initialized');
@@ -3401,7 +3675,19 @@ async function startRecognitionWithRetry(maxRetries = 3) {
                 current: recognition.lang,
                 expected: voiceSettings.accent
             });
-            recognition.lang = voiceSettings.accent;
+            // MAJOR ENHANCEMENT: Explicit Hindi recognition language
+            if (voiceSettings.accent === 'hi-IN' || currentLanguage === 'hi-IN') {
+                recognition.lang = 'hi-IN';
+                console.log('[Poseidon Hindi] Recognition language explicitly set to Hindi (hi-IN) in onstart');
+            } else {
+                // MAJOR ENHANCEMENT: Explicit Hindi recognition language
+                if (voiceSettings.accent === 'hi-IN' || currentLanguage === 'hi-IN') {
+                    recognition.lang = 'hi-IN';
+                    console.log('[Poseidon Hindi] Recognition language explicitly set to Hindi (hi-IN)');
+                } else {
+                    recognition.lang = voiceSettings.accent || currentLanguage || 'en-US';
+                }
+            }
             configChanged = true;
         }
         if (recognition.maxAlternatives !== 1) {
@@ -3509,11 +3795,25 @@ async function startRecognitionWithRetry(maxRetries = 3) {
                     });
                 }
                 
+                // CRITICAL: Don't retry if circuit breaker is active
+                if (serviceNotAllowedDisabled) {
+                    console.warn('[Poseidon] Circuit breaker active - not retrying recognition start');
+                    updatePoseidonStatus('ready', 'Service Unavailable');
+                    return;
+                }
+                
                 if (retryCount < maxRetries) {
                     retryCount++;
                     const delay = 300 * retryCount; // Increased delay
                     console.log(`[Poseidon] Retrying in ${delay}ms (attempt ${retryCount + 1}/${maxRetries + 1})`);
-                    setTimeout(attemptStart, delay); // Exponential backoff
+                    setTimeout(() => {
+                        // Check circuit breaker again before retry
+                        if (!serviceNotAllowedDisabled && poseidonActive) {
+                            attemptStart();
+                        } else {
+                            console.warn('[Poseidon] Retry cancelled - circuit breaker active or Poseidon inactive');
+                        }
+                    }, delay); // Exponential backoff
                 } else {
                     console.error('[Poseidon] ERROR: Max retries reached, giving up');
                     console.error('[Poseidon] Final retry error details:', {
@@ -4200,6 +4500,74 @@ async function handleVoiceCommand(command) {
     return true; // Command was handled
 }
 
+// Language detection function - detects language from text
+function detectLanguageFromText(text) {
+    if (!text || text.trim().length === 0) {
+        return voiceSettings.accent || 'en-US';
+    }
+    
+    // Hindi (Devanagari script) - Unicode range: 0900-097F
+    if (/[\u0900-\u097F]/.test(text)) {
+        console.log('[Poseidon] Detected Hindi (Devanagari script)');
+        return 'hi-IN';
+    }
+    
+    // Tamil - Unicode range: 0B80-0BFF
+    if (/[\u0B80-\u0BFF]/.test(text)) {
+        console.log('[Poseidon] Detected Tamil');
+        return 'ta-IN';
+    }
+    
+    // Telugu - Unicode range: 0C00-0C7F
+    if (/[\u0C00-\u0C7F]/.test(text)) {
+        console.log('[Poseidon] Detected Telugu');
+        return 'te-IN';
+    }
+    
+    // Chinese/Mandarin - Unicode ranges: 4E00-9FFF (CJK Unified), 3400-4DBF (Extension A)
+    if (/[\u4E00-\u9FFF\u3400-\u4DBF]/.test(text)) {
+        console.log('[Poseidon] Detected Chinese/Mandarin');
+        return 'zh-CN';
+    }
+    
+    // Japanese - Unicode ranges: 3040-309F (Hiragana), 30A0-30FF (Katakana), 4E00-9FFF (Kanji)
+    if (/[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FFF]/.test(text)) {
+        console.log('[Poseidon] Detected Japanese');
+        return 'ja-JP';
+    }
+    
+    // Korean - Unicode range: AC00-D7AF (Hangul Syllables), 1100-11FF (Hangul Jamo)
+    if (/[\uAC00-\uD7AF\u1100-\u11FF]/.test(text)) {
+        console.log('[Poseidon] Detected Korean');
+        return 'ko-KR';
+    }
+    
+    // Spanish - detect common Spanish words/patterns
+    const spanishWords = ['hola', 'gracias', 'por favor', 'adiós', 'sí', 'no', 'qué', 'cómo', 'dónde', 'cuándo'];
+    const textLower = text.toLowerCase();
+    if (spanishWords.some(word => textLower.includes(word))) {
+        console.log('[Poseidon] Detected Spanish');
+        return 'es-ES';
+    }
+    
+    // French - detect common French words/patterns
+    const frenchWords = ['bonjour', 'merci', 's\'il vous plaît', 'au revoir', 'oui', 'non', 'comment', 'où', 'quand'];
+    if (frenchWords.some(word => textLower.includes(word))) {
+        console.log('[Poseidon] Detected French');
+        return 'fr-FR';
+    }
+    
+    // German - detect common German words
+    const germanWords = ['hallo', 'danke', 'bitte', 'auf wiedersehen', 'ja', 'nein', 'wie', 'wo', 'wann'];
+    if (germanWords.some(word => textLower.includes(word))) {
+        console.log('[Poseidon] Detected German');
+        return 'de-DE';
+    }
+    
+    // Default to current language setting or English
+    return voiceSettings.accent || currentLanguage || 'en-US';
+}
+
 // Helper function to process transcript (accessible from recognition handlers)
 async function handlePoseidonTranscript(transcript) {
     if (!transcript || transcript.trim().length === 0) {
@@ -4288,6 +4656,17 @@ async function handlePoseidonTranscript(transcript) {
     // Update status to "Thinking" - we're analyzing the request
     updatePoseidonStatus('thinking', 'Thinking...');
     
+    // Detect language from transcript and update current language
+    const detectedLanguage = detectLanguageFromText(textToProcess);
+    if (detectedLanguage && detectedLanguage !== currentLanguage) {
+        console.log('[Poseidon] Language detected from transcript:', detectedLanguage, '(was:', currentLanguage, ')');
+        currentLanguage = detectedLanguage;
+        // Update voice settings to match detected language for speech synthesis
+        voiceSettings.accent = detectedLanguage;
+        // Update voice selection to get the right voice for this language
+        updateVoiceSelection();
+    }
+    
     // Send to chat API
     try {
         const requestBody = {
@@ -4298,6 +4677,7 @@ async function handlePoseidonTranscript(transcript) {
             model: currentModel,
             tone: getEffectiveTone(),
             system_mode: systemMode,  // Include system mode (latest/stable)
+            response_language: detectedLanguage,  // Tell backend to respond in this language
         };
         
         if (currentModel === 'gem:preview' && activeGemDraft) {
@@ -4341,25 +4721,67 @@ async function handlePoseidonTranscript(transcript) {
             
             // Check if we're in Electron and retry with delay for server startup
             const isElectron = window.electronAPI !== undefined;
-            if (isElectron && (fetchErr.message.includes('Failed to fetch') || fetchErr.message.includes('NetworkError'))) {
-                // Retry once after a short delay (server might still be starting)
-                console.log('[Poseidon] Electron: Retrying request after brief delay...');
-                await new Promise(resolve => setTimeout(resolve, 1000));
+            if (isElectron && (fetchErr.message.includes('Failed to fetch') || fetchErr.message.includes('NetworkError') || fetchErr.message.includes('ECONNREFUSED') || fetchErr.name === 'TypeError')) {
+                // For Electron, use full URL instead of relative path
+                // Electron's fetch sometimes has issues with relative URLs
+                const fullUrl = window.location.origin + '/api/chat';
+                console.log('[Poseidon] Electron: Server connection failed, retrying with full URL:', fullUrl);
+                await new Promise(resolve => setTimeout(resolve, 500)); // Brief delay
                 try {
-                    response = await fetch('/api/chat', {
+                    // Use AbortController for better timeout handling in Electron
+                    const controller = new AbortController();
+                    const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 second timeout
+                    
+                    response = await fetch(fullUrl, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
                         },
-                        body: JSON.stringify(requestBody)
+                        body: JSON.stringify(requestBody),
+                        signal: controller.signal
                     });
-                    console.log('[Poseidon] Retry successful');
+                    clearTimeout(timeoutId);
+                    
+                    if (response.ok) {
+                        console.log('[Poseidon] Electron retry with full URL successful');
+                    } else {
+                        throw new Error(`Server returned error: ${response.status} ${response.statusText}`);
+                    }
                 } catch (retryErr) {
-                    console.error('[Poseidon] Retry also failed:', retryErr);
-                    throw new Error(`Server not ready. Please wait a moment and try again. If the problem persists, the Flask server may not be running on port 5000.`);
+                    console.error('[Poseidon] Electron retry also failed:', retryErr);
+                    // Check if it's a connection error
+                    if (retryErr.name === 'AbortError' || retryErr.message.includes('Failed to fetch') || retryErr.message.includes('NetworkError')) {
+                        throw new Error(`Cannot connect to server. Please ensure the Flask server is running (python3 chatbot/app.py) on port 5000.`);
+                    }
+                    throw new Error(`Network error: ${retryErr.message}. Please check if the Flask server is running.`);
                 }
+            } else if (isElectron) {
+                throw new Error(`Network error in Electron app: ${fetchErr.message}. Please check if the Flask server is running.`);
             } else {
-                throw new Error(`Network error: ${fetchErr.message}`);
+                // Browser: retry once with delay
+                if (fetchErr.message.includes('Failed to fetch') || fetchErr.message.includes('NetworkError') || fetchErr.name === 'TypeError') {
+                    console.log('[Poseidon] Browser network error detected, retrying in 1 second...');
+                    await new Promise(resolve => setTimeout(resolve, 1000));
+                    try {
+                        response = await fetch('/api/chat', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify(requestBody)
+                        });
+                        if (response.ok) {
+                            console.log('[Poseidon] Browser retry successful');
+                        } else {
+                            throw new Error(`Server returned error: ${response.status}`);
+                        }
+                    } catch (retryErr) {
+                        console.error('[Poseidon] Browser retry also failed:', retryErr);
+                        throw new Error(`Cannot connect to server. Please ensure the server is started (python3 chatbot/app.py) and running on port 5000.`);
+                    }
+                } else {
+                    throw new Error(`Network error: ${fetchErr.message}`);
+                }
             }
         }
         
@@ -4407,11 +4829,53 @@ async function handlePoseidonTranscript(transcript) {
             console.error('[Poseidon] ERROR adding user message to UI:', uiErr);
         }
         
-        const responseText = data.response || 'No response received';
+        let responseText = data.response || 'No response received';
         console.log('[Poseidon] Response text:', {
             length: responseText.length,
             preview: responseText.substring(0, 100)
         });
+        
+        // Check if we need to translate the response to match the detected language
+        // Only translate if currentLanguage is set and not English
+        const needsTranslation = currentLanguage && 
+                                 currentLanguage !== 'en-US' && 
+                                 currentLanguage !== 'en-GB' && 
+                                 currentLanguage !== 'en-AU' && 
+                                 currentLanguage !== 'en-IN';
+        
+        if (needsTranslation) {
+            console.log('[Poseidon] Translating response to:', currentLanguage);
+            try {
+                const translateResponse = await fetch('/api/translate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        text: responseText,
+                        target_language: currentLanguage
+                    })
+                });
+                
+                if (translateResponse.ok) {
+                    const translateData = await translateResponse.json();
+                    if (translateData.translated_text) {
+                        console.log('[Poseidon] Translation successful:', {
+                            original: responseText.substring(0, 50) + '...',
+                            translated: translateData.translated_text.substring(0, 50) + '...'
+                        });
+                        responseText = translateData.translated_text;
+                    } else {
+                        console.warn('[Poseidon] Translation returned no translated_text, using original');
+                    }
+                } else {
+                    console.warn('[Poseidon] Translation failed, using original response:', translateResponse.status);
+                }
+            } catch (translateErr) {
+                console.error('[Poseidon] Error translating response:', translateErr);
+                // Continue with original response if translation fails
+            }
+        }
         
         // Store response for repeat command
         lastAssistantResponse = responseText;
@@ -4557,7 +5021,19 @@ function setupRecognitionHandlers() {
             });
             recognition.continuous = true;
             recognition.interimResults = true;
-            recognition.lang = voiceSettings.accent;
+            // MAJOR ENHANCEMENT: Explicit Hindi recognition language
+            if (voiceSettings.accent === 'hi-IN' || currentLanguage === 'hi-IN') {
+                recognition.lang = 'hi-IN';
+                console.log('[Poseidon Hindi] Recognition language explicitly set to Hindi (hi-IN) in onstart');
+            } else {
+                // MAJOR ENHANCEMENT: Explicit Hindi recognition language
+                if (voiceSettings.accent === 'hi-IN' || currentLanguage === 'hi-IN') {
+                    recognition.lang = 'hi-IN';
+                    console.log('[Poseidon Hindi] Recognition language explicitly set to Hindi (hi-IN)');
+                } else {
+                    recognition.lang = voiceSettings.accent || currentLanguage || 'en-US';
+                }
+            }
             recognition.maxAlternatives = 1;
             console.log('[Poseidon] Configuration fixed in onstart');
         }
@@ -4611,9 +5087,28 @@ function setupRecognitionHandlers() {
                 continue;
             }
             
-            const transcript = result[0].transcript || '';
+            let transcript = result[0].transcript || '';
             const isFinal = result.isFinal || false;
             const confidence = result[0].confidence || 0;
+            
+            // MAJOR ENHANCEMENT: Hindi-specific transcript processing
+            if (voiceSettings.accent === 'hi-IN' || currentLanguage === 'hi-IN' || recognition.lang === 'hi-IN') {
+                // Clean and normalize Hindi transcript
+                transcript = transcript.trim();
+                
+                // Handle common Hindi recognition issues
+                // Fix spacing issues in Hindi text
+                transcript = transcript.replace(/\s+/g, ' ').trim();
+                
+                // Preserve Devanagari script characters properly
+                // Ensure proper spacing around punctuation
+                transcript = transcript
+                    .replace(/\s+([।,।])/g, '$1') // Remove space before punctuation
+                    .replace(/([।,।])\s+/g, '$1 ') // Add space after punctuation
+                    .trim();
+                
+                console.log(`[Poseidon Hindi] Processed Hindi transcript: "${transcript}"`);
+            }
             
             // DEBUG: Log what Poseidon hears
             console.log(`🎤 [Poseidon HEARD] Result ${i}: isFinal=${isFinal}, transcript="${transcript}", confidence=${confidence}, length=${transcript.length}`);
@@ -4732,8 +5227,18 @@ function setupRecognitionHandlers() {
         console.log('[Poseidon] Pending transcript:', pendingTranscript);
         console.log('[Poseidon] Transcript processing:', transcriptProcessing);
         
-        // Process pending transcript after a short delay to allow final results
+        // Reset speech detected flag and status after a short delay
+        // This allows time for final results to come in
         setTimeout(() => {
+            speechDetected = false;
+            
+            // Reset status back to normal "Listening..." if we're not processing
+            // If processing, status will be updated by handlePoseidonTranscript to "Thinking..."
+            if (!transcriptProcessing && poseidonActive && !poseidonPaused && recognitionState !== 'processing') {
+                updatePoseidonStatus('listening', 'Listening...');
+                console.log('[Poseidon] Status reset to normal listening after speech end');
+            }
+            
             const currentPending = pendingTranscript?.trim() || '';
             console.log('[Poseidon] Checking pending transcript after speech end:', currentPending);
             
@@ -4744,7 +5249,7 @@ function setupRecognitionHandlers() {
             } else {
                 console.log('[Poseidon] Not processing - pending:', currentPending.length, 'processing:', transcriptProcessing, 'active:', poseidonActive);
             }
-        }, 800); // Increased delay to allow final results
+        }, 800); // Delay to allow final results
     };
     
     recognition.onsoundstart = () => {
@@ -4756,8 +5261,14 @@ function setupRecognitionHandlers() {
     
     recognition.onsoundend = () => {
         console.log('[Poseidon] ===== SOUND END DETECTED =====');
-        // Check if we have pending transcript to process
+        // Reset status after sound ends
         setTimeout(() => {
+            speechDetected = false;
+            if (!transcriptProcessing && poseidonActive && !poseidonPaused && recognitionState !== 'processing') {
+                updatePoseidonStatus('listening', 'Listening...');
+            }
+            
+            // Check if we have pending transcript to process
             const currentPending = pendingTranscript?.trim() || '';
             if (currentPending.length > 0 && !transcriptProcessing && poseidonActive) {
                 console.log('[Poseidon] Processing pending transcript after sound end:', currentPending);
@@ -4921,8 +5432,41 @@ function setupRecognitionHandlers() {
             updatePoseidonStatus('ready', 'Permission Required');
         } else if (event.error === 'network') {
             console.error('[Poseidon] ERROR: Network error in recognition');
-            errorMsg = 'Network error. Please check your connection.';
-            shouldRestart = true;
+            
+            // CRITICAL: Check circuit breaker before restarting on network errors
+            // NOTE: Circuit breaker should NOT trigger on network errors in Electron app
+            // Network errors in Electron are often transient and not related to speech recognition service
+            const isElectron = window.electronAPI !== undefined;
+            
+            if (serviceNotAllowedDisabled && !isElectron) {
+                // Only apply circuit breaker to network errors in browser, not Electron
+                console.warn('[Poseidon] Circuit breaker active - not restarting on network error');
+                errorMsg = 'Network error. Speech recognition service is temporarily unavailable.';
+                shouldRestart = false;
+                shouldSpeak = true;
+            } else if (!isElectron) {
+                // Track network errors for circuit breaker (browser only)
+                const now = Date.now();
+                rapidErrorTimes.push(now);
+                rapidErrorTimes = rapidErrorTimes.filter(time => now - time < RAPID_ERROR_WINDOW_MS);
+                
+                // If too many network errors, trigger circuit breaker (browser only)
+                if (rapidErrorTimes.length >= MAX_RAPID_ERRORS) {
+                    console.error(`[Poseidon] 🛑 CIRCUIT BREAKER TRIGGERED: ${rapidErrorTimes.length} network errors in ${RAPID_ERROR_WINDOW_MS}ms`);
+                    serviceNotAllowedDisabled = true;
+                    errorMsg = 'Multiple network errors detected. Speech recognition service is temporarily unavailable. Please close and reopen Poseidon.';
+                    shouldRestart = false;
+                    shouldSpeak = true;
+                } else {
+                    errorMsg = 'Network error. Retrying...';
+                    shouldRestart = true;
+                }
+            } else {
+                // Electron: Don't trigger circuit breaker on network errors, just retry
+                console.log('[Poseidon] Electron: Network error detected, will retry (circuit breaker disabled for Electron)');
+                errorMsg = 'Network error. Retrying...';
+                shouldRestart = true;
+            }
         } else if (event.error === 'aborted') {
             // Recognition was stopped, don't show error
             console.log('[Poseidon] Recognition aborted (normal operation)');
@@ -5232,7 +5776,13 @@ function setupRecognitionHandlers() {
                             // CRITICAL: Configure IMMEDIATELY after creation
                             recognition.continuous = true;
                             recognition.interimResults = true;
-                            recognition.lang = voiceSettings.accent;
+                            // MAJOR ENHANCEMENT: Explicit Hindi recognition language
+                if (voiceSettings.accent === 'hi-IN' || currentLanguage === 'hi-IN') {
+                    recognition.lang = 'hi-IN';
+                    console.log('[Poseidon Hindi] Recognition language explicitly set to Hindi (hi-IN)');
+                } else {
+                    recognition.lang = voiceSettings.accent || currentLanguage || 'en-US';
+                }
                             recognition.maxAlternatives = 1;
                             
                             console.log('[Poseidon] Recognition created and configured:', {
@@ -5247,7 +5797,13 @@ function setupRecognitionHandlers() {
                             // RE-CONFIGURE to ensure settings persist (critical for Safari)
                             recognition.continuous = true;
                             recognition.interimResults = true;
-                            recognition.lang = voiceSettings.accent;
+                            // MAJOR ENHANCEMENT: Explicit Hindi recognition language
+                if (voiceSettings.accent === 'hi-IN' || currentLanguage === 'hi-IN') {
+                    recognition.lang = 'hi-IN';
+                    console.log('[Poseidon Hindi] Recognition language explicitly set to Hindi (hi-IN)');
+                } else {
+                    recognition.lang = voiceSettings.accent || currentLanguage || 'en-US';
+                }
                             recognition.maxAlternatives = 1;
                             
                             // Safari-specific: Ensure serviceURI is not set (let Safari use default)
@@ -5317,7 +5873,13 @@ function setupRecognitionHandlers() {
                                     if (isSafariRecovery) {
                                         recognition.continuous = true;
                                         recognition.interimResults = true;
-                                        recognition.lang = voiceSettings.accent;
+                                        // MAJOR ENHANCEMENT: Explicit Hindi recognition language
+                if (voiceSettings.accent === 'hi-IN' || currentLanguage === 'hi-IN') {
+                    recognition.lang = 'hi-IN';
+                    console.log('[Poseidon Hindi] Recognition language explicitly set to Hindi (hi-IN)');
+                } else {
+                    recognition.lang = voiceSettings.accent || currentLanguage || 'en-US';
+                }
                                         console.log('[Poseidon] Safari: Re-verified config before start in recovery');
                                     }
                                     
@@ -5451,9 +6013,16 @@ function setupRecognitionHandlers() {
             }
         }
         
-        if (shouldRestart && poseidonActive && !poseidonPaused) {
+        // CRITICAL: Don't restart if circuit breaker is active
+        if (shouldRestart && poseidonActive && !poseidonPaused && !serviceNotAllowedDisabled) {
             console.log('[Poseidon] Scheduling recognition restart after error');
             setTimeout(() => {
+                // Double-check circuit breaker before restarting
+                if (serviceNotAllowedDisabled) {
+                    console.warn('[Poseidon] Circuit breaker active - cancelling scheduled restart');
+                    return;
+                }
+                
                 if (poseidonActive && !poseidonPaused && recognition) {
                     try {
                         console.log('[Poseidon] Attempting to restart recognition after error');

@@ -1,56 +1,18 @@
 [
   {
-    "task": "text_generation",
-    "text": "Load Game Suite",
-    "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "Draft a polite email about hi",
-    "label": null
-  },
-  {
-    "task": "text_generation",
+    "task": "sentiment_analysis",
     "text": "Explain the concept of physics",
-    "label": null
+    "label": 0
   },
   {
     "task": "text_generation",
-    "text": "Load Office Suite",
-    "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "Create an image of tomatoe",
-    "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "Create an image of cricket sport",
+    "text": "another angle",
     "label": null
   },
   {
     "task": "text_classification",
-    "text": "LEt's Play games!",
-    "label": 1
-  },
-  {
-    "task": "question_answering",
-    "text": "What is programming? programming is an important concept.",
-    "label": {
-      "start": 21,
-      "end": 32
-    }
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "I find natural language processing interesting and valuable.",
-    "label": 2
-  },
-  {
-    "task": "text_generation",
-    "text": "Create an image of boy",
-    "label": null
+    "text": "Create an image of tomatoe",
+    "label": 0
   },
   {
     "task": "text_generation",
@@ -59,8 +21,26 @@
   },
   {
     "task": "text_classification",
-    "text": "Create an image of boy",
-    "label": 0
+    "text": "What is artificial intelligence?",
+    "label": 1
+  },
+  {
+    "task": "question_answering",
+    "text": "What is natural language processing? natural language processing is an important concept.",
+    "label": {
+      "start": 37,
+      "end": 64
+    }
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "create an image of fun*",
+    "label": 2
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Load game suite",
+    "label": 2
   },
   {
     "task": "sentiment_analysis",
@@ -68,54 +48,124 @@
     "label": 0
   },
   {
+    "task": "sentiment_analysis",
+    "text": "Create an image of dog.",
+    "label": 0
+  },
+  {
+    "task": "text_generation",
+    "text": "Load game suite",
+    "label": null
+  },
+  {
     "task": "text_classification",
+    "text": "So what's up",
+    "label": 1
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Draft a polite email about hi",
+    "label": 1
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "So what's up",
+    "label": 2
+  },
+  {
+    "task": "text_classification",
+    "text": "What is a shield volcano?",
+    "label": 1
+  },
+  {
+    "task": "text_generation",
+    "text": "hora hay pecho es",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "create an image of india",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "Draft a polite email about hi",
+    "label": 1
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "I find machine learning interesting and valuable.",
+    "label": 1
+  },
+  {
+    "task": "text_generation",
+    "text": "create an image of india",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
     "text": "Create an image",
     "label": 1
   },
   {
     "task": "text_classification",
-    "text": "What is science?",
+    "text": "Another angle",
     "label": 1
   },
   {
-    "task": "sentiment_analysis",
+    "task": "text_generation",
     "text": "Nothing much",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "Explain artificial intelligence",
+    "label": null
+  },
+  {
+    "task": "text_classification",
+    "text": "hora hay pecho es",
     "label": 0
+  },
+  {
+    "task": "text_generation",
+    "text": "Create image of dog",
+    "label": null
+  },
+  {
+    "task": "text_classification",
+    "text": "Here is an image of dog I found: ![dog](https://source.unsplash.com/960x540/?dog) I can search again or adjust it - just tell me how you want it changed.",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "Create an image of boy",
+    "label": 1
+  },
+  {
+    "task": "text_classification",
+    "text": "Create an image of thor",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "another angle",
+    "label": 1
+  },
+  {
+    "task": "text_generation",
+    "text": "What's the weather in Sunnyvale?",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "Create an image of blah",
+    "label": null
   },
   {
     "task": "text_classification",
     "text": "Create an image of a cat",
     "label": 0
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "Draft a polite email about hi",
-    "label": 2
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "Let's play games",
-    "label": 0
-  },
-  {
-    "task": "text_generation",
-    "text": "Create an image of map",
-    "label": null
-  },
-  {
-    "task": "text_classification",
-    "text": "Let's play games",
-    "label": 1
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "another angle",
-    "label": 2
-  },
-  {
-    "task": "text_generation",
-    "text": "Nothing much",
-    "label": null
   },
   {
     "task": "question_answering",
@@ -127,48 +177,43 @@
   },
   {
     "task": "text_generation",
+    "text": "Explain deep learning",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "What is bold text",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "create an image of fun*",
+    "label": null
+  },
+  {
+    "task": "text_classification",
+    "text": "create an image of india",
+    "label": 1
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Here is an image of dog I found: ![dog](https://source.unsplash.com/960x540/?dog) I can search again or adjust it - just tell me how you want it changed.",
+    "label": 1
+  },
+  {
+    "task": "text_classification",
+    "text": "Create an image of dog",
+    "label": 1
+  },
+  {
+    "task": "text_classification",
+    "text": "What is science?",
+    "label": 1
+  },
+  {
+    "task": "text_generation",
     "text": "Explain natural language processing",
     "label": null
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "Is Ayaan is a silly guy ?",
-    "label": 1
-  },
-  {
-    "task": "text_classification",
-    "text": "What is machine learning?",
-    "label": 0
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "Create image of dog",
-    "label": 2
-  },
-  {
-    "task": "text_classification",
-    "text": "Load office suite",
-    "label": 1
-  },
-  {
-    "task": "text_generation",
-    "text": "LEt's Play games!",
-    "label": null
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "Load game suite",
-    "label": 2
-  },
-  {
-    "task": "text_generation",
-    "text": "What is science?",
-    "label": null
-  },
-  {
-    "task": "text_classification",
-    "text": "What is computer science?",
-    "label": 1
   },
   {
     "task": "text_classification",
@@ -176,23 +221,141 @@
     "label": 0
   },
   {
-    "task": "sentiment_analysis",
-    "text": "Create an image",
+    "task": "text_classification",
+    "text": "Nothing much",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "What's the weather in Sunnyvale?",
     "label": 1
   },
   {
     "task": "sentiment_analysis",
-    "text": "What is science?",
-    "label": 2
+    "text": "Summarize this in 3 bullet points: Thor 1.0 Result Setter\nDefine authoritative responses for Thor before conversations begin\n810\nTOTAL RESULT PAIRS\nRESULT INPUT MODES\n\nSINGLE PAIR\nTRAINX CODE\nTRAINX CODE\n\nGENERATE WITH TRAINX\nGenerated 1 result pair via TrainX. Review them below.\nNeed syntax help? Review the trainx/trainx_1_0.md guide. TrainX can fan-out aliases, iterate over lists, and produce entire datasets in a single run.\nRESULT LIBRARY\n\n\nQ: Do you know Ayaan?\nA: Yes, Yes.\nEDIT\nDELETE\nQ: Ho",
+    "label": 1
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "LEt's Play games!",
+    "label": 0
   },
   {
     "task": "text_classification",
+    "text": "Load Office Suite",
+    "label": 1
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Create an image of boy",
+    "label": 2
+  },
+  {
+    "task": "text_generation",
     "text": "Create an image of dog",
-    "label": 0
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Create an image of a cat",
+    "label": 1
+  },
+  {
+    "task": "question_answering",
+    "text": "What is programming? programming is an important concept.",
+    "label": {
+      "start": 21,
+      "end": 32
+    }
+  },
+  {
+    "task": "text_generation",
+    "text": "Load Office Suite",
+    "label": null
   },
   {
     "task": "sentiment_analysis",
     "text": "Create an image of dog",
+    "label": 2
+  },
+  {
+    "task": "text_generation",
+    "text": "Create an image of tomatoe",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "What is science?",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "Create an image of dog.",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "What is bold text",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "hora hay pecho es",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "What is programming?",
+    "label": 1
+  },
+  {
+    "task": "text_classification",
+    "text": "Create image of dog",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "What is science?",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "Create an image of Thor",
+    "label": 0
+  },
+  {
+    "task": "text_generation",
+    "text": "Explain machine learning",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "I find deep learning interesting and valuable.",
+    "label": 2
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Is Ayaan is a silly guy ?",
+    "label": 1
+  },
+  {
+    "task": "text_generation",
+    "text": "Another angle",
+    "label": null
+  },
+  {
+    "task": "text_classification",
+    "text": "Is Ayaan is a silly guy ?",
+    "label": 1
+  },
+  {
+    "task": "text_generation",
+    "text": "Here is an image of dog I found: ![dog](https://source.unsplash.com/960x540/?dog) I can search again or adjust it - just tell me how you want it changed.",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Create an image of tomatoe",
     "label": 1
   },
   {
@@ -201,107 +364,24 @@
     "label": null
   },
   {
-    "task": "text_generation",
-    "text": "Is Ayaan is a silly guy ?",
-    "label": null
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "Another angle",
-    "label": 2
-  },
-  {
     "task": "text_classification",
-    "text": "What is deep learning?",
+    "text": "What is machine learning?",
     "label": 0
   },
   {
     "task": "text_generation",
-    "text": "another angle",
-    "label": null
-  },
-  {
-    "task": "question_answering",
-    "text": "What is natural language processing? natural language processing is an important concept.",
-    "label": {
-      "start": 37,
-      "end": 64
-    }
-  },
-  {
-    "task": "text_generation",
-    "text": "Load game suite",
-    "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "create an image of ice cream",
-    "label": null
-  },
-  {
-    "task": "text_classification",
-    "text": "What's the weather in Sunnyvale?",
-    "label": 1
-  },
-  {
-    "task": "text_classification",
-    "text": "So what's up",
-    "label": 1
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "create an image of fun*",
-    "label": 1
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "I find programming interesting and valuable.",
-    "label": 2
-  },
-  {
-    "task": "text_classification",
-    "text": "Draft a polite email about hi",
-    "label": 0
-  },
-  {
-    "task": "text_generation",
-    "text": "create an image of fun*",
-    "label": null
-  },
-  {
-    "task": "text_classification",
-    "text": "Create an image of Thor",
-    "label": 1
-  },
-  {
-    "task": "sentiment_analysis",
     "text": "LEt's Play games!",
-    "label": 2
+    "label": null
   },
   {
     "task": "text_classification",
-    "text": "Create an image of tomatoe",
-    "label": 1
-  },
-  {
-    "task": "text_classification",
-    "text": "What is bold text",
+    "text": "LEt's Play games!",
     "label": 0
   },
   {
-    "task": "text_generation",
-    "text": "create an image of india",
-    "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "Another angle",
-    "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "Let's play games",
-    "label": null
+    "task": "sentiment_analysis",
+    "text": "another angle",
+    "label": 0
   },
   {
     "task": "text_generation",
@@ -310,22 +390,92 @@
   },
   {
     "task": "text_classification",
-    "text": "Load Game Suite",
+    "text": "Create an image of blah",
     "label": 1
-  },
-  {
-    "task": "text_generation",
-    "text": "Create an image of dog.",
-    "label": null
   },
   {
     "task": "text_classification",
-    "text": "Create an image of thor",
+    "text": "What is bold text",
     "label": 1
   },
   {
+    "task": "sentiment_analysis",
+    "text": "Create an image of blah",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Load Office Suite",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "What is a shield volcano?",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "What's the weather in Sunnyvale?",
+    "label": 1
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Create image of dog",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "I find computer science interesting and valuable.",
+    "label": 2
+  },
+  {
     "task": "text_generation",
+    "text": "Is Ayaan is a silly guy ?",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "I find programming interesting and valuable.",
+    "label": 2
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "I find natural language processing interesting and valuable.",
+    "label": 2
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "create an image of ice cream",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
     "text": "Load office suite",
+    "label": 2
+  },
+  {
+    "task": "text_generation",
+    "text": "Create an image of cricket sport",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "Draft a polite email about hi",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "Create an image of thor",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Create an image of thor",
+    "label": 0
+  },
+  {
+    "task": "text_generation",
+    "text": "What is a shield volcano?",
     "label": null
   },
   {
@@ -337,122 +487,29 @@
     }
   },
   {
-    "task": "sentiment_analysis",
-    "text": "Load office suite",
-    "label": 0
-  },
-  {
-    "task": "text_generation",
-    "text": "Here is an image of dog I found: ![dog](https://source.unsplash.com/960x540/?dog) I can search again or adjust it - just tell me how you want it changed.",
-    "label": null
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "create an image of india",
-    "label": 0
-  },
-  {
-    "task": "text_generation",
-    "text": "So what's up",
-    "label": null
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "hey Atlas what's the date today",
+    "task": "text_classification",
+    "text": "create an image of fun*",
     "label": 0
   },
   {
     "task": "text_classification",
+    "text": "Load office suite",
+    "label": 1
+  },
+  {
+    "task": "text_generation",
+    "text": "Load Game Suite",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
     "text": "Another angle",
     "label": 1
   },
   {
-    "task": "sentiment_analysis",
-    "text": "Here is an image of dog I found: ![dog](https://source.unsplash.com/960x540/?dog) I can search again or adjust it - just tell me how you want it changed.",
-    "label": 0
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "I find machine learning interesting and valuable.",
-    "label": 0
-  },
-  {
-    "task": "question_answering",
-    "text": "What is artificial intelligence? artificial intelligence is an important concept.",
-    "label": {
-      "start": 33,
-      "end": 56
-    }
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "So what's up",
-    "label": 2
-  },
-  {
-    "task": "text_classification",
-    "text": "create an image of india",
-    "label": 0
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "I find computer science interesting and valuable.",
-    "label": 0
-  },
-  {
-    "task": "text_classification",
-    "text": "What is a shield volcano?",
-    "label": 0
-  },
-  {
-    "task": "text_classification",
-    "text": "another angle",
-    "label": 0
-  },
-  {
     "task": "text_generation",
-    "text": "Create an image of blah",
+    "text": "create an image of ice cream",
     "label": null
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "I find deep learning interesting and valuable.",
-    "label": 2
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "Explain the concept of physics",
-    "label": 1
-  },
-  {
-    "task": "text_generation",
-    "text": "hey Atlas what's the date today",
-    "label": null
-  },
-  {
-    "task": "text_classification",
-    "text": "Explain the concept of physics",
-    "label": 0
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "Create an image of blah",
-    "label": 0
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "Create an image of a cat",
-    "label": 1
-  },
-  {
-    "task": "text_generation",
-    "text": "Explain machine learning",
-    "label": null
-  },
-  {
-    "task": "text_classification",
-    "text": "Here is an image of dog I found: ![dog](https://source.unsplash.com/960x540/?dog) I can search again or adjust it - just tell me how you want it changed.",
-    "label": 0
   },
   {
     "task": "text_classification",
@@ -460,71 +517,8 @@
     "label": 1
   },
   {
-    "task": "text_classification",
-    "text": "Create an image of blah",
-    "label": 1
-  },
-  {
-    "task": "text_classification",
-    "text": "Create image of dog",
-    "label": 1
-  },
-  {
-    "task": "text_generation",
-    "text": "Create image of dog",
-    "label": null
-  },
-  {
     "task": "sentiment_analysis",
-    "text": "Summarize this in 3 bullet points: Thor 1.0 Result Setter\nDefine authoritative responses for Thor before conversations begin\n810\nTOTAL RESULT PAIRS\nRESULT INPUT MODES\n\nSINGLE PAIR\nTRAINX CODE\nTRAINX CODE\n\nGENERATE WITH TRAINX\nGenerated 1 result pair via TrainX. Review them below.\nNeed syntax help? Review the trainx/trainx_1_0.md guide. TrainX can fan-out aliases, iterate over lists, and produce entire datasets in a single run.\nRESULT LIBRARY\n\n\nQ: Do you know Ayaan?\nA: Yes, Yes.\nEDIT\nDELETE\nQ: Ho",
-    "label": 0
-  },
-  {
-    "task": "text_classification",
-    "text": "Create an image of map",
+    "text": "Load Game Suite",
     "label": 1
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "I find artificial intelligence interesting and valuable.",
-    "label": 2
-  },
-  {
-    "task": "text_generation",
-    "text": "Create an image of dog",
-    "label": null
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "Create an image of dog.",
-    "label": 1
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "Create an image of boy",
-    "label": 1
-  },
-  {
-    "task": "text_classification",
-    "text": "Summarize this in 3 bullet points: Thor 1.0 Result Setter\nDefine authoritative responses for Thor before conversations begin\n810\nTOTAL RESULT PAIRS\nRESULT INPUT MODES\n\nSINGLE PAIR\nTRAINX CODE\nTRAINX CODE\n\nGENERATE WITH TRAINX\nGenerated 1 result pair via TrainX. Review them below.\nNeed syntax help? Review the trainx/trainx_1_0.md guide. TrainX can fan-out aliases, iterate over lists, and produce entire datasets in a single run.\nRESULT LIBRARY\n\n\nQ: Do you know Ayaan?\nA: Yes, Yes.\nEDIT\nDELETE\nQ: Ho",
-    "label": 0
-  },
-  {
-    "task": "text_generation",
-    "text": "Create an image",
-    "label": null
-  },
-  {
-    "task": "text_classification",
-    "text": "What is natural language processing?",
-    "label": 0
-  },
-  {
-    "task": "question_answering",
-    "text": "What is deep learning? deep learning is an important concept.",
-    "label": {
-      "start": 23,
-      "end": 36
-    }
   }
 ]

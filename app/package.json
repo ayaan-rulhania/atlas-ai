@@ -1,6 +1,6 @@
 {
   "name": "atlas-macos",
-  "version": "1.0.0",
+  "version": "1.4.1",
   "description": "Atlas AI - Native macOS Application",
   "main": "main.js",
   "scripts": {

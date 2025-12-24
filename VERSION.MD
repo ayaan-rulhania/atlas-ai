@@ -9,6 +9,48 @@ This file tracks **major changes** made to this project over time.
 
 ---
 
+## 2025-12-26 (Version 1.3.3 - Major Enhancements Update)
+- **Cross-Chat Memory System**: Implemented comprehensive user memory system that stores preferences, facts, and conversation topics across all chats
+  - Automatically extracts user preferences from conversations (likes, dislikes, interests, profession, location)
+  - Injects relevant user context into queries for personalized responses
+  - Commands: `/remember <info>` to save information, `/forget` to clear memory, `/info` to see what Atlas knows about you
+- **Enhanced Command System**: Added comprehensive command shortcuts for better user experience
+  - `/help` - Show detailed help with all available commands
+  - `/clear` - Clear current chat
+  - `/remember <information>` - Save information for future reference
+  - `/forget` - Clear saved preferences and memory
+  - `/info` - Display what Atlas knows about the user
+  - `/think` - Toggle Think Deeper mode
+  - `/tone <style>` - Set response tone (friendly, calm, formal, critical, normal)
+- **Improved Help Modal**: Complete redesign of "How to use Atlas" pop-up with beautiful formatting
+  - Comprehensive sections: Getting Started, Quick Commands, Features & Tips, Best Practices
+  - Better visual design with icons, code blocks, and improved readability
+  - More detailed explanations and actionable tips
+- **Gems localStorage Fix**: Fixed gems not being saved in localStorage
+  - Gems now cached in localStorage for instant display on page load
+  - Automatic cache updates after create, update, or delete operations
+  - Fallback to cached gems if API fails for better offline experience
+- **Major Hindi Language Enhancements**: Comprehensive improvements to Hindi support in Poseidon
+  - Advanced Hindi text processing with Devanagari script handling
+  - Enhanced voice selection with prioritization of Neural/Wavenet Hindi voices
+  - Optimized speech synthesis with proper pitch, rate, and punctuation handling
+  - Explicit Hindi language settings for recognition (hi-IN)
+  - Better Hindi transcript processing and normalization
+  - Detailed Hindi-specific logging and debugging
+- **Enhanced Common Sense Prioritization**: Improved reasoning before web searches
+  - Expanded common sense patterns to skip unnecessary searches
+  - Better handling of math questions, time/date queries, and conversational statements
+  - Prioritizes common sense responses before triggering web research
+  - Enhanced common sense handler with more intelligent detection
+
+### Notes
+- **User Memory**: Stored in `user_memory.json`, automatically extracts and saves user information from conversations
+- **Commands**: All new commands work alongside existing `/office`, `/arcade`, `/image` commands
+- **Hindi Support**: Optimized for Devanagari script, includes proper punctuation handling and voice selection
+- **Common Sense**: Reduces unnecessary web searches for questions that can be answered with common knowledge
+
+---
+
 ## 2025-12-19 (Thor 1.1 Release & Poseidon Circuit Breaker - Major Update)
 - **Thor 1.1 Release**: Created Thor 1.1 as the latest model with enhanced features, defaulting to Thor 1.1 for all new conversations
   - Enhanced model architecture: 1024 hidden size, 16 layers, 16 attention heads, 1024 max position embeddings

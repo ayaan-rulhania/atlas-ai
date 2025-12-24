@@ -1,7 +1,54 @@
 {
   "currentVersion": "1.0.0",
-  "latestVersion": "1.3.0",
+  "latestVersion": "1.4.1",
   "updates": [
+    {
+      "version": "1.4.1",
+      "date": "2025-12-26",
+      "description": "Poseidon Hindi Fix - Simplified Hindi language handling to work like other languages",
+      "features": [
+        "Fixed Hindi speech synthesis by removing special handling",
+        "Hindi now uses standard voice selection and speech settings",
+        "Simplified language support for consistent behavior across all languages"
+      ]
+    },
+    {
+      "version": "1.4.0",
+      "date": "2025-12-26",
+      "description": "Poseidon Multi-Language Support & Network Fixes - Full translation support for Indian languages, improved Electron network handling, and enhanced speech synthesis.",
+      "features": [
+        "Added automatic translation for Poseidon responses to match detected language",
+        "Full support for Hindi, Tamil, Telugu, and other Indian languages",
+        "Fixed network errors in Electron app with improved URL handling",
+        "Enhanced speech synthesis with proper voice selection for all languages",
+        "Translation API endpoint for real-time response translation",
+        "Improved language detection from user transcripts"
+      ]
+    },
+    {
+      "version": "1.3.3",
+      "date": "2025-12-26",
+      "description": "Major Enhancements - Memory System, Enhanced Commands, Improved Help, Hindi Support, and Common Sense Improvements",
+      "features": [
+        "Cross-chat memory system - Atlas remembers your preferences and information across all chats",
+        "Enhanced command system - Added /help, /clear, /remember, /forget, /info, /think, /tone commands",
+        "Improved 'How to use Atlas' pop-up - Beautifully redesigned with comprehensive sections and better formatting",
+        "Fixed gems localStorage saving - Gems now properly cached for faster loading",
+        "Major Hindi language enhancements - Advanced text processing, better voice selection, optimized speech synthesis",
+        "Enhanced common sense prioritization - Better reasoning before web searches for natural conversation flow"
+      ]
+    },
+    {
+      "version": "1.3.1",
+      "date": "2025-12-24",
+      "description": "Poseidon 3D UI Beta - Added advanced 3D Poseidon animation option",
+      "features": [
+        "Added 3D Poseidon UI (Beta) option in settings",
+        "Enhanced Poseidon voice assistant with optional 3D animation",
+        "Improved update checking to only show uninstalled updates",
+        "Better network error handling for Electron app"
+      ]
+    },
     {
       "version": "1.3.0",
       "date": "2025-12-23",

@@ -366,6 +366,21 @@
         // Check if running in Electron
         const isElectron = window.electronAPI !== undefined;
         
+        // Version comparison helper function
+        const compareVersions = (v1, v2) => {
+            const parts1 = v1.split('.').map(Number);
+            const parts2 = v2.split('.').map(Number);
+            const maxLength = Math.max(parts1.length, parts2.length);
+            
+            for (let i = 0; i < maxLength; i++) {
+                const part1 = parts1[i] || 0;
+                const part2 = parts2[i] || 0;
+                if (part1 > part2) return 1;
+                if (part1 < part2) return -1;
+            }
+            return 0;
+        };
+        
         // Update checking logic
         let currentVersion = '1.0.0';
         
@@ -409,7 +424,10 @@
                 
                 checkingIcon.classList.remove('active');
                 
-                if (versionData.latestVersion && versionData.latestVersion !== currentVersion) {
+                // Use version comparison to determine if update is available
+                const hasUpdate = versionData.latestVersion && compareVersions(versionData.latestVersion, currentVersion) > 0;
+                
+                if (hasUpdate) {
                     // Update available
                     upToDateIcon.classList.remove('active');
                     statusEl.textContent = `Update available: v${versionData.latestVersion}`;
@@ -417,18 +435,27 @@
                     updateButton.style.display = 'inline-flex';
                     updateButton.textContent = 'Download Update';
                     
-                    // Show update details
+                    // Show update details - only show updates newer than current version
                     if (updatesList && versionData.updates && versionData.updates.length > 0) {
-                        updatesList.innerHTML = versionData.updates.map(update => `
-                            <div class="update-item">
-                                <div class="update-header">
-                                    <span class="update-version">v${update.version}</span>
-                                    <span class="update-date">${update.date}</span>
+                        // Filter to only show versions newer than current
+                        const newerUpdates = versionData.updates.filter(update => {
+                            return compareVersions(update.version, currentVersion) > 0;
+                        });
+                        
+                        if (newerUpdates.length > 0) {
+                            updatesList.innerHTML = newerUpdates.map(update => `
+                                <div class="update-item">
+                                    <div class="update-header">
+                                        <span class="update-version">v${update.version}</span>
+                                        <span class="update-date">${update.date}</span>
+                                    </div>
+                                    <div class="update-description">${update.description}</div>
+                                    ${update.features ? `<ul class="update-features">${update.features.map(f => `<li>${f}</li>`).join('')}</ul>` : ''}
                                 </div>
-                                <div class="update-description">${update.description}</div>
-                                ${update.features ? `<ul class="update-features">${update.features.map(f => `<li>${f}</li>`).join('')}</ul>` : ''}
-                            </div>
-                        `).join('');
+                            `).join('');
+                        } else {
+                            updatesList.innerHTML = '';
+                        }
                     }
                 } else {
                     // Up to date
@@ -436,13 +463,28 @@
                     statusEl.textContent = `Atlas is up to date (v${currentVersion})`;
                     statusEl.className = 'update-status up-to-date';
                     updateButton.style.display = 'none';
+                    // Clear updates list when up to date
+                    if (updatesList) {
+                        updatesList.innerHTML = '';
+                    }
                 }
                 
             } catch (error) {
                 console.error('Error checking for updates:', error);
                 checkingIcon.classList.remove('active');
                 errorIcon.classList.add('active');
-                statusEl.textContent = 'Error checking for updates. Please try again later.';
+                
+                // Provide more helpful error messages
+                let errorMessage = 'Error checking for updates. Please try again later.';
+                if (error.message && (error.message.includes('Failed to fetch') || error.message.includes('NetworkError'))) {
+                    if (isElectron) {
+                        errorMessage = 'Unable to connect to the server. Please ensure the Flask server is running on port 5000.';
+                    } else {
+                        errorMessage = 'Network error. Please check your connection and try again.';
+                    }
+                }
+                
+                statusEl.textContent = errorMessage;
                 statusEl.className = 'update-status error';
             }
         };

@@ -3975,3 +3975,1123 @@ Traceback (most recent call last):
     return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 IndexError: index out of range in self
+127.0.0.1 - - [23/Dec/2025 13:28:48] "GET /update HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:28:48] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:28:48] "GET /api/version HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+127.0.0.1 - - [23/Dec/2025 13:29:53] "GET /api/version HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:29:57] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:29:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:30:01] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:30:01] "[36mGET /static/css/poseidon3d.css?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:30:01] "[36mGET /static/js/poseidon3d.js?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:30:01] "GET /static/js/app.js?v=10 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:30:02] "GET /api/gems HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:30:02] "GET /api/model/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:30:02] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:30:11] "GET /update HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:30:11] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:30:11] "GET /api/version HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:30:20] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:30:20] "[36mGET /static/css/poseidon3d.css?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:30:20] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:30:20] "[36mGET /static/js/poseidon3d.js?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:30:20] "[36mGET /static/js/app.js?v=10 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:30:20] "GET /api/gems HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:30:20] "GET /api/model/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:30:20] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:33:27] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:35:36] "GET /update HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:35:36] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:35:36] "GET /api/version HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:35:50] "GET /api/version HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:35:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:35:57] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:35:57] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:35:57] "[36mGET /static/js/app.js?v=10 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:35:57] "[36mGET /static/js/poseidon3d.js?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:35:57] "[36mGET /static/css/poseidon3d.css?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 13:35:58] "GET /api/gems HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:35:58] "GET /api/model/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 13:35:58] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:27:51] "GET /update HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:27:52] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 15:27:52] "GET /api/version HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:28:02] "GET /api/version HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:28:07] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:28:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:28:10] "[36mGET /static/css/poseidon3d.css?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 15:28:10] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 15:28:10] "GET /static/js/app.js?v=11 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:28:10] "[36mGET /static/js/poseidon3d.js?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 15:28:11] "GET /api/gems HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:28:11] "GET /api/model/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:28:11] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:28:15] "DELETE /api/chats/3a15d23c-d770-46ae-8f20-8a252c4dcf55 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:28:15] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:30:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:30:11] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 15:30:11] "GET /static/js/app.js?v=11 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:30:11] "[36mGET /static/css/poseidon3d.css?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 15:30:11] "[36mGET /static/js/poseidon3d.js?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 15:30:11] "GET /api/gems HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:30:11] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:30:11] "GET /api/model/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:30:11] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 15:30:15] "POST /api/chat HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+127.0.0.1 - - [23/Dec/2025 15:40:18] "GET /install HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:40:19] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 15:40:19] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 15:40:36] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:40:36] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 15:40:36] "[36mGET /static/css/poseidon3d.css?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 15:40:36] "[36mGET /static/js/poseidon3d.js?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 15:40:36] "GET /static/js/app.js?v=11 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:40:36] "GET /api/gems HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:40:36] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 15:40:36] "GET /api/model/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:40:36] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:40:40] "DELETE /api/chats/e8f0e014-c357-435d-8b11-a7f6a955e1aa HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:40:40] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:40:43] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:40:57] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:41:18] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:41:20] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:41:53] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:42:10] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:42:34] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:44:56] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:44:56] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:45:01] "DELETE /api/chats/e01e9e7b-278b-4d1c-9abd-5a6f29070cdd HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:45:01] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:45:04] "DELETE /api/chats/df2deaa6-6684-46a8-80b3-051fc4ba1b1e HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:45:04] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 15:45:04] "GET /api/chats HTTP/1.1" 200 -
+ * Detected change in '/Users/arulhania/Coding/atlas-ai/chatbot/app.py', reloading
+Initializing Atlas AI...
+Loading Thor 1.1 (latest)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.1/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.1 loaded successfully
+Loading Thor 1.0 (stable)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.0/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.0 loaded successfully
+Starting Auto-Trainer...
+Auto-Trainer initialized
+Auto-Trainer started - will train every 30 minutes
+Auto-Trainer is running in the background!
+Thor will continuously learn from conversations and improve itself.
+
+[Auto-Trainer] Ready to train: 106 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-23 10:27:49.128343
+[Auto-Trainer] Collecting training data...
+  Loaded 102 existing examples
+[Auto-Trainer] Processing 106 conversation files...
+[Auto-Trainer] Extracted 242 training examples
+  Extracted 242 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 128
+[Auto-Trainer] Training with 102 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Auto-Trainer] Ready to train: 106 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-23 13:23:11.254517
+[Auto-Trainer] Collecting training data...
+  Loaded 102 existing examples
+[Auto-Trainer] Processing 106 conversation files...
+[Auto-Trainer] Extracted 242 training examples
+  Extracted 242 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 128
+[Auto-Trainer] Training with 102 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Common Sense] Skipping search for: नमस्ते...
+[Auto-Trainer] Saved conversation with 2 messages
+[Learning] Conversation recorded: 2 messages
+[Common Sense] Skipping search for: हेलो...
+[Auto-Trainer] Saved conversation with 2 messages
+[Learning] Conversation recorded: 2 messages
+[Auto-Trainer] Ready to train: 108 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-23 15:30:27.209778
+[Auto-Trainer] Collecting training data...
+  Loaded 102 existing examples
+[Auto-Trainer] Processing 108 conversation files...
+[Auto-Trainer] Extracted 242 training examples
+  Extracted 242 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 128
+[Auto-Trainer] Training with 102 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Common Sense] Skipping search for: hello...
+[Auto-Trainer] Saved conversation with 2 messages
+[Learning] Conversation recorded: 2 messages
+[Common Sense] Skipping search for: नमस्ते...
+[Auto-Trainer] Saved conversation with 4 messages
+[Learning] Conversation recorded: 4 messages
+[Common Sense] Skipping search for: नमस्ते...
+[Auto-Trainer] Saved conversation with 6 messages
+[Learning] Conversation recorded: 6 messages
+[Common Sense] Skipping search for: नमस्ते...
+[Auto-Trainer] Saved conversation with 8 messages
+[Learning] Conversation recorded: 8 messages
+[Common Sense] Skipping search for: bonjour...
+[Auto-Trainer] Saved conversation with 10 messages
+[Learning] Conversation recorded: 10 messages
+[Common Sense] Skipping search for: 你好...
+[Auto-Trainer] Saved conversation with 12 messages
+[Learning] Conversation recorded: 12 messages
+[Common Sense] Skipping search for: नमस्ते...
+[Auto-Trainer] Saved conversation with 14 messages
+[Learning] Conversation recorded: 14 messages
+[Auto-Trainer] Saved conversation with 2 messages
+[Learning] Conversation recorded: 2 messages
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 123-396-758
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+ * Detected change in '/Users/arulhania/Coding/atlas-ai/chatbot/app.py', reloading
+Initializing Atlas AI...
+Loading Thor 1.1 (latest)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.1/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.1 loaded successfully
+Loading Thor 1.0 (stable)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.0/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.0 loaded successfully
+Starting Auto-Trainer...
+Auto-Trainer initialized
+Auto-Trainer started - will train every 30 minutes
+Auto-Trainer is running in the background!
+Thor will continuously learn from conversations and improve itself.
+
+[Auto-Trainer] Ready to train: 116 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-23 15:45:52.794138
+[Auto-Trainer] Collecting training data...
+  Loaded 102 existing examples
+[Auto-Trainer] Processing 116 conversation files...
+[Auto-Trainer] Extracted 227 training examples
+  Extracted 227 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 128
+[Auto-Trainer] Training with 102 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 123-396-758
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+ * Detected change in '/Users/arulhania/Coding/atlas-ai/chatbot/app.py', reloading
+Initializing Atlas AI...
+Loading Thor 1.1 (latest)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.1/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.1 loaded successfully
+Loading Thor 1.0 (stable)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.0/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.0 loaded successfully
+Starting Auto-Trainer...
+Auto-Trainer initialized
+Auto-Trainer started - will train every 30 minutes
+Auto-Trainer is running in the background!
+Thor will continuously learn from conversations and improve itself.
+
+[Auto-Trainer] Ready to train: 116 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-23 15:46:03.887789
+[Auto-Trainer] Collecting training data...
+  Loaded 102 existing examples
+[Auto-Trainer] Processing 116 conversation files...
+[Auto-Trainer] Extracted 227 training examples
+  Extracted 227 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 128
+[Auto-Trainer] Training with 102 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 123-396-758
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+ * Detected change in '/Users/arulhania/Coding/atlas-ai/chatbot/app.py', reloading
+Initializing Atlas AI...
+Loading Thor 1.1 (latest)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.1/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.1 loaded successfully
+Loading Thor 1.0 (stable)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.0/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.0 loaded successfully
+Starting Auto-Trainer...
+Auto-Trainer initialized
+Auto-Trainer started - will train every 30 minutes
+Auto-Trainer is running in the background!
+Thor will continuously learn from conversations and improve itself.
+
+[Auto-Trainer] Ready to train: 116 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-23 15:46:08.051273
+[Auto-Trainer] Collecting training data...
+  Loaded 102 existing examples
+[Auto-Trainer] Processing 116 conversation files...
+[Auto-Trainer] Extracted 227 training examples
+  Extracted 227 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 127
+[Auto-Trainer] Training with 101 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 123-396-758
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+127.0.0.1 - - [23/Dec/2025 16:06:48] "POST /api/chat HTTP/1.1" 200 -
+ * Detected change in '/Users/arulhania/Coding/atlas-ai/chatbot/app.py', reloading
+Initializing Atlas AI...
+Loading Thor 1.1 (latest)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.1/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.1 loaded successfully
+Loading Thor 1.0 (stable)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.0/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.0 loaded successfully
+Starting Auto-Trainer...
+Auto-Trainer initialized
+Auto-Trainer started - will train every 30 minutes
+Auto-Trainer is running in the background!
+Thor will continuously learn from conversations and improve itself.
+
+[Auto-Trainer] Ready to train: 116 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-23 15:46:31.031315
+[Auto-Trainer] Collecting training data...
+  Loaded 101 existing examples
+[Auto-Trainer] Processing 116 conversation files...
+[Auto-Trainer] Extracted 227 training examples
+  Extracted 227 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 126
+[Auto-Trainer] Training with 100 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Common Sense] Skipping search for: नमस्ते...
+[Auto-Trainer] Saved conversation with 2 messages
+[Learning] Conversation recorded: 2 messages
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 123-396-758
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+127.0.0.1 - - [23/Dec/2025 16:18:36] "GET /install HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:18:37] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:18:37] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+ * Detected change in '/Users/arulhania/Coding/atlas-ai/chatbot/app.py', reloading
+Initializing Atlas AI...
+Loading Thor 1.1 (latest)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.1/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.1 loaded successfully
+Loading Thor 1.0 (stable)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.0/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.0 loaded successfully
+Starting Auto-Trainer...
+Auto-Trainer initialized
+Auto-Trainer started - will train every 30 minutes
+Auto-Trainer is running in the background!
+Thor will continuously learn from conversations and improve itself.
+
+[Auto-Trainer] Ready to train: 117 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-23 16:08:14.223640
+[Auto-Trainer] Collecting training data...
+  Loaded 100 existing examples
+[Auto-Trainer] Processing 117 conversation files...
+[Auto-Trainer] Extracted 227 training examples
+  Extracted 227 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 126
+[Auto-Trainer] Training with 100 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 123-396-758
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+127.0.0.1 - - [23/Dec/2025 16:20:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:20:02] "[36mGET /static/css/poseidon3d.css?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:20:02] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:20:02] "[36mGET /static/js/poseidon3d.js?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:20:02] "GET /static/js/app.js?v=11 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:20:02] "GET /api/gems HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:20:02] "GET /api/model/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:20:02] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:20:03] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:20:10] "DELETE /api/chats/e01e9e7b-278b-4d1c-9abd-5a6f29070cdd HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:20:10] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:20:42] "GET /install HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:20:42] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:20:42] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:20:44] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:20:44] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:20:44] "[36mGET /static/js/poseidon3d.js?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:20:44] "[36mGET /static/css/poseidon3d.css?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:20:44] "[36mGET /static/js/app.js?v=11 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:20:44] "GET /api/gems HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:20:44] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:20:44] "GET /api/model/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:20:44] "GET /api/chats HTTP/1.1" 200 -
+ * Detected change in '/Users/arulhania/Coding/atlas-ai/chatbot/app.py', reloading
+Initializing Atlas AI...
+Loading Thor 1.1 (latest)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.1/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.1 loaded successfully
+Loading Thor 1.0 (stable)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.0/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.0 loaded successfully
+Starting Auto-Trainer...
+Auto-Trainer initialized
+Auto-Trainer started - will train every 30 minutes
+Auto-Trainer is running in the background!
+Thor will continuously learn from conversations and improve itself.
+
+[Auto-Trainer] Ready to train: 117 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-23 16:19:28.449283
+[Auto-Trainer] Collecting training data...
+  Loaded 100 existing examples
+[Auto-Trainer] Processing 117 conversation files...
+[Auto-Trainer] Extracted 227 training examples
+  Extracted 227 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 126
+[Auto-Trainer] Training with 100 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 123-396-758
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+127.0.0.1 - - [23/Dec/2025 16:21:26] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:21:27] "POST /api/translate HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:21:45] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:21:45] "POST /api/translate HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:22:01] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:22:01] "POST /api/translate HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/chatbot/app.py", line 2579, in chat
+    result = model.predict(contextual_input, task=task)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/inference.py", line 101, in predict
+    outputs = self.model(
+        input_ids=input_ids,
+        attention_mask=attention_mask,
+        task=task
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+127.0.0.1 - - [23/Dec/2025 16:22:45] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:22:45] "POST /api/translate HTTP/1.1" 200 -
+ * Detected change in '/Users/arulhania/Coding/atlas-ai/chatbot/app.py', reloading
+Initializing Atlas AI...
+Loading Thor 1.1 (latest)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.1/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.1 loaded successfully
+Loading Thor 1.0 (stable)...
+Thor 1.1 model loaded from /Users/arulhania/Coding/atlas-ai/thor-1.0/models/final_model.pt
+Device: cpu
+Available tasks: ['text_classification', 'text_generation', 'question_answering', 'sentiment_analysis', 'named_entity_recognition']
+Enhanced features: Improved context handling, better text generation
+Model thor-1.0 loaded successfully
+Starting Auto-Trainer...
+Auto-Trainer initialized
+Auto-Trainer started - will train every 30 minutes
+Auto-Trainer is running in the background!
+Thor will continuously learn from conversations and improve itself.
+
+[Auto-Trainer] Ready to train: 117 conversations, has_training_data=True
+[Auto-Trainer] Starting training cycle at 2025-12-23 16:21:21.342933
+[Auto-Trainer] Collecting training data...
+  Loaded 100 existing examples
+[Auto-Trainer] Processing 117 conversation files...
+[Auto-Trainer] Extracted 227 training examples
+  Extracted 227 examples from conversations
+[Auto-Trainer] Using fallback topics: 6 topics
+[Auto-Trainer] Generated 24 training examples from 6 random dictionary topics
+  Collected 24 examples from web
+  Total unique examples: 126
+[Auto-Trainer] Training with 100 examples
+[Auto-Trainer] Loaded existing model for fine-tuning
+[Auto-Trainer] Error during training: index out of range in self
+[Common Sense] Skipping search for: नमस्ते...
+[Auto-Trainer] Saved conversation with 2 messages
+[Learning] Conversation recorded: 2 messages
+[Common Sense] Skipping search for: bonjour...
+[Auto-Trainer] Saved conversation with 4 messages
+[Learning] Conversation recorded: 4 messages
+[Common Sense] Skipping search for: இல்ல...
+[Auto-Trainer] Saved conversation with 6 messages
+[Learning] Conversation recorded: 6 messages
+[Research] TOPIC NOT IN BRAIN, PRIORITIZING Google search: hora hay pecho es
+[Research Engine] Researching: hora hay pecho es...
+[Research] Learned 4 items from Google
+[Model] Using conversation context (6 previous messages)
+[Language] Adding language instruction: Respond in Spanish
+Error generating model response: index out of range in self
+[Research Engine] Researching: hora hay pecho es...
+[Auto-Trainer] Saved conversation with 8 messages
+[Learning] Conversation recorded: 8 messages
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 123-396-758
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+127.0.0.1 - - [23/Dec/2025 16:29:04] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:29:05] "[36mGET /static/js/poseidon3d.js?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:29:05] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:29:05] "GET /static/js/app.js?v=11 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:29:05] "[36mGET /static/css/poseidon3d.css?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:29:05] "GET /api/gems HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:29:05] "GET /api/model/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:29:05] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:29:05] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:29:16] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:29:18] "POST /api/translate HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/chatbot/app.py", line 2579, in chat
+    result = model.predict(contextual_input, task=task)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/inference.py", line 101, in predict
+    outputs = self.model(
+        input_ids=input_ids,
+        attention_mask=attention_mask,
+        task=task
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+127.0.0.1 - - [23/Dec/2025 16:29:25] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:29:26] "POST /api/translate HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:30:29] "GET /update HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:30:29] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:30:29] "GET /api/version HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:30:38] "GET /api/version HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:30:43] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:30:44] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:30:45] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:30:45] "[36mGET /static/css/poseidon3d.css?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:30:45] "[36mGET /static/js/poseidon3d.js?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:30:45] "GET /static/js/app.js?v=11 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:30:46] "GET /api/gems HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:30:46] "GET /api/model/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:30:46] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:31:26] "GET /update HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:31:26] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:31:27] "GET /api/version HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:31:33] "GET /api/version HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:31:38] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:31:39] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:31:40] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:31:40] "[36mGET /static/css/poseidon3d.css?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:31:40] "[36mGET /static/js/poseidon3d.js?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:31:40] "[36mGET /static/js/app.js?v=11 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [23/Dec/2025 16:31:41] "GET /api/gems HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:31:41] "GET /api/model/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:31:41] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:31:45] "GET /api/chats/8763bde1-89ed-4892-819e-4fa2673e40e9 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:31:46] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:31:49] "DELETE /api/chats/8763bde1-89ed-4892-819e-4fa2673e40e9 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:31:49] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:31:49] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:31:51] "DELETE /api/chats/9241f851-26f7-4797-bca6-c8a8eb7529ce HTTP/1.1" 200 -
+127.0.0.1 - - [23/Dec/2025 16:31:51] "GET /api/chats HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/services/auto_trainer.py", line 371, in _train_model
+    outputs = model(
+        input_ids=input_ids,
+    ...<2 lines>...
+        labels=labels
+    )
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/thor-1.1/models/all_rounder_model.py", line 214, in forward
+    token_embeds = self.token_embeddings(input_ids)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<5 lines>...
+        self.sparse,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/lib/python3.14/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range in self
+127.0.0.1 - - [24/Dec/2025 11:45:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [24/Dec/2025 11:45:11] "[36mGET /static/css/poseidon3d.css?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [24/Dec/2025 11:45:11] "[36mGET /static/css/style.css?v=14 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [24/Dec/2025 11:45:11] "[36mGET /static/js/poseidon3d.js?v=1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [24/Dec/2025 11:45:11] "GET /static/js/app.js?v=11 HTTP/1.1" 200 -
+127.0.0.1 - - [24/Dec/2025 11:45:11] "GET /api/gems HTTP/1.1" 200 -
+127.0.0.1 - - [24/Dec/2025 11:45:11] "GET /api/model/status HTTP/1.1" 200 -
+127.0.0.1 - - [24/Dec/2025 11:45:11] "GET /api/chats HTTP/1.1" 200 -
+127.0.0.1 - - [24/Dec/2025 11:45:11] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
