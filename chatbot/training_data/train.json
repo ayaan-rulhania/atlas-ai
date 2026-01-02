@@ -1,13 +1,28 @@
 [
   {
-    "task": "sentiment_analysis",
-    "text": "Is Ayaan is a silly guy ?",
+    "task": "text_classification",
+    "text": "how are you?",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "'\ud83d\udcc1' : '\ud83d\udcdd';\n        \n        return `\n            <div class=\"history-item\" data-entry-id=\"${entry.id}\">\n                <div class=\"history-icon\">${typeIcon}</div>\n                <div class=\"history-content\">\n                    <div class=\"history-title\">${escapeHtml(entry.title || entry.description || 'Untitled')}</div>\n                    <div class=\"history-meta\">\n                        <span class=\"history-type\">${entry.type}</span>\n                        <span class=\"history-date\">${dat",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "what is computer",
     "label": 0
   },
   {
     "task": "text_generation",
-    "text": "What Is Daphnia?",
+    "text": "Explain computer science",
     "label": null
+  },
+  {
+    "task": "text_classification",
+    "text": "What is artificial intelligence?",
+    "label": 1
   },
   {
     "task": "text_generation",
@@ -15,17 +30,42 @@
     "label": null
   },
   {
+    "task": "text_classification",
+    "text": "What Is Daphnia?",
+    "label": 1
+  },
+  {
     "task": "question_answering",
-    "text": "What is deep learning? deep learning is an important concept.",
+    "text": "What is programming? programming is an important concept.",
     "label": {
-      "start": 23,
-      "end": 36
+      "start": 21,
+      "end": 32
     }
   },
   {
+    "task": "sentiment_analysis",
+    "text": "what is the list hey how are you",
+    "label": 2
+  },
+  {
     "task": "text_classification",
-    "text": "What is deep learning?",
+    "text": "how are you",
+    "label": 0
+  },
+  {
+    "task": "text_generation",
+    "text": "Explain natural language processing",
+    "label": null
+  },
+  {
+    "task": "text_classification",
+    "text": "do you know Niharika",
     "label": 1
+  },
+  {
+    "task": "text_generation",
+    "text": "What can you do?",
+    "label": null
   },
   {
     "task": "text_generation",
@@ -33,118 +73,88 @@
     "label": null
   },
   {
-    "task": "sentiment_analysis",
-    "text": "who is sharukh khan",
-    "label": 2
-  },
-  {
     "task": "text_classification",
-    "text": "hello to continue",
-    "label": 0
-  },
-  {
-    "task": "text_generation",
-    "text": "how are you?",
-    "label": null
-  },
-  {
-    "task": "text_classification",
-    "text": "How's your day going?",
+    "text": "What is machine learning?",
     "label": 0
   },
   {
     "task": "sentiment_analysis",
-    "text": "I find deep learning interesting and valuable.",
-    "label": 1
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "tell her that's good Carla canopy",
-    "label": 1
-  },
-  {
-    "task": "text_classification",
-    "text": "who is Amitabh bachchan",
-    "label": 0
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "What can you do for me",
-    "label": 2
-  },
-  {
-    "task": "text_generation",
-    "text": "Explain machine learning",
-    "label": null
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "how are you?",
-    "label": 1
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "Load Game Suite",
-    "label": 0
-  },
-  {
-    "task": "text_classification",
     "text": "What is science?",
     "label": 0
   },
   {
-    "task": "text_generation",
-    "text": "who is sharukh khan",
-    "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "Do you know Ayaan?",
-    "label": null
-  },
-  {
-    "task": "text_classification",
+    "task": "sentiment_analysis",
     "text": "Load Game Suite",
-    "label": 1
-  },
-  {
-    "task": "text_classification",
-    "text": "What is natural language processing?",
-    "label": 1
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "Load Office Suite",
-    "label": 1
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "how are you",
     "label": 0
   },
   {
     "task": "text_classification",
-    "text": "Create an image of dog",
-    "label": 1
+    "text": "what is the list hey how are you",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "I understand",
+    "label": 0
   },
   {
     "task": "text_generation",
-    "text": "Explain programming",
+    "text": "hello I'm feeling pretty good today",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "what is the list hey how are you",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "What can you do?",
+    "label": 2
+  },
+  {
+    "task": "text_generation",
+    "text": "who are you",
     "label": null
   },
   {
     "task": "text_classification",
-    "text": "How are you?",
-    "label": 1
+    "text": "to continue",
+    "label": 0
   },
   {
     "task": "text_generation",
-    "text": "Learn sometimes!",
+    "text": "do you know Niharika",
     "label": null
   },
   {
     "task": "text_classification",
-    "text": "'\ud83d\udcc1' : '\ud83d\udcdd';\n        \n        return `\n            <div class=\"history-item\" data-entry-id=\"${entry.id}\">\n                <div class=\"history-icon\">${typeIcon}</div>\n                <div class=\"history-content\">\n                    <div class=\"history-title\">${escapeHtml(entry.title || entry.description || 'Untitled')}</div>\n                    <div class=\"history-meta\">\n                        <span class=\"history-type\">${entry.type}</span>\n                        <span class=\"history-date\">${dat",
+    "text": "I don't know",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "What is computer science?",
+    "label": 1
+  },
+  {
+    "task": "text_classification",
+    "text": "I understand",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "What can you do?",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "who is Amitabh bachchan",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "What is programming?",
     "label": 0
   },
   {
@@ -153,21 +163,8 @@
     "label": null
   },
   {
-    "task": "question_answering",
-    "text": "What is artificial intelligence? artificial intelligence is an important concept.",
-    "label": {
-      "start": 33,
-      "end": 56
-    }
-  },
-  {
-    "task": "text_generation",
-    "text": "How's it going!",
-    "label": null
-  },
-  {
     "task": "sentiment_analysis",
-    "text": "who are you",
+    "text": "What Is Daphnia?",
     "label": 0
   },
   {
@@ -176,9 +173,74 @@
     "label": 2
   },
   {
+    "task": "text_generation",
+    "text": "what is computer",
+    "label": null
+  },
+  {
     "task": "sentiment_analysis",
-    "text": "What is a shield volcano?",
+    "text": "I find deep learning interesting and valuable.",
     "label": 2
+  },
+  {
+    "task": "text_classification",
+    "text": "Learn sometimes!",
+    "label": 1
+  },
+  {
+    "task": "text_generation",
+    "text": "guys to talk hello",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Who are you?",
+    "label": 2
+  },
+  {
+    "task": "text_generation",
+    "text": "I came back.",
+    "label": null
+  },
+  {
+    "task": "text_classification",
+    "text": "What can you do for me",
+    "label": 0
+  },
+  {
+    "task": "text_generation",
+    "text": "How's it going!",
+    "label": null
+  },
+  {
+    "task": "text_classification",
+    "text": "What is science?",
+    "label": 1
+  },
+  {
+    "task": "text_generation",
+    "text": "What can you do for me",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "how are you?",
+    "label": 2
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Do you know Ayaan?",
+    "label": 2
+  },
+  {
+    "task": "text_classification",
+    "text": "who is niharika",
+    "label": 0
+  },
+  {
+    "task": "text_generation",
+    "text": "What is science?",
+    "label": null
   },
   {
     "task": "sentiment_analysis",
@@ -187,18 +249,18 @@
   },
   {
     "task": "text_generation",
-    "text": "How's your day going?",
+    "text": "Explain artificial intelligence",
     "label": null
-  },
-  {
-    "task": "text_classification",
-    "text": "Is Ayaan is a silly guy ?",
-    "label": 1
   },
   {
     "task": "text_generation",
-    "text": "Load Office Suite",
+    "text": "Load Game Suite",
     "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "I find computer science interesting and valuable.",
+    "label": 2
   },
   {
     "task": "question_answering",
@@ -210,82 +272,22 @@
   },
   {
     "task": "text_classification",
-    "text": "who are you",
-    "label": 1
-  },
-  {
-    "task": "text_generation",
-    "text": "'\ud83d\udcc1' : '\ud83d\udcdd';\n        \n        return `\n            <div class=\"history-item\" data-entry-id=\"${entry.id}\">\n                <div class=\"history-icon\">${typeIcon}</div>\n                <div class=\"history-content\">\n                    <div class=\"history-title\">${escapeHtml(entry.title || entry.description || 'Untitled')}</div>\n                    <div class=\"history-meta\">\n                        <span class=\"history-type\">${entry.type}</span>\n                        <span class=\"history-date\">${dat",
-    "label": null
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "I find machine learning interesting and valuable.",
-    "label": 1
-  },
-  {
-    "task": "text_generation",
-    "text": "guys to talk hello",
-    "label": null
-  },
-  {
-    "task": "text_classification",
-    "text": "Do you know Niharika?",
-    "label": 1
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "What is science?",
-    "label": 2
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "I find computer science interesting and valuable.",
-    "label": 2
-  },
-  {
-    "task": "text_classification",
-    "text": "What are earthquakes?",
-    "label": 1
-  },
-  {
-    "task": "text_classification",
-    "text": "what is computer",
-    "label": 1
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "I understand",
-    "label": 0
-  },
-  {
-    "task": "text_generation",
-    "text": "what is computer",
-    "label": null
-  },
-  {
-    "task": "text_classification",
-    "text": "What is programming?",
-    "label": 0
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "what is computer",
-    "label": 0
-  },
-  {
-    "task": "text_generation",
-    "text": "How are you?",
-    "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "Explain natural language processing",
-    "label": null
-  },
-  {
-    "task": "text_generation",
     "text": "hello to continue",
+    "label": 0
+  },
+  {
+    "task": "text_generation",
+    "text": "What is a boy?",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "do you know Niharika",
+    "label": 1
+  },
+  {
+    "task": "text_generation",
+    "text": "I understand",
     "label": null
   },
   {
@@ -295,38 +297,13 @@
   },
   {
     "task": "text_generation",
-    "text": "What can you do?",
+    "text": "Who are you?",
     "label": null
   },
   {
-    "task": "sentiment_analysis",
+    "task": "text_classification",
     "text": "How's it going!",
-    "label": 0
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "Do you know Ayaan?",
-    "label": 2
-  },
-  {
-    "task": "text_generation",
-    "text": "hello I'm feeling pretty good today",
-    "label": null
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "What are earthquakes?",
-    "label": 0
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "How's your day going?",
-    "label": 0
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "who is ayaan",
-    "label": 2
+    "label": 1
   },
   {
     "task": "text_generation",
@@ -335,150 +312,58 @@
   },
   {
     "task": "text_generation",
-    "text": "What is science?",
-    "label": null
-  },
-  {
-    "task": "text_classification",
-    "text": "What is computer science?",
-    "label": 0
-  },
-  {
-    "task": "text_classification",
-    "text": "who is ayaan",
-    "label": 1
-  },
-  {
-    "task": "sentiment_analysis",
     "text": "hello to continue",
-    "label": 0
+    "label": null
   },
   {
-    "task": "text_classification",
-    "text": "How's it going!",
-    "label": 0
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "Create an image of dog",
-    "label": 2
+    "task": "question_answering",
+    "text": "What is deep learning? deep learning is an important concept.",
+    "label": {
+      "start": 23,
+      "end": 36
+    }
   },
   {
     "task": "text_generation",
-    "text": "tell her that's good Carla canopy",
+    "text": "What are earthquakes?",
     "label": null
   },
   {
     "task": "text_classification",
-    "text": "who is sharukh khan",
-    "label": 0
-  },
-  {
-    "task": "text_classification",
-    "text": "I understand",
-    "label": 0
-  },
-  {
-    "task": "text_classification",
-    "text": "tell her that's good Carla canopy",
-    "label": 0
-  },
-  {
-    "task": "text_classification",
-    "text": "Learn sometimes!",
-    "label": 0
-  },
-  {
-    "task": "text_classification",
-    "text": "What is a shield volcano?",
-    "label": 1
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "I find artificial intelligence interesting and valuable.",
-    "label": 2
-  },
-  {
-    "task": "text_classification",
-    "text": "do you know Niharika",
-    "label": 0
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "hello I'm feeling pretty good today",
+    "text": "What is deep learning?",
     "label": 1
   },
   {
     "task": "text_generation",
-    "text": "I understand",
+    "text": "Explain machine learning",
     "label": null
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "'\ud83d\udcc1' : '\ud83d\udcdd';\n        \n        return `\n            <div class=\"history-item\" data-entry-id=\"${entry.id}\">\n                <div class=\"history-icon\">${typeIcon}</div>\n                <div class=\"history-content\">\n                    <div class=\"history-title\">${escapeHtml(entry.title || entry.description || 'Untitled')}</div>\n                    <div class=\"history-meta\">\n                        <span class=\"history-type\">${entry.type}</span>\n                        <span class=\"history-date\">${dat",
-    "label": 1
   },
   {
     "task": "text_classification",
-    "text": "What is machine learning?",
-    "label": 0
-  },
-  {
-    "task": "text_generation",
-    "text": "who is Amitabh bachchan",
-    "label": null
-  },
-  {
-    "task": "sentiment_analysis",
     "text": "I came back.",
     "label": 0
   },
   {
     "task": "question_answering",
-    "text": "What is programming? programming is an important concept.",
+    "text": "What is machine learning? machine learning is an important concept.",
     "label": {
-      "start": 21,
-      "end": 32
+      "start": 26,
+      "end": 42
     }
   },
   {
-    "task": "text_classification",
-    "text": "how are you?",
+    "task": "sentiment_analysis",
+    "text": "what is computer",
     "label": 0
   },
   {
-    "task": "text_classification",
-    "text": "What is artificial intelligence?",
-    "label": 1
-  },
-  {
     "task": "text_generation",
-    "text": "I don't know",
-    "label": null
-  },
-  {
-    "task": "sentiment_analysis",
     "text": "who is niharika",
-    "label": 1
-  },
-  {
-    "task": "sentiment_analysis",
-    "text": "What can you do?",
-    "label": 0
-  },
-  {
-    "task": "text_generation",
-    "text": "What can you do for me",
     "label": null
   },
   {
-    "task": "text_classification",
-    "text": "I don't know",
-    "label": 0
-  },
-  {
-    "task": "text_classification",
-    "text": "What can you do for me",
+    "task": "sentiment_analysis",
+    "text": "Load Office Suite",
     "label": 0
   },
   {
@@ -488,18 +373,8 @@
   },
   {
     "task": "text_generation",
-    "text": "What is a boy?",
+    "text": "who is sharukh khan",
     "label": null
-  },
-  {
-    "task": "text_generation",
-    "text": "What are earthquakes?",
-    "label": null
-  },
-  {
-    "task": "text_classification",
-    "text": "how are you",
-    "label": 1
   },
   {
     "task": "text_generation",
@@ -508,33 +383,81 @@
   },
   {
     "task": "text_generation",
-    "text": "Create an image of dog",
+    "text": "Load Office Suite",
     "label": null
   },
   {
-    "task": "text_generation",
-    "text": "who is niharika",
-    "label": null
+    "task": "question_answering",
+    "text": "What is natural language processing? natural language processing is an important concept.",
+    "label": {
+      "start": 37,
+      "end": 64
+    }
   },
   {
-    "task": "text_generation",
-    "text": "I came back.",
-    "label": null
+    "task": "sentiment_analysis",
+    "text": "I find machine learning interesting and valuable.",
+    "label": 2
   },
   {
-    "task": "text_generation",
-    "text": "Explain artificial intelligence",
-    "label": null
+    "task": "sentiment_analysis",
+    "text": "How are you?",
+    "label": 1
   },
   {
     "task": "text_classification",
-    "text": "What can you do?",
+    "text": "guys to talk hello",
+    "label": 1
+  },
+  {
+    "task": "text_classification",
+    "text": "How are you?",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "What is a boy?",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "Who are you?",
     "label": 1
   },
   {
     "task": "sentiment_analysis",
-    "text": "I find programming interesting and valuable.",
-    "label": 1
+    "text": "tell her that's good Carla canopy",
+    "label": 2
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "What is a shield volcano?",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "Do you know Ayaan?",
+    "label": 0
+  },
+  {
+    "task": "text_generation",
+    "text": "I don't know",
+    "label": null
+  },
+  {
+    "task": "text_classification",
+    "text": "Create an image of dog",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "I don't know",
+    "label": 0
+  },
+  {
+    "task": "text_generation",
+    "text": "How's your day going?",
+    "label": null
   },
   {
     "task": "text_generation",
@@ -542,33 +465,116 @@
     "label": null
   },
   {
-    "task": "text_classification",
-    "text": "Do you know Ayaan?",
+    "task": "sentiment_analysis",
+    "text": "I came back.",
     "label": 1
   },
   {
     "task": "sentiment_analysis",
-    "text": "Who are you?",
+    "text": "to continue",
+    "label": 1
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Do you know Niharika?",
+    "label": 2
+  },
+  {
+    "task": "text_generation",
+    "text": "how are you?",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "I find artificial intelligence interesting and valuable.",
+    "label": 1
+  },
+  {
+    "task": "question_answering",
+    "text": "What is artificial intelligence? artificial intelligence is an important concept.",
+    "label": {
+      "start": 33,
+      "end": 56
+    }
+  },
+  {
+    "task": "text_classification",
+    "text": "who are you",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "how are you",
+    "label": 2
+  },
+  {
+    "task": "text_generation",
+    "text": "Learn sometimes!",
+    "label": null
+  },
+  {
+    "task": "text_classification",
+    "text": "What's the weather in Sunnyvale?",
+    "label": 0
+  },
+  {
+    "task": "text_generation",
+    "text": "to continue",
+    "label": null
+  },
+  {
+    "task": "text_classification",
+    "text": "Do you know Niharika?",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "who is sharukh khan",
     "label": 0
   },
   {
     "task": "text_classification",
-    "text": "What is a boy?",
+    "text": "What is natural language processing?",
     "label": 1
-  },
-  {
-    "task": "text_generation",
-    "text": "do you know Niharika",
-    "label": null
   },
   {
     "task": "text_classification",
-    "text": "What Is Daphnia?",
+    "text": "Load Office Suite",
     "label": 1
   },
   {
-    "task": "text_generation",
-    "text": "Load Game Suite",
-    "label": null
+    "task": "sentiment_analysis",
+    "text": "What are earthquakes?",
+    "label": 2
+  },
+  {
+    "task": "text_classification",
+    "text": "What is a shield volcano?",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Create an image of dog",
+    "label": 1
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "How's your day going?",
+    "label": 1
+  },
+  {
+    "task": "text_classification",
+    "text": "who is Amitabh bachchan",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "who is niharika",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "Create an image of Thor",
+    "label": 1
   }
 ]

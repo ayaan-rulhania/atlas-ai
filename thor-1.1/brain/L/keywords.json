@@ -90,7 +90,15 @@
     "liberty",
     "limit",
     "love",
-    "luck"
+    "luck",
+    "long",
+    "lepton",
+    "lev",
+    "leibniz",
+    "locke",
+    "ludwig",
+    "laplace",
+    "lankan"
   ],
   "knowledge": [
     {
@@ -2850,7 +2858,988 @@
       "query": "What is Law of Diminishing Marginal Utility",
       "source": "research",
       "learned_at": "2025-11-28T21:22:27.715030"
+    },
+    {
+      "topic": "deep learning",
+      "title": "What is Deep Learning? - Google Cloud",
+      "content": "What is Deep Learning? Deep learning is a type of machine learning that uses artificial neural networks to learn from data, similar to the way we learn. Artificial neural networks are inspired by the human brain, and they can be used to solve a wide variety of problems, including image recognition, natural language processing, and speech ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fcloud.google.com%2Fdiscover%2Fwhat%2Dis%2Ddeep%2Dlearning&rut=6c9ade15e0a402d5bec7b1a068494ba07cdded2ac13217e32067a320e3aa5ba3",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T17:52:26.952333"
+    },
+    {
+      "topic": "deep learning",
+      "title": "What Is Deep Learning? - Lifewire",
+      "content": "Deep learning is a technology that combines multiple layers of learning nodes to let computers learn and operate independently at advanced levels. This article explains what it is, how it differs from machine learning, and its applications.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.lifewire.com%2Fwhat%2Dis%2Ddeep%2Dlearning%2D8782383&rut=faeefdd28c0cbaf3c89ff9164fa59f4fcc515caf133dff0f3452b14085312d33",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T17:52:26.952407"
+    },
+    {
+      "topic": "natural language processing",
+      "title": "Humanizer AI - AI Detector & Humanizer",
+      "content": "WriteHuman is an AI text humanizer that makes AI text undetectable. Ensure your work is not unfairly flagged by AI detectors or tracked by AI generators.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dwritehuman.ai%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DXZDAeeJN0gzhGwJcwLiHfOmFZGaAB05kKP%252Ds0pGdwrQDAr0bifbt0RZSHeU8NiOyqqwPvf1eTnDsDo6ULwWjJ_w0anFEY98rlFlu%252DVgCcwlTs3yQkOdaEw_ZiXEN1SY6PMmwUBtIb2DrlLn3W4U0stN1VPc0EG%252DMJEqFdWueJA8.iyD9JKGJZTtjYLuQibkdBw%26rut%3D86e3ad9fca887cf97fbafce32cce903a2b393fe96da5d6ecac0c05f21ca5c81d%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8VlX7GI75oKZkVU81AsTr2jVUCUyKRLLOV87Ar8h0ZYDGUQJIJT6HnzijcDRvP5UajX0c8EcWNNlojvsa9X9QRMLEt%252DQtL6paaCEn7PvPg53R7YCNwar27n2DoDY86zdanWmyaz7JOWWEBgokhXN99CeR7F55%252DJUPI%252Dbh9rabJ8kCn2p0gEDmnhldLgSIRfiEA8ufnvDh7B_e2etYBmWhltDu92s%2526u%253DaHR0cHMlM2ElMmYlMmZ3cml0ZWh1bWFuLmFpJTJmJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjYW5jc25icm9hZCUyNnV0bV9jYW1wYWlnbiUzZDU2OTM0MzUwNyUyNnV0bV90ZXJtJTNkYWklMjUyMGluZm9ybWF0aW9uJTI1MjB0ZWNobm9sb2d5JTI2bXNjbGtpZCUzZDA5ZWRlMTgyNDNlMDFmODNiY2Q0ODhkNzlhMGMyMzQ4%2526rlid%253D09ede18243e01f83bcd488d79a0c2348%26vqd%3D4%2D285805600582582999381334845715933148410%26iurl%3D%257B1%257DIG%253D37725E324CD143A0916FCB048C5A2E7B%2526CID%253D2CF39548BC9B64B52AA0839CBD4E6533%2526ID%253DDevEx%252C5045.1&rut=e6ee9f3b08d0962076f67c568af3d7936a4ab2dd7c5ddc49a09033b7f61eee6c",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:20:29.400558"
+    },
+    {
+      "topic": "natural language processing",
+      "title": "Shop machine learning nlp - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on machine learning nlp at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DlE2Pk3bKeU1J8Z5Bl1YWPe8e0Y6tAE%252DBF43aP5emn1E4FL1%252Dumqij0yAqkY6KCaVJZ%252Dig%252Dy5uT%252D%252DPrKQNt%252DN41kwkNXvX4Z2OG_NPo0FlBY5kS9Tl1RAaHOLvW7RDpLuMMGIcSAZXpd%252DlIIscfjJ9fPzBSPoKKtDuVkvtJVZScY.bOIfUWQ_cOFZ6fNp2V2XPQ%26rut%3Db99c802d74fb329e1d02af804c8844790d5337dc7ae1d03354ba4eac9ea1a7fc%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8tRB8cqbQJ1Hr9600cQzklDVUCUyiji1GwvleiCsuz6rO019DSOcXBNVrWSB43gDy6wdjgs2MrlGpVn7PHdpL8WBTOWttqCZDmR93A6JtQkQDn_4R8INyvAN_Clhrs8iry0fyeR14DdeY6SBfy8K6EmfIE0gtujnJqTCbpUS84mYhWEvreKcfpPeU5MWzlvgfHPYcD3qhPSQdKGCt_ni3dCbWblU%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZG1hY2hpbmUlMmJsZWFybmluZyUyYm5scCUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzQ5YzdzdTF6cV9wJTI2YWRncnBpZCUzZDEyNDAyNTAxNDU4NjczMjYlMjZodmFkaWQlM2Q3NzUxNTc2NjExNDQ1MCUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NDQ4JTI2aHZ0YXJnaWQlM2Rrd2QtNzc1MTU5MjA4NjMwNTQlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDE0MzMyXzEzNTIwMDA3JTI2bWNpZCUzZGU0N2QzYjg4ZTc1YzNmMzk4ZTliYjk5M2I2MmMxYmUxJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2RlYjI2NjhiZjllYzUxMmVjNWQ1ZjAxZWE0NzI5YzBmMQ%2526rlid%253Deb2668bf9ec512ec5d5f01ea4729c0f1%26vqd%3D4%2D59264347521398165726541258313107847281%26iurl%3D%257B1%257DIG%253D37725E324CD143A0916FCB048C5A2E7B%2526CID%253D2CF39548BC9B64B52AA0839CBD4E6533%2526ID%253DDevEx%252C5049.1&rut=85694ee48832b30303138128f868a35a2a521c8478357469271a164f4c373d11",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:20:29.400619"
+    },
+    {
+      "topic": "reinforcement learning",
+      "title": "Reinforcement Learning Explained: Core Concepts & Examples",
+      "content": "Learn what reinforcement learning (RL) is through clear explanations and examples. This guide covers core concepts like MDPs, agents, rewards, and key algorithm",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fintuitionlabs.ai%2Farticles%2Freinforcement%2Dlearning%2Dexplained&rut=847c1406a8de6791a4eb014f4b204c7e065b6edb827f24e0cc5c50820d0920fe",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:21:31.968100"
+    },
+    {
+      "topic": "reinforcement learning",
+      "title": "12 Reinforcement Learning - 6.390 - Intro to Machine Learning",
+      "content": "Reinforcement learning (RL) is a type of machine learning where an agent learns to make decisions by interacting with an environment. Unlike other learning paradigms, RL has several distinctive characteristics: The agent interacts directly with an environment, receiving feedback in the form of rewards or penalties The agent can choose actions that influences what information it gains from the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fintroml.mit.edu%2Fnotes%2Freinforcement_learning.html&rut=6a032c03358e6a84ac642f2fcaf92bdb7871540c934c9c2b3688a0bbe24f4518",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:21:31.968135"
+    },
+    {
+      "topic": "supervised learning",
+      "title": "Supervised Learning Explained with Real-World Examples",
+      "content": "Discover how supervised learning works with real-world examples, key algorithms, and use cases like spam filters, predictions, and facial recognition.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sanfoundry.com%2Fsupervised%2Dlearning%2Dexplained%2Dwith%2Dexamples%2F&rut=f27575e43578e67d95e462d4cca53afd074c8766321aad025de5ff91fbc65203",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:22:03.776900"
+    },
+    {
+      "topic": "supervised learning",
+      "title": "Machine Learning Basics: What Is Supervised Learning? - Coursera",
+      "content": "Explore the definition of supervised learning, its associated algorithms, its real-world applications, and how it varies from unsupervised learning.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.coursera.org%2Farticles%2Fsupervised%2Dlearning&rut=c1ad7d64d058e5a2d33bfcc9fd0a5fc2ccfd1e611461893c08f154d8a403eadf",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:22:03.776962"
+    },
+    {
+      "topic": "unsupervised learning",
+      "title": "Supervised vs Unsupervised Learning: What's the Real Difference?",
+      "content": "That's unsupervised learning, grouping you with hidden tribes of taste. When a doctor uses AI to identify a tumor in a scan, that model was trained with supervised learning. But when scientists cluster new variants of a virus based on its mutations, unsupervised models find structure without knowing ahead of time what each variation means.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencenewstoday.org%2Fsupervised%2Dvs%2Dunsupervised%2Dlearning%2Dwhats%2Dthe%2Dreal%2Ddifference&rut=9b484bea7d416e5a422dd98a05455116bf0142dbd7c31b7c5b4c03cfcd09b827",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:23:17.011165"
+    },
+    {
+      "topic": "transfer learning",
+      "title": "What is Transfer Learning? Understanding the Concept in Machine Learning",
+      "content": "While the term transfer learning is a product of the machine learning era, the concept has roots in cognitive psychology. Educational researchers have long studied \"transfer of learning\" \u2014 the degree to which knowledge acquired in one context helps in another.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencenewstoday.org%2Fwhat%2Dis%2Dtransfer%2Dlearning%2Dunderstanding%2Dthe%2Dconcept%2Din%2Dmachine%2Dlearning&rut=e1c87bcbb5e3cf2f2b5a2e82539c05c6a0539a820c4c218f4c0ffe76fbf3de37",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:23:48.970400"
+    },
+    {
+      "topic": "long short-term memory",
+      "title": "2025 Top 5 Cognitive Enhancers - Top 5 Cognitive Supplements",
+      "content": "Our experts have done the research to identify the best choices for cognitive enhancement. Our research found 5 key ingredients that a supplement must include for cognitive health.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dwiserlifestyles.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DaFLox6sKx9foYouPbNJcCceG28hlF4sGnOWupLa2XGKo_jJmoXH7r8Hv3HIol%252DfSkNz5AfKz9xBwwabMWUywzjUMBvq7TnMVuYBYZeilTMSkFZEoX37cRMB7HJR%252DZehPiLZN4n08gu%252DDt3TlcI0U06Ec4U%252DsGQbf4bVjDZLJO3E.h6L4cA1wyhjv4njT9RNv9Q%26rut%3Dfb9ce15deff618f59a47fc1e42b95de7dd461023f922b105753c9b95e4c4902b%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8Xjc3MnDqC7G%252DNHoCADiubTVUCUw%252D4loYJ5LJbz%252DgsKCeV1VD_h3i4WWYiFiIae_iSXC9E%252DDmAXIyDG4zKpR8Pg83Ct92EO7VApL%252Dr8fm87ny%252DesiWFYCVbm9vYBMVE0R6Fi401YHJpkA52Di1KNplpRB%252Dnuz89Ju9ghbhaS5luH%252DbJ9cKpqBd7v7rVWZAB2Yfw_w_fNH6gRA8RY_6xtalRE6YPU%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cud2lzZXJsaWZlc3R5bGVzLmNvbSUyZnRvcGljcyUyZm1lbW9yeSUzZm1zY2xraWQlM2RjZTlhNTMyNWEwNTMxZGYxNWQzNzNhNzA3ZmI5NzhmYyUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZFdpc2VyTGlmZXN0eWxlcy5jb20lMjUyMC0lMjUyME1lbW9yeSUyNTIwLSUyNTIwU2VhcmNoJTI1MjBVUyUyNnV0bV90ZXJtJTNkcG9vciUyNTIwbWVtb3J5JTI2dXRtX2NvbnRlbnQlM2RtZW1vcnklMjUyMGxvc3M%2526rlid%253Dce9a5325a0531df15d373a707fb978fc%26vqd%3D4%2D316275285904652201424283852051559009165%26iurl%3D%257B1%257DIG%253D59C7A34F53944EBF9A09E8E70BEB92C5%2526CID%253D0A972FBEC6EF65B72128396AC70B64AE%2526ID%253DDevEx%252C5046.1&rut=6c47da39093ab5eb2e508419c1b42e7c8216f4d4f1b1b5c36b2ab56866d88c09",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:46:02.949463"
+    },
+    {
+      "topic": "long short-term memory",
+      "title": "PDF Long Short-Term Memory - Deep Learning",
+      "content": "This article introduces LSTM, a novel architecture and learning method for recurrent networks that can overcome the problem of vanishing or exploding error backflow. LSTM can store information over long time intervals and learn complex tasks with noisy inputs.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fdeeplearning.cs.cmu.edu%2FF23%2Fdocument%2Freadings%2FLSTM.pdf&rut=ee67023bae084fa230e146b3fee42471dce928bab5966383f6353e9622c3370f",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:46:02.949608"
+    },
+    {
+      "topic": "long short-term memory",
+      "title": "What is long short-term memory (LSTM)? - IBM",
+      "content": "A long short-term memory architecture (LSTM) is a special type of recurrent neural network (RNN) designed to learn and remember information over long sequences of data.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ibm.com%2Fthink%2Ftopics%2Flstm&rut=fefb2b8bb5a8eb5fe000fe4e354a6da0e7428291159d12c851acdac7efb79233",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:46:02.949668"
+    },
+    {
+      "topic": "long short-term memory",
+      "title": "10.1. Long Short-Term Memory (LSTM) \u2014 Dive into Deep Learning 1.0.3 ...",
+      "content": "Learn how LSTM overcomes the vanishing gradient problem by introducing gated memory cells that can store and update information across time steps. See the mathematical formulation and implementation of LSTM in PyTorch, MXNet, JAX, and TensorFlow.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fd2l.ai%2Fchapter_recurrent%2Dmodern%2Flstm.html&rut=5c3d999a2b102c55eb7d8b469425691fcf6f441f3ed1e45cbc4da273040a030a",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:46:02.949726"
+    },
+    {
+      "topic": "loss function",
+      "title": "Loss function - Wikipedia",
+      "content": "A loss function is a mathematical relation that assigns a cost to an event or a value. Learn about different types of loss functions, how they are used in optimization, statistics, economics, and other fields, and how to construct them from preferences or data.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLoss_function&rut=730fc4c3e54b4499a4dd75452fd2a1532e5e8dc2ec7c9ae97739150a58d5ed09",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:48:09.205262"
+    },
+    {
+      "topic": "loss function",
+      "title": "Loss Functions in Deep Learning - GeeksforGeeks",
+      "content": "Loss function helps in evaluation and optimization. Understanding different types of loss functions and their applications is important for designing effective deep learning models.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fdeep%2Dlearning%2Floss%2Dfunctions%2Din%2Ddeep%2Dlearning%2F&rut=201e80fa9537d4b44305dbe0e97420b8ac3f4c513f20ed27718dc4fbc7918097",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:48:09.205371"
+    },
+    {
+      "topic": "loss function",
+      "title": "Loss Functions in Machine Learning Explained - DataCamp",
+      "content": "Learn about loss functions in machine learning, including the difference between loss and cost functions, types like MSE and MAE, and their applications in ML tasks.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.datacamp.com%2Ftutorial%2Floss%2Dfunction%2Din%2Dmachine%2Dlearning&rut=dcdee90364343ab92107f97ec6161ea2fd2e59c4a71a1c106965deae09fe10d2",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:48:09.205445"
+    },
+    {
+      "topic": "loss function",
+      "title": "7 Common Loss Functions in Machine Learning",
+      "content": "A loss function is a mathematical function used to measure the difference between a machine learning model's predicted output values and actual target values. Here's the most common loss functions used in machine learning.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbuiltin.com%2Fmachine%2Dlearning%2Fcommon%2Dloss%2Dfunctions&rut=0d5d2e023e7c4c2d58e5fa1e037d6504b91970a8106d3e5def19ecca3fdddb9b",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:48:09.205518"
+    },
+    {
+      "topic": "loss function",
+      "title": "What is Loss Function? | IBM",
+      "content": "What is a loss function? In machine learning (ML), a loss function is used to measure model performance by calculating the deviation of a model's predictions from the correct, \"ground truth\" predictions. Optimizing a model entails adjusting model parameters to minimize the output of some loss function.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ibm.com%2Fthink%2Ftopics%2Floss%2Dfunction&rut=8441e99ad21d204489c5b53d26d665f4690f2abade2fb75d9fc7fe863f92aa7c",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:48:09.205599"
+    },
+    {
+      "topic": "logistic regression",
+      "title": "What is logistic regression? - IBM",
+      "content": "Logistic regression vs. linear regression Logistic regression, like linear regression, is a type of linear model that examines the relationship between predictor variables (independent variables) and an output variable (the response, target or dependent variable).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ibm.com%2Fthink%2Ftopics%2Flogistic%2Dregression&rut=061d03937cc54f0031d3f284edd9241e0eef52c3fceb863c86a0f7136e252e9e",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:11:13.840033"
+    },
+    {
+      "topic": "linear regression",
+      "title": "Shop linear regression book - Amazon.com Official Site",
+      "content": "Find deals and low prices on linear regression book at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D7JwD6RwoAElMbAVJUWZPkDe3pJBDKXOFcu2BtFshfIbvy76ZE1HAUdmZA79BzUdIgwNOlzIAmT9bEUF0kbIdai9Ygn8XrLl1bh_D7m7ld04SIbon1LZI8rFsgfXSEXLcNp301EcZePP8F76aFJ7oEEyDNuqxJy97RIp89KAlOns.pMYNo4gHibMxsuuEa21SFA%26rut%3D2e630c921d8f0487fd893f2db58db8b81a3d0b74751b1800e109e727af91f983%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De80KJaVhNJq1D3KEPMy8vANjVUCUxxw8I0hM5c7%252DA9tpkwEKgH4_cH3ppCWSSNlkxq5TpHUIBFiJHig291QxzGXnODMQe%252Dp_kKXQxaI2xvQ%252DcM9TgV_%252DthOEsf9eheFUZ_ymfJs6iAjyzMY9wnaW7NU0TjuaV_PhnnTwdugA9i7WlLjc4Q_ynYXWzaijhnWzGdYftG_GNWBq7Wf5eYAqdNLExSxKY%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGxpbmVhciUyYnJlZ3Jlc3Npb24lMmJib29rJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfNXdkMTM0ZDhyMV9iJTI2YWRncnBpZCUzZDEyMzAzNTQ1MDIzMjUyODUlMjZodmFkaWQlM2Q3Njg5NzI4NjYyODM5NSUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGIlMjZodmJtdCUzZGJiJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NDQ4JTI2aHZ0YXJnaWQlM2Rrd2QtNzY4OTc0MDI4Nzg2MjUlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDUxNTlfMTMzMDAxNjQlMjZtY2lkJTNkYjRkZDNlZDI2NGU2MzhlMThkZjY5YTZjOGI3NDdjODQlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZGRiZDdlZDE2NDYxZDFhMDE0YTFlODQ0M2IyZTI4MWQ4%2526rlid%253Ddbd7ed16461d1a014a1e8443b2e281d8%26vqd%3D4%2D150890346194115425245415054813766126428%26iurl%3D%257B1%257DIG%253D3253C25498A641DAB6ABAE2E5F231507%2526CID%253D291476AC55E468BB2CBE607854736956%2526ID%253DDevEx%252C5045.1&rut=17f4d023e884ec6f929a45dcb7d5e92b4546af499b80085c65c2a77679d3379d",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:15:59.541552"
+    },
+    {
+      "topic": "linear regression",
+      "title": "What is Linear Regression? Definition, Formula, and Examples",
+      "content": "What is Linear Regression? Linear Regression is a statistical method used to model the relationship between a dependent variable and one or more independent variables by fitting a straight line to observed data. It is widely used for prediction, forecasting, and explaining relationships in data.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.brimco.io%2Fterms%2Flinear%2Dregression%2F&rut=ea343ecd620c3728e237099f64d51476bb9918203d624ec036f5d6c045c04b40",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:15:59.541773"
+    },
+    {
+      "topic": "linear regression",
+      "title": "Linear regression | Definition, Formula, & Facts | Britannica",
+      "content": "Linear regression, in statistics, a process for determining a line that best represents the general trend of a data set. The simplest form of linear regression involves two variables: y being the dependent variable and x being the independent variable. The equation developed is of the form y = mx +",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Flinear%2Dregression&rut=42ac6286b24b96e93978ef9f97cd55ee88f7756794d2592b8671f8f51af3a41e",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:15:59.541837"
+    },
+    {
+      "topic": "ensemble learning",
+      "title": "Ensemble learning - Wikipedia",
+      "content": "Ensemble learning is a technique that combines multiple learning algorithms to improve predictive performance. Learn about different types of ensemble methods, such as bagging, boosting and stacking, and their theoretical foundations and applications.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEnsemble_learning&rut=b253879ab87fd37a93f46618e9737f33071a215559ecd7c8410bc0bec79df875",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:17:33.820400"
+    },
+    {
+      "topic": "ensemble learning",
+      "title": "What is ensemble learning? - IBM",
+      "content": "Ensemble learning is a machine learning technique that aggregates two or more learners (e.g. regression models, neural networks) in order to produce better predictions. In other words, an ensemble model combines several individual models to produce more accurate predictions than a single model alone. 1 At times, sources may refer to this technique as committee-based learning. Ensemble learning ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ibm.com%2Fthink%2Ftopics%2Fensemble%2Dlearning&rut=2f2734d22e1d45fc43193c786dc01789a4c405903df2c08449b48eabecf88859",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:17:33.820605"
+    },
+    {
+      "topic": "ensemble learning",
+      "title": "Ensemble Learning - GeeksforGeeks",
+      "content": "Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmachine%2Dlearning%2Fa%2Dcomprehensive%2Dguide%2Dto%2Densemble%2Dlearning%2F&rut=5e26a56a6acab074d65071790ac116e66d9e8fd38b76a4729cb999067929fe39",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:17:33.820702"
+    },
+    {
+      "topic": "ensemble learning",
+      "title": "Ensemble Learning: Boost Accuracy with Multiple Models",
+      "content": "Learn how to improve model performance and accuracy with ensemble learning, a machine learning approach that combines multiple models. Explore various ensemble techniques, such as bagging, boosting, stacking, and blending, and their real-world examples.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.simplilearn.com%2Fensemble%2Dlearning%2Darticle&rut=9f5f6d62e234ea7ac32680c7d561892ca2b56505c8a8a02b87451cd0dc0c0f8c",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:17:33.820781"
+    },
+    {
+      "topic": "ensemble learning",
+      "title": "Ensemble learning: Definition, core concepts, and how it works",
+      "content": "Ensemble learning is a technique that uses multiple models to create one powerful model. Learn the core concepts, the different types (bagging, boosting, stacking, and blending), and how they work with code examples.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cudocompute.com%2Fblog%2Fwhat%2Dis%2Densemble%2Dlearning&rut=bb07c435d3614c0660ec37edbfffd967f7e7b406a73a9fbc4bf22405644658a6",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:17:33.820854"
+    },
+    {
+      "topic": "lightgbm",
+      "title": "Overview of LightGBM in SynapseML - Microsoft Fabric",
+      "content": "Overview of LightGBM in SynapseML LightGBM is an open-source, distributed, high-performance gradient boosting (GBDT, GBRT, GBM, or MART) framework. This framework specializes in creating high-quality and GPU-enabled decision tree algorithms for ranking, classification, and many other machine learning tasks.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Flearn.microsoft.com%2Fen%2Dus%2Ffabric%2Fdata%2Dscience%2Flightgbm%2Doverview&rut=860cc2155bd7d3221e3e89aff835c86c52c71b8a4e09432ced26dba0a49404c6",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:20:13.220784"
+    },
+    {
+      "topic": "federated learning",
+      "title": "What Is Federated Learning? Benefits, Types & Challenges",
+      "content": "Complete federated learning guide covering types, benefits, challenges & applications. Learn distributed machine learning implementation.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Ffxis.ai%2Fedu%2Ffederated%2Dlearning%2Dcomplete%2Dguide%2F&rut=c52fa96589b0738e4666902ef888b3f4fc1217756555a226b20ace532009734c",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:24:58.399471"
+    },
+    {
+      "topic": "lepton",
+      "title": "Lepton",
+      "content": "In particle physics, a lepton is an elementary particle of half-integer spin that does not undergo strong interactions. Two main classes of leptons exist: charged leptons, including the electron, muon, and tauon, and neutral leptons, better known as neutrinos. Charged leptons can combine with other particles to form various composite particles such as atoms and positronium, while neutrinos rarely interact with anything, and are consequently rarely observed. The best known of all leptons is the electron.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lepton",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T09:22:52.226080"
+    },
+    {
+      "topic": "lepton",
+      "title": "Lepton - Wikipedia",
+      "content": "The name lepton comes from the Greek \u03bb\u03b5\u03c0\u03c4\u03cc\u03c2 lept\u00f3s, \"fine, small, thin\" (neuter nominative/accusative singular form: \u03bb\u03b5\u03c0\u03c4\u03cc\u03bd lept\u00f3n); [14][15] the earliest attested form of the word is the Mycenaean Greek \ud800\udc29\ud800\udc21\ud800\udc35, re-po-to, written in Linear B syllabic script. [16] Lepton was first used by physicist L\u00e9on Rosenfeld in 1948: [17] Following a suggestion of Prof. C. M\u00f8ller, I ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLepton&rut=8e402291413bafb2b2541bc579c8cc83c5f4744b782430178fe1f31bf5fa0423",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:22:53.060559"
+    },
+    {
+      "topic": "lepton",
+      "title": "Lepton | Elementary Particles, Subatomic Particles & Quarks | Britannica",
+      "content": "Lepton, any member of a class of subatomic particles that respond only to the electromagnetic force, weak force, and gravitational force and are not affected by the strong force. Leptons are said to be elementary particles; that is, they do not appear to be made up of smaller units of matter.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Flepton&rut=3dcade1a5c6abe2574e08cd5754160e9410887b9dee50696328669696131836a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:22:53.060663"
+    },
+    {
+      "topic": "lepton",
+      "title": "Leptons: The elementary particles explained | Space",
+      "content": "Here we look at what leptons are, how they fit in the Standard Model of particle physics, and their importance in atoms and particle decay.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.space.com%2Fleptons%2Dfacts%2Dexplained&rut=dfaf4779098844136e3e51909932a84c849047547573d6815e73f1ce2f408330",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:22:53.060733"
+    },
+    {
+      "topic": "lepton",
+      "title": "Leptons - HyperPhysics",
+      "content": "Learn about the six leptons, their properties, interactions, and decays. Find out how leptons are related to electron-positron pair production, muons, neutrinos, and cosmic rays.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=http%3A%2F%2Fwww.hyperphysics.phy%2Dastr.gsu.edu%2Fhbase%2FParticles%2Flepton.html&rut=029378823ca949e77f487336694829dea592cfd0c8bbf62eb5a36278f5aace41",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:22:53.060803"
+    },
+    {
+      "topic": "lepton",
+      "title": "Lepton (particle physics) | Research Starters - EBSCO",
+      "content": "Lepton (particle physics) Leptons are elementary particles that are among the smallest points of matter in the universe. According to the most current scientific understanding of particle physics\u2014a theory known as the Standard Model\u2014leptons, along with quarks, are the two fundamental building blocks of all matter. Leptons and quarks are divided into six different types, each of which comes ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ebsco.com%2Fresearch%2Dstarters%2Fphysics%2Flepton%2Dparticle%2Dphysics&rut=7716ec90d780cdf6e9473309aa588cb6c03107ab18c0d9d3cbe5ebef0b9a45eb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:22:53.060898"
+    },
+    {
+      "topic": "bulgarian lev",
+      "title": "BGN - Bulgarian Lev rates, news, and tools | Xe",
+      "content": "Xe provides information and tools for the Bulgarian Lev, the currency of Bulgaria. Learn about the Lev symbol, coins, bank notes, central bank, and popular exchange rates with other currencies.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.xe.com%2Fcurrency%2Fbgn%2Dbulgarian%2Dlev%2F&rut=0ab9f1def36c8ba597e726fbd902dc08ea3e13a6d9457336757543653edce82e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:42:52.908195"
+    },
+    {
+      "topic": "bulgarian lev",
+      "title": "Bulgarian lev - Wikipedia",
+      "content": "Bulgarian lev ... The lev (Bulgarian: \u043b\u0435\u0432, plural: \u043b\u0435\u0432\u0430, \u043b\u0435\u0432\u043e\u0432\u0435 / leva, [4] levove; ISO 4217 code: BGN) was the sole currency of Bulgaria from 1880 to 2025, and is in a double circulation period alongside the euro from 1 January 2026 until its full withdrawal on 31 January 2026.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBulgarian_lev&rut=b243eca567ee334b8e0077802d9c989ba19288852e45bb0f19a725838df1804d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:42:52.908296"
+    },
+    {
+      "topic": "bulgarian lev",
+      "title": "Farewell to the Lev (BGN) - After 145 Years of Existence, Bulgaria's ...",
+      "content": "After 145 years in circulation, Bulgaria's national currency, the lev, is set to retire. But how did it come into existence, what trials has it faced, and which personalities are linked to its story? The lev was introduced on 4 June 1880, when the National Assembly passed the Law granting the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbntnews.bg%2Fnews%2Ffarewell%2Dto%2Dthe%2Dlev%2Dbgn%2Dafter%2D145%2Dyears%2Dof%2Dexistence%2Dbulgaria%2D39s%2Dnational%2Dcurrency%2Dwill%2Dcome%2Dto%2Dan%2Dend%2Das%2Dthe%2Dcountry%2Dp%2D1371810news.html&rut=1a5ef2057e2c521727508886dd90c0586a3b9fe28a6ecb53fc927c17df3c6ff8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:42:52.908336"
+    },
+    {
+      "topic": "bulgarian lev",
+      "title": "The Lev's Final Chapter: The Story of Bulgaria's National Currency ...",
+      "content": "On January 1, 2026, Bulgaria will officially adopt the euro, completing a process of European integration that began with EU membership in 2007. With this step, the Bulgarian lev will exit ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.novinite.com%2Farticles%2F236184%2FThe%2BLev%25E2%2580%2599s%2BFinal%2BChapter%253A%2BThe%2BStory%2Bof%2BBulgaria%25E2%2580%2599s%2BNational%2BCurrency%2BBefore%2Bthe%2BEuro%2BTakes%2BOver&rut=f2a159f2a4e4ee0c7c75aa779dbc99f4d62dafddbd26778371bf2f59b4f04c9f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:42:52.908373"
+    },
+    {
+      "topic": "bulgarian lev",
+      "title": "Convert Bulgarian Lev to United States Dollar | BGN to USD Currency ...",
+      "content": "Currency converter to convert from Bulgarian Lev (BGN) to United States Dollar (USD) including the latest exchange rates, a chart showing the exchange rate history for the last 120-days and information about the currencies.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fthemoneyconverter.com%2FBGN%2FUSD&rut=60cd0d39054589fd688d02e146982e7a375d6e71e6fa3f92d246a95488259acb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:42:52.908409"
+    },
+    {
+      "topic": "learning neuroscience",
+      "title": "Shop neuroscience of learning - Amazon\u00ae Official Site",
+      "content": "Browse & discover thousands of unique brands. Read customer reviews & best sellers. Find deals and compare prices on neuroscience of learning at Amazon.com",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DoxZOVuUr8Jf5VMK7ksbQv%252DCsNbaFFuq4qHoiaUwQJUPiKrImk6862KCFcFbaDS8xq8wv%252D1jqKOSEv5AYBlcXnJF6m3oQ7GBRY1YfSwe8tYE3X3aArmpOgkm7ssAe4SS5Bt9glDex%252D_Ufxw7enpWQ8wBwAryKFnE_h5CTh30j6Dg.9Y4lTMcFnCHSMEY8dFGUSQ%26rut%3D9c4d605cce498c1d631ad168cdde14c2dcdaac2666e652013d6ff0f80ebeed78%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De85GHBz0lCAbXmVEe7wIVOODVUCUzhCRI84P_aFCesmcxtW1QhCv8BjArd1MqxR8zJMYF7QdDIrTNt3EyR8iPDMicPiUHaBEuyt779K84TMdz4KLtG_IBFGbWtFLuSTLfVbfevyuXnhQRxjFkLO1R6A0J0p24d4SuCHvDCaRNTV%252DYjYKREPZA%252DyEVhpZV%252DdK5Sw1uQD2fFT8vmoVb%252DQl04V%252De8Rqw%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZG5ldXJvc2NpZW5jZSUyYm9mJTJibGVhcm5pbmclMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF8xdWNsY3lsczcwX3AlMjZhZGdycGlkJTNkMTI0MTM0ODk0NjY2MzQ1NSUyNmh2YWRpZCUzZDc3NTg0NDc1MjYwODY3JTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkcCUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODc0MjIlMjZodnRhcmdpZCUzZGt3ZC03NzU4NDU1NDY3MjE5MiUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkMTA3MzJfMTM1ODkxNzYlMjZtY2lkJTNkMzZlNmUzMWU1Zjk3M2M0ZmFiM2ZkMDU3MTgzM2U4ZmMlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZDM1NjkwNGEwOTRmNzFjYzA5ZDhlNmRmNzkxNmZjZGE2%2526rlid%253D356904a094f71cc09d8e6df7916fcda6%26vqd%3D4%2D334520032154456201938162654977034193507%26iurl%3D%257B1%257DIG%253D58E700EC2E744E6C98F20328F252F9FF%2526CID%253D2DD86343B3AF6B3734C57597B27A6A91%2526ID%253DDevEx%252C5046.1&rut=16bdd606903d77567d8485ef1e161ebe07b0376efede55d851d5011bfad5f8fc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T15:39:05.364347"
+    },
+    {
+      "topic": "learning neuroscience",
+      "title": "Neuroscience of Learning: An Introduction to Mind, Brain, Health, and ...",
+      "content": "This course provides an overview of the neuroscience of learning through mind, brain, health, and education science (MBHE), or the intersection of psychology, cognitive neuroscience, health, and education. Fundamental biological, psychological, social, and environmental factors are introduced with an emphasis on critical functions related to learning and achievement across settings, age groups ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fcoursebrowser.dce.harvard.edu%2Fcourse%2Fneuroscience%2Dof%2Dlearning%2Dan%2Dintroduction%2Dto%2Dmind%2Dbrain%2Dhealth%2Dand%2Deducation%2D2%2F&rut=3c0a37e6343bd1fa01f773619de8cac5af6178e5b1e0742f44476c9f4bfe6e01",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T15:39:05.364428"
+    },
+    {
+      "topic": "learning neuroscience",
+      "title": "What Is the Neuroscience of Learning? - sciencenewstoday.org",
+      "content": "In other words, learning throughout life doesn't just enrich the mind\u2014it protects it. The Future of Learning Neuroscience The field of learning neuroscience is still young, but advances in brain imaging, molecular biology, and computational modeling are rapidly expanding our understanding.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencenewstoday.org%2Fwhat%2Dis%2Dthe%2Dneuroscience%2Dof%2Dlearning&rut=e5eeee1ef9cbb8ea4d64d87d227db5983626aab212b6e28f1da50ccfc769797e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T15:39:05.364719"
+    },
+    {
+      "topic": "learning neuroscience",
+      "title": "Growing Brains, Nurturing Minds\u2014Neuroscience as an Educational Tool to ...",
+      "content": "This review takes a neuroscientific lens to explore central concepts in education (e.g., mindset, motivation, meaning-making, and attention) and suggests two methods of using neuroscience as an educational tool: teaching students about their brain (content level) and considering the neuro-mechanisms of learning in educational design (design level).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fpmc.ncbi.nlm.nih.gov%2Farticles%2FPMC9775149%2F&rut=28b21f626dcd3e2479d27d93cc18ac5bd4f8010305a30158918f9d59edfe83e8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T15:39:05.364806"
+    },
+    {
+      "topic": "learning neuroscience",
+      "title": "How Neuroscience Informs Effective Learning Strategies",
+      "content": "Discover how neuroscience can enhance learning, support cognitive development, and improve teaching strategies for a more effective classroom experience.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.structural%2Dlearning.com%2Fpost%2Fneuroscience%2Dof%2Dlearning&rut=53b3fe16524b3d5fb0e0658b99eb79da9576f110e952fd255e532a126f77b812",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T15:39:05.364850"
+    },
+    {
+      "topic": "long term memory",
+      "title": "Top 5 Best Memory Supplements - 2026's Top 5 Memory Enhancers",
+      "content": "Our experts have done the research for you to identify the best choices for better memory. We evaluated dozens of supplements for memory enhancement & found the 5 best available now",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dwiserlifestyles.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DP7my9gUWNSOZtHzJZ0m3b%252Dkl8l1TYgXGNQ9E9q2xU2pmeswE5Jjtah6NNBgkKQWK0Kzti2notRk89bJOGpCxA3UDgjXY22BOCCjJ%252DwHzgWP_JzqB7EYMCncF3C1ppanQWk6NKP3NTcULDLqz%252DPAo4Wzk2AHvK5MVej173bdfuX8.J9Y%252Dg5iCQbAA92TYtWbJVQ%26rut%3Df92dfaca3c8677386efffdfe496ecaecf0e343753177b7bd3ee25baef91deb38%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8GwGwOZmVPnspb%252DliIjSrSDVUCUxOBLqOmyZIybQG5J1XoMyj60U1W9ElwXbv0dcBALHPRvaE7xw6JPp1bGrLt4HPEb5iKC4KDgM3KnbF1iEEpRE2bTRfCxWsIb1SdC9YNT9mUWBqxRw1zsB8LfJum4bCS2iVWMCpjVyQR__N29Fj_6cbMXOIOPEZsPcaXnhGUI2nYA6sWITUXy_NxKbcU%252D%252DiuE4%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cud2lzZXJsaWZlc3R5bGVzLmNvbSUyZnRvcGljcyUyZm1lbW9yeSUzZm1zY2xraWQlM2Q0ZDZmZGIwMTI4ZWUxYzRiZmRmZWIyNTYxODZkYjQzYSUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZFdpc2VyTGlmZXN0eWxlcy5jb20lMjUyMC0lMjUyME1lbW9yeSUyNTIwLSUyNTIwU2VhcmNoJTI1MjBVUyUyNnV0bV90ZXJtJTNkbG9uZyUyNTIwdGVybSUyNTIwbWVtb3J5JTI2dXRtX2NvbnRlbnQlM2RtZW1vcnklMjUyMGxvc3M%2526rlid%253D4d6fdb0128ee1c4bfdfeb256186db43a%26vqd%3D4%2D206621803174932969715814249676254663267%26iurl%3D%257B1%257DIG%253D19D5B7D205984E8EAF79CDF21A614CB0%2526CID%253D252A908F72CA607D3AFA865A731F6145%2526ID%253DDevEx%252C5045.1&rut=1b18e4bcea2ea12f293c8854d2cfdd494b34b0f506f6b3d48e75ebfbd339dab5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T18:42:12.331260"
+    },
+    {
+      "topic": "long term memory",
+      "title": "Shop focus and memory support - Amazon.com Official Site",
+      "content": "Get deals and low prices on focus and memory support in Health & Personal Care on Amazon. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DvwnoJsVyeP4TI1tSfu_vkhnYOWHBd81S48GGjk5kliwZMJuoQ8iHkC_vEDqAUP94au%252DyJHc2IysvjkdQQB5AiMykl1xESsW9E0rFFt_zgBQBYZfQH%252DBSkfr_7bnjpoFO7iGFdOuubF5MX6O5PbxUavu7%252DNARxhZdTCNTz5Ry7NE.kas62vcL040fHugXvfTpMw%26rut%3D9000c5f8ed3d972b63788c5a58e4f6903b1c51182c959ec486fef2af13e15fe4%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8Kme3YpOeytYNzHrgvEn44TVUCUz5Qx0Mv3PxRv5KDOBFUaj03ivRZG4wHvOnaMaoFL5%252Dnhmdd_I7a3U1pVB30UwclqOPNUVj%252DVZI7Y_6rls5D%252DB3VxCm5_vvPTVy81EaAhn9apJK8HAduV2dKst0GniVYmF4kRLVlz3PBH_FR4S5OF_Pb3vhzGv5Aq2kUZlp0bTw6TPDysKYGqU3PsQZhjgAQYs%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGZvY3VzJTJiYW5kJTJibWVtb3J5JTJic3VwcG9ydCUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzYxNGMzNmZ2YWhfYiUyNmFkZ3JwaWQlM2QxMjI0ODU3MDEzMTM3OTM2JTI2aHZhZGlkJTNkNzY1NTM2OTY2ODYyMTAlMjZodm5ldHclM2RzJTI2aHZxbXQlM2RiJTI2aHZibXQlM2RiYiUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjQ0OCUyNmh2dGFyZ2lkJTNka3dkLTc2NTUzODg0ODQxMzA0JTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2Q5MzU5XzEzNjQwMjE1JTI2bWNpZCUzZDMyOTM1YzZlOGE1MDNmYTFiN2ZkYTI5ZjY2OWU3YzdmJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2Q0NDUwMGJlN2NmNGMxNzU2ZDdhYTYyYjBmZmNmMTM0NA%2526rlid%253D44500be7cf4c1756d7aa62b0ffcf1344%26vqd%3D4%2D205235186951173758219819481292727828206%26iurl%3D%257B1%257DIG%253D19D5B7D205984E8EAF79CDF21A614CB0%2526CID%253D252A908F72CA607D3AFA865A731F6145%2526ID%253DDevEx%252C5050.1&rut=e50f93b16527c9eff48ea6561c6bbbd9d577bc6afcc1d50d432e4eebe1cf110a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T18:42:12.331316"
+    },
+    {
+      "topic": "long term memory",
+      "title": "Long-term memory - Wikipedia",
+      "content": "Learn about long-term memory (LTM), the stage of the Atkinson-Shiffrin memory model where informative knowledge is held indefinitely. Compare different models of LTM, such as the unitary model, the dual-store model, and the modal model, and their evidence and implications.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLong%2Dterm_memory&rut=d70b28013269b291207b61d82ba221a044c688b5de3d623a5e3c713529b21e72",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T18:42:12.331358"
+    },
+    {
+      "topic": "long term memory",
+      "title": "Long-Term Memory in Psychology: Types, Capacity & Duration",
+      "content": "Learn about the different types of long-term memory (explicit and implicit) and how they are affected by amnesia and aging. Find out how long-term memory is stored, accessed and retained in the brain.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.simplypsychology.org%2Flong%2Dterm%2Dmemory.html&rut=a3aed1f71f8525abc4c5ea898e1a5ab5c7092f99a4ba0a5b26b935f3e8780d13",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T18:42:12.331399"
+    },
+    {
+      "topic": "long term memory",
+      "title": "Long-Term Memory: What It Is, How It Works & Types",
+      "content": "Learn about the two main types of long-term memory: declarative and nondeclarative, and their subtypes. Find out how long-term memory is formed, stored and retrieved in different parts of the brain.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmy.clevelandclinic.org%2Fhealth%2Farticles%2Flong%2Dterm%2Dmemory&rut=b7003aa2a6557c45751f08b655edf95723f17c03e4b898cd8baa87118ccdf554",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T18:42:12.331439"
+    },
+    {
+      "topic": "logic philosophy",
+      "title": "Philosophy of logic - Wikipedia",
+      "content": "Learn about the area of philosophy that studies the scope and nature of logic and its applications. Explore the philosophical problems, concepts, and systems of logic and their relation to other disciplines.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPhilosophy_of_logic&rut=a15c6fe3c9f37800c93d49188a4f8d9bebe0ce657c08be7929ae7cf1bbead4d8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:51:53.997116"
+    },
+    {
+      "topic": "logic philosophy",
+      "title": "Philosophy of logic | Definition, Problems, & Facts | Britannica",
+      "content": "Philosophy of logic, the study, from a philosophical perspective, of the nature and types of logic, including problems in the field and the relation of logic to mathematics, computer science, the empirical sciences, and human disciplines such as linguistics, psychology, law, and education.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fphilosophy%2Dof%2Dlogic&rut=6e1fcb901de6266a8c596dbc24fe670c16678a0f3c07aa260d8ecb9c319a68ad",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:51:53.997361"
+    },
+    {
+      "topic": "logic philosophy",
+      "title": "Logic - By Branch / Doctrine - The Basics of Philosophy",
+      "content": "Logic in Islamic philosophy also contributed to the development of modern logic, especially the development of Avicennian logic (which was responsible for the introduction of the hypothetical syllogism, temporal logic, modal logic and inductive logic) as an alternative to Aristotelian logic.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.philosophybasics.com%2Fbranch_logic.html&rut=5dc5f4017deaa4bd7608793eee3508d771e84d2e973c81ce523496a24b3c2f80",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:51:53.997510"
+    },
+    {
+      "topic": "logic philosophy",
+      "title": "Classical Logic (Stanford Encyclopedia of Philosophy)",
+      "content": "Logic is also a central branch of computer science, due, in part, to interesting computational relations in logical systems, and, in part, to the close connection between formal deductive argumentation and reasoning (see the entries on recursive functions, computability and complexity, and philosophy of computer science).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Flogic%2Dclassical%2F&rut=72049d691730f9968a5a58c1cf9599bcb01ecf1a5fa557133e7bf8991e763b84",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:51:53.997674"
+    },
+    {
+      "topic": "logic philosophy",
+      "title": "What is Logic? - Introduction to Philosophy: Logic",
+      "content": "Logic is the discipline that aims to distinguish good reasoning from bad. Learn the basic notions of propositions, arguments, and logical rules, and how to analyze and evaluate them.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fpress.rebus.community%2Fintro%2Dto%2Dphil%2Dlogic%2Fchapter%2Fchapter%2D1%2F&rut=6c65af6dbb5e3728a9ab8a02fe5a6952e20f69d5d095f8bd08884bd7be4767af",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:51:53.997759"
+    },
+    {
+      "topic": "philosophy of language",
+      "title": "Save on philosophy of language - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on philosophy of language at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D1UZnKl85kJejudWPVj1aqbVQ6wdbGzTWQQU5ArrWbW_eTWH_7swwMJZSnLsxQeomaTfXEsiP1EsAOyb76WAmi2Ft8CLqET47HIzMzYMgQToWb6UBX_0vvbwW4w%252Dj2CY4GAtO1QQ0nMRgLwJ9Xt1Vv%252DPvtCfI_6npq9Egjd2ljBw.hq1BTpM0t2sz%252DMXxJ8cOGQ%26rut%3Deca9297a9a03a006f17fc1a7c316dfb09e0ef58387dbf760b33fc0d7882091d9%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8vi9z0zbR8RIVbdQwpuNkcDVUCUyoHaIv7cOvEWwE6qsy3GxYFK77YiqsMn6FWr24wolDOSCVTaiYVAeX9t1SgxFmuGPpk%252DpQeMH3YF3RqHaottwugl1MwaiawqFz7JgRuVO_bGhk57nZ%252DW78jMRAMThY7N7h07LkxkYGD%252D32Y2SZ_g5vgy4LYrMgo6oj4bK5eHhEC3TpubWne_EmZWVdU_NRWiY%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZHBoaWxvc29waHklMmJvZiUyYmxhbmd1YWdlJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfYXQ0ZHMwcXA2X3AlMjZhZGdycGlkJTNkMTIyNzA1NTMyMzU0MTU4NiUyNmh2YWRpZCUzZDc2NjkxMTI1NzE0NDI5JTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkZSUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY0NDglMjZodnRhcmdpZCUzZGt3ZC03NjY5MTIzNjIyNTA4OCUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkMjgyMTNfMTQ2MzgwMDclMjZtY2lkJTNkMmEyNDkxZmFiODNhMzcwZmJjYjQwODM5ZGJiZDdhODIlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZGI0MDk1ODgwZmQ3NjFhYWIxYThjMzFkN2JjMDEyMDE5%2526rlid%253Db4095880fd761aab1a8c31d7bc012019%26vqd%3D4%2D232793531719668736154982776550060648948%26iurl%3D%257B1%257DIG%253D2DCEB51302634FEFAE272C96B86908A3%2526CID%253D125EC35CC72E610A1B0FD589C6FB6001%2526ID%253DDevEx%252C5045.1&rut=7b19ded058c93d4ae5e44d04c134294df4b27da72840ba16fba7557033b7c1f4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:54:31.802183"
+    },
+    {
+      "topic": "philosophy of language",
+      "title": "Philosophy of language - Wikipedia",
+      "content": "An overview of the philosophical study of the nature of language and its relationship with language users and the world. Learn about the history, main topics, and key figures of philosophy of language from ancient to modern times.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPhilosophy_of_language&rut=29707184fc9beb5777f39b6bd58d908d17c8d0e8b587a5a91bd2a5c982e2b5af",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:54:31.802286"
+    },
+    {
+      "topic": "philosophy of language",
+      "title": "Philosophy of language | Summary, Books, Topics, Philosophers, & Facts ...",
+      "content": "Philosophy of language, philosophical investigation of the nature of language; the relations between language, language users, and the world; and the concepts with which language is described and analyzed, both in everyday speech and in scientific linguistic studies. Because its investigations are",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fphilosophy%2Dof%2Dlanguage&rut=18c5f98ea7b405ae7484359be11d9afe24a1d296f3d47e3b94d79cae042a1253",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:54:31.802316"
+    },
+    {
+      "topic": "philosophy of language",
+      "title": "Philosophy of Language - Internet Encyclopedia of Philosophy",
+      "content": "Philosophy of Language Those who use the term \"philosophy of language\" typically use it to refer to work within the field of Anglo-American analytical philosophy and its roots in German and Austrian philosophy of the early twentieth century. Many philosophers outside this tradition have views on the nature and use of language, and the border between \"analytical\" and \"continental ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Flang%2Dphi%2F&rut=bae97cfaabbc9237207fffaad147e1facc4f68c955ab65836afa163e2b0368d3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:54:31.802366"
+    },
+    {
+      "topic": "top 10 ai tools in 2023 that will make your life easier",
+      "title": "AI Tools for Stronger Drafts - Better Essays in Seconds",
+      "content": "Take the pain out of submitting your best work with AI-powered writing feedback. Write collaboratively with AI while developing your own authentic voice and ideas.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dgrammarly.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D82sc7M3sThGDsmWc%252DhLflgfwCxmhbKfyLOK7wCh4XXR2X3HuXnuILHLRUW9VyrYultTj5gpYkOUHOuGMX7A2P24uYjqZpto_YrwLTJuMCy6I%252DCImOyUgZ3zVb3aeftw%252D7M%252DxlSO_qSnF55REu37n_Dk0C4q08krGc5Kqh3SXWqQ.9cke4VCRI6%252DPn9RPRWyQCg%26rut%3D098497672d64af9d3770f980fe0cd5195bbd354f4b02a212a957a0e3ffef7523%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8y2uCYXdWNligNy%252DlNU_uQzVUCUzenHNCVBellss5i5PXXty1TaHx_bK1kk6yUBaqk2Ix8HpcV35dyjj9VP3_P_SFB77nGUuhMAMR8ZyNY2cm8R8Q7RZRhDMJJ3BGz69WkfHOXFoXiOwJM7Q9pipu_IqDtixiI%252Dlf10x1J_%252DMi8sFcLJTCroedPSt8H%252DOPiiWAlpMh3sYuyzJYu0kU2OJP9ILDHw%2526u%253DaHR0cHMlM2ElMmYlMmZhZC5kb3VibGVjbGljay5uZXQlMmZzZWFyY2hhZHMlMmZsaW5rJTJmY2xpY2slM2ZsaWQlM2Q0MzcwMDA3OTU4MDA4MzQ5NyUyNmRzX3Nfa3dnaWQlM2Q1ODcwMDAwODY3NDI5MTM5OSUyNmRzX2FfY2lkJTNkNTkzMjc0MTQ2JTI2ZHNfYV9jYWlkJTNkMjAwMTgyODgzNzYlMjZkc19hX2FnaWQlM2QxNTg5NTI5NDE2NTMlMjZkc19hX2xpZCUzZGt3ZC05NTAwNDc1NDkxNTMlMjYlMjZkc19lX2FkaWQlM2Q4MTIyNjU1ODcwMjM3OCUyNmRzX2VfdGFyZ2V0X2lkJTNka3dkLTgxMjI2NzM5MTgxNjkyJTNhbG9jLTE5MCUyNiUyNmRzX2VfbmV0d29yayUzZHMlMjZkc191cmxfdiUzZDIlMjZkc19kZXN0X3VybCUzZGh0dHBzJTNhJTJmJTJmd3d3LmdyYW1tYXJseS5jb20lMmZkb2NzJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkNjI3MDg0OTYwJTI2dXRtX2NvbnRlbnQlM2Q4MTIyNjU1ODcwMjM3OCUyNnV0bV90ZXJtJTNkYWklMjUyMHdyaXRlciUyNTIwb25saW5lJTI1MjBmcmVlJTI2a2V5d29yZGlkJTNkODEyMjY3MzkxODE2OTIlMjZ0YXJnZXRpZCUzZGt3ZC04MTIyNjczOTE4MTY5MiUzYWxvYy0xOTAlMjZhZGdyb3VwJTNkMTI5OTYyMzg3NTIyODI2MCUyNmRldmljZSUzZGMlMjZtYXRjaHR5cGUlM2RiJTI2bmV0d29yayUzZHMlMjZleHRlbnNpb24lM2QlMjZjbGlja2lkJTNkMGUwNDlkY2YyNDUxMTU2OGJjN2NmNDk4Njc3ZTQ1NzQlMjZnY2xpZCUzZDBlMDQ5ZGNmMjQ1MTE1NjhiYzdjZjQ5ODY3N2U0NTc0JTI2Z2Nsc3JjJTNkM3AuZHMlMjYlMjZtc2Nsa2lkJTNkMGUwNDlkY2YyNDUxMTU2OGJjN2NmNDk4Njc3ZTQ1NzQ%2526rlid%253D0e049dcf24511568bc7cf498677e4574%26vqd%3D4%2D156182713560824326927812071282145734673%26iurl%3D%257B1%257DIG%253DBB2358C1415C449F900AE89BBE3BDA4E%2526CID%253D17EB2DEBDA446F5A143B3B3EDB916ECC%2526ID%253DDevEx%252C5046.1&rut=e8dda6acac95887e526f8cee8c81290d49185e925feae6f53d42a8def2aeabff",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:51.682618"
+    },
+    {
+      "topic": "top 10 ai tools in 2023 that will make your life easier",
+      "title": "Top 10 AI Tools in 2023 That Will Make Your Life Easier",
+      "content": "In this article, we explore the top 10 AI tools that are driving innovation and efficiency in various industries. These tools are designed to automate repetitive tasks, improve workflow, and increase productivity. The tools included in our list are some of the most advanced and widely used in the market, and are suitable for a...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsmallarticles.com%2Ftop%2D10%2Dai%2Dtools%2Din%2D2023%2Dthat%2Dwill%2Dmake%2Dyour%2Dlife%2Deasier%2F&rut=3cfea5e2c6e2777e6b32c9b041a6f126b50db6e9ee0efa011a9c533e156f3161",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:51.682687"
+    },
+    {
+      "topic": "top 10 ai tools in 2023 that will make your life easier",
+      "title": "Discover the Top 10 Mind-Blowing Free AI Tools Making Life Easier in 2023",
+      "content": "The rapid advancement of AI technology has brought us an array of remarkable tools that can significantly enhance our lives. From restoring photos to generating captivating content, creating videos, and unleashing creativity, these top 10 mind-blowing free AI tools in 2023 empower individuals from all walks of life.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.dlad.io%2Fblogs%2Fdiscover%2Dthe%2Dtop%2D10%2Dmind%2Dblowing%2Dfree%2Dai%2Dtools%2Dmaking%2Dlife%2Deasier%2Din%2D2023&rut=ab4827a56b000fcdb08275fb211d1961d3efc95bac9f6e455a553c4c5a3ac5b5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:51.682754"
+    },
+    {
+      "topic": "top 10 ai tools in 2023 that will make your life easier",
+      "title": "10 Amazing AI Tools You Cannot Miss Out in 2023 - Times Now",
+      "content": "AI continues to revolutionize our daily day-to-day life activities, so here are 10 AI tools that can help you make your life easier!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.timesnownews.com%2Fweb%2Dstories%2Ftechnology%2F10%2Damazing%2Dai%2Dtools%2Dyou%2Dcannot%2Dmiss%2Dout%2Din%2D2023%2Fphotostory%2F104756000.cms&rut=8f4915878d97f321870dda0747c59a1e703e0bf87ebf8e495b2830a79b4fc048",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:51.682805"
+    },
+    {
+      "topic": "top 10 ai tools in 2023 that will make your life easier",
+      "title": "Top 10 Revolutionary AI Tools to Transform 2023!",
+      "content": "Revolutionizing Your Life: The Top 10 AI Tools of 2023 In recent years, artificial intelligence (AI) has transformed how we approach daily tasks, enhance productivity, and even have fun. With the release of tools like ChatGPT, a wave of innovative applications has emerged, each with the potential to revolutionize our lives.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fainewsera.com%2Ftop%2D10%2Drevolutionary%2Dai%2Dtools%2Dto%2Fartificial%2Dintelligence%2Dnews%2Fai%2Dagents%2F&rut=6fcd0b4a8ce9e1828f57a88084e14453a46e933771dcd61d0fc3253e9a11a352",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:51.682855"
+    },
+    {
+      "topic": "gottfried leibniz",
+      "title": "Save on gottfried leibniz - Amazon.com Official Site",
+      "content": "Browse & discover thousands of unique brands. Read customer reviews & best sellers. Find deals and compare prices on gottfried leibniz at Amazon.com",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DCES9WIq3ETY54pJLB2H8yLcJccZUS8Qf1LStw_6_ZfSKuPTdQwMoFJFino7nkfY25vRaSxBMkSaY7lGxpAF1%252DrAayPsdlZHZ1c5QSb%252DpAWBJyzV%252DxcQj%252DJN4W2505ERvuEe2JN0W3aThFhE2khvwQY61mDkwD0LCrg1O3plGSBY.Er8_CnnB_QhjI0V9RAMjQQ%26rut%3Def5cfe0f472022c3adeebcce80b6f300828f4540b0894d9456cc9b776ddda5df%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8FPFLj8EG_1tPisFBqxkzzzVUCUxw%252DUixpXIOiHqFA0QJRdPz9wSr7Cvrs6c4mHmj97shqBLe6QLusXvdH2QXjSbocf3MVQedob6o3HDv5XzEIIeIs7bRHjWlFsv%252DfyIzPqfoewmN7rBcaEKTcFJ0TktIN9wMMrx0PL4j%252DoFDx%252DglkmQhBvzCGYTrHArXmD9iP6MymFCKZuwIP%252D8J0fNaBUuhIJk%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGdvdHRmcmllZCUyYmxlaWJuaXolMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF8zZHNvY3JuMzFuX3AlMjZhZGdycGlkJTNkMTIzMjU1MzUzNzI4NDQwNyUyNmh2YWRpZCUzZDc3MDM0NzI2ODY3MDA2JTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkZSUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY2NTMlMjZodnRhcmdpZCUzZGt3ZC03NzAzNDg1NzgyMTAxMyUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkMTA3NjBfMTM1ODkyNDQlMjZtY2lkJTNkMjg0MmVhMGNjZjNmMzMzYmExNDBjMDQ3NDczMGNhZjAlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZGFkY2VkMDVlYzljYzExMzcyYzI1YjkwOTI0MzJiODcx%2526rlid%253Dadced05ec9cc11372c25b9092432b871%26vqd%3D4%2D224614511312349512641635073599954727855%26iurl%3D%257B1%257DIG%253DFDE30B7F6DC04F299A971414E7C996F0%2526CID%253D397FA5B5BF0A69EB33DBB360BEDF6874%2526ID%253DDevEx%252C5046.1&rut=2afbc16b46978cc34407ca34baf499fd57a39e631ae8719cb4fce22fba299a30",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T08:10:39.155408"
+    },
+    {
+      "topic": "gottfried leibniz",
+      "title": "Gottfried Wilhelm Leibniz - Wikipedia",
+      "content": "Gottfried Wilhelm Leibniz (or Leibnitz; [a] 1 July 1646 [O.S. 21 June] - 14 November 1716) was a German polymath active as a mathematician, philosopher, scientist and diplomat who is credited, alongside Isaac Newton, with the creation of calculus in addition to many other branches of mathematics, such as binary arithmetic and statistics.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGottfried_Wilhelm_Leibniz&rut=925a1712606dbbedbb9a3e25d5a141357bea48f7efb7768c6e919fb139f21d91",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T08:10:39.155512"
+    },
+    {
+      "topic": "gottfried leibniz",
+      "title": "Gottfried Wilhelm Leibniz | Biography & Facts | Britannica",
+      "content": "Gottfried Wilhelm Leibniz, German philosopher, mathematician, and political adviser, important both as a metaphysician and as a logician and distinguished also for his invention of the differential and integral calculus independent of Sir Isaac Newton.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FGottfried%2DWilhelm%2DLeibniz&rut=bbccdf4b1cb2b29f4f9774b4b3e5cb29f79374904ffe5d51713d626092877771",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T08:10:39.155566"
+    },
+    {
+      "topic": "gottfried leibniz",
+      "title": "Leibniz, Gottfried Wilhelm | Internet Encyclopedia of Philosophy",
+      "content": "A comprehensive overview of the life and works of the universal genius and early modern rationalist philosopher. Learn about his metaphysical idealism, his theory of possible worlds, his logic, his ethics, and his influence on Christian theology.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fleib%2Dove%2F&rut=58a0650512d7fe5e47d3c226f8740aecb71b249dd842e3b1ef5e521885c9e261",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T08:10:39.155616"
+    },
+    {
+      "topic": "gottfried leibniz",
+      "title": "Gottfried Wilhelm Leibniz - Stanford Encyclopedia of Philosophy",
+      "content": "Gottfried Wilhelm Leibniz (1646-1716) was one of the great thinkers of the seventeenth and eighteenth centuries and is known as the last \"universal genius\". He made deep and important contributions to the fields of metaphysics, epistemology, logic, philosophy of religion, as well as mathematics, physics, geology, jurisprudence, and history.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fleibniz%2F&rut=219dfc080b805776b3b0930d907415dd0c0608dd5e6fb43c27c315c035ace76c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T08:10:39.155667"
+    },
+    {
+      "topic": "john locke",
+      "title": "John Locke - Wikipedia",
+      "content": "John Locke (/ l\u0252k /; 29 August 1632 (O.S.) - 28 October 1704 (O.S.)) [11] was an English philosopher and physician, widely regarded as one of the most influential of the Enlightenment thinkers and commonly known as the \"father of liberalism \". [12][13][14] Considered one of the first of the British empiricists, following the tradition of Francis Bacon, Locke is equally important to social ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FJohn_Locke&rut=12441be47b733b8f2e7fc091b996d086f98300d3debd699150a8c384fea04580",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T08:53:16.515955"
+    },
+    {
+      "topic": "john locke",
+      "title": "John Locke - Encyclopedia Britannica",
+      "content": "John Locke, English philosopher whose works lie at the foundation of modern philosophical empiricism and political liberalism. He was an inspirer of both the European Enlightenment and the Constitution of the United States. Learn more about Locke's life and career.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FJohn%2DLocke&rut=5800c5129da4d88e83b7d0d89c18ccdd0ebff882a87cc1ecd8b6d0ee6640f8d5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T08:53:16.516056"
+    },
+    {
+      "topic": "john locke",
+      "title": "John Locke - Stanford Encyclopedia of Philosophy",
+      "content": "John Locke (b. 1632, d. 1704) was a British philosopher, Oxford academic and medical researcher. Locke's monumental An Essay Concerning Human Understanding (1689) is one of the first great defenses of modern empiricism and concerns itself with determining the limits of human understanding in respect to a wide spectrum of topics. It thus tells us in some detail what one can legitimately claim ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Flocke%2F&rut=dcbeefe8a956ad50606d5f016bf0691488d2d31a6f016029cee595f4dcb4a34d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T08:53:16.516121"
+    },
+    {
+      "topic": "john locke",
+      "title": "John Locke - Biography, Beliefs & Philosophy | HISTORY",
+      "content": "John Locke's closest female friend was the philosopher Lady Damaris Cudworth Masham. Before she married the two had exchanged love poems, and on his return from exile, Locke moved into Lady ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.history.com%2Farticles%2Fjohn%2Dlocke&rut=1c43c130eb19ecd1242cbe96f861113f9070006505e7a97b7af8e27aa95e9bd6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T08:53:16.516180"
+    },
+    {
+      "topic": "john locke",
+      "title": "Locke, John | Internet Encyclopedia of Philosophy",
+      "content": "A comprehensive overview of the life and works of John Locke, a 17th century philosopher and political theorist. Learn about his empiricist theory of knowledge, his arguments for limited government and religious toleration, and his influence on modern thought.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Flocke%2F&rut=9e336c2dacc7f40cc16c8567c601ad5052d39a236a2af10e9099fddcfe9009f3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T08:53:16.516239"
+    },
+    {
+      "topic": "ludwig wittgenstein",
+      "title": "Ludwig Wittgenstein - Wikipedia",
+      "content": "Ludwig Josef Johann Wittgenstein (/ \u02c8v\u026at\u0261\u0259n\u0283ta\u026an, - sta\u026an / VIT-g\u0259n-s (h)tyne; [6] Austrian German: [\u02c8lu\u02d0tv\u026a\u00e7 \u02c8jo\u02d0s\u025bf \u02c8jo\u02d0han \u02c8v\u026at\u0261n\u0329\u0283ta\u026an]; 26 April 1889 - 29 April 1951) was an Austro-British philosopher who worked primarily in logic, the philosophy of mathematics, the philosophy of mind, and the philosophy of language.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLudwig_Wittgenstein&rut=c04d040cb9722e06f7003bdffc83133919bd46faa820d3d1f44f1920606ee381",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:42:38.919851"
+    },
+    {
+      "topic": "ludwig wittgenstein",
+      "title": "Ludwig Wittgenstein | Austrian Philosopher, Logician & Mathematician ...",
+      "content": "Ludwig Wittgenstein was an Austrian-born British philosopher who is regarded by many as the greatest philosopher of the 20th century.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FLudwig%2DWittgenstein&rut=a43480167918fb34fec179b3750d5a7c2ce447cbb0491c402c0bd5cf21064a01",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:42:38.919889"
+    },
+    {
+      "topic": "ludwig wittgenstein",
+      "title": "Ludwig Wittgenstein - Stanford Encyclopedia of Philosophy",
+      "content": "Considered by some to be the greatest philosopher of the 20th century, Ludwig Wittgenstein played a central, if controversial, role in mid-20th-century analytic philosophy. He continues to influence, and incur debate in, current philosophical thought in topics as diverse as logic and language, perception and intention, ethics and religion, aesthetics and culture, and even political thought ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fwittgenstein%2F&rut=ab03d70eff6d63c93b53ab5c0b2e0ca09c373616cccf1da6dac9a178c22f108e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:42:38.919917"
+    },
+    {
+      "topic": "ludwig wittgenstein",
+      "title": "Wittgenstein, Ludwig | Internet Encyclopedia of Philosophy",
+      "content": "A comprehensive overview of the life and work of one of the most influential philosophers of the twentieth century. Learn about his early and later writings, his ethical and religious views, his conception of philosophy, and his legacy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fwittgens%2F&rut=5ce3a6f455ef3b1fb6e76b248cb781bb8cc61a0d95bac04d02fc597f99d8160f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:42:38.919943"
+    },
+    {
+      "topic": "linear algebra",
+      "title": "Linear Equations Practice - Unlimited Math Skills Practice",
+      "content": "A math website kids love! Master K-12 math with IXL's interactive program. Unlimited math practice with meaningful, up-to-date tracking on your child's progress.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dixl.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DX_Aw6LZs3xrFv69rCQAvqKHnjThXQJnzkVyljoJc%252DB0mU2863OBHUMBoyfO2P0sBY7R7LcHFDAPQeYCw05ftGhNkLyLvfePmSc9eaGl28JIwFUrHwxvR%252DIdia9LKLTTJTVs1oozdoYfAXAWqsgmljeEVjwEPD_9NCz3g9ae2WwM.KQJ0rac38P%252DgU86f%252DFBFGw%26rut%3De847dbdbc736a40ab8a31834b5022e2142d1199bbc8517cac3d40cfcaa429918%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8_OL7w3herCRcNxnF3hU63zVUCUxlUN_0QwjEpm3nFptHq2js_pCyeBGXb9G0bwlPwywKm88%252DgDEf2afdO_RtA1ZLWu_bUGPu__vAgXfT3iGtQ%252DYQVgz0OnR306Vl7ARsOMUH8k7Yo0aN1W%252DCfUJz_ci4FJJvN1XilQQqtR0%252DTgFb6nS3D8X3KSisZfJBIYesuPW4Av1Bw%252D2FXD3mDKHRx%252DfBV44%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuaXhsLmNvbSUyZiUzZnBhcnRuZXIlM2RiaW5nJTI2Y2FtcGFpZ24lM2QyNjQ1ODk2NDIlMjZhZEdyb3VwJTNkNTQ5NTA4NDc1NyUyNm1zY2xraWQlM2RjOTFiODRkMjBiYTQxNzZkNmE1OWVkOGExOTQ2YWZkMiUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZFNlYXJjaCUyNTIwLSUyNTIwTWF0aCUyNTIwVGVybXMlMjUyMC0lMjUyME1vZCUyNTIwQnJvYWQlMjUyMC0lMjUyMFVTJTI2dXRtX3Rlcm0lM2QlMjUyQmFsZ2VicmElMjUyMCUyNTJCbGluZWFyJTI1MjAlMjUyQmVxdWF0aW9uJTI2dXRtX2NvbnRlbnQlM2RsaW5lYXIlMjUyMGVxdWF0aW9ucw%2526rlid%253Dc91b84d20ba4176d6a59ed8a1946afd2%26vqd%3D4%2D50819397682298873328705759025392979166%26iurl%3D%257B1%257DIG%253DCC77C6BC320B446A95F85CB0886D8EC2%2526CID%253D392CCAE56209649136F5DC3063ED65BC%2526ID%253DDevEx%252C5045.1&rut=753938d7f782d81e473902d7c19df74670bf5237b3442f70bb0aee2b846e31f7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:48:02.696831"
+    },
+    {
+      "topic": "linear algebra",
+      "title": "Linear algebra - Wikipedia",
+      "content": "Learn about the branch of mathematics that deals with linear equations, maps, and vector spaces. Explore the history, applications, and foundations of linear algebra, from ancient China to modern abstract algebra.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLinear_algebra&rut=d72e0972e6fa6d8722f8fde0bc08ce14a2b32dcc5bfe1ed8a4662138bd75c1a3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:48:02.696879"
+    },
+    {
+      "topic": "linear algebra",
+      "title": "Linear Algebra | Mathematics | MIT OpenCourseWare",
+      "content": "Learn matrix theory and linear algebra from Prof. Gilbert Strang at MIT. Access lecture videos, problem sets, exams, and instructor insights on topics such as systems of equations, vector spaces, and eigenvalues.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Focw.mit.edu%2Fcourses%2F18%2D06%2Dlinear%2Dalgebra%2Dspring%2D2010%2F&rut=076539c4ffef95b23f6ea33232d4e7c3cb585103a6478b0078484ba5d4eb53d8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:48:02.696913"
+    },
+    {
+      "topic": "linear algebra",
+      "title": "Linear Algebra | Khan Academy",
+      "content": "Learn linear algebra\u2014vectors, matrices, transformations, and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.khanacademy.org%2Fmath%2Flinear%2Dalgebra&rut=c710dff071c04a4a600ae58f766490fe0c2ca3789b080cc81e00852e3e9eb02a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:48:02.696950"
+    },
+    {
+      "topic": "linear algebra",
+      "title": "Linear algebra | Matrices, Vectors & Equations | Britannica",
+      "content": "Linear algebra, mathematical discipline that deals with vectors and matrices and, more generally, with vector spaces and linear transformations. Unlike other parts of mathematics that are frequently invigorated by new ideas and unsolved problems, linear algebra is very well understood.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Flinear%2Dalgebra&rut=f7f30b2f584b1dc5a5d538c8ae3a5e565d33157c4e419b9374e313c61d04f2c2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:48:02.696987"
+    },
+    {
+      "topic": "laplace transform",
+      "title": "Laplace transform - Wikipedia",
+      "content": "Laplace transform In mathematics, the Laplace transform, named after Pierre-Simon Laplace (/ l\u0259\u02c8pl\u0251\u02d0s /), is an integral transform that converts a function of a real variable (usually \u2060 \u2060, in the time domain) to a function of a complex variable (in the complex-valued frequency domain, also known as s-domain or s-plane).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLaplace_transform&rut=18d14d90e2ed0e6e9ed796ad355b521d33a8e660b910bebbc4b8b2070de554b5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:58:11.714070"
+    },
+    {
+      "topic": "laplace transform",
+      "title": "The Laplace Transformation - Springer",
+      "content": "The Laplace transformation only requires that \\ (y\\in \\mathcal {E}\\), which allows for exponential growth. In the above example we could just as well have used the conventional method for solving differential equations with constant coefficients.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%2F978%2D1%2D4471%2D7610%2D7_7&rut=84023e0f34e8409b11eaef1fe0ae6b77afa0981ce1dff8b89da4cd32097ca9ae",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:58:11.714169"
+    },
+    {
+      "topic": "laplace transform",
+      "title": "Differential Equations - Laplace Transforms",
+      "content": "Chapter 4 : Laplace Transforms In this chapter we will be looking at how to use Laplace transforms to solve differential equations. There are many kinds of transforms out there in the world. Laplace transforms and Fourier transforms are probably the main two kinds of transforms that are used. As we will see in later sections we can use Laplace transforms to reduce a differential equation to an ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Ftutorial.math.lamar.edu%2FClasses%2FDE%2FLaplaceIntro.aspx&rut=4e5f0df36c45b76ae4f83aab03575bf0389484728b79737cfa6de125a8285967",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:58:11.714256"
+    },
+    {
+      "topic": "laplace transform",
+      "title": "Laplace Transform: Basics - MIT OpenCourseWare",
+      "content": "Learn the definition, properties, and applications of the Laplace transform, a powerful tool for solving differential equations. Watch lecture videos, read course notes, and practice problems with solutions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Focw.mit.edu%2Fcourses%2F18%2D03sc%2Ddifferential%2Dequations%2Dfall%2D2011%2Fpages%2Funit%2Diii%2Dfourier%2Dseries%2Dand%2Dlaplace%2Dtransform%2Flaplace%2Dtransform%2Dbasics%2F&rut=5352fe072c80afcea3ef14f91c33b614c69c2dbf72bba9515cdc6989b7f25ca5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:58:11.714327"
+    },
+    {
+      "topic": "laplace transform",
+      "title": "Laplace Transform | Brilliant Math & Science Wiki",
+      "content": "The Laplace transform is an important tool in differential equations, most often used for its handling of non-homogeneous differential equations. It can also be used to solve certain improper integrals like the Dirichlet integral. ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbrilliant.org%2Fwiki%2Flaplace%2Dtransform%2F&rut=658ded32a8babe40adea2c697157d4c20cc008e92f3288e4f7c02f1a1398cfec",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:58:11.714398"
+    },
+    {
+      "topic": "sri lankan civil war",
+      "title": "Sri Lankan civil war - Wikipedia",
+      "content": "The Sri Lankan civil war[a] was fought in Sri Lanka from 1983 to 2009. Beginning on 23 July 1983, it was an intermittent insurgency against the government by the Liberation Tigers of Tamil Eelam (LTTE, also known as the Tamil Tigers) led by Velupillai Prabhakaran.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSri_Lankan_Civil_War&rut=b1c0fe998f18fcad29743fa73ce4599540a07916f617e1d2fbcde8d03e880358",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:32:56.991952"
+    },
+    {
+      "topic": "sri lankan civil war",
+      "title": "Overview of the Sri Lankan Civil War - ThoughtCo",
+      "content": "Learn about the causes, phases, and consequences of the brutal civil war between Sinhalese and Tamil communities in Sri Lanka from 1983 to 2009. Explore the role of colonialism, India, and terrorism in this complex conflict.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.thoughtco.com%2Fthe%2Dsri%2Dlankan%2Dcivil%2Dwar%2D195086&rut=07c0273df0ce25d33a57182bd5882e9e8e471fa86b863679049f898e5c1044d7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:32:56.992061"
+    },
+    {
+      "topic": "sri lankan civil war",
+      "title": "Sri Lanka 1983-2009 - War History",
+      "content": "Sri Lankan government control of disputed territory demonstrated national territorial integrity. The violence of the armed conflict took a number of forms, divided by three major failed peace processes and ceasefires, and four 'Eelam Wars', culminating in the final battles of the civil war in April and May 2009.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwarhistory.org%2F%40msw%2Farticle%2Fsri%2Dlanka%2D1983%2D2009&rut=4ee877fc87133b7035f46a84fbe4af61828830837e37cb89bf6e9608683fa0cf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:32:56.992135"
+    },
+    {
+      "topic": "sri lankan civil war",
+      "title": "The Sri Lankan Civil War and Its History, Revisited in 2020",
+      "content": "The civil war in Sri Lanka was a clash between the Sinhalese-dominated government and the Tamil insurgent group, fueled by British colonialism and ethnic tensions. Learn how the war ended, what challenges remain, and how the conflict relates to the Black Lives Matter movement in the US.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fhir.harvard.edu%2Fsri%2Dlankan%2Dcivil%2Dwar%2F&rut=13e7290eb38794c7bd6337d00528cdc4b2d2e7b2404e3adcbd199b5ac7a601cf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:32:56.992200"
+    },
+    {
+      "topic": "sri lankan civil war",
+      "title": "40 Facts About Sri Lankan Civil War",
+      "content": "The Sri Lankan Civil War was a brutal conflict that lasted over 25 years, leaving deep scars on the island nation. Starting in 1983, the war pitted the Sri Lankan government against the Liberation Tigers of Tamil Eelam (LTTE), a militant organization fighting for an independent Tamil state. This war saw countless battles, tragic losses, and significant political upheaval. Why did this conflict ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Ffacts.net%2Fhistory%2Fhistorical%2Devents%2F40%2Dfacts%2Dabout%2Dsri%2Dlankan%2Dcivil%2Dwar%2F&rut=782184bfd16941ebf38dc940ddeb3cee2345f2c8be3affa1a1def887835b9ec4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:32:56.992254"
+    },
+    {
+      "topic": "legal tender",
+      "title": "Legal tender - Wikipedia",
+      "content": "Learn what legal tender is, how it is recognized by courts of law, and how it can be withdrawn or replaced. Explore the etymology and examples of legal tender in different countries and currencies.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLegal_tender&rut=bb65028b6fc745cd06bafc099338df0e5002c6e4528a0e18a90bbf13b93865d2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:34:31.328691"
+    },
+    {
+      "topic": "legal tender",
+      "title": "What Does 31 U.S.C. 5103 Say About Legal Tender?",
+      "content": "Learn what 31 U.S.C. 5103 defines as legal tender, its limitations, and how it applies to transactions with businesses, individuals, and government entities.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Flegalclarity.org%2Fwhat%2Ddoes%2D31%2Du%2Ds%2Dc%2D5103%2Dsay%2Dabout%2Dlegal%2Dtender%2F&rut=c6dbc00ec5144babd57678b051188d311b82a19e34c927100e7919f53fa991c5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:34:31.328782"
+    },
+    {
+      "topic": "legal tender",
+      "title": "legal tender | Wex | US Law | LII / Legal Information Institute",
+      "content": "Learn what legal tender means in the U.S. and how it differs from other forms of payment. Find out when and how legal tender can be used to settle debts and what are the exceptions and limitations.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.law.cornell.edu%2Fwex%2Flegal_tender&rut=9ddaa5a79ffcaf622e6cf08aed32215251993bb4cfaf63990bc8bf964a32a828",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:34:31.328844"
+    },
+    {
+      "topic": "legal tender",
+      "title": "Understanding Legal Tender: Definition, Functions, and Global Examples",
+      "content": "Learn what legal tender is, how it's established, and why it's important for the economy. Find out which currencies are legal tender in different countries and how cryptocurrencies fit in.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.investopedia.com%2Fterms%2Fl%2Flegal%2Dtender.asp&rut=5efd6fa0844c72d7abc60ae52aa3e124fd52547519c13859d6374cf1bda2671f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:34:31.328907"
+    },
+    {
+      "topic": "legal tender",
+      "title": "LEGAL TENDER Definition & Meaning - Merriam-Webster",
+      "content": "The meaning of LEGAL TENDER is money that is legally valid for the payment of debts and that must be accepted for that purpose when offered. How to use legal tender in a sentence.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.merriam%2Dwebster.com%2Fdictionary%2Flegal%2520tender&rut=b79870af82139fdd84b3650a2a16d5ccb06421fd7bf24a1117ef9f6f5bb23bbe",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:34:31.328966"
+    },
+    {
+      "topic": "central limit theorem",
+      "title": "The Central Limit Theorem - Fun Online Math Practice",
+      "content": "A math website kids love! Master K-12 math with IXL's interactive program. Unlimited math practice with meaningful, up-to-date tracking on your child's progress.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dixl.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DLiXDDf8et0vu51%252Dp98iW8FN9GaDi89xzXLgq21JGUEjQY9kB68C9IyuaNaf91dgdlSBY5JeZK42m%252DJiCSF4CcNO7boWxxU0cfT5ft_96ZR47toKaEqEhP6CF_IIJv68v4F4obd4hG9abKZzbdv7xWkHu9Rt12n0MwaUBvM_iD3A.G8UDVVlVCTBrnKAjfPHvcw%26rut%3D3936644f5e5682139d716c21a9d960f8fbb552e30711c2a96edbfad0a7c36f89%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8iJ6TVxBjQoxQwyYeZdJKuDVUCUw6VsQUdQr1BrAKbSJ_pPRq9od0QPg72zmO5J%252D39RnS4kw_k%252DVEDVov%252DcNSq5h4Jb1NGgYHmZTqlzHlJvSopEAdJwTei25f9H2REByertTHtcxJ9sSuWEuUzMu8jKLvKjad_TdCfWn9XabmHLzolxavOedJkO1SqKCNGfStvVXMiHeroT2QZYUPKW1unfGW9qo%2526u%253DaHR0cHMlM2ElMmYlMmZwcm8uaXhsLmNvbSUyZm1hdGglMmZzdGF0aXN0aWNzJTJmdGhlLWNlbnRyYWwtbGltaXQtdGhlb3JlbSUzZmtleSUzZDZFZTBheXQ5U2pTTnk5TDRnZkp0Q005dmhNdzN4byUyNTJCQjUyREJjd2RqU0I4JTI1M0QlMjZwYXJ0bmVyJTNkZ29vZ2xlJTI2Y2FtcGFpZ24lM2QyNjQ1ODk2NDIlMjZhZEdyb3VwJTNkMTI5NTIyNTg3NTQ3ODM1MiUyNm1zY2xraWQlM2Q0YWIzN2VjMDc5Y2ExMGNlZDNmYjE3OTg1YjhjYzBmOCUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZFNlYXJjaCUyNTIwLSUyNTIwTWF0aCUyNTIwVGVybXMlMjUyMC0lMjUyME1vZCUyNTIwQnJvYWQlMjUyMC0lMjUyMFVTJTI2dXRtX3Rlcm0lM2RtYXRoJTI2dXRtX2NvbnRlbnQlM2RNYXRoJTI1MjBUZXJtc19EU0E%2526rlid%253D4ab37ec079ca10ced3fb17985b8cc0f8%26vqd%3D4%2D41969429523968094109666980371952676912%26iurl%3D%257B1%257DIG%253DFDA881915B0A40F59F4BCD970FFE8AC1%2526CID%253D0F1E89F6884C63CC2D4C9F2389A86238%2526ID%253DDevEx%252C5045.1&rut=34c3d5921f926bafd72cbc3bcde850ac96e09963d97d44f96821eabdeaf8128e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:53:42.681729"
+    },
+    {
+      "topic": "central limit theorem",
+      "title": "Central limit theorem - Wikipedia",
+      "content": "Learn about the central limit theorem (CLT), a key concept in probability theory that states that the distribution of a normalized sample mean converges to a normal distribution. Explore different versions of the CLT, their conditions, proofs, and applications.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCentral_limit_theorem&rut=ae7d3e2fe5fe83c0247769317f508397d70efd675e5094e78a90e6c4cfc40c88",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:53:42.681849"
+    },
+    {
+      "topic": "central limit theorem",
+      "title": "Lesson 27: The Central Limit Theorem - Statistics Online",
+      "content": "Learn the Central Limit Theorem, which states that the sample mean follows an approximate normal distribution regardless of the underlying distribution. See examples, implications and applications of the theorem with simulation and R code.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fonline.stat.psu.edu%2Fstat414%2Fbook%2Fexport%2Fhtml%2F750&rut=e7de579038b74fcaa84ee3e94f9ff03af7b3a6db66eb5edda42bb26b21efecc4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:53:42.681931"
+    },
+    {
+      "topic": "central limit theorem",
+      "title": "Central Limit Theorem in Statistics - GeeksforGeeks",
+      "content": "The Central Limit Theorem in Statistics states that as the sample size increases and its variance is finite, then the distribution of the sample mean approaches the normal distribution, irrespective of the shape of the population distribution.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmaths%2Fcentral%2Dlimit%2Dtheorem%2F&rut=1ccfe79bab754f323f7cb0ba1d54c633dfdd46a2ab618370b88e9a3f0c6e8506",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:53:42.682005"
+    },
+    {
+      "topic": "central limit theorem",
+      "title": "Central limit theorem | Probability, Distribution & Statistics | Britannica",
+      "content": "Central limit theorem, in probability theory, a theorem that establishes the normal distribution as the distribution to which the mean (average) of almost any set of independent and randomly generated variables rapidly converges. The central limit theorem explains why the normal distribution arises",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fcentral%2Dlimit%2Dtheorem&rut=f96481a70bc8b9595f8d76fff2cdc024843865c6f3bc9d1bf69c614ca04e8ee0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:53:42.682100"
+    },
+    {
+      "topic": "law of large numbers",
+      "title": "Law of Large Numbers - Law of Large Numbers",
+      "content": "Learn About Law of Large Numbers, Definition & Significance in a Lesson",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstudy.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Dn8YjooePU7_UpQDniHM2gUPvlp1Y0wgAGE7L7DEIjpyAbNOhNT31QQvkdmPOrhoriDUWXd1r%252D6NdvOuFaKV9_A0RGzM0nEfCaY0arzCXtUqX3VBCDQULtt0lk_xstRpptN4fbdVs9p4ciUEBAElEC_3ey1TfEw5NxEqfepN9z6o.4226JcRwusgb3nCIIjrSrw%26rut%3D032cce7ac352dc29397c04d61570fc148adfdbea3cf1b1f4fb11e778af4da51b%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De89qJJezYUKT8Nea53_Y0X1zVUCUzixJ2jKcg5UCN77dcF7dZPSm39iSM0C9W3R54B5OIiZBZ4RcoyfG6Zvt6BozPrLbaes4uUM7N0XMszNrTW8ayLl%252D7JIZbdGXpDqw3iI4xizGIYoxVBEX3nGtNXE__9VUFHf5nz5uvroC5V4x_ZUmSj0oONOPtRzJVvy610w1Si2Q38CrBF4Fo6H2Kqcn%252Dw1Vk%2526u%253DaHR0cHMlM2ElMmYlMmZzdHVkeS5jb20lMmZidXklMmZsZWFybiUyZmxlc3NvbiUyZmxhdy1vZi1sYXJnZS1udW1iZXJzLmh0bWwlM2ZzcmMlM2RwcGNfYmluZ19ub25icmFuZCUyNnJjbnR4dCUzZGF3cyUyNmNydCUzZCUyNmt3ZCUzZFNFTy1QUEMtQlVZJTI2a3dpZCUzZGRhdC0yMzI5MDQwNTA1ODg2OTQwJTNhbG9jLTE5MCUyNmFnaWQlM2QxMjM1ODUxMzAyNTk2NzQ2JTI2bXQlM2RiJTI2ZGV2aWNlJTNkYyUyNm5ldHdvcmslM2RzJTI2X2NhbXBhaWduJTNkU2VvUFBDJTI2bXNjbGtpZCUzZDBhZWY3ODcyNjkwNzEwOWJiMWNhMTEyYTU4YjQyNjIy%2526rlid%253D0aef78726907109bb1ca112a58b42622%26vqd%3D4%2D97845391095386934831147308232396865642%26iurl%3D%257B1%257DIG%253D9A4A3818D9044418801D6BCB8170FCCB%2526CID%253D0FDC2395E50865DA27FB3540E49F6478%2526ID%253DDevEx%252C5046.1&rut=42c1fe83622eb142b0bde1cd997a4e595d12ee4d9b2e29ed9861efddc4745b31",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T12:59:32.343146"
+    },
+    {
+      "topic": "law of large numbers",
+      "title": "Law of large numbers - Wikipedia",
+      "content": "An illustration of the law of large numbers using a particular run of rolls of a single die. As the number of rolls in this run increases, the average of the values of all the results approaches 3.5. Although each run would show a distinctive shape over a small number of throws (at the left), over a large number of rolls (to the right) the shapes would be extremely similar.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLaw_of_large_numbers&rut=616e27a54d18d57713efc3e6df45fb91741d8fb748900f67051a63724c482f2a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T12:59:32.343228"
+    },
+    {
+      "topic": "law of large numbers",
+      "title": "Law of Large Numbers: What It Is, How It's Used, and Examples",
+      "content": "Discover how the law of large numbers explains why larger samples lead to more accurate estimates of a population's true average.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.investopedia.com%2Fterms%2Fl%2Flawoflargenumbers.asp&rut=cf1623fa599baa244545571ff396a6e7f00caa83b062bc1b147156dfa63b2df5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T12:59:32.343277"
+    },
+    {
+      "topic": "law of large numbers",
+      "title": "Law of large numbers | Probability, Sampling & Estimation | Britannica",
+      "content": "The law of large numbers is closely related to what is commonly called the law of averages. In coin tossing, the law of large numbers stipulates that the fraction of heads will eventually be close to 1/2.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Flaw%2Dof%2Dlarge%2Dnumbers&rut=f6c4abdbc7b94fb18a1b6373eb5c86a0b37559b23a7a15cc0310f3d78a542458",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T12:59:32.343328"
+    },
+    {
+      "topic": "law of large numbers",
+      "title": "Law of Large Numbers | Strong and weak, with proofs and exercises",
+      "content": "Learn about the weak and strong laws of large numbers for sequences of random variables and vectors. See the conditions, proofs and exercises for each law, and how they relate to ergodicity and covariance.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.statlect.com%2Fasymptotic%2Dtheory%2Flaw%2Dof%2Dlarge%2Dnumbers&rut=f6417f55f265277d7b08738c037a5694927ab1733167172d854c7cf8e303f55e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T12:59:32.343373"
     }
   ],
-  "last_updated": "2025-11-28T21:22:27.726081"
+  "last_updated": "2026-01-02T12:59:32.362289"
 }

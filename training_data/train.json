@@ -517,5 +517,290 @@
     "task": "text_classification",
     "text": "Create an image of Thor",
     "label": 0
+  },
+  {
+    "task": "text_generation",
+    "text": "good evening",
+    "label": "Evening! Time to wind down or get some work done. What would you like?"
+  },
+  {
+    "task": "text_generation",
+    "text": "interesting!",
+    "label": "That's fascinating, right? There's so much more we could explore. What aspect interests you most?"
+  },
+  {
+    "task": "text_generation",
+    "text": "frustrated",
+    "label": "I understand that can be really frustrating. Let me help you work through this step by step."
+  },
+  {
+    "task": "text_generation",
+    "text": "afternoon",
+    "label": "Afternoon! Halfway through the day. What would you like to work on?"
+  },
+  {
+    "task": "text_generation",
+    "text": "cool",
+    "label": "Thanks! I'm happy you're excited about it. What's next on your mind?"
+  },
+  {
+    "task": "text_generation",
+    "text": "gm",
+    "label": "Good morning! Hope you're having a great start to your day. How can I help?"
+  },
+  {
+    "task": "text_generation",
+    "text": "hi!",
+    "label": "Hello! What's on your mind?"
+  },
+  {
+    "task": "text_generation",
+    "text": "cool!",
+    "label": "Glad you think so! What would you like to do next?"
+  },
+  {
+    "task": "text_generation",
+    "text": "amazing",
+    "label": "That's awesome! I love hearing that enthusiasm. What's got you so excited?"
+  },
+  {
+    "task": "text_generation",
+    "text": "good evening!",
+    "label": "Good evening! Hope you've had a wonderful day. How can I help?"
+  },
+  {
+    "task": "text_generation",
+    "text": "sup",
+    "label": "Hey! I'm good. What's going on? How can I assist you today?"
+  },
+  {
+    "task": "text_generation",
+    "text": "how are you doing",
+    "label": "I'm doing great, thanks for asking! I'm here and ready to help you with anything you need."
+  },
+  {
+    "task": "text_generation",
+    "text": "annoying",
+    "label": "I hear you - that sounds challenging. Let's break this down together and find a solution."
+  },
+  {
+    "task": "text_generation",
+    "text": "cool!",
+    "label": "Thanks! I'm happy you're excited about it. What's next on your mind?"
+  },
+  {
+    "task": "text_generation",
+    "text": "okay",
+    "label": "Perfect! I'm ready when you are. What's our next step?"
+  },
+  {
+    "task": "text_generation",
+    "text": "thank you",
+    "label": "My pleasure! Glad I could assist. Feel free to ask anytime."
+  },
+  {
+    "task": "text_generation",
+    "text": "good morning",
+    "label": "Good morning! Hope you're having a great start to your day. How can I help?"
+  },
+  {
+    "task": "text_generation",
+    "text": "why",
+    "label": "That's an important 'why' question. Here's the reasoning behind it..."
+  },
+  {
+    "task": "text_generation",
+    "text": "how are you",
+    "label": "I'm doing great, thanks for asking! I'm here and ready to help you with anything you need."
+  },
+  {
+    "task": "text_generation",
+    "text": "hi",
+    "label": "Hello! What's on your mind?"
+  },
+  {
+    "task": "text_generation",
+    "text": "cool",
+    "label": "Glad you think so! What would you like to do next?"
+  },
+  {
+    "task": "text_generation",
+    "text": "confused",
+    "label": "I can see this is confusing - that's completely understandable. Let me explain this differently."
+  },
+  {
+    "task": "text_generation",
+    "text": "amazing",
+    "label": "I can hear your excitement! That's fantastic. Tell me more about what has you so thrilled."
+  },
+  {
+    "task": "text_generation",
+    "text": "annoying",
+    "label": "I understand that can be really frustrating. Let me help you work through this step by step."
+  },
+  {
+    "task": "text_generation",
+    "text": "ok",
+    "label": "Perfect! I'm ready when you are. What's our next step?"
+  },
+  {
+    "task": "text_generation",
+    "text": "hi there",
+    "label": "Hi there! How can I help you today?"
+  },
+  {
+    "task": "text_generation",
+    "text": "good afternoon!",
+    "label": "Afternoon! Halfway through the day. What would you like to work on?"
+  },
+  {
+    "task": "text_generation",
+    "text": "how's it going",
+    "label": "I'm doing great, thanks for asking! I'm here and ready to help you with anything you need."
+  },
+  {
+    "task": "text_generation",
+    "text": "more about",
+    "label": "I'd be happy to dive deeper! What specific aspect would you like me to expand on?"
+  },
+  {
+    "task": "text_generation",
+    "text": "good evening!",
+    "label": "Evening! Time to wind down or get some work done. What would you like?"
+  },
+  {
+    "task": "text_generation",
+    "text": "good afternoon!",
+    "label": "Good afternoon! Hope your day is going well. How can I assist you?"
+  },
+  {
+    "task": "text_generation",
+    "text": "sup",
+    "label": "Not much! Just here and ready to help. What's up with you?"
+  },
+  {
+    "task": "text_generation",
+    "text": "frustrated",
+    "label": "I hear you - that sounds challenging. Let's break this down together and find a solution."
+  },
+  {
+    "task": "text_generation",
+    "text": "don't understand",
+    "label": "It's okay to feel confused about complex topics. Let's break this down into simpler terms."
+  },
+  {
+    "task": "text_generation",
+    "text": "hi there",
+    "label": "Hello! What's on your mind?"
+  },
+  {
+    "task": "text_generation",
+    "text": "thanks",
+    "label": "You're very welcome! I'm always happy to help. What else can I do for you?"
+  },
+  {
+    "task": "text_generation",
+    "text": "interesting!",
+    "label": "I'm glad you find it interesting! Would you like to dive deeper into this topic?"
+  },
+  {
+    "task": "text_generation",
+    "text": "don't understand",
+    "label": "I can see this is confusing - that's completely understandable. Let me explain this differently."
+  },
+  {
+    "task": "text_generation",
+    "text": "good evening",
+    "label": "Good evening! Hope you've had a wonderful day. How can I help?"
+  },
+  {
+    "task": "text_generation",
+    "text": "good afternoon",
+    "label": "Good afternoon! Hope your day is going well. How can I assist you?"
+  },
+  {
+    "task": "text_generation",
+    "text": "evening",
+    "label": "Evening! Time to wind down or get some work done. What would you like?"
+  },
+  {
+    "task": "text_generation",
+    "text": "tell me more",
+    "label": "I'd be happy to dive deeper! What specific aspect would you like me to expand on?"
+  },
+  {
+    "task": "text_generation",
+    "text": "what's up",
+    "label": "Hey! I'm good. What's going on? How can I assist you today?"
+  },
+  {
+    "task": "text_generation",
+    "text": "hi",
+    "label": "Hi there! How can I help you today?"
+  },
+  {
+    "task": "text_generation",
+    "text": "good morning",
+    "label": "Morning! Ready to tackle the day. What would you like to work on?"
+  },
+  {
+    "task": "text_generation",
+    "text": "how are you doing",
+    "label": "I'm doing well! Always excited to chat and assist. What can I help you with today?"
+  },
+  {
+    "task": "text_generation",
+    "text": "how are you",
+    "label": "I'm doing well! Always excited to chat and assist. What can I help you with today?"
+  },
+  {
+    "task": "text_generation",
+    "text": "good afternoon",
+    "label": "Afternoon! Halfway through the day. What would you like to work on?"
+  },
+  {
+    "task": "text_generation",
+    "text": "how",
+    "label": "I'd be happy to explain how this works. Here's the breakdown..."
+  },
+  {
+    "task": "text_generation",
+    "text": "interesting",
+    "label": "That's fascinating, right? There's so much more we could explore. What aspect interests you most?"
+  },
+  {
+    "task": "text_generation",
+    "text": "whats up",
+    "label": "Not much! Just here and ready to help. What's up with you?"
+  },
+  {
+    "task": "text_generation",
+    "text": "how",
+    "label": "Let me walk you through the process step by step..."
+  },
+  {
+    "task": "text_generation",
+    "text": "thanks",
+    "label": "My pleasure! Glad I could assist. Feel free to ask anytime."
+  },
+  {
+    "task": "text_generation",
+    "text": "tell me more",
+    "label": "Great question! Let me provide more details. Which part interests you most?"
+  },
+  {
+    "task": "text_generation",
+    "text": "how's it going",
+    "label": "I'm doing well! Always excited to chat and assist. What can I help you with today?"
+  },
+  {
+    "task": "text_generation",
+    "text": "afternoon",
+    "label": "Good afternoon! Hope your day is going well. How can I assist you?"
+  },
+  {
+    "task": "text_generation",
+    "text": "whats up",
+    "label": "Hey! I'm good. What's going on? How can I assist you today?"
   }
 ]

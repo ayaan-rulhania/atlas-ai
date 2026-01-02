@@ -62,7 +62,14 @@
     "why",
     "what's",
     "wth",
-    "wtf"
+    "wtf",
+    "wormhole",
+    "waals",
+    "wants",
+    "wittgenstein",
+    "whitehead",
+    "william",
+    "which"
   ],
   "knowledge": [
     {
@@ -2738,7 +2745,583 @@
       "query": "What is cricket?",
       "source": "research",
       "learned_at": "2025-11-29T12:25:58.253011"
+    },
+    {
+      "topic": "gravitational wave",
+      "title": "Gravitational wave - Wikipedia",
+      "content": "Gravitational waves transport energy as gravitational radiation, a form of radiant energy similar to electromagnetic radiation. [7] Newton's law of universal gravitation, part of classical mechanics, does not provide for their existence, instead asserting that gravity has instantaneous effect everywhere.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGravitational_wave&rut=89c477c9ed976570dae688ead9b069690e6da57b344ffeb2684d1482f78c9f7a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T03:02:21.222479"
+    },
+    {
+      "topic": "gravitational wave",
+      "title": "What are Gravitational Waves? | LIGO Lab | Caltech",
+      "content": "Gravitational waves are ripples in space-time caused by violent and energetic events in the Universe, such as colliding black holes or supernovae. Learn how Einstein predicted them, how they were first observed by LIGO, and what they reveal about gravity and the cosmos.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ligo.caltech.edu%2Fpage%2Fwhat%2Dare%2Dgw&rut=0c3363173bef2b129296d8c79bb59ea00a380788a38d445c5061f3288be63b4e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T03:02:21.222652"
+    },
+    {
+      "topic": "gravitational wave",
+      "title": "What Is a Gravitational Wave? - NASA Space Place",
+      "content": "Learn about gravitational waves, the invisible ripples in space predicted by Einstein. Find out how they are created, detected, and what they can tell us about the universe.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fspaceplace.nasa.gov%2Fgravitational%2Dwaves%2Fen%2F&rut=2b10fa33c76ddae28b67005bfa9a3015fa5406ab00976feb22724ddd0de44999",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T03:02:21.222690"
+    },
+    {
+      "topic": "gravitational wave",
+      "title": "Gravitational Waves: Principle, Einstein's Prediction, Detection ...",
+      "content": "Einstein's Prediction: The Origin of Gravitational Waves The general theory of relativity, proposed by Einstein in 1915, generalized the special theory of relativity and revamped Newton's theory of gravity. Einstein's field equations concluded that the gravitational field of massive objects bends space-time, and this curvature is directly related to the energy, momentum, and radiation of ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fscienceinfo.com%2Fgravitational%2Dwaves%2F&rut=ceae9ba788815722017b3177862f0395c911a2a1cc099a10278e9d507afa44e9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T03:02:21.222730"
+    },
+    {
+      "topic": "gravitational wave",
+      "title": "Gravitational Waves - Harvard-Smithsonian Center for Astrophysics",
+      "content": "Learn how gravitational waves reveal details about black holes, neutron stars, and the evolution of the universe. Explore how astronomers use light and gravity to study these cosmic events with LIGO, LISA, and other telescopes.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cfa.harvard.edu%2Fresearch%2Ftopic%2Fgravitational%2Dwaves&rut=916e6292d82760db08e108c80fbeca4e6f3a0c6d4193dca0048c3707f9266555",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T03:02:21.222766"
+    },
+    {
+      "topic": "wormhole",
+      "title": "Wormhole",
+      "content": "A wormhole is a hypothetical structure that connects disparate points in spacetime. It can be visualized as a tunnel with two ends at separate points in spacetime. Wormholes are based on a special solution of the Einstein field equations.\nWormholes are consistent with the general theory of relativity, but whether they actually exist is unknown. Many physicists postulate that wormholes are merely projections of a fourth spatial dimension, analogous to how a two-dimensional (2D) being could experience only part of a three-dimensional (3D) object.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wormhole",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T06:01:41.460035"
+    },
+    {
+      "topic": "wormhole",
+      "title": "Wormhole - Wikipedia",
+      "content": "A wormhole is a hypothetical structure that connects disparate points in spacetime. It can be visualized as a tunnel with two ends at separate points in spacetime (i.e., different locations, different points in time, or both). Wormholes are based on a special solution of the Einstein field equations. [1] Wormholes are consistent with the general theory of relativity, but whether they actually ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWormhole&rut=6840e7f010104fe49ca8c1b285d8aaf0bfb9bf10d8b8c39a2e67614c658946cd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T06:01:42.220453"
+    },
+    {
+      "topic": "wormhole",
+      "title": "Wormhole | Definition & Facts | Britannica",
+      "content": "Wormhole, solution of the field equations in German-born physicist Albert Einstein's theory of general relativity that resembles a tunnel between two black holes or other points in space-time. Such a tunnel would provide a shortcut between its end points.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fwormhole&rut=a7dea5c807354e463cc39ae56755dff01f6ae8ef28dd69228676066288f2a179",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T06:01:42.220524"
+    },
+    {
+      "topic": "wormhole",
+      "title": "Are Wormholes Real? - sciencenewstoday.org",
+      "content": "Wormholes\u2014those mysterious cosmic shortcuts that seem to defy the rules of space and time\u2014have long captured the human imagination. They are staples of science fiction, tantalizing glimpses of other dimensions, portals through space, and doors to the past or future. But beyond the fiction, wormholes are rooted in real physics. The concept arises from the very equations that describe the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencenewstoday.org%2Fare%2Dwormholes%2Dreal&rut=126319e7881e7546bb246f3fc9eea91b718e87e3c6b17c534bde5646b0682a5e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T06:01:42.221575"
+    },
+    {
+      "topic": "wormhole",
+      "title": "What are wormholes? An astrophysicist explains these shortcuts through ...",
+      "content": "An astrophysicist explains what wormholes are and how these theoretical space-time tunnels have popped up in the solutions to some equations.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.astronomy.com%2Fscience%2Fwhat%2Dare%2Dwormholes%2Dan%2Dastrophysicist%2Dexplains%2Dthese%2Dshortcuts%2Dthrough%2Dspace%2F&rut=85463177e7360123817d01942befb29ea69ab668ce2d7ed6da0d967d36a08f77",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T06:01:42.221630"
+    },
+    {
+      "topic": "wormhole",
+      "title": "Do wormholes actually exist? | BBC Sky at Night Magazine",
+      "content": "We've all heard of the concept of wormholes in space: passages through space and time that instantly transport someone or some thing to another dimension. But are wormholes real? Could they actually exist? Put simply, wormholes are shortcuts through space-time. In principle, it's possible to enter one mouth of a wormhole, travel a short distance through its tunnel, and emerge from the other ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.skyatnightmagazine.com%2Fspace%2Dscience%2Fwormholes&rut=5c7c87d518b50cd1cb4d29d53f012f3f1d9e902df1e09101b07bb4da877836c7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T06:01:42.221684"
+    },
+    {
+      "topic": "nasa will soon find out if the perseverance rover can really persevere on mars",
+      "title": "NASA will soon find out if the Perseverance rover can really persevere ...",
+      "content": "Long wait NASA will soon find out if the Perseverance rover can really persevere on Mars Engineers at JPL are certifying the Perseverance rover to drive up to 100 kilometers.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Farstechnica.com%2Fspace%2F2025%2F12%2Fnasa%2Dwill%2Dsoon%2Dfind%2Dout%2Dif%2Dthe%2Dperseverance%2Drover%2Dcan%2Dreally%2Dpersevere%2Don%2Dmars%2F&rut=f7d04313fec74bf202d1d65e30b8eb80e92cbbc6ced79f5fbeb6e63bf150167f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:26:33.177908"
+    },
+    {
+      "topic": "nasa will soon find out if the perseverance rover can really persevere on mars",
+      "title": "NASA will soon learn if Perseverance can keep going on Mars - MSN",
+      "content": "NASA is about to lock in a verdict on how long its Perseverance rover can keep working on Mars, and the answer will shape the next decade of planetary exploration. Engineers have spent the past ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.msn.com%2Fen%2Dus%2Fnews%2Ftechnology%2Fnasa%2Dwill%2Dsoon%2Dlearn%2Dif%2Dperseverance%2Dcan%2Dkeep%2Dgoing%2Don%2Dmars%2Far%2DAA1SMlGX&rut=0c6d805c810eaab8527c4da796cfdc592c3d433541d41210f1b95bf7f7ec5b76",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:26:33.177968"
+    },
+    {
+      "topic": "nasa will soon find out if the perseverance rover can really persevere on mars",
+      "title": "Perseverance continues science mission amid uncertainty about Mars ...",
+      "content": "NASA's Perseverance Mars rover is continuing its mission to collect samples despite uncertainty about when or if those samples will be returned to Earth.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fspacenews.com%2Fperseverance%2Dcontinues%2Dscience%2Dmission%2Damid%2Duncertainty%2Dabout%2Dmars%2Dsample%2Dreturn%2F&rut=72722df1d0f3148246003da734a330cfc046d816cab19f7a6ddc443791c76d6f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:26:33.178010"
+    },
+    {
+      "topic": "nasa will soon find out if the perseverance rover can really persevere on mars",
+      "title": "NASA predicts how far Perseverance rover can drive on Mars - Earth.com",
+      "content": "Built to last, NASA's Perseverance rover continues its long journey across Mars, collecting samples and revealing the planet's deep past.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.earth.com%2Fnews%2Fnasa%2Dpredicts%2Dhow%2Dmany%2Dmore%2Dmiles%2Dperseverance%2Drover%2Dcan%2Ddrive%2Don%2Dmars%2F&rut=ac8664510bfee79fd3d84e8d239d78f755ba7dede5664c0aa603ca5966903939",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:26:33.178051"
+    },
+    {
+      "topic": "nasa will soon find out if the perseverance rover can really persevere on mars",
+      "title": "Mars Sample Return: Perseverance Mission Continues",
+      "content": "Mars Sample Return; Perseverance continues collecting samples despite MSR program uncertainty, targeting ancient crater rim rocks with extended 100km driving capability. NASA's Perseverance rover continues its critical science mission despite uncertain timeline. Mars Sample Return remains the ultimate objective for collected geological treasures. Rover remains in excellent condition ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fnasaspacenews.com%2F2025%2F12%2Fmars%2Dsample%2Dreturn%2F&rut=128dac53c9d6902d64064c272def2b34ea0cbcc5cc5f49edc65d55611e284706",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:26:33.178103"
+    },
+    {
+      "topic": "van der waals force",
+      "title": "Van der Waals force - Wikipedia",
+      "content": "Learn about the van der Waals force, a distance-dependent interaction between atoms or molecules that is not based on chemical bonds. Find out its definition, types, examples, applications, and contrast with other intermolecular forces.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FVan_der_Waals_force&rut=a55a0ca2d1430d39cf93a4821957f407a2448dba66acf9c6af27df7fab0e98f1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:00.562981"
+    },
+    {
+      "topic": "van der waals force",
+      "title": "van der Waals forces - Encyclopedia Britannica",
+      "content": "Van der Waals forces, relatively weak electric forces that attract neutral molecules to one another in gases, in liquefied and solidified gases, and in almost all organic liquids and solids. The forces are named for the Dutch physicist Johannes Diderik van der Waals, who in 1873 first postulated",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fvan%2Dder%2DWaals%2Dforces&rut=2dcce693763b0526a5c1e2e4570515ce796438ee51cace2ef5a0b6841ae20a63",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:00.563025"
+    },
+    {
+      "topic": "van der waals force",
+      "title": "Van der Waals Force | Brilliant Math & Science Wiki",
+      "content": "Van der Waals forces are specific intermolecular interactions observed in liquids and solids. They are electrostatic in nature, arising from the interactions of positively and negatively charged species. intermolecular forces hold molecules together (in contrast to intramolecular forces, which hold atoms together within a molecule). They help determine bulk properties such as boiling point and ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbrilliant.org%2Fwiki%2Fvan%2Dder%2Dwaals%2Dforce%2F&rut=4943178af0ce7d4a52bf46e55ae653fc698dd6b8582a5b76a658b18c8b788916",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:00.563054"
+    },
+    {
+      "topic": "van der waals force",
+      "title": "Van Der Waals Force - GeeksforGeeks",
+      "content": "Van der Waals forces are intermolecular forces. They include attraction and repulsion between atoms and molecules. This force is fundamental in diverse fields which include condensed matter physics, polymer science, nanotechnology, supra-molecular chemistry, biological structure, and surface science.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fchemistry%2Fvan%2Dder%2Dwaals%2Dforce%2F&rut=9e6a33a506a661ee8b37d3af6ec53aec0e46daf6f16bdc82e0313cc799714382",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:00.563082"
+    },
+    {
+      "topic": "van der waals force",
+      "title": "Van der Waals Forces (Bond): Definition, Examples, & Diagrams",
+      "content": "Define and explain van der Waals forces. How do they hold molecules together. Learn their different types and importance, and check out a few examples.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.chemistrylearner.com%2Fchemical%2Dbonds%2Fvan%2Dder%2Dwaals%2Dforces&rut=97f6bb8fd88c5dc74b740d337f89fcf25ce1400c860ef243a89ce00bb229b425",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:00.563110"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These are the flying discs the government wants you to know about",
+      "content": "These are the flying discs the government wants you to know about DiskSat's design offers \"a power-to-weight ratio unmatched by traditional aluminum satellites.\"",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Farstechnica.com%2Fscience%2F2025%2F12%2Fheres%2Dwhy%2Dnasa%2Dand%2Dthe%2Dspace%2Dforce%2Dare%2Dinterested%2Din%2Dpizza%2Dshaped%2Dsatellites%2F&rut=f211be3316a507f9820d7a3acaa1110567f349036b9c4eb0c58da797508f882c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470269"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "Government's new 'flying discs' could redefine low-orbit missions",
+      "content": "These disk-like spacecraft are not science fiction, and this morning, they successfully entered orbit under the watchful observation of NASA and the U.S. Space Force. Thursday morning, four ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.msn.com%2Fen%2Dus%2Fnews%2Ftechnology%2Fgovernment%2Ds%2Dnew%2Dflying%2Ddiscs%2Dcould%2Dredefine%2Dlow%2Dorbit%2Dmissions%2Far%2DAA1SOLCz&rut=d515a90639683d73b6113b12a111164798de7ea5292727fe29f32e50f8fbe3fb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470331"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These are the flying discs the government wants you to know about ...",
+      "content": "Rocket Lab delivers for Space Force and NASA. Four small satellites rode a Rocket Lab Electron launch vehicle into orbit from Virginia early Thursday, beginning a government-funded technology ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fjean%2Dpierre%2Dpalomba%2Dmarin%2D14508b162_these%2Dare%2Dthe%2Dflying%2Ddiscs%2Dthe%2Dgovernment%2Dactivity%2D7407712454568235008%2DUxWm&rut=7fee72c854af04723714910de3a8548826d592e7abebf9982acce37cbf8ae207",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470377"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These Are The Flying Discs The Government Wants You To Know",
+      "content": "Home \u00bb Tech News \u00bb These are the flying discs the government wants you to know about Share with your friends! these are the flying discs the government NASA and the US Space Force have initiated a groundbreaking technology demonstration mission with the launch of four innovative satellites designed to test a new spacecraft concept.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.hashe.com%2Ftech%2Dnews%2Fthese%2Dare%2Dthe%2Dflying%2Ddiscs%2Dgovernment%2Dwants%2Dyou%2Dto%2Dknow%2Dabout%2F&rut=e066b6d6ca1d75b7d6df9a185a6a0856749920e76e05246626ba11c8540c25a8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470441"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These are the flying discs the government wants you to know about",
+      "content": "These Are the Flying Discs the Government Wants You to Know About In a groundbreaking development, four small satellites designed by the Aerospace Corporation have successfully launched into orbit. The launch took place on early Thursday morning, when a Rocket Lab Electron rocket carrying the DiskSats began its journey from NASA's Wallops Flight Facility. The DiskSat project was initiated as a ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.trendynewsblog.com%2Fposts%2Fthese%2Dare%2Dthe%2Dflying%2Ddiscs%2Dthe%2Dgovernment%2Dwan%2F&rut=97788db732a3a2c4eee229d8d2e458d9fc95ca98a82e05912c84272abdb4884d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470498"
+    },
+    {
+      "topic": "working memory",
+      "title": "Top 5 Best Memory Supplements - 2026's 5 Best Memory Enhancers",
+      "content": "We identify ingredients to look for, red flags to avoid & how to improve memory naturally. Our research found 5 key ingredients that a good supplement must include to improve memory",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dwiserlifestyles.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DsCS4PlnV2C4A0083iphOZn1bCgfd6iNRNop60NtE6BPZ%252Dir6KHY1N1VRNMaSH3izcAIlgi_pPXEKzz9DkqY81RdZIuYlIzNvWJ9A5kKpdey_9jgIISPyHLgQ6VRKYSMwc2GsTueTXmjPpx1rSIoQNXGZhLrgxV46nazoB8SSCvY.DLXvRlS6EnpI0lbhldA8Hw%26rut%3D3d44f6063747f3dcfd3f111ae2b0a7fd6a2c6b2d86ec1d1225de255cedab2ded%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8EFY2X1N5%252DesKnXt3IaUdeTVUCUxgw0JuYtkkGsxDK1goVgcZEJ0wPos0ObI6dNjnY5nFcaHeHJwA4ghGi_iPPHLg2Yiqb2sslqWDzxfIxsYOFRW9kxcDwxGxn1AdcVRT7QykCIzoj%252DW5KGCWliYHIhTJLvdm6O1BVZ9md80gpP_wnHq6FgqdLRp196SxrV%252DXeGjjqO4G%252DwKKPry3sgyIPjIt5sM%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cud2lzZXJsaWZlc3R5bGVzLmNvbSUyZnRvcGljcyUyZm1lbW9yeSUzZm1zY2xraWQlM2RhN2IyMGQ4YjYxODQxYzkxMGViNzY0ZGM0YWY1YmZhMSUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZFdpc2VyTGlmZXN0eWxlcy5jb20lMjUyMC0lMjUyME1lbW9yeSUyNTIwLSUyNTIwU2VhcmNoJTI1MjBVUyUyNnV0bV90ZXJtJTNkd29ya2luZyUyNTIwbWVtb3J5JTI2dXRtX2NvbnRlbnQlM2RtZW1vcnklMjUyMGVuaGFuY2VtZW50%2526rlid%253Da7b20d8b61841c910eb764dc4af5bfa1%26vqd%3D4%2D241538711475730157683242667581505424745%26iurl%3D%257B1%257DIG%253D322DF199AF1E430298839CC394F40592%2526CID%253D236C6DF861D16DD51CD07B2D60046CF0%2526ID%253DDevEx%252C5046.1&rut=49617a1769cac1e3728b3ba9c2657ad815663d66265319ff2be006a70f74e6b8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T18:20:34.068920"
+    },
+    {
+      "topic": "working memory",
+      "title": "Shop brain and memory exercises - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on brain and memory exercises at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DMvRSG97Fc46cMqs7IcBA0fqJyS6dzwMtTK5M4oBgA4aVFTillMtnUyKS2NC2MwOnIxgArSBy3akzWxbjx8HGKyIWA9ZURYd68Caw1B74P4lfsVEiit6jr5zuyTsZ9MDey1C4Gm3gKyDl2Ha_AExosif5ys1OktvbFsjWJIDxaC8.nEmXMreZi5YmXib4EbQ8SQ%26rut%3Dd01d623c95eff66aaa7a44b6a8cafc5b8c560865989c979e69a1492c90f677e4%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8GlQ1Gyb4KewMzThx93b_CTVUCUyXY7qTOktUI965twNz%252Do_R1eUOErGJI60vjI%252D0kdDo1VdpIHKHHHmSrWTE9he%252DpsLBUBYGXvUsqHexJ7t5ZmToyOtGaLVDKyHOCeIExn1s69OLDJM_yfP%252DpsE5Y1TwKXAgxxXcSYACxbKrSPrENLX4WMti9dRDLXqAlGVysbVV7ELnpouugOUPN8a_9z36uR4%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJyYWluJTJiYW5kJTJibWVtb3J5JTJiZXhlcmNpc2VzJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfNWs5Y3pkeWVkaV9wJTI2YWRncnBpZCUzZDEyMjkyNTUwODE2NjY1MTYlMjZodmFkaWQlM2Q3NjgyODU3NjQ3MDIwNyUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NDQ4JTI2aHZ0YXJnaWQlM2Rrd2QtNzY4Mjg4MDIyMzMyMzYlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDI5OTc3XzE0NjkzMzIxJTI2bWNpZCUzZDRiZmYzOWVjZDk5NzNiNDU4M2NjOGRkZGFjNDk3MTdlJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2RkOTE3OTA5MDk2ODIxNDZlNGY1OGY5YzdiZGYzOWExNw%2526rlid%253Dd91790909682146e4f58f9c7bdf39a17%26vqd%3D4%2D67777658786456848883166696834874751736%26iurl%3D%257B1%257DIG%253D322DF199AF1E430298839CC394F40592%2526CID%253D236C6DF861D16DD51CD07B2D60046CF0%2526ID%253DDevEx%252C5051.1&rut=982eb8031f6fbc0ab510d1d53a7c6dfb4c3ef51200395a26f2627d29e69ec024",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T18:20:34.069010"
+    },
+    {
+      "topic": "working memory",
+      "title": "Working memory - Wikipedia",
+      "content": "Working memory is a cognitive system that can hold and manipulate information temporarily. Learn about its history, theories, components, capacity, and relation to long-term memory.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWorking_memory&rut=5d3edd0ebf7af8d8aca559121db16c9083ff7a51e7f613e5d84d565b64682d32",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T18:20:34.069077"
+    },
+    {
+      "topic": "working memory",
+      "title": "What Is Working Memory and How Does It Work?",
+      "content": "Working memory is not simply a passive storage space where memories sit idly waiting. Instead, it is an active mental workspace, a dynamic cognitive system that allows us to temporarily hold and process information needed for complex tasks such as reasoning, learning, and comprehension.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencenewstoday.org%2Fwhat%2Dis%2Dworking%2Dmemory%2Dand%2Dhow%2Ddoes%2Dit%2Dwork&rut=a73b00fac8837512f5046c124dbfc98d620f53545ba2e63991b88fffd052e6ce",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T18:20:34.069145"
+    },
+    {
+      "topic": "working memory",
+      "title": "Working Memory Model - Simply Psychology",
+      "content": "Working memory is a mental system that temporarily holds and actively uses information, helping you perform tasks like solving problems, making decisions, or following instructions. Learn about the key parts of the working memory model, such as the central executive, the phonological loop, the visuospatial sketchpad, and the episodic buffer, and how they support everyday thinking and learning.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.simplypsychology.org%2Fworking%2Dmemory.html&rut=5671a5de2ac88d05411c7843e44ed7ab4c2b20cfa9ad9824bbadcadaba6b5b7a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T18:20:34.069216"
+    },
+    {
+      "topic": "free will",
+      "title": "FreeWill.com - Official Site - Create a Will For Free Today",
+      "content": "Partnered with American Red Cross to Help You Prepare Your Will in 3 Easy Steps! In Partnership with American Red Cross to Help You Save Time, Money and Stress.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dfreewill.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DpmmeQxOk56J%252D0Kwv8zyhss%252DUjhWgtaoLfrBLRkCgScyA9CkTe7ePdJt3VqgaTQhg53NqR_0Q20SZY2pbUpHjBMJUiokjzoA_afpnQyKSVBl3Bd8fSd4MaV5nBg0HjWN18FJOAhIIoi1xBkZV%252DL49SH2EI5VLMJbpWWN0g9BRJoQ.SsBgzO8xkQumzWyT%252DXi_SQ%26rut%3D50d63945c163f16d461e2b67dd8b323e2c266472c0664e98937a75c34b5ca732%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8lB_2iwNQYQjBXoXP2Mg9OjVUCUyNPBrzbMNxM6P1CiEvSmVq%252DTnubXUa2gFQZId8Sz_0g7sgPKPGl%252D0ux_Xo8PsP8JwQA_lAjpJrLH%252DdQAdXpnTYdXR6o1OCaTPw5WrmdYfvhGn8X%252DRqDU2YCTAfruQXF7redJEzCz3emiCUzrUSQr_HYWflPeIpmQF2x_utgWkZ9vzJdU9363YRU75JvIhANis%2526u%253DaHR0cHMlM2ElMmYlMmZhZC5kb3VibGVjbGljay5uZXQlMmZzZWFyY2hhZHMlMmZsaW5rJTJmY2xpY2slM2ZsaWQlM2Q0MzcwMDA2Mzc4NjAxMjI1NSUyNmRzX3Nfa3dnaWQlM2Q1ODcwMDAwNzA4ODU0NzYzMSUyNmRzX2FfY2lkJTNkNzA5MjY3MzYzJTI2ZHNfYV9jYWlkJTNkMTMxNjU1MTkzODUlMjZkc19hX2FnaWQlM2QxMjEyNDE3ODg3NzQlMjZkc19hX2xpZCUzZGt3ZC00NzQzNjU3ODk0MjQlMjYlMjZkc19lX2FkaWQlM2Q4NDkzNzg2MDAzODgyNSUyNmRzX2VfdGFyZ2V0X2lkJTNka3dkLTg0OTM3ODUyNjkwNjUyJTNhbG9jLTE5MCUyNiUyNmRzX2VfbmV0d29yayUzZHMlMjZkc191cmxfdiUzZDIlMjZkc19kZXN0X3VybCUzZGh0dHBzJTNhJTJmJTJmcGFydG5lci5mcmVld2lsbC5jb20lMmZhbWVyaWNhbnJlZGNyb3NzJTJmJTNmY2lkJTNkZnJlZXdpbGwlMjZtZWQlM2RjcGMlMjZzb3VyY2UlM2RiaW5nJTI2c2NvZGUlM2RBUFAwMDAwQUQwMDIlMjZnY2xpZCUzZGQ1MDI1ZTYwMzU1NTEzYjU0ODFhMzczNzc3ZTRiZDQ4JTI2Z2Nsc3JjJTNkM3AuZHMlMjYlMjZtc2Nsa2lkJTNkZDUwMjVlNjAzNTU1MTNiNTQ4MWEzNzM3NzdlNGJkNDg%2526rlid%253Dd5025e60355513b5481a373777e4bd48%26vqd%3D4%2D327837253481128099585249323936818440072%26iurl%3D%257B1%257DIG%253D8E5F448D0FD446D688DE0A98A0C33F85%2526CID%253D1AAD8000F9616D9A3F1896D5F8F66C9C%2526ID%253DDevEx%252C5045.1&rut=0f044e858c1890facc459356ee19aaaa4caaf21d4b57e7e60b6185847353b25c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:59:46.282384"
+    },
+    {
+      "topic": "free will",
+      "title": "Free Printable Last Will - Edit, Download & Print",
+      "content": "Create Your Own Last Will with Our Simple Will Template. Fast & Simple. Try Now Online. Create, Customize and Download A Pre-prepared Last Will & Testament. Fast & Simple",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dlawdistrict.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DDehtdl4y1MUcFmkg14qgUJgEB_yRQPRGUCJM6LNAwIJqoZ1Honlxy8f4Qo0AzVsTxVmDEWq6m7Ka5U0hswf8B2qQhyhlCt7uITRAxOAoTBkDL2Nucx2CzFFra217dPKlU2AA8TsEiea7aCytAyxUUh3ZzPtjpy8l3kI1NE158ik.tYLpIOPn8geDsCE7oBo%252Dww%26rut%3D6a24150e38a15ecc2a40cbf5878bb06e4bf0bd07117a173d092f9f9314fbeaec%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8oDLw43jbel%252DvrAW3d4aIazVUCUzaTm8CXx7c3ZHnXebA994po0FDTIpba_%252DZiJdlOj9yj8ItgyUtl63bfTmjWDz4bD4mJHhUk%252DTqaavUnbw05mN6bkXAv75_%252DPI3hJ58OicS7IEaabFZ3UwgyaNJ2ldOieIqm0YNezSkYqfD6q7yR_MbONV8wg1lfzexIDxYZMQCntPBl6B78osdcsPwIsoZQ_E%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cubGF3ZGlzdHJpY3QuY29tJTJmbGFzdC13aWxsLWFuZC10ZXN0YW1lbnQlMmYlM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2Q1MzAwMTkzOTclMjZ1dG1fdGVybSUzZGxhc3QlMjUyMHdpbGwlMjUyMGFuZCUyNTIwdGVzdGFtZW50JTI1MjBmb3JtJTI1MjBmb3IlMjUyMGZyZWUlMjZ1dG1fY29udGVudCUzZCUyNnV0bV9hZGdyb3VwJTNkMTM1MzUwMDYyMzI0NTkyNSUyNnV0bV9uZXR3b3JrJTNkcyUyNnV0bV9kZXZpY2UlM2RjJTI2dXRtX2RldmljZW1vZGVsJTNkJTI2dXRtX21hdGNodHlwZSUzZGUlMjZ1dG1fbG9jX3BoeXNpY2FsX21zJTNkODc0MjIlMjZtc2Nsa2lkJTNkNDE4ZjE3ZjcxN2VlMTllZGU5ZmE3ZWEwNTU1ZmExOWM%2526rlid%253D418f17f717ee19ede9fa7ea0555fa19c%26vqd%3D4%2D131928787669377490555270501834694948057%26iurl%3D%257B1%257DIG%253D8E5F448D0FD446D688DE0A98A0C33F85%2526CID%253D1AAD8000F9616D9A3F1896D5F8F66C9C%2526ID%253DDevEx%252C5049.1&rut=6e675580a9076f9587ad8c17f9163fc80f352981c1d60baad762aef0ba3d7033",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:59:46.282457"
+    },
+    {
+      "topic": "free will",
+      "title": "Write Your Legal Will Online, Free & Simple | FreeWill",
+      "content": "FreeWill is a service that lets you create or update your last will and testament online, for free. You can also make other estate planning documents, such as living will, power of attorney, and beneficiary designations, and support nonprofits with a small gift.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.freewill.com%2F&rut=3117c31630350db848193a653a129b27e252228e4348ced07f98f013edab9924",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:59:46.282507"
+    },
+    {
+      "topic": "free will",
+      "title": "Free Last Will and Testament (Will) - PDF | Word - eForms",
+      "content": "A last will and testament, or will, is a legal document outlining how an individual (testator) wants to transfer their assets after death. It also appoints who will manage the estate during the probate process (personal representative) and guardians for minor children and pets.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Feforms.com%2Fwills%2F&rut=1bbf307fff607bcf364abcbb01492c7def967110a09c055777cc4a78809897ed",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:59:46.282553"
+    },
+    {
+      "topic": "free will",
+      "title": "Free Last Will and Testament Template | PDF & Word",
+      "content": "Use our free last will and testament template to outline asset distribution and follow state signing requirements.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Flegaltemplates.net%2Fform%2Flast%2Dwill%2Dtestament%2F&rut=0b4b6302f32c438502821cefe760bd88a1c3362e7292b92801d2821cdb647268",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:59:46.282604"
+    },
+    {
+      "topic": "top 10 ai tools in 2023 that will make your life easier",
+      "title": "AI Tools for Stronger Drafts - Better Essays in Seconds",
+      "content": "Take the pain out of submitting your best work with AI-powered writing feedback. Write collaboratively with AI while developing your own authentic voice and ideas.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dgrammarly.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D82sc7M3sThGDsmWc%252DhLflgfwCxmhbKfyLOK7wCh4XXR2X3HuXnuILHLRUW9VyrYultTj5gpYkOUHOuGMX7A2P24uYjqZpto_YrwLTJuMCy6I%252DCImOyUgZ3zVb3aeftw%252D7M%252DxlSO_qSnF55REu37n_Dk0C4q08krGc5Kqh3SXWqQ.9cke4VCRI6%252DPn9RPRWyQCg%26rut%3D098497672d64af9d3770f980fe0cd5195bbd354f4b02a212a957a0e3ffef7523%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8y2uCYXdWNligNy%252DlNU_uQzVUCUzenHNCVBellss5i5PXXty1TaHx_bK1kk6yUBaqk2Ix8HpcV35dyjj9VP3_P_SFB77nGUuhMAMR8ZyNY2cm8R8Q7RZRhDMJJ3BGz69WkfHOXFoXiOwJM7Q9pipu_IqDtixiI%252Dlf10x1J_%252DMi8sFcLJTCroedPSt8H%252DOPiiWAlpMh3sYuyzJYu0kU2OJP9ILDHw%2526u%253DaHR0cHMlM2ElMmYlMmZhZC5kb3VibGVjbGljay5uZXQlMmZzZWFyY2hhZHMlMmZsaW5rJTJmY2xpY2slM2ZsaWQlM2Q0MzcwMDA3OTU4MDA4MzQ5NyUyNmRzX3Nfa3dnaWQlM2Q1ODcwMDAwODY3NDI5MTM5OSUyNmRzX2FfY2lkJTNkNTkzMjc0MTQ2JTI2ZHNfYV9jYWlkJTNkMjAwMTgyODgzNzYlMjZkc19hX2FnaWQlM2QxNTg5NTI5NDE2NTMlMjZkc19hX2xpZCUzZGt3ZC05NTAwNDc1NDkxNTMlMjYlMjZkc19lX2FkaWQlM2Q4MTIyNjU1ODcwMjM3OCUyNmRzX2VfdGFyZ2V0X2lkJTNka3dkLTgxMjI2NzM5MTgxNjkyJTNhbG9jLTE5MCUyNiUyNmRzX2VfbmV0d29yayUzZHMlMjZkc191cmxfdiUzZDIlMjZkc19kZXN0X3VybCUzZGh0dHBzJTNhJTJmJTJmd3d3LmdyYW1tYXJseS5jb20lMmZkb2NzJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkNjI3MDg0OTYwJTI2dXRtX2NvbnRlbnQlM2Q4MTIyNjU1ODcwMjM3OCUyNnV0bV90ZXJtJTNkYWklMjUyMHdyaXRlciUyNTIwb25saW5lJTI1MjBmcmVlJTI2a2V5d29yZGlkJTNkODEyMjY3MzkxODE2OTIlMjZ0YXJnZXRpZCUzZGt3ZC04MTIyNjczOTE4MTY5MiUzYWxvYy0xOTAlMjZhZGdyb3VwJTNkMTI5OTYyMzg3NTIyODI2MCUyNmRldmljZSUzZGMlMjZtYXRjaHR5cGUlM2RiJTI2bmV0d29yayUzZHMlMjZleHRlbnNpb24lM2QlMjZjbGlja2lkJTNkMGUwNDlkY2YyNDUxMTU2OGJjN2NmNDk4Njc3ZTQ1NzQlMjZnY2xpZCUzZDBlMDQ5ZGNmMjQ1MTE1NjhiYzdjZjQ5ODY3N2U0NTc0JTI2Z2Nsc3JjJTNkM3AuZHMlMjYlMjZtc2Nsa2lkJTNkMGUwNDlkY2YyNDUxMTU2OGJjN2NmNDk4Njc3ZTQ1NzQ%2526rlid%253D0e049dcf24511568bc7cf498677e4574%26vqd%3D4%2D156182713560824326927812071282145734673%26iurl%3D%257B1%257DIG%253DBB2358C1415C449F900AE89BBE3BDA4E%2526CID%253D17EB2DEBDA446F5A143B3B3EDB916ECC%2526ID%253DDevEx%252C5046.1&rut=e8dda6acac95887e526f8cee8c81290d49185e925feae6f53d42a8def2aeabff",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:51.682618"
+    },
+    {
+      "topic": "top 10 ai tools in 2023 that will make your life easier",
+      "title": "Top 10 AI Tools in 2023 That Will Make Your Life Easier",
+      "content": "In this article, we explore the top 10 AI tools that are driving innovation and efficiency in various industries. These tools are designed to automate repetitive tasks, improve workflow, and increase productivity. The tools included in our list are some of the most advanced and widely used in the market, and are suitable for a...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsmallarticles.com%2Ftop%2D10%2Dai%2Dtools%2Din%2D2023%2Dthat%2Dwill%2Dmake%2Dyour%2Dlife%2Deasier%2F&rut=3cfea5e2c6e2777e6b32c9b041a6f126b50db6e9ee0efa011a9c533e156f3161",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:51.682687"
+    },
+    {
+      "topic": "top 10 ai tools in 2023 that will make your life easier",
+      "title": "Discover the Top 10 Mind-Blowing Free AI Tools Making Life Easier in 2023",
+      "content": "The rapid advancement of AI technology has brought us an array of remarkable tools that can significantly enhance our lives. From restoring photos to generating captivating content, creating videos, and unleashing creativity, these top 10 mind-blowing free AI tools in 2023 empower individuals from all walks of life.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.dlad.io%2Fblogs%2Fdiscover%2Dthe%2Dtop%2D10%2Dmind%2Dblowing%2Dfree%2Dai%2Dtools%2Dmaking%2Dlife%2Deasier%2Din%2D2023&rut=ab4827a56b000fcdb08275fb211d1961d3efc95bac9f6e455a553c4c5a3ac5b5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:51.682754"
+    },
+    {
+      "topic": "top 10 ai tools in 2023 that will make your life easier",
+      "title": "10 Amazing AI Tools You Cannot Miss Out in 2023 - Times Now",
+      "content": "AI continues to revolutionize our daily day-to-day life activities, so here are 10 AI tools that can help you make your life easier!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.timesnownews.com%2Fweb%2Dstories%2Ftechnology%2F10%2Damazing%2Dai%2Dtools%2Dyou%2Dcannot%2Dmiss%2Dout%2Din%2D2023%2Fphotostory%2F104756000.cms&rut=8f4915878d97f321870dda0747c59a1e703e0bf87ebf8e495b2830a79b4fc048",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:51.682805"
+    },
+    {
+      "topic": "top 10 ai tools in 2023 that will make your life easier",
+      "title": "Top 10 Revolutionary AI Tools to Transform 2023!",
+      "content": "Revolutionizing Your Life: The Top 10 AI Tools of 2023 In recent years, artificial intelligence (AI) has transformed how we approach daily tasks, enhance productivity, and even have fun. With the release of tools like ChatGPT, a wave of innovative applications has emerged, each with the potential to revolutionize our lives.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fainewsera.com%2Ftop%2D10%2Drevolutionary%2Dai%2Dtools%2Dto%2Fartificial%2Dintelligence%2Dnews%2Fai%2Dagents%2F&rut=6fcd0b4a8ce9e1828f57a88084e14453a46e933771dcd61d0fc3253e9a11a352",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:51.682855"
+    },
+    {
+      "topic": "ludwig wittgenstein",
+      "title": "Ludwig Wittgenstein - Wikipedia",
+      "content": "Ludwig Josef Johann Wittgenstein (/ \u02c8v\u026at\u0261\u0259n\u0283ta\u026an, - sta\u026an / VIT-g\u0259n-s (h)tyne; [6] Austrian German: [\u02c8lu\u02d0tv\u026a\u00e7 \u02c8jo\u02d0s\u025bf \u02c8jo\u02d0han \u02c8v\u026at\u0261n\u0329\u0283ta\u026an]; 26 April 1889 - 29 April 1951) was an Austro-British philosopher who worked primarily in logic, the philosophy of mathematics, the philosophy of mind, and the philosophy of language.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLudwig_Wittgenstein&rut=c04d040cb9722e06f7003bdffc83133919bd46faa820d3d1f44f1920606ee381",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:42:38.919851"
+    },
+    {
+      "topic": "ludwig wittgenstein",
+      "title": "Ludwig Wittgenstein | Austrian Philosopher, Logician & Mathematician ...",
+      "content": "Ludwig Wittgenstein was an Austrian-born British philosopher who is regarded by many as the greatest philosopher of the 20th century.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FLudwig%2DWittgenstein&rut=a43480167918fb34fec179b3750d5a7c2ce447cbb0491c402c0bd5cf21064a01",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:42:38.919889"
+    },
+    {
+      "topic": "ludwig wittgenstein",
+      "title": "Ludwig Wittgenstein - Stanford Encyclopedia of Philosophy",
+      "content": "Considered by some to be the greatest philosopher of the 20th century, Ludwig Wittgenstein played a central, if controversial, role in mid-20th-century analytic philosophy. He continues to influence, and incur debate in, current philosophical thought in topics as diverse as logic and language, perception and intention, ethics and religion, aesthetics and culture, and even political thought ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fwittgenstein%2F&rut=ab03d70eff6d63c93b53ab5c0b2e0ca09c373616cccf1da6dac9a178c22f108e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:42:38.919917"
+    },
+    {
+      "topic": "ludwig wittgenstein",
+      "title": "Wittgenstein, Ludwig | Internet Encyclopedia of Philosophy",
+      "content": "A comprehensive overview of the life and work of one of the most influential philosophers of the twentieth century. Learn about his early and later writings, his ethical and religious views, his conception of philosophy, and his legacy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fwittgens%2F&rut=5ce3a6f455ef3b1fb6e76b248cb781bb8cc61a0d95bac04d02fc597f99d8160f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:42:38.919943"
+    },
+    {
+      "topic": "alfred north whitehead",
+      "title": "Whitehead's Function of Reason - By Alfred North Whitehead",
+      "content": "Gain Access To The Largest Audiobook Catalog For Endless Entertainment This Spring. In Addition, Members Receive An Extra 30% Off All Audiobooks. Get Hooked On Audible Today!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Daudible.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D7UUxdykMKqTnzAk84dtzN3%252DAS3nDr2uivwnCv7vqdbLvma11%252DOcePYsCtfxYlkcXBExF_4FfcV_LOhMOwdlJXrVLLgbBE5iiQDxv4meK2p4t4C1Dw3NTf4Vu14zmHbv05xwke68Tk5GT1PqsNQDp1RyjIGojjcud4nlKa3dT3A8.xuFEJlOvR3fON0IL12D17A%26rut%3Df06029339b6635602894c7318ac8ff6ee92d815ffd1b5e875c195934985e366a%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8FffIaVf7oc3lMzSOtoY2QTVUCUzVAc2VlJKtGpxlsA2i_tl_ght1nh1p_mmLa_6aIVRvzRLXgeYqy8%252DtiSqjgl5hfdrQV70w_Cdme0KUmRE2F48NChfFt2EhDvg0AnlmYCLFgsnAbBTExF2EUVnAtjtndmk63qgYA1eXZiF6RR_lMHsLJy68YR3Ajg8PYeaFYn55GsIkklpCf7No7BwtGZn1Ncs%2526u%253DaHR0cHMlM2ElMmYlMmZhZC5kb3VibGVjbGljay5uZXQlMmZzZWFyY2hhZHMlMmZsaW5rJTJmY2xpY2slM2ZsaWQlM2QzOTcwMDA3NTgwNTcwOTA4MSUyNmRzX3Nfa3dnaWQlM2Q1ODcwMDAwODMyOTgzMjYwMyUyNmRzX2FfY2lkJTNkMzcyNjU2MzEwJTI2ZHNfYV9jYWlkJTNkMTk4NzAwNzc1NjMlMjZkc19hX2FnaWQlM2QxNDgxMzk4MjU0NzglMjZkc19hX2xpZCUzZGRzYS0yMDAxNTE0NjQwMzc3JTI2JTI2ZHNfZV9hZGlkJTNkNzY1NTM2ODc3MzE2MjYlMjZkc19lX3RhcmdldF9pZCUzZGRhdC0yMzI4MzUzMzExMDQxMTYwJTNhbG9jLTE5MCUyNiUyNmRzX2VfbmV0d29yayUzZHMlMjZkc191cmxfdiUzZDIlMjZkc19kZXN0X3VybCUzZGh0dHBzJTNhJTJmJTJmd3d3LmF1ZGlibGUuY29tJTJmcGQlMmZXaGl0ZWhlYWRzLVRoZS1GdW5jdGlvbi1vZi1SZWFzb24tQXVkaW9ib29rJTJmODcyNjQyNTU4MCUzZnNvdXJjZV9jb2RlJTNkTVNOUFAzMERUUklBTDU1MDAzMTQyNDkwVzElMjZnY2xpZCUzZDE3YmU0MDhmZjdlNzFhMjQ5ZDI1MjlkN2U1ZTQ4YjY4JTI2Z2Nsc3JjJTNkM3AuZHMlMjYlMjZtc2Nsa2lkJTNkMTdiZTQwOGZmN2U3MWEyNDlkMjUyOWQ3ZTVlNDhiNjg%2526rlid%253D17be408ff7e71a249d2529d7e5e48b68%26vqd%3D4%2D436785610939720375547842974716838295%26iurl%3D%257B1%257DIG%253D588ED71D0FC9403EA0E3FE0970079A45%2526CID%253D2E5DE8DFE7FD63D31A9BFE0AE62862FB%2526ID%253DDevEx%252C5050.1&rut=7d9b5062b217a73ad6c4fecf13b0f5bfe0db59d9e5489df8cc358c6f08b12f99",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:44:20.445504"
+    },
+    {
+      "topic": "alfred north whitehead",
+      "title": "Alfred North Whitehead - Wikipedia",
+      "content": "A comprehensive biography of the English mathematician and philosopher who developed process philosophy and logic. Learn about his life, education, career, works, and legacy in various fields of study.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAlfred_North_Whitehead&rut=dd3ac777f64e0e94f6040e9fbf8c8f218ef2190183ec7fc22e1549845195f6cd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:44:20.445536"
+    },
+    {
+      "topic": "alfred north whitehead",
+      "title": "Alfred North Whitehead - Stanford Encyclopedia of Philosophy",
+      "content": "Alfred North Whitehead (1861-1947) was a British mathematician and philosopher best known for his work in mathematical logic and the philosophy of science. In collaboration with Bertrand Russell, he co-authored the landmark three-volume Principia Mathematica (1910, 1912, 1913). Later, he was instrumental in pioneering the approach to metaphysics now known as process philosophy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fwhitehead%2F&rut=e75b91a3fc78ef99912b8cc9a06c9de00a14ad1a300e9fab39fbb4efbb2d4433",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:44:20.445567"
+    },
+    {
+      "topic": "alfred north whitehead",
+      "title": "Alfred North Whitehead | British Mathematician, Philosopher & Logician ...",
+      "content": "Alfred North Whitehead (born February 15, 1861, Ramsgate, Isle of Thanet, Kent, England\u2014died December 30, 1947, Cambridge, Massachusetts, U.S.) was an English mathematician and philosopher who collaborated with Bertrand Russell on Principia Mathematica (1910-13) and, from the mid-1920s, taught at Harvard University and developed a ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FAlfred%2DNorth%2DWhitehead&rut=6ccdae6f42b5464ba399ada54a5e99eeb9e8f9d7d1023658e02b5cf4bd59bb7d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:44:20.445601"
+    },
+    {
+      "topic": "william james",
+      "title": "Shop books william james - Amazon.com Official Site",
+      "content": "Find deals and low prices on books william james at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DRuK4SZ%252D8jt4TzOwuyeqfv_ekVkaPYab2n4CWiqjMJVpIM9JzAuF3yZ_hXQFhdaukNv0ZyBhWxUsZO2s2FaLRtbdOBV79Xi2osjACZuGmY6JOXC5AwhbrLaURwQxwn974xsYKhnY0L1g1C_VytVwhJg66lAI5CE6U6NHGcNk8Ei8.UqrmJepcSqqMTbjj5NugsQ%26rut%3D9b1c37ab486b90468903bda1aff933aaaead49d4b8fdfe1fbe262c770f1da9c9%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8dtJ6%252DTlTgRIAVczDsIkg%252DjVUCUymkWr63QhbhhivhvY6%252DxsDMXHwHtxuXT1KGyt59p_IAzCCd0bq4y9C_2liqM8JMan6ArjsOO021FvZC_fb1m088DWlBrdjUPS_avkUdmqWGFXFu85gP3jDXv1iEUQkBW2D_axtLEp2NuVpg0_BxyjEPj7PQWWqCkMOQvCOVu_0bQQEVsQxwoZSF6cSzplnrfc%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJvb2tzJTJid2lsbGlhbSUyYmphbWVzJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfOGRzeTBpY2QyaV9iJTI2YWRncnBpZCUzZDEyMjQ4NTcwMjI4NTQ3MjAlMjZodmFkaWQlM2Q3NjU1MzY5NzcxNjY5OSUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGIlMjZodmJtdCUzZGJiJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NjM1JTI2aHZ0YXJnaWQlM2Rrd2QtNzY1NTM5MDIyODg4NDclM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDI1NTUxXzEzNTkyNDEwJTI2bWNpZCUzZDk5Zjg4ZjIzYzE3MTNkZjNiMTlmN2ZiOWM3MzUxMzYyJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2RmZWFjOTMzMDRmOWMxOTI4NDcxN2ZhNjg1ZGZmNTdiOQ%2526rlid%253Dfeac93304f9c19284717fa685dff57b9%26vqd%3D4%2D205304390711177700746415064050831159311%26iurl%3D%257B1%257DIG%253D36D2813C23284F98988A3FFF96EC618F%2526CID%253D1E2F2F89CECE6F27117B395CCF2A6E4C%2526ID%253DDevEx%252C5046.1&rut=10d094e521e1c2f6fcfa3f946d518f88e4ccdefcf052d9f9660146fb8e4f4216",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:45:55.870069"
+    },
+    {
+      "topic": "william james",
+      "title": "William James - Wikipedia",
+      "content": "William James in Brazil, 1865 William James was born at the Astor House in New York City on January 11, 1842. He was the son of Henry James Sr., an independently wealthy Swedenborgian theologian well-acquainted with the literary and intellectual elites of his day. The intellectual brilliance of the James family milieu and the remarkable epistolary talents of several of its members have made ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWilliam_James&rut=9d771970c802d858bc53ad6572a6ab1bfb1651bd5ae884794ce57bc9b5a12fe9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:45:55.870110"
+    },
+    {
+      "topic": "william james",
+      "title": "William James | Life, Books, Psychology, Contribution, & Facts - Britannica",
+      "content": "William James, American philosopher and psychologist, a leader of the philosophical movement of pragmatism and a founder of the psychological movement of functionalism. His Principles of Psychology (1890) anticipated or inspired much 20th-century research in the field. He was the brother of the novelist Henry James.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FWilliam%2DJames&rut=c168728e4ea374cb54004981c96acf884fffc3b94f851363052ade1d13ce1cac",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:45:55.870145"
+    },
+    {
+      "topic": "william james",
+      "title": "William James - Stanford Encyclopedia of Philosophy",
+      "content": "William James was an original thinker in and between the disciplines of physiology, psychology and philosophy. His twelve-hundred page masterwork, The Principles of Psychology (1890), is a rich blend of physiology, psychology, philosophy, and personal reflection that has given us such ideas as \"the stream of thought\" and the baby's impression of the world \"as one great blooming ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fjames%2F&rut=d44b78d454cbbce74cfa7c96a1c8e6d6204f3871cb87f38e8f641878fd0dc6fa",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:45:55.870175"
+    },
+    {
+      "topic": "william james",
+      "title": "James, William | Internet Encyclopedia of Philosophy",
+      "content": "A comprehensive overview of the life and works of William James, the American philosopher and psychologist who developed the pragmatic method and theory. Learn about his contributions to epistemology, metaphysics, religion, ethics, and social philosophy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fjames%2Do%2F&rut=f00e48cb7e1cf9b0b1befbeed3a00da9a0749aa1b62cb35564450d2060e10d57",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:45:55.870202"
+    },
+    {
+      "topic": "sri lankan civil war",
+      "title": "Sri Lankan civil war - Wikipedia",
+      "content": "The Sri Lankan civil war[a] was fought in Sri Lanka from 1983 to 2009. Beginning on 23 July 1983, it was an intermittent insurgency against the government by the Liberation Tigers of Tamil Eelam (LTTE, also known as the Tamil Tigers) led by Velupillai Prabhakaran.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSri_Lankan_Civil_War&rut=b1c0fe998f18fcad29743fa73ce4599540a07916f617e1d2fbcde8d03e880358",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:32:56.991952"
+    },
+    {
+      "topic": "sri lankan civil war",
+      "title": "Overview of the Sri Lankan Civil War - ThoughtCo",
+      "content": "Learn about the causes, phases, and consequences of the brutal civil war between Sinhalese and Tamil communities in Sri Lanka from 1983 to 2009. Explore the role of colonialism, India, and terrorism in this complex conflict.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.thoughtco.com%2Fthe%2Dsri%2Dlankan%2Dcivil%2Dwar%2D195086&rut=07c0273df0ce25d33a57182bd5882e9e8e471fa86b863679049f898e5c1044d7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:32:56.992061"
+    },
+    {
+      "topic": "sri lankan civil war",
+      "title": "Sri Lanka 1983-2009 - War History",
+      "content": "Sri Lankan government control of disputed territory demonstrated national territorial integrity. The violence of the armed conflict took a number of forms, divided by three major failed peace processes and ceasefires, and four 'Eelam Wars', culminating in the final battles of the civil war in April and May 2009.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwarhistory.org%2F%40msw%2Farticle%2Fsri%2Dlanka%2D1983%2D2009&rut=4ee877fc87133b7035f46a84fbe4af61828830837e37cb89bf6e9608683fa0cf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:32:56.992135"
+    },
+    {
+      "topic": "sri lankan civil war",
+      "title": "The Sri Lankan Civil War and Its History, Revisited in 2020",
+      "content": "The civil war in Sri Lanka was a clash between the Sinhalese-dominated government and the Tamil insurgent group, fueled by British colonialism and ethnic tensions. Learn how the war ended, what challenges remain, and how the conflict relates to the Black Lives Matter movement in the US.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fhir.harvard.edu%2Fsri%2Dlankan%2Dcivil%2Dwar%2F&rut=13e7290eb38794c7bd6337d00528cdc4b2d2e7b2404e3adcbd199b5ac7a601cf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:32:56.992200"
+    },
+    {
+      "topic": "sri lankan civil war",
+      "title": "40 Facts About Sri Lankan Civil War",
+      "content": "The Sri Lankan Civil War was a brutal conflict that lasted over 25 years, leaving deep scars on the island nation. Starting in 1983, the war pitted the Sri Lankan government against the Liberation Tigers of Tamil Eelam (LTTE), a militant organization fighting for an independent Tamil state. This war saw countless battles, tragic losses, and significant political upheaval. Why did this conflict ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Ffacts.net%2Fhistory%2Fhistorical%2Devents%2F40%2Dfacts%2Dabout%2Dsri%2Dlankan%2Dcivil%2Dwar%2F&rut=782184bfd16941ebf38dc940ddeb3cee2345f2c8be3affa1a1def887835b9ec4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:32:56.992254"
+    },
+    {
+      "topic": "prowritingaid vs grammarly: which grammar checker is better in (2022) ?",
+      "title": "ProWritingAid - Grammar, Spelling and Style",
+      "content": "A writing coach, style editor, and grammar checker in one package. Trusted by over three million writers. Improve grammar, style, tone and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dprowritingaid.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D4n7daLvVSw5KG5V54jdyHdM2OmJ0xLkpQcvET6396P47CQJwxX8CNXePsix_vwCCnHvfWTcf_KORvdbzSIE96K%252D4Gt8u1RkrCNHyxD%252Dmoo1avQBTcocs69oPb2PLW6UiUNrizqtTWjY%252D%252D_Nggo7m3%252DctENzXYz4UOB9S1_6i4WQ.aAkae2K7Tac5f35WVsLLNQ%26rut%3D4b64bcf15805ab08e5fb793f57cca3a0c22e4aa6c8bdc0fe62fcd3494757d3e5%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8sLgXGCXeb2dHJmsTIXZxmDVUCUwQZ0brNoSLMsftPZzF1RsXJtPtmxOTa%252DSgLjMCE5hwk2P4NK5xtEHjXjE2VLKaUbbB6h47_%252D3feE3Lq9ZM6st5u2RQ9IPAayrZzpNKwidWbKpuJnBVNa6bkJfogZ%252DgGJ6Ov618RQ9yp5ANNQ8AbdBNC%252DsOxqPcXYVtHEPpKEXcVW5ZLhTjvJay9Ho%252DS4rBtwI%2526u%253DaHR0cHMlM2ElMmYlMmZwcm93cml0aW5nYWlkLmNvbSUyZmxwJTJmZGlzY292ZXIlM2Ztc2Nsa2lkJTNkNDVjMzliMjhkMWE2MWM4ZGUzNTdmMjcwY2ZhMTU2ZDglMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RCcmFuZCUyNTIwLSUyNTIwVGllciUyNTIwMSUyNnV0bV90ZXJtJTNkcHJvd3JpdGluZ2FpZCUyNnV0bV9jb250ZW50JTNkQnJhbmQlMjUyMC0lMjUyMFRpZXIlMjUyMDElMjUyMC0lMjUyMFByb1dyaXRpbmdBaWQ%2526rlid%253D45c39b28d1a61c8de357f270cfa156d8%26vqd%3D4%2D13554149795823109660065505877091150548%26iurl%3D%257B1%257DIG%253D8F1FFF97BBD34613AF1CF2C5E755CCCB%2526CID%253D394279C826106F7A2B8D6F1D27F46EF7%2526ID%253DDevEx%252C5046.1&rut=7c4127197f9b757dea34b0214b428c052cca559cd430b6569f55ff852803aef0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:35.896778"
+    },
+    {
+      "topic": "prowritingaid vs grammarly: which grammar checker is better in (2022) ?",
+      "title": "Grammar Checker for Students - Write Better & Faster",
+      "content": "QuillBot's Grammar Checker corrects mistakes and improves your writing instantly. Write confidently and effortlessly with QuillBot. Upgrade to QuillBot Premium today.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dquillbot.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DxzNN6MLtjO1zOmsYMGYWk_RSutgf%252DBOQQn4ZlbzZxHWHTrGex2p7PShGlrzic5m5RjTZeqRJq40%252DU0CN436PES4WnQS9X8AJ8yMYQjPpGgSjMCG2hOkn_z_U6S51vkfLxECsr11HD1q8GjLIbAnDF%252DdwkofUl%252DjBsttE_iGwo7o.efPraB1OeJTarSdhreMlTA%26rut%3D3a6e20afff05c3f4c41356ac924a572fea2a2ed55f00cadc7a076623e8ae8084%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8wehOC36YiTuUSrdJO_20lTVUCUwSfju_HWISm2oJkd3iFy6WkpNuDBuaXDHOQTgY1UtFdjBZE%252DWm4PN_JBniAbYBYyqPwDdT8hUCgZmXsQC5_f6dAmHfY4d3GMdp7MxXPqMf11pXcCxXIQlixgAa1xvSwXJI3iwjLmydXVqnywy4hBZOKsEbS49pMMl823_I9eJF2LTz6ettZtaWYnx4Vzh4HVw%2526u%253DaHR0cHMlM2ElMmYlMmZxdWlsbGJvdC5jb20lMmZncmFtbWFyLWNoZWNrJTNmdXRtX21lZGl1bSUzZGNwYyUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX2NhbXBhaWduJTNkRkElMjUyMC0lMjUyMFNNQSUyNTIwJTI1N0MlMjUyMFBFUkYlMjUyMC0lMjUyMFNlYXJjaCUyNTIwJTI1N0MlMjUyMFByb2R1Y3QlMjUyMC0lMjUyMEdyYW1tYXIlMjUyMCUyNTdDJTI1MjBQUkVNJTI1MjAlMjU3QyUyNTIwQ1BBJTI2dXRtX3Rlcm0lM2RhaSUyNTIwZ3JhbW1hciUyNTIwY2hlY2tlciUyNnV0bV9jb250ZW50JTNkJTI2Y2FtcGFpZ25fdHlwZSUzZHNlYXJjaC00MjgyODU5NjUlMjZjbGlja19pZCUzZDlmYmYxOTkwZTRiYzE3MTgxYWFiNzBjOGZhYmI1YWJhJTI2Y2FtcGFpZ25faWQlM2Q0MjgyODU5NjUlMjZhZGdyb3VwX2lkJTNkMTM0MjUwNTE0MTM3ODUyMyUyNmFkX2lkJTNkJTI2a2V5d29yZCUzZGFpJTI1MjBncmFtbWFyJTI1MjBjaGVja2VyJTI2cGxhY2VtZW50JTNkJTI2dGFyZ2V0JTNkJTI2bmV0d29yayUzZHMlMjZtc2Nsa2lkJTNkOWZiZjE5OTBlNGJjMTcxODFhYWI3MGM4ZmFiYjVhYmE%2526rlid%253D9fbf1990e4bc17181aab70c8fabb5aba%26vqd%3D4%2D137253809331338712778995047983532556521%26iurl%3D%257B1%257DIG%253D8F1FFF97BBD34613AF1CF2C5E755CCCB%2526CID%253D394279C826106F7A2B8D6F1D27F46EF7%2526ID%253DDevEx%252C5050.1&rut=07d85065a1ba547e4f03d0d064e4c4263be6a945120699c0059c24077d8d315d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:35.896876"
+    },
+    {
+      "topic": "prowritingaid vs grammarly: which grammar checker is better in (2022) ?",
+      "title": "ProWritingAid vs. Grammarly: Which is best? [2025] - Zapier",
+      "content": "Compare ProWritingAid and Grammarly to find out which AI grammar checker is best. Based on extensive testing, here's our ProWritingAid vs. Grammarly comparison.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fzapier.com%2Fblog%2Fprowritingaid%2Dvs%2Dgrammarly%2F&rut=f4dca511da621a8f5c6522dfa34dbba789e7b8e6ac73b6c93d833c998bd1a277",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:35.896956"
+    },
+    {
+      "topic": "prowritingaid vs grammarly: which grammar checker is better in (2022) ?",
+      "title": "ProWritingAid vs Grammarly: In-Depth Comparison for Writers",
+      "content": "Compare ProWritingAid vs Grammarly in this detailed analysis to find the best writing tool for your needs. Read the article to make an informed choice.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwritergadgets.com%2Fprowritingaid%2Dvs%2Dgrammarly%2F&rut=e985f0d9f69b14605a31a549e09c9a6fb79b099662be085bbc170ded8b0b3db3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:35.897030"
+    },
+    {
+      "topic": "prowritingaid vs grammarly: which grammar checker is better in (2022) ?",
+      "title": "ProWritingAid vs. Grammarly: Which One's Worth Paying For?",
+      "content": "We're comparing ProWritingAid vs Grammarly. See which tool actually helps you write better (and which one's best for your writing style).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fkindlepreneur.com%2Fprowritingaid%2Dvs%2Dgrammarly%2F&rut=0fa6e741b94f510c7b3bcb02331e0ae1255154e9127ab83b907509ca7c65e3b5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:35.897102"
     }
   ],
-  "last_updated": "2025-11-30T16:20:07.022059"
+  "last_updated": "2026-01-02T11:35:35.932645"
 }

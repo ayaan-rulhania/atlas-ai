@@ -6,7 +6,8 @@
     "yarn",
     "yield",
     "your",
-    "you?"
+    "you?",
+    "yes."
   ],
   "knowledge": [
     {
@@ -288,7 +289,142 @@
       "query": "Who are you? T T",
       "source": "research",
       "learned_at": "2025-11-28T21:23:00.578569"
+    },
+    {
+      "topic": "does swearing make you stronger? science says yes.",
+      "title": "Swearing may unlock hidden strength, study finds - ScienceDaily",
+      "content": "Letting a swear word fly when you're struggling might do more than blow off steam\u2014it could actually make you stronger. Research published by the American Psychological Association found that ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsciencedaily.com%2Freleases%2F2025%2F12%2F251222080123.htm&rut=b582986ccdd4d0ec000873aaf7335640f7d9f3dd5cf3190981786cedf04a7732",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:23:55.887014"
+    },
+    {
+      "topic": "does swearing make you stronger? science says yes.",
+      "title": "Need a Quick Boost in Physical Strength? Try Blurting Out Some Curse ...",
+      "content": "New research suggests that swearing boosts physical performance by reducing inhibitions. skynesher via Getty Images Blurting out some curse words could give you a quick performance boost.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.smithsonianmag.com%2Fsmart%2Dnews%2Fneed%2Da%2Dquick%2Dboost%2Din%2Dphysical%2Dstrength%2Dtry%2Dblurting%2Dout%2Dsome%2Dcurse%2Dwords%2Da%2Dstudy%2Dsuggests%2D180987915%2F&rut=0c5c132c44803ed6a792a59faf31ea83f29652b67f8d2bef836c52a64551221e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:23:55.887168"
+    },
+    {
+      "topic": "does swearing make you stronger? science says yes.",
+      "title": "Does swearing make you stronger? Science says yes.",
+      "content": "Does swearing make you stronger? Science says yes. \"A calorie-neutral, drug-free, low-cost, readily available tool for when we need a boost in performance.\"",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Farstechnica.com%2Fscience%2F2025%2F12%2Fdoes%2Dswearing%2Dmake%2Dyou%2Dstronger%2Dscience%2Dsays%2Dyes%2F&rut=fb73d8b8b3dc5f7d528d978e36e5214d86d75800a5b65c1bfcaa03dc1b26e8ae",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:23:55.887237"
+    },
+    {
+      "topic": "does swearing make you stronger? science says yes.",
+      "title": "Swearing Actually Seems to Make Humans Physically Stronger",
+      "content": "The gym's about to get a whole lot swear-ier, thanks to science. A new study adds to the growing body of evidence that swearing can help us unleash our inner strength, improving physical performance, it seems, by helping people break through certain psychological barriers.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencealert.com%2Fswearing%2Dactually%2Dseems%2Dto%2Dmake%2Dhumans%2Dphysically%2Dstronger&rut=3e1dc3d865583711d6c8f9cdf81b3c6bd683230bc9048af70e50813a15787423",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:23:55.887298"
+    },
+    {
+      "topic": "does swearing make you stronger? science says yes.",
+      "title": "Swearing is more than just venting, science says it can make you ... - MSN",
+      "content": "Discover why swearing is more than just venting. New research reveals how using swear words can boost physical strength, endurance, and confidence. Learn more!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.msn.com%2Fen%2Din%2Fhealth%2Fhealth%2Dnews%2Fswearing%2Dis%2Dmore%2Dthan%2Djust%2Dventing%2Dscience%2Dsays%2Dit%2Dcan%2Dmake%2Dyou%2Dphysically%2Dstronger%2Far%2DAA1TkLLv&rut=884b1785f2f35ab49e79001a5abcc713e4b91f450316aa76a2efad026061d8a0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:23:55.887364"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These are the flying discs the government wants you to know about",
+      "content": "These are the flying discs the government wants you to know about DiskSat's design offers \"a power-to-weight ratio unmatched by traditional aluminum satellites.\"",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Farstechnica.com%2Fscience%2F2025%2F12%2Fheres%2Dwhy%2Dnasa%2Dand%2Dthe%2Dspace%2Dforce%2Dare%2Dinterested%2Din%2Dpizza%2Dshaped%2Dsatellites%2F&rut=f211be3316a507f9820d7a3acaa1110567f349036b9c4eb0c58da797508f882c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470269"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "Government's new 'flying discs' could redefine low-orbit missions",
+      "content": "These disk-like spacecraft are not science fiction, and this morning, they successfully entered orbit under the watchful observation of NASA and the U.S. Space Force. Thursday morning, four ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.msn.com%2Fen%2Dus%2Fnews%2Ftechnology%2Fgovernment%2Ds%2Dnew%2Dflying%2Ddiscs%2Dcould%2Dredefine%2Dlow%2Dorbit%2Dmissions%2Far%2DAA1SOLCz&rut=d515a90639683d73b6113b12a111164798de7ea5292727fe29f32e50f8fbe3fb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470331"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These are the flying discs the government wants you to know about ...",
+      "content": "Rocket Lab delivers for Space Force and NASA. Four small satellites rode a Rocket Lab Electron launch vehicle into orbit from Virginia early Thursday, beginning a government-funded technology ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fjean%2Dpierre%2Dpalomba%2Dmarin%2D14508b162_these%2Dare%2Dthe%2Dflying%2Ddiscs%2Dthe%2Dgovernment%2Dactivity%2D7407712454568235008%2DUxWm&rut=7fee72c854af04723714910de3a8548826d592e7abebf9982acce37cbf8ae207",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470377"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These Are The Flying Discs The Government Wants You To Know",
+      "content": "Home \u00bb Tech News \u00bb These are the flying discs the government wants you to know about Share with your friends! these are the flying discs the government NASA and the US Space Force have initiated a groundbreaking technology demonstration mission with the launch of four innovative satellites designed to test a new spacecraft concept.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.hashe.com%2Ftech%2Dnews%2Fthese%2Dare%2Dthe%2Dflying%2Ddiscs%2Dgovernment%2Dwants%2Dyou%2Dto%2Dknow%2Dabout%2F&rut=e066b6d6ca1d75b7d6df9a185a6a0856749920e76e05246626ba11c8540c25a8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470441"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These are the flying discs the government wants you to know about",
+      "content": "These Are the Flying Discs the Government Wants You to Know About In a groundbreaking development, four small satellites designed by the Aerospace Corporation have successfully launched into orbit. The launch took place on early Thursday morning, when a Rocket Lab Electron rocket carrying the DiskSats began its journey from NASA's Wallops Flight Facility. The DiskSat project was initiated as a ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.trendynewsblog.com%2Fposts%2Fthese%2Dare%2Dthe%2Dflying%2Ddiscs%2Dthe%2Dgovernment%2Dwan%2F&rut=97788db732a3a2c4eee229d8d2e458d9fc95ca98a82e05912c84272abdb4884d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470498"
+    },
+    {
+      "topic": "top 10 ai tools in 2023 that will make your life easier",
+      "title": "AI Tools for Stronger Drafts - Better Essays in Seconds",
+      "content": "Take the pain out of submitting your best work with AI-powered writing feedback. Write collaboratively with AI while developing your own authentic voice and ideas.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dgrammarly.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D82sc7M3sThGDsmWc%252DhLflgfwCxmhbKfyLOK7wCh4XXR2X3HuXnuILHLRUW9VyrYultTj5gpYkOUHOuGMX7A2P24uYjqZpto_YrwLTJuMCy6I%252DCImOyUgZ3zVb3aeftw%252D7M%252DxlSO_qSnF55REu37n_Dk0C4q08krGc5Kqh3SXWqQ.9cke4VCRI6%252DPn9RPRWyQCg%26rut%3D098497672d64af9d3770f980fe0cd5195bbd354f4b02a212a957a0e3ffef7523%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8y2uCYXdWNligNy%252DlNU_uQzVUCUzenHNCVBellss5i5PXXty1TaHx_bK1kk6yUBaqk2Ix8HpcV35dyjj9VP3_P_SFB77nGUuhMAMR8ZyNY2cm8R8Q7RZRhDMJJ3BGz69WkfHOXFoXiOwJM7Q9pipu_IqDtixiI%252Dlf10x1J_%252DMi8sFcLJTCroedPSt8H%252DOPiiWAlpMh3sYuyzJYu0kU2OJP9ILDHw%2526u%253DaHR0cHMlM2ElMmYlMmZhZC5kb3VibGVjbGljay5uZXQlMmZzZWFyY2hhZHMlMmZsaW5rJTJmY2xpY2slM2ZsaWQlM2Q0MzcwMDA3OTU4MDA4MzQ5NyUyNmRzX3Nfa3dnaWQlM2Q1ODcwMDAwODY3NDI5MTM5OSUyNmRzX2FfY2lkJTNkNTkzMjc0MTQ2JTI2ZHNfYV9jYWlkJTNkMjAwMTgyODgzNzYlMjZkc19hX2FnaWQlM2QxNTg5NTI5NDE2NTMlMjZkc19hX2xpZCUzZGt3ZC05NTAwNDc1NDkxNTMlMjYlMjZkc19lX2FkaWQlM2Q4MTIyNjU1ODcwMjM3OCUyNmRzX2VfdGFyZ2V0X2lkJTNka3dkLTgxMjI2NzM5MTgxNjkyJTNhbG9jLTE5MCUyNiUyNmRzX2VfbmV0d29yayUzZHMlMjZkc191cmxfdiUzZDIlMjZkc19kZXN0X3VybCUzZGh0dHBzJTNhJTJmJTJmd3d3LmdyYW1tYXJseS5jb20lMmZkb2NzJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkNjI3MDg0OTYwJTI2dXRtX2NvbnRlbnQlM2Q4MTIyNjU1ODcwMjM3OCUyNnV0bV90ZXJtJTNkYWklMjUyMHdyaXRlciUyNTIwb25saW5lJTI1MjBmcmVlJTI2a2V5d29yZGlkJTNkODEyMjY3MzkxODE2OTIlMjZ0YXJnZXRpZCUzZGt3ZC04MTIyNjczOTE4MTY5MiUzYWxvYy0xOTAlMjZhZGdyb3VwJTNkMTI5OTYyMzg3NTIyODI2MCUyNmRldmljZSUzZGMlMjZtYXRjaHR5cGUlM2RiJTI2bmV0d29yayUzZHMlMjZleHRlbnNpb24lM2QlMjZjbGlja2lkJTNkMGUwNDlkY2YyNDUxMTU2OGJjN2NmNDk4Njc3ZTQ1NzQlMjZnY2xpZCUzZDBlMDQ5ZGNmMjQ1MTE1NjhiYzdjZjQ5ODY3N2U0NTc0JTI2Z2Nsc3JjJTNkM3AuZHMlMjYlMjZtc2Nsa2lkJTNkMGUwNDlkY2YyNDUxMTU2OGJjN2NmNDk4Njc3ZTQ1NzQ%2526rlid%253D0e049dcf24511568bc7cf498677e4574%26vqd%3D4%2D156182713560824326927812071282145734673%26iurl%3D%257B1%257DIG%253DBB2358C1415C449F900AE89BBE3BDA4E%2526CID%253D17EB2DEBDA446F5A143B3B3EDB916ECC%2526ID%253DDevEx%252C5046.1&rut=e8dda6acac95887e526f8cee8c81290d49185e925feae6f53d42a8def2aeabff",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:51.682618"
+    },
+    {
+      "topic": "top 10 ai tools in 2023 that will make your life easier",
+      "title": "Top 10 AI Tools in 2023 That Will Make Your Life Easier",
+      "content": "In this article, we explore the top 10 AI tools that are driving innovation and efficiency in various industries. These tools are designed to automate repetitive tasks, improve workflow, and increase productivity. The tools included in our list are some of the most advanced and widely used in the market, and are suitable for a...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsmallarticles.com%2Ftop%2D10%2Dai%2Dtools%2Din%2D2023%2Dthat%2Dwill%2Dmake%2Dyour%2Dlife%2Deasier%2F&rut=3cfea5e2c6e2777e6b32c9b041a6f126b50db6e9ee0efa011a9c533e156f3161",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:51.682687"
+    },
+    {
+      "topic": "top 10 ai tools in 2023 that will make your life easier",
+      "title": "Discover the Top 10 Mind-Blowing Free AI Tools Making Life Easier in 2023",
+      "content": "The rapid advancement of AI technology has brought us an array of remarkable tools that can significantly enhance our lives. From restoring photos to generating captivating content, creating videos, and unleashing creativity, these top 10 mind-blowing free AI tools in 2023 empower individuals from all walks of life.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.dlad.io%2Fblogs%2Fdiscover%2Dthe%2Dtop%2D10%2Dmind%2Dblowing%2Dfree%2Dai%2Dtools%2Dmaking%2Dlife%2Deasier%2Din%2D2023&rut=ab4827a56b000fcdb08275fb211d1961d3efc95bac9f6e455a553c4c5a3ac5b5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:51.682754"
+    },
+    {
+      "topic": "top 10 ai tools in 2023 that will make your life easier",
+      "title": "10 Amazing AI Tools You Cannot Miss Out in 2023 - Times Now",
+      "content": "AI continues to revolutionize our daily day-to-day life activities, so here are 10 AI tools that can help you make your life easier!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.timesnownews.com%2Fweb%2Dstories%2Ftechnology%2F10%2Damazing%2Dai%2Dtools%2Dyou%2Dcannot%2Dmiss%2Dout%2Din%2D2023%2Fphotostory%2F104756000.cms&rut=8f4915878d97f321870dda0747c59a1e703e0bf87ebf8e495b2830a79b4fc048",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:51.682805"
+    },
+    {
+      "topic": "top 10 ai tools in 2023 that will make your life easier",
+      "title": "Top 10 Revolutionary AI Tools to Transform 2023!",
+      "content": "Revolutionizing Your Life: The Top 10 AI Tools of 2023 In recent years, artificial intelligence (AI) has transformed how we approach daily tasks, enhance productivity, and even have fun. With the release of tools like ChatGPT, a wave of innovative applications has emerged, each with the potential to revolutionize our lives.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fainewsera.com%2Ftop%2D10%2Drevolutionary%2Dai%2Dtools%2Dto%2Fartificial%2Dintelligence%2Dnews%2Fai%2Dagents%2F&rut=6fcd0b4a8ce9e1828f57a88084e14453a46e933771dcd61d0fc3253e9a11a352",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:51.682855"
     }
   ],
-  "last_updated": "2025-11-28T21:23:01.407435"
+  "last_updated": "2026-01-01T20:01:51.743045"
 }

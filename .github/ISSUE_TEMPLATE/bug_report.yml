@@ -1,0 +1,32 @@
+name: "🐛 Bug report"
+about: Create a report to help us improve
+labels: bug
+body:
+  - type: markdown
+    attributes:
+      value: "Thank you for taking the time to file a bug!"
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug in a clear and concise way.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction steps
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Paste any relevant logs or screenshots.
+

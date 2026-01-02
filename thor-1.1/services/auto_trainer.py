@@ -15,6 +15,30 @@ from models import AllRounderModel
 from utils import SimpleTokenizer, MultiTaskDataLoader
 from .learning_tracker import get_tracker
 
+# region agent log
+def _agent_log(message: str, data: dict, *, hypothesis_id: str, run_id: str = "pre-fix") -> None:
+    # NDJSON debug log: keep tiny; do not log secrets/PII.
+    try:
+        import json as _json
+        from time import time as _time
+        payload = {
+            "sessionId": "debug-session",
+            "runId": run_id,
+            "hypothesisId": hypothesis_id,
+            "location": "thor-1.1/services/auto_trainer.py:agent_log",
+            "message": message,
+            "data": data,
+            "timestamp": int(_time() * 1000),
+        }
+        _atlas_root = __file__
+        for _ in range(3):
+            _atlas_root = os.path.dirname(_atlas_root)
+        with open(os.path.join(_atlas_root, ".cursor", "debug.log"), "a", encoding="utf-8") as _f:
+            _f.write(_json.dumps(payload, ensure_ascii=False) + "\n")
+    except Exception:
+        pass
+# endregion agent log
+
 
 class AutoTrainer:
     """Background service that continuously trains Thor 1.1 with enhanced training strategies"""
@@ -360,33 +384,67 @@ class AutoTrainer:
                     
                     model.train()
                     for batch in train_dataloader:
-                        input_ids = batch['input_ids'].to(device)
-                        attention_mask = batch['attention_mask'].to(device)
-                        labels = batch.get('labels')
-                        if labels is not None:
-                            labels = labels.to(device)
-                        
-                        optimizer.zero_grad()
-                        
-                        outputs = model(
-                            input_ids=input_ids,
-                            attention_mask=attention_mask,
-                            task=task_name,
-                            labels=labels
-                        )
-                        
-                        loss = outputs.get('loss')
-                        if loss is None:
-                            logits = outputs.get('logits')
-                            if logits is not None and labels is not None:
-                                loss_fct = torch.nn.CrossEntropyLoss()
-                                loss = loss_fct(logits.view(-1, logits.size(-1)), labels.view(-1))
-                            else:
-                                continue
-                        
-                        loss.backward()
-                        torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
-                        optimizer.step()
+                        try:
+                            input_ids = batch['input_ids'].to(device)
+                            attention_mask = batch['attention_mask'].to(device)
+                            labels = batch.get('labels')
+                            if labels is not None:
+                                labels = labels.to(device)
+                            
+                            # Avoid Embedding IndexError if tokenizer ids exceed model vocab.
+                            try:
+                                vocab_limit = int(model.token_embeddings.num_embeddings)
+                                if vocab_limit > 0 and input_ids.numel():
+                                    max_id = int(input_ids.max().item())
+                                    min_id = int(input_ids.min().item())
+                                    invalid = (input_ids >= vocab_limit) | (input_ids < 0)
+                                    if bool(invalid.any().item()):
+                                        invalid_count = int(invalid.sum().item())
+                                        _agent_log(
+                                            "sanitizing invalid token ids in auto-trainer batch",
+                                            {
+                                                "task": task_name,
+                                                "vocab_limit": vocab_limit,
+                                                "min_id": min_id,
+                                                "max_id": max_id,
+                                                "invalid_count": invalid_count,
+                                            },
+                                            hypothesis_id="G",
+                                        )
+                                        input_ids = input_ids.clone()
+                                        input_ids[invalid] = 0
+                            except Exception:
+                                pass
+                            
+                            optimizer.zero_grad()
+                            
+                            outputs = model(
+                                input_ids=input_ids,
+                                attention_mask=attention_mask,
+                                task=task_name,
+                                labels=labels
+                            )
+                            
+                            loss = outputs.get('loss')
+                            if loss is None:
+                                logits = outputs.get('logits')
+                                if logits is not None and labels is not None:
+                                    loss_fct = torch.nn.CrossEntropyLoss()
+                                    loss = loss_fct(logits.view(-1, logits.size(-1)), labels.view(-1))
+                                else:
+                                    continue
+                            
+                            loss.backward()
+                            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+                            optimizer.step()
+                        except IndexError as _e:
+                            # Skip pathological batches rather than killing the trainer thread.
+                            _agent_log(
+                                "IndexError during auto-trainer step; skipping batch",
+                                {"task": task_name, "error": repr(_e)},
+                                hypothesis_id="G",
+                            )
+                            continue
             
             # Save model
             model.save_model(model_path)

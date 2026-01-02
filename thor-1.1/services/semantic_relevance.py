@@ -157,10 +157,14 @@ class SemanticRelevanceScorer:
             elif word in content:
                 score += 0.02
         
-        # 6. Reject obviously wrong matches
+        # 6. Penalize music/video content for non-music queries
+        if self._is_music_video_content(query, title, content, query_intent):
+            score *= 0.1  # Heavy penalty for music/video content
+
+        # 7. Reject obviously wrong matches
         if self._is_wrong_match(query_lower, title, content):
             return 0.0
-        
+
         return min(score, 1.0)
     
     def _is_wrong_match(self, query: str, title: str, content: str) -> bool:
@@ -201,7 +205,7 @@ class SemanticRelevanceScorer:
         # Check for very different topics
         query_cats = self.classify_topic(query)
         knowledge_cats = self.classify_topic(f"{title} {content[:300]}")
-        
+
         if query_cats and knowledge_cats:
             # If completely different categories
             if not set(query_cats).intersection(set(knowledge_cats)):
@@ -209,8 +213,141 @@ class SemanticRelevanceScorer:
                 if len(query.split()) < 4:  # Short queries might match different topics
                     return False
                 return True
-        
+
+        # Check for music/video content when query isn't about music
+        if self._is_music_video_content(query, title, content, query_intent):
+            return True
+
         return False
+
+    def _is_music_video_content(self, query: str, title: str, content: str, query_intent: dict = None) -> bool:
+        """Comprehensive detection of music/video content with enhanced filtering"""
+        title_lower = title.lower()
+        content_lower = content.lower()
+
+        # Comprehensive music indicators (expanded)
+        music_indicators = [
+            # Direct music terms
+            'music video', 'song', 'youtube', 'spotify', 'official music',
+            'lyrics', 'album', 'artist', 'musical', 'singer', 'band',
+            'concert', 'live performance', 'music festival', 'playlist',
+            'track', 'single', 'ep', 'lp', 'vinyl', 'cd', 'mp3', 'wav',
+            'guitar', 'piano', 'drums', 'bass', 'orchestra', 'chorus',
+            'melody', 'harmony', 'rhythm', 'beat', 'tempo', 'genre',
+            'rock', 'pop', 'jazz', 'classical', 'hip hop', 'rap', 'country',
+            'blues', 'reggae', 'electronic', 'dance', 'folk', 'indie',
+
+            # Artist/performer terms
+            'grammy', 'billboard', 'mtv', 'vmas', 'american idol',
+            'the voice', 'eurovision', 'brit awards', 'oscars',
+
+            # Music-related activities
+            'karaoke', 'dj', 'remix', 'cover', 'original', 'feat.',
+            'featuring', 'produced by', 'written by', 'composed by'
+        ]
+
+        # Comprehensive video indicators (expanded)
+        video_indicators = [
+            # Video platforms and terms
+            'video', 'youtube video', 'vimeo', 'tiktok', 'instagram reels',
+            'snapchat', 'twitch', 'stream', 'streaming', 'channel',
+            'subscribe', 'views', 'likes', 'comments', 'viral',
+
+            # Video content types
+            'vlog', 'tutorial video', 'video content', 'film', 'movie',
+            'cinema', 'theater', 'documentary', 'short film', 'trailer',
+            'clip', 'episode', 'season', 'series', 'netflix', 'hulu',
+            'amazon prime', 'disney+', 'hbo', 'showtime', 'cbs', 'nbc',
+            'abc', 'fox', 'cnn', 'bbc', 'espn', 'mtv', 'vh1',
+
+            # Entertainment industry
+            'hollywood', 'bollywood', 'tollywood', 'award', 'nomination',
+            'red carpet', 'premiere', 'festival', 'cannes', 'sundance',
+            'tiff', 'venice', 'berlin', 'oscar', 'golden globe', 'emmy',
+
+            # Video production terms
+            'director', 'producer', 'actor', 'actress', 'casting',
+            'screenplay', 'script', 'filming', 'editing', 'post-production'
+        ]
+
+        # Check if query explicitly asks about music/video/entertainment
+        is_music_video_intent = False
+        if query_intent and query_intent.get('hints'):
+            is_music_video_intent = query_intent['hints'].get('is_music_video_intent', False)
+
+        # Enhanced query analysis for explicit music/video intent
+        query_lower = query.lower()
+        direct_music_video_query = any(term in query_lower for term in [
+            # Music terms
+            'song', 'music', 'youtube', 'listen', 'play', 'sing', 'musical',
+            'artist', 'album', 'concert', 'band', 'singer', 'lyrics', 'track',
+            'playlist', 'spotify', 'melody', 'harmony', 'rhythm', 'genre',
+            'rock', 'pop', 'jazz', 'classical', 'hip hop', 'rap', 'country',
+
+            # Video terms
+            'video', 'watch', 'stream', 'movie', 'film', 'cinema', 'tv show',
+            'series', 'episode', 'netflix', 'hulu', 'youtube', 'tiktok',
+            'instagram', 'vlog', 'trailer', 'clip', 'channel', 'subscribe'
+        ])
+
+        # Check for entertainment/media intent words
+        entertainment_intent_words = [
+            'recommend', 'suggest', 'what should i', 'best', 'favorite',
+            'tell me about', 'show me', 'play me', 'listen to', 'watch'
+        ]
+        has_entertainment_intent = any(intent_word in query_lower for intent_word in entertainment_intent_words)
+
+        # If query shows clear music/video/entertainment intent, allow content
+        if is_music_video_intent or direct_music_video_query or (has_entertainment_intent and direct_music_video_query):
+            return False  # Not filtering, allow it
+
+        # Enhanced content analysis - check multiple sections of content
+        content_sections = [
+            content_lower[:200],      # Beginning of content (most important)
+            content_lower[200:500],   # Middle section
+            content_lower[-200:] if len(content_lower) > 200 else content_lower,  # End of content
+            title_lower              # Title is very important
+        ]
+
+        # Check for strong music/video signals in content
+        music_score = 0
+        video_score = 0
+
+        for section in content_sections:
+            if not section:
+                continue
+
+            # Count music indicators in this section
+            section_music_count = sum(1 for indicator in music_indicators if indicator in section)
+            music_score += section_music_count
+
+            # Count video indicators in this section
+            section_video_count = sum(1 for indicator in video_indicators if indicator in section)
+            video_score += section_video_count
+
+        # Scoring thresholds for filtering
+        # Higher threshold for title (title is more important)
+        title_music_threshold = 2
+        title_video_threshold = 2
+        content_music_threshold = 3
+        content_video_threshold = 3
+
+        title_music_count = sum(1 for indicator in music_indicators if indicator in title_lower)
+        title_video_count = sum(1 for indicator in video_indicators if indicator in title_lower)
+
+        # Filter if content shows strong music/video/entertainment signals
+        is_music_content = (
+            title_music_count >= title_music_threshold or
+            music_score >= content_music_threshold
+        )
+
+        is_video_content = (
+            title_video_count >= title_video_threshold or
+            video_score >= content_video_threshold
+        )
+
+        # Filter out music/video content unless explicitly requested
+        return is_music_content or is_video_content
     
     def filter_knowledge_by_relevance(
         self,

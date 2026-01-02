@@ -144,7 +144,27 @@
     "do?",
     "dads",
     "ds",
-    "diminishing"
+    "diminishing",
+    "does",
+    "decay",
+    "der",
+    "diplomatic",
+    "dna",
+    "differentiation",
+    "discs",
+    "dopamine",
+    "disorder",
+    "depression",
+    "dualism",
+    "determinism",
+    "deontology",
+    "descartes",
+    "david",
+    "de",
+    "dewey",
+    "determinant",
+    "differential",
+    "deviation"
   ],
   "knowledge": [
     {
@@ -7692,7 +7712,2005 @@
       "query": "What is Law of Diminishing Marginal Utility",
       "source": "research",
       "learned_at": "2025-11-28T21:22:27.715030"
+    },
+    {
+      "topic": "deep learning",
+      "title": "What is Deep Learning? - Google Cloud",
+      "content": "What is Deep Learning? Deep learning is a type of machine learning that uses artificial neural networks to learn from data, similar to the way we learn. Artificial neural networks are inspired by the human brain, and they can be used to solve a wide variety of problems, including image recognition, natural language processing, and speech ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fcloud.google.com%2Fdiscover%2Fwhat%2Dis%2Ddeep%2Dlearning&rut=6c9ade15e0a402d5bec7b1a068494ba07cdded2ac13217e32067a320e3aa5ba3",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T17:52:26.952333"
+    },
+    {
+      "topic": "deep learning",
+      "title": "What Is Deep Learning? - Lifewire",
+      "content": "Deep learning is a technology that combines multiple layers of learning nodes to let computers learn and operate independently at advanced levels. This article explains what it is, how it differs from machine learning, and its applications.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.lifewire.com%2Fwhat%2Dis%2Ddeep%2Dlearning%2D8782383&rut=faeefdd28c0cbaf3c89ff9164fa59f4fcc515caf133dff0f3452b14085312d33",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T17:52:26.952407"
+    },
+    {
+      "topic": "gradient descent",
+      "title": "What is gradient descent? - IBM",
+      "content": "Gradient descent is an optimization algorithm used to train machine learning models by minimizing errors between predicted and actual results.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ibm.com%2Fthink%2Ftopics%2Fgradient%2Ddescent&rut=9c1c7eff8c68a8bad3878f10d938635fb83845213632e3b5ead127a29224d0e2",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:46:34.413535"
+    },
+    {
+      "topic": "gradient descent",
+      "title": "What is the Gradient Descent Algorithm - Analytics Vidhya",
+      "content": "Learn how gradient descent helps optimize machine learning models by minimizing the cost function. Explore different types, implementations, challenges, and applications of gradient descent with examples and code.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.analyticsvidhya.com%2Fblog%2F2020%2F10%2Fhow%2Ddoes%2Dthe%2Dgradient%2Ddescent%2Dalgorithm%2Dwork%2Din%2Dmachine%2Dlearning%2F&rut=73840ce12375b86cbfc4affea4f19713c4a158b900fd3184a0df48b8053aa086",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:46:34.413691"
+    },
+    {
+      "topic": "dimensionality reduction",
+      "title": "A Comprehensive Guide to Dimensionality Reduction: From Basic ... - Medium",
+      "content": "Dimensionality reduction refers to the process of reducing the number of features (or variables) in a dataset while retaining as much information as possible. This is crucial in machine learning ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmedium.com%2F%40adnan.mazraeh1993%2Fa%2Dcomprehensive%2Dguide%2Dto%2Ddimensionality%2Dreduction%2Dfrom%2Dbasic%2Dto%2Dsuper%2Dadvanced%2Dtechniques%2D1%2Dd17ce8e734d8&rut=8e5b73640058ecf688c36f1b8c504a4473f178c49f14097a8bf73deaa78c9376",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T19:07:19.928327"
+    },
+    {
+      "topic": "distributed computing",
+      "title": "Distributed Computing - Learn More About Computers",
+      "content": "Learn About Distributed Computing - Principles, Environments & Applications",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstudy.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DPAohW9xuIVamXei1Qh78uejMjRdbHzl2FFOmuiX3BWUig7yqw%252Dw0KHMWTBwyJyYhEWB04hKT7ct9tNMgphxB7ZC13RWU7XEGth_iHe3DyJ3tcAPs1UKdBuVzRcZ7C2PzQP3b0ZXq8E7sjccHuHG0raVGPakg5UzOYM9%252DjAzDVmY.grkKA8in_k1dqiFYg4RDBA%26rut%3D470cfba39189e9d9e0c9f14e2cf46f08144a6de96ca0b245ac3e538cf24e522a%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8LDHjeoJ4Cq0uJ9vvaIj52TVUCUxk9g6S3uD6Bi7ZxFTlqJzj9%252D12EhvBX%252DgA4JPRTH72dXhm3B7XiM8wLo2X1cg7AbMzOs5ka9_nPdmOQ2%252DKyScv_oYgdj6e6ZmHxqCUW3GZy%252Dc0PUQFn9%252DfliTT8YHp0XZanSxl8MMPs%252D4PJK3Lm8QRi%252De_E%252DJ4o7ZBf83k8Vt8Vic3_mkGDqV7rhaucrPRv6Y%2526u%253DaHR0cHMlM2ElMmYlMmZzdHVkeS5jb20lMmZidXklMmZhY2FkZW15JTJmbGVzc29uJTJmd2hhdC1pcy1kaXN0cmlidXRlZC1jb21wdXRpbmctcHJpbmNpcGxlcy1lbnZpcm9ubWVudHMtYXBwbGljYXRpb25zLmh0bWwlM2ZzcmMlM2RwcGNfYmluZ19ub25icmFuZCUyNnJjbnR4dCUzZGF3cyUyNmNydCUzZCUyNmt3ZCUzZFNFTy1QUEMtQlVZJTI2a3dpZCUzZGRhdC0yMzI5MDQwNTA1ODg2OTQwJTNhbG9jLTE5MCUyNmFnaWQlM2QxMjM1ODUxMzAyNTk2NzQ2JTI2bXQlM2RiJTI2ZGV2aWNlJTNkYyUyNm5ldHdvcmslM2RzJTI2X2NhbXBhaWduJTNkU2VvUFBDJTI2bXNjbGtpZCUzZDkyYTczNTEyY2ZkMjExOTcwZWJmNWM0NzM3NGRmNzJm%2526rlid%253D92a73512cfd211970ebf5c47374df72f%26vqd%3D4%2D42130857775875924825027649600368331011%26iurl%3D%257B1%257DIG%253DADA1A50BE9E74717A013233F017F4B8C%2526CID%253D3833288A6B026A6F2A683E5E6AD76BFE%2526ID%253DDevEx%252C5046.1&rut=c536d57b515023e4fac2721ce8b292b06c9df5fc11f95f0af41ff64364ac3b2f",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:31:28.058993"
+    },
+    {
+      "topic": "dark matter",
+      "title": "Dark Matter - Apple TV - Now streaming",
+      "content": "Starring Joel Edgerton. Stream all episodes on Apple TV. Subscription required. A mind-bending thriller based on the best-selling novel from Blake Crouch.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dapple.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D0kQkzLdX290ORClZTTsbFV2SlN0xgrSGvLgdmxOvjZ9psN15w0FZcg89ta5Ui3bat0UuyYHzrwr4qSpf4j_Xp3ogEP9JiRwyOD_wj7yZXdt5JMrh1H1Fbt9tefgRDuLLa6gbSOefaoqRoqxB75sVpmSvrko90wBVw_4iRDfQ0yg._lB3vpMMCssJ9_1c09_PCQ%26rut%3Ddd58508fcec0b26e1a0d4b8f95b590eeb1707770d85019185c560153b1916b01%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8bcWzH6GhoLhaneU6cDFCLzVUCUyNgsMT2jRFvY3UsRxdRfejIdNk3dTXTlDTH9Huny3Qu_wgbvO_3Bz5xktURNvPLjasyuyxph_XVKzFHRbL1MwXP5LI2hMrjIrKdcOmxJTSs92aTh%252DftE%252D7t2xG6dh85ZrYYEVh25DQTeerJRnxgi7MCeK%252DvGXpMbe84sC6cW%252Ddj0fSD3QzSXdA1%252D5NHOBbeso%2526u%253DaHR0cHMlM2ElMmYlMmZ0di5hcHBsZS5jb20lMmZ1cyUyZnNob3clMmZkYXJrLW1hdHRlciUyZnVtYy5jbWMuNGx1ajQ1dnRxcG1qc3ZiNnNjMjY3NW9lZyUzZiUyNmFwcCUzZHR2JTI2Y2lkJTNkd3dhLXVzLWt3YmktdHZwLXNsaWQtJTI2aXRzY2clM2RNQ18yMDAwMCUyNml0c2N0JTNkYXR2cF9icmFuZF9vbWQlMjZtdHRuc2l0ZWlkJTNkMTQzMjM4JTI2bXR0bmFnZW5jeWlkJTNkYTVlJTI2bXR0bmNjJTNkVVMlMjZtdHRuM3BpZCUzZEJpbmclMjUyMEFkcyUyNm10dG5zdWJwbG1udCUzZF9hZGV4dF8lMjZta3dpZCUzZHE4dXdYWk50JTI2bXR0bnN1YmFkJTNkT1VTMjAxOTExMjZfMi03ODEzNDI1NTczMzkxMC1jJTI2bXR0bnN1Ymt3JTNkMTI1MDE0NjAzNzQ1NjIzMV9rd2QtNzgxMzQ0ODEzOTAzNzElM2Fsb2MtMTkwX3E4dXdYWk50XyUyNmN0JTNkcTh1d1haTnQ%2526rlid%253Dffae8a25bb0c1dbd476be37396b6d555%26vqd%3D4%2D144893456824389926216594910609768713282%26iurl%3D%257B1%257DIG%253DAB206B6C1640450E9D7249806ADA3238%2526CID%253D2A3D94D9E90E68680BED820DE882696C%2526ID%253DDevEx%252C5045.1&rut=89586f6c7d29e58c97ff721aa1e509d20f6a82b0df4ec6cbfae48a452786b85d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T00:18:02.660028"
+    },
+    {
+      "topic": "dark matter",
+      "title": "Dark matter - Wikipedia",
+      "content": "The other main possibility is that dark matter is composed of primordial black holes. [17][18][19] Dark matter is classified as \"cold\", \"warm\", or \"hot\" according to velocity (more precisely, its free streaming length). Recent models have favored a cold dark matter scenario, in which structures emerge by the gradual accumulation of particles.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDark_matter&rut=1fa81237983ed907ecaa3d92afcad911590ced3a55198451a03ecc7be1452f88",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T00:18:02.660175"
+    },
+    {
+      "topic": "dark matter",
+      "title": "Dark Matter - NASA Science",
+      "content": "Dark matter is the invisible glue that holds the universe together. This mysterious material is all around us, making up most of the matter in the universe.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fscience.nasa.gov%2Fdark%2Dmatter%2F&rut=688c7bc2156c3de49e6e42df405a594319423217ffe2c5a7e1cef301c189d3f6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T00:18:02.660245"
+    },
+    {
+      "topic": "dark matter",
+      "title": "Dark matter | Definition, Discovery, Distribution, & Facts | Britannica",
+      "content": "Dark matter, a component of the universe whose presence is discerned from its gravitational attraction rather than its luminosity.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fdark%2Dmatter&rut=224f0d2897d7fdc0cc8f86ef508b35236057c6e5f4855ce993e9b0a066014fee",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T00:18:02.660309"
+    },
+    {
+      "topic": "dark matter",
+      "title": "Dark Matter Explained: What We Know, What We Don't, and How It Shapes ...",
+      "content": "Dark matter explained through cosmic structure, revealing what scientists know, what remains unknown, and why invisible matter shapes galaxies.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencetimes.com%2Farticles%2F60949%2F20251224%2Fdark%2Dmatter%2Dexplained%2Dwhat%2Dwe%2Dknow%2Dwhat%2Dwe%2Ddont%2Dhow%2Dit%2Dshapes%2Dcosmic%2Dstructure.htm&rut=d837d2bd35496c575917252f294e2f585cdeb4ecfa0b514c6bcd004b9ba0a0ec",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T00:18:02.660373"
+    },
+    {
+      "topic": "dark energy",
+      "title": "Dark energy - Wikipedia",
+      "content": "In physical cosmology and astronomy, dark energy is a proposed form of energy that affects the universe on the largest scales. Its primary effect is to drive the accelerating expansion of the universe. It also slows the rate of structure formation. [1] Assuming that the lambda-CDM model of cosmology is correct, [2] dark energy dominates the universe, contributing 68% of the total energy in the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDark_energy&rut=443c2a8476d681e8b344aef7bed38ca0be2bd8b6da690f54a2b5c390c46d9539",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T00:18:34.479659"
+    },
+    {
+      "topic": "dark energy",
+      "title": "What Is Dark Energy? The Invisible Force Behind The Universe ... - News18",
+      "content": "Dark energy is the mysterious force thought to be accelerating the universe. But a new study hints that scientists may have misread the cosmos's speed entirely.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.news18.com%2Fexplainers%2Fwhat%2Dis%2Ddark%2Denergy%2Dthe%2Dinvisible%2Dforce%2Dbehind%2Dthe%2Duniverses%2Dend%2Dand%2Dwhy%2Dscientists%2Dare%2Dworried%2Dsbhp%2Dws%2Dl%2D9799881.html&rut=8fcdd2eb9c896678484742fb8a5c7f5d13cb3e1b84d065f6b0efd00f693b551d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T00:18:34.479745"
+    },
+    {
+      "topic": "dark energy",
+      "title": "Dark energy | Definition, Discoverers, & Facts | Britannica",
+      "content": "Dark energy, repulsive force that is the dominant component of the universe.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fdark%2Denergy&rut=76969209aeeb6aa6a000774fc63c3eca51c2a8dd3d156b50ef2506e309543c97",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T00:18:34.479810"
+    },
+    {
+      "topic": "dark energy",
+      "title": "What is Dark Energy? Inside Our Accelerating, Expanding Universe - NASA ...",
+      "content": "Dark energy is an unknown force that drives the universe's accelerating expansion. Learn how astronomers discovered it, what it means for the fate of the cosmos, and how NASA studies it with various missions and telescopes.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fscience.nasa.gov%2Fdark%2Denergy%2F&rut=1eddf566ba8eb423b15a13e93f75734a90e1b5bd2139add12a3bdf7aaec5397b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T00:18:34.479875"
+    },
+    {
+      "topic": "dark energy",
+      "title": "Dark Energy may be changing and with it the fate of the Universe",
+      "content": "A mysterious force called Dark Energy might be changing, in a way that challenges our current understanding of the nature of time and space.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.bbc.co.uk%2Fnews%2Farticles%2Fc17xe5kl78vo&rut=c3ce4418739e5498d6408fe8bb731528bbb16a0b2dd86a89379ba930e889d56a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T00:18:34.479938"
+    },
+    {
+      "topic": "does swearing make you stronger? science says yes.",
+      "title": "Swearing may unlock hidden strength, study finds - ScienceDaily",
+      "content": "Letting a swear word fly when you're struggling might do more than blow off steam\u2014it could actually make you stronger. Research published by the American Psychological Association found that ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsciencedaily.com%2Freleases%2F2025%2F12%2F251222080123.htm&rut=b582986ccdd4d0ec000873aaf7335640f7d9f3dd5cf3190981786cedf04a7732",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:23:55.887014"
+    },
+    {
+      "topic": "does swearing make you stronger? science says yes.",
+      "title": "Need a Quick Boost in Physical Strength? Try Blurting Out Some Curse ...",
+      "content": "New research suggests that swearing boosts physical performance by reducing inhibitions. skynesher via Getty Images Blurting out some curse words could give you a quick performance boost.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.smithsonianmag.com%2Fsmart%2Dnews%2Fneed%2Da%2Dquick%2Dboost%2Din%2Dphysical%2Dstrength%2Dtry%2Dblurting%2Dout%2Dsome%2Dcurse%2Dwords%2Da%2Dstudy%2Dsuggests%2D180987915%2F&rut=0c5c132c44803ed6a792a59faf31ea83f29652b67f8d2bef836c52a64551221e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:23:55.887168"
+    },
+    {
+      "topic": "does swearing make you stronger? science says yes.",
+      "title": "Does swearing make you stronger? Science says yes.",
+      "content": "Does swearing make you stronger? Science says yes. \"A calorie-neutral, drug-free, low-cost, readily available tool for when we need a boost in performance.\"",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Farstechnica.com%2Fscience%2F2025%2F12%2Fdoes%2Dswearing%2Dmake%2Dyou%2Dstronger%2Dscience%2Dsays%2Dyes%2F&rut=fb73d8b8b3dc5f7d528d978e36e5214d86d75800a5b65c1bfcaa03dc1b26e8ae",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:23:55.887237"
+    },
+    {
+      "topic": "does swearing make you stronger? science says yes.",
+      "title": "Swearing Actually Seems to Make Humans Physically Stronger",
+      "content": "The gym's about to get a whole lot swear-ier, thanks to science. A new study adds to the growing body of evidence that swearing can help us unleash our inner strength, improving physical performance, it seems, by helping people break through certain psychological barriers.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencealert.com%2Fswearing%2Dactually%2Dseems%2Dto%2Dmake%2Dhumans%2Dphysically%2Dstronger&rut=3e1dc3d865583711d6c8f9cdf81b3c6bd683230bc9048af70e50813a15787423",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:23:55.887298"
+    },
+    {
+      "topic": "does swearing make you stronger? science says yes.",
+      "title": "Swearing is more than just venting, science says it can make you ... - MSN",
+      "content": "Discover why swearing is more than just venting. New research reveals how using swear words can boost physical strength, endurance, and confidence. Learn more!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.msn.com%2Fen%2Din%2Fhealth%2Fhealth%2Dnews%2Fswearing%2Dis%2Dmore%2Dthan%2Djust%2Dventing%2Dscience%2Dsays%2Dit%2Dcan%2Dmake%2Dyou%2Dphysically%2Dstronger%2Far%2DAA1TkLLv&rut=884b1785f2f35ab49e79001a5abcc713e4b91f450316aa76a2efad026061d8a0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:23:55.887364"
+    },
+    {
+      "topic": "radioactive decay",
+      "title": "Radioactive decay - Wikipedia",
+      "content": "Radioactive decay (also known as nuclear decay, radioactivity, radioactive disintegration, or nuclear disintegration) is the process by which an unstable atomic nucleus loses energy by radiation. A material containing unstable nuclei is considered radioactive. Three of the most common types of decay are alpha, beta, and gamma decay. The weak force is the mechanism that is responsible for beta ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRadioactive_decay&rut=8c6fb630b5805c541d4f2987465d564f16a4173c0709d46d8b806b1c26b3ebfe",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:29:10.449636"
+    },
+    {
+      "topic": "radioactive decay",
+      "title": "Radioactive Decay | US EPA",
+      "content": "Radioactive decay is the emission of energy in the form of ionizing radiation. Example decay chains illustrate how radioactive atoms can go through many transformations as they become stable and no longer radioactive.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.epa.gov%2Fradiation%2Fradioactive%2Ddecay&rut=44efe39c93833ae76eb3c1e8685a2fdfa026a59ab1ffc4124f805fa386e5d375",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:29:10.449728"
+    },
+    {
+      "topic": "radioactive decay",
+      "title": "Radioactivity | Definition, Types, Applications, & Facts | Britannica",
+      "content": "Radioactivity, property exhibited by certain types of matter of emitting energy and subatomic particles spontaneously. It is, in essence, an attribute of individual atomic nuclei. Radioactive decay is a property of several naturally occurring elements as well as of artificially produced isotopes of the elements.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fradioactivity&rut=212dace3911b887baa194583ef7618a500ce1da0454b961d31442a08f6b8f7d6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:29:10.449798"
+    },
+    {
+      "topic": "radioactive decay",
+      "title": "Radioactive Decay - Science Facts",
+      "content": "Learn what radioactive decay is, how it occurs, and what types of radiation are emitted. Explore the radioactive decay law, half-life, and examples of applications in science and medicine.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencefacts.net%2Fradioactive%2Ddecay.html&rut=acd28d9ff4a032a2b9e2d5cb5e0b38970864c8b2a8d8a4eb80e39b0f96c8283d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:29:10.449881"
+    },
+    {
+      "topic": "radioactive decay",
+      "title": "Radioactive Decay: Types, Processes & Applications",
+      "content": "Explore the fundamentals of radioactive decay, including alpha, beta, and gamma emissions, half-life concepts, and practical applications in science and industry.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fscienceinfo.com%2Fradioactive%2Ddecay%2F&rut=4766af3a79b80326249e2f906dc3fc9806f475e9f3fa33353f2cb78cb6141011",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:29:10.449961"
+    },
+    {
+      "topic": "van der waals force",
+      "title": "Van der Waals force - Wikipedia",
+      "content": "Learn about the van der Waals force, a distance-dependent interaction between atoms or molecules that is not based on chemical bonds. Find out its definition, types, examples, applications, and contrast with other intermolecular forces.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FVan_der_Waals_force&rut=a55a0ca2d1430d39cf93a4821957f407a2448dba66acf9c6af27df7fab0e98f1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:00.562981"
+    },
+    {
+      "topic": "van der waals force",
+      "title": "van der Waals forces - Encyclopedia Britannica",
+      "content": "Van der Waals forces, relatively weak electric forces that attract neutral molecules to one another in gases, in liquefied and solidified gases, and in almost all organic liquids and solids. The forces are named for the Dutch physicist Johannes Diderik van der Waals, who in 1873 first postulated",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fvan%2Dder%2DWaals%2Dforces&rut=2dcce693763b0526a5c1e2e4570515ce796438ee51cace2ef5a0b6841ae20a63",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:00.563025"
+    },
+    {
+      "topic": "van der waals force",
+      "title": "Van der Waals Force | Brilliant Math & Science Wiki",
+      "content": "Van der Waals forces are specific intermolecular interactions observed in liquids and solids. They are electrostatic in nature, arising from the interactions of positively and negatively charged species. intermolecular forces hold molecules together (in contrast to intramolecular forces, which hold atoms together within a molecule). They help determine bulk properties such as boiling point and ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbrilliant.org%2Fwiki%2Fvan%2Dder%2Dwaals%2Dforce%2F&rut=4943178af0ce7d4a52bf46e55ae653fc698dd6b8582a5b76a658b18c8b788916",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:00.563054"
+    },
+    {
+      "topic": "van der waals force",
+      "title": "Van Der Waals Force - GeeksforGeeks",
+      "content": "Van der Waals forces are intermolecular forces. They include attraction and repulsion between atoms and molecules. This force is fundamental in diverse fields which include condensed matter physics, polymer science, nanotechnology, supra-molecular chemistry, biological structure, and surface science.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fchemistry%2Fvan%2Dder%2Dwaals%2Dforce%2F&rut=9e6a33a506a661ee8b37d3af6ec53aec0e46daf6f16bdc82e0313cc799714382",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:00.563082"
+    },
+    {
+      "topic": "van der waals force",
+      "title": "Van der Waals Forces (Bond): Definition, Examples, & Diagrams",
+      "content": "Define and explain van der Waals forces. How do they hold molecules together. Learn their different types and importance, and check out a few examples.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.chemistrylearner.com%2Fchemical%2Dbonds%2Fvan%2Dder%2Dwaals%2Dforces&rut=97f6bb8fd88c5dc74b740d337f89fcf25ce1400c860ef243a89ce00bb229b425",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:00.563110"
+    },
+    {
+      "topic": "2025 china\u2013japan diplomatic crisis",
+      "title": "2025-2026 China-Japan diplomatic crisis - Wikipedia",
+      "content": "Relations between China and Japan entered a state of crisis in November 2025, after Japanese prime minister Sanae Takaichi said in the Japanese parliament that a Chinese attack on Taiwan could potentially constitute an \"existential crisis for Japan\" under the Legislation for Peace and Security, allowing Japan to take military action in collective self-defence. Following these remarks, the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2F2025%25E2%2580%25932026_China%25E2%2580%2593Japan_diplomatic_crisis&rut=df619d05fb16ff913f001f0b90e38990bebe2277be054738c2ab3e061a65c5cd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:41:49.365421"
+    },
+    {
+      "topic": "2025 china\u2013japan diplomatic crisis",
+      "title": "China's 'Wolf Warrior' Diplomacy Returns With Threat Against Japan's ...",
+      "content": "In recent years, Japanese leaders have repeated a vague expression of solidarity: \"A Taiwan crisis is Japan's crisis.\" China is particularly sensitive to Japanese statements on Taiwan.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nytimes.com%2F2025%2F11%2F13%2Fworld%2Fasia%2Fchina%2Djapan%2Dtakaichi%2Dtaiwan.html&rut=7a075b235d753b43e90c500c58c8950ef7e97068ad57e5945a0e66af286c5dcc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:41:49.365516"
+    },
+    {
+      "topic": "2025 china\u2013japan diplomatic crisis",
+      "title": "Dangerous new equilibrium awaits Japan-China ties in 2026",
+      "content": "The deterioration of ties after Prime Minister Sanae Takaichi's remarks on a possible Japanese military intervention in a Taiwan crisis will test both Tokyo and Beijing's resolve.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.japantimes.co.jp%2Fnews%2F2025%2F12%2F31%2Fjapan%2Fpolitics%2Fjapan%2Dchina%2Drelations%2D2026%2Danalysis%2F&rut=15a782bd748963c323ab85df0993adbf8def86d574f2d91951948182114f8cc4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:41:49.365589"
+    },
+    {
+      "topic": "2025 china\u2013japan diplomatic crisis",
+      "title": "Japan Warns Citizens in China About Safety as Diplomatic Crisis Deepens",
+      "content": "BEIJING/TOKYO (Reuters) -Japan has warned its citizens in China to step up safety precautions and avoid crowded places, amid a deepening dispute between Asia's two largest economies over Japanese ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.usnews.com%2Fnews%2Fworld%2Farticles%2F2025%2D11%2D17%2Fchina%2Dsuspends%2Djapanese%2Dfilm%2Dreleases%2Das%2Ddiplomatic%2Dcrisis%2Ddeepens&rut=4a252d862e1a28c712e8a3b40f2c8fc723c7d0542836b37b0341485340e83697",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:41:49.365659"
+    },
+    {
+      "topic": "2025 china\u2013japan diplomatic crisis",
+      "title": "Why China's spat with Japan could still get worse - The Economist",
+      "content": "Why China's spat with Japan could still get worse Officials have held back from encouraging consumer boycotts-for now Photograph: Bloomberg via Getty Images Dec 21st 2025 | 4 min read",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.economist.com%2Fchina%2F2025%2F12%2F21%2Fwhy%2Dchinas%2Dspat%2Dwith%2Djapan%2Dcould%2Dstill%2Dget%2Dworse&rut=f6934661a0f99f197094dca31b41ec216fade4a7b8d9833a09ba863bbed70cf2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:41:49.365730"
+    },
+    {
+      "topic": "2025 deployment of federal forces in the united states",
+      "title": "2025 deployment of federal forces in the United States",
+      "content": "In 2025, during Donald Trump 's second presidency, federal government forces, primarily National Guard troops, have been deployed in select U.S. cities. Trump has given multiple explanations for the deployments, saying they are officially part of crackdowns on protests, civil unrest, crime, homelessness, and illegal immigration.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2F2025_deployment_of_federal_forces_in_the_United_States&rut=1bfbdb420d06883f16050980243c287e1fe42f07ba88d31926a7bd65caf76499",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:05.976161"
+    },
+    {
+      "topic": "2025 deployment of federal forces in the united states",
+      "title": "Tracking Domestic Deployments of the U.S. Military | Lawfare",
+      "content": "The map visualization displays identified federal domestic deployments for 2025. It displays locations, troop deployment size, and deployment legal authority. Hovering over a specific deployment provides additional information about each deployment, such as a description of its mission.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.lawfaremedia.org%2Fprojects%2Dseries%2Ftrials%2Dof%2Dthe%2Dtrump%2Dadministration%2Ftracking%2Ddomestic%2Ddeployments%2Dof%2Dthe%2Du.s.%2Dmilitary&rut=bf0afbadeb62b2a88e348b7eb0ca7ef7242832a2ca1a9cc9006bf9f327ec1824",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:05.976211"
+    },
+    {
+      "topic": "2025 deployment of federal forces in the united states",
+      "title": "How and Where the National Guard Has Deployed to U.S. Cities",
+      "content": "In that hybrid designation, Guard troops remain under their governor's command, but the deployment receives federal funding and comes at the request of the president or secretary of defense.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nytimes.com%2Finteractive%2F2025%2F10%2F27%2Fus%2Fus%2Dnational%2Dguard%2Ddeployments.html&rut=7313a7033c834259b0d31131b4ac1b4aefb892a7d3c98e4baa4cc448e98331a4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:05.976247"
+    },
+    {
+      "topic": "2025 deployment of federal forces in the united states",
+      "title": "Trump says he's withdrawing National Guard from Chicago, Los ... - CNN",
+      "content": "President Donald Trump announced Wednesday that he's withdrawing the National Guard from Chicago, Los Angeles and Portland but left the door open to sending federal forces \"in a much different ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cnn.com%2F2025%2F12%2F31%2Fpolitics%2Ftrump%2Dnational%2Dgaurd%2Dwithdrawl%2Dchicago%2Dlos%2Dangeles%2Dportland&rut=826bcfca4e52d37499bfb59683d1d980adf907bd875af5036e8524fd0fb9eb1a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:05.976290"
+    },
+    {
+      "topic": "2025 deployment of federal forces in the united states",
+      "title": "Pentagon Readies Rapid Deployment Force for U.S. Cities",
+      "content": "The first U.S. National Guard troops have deployed to Washington, D.C., a day after President Trump announced a federal takeover of the D.C. police force. Federal officials say some 800 National ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.democracynow.org%2F2025%2F8%2F13%2Fheadlines%2Fpentagon_readies_rapid_deployment_force_for_us_cities&rut=76e1074baa8c74ea64dae664fec8ad97560cde860223e107fefd9b0004379950",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:05.976335"
+    },
+    {
+      "topic": "dna structure",
+      "title": "DNA - Wikipedia",
+      "content": "Chemical structure of DNA; hydrogen bonds shown as dotted lines. Each end of the double helix has an exposed 5' phosphate on one strand and an exposed 3\u2032 hydroxyl group (\u2014OH) on the other. DNA is a long polymer made from repeating units called nucleotides. [6][7] The structure of DNA is dynamic along its length, being capable of coiling into tight loops and other shapes. [8] In all species ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDNA&rut=41d75036bdaff9eb9b9485679319515bba6ad394c6720befe4ecff5b8960a5ca",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:50:51.272396"
+    },
+    {
+      "topic": "dna structure",
+      "title": "DNA | Definition, Discovery, Function, Bases, Facts, & Structure ...",
+      "content": "DNA is an organic chemical of complex molecular structure found in all prokaryotic and eukaryotic cells. It codes genetic information for the transmission of inherited traits. The structure of DNA was described in 1953, leading to further understanding of DNA replication and hereditary control of cellular activities.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2FDNA&rut=777ca650a2d76f8d7cd8354632b98d6595c4f90cca0388570685fe380cca66f1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:50:51.272499"
+    },
+    {
+      "topic": "dna structure",
+      "title": "What is DNA? Definition, Function & Structure - Cleveland Clinic",
+      "content": "DNA DNA (deoxyribonucleic acid) is a set of instructions for creating the proteins that make your body work. Two strands of DNA together form a double helix \u2014 a bit like a spiral staircase. Sugars and phosphates make up the sides and base pairs make up the middle. Base pairs are the compounds adenine (A), cytosine (C), guanine (G) and thymine (T).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmy.clevelandclinic.org%2Fhealth%2Fbody%2Fdna&rut=96cf52ade909d05b4db50ddbe54f0193ffaddb64676c5fcc275b13178ebfcef4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:50:51.272580"
+    },
+    {
+      "topic": "dna structure",
+      "title": "Biochemistry, DNA Structure - StatPearls - NCBI Bookshelf",
+      "content": "The remarkable structure of deoxyribonucleic acid (DNA), from the nucleotide up to the chromosome, plays a crucial role in its biological function. The ability of DNA to function as the material through which genetic information is stored and transmitted is a direct result of its elegant structure. In their seminal 1953 paper, Watson and Crick unveiled two aspects of DNA structure: pairing the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fsites%2Fbooks%2FNBK538241%2F&rut=cef6c29f2fa0e1a3ab447693c0f2d7bfe4382d92c2c4139ac9b6a33b8dee4bb6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:50:51.272647"
+    },
+    {
+      "topic": "dna structure",
+      "title": "Deoxyribonucleic Acid (DNA)",
+      "content": "Deoxyribonucleic acid (abbreviated DNA) is the molecule that carries genetic information for the development and functioning of an organism. DNA is made of two linked strands that wind around each other to resemble a twisted ladder \u2014 a shape known as a double helix. Each strand has a backbone made of alternating sugar (deoxyribose) and phosphate groups. Attached to each sugar is one of four ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.genome.gov%2Fgenetics%2Dglossary%2FDeoxyribonucleic%2DAcid%2DDNA&rut=645b8518cd3beed6047874ba5ff5308b67f27b22b3e7d0c18eb2fdd0751d16d6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:50:51.272727"
+    },
+    {
+      "topic": "cell differentiation",
+      "title": "Cell differentiation | Description, Stages, Gene Expression, & Examples ...",
+      "content": "Cell differentiation is the process by which an immature cell develops into a specialized cell type with a distinct structure and function.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fcell%2Ddifferentiation&rut=8e9822e263996537f3a6fb8a6c3e347ff013de84c4c6fad2d440b6403c18a448",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:59:48.211413"
+    },
+    {
+      "topic": "cell differentiation",
+      "title": "Cellular differentiation - Wikipedia",
+      "content": "Learn about the process of cellular differentiation, where a stem cell changes to a specialized cell type. Find out the levels of cell potency, the categories of mammalian cells, and the examples of dedifferentiation.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCellular_differentiation&rut=c31704f843dfc7ffb2a2d23a85863bd7e7ca58f328e5e2a89bf67326cd8a29e7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:59:48.211506"
+    },
+    {
+      "topic": "cell differentiation",
+      "title": "Cell Differentiation - Definition, Process & Examples",
+      "content": "What is Cell Differentiation? Cell differentiation is a fundamental biological process in which unspecialized cells, known as stem cells, transform into specialized cells with unique structures and functions. This transformation is essential in the development of a multicellular organism, from a simple zygote (fertilized egg) to a complex system of tissues and cell types. Differentiation ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbiologynotesonline.com%2Fcell%2Ddifferentiation%2Ddefinition%2Dprocess%2Dexamples%2F&rut=94d20ecc31cb569dee773a831a3533642030ede43b68b659286e51a12a98c3b8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:59:48.211577"
+    },
+    {
+      "topic": "cell differentiation",
+      "title": "3.6 Cellular Differentiation - Anatomy & Physiology 2e",
+      "content": "Throughout development and adulthood, the process of cellular differentiation leads cells to assume their final morphology and physiology. Differentiation is the process by which unspecialized cells become specialized to carry out distinct functions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fopen.oregonstate.education%2Fanatomy2e%2Fchapter%2Fcellular%2Ddifferentiation%2F&rut=0ab690ff38f7f5a144dac0f5f4f91b97a0693c319891388eb15a7ceeb4caf74c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:59:48.211640"
+    },
+    {
+      "topic": "cell differentiation",
+      "title": "What Is Cellular Differentiation and Why Is It Important?",
+      "content": "Cellular differentiation is a biological process where an immature cell develops into a specialized cell type with a distinct structure and function. This transformation allows a single fertilized egg, or zygote, to give rise to the vast array of specialized cells that make up a complex organism.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbiologyinsights.com%2Fwhat%2Dis%2Dcellular%2Ddifferentiation%2Dand%2Dwhy%2Dis%2Dit%2Dimportant%2F&rut=61f9bf0168b7ceed7cd38e71af2ee5c08413686fbddb504cfda356a5514671ae",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:59:48.211704"
+    },
+    {
+      "topic": "autoimmune disease",
+      "title": "Sjogren's Autoimmune Disease - Causes, Symptoms & Treatments",
+      "content": "Discover the latest Treatment Options for Sjogren's symptoms of dry eyes and dry mouth. Patient Guide to Sjogren's Symptoms, Treatments, Research & Support.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dsjogrens%252Dguidebook.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DVr7uwAhmOn41xy4FxOpsA2cX_dibT2vy9iUXXDSMY8bYpuJc0uw%252D%252Dlo1HYB3R8%252DUhdRLah7YelcjVeX6RwmS6Sb0JjEDGy8zn8OWsW7YTKVIncKfzo8jnVuif32fahJNhCX0BWABXqF8XXwMMMuxLybc9p6wGD2zObSYjJRb34g.8ZU124q49npXLaXGUSiZQg%26rut%3D23e974027f0ef99d5831beaa35f1e89e83649c03272027e661c2697cc945a4bd%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8Gr_guhWHylhuIQwiK9ZPZzVUCUzA7wqvtSQ0H0%252DqztPbEVfBF1sLSRGRkGVIa5xpfVTulB04ZUFaf6D_362Bizbwl9K0Xqv2z8uz3E9t_7ruj0ZpSyvw8lfwSdjhvhHQ9Sb1XfksnQ3NNhUinO99uTg2p1K1e83TztXgyBuC939K%252D0aWClO2KxDJMu_wdVy5Di%252DTkKu44tbpbOl5cR0Bn_jZUhE%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuc2pvZ3JlbnMtZ3VpZGVib29rLmNvbSUyZiUzZmFzc29jJTNkQmluZyUyNmtleXdvcmQlM2Rzam9ncmVucyUyNm1zY2xraWQlM2Q1NDBmYmEyZjcxNDQxZGY3ZTc5YmQzNzljOGE3ZTM0MiUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZFNqb2dyZW4lMjdzJTI1MjBTeW5kcm9tZSUyNnV0bV90ZXJtJTNkc2pvZ3JlbiUyN3MlMjUyMHN5bmRyb21lJTI2dXRtX2NvbnRlbnQlM2RTam9ncmVuJTI3cyUyNTIwU3luZHJvbWU%2526rlid%253D540fba2f71441df7e79bd379c8a7e342%26vqd%3D4%2D303237585918104001092427094971379795972%26iurl%3D%257B1%257DIG%253DBE988C6207F3402C9922C5EF7BBF2805%2526CID%253D26C9C0BCD1056EF9038AD668D0896F71%2526ID%253DDevEx%252C5045.1&rut=9d7be08fafa8286b0172f3ee13a913bdeedf35f6d020885c706bec09c54235b1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:16:04.093954"
+    },
+    {
+      "topic": "autoimmune disease",
+      "title": "Autoimmune Disease - Symptoms, Causes and Treatments",
+      "content": "Browse Terra Origin For All Of Your Supplement Needs At Excellent Prices Online Today! Shop Terra Origin And Get Great Discounts On The Highest Quality Supplements Online Today!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dterraorigin.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DmljooODYhC0NsEQOGWRKOgb6sboLXfQ8QvIG4ZHLKUqOzukItqojDBLKDcB3bbZhdCl9ptO9lpURhbqET_L46qYjIb2iqDWllNNn4Kn8m1TuyJQQ4pOofHRJ3tW4gOP9KMVMYRLkLuY5HS13lCjR5cXCTofuVv5nkVPVY5DGybA.xZY7kU64iMRpl_djwLHBzg%26rut%3D5445a23db1b2a67a290862f57b93631989aba7b1d82f170fb31eaaabd0511ac3%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8OQzl_xLrox__EPl%252DJJkisjVUCUy%252DCUugjvF01g6c1aWc5huh6KBg8V2lUiAhohVERnCvDaoz50jrDFapFmOqAsjPYdNDu44RHtJ6aJoVhSKdm8iIdyjNSWmWV3lLVrRvh9LSui3j2vDWl_2anv%252D%252D1hGe9PduirXO7HlRUNlLeqn9_MJE3kd8SmJtVzJhwsXetRlPnJYLWic4cWaooo3acbxU_%252Dg%2526u%253DaHR0cHMlM2ElMmYlMmZ0ZXJyYW9yaWdpbi5jb20lMmZibG9ncyUyZmltbXVuaXR5JTJmd2hhdC1pcy1hdXRvaW1tdW5lLWRpc2Vhc2UlM2Ztc2Nsa2lkJTNkZGYxMTg5OWY3ZWI4MThjZjU0NTZlMGM5Yzc1Yjc2MWYlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RQZXJmb3JtYW5jZSUyNTIwTWF4JTI2dXRtX3Rlcm0lM2R0ZXJyYW9yaWdpbi5jb20lMjZ1dG1fY29udGVudCUzZFRlcnJhJTI1MjBPcmlnaW4lMjUyMFBtYXg%2526rlid%253Ddf11899f7eb818cf5456e0c9c75b761f%26vqd%3D4%2D167787345408953469184994208232471939141%26iurl%3D%257B1%257DIG%253DBE988C6207F3402C9922C5EF7BBF2805%2526CID%253D26C9C0BCD1056EF9038AD668D0896F71%2526ID%253DDevEx%252C5049.1&rut=25b80b545fbcb534a2ea5119f89e1e56da669ffd1b46f93d545e18c26639a205",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:16:04.094165"
+    },
+    {
+      "topic": "autoimmune disease",
+      "title": "Autoimmune Diseases: Types, Symptoms & Treatments",
+      "content": "Learn about autoimmune diseases, health conditions that happen when your immune system attacks your body instead of defending it. Find out the causes, symptoms, diagnosis and treatments of more than 100 different autoimmune diseases.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmy.clevelandclinic.org%2Fhealth%2Fdiseases%2F21624%2Dautoimmune%2Ddiseases&rut=23daffcffe5a146c5d9c01c4f3b4d2e5866649c413c531e096787b71051ea566",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:16:04.094558"
+    },
+    {
+      "topic": "autoimmune disease",
+      "title": "Autoimmune Disease: Types, Symptoms, Causes, and More",
+      "content": "Learn about autoimmune diseases, conditions in which your immune system attacks healthy cells in your body. Find out the common causes, symptoms, and types of autoimmune diseases, such as diabetes, arthritis, and psoriasis.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.healthline.com%2Fhealth%2Fautoimmune%2Ddisorders&rut=67c223ed5b7e81ac3c71ba1a63ca53c5edf68a1229bb2e6d7673f7ec61d02010",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:16:04.094596"
+    },
+    {
+      "topic": "autoimmune disease",
+      "title": "List of autoimmune diseases, with symptoms and treatments",
+      "content": "Learn about over 100 autoimmune conditions that affect different parts of the body, such as the skin, blood, digestive system, and hormones. Find out the symptoms, causes, and treatments of each disease.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.medicalnewstoday.com%2Farticles%2Flist%2Dof%2Dautoimmune%2Ddiseases&rut=a252782169031f3d88cc6c9c4dce5fe83a0518ae04f49ef212de8618ee037f23",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:16:04.094625"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These are the flying discs the government wants you to know about",
+      "content": "These are the flying discs the government wants you to know about DiskSat's design offers \"a power-to-weight ratio unmatched by traditional aluminum satellites.\"",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Farstechnica.com%2Fscience%2F2025%2F12%2Fheres%2Dwhy%2Dnasa%2Dand%2Dthe%2Dspace%2Dforce%2Dare%2Dinterested%2Din%2Dpizza%2Dshaped%2Dsatellites%2F&rut=f211be3316a507f9820d7a3acaa1110567f349036b9c4eb0c58da797508f882c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470269"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "Government's new 'flying discs' could redefine low-orbit missions",
+      "content": "These disk-like spacecraft are not science fiction, and this morning, they successfully entered orbit under the watchful observation of NASA and the U.S. Space Force. Thursday morning, four ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.msn.com%2Fen%2Dus%2Fnews%2Ftechnology%2Fgovernment%2Ds%2Dnew%2Dflying%2Ddiscs%2Dcould%2Dredefine%2Dlow%2Dorbit%2Dmissions%2Far%2DAA1SOLCz&rut=d515a90639683d73b6113b12a111164798de7ea5292727fe29f32e50f8fbe3fb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470331"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These are the flying discs the government wants you to know about ...",
+      "content": "Rocket Lab delivers for Space Force and NASA. Four small satellites rode a Rocket Lab Electron launch vehicle into orbit from Virginia early Thursday, beginning a government-funded technology ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fjean%2Dpierre%2Dpalomba%2Dmarin%2D14508b162_these%2Dare%2Dthe%2Dflying%2Ddiscs%2Dthe%2Dgovernment%2Dactivity%2D7407712454568235008%2DUxWm&rut=7fee72c854af04723714910de3a8548826d592e7abebf9982acce37cbf8ae207",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470377"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These Are The Flying Discs The Government Wants You To Know",
+      "content": "Home \u00bb Tech News \u00bb These are the flying discs the government wants you to know about Share with your friends! these are the flying discs the government NASA and the US Space Force have initiated a groundbreaking technology demonstration mission with the launch of four innovative satellites designed to test a new spacecraft concept.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.hashe.com%2Ftech%2Dnews%2Fthese%2Dare%2Dthe%2Dflying%2Ddiscs%2Dgovernment%2Dwants%2Dyou%2Dto%2Dknow%2Dabout%2F&rut=e066b6d6ca1d75b7d6df9a185a6a0856749920e76e05246626ba11c8540c25a8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470441"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These are the flying discs the government wants you to know about",
+      "content": "These Are the Flying Discs the Government Wants You to Know About In a groundbreaking development, four small satellites designed by the Aerospace Corporation have successfully launched into orbit. The launch took place on early Thursday morning, when a Rocket Lab Electron rocket carrying the DiskSats began its journey from NASA's Wallops Flight Facility. The DiskSat project was initiated as a ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.trendynewsblog.com%2Fposts%2Fthese%2Dare%2Dthe%2Dflying%2Ddiscs%2Dthe%2Dgovernment%2Dwan%2F&rut=97788db732a3a2c4eee229d8d2e458d9fc95ca98a82e05912c84272abdb4884d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470498"
+    },
+    {
+      "topic": "drug development",
+      "title": "Drug development - Wikipedia",
+      "content": "Drug development is the process of bringing a new pharmaceutical drug to the market once a lead compound has been identified through the process of drug discovery. It includes preclinical research on microorganisms and animals, filing for regulatory status, such as via the United States Food and Drug Administration for an investigational new drug to initiate clinical trials on humans, and may ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDrug_development&rut=0ac6dd39c8223990e54f93a765d79e4395920d1202e7a8c5b2219f20ed712ae9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:22:53.467393"
+    },
+    {
+      "topic": "drug development",
+      "title": "The Drug Development Process | FDA",
+      "content": "Learn how drugs are developed from discovery to approval and monitoring by the FDA. Find out the steps, stages, and criteria for each phase of the process.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.fda.gov%2Fpatients%2Flearn%2Dabout%2Ddrug%2Dand%2Ddevice%2Dapprovals%2Fdrug%2Ddevelopment%2Dprocess&rut=317fecc270052e1ada15d21004732dcd7f94bae042901a93b4f9a11c2d4dc9fb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:22:53.467430"
+    },
+    {
+      "topic": "drug development",
+      "title": "The Drug Development Process: Meaning and Main Phases Explained",
+      "content": "The drug development process is a series of structured steps designed to convert new drug ideas into marketable therapeutic agents. Pharmaceutical companies play a crucial role in this process, monitoring the safety of their drugs using the FDA Adverse Event Reporting System (FAERS) and post-marketing surveillance studies.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fadragos%2Dpharma.com%2Fthe%2Ddrug%2Ddevelopment%2Dprocess%2Dmeaning%2Dand%2Dmain%2Dphases%2Dexplained%2F&rut=716ce7482f9a08f48954f7832a9f14c3cd4afe82aceeedd2651cb2aec05fbf22",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:22:53.467466"
+    },
+    {
+      "topic": "drug development",
+      "title": "Drug Development | Clinical Center",
+      "content": "Bringing an investigational drug from bench to bedside is a long, complicated process involving many nonclinical and clinical investigations and layers of regulatory oversight. This page provides an easy-to-follow timeline for the life cycle of a new drug and detailed descriptions for the process.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cc.nih.gov%2Forcs%2Find%2Fdrug%2Ddevelopment&rut=e56906c756daafc1841bacf381cc52633165b25be12773ad4c28cf0dcb873df6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:22:53.467494"
+    },
+    {
+      "topic": "drug development",
+      "title": "Understanding the Drug Development Process | The Scientist",
+      "content": "Understanding the Drug Development Process Developing high-quality, safe, and effective drugs is a complex process that requires varied scientific skills and stringent regulatory assessments.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.the%2Dscientist.com%2Funderstanding%2Dthe%2Ddrug%2Ddevelopment%2Dprocess%2D72854&rut=3441cb0ee269d359572dcb6ef9331c9f985c4fd06d3c7cbca063153fc3032ae6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:22:53.467521"
+    },
+    {
+      "topic": "drug metabolism",
+      "title": "Cyprotex's ADME Guide - 6th Ed - Complete ADME Guide",
+      "content": "Learn how ADME properties, drug metabolism, and transporters impact drug development. The Ultimate ADME guide with recent updates & fresh new insights. Download your free copy",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Devotec.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DC5w2CQUuzVIevs7mlvhK1DL3zQk_viL1Fq4b4SB3u1L0b6Y4fjBB91yM_JmUY0RdLKDlgcmMngB8XCg3_FDZ6ppGnw85NQCuSgRuTVqnvG5ZWRoE0aEt9QyU2k4H3LkMjjhn077CyBGgBD0FLPKOIT%252DnvlOSCfp9tdBU0DbEKhE.jv83ZGZWtqU7WbUGUp9cYQ%26rut%3Dc980a1064c9126ceb9ae88cec614fab325c2e3ac0b10d392ac7c098d0051a36d%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8RJyv8371MzbfebRj2QRouzVUCUzEoWeUDsdq_Q5vDZ%252D8I6hsG2LwDo6Zu4X%252DKk07EKz24qhJjs85wGxCFvFHyJVJsQP5uvzYwBaQlJS1UK7CpcqDjJiKPJ5BF%252DVZKHm8PLYIPJDFFBwKwSDTHVpkBvHGT0sO1IdsT1GQ3tmOkPsV%252DZyCFcD5NbAT8OeGVebxds66w15ZS8wm8TrdIBtbcgXkw4w%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuZXZvdGVjLmNvbSUyZnNjaWVuY2Vwb29sJTJmZXZlcnl0aGluZy15b3UtbmVlZC10by1rbm93LWFib3V0LWFkbWUlM2Z1dG1fdGVybSUzZFdoYXQlMjUyMGlzJTI1MjBkcnVnJTI1MjBtZXRhYm9saXNtJTI2dXRtX2NhbXBhaWduJTNkY3lwX21vbWVudHVtX3NlYXJjaF9iaW5nJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2aHNhX2FjYyUzZDUxNDMwNDU3NDIlMjZoc2FfY2FtJTNkMjEyNTc3MDk3OTklMjZoc2FfZ3JwJTNkMTE4MTk3NjgyNTA1NjEzNyUyNmhzYV9hZCUzZCUyNmhzYV9zcmMlM2RzJTI2aHNhX3RndCUzZGt3ZC03Mzg3Mzk1MDI2ODk3MiUzYWxvYy0xOTAlMjZoc2Ffa3clM2RXaGF0JTI1MjBpcyUyNTIwZHJ1ZyUyNTIwbWV0YWJvbGlzbSUyNmhzYV9tdCUzZGUlMjZoc2FfbmV0JTNkYWR3b3JkcyUyNmhzYV92ZXIlM2QzJTI2bXNjbGtpZCUzZDM5NTFiN2YwOTIzZjE0MDk4MzUwZGVhNjI5YzUyMThh%2526rlid%253D3951b7f0923f14098350dea629c5218a%26vqd%3D4%2D123429680090047772675683305226386254684%26iurl%3D%257B1%257DIG%253D66AC9F6CE8D54321BE7D480EDF5F6E89%2526CID%253D1D5F34D260EA6E32035B2206613F6F7D%2526ID%253DDevEx%252C5046.1&rut=def6d3e1bdf519f2c98c94bedebea2fbdf7b84a0227f6a1f5ceac8ccdfd5e34e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:24:59.088615"
+    },
+    {
+      "topic": "drug metabolism",
+      "title": "Pharmacology Courses - Pharmacology Classes",
+      "content": "Gain skills in molecular biology, biochemistry, genetics, immunology, microbiology & more. Our online courses are comprehensive & flexible, to meet the needs of busy professionals",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Ducsd.edu%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DI%252DKh5rhQ%252DjS6P0Y3YtQKGauvpoSWeuxoOoEl1ajxXwQSTcgqIYmzTuMnsdio50agPCRi_wn_KSLBuQcdnrTZZ2cGcB4gT1ZCluZPW09TZDyvCTMtiPb81v1Jw9lbSqmeFTzXvaVeVaqg5rnQscb_N1AhV5huqerDJ6h9zKIqB2s.8KApLGxxl96jAG5Tn4ugxg%26rut%3Dce231256fad0494ae9533770910d5fd8559219081c7d87ea1f5feb694602f786%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8Gj1H0OtKoICDKaH%252DdpwQxzVUCUxRmPkbT5Zb6rHIUNYuWbyiKM7rW0blkSjolXET%252Df0JMmSBA5IxwQUxRDyoXVeYmFwQMBJxB8jFnCxFSXupN_sQ1ZmtGrISRtta1qftZgzxa7uJgM8vszQKrGyeSPqP88aotOWayke3hv9BZyp85R1Ixq_rjEu6sdnkLl%252DhPGJGp9JxXTm7_LRFPc4rcaSjf3g%2526u%253DaHR0cHMlM2ElMmYlMmZleHRlbmRlZHN0dWRpZXMudWNzZC5lZHUlMmZjb3Vyc2VzLWFuZC1wcm9ncmFtcyUyZmludHJvZHVjdG9yeS1waGFybWFjb2xvZ3klM2Ztc2Nsa2lkJTNkYTU1YWU4NmY0YzFjMWQyNTMxZTY4MTM5ZjdlNjdhMGUlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RTQ1MlMjUyMC0lMjUyMEJhc2ljJTI1MjBTY2llbmNlcyUyNnV0bV90ZXJtJTNkcGhhcm1hY29sb2d5JTI1MjBmdW5kYW1lbnRhbHMlMjZ1dG1fY29udGVudCUzZFBoYXJtYWNvbG9neQ%2526rlid%253Da55ae86f4c1c1d2531e68139f7e67a0e%26vqd%3D4%2D139519899256066395455466704444628665064%26iurl%3D%257B1%257DIG%253D66AC9F6CE8D54321BE7D480EDF5F6E89%2526CID%253D1D5F34D260EA6E32035B2206613F6F7D%2526ID%253DDevEx%252C5050.1&rut=b4331c0d90444dbba5d11d7195e7946fb3322fa5f92c6d8ab97949e94964ea43",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:24:59.088701"
+    },
+    {
+      "topic": "drug metabolism",
+      "title": "Drug metabolism - Wikipedia",
+      "content": "Drug metabolism is the metabolic breakdown of drugs by living organisms, usually through specialized enzymatic systems. More generally, xenobiotic metabolism (from the Greek xenos \"stranger\" and biotic \"related to living beings\") is the set of metabolic pathways that modify the chemical structure of xenobiotics, which are organic compounds that are foreign to an organism's normal biochemistry ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDrug_metabolism&rut=8fcb0934b8945f50c0acb5ddbd7329514d3d831173d025f7decf652302186763",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:24:59.088767"
+    },
+    {
+      "topic": "drug metabolism",
+      "title": "Drug Metabolism - Clinical Pharmacology - MSD Manual Professional Edition",
+      "content": "Drug Metabolism and Clinical Pharmacology - Learn about from the MSD Manuals - Medical Professional Version.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.msdmanuals.com%2Fprofessional%2Fclinical%2Dpharmacology%2Fpharmacokinetics%2Fdrug%2Dmetabolism&rut=bd0821ad461090c39b9addae0c4be862f55714d6fc0e59880c62bc38ad06e0c4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:24:59.088826"
+    },
+    {
+      "topic": "drug metabolism",
+      "title": "Drug Metabolism - Drugs - Merck Manual Consumer Version",
+      "content": "Most drugs must pass through the liver, which is the primary site for drug metabolism. Once in the liver, enzymes convert prodrugs to active metabolites or convert active drugs to inactive forms. The liver's primary mechanism for metabolizing drugs is via a specific group of cytochrome P-450 enzymes.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.merckmanuals.com%2Fhome%2Fdrugs%2Fadministration%2Dand%2Dkinetics%2Dof%2Ddrugs%2Fdrug%2Dmetabolism&rut=c8eb0f7fae060e37178c5f1fb0e01a709c2ba68ce6d9d5308e5eb6dd1b598b49",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:24:59.088890"
+    },
+    {
+      "topic": "dopamine",
+      "title": "Dopamine",
+      "content": "Dopamine is a neuromodulatory molecule that plays several important roles in cells. It is an organic chemical of the catecholamine and phenethylamine families. It is an amine synthesized by removing a carboxyl group from a molecule of its precursor chemical, L-DOPA, which is synthesized in the brain and kidneys. Dopamine is also synthesized in plants and most animals. In the brain, dopamine functions as a neurotransmitter\u2014a chemical released by neurons to send signals to other nerve cells. The brain includes several distinct dopamine pathways, one of which plays a major role in the motivational component of reward-motivated behavior. The anticipation of most types of rewards increases the level of dopamine in the brain, and many addictive drugs increase dopamine release or block its reuptake into neurons following release. Other brain dopamine pathways are involved in motor control and in controlling the release of various hormones. These pathways and cell groups form a dopamine system which is neuromodulatory.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dopamine",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T10:28:07.517288"
+    },
+    {
+      "topic": "dopamine",
+      "title": "Low prices dopamine booster sotalix - Amazon\u00ae Official Site",
+      "content": "Get deals and low prices on dopamine booster sotalix in Health & Personal Care on Amazon. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DyeCDN1PnADLTS3CswwGwfKg6gYrJuqbQY_Lu9L0NwCI6fFhb7obEKjwdUaYv4D29yq2zterzR7iJGO0J13w7K1kl8pW37bdFp95JKxS1AEMG0p0DsR6a0wzw6QtMIG7O5Tcu4BYcnmpZeRskCeuSidcNGVAO2X6BXLc0Relxzrk.EXBLt_9CiJJqOBRiH1Ilww%26rut%3D59990fb6ce13c778cdf4962d8d5fd92c8386695d40b877be244cbeeeecc7fd6d%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De854Lyur2GW4Imf%252DoAplEf7jVUCUwz%252DypSXBLYPjeb2RGPeY7Agt5F1_dmJpPHgy5IY2aQF6vcuZ1JnO7fNhfwZwmJ0Rgu2Kl6iYWrsJZSI%252DQV2w0GK52WWr3XESwnQxyfmM113rnlDAVVW4Z%252DPmBfp4OYjJ1980IpvFf1E5XLv5IbD1zb%252D3nJoc1Z%252D8n2fGwmH_OUSxcjdVTVXqFnja96NNxVTAI%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGRvcGFtaW5lJTJiYm9vc3RlciUyYnNvdGFsaXglMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF9temk5aHlzcmtfcCUyNmFkZ3JwaWQlM2QxMjMzNjUzMTE0OTk5Mzg0JTI2aHZhZGlkJTNkNzcxMDM0NTMyMDA4MzYlMjZodm5ldHclM2RzJTI2aHZxbXQlM2RwJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjUwMiUyNmh2dGFyZ2lkJTNka3dkLTc3MTAzNjU3NDAxNzAxJTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2Q5MzU5XzEzNjQwMjE1JTI2bWNpZCUzZGJhMDg5YWI1ODc2NjMxZjhiOTZkYzBkMWIzZDdmNjE5JTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2QwOGFmOWY2MTAxNjExZGI1OTViZWY2MzdiZGQ5YjhjNA%2526rlid%253D08af9f6101611db595bef637bdd9b8c4%26vqd%3D4%2D272748840031929808763399440526078709221%26iurl%3D%257B1%257DIG%253DA190A5CB80654742A10031204FD6B607%2526CID%253D1B659675FD626636026080A1FC866742%2526ID%253DDevEx%252C5046.1&rut=2ac01d76c26c370c175c804451f4a453cf9b11ef3b92a4d33d52108d65eccc37",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:28:08.523651"
+    },
+    {
+      "topic": "dopamine",
+      "title": "Dopamine: What It Is, Function, Deficiency & how to boost it",
+      "content": "Dopamine is a hormone and a neurotransmitter that affects your body, brain, and behavior. Learn about its role in pleasure, reward, motivation, and mental health, and how to balance it naturally or with medication.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.webmd.com%2Fmental%2Dhealth%2Fwhat%2Dis%2Ddopamine&rut=0b2a67c7a2e1b6ae961cea01c67eb1b5edaa4ceccb6e2562cf17e76308873da3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:28:08.523731"
+    },
+    {
+      "topic": "dopamine",
+      "title": "Dopamine - Wikipedia",
+      "content": "Dopamine (DA, a contraction of 3,4- d ihydr o xy p henethyl amine) is a neuromodulatory molecule that plays several important roles in cells. It is an organic chemical of the catecholamine and phenethylamine families. It is an amine synthesized by removing a carboxyl group from a molecule of its precursor chemical, L-DOPA, which is synthesized in the brain and kidneys. Dopamine is also ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDopamine&rut=c60b60be43cf0861fe7dc6caf45b742355d86559bffa0ee451e8a934424b14cf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:28:08.523809"
+    },
+    {
+      "topic": "dopamine",
+      "title": "Dopamine: What It Is, Function & Symptoms - Cleveland Clinic",
+      "content": "Dopamine is a neurotransmitter and hormone that affects many body functions, such as movement, mood, reward and more. Learn about dopamine levels, symptoms of high or low dopamine, and diseases associated with dopamine imbalance.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmy.clevelandclinic.org%2Fhealth%2Farticles%2F22581%2Ddopamine&rut=6bc4a4ae8995252c0401dd3408fd706312fa86952e51fb9ab1461a95bc6f3643",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:28:08.523873"
+    },
+    {
+      "topic": "dopamine",
+      "title": "What Is Dopamine In The Brain - Simply Psychology",
+      "content": "Dopamine is a neurotransmitter in the brain associated with pleasure, reward, motivation, and motor control. In psychology, it's linked to feelings of gratification and is implicated in mood disorders, addiction, and certain behaviors when its levels are imbalanced.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.simplypsychology.org%2Fthe%2Drole%2Dof%2Ddopamine%2Das%2Da%2Dneurotransmitter%2Din%2Dthe%2Dhuman%2Dbrain.html&rut=fede462243efd463faf6dc431a7bf838fab14a3028eef3bf2a7b5e89bef0ac31",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:28:08.523933"
+    },
+    {
+      "topic": "dream science",
+      "title": "Dream Science",
+      "content": "DreamScience.org is an information source for anyone interested in dream studies, research and dreamwork. Offers: a free book, publications and radio show downloads, online CE courses, the latest discoveries in the Science and Psychology of Dreaming and information on upcoming events and conferences.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fdreamscience.org%2F&rut=cb1595af57d75c1bad91dc046e4d8b574594d6083d60f81722455244a5146ef2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:35:00.417602"
+    },
+    {
+      "topic": "dream science",
+      "title": "The Science Behind Dreaming - Scientific American",
+      "content": "The proposed link between our dreams and emotions is also highlighted in another recent study published by Matthew Walker and colleagues at the Sleep and Neuroimaging Lab at UC Berkeley, who found ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.scientificamerican.com%2Farticle%2Fthe%2Dscience%2Dbehind%2Ddreaming%2F&rut=a2380e94b265254cf3907cf22220980372df61f9b46fabcbf80ac9b5b3fba058",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:35:00.417647"
+    },
+    {
+      "topic": "dream science",
+      "title": "New strategies for the cognitive science of dreaming",
+      "content": "Dream science has been focused on text reports of dreaming, but the ineffable qualities of dreaming might be captured with a non-verbal modality such as drawing. Does dream engineering influence forgotten dreams? The influence of dream engineering on unrecalled dreams and their cognitive and emotional implications remain an unexplored domain.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fpii%2FS136466132400264X&rut=99c8387dc23c730574f0da13de553d53a5f82a3438bffdbd4f6f0ffff9edaa65",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:35:00.417685"
+    },
+    {
+      "topic": "dream science",
+      "title": "What Happens in the Brain When You Dream?",
+      "content": "The Future of Dream Science Advances in brain imaging, artificial intelligence, and neuroscience are opening new frontiers in dream research. Scientists have already used fMRI scans and machine learning algorithms to decode the content of dreams with surprising accuracy\u2014matching dream imagery to visual patterns in the brain.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencenewstoday.org%2Fwhat%2Dhappens%2Din%2Dthe%2Dbrain%2Dwhen%2Dyou%2Ddream&rut=01ce6dcc0cb04d8ffbe11f0cd88d63ca25522b37d7b4ce4857cd07dbeb027189",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:35:00.417729"
+    },
+    {
+      "topic": "dream science",
+      "title": "What Is a Dream Scientist and How Do They Study Dreams?",
+      "content": "A dream scientist is a researcher dedicated to understanding the world of dreams through empirical investigation. This discipline, known as oneirology, seeks to uncover the biological, psychological, and neurological underpinnings of nightly experiences. For centuries across various cultures, dreams were often interpreted as divine messages, prophecies, or symbolic narratives reflecting a ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbiologyinsights.com%2Fwhat%2Dis%2Da%2Ddream%2Dscientist%2Dand%2Dhow%2Ddo%2Dthey%2Dstudy%2Ddreams%2F&rut=4ef2085cacb7d7e2a87ac7289b7231909848657f8dd80f38b1a53ba463a1a59f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:35:00.417762"
+    },
+    {
+      "topic": "developmental psychology",
+      "title": "Community Psychology Degree - Campus and Online Programs",
+      "content": "Flexible And Convenient Classes For Working Adults. Learn More & Apply Today. Pursue Your Passion For Helping Others. Credit Earned For Life Experience.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dpacificoaks.edu%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DzAurVPI%252DZizFnGmbE4Go9YVIYNulVp97ghKRsPdS_RoJVkZALzg8A4NKKjii2Ak1L9jeAXHhUTC81X4QCBgZC8OObMMfk32zajqijKL6WMteW2fcj5OKLT96cIGiFoebmNOYMGP68xb84y3g6uD3Sue8e2eQDvOcY9jiHPwKXPs.xc%252D5pqTBcZrGVLbqX8X05Q%26rut%3Dcece77ffbffece42c0051727d7a9e9a92d1a1e971e9ef3b320be0df5c552f26b%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8xekr8T6d5KQGBU36qT8u%252DzVUCUxjyJKisBOYDcD9djL9KmUmznMVGRtXvanbKSdP1NCynD8TF9KWzUQSvFUeAGtdXCUaHsUUhn7NVPDIxnvnCmfjYBItT2mi_xzosP5XKFonYBrIdPtkoPbuIYVhuPDY9pvW78S45Nw4ty%252DI8mPzbucSEsu89kjvB5lSvoWdbzXndeM_GvwGi%252D0a90GNFopW7Dw%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cucGFjaWZpY29ha3MuZWR1JTJmbGVhcm4lMmZjb21tdW5pdHktcHN5Y2hvbG9neSUyZiUzZnNyYyUzZGIuc2VhcmNoJTI2dXRtX2NhbXB1cyUzZDMwMiUyNnV0bV9wcm9ncmFtJTNkMjM1JTI2bXNjbGtpZCUzZDdjYjU4NDFkMDI0MzE3MjBkOTJjZWQ0YTNmMjFlZWM0JTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkUE9DJTI1MjAlMjU3QyUyNTIwQ2FsaWZvcm5pYSUyNTIwJTI1N0MlMjUyMFByb2dyYW0lMjUyMFNwZWNpZmljJTI1MjBUZXJtcyUyNnV0bV90ZXJtJTNkbWFqb3IlMjUyMGluJTI1MjBwc3ljaG9sb2d5JTI2dXRtX2NvbnRlbnQlM2RQT0MlMjUyMEIuQS4lMjUyMFBzeWNob2xvZ3k%2526rlid%253D7cb5841d02431720d92ced4a3f21eec4%26vqd%3D4%2D247081002537500545403824159718855201475%26iurl%3D%257B1%257DIG%253D8E8EA14113E7431ABC288CF8D7F4C526%2526CID%253D12489B478D0167BE26228D928CD466F1%2526ID%253DDevEx%252C5045.1&rut=3b55b91acafd1089ea86ed9a2dabde6ee03d5a16f38f0d8901ad4e5ee3b4c96b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:37:06.964921"
+    },
+    {
+      "topic": "developmental psychology",
+      "title": "Shop book on developmental psychology - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on book on developmental psychology at Amazon.com. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DtBzMXUdwOx5oCk0UgNP0HGAkmmUvxJWB89UqHBxbr0saF2pVC14kUnLwBLZ6BNL5AjIud_YQfBgJttBZvtSp0rE5kH3V8Be4da0fmQ0UTe0RtYm1rbJDkxOTnEbhmrHpCZCv2bw7QSByrLfyd9QGsGbYaJ0Tvs1gtJtiyjd7VIA.25fGFfCkhB7SkjsvtQtWaA%26rut%3D1425522b06006ad0f03a2a2683398e6cc826728456bccc9511231e6083b2fe26%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8hucnXXlYboWVEghSYV3PyDVUCUxNyWeIf8kLUme7kAUSTEXeZu%252DYtqiXb7jovWUlVXsgw9WqONDvI%252DqWYRZtO2pQoMV02Vo39uR805Wvwx9yeCgiTuSqJFU75SWJMg3OJT9rTChCymlqrPh38OjmnKY7W6rCL2rxw4eeE7plwXuJMhpwrOgcmUMTuEP6pAR_1Fpz1_pFQqnME5cPW3gMkz8Pl9U%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJvb2slMmJvbiUyYmRldmVsb3BtZW50YWwlMmJwc3ljaG9sb2d5JTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfOW9qYTlpbDl4OF9wJTI2YWRncnBpZCUzZDEyNDAyNTAxMzcyNTM0MjIlMjZodmFkaWQlM2Q3NzUxNTc2NTMzNDI0NCUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NDQ4JTI2aHZ0YXJnaWQlM2Rrd2QtNzc1MTYwNTU1MjIzNzAlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDI2MTQxXzEzNTkyMjI0JTI2bWNpZCUzZDhkYjkyMWFkZmIwYTNmY2E5OTJkNDFiMmUxYzc4NzJiJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2QwZGY5NTZjODIzM2YxNjdlYTY4OTNmOWYxZTVkZTllZA%2526rlid%253D0df956c8233f167ea6893f9f1e5de9ed%26vqd%3D4%2D123841590397826196528887502232905776598%26iurl%3D%257B1%257DIG%253D8E8EA14113E7431ABC288CF8D7F4C526%2526CID%253D12489B478D0167BE26228D928CD466F1%2526ID%253DDevEx%252C5049.1&rut=f3433da2bd2934ed1c3e6407123496636049c40643f64b4aa365975c2ba3daff",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:37:06.964968"
+    },
+    {
+      "topic": "developmental psychology",
+      "title": "Developmental Psychology: Definition, Stages, and Issues",
+      "content": "Developmental psychology follows the physical, cognitive, emotional, and social changes that occur as people move through their lifespan from childhood to adulthood.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.verywellmind.com%2Fdevelopmental%2Dpsychology%2D4157180&rut=77c05faf0890471566b62c9f83943185219addcb43c51cdeb9292ef5fa7ab37f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:37:06.964995"
+    },
+    {
+      "topic": "developmental psychology",
+      "title": "Developmental psychology - Wikipedia",
+      "content": "Developmental psychology involves a range of fields, [2] such as educational psychology, child psychopathology, forensic developmental psychology, child development, cognitive psychology, ecological psychology, and cultural psychology.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDevelopmental_psychology&rut=0916aaffdaaac806b12412fe2b71efa4fc5ad37f23ec592d21562b53c8d4ebb9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:37:06.965023"
+    },
+    {
+      "topic": "developmental psychology",
+      "title": "Developmental psychology | Child Development, Cognitive Development ...",
+      "content": "Developmental psychology, the branch of psychology concerned with the changes in cognitive, motivational, psychophysiological, and social functioning that occur throughout the human life span. During the 19th and early 20th centuries, developmental psychologists were concerned primarily with child",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fdevelopmental%2Dpsychology&rut=870d6556fde607e7275131b4cd0dd2b5d023cdef42c884508bf7dbf17df4d306",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:37:06.965049"
+    },
+    {
+      "topic": "anxiety disorder",
+      "title": "2026 Top 5 for Anxiety Relief - Top 5 Anti-Anxiety Supplements",
+      "content": "We evaluated hundreds of supplements for anxiety relief and found the 5 best available now. We identify ingredients to look for, red flags to avoid & how to relieve anxiety naturally",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dwiserlifestyles.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D4An7EEt9y_705HAoWBQAKQL%252DsQGpuFgud5_XCQcRpIhaXIzq1i4tst9xsdIxdyFnBxm%252DBw7kBsInBzJyjK7tZ5DxoalpL3R5HESCBxD7fbG%252D3AAkx_x4jPFB_aKGqOaAQP7cBpw0R8Bqc6TBdif9I3N1umrDYWeqkhpVgpknDsw.M%252D0moDVFv6KHUu3PmTkCrA%26rut%3D4c0ce705ee3fc8bc0a781ec31e7c3ed2e7a4c0dedf0c4eb70aa50f71208c2c8d%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De825_fCfTxYhkdnTT0SlmNAzVUCUxenek8zDBQ%252Da1wA0KqkS8xWwj4IFLC8axFh7CZdXbsn1c1%252Drl4MsxPdnckp%252DrzebULe3DnRwpJ2f1_BqpL_SfMXRiiGJL4m8I6H0z8aHTfC5DgXFgNawJLipdeQkuUxqUqsMG2DbeJ8qP2wbEgJipM7nWx0cX4MO8_z5%252DEc7HMs2qs0jEAB45jL6f1YH4Y%252DbU%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cud2lzZXJsaWZlc3R5bGVzLmNvbSUyZnRvcGljcyUyZmFueGlldHklM2Ztc2Nsa2lkJTNkMzc3MGFjMDI0MzRkMTg2ZjhiY2JjNTU1N2Q4ZGJhMmMlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RXaXNlckxpZmVzdHlsZXMuY29tJTI1MjAtJTI1MjBBbnhpZXR5JTI1MjAtJTI1MjBTZWFyY2glMjUyMFVTJTI2dXRtX3Rlcm0lM2RhbnhpZXR5JTI1MjBkaXNvcmRlciUyNnV0bV9jb250ZW50JTNkYW54aWV0eQ%2526rlid%253D3770ac02434d186f8bcbc5557d8dba2c%26vqd%3D4%2D156876541868764538918264516865496229119%26iurl%3D%257B1%257DIG%253D4707C5B73A364820ABD433B95D4962FE%2526CID%253D36174510DC8C65CB3FE253C5DD1B6477%2526ID%253DDevEx%252C5046.1&rut=5d86d18cb96ec0edea32fafaf616930fb29e0e9761e27afd17fa0efafcaed042",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:42:57.237998"
+    },
+    {
+      "topic": "anxiety disorder",
+      "title": "Shop anxiety guide - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on anxiety guide at Amazon.com. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DXy3B9yMKYvUYXckZ5Q_s7oyjicjRYODta7nN5M6NvvGGYzYDg1DOPWfqbF6Fl_8nTRWcQ4zBgkOU1EgQJDrosAjRaY7SaAvBvw3kXBFVrKRy8lBPJqgapLG3tu3HfCg4rf40ITtQJD8xyvGsMii%252DGqfygYeaE9gSAWmHkwIWiss.621jSY1AvVcze4fsLdsZDQ%26rut%3D2b8caa37d7442cfc9903ffb44f8ef83688a8846909398828f5955ba54cf0cc6f%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8_lHgR1tVz75bh1iKQbjEbTVUCUwv6Xy4bkCoSXGYeuaqUfVsa3eKqxhGyqJUwHnDzzqzhemT1nfNXkTKgjHC8Tm6xFkOn_ifuk_9H1d4FMrwZ%252DkbdbXp0w4I8Kom%252Dx1W1rfff2ZYJSZWxwTe_p2uitesKS68je0_aomITkId3yRoomd0LFq1Llne2Nsvfc%252DZ6wUw21FKRFjbhNS0XzjQC1vxVOY%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGFueGlldHklMmJndWlkZSUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzRpem03eHYyZjVfcCUyNmFkZ3JwaWQlM2QxMjM1ODUyMDYwNzU3Njc0JTI2aHZhZGlkJTNkNzcyNDA4ODQzNzg3NDglMjZodm5ldHclM2RzJTI2aHZxbXQlM2RwJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjQ0OCUyNmh2dGFyZ2lkJTNka3dkLTc3MjQxMDA1MzQ1MzE5JTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QyNTU1N18xMzU5MjMxNCUyNm1jaWQlM2Q5YWZkYmUzOGZiODEzZjNhYjhiYTJlZTVkMzgyMTkzOCUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkMzU0MTk4Y2Q0YzAzMTJmODhjZjBmMTlhNzJjM2ZlYjA%2526rlid%253D354198cd4c0312f88cf0f19a72c3feb0%26vqd%3D4%2D18765512903559543292256389732435195168%26iurl%3D%257B1%257DIG%253D4707C5B73A364820ABD433B95D4962FE%2526CID%253D36174510DC8C65CB3FE253C5DD1B6477%2526ID%253DDevEx%252C5051.1&rut=994f8288baf5de8ccc5cac2b1998bdaadd26361ea0ee25d081defca1aedc15f2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:42:57.238057"
+    },
+    {
+      "topic": "anxiety disorder",
+      "title": "Anxiety disorders - Symptoms and causes - Mayo Clinic",
+      "content": "Anxiety disorder due to a medical condition includes symptoms of intense anxiety or panic that are directly caused by a physical health problem. Generalized anxiety disorder includes persistent and excessive anxiety and worry about activities or events \u2014 even ordinary, routine issues.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mayoclinic.org%2Fdiseases%2Dconditions%2Fanxiety%2Fsymptoms%2Dcauses%2Fsyc%2D20350961&rut=480ae3e992ad06933ed43496a85bfabae127ce0ec706ac02aea40f20f49c5076",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:42:57.238304"
+    },
+    {
+      "topic": "anxiety disorder",
+      "title": "Anxiety Disorders - National Institute of Mental Health (NIMH)",
+      "content": "Learn about NIMH research on anxiety disorders. Find resources on the signs and symptoms of anxiety disorders and potential treatments and therapies.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nimh.nih.gov%2Fhealth%2Ftopics%2Fanxiety%2Ddisorders&rut=cf475ded0ae6b1938866c54d96a6dac87e28f6ae77fac4ff6fbeaea0e182ba94",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:42:57.238386"
+    },
+    {
+      "topic": "anxiety disorder",
+      "title": "Anxiety Disorders: Causes, Symptoms, Treatment & Types",
+      "content": "Learn about the different types of anxiety disorders, such as generalized anxiety disorder, phobias and social anxiety disorder. Find out how they affect your mental and physical health, what causes them and how to treat them effectively.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmy.clevelandclinic.org%2Fhealth%2Fdiseases%2F9536%2Danxiety%2Ddisorders&rut=beb7a96a87a0795fa80bcd14fbe1529df5abe7807c55418f40cc2262f6cd1dcb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:42:57.238434"
+    },
+    {
+      "topic": "depression psychology",
+      "title": "Top 10 Online Counseling Sites - Online Counseling Comparison",
+      "content": "Join Millions Of People Who Got Happier Using Onilne Therapy. You Don't Have to Wait an Entire Week to Speak to Your Therapist. Start Therapy, Today!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dtop10.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DmmSitcMTExU%252DS7qw4obum0cUsgQNppSm17ouwOtgF6PCyOO1bCrQpIYxmP_aBpSdvxEilyHbzuxGc8xJICkHMjObHDRDfS80%252DSy7yXOGb%252DWgM8gVs2kirPSga9G2EBkeXlCYy9Vesl13cR7JEfLjggRPV0tUmTHH2ODSBsQ%252DOsc.q5VwIsYyCpjE2_3MQnshFw%26rut%3D629f28b33e918cf9cfa84dc3e1ac81a4ecaa747e783856dd406afde779c046ee%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8taeqYFYfiucmPOJtR7aniTVUCUzLtV2EBAH_GqD8pSpHXNrXAs543Rs6nDAtQbDwHF2S6jU9V8w6vPIdAbWizrp4hUbbFwJj_dcyxtNqU%252DPxTZpIOZqhM0WFjOo_KTZUj8JL7_V0ZmfkTOfRpmPJKovs%252DNQN%252DeUHUHPVcrkGROL_isnTUD8eKT_T0_QL_3WzGcVp2OgNi766nm2P3M6vaJf%252DOew%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cudG9wMTAuY29tJTJmb25saW5lLXRoZXJhcHklMmZkZXByZXNzaW9uLWNvbXBhcmlzb24lM2Zia3clM2Rjb3Vuc2VsbGluZyUyNTIwZm9yJTI1MjBkZXByZXNzaW9uJTI2YmNhbXBpZCUzZDM3MDM3ODgzNSUyNmJjYW1wJTNkQmluZyUyNTIwLSUyNTIwT1RQJTI1MjBEZXNrdG9wJTI1MjAlMjUyQiUyNTIwTW9iJTI1MjBzZWFyY2glMjUyMFBhcnRuZXJzJTI2YmFnaWQlM2QxMTc5Nzc2ODY0NDMxMTc1JTI2YmFnJTNkZGVwcmVzc2lvbiUyNTIwdGhlcmFweSUyNmJ0YXJpZCUzZGt3ZC03MzczNjQxNzM3NzQ5MiUzYWxvYy03MTI4NCUyNmJpZG0lM2RicCUyNmJuZXQlM2RzJTI2YmQlM2RjJTI2Ym1vYnZhbCUzZDAlMjZidCUzZHNlYXJjaCUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV90ZXJtJTNkZGVwcmVzc2lvbiUyNTIwcHN5Y2hvbG9neSUyNnV0bV9jYW1wYWlnbiUzZEJpbmclMmJDUEMlMmJDYW1wYWlnbiUyNmMlM2Q3MzczNjI0Nzc4NzU2MyUyNm0lM2RwJTI2ayUzZDczNzM2NDE3Mzc3NDkyJTI2JTI2YnBoeXNpY2FsJTNkODY0NDglMjZiZmVlZGlkJTNkJTI2YmludGVyZXN0JTNkJTI2YSUzZEItU1AlMjZ0cyUzZCUyNnRvcGljJTNkJTI2bmljaGUlM2QlMjZ1cGYlM2QlMjZjdHlwZSUzZCUyNmV4cCUzZCUyNnBxJTNkJTI2ZHluJTNkJTI2Y2FtdHlwZSUzZHBzJTI2bXNjbGtpZCUzZDlmZGFmYjQ4ZjljYjFmZTkwYmIyOTIxZmM3MmE5ZDBj%2526rlid%253D9fdafb48f9cb1fe90bb2921fc72a9d0c%26vqd%3D4%2D285760544561789961853357599247458188681%26iurl%3D%257B1%257DIG%253D793529A228AE493EB9C06D11BBB7043B%2526CID%253D3995C4C2F93E6D4E1873D217F8DA6C50%2526ID%253DDevEx%252C5046.1&rut=d8e2b6d881f6536b0c215f544b3c6ea275b7d1ecebd4137d9b5decda347c84de",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:43:30.761436"
+    },
+    {
+      "topic": "depression psychology",
+      "title": "Local Christian Therapists - Virtual Counseling Available",
+      "content": "Qualified Christian Mental Health Therapists Life Coaches Pastoral Counseling Since 2005. Ask about phone and video counseling. Many therapists have a sliding scale",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dfindchristiancounselor.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D8Exkb09JsPHaIkl3h6_Aau6C600J7kIZLiDoJ1BOEACpzCKgWER8QhkkNnW6fK66yxgX%252Dymqkf_lc6GbY7EDiu8jaHhI5%252DD66tYIOV57FbVTQ6HimyAfTb_OzJlQOhBuiQAoZv9Fql_gXretLCZDd7g5XmQlA3HR6dxsIOf6l1Y.pjpmX88%252DYH9je%252DQ8y0ABXA%26rut%3D4d3fbddfb9b2ae820cc64cf4882012821de3219dbc67a8e02dc76ab9faa9798c%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8myFgrfTX9DDYU3Lf2uauRTVUCUx%252DgquOk8qiQ3Nia4fiuQkq4tsxyW_St7vaQUHVcuAjbMYLQ0RrtDdBC2LJ0XsuZ1rLXKOxr2ZbElFthRNut9CtZVIdIt8tg49rDHHzBOatrRgnX1bORIQkTZXDaY9%252D5nx6mNk_bzaC9GbhVEx4MJVIg0E%252DaRiTZyvtG7qviYMt_moCcTQzAK2NZ6etfvVo0DA%2526u%253DaHR0cHMlM2ElMmYlMmZGaW5kQ2hyaXN0aWFuQ291bnNlbG9yLmNvbSUzZm1zY2xraWQlM2Q2MzU3ZDQ5ZTZiOTAxNmU4ZDk1OGJkYzk1NTcxYzI0OQ%2526rlid%253D6357d49e6b9016e8d958bdc95571c249%26vqd%3D4%2D223596021791495720559168855615023512503%26iurl%3D%257B1%257DIG%253D793529A228AE493EB9C06D11BBB7043B%2526CID%253D3995C4C2F93E6D4E1873D217F8DA6C50%2526ID%253DDevEx%252C5051.1&rut=220100a5ea59f9ddb141b32ec45fafbe137d690dab1b18af2d9d0514f0e42d48",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:43:30.761476"
+    },
+    {
+      "topic": "depression psychology",
+      "title": "Depression | Psychology Today",
+      "content": "Depression is a mood disorder that affects millions of people worldwide. Learn about the signs, causes, and treatments of depression, as well as natural approaches and how it affects your health.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.psychologytoday.com%2Fus%2Fbasics%2Fdepression&rut=f44687312462df5ba9a8a187bc91de5e920ac73e533688a23da2d33f53222131",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:43:30.761503"
+    },
+    {
+      "topic": "depression psychology",
+      "title": "Depression - American Psychological Association (APA)",
+      "content": "Depression is more than just sadness; it is the most common mental disorder. People with depression may also experience altered eating or sleeping habits, lack of energy or motivation, difficulty concentrating or making decisions, and withdrawal from social activities.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.apa.org%2Ftopics%2Fdepression%2F&rut=8e63c0eb2a355bcdcaceb6cd92e6042d3e8b00a5ac6a397487eeb8d8c05fb5c0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:43:30.761530"
+    },
+    {
+      "topic": "depression psychology",
+      "title": "Depression (major depressive disorder) - Symptoms and causes",
+      "content": "Depression is a mood disorder that causes a persistent feeling of sadness and loss of interest. Also called major depressive disorder or clinical depression, it affects how you feel, think and behave and can lead to a variety of emotional and physical problems.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mayoclinic.org%2Fdiseases%2Dconditions%2Fdepression%2Fsymptoms%2Dcauses%2Fsyc%2D20356007&rut=72718bd33ce461a2affccb8ffb04a73741deddb26fb48c330e72f6266b8c3fa5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:43:30.761556"
+    },
+    {
+      "topic": "bipolar disorder",
+      "title": "Bipolar 1 Treatment Option - Recognizing Bipolar Symptoms",
+      "content": "See The Full Prescribing Information, Including Boxed Warning, On The Official Site. Find Important Safety Information For An FDA Approved Bipolar Treatment.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dschizophrenia%252Dmanagement.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DWfOf8VAVzGhs5FLgIZcjTdOQZicqlpHEvt98dC1Ar77_knH93ILE9PNeNiK58Wqx_6m_JoItCmJyFfXiZ8RA51MCko1obT1o1N3hHW7zo85Ye1C4YXTsGNn6AeiytW3vZe722xLaXQoCH4SfGocNGANeT5VnZIfkbz4RBB%252D45DE.JmIrrhE1F_Udt7kAN%252DwXDg%26rut%3Dfa94a0b97546bc27a9b71f2829c7a8b9cffcc552b5048ec09db364b3a1171f7e%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8978EM1GJTzccIP_zUjbEATVUCUysn6v238ymUSO4EoZ0ij2ycmejfLJAXbcJk4YUNGUI5g4DMRkVx6h3Hq79EZe1qCDauLJc6%252DzXhoOEoFJSVGOiDJzptRQQ9jVu4sasR1Lr13_0gRVvZCKv1vZEv9YsvNca6J1JwiJmZ9XUZvmhpaL7ZIj0pZG%252Da%252DkxVjWl3dB%252DugF%252DFyOq9S6qGBQugzju18Y%2526u%253DaHR0cHMlM2ElMmYlMmZhZC5kb3VibGVjbGljay5uZXQlMmZzZWFyY2hhZHMlMmZsaW5rJTJmY2xpY2slM2ZsaWQlM2Q0MzcwMDA4Mjg3MjYyNzQwNSUyNmRzX3Nfa3dnaWQlM2Q1ODcwMDAwODk3NTE1MTI2OSUyNmRzX2FfY2lkJTNkODg3NTc5NDE1JTI2ZHNfYV9jYWlkJTNkMjMyMzk1ODgyNzYlMjZkc19hX2FnaWQlM2QxODkwMjMxNDM1OTUlMjZkc19hX2xpZCUzZGt3ZC0zNDc5NTg1OTAzNTMlMjYlMjZkc19lX2FkaWQlM2Q4MTQzMjcxODI1NTM5NyUyNmRzX2VfdGFyZ2V0X2lkJTNka3dkLTgxNDMyOTYyMjA3NzA3JTNhbG9jLTE5MCUyNiUyNmRzX2VfbmV0d29yayUzZHMlMjZkc191cmxfdiUzZDIlMjZkc19kZXN0X3VybCUzZGh0dHBzJTNhJTJmJTJmd3d3LnV6ZWR5LmNvbSUyZmxpdmluZy13aXRoLWJpcG9sYXItSS1kaXNvcmRlciUyZiUzZmdjbGlkJTNkNzdjZGM3MjM1NGUwMTc4ZWYyYWFhZTc0NmJlMWFlMjIlMjZnY2xzcmMlM2QzcC5kcyUyNiUyNm1zY2xraWQlM2Q3N2NkYzcyMzU0ZTAxNzhlZjJhYWFlNzQ2YmUxYWUyMiUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZFVTQV9NQV9TRU1fTkJfUEhfVVpFRFktRFRDLUNvbmRpdGlvbi1CaXBvbGFyLUFsbC1BbGwtTkEtTkJBLUFsbCUyNnV0bV90ZXJtJTNkdW5kZXJzdGFuZGluZyUyNTIwYmlwb2xhciUyNTIwMSUyNnV0bV9jb250ZW50JTNkQmlwb2xhciUyNTIwRGlhZ25vc2lz%2526rlid%253D77cdc72354e0178ef2aaae746be1ae22%26vqd%3D4%2D246503021907229190246068530893233906334%26iurl%3D%257B1%257DIG%253D4E178F82433D41E9A9A3C7CBFA8B6A07%2526CID%253D203D7BB2254D66DE16F16D6724C16765%2526ID%253DDevEx%252C5046.1&rut=beb3a81798a2e9de46694d5b2faa5939ae8104a97a35e8480db9bc71afcdc491",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:44:02.118828"
+    },
+    {
+      "topic": "bipolar disorder",
+      "title": "Low priced bipolar disorder dummies - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on bipolar disorder dummies at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D7qmFvq%252D2rjWbHW0gBJgu%252D6FqGLYU8XJ_QI5jjsY1JzZZ11fwL%252DeOUqyEv2%252D_a6bROuA2EpfJSIfsQyJ7pKjP4tCu5bNbPTZX0HDhaLi2Ng%252DkgScSGcp9W59_5Pc0JlcxKfqOdj1B5Sv3f0VTOecMxIRTrVdNXaWgW9o1%252D0OWNho.9gd7_XuQCc0qhesFWZk5Ig%26rut%3D05d4cf5faab4a73638d6f49b4b8dff84cdfaaeb0a25ee74a4aee90c2c2759708%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8xQu9QnV9KGTYZSC9Z2cCXjVUCUwd5MKbCIqB5sSfir_DMq_vILfeq7or6q3YXbIYxLrkWL4RIvsrNGGePI1iOSJpdEMfr7YHnKQWwvwP_nm2nV8quqG0BAQWKzwyIXfOYfUeO1iWsXVuFomnLPKk62GkHFXptAtyaVB48LOBJ3iG6%252DCX7CSuWFEwJ93dT63B_fM1ZH%252Dm%252DSTYXVcalN0rQL3Qa6o%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJpcG9sYXIlMmJkaXNvcmRlciUyYmR1bW1pZXMlMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF85M2I1dG00Z2pjX3AlMjZhZGdycGlkJTNkMTIzMjU1Mzc5NTI1Mjg3MSUyNmh2YWRpZCUzZDc3MDM0NzUyNTIxMzk2JTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkcCUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY0NDglMjZodnRhcmdpZCUzZGt3ZC03NzAzNTA0MjA3OTM0NCUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkNTYyMF8xMzMwMDUyMyUyNm1jaWQlM2RjYjNmNjBhNDQ3Y2QzN2RjYWI3NGZiMmIzYTY0M2FlZCUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkZjU3Njg1NGUwNzI5MTIyMDdhZWFlYzE5MzgyOGMzYmM%2526rlid%253Df576854e072912207aeaec193828c3bc%26vqd%3D4%2D27702270971664203137299550477673388786%26iurl%3D%257B1%257DIG%253D4E178F82433D41E9A9A3C7CBFA8B6A07%2526CID%253D203D7BB2254D66DE16F16D6724C16765%2526ID%253DDevEx%252C5051.1&rut=05d3626ee50d64c4a8122c06075bc2f92c255d85a49c98807cefe7e88250a8bb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:44:02.118872"
+    },
+    {
+      "topic": "bipolar disorder",
+      "title": "Bipolar disorder - Symptoms and causes - Mayo Clinic",
+      "content": "Bipolar disorder, formerly called manic depression, is a mental health condition that causes extreme mood swings. These include emotional highs, also known as mania or hypomania, and lows, also known as depression.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mayoclinic.org%2Fdiseases%2Dconditions%2Fbipolar%2Ddisorder%2Fsymptoms%2Dcauses%2Fsyc%2D20355955&rut=b813ac401a2ccc4bb4a43c28f5e2654af6f4ec46cac67ec740c550b5f3461ed9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:44:02.118901"
+    },
+    {
+      "topic": "bipolar disorder",
+      "title": "Bipolar disorder - Wikipedia",
+      "content": "Bipolar disorder (BD), previously known as manic depression, is a mental disorder characterized by periods of depression and of abnormally elevated mood that each last from days to weeks, and in some cases months. [4][5] If the elevated mood is severe or associated with psychosis, it is called mania; if it does not significantly affect ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBipolar_disorder&rut=b3cbe75ed377242a324096db28a0f8c367526e77dd5d3b5cabd62c47c59f9e10",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:44:02.118928"
+    },
+    {
+      "topic": "bipolar disorder",
+      "title": "Bipolar Disorder - National Institute of Mental Health (NIMH)",
+      "content": "Bipolar disorder (formerly called manic-depressive illness or manic depression) is a mental illness that causes clear shifts in a person's mood, energy, activity levels, and concentration. People with bipolar disorder often experience periods of extremely \"up,\" elated, irritable, or energized behavior (known as manic episodes) and very \"down,\" sad, indifferent, or hopeless periods ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nimh.nih.gov%2Fhealth%2Ftopics%2Fbipolar%2Ddisorder&rut=8f54b4f9a379b1450dcc6099f97382a185c271d38fa6440f16d08693b93ce293",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:44:02.118960"
+    },
+    {
+      "topic": "personality disorder",
+      "title": "Borderline personality disorder quiz - Take Our EQ Test Online",
+      "content": "Discover Who You Are With Our Detailed Personality Test. 45,182 Users Tested So Far Today. Find Our Your Personality Type In Under 10 Minutes. Instant Results, Scarily Accurate.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dmypersonality.net%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DcZfo39H5Q2oFXrxQkwretkVmZENH7bCUDGjiKBBL%252DLIKBCXXaPFg%252DbGtMWut1u6ods3zOvySRfl2aKSElgLBu8MtjoxNlAdkL0tGTqIeKta77A5t1zWx8Q_vCA89UikWLbyuA5FagHq9VVJ7HvRz3U2euwNNH0wFGHWIJSliNwQ.F235Y5Wzb48IUXlbbTwJuQ%26rut%3Dda94279ff2925a24eb924f223d7da7b7b336cbaf3436501f314543c254954bae%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8EnugeJd%252DDsL23r2sVByTRzVUCUxquGsxXqi1LPGYqTUaGV8Wt40DnEzJSkLV1Aps8o608SRjKcLJZVyV_8swHxftI2exE5BtLJB0fySt2_MBuxJvJKAmP8_1kQ56y2xNGqX5_tElvLSsaQ2542zb2aaONpr9OxATMG4TLUP9FAkj6QllAWPgMRRpGID9RM9xGndaGgBVmnpTO9SUebmzgC_atT8%2526u%253DaHR0cHMlM2ElMmYlMmZteXBlcnNvbmFsaXR5Lm5ldCUyZmxwJTJmbXMlM2ZhZmlkJTNkbXMlMjZ1dG1fc291cmNlJTNkbWljcm9zb2Z0JTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZDY4ODg4MDc0OSUyNnV0bV90ZXJtJTNkcGVyc29uYWxpdHklMjUyMGRpc29yZGVyJTI2bXNjbGtpZCUzZGIyNmNjN2JkYmI4YTExYTAyMGI1YWVlYTg0Y2E0OTNh%2526rlid%253Db26cc7bdbb8a11a020b5aeea84ca493a%26vqd%3D4%2D233842231687153034591103901895481948761%26iurl%3D%257B1%257DIG%253D49DAD1D9B7B44F168B1ECD0637CD0D07%2526CID%253D2B94B2DCF3B56B4C3438A409F2226AB7%2526ID%253DDevEx%252C5046.1&rut=bb296c233510cd77e5aa15fae00b78c3117bff1430c1bd65290bc0eb99f8f5f4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:45:04.663568"
+    },
+    {
+      "topic": "personality disorder",
+      "title": "Personality Disorders: Types, Causes, Symptoms & Treatment",
+      "content": "Learn about the 10 types of personality disorders, how they affect thinking, behavior and mood, and what causes and treatments are available. Find out how personality disorders are diagnosed and how they differ from other mental health conditions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmy.clevelandclinic.org%2Fhealth%2Fdiseases%2F9636%2Dpersonality%2Ddisorders%2Doverview&rut=10782648c68b5377f3f0b4dbd027e90993cfefb310ea54a8f58d56c3439f0ec7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:45:04.663621"
+    },
+    {
+      "topic": "personality disorder",
+      "title": "Personality disorder - Wikipedia",
+      "content": "Personality, defined psychologically, is the set of enduring behavioral and mental traits that distinguish individual humans. Hence, personality disorders are characterized by experiences and behaviors that deviate from social norms and expectations.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPersonality_disorder&rut=b776577bc5fbdfd1b253fd18c7ef2090183590eca7429277909c0b2be4e86236",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:45:04.663659"
+    },
+    {
+      "topic": "personality disorder",
+      "title": "Personality disorders - Symptoms and causes - Mayo Clinic",
+      "content": "A personality disorder is a mental health condition where people have a lifelong pattern of seeing themselves and reacting to others in ways that cause problems. People with personality disorders often have a hard time understanding emotions and tolerating distress. And they act impulsively.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mayoclinic.org%2Fdiseases%2Dconditions%2Fpersonality%2Ddisorders%2Fsymptoms%2Dcauses%2Fsyc%2D20354463&rut=ec550af81dffdf4a2544855f0d12144e99d37b7be955f40ae610db1c268e81d1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:45:04.663697"
+    },
+    {
+      "topic": "personality disorder",
+      "title": "Psychiatry.org - What are Personality Disorders?",
+      "content": "Learn what personality disorders are, how they affect thinking, feeling and behaving, and what are the 10 types of personality disorders in the DSM-5-TR. Find out the characteristics, examples and problems of each type of personality disorder.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.psychiatry.org%2Fpatients%2Dfamilies%2Fpersonality%2Ddisorders%2Fwhat%2Dare%2Dpersonality%2Ddisorders&rut=1ca869e473fcf3ebcf2c719ed7b5a09d99240c953d996dfbbbaf458fe0332ede",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:45:04.663735"
+    },
+    {
+      "topic": "obsessive compulsive disorder",
+      "title": "Shop medicine for ocd - Amazon.com Official Site",
+      "content": "Get deals and low prices on medicine for ocd in Health & Personal Care on Amazon. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DH9pmlVrY554UnZ2gGAnY17ez5Zn7e4GsS5YTCLPLEEYKTLDrNRtSAdxTqI2EnWgZ65bAvLq8akTk6Ff4P_8y0vNg563LOKDoiDtlQek8x_ACPu_xjUaFpUxWTN81xefLyYvEvNg%252Dz00u0kErdGUVgND6QdIUf_6r_hj1gvQY4NU.OAam58zembqxwAtXz6jANA%26rut%3D03a8e04b99c40da1b79c92d5eb6b8940074e84f5512be92b9352cb2988f292df%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8qXniVAc7kehO8oXTJ0iOzjVUCUzOWANO1KIIiZ0HrYqGSLxNKg9j0c5HwD7UBXdLYKiJVfwa1dd0RZAA31UR%252DeWB2Q3%252D5HVQ3YRRe7SYV8gp6Cv2dawITNsyZLrQZpodNgwHIipu6Fal9jFV%252DEVtWLGSV5VMKwfv40lSf7SLISO5OQlNWIuDZfvN7jOKJ0nFDqQ9NQeskhF893QYofmiwCyP0LE%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZG1lZGljaW5lJTJiZm9yJTJib2NkJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfMTE2dWozcHZjbF9wJTI2YWRncnBpZCUzZDEyNDEzNDk2NTg3NzIyNzElMjZodmFkaWQlM2Q3NzU4NDQ4NTYyOTQ4MiUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2Njk4JTI2aHZ0YXJnaWQlM2Rrd2QtNzc1ODQ2NDE1NTYyMjAlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDE1NTEwXzEzNjMzMDA3JTI2bWNpZCUzZDQ0YjY3YjA5ZDY2NjM0M2M4ODFlMmNhMzYyM2YyMDVlJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2QyODcwNTE1MzU4NzUxNDk2YjM4ZjM4MDQ2N2ViZjM0Nw%2526rlid%253D2870515358751496b38f380467ebf347%26vqd%3D4%2D134997233792103485917757686521124161489%26iurl%3D%257B1%257DIG%253D0FEC36E457244D8FB5EF4253A533B6E0%2526CID%253D1473A6F0A4486A040A78B025A5AC6B75%2526ID%253DDevEx%252C5046.1&rut=a5904fcb782131dde9732091366db16216eb370a8505c7c5ad5e1e54be2bd856",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:46:39.419353"
+    },
+    {
+      "topic": "obsessive compulsive disorder",
+      "title": "Obsessive-compulsive disorder (OCD) - Symptoms and causes",
+      "content": "Overview Obsessive-compulsive disorder (OCD) features a pattern of unwanted thoughts and fears known as obsessions. These obsessions lead you to do repetitive behaviors, also called compulsions. These obsessions and compulsions get in the way of daily activities and cause a lot of distress.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mayoclinic.org%2Fdiseases%2Dconditions%2Fobsessive%2Dcompulsive%2Ddisorder%2Fsymptoms%2Dcauses%2Fsyc%2D20354432&rut=6a55d26f47baf2d56305ff9379669a6f72a3d73ec3ee637c104bb645f47e51f9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:46:39.419446"
+    },
+    {
+      "topic": "obsessive compulsive disorder",
+      "title": "Obsessive-compulsive disorder - Wikipedia",
+      "content": "Obsessive-compulsive disorder (OCD) is a mental disorder in which an individual has intrusive thoughts (an obsession) and feels the need to perform certain behaviors (compulsions) repeatedly to relieve the distress caused by the obsession, to the extent where it impairs general function. [1][2][7]",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FObsessive%25E2%2580%2593compulsive_disorder&rut=1111e9b683eac3e266ede8bf60c0db1770c2e6bba6c8d74ca2cec1e64576972b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:46:39.419529"
+    },
+    {
+      "topic": "obsessive compulsive disorder",
+      "title": "Obsessive-Compulsive Disorder (OCD): Signs and Treatment",
+      "content": "Learn about obsessive-compulsive disorder (OCD), a mental illness that causes unwanted thoughts or urges and repetitive behaviors. Find out how OCD is diagnosed, what treatments are available, and what complications it can cause.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.webmd.com%2Fmental%2Dhealth%2Fobsessive%2Dcompulsive%2Ddisorder&rut=eefcd37f2e60307baded9cac2fb42fb325cdb650a841d8acdb370ede128d2023",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:46:39.419602"
+    },
+    {
+      "topic": "obsessive compulsive disorder",
+      "title": "Obsessive-Compulsive Disorder (OCD) - National Institute of Mental ...",
+      "content": "Learn about NIMH research on obsessive-compulsive disorder (OCD). Find resources on the signs and symptoms of OCD and potential treatments and therapies.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nimh.nih.gov%2Fhealth%2Ftopics%2Fobsessive%2Dcompulsive%2Ddisorder%2Docd&rut=941c6055df2ebe7040bbb65b85024b142c22850283c765a5ed3c253d5b3837e9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:46:39.419671"
+    },
+    {
+      "topic": "post traumatic stress disorder",
+      "title": "Natural Help PTSD - Post-Traumatic Stress Disorder",
+      "content": "Click now safe, proven product. Neu-Becalm'd helps PTSD naturally.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dfreeofdrugs.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DGsHjrDatWEd5S8uI8tHtX7IJdOcwYe6KPi1SmPGxekXxx9h1OtYXpDJFe5mu50LkK7gj8Xr1inHQPcwA4ur_p0JWEd_S6SFU1A_Pz8lGXd_xjCrTwVxnPl4R4vIfQycalDdjBlOXJcwSKjJdHBrALFR9dyTdi3CdeEO0vBzrjgo.eldo_QAuof%252DD3qu0onPyKw%26rut%3D75a75b2b9ce420d643be0cb2efbf02ac4b29d1a5264d91b0be46bc351b548eed%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8BWunJCFBeA8fAoczinZ_RzVUCUwnTOK5hSL3k7tReDhyzJXikOkXAyHDctyYGNJ5Go9VrRYnClFkNc0qOoZ2%252DDpgLHdBNbAD0F_4he6ri7u4AfP0oHtARlGT_NnJZXmjV3EpylSY_foyoQnwnuaeCXM%252DxL5kxf_EnsDUIv0SI9NiOlr4IRZQZ_oqjttto3Taz2tva1bDm_gu0UFTLToAJCsW0dc%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuZnJlZW9mZHJ1Z3MuY29tJTJmcHRzZA%2526rlid%253D9e4802088013126c1ada6b5fbfad6527%26vqd%3D4%2D275364773506663724872756697617709661165%26iurl%3D%257B1%257DIG%253D7D2C8EE6F45240B4A9D420BD9AF6C28B%2526CID%253D0FD0475D69416E090E62518868946F10%2526ID%253DDevEx%252C5046.1&rut=7fdfb7ee2718c8b1636cbfc95706a8b20abe352806c55b5492faa99b521d1e90",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:47:10.964211"
+    },
+    {
+      "topic": "post traumatic stress disorder",
+      "title": "Shop healing from ptsd - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on healing from ptsd at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DPq1DWbhMuYvHWAsz_tV0cL2KJmz8Xu%252DHtKmlifGtQCZZVT3MitDCsXmNsgYFyu8Az53Ql8H5rj8V73wsm4S_h8BLF2xKfxtAvvZhCu85sVUzdbfgTQfTFgSbvregivgk_rtQpN2XFhCyzOftuEDSM3SkY6AOWA4Mwv5DuVHENjk.sXdGEdzJMi9gtk%252Dr1guXlQ%26rut%3Dabe04e4c2e9f2a4baeb5be94e08552e8b217d02d8913a8b1f5d7099bb3725b4d%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8IxyFuQrHkmj2_6bs5N0ZszVUCUwockuoBiNX0gN%252DJAs2kzW_fzeFiYN7sw5fLqEdAf9GaTAR8hB89%252D31HekW55_KW6PyfqO6KAqWDjk__sqR06HlCWHzAkpu3z6oxbHf3H1xXyjoMT0anUQA5dkZDmTtm8BCcShE5S1Z%252D%252DGznaVHJ5TRPokLDCoxj7X7G8WVEAgRX5Ne2MkT3rXQHYDHtlTZyeA%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGhlYWxpbmclMmJmcm9tJTJicHRzZCUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzM5am0yOW4xdF9wJTI2YWRncnBpZCUzZDEyMzI1NTM1NTcyOTAxMTklMjZodmFkaWQlM2Q3NzAzNDcyODk4OTcxMiUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NDQ4JTI2aHZ0YXJnaWQlM2Rrd2QtNzcwMzQ4Nzk3NTQ5NzYlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDI5MDU5XzE0NjkzMTc5JTI2bWNpZCUzZGIzNzZiZDY4OGE3YTNhMDdiZGZhYjU0ZWVmYzJlODYzJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2Q3M2VlZTk1MzdlYWQxNGFkZTcwNzgwMDQ0MTEzMjI1NA%2526rlid%253D73eee9537ead14ade707800441132254%26vqd%3D4%2D244475375612591332329779053444897628885%26iurl%3D%257B1%257DIG%253D7D2C8EE6F45240B4A9D420BD9AF6C28B%2526CID%253D0FD0475D69416E090E62518868946F10%2526ID%253DDevEx%252C5049.1&rut=d05a728a6fa296c0d46bfee892631bde3d5b8b8bdee473b3ba4a2456ff7ca28a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:47:10.964307"
+    },
+    {
+      "topic": "post traumatic stress disorder",
+      "title": "Post-traumatic stress disorder (PTSD) - Symptoms and causes",
+      "content": "Overview Post-traumatic stress disorder (PTSD) is a mental health condition that's caused by an extremely stressful or terrifying event \u2014 either being part of it or witnessing it. Symptoms may include flashbacks, nightmares, severe anxiety and uncontrollable thoughts about the event.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mayoclinic.org%2Fdiseases%2Dconditions%2Fpost%2Dtraumatic%2Dstress%2Ddisorder%2Fsymptoms%2Dcauses%2Fsyc%2D20355967&rut=abcbdf8ed331cbe584ce5fd7e92c7d8ac0e2b805adce618c5ab546745a144bb7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:47:10.965844"
+    },
+    {
+      "topic": "post traumatic stress disorder",
+      "title": "What is Posttraumatic Stress Disorder (PTSD)? - Psychiatry.org",
+      "content": "Posttraumatic stress disorder (PTSD) is a psychiatric disorder that may occur in people who have experienced or witnessed a traumatic event such as a natural disaster, a serious accident, a terrorist act, war/combat, or rape or who have been threatened with death, sexual violence or serious injury.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.psychiatry.org%2Fpatients%2Dfamilies%2Fptsd%2Fwhat%2Dis%2Dptsd&rut=1fec01e2f63ea3f7dcceb10add5e2b3588e52668884e627e2c91f53c92cc79f0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:47:10.965931"
+    },
+    {
+      "topic": "post traumatic stress disorder",
+      "title": "Traumatic Events and Post-Traumatic Stress Disorder (PTSD)",
+      "content": "Learn about NIMH research on post-traumatic stress disorder (PTSD). Find resources on the signs and symptoms of PTSD and potential treatments and therapies.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nimh.nih.gov%2Fhealth%2Ftopics%2Fpost%2Dtraumatic%2Dstress%2Ddisorder%2Dptsd&rut=6fff64800573027bc4b20747da9d2ce9109d78219017009a4712efe038777d30",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:47:10.966002"
+    },
+    {
+      "topic": "eating disorder",
+      "title": "Eating Disorders Center - Denver Health ACUTE - Expert Care",
+      "content": "Center of Excellence for Medical Treatment of Severe and Extreme Eating Disorders. Call ACUTE The Only Medical Inpatient Eating Disorder Treatment Center In The Country.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dacute.org%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Dxfc6eWGHUh3tU51b6tIvr0Gq9TVO4NJ9W1tGapSYq9SY68mCecF0XyfLnRYcIKnp%252DuqaTymjygreS0rLqh7kKyXV9ZruGXZrbqIHWD1EdJGUzqaJ_DMo2%252DWdkLen9pc%252DgGJixVAW0xe9Qdy3agry3prdSW6v6n0ACJSbnqGhjf0.ADMXK%252Dh2DYk%252DyZRDhkFmDg%26rut%3D813df098046952c8900c467a2f504da1c7ded56841901088ca1fe610c8d4f509%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8KFp8kqh%252DiyXR2CSLa7uzCTVUCUzb8Lg0ZeyoH_93crCHEtOcpJzqcvUdXktqTmQeGa6p2Pv0G3BLPXre42RgLnJvSnNe4b0AXlEAZ05BpWmKuyDwjfKAa1xxcIaKGvQAvQPXtBx7A9fT69fdhF9x4LLX2KTRbipHhsEXA8bDqwBndYAl1z6cMTu4vISrF%252DhnXWf5as2jiwXuAgOjdXPGSQ5UoZU%2526u%253DaHR0cHMlM2ElMmYlMmZhY3V0ZS5vcmclM2Z1dG1fY2FtcGFpZ24lM2RUaWVyJTI1MjAxJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2bXNjbGtpZCUzZGM5MTBlMjBiNzdiZjFiNWM1Y2RiOGI1YzQ4NjJlY2ZhJTI2dXRtX3Rlcm0lM2RpbnBhdGllbnQlMjUyMGVhdGluZyUyNTIwZGlzb3JkZXIlMjUyMGNsaW5pYyUyNnV0bV9jb250ZW50JTNkRUQlMjUyMEhvc3BpdGFsLUlucGF0aWVudCUyNTIwR3JvdXA%2526rlid%253Dc910e20b77bf1b5c5cdb8b5c4862ecfa%26vqd%3D4%2D241216477354716272579155148914340092968%26iurl%3D%257B1%257DIG%253D1FF5B5C2A907423BA36BC4C387153346%2526CID%253D0E99B3E50CC5676C0542A5300D526621%2526ID%253DDevEx%252C5045.1&rut=965c366d81cd5160d3ae69189de892f73293f1383f4c23ad3c0137d9aadaa70b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:47:42.386490"
+    },
+    {
+      "topic": "eating disorder",
+      "title": "Shop book eating disorder - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on book eating disorder at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DMV%252DbQgthk543w%252DkAFj5mY7XGizIrWTf%252D60tHtTwNrwgyqCdD6KxL7ezwUIT3jizDd9sN8HR3zlAYfNHTqLSY_tz4sTcHM6AqjoVGmnQJa6BRC14Q9cwZAlz7CYCakkkHLj3cP_XBIQLPkg%252DFuVttdu3_XbcaTg_KL0PpRhrpdHo.8lr2AL69zc2JOedvgjmAVw%26rut%3Dfc831261a29f9886a4a2c6f06b8e215f6ae87443142f57398c77986b34ce136d%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8MQ889iZqd1P%252DFUoDu3f59TVUCUzGhfyUFGuBtUVDIBzY4X1Q_yJOr7f3LKCVZ7g%252DhGbZPS4wx6UWFMTG3WVo_dTjrqRTrxX%252DsPyqjM1wjOZv8h4gCrTnEKovswecrNbDAChib710yknhjIQ5k%252D8Y8CFFfznPbHeWFtRIlRpvrSchazLUjw9Cw9w6FNrRN7NGZsuLC8R9No3LD2PvBq5wltw46Mo%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJvb2slMmJlYXRpbmclMmJkaXNvcmRlciUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzdibXRhdW9jM2dfYiUyNmFkZ3JwaWQlM2QxMjMzNjUzMTI3MTYzMzIwJTI2aHZhZGlkJTNkNzcxMDM0NTQ1NzE5MTElMjZodm5ldHclM2RzJTI2aHZxbXQlM2RiJTI2aHZibXQlM2RiYiUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjYzNSUyNmh2dGFyZ2lkJTNka3dkLTc3MTAzNjgxODMzNjg1JTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QyOTAzNV8xNDY5Mjk5NCUyNm1jaWQlM2RjODRhOGJhZjMwNGEzMjkwYmM1YzMzNDljYWU1MWFlNyUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkYjY5MmEwZGI4OGJmMWI0MzAyZTJjOThjYjc2MmMzMDM%2526rlid%253Db692a0db88bf1b4302e2c98cb762c303%26vqd%3D4%2D127116707323735559872191719617098807302%26iurl%3D%257B1%257DIG%253D1FF5B5C2A907423BA36BC4C387153346%2526CID%253D0E99B3E50CC5676C0542A5300D526621%2526ID%253DDevEx%252C5049.1&rut=ca3b38562b1a043feb7024420001f019b278130c28935fa9e394032b2f74e848",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:47:42.386587"
+    },
+    {
+      "topic": "eating disorder",
+      "title": "What are Eating Disorders? - Psychiatry.org",
+      "content": "Eating disorders are behavioral conditions characterized by severe and persistent disturbance in eating behaviors and associated distressing thoughts and emotions. They can be very serious conditions affecting physical, psychological and social function. Types of eating disorders include anorexia nervosa, bulimia nervosa, binge eating disorder, avoidant restrictive food intake disorder, other ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.psychiatry.org%2Fpatients%2Dfamilies%2Feating%2Ddisorders%2Fwhat%2Dare%2Deating%2Ddisorders&rut=a975fc8506656f01978dc255d833fe582f21f0362fe7d7de744f809230e084ef",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:47:42.386670"
+    },
+    {
+      "topic": "eating disorder",
+      "title": "Eating Disorders: What They Are, Symptoms, Treatment & Types",
+      "content": "Eating Disorders Eating disorders are mental health conditions that cause you to have an unhealthy relationship with food. Anyone can develop an eating disorder. Common eating disorders include anorexia nervosa, bulimia nervosa and binge-eating disorder. Treatment is available to help you feel better.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmy.clevelandclinic.org%2Fhealth%2Fdiseases%2F4152%2Deating%2Ddisorders&rut=0a55ba24a01be0dfc0c1543437847b735327cf9855247840320587540492418d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:47:42.386760"
+    },
+    {
+      "topic": "eating disorder",
+      "title": "Eating disorders - Symptoms and causes - Mayo Clinic",
+      "content": "Overview Eating disorders are serious health conditions that affect both your physical and mental health. These conditions include problems in how you think about food, eating, weight and shape, and in your eating behaviors. These symptoms can affect your health, your emotions and your ability to function in important areas of life.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mayoclinic.org%2Fdiseases%2Dconditions%2Feating%2Ddisorders%2Fsymptoms%2Dcauses%2Fsyc%2D20353603&rut=d17f6286b608ffffaa4b9c9cbc32865299b2f49341d1c97e393c27e20c8fed4a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:47:42.386843"
+    },
+    {
+      "topic": "dualism philosophy",
+      "title": "Dualism (Stanford Encyclopedia of Philosophy)",
+      "content": "In the philosophy of mind, dualism is the theory that mind and body - or the mental and the physical - are, in some fundamental sense, different kinds of things. Dualism contrasts with monism, which says that there is only one fundamental kind; and, rather less commonly, with pluralism, which is the view that there are many fundamental kinds.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fdualism%2F&rut=7370bc316bcc1a0a25f7d7332cb0f4c504721e89e9e7bb705159ea67f689e983",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:58:43.497913"
+    },
+    {
+      "topic": "dualism philosophy",
+      "title": "Dualism - Wikipedia",
+      "content": "Dualism is a family of views that analyze a domain or phenomenon by proposing a fundamental division into two principles or aspects. Dualist theories differ from each other by the type of division and principles they posit. For example, mind-body dualism argues for a basic contrast between mind and body as distinct substances or properties to explain the fundamental makeup of the world and ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDualism&rut=8d2df3e5b4de5f968c07087e7a4f3cfd129698d7f296e4870bbc0aa654a233dc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:58:43.497963"
+    },
+    {
+      "topic": "dualism philosophy",
+      "title": "Dualism | Mind-Body, Mind-Matter, Cartesian | Britannica",
+      "content": "mind-body problem, in the philosophy of mind and metaphysics, the problem of explaining how mental events arise from or interact with physical events. Historically, three types of theory have been most influential: psychophysical monism, property dualism, and psychophysical dualism.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fdualism%2Dphilosophy&rut=6954a04f5172492f4a82b4de437f797668a37f51917351c1c1134be5b90773ad",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:58:43.498001"
+    },
+    {
+      "topic": "dualism philosophy",
+      "title": "Dualism and Mind - Internet Encyclopedia of Philosophy",
+      "content": "An overview of dualism, the philosophical view that mind and matter are radically different and distinct. Explore the arguments, criticisms, and variations of substance, property, and conceptual dualism, with examples from Plato, Descartes, and others.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fdualism%2Dand%2Dmind%2F&rut=6ac21a2053673cde0f3e224bc4745d626a015ec5493239464ac78960e72c9578",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:58:43.498036"
+    },
+    {
+      "topic": "dualism philosophy",
+      "title": "Dualism | Philosophy of Mind: A Very Short Introduction | Oxford Academic",
+      "content": "Abstract 'Dualism' asks: is the mind distinct from the body? Dualism is the theory of mind that answers this question in the affirmative. Looking into Dualism's ancient origins show us some of the key arguments for dualism. Dualism is thought, by its proponents, to solve one of the great problems in philosophy: the mind\u2012body problem. Cartesian dualism and Ren\u00e9 Descartes's arguments ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Facademic.oup.com%2Fbook%2F40043%2Fchapter%2F340491716&rut=2a989e7a5138d41de4deff666014149b0b919c28a8da8fc68bb031e815b576a1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:58:43.498090"
+    },
+    {
+      "topic": "determinism",
+      "title": "Determinism",
+      "content": "Determinism is the metaphysical view that all events within the universe can occur only in one possible way. Deterministic theories throughout the history of philosophy have developed from diverse and sometimes overlapping motives and considerations. Like eternalism, determinism focuses on particular events rather than the future as a concept. Determinism is often contrasted with free will, although some philosophers argue that the two are compatible. The antonym of determinism is indeterminism, the view that events are not deterministically caused.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Determinism",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T19:59:13.724041"
+    },
+    {
+      "topic": "determinism",
+      "title": "Determinism: Learn More About Determinism",
+      "content": "Works with Your Needs - We Have the Right Materials You're Looking For. Try It Now! Prepare for Determinism with Our Practice Tests and Tutorials on Any Device.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstudy.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DetJpK7OkPw4HBUihfMglyQuKO1jIXhJ%252Dpm_4G4hcWcwgdZ9WOJ4u8DFBzl5eZYYpq0qrDLDUt1YYLqEWDFbsj8ALs_JBJ28TQ3kGPjR1HCQseQ5SBVyjwYRSOjICw6xPORQDYFdSIfPPassoZ5KQXD5RivIaXFYXy5lnsH6ZFns.%252Drle%252DLoLzlci9Rhp1Gfv8w%26rut%3Da3e853a038063de41f0d14da7defaf4e9803e7ebf7dd677cf362c76eb02cbcc9%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8np11401bABjziln11vKiBzVUCUwukkb0Btuoa6FFZ1QZh9yht3axUfT3FXfh6vbdXnFyEjltmiIHvb0bQ_pDqmxdab7A%252DXkSJjDtKIcDsExC3W5Nw2KrOSt7YYCQ0wfP%252DrqNGSDq4bkNqX8T7lPybMozQ9Q_lJLJABCjO4nBiNARY8NJFfOHgfA5gB5U29LLv322iEjxXGdy%252DshXLp1YODLvFxE%2526u%253DaHR0cHMlM2ElMmYlMmZzdHVkeS5jb20lMmZidXklMmZhY2FkZW15JTJmbGVzc29uJTJmZGV0ZXJtaW5pc20tZGVmaW5pdGlvbi1leGFtcGxlcy5odG1sJTNmc3JjJTNkcHBjX2Jpbmdfbm9uYnJhbmQlMjZyY250eHQlM2Rhd3MlMjZjcnQlM2QlMjZrd2QlM2RTRU8tUFBDLUJVWSUyNmt3aWQlM2RkYXQtMjMyOTA0MDUwNTg4Njk0MCUzYWxvYy0xOTAlMjZhZ2lkJTNkMTIzNTg1MTMwMjU5Njc0NiUyNm10JTNkYiUyNmRldmljZSUzZGMlMjZuZXR3b3JrJTNkcyUyNl9jYW1wYWlnbiUzZFNlb1BQQyUyNm1zY2xraWQlM2RhNzFlY2U3MGIzNGUxODYyMGQ3Y2E3MjdmMWRjOTFjNQ%2526rlid%253Da71ece70b34e18620d7ca727f1dc91c5%26vqd%3D4%2D45915501146587796538366819704614495735%26iurl%3D%257B1%257DIG%253DDEE21C1BCF4E438AA61673CFCA2279AD%2526CID%253D1909588EC5EC6BAA3B134E5BC4396A66%2526ID%253DDevEx%252C5045.1&rut=18f2f0d25d31ff82acdab5088a2d18701fe4596edc558240280452dc553fba28",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:59:14.729878"
+    },
+    {
+      "topic": "determinism",
+      "title": "Determinism - Wikipedia",
+      "content": "Determinism is the metaphysical view that all events within the universe (or multiverse) can occur only in one possible way. [1] Deterministic theories throughout the history of philosophy have developed from diverse and sometimes overlapping motives and considerations. Like eternalism, determinism focuses on particular events rather than the future as a concept. Determinism is often ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDeterminism&rut=be2453b9df8cc63b4f131f0ce8c0b0ce30f9778639773088bb2708d146944f3f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:59:14.729948"
+    },
+    {
+      "topic": "determinism",
+      "title": "Determinism | Definition, Philosophers, & Facts | Britannica",
+      "content": "Determinism, in philosophy and science, the thesis that all events in the universe, including human decisions and actions, are causally inevitable. Determinism is usually understood to preclude free will because it entails that humans cannot decide or act otherwise than they do.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fdeterminism&rut=4866edde99b2cce7a9fde1a8496682152adbd6eeedf1e54772cd863ecd2eba8d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:59:14.729994"
+    },
+    {
+      "topic": "determinism",
+      "title": "Causal Determinism - Stanford Encyclopedia of Philosophy",
+      "content": "Causal determinism is, roughly speaking, the idea that every event is necessitated by antecedent events and conditions together with the laws of nature. The idea is ancient, but first became subject to clarification and mathematical analysis in the eighteenth century. Determinism is deeply connected with our understanding of the physical sciences and their explanatory ambitions, on the one ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fdeterminism%2Dcausal%2F&rut=6b5d93df6788c3bcc0300b967b335a0ff30eda11c4dca9bbdaaf13c2a87b6b43",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:59:14.730040"
+    },
+    {
+      "topic": "determinism",
+      "title": "Determinism - By Branch / Doctrine - The Basics of Philosophy",
+      "content": "Determinism is the philosophical proposition that every event, decision and action is causally determined by an unbroken chain of prior occurrences. Learn about the interpretation, history and types of determinism, and how it relates to free will, morality and quantum mechanics.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.philosophybasics.com%2Fbranch_determinism.html&rut=26443782f176792caa358c115bb1c8c84c0d90e53d82303a14e77800d74c49be",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:59:14.730084"
+    },
+    {
+      "topic": "deontology",
+      "title": "Deontology",
+      "content": "In moral philosophy, deontological ethics or deontology is the normative ethical theory that the morality of an action should be based on whether that action itself is right or wrong under a series of rules and principles, rather than based on the consequences of the action. It is sometimes described as duty-, obligation-, or rule-based ethics. Deontological ethics is commonly contrasted to utilitarianism and other consequentialist theories, virtue ethics, and pragmatic ethics. In the deontological approach, the inherent rightfulness of actions is considered more important than their consequences.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Deontology",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T20:00:47.584254"
+    },
+    {
+      "topic": "deontology",
+      "title": "Deontology - Wikipedia",
+      "content": "In moral philosophy, deontological ethics or deontology (from Ancient Greek \u03b4\u03ad\u03bf\u03bd (d\u00e9on) 'duty, obligation' and -\u03bb\u03bf\u03b3\u03af\u03b1 (-log\u00eda) 'study of') is the normative ethical theory that the morality of an action should be based on whether that action itself is right or wrong under a series of rules and principles, rather than based on the consequences of the action. [1] It is sometimes ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDeontology&rut=cfc5b0dfb57dfd33034a4e74886140f49d7d31ef80864f524b1f0a38e3e78b25",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:00:48.635976"
+    },
+    {
+      "topic": "deontology",
+      "title": "Deontological Ethics - Stanford Encyclopedia of Philosophy",
+      "content": "The word deontology derives from the Greek words for duty (deon) and science (or study) of (logos). In contemporary moral philosophy, deontology is one of those kinds of normative theories regarding which choices are morally required, forbidden, or permitted. In other words, deontology falls within the domain of moral theories that guide and assess our choices of what we ought to do (deontic ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fethics%2Ddeontological%2F&rut=ab6274e7a49837556712eeef6004674e6db0fa257096c1ef7da75d552efeecf1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:00:48.636078"
+    },
+    {
+      "topic": "deontology",
+      "title": "Deontological ethics | Definition, Meaning, Examples, & Facts - Britannica",
+      "content": "Deontological ethics, in philosophy, ethical theories that place special emphasis on the relationship between duty and the morality of human actions. In deontological ethics an action is considered morally good because of some characteristic of the action itself, not because the product of the action is good.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fdeontological%2Dethics&rut=90bc6124cc3bd3a424f957482836a6a13d8f57291b3cbeae387d8deea14514ef",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:00:48.636123"
+    },
+    {
+      "topic": "deontology",
+      "title": "Deontology - Ethics Unwrapped",
+      "content": "Deontology is an ethical theory that uses rules to distinguish right from wrong. Learn how deontology works, its strengths and weaknesses, and how it differs from consequentialism with examples.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fethicsunwrapped.utexas.edu%2Fglossary%2Fdeontology&rut=c2736acc74eb6b7f6836eeef702971f7df0c524d1abc71f8f12367fcf051a8bc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:00:48.636167"
+    },
+    {
+      "topic": "deontology",
+      "title": "Understanding Deontology: Ethics and Principles - Philosophos",
+      "content": "Deontology is a branch of philosophy that is focused on the study of ethics and principles. It is an approach to ethical decision-making that emphasizes the importance of moral duty and obligation, rather than the consequences of actions. Deontological ethics, which is often associated with the works of Immanuel Kant, is based on the idea that there are certain moral obligations and duties ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.philosophos.org%2Fethics%2Ddeontology&rut=fd4af734eede233374ae65eba4661dd9171ab3cd1a41a1840a7fca43391640db",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:00:48.636216"
+    },
+    {
+      "topic": "digital currency",
+      "title": "Digital currency - Wikipedia",
+      "content": "Learn about digital currency, a form of money that is managed, stored or exchanged on digital systems. Explore the different sub-types, such as cryptocurrency and virtual currency, and their origins, properties and legal status.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDigital_currency&rut=710a6ff5bbdae80d2e108057a89f45516e6299413dbfa1ed197be090a084ddbe",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T01:10:51.165938"
+    },
+    {
+      "topic": "digital currency",
+      "title": "Types and Characteristics of Digital Currencies: Pros, Cons, Future ...",
+      "content": "Discover the types of digital currencies, their characteristics, advantages, and drawbacks. Explore how they lower transaction costs and their potential future uses.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.investopedia.com%2Fterms%2Fd%2Fdigital%2Dcurrency.asp&rut=14fdb149d3eb82e8e876624c09460286410ac4156359cfd865542509ec300c2a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T01:10:51.166014"
+    },
+    {
+      "topic": "digital currency",
+      "title": "Digital Currency: What It Is, Characteristics, and Types",
+      "content": "Digital currency is a form of money that exists and is exchanged electronically. Learn about the different types of digital currency, such as cryptocurrencies, CBDCs, and virtual currencies, and their advantages and disadvantages.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.paypal.com%2Fus%2Fmoney%2Dhub%2Farticle%2Fwhat%2Dis%2Ddigital%2Dcurrency&rut=308d1f75e379b5a28be98acb01a18c66b6f81c22d7e73ce334192031be0351d8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T01:10:51.166078"
+    },
+    {
+      "topic": "rene descartes",
+      "title": "Shop rene descartes - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on rene descartes at Amazon.com. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Dsv1cK4vPKDqaoV2Olnf%252DA4OHVmeEzZl25EzPeA78Wuz4ryletUfUVnGigMKIUPTIjfGi69ZVhD_d1xB1j%252Di4RM5xpF4Nuc7Wmpygd_j47FRgluk0DQaqQNeXF0EQNMarGruea4h38FhxD4gacd_g46mhSDlWYGjqwompmIRF3wg.nZGxU5sl4waOyY2fOJ8vRA%26rut%3D1193098979633675956f950e0055851d1fe2ef72a975b60c95c681c6fc5fb418%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8Sm1sjkkKxmVqgPl9KNCsIDVUCUxxg2YGjbuyuJk%252DAWZ2SfPtdwn7mONyaROly5bSIb2GUeNRir_PkhSTOXCkI7vWOkA9d_PyY4PJOxh8rFeCiybIXTa7L8KYdZJFK_j2F_uRPLJZGLg6%252D%252DkXc5ug0v%252D3kISn1VN5AUdQb4MH6ldvj_JgKxdh4wVKKXJWZd4M9E5tBI9N5i3qh9aa6tOkYSeM7Hc%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZHJlbmUlMmJkZXNjYXJ0ZXMlMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF9yeGRseTFraWlfcCUyNmFkZ3JwaWQlM2QxMjI0ODU2MjYzNjYxMzEyJTI2aHZhZGlkJTNkNzY1NTM2ODM2MDI3ODglMjZodm5ldHclM2RzJTI2aHZxbXQlM2RlJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjQ0OCUyNmh2dGFyZ2lkJTNka3dkLTc2NTUzNzUyMDMxODU1JTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QyODI0Ml8xNDYzODQ5NSUyNm1jaWQlM2Q0NjNkN2IyZDdhNmMzMDI4Yjk0ZWYzNzY2MzQ5NzhmZiUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkNjE1ZDIyZGFjZjg5MWQxNmQyY2Y0YjhkMmVjNjU3ZDI%2526rlid%253D615d22dacf891d16d2cf4b8d2ec657d2%26vqd%3D4%2D249589233468067947450508945495788609668%26iurl%3D%257B1%257DIG%253DFA2B77798B644573B776EB1B75B4B6CC%2526CID%253D398A5D0FEBA767C313194BDAEA3066EF%2526ID%253DDevEx%252C5045.1&rut=00b1ae14df3144062ddcb9a5e4c19059e4b34647391f24edd41f12c4db3cb206",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T07:16:32.259090"
+    },
+    {
+      "topic": "rene descartes",
+      "title": "Ren\u00e9 Descartes - Wikipedia",
+      "content": "Ren\u00e9 Descartes (/ de\u026a\u02c8k\u0251\u02d0rt / day-KART, also UK: / \u02c8de\u026ak\u0251\u02d0rt / DAY-kart, [2][3] French: [\u0281\u0259ne deka\u0281t] \u24d8; 31 March 1596 - 11 February 1650) was a French philosopher, scientist, and mathematician, widely considered a seminal figure in the emergence of modern philosophy and science. Mathematics was paramount to his method of inquiry, and he connected the previously separate fields ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRen%25C3%25A9_Descartes&rut=972e0c83fb99249e23a312f6261a7b080bf0b6e06860ecb5803143b6efe6cd1a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T07:16:32.259438"
+    },
+    {
+      "topic": "rene descartes",
+      "title": "Rene Descartes | Biography, Ideas, Philosophy, 'I Think, Therefore I Am ...",
+      "content": "Rene Descartes, French mathematician and philosopher, generally regarded as the founder of modern Western philosophy. He is known for his epistemological foundationalism as expressed in the cogito ('I think, therefore I am'), his metaphysical dualism, and his rationalism based on innate ideas of mind, matter, and God.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FRene%2DDescartes&rut=9ee7d3d970ea84ad2cd57b0a69450b140e97d5200f372a71ef64f349ee8a439f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T07:16:32.259529"
+    },
+    {
+      "topic": "rene descartes",
+      "title": "Ren\u00e9 Descartes - Stanford Encyclopedia of Philosophy",
+      "content": "Ren\u00e9 Descartes (1596-1650) was a creative mathematician of the first order, an important scientific thinker, and an original metaphysician. During the course of his life, he was a mathematician first, a natural scientist or \"natural philosopher\" second, and a metaphysician third. In mathematics, he developed the techniques that made possible algebraic (or \"analytic\") geometry. In ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fdescartes%2F&rut=1c9b59e358c47554aca98a1d04d8aca1b029795bf4a7a88a8fbf38ab38626739",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T07:16:32.259603"
+    },
+    {
+      "topic": "rene descartes",
+      "title": "Descartes, Rene | Internet Encyclopedia of Philosophy",
+      "content": "A comprehensive overview of the life and works of Ren\u00e9 Descartes, the \"Father of Modern Philosophy\". Learn about his method of doubt, his mind-body dualism, his mechanistic physics, his moral theory and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Frene%2Ddescartes%2F&rut=53c6dcbe58d789faae54354739c52147271b75fcd699552bfde508608f3e723d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T07:16:32.259670"
+    },
+    {
+      "topic": "david hume",
+      "title": "David Hume - Wikipedia",
+      "content": "David Hume (/ hju\u02d0m /; born David Home; 7 May 1711 - 25 August 1776) was a Scottish philosopher, historian, economist and essayist who is known for his highly influential system of empiricism, philosophical scepticism and metaphysical naturalism. [1]",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDavid_Hume&rut=3742f7b3cc897b37c83b44fdc1849971808dda018e40636d8b9867044772238b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T09:11:37.098324"
+    },
+    {
+      "topic": "david hume",
+      "title": "David Hume | Biography, Philosophy, Empiricism, Skepticism, & Works ...",
+      "content": "David Hume, Scottish philosopher, historian, economist, and essayist known especially for his philosophical empiricism and skepticism. Despite the enduring impact of his theory of knowledge, Hume seems to have considered himself chiefly as a moralist. Learn more about his life and ideas in this article.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FDavid%2DHume&rut=62b5acd189f7b56bcdd8ccdf7fef0364f01d8b386195d5a4347a74ba56ac1f56",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T09:11:37.098383"
+    },
+    {
+      "topic": "david hume",
+      "title": "David Hume - Stanford Encyclopedia of Philosophy",
+      "content": "Although Hume's more conservative contemporaries denounced his writings as works of scepticism and atheism, his influence is evident in the moral philosophy and economic writings of his close friend Adam Smith. Kant reported that Hume's work woke him from his \"dogmatic slumbers\" (Prolegomena, Introduction) and Jeremy Bentham remarked that reading Hume \"caused the scales to fall ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fhume%2F&rut=9b4b825f4b8ae0680647b445cc0235e36c8e9006ffd41b302b45f8eb7343c4b2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T09:11:37.098446"
+    },
+    {
+      "topic": "david hume",
+      "title": "David Hume's Life and Works - The Hume Society",
+      "content": "Learn about the most important philosopher ever to write in English, David Hume (1711-1776), and his influential works on human nature, morality, and religion. Explore his early life, education, travels, controversies, and legacy in this comprehensive overview.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fhumesociety.org%2Fabout%2Fhume&rut=e94278a7997394fd96fb8ab9575e2cb2edb7026c7e98418eafa7b09a87ed5a82",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T09:11:37.098493"
+    },
+    {
+      "topic": "david hume",
+      "title": "Hume, David | Internet Encyclopedia of Philosophy",
+      "content": "A comprehensive overview of the life and work of Scottish philosopher David Hume, who challenged common notions of personal identity, causality, religion, morality, and more. Learn about his skeptical approach, his major writings, and his influence on philosophy and history.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fhume%2F&rut=cb84fabdd74eb42749ffa2e605ea93d7fe11e1d1e0317268a08ca8fff2178cf3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T09:11:37.098846"
+    },
+    {
+      "topic": "simone de beauvoir",
+      "title": "Simone de Beauvoir - Wikipedia",
+      "content": "Simone Lucie Ernestine Marie Bertrand de Beauvoir (UK: / d\u0259 \u02c8bo\u028avw\u0251\u02d0r /, US: / d\u0259 bo\u028a\u02c8vw\u0251\u02d0r /; [3][4] French: [sim\u0254n d\u0259 bovwa\u0281] \u24d8; 9 January 1908 - 14 April 1986) was a French existentialist philosopher, writer, social theorist, and feminist activist. Though she did not consider herself a philosopher, nor was she considered one at the time of her death, [5][6][7] she had a ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSimone_de_Beauvoir&rut=cd9e698e88f88f5ca33e305b524e715397aa7d7756f595231463e23dd4069be9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:41:35.892199"
+    },
+    {
+      "topic": "simone de beauvoir",
+      "title": "Simone de Beauvoir | Books, Feminism, The Second Sex, Biography ...",
+      "content": "Simone de Beauvoir (1908-86) was a French existentialist writer. She is known for her treatise The Second Sex (1949), an argument for the abolition of what she called the myth of the 'eternal feminine.' It became a classic of feminist literature. She also won the Prix Goncourt for her novel The Mandarins (1954).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FSimone%2Dde%2DBeauvoir&rut=49c2b5431e11144b04311418119746b2c0c5d77147dc1091ca428d2b75e7d947",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:41:35.892282"
+    },
+    {
+      "topic": "simone de beauvoir",
+      "title": "Simone de Beauvoir - Stanford Encyclopedia of Philosophy",
+      "content": "Simone de Beauvoir (1908-1986) was a philosopher, novelist, feminist, public intellectual and activist, and one of the major figures in existentialism in post-war France. She is best known for her trailblazing work in feminist philosophy, The Second Sex (1949), but her original contributions to existentialism and phenomenology can be found across her work, from her first philosophical novel ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fbeauvoir%2F&rut=5945c544ef49714810d8ee451c913bb4452785642e754ee5a9d377f7e7a5d7af",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:41:35.892346"
+    },
+    {
+      "topic": "simone de beauvoir",
+      "title": "Simone de Beauvoir - French Women & Feminists in History: A Resource ...",
+      "content": "Simone de Beauvoir was a philosopher and writer of notable range and influence whose work is central to feminist theory, French existentialism, and contemporary moral and social philosophy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fguides.loc.gov%2Ffeminism%2Dfrench%2Dwomen%2Dhistory%2Ffamous%2Fsimone%2Dde%2Dbeauvoir&rut=0e9330b3561be011de43844785a8454550d096e3d076ef66bbbd12244e4a5414",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:41:35.892408"
+    },
+    {
+      "topic": "simone de beauvoir",
+      "title": "Beauvoir, Simone de | Internet Encyclopedia of Philosophy",
+      "content": "Learn about the life and work of Simone de Beauvoir, one of the most influential French existentialist philosophers and writers. Explore her contributions to ethics, feminism, literature, and cultural studies, as well as her personal and intellectual relationships.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fsimone%2Dde%2Dbeauvoir%2F&rut=0e7f6bd826369dd0ce64e1da570ce4a90dc49aff2935cef259894fd6ead68a8a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:41:35.892469"
+    },
+    {
+      "topic": "john dewey",
+      "title": "John Dewey - Wikipedia",
+      "content": "John Dewey (/ \u02c8du\u02d0i /; October 20, 1859 - June 1, 1952) was an American philosopher, psychologist, and educational reformer. He was one of the most prominent American scholars in the first half of the twentieth century. [8][9] The overriding theme of Dewey's works was his profound belief in democracy, be it in politics, education, or communication and journalism. [10] As Dewey himself ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FJohn_Dewey&rut=2e72e614074a0b106f395901594ab0efeab5dc04dcfad33ea50965bce7ffcbdb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:45:24.490910"
+    },
+    {
+      "topic": "john dewey",
+      "title": "John Dewey | Biography, Philosophy, Pragmatism, & Education | Britannica",
+      "content": "John Dewey, American philosopher and educator who was a cofounder of the philosophical movement known as pragmatism, a pioneer in functional psychology, an innovative theorist of democracy, and a leader of the progressive movement in education in the United States.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FJohn%2DDewey&rut=8efc78c6bb29fd4110492d3acf176932391de28acf603017b56d9a780bbb2802",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:45:24.490989"
+    },
+    {
+      "topic": "john dewey",
+      "title": "Dewey, John | Internet Encyclopedia of Philosophy",
+      "content": "A comprehensive overview of the life and works of John Dewey, a leading American pragmatist philosopher and educator. Learn about his naturalistic theory of knowledge, his social and ethical views, his influence and legacy, and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fjohn%2Ddewey%2F&rut=c72d383178182c6f297be3a137a75653dc2ca8cae1cb65cb555120dfcea4efca",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:45:24.491026"
+    },
+    {
+      "topic": "john dewey",
+      "title": "John Dewey - Stanford Encyclopedia of Philosophy",
+      "content": "John Dewey (1859-1952) was one of American pragmatism's early founders, along with Charles Sanders Peirce and William James, and arguably the most prominent American intellectual for the first half of the twentieth century. Dewey's educational theories and experiments had global reach, his psychological theories influenced that growing science, and his writings about democratic theory ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fdewey%2F&rut=044783838156231f237cae938471f023af735b4d6958a5ba06b56424bec85ab8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:45:24.491071"
+    },
+    {
+      "topic": "john dewey",
+      "title": "John Dewey: Portrait of a Progressive Thinker - The National Endowment ...",
+      "content": "Learn how John Dewey, a philosopher and educator, influenced the education reforms of his time with his ideas of democracy, cooperation, and manual training. Explore his life, works, and legacy through the lens of the Pullman strike and the University of Chicago.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.neh.gov%2Farticle%2Fjohn%2Ddewey%2Dportrait%2Dprogressive%2Dthinker&rut=ff161680c6b1b96dcbc5b97691e4ea8231d4e5e2b3ee443746d4f077b5b904f1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:45:24.491107"
+    },
+    {
+      "topic": "determinant",
+      "title": "Determinant",
+      "content": "In mathematics, the determinant is a scalar-valued function of the entries of a square matrix. The determinant of a matrix A is commonly denoted det(A), det A, or |A|. Its value characterizes some properties of the matrix and the linear map represented, on a given basis, by the matrix. In particular, the determinant is nonzero if and only if the matrix is invertible and the corresponding linear map is an isomorphism. However, if the determinant is zero, the matrix is referred to as singular, meaning it does not have an inverse.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Determinant",
+      "confidence": 0.9,
+      "learned_at": "2026-01-02T10:53:56.646681"
+    },
+    {
+      "topic": "determinant",
+      "title": "Determinant - Wikipedia",
+      "content": "Determinant In mathematics, the determinant is a scalar -valued function of the entries of a square matrix. The determinant of a matrix A is commonly denoted det (A), det A, or |A|. Its value characterizes some properties of the matrix and the linear map represented, on a given basis, by the matrix.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDeterminant&rut=3627f36d6b3993ce8ba7ebe97168e50d0772e3d31d5bc0545934b54f9b93fb25",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:53:57.548535"
+    },
+    {
+      "topic": "determinant",
+      "title": "Determinant of a Matrix - Math is Fun",
+      "content": "Learn how to calculate the determinant of a square matrix using the Laplace expansion method. The determinant is a special number that helps find the inverse of a matrix and has other applications in linear algebra.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mathsisfun.com%2Falgebra%2Fmatrix%2Ddeterminant.html&rut=0dc72aa1bfb05d1ac27aa1a9ab4f27c8bc404a31571caa1181635d0f3d81a3a6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:53:57.548584"
+    },
+    {
+      "topic": "determinant",
+      "title": "4.1: Determinants- Definition - Mathematics LibreTexts",
+      "content": "Objectives Learn the definition of the determinant. Learn some ways to eyeball a matrix with zero determinant, and how to compute determinants of upper- and lower-triangular matrices. Learn the basic properties of the determinant, and how to apply them. Recipe: compute the determinant using row and column operations. Theorems: existence theorem, invertibility property, multiplicativity ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmath.libretexts.org%2FBookshelves%2FLinear_Algebra%2FInteractive_Linear_Algebra_(Margalit_and_Rabinoff)%2F04%253A_Determinants%2F4.01%253A_Determinants%2D_Definition&rut=c780ed77d891fbd5e72347e4b059c641a1f35ea4520fa63f8b010c77530cf18b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:53:57.548625"
+    },
+    {
+      "topic": "determinant",
+      "title": "Determinant -- from Wolfram MathWorld",
+      "content": "A determinant is a mathematical object that is useful for solving systems of linear equations. Learn how to compute, expand and manipulate determinants, and see their applications and interpretations in geometry and algebra.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmathworld.wolfram.com%2FDeterminant.html&rut=88cfd501e45eacd3a25094cb628e56991daad5eccb4085d6152722719f4c664b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:53:57.548662"
+    },
+    {
+      "topic": "determinant",
+      "title": "Determinant | Meaning, Properties, & Definition | Britannica",
+      "content": "Determinant, in linear and multilinear algebra, a value, denoted det A, associated with a square matrix A of n rows and n columns.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fdeterminant%2Dmathematics&rut=10acdd9774d5bdece49402361495b7b79f8f978bc4d116e97b74a2b083d1bd57",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:53:57.548697"
+    },
+    {
+      "topic": "differential calculus",
+      "title": "Differential calculus - Wikipedia",
+      "content": "Learn about the subfield of calculus that studies the rates of change of functions and their applications. Find definitions, formulas, examples, and history of differential calculus and its concepts such as derivative, tangent line, and differential.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDifferential_calculus&rut=88cc77e4006461172d26470f8ec47b2e8e6c3e6f98875ac8b2e0b9f9c0115a74",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:55:00.154914"
+    },
+    {
+      "topic": "differential calculus",
+      "title": "Introduction to Differential Calculus - GeeksforGeeks",
+      "content": "Differential calculus is a branch of calculus that deals with the study of rates of change of functions and the behaviour of these functions in response to infinitesimal changes in their independent variables.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmaths%2Fdifferential%2Dcalculus%2F&rut=53903819c16b2a3839da1341c78fe71f1929d5569625c87097eb1cc12a0c7b37",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:55:00.154984"
+    },
+    {
+      "topic": "differential calculus",
+      "title": "Differential Calculus - Formulas, Examples, Problems & PDF Download",
+      "content": "Learn differential calculus: key formulas, solved examples, tricks, and real-life uses. Master derivatives and tangents fast for JEE & board exams.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.vedantu.com%2Fmaths%2Fdifferential%2Dcalculus&rut=be6ad0fa60ad7ff3152fb371c91d0421b43dc8d8e8f883b699ac1bb2ac837826",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:55:00.155042"
+    },
+    {
+      "topic": "differential calculus",
+      "title": "Differential Calculus - Khan Academy",
+      "content": "Learn differential calculus\u2014limits, continuity, derivatives, and derivative applications.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.khanacademy.org%2Fmath%2Fcalculus&rut=64786cad8dfdec7a0d8e6a15db032c845863a4d7913eeef340ba1e09f45e0215",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:55:00.155563"
+    },
+    {
+      "topic": "differential calculus",
+      "title": "Calculus I - Differentials - Pauls Online Math Notes",
+      "content": "We defined two differentials earlier and here we're being asked to compute a differential. So, which differential are we being asked to compute? In this kind of problem we're being asked to compute the differential of the function. In other words, \\ (dy\\) for the first problem, \\ (dw\\) for the second problem and \\ (df\\) for the third problem.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Ftutorial.math.lamar.edu%2FClasses%2FCalcI%2FDifferentials.aspx&rut=c94aacff6437e5f607700d7beb7a5426e4bdfb966acff25a0533eff44363970b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:55:00.155625"
+    },
+    {
+      "topic": "differential equation",
+      "title": "Shop differential equation book - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on differential equation book at Amazon.com. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DCForAXLPGtoWYXZ6RpO4k%252D6BGj1MzRsd1N_dYvEyluNWM2OtczZs6EZJ9vdqKA77lqV%252DJ_alhbOw7_Isn4Q4b6q1ywFZrYXamWxQyohKv7EcN4q1TmxNS%252DrLpLHJCL0D3ESP6BXA2_%252DVxjohY3wAQZCBlWNMMz%252Dz79RW66tUIg8.eRWM2pinnlE%252D9iFZCB9OsA%26rut%3Da1191eb9356bf356aa08da1c39e59ce81fe9ecd8b258d1966a42cfe45a242620%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8SRVPud7Pr99bpcLzDyP1XzVUCUxCDPVHkttcgvdCNgnQCrLzhdD9o91OtBYFjUw8rBGeT_5%252D5GOR4GwqqH8Y2zXQRnCHnpAEyfjKZWB23I%252DdE1Yn2jn%252D8OTysyXy9RjYS%252DhOCMww5rvIIOo4esBO3erbZjVbreq%252D4OUxEQobQXAG48Z0gvvGBDSrXdE94BOhHaGmzkMfwmlquGhHG8JFM9gNBng%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGRpZmZlcmVudGlhbCUyYmVxdWF0aW9uJTJiYm9vayUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzJpem00bXVveV9iJTI2YWRncnBpZCUzZDEyMzgwNTExNjc0MzY4MjglMjZodmFkaWQlM2Q3NzM3ODMzMTc5MjA4MyUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGIlMjZodmJtdCUzZGJiJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NTAyJTI2aHZ0YXJnaWQlM2Rrd2QtNzczNzg1NDYwNDI3NzAlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDUxNTVfMTMzMDAwNzElMjZtY2lkJTNkNWUwYjEwZjQ3ODIxM2Q3MjhhZjFiYTRlMjQyN2Y0NjElMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZDYzZjk4NGM3YTE4NTFkNmRlY2I5ZWQ5ZmI1Njc0NDVi%2526rlid%253D63f984c7a1851d6decb9ed9fb567445b%26vqd%3D4%2D49309120249000527469472213547894228555%26iurl%3D%257B1%257DIG%253D0CD5CF08CCEC45B5BC34685B03AD3A14%2526CID%253D1A21A1D096BB604C0F99B705975F610B%2526ID%253DDevEx%252C5045.1&rut=533dfd3264fb8cf5d5f498538138236c2897f99e4f26754f3b4128e827d2bb8b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:56:35.443922"
+    },
+    {
+      "topic": "differential equation",
+      "title": "Differential equation - Wikipedia",
+      "content": "In mathematics, a differential equation is an equation that relates one or more unknown functions and their derivatives. [1] In applications, the functions generally represent physical quantities, the derivatives represent their rates of change, and the differential equation defines a relationship between the two. Such relations are common in mathematical models and scientific laws; therefore ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDifferential_equation&rut=0e1ec2e5547b522e9ec69acd5959b82f8ac5d92449097497ef05a430c378c676",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:56:35.444001"
+    },
+    {
+      "topic": "differential equation",
+      "title": "Differential Equations - Introduction - Math is Fun",
+      "content": "Learn what differential equations are, why they are useful, and how to solve them. See examples of differential equations for rabbits, compound interest, and simple harmonic motion.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mathsisfun.com%2Fcalculus%2Fdifferential%2Dequations.html&rut=ace7645e74e33851f4841557bdd9081d443a715fb60c6f409463bdf93957965d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:56:35.444056"
+    },
+    {
+      "topic": "differential equation",
+      "title": "8.1: Basics of Differential Equations - Mathematics LibreTexts",
+      "content": "A solution to a differential equation is a function y = f (x) that satisfies the differential equation when f and its derivatives are substituted into the equation. Go to this website to explore more on this topic. Some examples of differential equations and their solutions appear in Table 8 1 1.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmath.libretexts.org%2FCourses%2FMonroe_Community_College%2FMTH_211_Calculus_II%2FChapter_8%253A_Introduction_to_Differential_Equations%2F8.1%253A_Basics_of_Differential_Equations&rut=0b60aa4c5e6428c24b50a27ea398e9e8ca8bf5ab45050c3cf29774a6308c8f68",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:56:35.444113"
+    },
+    {
+      "topic": "differential equation",
+      "title": "Differential Equations | Khan Academy",
+      "content": "Learn differential equations including separable, exact, integrating factors, and homogeneous equations with interactive lessons and practice on Khan Academy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.khanacademy.org%2Fmath%2Fdifferential%2Dequations&rut=732ba74ace7fa04047d3bfb44c07daf46c157a69ea64edfc2fd1a8988506781d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:56:35.444164"
+    },
+    {
+      "topic": "partial differential equation",
+      "title": "Partial differential equation - Wikipedia",
+      "content": "Learn about the definition, types, applications and methods of partial differential equations (PDEs), which involve multivariable functions and their derivatives. Find examples, existence and uniqueness theorems, and related topics in mathematics and physics.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPartial_differential_equation&rut=1087bf362a8a9093cdf433d79ad9035dd86a2e39f39b52b352a3b04235447071",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:07.490591"
+    },
+    {
+      "topic": "partial differential equation",
+      "title": "Partial Differential Equation - GeeksforGeeks",
+      "content": "Partial Differential Equation contains an unknown function of two or more variables and its partial derivatives with respect to these variables. The order of partial differential equations is that of the highest-order derivatives. Such equations aid in the relationship of a function with several variables to their partial derivatives. They are extremely important in analyzing natural phenomena ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fengineering%2Dmathematics%2Fpartial%2Ddifferential%2Dequations%2F&rut=9de218877adddd6de3f01e0c659d541af14cb2f270fc277375a549df4f28ce73",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:07.490634"
+    },
+    {
+      "topic": "partial differential equation",
+      "title": "PDF Partial Differential Equations",
+      "content": "This book covers the basic theory and applications of partial differential equations (PDEs) in one and several dimensions. It includes topics such as wave, heat, Laplace, and Schrodinger equations, as well as separation of variables, Fourier series and transform, and self-similar solutions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.math.toronto.edu%2Fivrii%2FPDE%2Dtextbook%2FPDE%2Dtextbook.pdf&rut=860710225b1d6ca44dd9635297a1343a984fa4646de614871eb1c0def78b250f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:07.490663"
+    },
+    {
+      "topic": "partial differential equation",
+      "title": "PDF Partial Differential Equations - University of Chicago",
+      "content": "Some undergraduate textbooks on partial diferential equations focus on the more computational aspects of the subject: the computation of analytical solutions of equations and the use of the method of separation of variables. While these topics cannot be completely excluded from a first course on PDE at the undergraduate level, we think that it is most useful to focus on the theory of PDE ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.math.uchicago.edu%2F~luis%2Fpdenotes.pdf&rut=77d85b6ca4076cbab83e2314bb28d652fe1b8cc5ccd988c0b4d08e5d4a181d79",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:07.490696"
+    },
+    {
+      "topic": "partial differential equation",
+      "title": "Partial Differential Equations - Definition, Formula, Examples",
+      "content": "Partial differential equations consist of an unknown multivariable function and its partial derivatives. Understand partial differential equations using solved examples.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cuemath.com%2Fcalculus%2Fpartial%2Ddifferential%2Dequations%2F&rut=f94772f19b6a42f7d2a8b57265b74708300b2bd9ad2ffdf3154f4ea639084fa5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:07.490723"
+    },
+    {
+      "topic": "ordinary differential equation",
+      "title": "Shop Books - Amazon\u00ae Official Site - Save on Books",
+      "content": "Find deals and low prices on popular products at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DiCHRdY5H9TAtJk3NKwAHafujnpn90tY92VO%252DWbDlQ_yDE8PBlAZ7gfScEJ6WGbHYFcNlr5Rph0g8%252DAzkgst%252DukBuUdOm7lmOPoOq48B0ebVN96_NZopgnrQl0OAj6MSZQng6vX%252DruKrRUrOe3G0gKO2WBmRAWhZyUc5xlbRewDk.OHR%252D9pNU3%252D0sUOCaSQdBdQ%26rut%3D428a4567bd8e81f380cb89d2a168daf561abf50d3b7051cbcde44a1cfb09e9aa%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De88%252DY81TcVRzJpfy_sgGbb9DVUCUwhXE_1bqUDAKrK0hoBRJHjuch6gNCh8UaDnwMRg0XGIvNJmR9j4w0W99jHShRiYodZXYSE72sN6KLzc9WCtZedU3teY%252DNHqA2V0sSUzNk0sRw9gD6EZHlz1D9LcSLSsJurypzS6S7wDqIX1K%252DFW9VM5G3xYAoVbG3sUshNnhWGlJKbY_itrivBntW72pK4vDk%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJvb2tzJTJib24lMmJkaWZmZXJlbnRpYWwlMmJlcXVhdGlvbnMlMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF81cXI1NDZqaHVsX2IlMjZhZGdycGlkJTNkMTIzOTE1MDg3MjA3NDA0NSUyNmh2YWRpZCUzZDc3NDQ3MDY5ODUyNTQzJTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkYiUyNmh2Ym10JTNkYmIlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY1MDIlMjZodnRhcmdpZCUzZGt3ZC03NzQ0NzM2NTEyNjQwOCUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkNTEyOV8xMzMwMDM1MCUyNm1jaWQlM2Q4NThkYzI3MjRlMzAzZjc4YWRiMTQ2MDE4YzMyMzJmNCUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkMzQ2NjE0MmEyNTNjMWEyYWEzYzU3ZDcyMzAxZWJhNjU%2526rlid%253D3466142a253c1a2aa3c57d72301eba65%26vqd%3D4%2D14257037398247763314100797694285074390%26iurl%3D%257B1%257DIG%253D0E924051ED4547C49FF6193AA61A9B90%2526CID%253D28200323EA2E61550D1415F6EBFB6002%2526ID%253DDevEx%252C5045.1&rut=79701cda3a5c2e5a601cebf58762094c3d6e95be68d482ac70adda7f25474dba",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:39.332013"
+    },
+    {
+      "topic": "ordinary differential equation",
+      "title": "Ordinary Differential Equations",
+      "content": "From trusted sellers around the world. Buy what you love to read. Find millions of books, textbooks, rare and collectible items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dabebooks.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DSU8iqUaWHYOOeteux7taNBlEHEcVY7eo8i3pVuk8rhWDZsg4YuHWWtgoDWCjQb_BikqwgZMbpRMObqA_KW9NNdDIvEpKxa8JxbwSL9475i1W53tRttYRyHsu1wuT4PV0ztjEr2WMwf6O0%252DyxqJ5UH5ToWWQYRy0N_KGyCBCtLRc._o5vMUkz8sbL9GLggJjoug%26rut%3D508fde8e32d873ba8c9a9d57142f5b02b6a7e27437bccaecac2f5f98eca16a51%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8OyHLShZlSOj7wdLRw06_BTVUCUwoFKT6hZUMrnCNZzoUzaHFuBVm2hoKT40bb_XWhTpGeC5nbZili39xTKC_5lru5Roi1_SQ9wPX7OY5alLNPJbSVbnbX5N6XmUMD6edDwXyYkNrU3j9Fy9qFr61dR_3e7_ztYuplRTC2SaYcUVgS1KdXmpD%252DeidOQsg0K63ZD62ApLc7efcsi78C%252DsjdIIGpaI%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYWJlYm9va3MuY29tJTJmYm9vay1zZWFyY2glMmZ0aXRsZSUyZnRleHRib29rLW9yZGluYXJ5LWRpZmZlcmVudGlhbC1lcXVhdGlvbnMlMmZib29rJTJmJTNmcmVmXyUzZHBzX21zXzI2NzY5MTc2MSUyNmNtX21tYyUzZG1zbi1fLWNvbXVzX2RzYS1fLW5hYS1fLW5hYSUyNm1zY2xraWQlM2RmYTdmMjBiNWY4NzMxOTY3NjA5MjQ5ZWRlZDUxODczMQ%2526rlid%253Dfa7f20b5f8731967609249eded518731%26vqd%3D4%2D307499946554541465377415695637880643159%26iurl%3D%257B1%257DIG%253D0E924051ED4547C49FF6193AA61A9B90%2526CID%253D28200323EA2E61550D1415F6EBFB6002%2526ID%253DDevEx%252C5049.1&rut=1e355a56aeaae4e599e9bda9cf19d80f1ddc79b91227fdc4a1ebf6ffec22a4f3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:39.332094"
+    },
+    {
+      "topic": "ordinary differential equation",
+      "title": "Ordinary differential equation - Wikipedia",
+      "content": "A linear differential equation is a differential equation that is defined by a linear polynomial in the unknown function and its derivatives, that is an equation of the form where and are arbitrary differentiable functions that do not need to be linear, and are the successive derivatives of the unknown function of the variable . [4] Among ordinary differential equations, linear differential ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FOrdinary_differential_equation&rut=5db5b5c8e5a821d5e4e500613572dfdb22a37e9ddd1832d90c8edf73b032358f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:39.332166"
+    },
+    {
+      "topic": "ordinary differential equation",
+      "title": "Ordinary Differential Equations - GeeksforGeeks",
+      "content": "Ordinary Differential Equations (ODE) is the mathematical equation that describe how a function's rate of change relates to its current state. It involves a single independent variable and its derivatives. Ordinary Differential Equations Let's know more about Ordinary Differential Equations, it's types, order and degree of Ordinary differential equation in detail below. Ordinary Differential ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmaths%2Fordinary%2Ddifferential%2Dequations%2F&rut=e52481346cb6393d021519c8f75dd0eb30fc664fe3939901ebffab42ec002296",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:39.332242"
+    },
+    {
+      "topic": "ordinary differential equation",
+      "title": "PDF Ordinary Differential Equations",
+      "content": "A comprehensive introduction to ordinary differential equations, covering linear, nonlinear, variable coefficient, and second order equations. Includes methods such as power series, Laplace transform, and Fourier series, as well as applications and exercises.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fusers.math.msu.edu%2Fusers%2Fzwang%2Fode.pdf&rut=144779a7bf092ed6edbcb3ecd474d5ef3578ab68cbb082cdae19e961bd1e82e0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:39.332306"
+    },
+    {
+      "topic": "mini brains reveal clear brain signals of schizophrenia and bipolar disorder",
+      "title": "Mini brains reveal clear brain signals of schizophrenia and bipolar ...",
+      "content": "Mini brains reveal clear brain signals of schizophrenia and bipolar disorder Mini-brains in a dish are exposing the hidden electrical signatures of schizophrenia and bipolar disorder, bringing ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencedaily.com%2Freleases%2F2025%2F12%2F251228074451.htm&rut=87ea3b2f03286e9d29ba8fb53525ebbd31bac9db6928a81e5540c35f9d67c195",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:31:55.693063"
+    },
+    {
+      "topic": "mini brains reveal clear brain signals of schizophrenia and bipolar disorder",
+      "title": "'Mini-Brains' Reveal Hidden Signals of Schizophrenia And Bipolar Disorder",
+      "content": "'Mini-brains' grown in the lab allow scientists to study brain wiring without interfering with brains in living people, and now a new study has used these scaled-down models to identify neural signatures associated with schizophrenia and bipolar disorder.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencealert.com%2Fmini%2Dbrains%2Dreveal%2Dhidden%2Dsignals%2Dof%2Dschizophrenia%2Dand%2Dbipolar%2Ddisorder&rut=7e8f1c741a202c9f7efb11694d6cb0490ef7a524ba8de76b018239716d85176b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:31:55.693118"
+    },
+    {
+      "topic": "mini brains reveal clear brain signals of schizophrenia and bipolar disorder",
+      "title": "Mini brains show clear signals of schizophrenia and bipolar - MSN",
+      "content": "By capturing the electrical chatter of neurons in a dish, they are now revealing clear, measurable signatures of schizophrenia and bipolar disorder that traditional brain scans have struggled to ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.msn.com%2Fen%2Dus%2Fhealth%2Fother%2Fmini%2Dbrains%2Dshow%2Dclear%2Dsignals%2Dof%2Dschizophrenia%2Dand%2Dbipolar%2Far%2DAA1TiIg4&rut=e668951e879d361f632fdfbd6dfc030c26190f5e7b271f6353ccf9a1fe7bdd82",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:31:55.693164"
+    },
+    {
+      "topic": "mini brains reveal clear brain signals of schizophrenia and bipolar disorder",
+      "title": "Scientists Discover Neural Basis of Schizophrenia and Bipolar Disorder",
+      "content": "Machine learning decodes disease specific signals Kathuria's team created the organoids, simplified versions of brain tissue, by reprogramming blood and skin cells from people with schizophrenia, bipolar disorder, and from healthy volunteers into stem cells capable of forming brain-like structures.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fscitechdaily.com%2Fscientists%2Ddiscover%2Dneural%2Dbasis%2Dof%2Dschizophrenia%2Dand%2Dbipolar%2Ddisorder%2F&rut=863a273870682f165a535271c9cf4ed5fc8de3acd6d5f94b8afc5c584716a634",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:31:55.693213"
+    },
+    {
+      "topic": "differential topology",
+      "title": "Differential topology - Wikipedia",
+      "content": "Differential topology is the field of mathematics that deals with the smooth properties and topological properties of smooth manifolds. Learn about the classification, invariants, tools, and open problems of differential topology, as well as its relation to differential geometry and algebraic topology.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDifferential_topology&rut=bc0641aea679555db87127d20be35b302e99d0939a7f80c1f4c2773db7807978",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:03.207864"
+    },
+    {
+      "topic": "differential topology",
+      "title": "PDF Introduction to Differential Topology - Eth Z",
+      "content": "The chapter also discusses some applications of the Chern classes to questions in geometry and topology, and then gives an outlook to some deeper results in low-dimensional topology which go beyond the scope of the present book. The appendix explains some useful background material for diferential topology.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fpeople.math.ethz.ch%2F~salamon%2FPREPRINTS%2Fdifftop.pdf&rut=004a678386b22675818ecbe79cc10c3a9b4bcc4cc8ba29378b3e446bfe77c39a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:03.207962"
+    },
+    {
+      "topic": "differential topology",
+      "title": "Differential Topology | Springer Nature Link (formerly SpringerLink)",
+      "content": "In little over 200 pages, it presents a well-organized and surprisingly comprehensive treatment of most of the basic material in differential topology, as far as is accessible without the methods of algebraic topology. Newly introduced concepts are usually well motivated, and often the historical development of an idea is described.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978%2D1%2D4684%2D9449%2D5&rut=b22528d583561bda492a661acaebad3bffa261c01c3b4406aa664b88a257986a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:03.208044"
+    },
+    {
+      "topic": "differential topology",
+      "title": "PDF Differential Topology",
+      "content": "Manifolds and Maps The basic object in differential topology is a smooth manifold, as opposed to Ck, topological, real-analytic, complex analytic (etc.) manifolds. We'll start with a Calc III-esque study of surfaces in space, curves in R2+, before moving onto abstract manifolds without respect to any specific embedding. Viewing manifolds as embedded in Rn easessomepsychologicaldi\u52c5\u0208culties ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fweb.ma.utexas.edu%2Fusers%2Fabhishek%2Ffiles%2Fnotes%2FDifferential%2520Topology.pdf&rut=cc28f14cc9509dff1d8dd7d4b6960b5442b8524df3b52df9f6d9c6caa7b284bf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:03.208752"
+    },
+    {
+      "topic": "differential topology",
+      "title": "PDF Notes on MATH 591 (Differential Topology)",
+      "content": "A comprehensive set of notes on differential topology, covering topics such as manifolds, vector bundles, Lie groups, differential forms, and integration. The notes include definitions, theorems, examples, exercises, and references.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmath.uchicago.edu%2F~alephnil%2Fnotes%2FMATH%2D591%2Dnotes.pdf&rut=21fbddd5968499d1da5d377d9808cec5c29b83e88721a1710858e5227a25d4fc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:03.208840"
+    },
+    {
+      "topic": "differential geometry",
+      "title": "Shop differential geometry - Amazon.com Official Site",
+      "content": "Find deals and low prices on differential geometry at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DeVlnNGmlg4pfgI1rGrGb6srH595ELyztKRm__BGoqnJolOVcYw2WTFUp8prLMlTTNId84qs299OFtTFzG%252D1xw5pOsxxbMePINJvhoL9rAtjeM6cMySOLy8eq64za9Cy8oyb4ksAvOxcg3AaA_YCD2mvVvN137MnDHlut8WBy49s.2H1FVUG2aK90yr2JgjSHMA%26rut%3D3c782bdda65edde3819cf3702941ca09d2edc971493935b7aba1f87a7536a7c9%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8UQTLaakj1dtFMbgRcFGL6jVUCUzLmbfxVoMdOvaZKYdG1aIZdT9kPizAGdd_Hl7eBfx2OnkXogHvMXyXWq10GG0QAAA7ZRvxPK1M0tfTLGHtsoTi2i1G%252D6BMmJ2dUhShZE4wRZITFI11IfcPSebHBpqTmViW7M57xwQ4KsEVHQ3mFFzfaHD68y7IdAdiluZokQRI3xA7tP%252DLBGF5bIEzAOrbyMQ%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGRpZmZlcmVudGlhbCUyYmdlb21ldHJ5JTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfMTBkOW00cXc2eV9wJTI2YWRncnBpZCUzZDEyMzQ3NTE4ODQyMjg5ODUlMjZodmFkaWQlM2Q3NzE3MjE1ODQzNzE2MSUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGUlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NTU5JTI2aHZ0YXJnaWQlM2Rrd2QtNzcxNzIyNTc5Mzc4MjElM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDUxNjBfMTMyOTk5MjYlMjZtY2lkJTNkYTg5NzJhMDU0M2ZkMzVmMDhiMTU3MDJhMzI2NGMxZWQlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZGI1NDM0OGU4MTdiYTEwNDMwYzJiMjFiMDA5NWY5MGYy%2526rlid%253Db54348e817ba10430c2b21b0095f90f2%26vqd%3D4%2D148839845557317868896185108715671546460%26iurl%3D%257B1%257DIG%253DA953C568E3824B0D9D235CFC32434BFB%2526CID%253D277F3601C71467892FA020D4C6C166D8%2526ID%253DDevEx%252C5045.1&rut=4c484c7eb4b6cf7dac706315bd36716e456106c7e6d4008ca1ce323badd138b4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:39:17.737543"
+    },
+    {
+      "topic": "differential geometry",
+      "title": "Differential Geometry - Textbook Differential",
+      "content": "Shop at AbeBooks\u00ae Marketplace. Search from 200+ million listings. Secure transaction. Price comparison. Worldwide inventory.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dabebooks.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D6yd2QflQIs6w9Y4Q8Km8C9R4G4t_8efLwHnfKDWyLyCLQvGaE9m0324gsAzysc6dRIrrwcgksxHy7PhQnEDARxjv5ARcJw0C8oZLPYgKoE7w6GC5wei5StQVaYb0MDfALNArXJqE4LwIy_sdHTs%252D2UcgwjR%252DNe3gZhh9b6sEy4A.dSVPZw4hkkCR_BgwzHr3Uw%26rut%3D115cf0432dfd8369d8b6d661ea561a5eba901dc366d0b1fa9d78672dc9999e36%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8bDS6YmfrJXp8TnDy4ie6qjVUCUzvdqNnDQ_B4sTvTeLCYC2yK1SplIEjUprTC1aIUyoBMV2rPYKyOFhv694mzkpANNBICcAoeAai_te2fKzZWy3CLlRGzOl4Y4dPIZ2eyxTfbe0ABFnauNdP3YTIGd9rFRXAGLgYZ9FuOlVcL4zNq8ijneQKdXI_tdVNIWV80N8HjsZmq5az6ACfqOtOgO0uuBU%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYWJlYm9va3MuY29tJTJmYm9vay1zZWFyY2glMmZ0aXRsZSUyZnRleHRib29rLWRpZmZlcmVudGlhbC1nZW9tZXRyeSUyZiUzZnJlZl8lM2Rwc19tc18yNjc2OTE3NjElMjZjbV9tbWMlM2Rtc24tXy1jb211c19kc2EtXy1uYWEtXy1uYWElMjZtc2Nsa2lkJTNkZDZkNmFiZDJiYTNjMWQ0MDZjNWRjMjhhYTRkOTJiZmI%2526rlid%253Dd6d6abd2ba3c1d406c5dc28aa4d92bfb%26vqd%3D4%2D118542357180954820130477012134677705313%26iurl%3D%257B1%257DIG%253DA953C568E3824B0D9D235CFC32434BFB%2526CID%253D277F3601C71467892FA020D4C6C166D8%2526ID%253DDevEx%252C5049.1&rut=7963091c66482c5c0bdbfa8cb98480ce3ceb95e8d324c7fbca398f42f701b57e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:39:17.737663"
+    },
+    {
+      "topic": "differential geometry",
+      "title": "Differential geometry - Wikipedia",
+      "content": "Differential geometry is a mathematical discipline that studies the geometry of smooth shapes and smooth spaces, otherwise known as smooth manifolds. It uses the techniques of vector calculus, linear algebra and multilinear algebra.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDifferential_geometry&rut=a0fbac7b75146b60a5333ec94fad172e7cfa48ffcab247d1adb5616c2c151c1c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:39:17.737736"
+    },
+    {
+      "topic": "differential geometry",
+      "title": "PDF Lecture 1: What is differential geometry? - people.math.harvard.edu",
+      "content": "The focus of differential geometry is to investigate relations between local quan-tities and global properties. An important example to observe what happens if curvature is integrated up.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fpeople.math.harvard.edu%2F~knill%2Fteaching%2Fmath136_2025%2Fhandouts%2Flecture01.pdf&rut=77e78c3a64cf64eca1f619e4d7f6f6e9587dbcecddf209f164e9285a1e99b2e1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:39:17.737806"
+    },
+    {
+      "topic": "differential geometry",
+      "title": "Differential Geometry | Mathematics | MIT OpenCourseWare",
+      "content": "This course is an introduction to differential geometry. The course itself is mathematically rigorous, but still emphasizes concrete aspects of geometry, centered on the notion of curvature.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Focw.mit.edu%2Fcourses%2F18%2D950%2Ddifferential%2Dgeometry%2Dfall%2D2008%2F&rut=0333e18716df0b25acc5eee738c9b7f73139d5e1f7e5eea9561daa84ea5ef5da",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:39:17.737876"
+    },
+    {
+      "topic": "standard deviation",
+      "title": "Standard deviation - Wikipedia",
+      "content": "The standard deviation of a random variable, sample, statistical population, data set, or probability distribution is the square root of its variance. (For a finite population, variance is the average of the squared deviations from the mean.)",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FStandard_deviation&rut=945e39b158b31d67844d2300ee4c15613e12b48992a4c4c3d4bb82a267d7bfed",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:48:46.624594"
+    },
+    {
+      "topic": "standard deviation",
+      "title": "Standard Deviation and Variance - Math is Fun",
+      "content": "Deviation just means how far from the normal. The Standard Deviation is a measure of how spreadout numbers are.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mathsisfun.com%2Fdata%2Fstandard%2Ddeviation.html&rut=88413f7a98eca8974e0baa9b23d194ddf46bf6cf6aea90fc709fa3dbc4565200",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:48:46.624689"
+    },
+    {
+      "topic": "standard deviation",
+      "title": "Standard Deviation Formula and Uses, vs. Variance - Investopedia",
+      "content": "Standard deviation is a statistical measure of how far data points are from the mean of a set. It is used in finance to assess the risk and volatility of investments, and can be calculated by taking the square root of the variance.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.investopedia.com%2Fterms%2Fs%2Fstandarddeviation.asp&rut=0c410e65df7b3db959d28ebbd412df31db819aafeed030bf6da1130559f787aa",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:48:46.624763"
+    },
+    {
+      "topic": "standard deviation",
+      "title": "How to Calculate Standard Deviation: 12 Steps (with Pictures)",
+      "content": "Standard deviation tells you how spread out the numbers are in a sample. Once you know what numbers and equations to use, calculating standard deviation is simple! Look at your data set. This is a crucial step in any type of statistical...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.wikihow.com%2FCalculate%2DStandard%2DDeviation&rut=873ed13371d22785a7d2653d515bf147b4e9d84b265b2456220e3001e5edf51a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:48:46.624838"
+    },
+    {
+      "topic": "standard deviation",
+      "title": "How to Calculate Standard Deviation (Guide) | Calculator & Examples",
+      "content": "Learn what standard deviation is, how to calculate it for populations and samples, and how to use it to measure variability. Find formulas, examples, calculator, and tips for normal and non-normal distributions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.scribbr.com%2Fstatistics%2Fstandard%2Ddeviation%2F&rut=c94a78ce9e31eabfbb58962cf0f64d92ec505b8819d6ea7a6034eb7cfca6decf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:48:46.624908"
+    },
+    {
+      "topic": "normal distribution",
+      "title": "Normal distribution - Wikipedia",
+      "content": "The simplest case of a normal distribution is known as the standard normal distribution or unit normal distribution. This is a special case when and , and it is described by this probability density function (or density): [11] The variable \u2060 \u2060 has a mean of 0 and a variance and standard deviation of 1. The density has its peak at and inflection points at and \u2060 \u2060. Although the density ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNormal_distribution&rut=ba9d188d7c39884f6d538d38cf19e550725db29b9d381addda9e6cc5f7295abb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:49:21.555682"
+    },
+    {
+      "topic": "normal distribution",
+      "title": "Normal distribution | Definition, Examples, Graph, & Facts | Britannica",
+      "content": "Normal distribution, the most common distribution function for independent, randomly generated variables. Its familiar bell-shaped curve is ubiquitous in statistical reports, from survey analysis and quality control to resource allocation. Learn more about normal distribution in this article.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fnormal%2Ddistribution&rut=7d8fc691a19b490ebfc12345d6a2e534fcefe01acb9d4391c5b45047bc1c6f15",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:49:21.555782"
+    },
+    {
+      "topic": "normal distribution",
+      "title": "Lesson 16: Normal Distributions - Statistics Online",
+      "content": "Learn how to define, characterize and calculate normal probabilities for a continuous random variable. Explore the standard normal distribution, the Empirical Rule and the relationship between normal and chi-square distributions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fonline.stat.psu.edu%2Fstat414%2Fbook%2Fexport%2Fhtml%2F713&rut=1e3e3e3b7bce4aa08837064d11337bc46ad7ef23264dc18b59a6828bf24bf609",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:49:21.555858"
+    },
+    {
+      "topic": "normal distribution",
+      "title": "Normal Distribution - Math is Fun",
+      "content": "Learn what a normal distribution is, how to recognize it, and how to use it to analyze data. Find out how to calculate mean, standard deviation, standard score, and z-score for normal and non-normal data.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mathsisfun.com%2Fdata%2Fstandard%2Dnormal%2Ddistribution.html&rut=28cc47fc38dc15402171e0985c9627aac458788d6817a7623578557e06f1265a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:49:21.555929"
+    },
+    {
+      "topic": "normal distribution",
+      "title": "Normal distribution | Properties, proofs, exercises - Statlect",
+      "content": "Learn about the normal distribution, a continuous probability distribution that plays a central role in probability theory and statistics. Find out its main characteristics, how to compute its parameters, and how to plot its density functions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.statlect.com%2Fprobability%2Ddistributions%2Fnormal%2Ddistribution&rut=ff0da15314c9590c01415c50ff7a02d7f472bd8680fda671b6320d00614d1b69",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:49:21.556000"
+    },
+    {
+      "topic": "binomial distribution",
+      "title": "Binomial distribution - Wikipedia",
+      "content": "Binomial distribution for p = 0.5 with n and k as in Pascal's triangle The probability that a ball in a Galton box with 8 layers (n = 8) ends up in the central bin (k = 4) is 70/256. In probability theory and statistics, the binomial distribution with parameters n and p is the discrete probability distribution of the number of successes in a sequence of n independent experiments, each asking a ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBinomial_distribution&rut=2a127770999262c2a20b943b71b533bc9c639061b0e75f7fa73859a90d692fb9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:52:39.877717"
+    },
+    {
+      "topic": "binomial distribution",
+      "title": "The Binomial Distribution - Math is Fun",
+      "content": "Learn how to calculate the probability of getting a certain number of successes in a series of trials with two possible outcomes. See examples, formulas, graphs and applications of the binomial distribution.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mathsisfun.com%2Fdata%2Fbinomial%2Ddistribution.html&rut=2e3971768c7ea731812c45ab07467b8c4e7c022b6df1a6b9360bc56f2d9cc3c2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:52:39.877762"
+    },
+    {
+      "topic": "binomial distribution",
+      "title": "Binomial distribution - Student Academic Success",
+      "content": "Learn how to model situations with two possible outcomes using the binomial distribution formula. Find examples, worked problems, graphs, and check your understanding with interactive questions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.monash.edu%2Fstudent%2Dacademic%2Dsuccess%2Fmathematics%2Fprobability%2Dand%2Ddistributions%2Fbinomial%2Ddistribution&rut=6fcb246306670799f8a2edd01d8dfbced381a7143c84c578268815381fe05430",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:52:39.877792"
+    },
+    {
+      "topic": "binomial distribution",
+      "title": "Binomial Distribution in Probability - GeeksforGeeks",
+      "content": "Binomial Distribution is a probability distribution used to model the number of successes in a fixed number of independent trials, where each trial has only two possible outcomes: success or failure. This distribution is useful for calculating the probability of a specific number of successes in scenarios like flipping coins, quality control, or survey predictions. Example: Imagine we toss a ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmaths%2Fbinomial%2Ddistribution%2F&rut=eae97afb7c2480e2bf688fc46de14b696f65622d23b7db38aa4b6b1f3d72524a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:52:39.877824"
+    },
+    {
+      "topic": "binomial distribution",
+      "title": "The Concise Guide to Binomial Distribution - Statology",
+      "content": "Phitter makes working with the binomial distribution and other statistical distributions straightforward and accessible, even for those new to statistical analysis. Phitter's intuitive interface allows you to quickly test distribution fits, visualize results, and make data-driven decisions without complex manual calculations.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.statology.org%2Fthe%2Dconcise%2Dguide%2Dto%2Dbinomial%2Ddistribution%2F&rut=05be507448dd1b0bf02f2fb75a4d15998017c33ecc8a0e0e6deac23b692ffc72",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:52:39.877861"
+    },
+    {
+      "topic": "poisson distribution",
+      "title": "Poisson distribution - Wikipedia",
+      "content": "Learn about the Poisson distribution, a discrete probability distribution that models the number of events occurring in a fixed interval with a constant mean rate. Find out its history, definitions, examples, assumptions, and applications in various fields.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPoisson_distribution&rut=f5b8176180dbac925b7e5089947d49196574627826bc3bb21c423db69a0a7606",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:53:11.275710"
+    },
+    {
+      "topic": "poisson distribution",
+      "title": "Poisson Distribution - GeeksforGeeks",
+      "content": "The Poisson distribution is a discrete probability distribution that calculates the likelihood of a certain number of events happening in a fixed interval of time, assuming the events occur independently. Example: Emails Per Hour If you receive emails randomly at an average rate of 5 per hour (\u03bb = 5), the Poisson distribution can tell you the probability of receiving 0 emails, exactly 3 ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmaths%2Fpoisson%2Ddistribution%2F&rut=3d4163303d88e1efd5c6a6eb08af0858286ba60ec0ab7341aaff67a570beb3fc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:53:11.276756"
+    },
+    {
+      "topic": "poisson distribution",
+      "title": "Poisson distribution | Formula, Example, Definition, Mean, & Variance ...",
+      "content": "Poisson distribution, in statistics, a distribution function useful for characterizing events with very low probabilities. French mathematician Simeon-Denis Poisson developed this function to describe the number of times a gambler would win a rarely won game of chance in a large number of tries.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2FPoisson%2Ddistribution&rut=47ae5193f9737498d9f434f85248bbb19cea56b38e3fa8448866627f75182184",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:53:11.276845"
+    },
+    {
+      "topic": "poisson distribution",
+      "title": "The Poisson Distribution: From Basics to Real-World Examples",
+      "content": "In this article, we'll learn about the Poisson distribution, the math behind it, how to work with it in Python, and explore real-world applications.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.statology.org%2Fthe%2Dpoisson%2Ddistribution%2Dfrom%2Dbasics%2Dto%2Dreal%2Dworld%2Dexamples%2F&rut=d1f971c24593a2746ea4b5c696d1904c5599ba6c13875ab8e64ab156684f4651",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:53:11.276920"
+    },
+    {
+      "topic": "poisson distribution",
+      "title": "Poisson Distribution | Brilliant Math & Science Wiki",
+      "content": "Learn about the Poisson distribution, a discrete probability distribution of the number of events occurring in a given time period. Find out the conditions, properties, and applications of this distribution, and see examples and problems.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbrilliant.org%2Fwiki%2Fpoisson%2Ddistribution%2F&rut=3933ef4055122603a2a07cd31a569181fe639e36f45e785795d701b3193df54d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:53:11.277008"
     }
   ],
-  "last_updated": "2025-11-28T21:22:27.748249"
+  "last_updated": "2026-01-02T11:53:11.303109"
 }

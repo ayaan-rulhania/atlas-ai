@@ -8,6 +8,84 @@ import re
 from typing import Any, Dict, List, Optional
 
 from services import get_response_cleaner
+from collections import defaultdict
+import re
+
+
+def _verify_facts_across_sources(knowledge_items: List[Dict[str, Any]]) -> Dict[str, Dict]:
+    """
+    Verify facts across multiple sources to identify agreements and conflicts.
+    Returns a dictionary with fact verification results.
+    """
+    if len(knowledge_items) < 2:
+        return {}
+
+    # Extract key facts from each source
+    source_facts = {}
+    for item in knowledge_items:
+        source = item.get('source', 'unknown')
+        content = item.get('content', '')
+
+        # Extract potential facts (sentences with key information)
+        sentences = re.split(r'[.!?]+', content)
+        facts = []
+
+        for sentence in sentences:
+            sentence = sentence.strip()
+            if len(sentence) < 20:
+                continue
+
+            # Look for sentences that contain factual information
+            if any(indicator in sentence.lower() for indicator in [
+                ' is ', ' are ', ' was ', ' were ', ' has ', ' have ', ' contains ',
+                ' consists ', ' includes ', ' means ', ' refers to ', ' represents ',
+                ' developed ', ' created ', ' invented ', ' founded ', ' established '
+            ]):
+                facts.append(sentence)
+
+        source_facts[source] = facts[:3]  # Limit to top 3 facts per source
+
+    # Find agreements and conflicts
+    verification_results = {}
+    all_facts = []
+    for facts in source_facts.values():
+        all_facts.extend(facts)
+
+    # Simple similarity-based verification
+    for fact in all_facts:
+        fact_lower = fact.lower()
+        similar_facts = []
+        conflicting_facts = []
+
+        for other_fact in all_facts:
+            if other_fact == fact:
+                continue
+
+            other_lower = other_fact.lower()
+
+            # Check for similarity (basic word overlap)
+            fact_words = set(fact_lower.split())
+            other_words = set(other_lower.split())
+            overlap = len(fact_words & other_words)
+
+            if overlap >= 3:  # Significant overlap
+                # Check for potential conflicts (different numbers, dates, etc.)
+                fact_nums = re.findall(r'\d+', fact)
+                other_nums = re.findall(r'\d+', other_fact)
+
+                if fact_nums != other_nums and fact_nums and other_nums:
+                    conflicting_facts.append(other_fact)
+                else:
+                    similar_facts.append(other_fact)
+
+        if similar_facts or conflicting_facts:
+            verification_results[fact] = {
+                'agreements': len(similar_facts),
+                'conflicts': conflicting_facts,
+                'confidence': len(similar_facts) / max(1, len(similar_facts) + len(conflicting_facts))
+            }
+
+    return verification_results
 
 
 def clean_promotional_text(text: Optional[str]) -> Optional[str]:
@@ -67,26 +145,68 @@ def synthesize_knowledge(
     if not knowledge_items:
         return None
 
-    # Diversify by source so multi-engine research doesn't echo one snippet repeatedly.
-    diversified: List[Dict[str, Any]] = []
+    # Enhanced source prioritization and diversification
+    source_priority = {
+        'wikipedia': 10,  # Highest priority - authoritative, structured knowledge
+        'gem_source': 9,  # User-curated sources
+        'brain': 8,       # Learned knowledge
+        'duckduckgo': 6,  # Good general search
+        'google': 5,      # Standard web search
+        'bing': 4,        # Additional web search
+        'unknown': 1      # Lowest priority
+    }
+
+    # Group by source and apply prioritization
+    prioritized_items: List[Dict[str, Any]] = []
     by_source: Dict[str, List[Dict[str, Any]]] = {}
+
     for k in knowledge_items:
         src = (k.get("source") or "unknown").strip().lower()
+        # Normalize source names
+        if 'wikipedia' in src:
+            src = 'wikipedia'
+        elif 'gem' in src:
+            src = 'gem_source'
+        elif 'brain' in src:
+            src = 'brain'
+        elif 'duck' in src:
+            src = 'duckduckgo'
+        elif 'google' in src:
+            src = 'google'
+        elif 'bing' in src:
+            src = 'bing'
+
         by_source.setdefault(src, []).append(k)
-    # Interleave sources (stable order by first appearance)
-    source_order = list(dict.fromkeys([(k.get("source") or "unknown").strip().lower() for k in knowledge_items]))
-    for i in range(0, 3):  # up to 3 rounds
-        for src in source_order:
-            bucket = by_source.get(src) or []
-            if i < len(bucket):
-                diversified.append(bucket[i])
-    if diversified:
-        knowledge_items = diversified
+
+    # Sort sources by priority and diversify within each priority level
+    sorted_sources = sorted(by_source.keys(), key=lambda s: source_priority.get(s, 1), reverse=True)
+
+    # Take top 2-3 items from highest priority sources, then 1-2 from lower priority
+    for i, src in enumerate(sorted_sources):
+        bucket = by_source[src]
+        # Sort bucket by content length (prefer more detailed info)
+        bucket.sort(key=lambda x: len(x.get('content', '')), reverse=True)
+
+        if i < 2:  # Top 2 priority sources get 2-3 items each
+            prioritized_items.extend(bucket[:3])
+        else:  # Lower priority sources get 1-2 items
+            prioritized_items.extend(bucket[:2])
+
+    knowledge_items = prioritized_items[:10]  # Limit to top 10 for processing
 
     response_cleaner = get_response_cleaner()
     intent = query_intent.get('intent', 'general') if query_intent else 'general'
     entity = query_intent.get('entity', '') if query_intent else ''
     is_person_query = query_intent.get('is_person_query', False) if query_intent else False
+
+    # Detect query types that benefit from structured synthesis
+    query_lower = query.lower()
+    is_comparison = any(word in query_lower for word in ['vs', 'versus', 'compare', 'comparison', 'difference', 'different'])
+    is_relationship = any(word in query_lower for word in ['relationship', 'connection', 'between', 'how does', 'how do'])
+    is_technical = any(word in query_lower for word in ['how to', 'tutorial', 'guide', 'steps', 'process'])
+
+    # Cross-source fact verification
+    fact_verification = _verify_facts_across_sources(knowledge_items) if len(knowledge_items) > 1 else {}
 
     if intent == 'biographical' or is_person_query:
         return response_cleaner.synthesize_biographical_response(entity, knowledge_items)
@@ -97,16 +217,11 @@ def synthesize_knowledge(
     key_points: List[str] = []
     definitions: List[str] = []
     examples: List[str] = []
+    relationships: List[str] = []  # For relationship/comparison queries
+    steps: List[str] = []  # For how-to/technical queries
 
-    # ENHANCED: Process gem sources and other knowledge items intelligently
-    # Prioritize gem sources if present
-    gem_items = [k for k in knowledge_items if k.get("source") == "gem_source" or k.get("priority") == 1]
-    other_items = [k for k in knowledge_items if k.get("source") != "gem_source" and k.get("priority") != 1]
-    
-    # Process gem sources first, then others
-    items_to_process = gem_items[:5] + other_items[:5]  # Up to 5 gem + 5 other
-    if not items_to_process:
-        items_to_process = knowledge_items[:8]  # Fallback
+    # Enhanced processing based on query type
+    items_to_process = knowledge_items[:8]  # Use our prioritized list
     
     for item in items_to_process:
         content = item.get('content', '').strip()
@@ -211,44 +326,106 @@ def synthesize_knowledge(
                 if not common_words and (not entity or entity_lower not in sentence_lower):
                     continue  # Skip irrelevant sentences from gem sources
 
-            if any(word in sentence_lower for word in ['is', 'are', 'was', 'were', 'means', 'refers to', 'defined as']):
-                if sentence not in definitions:
-                    definitions.append(sentence)
-            elif any(word in sentence_lower for word in ['example', 'for instance', 'such as', 'like', 'including']):
-                if sentence not in examples:
-                    examples.append(sentence)
-            else:
-                if sentence not in key_points:
-                    key_points.append(sentence)
+            # Enhanced classification based on query type and content
+            confidence_boost = 0
+            if sentence in fact_verification:
+                confidence_boost = fact_verification[sentence].get('confidence', 0)
 
+            # Special handling for different query types
+            if is_comparison or is_relationship:
+                # Look for relationship indicators
+                if any(word in sentence_lower for word in [
+                    'relationship', 'connection', 'between', 'compared to', 'versus', 'vs',
+                    'difference', 'similar', 'unlike', 'whereas', 'while'
+                ]):
+                    if sentence not in relationships:
+                        relationships.append((sentence, confidence_boost))
+                    continue
+
+            if is_technical:
+                # Look for step-by-step or process indicators
+                if any(word in sentence_lower for word in [
+                    'first', 'then', 'next', 'after', 'finally', 'step', 'process',
+                    'begin by', 'start with', 'follow these'
+                ]):
+                    if sentence not in steps:
+                        steps.append((sentence, confidence_boost))
+                    continue
+
+            # Standard classification with confidence weighting
+            if any(word in sentence_lower for word in ['is', 'are', 'was', 'were', 'means', 'refers to', 'defined as']):
+                if sentence not in [s[0] if isinstance(s, tuple) else s for s in definitions]:
+                    definitions.append((sentence, confidence_boost))
+            elif any(word in sentence_lower for word in ['example', 'for instance', 'such as', 'like', 'including']):
+                if sentence not in [s[0] if isinstance(s, tuple) else s for s in examples]:
+                    examples.append((sentence, confidence_boost))
+            else:
+                if sentence not in [s[0] if isinstance(s, tuple) else s for s in key_points]:
+                    key_points.append((sentence, confidence_boost))
+
+    # Enhanced response synthesis with confidence weighting and query-type awareness
     response_parts: List[str] = []
 
-    if definitions:
-        main_definition = definitions[0]
+    # Sort by confidence for better quality
+    definitions = sorted(definitions, key=lambda x: x[1] if isinstance(x, tuple) else 0, reverse=True)
+    key_points = sorted(key_points, key=lambda x: x[1] if isinstance(x, tuple) else 0, reverse=True)
+    examples = sorted(examples, key=lambda x: x[1] if isinstance(x, tuple) else 0, reverse=True)
+    relationships = sorted(relationships, key=lambda x: x[1] if isinstance(x, tuple) else 0, reverse=True)
+    steps = sorted(steps, key=lambda x: x[1] if isinstance(x, tuple) else 0, reverse=True)
+
+    # Handle different query types with structured responses
+    if is_comparison or is_relationship:
+        # Structured comparison/relationship response
         if entity:
-            entity_lower = entity.lower()
-            main_def_lower = main_definition.lower()
-
-            if main_def_lower.startswith(entity_lower):
-                response_parts.append(f"**{entity.title()}** {main_definition[len(entity):]}")
-            elif entity_lower in main_def_lower[:50]:
-                response_parts.append(main_definition)
-            else:
-                response_parts.append(f"**{entity.title()}** is {main_definition}")
+            response_parts.append(f"**{entity.title()}**:")
         else:
-            response_parts.append(main_definition)
+            response_parts.append(f"**{query}**:")
 
-    if key_points:
+        for rel, conf in relationships[:3]:
+            response_parts.append(f"• {rel}")
+        for point, conf in key_points[:2]:
+            response_parts.append(f"• {point}")
+
+    elif is_technical:
+        # Structured how-to/technical response
+        if entity:
+            response_parts.append(f"**{entity.title()}**:")
+
+        # Add steps in order
+        for step, conf in steps[:5]:
+            response_parts.append(f"• {step}")
+        for point, conf in key_points[:2]:
+            response_parts.append(f"• {point}")
+
+    else:
+        # Standard definition + key points response
         if definitions:
-            response_parts.append(" " + key_points[0])
-        else:
-            response_parts.append(key_points[0])
+            main_definition = definitions[0][0] if isinstance(definitions[0], tuple) else definitions[0]
+            if entity:
+                entity_lower = entity.lower()
+                main_def_lower = main_definition.lower()
 
-        if len(key_points) > 1:
-            response_parts.append(" " + key_points[1])
+                if main_def_lower.startswith(entity_lower):
+                    response_parts.append(f"**{entity.title()}** {main_definition[len(entity):]}")
+                elif entity_lower in main_def_lower[:50]:
+                    response_parts.append(main_definition)
+                else:
+                    response_parts.append(f"**{entity.title()}** is {main_definition}")
+            else:
+                response_parts.append(main_definition)
 
-    if examples and response_parts:
-        response_parts.append(f"\\n\\nFor example, {examples[0]}")
+        if key_points:
+            if definitions:
+                response_parts.append(" " + (key_points[0][0] if isinstance(key_points[0], tuple) else key_points[0]))
+            else:
+                response_parts.append(key_points[0][0] if isinstance(key_points[0], tuple) else key_points[0])
+
+            if len(key_points) > 1:
+                response_parts.append(" " + (key_points[1][0] if isinstance(key_points[1], tuple) else key_points[1]))
+
+        if examples and response_parts:
+            example_text = examples[0][0] if isinstance(examples[0], tuple) else examples[0]
+            response_parts.append(f"\\n\\nFor example, {example_text}")
 
     synthesized = "".join(response_parts)
     

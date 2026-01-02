@@ -102,25 +102,64 @@ def _cluster_by_source(items: List[Dict]) -> Dict[str, List[Dict]]:
 def _diversity_sample(items: List[Tuple[float, Dict]], per_source: int = 2, limit: int = 6) -> List[Dict]:
     clusters = _cluster_by_source([itm for _, itm in items])
     selected: List[Dict] = []
-    # First pass: take top per source respecting original order
+
+    # Enhanced diversity sampling with better source balancing
+    # Sort sources by average score to prioritize high-quality sources
+    source_scores = {}
     for src, members in clusters.items():
-        take = members[:per_source]
+        if members:
+            avg_score = sum(score for score, _ in [(s, i) for s, i in items if i in members]) / len(members)
+            source_scores[src] = avg_score
+
+    sorted_sources = sorted(source_scores.keys(), key=lambda s: source_scores[s], reverse=True)
+
+    # First pass: take top items from highest-scoring sources
+    for src in sorted_sources:
+        members = clusters[src]
+        # Sort members by score within each source
+        members_with_scores = [(score, item) for score, item in items if item in members]
+        members_with_scores.sort(key=lambda x: x[0], reverse=True)
+        take = [item for _, item in members_with_scores[:per_source]]
         selected.extend(take)
         if len(selected) >= limit:
             return selected[:limit]
-    # Second pass: fill remainder from global ranking
-    if len(selected) < limit:
-        for _, item in items:
+
+    # Second pass: fill remainder from global ranking, ensuring diversity
+    remaining_needed = limit - len(selected)
+    if remaining_needed > 0:
+        used_sources = {item.get('source', 'unknown') for item in selected}
+        for score, item in items:
             if item not in selected:
-                selected.append(item)
-            if len(selected) >= limit:
-                break
+                item_source = item.get('source', 'unknown')
+                # Prefer sources not yet represented, but don't exclude good content
+                if item_source not in used_sources or len(used_sources) >= 3:
+                    selected.append(item)
+                    used_sources.add(item_source)
+                    remaining_needed -= 1
+                    if remaining_needed <= 0:
+                        break
+
     return selected[:limit]
 
 
 def _relationship_boost(query_intent: Dict) -> bool:
+    """Enhanced detection of relationship/comparison queries that benefit from diverse sources."""
     hints = query_intent.get("hints", {}) if query_intent else {}
-    return hints.get("prefer_multi_source", False)
+    if hints.get("prefer_multi_source", False):
+        return True
+
+    # Check query content for relationship indicators
+    query = query_intent.get("query", "") if query_intent else ""
+    query_lower = query.lower()
+
+    relationship_indicators = [
+        ' vs ', ' versus ', ' compare ', ' comparison ', ' difference between ',
+        ' relationship ', ' connection ', ' how does ', ' how do ', ' similar to ',
+        ' unlike ', ' whereas ', ' compared to ', ' in contrast ', ' pros and cons ',
+        ' advantages ', ' disadvantages ', ' better than ', ' worse than '
+    ]
+
+    return any(indicator in query_lower for indicator in relationship_indicators)
 
 
 def _extract_title_snippet(item: Dict) -> str:
@@ -145,7 +184,108 @@ class KnowledgeReranker:
         recency = _recency_boost(_parse_timestamp(ts), weight=0.08)
         promo_penalty = _penalize_promotional(item.get("content", ""))
         low_content_penalty = _penalize_low_content(item.get("content", ""))
-        return max(0.0, semantic_score + recency + promo_penalty + low_content_penalty)
+
+        # Enhanced query-specific boosting
+        query_specific_boost = self._calculate_query_specific_boost(query, item, query_intent)
+
+        # Improved temporal relevance for time-sensitive topics
+        temporal_boost = self._calculate_temporal_relevance(query, item)
+
+        # Diversity penalty to avoid redundant information
+        diversity_penalty = self._calculate_diversity_penalty(item)
+
+        total_score = (semantic_score +
+                      recency +
+                      query_specific_boost +
+                      temporal_boost +
+                      promo_penalty +
+                      low_content_penalty +
+                      diversity_penalty)
+
+        return max(0.0, total_score)
+
+    def _calculate_query_specific_boost(self, query: str, item: Dict, query_intent: Dict) -> float:
+        """Calculate boost based on query type and source alignment."""
+        boost = 0.0
+        query_lower = query.lower()
+        content_lower = item.get("content", "").lower()
+        source = item.get("source", "").lower()
+
+        # Technical queries: boost sources that typically contain tutorials/code
+        if any(word in query_lower for word in ['how to', 'tutorial', 'guide', 'steps', 'install', 'setup']):
+            if any(tech_source in source for tech_source in ['wikipedia', 'brain', 'gem_source']):
+                boost += 0.15  # Technical sources get boost for how-to questions
+            if any(tech_indicator in content_lower for tech_indicator in ['step', 'first', 'then', 'install', 'run']):
+                boost += 0.1
+
+        # Comparison queries: boost sources that handle relationships well
+        if any(word in query_lower for word in ['vs', 'versus', 'compare', 'comparison', 'difference']):
+            if source in ['wikipedia', 'brain']:  # Authoritative sources for comparisons
+                boost += 0.12
+            if any(comp_word in content_lower for comp_word in ['compared to', 'versus', 'unlike', 'whereas']):
+                boost += 0.08
+
+        # Recent events/news: boost recent content more aggressively
+        if any(word in query_lower for word in ['latest', 'recent', 'new', 'update', '2024', '2025']):
+            # Already handled by temporal boost, but add small additional boost for news sources
+            if source in ['google', 'duckduckgo', 'bing']:
+                boost += 0.05
+
+        # Factual queries: boost authoritative sources
+        intent = query_intent.get('intent', '') if query_intent else ''
+        if intent in ['factual', 'definition', 'biographical']:
+            if source == 'wikipedia':
+                boost += 0.1
+            elif source == 'brain':
+                boost += 0.08
+
+        return boost
+
+    def _calculate_temporal_relevance(self, query: str, item: Dict) -> float:
+        """Enhanced temporal relevance based on query content."""
+        query_lower = query.lower()
+        ts = item.get("timestamp") or item.get("updated_at") or item.get("last_updated")
+        timestamp = _parse_timestamp(ts)
+
+        if not timestamp:
+            return 0.0
+
+        base_recency = _recency_boost(timestamp, weight=0.08)
+
+        # Time-sensitive topics get stronger recency boost
+        time_sensitive_keywords = [
+            'latest', 'recent', 'new', 'update', 'breaking', 'today', 'yesterday',
+            '2024', '2025', 'current', 'now', 'modern', 'contemporary'
+        ]
+
+        if any(keyword in query_lower for keyword in time_sensitive_keywords):
+            # Double the recency weight for time-sensitive queries
+            enhanced_recency = _recency_boost(timestamp, weight=0.16)
+            return enhanced_recency - base_recency  # Return the additional boost
+
+        # Technology/news topics: moderate boost for recent content
+        tech_news_keywords = [
+            'technology', 'tech', 'ai', 'artificial intelligence', 'software',
+            'update', 'release', 'version', 'news', 'announcement'
+        ]
+
+        if any(keyword in query_lower for keyword in tech_news_keywords):
+            enhanced_recency = _recency_boost(timestamp, weight=0.12)
+            return enhanced_recency - base_recency
+
+        return 0.0  # No additional boost for non-time-sensitive queries
+
+    def _calculate_diversity_penalty(self, item: Dict) -> float:
+        """Calculate penalty to encourage source diversity."""
+        # This will be used during the final diversity pass, but we can add
+        # a small penalty for sources that tend to be very similar
+        source = item.get("source", "").lower()
+
+        # Slight penalty for sources that often have similar content
+        if source in ['bing', 'google'] and 'duck' not in source:
+            return -0.02  # Small penalty to prefer more diverse sources
+
+        return 0.0
 
     def _score_all(self, query: str, knowledge_items: List[Dict], query_intent: Dict) -> List[Tuple[float, Dict]]:
         scored: List[Tuple[float, Dict]] = []

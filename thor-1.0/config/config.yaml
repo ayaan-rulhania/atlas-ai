@@ -9,6 +9,12 @@ model:
   vocab_size: 50257
   dropout: 0.1
 
+  # Architecture improvements (configurable)
+  use_flash_attn: false  # Enable Flash Attention 2.0 (requires CUDA)
+  use_rmsnorm: false  # Use RMSNorm instead of LayerNorm (faster)
+  use_swiglu: false  # Use SwiGLU instead of standard feed-forward (better performance)
+  gradient_checkpointing: false  # Enable gradient checkpointing for memory efficiency
+
 training:
   batch_size: 32
   learning_rate: 1e-4

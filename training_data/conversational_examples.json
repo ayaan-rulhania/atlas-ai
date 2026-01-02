@@ -1,0 +1,309 @@
+{
+  "greetings": [
+    {
+      "pattern": "hi",
+      "variations": ["hi", "hi there", "hi!", "hello", "hello there", "hey", "hey there"],
+      "responses": [
+        "Hi there! How can I help you today?",
+        "Hello! What's on your mind?",
+        "Hey! Nice to see you. What can I do for you?",
+        "Hi! I'm here and ready to help. What's up?",
+        "Hello there! How's it going?",
+        "Hey! Good to hear from you. What would you like to know?",
+        "Hi! I'm all ears. What's the plan?",
+        "Hello! Ready when you are. What's next?"
+      ]
+    },
+    {
+      "pattern": "good morning",
+      "variations": ["good morning", "morning", "gm", "good morning!"],
+      "responses": [
+        "Good morning! Hope you're having a great start to your day. How can I help?",
+        "Morning! Ready to tackle the day. What would you like to work on?",
+        "Good morning! I'm energized and ready to help. What's on your agenda?",
+        "Morning! Let's make today productive. What can I assist you with?",
+        "Good morning! Wishing you an excellent day ahead. How can I help?"
+      ]
+    },
+    {
+      "pattern": "good afternoon",
+      "variations": ["good afternoon", "afternoon", "good afternoon!"],
+      "responses": [
+        "Good afternoon! Hope your day is going well. How can I assist you?",
+        "Afternoon! Halfway through the day. What would you like to work on?",
+        "Good afternoon! I'm here and ready. What's on your mind?",
+        "Afternoon! Let's make the rest of your day productive. How can I help?",
+        "Good afternoon! Hope you're having a great day so far. What can I do for you?"
+      ]
+    },
+    {
+      "pattern": "good evening",
+      "variations": ["good evening", "evening", "good evening!"],
+      "responses": [
+        "Good evening! Hope you've had a wonderful day. How can I help?",
+        "Evening! Time to wind down or get some work done. What would you like?",
+        "Good evening! I'm here if you need anything. What's on your mind?",
+        "Evening! Ready to assist you. How can I help this evening?",
+        "Good evening! Hope you're having a relaxing evening. What can I do for you?"
+      ]
+    },
+    {
+      "pattern": "how are you",
+      "variations": ["how are you", "how's it going", "how are you doing", "how have you been"],
+      "responses": [
+        "I'm doing great, thanks for asking! I'm here and ready to help you with anything you need.",
+        "I'm doing well! Always excited to chat and assist. What can I help you with today?",
+        "Doing fantastic! I'm energized and ready to tackle whatever you throw my way. What's up?",
+        "I'm good, thanks! Feeling helpful and ready to assist. How about you - what can I do for you?",
+        "I'm doing well! It's always nice to connect. What would you like to work on or learn about?"
+      ]
+    },
+    {
+      "pattern": "what's up",
+      "variations": ["what's up", "whats up", "sup", "what's good", "whats good"],
+      "responses": [
+        "Not much! Just here and ready to help. What's up with you?",
+        "Hey! I'm good. What's going on? How can I assist you today?",
+        "Not too much! Excited to chat. What's on your mind?",
+        "All good here! Ready to help with whatever you need. What's up?",
+        "Hey there! I'm doing well. What's new with you? How can I help?"
+      ]
+    }
+  ],
+  "casual_conversation": [
+    {
+      "pattern": "cool",
+      "contexts": ["acknowledgment", "excitement", "agreement"],
+      "variations": ["cool", "cool!", "that's cool", "awesome", "awesome!", "nice", "nice!", "great", "great!"],
+      "responses": [
+        "Glad you think so! What would you like to do next?",
+        "Thanks! I'm happy you're excited about it. What's next on your mind?",
+        "Awesome! I love hearing that. What else can I help you with?",
+        "Cool! I'm glad you're pleased. What would you like to explore now?",
+        "Great! That's exactly what I was hoping for. What's our next move?"
+      ]
+    },
+    {
+      "pattern": "thanks",
+      "contexts": ["gratitude", "appreciation"],
+      "variations": ["thanks", "thank you", "thanks!", "thank you!", "thx", "ty", "thanks a lot"],
+      "responses": [
+        "You're very welcome! I'm always happy to help. What else can I do for you?",
+        "My pleasure! Glad I could assist. Feel free to ask anytime.",
+        "You're welcome! I'm here whenever you need me. What's next?",
+        "Happy to help! Don't hesitate to reach out if you need anything else.",
+        "No problem at all! I'm glad I could be useful. What would you like to work on now?"
+      ]
+    },
+    {
+      "pattern": "okay",
+      "contexts": ["acknowledgment", "agreement", "understanding"],
+      "variations": ["okay", "ok", "okay!", "ok!", "alright", "alright!", "got it", "got it!"],
+      "responses": [
+        "Great! What would you like to do next?",
+        "Perfect! I'm ready when you are. What's our next step?",
+        "Awesome! Let me know what you'd like to work on.",
+        "Got it! I'm here to help with whatever comes next.",
+        "Excellent! What's on your mind? I'm all ears."
+      ]
+    },
+    {
+      "pattern": "interesting",
+      "contexts": ["curiosity", "engagement"],
+      "variations": ["interesting", "interesting!", "that's interesting", "very interesting", "fascinating"],
+      "responses": [
+        "I'm glad you find it interesting! Would you like to dive deeper into this topic?",
+        "That's fascinating, right? There's so much more we could explore. What aspect interests you most?",
+        "I love that you're intrigued! Shall we explore this further?",
+        "Glad it's catching your attention! There's plenty more to discover. What would you like to know?",
+        "That's definitely intriguing! I'd be happy to share more details or explore related topics."
+      ]
+    }
+  ],
+  "emotional_responses": [
+    {
+      "emotion": "frustrated",
+      "patterns": ["frustrated", "annoying", "stuck", "not working", "problem", "issue", "can't figure it out", "confusing"],
+      "responses": [
+        "I understand that can be really frustrating. Let me help you work through this step by step.",
+        "I hear you - that sounds challenging. Let's break this down together and find a solution.",
+        "That's definitely frustrating when things don't work as expected. I'm here to help you troubleshoot.",
+        "I can see why that would be frustrating. Let's take a methodical approach and figure this out.",
+        "Technology can be so frustrating sometimes! Don't worry, we'll get this sorted together."
+      ]
+    },
+    {
+      "emotion": "excited",
+      "patterns": ["excited", "amazing", "can't wait", "so happy", "thrilled", "awesome news", "fantastic"],
+      "responses": [
+        "I can hear your excitement! That's fantastic. Tell me more about what has you so thrilled.",
+        "That's awesome! I love hearing that enthusiasm. What's got you so excited?",
+        "Your excitement is contagious! This sounds like something really special. What's the story?",
+        "I'm thrilled to hear you're excited! That's exactly the kind of energy we want. What's next?",
+        "Wonderful! I can tell this really means a lot to you. I'd love to hear more about it."
+      ]
+    },
+    {
+      "emotion": "confused",
+      "patterns": ["confused", "don't understand", "lost", "not sure", "unclear", "makes no sense", "bewildered"],
+      "responses": [
+        "I can see this is confusing - that's completely understandable. Let me explain this differently.",
+        "It's okay to feel confused about complex topics. Let's break this down into simpler terms.",
+        "Don't worry if it's confusing at first. Many people feel the same way. Let me clarify.",
+        "I understand this can be confusing. Let me rephrase and walk you through it step by step.",
+        "It's normal to feel a bit lost with new concepts. I'm here to help clear things up."
+      ]
+    },
+    {
+      "emotion": "tired",
+      "patterns": ["tired", "exhausted", "drained", "long day", "need a break", "worn out"],
+      "responses": [
+        "I can tell you've had a long day. Sometimes a fresh perspective helps. What can I assist you with?",
+        "It's completely understandable to feel tired after a busy day. Take your time - I'm here when you're ready.",
+        "Rest is important! When you're feeling refreshed, I'd be happy to help with whatever you need.",
+        "I hear you - everyone needs a break sometimes. Feel free to come back whenever you're ready.",
+        "It's okay to take a moment. I'm here whenever you need me, no rush at all."
+      ]
+    },
+    {
+      "emotion": "proud",
+      "patterns": ["proud", "accomplished", "did it", "success", "finally worked", "got it working"],
+      "responses": [
+        "That's fantastic! I can hear how proud you are of this accomplishment. Well done!",
+        "Congratulations! That's a real achievement. You should definitely feel proud of this.",
+        "I'm so impressed! Your hard work paid off. This is definitely something to celebrate.",
+        "That's wonderful! I can tell this success means a lot to you. Great job!",
+        "Excellent work! You're absolutely right to feel proud. This is a significant accomplishment."
+      ]
+    }
+  ],
+  "personalization": [
+    {
+      "scenario": "returning_user",
+      "patterns": ["back again", "here again", "came back", "returned"],
+      "responses": [
+        "Welcome back! Great to see you again. How can I help you today?",
+        "Hey! Good to have you back. What would you like to work on?",
+        "Welcome back! I remember our last conversation. What's new?",
+        "Great to see you again! Ready to continue where we left off?",
+        "Welcome back! It's always nice when familiar faces return. How can I assist you?"
+      ]
+    },
+    {
+      "scenario": "preferred_casual",
+      "patterns": ["casual", "informal", "laid back", "chill", "relaxed"],
+      "responses": [
+        "Got it! I'll keep things casual and relaxed. What's up?",
+        "Cool, I can do casual. No need for formality here. What's going on?",
+        "Sounds good! Let's keep it chill. What can I help you with?",
+        "Alright, casual it is! I'm all ears. What's on your mind?",
+        "Perfect! I love keeping things relaxed. What's up?"
+      ]
+    },
+    {
+      "scenario": "preferred_formal",
+      "patterns": ["formal", "professional", "business", "official"],
+      "responses": [
+        "Certainly. I'll maintain a professional tone. How may I assist you today?",
+        "Understood. I'll use a formal approach. What can I help you with?",
+        "Of course. I'll keep things professional. How may I be of service?",
+        "Very well. I'll maintain formality. What would you like to discuss?",
+        "Acknowledged. I'll use a professional tone. How can I assist you?"
+      ]
+    },
+    {
+      "scenario": "preferred_detailed",
+      "patterns": ["detailed", "thorough", "comprehensive", "in depth", "complete"],
+      "responses": [
+        "I'll provide comprehensive, detailed responses. What topic would you like to explore in depth?",
+        "Understood - I'll be thorough and detailed. What specific area interests you?",
+        "I'll give you comprehensive information. What would you like to learn about?",
+        "I'll provide detailed, in-depth responses. What subject shall we explore?",
+        "I'll be comprehensive and detailed. What topic would you like me to cover thoroughly?"
+      ]
+    },
+    {
+      "scenario": "preferred_brief",
+      "patterns": ["brief", "quick", "short", "concise", "to the point"],
+      "responses": [
+        "Got it - I'll keep responses brief and to the point. What can I help you with?",
+        "I'll be concise. What's your question?",
+        "Short and sweet coming up. What do you need?",
+        "I'll keep it brief. How can I help?",
+        "Concise responses ahead. What's up?"
+      ]
+    }
+  ],
+  "ambiguous_statements": [
+    {
+      "pattern": "maybe",
+      "contexts": ["uncertainty", "tentative"],
+      "responses": [
+        "No pressure at all! Take your time to decide. I'm here when you're ready.",
+        "That's completely fine. We can explore this whenever you feel like it.",
+        "I understand - sometimes we need to think things through. Let me know when you're ready.",
+        "No rush whatsoever! I'm happy to wait until you're sure about what you want to do.",
+        "That's okay! There's no hurry. What else is on your mind in the meantime?"
+      ]
+    },
+    {
+      "pattern": "idk",
+      "contexts": ["uncertainty", "confusion"],
+      "variations": ["idk", "i don't know", "not sure", "unsure"],
+      "responses": [
+        "That's completely understandable! Sometimes we all need a moment to think. What questions do you have?",
+        "No worries at all! It's okay not to know everything. Let's figure this out together.",
+        "That's fine - we don't have to know everything. What are you curious about?",
+        "Perfectly okay! We can explore and learn together. What interests you?",
+        "I get it - it's normal not to know. Let's discover something new together."
+      ]
+    },
+    {
+      "pattern": "whatever",
+      "contexts": ["indifference", "resignation"],
+      "responses": [
+        "I hear you might be feeling indifferent about this. Is there something specific you'd rather focus on?",
+        "That's okay if you're not strongly opinionated about it. What would you like to talk about instead?",
+        "I understand. Sometimes we just want to go with the flow. Is there anything else on your mind?",
+        "No problem at all! We can change topics or directions anytime. What interests you?",
+        "That's fine! I'm flexible. What would you prefer to discuss or work on?"
+      ]
+    }
+  ],
+  "follow_ups": [
+    {
+      "pattern": "tell me more",
+      "contexts": ["curiosity", "interest"],
+      "variations": ["tell me more", "more about", "expand on", "elaborate"],
+      "responses": [
+        "I'd be happy to dive deeper! What specific aspect would you like me to expand on?",
+        "Great question! Let me provide more details. Which part interests you most?",
+        "Absolutely! There's so much more to explore. What would you like to know about next?",
+        "I'd love to elaborate! What specific details would be most helpful to you?",
+        "Excellent! Let's explore this further. What aspect shall we focus on?"
+      ]
+    },
+    {
+      "pattern": "why",
+      "contexts": ["curiosity", "clarification"],
+      "responses": [
+        "Great question! The reason is... Let me explain that for you.",
+        "That's an important 'why' question. Here's the reasoning behind it...",
+        "I'm glad you asked! The explanation is actually quite interesting...",
+        "That's a thoughtful question. Let me break down the reasoning...",
+        "Excellent point to bring up! The 'why' here is..."
+      ]
+    },
+    {
+      "pattern": "how",
+      "contexts": ["process", "method"],
+      "responses": [
+        "Let me walk you through the process step by step...",
+        "I'd be happy to explain how this works. Here's the breakdown...",
+        "That's a great question about the 'how'. Let me show you the method...",
+        "Let me demonstrate the process for you...",
+        "I'll explain the 'how' by breaking it down into clear steps..."
+      ]
+    }
+  ]
+}

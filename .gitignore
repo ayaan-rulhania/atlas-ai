@@ -23,6 +23,13 @@ models/
 chatbot/models/
 thor-1.0/models/
 
+# Databases and archives
+*.db
+*.db-wal
+*.db-shm
+*.whl
+*.gz
+
 # Vercel local folder
 .vercel/
 .vercel

@@ -6,32 +6,384 @@ import json
 from pathlib import Path
 from services.query_intent_analyzer import get_query_intent_analyzer
 from services.semantic_relevance import get_semantic_scorer
+import re
+from collections import defaultdict
 
 class BrainConnector:
     """Connects AI responses to brain keyword knowledge"""
-    
+
     def __init__(self, brain_dir="brain"):
         self.brain_dir = brain_dir
-    
+        self.semantic_scorer = get_semantic_scorer()
+
+    def _enhanced_semantic_search(self, query: str, query_intent: dict) -> list:
+        """
+        Enhanced semantic search that goes beyond exact keyword matching.
+        Uses semantic similarity and query expansion.
+        """
+        query_lower = query.lower()
+        expanded_terms = self._expand_search_terms(query, query_intent)
+
+        all_knowledge = []
+        relevance_scores = []
+
+        # Search through all brain files
+        for letter_dir in os.listdir(self.brain_dir):
+            letter_path = os.path.join(self.brain_dir, letter_dir)
+            if os.path.isdir(letter_path):
+                keywords_file = os.path.join(letter_path, "keywords.json")
+                if os.path.exists(keywords_file):
+                    try:
+                        with open(keywords_file, 'r') as f:
+                            data = json.load(f)
+
+                        for knowledge in data.get('knowledge', []):
+                            content = knowledge.get('content', '')
+                            title = knowledge.get('title', '')
+
+                            # Calculate semantic relevance
+                            semantic_score = self.semantic_scorer.calculate_semantic_score(
+                                query, knowledge, query_intent
+                            )
+
+                            # Calculate keyword relevance
+                            keyword_score = self._calculate_keyword_relevance(
+                                query_lower, expanded_terms, data.get('keywords', [])
+                            )
+
+                            # Calculate content relevance
+                            content_relevance = self._calculate_content_relevance(
+                                query_lower, expanded_terms, content, title
+                            )
+
+                            # Combined score
+                            total_score = (semantic_score * 0.5 +
+                                         keyword_score * 0.3 +
+                                         content_relevance * 0.2)
+
+                            if total_score > 0.1:  # Threshold for relevance
+                                relevance_scores.append((total_score, knowledge))
+
+                    except Exception as e:
+                        print(f"[Brain Connector] Error reading {keywords_file}: {e}")
+
+        # Sort by relevance and return top results
+        relevance_scores.sort(key=lambda x: x[0], reverse=True)
+
+        # Filter out music/video content unless explicitly requested
+        filtered_results = []
+        for score, knowledge in relevance_scores[:10]:
+            if not self._is_music_video_content(knowledge, query, query_intent):
+                filtered_results.append(knowledge)
+
+        return filtered_results
+
+    def _expand_search_terms(self, query: str, query_intent: dict) -> list:
+        """Expand search terms based on query type and intent."""
+        expanded = [query]
+        query_lower = query.lower()
+
+        # Add synonyms and related terms
+        synonyms = {
+            'python': ['programming', 'code', 'script', 'language'],
+            'javascript': ['js', 'web development', 'frontend', 'scripting'],
+            'machine learning': ['ml', 'ai', 'artificial intelligence', 'algorithms'],
+            'database': ['data', 'storage', 'sql', 'mongodb'],
+            'api': ['interface', 'rest', 'web service', 'integration']
+        }
+
+        for term, related in synonyms.items():
+            if term in query_lower:
+                expanded.extend(related)
+                break
+
+        # Add query-type specific expansions
+        intent = query_intent.get('intent', '')
+        if intent == 'biographical':
+            expanded.extend(['person', 'life', 'career', 'background'])
+        elif intent == 'technical':
+            expanded.extend(['implementation', 'usage', 'example', 'guide'])
+        elif intent == 'definition':
+            expanded.extend(['meaning', 'explanation', 'concept'])
+
+        return list(set(expanded))  # Remove duplicates
+
+    def _calculate_keyword_relevance(self, query: str, expanded_terms: list, keywords: list) -> float:
+        """Calculate relevance based on keyword matches."""
+        score = 0.0
+        query_words = set(query.split())
+        keyword_set = set(k.lower() for k in keywords)
+
+        # Exact matches get highest score
+        exact_matches = query_words & keyword_set
+        score += len(exact_matches) * 0.8
+
+        # Partial matches (expanded terms)
+        for term in expanded_terms:
+            term_words = set(term.split())
+            partial_matches = term_words & keyword_set
+            score += len(partial_matches) * 0.4
+
+        return min(score, 1.0)  # Cap at 1.0
+
+    def _calculate_content_relevance(self, query: str, expanded_terms: list, content: str, title: str) -> float:
+        """Calculate relevance based on content similarity."""
+        score = 0.0
+        text_to_check = (content + ' ' + title).lower()
+
+        # Count term occurrences in content
+        for term in expanded_terms:
+            if term.lower() in text_to_check:
+                score += 0.3
+
+        # Bonus for query terms appearing multiple times
+        query_words = query.split()
+        for word in query_words:
+            count = text_to_check.count(word.lower())
+            score += min(count * 0.1, 0.3)  # Cap per word
+
+        return min(score, 1.0)  # Cap at 1.0
+
+    def _multi_hop_reasoning(self, initial_knowledge: list, query: str) -> list:
+        """
+        Perform multi-hop reasoning by following related topics in the brain.
+        """
+        if not initial_knowledge:
+            return initial_knowledge
+
+        extended_knowledge = initial_knowledge.copy()
+        visited_topics = set()
+
+        # Extract related topics from initial knowledge
+        for item in initial_knowledge:
+            content = item.get('content', '')
+            title = item.get('title', '')
+
+            # Find related terms/concepts in the content
+            related_terms = self._extract_related_terms(content + ' ' + title)
+
+            for term in related_terms:
+                if term not in visited_topics and len(term) > 3:
+                    visited_topics.add(term)
+
+                    # Search for knowledge related to this term
+                    related_knowledge = self.get_relevant_knowledge(f"tell me about {term}")
+                    extended_knowledge.extend(related_knowledge[:2])  # Limit per term
+
+        # Remove duplicates and limit total results
+        seen_titles = set()
+        deduplicated = []
+        for item in extended_knowledge:
+            title = item.get('title', '')
+            if title not in seen_titles:
+                seen_titles.add(title)
+                deduplicated.append(item)
+
+        return deduplicated[:15]  # Reasonable limit
+
+    def _extract_related_terms(self, text: str) -> list:
+        """Extract potentially related terms from text."""
+        # Simple extraction of noun phrases and important terms
+        words = re.findall(r'\b[a-zA-Z]{4,}\b', text.lower())
+
+        # Filter out common words
+        common_words = {
+            'that', 'this', 'with', 'from', 'they', 'have', 'been', 'were',
+            'their', 'there', 'these', 'those', 'which', 'where', 'when',
+            'would', 'could', 'should', 'about', 'after', 'before'
+        }
+
+        filtered_words = [w for w in words if w not in common_words]
+
+        # Return most frequent terms as potentially related
+        word_freq = defaultdict(int)
+        for word in filtered_words:
+            word_freq[word] += 1
+
+        return [word for word, _ in sorted(word_freq.items(), key=lambda x: x[1], reverse=True)[:5]]
+
+    def _is_music_video_content(self, knowledge_item: dict, query: str, query_intent: dict = None) -> bool:
+        """Comprehensive detection of music/video content with enhanced filtering"""
+        title = knowledge_item.get('title', '').lower()
+        content = knowledge_item.get('content', '').lower()
+        source = knowledge_item.get('source', '').lower()
+
+        # Comprehensive music indicators (expanded)
+        music_indicators = [
+            # Direct music terms
+            'music video', 'song', 'youtube', 'spotify', 'official music',
+            'lyrics', 'album', 'artist', 'musical', 'singer', 'band',
+            'concert', 'live performance', 'music festival', 'playlist',
+            'track', 'single', 'ep', 'lp', 'vinyl', 'cd', 'mp3', 'wav',
+            'guitar', 'piano', 'drums', 'bass', 'orchestra', 'chorus',
+            'melody', 'harmony', 'rhythm', 'beat', 'tempo', 'genre',
+            'rock', 'pop', 'jazz', 'classical', 'hip hop', 'rap', 'country',
+            'blues', 'reggae', 'electronic', 'dance', 'folk', 'indie',
+
+            # Artist/performer terms
+            'grammy', 'billboard', 'mtv', 'vmas', 'american idol',
+            'the voice', 'eurovision', 'brit awards', 'oscars',
+
+            # Music-related activities
+            'karaoke', 'dj', 'remix', 'cover', 'original', 'feat.',
+            'featuring', 'produced by', 'written by', 'composed by'
+        ]
+
+        # Comprehensive video indicators (expanded)
+        video_indicators = [
+            # Video platforms and terms
+            'video', 'youtube video', 'vimeo', 'tiktok', 'instagram reels',
+            'snapchat', 'twitch', 'stream', 'streaming', 'channel',
+            'subscribe', 'views', 'likes', 'comments', 'viral',
+
+            # Video content types
+            'vlog', 'tutorial video', 'video content', 'film', 'movie',
+            'cinema', 'theater', 'documentary', 'short film', 'trailer',
+            'clip', 'episode', 'season', 'series', 'netflix', 'hulu',
+            'amazon prime', 'disney+', 'hbo', 'showtime', 'cbs', 'nbc',
+            'abc', 'fox', 'cnn', 'bbc', 'espn', 'mtv', 'vh1',
+
+            # Entertainment industry
+            'hollywood', 'bollywood', 'tollywood', 'award', 'nomination',
+            'red carpet', 'premiere', 'festival', 'cannes', 'sundance',
+            'tiff', 'venice', 'berlin', 'oscar', 'golden globe', 'emmy',
+
+            # Video production terms
+            'director', 'producer', 'actor', 'actress', 'casting',
+            'screenplay', 'script', 'filming', 'editing', 'post-production'
+        ]
+
+        # Check if query explicitly asks about music/video/entertainment
+        is_music_video_intent = False
+        if query_intent and query_intent.get('hints'):
+            is_music_video_intent = query_intent['hints'].get('is_music_video_intent', False)
+
+        # Enhanced query analysis for explicit music/video intent
+        query_lower = query.lower()
+        direct_music_video_query = any(term in query_lower for term in [
+            # Music terms
+            'song', 'music', 'youtube', 'listen', 'play', 'sing', 'musical',
+            'artist', 'album', 'concert', 'band', 'singer', 'lyrics', 'track',
+            'playlist', 'spotify', 'melody', 'harmony', 'rhythm', 'genre',
+            'rock', 'pop', 'jazz', 'classical', 'hip hop', 'rap', 'country',
+
+            # Video terms
+            'video', 'watch', 'stream', 'movie', 'film', 'cinema', 'tv show',
+            'series', 'episode', 'netflix', 'hulu', 'youtube', 'tiktok',
+            'instagram', 'vlog', 'trailer', 'clip', 'channel', 'subscribe'
+        ])
+
+        # Check for entertainment/media intent words
+        entertainment_intent_words = [
+            'recommend', 'suggest', 'what should i', 'best', 'favorite',
+            'tell me about', 'show me', 'play me', 'listen to', 'watch'
+        ]
+        has_entertainment_intent = any(intent_word in query_lower for intent_word in entertainment_intent_words)
+
+        # If query shows clear music/video/entertainment intent, allow content
+        if is_music_video_intent or direct_music_video_query or (has_entertainment_intent and direct_music_video_query):
+            return False  # Not filtering, allow it
+
+        # Enhanced content analysis - check multiple sections of content
+        content_sections = [
+            content[:200],      # Beginning of content (most important)
+            content[200:500],   # Middle section
+            content[-200:] if len(content) > 200 else content,  # End of content
+            title,              # Title is very important
+            source              # Source can indicate entertainment focus
+        ]
+
+        # Check for strong music/video signals in content
+        music_score = 0
+        video_score = 0
+
+        for section in content_sections:
+            if not section:
+                continue
+
+            # Count music indicators in this section
+            section_music_count = sum(1 for indicator in music_indicators if indicator in section)
+            music_score += section_music_count
+
+            # Count video indicators in this section
+            section_video_count = sum(1 for indicator in video_indicators if indicator in section)
+            video_score += section_video_count
+
+        # Additional checks for entertainment-focused content
+        is_entertainment_focused = (
+            'entertainment' in title or
+            'celebrity' in title or
+            'hollywood' in title or
+            'music industry' in title or
+            'film industry' in title or
+            source in ['youtube', 'spotify', 'netflix', 'tiktok', 'instagram'] or
+            any(platform in content[:100] for platform in ['youtube.com', 'spotify.com', 'netflix.com'])
+        )
+
+        # Scoring thresholds for filtering
+        # Higher threshold for title (title is more important)
+        title_music_threshold = 2
+        title_video_threshold = 2
+        content_music_threshold = 3
+        content_video_threshold = 3
+
+        title_music_count = sum(1 for indicator in music_indicators if indicator in title)
+        title_video_count = sum(1 for indicator in video_indicators if indicator in title)
+
+        # Filter if content shows strong music/video/entertainment signals
+        is_music_content = (
+            title_music_count >= title_music_threshold or
+            music_score >= content_music_threshold or
+            is_entertainment_focused
+        )
+
+        is_video_content = (
+            title_video_count >= title_video_threshold or
+            video_score >= content_video_threshold or
+            is_entertainment_focused
+        )
+
+        # Filter out music/video/entertainment content unless explicitly requested
+        return is_music_content or is_video_content
+
     def get_relevant_knowledge(self, message):
-        """Get relevant knowledge from brain based on message keywords"""
+        """Enhanced knowledge retrieval with semantic search and multi-hop reasoning"""
         # Use query intent analyzer for better understanding
         intent_analyzer = get_query_intent_analyzer()
         query_intent = intent_analyzer.analyze(message)
-        
+
         # For philosophical queries like "what's life", force web search
         if query_intent.get('should_search_web') or query_intent.get('intent') == 'philosophical':
             # Return empty to force web search
             return []
-        
+
+        # Try enhanced semantic search first
+        semantic_results = self._enhanced_semantic_search(message, query_intent)
+
+        # Apply multi-hop reasoning to find related knowledge
+        enhanced_results = self._multi_hop_reasoning(semantic_results, message)
+
+        # If we got good semantic results, use them; otherwise fall back to keyword search
+        if enhanced_results and len(enhanced_results) >= 3:
+            return enhanced_results
+        else:
+        # Fall back to original keyword-based search
+        return self._keyword_based_search(message)
+
+    def _keyword_based_search(self, message):
+        """Original keyword-based search method (fallback)."""
+        # Use query intent analyzer for better understanding
+        intent_analyzer = get_query_intent_analyzer()
+        query_intent = intent_analyzer.analyze(message)
+
         message_lower = message.lower()
         words = message_lower.split()
-        
+
         # Detect recipe/cooking queries
-        recipe_patterns = ['how to make', 'recipe for', 'how do you make', 'how do i make', 
+        recipe_patterns = ['how to make', 'recipe for', 'how do you make', 'how do i make',
                           'recipe', 'cook', 'cooking', 'dish', 'ingredients']
         is_recipe_query = any(pattern in message_lower for pattern in recipe_patterns)
-        
+
         # Expand abbreviations (js -> javascript, py -> python)
         lang_expansions = {
             'js': 'javascript',
@@ -41,7 +393,7 @@ class BrainConnector:
             'cpp': 'c++',
             'cs': 'c#'
         }
-        
+
         # Replace abbreviations with full names
         expanded_words = []
         for word in words:
@@ -255,10 +607,16 @@ class BrainConnector:
                     combined_score = (score_map[item_id] * 0.6) + (min(orig_score / 3.0, 1.0) * 0.4)
                     result.append((combined_score, item))
             result.sort(key=lambda x: x[0], reverse=True)
-            return [item for _, item in result[:5]]  # Return top 5 most relevant
-        
+            # Filter out music/video content unless explicitly requested
+            filtered_result = [(score, item) for score, item in result[:5]
+                              if not self._is_music_video_content(item, message, query_intent)]
+            return [item for _, item in filtered_result]  # Return top 5 most relevant
+
         # Fallback to original scoring
-        return [k[1] for k in scored_items[:5]]
+        # Filter out music/video content unless explicitly requested
+        filtered_items = [(k[0], k[1]) for k in scored_items[:5]
+                         if not self._is_music_video_content(k[1], message, query_intent)]
+        return [item for _, item in filtered_items]
     
     def enhance_response(self, message, base_response):
         """Enhance response with knowledge from brain"""

@@ -1,0 +1,11 @@
+{
+  "dashboard": {
+    "title": "Atlas-AI Community Growth",
+    "panels": [
+      { "type": "graph", "title": "GitHub Stars", "datasource": "prometheus", "targets": [{"expr": "github_stars_total"}] },
+      { "type": "graph", "title": "PyPI Downloads", "datasource": "prometheus", "targets": [{"expr": "pypi_downloads_total"}] },
+      { "type": "graph", "title": "Discord Members", "datasource": "prometheus", "targets": [{"expr": "discord_members_total"}] }
+    ]
+  }
+}
+

@@ -222,6 +222,32 @@
                 Run Atlas offline, access it from your dock/taskbar, and enjoy a seamless desktop experience.
             </p>
             
+            {% if is_serverless %}
+            <!-- Serverless deployment message -->
+            <div style="margin: 32px 0; padding: 24px; background: var(--bg-secondary); border-radius: var(--radius-md); border: 1px solid var(--border-color); max-width: 600px; margin-left: auto; margin-right: auto;">
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #d32f2f;">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="12" y1="8" x2="12" y2="12"/>
+                        <line x1="12" y1="16" x2="12.01" y2="16"/>
+                    </svg>
+                    <h2 style="font-family: var(--font-ui); font-size: 20px; font-weight: 500; color: #d32f2f; margin: 0;">Desktop App Download Not Available</h2>
+                </div>
+                <p style="font-family: var(--font-chat); font-size: 16px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px;">
+                    Desktop app downloads are only available when running the full local version of Atlas AI. The serverless deployment (Vercel) does not include the desktop app files.
+                </p>
+                <p style="font-family: var(--font-chat); font-size: 16px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;">
+                    To download the desktop app, please run the local version of Atlas AI on your machine. The web interface is fully functional at the main URL.
+                </p>
+                <a href="/" class="install-button" style="text-decoration: none;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    <span>Return to Atlas</span>
+                </a>
+            </div>
+            {% else %}
+            <!-- Normal download section for local deployments -->
             <div id="osIconContainer" style="margin: 32px 0; display: flex; justify-content: center; align-items: center; gap: 12px;">
                 <!-- macOS Icon -->
                 <svg id="macosIcon" style="display: none; width: 48px; height: 48px;" viewBox="0 0 24 24" fill="currentColor">
@@ -267,6 +293,7 @@
                     </div>
                 </div>
             </div>
+            {% endif %}
             
             <div class="install-features">
                 <h3>What you get</h3>

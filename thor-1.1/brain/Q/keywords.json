@@ -15,7 +15,9 @@
     "qualification",
     "qe",
     "qt",
-    "quarrying"
+    "quarrying",
+    "quasar",
+    "quark"
   ],
   "knowledge": [
     {
@@ -815,7 +817,187 @@
       "query": "quick sort",
       "source": "structured",
       "learned_at": "2025-11-28T08:23:33.495009"
+    },
+    {
+      "topic": "quantum computing",
+      "title": "Shop intro to quantum computing - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on intro to quantum computing at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DkzSOXhhIeCoDo_De22N%252DXb4nzpJPLF49Ny_5piwg%252Dm43mKgYjJzbR%252DawNTiycIwGJJ_oEe4AsSkIYd1CgszY3fqrGXZMy0H8EuynvZ03Ny472loA7642AVo0YSQpOG46aDuqkYjEMA6T1Tyn216F2nBSvx1aCvvlgfZ1o2Iy%252DxQ.hjhh8ZWhZR1sqEkfWY05cg%26rut%3D0ac6c0ed8c72166679a5127b9a97269d3be05b4d1098c5c2474bcc60a94187f2%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De84GuX6A9Lhk3ZCeSE4t2jWTVUCUw5A6dNAgjblG4IEWaWoO%252DKUHL3hZz8zk3htus3BfkqxDXrqxntTlWQg7tKjn5j9pbIokmp_XLJUPrrbO7fXF7UcG5YOUv0STDaOTKgEJqkz5bz8fkGkN4YgrI9pCLmcoMOcKMtuoybrMkTqRYQ6ZRt6axjvUnni0DBduPaYUouXT8FZLBD7hlXK0Bc7xn7LOk%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGludHJvJTJidG8lMmJxdWFudHVtJTJiY29tcHV0aW5nJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfOGZnbWkyOXdzdV9wJTI2YWRncnBpZCUzZDEyMzgwNTA0NTE2ODczNzIlMjZodmFkaWQlM2Q3NzM3ODMyMjM3NDYxOCUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGUlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg3ODExJTI2aHZ0YXJnaWQlM2Rrd2QtNzczNzg0MzMyNjY2MzclM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDI1NTIzXzEzNTkyNTU4JTI2bWNpZCUzZDg0ZDU3ODM3NDQwMzMxMjBhZjY1MjQ0YTUyMTA0YjMyJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2Q0NWVkNjViM2YyNGExODJkZDg2MTBjZTYwODkwMTViZQ%2526rlid%253D45ed65b3f24a182dd8610ce6089015be%26vqd%3D4%2D149373864247831041083400883572980081828%26iurl%3D%257B1%257DIG%253D73EAFA4049254EEC987266F30CA68B20%2526CID%253D0FB4645746DC6ACB1BE7728347906BBF%2526ID%253DDevEx%252C5045.1&rut=b518de4aa2b6100ea0099c499db36213cae638fcee229d0d06abcd35a25a792a",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:40:58.570040"
+    },
+    {
+      "topic": "quantum entanglement",
+      "title": "What Are Quantum Entanglements & How Do They Work?",
+      "content": "Quantum entanglement is a phenomenon where particles become interconnected in a way that defies classical understanding. The quantum state of each particle in a group cannot be described independently of the others, even when vast distances separate them.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbiologyinsights.com%2Fwhat%2Dare%2Dquantum%2Dentanglements%2Dhow%2Ddo%2Dthey%2Dwork%2F&rut=6038627c8e8f149baea3a9a5fff8075c496a5cdd31bf4f78ab83f416874e9ce0",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:41:30.182248"
+    },
+    {
+      "topic": "quantum superposition",
+      "title": "Microsoft Quantum | Superposition",
+      "content": "Superposition is a quantum phenomenon that allows a qubit to be in multiple states at once. Learn how superposition enables quantum parallelism and how it differs from classical bits and classical computing.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fquantum.microsoft.com%2Fen%2Dus%2Finsights%2Feducation%2Fconcepts%2Fsuperposition&rut=5a97ade9e7d4b635ec9ba24f856bc015bfd357b0ce20ba6235307f668b7a3644",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:46:15.474611"
+    },
+    {
+      "topic": "quantum superposition",
+      "title": "The Quantum Atlas | Quantum Superposition",
+      "content": "In quantum physics, waves are everywhere. Click or tap above to create a wave, and watch as it travels outward from a central point. When two waves overlap, they interfere and either add together or cancel each other out\u2014an effect called superposition.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fquantumatlas.umd.edu%2Fentry%2Fsuperposition%2F&rut=e9fbc26c3d678793f8af47f97a4838167af59f11bbebdaeb36543451c4ddd891",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:46:15.474705"
+    },
+    {
+      "topic": "quantum mechanics",
+      "title": "Shop intro quantum mechanics - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on intro quantum mechanics at Amazon.com. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DxOi733ICzVIn%252D3H245Iy8XDylxFp8JOQ6_4TUcWgSkE63cGy_r1TKZqVPXa5Dg3xAg9Y36eWcPBbpyCsjWW1GHvpotmfQguZPquGLAc_6izHPtkKbMfcY%252DConmq5Qtr49_F7_RYSBdAKQT7uY0u9Lr8w3CM_w9fw_dEmVqjRtn4.oTQ7QWHFHF7VypUawa7V6Q%26rut%3D62183379f5514847290c62927bcb4f2d07691e97e5358db706171d1b87657b60%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De80S0BYh0pFMlAxDWWLkTMuzVUCUyq_FcyWdffYFID2Sxof4Z8jXAqQpHhQnZHCi7Woa3zj7kqyx_0qti7jTgUZMSf18HuXG0ljnI50jht0OpiiICXE9uemmKbzLJDbP%252Dfv9ohDINcTw59oXlgGjWHecTjyv7nVIXwOAfm7VNZyLJdDHRipi69DrNCgcJ26b5Eyhu1qjcsieB7Dx90_HOW1CEQOQg%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGludHJvJTJicXVhbnR1bSUyYm1lY2hhbmljcyUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzR5eXVsMTJ3YnZfcCUyNmFkZ3JwaWQlM2QxMjM2OTUxNTgyOTE4NjgzJTI2aHZhZGlkJTNkNzczMDk2MDUwNDQwODYlMjZodm5ldHclM2RzJTI2aHZxbXQlM2RwJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjUzOSUyNmh2dGFyZ2lkJTNka3dkLTc3MzA5ODg5MDQ1ODY3JTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2Q0NDk4XzEzMjk4OTIxJTI2bWNpZCUzZDM5OTI2ODU2MjViNDNkYWRiNjU1OTdjZjM3OTVmN2M3JTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2Q5NGE5YTNhM2QwZDgxMzU4MTI3NWNhZjYyZGVjMDRhNg%2526rlid%253D94a9a3a3d0d813581275caf62dec04a6%26vqd%3D4%2D256454726843025933786639982391773300143%26iurl%3D%257B1%257DIG%253D90BF23D6889D4E41A17F8F9CD53900B8%2526CID%253D37874E5260966DA02B35588661436C50%2526ID%253DDevEx%252C5045.1&rut=8beb0d91289c7a35a232f99b2e6c3f8b56c4a73d5fc7073f83e211cc9737e95e",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:51:00.927167"
+    },
+    {
+      "topic": "quantum mechanics",
+      "title": "Quantum mechanics - Wikipedia",
+      "content": "Quantum mechanics is the fundamental physical theory that describes the behavior of matter and of light; its unusual characteristics typically occur at and below the scale of atoms. [2]: 1.1 It is the foundation of all quantum physics, which includes quantum chemistry, quantum biology, quantum field theory, quantum technology, and quantum ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FQuantum_mechanics&rut=3d5b2fe02f05645e12b697246d6797e06d1be834797547a01a3cb0ec39099233",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:51:00.927265"
+    },
+    {
+      "topic": "quantum mechanics",
+      "title": "Quantum mechanics | Definition, Development, & Equations | Britannica",
+      "content": "Quantum mechanics, science dealing with the behavior of matter and light on the atomic and subatomic scale. It attempts to describe and account for the properties of molecules and atoms and their constituents\u2014electrons, protons, neutrons, and other more esoteric particles such as quarks and gluons.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fquantum%2Dmechanics%2Dphysics&rut=e14e374fcdfe2341cbeee2f1c50dd8d465474bb8b8ba7608501c11d2b0f3d938",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:51:00.927363"
+    },
+    {
+      "topic": "quantum mechanics",
+      "title": "Quantum Mechanics (Stanford Encyclopedia of Philosophy)",
+      "content": "Quantum mechanics is, at least at first glance and at least in part, a mathematical machine for predicting the behaviors of microscopic particles \u2014 or, at least, of the measuring instruments we use to explore those behaviors \u2014 and in that capacity, it is spectacularly successful: in terms of power and precision, head and shoulders above any theory we have ever had. Mathematically, the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fqm%2F&rut=d0193331008cb0d616d6cf2b089dbdc59abc4b996a4eef26a2d35f409cefb480",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:51:00.927446"
+    },
+    {
+      "topic": "quantum mechanics",
+      "title": "What is Quantum Mechanics? Understanding the Basics and Its Impact on ...",
+      "content": "Learn what quantum mechanics is, how it emerged, and what concepts and phenomena it governs. Discover how quantum mechanics impacts modern science and technology, from semiconductors to quantum computing.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencenewstoday.org%2Fwhat%2Dis%2Dquantum%2Dmechanics%2Dunderstanding%2Dthe%2Dbasics%2Dand%2Dits%2Dimpact%2Don%2Dmodern%2Dscience&rut=e8a05ed1141a91b9df808583683d670a5327fff4cbc2e86bcb1ff630ef7e4591",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:51:00.927514"
+    },
+    {
+      "topic": "quasar",
+      "title": "Quasar",
+      "content": "A quasar is an extremely luminous active galactic nucleus (AGN). It is sometimes known as a quasi-stellar object, abbreviated QSO. The emission from an AGN is powered by accretion onto a supermassive black hole with a mass ranging from millions to tens of billions of solar masses, surrounded by a gaseous accretion disc. Gas in the disc falling towards the black hole heats up and releases energy in the form of electromagnetic radiation. The radiant energy of quasars is enormous; the most powerful quasars have luminosities thousands of times greater than that of a galaxy such as the Milky Way. Quasars are usually categorized as a subclass of the more general category of AGN. The redshifts of quasars are of cosmological origin.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Quasar",
+      "confidence": 0.9,
+      "learned_at": "2025-12-31T23:27:44.633858"
+    },
+    {
+      "topic": "quasar",
+      "title": "Quasar - Wikipedia",
+      "content": "The term quasar was first used in an article by astrophysicist Hong-Yee Chiu in May 1964, in Physics Today, to describe certain astronomically puzzling objects: [12] So far, the clumsily long name \"quasi-stellar radio sources\" is used to describe these objects. Because the nature of these objects is entirely unknown, it is hard to prepare a short, appropriate nomenclature for them so that ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FQuasar&rut=2836124a4d17cf7249ab87edc95b692a0e3c7358c82e4508516514145d1f680e",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T23:27:45.496077"
+    },
+    {
+      "topic": "quasar",
+      "title": "Hubble Quasars - NASA Science",
+      "content": "Quasars are distant galaxies with extremely bright cores powered by supermassive black holes. Hubble discovered how quasars are fueled by galaxy mergers, how they affect their host galaxies, and how they appear in different types of galaxies.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fscience.nasa.gov%2Fmission%2Fhubble%2Fscience%2Fscience%2Dbehind%2Dthe%2Ddiscoveries%2Fhubble%2Dquasars%2F&rut=a2d2ab6b31492c938bf4abec50201ff9fb046b5c5c0ccc867f5a441f7da5edfd",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T23:27:45.496158"
+    },
+    {
+      "topic": "quasar",
+      "title": "Quasar | Discovery, Structure & Evolution | Britannica",
+      "content": "Quasar, an astronomical object of very high luminosity found in the centres of some galaxies and powered by gas spiraling at high velocity into an extremely large black hole. The brightest quasars can outshine all of the stars in the galaxies in which they reside, which makes them visible even at",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fquasar&rut=8ff0e161beab633c499e1f93828a7241140280eec6b8db79712920cf80e5c9c4",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T23:27:45.496202"
+    },
+    {
+      "topic": "quasar",
+      "title": "Quasar - ESA/Hubble",
+      "content": "A quasar is a very bright and distant type of active galactic nucleus, where gas and dust fall into a supermassive black hole. Learn how Hubble has observed quasars, their evolution, and their effects on the Universe.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fesahubble.org%2Fwordbank%2Fquasar%2F&rut=433c78d64d61fd576865fe22e7ef47cee23997b6feec77d09c72f5f177c2999a",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T23:27:45.496245"
+    },
+    {
+      "topic": "quasar",
+      "title": "Quasar - Definition, Formation, Facts in Astronomy",
+      "content": "Learn what a quasar is, how it forms, and why it is important for cosmology. A quasar is a bright and energetic object powered by a supermassive black hole at the core of a distant galaxy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsciencenotes.org%2Fquasar%2Ddefinition%2Dformation%2Dfacts%2Din%2Dastronomy%2F&rut=2612d38da27b09e459b8f29c32cfde9fa0e7231484afd6dd21bae5127be05de3",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T23:27:45.496287"
+    },
+    {
+      "topic": "quark",
+      "title": "Quark",
+      "content": "A quark is a type of elementary particle and a fundamental constituent of matter. Quarks combine to form composite particles called hadrons, the most stable of which are protons and neutrons, the components of atomic nuclei. All commonly observable matter is composed of up quarks, down quarks and electrons. Owing to a phenomenon known as color confinement, quarks are never found in isolation; they can be found only within hadrons, which include baryons and mesons, or in quark\u2013gluon plasmas. For this reason, much of what is known about quarks has been drawn from observations of hadrons.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Quark",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T09:22:21.083918"
+    },
+    {
+      "topic": "quark",
+      "title": "Quark - Wikipedia",
+      "content": "A quark (/ \u02c8kw\u0254\u02d0rk, \u02c8kw\u0251\u02d0rk / \u24d8) is a type of elementary particle and a fundamental constituent of matter. Quarks combine to form composite particles called hadrons, the most stable of which are protons and neutrons, the components of atomic nuclei. [1] All commonly observable matter is composed of up quarks, down quarks and electrons. Owing to a phenomenon known as color confinement ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FQuark&rut=dfad7d0621d061904e1c2fb00667374a524224d26d52e709376d6f9ce4b37865",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:22:22.034162"
+    },
+    {
+      "topic": "quark",
+      "title": "Quark | Definition, Flavors, & Colors | Britannica",
+      "content": "Quark, any member of a group of elementary subatomic particles that are believed to be among the fundamental constituents of matter.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fquark&rut=ce19a90d468e438b269abe754d50af63988570baa7fbf8e53c98d319752fc08b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:22:22.034272"
+    },
+    {
+      "topic": "quark",
+      "title": "11.4: Quarks - Physics LibreTexts",
+      "content": "Quark Combinations As mentioned earlier, quarks bind together in groups of two or three to form hadrons. Baryons are formed from three quarks. Sample baryons, including quark content and properties, are given in Table. Interestingly, the delta plus (\u0394 +) baryon is formed from the same three quarks as the proton, but the total spin of the particle is 3/2 rather than 1/2. Similarly, the mass of ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fphys.libretexts.org%2FBookshelves%2FUniversity_Physics%2FUniversity_Physics_(OpenStax)%2FUniversity_Physics_III_%2D_Optics_and_Modern_Physics_(OpenStax)%2F11%253A_Particle_Physics_and_Cosmology%2F11.04%253A_Quarks&rut=b07777b43e712ced1265936fdb9704aeec19ae89935d2bb847ef4fbab3ee56d9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:22:22.034372"
+    },
+    {
+      "topic": "quark",
+      "title": "QUARK Definition & Meaning - Merriam-Webster",
+      "content": "The meaning of QUARK is any of several elementary particles that are postulated to come in pairs (as in the up and down varieties) of similar mass with one member having a charge of +\u2154 and the other a charge of \u2014\u2153 and are held to make up hadrons. Did you know?",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.merriam%2Dwebster.com%2Fdictionary%2Fquark&rut=a5b05bf6b4c1dc58444237788eef866e06e0d7d13ac87d64301b149f7531a268",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:22:22.034458"
     }
   ],
-  "last_updated": "2025-11-28T08:23:33.497241"
+  "last_updated": "2026-01-01T09:22:22.040430"
 }

@@ -342,22 +342,26 @@ class AutoTrainer:
             
             # Training
             optimizer = torch.optim.AdamW(model.parameters(), lr=5e-5)  # Lower LR for fine-tuning
-            
+
+            # Setup mixed precision training if CUDA is available
+            use_amp = torch.cuda.is_available()
+            scaler = torch.cuda.amp.GradScaler() if use_amp else None
+
             # Train for a few epochs
             num_epochs = 2  # Quick training cycles
             for epoch in range(num_epochs):
                 for task_name in ['text_classification', 'sentiment_analysis', 'text_generation']:
                     task_data = [item for item in train_data if item.get('task') == task_name]
-                    
+
                     if not task_data:
                         continue
-                    
+
                     train_dataloader = data_loader.create_dataloader(
                         task_data,
                         task=task_name,
                         shuffle=True
                     )
-                    
+
                     model.train()
                     for batch in train_dataloader:
                         input_ids = batch['input_ids'].to(device)
@@ -365,28 +369,55 @@ class AutoTrainer:
                         labels = batch.get('labels')
                         if labels is not None:
                             labels = labels.to(device)
-                        
+
                         optimizer.zero_grad()
-                        
-                        outputs = model(
-                            input_ids=input_ids,
-                            attention_mask=attention_mask,
-                            task=task_name,
-                            labels=labels
-                        )
-                        
-                        loss = outputs.get('loss')
-                        if loss is None:
-                            logits = outputs.get('logits')
-                            if logits is not None and labels is not None:
-                                loss_fct = torch.nn.CrossEntropyLoss()
-                                loss = loss_fct(logits.view(-1, logits.size(-1)), labels.view(-1))
-                            else:
-                                continue
-                        
-                        loss.backward()
-                        torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
-                        optimizer.step()
+
+                        # Mixed precision training
+                        if use_amp:
+                            with torch.cuda.amp.autocast():
+                                outputs = model(
+                                    input_ids=input_ids,
+                                    attention_mask=attention_mask,
+                                    task=task_name,
+                                    labels=labels
+                                )
+
+                                loss = outputs.get('loss')
+                                if loss is None:
+                                    logits = outputs.get('logits')
+                                    if logits is not None and labels is not None:
+                                        loss_fct = torch.nn.CrossEntropyLoss()
+                                        loss = loss_fct(logits.view(-1, logits.size(-1)), labels.view(-1))
+                                    else:
+                                        continue
+
+                            # Scale loss and backpropagate
+                            scaler.scale(loss).backward()
+                            scaler.unscale_(optimizer)
+                            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+                            scaler.step(optimizer)
+                            scaler.update()
+                        else:
+                            # Standard precision training
+                            outputs = model(
+                                input_ids=input_ids,
+                                attention_mask=attention_mask,
+                                task=task_name,
+                                labels=labels
+                            )
+
+                            loss = outputs.get('loss')
+                            if loss is None:
+                                logits = outputs.get('logits')
+                                if logits is not None and labels is not None:
+                                    loss_fct = torch.nn.CrossEntropyLoss()
+                                    loss = loss_fct(logits.view(-1, logits.size(-1)), labels.view(-1))
+                                else:
+                                    continue
+
+                            loss.backward()
+                            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+                            optimizer.step()
             
             # Save model
             model.save_model(model_path)

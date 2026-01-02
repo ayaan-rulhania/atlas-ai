@@ -34,7 +34,9 @@
     "uruguay",
     "union",
     "universe",
-    "utility"
+    "utility",
+    "u.s.",
+    "utilitarianism"
   ],
   "knowledge": [
     {
@@ -1051,7 +1053,178 @@
       "query": "What is Law of Diminishing Marginal Utility",
       "source": "research",
       "learned_at": "2025-11-28T21:22:27.715030"
+    },
+    {
+      "topic": "unsupervised learning",
+      "title": "Supervised vs Unsupervised Learning: What's the Real Difference?",
+      "content": "That's unsupervised learning, grouping you with hidden tribes of taste. When a doctor uses AI to identify a tumor in a scan, that model was trained with supervised learning. But when scientists cluster new variants of a virus based on its mutations, unsupervised models find structure without knowing ahead of time what each variation means.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencenewstoday.org%2Fsupervised%2Dvs%2Dunsupervised%2Dlearning%2Dwhats%2Dthe%2Dreal%2Ddifference&rut=9b484bea7d416e5a422dd98a05455116bf0142dbd7c31b7c5b4c03cfcd09b827",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:23:17.011165"
+    },
+    {
+      "topic": "underfitting",
+      "title": "What is Underfitting? How to Detect and Overcome High Bias ... - DataCamp",
+      "content": "Explore what underfitting is, how to diagnose an underfitting model, and discover actionable strategies on how to fix underfitting, ensuring your models accurately capture data patterns and deliver reliable predictions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.datacamp.com%2Ftutorial%2Fwhat%2Dis%2Dunderfitting&rut=04ce313b57bede7133b10b9d74edaa7f26f67e3182ae92627c6effc0dd91067e",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:50:15.061744"
+    },
+    {
+      "topic": "underfitting",
+      "title": "What is underfitting in machine learning? - California Learning ...",
+      "content": "Underfitting is a common challenge in machine learning, leading to models with poor predictive accuracy and limited generalizability. By understanding the causes of underfitting, employing diagnostic techniques to identify it, and implementing appropriate strategies to mitigate it, you can significantly improve the performance and effectiveness ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.clrn.org%2Fwhat%2Dis%2Dunderfitting%2Din%2Dmachine%2Dlearning%2F&rut=cc471ed0e6ab242684c2534dec872d8118918e0904985b6e3c409fa8c8653211",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:50:15.061805"
+    },
+    {
+      "topic": "critical minerals are hiding in plain sight in u.s. mines",
+      "title": "Critical Minerals Are Hiding in Plain Sight in U.S. Mines",
+      "content": "Critical minerals are hiding in plain sight in U.S. Mines Date: December 28, 2025 Source: American Association for the Advancement of Science (AAAS) Summary: Researchers found that U.S. metal ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencedaily.com%2Freleases%2F2025%2F12%2F251228074503.htm&rut=ab7d0e5361b562fd96977b0fb26997c5cb8445de202697bc71b780bcca3cd88c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:20:47.490839"
+    },
+    {
+      "topic": "critical minerals are hiding in plain sight in u.s. mines",
+      "title": "U.S. mines are literally throwing away critical minerals",
+      "content": "Those figures far surpass both U.S. import levels of those elements and current demand for them. Critical minerals are essential to the production of lithium-ion batteries, solar panels, and other low- or zero-carbon technologies powering the clean energy transition. Where the U.S. gets those minerals has long been a politically fraught topic.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fyaleclimateconnections.org%2F2025%2F09%2Fu%2Ds%2Dmines%2Dare%2Dliterally%2Dthrowing%2Daway%2Dcritical%2Dminerals%2F&rut=4cbe1e278718c07c2d4bdb7ba207734befae951e11acda6979c02eca4cb8b751",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:20:47.490914"
+    },
+    {
+      "topic": "critical minerals are hiding in plain sight in u.s. mines",
+      "title": "Here's a source for critical minerals \u2014 hiding in plain sight",
+      "content": "Opinion Here's a source for critical minerals \u2014 hiding in plain sight The federal government should invest in ways to recover what mines are already producing.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.washingtonpost.com%2Fopinions%2F2025%2F09%2F01%2Fcritical%2Dminerals%2Drare%2Dearths%2Drecovery%2F&rut=f666737c19b10b6893c2a71a3854bac0777d11a2f1c62fc1b4aac861e32b5a23",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:20:47.490982"
+    },
+    {
+      "topic": "critical minerals are hiding in plain sight in u.s. mines",
+      "title": "Buried treasure: The U.S. is throwing away its critical minerals",
+      "content": "A new study led by the Colorado School of Mines quantifies the opportunity. The team paired mineral production data from federally permitted metal mines with geochemical surveys from national agencies. Minerals lost in plain sight The result is a first-of-its-kind estimate of how much critical material already flows through U.S. concentrators and smelters every year, then leaves the process ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.earth.com%2Fnews%2Fburied%2Dtreasure%2Dthe%2Du%2Ds%2Dis%2Dthrowing%2Daway%2Dits%2Dcritical%2Dminerals%2F&rut=2ef020b20eea3e112176b0cd7e50530e7607f134068f70b245619a7257eedf7b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:20:47.491046"
+    },
+    {
+      "topic": "critical minerals are hiding in plain sight in u.s. mines",
+      "title": "U.S. already has the critical minerals it needs - but they're being ...",
+      "content": "The findings, published in the journal Science, show that improved recovery of critical minerals such as cobalt, lithium and rare earth elements currently being discarded as tailings of other mineral streams could meet the U.S. demand for energy, defense and technology applications.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.minesnewsroom.com%2Fnews%2Fus%2Dalready%2Dhas%2Dcritical%2Dminerals%2Dit%2Dneeds%2Dtheyre%2Dbeing%2Dthrown%2Daway%2Dnew%2Danalysis%2Dshows&rut=2b5d20263d0173b64f8dfbf2540f0d8f11216097e27734a6fdfe38813a5da286",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:20:47.491108"
+    },
+    {
+      "topic": "2025 deployment of federal forces in the united states",
+      "title": "2025 deployment of federal forces in the United States",
+      "content": "In 2025, during Donald Trump 's second presidency, federal government forces, primarily National Guard troops, have been deployed in select U.S. cities. Trump has given multiple explanations for the deployments, saying they are officially part of crackdowns on protests, civil unrest, crime, homelessness, and illegal immigration.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2F2025_deployment_of_federal_forces_in_the_United_States&rut=1bfbdb420d06883f16050980243c287e1fe42f07ba88d31926a7bd65caf76499",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:05.976161"
+    },
+    {
+      "topic": "2025 deployment of federal forces in the united states",
+      "title": "Tracking Domestic Deployments of the U.S. Military | Lawfare",
+      "content": "The map visualization displays identified federal domestic deployments for 2025. It displays locations, troop deployment size, and deployment legal authority. Hovering over a specific deployment provides additional information about each deployment, such as a description of its mission.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.lawfaremedia.org%2Fprojects%2Dseries%2Ftrials%2Dof%2Dthe%2Dtrump%2Dadministration%2Ftracking%2Ddomestic%2Ddeployments%2Dof%2Dthe%2Du.s.%2Dmilitary&rut=bf0afbadeb62b2a88e348b7eb0ca7ef7242832a2ca1a9cc9006bf9f327ec1824",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:05.976211"
+    },
+    {
+      "topic": "2025 deployment of federal forces in the united states",
+      "title": "How and Where the National Guard Has Deployed to U.S. Cities",
+      "content": "In that hybrid designation, Guard troops remain under their governor's command, but the deployment receives federal funding and comes at the request of the president or secretary of defense.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nytimes.com%2Finteractive%2F2025%2F10%2F27%2Fus%2Fus%2Dnational%2Dguard%2Ddeployments.html&rut=7313a7033c834259b0d31131b4ac1b4aefb892a7d3c98e4baa4cc448e98331a4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:05.976247"
+    },
+    {
+      "topic": "2025 deployment of federal forces in the united states",
+      "title": "Trump says he's withdrawing National Guard from Chicago, Los ... - CNN",
+      "content": "President Donald Trump announced Wednesday that he's withdrawing the National Guard from Chicago, Los Angeles and Portland but left the door open to sending federal forces \"in a much different ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cnn.com%2F2025%2F12%2F31%2Fpolitics%2Ftrump%2Dnational%2Dgaurd%2Dwithdrawl%2Dchicago%2Dlos%2Dangeles%2Dportland&rut=826bcfca4e52d37499bfb59683d1d980adf907bd875af5036e8524fd0fb9eb1a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:05.976290"
+    },
+    {
+      "topic": "2025 deployment of federal forces in the united states",
+      "title": "Pentagon Readies Rapid Deployment Force for U.S. Cities",
+      "content": "The first U.S. National Guard troops have deployed to Washington, D.C., a day after President Trump announced a federal takeover of the D.C. police force. Federal officials say some 800 National ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.democracynow.org%2F2025%2F8%2F13%2Fheadlines%2Fpentagon_readies_rapid_deployment_force_for_us_cities&rut=76e1074baa8c74ea64dae664fec8ad97560cde860223e107fefd9b0004379950",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:05.976335"
+    },
+    {
+      "topic": "utilitarianism",
+      "title": "Utilitarianism",
+      "content": "In ethical philosophy, utilitarianism is a family of normative ethical theories that prescribe actions that maximize happiness and well-being for the affected individuals. In other words, utilitarian ideas encourage actions that lead to the greatest good for the greatest number. Although different varieties of utilitarianism admit different characterizations, the basic idea that underpins them all is, in some sense, to maximize utility, which is often defined in terms of well-being or related concepts. For instance, Jeremy Bentham, the founder of utilitarianism, described utility as the capacity of actions or objects to produce benefits, such as pleasure, happiness, and good, or to prevent harm, such as pain and unhappiness, to those affected.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Utilitarianism",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T20:00:16.494281"
+    },
+    {
+      "topic": "utilitarianism",
+      "title": "Shop mill utilitarianism - Amazon\u00ae Official Site",
+      "content": "Browse & discover thousands of unique brands. Read customer reviews & best sellers. Find deals and compare prices on mill utilitarianism at Amazon.com",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D0Lwl0EoQMELHVYRrbJGffDcUJ4B5mPCZPfYp3iT%252DVzgcqWHhl1SbqIP8GyXsGGbFMcxUp8vPp%252DQOFRion4FRN0fo60t4xPpMEU6_N3lnSR%252D524t0QVTKxN8ZntTq7yBPk2Rx_sDyL5NIQkxTLTZnClkT1ueQm1NTY4x3ydOcVpo.EU2Pog1pn_aZ3zCeufB3AA%26rut%3Db4d987e5931ec57fdb47816d4fc3a101730c72364f2caf217ada51ff2154ab22%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8KY_NRqkOj9L12k%252DypKvHtDVUCUxDPa7mwo4UwPZekQOlTCCB4VAswjnH5k0jXMFBnv0GVQxWk7sq_6ipimugXok8H7AVYrCguuwEvQ6C9bF_RYQZQgYu5xLO6f2aUgbas9XKL%252DQ%252DSwA5WwzqTacyU3dSWET8NRsGT687EzS4Geuv1BtPWrQz5bVRkh%252D1fUIDHog4xPeN9Z7zTfEhnCHipjyPRxQ%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZG1pbGwlMmJ1dGlsaXRhcmlhbmlzbSUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzI2NXA4ZHQ4bnVfcCUyNmFkZ3JwaWQlM2QxMjQwMjQ5NDYyMTM2MjcwJTI2aHZhZGlkJTNkNzc1MTU3NTkzOTczNTQlMjZodm5ldHclM2RzJTI2aHZxbXQlM2RwJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjQ0OCUyNmh2dGFyZ2lkJTNka3dkLTc3NTE1ODY5MjU5MTQwJTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QxMDc1OF8xMzU4OTE4NSUyNm1jaWQlM2RjNTAwZGRmYzRjNTczZWVmYTVkNmFjMjBmNGY4N2I1ZiUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkM2UyNjM3MDVjNGU2MWIyNmI5ZWU1ZTUyODYzNzVkZDU%2526rlid%253D3e263705c4e61b26b9ee5e5286375dd5%26vqd%3D4%2D154136610852155718864824342802905776980%26iurl%3D%257B1%257DIG%253D1EF9A55A43F74A6DA123D8EE135A36A3%2526CID%253D16ADBD25E38D6E0525E6ABF0E21A6F8F%2526ID%253DDevEx%252C5045.1&rut=47d7ccf66200c40612c49318ab6cb54a26f51d573750823714ea436abaa2bdab",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:00:17.388982"
+    },
+    {
+      "topic": "utilitarianism",
+      "title": "Utilitarianism | Definition, Philosophy, Examples, Ethics, Philosophers ...",
+      "content": "Utilitarianism, in normative ethics, a tradition stemming from the late 18th- and 19th-century English philosophers and economists Jeremy Bentham and John Stuart Mill according to which an action is right if it tends to promote happiness and wrong if it tends to produce the reverse of happiness.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Futilitarianism%2Dphilosophy&rut=597da51341409f9c5982ba8427dcc7948c800df4616ae249fb6bba78aee2e84d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:00:17.389060"
+    },
+    {
+      "topic": "utilitarianism",
+      "title": "Utilitarianism - Wikipedia",
+      "content": "Utilitarianism is a version of consequentialism, which states that the consequences of any action are the only standard of right and wrong. Unlike other forms of consequentialism, such as egoism and altruism, egalitarian utilitarianism considers either the interests of all humanity or all sentient beings equally.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FUtilitarianism&rut=be97300a31498013b1107c1a94886b8233d980e8950c31a79e503082457493c2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:00:17.389130"
+    },
+    {
+      "topic": "utilitarianism",
+      "title": "Act and Rule Utilitarianism - Internet Encyclopedia of Philosophy",
+      "content": "A comprehensive overview of utilitarianism, a moral theory that evaluates actions, policies, and codes based on their consequences for well-being. Compare and contrast act utilitarianism and rule utilitarianism, their pros and cons, and their main arguments and criticisms.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Futil%2Da%2Dr%2F&rut=6ae4452e00dc434db08f983a4ea22d429f3f405780afe5fbfd05747eaba7358f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:00:17.389185"
+    },
+    {
+      "topic": "utilitarianism",
+      "title": "Utilitarianism Explained: Key Principles, History, Applications, and ...",
+      "content": "Discover the essence of utilitarianism with our comprehensive guide that explores its principles, history, and real-world applications. Learn about influential philosophers like Jeremy Bentham and John Stuart Mill, compare utilitarianism to other ethical theories, and uncover its relevance in modern challenges such as AI and climate change. Whether you're seeking to understand core concepts ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fphilosophiesoflife.org%2Futilitarianism%2F&rut=face418d97eb54f235a8cef53d98aacf541308933c4001ba5a3c587c3feb4aed",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:00:17.389239"
     }
   ],
-  "last_updated": "2025-11-28T21:22:27.770214"
+  "last_updated": "2026-01-01T20:00:17.393616"
 }

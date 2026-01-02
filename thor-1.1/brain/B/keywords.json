@@ -113,7 +113,28 @@
     "burden",
     "bachchan?",
     "bro",
-    "bawler"
+    "bawler",
+    "bayes",
+    "bassey",
+    "bang",
+    "boson",
+    "bond",
+    "base",
+    "buffer",
+    "biochemistry",
+    "bulgarian",
+    "bombing",
+    "bulgaria",
+    "bacteriology",
+    "brain",
+    "bar",
+    "bipolar",
+    "baruch",
+    "beauvoir",
+    "bertrand",
+    "brains",
+    "better",
+    "binomial"
   ],
   "knowledge": [
     {
@@ -3258,7 +3279,1843 @@
       "query": "What is soccer? Who is Amitabh Bachchan? Who is Sundar Pichai",
       "source": "research",
       "learned_at": "2025-11-29T12:25:45.193312"
+    },
+    {
+      "topic": "backpropagation",
+      "title": "Understanding Backpropagation - Towards Data Science",
+      "content": "Learn how neural networks use backpropagation to adjust their weights and learn from data. Follow a visual derivation of the equations and formulas with Manim animations and examples.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Ftowardsdatascience.com%2Funderstanding%2Dbackpropagation%2Dabcc509ca9d0%2F&rut=e3e43774da96f1494346222353732e2ce2027b5f42bae61c37ec46495e3349f9",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:47:06.159599"
+    },
+    {
+      "topic": "naive bayes classifier",
+      "title": "Naive Bayes classifier - Wikipedia",
+      "content": "Learn about the naive Bayes classifier, a simple and scalable probabilistic model that assumes feature independence given the class. Find out how it works, how to train it, and how it compares to other methods.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNaive_Bayes_classifier&rut=2d1d52e03c2ed96c2fe4db736218d41b45d2933d094bf0a2eaa926c9eb2f625d",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:05:59.093322"
+    },
+    {
+      "topic": "naive bayes classifier",
+      "title": "Naive Bayes Classifiers - GeeksforGeeks",
+      "content": "Naive Bayes is a machine learning classification algorithm that predicts the category of a data point using probability. It assumes that all features are independent of each other. Naive Bayes performs well in many real-world applications such as spam filtering, document categorisation and sentiment analysis. Here:",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmachine%2Dlearning%2Fnaive%2Dbayes%2Dclassifiers%2F&rut=e71159b614b7e8b25a57eff706ee51f54c9ed8f5d7e708dd2260c30508283745",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:05:59.093379"
+    },
+    {
+      "topic": "naive bayes classifier",
+      "title": "What are Na\u00efve Bayes classifiers? - IBM",
+      "content": "The Na\u00efve Bayes classifier is a supervised machine learning algorithm that is used for classification tasks such as text classification.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ibm.com%2Fthink%2Ftopics%2Fnaive%2Dbayes&rut=c2f8ae2d9bf00cc35c0ad685ff9e55ac8e1d26be6ae81c909bcacc0a100485cd",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:05:59.093427"
+    },
+    {
+      "topic": "naive bayes classifier",
+      "title": "1.9. Naive Bayes \u2014 scikit-learn 1.8.0 documentation",
+      "content": "1.9. Naive Bayes # Naive Bayes methods are a set of supervised learning algorithms based on applying Bayes' theorem with the \"naive\" assumption of conditional independence between every pair of features given the value of the class variable.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fscikit%2Dlearn.org%2Fstable%2Fmodules%2Fnaive_bayes.html&rut=160bb2054f94b4d6e686fb71ceabad0310b982ce0e242e1255c87862282b1775",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:05:59.093470"
+    },
+    {
+      "topic": "naive bayes classifier",
+      "title": "Lecture 5: Bayes Classifier and Naive Bayes - Department of Computer ...",
+      "content": "Learn how to use Bayes rule and the naive Bayes assumption to build a classifier that predicts the label from the features. See examples of categorical and continuous features, and the limitations of the naive Bayes approach.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cs.cornell.edu%2Fcourses%2Fcs3780%2F2025sp%2Flectures%2Flecturenote05.html&rut=daf0d9dcf593ff8fe192f42b82aa540d2ec7bf6ec734b2fa17d597aa0e6576cb",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:05:59.093511"
+    },
+    {
+      "topic": "calvin bassey",
+      "title": "Calvin Bassey - Wikipedia",
+      "content": "Calvin Bassey is a Nigerian footballer who plays as a left-back or a centre-back for Fulham. He started his career at Leicester City and played for Rangers and Ajax before joining Fulham in 2023.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCalvin_Bassey&rut=212f79363acce6849df4a509d03f44f5907da715978c8fbf9a93cc7f7372690a",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:17:02.407712"
+    },
+    {
+      "topic": "calvin bassey",
+      "title": "Calvin Bassey talks about his emotional experience after returning to ...",
+      "content": "Calvin Bassey talks about his emotional experience after returning to the Super Eagles! As soon as the final whistle blew, Calvin Bassey, the defender for Fulham and the Nigerian national team ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsports.yahoo.com%2Farticles%2Fcalvin%2Dbassey%2Dtalks%2Demotional%2Dexperience%2D231500132.html&rut=0037a6e546f01280207e688964c02a7529eb6885b3f4940ba62aa3d7c7e90872",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:17:02.407956"
+    },
+    {
+      "topic": "calvin bassey",
+      "title": "Fulham FC - Calvin Bassey",
+      "content": "In the summer of 2023, Fulham confirmed the signing of Calvin Bassey from Ajax for an undisclosed fee, with the defender agreeing a contract until the summer of 2027, with a Club option to extend by a further 12 months. Born in Italy, Bassey moved to London at a young age, before getting a first taste of academy football at Leicester City. A move to Rangers in the summer of 2020 saw his career ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.fulhamfc.com%2Fplayers%2Fcalvin%2Dbassey%2F&rut=91929eecc0fa2412ff5190eb387d12df3546fecf06d892080ba6c29c6ecd07ee",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:17:02.408044"
+    },
+    {
+      "topic": "calvin bassey",
+      "title": "Calvin Bassey Fulham Defender, Profile & Stats | Premier League",
+      "content": "View the player profile of Fulham Defender Calvin Bassey, including stats and videos, on the official website of the Premier League.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.premierleague.com%2Fen%2Fplayers%2F232892%2Fcalvin%2Dbassey%2Foverview&rut=b7a367523b81cf8fb377f18b949fe1f3de15710794c4302f48399a4186680ba6",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:17:02.408114"
+    },
+    {
+      "topic": "calvin bassey",
+      "title": "Super Eagles' Calvin Bassey Reflects On How He Almost Gave Up On Football",
+      "content": "Super Eagles defender Calvin Bassey has opened up on a defining period in his career as Nigeria kicked off their AFCON 2025 campaign against Tanzania, revealing how close he came to walking away from professional football before his breakthrough.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.naijanews.com%2F2025%2F12%2F25%2Fsuper%2Deagles%2Dcalvin%2Dbassey%2Dreflects%2Don%2Dhow%2Dhe%2Dalmost%2Dgave%2Dup%2Don%2Dfootball%2F&rut=2fd70ebf59c01dd25c52546caea71fdc2f255e1e5028a0f7e71d2054ca342f38",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:17:02.408188"
+    },
+    {
+      "topic": "boosting algorithm",
+      "title": "What are Boosting Algorithms and how they work",
+      "content": "Learn what boosting algorithms are and how they work to improve the performance of machine learning models. Compare and contrast Ada Boost, Gradient Boosting and XG Boost methods with examples and diagrams.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Ftowardsmachinelearning.org%2Fboosting%2Dalgorithms%2F&rut=c76c89359f762d2abdaff8a8b71bc2dbe499a6d39a624ebfbbc0880e1401493f",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:18:05.154745"
+    },
+    {
+      "topic": "boosting algorithm",
+      "title": "Boosting Algorithms in Machine Learning - Analytics Vidhya",
+      "content": "A quick guide to boosting algorithms in machine learning to boost accuracy of predictive models with Adaboost, gradient and xgboost. Read Now!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.analyticsvidhya.com%2Fblog%2F2015%2F11%2Fquick%2Dintroduction%2Dboosting%2Dalgorithms%2Dmachine%2Dlearning%2F&rut=4cd3f0091826d3052c12651e4781d1bb89826540a0ff68f60081470610ff312c",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:18:05.154934"
+    },
+    {
+      "topic": "bagging algorithm",
+      "title": "What is Bagging Classifier - GeeksforGeeks",
+      "content": "Bagging is versatile and can be applied with various base learners such as decision trees, support vector machines or neural networks. Ensemble learning broadly combines multiple models to create stronger predictive systems by leveraging their collective strengths.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmachine%2Dlearning%2Fwhat%2Dis%2Dbagging%2Dclassifier%2F&rut=499e5bba850d397ba755b26b64a537e98f36fd9439b5c728da5efe2408c94541",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:18:36.821749"
+    },
+    {
+      "topic": "big bang theory",
+      "title": "Shop big bang theory tv show - Amazon.com Official Site",
+      "content": "Browse & discover thousands of unique brands. Read customer reviews & best sellers. Find deals and compare prices on big bang theory tv show at Amazon.com",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DHQf1xDuCfgglbypj6vjyFlbCXmm8rdfeVaKUo_LaRXbjZoIp01NCmxkgM0SWHvRs5%252Da0C8teJd3I1azmSd6qliS72Z_gwOVNswcWuka2pdDCpviSln3%252DmDinfAsIocbxVCZTD0PJUfrdjmJbyuaV7R_XnPSL6czYm0EVNPLuLqk.0le_41T2catcBz0gWt8skg%26rut%3D9c25c032e2c6f5fef0aab182427e6285c1772cc8b81f2eaea786ed014b0aa54e%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8au2QJIEWgZ6zt0L0GuxFKzVUCUzCwPhKj5z94QSGyxqCtpG5ZfT7TxH0KqNvZwZ3nQ6%252DMgGqo9MqDhPwf_y9MEvKlu9Y7cEJx68CjxgmO%252DEFrUxgVXj9PQNbwEZvkkma2rHJSI1xA7_P6VGZJO24qn4yqqcfb2zaX%252D79et7yxLCKbNZHlFjzMf8gOKM8jy_dUEw7HkI474CXYK82wbQohF4h_Kg%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJpZyUyYmJhbmclMmJ0aGVvcnklMmJ0diUyYnNob3clMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF8zd2t4ZjVidTRpX3AlMjZhZGdycGlkJTNkMTI0MDI1MDEwOTM0OTM3NCUyNmh2YWRpZCUzZDc3NTE1NzYyMTM3OTM3JTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkZSUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY0NDglMjZodnRhcmdpZCUzZGt3ZC03NzUxNTg4NDE4ODY1NSUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkMjE1NjNfMTM0Mzg5ODElMjZtY2lkJTNkZGFjN2YwNDgyYjE5M2VhMDllOGM0ZjBjNTA3MzdmYzElMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZGZhMDdlYWNiMjc0MjExODI0MjgyODM5ZDE3NzM0YWU4%2526rlid%253Dfa07eacb274211824282839d17734ae8%26vqd%3D4%2D71586735292499628710917804382902965051%26iurl%3D%257B1%257DIG%253D2316970CDED141C98BA946DB59812B6F%2526CID%253D348FB7E0126B67070D1AA13413BE66D3%2526ID%253DDevEx%252C5046.1&rut=9ecf7f68c43eff4e076c130613b097fa6c51299a274a7159b36c025fb8709506",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T00:28:34.224942"
+    },
+    {
+      "topic": "big bang theory",
+      "title": "The Big Bang Theory - Complete Series",
+      "content": "Discover rare DVDs and Blu-rays at CCVideo. Shop Classic Movies and TV Shows - From Westerns to Cult Favorites at CCVideo",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dccvideo.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DkP3zjDaYuJilaqc2HBNp5N1opXRo6xw1ohHb2nYTCT%252D9n_gS92pn85opJmX%252DIThe2up6J1s%252D%252DnrGG%252DtKDEmM4gTWfKT%252D7FHo5CR7SgEI1gIEUR%252DVFJZ1KW%252D6D3s3Xsr0xLVUYGDEseaanWKgMNlCDBIJFvIro%252DMLnu%252DJZvtV1y4.6z0rYUdpNgwC1xViHLUskQ%26rut%3D66210a5c3cb915aadf2bea9d40245cbc14aedc1ee4b9e852ae292cc5edb51fc3%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De81gIq6oEev0twdJDyd_lCOjVUCUxJtNoBE%252DX%252DCvjlcYO7sz7IOsWCdzIdG68BVNk%252Dya3v81PxxXkTyMQJtixjV2xFsChQSGDwIniFNjAV_jCoELMcF6ZZ3onQGiWQdyYu32DISsFKMDg8PRFk%252DzEDzKnvqTvGQcpZ4SCYJIuD9n5vw56hT9%252Da1Cwhrrk0gPFBYYQhfwRJdydFsubTjl1fjSX84bE%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuY2N2aWRlby5jb20lMmZ0aGUtYmlnLWJhbmctdGhlb3J5LXRoZS1jb21wbGV0ZS1zZXJpZXMlMmY4ODM5Mjk3NDE4MTYlM2Ztc2Nsa2lkJTNkODhjODZiN2QzMjZjMWYzNDAwZjYwMjJiMDI1ZGM2ZGM%2526rlid%253D88c86b7d326c1f3400f6022b025dc6dc%26vqd%3D4%2D150800179802376535126063051872397732360%26iurl%3D%257B1%257DIG%253D2316970CDED141C98BA946DB59812B6F%2526CID%253D348FB7E0126B67070D1AA13413BE66D3%2526ID%253DDevEx%252C5050.1&rut=3c8887d015fd4aaf415b21b85ae9ee63e1a87178b63722faad69b588e4b20918",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T00:28:34.225051"
+    },
+    {
+      "topic": "big bang theory",
+      "title": "The Big Bang Theory - Wikipedia",
+      "content": "The Big Bang Theory is an American television sitcom created by Chuck Lorre and Bill Prady for CBS. It aired from September 24, 2007, to May 16, 2019, running for 12 seasons and 279 episodes. [3] The show originally centered on five characters living in Pasadena, California: Leonard Hofstadter (Johnny Galecki) and Sheldon Cooper (Jim Parsons), both physicists at Caltech, who share an apartment ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FThe_Big_Bang_Theory&rut=84e749a08eab8b89940dfd07bdd0c13e7e4c1bc780a726a85a243a9e210b1b14",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T00:28:34.225132"
+    },
+    {
+      "topic": "big bang theory",
+      "title": "The Big Bang Theory (TV Series 2007-2019) - IMDb",
+      "content": "The Big Bang Theory: Created by Chuck Lorre, Bill Prady. With Johnny Galecki, Jim Parsons, Kaley Cuoco, Simon Helberg. Aspiring actress Penny moves into a Pasadena apartment across the hall from brilliant but socially awkward physicists Sheldon Cooper and Leonard Hofstadter, and shows them how little they know about life outside of the lab.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0898266%2F&rut=968b1c8d42e999b4df4b0d4419ba50937da55578532150768a328e6d5914b3db",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T00:28:34.225207"
+    },
+    {
+      "topic": "big bang theory",
+      "title": "What Is the Big Bang Theory? - Space",
+      "content": "While the Big Bang Theory is widely supported within the scientific community, some researchers propose alternative ideas, such as eternal inflation or a cyclical, oscillating universe.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.space.com%2F25126%2Dbig%2Dbang%2Dtheory.html&rut=07bc16075334c8a6e0442c7b50bf2afa0be3af00af21b09c9ff6579046b08622",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T00:28:34.225278"
+    },
+    {
+      "topic": "higgs boson",
+      "title": "Shop higgs boson books - Amazon.com Official Site",
+      "content": "Find deals and low prices on higgs boson books at Amazon.com. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DIIigdloe5tF1LZgqcFs1qwbTd8KguWwcDXGJllkVghR%252DcZP4AIYqtxBjYDSd2yDTow%252DBp2ZbUZsN3j9gvH5pUFkOF9rfAIhMEBMOZxVOcf6BkT1U2bF6yy7ttrPkx8xvXXf3YDN_iWVyH2pk5A9FsDZuCAytvwhSnP%252DoQGRp6lQ.cKpKnprhkihyABGBGllv8w%26rut%3Dc8e3b05f003a504701d7e4dae4da8fd15778373015bf02d3fdc657aa8e02afc0%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De853hf1p6VY5YXjtdb7k6MWDVUCUwpz6zxUIz%252DN6k5HuzKdke0I7%252D12aq4__GVLFSzLeNcaO1KbTaaPBST3pJLwoiEQnIY2zP6VMG9Z5YadCmuXIjoQp0Kdtbbm3sDZEYiKmuFIIglYidh3mdOOhNlmH8HlalKV3vnOkJAbVQpYMBZTy8J9RoCMxlZTGqt3ES8lCFHvkyanDxwjc9yiyWRgvwBeAQ%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGhpZ2dzJTJiYm9zb24lMmJib29rcyUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzFqanpueWpxbGxfYiUyNmFkZ3JwaWQlM2QxMjI0ODU3MDIxNDc4NDY0JTI2aHZhZGlkJTNkNzY1NTM2OTc1NjczOTElMjZodm5ldHclM2RzJTI2aHZxbXQlM2RiJTI2aHZibXQlM2RiYiUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NzQyMiUyNmh2dGFyZ2lkJTNka3dkLTc2NTUzODk5OTcwNjA3JTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QyNzI3Nl8xNDYzNzIzNCUyNm1jaWQlM2RlYjUwNmI2YjIwOTQzNDk4OGRmNTAyZjg3Zjk3NzY5NyUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkYjIxMzQ5MzFiMDQ5MWM2NjNlNjkyMDY3MWMxOTg4Njk%2526rlid%253Db2134931b0491c663e6920671c198869%26vqd%3D4%2D174106268224812700368503902110351859249%26iurl%3D%257B1%257DIG%253D09E5EFB5B67C486382D070E296CA8E83%2526CID%253D2883A958484B6875097CBF8C49DC69CA%2526ID%253DDevEx%252C5045.1&rut=7635479d5960be2ef94fd6109c92ae3497ad977ddd2f2a10bdaeba1b0065de37",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:18:08.625466"
+    },
+    {
+      "topic": "higgs boson",
+      "title": "Higgs boson - Wikipedia",
+      "content": "The Higgs boson, sometimes called the Higgs particle, [9][10] is an elementary particle in the Standard Model of particle physics produced by the quantum excitation of the Higgs field, [11][12] one of the fields in particle physics theory. [12] In the Standard Model, the Higgs particle is a massive scalar boson that couples to (interacts with) particles whose mass arises from their ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHiggs_boson&rut=3fe8baa7e56f4b870117f60ec171a891ba004af66e70c3d637dface480628f80",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:18:08.625535"
+    },
+    {
+      "topic": "higgs boson",
+      "title": "The Higgs boson - CERN",
+      "content": "Learn about the Higgs boson, the particle that gives mass to all other particles, and how it was discovered at CERN in 2012. Explore what we have learned since then and what questions remain unanswered about this elusive field and its role in the universe.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fhome.cern%2Fscience%2Fphysics%2Fhiggs%2Dboson&rut=10797986a9baad29bd9b560743fdb362c8dcfeb5016d21f3bf92e0379d31315a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:18:08.625565"
+    },
+    {
+      "topic": "higgs boson",
+      "title": "Higgs boson | Physics, Particle Physics & Standard Model | Britannica",
+      "content": "Higgs boson, particle that is the carrier particle, or boson, of the Higgs field, a field that permeates space and endows all elementary subatomic particles with mass through its interactions with them. The field and the particle\u2014named after Peter Higgs of the University of Edinburgh, one of the physicists who in 1964 first proposed the mechanism\u2014provided a testable hypothesis for the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2FHiggs%2Dboson&rut=d52a2d9a5febea017b2b5025bdb127cdf312a6c6ebc88d8ebd66ae38ce27060a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:18:08.625760"
+    },
+    {
+      "topic": "higgs boson",
+      "title": "Higgs boson: The 'God Particle' explained - Space",
+      "content": "The Higgs boson is a fundamental particle discovered on July 4, 2012, by researchers at the Large Hadron Collider (LHC) located at CERN, Switzerland.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.space.com%2Fhiggs%2Dboson%2Dgod%2Dparticle%2Dexplained&rut=e43baa038d7c289d3b5b9cd854dba94bd112d9c37c4615a8b1fed345a4e7def6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:18:08.625789"
+    },
+    {
+      "topic": "boson",
+      "title": "Boson",
+      "content": "In particle physics, a boson ( ) is a subatomic particle whose spin quantum number has an integer value. Bosons form one of the two fundamental classes of subatomic particle, the other being fermions, which have half odd-integer spin. Every observed subatomic particle is either a boson or a fermion. Paul Dirac coined the name boson to commemorate the contribution of Satyendra Nath Bose, an Indian physicist.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Boson",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T09:23:23.433436"
+    },
+    {
+      "topic": "boson",
+      "title": "Boson - Wikipedia",
+      "content": "A boson is a subatomic particle with integer spin, such as the photon, the gluon, or the Higgs boson. Learn about the origin of the name, the role of bosons in particle physics and condensed matter, and the difference between bosons and fermions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBoson&rut=488bf9c58632e78f1930de85432c32410f3d34820d8e03098872644f174fc675",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:23:24.278663"
+    },
+    {
+      "topic": "boson",
+      "title": "Network Simulator - IT Practice Exams - Training | Boson",
+      "content": "Boson specializes in providing robust examination preparation materials used by individuals, businesses, academic institutions and government entities around the world.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.boson.com%2F&rut=c80c5709560e853161db04b9cad43e273b32c7881587d5ce85bfcc6d34310098",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:23:24.278696"
+    },
+    {
+      "topic": "boson",
+      "title": "Boson | Elementary, Force Carrier & Quantum | Britannica",
+      "content": "boson, subatomic particle with integral spin (i.e., angular momentum in quantum-mechanical units of 0, 1, etc.) that is governed by the Bose-Einstein statistics (q.v.). Bosons include mesons (e.g., pions and kaons), nuclei of even mass number (e.g., helium-4), and the particles required to embody the fields of quantum field theory (e.g., photons and gluons). Bosons differ significantly from a ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fboson&rut=d58315f090f6fe4ea996cde4c90b2459af6083b7e598ffe42756b993e47dabdf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:23:24.278723"
+    },
+    {
+      "topic": "boson",
+      "title": "DOE Explains...Bosons and Fermions | Department of Energy",
+      "content": "Learn how bosons and fermions are the two categories of fundamental particles in nature, based on their spin properties. Find out how the Department of Energy's Office of Science researches and applies these particles in various fields of science.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.energy.gov%2Fscience%2Fdoe%2Dexplainsbosons%2Dand%2Dfermions&rut=3a1ce78fe0bf4a4c543a2f37ed7d9084922fa404f4bf299516db67a25f5ef904",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:23:24.278747"
+    },
+    {
+      "topic": "boson",
+      "title": "What are bosons? | Space",
+      "content": "Bosons are particles that carry energy and forces throughout the universe. Learn about the different types of bosons, their properties, and their roles in the standard model of particle physics.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.space.com%2Fwhat%2Dare%2Dbosons&rut=36d7d1b476d931e57fd015c52e495e23f42854be694ba376b0e95e79373b715b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:23:24.278771"
+    },
+    {
+      "topic": "chemical bond",
+      "title": "Chemical Bond Lesson - Types of Chemical Bonds",
+      "content": "Find the Right Course for Your Needs Today with Our Online Tool. Start Now!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstudy.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DGrxpxsarNCYqtBJmlI3Cqz7xU76pH5eSJkCA6gH%252DEQXjNqBF6Ef5KvM%252DjCPMQqyudMGJ4H5qhLHs3lcw3ceHfMgQto35uIt5V1MMbO18%252DBPCvwQ91OK0eSjZdwgp0lJMmzesgRQ2JOEu74S9YGvdbNVktBAPoube6EdOBq_VVpM.yI6Nkxab749rSaYGMp7fMw%26rut%3D493880b370e1c643c07205fd0eeeb84877b2d6494c3b0c76136948c8160a9ad9%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De87TdL8supMtPa2euQo6xUpDVUCUzfpwJUDkZc1bkAPW6EleUkgH7nclCMoqxZOlMkRE%252DntjucnBaG_QSZBNsbH17j1LJlN2H6cGAew1llYwG0exv6PYr6npqdsYwaHeugt7fnlue5St7XXrGVXnCmTMXCOquTA9DajvWrBc4MSQ5B_J8JVdNS%252DstozwET1IM86WyMk2i%252DXIrGCk4fYq%252D3%252DFcs21M%2526u%253DaHR0cHMlM2ElMmYlMmZzdHVkeS5jb20lMmZidXklMmZhY2FkZW15JTJmbGVzc29uJTJmY2hlbWljYWwtYm9uZHMtaW9uaWMtdnMtY292YWxlbnQuaHRtbCUzZnNyYyUzZHBwY19iaW5nX25vbmJyYW5kJTI2cmNudHh0JTNkYXdzJTI2Y3J0JTNkJTI2a3dkJTNkU0VPLVBQQy1CVVklMjZrd2lkJTNkZGF0LTIzMjkwNDA1MDU4ODY5NDAlM2Fsb2MtMTkwJTI2YWdpZCUzZDEyMzU4NTEzMDI1OTY3NDYlMjZtdCUzZGIlMjZkZXZpY2UlM2RjJTI2bmV0d29yayUzZHMlMjZfY2FtcGFpZ24lM2RTZW9QUEMlMjZtc2Nsa2lkJTNkODUxMjlmYTVkYmUwMTMzMTFmOTFmNmYzNmJlMTY2ZWQ%2526rlid%253D85129fa5dbe013311f91f6f36be166ed%26vqd%3D4%2D241027314358079964945904844345201398429%26iurl%3D%257B1%257DIG%253D70131A9322AD47B8B3CAD7958E93D2F5%2526CID%253D129385D502A16D74289D930103366C3A%2526ID%253DDevEx%252C5045.1&rut=91217d1bef71120b7e61bc06b247003bc626e4092a69fa88d1d49a5671f619fb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:33:53.893471"
+    },
+    {
+      "topic": "chemical bond",
+      "title": "Chemical bond - Wikipedia",
+      "content": "A chemical bond is the association of atoms or ions to form molecules, crystals, and other structures. The bond may result from the electrostatic force between oppositely charged ions as in ionic bonds or through the sharing of electrons as in covalent bonds, or some combination of these effects.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FChemical_bond&rut=1fda0f1884689c2f798ca1fdc5e403c4ef729ba9435120093a1e6c0cc432a662",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:33:53.893572"
+    },
+    {
+      "topic": "chemical bond",
+      "title": "Chemical bonding | Definition, Types, & Examples | Britannica",
+      "content": "Chemical bonding, any of the interactions that account for the association of atoms into molecules, ions, crystals, and other species. When atoms approach one another, their electrons interact and tend to distribute themselves in space so that the total energy is lower than it would be in any alternative arrangement.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fchemical%2Dbonding&rut=cf1cefbd6f42c3d1bfc55aa9b53cb7ee9037fbc3561dad9d81cd06b62fb9b342",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:33:53.893647"
+    },
+    {
+      "topic": "chemical bond",
+      "title": "Chemical Bonds: Definition, Types, and Examples",
+      "content": "Learn what chemical bonds are and how they hold atoms together in molecules. Explore the different types of chemical bonds, such as ionic, covalent, hydrogen, and metallic, with examples and diagrams.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.chemistrylearner.com%2Fchemical%2Dbonds&rut=539761bcdbff1b95d8a521c0494ab20092463d5fa963acbf7ffffb2168949108",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:33:53.893726"
+    },
+    {
+      "topic": "chemical bond",
+      "title": "What is a Chemical Bond? - ChemTalk",
+      "content": "Learn what a chemical bond is and how it holds atoms together in molecules, ions and crystals. Explore the different types of chemical bonds, such as covalent, ionic and metallic, and their characteristics, polarity and examples.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fchemistrytalk.org%2Fwhat%2Dis%2Da%2Dchemical%2Dbond%2F&rut=82b208fde77383aac1b0acc22c2e6097384b32dbc6837389e24285df84bba22a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:33:53.893819"
+    },
+    {
+      "topic": "covalent bond",
+      "title": "Covalent bond - Wikipedia",
+      "content": "Learn about covalent bonding, the chemical process of sharing electrons between atoms to form stable molecules. Explore the history, types, and examples of covalent bonds, as well as their properties and applications.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCovalent_bond&rut=5b21dadd76187de74bea2d6df1e12f75911f167e6e9f95fed477fffdafeccab3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:34:25.314172"
+    },
+    {
+      "topic": "covalent bond",
+      "title": "Covalent bond | Definition, Properties, Examples, & Facts | Britannica",
+      "content": "Covalent bond, in chemistry, the interatomic linkage that results from the sharing of an electron pair between two atoms. The binding arises from the electrostatic attraction of their nuclei for the same electrons. A bond forms when the bonded atoms have a lower total energy than that of widely separated atoms.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fcovalent%2Dbond&rut=8ddb52fef1482e996a2971c8c50bafd019e2d4fbc1b501e4ababe842aab74a11",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:34:25.314213"
+    },
+    {
+      "topic": "covalent bond",
+      "title": "Covalent Bond: Definition, Types, and Examples - Chemistry Learner",
+      "content": "What does covalent bond mean. Check out a few covalent molecules with diagrams and learn their types. Ionic bond vs. covalent bond vs. metallic bond.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.chemistrylearner.com%2Fchemical%2Dbonds%2Fcovalent%2Dbond&rut=f7865e2724cf6f8d23813f33762cd33dff8b6a5d9e079784401f23ad8f9904fd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:34:25.314241"
+    },
+    {
+      "topic": "covalent bond",
+      "title": "5.1: Covalent Bonds - Chemistry LibreTexts",
+      "content": "Covalent and Ionic Compounds Previously, we discussed ionic bonding where electrons can be transferred from one atom to another so that both atoms have an energy-stable outer electron shell. Because most filled electron shells have eight electrons in them, chemists call this tendency the octet rule. As a general rule of thumb, compounds that involve a metal atom and at least a non-metal or a ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fchem.libretexts.org%2FCourses%2Fcan%2FCHEM_410%253A_Chemistry_for_Health_Science%2F05%253A_Covalent_Bonding_and_Simple_Covalent_Compounds%2F5.01%253A_Covalent_Bonds&rut=ce5a06f757724a63e5aecc14758ee18de0b9f93b98e074a2b157735407b2f3ff",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:34:25.314269"
+    },
+    {
+      "topic": "covalent bond",
+      "title": "Covalent Bonds | Introductory Chemistry - Lumen Learning",
+      "content": "Covalent bonds can be made between different elements as well. One example is HF. Each atom starts out with an odd number of electrons in its valence shell: The two atoms can share their unpaired electrons to make a covalent bond: We note that the H atom has a full valence shell with two electrons, while the F atom has a complete octet of ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fcourses.lumenlearning.com%2Fsuny%2Dintroductory%2Dchemistry%2Fchapter%2Fcovalent%2Dbonds%2F&rut=b2f100df9938a687a421214f83ca1b58c845f42116a43b043f9893d407a1a129",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:34:25.314296"
+    },
+    {
+      "topic": "ionic bond",
+      "title": "Ionic bonding - Wikipedia",
+      "content": "Ionic bonding is a type of chemical bonding that involves the electrostatic attraction between oppositely charged ions, or between two atoms with sharply different electronegativities. Learn about the properties, formation, and examples of ionic compounds, and how they differ from covalent and metallic bonding.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FIonic_bonding&rut=9ed98e6e26fd4a6a91bd11b969fd57dabfd754714b9c52f61ace8a3f536a71b1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:34:57.230082"
+    },
+    {
+      "topic": "ionic bond",
+      "title": "Ionic bond | Definition, Properties, Examples, & Facts | Britannica",
+      "content": "Ionic bond, type of linkage formed from the electrostatic attraction between oppositely charged ions in a chemical compound. Such a bond forms when the valence (outermost) electrons of one atom are transferred permanently to another atom. Learn more about ionic bonds in this article.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fionic%2Dbond&rut=2eb38b355ef023d20629475033f6863413a6791213085d46e107de82c102ff17",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:34:57.230169"
+    },
+    {
+      "topic": "ionic bond",
+      "title": "Ionic Bond: Facts, Definition, Properties, Examples, & Diagrams",
+      "content": "Learn what an ionic bond is, how it forms, and its characteristics. See examples of ionic compounds and their Lewis structures.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.chemistrylearner.com%2Fchemical%2Dbonds%2Fionic%2Dbond&rut=7e952bc06ef250292d4101119298e02ee639c5924dc14c4ebf542e923191a7b7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:34:57.230210"
+    },
+    {
+      "topic": "ionic bond",
+      "title": "Ionic Bonds Explained: Electron Transfer & Octet Rule",
+      "content": "Explore how metals and nonmetals form ionic bonds through electron transfer and the octet rule, with clear diagrams and practice questions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.physicsclassroom.com%2FChemistry%2DTutorial%2FChemical%2DBonding%2Dand%2DMolecular%2DGeometry%2FIonic%2DBonds&rut=f4df20f375e678d3cd0afcb9ba67d95910033b2367f83d50d2e81f3cf4751fbf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:34:57.230246"
+    },
+    {
+      "topic": "ionic bond",
+      "title": "Ionic Bond Definition and Examples - Science Notes and Projects",
+      "content": "Learn what an ionic bond is, how it forms, and what properties it has. See examples of ionic compounds and how to predict ionic bonding using electronegativity.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsciencenotes.org%2Fionic%2Dbond%2Ddefinition%2Dand%2Dexamples%2F&rut=037de55a0cf0a59f4be98853541ee1b11e66f32ba8cec6d465543e074e7957e0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:34:57.230289"
+    },
+    {
+      "topic": "hydrogen bond",
+      "title": "Hydrogen bond - Wikipedia",
+      "content": "Learn about hydrogen bonding, a specific type of molecular interaction that exhibits partial covalent character and cannot be described as a purely electrostatic force. Find out its definition, characteristics, examples, strength, and role in chemistry, biology, and materials science.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHydrogen_bond&rut=f852519b77e730f73aad47071a511dfaf099458c8a90debf6347e4d828e1e9aa",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:35:28.610268"
+    },
+    {
+      "topic": "hydrogen bond",
+      "title": "Hydrogen bonding | Definition, Examples, & Facts | Britannica",
+      "content": "Hydrogen bonding, interaction involving a hydrogen atom located between a pair of other atoms having a high affinity for electrons; such a bond is weaker than an ionic bond or covalent bond but stronger than van der Waals forces. Hydrogen bonds can exist between atoms in different molecules or in the same molecule.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fhydrogen%2Dbonding&rut=fbb8a6ebe0543018659bf4291b4d11f834360208b08ba5ad70413d21a574d065",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:35:28.610315"
+    },
+    {
+      "topic": "hydrogen bond",
+      "title": "Hydrogen Bonding - Chemistry LibreTexts",
+      "content": "A hydrogen bond is a weak type of force that forms a special type of dipole-dipole attraction which occurs when a hydrogen atom bonded to a strongly electronegative atom exists in the vicinity of \u2026",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fchem.libretexts.org%2FBookshelves%2FPhysical_and_Theoretical_Chemistry_Textbook_Maps%2FSupplemental_Modules_(Physical_and_Theoretical_Chemistry)%2FPhysical_Properties_of_Matter%2FAtomic_and_Molecular_Properties%2FIntermolecular_Forces%2FSpecific_Interactions%2FHydrogen_Bonding&rut=6bf03104d7a445dc777284a7aa252b6dd30e7d8d2a96e084b8e87274ee703539",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:35:28.610382"
+    },
+    {
+      "topic": "hydrogen bond",
+      "title": "Hydrogen Bond Definition and Examples",
+      "content": "Learn what a hydrogen bond is, how it forms, and what types and effects it has. See examples of hydrogen bonds in inorganic and organic molecules, such as water, DNA, and nylon.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsciencenotes.org%2Fhydrogen%2Dbond%2Ddefinition%2Dand%2Dexamples%2F&rut=88918d187501d2ad7eb8a467f1b8c38f38af02891c452294a91b41191b1c9dd8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:35:28.610456"
+    },
+    {
+      "topic": "hydrogen bond",
+      "title": "What Is a Hydrogen Bond and Why Is It So Important?",
+      "content": "The formation of a hydrogen bond begins with an uneven distribution of electrons within a molecule, a characteristic known as polarity. This occurs when a hydrogen atom is directly bonded to a highly electronegative atom, such as oxygen, nitrogen, or fluorine.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbiologyinsights.com%2Fwhat%2Dis%2Da%2Dhydrogen%2Dbond%2Dand%2Dwhy%2Dis%2Dit%2Dso%2Dimportant%2D2%2F&rut=e9e74f11c3cd4522d00dc65fe0fca3de0cd21877ded223c5705064f1ba7a3525",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:35:28.610491"
+    },
+    {
+      "topic": "acid base reaction",
+      "title": "Acid-base reaction | Definition, Examples, Formulas, & Facts | Britannica",
+      "content": "Acid-base reaction, a type of chemical process in which one or more hydrogen ions are exchanged between species that may be neutral (molecules, such as water or acetic acid), or electrically charged (ions, such as ammonium, carbonate, or hydroxide).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Facid%2Dbase%2Dreaction&rut=d949d2c8f1465bcedc407078e774d31b47646d8a3a23c684bcc8cee8911454eb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:38:06.853297"
+    },
+    {
+      "topic": "acid base reaction",
+      "title": "Acid-base reaction - Wikipedia",
+      "content": "In chemistry, an acid-base reaction is a chemical reaction that occurs between an acid and a base. It can be used to determine pH via titration. Several theoretical frameworks provide alternative conceptions of the reaction mechanisms and their application in solving related problems; these are called the acid-base theories, for example, Br\u00f8nsted-Lowry acid-base theory. Their ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAcid%25E2%2580%2593base_reaction&rut=468221dfcd4b23528abccd9846d301bf9aa452543054f3bc89fe5f0169b9fd57",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:38:06.853414"
+    },
+    {
+      "topic": "acid base reaction",
+      "title": "4.7: Acid Base Reactions - Chemistry LibreTexts",
+      "content": "Acid-base reactions are essential in both biochemistry and industrial chemistry. Moreover, many of the substances we encounter in our homes, the supermarket, and the pharmacy are acids or bases. For example, aspirin is an acid (acetylsalicylic acid), and antacids are bases. In fact, every amateur chef who has prepared mayonnaise or squeezed a wedge of lemon to marinate a piece of fish has ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fchem.libretexts.org%2FBookshelves%2FGeneral_Chemistry%2FBook%253A_General_Chemistry%253A_Principles_Patterns_and_Applications_(Averill)%2F04%253A_Reactions_in_Aqueous_Solution%2F4.07%253A_Acid_Base_Reactions&rut=92dd95fd98d3fea85cd4d83bffc16216c0c422c18fc5db679e0128e58769c09d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:38:06.853494"
+    },
+    {
+      "topic": "acid base reaction",
+      "title": "Acid-Base Reaction: Definition, Examples, and Uses",
+      "content": "An acid-base reaction is a chemical reaction that occurs between an acid and a base that are the reactants. The products of this reaction are salt and water. An acid-base reaction is a double-replacement reaction where ions exchange their positions. This type of reaction is essential in both biochemistry and industrial chemistry [1,2].",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.chemistrylearner.com%2Fchemical%2Dreactions%2Facid%2Dbase%2Dreaction&rut=335ba10e45a8ff78184b20d1b276dd4a4a38176bd1852e9627870efa30d29814",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:38:06.853588"
+    },
+    {
+      "topic": "acid base reaction",
+      "title": "4.3 Acid-Base Reactions - Introduction to Chemistry",
+      "content": "Learn the definitions, examples, and types of acids and bases, and how they react in aqueous solutions. Explore the concepts of strong and weak acids and bases, and how to predict the products of acid-base reactions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fopenoregon.pressbooks.pub%2Fgschemistry%2Fchapter%2F4%2D3%2Dacid%2Dbase%2Dreactions%2F&rut=f5d8c677a193b155a5308dd69ea0796987dac2062acb13ecceda01518c1c94d7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:38:06.853663"
+    },
+    {
+      "topic": "buffer solution",
+      "title": "ph buffer calibration solution - Amazon.com Official Site",
+      "content": "Find deals and low prices on ph buffer calibration solution at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D4QqV3PyR23AX_jmNXACak_z3dvFfrThi9xOoNZi545BqIy440jAOiAjz_q7bHZlFPCtfUIjcE9jFPS7X7Jn5P574nyQvPP%252DDtOioWlQRB4EhNZXy9%252DenZ4ZWODo%252Decv4hRqlRnPPb9DQbJMTCAYwNN_2AEkKOvC3sScagQBWu6g.d540lcZvIUE32wgXcfDK4g%26rut%3Dda5e5a3e6ef7dae15523a35c04f66eb01fb07057fb20ceabaca9a89ecb486dd2%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8SIHZ%252DQDkIDDqjsJ4d741PzVUCUwigZhe%252DtwPyvTcyHPRLlgq_OUg7E4ZNRQpz9vc%252D_wyGK5MbpsCnQQ7tWf3PIf8f21996B9keXV8wWPbC08wnTEkCK0WZbs5zo4sgEKsSDzDEHZUneACGFJtAEuW1RmWz90SmCtY%252D_RiqYcKAl9nWBZMww03qxPWed1%252D_ZwE0dsDj7Vxq3IcR7S01fm4Q691Ew%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZHBoJTJiYnVmZmVyJTJiY2FsaWJyYXRpb24lMmJzb2x1dGlvbiUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzUwcGo3dTRkcmFfcCUyNmFkZ3JwaWQlM2QxMjMyNTUyODQ1NzIwMTUxJTI2aHZhZGlkJTNkNzcwMzQ3MTk0MDA1MzMlMjZodm5ldHclM2RzJTI2aHZxbXQlM2RwJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjYyMiUyNmh2dGFyZ2lkJTNka3dkLTc3MDM0Nzg3NzQ1NjEyJTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QxMjkwNF8xMzUwNTE3MiUyNm1jaWQlM2Q0ODZhMGNkMjA3Y2IzYTRkYmQ2ZmVmNjUwNGQ3ZjUwNSUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkODNkNGNhZDE2MzJmMWZmYzAyMzVhMzg3ZDIxMTdiZWY%2526rlid%253D83d4cad1632f1ffc0235a387d2117bef%26vqd%3D4%2D249280840125638563035055286767761767588%26iurl%3D%257B1%257DIG%253DFC10A0668F4E4A03B6615ECC3B9DCB50%2526CID%253D2291287871E06BB825593EAC70356AEF%2526ID%253DDevEx%252C5050.1&rut=47567604c67a465a1e027eca0fea2ddc09b03abd8f966e42917b57268698b812",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:39:11.049105"
+    },
+    {
+      "topic": "buffer solution",
+      "title": "Buffer solution - Wikipedia",
+      "content": "Buffer capacity Buffer capacity is a quantitative measure of the resistance to change of pH of a solution containing a buffering agent with respect to a change of acid or alkali concentration.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBuffer_solution&rut=540106546e574951a76806b6479d73fab92a32f3bba4fcddcbc37d707a5ed9a3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:39:11.049185"
+    },
+    {
+      "topic": "buffer solution",
+      "title": "Buffer Solution: Definition, Examples, and Preparation",
+      "content": "Learn what a buffer solution is, how to make and calculate its pH, and how it works as a pH regulator. Explore the types, characteristics, and applications of acidic and basic buffers with examples and solved problems.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.chemistrylearner.com%2Fbuffer%2Dsolution.html&rut=882cf7e47e01de2b3c1c06f06451bff9d7f909a8abd2274a9e6bf95cd1d79e14",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:39:11.049248"
+    },
+    {
+      "topic": "buffer solution",
+      "title": "Introduction to Buffers - Chemistry LibreTexts",
+      "content": "Introduction to Buffers Page ID A buffer is a solution that can resist pH change upon the addition of an acidic or basic components. It is able to neutralize small amounts of added acid or base, thus maintaining the pH of the solution relatively stable. This is important for processes and/or reactions which require specific and stable pH ranges.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fchem.libretexts.org%2FBookshelves%2FPhysical_and_Theoretical_Chemistry_Textbook_Maps%2FSupplemental_Modules_(Physical_and_Theoretical_Chemistry)%2FAcids_and_Bases%2FBuffers%2FIntroduction_to_Buffers&rut=d34ac224574fcb44aefc628d66c18bf508b2c7974c0e2275285c6a9fe8034663",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:39:11.049311"
+    },
+    {
+      "topic": "biochemistry",
+      "title": "Biochemistry",
+      "content": "Biochemistry, or biological chemistry, is the study of chemical processes within and relating to living organisms. A sub-discipline of both chemistry and biology, biochemistry may be divided into three fields: structural biology, enzymology, and metabolism. Over the last decades of the 20th century, biochemistry has become successful at explaining living processes through these three disciplines. Almost all areas of the life sciences are being uncovered and developed through biochemical methodology and research. Biochemistry focuses on understanding the chemical basis that allows biological molecules to give rise to the processes that occur within living cells and between cells, in turn relating greatly to the understanding of tissues and organs as well as organism structure and function. Biochemistry is closely related to molecular biology, the study of the molecular mechanisms of biological phenomena.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Biochemistry",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T09:40:45.019776"
+    },
+    {
+      "topic": "biochemistry",
+      "title": "Online chemistry - 100% Online - Enroll Today",
+      "content": "Unique in-home lab kit available for those needing the laboratory component. General chemistry online courses with or without lab available.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Ducsd.edu%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Dx7mXjZ6ED%252DiWs5MmXBkGHgUvr0R2AZCNa9Mc4k92SuX9UlAOzW8fEn1H9euFExqklvFN5TpdvLY89ekhij86_WE9dcGohjqHFp_piVSMkbMjdEt1zGfffIp6rZNy4eoRp7FeOWO1Q5GTjFCGGz%252DxYXQEO92KA3cI4g%252DnHb_JC_M.zR4mjMSs77625qZgwC9QCA%26rut%3D78bcde2cbd6659d3a2e39fac7fc81ad15d15eb6d812b6abb1d28d18d56efd717%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8rVwwcnZ2cNwaxGa8gVc%252DKzVUCUz_rpM0AZ_MzBZUp5YOrp%252DS6fqEFH10wdSlVrUiwnm_qvSY8vUaOqbwpYeDu3d7UQXkGAXgfnpcXnRSCwDMCXkPzGKeh53iZZ097HuttnD1Evju_TVyMcOwF4GNguiLbo36T8d7GkdqNSdhTo31Ja3I5TzxU8%252DNR847kDracrQxkdoiWcMXxrqBnL4BQFo_Xks%2526u%253DaHR0cHMlM2ElMmYlMmZleHRlbmRlZHN0dWRpZXMudWNzZC5lZHUlMmZjb3Vyc2VzLWFuZC1wcm9ncmFtcyUyZmJhc2ljLXNjaWVuY2VzJTNmbXNjbGtpZCUzZDVhZWU2OGI4OTVkMDFjNWZkMzc2MDFlZTI0NGQ1Y2U5JTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkU0NTJTI1MjAtJTI1MjBCYXNpYyUyNTIwU2NpZW5jZXMlMjZ1dG1fdGVybSUzZG9ubGluZSUyNTIwY2hlbWlzdHJ5JTI2dXRtX2NvbnRlbnQlM2RDaGVtaXN0cnk%2526rlid%253D5aee68b895d01c5fd37601ee244d5ce9%26vqd%3D4%2D338681055223310764560273498707930629291%26iurl%3D%257B1%257DIG%253DA4C704B286334C0F962677C519820995%2526CID%253D254DCDBBA27760132DE5DB6FA3FB61BD%2526ID%253DDevEx%252C5045.1&rut=f86d06c169c5f89ebec66a453908562461a778936e407be7faaa8132e49d4675",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:40:46.000062"
+    },
+    {
+      "topic": "biochemistry",
+      "title": "Biochemistry - Wikipedia",
+      "content": "Biochemistry, or biological chemistry (distinct from chemical biology), is the study of chemical processes within and relating to living organisms. [1] A sub-discipline of both chemistry and biology, biochemistry may be divided into three fields: structural biology, enzymology, and metabolism.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBiochemistry&rut=8fca4b9df55d65e1f599f053584bb2fae08b303e22a0ed748a2c67b49472c619",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:40:46.000118"
+    },
+    {
+      "topic": "biochemistry",
+      "title": "Biochemistry | Definition, History, Examples, Importance, & Facts ...",
+      "content": "Biochemistry is the study of the chemical substances and processes that occur in plants, animals, and microorganisms and of the changes they undergo during development and life.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fbiochemistry&rut=f6d224b619f08a9178ecd82335a9d704e9d73720e433a54028242d66eec340c5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:40:46.000163"
+    },
+    {
+      "topic": "biochemistry",
+      "title": "What is Biochemistry? A Dive into Life's Molecular Foundations",
+      "content": "Biochemistry is the study of the chemical processes within living organisms. Learn how biochemistry can empower students to chart their path toward educational and career goals, and explore its applications in medicine, agriculture, environment, and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fextendedstudies.ucsd.edu%2Fnews%2Devents%2Fextended%2Dstudies%2Dblog%2Fwhat%2Dis%2Dbiochemistry&rut=10172a769370c9a274877c3d36a0c1bdf0ca34e57b7aa69ab7dc716cfd79ddf4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:40:46.000208"
+    },
+    {
+      "topic": "biochemistry",
+      "title": "What is Biochemistry - Michigan Technological University",
+      "content": "Biochemistry is the study of the chemicals and chemistry of living organisms. Biochemists study biomolecules such as proteins, RNA, DNA, sugars, and lipids and their applications and interactions in the body as well as biochemical and metabolic processes. Biochemists apply their knowledge to design drugs, to genetically engineer plants and microbes, and to understand more about how life works ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mtu.edu%2Fchemistry%2Fundergraduate%2Fbiochemistry%2Fwhat%2F&rut=04c71f7d8d75cc7bb6250fad3a5d24a7e5f30eb13a82ef175e1ed7661160548d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:40:46.000252"
+    },
+    {
+      "topic": "bulgarian lev",
+      "title": "BGN - Bulgarian Lev rates, news, and tools | Xe",
+      "content": "Xe provides information and tools for the Bulgarian Lev, the currency of Bulgaria. Learn about the Lev symbol, coins, bank notes, central bank, and popular exchange rates with other currencies.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.xe.com%2Fcurrency%2Fbgn%2Dbulgarian%2Dlev%2F&rut=0ab9f1def36c8ba597e726fbd902dc08ea3e13a6d9457336757543653edce82e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:42:52.908195"
+    },
+    {
+      "topic": "bulgarian lev",
+      "title": "Bulgarian lev - Wikipedia",
+      "content": "Bulgarian lev ... The lev (Bulgarian: \u043b\u0435\u0432, plural: \u043b\u0435\u0432\u0430, \u043b\u0435\u0432\u043e\u0432\u0435 / leva, [4] levove; ISO 4217 code: BGN) was the sole currency of Bulgaria from 1880 to 2025, and is in a double circulation period alongside the euro from 1 January 2026 until its full withdrawal on 31 January 2026.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBulgarian_lev&rut=b243eca567ee334b8e0077802d9c989ba19288852e45bb0f19a725838df1804d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:42:52.908296"
+    },
+    {
+      "topic": "bulgarian lev",
+      "title": "Farewell to the Lev (BGN) - After 145 Years of Existence, Bulgaria's ...",
+      "content": "After 145 years in circulation, Bulgaria's national currency, the lev, is set to retire. But how did it come into existence, what trials has it faced, and which personalities are linked to its story? The lev was introduced on 4 June 1880, when the National Assembly passed the Law granting the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbntnews.bg%2Fnews%2Ffarewell%2Dto%2Dthe%2Dlev%2Dbgn%2Dafter%2D145%2Dyears%2Dof%2Dexistence%2Dbulgaria%2D39s%2Dnational%2Dcurrency%2Dwill%2Dcome%2Dto%2Dan%2Dend%2Das%2Dthe%2Dcountry%2Dp%2D1371810news.html&rut=1a5ef2057e2c521727508886dd90c0586a3b9fe28a6ecb53fc927c17df3c6ff8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:42:52.908336"
+    },
+    {
+      "topic": "bulgarian lev",
+      "title": "The Lev's Final Chapter: The Story of Bulgaria's National Currency ...",
+      "content": "On January 1, 2026, Bulgaria will officially adopt the euro, completing a process of European integration that began with EU membership in 2007. With this step, the Bulgarian lev will exit ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.novinite.com%2Farticles%2F236184%2FThe%2BLev%25E2%2580%2599s%2BFinal%2BChapter%253A%2BThe%2BStory%2Bof%2BBulgaria%25E2%2580%2599s%2BNational%2BCurrency%2BBefore%2Bthe%2BEuro%2BTakes%2BOver&rut=f2a159f2a4e4ee0c7c75aa779dbc99f4d62dafddbd26778371bf2f59b4f04c9f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:42:52.908373"
+    },
+    {
+      "topic": "bulgarian lev",
+      "title": "Convert Bulgarian Lev to United States Dollar | BGN to USD Currency ...",
+      "content": "Currency converter to convert from Bulgarian Lev (BGN) to United States Dollar (USD) including the latest exchange rates, a chart showing the exchange rate history for the last 120-days and information about the currencies.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fthemoneyconverter.com%2FBGN%2FUSD&rut=60cd0d39054589fd688d02e146982e7a375d6e71e6fa3f92d246a95488259acb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:42:52.908409"
+    },
+    {
+      "topic": "2011 alexandria bombing",
+      "title": "2011 Alexandria bombing - Wikipedia",
+      "content": "The 2011 Alexandria bombing was an attack on Coptic Christians in Alexandria, Egypt, on New Year's Day, 1 January 2011. Twenty-three people were killed and another ninety-seven were injured, as a result of the attack, which occurred as the Christian worshipers were leaving. [1][3][4][5] The attack was the deadliest act of violence against Egypt's Coptic Christians in a decade, since the Kosheh ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2F2011_Alexandria_bombing&rut=695d111f56959142ac889b460fbfc7a02adaf27928ea057f6f003a6698394b12",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:38.362389"
+    },
+    {
+      "topic": "2011 alexandria bombing",
+      "title": "Egypt bomb kills 21 at Alexandria Coptic church - BBC",
+      "content": "Egypt blames a suicide bomber with foreign links for a blast which killed at least 21 people at an Alexandria church and sparked a Christian-Muslim clash.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.bbc.com%2Fnews%2Fworld%2Dmiddle%2Deast%2D12101748&rut=0ae161abb07624c67e8451dc37e0a3f1b08979a920103fa9eeab4a6c6b6f9eba",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:38.362494"
+    },
+    {
+      "topic": "2011 alexandria bombing",
+      "title": "Fatal Bomb Hits a Church in Egypt (Published 2011)",
+      "content": "A bomb, possibly worn by a suicide attacker, ripped through a throng of worshipers outside of a Coptic Christian church in the port city of Alexandria, Egypt, early Saturday, killing at least 21 ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nytimes.com%2F2011%2F01%2F02%2Fworld%2Fmiddleeast%2F02egypt.html&rut=94144caffd4999860b5da52d77234ac8c342bd75846a39fd70a3f1265dfdc2bc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:38.362567"
+    },
+    {
+      "topic": "2011 alexandria bombing",
+      "title": "Copts return to scene of deadly bombing in Egypt - CNN",
+      "content": "Emotional congregants returned to their church Sunday in Alexandria, Egypt, mourning the loss of fellow worshippers in a bombing a day earlier.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cnn.com%2F2011%2FWORLD%2Fmeast%2F01%2F02%2Fegypt.attack%2Findex.html&rut=f7ee461563c87ce9197b2b5cce1a5fe0e884152ed292c04d772e8fe811e829d6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:38.362637"
+    },
+    {
+      "topic": "2011 alexandria bombing",
+      "title": "Suspected suicide bomber kills 21 in attack on Egyptian church",
+      "content": "A car bomb attack outside a Coptic Christian church in Alexandria, Egypt, that killed 21 people is thought to have been carried out by a suicide bomber. The blast took place less that two weeks after al Qaeda in Iraq threatened to kill Christians. A car packed with explosives was detonated outside ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.longwarjournal.org%2Farchives%2F2011%2F01%2Fsuspected_suicide_bo.php&rut=59fa4a1555e6d63671a92652f6d170910bd11b05d7f01c8606f3edc208b2d09e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:38.362720"
+    },
+    {
+      "topic": "peptide bond",
+      "title": "Peptide Bond - Peptides Guide",
+      "content": "Learn what a peptide bond is, how it forms by dehydration synthesis, and how it affects the structure and stability of peptides and proteins. Find out how peptide bonds absorb UV light and how they are broken by proteases.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fpeptidesguide.com%2Fpeptide%2Dbond.html&rut=e7b5d3a88854e043e0ec0e5d25bebe3da3a107eeb341e9007ca92ad1cdf6e919",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:50:19.497256"
+    },
+    {
+      "topic": "peptide bond",
+      "title": "Peptide bond - Wikipedia",
+      "content": "A peptide bond is a covalent bond between two amino acids that forms a peptide or protein chain. Learn about its synthesis, degradation, spectra, isomers and chemical reactions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPeptide_bond&rut=97d28358887e7dff050ff63ae4de67dbd91feb089711d96d0adbe8768addd785",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:50:19.497337"
+    },
+    {
+      "topic": "peptide bond",
+      "title": "Peptide Bonds: Structure, Formation and Importance",
+      "content": "Peptide bonds create a directional backbone that guides hydrogen bonding patterns, secondary structure formation, and higher-order folding. A single substitution can alter side-chain interactions or backbone geometry, which may affect activity or stability.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fpraxpeptides.com%2Fwhat%2Dare%2Dpeptide%2Dbonds%2F&rut=e7ab7e816b5b301a7c9910ab165dec544026d47837ca9572d9fbd697140600a4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:50:19.497399"
+    },
+    {
+      "topic": "peptide bond",
+      "title": "Peptide Bond: Definition, Structure, Mechanism, and Examples",
+      "content": "A peptide bond is a covalent chemical bond formed by linking the carboxyl group of one free amino acid molecule to the amino group of another. During this process, a molecule of water is released - a process known as dehydration or condensation.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.chemistrylearner.com%2Fchemical%2Dbonds%2Fpeptide%2Dbond&rut=c6b51b76245aa48ffb6fbfffab316d3c419f332877ccaa67b7cbdc14fd3c5af9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:50:19.497460"
+    },
+    {
+      "topic": "peptide bond",
+      "title": "Understanding the Peptide Bond: A Key Component of Protein Structure",
+      "content": "Delve into the fascinating world of molecular biology with this detailed exploration of the peptide bond, a fundamental building block of proteins. This article provides an in-depth look at the chemical structure and formation of peptide bonds, illustrated through a clear and informative diagram. Whether you're studying biochemistry or seeking to understand the basics of protein synthesis ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fanatomynote.com%2Funderstanding%2Dthe%2Dpeptide%2Dbond%2Da%2Dkey%2Dcomponent%2Dof%2Dprotein%2Dstructure%2F&rut=b45933b892143f6121f0e0e4c6dab32467199ff6adf799af57e596114be855d7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:50:19.497525"
+    },
+    {
+      "topic": "bulgaria and the euro",
+      "title": "Bulgaria and the euro - Wikipedia",
+      "content": "Bulgaria adopted the euro on 1 January 2026, making it the 21st member state of the eurozone. [1] When Bulgaria joined the EU in 2007 it committed to join the eurozone and replace its currency, the lev, with the euro.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBulgaria_and_the_euro&rut=5dfe6b02c93dba91928160e236398cdaa5e1489ca006cbecd2a3367aa5e65229",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:51:55.707993"
+    },
+    {
+      "topic": "bulgaria and the euro",
+      "title": "Bulgaria introduces the euro - European Central Bank",
+      "content": "The euro officially entered into circulation in Bulgaria today, bringing the number of European Union (EU) Member States using the single European currency to 21. This follows on from the formal decision made in July, which also announced the official conversion rate of 1.95583 Bulgarian lev per 1 euro.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ecb.europa.eu%2Fpress%2Fpr%2Fdate%2F2026%2Fhtml%2Fecb.pr260101~c830245e42.en.html&rut=9c7020d73ea645c84f78fa0a020f68546ae0d14fa29bc748cf53f837a69877fc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:51:55.708034"
+    },
+    {
+      "topic": "bulgaria and the euro",
+      "title": "What Bulgaria's joining the euro countries will mean for businesses ...",
+      "content": "On New Year's Day, Bulgaria will achieve its decades-old goal of joining the euro currency union and deepening ties with the more prosperous countries of Western Europe. Membership is expected to promote cross-border trade and investment, and the Bulgarian government pressed for years to get in.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fapnews.com%2Farticle%2Fbulgaria%2Deu%2Deuro%2Drussia%2Ddisinformation%2Dexplainer%2D6af51f70dd73dcfb0f7c4e829951abbb&rut=2f92c01b3c49c4cd4d285f06e8641006cdffae17ae8e8b866f87c807772eebee",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:51:55.708066"
+    },
+    {
+      "topic": "bulgaria and the euro",
+      "title": "Bulgaria joining eurozone is big deal - DW - 12/29/2025",
+      "content": "The southeastern European country is set to ditch its national currency in favor of the euro. But while Bulgaria's economy has improved, mismanagement and corruption remain rampant.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.dw.com%2Fen%2Fbulgaria%2Djoining%2Deurozone%2Dis%2Dbig%2Ddeal%2Deuro%2Dsofia%2Fa%2D75125642&rut=a737259793bc34515aeb741ce1032d54b114667626f15a67530c9700fbc10b6d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:51:55.708097"
+    },
+    {
+      "topic": "bulgaria and the euro",
+      "title": "Bulgaria adopts the Euro in 2026, becoming the 21st member of ... - WION",
+      "content": "Bulgaria becomes the 21st eurozone member in 2026. Why the euro shift is a geopolitical signal, how the economy is performing, and public concerns.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.wionews.com%2Fworld%2Fbulgaria%2Deuro%2Dadoption%2D2026%2Deu%2Drussia%2Dsignificance%2D1767248987263&rut=b934036db39867a817b76708b66d6345478b7926905ba4cb43cec84669b5a490",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:51:55.708128"
+    },
+    {
+      "topic": "transcription biology",
+      "title": "Transcription (biology) - Wikipedia",
+      "content": "Transcription is the process of duplicating a segment of DNA into RNA for the purpose of gene expression. Some segments of DNA are transcribed into RNA molecules that can encode proteins, called messenger RNA (mRNA). Other segments of DNA are transcribed into RNA molecules called non-coding RNAs (ncRNAs). Both DNA and RNA are nucleic acids, composed of nucleotide sequences. During ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTranscription_(biology)&rut=90d8d1d8bc86df9cdcd4a85822d9edc44e71a87c12ca108f29226156a37a5f1d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:53:29.942152"
+    },
+    {
+      "topic": "transcription biology",
+      "title": "Overview of transcription - Khan Academy",
+      "content": "In transcription, the DNA sequence of a gene is transcribed (copied out) to make an RNA molecule.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.khanacademy.org%2Fscience%2Fap%2Dbiology%2Fgene%2Dexpression%2Dand%2Dregulation%2Ftranscription%2Dand%2Drna%2Dprocessing%2Fa%2Foverview%2Dof%2Dtranscription&rut=2b722498b336ae366b9fc0429cbfebf33a94c2330dd6db28f69b4c4b92b2e914",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:53:29.942200"
+    },
+    {
+      "topic": "transcription biology",
+      "title": "Transcription in Biology - Steps, Functions, Regulation",
+      "content": "Learn about transcription in biology. See the definition, function, and steps of transcription. Learn about regulation and diseases.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsciencenotes.org%2Ftranscription%2Din%2Dbiology%2Dstep%2Dfunctions%2Dregulation%2F&rut=c1091d338f1bc4bdbc5b28969b49a857a1bdb435d56d67e96f7be289290364e0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:53:29.942241"
+    },
+    {
+      "topic": "transcription biology",
+      "title": "Transcription - Introductory Biology: Evolutionary and Ecological ...",
+      "content": "Transcription: from DNA to mRNA Both prokaryotes and eukaryotes perform fundamentally the same process of transcription, with the important difference of the membrane-bound nucleus in eukaryotes. With the genes bound in the nucleus, transcription occurs in the nucleus of the cell and the mRNA transcript must be transported to the cytoplasm.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fpressbooks.umn.edu%2Fintrobio%2Fchapter%2Fgeneticstranscription%2F&rut=0c256503f3f3eaeab6cfd3c670401047c406d757a141ee3372e4f98fb93523ff",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:53:29.942282"
+    },
+    {
+      "topic": "transcription biology",
+      "title": "9.3 Transcription - Concepts of Biology | OpenStax",
+      "content": "On termination, the process of transcription is complete. In a prokaryotic cell, by the time termination occurs, the transcript would already have been used to partially synthesize numerous copies of the encoded protein because these processes can occur concurrently using multiple ribosomes (polyribosomes) (Figure 9.17).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fopenstax.org%2Fbooks%2Fconcepts%2Dbiology%2Fpages%2F9%2D3%2Dtranscription&rut=24fa39feeb5a0f8d9cc7b236a3809e7dd34f2e46b82181343aceb0dca2db6cf8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:53:29.942322"
+    },
+    {
+      "topic": "translation biology",
+      "title": "Translation (biology) - Wikipedia",
+      "content": "Translation (biology) Overview of eukaryotic messenger RNA translation Part of a series on Biology Index Outline Glossary History (timeline) show Key components show Branches show Research show Applications Biology portal Category v t e Translation is the process in biological cells in which proteins are produced using RNA molecules as ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTranslation_(biology)&rut=620a523c27558228636d8807c626923137e29a077912dd5709c8305da24579fa",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:54:01.379805"
+    },
+    {
+      "topic": "translation biology",
+      "title": "Translation | Description, Process, & Location | Britannica",
+      "content": "Translation, the synthesis of protein from RNA. Translation takes place on ribosomes, where messenger RNA molecules are read and translated into amino acid chains. These chains are then folded in various ways to form proteins. Translation follows transcription, in which DNA is decoded into RNA.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Ftranslation%2Dgenetics&rut=582931cba867ea3698b131676a4c7e6393fc568bf62fac7ff230f1ebc0ea4d03",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:54:01.379887"
+    },
+    {
+      "topic": "translation biology",
+      "title": "Stages of translation (article) | Khan Academy",
+      "content": "To use a little molecular biology vocab, these antibiotics block translation. In the process of translation, a cell reads information from a molecule called a messenger RNA (mRNA) and uses this information to build a protein.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.khanacademy.org%2Fscience%2Fbiology%2Fgene%2Dexpression%2Dcentral%2Ddogma%2Ftranslation%2Dpolypeptides%2Fa%2Fthe%2Dstages%2Dof%2Dtranslation&rut=b56e19bd9c17956cd39cbd456eba1b82e94682f2b1a41bca63f529bf9928933f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:54:01.379955"
+    },
+    {
+      "topic": "translation biology",
+      "title": "Translation in Biology - Definition, Steps, and Importance",
+      "content": "Learn what translation is in biology and how it works. Explore the steps, mechanisms, regulation, and significance of protein synthesis.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsciencenotes.org%2Ftranslation%2Din%2Dbiology%2Ddefinition%2Dsteps%2Dand%2Dimportance%2F&rut=246ecb44b798dabaa557ba581fa67ec606e96c4d583ba7cd5e6953ac986cf745",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:54:01.380021"
+    },
+    {
+      "topic": "translation biology",
+      "title": "Translation - National Human Genome Research Institute",
+      "content": "Translation. Translation is, perhaps, the single most important event in biology because what protein is translated versus what isn't translated makes the difference between your body building a heart versus lungs.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.genome.gov%2Fgenetics%2Dglossary%2FTranslation&rut=e696f09fd87960c451a8c1b5f66cbcc3bf348a564ff125fb8a547cdafb91f9c3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:54:01.380088"
+    },
+    {
+      "topic": "biotechnology",
+      "title": "Biotechnology",
+      "content": "Biotechnology is a multidisciplinary field that involves the integration of natural sciences and engineering sciences in order to achieve the application of organisms and parts thereof for products and services. Specialists in the field are known as biotechnologists.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Biotechnology",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T10:02:56.827732"
+    },
+    {
+      "topic": "biotechnology",
+      "title": "High Quality Lipids & More - Advance Your Research",
+      "content": "From research innovation to GMP excellence. Discover the difference. Where innovation meets expertise. Unlock the potential of our lipid portfolio.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Davantiresearch.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DXVc2wZXeRITQZgJU27ooWrT3Cvsn2ICSavwAZnlzd37soEuKYr%252DoaPyx28WNFqvpxO9l3tTY6N9QYPs1L6SdrXzuB46H9IrPldn1utKwCWsgE9anyI1WjEMRHK7JR6VdobB0vc7NyiazYhzUV6rKwy%252DeMDXJZL6ngipFfg5dK_U.Z4O7qtp1x01Zo4qkE1Jyhg%26rut%3D07d088ebcda29e783a6f035943237bab41f1b5ca83ccdb990dd7a09447f20127%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8BeSg%252DTznp5vJ%252DS59Bn90rDVUCUzb1aDyYiFhMfxGr%252DmmecfmNKSFqm8gN%252DQsIadPr_RBGHbzptHKpHWZKNZ4uciGx2tzNKky9gXInmQdiO9AqspUC5hn9QS9M5HAGUiEysYlWbY2100RIo1tta1laGQcGUq2DisgxiK%252D6kJAVXVD9THKVAthzGv9CRTWlZsp1BRb0VBY1TXvM_rXfwXHpO8O_6Y%2526u%253DaHR0cHMlM2ElMmYlMmZhdmFudGlyZXNlYXJjaC5jb20lMmYlM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RzZWFyY2glMjZncl9zb3VyY2UlM2Rnb29nbGUlMjZncl9jYW1wYWlnbiUzZDU2ODY5MDQzMyUyNmdyX3Rlcm0lM2QxMTgwODc3MjY3Nzg2NjQ4JTI2Z3JfZ2FkaWQlM2QlMjZtc2Nsa2lkJTNkYWU3ZTIwZjZhNjRmMTQ1ZDNmZjg0OWEwMTA5ZTljZDAlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RVcHRpY2slMjUyMC0lMjUyMEF2YW50aSUyNTIwJTI1MjAtJTI1MjBTZWFyY2glMjUyMC0lMjUyMEdlbmVyYWwlMjZ1dG1fdGVybSUzZEF2YW50aSUyNTIwUG9sYXIlMjUyMExpcGlkcyUyNnV0bV9jb250ZW50JTNkQXZhbnRp%2526rlid%253Dae7e20f6a64f145d3ff849a0109e9cd0%26vqd%3D4%2D70711133430776181216125728451632034959%26iurl%3D%257B1%257DIG%253D252C3A35CBC047F38806634E98F9AE72%2526CID%253D0AA6A76FA9906DCE1A1DB1BBA81C6CB3%2526ID%253DDevEx%252C5045.1&rut=074cf98590bebd91881cb8b983faed4182c019371a9ddeeb769009b5877f6bad",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:02:57.664323"
+    },
+    {
+      "topic": "biotechnology",
+      "title": "Biotechnology - Wikipedia",
+      "content": "Biotechnology is the research and development in the laboratory using bioinformatics for exploration, extraction, exploitation, and production from any living organisms and any source of biomass by means of biochemical engineering where high value-added products could be planned (reproduced by biosynthesis, for example), forecasted, formulated ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBiotechnology&rut=3d6a953c8f49e5618e8357e988598fa9ed8ff7e9353269549f100d963ad6b7c4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:02:57.664357"
+    },
+    {
+      "topic": "biotechnology",
+      "title": "Biotechnology | Definition, Examples, & Applications | Britannica",
+      "content": "Biotechnology, the use of biology to solve problems and make useful products. The most prominent area of biotechnology is the production of therapeutic proteins and other drugs through genetic engineering. Learn more about the development and applications of biotechnology in this article.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftechnology%2Fbiotechnology&rut=a8f827c6eeac9ee6f0df5c3545d9d86521f8c6396d3467612314c68dbba437ea",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:02:57.664384"
+    },
+    {
+      "topic": "biotechnology",
+      "title": "What is Biotechnology? | BIO",
+      "content": "At its simplest, biotechnology is technology based on biology - biotechnology harnesses cellular and biomolecular processes to develop technologies and products that help improve our lives and the health of our planet. We have used the biological processes of microorganisms for more than 6,000 years to make useful food products, such as bread and cheese, and to preserve dairy products.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.bio.org%2Fwhat%2Dbiotechnology&rut=5e0700de89efd99fe16903c1ccd7d3b1efa6947e0305c08146ca0e4edd2b40d1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:02:57.664414"
+    },
+    {
+      "topic": "biotechnology",
+      "title": "What is Biotechnology? Everything You Need to Know About This ...",
+      "content": "Biotechnology is the use of biological systems, organisms, or derivatives to create or modify products and processes for specific uses. Learn about its origins, evolution, and diverse applications in healthcare, industry, and environment.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencenewstoday.org%2Fwhat%2Dis%2Dbiotechnology%2Deverything%2Dyou%2Dneed%2Dto%2Dknow%2Dabout%2Dthis%2Dtransformative%2Dscience&rut=bc75af0250c7f11cd1cf1df02bbab77739a65479b178c9d4872910be6ba50717",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:02:57.664439"
+    },
+    {
+      "topic": "bioinformatics",
+      "title": "Bioinformatics",
+      "content": "Bioinformatics is an interdisciplinary field of science that develops computational methods and software tools for understanding biological data, especially when the data sets are large and complex. Bioinformatics uses biology, chemistry, physics, computer science, data science, computer programming, information engineering, mathematics and statistics to analyze and interpret biological data. This process can sometimes be referred to as computational biology, however the distinction between the two terms is often disputed. To some, the term computational biology refers to building and using models of biological systems.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bioinformatics",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T10:03:27.877045"
+    },
+    {
+      "topic": "bioinformatics",
+      "title": "Custom Bioinformatics - RNA Bioinformatics",
+      "content": "Fully Supported Transcriptome Analysis Application. Cost-Effective & Fast. Inquiry Now! Whole Transcriptome Seq/Analysis. Rapid & Cost Effective!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dcd%252Dgenomics.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D_KlKtMVFrJIQHy3g__xqzWCAWJLEeD9s8zzIIHf%252DZHmfmNK9szdKZR3tY8deBZHFiGdLauxKV7LRbBEJFqLffBu6FfEhyMJgWTM_8W00D0v9lQ2X15LTHE2xMhn1xMNu2l55QgLcyIFJTZ5XhzTgOVdyGx8Dtr31ITzOD3SzAvM.u2aoJOycgB3gcqRBvf%252D65w%26rut%3D126689c4d173c1cc49428a720e27eaa83764fce5705256ccf5c24445e594702c%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8q5qssB8VX4TKukzHTCbpfzVUCUz_CYMXPi1%252DEVCFAdTfxKKaU%252DtqbWTACpun%252Dcr2C2_J9ldo0ZH0IltWz7m3ivVBLjiA2ZU3Lk4UoN0LnJjqvvVDas7342IsL8GG4hhNi2CPsGT9tKEJAjis0THA_CHXyQY%252DIe0lBwf3Mc%252DtIcI3QMPGLH%252DC3HDnfXzm2TrZPXfN60h7XSG05VzN7sKNKj2FLPE%2526u%253DaHR0cHMlM2ElMmYlMmZybmEuY2QtZ2Vub21pY3MuY29tJTJmcm5hLWJpb2luZm9ybWF0aWNzLmh0bWwlM2Ztc2Nsa2lkJTNkMWVjYzczOTcwMGYxMTIyNGFmYmMxYWMxYjYwMTkwMDclMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RTZXJ2aWNlcyUyNnV0bV90ZXJtJTNkZ2VuZSUyNTIwZXhwcmVzc2lvbiUyNTIwZGF0YSUyNTIwYW5hbHlzaXMlMjZ1dG1fY29udGVudCUzZFRyYW5zY3JpcHRvbWUtREVHcyUyNTIwYW5hbHlzaXM%2526rlid%253D1ecc739700f11224afbc1ac1b6019007%26vqd%3D4%2D1716368252764546879837381084290167341%26iurl%3D%257B1%257DIG%253DE93B43A3296243B5BD0484691AFA33C5%2526CID%253D071D29CBAAE86D9413493F1FAB7F6C02%2526ID%253DDevEx%252C5046.1&rut=ac76ec962c712f121edf022c6faf47fb12302878961847f08d909d2cc7b4365f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:03:28.729349"
+    },
+    {
+      "topic": "bioinformatics",
+      "title": "Shop bioinformatics textbook - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on bioinformatics textbook at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D2fP8DC2JXb2Lu5fbjuRT9UGAYzeAjnaNmjQf7MbFlrDSZCqQS3qsIg2gPkT79Mjlqc3u3Bkob3%252DAaW1F3deQ5bMsXgzytC%252DbPxAyPguZ2uoxGl2r7kRKWKsny2Z7HBrybIgTVqU6Z6SMLyZu_Ihw0m478YUljFE0sEkQ4_jm4FM.nHng4qZQ6hf_tKynRv1ibA%26rut%3Daea6d24c1e5799fd9e57cd325b763c2caf07337f088d65831f3c4127158eeb17%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8YvXU7uCxhSVrZYSAUtGx0DVUCUxZWVionmC17_KBQ9lRUaM25VE2zf71OI_JhgHoTZRgW32PHR3iIEydpBEVC9nQdvep0jjhQ0SHQ8pMeaEKT%252DF1Ux0jckb7NXYDXtlw5hfXYPG4_RX5vyNNnyiQpw1SN148vIF8GAzamj1kr2%252DX9EB1SXqYWhU8bmiWrzAEDt7N6McBUXrhzZMNDwhBy23GnsM%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJpb2luZm9ybWF0aWNzJTJidGV4dGJvb2slMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF81OTU3djhzdXptX2IlMjZhZGdycGlkJTNkMTIyNDg1NjMwNjkxNzA3MiUyNmh2YWRpZCUzZDc2NTUzNjg4MjExNjQyJTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkYiUyNmh2Ym10JTNkYmIlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY2MzUlMjZodnRhcmdpZCUzZGt3ZC03NjU1Mzc5NDQxMjQ0MiUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkMzE3OF8xMzY0MDQ0NSUyNm1jaWQlM2QyYzI3MDI0ZjA4ZjkzNGMzOWQ1ZTMxMTQ4YzhiZTgwNSUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkMTI5YzAzNjcwMTIyMWEyMjhkNmU2YTMxYjdkMjUyOTc%2526rlid%253D129c036701221a228d6e6a31b7d25297%26vqd%3D4%2D125147126753767470495766017126437839020%26iurl%3D%257B1%257DIG%253DE93B43A3296243B5BD0484691AFA33C5%2526CID%253D071D29CBAAE86D9413493F1FAB7F6C02%2526ID%253DDevEx%252C5051.1&rut=16f43d227e1f1643780e2d87d4541288e5af7e5eeb3d7e7fc03c10bb1ed135e4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:03:28.729389"
+    },
+    {
+      "topic": "bioinformatics",
+      "title": "Bioinformatics - Wikipedia",
+      "content": "Bioinformatics is the name given to these mathematical and computing approaches used to glean understanding of biological processes. Common activities in bioinformatics include mapping and analyzing DNA and protein sequences, aligning DNA and protein sequences to compare them, and creating and viewing 3-D models of protein structures.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBioinformatics&rut=6672404fd182c1dd0a916b5b36708df4df40d1b6e8753e2aac94a6b8aaa48720",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:03:28.729419"
+    },
+    {
+      "topic": "bioinformatics",
+      "title": "Bioinformatics | Genomics, Proteomics & Data Analysis | Britannica",
+      "content": "Bioinformatics, a hybrid science that links biological data with techniques for information storage, distribution, and analysis to support multiple areas of scientific research, including biomedicine. Bioinformatics is fed by high-throughput data-generating experiments, including genomic sequence",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fbioinformatics&rut=cfe6c9bf4db2b8c085c10dc2c57f65390f850aef40c1bf37b52321e0f6094725",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:03:28.729465"
+    },
+    {
+      "topic": "bioinformatics",
+      "title": "Bioinformatics | Oxford Academic",
+      "content": "Publishes scientific papers and review articles on new developments in bioinformatics and computational biology. Shorter papers report biologically interesting discoveries using computational methods and explore their applications.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Facademic.oup.com%2Fbioinformatics%2F&rut=61eea66fc0051bfda991a6843f8bcec3d9330ecd8d0fe3092c4ae9580730b1a6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:03:28.729493"
+    },
+    {
+      "topic": "systems biology",
+      "title": "Science Studies - Online Certificate Programs",
+      "content": "Sciences | UC San Diego Division of Extended Studies Sciences Programs & Certificates. Flexible online learning options to fit your schedule and interests.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Ducsd.edu%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DhsZOhsLI7MNCBVgfwmYRRV8yI0zi2sU_W1uDjEr1KAcck3Y_SUEe3omhC%252D7kU3oACDbxYfmBJ0GIrxgkqi3A3%252DULIKtS9fLDyZNnvx285UTbVtFQ8oy7uaGcPRjvFebRnhqKmUM%252DRUaTkbAzyiqVvGt7G5Y0D5kPFFiqWizxlNg.vlns5y345xxIAViGqHqjgg%26rut%3Df68d9f5e6bc2fdadbe45e4fbef7ba9ecf55626e17c907995f069516eb24f876f%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8sMO0bqkzuOfk_m91rIChsTVUCUwyIw3Xj5vfe4qtYFxe9RD4nzTIdvmrbIhOGXZwEVC4VfUusfvRZiZyZ4snwKoV%252DqG_BLqwTAzM1dAkieaQReGNp3R6UQKpPX%252DSyoIDuKOKRatyw5G5fGWaezzfFqvocAhDlfZwDNRUShnZF15c0VAuOe05k_CUYf9wm1v_noNXr0xOcQOfbTROBVX1qpCpO3Q%2526u%253DaHR0cHMlM2ElMmYlMmZleHRlbmRlZHN0dWRpZXMudWNzZC5lZHUlMmZjb3Vyc2VzLWNlcnRpZmljYXRlcyUyZnNjaWVuY2VzJTNmbXNjbGtpZCUzZGJhY2JlMWU1YTFiYTEyMDMyNjNjODhiMzE2ZDczZjVkJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkU0NTJTI1MjAtJTI1MjBBTEwlMjUyMFNjaWVuY2VzJTI1MjBOZWlnaGJvcmhvb2QlMjZ1dG1fdGVybSUzZHNjaWVuY2UlMjUyMHN0dWRpZXMlMjZ1dG1fY29udGVudCUzZEFsbCUyNTIwU2NpZW5jZXMlMjUyME5laWdoYm9yaG9vZCUyNTIwQWQlMjUyMEdyb3Vw%2526rlid%253Dbacbe1e5a1ba1203263c88b316d73f5d%26vqd%3D4%2D316938523283087505513321553496563553305%26iurl%3D%257B1%257DIG%253DA0E16CF5FA4D47E9B89FE14E87906609%2526CID%253D0BFD6744AC8366B70BFB7190AD14673F%2526ID%253DDevEx%252C5046.1&rut=6a25ceeebb086820eb955593590261dc6b9fa6ca00bfd6c2d70fc99a65c60fa2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:05:34.304462"
+    },
+    {
+      "topic": "systems biology",
+      "title": "Systems biology - Wikipedia",
+      "content": "Systems biology is the interdisciplinary study of complex biological systems using computational and mathematical models. Learn about its aims, methods, history, and challenges from this comprehensive Wikipedia article.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSystems_biology&rut=0f1068949e9f940b61673593c36fe504f89afd3da19acde8d15dfda85fe0cf90",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:05:34.304553"
+    },
+    {
+      "topic": "systems biology",
+      "title": "What is Systems Biology? - Institute for Systems Biology (ISB)",
+      "content": "Systems biology is an interdisciplinary science that studies how biological components interact and function as a system. Learn about the innovation engine, data integration, multiomics, and predictive modeling at the Institute for Systems Biology (ISB), a nonprofit research organization in Seattle.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fisbscience.org%2Fwhat%2Dis%2Dsystems%2Dbiology%2F&rut=7bf607b20cf7734ffadbdf79adf453a0046c646a13a93e5f7607ef1c18774a13",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:05:34.304811"
+    },
+    {
+      "topic": "systems biology",
+      "title": "Systems biology | Modeling, Simulation & Analysis | Britannica",
+      "content": "Systems biology, the study of the interactions and behaviour of the components of biological entities, including molecules, cells, organs, and organisms. The organization and integration of biological systems has long been of interest to scientists. Systems biology as a formal, organized field of",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fsystems%2Dbiology&rut=72108351121fa56b25918f1882bb20b49b15f8fa0e136a422bb1db311ef27b17",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:05:34.304865"
+    },
+    {
+      "topic": "systems biology",
+      "title": "Systems Biology - Harvard Division of Continuing Education Course Browser",
+      "content": "The field of systems biology has emerged as a result of two revolutions. The first is decades of progress in molecular biology and biochemistry which have identified many of the molecules and chemical reactions needed for life. The second is the 'omics revolution which has enabled these measurements to be conducted at high throughput. Systems biology seeks to convert such observations into a ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fcoursebrowser.dce.harvard.edu%2Fcourse%2Fsystems%2Dbiology%2F&rut=e8c8784d9f6fcd4d47d3ff7d1088bdcdca0659229e8f654c3fb84853e5890174",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:05:34.304901"
+    },
+    {
+      "topic": "synthetic biology",
+      "title": "Shop books on synthetic biology - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on books on synthetic biology at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DC_VECZ4jpd6JSic49uNNfFjW1nw_rr1uXVY3GG2QOwmazCjAVJ%252DIa68cwHwy59PVOsnIbbVrWPlo5HElyHhSM6TJoAImxolVoE6WElrmn9EYJaTX6HEndqnNiP1Zf0S8d83DqwH4EmMW8__s5BTcD%252Dn9v07CYwgRbkzIP9IwgI8.EH0DDbfyYo8nn4lnGKHW4g%26rut%3Dec6caebd3e5987f354abfb19b7be42d52cd440674277738ee4219f3c123af810%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De81UYHJqCeG5M_L2LBXKb6mTVUCUwnur2M_%252DF9E3rsUkGxKP7BoqrlUxDs96C8WdDLeKkvZFWZR5bSKfM82_8IospzznCFi4TvPRTne88HGHgSOO3oU7v21SEhpB6nEChDQBM_LLjIZgyiLaxk3b94EM1Gcg5NKRreSsRK_V_SkBVyygUGAFefyi9PodBH5eZNsFHpLwIhWOpMSG%252DmILjOhBOQtSM%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJvb2tzJTJib24lMmJzeW50aGV0aWMlMmJiaW9sb2d5JTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfMWE0Z2IyZ3lxNF9iJTI2YWRncnBpZCUzZDEyMzAzNTQ1NzM3OTIyOTMlMjZodmFkaWQlM2Q3Njg5NzI5MzkxMjk4OSUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGIlMjZodmJtdCUzZGJiJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NDQ4JTI2aHZ0YXJnaWQlM2Rrd2QtNzY4OTc0ODQ3ODM3NDMlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDMxNzVfMTM2NDAwNjclMjZtY2lkJTNkNTI5ZjU4NjhjOGQ2MzIxNjliNDU0ODZjMWRkZmIyNzIlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZGZkNWY2MzNlNGRjZTEyM2Q2MmNkMGE2OGZhNDBkMzYw%2526rlid%253Dfd5f633e4dce123d62cd0a68fa40d360%26vqd%3D4%2D202639497968279490901497568563417836098%26iurl%3D%257B1%257DIG%253DEA6A840F08924B3389926C1096616959%2526CID%253D343FB96AD7E260080683AFBED606617D%2526ID%253DDevEx%252C5046.1&rut=4d6ae2ea5e56edbd45c8d6d654bec4d8e246dfb69dfe3358a81956371b099b56",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:06:06.478063"
+    },
+    {
+      "topic": "synthetic biology",
+      "title": "Synthetic biology - Wikipedia",
+      "content": "Synthetic biology is a multidisciplinary field of science that applies engineering principles to design and redesign living systems and organisms. Learn about its origins, milestones, methods, and challenges from this comprehensive Wikipedia article.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSynthetic_biology&rut=3797309c055a9457c8aada7dab575e54cbaa3b4654064f359ab47310740049f4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:06:06.478116"
+    },
+    {
+      "topic": "synthetic biology",
+      "title": "Synthetic Biology - National Institute of Biomedical Imaging and ...",
+      "content": "Synthetic biology is the design and construction of new biological parts, devices, and systems and the re-design of existing biological systems. This interdisciplinary field combines principles from biology, engineering, genetics, chemistry, and computer science to either create new biological systems that do not exist in nature or to modify the functions of natural biological systems. A major ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nibib.nih.gov%2Fscience%2Deducation%2Fscience%2Dtopics%2Fsynthetic%2Dbiology&rut=a7d13a51f844d40bd9567246901422862780f84ce0c48ada159eb042a4f56ad5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:06:06.478147"
+    },
+    {
+      "topic": "synthetic biology",
+      "title": "Synthetic biology | DNA Engineering, Genetic Modification ...",
+      "content": "Synthetic biology, field of research in which the main objective is to create fully operational biological systems from the smallest constituent parts possible, including DNA, proteins, and other organic molecules. Synthetic biology incorporates many different scientific techniques and approaches.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fsynthetic%2Dbiology&rut=688704fc98e819cea4ec2af839bc850a2781dcc96bc11195506ea04373078fe6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:06:06.478176"
+    },
+    {
+      "topic": "synthetic biology",
+      "title": "Synthetic Biology - National Human Genome Research Institute",
+      "content": "Learn what synthetic biology is, how it differs from genome editing, and what are the potential benefits and risks of redesigning organisms. Explore the resources and policies related to the ethical and social implications of synthetic biology.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.genome.gov%2Fabout%2Dgenomics%2Fpolicy%2Dissues%2FSynthetic%2DBiology&rut=4242aca49dc18f52e361520c1aff110277ec41e1dccce3bac12a09ffaae2fb7a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:06:06.478204"
+    },
+    {
+      "topic": "molecular biology",
+      "title": "Molecular Biology Definition | History & Cells - Study.com",
+      "content": "Buy Molecular Biology Definition, History & Cells at Study.com. Find the Right Course for You Today with Our Large Selection of Courses to Choose From.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstudy.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DoPO3V47PIxOAS1hoNdpf3cI52wW6ganLZigxuRJykZ3kMmIFtbTAhDwpOhYEkCAdMMHSRWCCUrUPFwKVEjL9nAm17%252DKGwuxtIZR06VRkFADRNVyMdll3x98JLfC1cQcDuzn%252Dt9R4VafLbxknDmBgoW3vujhraTH4v4ZUD9C3Zes.hdI70cDjeF6A3TYDI2o0OA%26rut%3D0c8a8076c2b902d466724622fb881a8a3da66712206072fc1eb75552b0be34b5%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8HT5usfFJCWigA4H_AQCpJzVUCUyNZmsEMgpNjrXP4Q0i7kYcEY5S2CBsNuxaWDTrWJk1BZW8bpFCefPfSIBLUjIY3kQz_pG_pdTjSK13Rc1dzktpULUiYpvFMMv1gvcVYpdGlNvqvXsvqwhneLn0ZOxNSVptyteiUtmt3GG8ZecmJ5nEhMnS5fM7ssdAGc7lesf%252DAvF1vCF8fGStMydUl2IObUk%2526u%253DaHR0cHMlM2ElMmYlMmZzdHVkeS5jb20lMmZidXklMmZhY2FkZW15JTJmbGVzc29uJTJmbW9sZWN1bGFyLWJpb2xvZ3ktb3ZlcnZpZXcuaHRtbCUzZnNyYyUzZHBwY19iaW5nX25vbmJyYW5kJTI2cmNudHh0JTNkYXdzJTI2Y3J0JTNkJTI2a3dkJTNkU0VPLVBQQy1CVVklMjZrd2lkJTNkZGF0LTIzMjkwNDA1MDU4ODY5NDAlM2Fsb2MtMTkwJTI2YWdpZCUzZDEyMzU4NTEzMDI1OTY3NDYlMjZtdCUzZGIlMjZkZXZpY2UlM2RjJTI2bmV0d29yayUzZHMlMjZfY2FtcGFpZ24lM2RTZW9QUEMlMjZtc2Nsa2lkJTNkNmQyNjNhMzFlZTdhMTQ0MWM0MjQ1MzY3NTlkN2MwMWM%2526rlid%253D6d263a31ee7a1441c424536759d7c01c%26vqd%3D4%2D278610307321953494616345667302837243895%26iurl%3D%257B1%257DIG%253DD9C16F41938643B3AA53F37A33B8735B%2526CID%253D298B94E5664265633608823167976463%2526ID%253DDevEx%252C5045.1&rut=9f3f98250788d1b75badc906261b34d92f995c165c6435c91032e609e309f350",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:06:37.990642"
+    },
+    {
+      "topic": "molecular biology",
+      "title": "Save on basic molecular biology - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on basic molecular biology at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D83rhc5PN_y_1rmtq3dPS1Zh9IduhmxlHfrZjYPMDum21IXp4t7vcCcNsvREmgxAieeFofy8hiFtrYrJghZKdQgh8fM5rk1AW36zxPknRTI1ouxOGkiTDKwafMmAfeb6EZiyH6wkFJNocYmqMQoaLTcW_gtVlW_4Z78r_EA3TRIM.Hza7qpt5dX_FwqpbApyXCQ%26rut%3D090f36cc183bc3d17d753022da06f34248f1110410aae3f02b3cec617b3bd01c%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8l4dEU286YfIxOGp_VEyfZDVUCUyPW%252Dfte%252DGvoMj3jIxiuSFza3wUdRskaLagt23eq7Q4zTh8wBY42WBLV4sarZFpl92Fs56yF1h77%252DOJGM95lstetnN44kYTEER6DmREEZz0roPemOsfOcmQLcfBFC2W46hwp_MaoaPx3Kj_LlY4mo1TuuoSkTOvEsVA7HLea2slxwulnFzPNi5QfSQ16tL5teo%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJhc2ljJTJibW9sZWN1bGFyJTJiYmlvbG9neSUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzViZjY1MWRxaXNfcCUyNmFkZ3JwaWQlM2QxMjI1OTU2NTI2NjUyMzY5JTI2aHZhZGlkJTNkNzY2MjI0MTU4NTgyNjUlMjZodm5ldHclM2RzJTI2aHZxbXQlM2RwJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjQ0OCUyNmh2dGFyZ2lkJTNka3dkLTc2NjIyNjE1NDI0ODExJTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QzMTc4XzEzNjQwNDQ1JTI2bWNpZCUzZDY3ZDNmYTY3ZGJmMjM5YTI4Y2ZkMGJlYTE2MWY1NDM4JTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2QyNzQxYzljMzk5MDkxMTZlOTBkYWEwOTUyZWE0NmI2YQ%2526rlid%253D2741c9c39909116e90daa0952ea46b6a%26vqd%3D4%2D326812743965847313186074693460755278669%26iurl%3D%257B1%257DIG%253DD9C16F41938643B3AA53F37A33B8735B%2526CID%253D298B94E5664265633608823167976463%2526ID%253DDevEx%252C5049.1&rut=c740d3a2e3f8c879329193a588614ac8e8605451d508a1eae497dea2838fb26f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:06:37.990677"
+    },
+    {
+      "topic": "molecular biology",
+      "title": "Molecular biology - Wikipedia",
+      "content": "Molecular biology / m\u0259\u02c8l\u025bkj\u028al\u0259r / is a branch of biology that seeks to understand the molecular structures and chemical processes that are the basis of biological activity within and between cells. It is centered largely on the study of nucleic acids (such as DNA and RNA) and proteins.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMolecular_biology&rut=58ca8e73700a9efd1c58846d22767995ed18215dad809dcdfb93a2a356acd89f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:06:37.990711"
+    },
+    {
+      "topic": "molecular biology",
+      "title": "Molecular biology | Description, Techniques, & Facts | Britannica",
+      "content": "Molecular biology is a field of science concerned with studying the chemical structures and processes of biological phenomena involving molecules. In particular, researchers focus on DNA, RNA, and proteins and their interactions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fmolecular%2Dbiology&rut=db1e413e42f9a7e64cbd77844da3124693b7e762f7eb97559a44c1d01e2ca6b9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:06:37.990740"
+    },
+    {
+      "topic": "molecular biology",
+      "title": "7.28x Molecular Biology - MIT OpenCourseWare",
+      "content": "Learn about the molecular mechanisms of DNA replication, gene regulation, and evolution in this self-paced and free online course. Based on the MIT course 7.28/7.58 Molecular Biology, it covers lectures, readings, and quizzes on edX.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Focw.mit.edu%2Fcourses%2Fres%2D7%2D008%2D7%2D28x%2Dmolecular%2Dbiology%2F&rut=9a2d5041ee1268546402590e6e05be93bd7ba0b05d9377eed91455174070b81e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:06:37.990764"
+    },
+    {
+      "topic": "cell biology",
+      "title": "UC San Diego Science Studies - Advanced Sciences Certificates",
+      "content": "Sciences | UC San Diego Division of Extended Studies Sciences Programs & Certificates. Flexible online learning options to fit your schedule and interests.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Ducsd.edu%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Dh05vvzQOtfmlP9fnCVg03A6xUQ_FFcc12bchhTDcNx%252DqLy1_q3JGnXYlDiFHfjNLRxvA_gM7XnOEjIbyAOtxTiz_S6sXuTwpwf30v_TqqeeE_4MWsmKriFGN4Kw8XFqlP174pinZevwChL9ob_GR0wAoZ3At8xTaikp7x91dOOg.nv8aVUD8DFHZdTjPEVgvaQ%26rut%3Dd446988e7c6a94d44bb20d68233a53ea3882d370ae19264f9ac534e5891212c3%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De82RZYGAtxfztGgKmez9vLvDVUCUz2b_Vy98FpMcxz883lUKMVFu40bHH1GfL9k35F2YkWTos8qChtsOpSf%252DmgKrHaa4po0YDDlIjChnsvk0f24G2_KcI3TvHPsmOLXFxrK1jw4S9LLOA2NrtI3dqDlcbtGKjDLzaQ16RVTRCQ6oCbgzK2fMZFi%252DN1DGSNHyV1bsv%252DYaHMjtuDPx0A51H9X62VKiU%2526u%253DaHR0cHMlM2ElMmYlMmZleHRlbmRlZHN0dWRpZXMudWNzZC5lZHUlMmZjb3Vyc2VzLWNlcnRpZmljYXRlcyUyZnNjaWVuY2VzJTNmbXNjbGtpZCUzZDE1ZjI3ODQwMmQwMTE0MTNhMGVjMTExNjlhY2M3MTljJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkU0NTJTI1MjAtJTI1MjBBTEwlMjUyMFNjaWVuY2VzJTI1MjBOZWlnaGJvcmhvb2QlMjZ1dG1fdGVybSUzZHNjaWVuY2UlMjUyMHN0dWRpZXMlMjZ1dG1fY29udGVudCUzZEFsbCUyNTIwU2NpZW5jZXMlMjUyME5laWdoYm9yaG9vZCUyNTIwQWQlMjUyMEdyb3Vw%2526rlid%253D15f278402d011413a0ec11169acc719c%26vqd%3D4%2D322683452349618124768870967753021592232%26iurl%3D%257B1%257DIG%253D4432C93E76BF440D885F53C35309DEF9%2526CID%253D0DBC964C526860C9128A809853BD616D%2526ID%253DDevEx%252C5045.1&rut=d7822a5031b279dfd5ac38c1ad9caad95226ef39b272139a47fa967499a6ccaf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:07:09.562117"
+    },
+    {
+      "topic": "cell biology",
+      "title": "Save on essential cell biology - Amazon\u00ae Official Site",
+      "content": "Browse & discover thousands of unique brands. Read customer reviews & best sellers. Find deals and compare prices on essential cell biology at Amazon.com",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DLlAg1rRw_%252Dlr8jGrZGDH5aBg4tHFAGeFA4JuWqWRw1TcFPXKe7oMGuchIXqEcXhTrREv0bGY9VQbClUaJ3PFgLJQWxssObP3oK2oV94nQ%252DZvgKhItu3I7mpg3xgr0sqy9v9DFqkHeobX%252DM_oxdmri91LmCVkejPwfzHR31rYz_Y.A1t7TNHIpLtIbfmbcZNC2Q%26rut%3Dc3c4ca78a72f44a1ae285b5bfd463fc573ab0bf5badf73d16b58b428bfc8040a%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De88yNpKhdELRywx95Eu1GeKDVUCUx8hiFghCgJ5FKCJghxpGCrdjs2VuTMEPuI4z7ENtDh0E1CP_QUnwjyEFnth5YanvFf4eQL4aFVCKAdsAvEauRuOFJ3aEMrXmGqLYEGLl8RKawhQ01wetrEfWP0AE4BkiobybZDi3yOVBzIZG0ihbG6A8uWPweTo6shmiwCEpsX9bViG3FCXXpfxdRplPxAz8s%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGVzc2VudGlhbCUyYmNlbGwlMmJiaW9sb2d5JTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfNDFqajZqZ3VxYl9wJTI2YWRncnBpZCUzZDEyMzgwNTA0MDM5Mjk5OTYlMjZodmFkaWQlM2Q3NzM3ODMxNzMyNDQ3MyUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NTAyJTI2aHZ0YXJnaWQlM2Rrd2QtNzczNzg0MDc2NTgxMTAlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDI0Mzc0XzEzNjQ4Mzc4JTI2bWNpZCUzZGMzZjVkOTE4ODYxYzNlMGZhYjMxNWVhZTNhNjc3OTQxJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2QyOGNjMzczNWRhNTgxNTg3YjBhYTVlNjM2ZDk1ZjNkMg%2526rlid%253D28cc3735da581587b0aa5e636d95f3d2%26vqd%3D4%2D36274887998619117561074844203169063227%26iurl%3D%257B1%257DIG%253D4432C93E76BF440D885F53C35309DEF9%2526CID%253D0DBC964C526860C9128A809853BD616D%2526ID%253DDevEx%252C5049.1&rut=af67ffa3b98e7426c0428eda60445f10fbf19946eabc7ef448cb01d4e2ba43c4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:07:09.562151"
+    },
+    {
+      "topic": "cell biology",
+      "title": "Cell biology - Wikipedia",
+      "content": "Cell biology, cellular biology, or cytology, is the branch of biology that studies the structure, function, and behavior of the cells. [1][2] All organisms are made of cells. A cell is the basic unit of life that is responsible for the living and functioning of an organism. [3] Cell biology encompasses both prokaryotic and eukaryotic cells, with subtopics including the study of cell metabolism ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCell_biology&rut=396d272967d95adff8d6376b1fc96fae49c5672e969e67ac332936bd49f89668",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:07:09.562181"
+    },
+    {
+      "topic": "cell biology",
+      "title": "Cell | Definition, Types, Functions, Diagram, Division, Theory, & Facts ...",
+      "content": "A cell, in biology, is the basic membrane-bound unit that contains the fundamental molecules of life and of which all living things are composed. A single cell may be a complete organism in itself, such as a bacterium, or it may acquire a specialized function, becoming a building block of a multicellular organism.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fcell%2Dbiology&rut=289e7724522416cb4c03ed240714ad25e3b038eabce8bfddcff8ae1a6e5788ba",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:07:09.562213"
+    },
+    {
+      "topic": "cell biology",
+      "title": "The Cell - Definition, Structure, Types, and Functions",
+      "content": "Explore the structure, types, and functions of cells in this student-friendly guide to cell biology and cell theory.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsciencenotes.org%2Fthe%2Dcell%2Ddefinition%2Dstructure%2Dtypes%2Dand%2Dfunctions%2F&rut=fb53af618aa3b41ad1ca2a86ac19e5cc238d0ac00484e5397327274d4e4399b6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:07:09.562239"
+    },
+    {
+      "topic": "bacteriology",
+      "title": "Bacteriology",
+      "content": "Bacteriology is the branch and specialty of biology that studies the morphology, ecology, genetics and biochemistry of bacteria as well as many other aspects related to them. This subdivision of microbiology involves the identification, classification, and characterization of bacterial species. Because of the similarity of thinking and working with microorganisms other than bacteria, such as protozoa, fungi, and non-microorganism viruses, there has been a tendency for the field of bacteriology to extend as microbiology. The terms were formerly often used interchangeably. However, bacteriology can be classified as a distinct science.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bacteriology",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T10:08:43.220648"
+    },
+    {
+      "topic": "bacteriology",
+      "title": "Microbiology testing laboratory - 100% Online - Enroll Today",
+      "content": "Unique in-home lab kit available for those needing the laboratory component. Microbiology online course with or without lab available",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Ducsd.edu%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Dv_C2JU3v5sxItpUvO_bz3rLKDMZU8Xiu_c_q5rC%252DkgiPm0pwqm%252DcmFiPQjs87z5W84u5%252DQMw6JGjmdOqADR5NV0Vy6o0dNjyN%252DtT8lKxv4FNQT8HjZU26iKfeWBo4WeVyqUSqXENOWVQcYwBHt5tE77sODSDziq8f3Hsufj9cos.XQDBw5OUDDhZ%252D6b%252DTaxbqg%26rut%3Df74b75c4be71e2ef99b096792477f7fc7f16fa8db60285d9fdf6e3305569857a%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8KOJKJiRTnTqdRwnO8E58rjVUCUyjPo9NetMHd8X1suPjC5y_%252DNkXTiOVOTVee4d6V3puQVLJ0tU8rTEq9BPV69izhXIQhYQhOFcwOPgaXjs1lBN2Vb%252DOt%252DSu3vXxOUYTahLlpjJN3vgFNF1nU8XD5G7oMTUNvrdSBScxZ556Ww7f%252DNz_ZgT2tWd1nXQ1BxRi81id7PTB%252DrbrMzj_bKXb_m4EeTc%2526u%253DaHR0cHMlM2ElMmYlMmZleHRlbmRlZHN0dWRpZXMudWNzZC5lZHUlMmZjb3Vyc2VzLWFuZC1wcm9ncmFtcyUyZmJhc2ljLXNjaWVuY2VzJTNmbXNjbGtpZCUzZDkzYzhjYWJkODk3ZDFiMTczNmI2YTNlYjMxNTZjOWE2JTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkU0NTJTI1MjAtJTI1MjBCYXNpYyUyNTIwU2NpZW5jZXMlMjZ1dG1fdGVybSUzZG1pY3JvYmlvbG9neSUyNTIwdGVzdGluZyUyNTIwbGFib3JhdG9yeSUyNnV0bV9jb250ZW50JTNkTWljcm9iaW9sb2d5%2526rlid%253D93c8cabd897d1b1736b6a3eb3156c9a6%26vqd%3D4%2D202189872286416876962183470566316067799%26iurl%3D%257B1%257DIG%253D91E44253DA794B10B5088591FF3BC478%2526CID%253D1680B2143C9C66B52084A4C03D0B67B9%2526ID%253DDevEx%252C5045.1&rut=5b553e434b8e44d648b2a297ff9fa50155b24a8bb025b581c07e7ae3fd9982da",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:08:44.231869"
+    },
+    {
+      "topic": "bacteriology",
+      "title": "Bacteriology - Wikipedia",
+      "content": "Bacteriology is the branch of biology that studies bacteria and their relation to medicine, ecology, genetics and biochemistry. Learn about the origins, methods and fields of bacteriology, from van Leeuwenhoek to Koch, Pasteur, Ehrlich and beyond.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBacteriology&rut=5a7443c7d877f5d3df8bc36760d6a75fb6ff2d80e11ced5099f38c4838fdc64e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:08:44.231918"
+    },
+    {
+      "topic": "bacteriology",
+      "title": "Bacteriology | microorganisms, pathogens, antibiotics | Britannica",
+      "content": "Bacteriology, branch of microbiology dealing with the study of bacteria. The beginnings of bacteriology paralleled the development of the microscope. The first person to see microorganisms was probably the Dutch naturalist Antonie van Leeuwenhoek, who in 1683 described some animalcules, as they",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fbacteriology&rut=026677e16dbeb3e772255d8f8f8fb7d70e30fe4db73b9363c19dc4d451f9e8b3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:08:44.231947"
+    },
+    {
+      "topic": "bacteriology",
+      "title": "Bacteriology - Definition, Classifications and in Medicine",
+      "content": "Learn about bacteriology, the branch of microbiology that studies bacteria and their characteristics, diseases, and applications. Find out how bacteria are classified, identified, and used in various fields such as medicine, food, and water.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.microscopemaster.com%2Fbacteriology.html&rut=07d9dd0787abc6ec365f53219faf2fb3c8f450a1b22f428895c8ac23fb0fea3d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:08:44.231974"
+    },
+    {
+      "topic": "bacteriology",
+      "title": "Bacteriology | Research Starters - EBSCO",
+      "content": "Bacteriology Anatomy or system affected: Cells, immune system Definition: The study of bacteria Science and Profession Bacteriology is the study of bacteria, unique life forms that maintain the basic physiological and genetic processes of all other types of cellular life but that have the unusual characteristic of chemicophysiological diversity. Many bacteria live in totally anaerobic ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ebsco.com%2Fresearch%2Dstarters%2Fbiology%2Fbacteriology&rut=57ca27c8483093cf4f893d094b9de871be14f3cb1fdaeba5ab7e44316f5010bb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:08:44.232016"
+    },
+    {
+      "topic": "b cell",
+      "title": "B cell - Wikipedia",
+      "content": "B cells, also known as B lymphocytes, are a type of lymphocyte. [1] They function in the humoral immunity component of the adaptive immune system. [1] B cells produce antibody molecules which may be either secreted or inserted into the plasma membrane where they serve as a part of B-cell receptors. [2] When a na\u00efve or memory B cell is activated by an antigen, it proliferates and ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FB_cell&rut=14c5c636001beecc1f88de9636eee50ba53368d95a1a63109ea5434989fcf555",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:13:58.490022"
+    },
+    {
+      "topic": "b cell",
+      "title": "B Cells: Types and Function - Cleveland Clinic",
+      "content": "B cells are a type of white blood cell called lymphocytes that fight germs by making antibodies. Learn more about how they protect you from infection.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmy.clevelandclinic.org%2Fhealth%2Fbody%2F24669%2Db%2Dcells&rut=0157dec8e2bb35bc053ca5281de2d991e50de24fd5cd3a48c87dfc7bf883dd26",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:13:58.490097"
+    },
+    {
+      "topic": "b cell",
+      "title": "Histology, B-Cell Lymphocyte - StatPearls - NCBI Bookshelf",
+      "content": "B cells or B lymphocytes (bursa-derived cells) are essential components of adaptive immune response, primarily responsible for humoral immunity in mammals. B-cell production in humans is a lifelong process that starts in the fetal liver, intrauterine, and bone marrow after birth.[1] B-cell development originates from hematopoietic stem cells and involves several stages of early differentiation ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fbooks%2FNBK560905%2F&rut=6cb41a57bd726054bc75797461163bdd654014f2a095d7487da987688bdeaab0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:13:58.490137"
+    },
+    {
+      "topic": "b cell",
+      "title": "B Cells | British Society for Immunology",
+      "content": "Learn about B cells, the adaptive immune system cells that produce antibodies against pathogens. Discover how B cells develop, differentiate, respond to antigen and regulate T cell responses.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.immunology.org%2Fpublic%2Dinformation%2Fbitesized%2Dimmunology%2Fcells%2Fb%2Dcells&rut=62f0b418a9732928fa03524bc39483b02935ae824ecd2620c865ac3194f0a869",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:13:58.490170"
+    },
+    {
+      "topic": "b cell",
+      "title": "B cell | Description, Types, & Function | Britannica",
+      "content": "B cell, one of the two types of lymphocytes (the other is the T cells). All lymphocytes begin their development in the bone marrow. B cells are involved in so-called humoral immunity. On encountering a foreign substance (antigen), the B cell differentiates into a plasma cell, which secretes",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2FB%2Dcell&rut=a5ac10ff398c8d24df3e18b339c7e8bcd757ac01ea1dd7ace42aee6ae0390370",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:13:58.490205"
+    },
+    {
+      "topic": "cancer biology",
+      "title": "Learn Cancer Biology - Genetics Of Cancer Course - 100% Online",
+      "content": "This course delves into the molecular, cellular, and genetic basis of cancer. Cutting-edge research, historical milestones, and the advancements in cancer research",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Ducsd.edu%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DtsBAYgsGTifRgsU_cbX%252DyfmSbfYAH6wnA_vg7gqUBlPlu8FaeKatSZAZolqLT%252DWDFGO5AaUFJ3u0ZvrfkBo0h9ET4gJTlKhEtI9PyQYyHml_XEU8npIcDIlIFdpm4BuUeJJjluMh9FT6dDAZ2NCdKoizGBk3H5v%252DJUAgdmvVCvg.bR_3XBclluisMsHK%252D9_mpA%26rut%3D1f15be41c08c1422c1831495a42473c53e08f1b65bd03873001fd9617ce172cd%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8%252DSPbyOCjIMkFQqVKfllyFDVUCUwbKGnQillBfsi45XaJjb3eLI9PL_4OrjpkRL858Zbiimk0G0Hk0YvQTFktj5eWAt1I15JEt8I50CPtkIsUTygMSKxZgA4FWgT4yt5l%252DVsqIZYGyI%252DzDZvMQACCSaBSYjM8PdZ4MPj7YtoeB5FUYLElTZnJwHbzgULyhxUBPDwd_pwR9LXZHgxjDa1V%252D365i8o%2526u%253DaHR0cHMlM2ElMmYlMmZleHRlbmRlZHN0dWRpZXMudWNzZC5lZHUlMmZjb3Vyc2VzLWFuZC1wcm9ncmFtcyUyZmNhbmNlci1iaW9sb2d5LTElM2Ztc2Nsa2lkJTNkOGU2MWU2MDA4YTI3MWVhNTEyZGI4ZjU2MzAwNWI3NDYlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RTQ1MlMjUyMC0lMjUyMEJhc2ljJTI1MjBTY2llbmNlcyUyNnV0bV90ZXJtJTNkY2FuY2VyJTI1MjBiaW9sb2d5JTI1MjAxMDElMjZ1dG1fY29udGVudCUzZENhbmNlciUyNTIwQmlvbG9neQ%2526rlid%253D8e61e6008a271ea512db8f563005b746%26vqd%3D4%2D2729345570712713669186703822829863197%26iurl%3D%257B1%257DIG%253D3735671724784F3CB5B464BD4440B027%2526CID%253D1D3A589348F56E6F3A8A4E4749626FD9%2526ID%253DDevEx%252C5045.1&rut=3715446f7b9331fc73fad2383502506b1db3d8122bc00286453d3b71750a0ee7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:17:07.278867"
+    },
+    {
+      "topic": "cancer biology",
+      "title": "This Is Living With Cancer\u2122 - Visit The Official Site",
+      "content": "Taking Steps To Learn About Your Diagnosis May Help You Navigate Your Cancer Journey. Visit The Official This Is Living With Cancer\u2122 Site To Find Support Designed For You.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dthisislivingwithcancer.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DlDITGhhTW0E8F_khb9KiFs7BBSzGU5gyOwnYDViG2Aw8qxjGaj4LKtrbdagA514bGKlFUagZ388nBO3A55NPwmConWnS3tzCqiAvMdLfAb2WgOnMENbHMSLpD09xaU%252DxruJUBKDSk7s41RDmxqUP_kQFvcwwGdZKCjY%252DPEG%252D1j0.dEb4Lyp01Azj5J9AgkfoSQ%26rut%3D66e00b4fab20f00488e694fbaac4b80f63ae43d29bb90798729ee26c802abbb4%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8PN%252DI2YLadxnOafhGt69lvTVUCUw4B78n4eicZ3jEfvPBLDfUv2D4r9Biimia_Vaay6U2BezDV2T%252DKt8oKCqNjhUOHHWQ6_efUpBdfkl_Xz_j_sUuBPahl13Ui8DLXyQvMnmusPDtAldp_NW_ouApIiHERJwWPLkl0kf5DspQnDGRnVeFudOgKPex9m8P9YP0YL3iJTcMbYYeWiC9tY5mPPRC6HU%2526u%253DaHR0cHMlM2ElMmYlMmZhZC5kb3VibGVjbGljay5uZXQlMmZzZWFyY2hhZHMlMmZsaW5rJTJmY2xpY2slM2ZsaWQlM2Q0MzcwMDA4MzA0OTc5Mjg1MyUyNmRzX3Nfa3dnaWQlM2Q1ODcwMDAwODk4ODQ4MzczOCUyNmRzX2FfY2lkJTNkMTM4NDA1ODg3NSUyNmRzX2FfY2FpZCUzZDIzMzc2ODE4MzgzJTI2ZHNfYV9hZ2lkJTNkMTg3MjYyMTMyMTQxJTI2ZHNfYV9saWQlM2Rrd2QtNDM1NzMyODA0MjI1JTI2JTI2ZHNfZV9hZGlkJTNkODE5ODI0NzY3NTI2MTMlMjZkc19lX3RhcmdldF9pZCUzZGt3ZC04MTk4MjcyMjg1OTI5MCUzYWxvYy0xOTAlMjYlMjZkc19lX25ldHdvcmslM2RzJTI2ZHNfdXJsX3YlM2QyJTI2ZHNfZGVzdF91cmwlM2RodHRwcyUzYSUyZiUyZnd3dy50aGlzaXNsaXZpbmd3aXRoY2FuY2VyLmNvbSUyZnVuZGVyc3RhbmRpbmctY2FuY2VyJTJmdGVybXMtZWR1Y2F0aW9uJTNmY21wJTNkMTg3MjYyMTMyMTQxJTI2dXRtX3NvdXJjZSUzZE1JQ1JPU09GVCUyNnV0bV9tZWRpdW0lM2RwYWlkc2VhcmNoJTI2cGlkJTNkTWlzY2VsbGFuZW91cyUyNnV0bV90ZXJtJTNkbGVhcm5pbmclMjUyMGFib3V0JTI1MjBjYW5jZXIlMjZuZXR3b3JrJTNkcyUyNmdjbGlkJTNkZjhmNGEzMTNiZDUzMTg3MTRlMTRjYTQ1MDc3MTJmZDIlMjZnY2xzcmMlM2QzcC5kcyUyNg%2526rlid%253Df8f4a313bd5318714e14ca4507712fd2%26vqd%3D4%2D336309982226253788025354019111284612378%26iurl%3D%257B1%257DIG%253D3735671724784F3CB5B464BD4440B027%2526CID%253D1D3A589348F56E6F3A8A4E4749626FD9%2526ID%253DDevEx%252C5049.1&rut=f44d73349ec2db63892c00383c81887160af1d7c6622a85d585301d585dadca8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:17:07.279004"
+    },
+    {
+      "topic": "cancer biology",
+      "title": "Research Areas: Cancer Biology - NCI",
+      "content": "Learn how NCI supports and directs research on the biology of cancer, from basic mechanisms to clinical applications. Explore recent findings and initiatives in cancer biology, such as metastasis, early lesions, tissue engineering, and RNA.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cancer.gov%2Fresearch%2Fareas%2Fbiology&rut=459e2ecb25f0c087e4318bcf1c538702ec4c45faa5646bb507030b8658ed4220",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:17:07.279070"
+    },
+    {
+      "topic": "cancer biology",
+      "title": "Cancer Biology, Epidemiology, and Treatment in the 21st Century ...",
+      "content": "Since the second half of the 20th century, our knowledge about the biology of cancer has made extraordinary progress. Today, we understand cancer at the genomic and epigenomic levels, and we have identified the cell that starts neoplastic ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fpmc.ncbi.nlm.nih.gov%2Farticles%2FPMC8481752%2F&rut=8b0cd8318b9b34c78561bb8470032f7ff49318e9ad40a38eb1af0dfb7505f3e6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:17:07.279123"
+    },
+    {
+      "topic": "cancer biology",
+      "title": "Cancer Biology - MIT Department of Biology",
+      "content": "Learn about the research areas and faculty of the Cancer Biology group at MIT. Explore topics such as cancer gene discovery, tumorigenesis, cancer therapy, metastasis, immunology and cancer, and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbiology.mit.edu%2Ffaculty%2Dand%2Dresearch%2Fareas%2Dof%2Dresearch%2Fcancer%2Dbiology%2F&rut=36831f9a3a9bc7c6a01d6227fd4cb7d6263c9ca74a011d7c0913a2c3d804fbcb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:17:07.279175"
+    },
+    {
+      "topic": "brain structure",
+      "title": "Structure & Functions Lesson - Brain Structure",
+      "content": "Learn About the Human Brain: Structure & Functions for a Lesson Today! Works with Your Schedule or Work from Home with Our Online Lessons and Video Tutorials.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstudy.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DG46Ah_2Anpt2IdDiXD4TKtOXO5eQnjgYs8rXUTtwSh0AuUulA42J5Ymx%252DCwlg_7KCaLJokxte8y1khiXE057VK1oi_LSwgn3ao1d543VgO7VXarKMAci_L26qDoIRfL7CG5WGKgNbp4_0TeoGLEtxWqK9CBAMrqx4qq_9xJFw0s.mxQJ45mQHji5dALawLTYUA%26rut%3Da635a3138aacde84dbdc7c2101317e22102d10ad1d717e8fd74e32b1348d286c%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De88%252DtfT9xnAehw4e6BPbCgtDVUCUzx7dEiA%252DSTuWXE%252DNvMeFKe9r32dyX2QZK1gWnkIb2P3fHnWJ2UWECNdykGzPB1vN3RQUaiNFYRgn1umneNON3p8DAuim2OYRnvsLbNzqeJrvOv0uRlPEchYo7nD8qwTuhYLicnk4Nv4wCG4z19gtG_AyObhMe5m47z2mSDNh_NvchX73gh1NRyTZbSo6rt5qI%2526u%253DaHR0cHMlM2ElMmYlMmZzdHVkeS5jb20lMmZidXklMmZhY2FkZW15JTJmbGVzc29uJTJmdGhlLWh1bWFuLWJyYWluLXN0cnVjdHVyZS1mdW5jdGlvbnMuaHRtbCUzZnNyYyUzZHBwY19iaW5nX25vbmJyYW5kJTI2cmNudHh0JTNkYXdzJTI2Y3J0JTNkJTI2a3dkJTNkU0VPLVBQQy1CVVklMjZrd2lkJTNkZGF0LTIzMjkwNDA1MDU4ODY5NDAlM2Fsb2MtMTkwJTI2YWdpZCUzZDEyMzU4NTEzMDI1OTY3NDYlMjZtdCUzZGIlMjZkZXZpY2UlM2RjJTI2bmV0d29yayUzZHMlMjZfY2FtcGFpZ24lM2RTZW9QUEMlMjZtc2Nsa2lkJTNkZWE1ODM2ZTYxZmQxMWUwMDQzNmY1ZmIwYTJhN2E1Zjk%2526rlid%253Dea5836e61fd11e00436f5fb0a2a7a5f9%26vqd%3D4%2D318759534194376152698878672024186293127%26iurl%3D%257B1%257DIG%253D991072DB2F294E1584065AEB89A5F983%2526CID%253D34201F6CD57B605918B409B8D4EC6172%2526ID%253DDevEx%252C5046.1&rut=b6786e22e92baf705a0b7e3770820bc5aff8fc2baa91d12ec42ab62c54385663",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:31:18.574690"
+    },
+    {
+      "topic": "brain structure",
+      "title": "Brain Anatomy and How the Brain Works - Johns Hopkins Medicine",
+      "content": "Learn about the brain's structure, functions and parts, such as the cerebrum, brainstem, cerebellum and meninges. Find out how the brain sends and receives signals, processes information and regulates various processes.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.hopkinsmedicine.org%2Fhealth%2Fconditions%2Dand%2Ddiseases%2Fanatomy%2Dof%2Dthe%2Dbrain&rut=7487df79b27bf58d3e6ee681149bb1378b078a7569f1fe82b018c4252a39366b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:31:18.574768"
+    },
+    {
+      "topic": "brain structure",
+      "title": "Parts of the Brain: Neuroanatomy, Structure & Functions in Neuroscience",
+      "content": "The human brain is a complex organ, made up of several distinct parts, each responsible for different functions. The cerebrum, the largest part, is responsible for sensory interpretation, thought processing, and voluntary muscle activity. Beneath it is the cerebellum, which controls balance and coordination. The brainstem connects the brain to the spinal cord and oversees automatic processes ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.simplypsychology.org%2Fanatomy%2Dof%2Dthe%2Dbrain.html&rut=9b34bc0182389f4de41a6eb838b1de5ff55aeee3e4757385ebb7e187606c7a10",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:31:18.574834"
+    },
+    {
+      "topic": "brain structure",
+      "title": "Parts of the Brain and Their Functions - Science Notes and Projects",
+      "content": "Learn about the parts of the brain and their functions. Get a diagram of human brain anatomy and key facts about this important organ.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsciencenotes.org%2Fparts%2Dof%2Dthe%2Dbrain%2Dand%2Dtheir%2Dfunctions%2F&rut=ea5869b33c24f27377610f96222015e3f5ce27024d02f0b7849730b79bb87836",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:31:18.574894"
+    },
+    {
+      "topic": "brain structure",
+      "title": "Human brain - Wikipedia",
+      "content": "The human brain is the central organ of the nervous system, and with the spinal cord, comprises the central nervous system. It consists of the cerebrum, the brainstem and the cerebellum. The brain controls most of the activities of the body, processing, integrating, and coordinating the information it receives from the sensory nervous system. The brain integrates sensory information and ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHuman_brain&rut=2f006fb4df1beea3e1e445b14336d2c214f230a76840ab6bc95772fb4c7dc0b5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:31:18.574956"
+    },
+    {
+      "topic": "brain stem",
+      "title": "brain model anatomy - Amazon.com Official Site",
+      "content": "Find deals and low prices on brain model anatomy at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DdvYvNRtN6%252DQfUFrDG6c6xgolNZrCM2AfISiwi7BQ4z6UtBiYl9wBxd47OCU1U9sCzHP0qshLiEyQc_LLuCm_V_Pzc5mHNBRGTEE_2KEl_cr3E%252Db7Q_ynPhHi2HQdO9Is8%252DNvuCXWMtJnIoZ3H4fjlFf2wulznRivQydoY40d1PM.Zy0Nk8e00laLwvfFGOx5Ww%26rut%3D65e6c3fbc2e38497def0783abac3f21a954704b4a3aa6a25f9ea261179e37648%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8aTlpiszuAKgsH2Lqf04%252D8DVUCUzrTksTPmvBY6LUOJqOAGp9gCxwicrOOWmHkP7Y%252D%252DKND0qKMBerWG4KzYciFsbIr9RSMqkNiUrx5Cas1e192IQKw6VRqQhgg8wzoKL%252DWoZWwPRdDZDAD%252D1w9lav9HN5BrVTz3kIC294m_4f3x5ixrwd4uZAPs_%252DTI58f03sFvqDpmfky3A23FQg7QuTpiasvJ4%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJyYWluJTJibW9kZWwlMmJhbmF0b215JTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfMndjc3JtNHd1aF9wJTI2YWRncnBpZCUzZDEyMzI1NTM1MzA4ODAzNTklMjZodmFkaWQlM2Q3NzAzNDcyNjExMDA4OCUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg3NDIyJTI2aHZ0YXJnaWQlM2Rrd2QtNzcwMzQ4NDk2NjA4MTIlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDE3NDE4XzEzNTMwMzI2JTI2bWNpZCUzZDUzOWEwOTAxMGVjZDNlNjlhMGY0NGVkYzk0MTMxZmU4JTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2QwN2E4Y2I1MTI2ZjgxMWVjOTFkMmEyMDc5OGE5NTNlYQ%2526rlid%253D07a8cb5126f811ec91d2a20798a953ea%26vqd%3D4%2D274526537681209420161021563202344845632%26iurl%3D%257B1%257DIG%253DB6A5F8CE8F92427EAF49315552C74F1C%2526CID%253D2E090E9C660E653F2FCC184867826408%2526ID%253DDevEx%252C5045.1&rut=5e78d7b35b818a03930dc5907751645e7cc869966e3a23a85556bd3e1bf47c10",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:34:57.879880"
+    },
+    {
+      "topic": "brain stem",
+      "title": "Brainstem - Wikipedia",
+      "content": "The brainstem (or brain stem) is the posterior stalk-like part of the brain that connects the cerebrum with the spinal cord. [1] In the human brain, the brainstem is composed of the midbrain, the pons, and the medulla oblongata. [1]",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBrainstem&rut=8e21f29100e7da4aab93941ae0be4aa66b41b01f7fe673ec15af8923d14bb1c1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:34:57.879942"
+    },
+    {
+      "topic": "brain stem",
+      "title": "Brainstem: What It Is, Function, Anatomy & Location",
+      "content": "Learn about the brainstem, a part of your brain that connects your brain and spinal cord and regulates vital functions. Find out what conditions can affect the brainstem, how to recognize the signs and symptoms, and what treatments are available.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmy.clevelandclinic.org%2Fhealth%2Fbody%2F21598%2Dbrainstem&rut=79c35b63794a91b57e3c16d10bb67c38beed10f088441144f659acc9bd7d8606",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:34:57.879989"
+    },
+    {
+      "topic": "brain stem",
+      "title": "Brainstem: Location, anatomy, parts, function | Kenhub",
+      "content": "Learn about the brainstem, a region of the brain that connects the spinal cord and the cerebellum. It consists of three parts: midbrain, pons and medulla oblongata, each with its own structure and function.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.kenhub.com%2Fen%2Flibrary%2Fanatomy%2Fthe%2Dbrainstem&rut=fd79ad1c3d31ece2998de8ef4b46313dfa25b1cc7bba0004f88d4fcc6dc09393",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:34:57.880033"
+    },
+    {
+      "topic": "brain stem",
+      "title": "Brainstem: Anatomy, Function, and Conditions That Affect It",
+      "content": "The brainstem is a roughly 3-inch structure in the brain, composed of three sections. The brainstem is key to functions that include heart and breathing rate, as well as coordination, balance, taste and smell, and the sleep-wake cycle. Stroke, brain tumors, and Parkinson's disease are among conditions that can affect the brainstem.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.verywellhealth.com%2Fbrainstem%2Danatomy%2D5095691&rut=baa8b20b972efc3258c82e4d1d453c83633fbfdffcab3bb6ac0385a397d24fa9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:34:57.880081"
+    },
+    {
+      "topic": "bar (establishment)",
+      "title": "Bar (establishment) - Wikipedia",
+      "content": "Bar (establishment) A hotel bar in Switzerland A bar, also known as a saloon, a tavern or tippling house, or sometimes as a pub or club, is a retail business that serves alcoholic beverages, such as beer, wine, liquor, cocktails, and other beverages such as mineral water and soft drinks.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBar_(establishment)&rut=ccfb766e0a87d9800cc1d39b5daabd4258385399ed93563e4f7df2401e7202ec",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:34:28.872264"
+    },
+    {
+      "topic": "bar (establishment)",
+      "title": "Bars - Encyclopedia.com",
+      "content": "BARS Fundamentally, a bar is a commercial establishment selling alcohol by the drink. Yet this minimal definition hardly captures the essence of an institution that has served as the chief leisure headquarters for millions of Americans for nearly four centuries. More than a mere drink dispensary, a bar also serves as a social club, a place where regular customers gather to tell stories, play ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.encyclopedia.com%2Fhumanities%2Fencyclopedias%2Dalmanacs%2Dtranscripts%2Dand%2Dmaps%2Fbars&rut=e12f2f6beeaa1eff530988a37bde7ae29f5d7da17c7cae802e38dcdad4ee57ea",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:34:28.872311"
+    },
+    {
+      "topic": "bar (establishment)",
+      "title": "Bar (establishment) explained",
+      "content": "A bar's owners and managers choose the bar's name, d\u00e9cor, drink menu, lighting, and other elements which they think will attract a certain kind of patron. However, they have only limited influence over who patronizes their establishment.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Feverything.explained.today%2FBar_(establishment)%2F&rut=d896f2fb021252a78ef3f3cf256a5bc987105ab9341fe96aaa3030b44a8bc8d0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:34:28.872350"
+    },
+    {
+      "topic": "bar (establishment)",
+      "title": "Unraveling the Concept: A Simple Definition of a Bar",
+      "content": "A bar is a business establishment that serves drinks, especially alcoholic beverages, for consumption on the premises. It is a social gathering place where people can meet, relax, and enjoy a variety of drinks, often accompanied by snacks or light meals.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Ftastesfood.com%2Fwhat%2Dis%2Dbar%2Dsimple%2Ddefinition%2F&rut=320a5f719826c616a360c58ec252b76410fa38b2c2c10bad0e41e1cf995c3f27",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:34:28.872384"
+    },
+    {
+      "topic": "bar (establishment)",
+      "title": "The Heart of the Establishment: Understanding the Concept of a Bar in ...",
+      "content": "The bar should also be designed with safety and accessibility in mind, with features such as non-slip flooring and accessible seating. How can bars contribute to the overall profitability of a food and beverage establishment?",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fflavorycooking.com%2Fwhat%2Dis%2Da%2Dbar%2Din%2Dfood%2Dand%2Dbeverage%2Dservice%2F&rut=8c10872edd2e435a665c49f38059e31155afec452896d31d28e838db5e478b9d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:34:28.872417"
+    },
+    {
+      "topic": "behavioral psychology",
+      "title": "B.A. Community Psychology - B.A. Community Psych Degree",
+      "content": "Flexible And Convenient Classes For Working Adults. Learn More & Apply Today. Earn Your Degree While You Work. We Are Here To Support You.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dpacificoaks.edu%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DvOZWTPgsvq0sdwqK0PNCHAbezNzE1wEKyfoJURX9D%252DBPU8jmXy4xskFpb%252DURe_OAHLIK9xn%252DgPoMuM3vZto6HKZ5HZivBz3TxbWl2JBMzRQscD9G1fVvix%252DkHI8lS05PbrzJtlXZpe1YzE9qGQopOiuCKtq7EdFyyCsdIPeNh5E.xkm1SdgW6Pbyv17evXPCrA%26rut%3Df897e174e07da71c0d23086c519b8fc1eaaba1105ed29bcc315439b8390715b8%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8hYHSbKe6e_ydrDqeGL2mxTVUCUxhbAGw0llD_z1%252DvHifV1MRC10KFnvd_Y47sgOcJ2sOT94xE56mOXqrjBxjCMtOoctUZ9oUeDxTWAfHR1YmLC0NxN6Cuwg1360p%252D2Qs167%252Dqbe3KL5eBOY7a0cYaEenuwNzEGDMTmVoZOIST_uSlK8W92YJLEdmZyYcLr95kzvKQToClm2aqA%252DJn2jfoDO%252D6sU%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cucGFjaWZpY29ha3MuZWR1JTJmbGVhcm4lMmZjb21tdW5pdHktcHN5Y2hvbG9neSUyZiUzZnNyYyUzZGIuc2VhcmNoJTI2dXRtX2NhbXB1cyUzZDMwMiUyNnV0bV9wcm9ncmFtJTNkMjM1JTI2bXNjbGtpZCUzZGExNWNlMmVhMmY4NTE2NDQzYjlhOGJiZDEyYTc1M2RmJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkUE9DJTI1MjAlMjU3QyUyNTIwQ2FsaWZvcm5pYSUyNTIwJTI1N0MlMjUyMFByb2dyYW0lMjUyMFNwZWNpZmljJTI1MjBUZXJtcyUyNnV0bV90ZXJtJTNkbWFqb3IlMjUyMGluJTI1MjBwc3ljaG9sb2d5JTI2dXRtX2NvbnRlbnQlM2RQT0MlMjUyMEIuQS4lMjUyMFBzeWNob2xvZ3k%2526rlid%253Da15ce2ea2f8516443b9a8bbd12a753df%26vqd%3D4%2D43960991175207364908634630975240030749%26iurl%3D%257B1%257DIG%253DE7F59CD4ECCA447ABAEB7F6DB31DB68D%2526CID%253D123F8F8D6310606F043399586287613A%2526ID%253DDevEx%252C5046.1&rut=c002fc63cecdfad2dcaa62bb5bf335537830638f446b3fa8a5bb3c8511ecf8c2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:36:03.010336"
+    },
+    {
+      "topic": "behavioral psychology",
+      "title": "Behavioral Psychology Masters - Classes Start Soon",
+      "content": "Learn to Help Children and Adults Struggling With Behavioral Health Challenges. Earn a Degree at the Largest Provider of Behavioral Sciences Master's Degrees in the U.S.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Ddegrees%252Dpurdueglobal.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DKnsp0W1CmPDvfymun%252DPxINR%252DbKYHqf5EwbkVitMTXJq_84YlgdXfSajVl9JQ0B8e4nxhxMuhsBn_slL0r0g2DDbFF5DQTALrnza_oUddQKeduHVPOmZ5q2Ls9N7dUWzljYQnjZQJyfRegIVR%252DHT5DEqbOoaw4xSUN0Bfw7srbwE.BQnakGOeEmwhE9BLKo5Fww%26rut%3D62aedd4e690456ae4c3040945c72d2e716051680743a04d632e5c4cb36ed8dff%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De83J9ktIqWlPxcCRoh3Pq46jVUCUxVau9aP_mNYPP%252DLSCQ3rmP0vpb60WpSxPEz8Y8AzjdzEWsxSkRwVSAUuqjG_onUKzAXl2Je29zi9GKbCVXXMfJXFC8GBOo9xdk7JlzSOUM0D0oteOQ_H8NzFcUePdYQUS9gamSzYJ0JP%252Db64CCJ_ygXCLROGx4qPpen2Q9lbzJS49HbL0J2bf2QbMYvVJ01Rk%2526u%253DaHR0cHMlM2ElMmYlMmZhZC5kb3VibGVjbGljay5uZXQlMmZzZWFyY2hhZHMlMmZsaW5rJTJmY2xpY2slM2ZsaWQlM2Q0MzcwMDA4MjU4OTcxMDY0MCUyNmRzX3Nfa3dnaWQlM2Q1ODcwMDAwODkyMzcxMTgwNSUyNmRzX2FfY2lkJTNkNjU1MTcwMDQ0OSUyNmRzX2FfY2FpZCUzZDIxMjI2MjQ5ODk5JTI2ZHNfYV9hZ2lkJTNkMTgzNTg3ODMwNzkzJTI2ZHNfYV9saWQlM2Rrd2QtMjM5NDg1NDM0OTI0OSUyNiUyNmRzX2VfYWRpZCUzZDgxMzYzOTk3MjMyODk5JTI2ZHNfZV90YXJnZXRfaWQlM2Rrd2QtODEzNjQyMzY2MDM4ODklM2Fsb2MtMTkwJTI2JTI2ZHNfZV9uZXR3b3JrJTNkcyUyNmRzX3VybF92JTNkMiUyNmRzX2Rlc3RfdXJsJTNkaHR0cHMlM2ElMmYlMmZvbmxpbmUuZGVncmVlcy1wdXJkdWVnbG9iYWwuY29tJTJmYXBwbGllZC1iZWhhdmlvci1hbmFseXNpcy1tYXN0ZXIlMmZsYW5kaW5nJTNmc2lkJTNkY2Q2NjJmZmUtOTY0YS00M2ZiLWFiZDYtMGY5OTVmNzgwMDhjJTI2c3ViaWQlM2RvbmxpbmUlMjUyMG1hc3RlciUyN3MlMjUyMGRlZ3JlZSUyNTIwaW4lMjUyMGJlaGF2aW9yYWwlMjUyMGFuYWx5c2lzJTJiYiUyYmMlMmJzJTJiYmIlMmJiZWhhdmlvcmFsJTI1MjBwc3ljaG9sb2d5JTI2dGFyZ2V0aW5nJTNkbWFzJTI2a3clM2RvbmxpbmUlMjUyMG1hc3RlciUyN3MlMjUyMGRlZ3JlZSUyNTIwaW4lMjUyMGJlaGF2aW9yYWwlMjUyMGFuYWx5c2lzJTI2bXQlM2RiYiUyNmRldmljZSUzZGMlMjZuZXR3b3JrJTNkcyUyNmNyZWF0aXZlJTNkODEzNjM5OTcyMzI4OTklMjZjaWQlM2Q2MjY3MTg5NDElMjZhaWQlM2QxMzAxODIyOTkyOTgzMzM0JTI2Z2NsaWQlM2QwNjFjYjAzYmMxM2QxN2QyYTdlOGQ5NmNmYzFmYTM4ZSUyNmdjbHNyYyUzZDNwLmRzJTI2JTI2bXNjbGtpZCUzZDA2MWNiMDNiYzEzZDE3ZDJhN2U4ZDk2Y2ZjMWZhMzhlJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkJTI1NUJTJTI1NUQlMjUyMFB1cmR1ZSUyNTIwR2xvYmFsJTI1MjAtJTI1MjBQc3ljaG9sb2d5JTI1MjAlMjUyNiUyNTIwSHVtYW4lMjUyMFNlcnZpY2VzJTI1MjAtJTI1MjBCZXRhJTI2dXRtX3Rlcm0lM2RvbmxpbmUlMjUyMG1hc3RlciUyN3MlMjUyMGRlZ3JlZSUyNTIwaW4lMjUyMGJlaGF2aW9yYWwlMjUyMGFuYWx5c2lzJTI2dXRtX2NvbnRlbnQlM2RCZWhhdmlvciUyNTIwQW5hbHlzaXMlMjUyME1hc3RlciUyNTIwT25saW5lJTI1MjAoQnJvYWQp%2526rlid%253D061cb03bc13d17d2a7e8d96cfc1fa38e%26vqd%3D4%2D283277988741400848995413591796163502942%26iurl%3D%257B1%257DIG%253DE7F59CD4ECCA447ABAEB7F6DB31DB68D%2526CID%253D123F8F8D6310606F043399586287613A%2526ID%253DDevEx%252C5051.1&rut=9fa1de4e2f72cf3c9b628ac6e0d74cc5b614a580a7fc9037c740b735ae044f6f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:36:03.010405"
+    },
+    {
+      "topic": "behavioral psychology",
+      "title": "Behaviorism In Psychology",
+      "content": "Learn about the behaviorist perspective in psychology, which focuses on observable behaviors and learning from the environment. Explore the key features, principles, methods, strengths and weaknesses of behaviorism.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.simplypsychology.org%2Fbehaviorism.html&rut=c66f4ac05b89dcc1e03c9bb1363ea72cf48a86419e08dd32d2474bb59b16f771",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:36:03.010451"
+    },
+    {
+      "topic": "behavioral psychology",
+      "title": "Behaviorism: Definition, History, Concepts, and Impact",
+      "content": "Learn how behaviorism is a theory of learning that explains behavior by environmental stimuli and conditioning. Explore the types, methods, and applications of behaviorism in psychology and beyond.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.verywellmind.com%2Fbehavioral%2Dpsychology%2D4157183&rut=ad74ce4027d043b42a0694217b16ac05253d955a985904c08d76715b839ade5a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:36:03.010495"
+    },
+    {
+      "topic": "behavioral psychology",
+      "title": "Behavioral Psychology: Definition, Theories, & Examples",
+      "content": "Learn about the nurture-centered approach to studying behavior, its classic studies, and its therapeutic influences. Explore the differences and similarities between behavioral psychology and cognitive psychology, and how they both contribute to the field of psychology.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.berkeleywellbeing.com%2Fbehavioral%2Dpsychology.html&rut=04816e3e9242e611ff4958aa37ac2afb9b61fe6ba3990825b91db422657649e1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:36:03.010542"
+    },
+    {
+      "topic": "cognitive behavioral therapy",
+      "title": "Shop cbt cognitive behavioral therapy - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on cbt cognitive behavioral therapy at Amazon.com. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DO7MzT16zig08WW1TSQYDBM77poHOf_foPIuo0kITBzwYM_vo8qy9UjgR4dFwvVb2wQoQBUhpt5hGT1Xd9Od4EhMS%252DrmxX9urWkgbyC46EBvdWL23SlW_O9R0x7NccZK8rHvy_huENKBjGGbikx_Ba3mbIY8uULjff3i5kxu3FSo.TW1HBihMutj%252DtZh0aYK_RQ%26rut%3Db4503bf2c929325203b7496fa22b0f760597438b9a340eb8e004d4de992ac79b%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8GF_%252D9Tn0RVKHvw%252D8q2KmPTVUCUxY9zTnV0KLZNBODMZfV9P1IT6VOPC%252DbourCKkylqghKSGfHVYY2XjRKaVCD2z2wz%252D8R2_MpIYR%252D8j%252DdpcVLlXol14C9xNPgV6Zu1jhstPnjjGafsfBCX%252D4KoyMw1bdo2VfuWC0pvewDa8eQ4MoGRco8YiHb5IiwJtKH7qReQ9AGmhQ6yZS38Y0F69WnokLw8k%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGNidCUyYmNvZ25pdGl2ZSUyYmJlaGF2aW9yYWwlMmJ0aGVyYXB5JTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfeGR3anBtb3hhX3AlMjZhZGdycGlkJTNkMTIyNDg1NjI3MTU2NjMwNCUyNmh2YWRpZCUzZDc2NTUzNjgzNjAwMjYwJTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkZSUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODc1MTklMjZodnRhcmdpZCUzZGt3ZC03NjU1Mzc2NjQyNjI1OCUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkMjYxNDFfMTM1OTIyMjQlMjZtY2lkJTNkZTdmMjIyYjUzZjAzM2U4Yzk1NjFlYjBlMzk4M2RiODYlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZDI4MGIwNTZmMjVlNTFiZGM5NTE4NmMzODFiODQ2YTk0%2526rlid%253D280b056f25e51bdc95186c381b846a94%26vqd%3D4%2D183388999462458256424875454206225314910%26iurl%3D%257B1%257DIG%253D24EF58DBA2FC4D4DB435592A7BFBFBAC%2526CID%253D3972F54ED20F650A3F87E39BD38364B8%2526ID%253DDevEx%252C5050.1&rut=2d3210a08fab49facc4902a39bccd695aa9d4959446032ab94691342c144b677",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:41:21.703941"
+    },
+    {
+      "topic": "cognitive behavioral therapy",
+      "title": "Cognitive Behavioral (CBT) Therapists in San Francisco, CA",
+      "content": "To find a cognitive behavioral therapist for someone else, you may want to begin by discussing the person's problem, researching cognitive behavioral therapy, and assessing whether the approach ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.psychologytoday.com%2Fus%2Ftherapists%2Fca%2Fsan%2Dfrancisco%3Fcategory%3Dcognitive%2Dbehavioral%2Dcbt&rut=ffe2bb3ad5dc1612dad5a02ba54af07006e6258f6f00355ed0074dd09adfa20d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:41:21.704013"
+    },
+    {
+      "topic": "cognitive behavioral therapy",
+      "title": "CBT Therapy | Cognitive Behavioral Therapists | Bay Area CBT Center",
+      "content": "Break free from repetitive patterns with evidence-based and Integrative CBT therapy. Discover a holistic and scientific approach to mental health at the Bay Area CBT Center.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbayareacbtcenter.com%2F&rut=833a9d4e18372bf7110a6ec8ae2c07e33b0b9072086aeedb302ff8696f675030",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:41:21.704064"
+    },
+    {
+      "topic": "cognitive behavioral therapy",
+      "title": "Home | Cognitive Therapy in the San Francisco Bay Area",
+      "content": "Our partners have extensive training and experience utilizing Cognitive Behavioral Therapy (CBT), Acceptance and Commitment Therapy (ACT), and current research-based modalities, including mindfulness and self-compassion. We also provide high-quality professional training for clinicians, trainees and organizations.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsfbacct.com%2F&rut=02156c642f5058109ad2aaa5d77c049bbedc4b913b4c043d6d624998182bd381",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:41:21.704126"
+    },
+    {
+      "topic": "bipolar disorder",
+      "title": "Bipolar 1 Treatment Option - Recognizing Bipolar Symptoms",
+      "content": "See The Full Prescribing Information, Including Boxed Warning, On The Official Site. Find Important Safety Information For An FDA Approved Bipolar Treatment.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dschizophrenia%252Dmanagement.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DWfOf8VAVzGhs5FLgIZcjTdOQZicqlpHEvt98dC1Ar77_knH93ILE9PNeNiK58Wqx_6m_JoItCmJyFfXiZ8RA51MCko1obT1o1N3hHW7zo85Ye1C4YXTsGNn6AeiytW3vZe722xLaXQoCH4SfGocNGANeT5VnZIfkbz4RBB%252D45DE.JmIrrhE1F_Udt7kAN%252DwXDg%26rut%3Dfa94a0b97546bc27a9b71f2829c7a8b9cffcc552b5048ec09db364b3a1171f7e%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8978EM1GJTzccIP_zUjbEATVUCUysn6v238ymUSO4EoZ0ij2ycmejfLJAXbcJk4YUNGUI5g4DMRkVx6h3Hq79EZe1qCDauLJc6%252DzXhoOEoFJSVGOiDJzptRQQ9jVu4sasR1Lr13_0gRVvZCKv1vZEv9YsvNca6J1JwiJmZ9XUZvmhpaL7ZIj0pZG%252Da%252DkxVjWl3dB%252DugF%252DFyOq9S6qGBQugzju18Y%2526u%253DaHR0cHMlM2ElMmYlMmZhZC5kb3VibGVjbGljay5uZXQlMmZzZWFyY2hhZHMlMmZsaW5rJTJmY2xpY2slM2ZsaWQlM2Q0MzcwMDA4Mjg3MjYyNzQwNSUyNmRzX3Nfa3dnaWQlM2Q1ODcwMDAwODk3NTE1MTI2OSUyNmRzX2FfY2lkJTNkODg3NTc5NDE1JTI2ZHNfYV9jYWlkJTNkMjMyMzk1ODgyNzYlMjZkc19hX2FnaWQlM2QxODkwMjMxNDM1OTUlMjZkc19hX2xpZCUzZGt3ZC0zNDc5NTg1OTAzNTMlMjYlMjZkc19lX2FkaWQlM2Q4MTQzMjcxODI1NTM5NyUyNmRzX2VfdGFyZ2V0X2lkJTNka3dkLTgxNDMyOTYyMjA3NzA3JTNhbG9jLTE5MCUyNiUyNmRzX2VfbmV0d29yayUzZHMlMjZkc191cmxfdiUzZDIlMjZkc19kZXN0X3VybCUzZGh0dHBzJTNhJTJmJTJmd3d3LnV6ZWR5LmNvbSUyZmxpdmluZy13aXRoLWJpcG9sYXItSS1kaXNvcmRlciUyZiUzZmdjbGlkJTNkNzdjZGM3MjM1NGUwMTc4ZWYyYWFhZTc0NmJlMWFlMjIlMjZnY2xzcmMlM2QzcC5kcyUyNiUyNm1zY2xraWQlM2Q3N2NkYzcyMzU0ZTAxNzhlZjJhYWFlNzQ2YmUxYWUyMiUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZFVTQV9NQV9TRU1fTkJfUEhfVVpFRFktRFRDLUNvbmRpdGlvbi1CaXBvbGFyLUFsbC1BbGwtTkEtTkJBLUFsbCUyNnV0bV90ZXJtJTNkdW5kZXJzdGFuZGluZyUyNTIwYmlwb2xhciUyNTIwMSUyNnV0bV9jb250ZW50JTNkQmlwb2xhciUyNTIwRGlhZ25vc2lz%2526rlid%253D77cdc72354e0178ef2aaae746be1ae22%26vqd%3D4%2D246503021907229190246068530893233906334%26iurl%3D%257B1%257DIG%253D4E178F82433D41E9A9A3C7CBFA8B6A07%2526CID%253D203D7BB2254D66DE16F16D6724C16765%2526ID%253DDevEx%252C5046.1&rut=beb3a81798a2e9de46694d5b2faa5939ae8104a97a35e8480db9bc71afcdc491",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:44:02.118828"
+    },
+    {
+      "topic": "bipolar disorder",
+      "title": "Low priced bipolar disorder dummies - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on bipolar disorder dummies at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D7qmFvq%252D2rjWbHW0gBJgu%252D6FqGLYU8XJ_QI5jjsY1JzZZ11fwL%252DeOUqyEv2%252D_a6bROuA2EpfJSIfsQyJ7pKjP4tCu5bNbPTZX0HDhaLi2Ng%252DkgScSGcp9W59_5Pc0JlcxKfqOdj1B5Sv3f0VTOecMxIRTrVdNXaWgW9o1%252D0OWNho.9gd7_XuQCc0qhesFWZk5Ig%26rut%3D05d4cf5faab4a73638d6f49b4b8dff84cdfaaeb0a25ee74a4aee90c2c2759708%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8xQu9QnV9KGTYZSC9Z2cCXjVUCUwd5MKbCIqB5sSfir_DMq_vILfeq7or6q3YXbIYxLrkWL4RIvsrNGGePI1iOSJpdEMfr7YHnKQWwvwP_nm2nV8quqG0BAQWKzwyIXfOYfUeO1iWsXVuFomnLPKk62GkHFXptAtyaVB48LOBJ3iG6%252DCX7CSuWFEwJ93dT63B_fM1ZH%252Dm%252DSTYXVcalN0rQL3Qa6o%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJpcG9sYXIlMmJkaXNvcmRlciUyYmR1bW1pZXMlMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF85M2I1dG00Z2pjX3AlMjZhZGdycGlkJTNkMTIzMjU1Mzc5NTI1Mjg3MSUyNmh2YWRpZCUzZDc3MDM0NzUyNTIxMzk2JTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkcCUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY0NDglMjZodnRhcmdpZCUzZGt3ZC03NzAzNTA0MjA3OTM0NCUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkNTYyMF8xMzMwMDUyMyUyNm1jaWQlM2RjYjNmNjBhNDQ3Y2QzN2RjYWI3NGZiMmIzYTY0M2FlZCUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkZjU3Njg1NGUwNzI5MTIyMDdhZWFlYzE5MzgyOGMzYmM%2526rlid%253Df576854e072912207aeaec193828c3bc%26vqd%3D4%2D27702270971664203137299550477673388786%26iurl%3D%257B1%257DIG%253D4E178F82433D41E9A9A3C7CBFA8B6A07%2526CID%253D203D7BB2254D66DE16F16D6724C16765%2526ID%253DDevEx%252C5051.1&rut=05d3626ee50d64c4a8122c06075bc2f92c255d85a49c98807cefe7e88250a8bb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:44:02.118872"
+    },
+    {
+      "topic": "bipolar disorder",
+      "title": "Bipolar disorder - Symptoms and causes - Mayo Clinic",
+      "content": "Bipolar disorder, formerly called manic depression, is a mental health condition that causes extreme mood swings. These include emotional highs, also known as mania or hypomania, and lows, also known as depression.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mayoclinic.org%2Fdiseases%2Dconditions%2Fbipolar%2Ddisorder%2Fsymptoms%2Dcauses%2Fsyc%2D20355955&rut=b813ac401a2ccc4bb4a43c28f5e2654af6f4ec46cac67ec740c550b5f3461ed9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:44:02.118901"
+    },
+    {
+      "topic": "bipolar disorder",
+      "title": "Bipolar disorder - Wikipedia",
+      "content": "Bipolar disorder (BD), previously known as manic depression, is a mental disorder characterized by periods of depression and of abnormally elevated mood that each last from days to weeks, and in some cases months. [4][5] If the elevated mood is severe or associated with psychosis, it is called mania; if it does not significantly affect ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBipolar_disorder&rut=b3cbe75ed377242a324096db28a0f8c367526e77dd5d3b5cabd62c47c59f9e10",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:44:02.118928"
+    },
+    {
+      "topic": "bipolar disorder",
+      "title": "Bipolar Disorder - National Institute of Mental Health (NIMH)",
+      "content": "Bipolar disorder (formerly called manic-depressive illness or manic depression) is a mental illness that causes clear shifts in a person's mood, energy, activity levels, and concentration. People with bipolar disorder often experience periods of extremely \"up,\" elated, irritable, or energized behavior (known as manic episodes) and very \"down,\" sad, indifferent, or hopeless periods ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nimh.nih.gov%2Fhealth%2Ftopics%2Fbipolar%2Ddisorder&rut=8f54b4f9a379b1450dcc6099f97382a185c271d38fa6440f16d08693b93ce293",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:44:02.118960"
+    },
+    {
+      "topic": "baruch spinoza",
+      "title": "Shop baruch spinoza - Amazon.com Official Site",
+      "content": "Find deals and low prices on baruch spinoza at Amazon.com. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D6RpXWojUuk_11vm957COZBIVfFz21vwcUo5PH6ObX5NSs1%252DYyiDdmPNi%252Dl5TWSq96SWBLru3YA2TCUBXoL7I2Y_JyAxT3Iqoy4IMHPpJp_5BtLVeFHzX%252DTn1FD1a9AnUeBX7JdsFSGlNtjN0alF3iGsrOrgYc7cxbZrNGqO12P8.pFswkKw4GnOzc3yNI2vWPw%26rut%3Dc9b494d3ee7b00466259a877b66764b9ae8c00a2e45e687c3143c223d14a21d5%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8_wb1Op7w_219AFOoQekB1zVUCUwU_jBKaiRCiiwDXr2I%252DMSShy_NRgBTGZen_9aikp0_sO47O3lVNUM9%252DGb4b3hRCUyp52vzBTapBCidsVxS9FSDY7UOaJ7g3NZ6JiAlfK37K30hxYCkQ9AzbuGve0xk9MmUKVLbT4Opshv2aL530nyReMm67wn%252DQzhAdt26QwYR5e4Ex%252Dd78lhwTp3LNrbE1W8%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJhcnVjaCUyYnNwaW5vemElMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF80MWJ2aHRnejl1X3AlMjZhZGdycGlkJTNkMTIzOTE0OTkyNzg5MzQ2OSUyNmh2YWRpZCUzZDc3NDQ3MDM2MjgwMjAzJTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkZSUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY2MzUlMjZodnRhcmdpZCUzZGt3ZC03NzQ0NzEyMDU0NjAxMCUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkMjgyNDJfMTQ2Mzg0OTUlMjZtY2lkJTNkYzgxYTg5MjM1ZWUyMzM4ODg4MjkxYmQyYjdkMjkwYjElMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZDhhMjg0NGRjOWQ5YzFhNWYzODMzMmQ4Yjc0MmNlNmY5%2526rlid%253D8a2844dc9d9c1a5f38332d8b742ce6f9%26vqd%3D4%2D154703546544607825383145074334266659713%26iurl%3D%257B1%257DIG%253D7E623D6ED88945F59F123517F9BDA6C9%2526CID%253D0C1FE21B4A226AE70C32F4CE4BB56B71%2526ID%253DDevEx%252C5046.1&rut=c6afb9ec9480bab8018b335eeada454c5e3cd234a7127370bf4f7c578c968350",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T07:52:16.555907"
+    },
+    {
+      "topic": "baruch spinoza",
+      "title": "Baruch Spinoza - Wikipedia",
+      "content": "Baruch Espinosa, the third child, was born on 24 November 1632 and named as per tradition for his maternal grandfather. [1] Spinoza's younger brother Gabriel was born in 1634, followed by another sister Rebecca. Miriam married Samuel de Caceres but died shortly after childbirth.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBaruch_Spinoza&rut=7389b037ad995bba4c4a95e5acc0b3e0b8ecd53c8b503633b4eaa44ab29df7ba",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T07:52:16.555991"
+    },
+    {
+      "topic": "baruch spinoza",
+      "title": "Baruch Spinoza - Stanford Encyclopedia of Philosophy",
+      "content": "Bento (in Hebrew, Baruch; in Latin, Benedictus) Spinoza is one of the most important philosophers\u2014and certainly the most radical\u2014of the early modern period. His thought combines a commitment to a number of Cartesian metaphysical and epistemological principles with elements from ancient Stoicism, Hobbes, and medieval Jewish rationalism into a nonetheless highly original system. His ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fspinoza%2F&rut=46a8afd87ce363070949f5b4b12f0b7c281917e3763fcc8d9c0e32366286c1a9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T07:52:16.556270"
+    },
+    {
+      "topic": "baruch spinoza",
+      "title": "Benedict de Spinoza | Biography, Ethics, & Facts | Britannica",
+      "content": "Benedict de Spinoza, Dutch Jewish philosopher, one of the foremost exponents of 17th-century Rationalism and one of the early and seminal figures of the Enlightenment. His masterwork is the treatise Ethics (1677). Learn more about Spinoza's life and work.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FBenedict%2Dde%2DSpinoza&rut=e4333f3fee06f8c2649bddbd47b84293005642794ad07759a644f220afcd3040",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T07:52:16.556340"
+    },
+    {
+      "topic": "baruch spinoza",
+      "title": "Baruch Spinoza: The Life and the great Ideas that Changed Philosophy ...",
+      "content": "Learn about the life and ideas of Baruch Spinoza, a radical thinker who challenged the orthodoxy of his time. Explore his views on God, nature, ethics, and politics, and how he influenced modern thought.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fworldhistoryjournal.com%2F2024%2F10%2F01%2Fthe%2Dlife%2Dof%2Dbaruch%2Dspinoza%2Da%2Dphilosopher%2Dahead%2Dof%2Dhis%2Dtime%2F&rut=ba991936a56ebce9f3cfe42c23a91f2791ecc750d7cdd254ce027aa389f11aff",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T07:52:16.556400"
+    },
+    {
+      "topic": "simone de beauvoir",
+      "title": "Simone de Beauvoir - Wikipedia",
+      "content": "Simone Lucie Ernestine Marie Bertrand de Beauvoir (UK: / d\u0259 \u02c8bo\u028avw\u0251\u02d0r /, US: / d\u0259 bo\u028a\u02c8vw\u0251\u02d0r /; [3][4] French: [sim\u0254n d\u0259 bovwa\u0281] \u24d8; 9 January 1908 - 14 April 1986) was a French existentialist philosopher, writer, social theorist, and feminist activist. Though she did not consider herself a philosopher, nor was she considered one at the time of her death, [5][6][7] she had a ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSimone_de_Beauvoir&rut=cd9e698e88f88f5ca33e305b524e715397aa7d7756f595231463e23dd4069be9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:41:35.892199"
+    },
+    {
+      "topic": "simone de beauvoir",
+      "title": "Simone de Beauvoir | Books, Feminism, The Second Sex, Biography ...",
+      "content": "Simone de Beauvoir (1908-86) was a French existentialist writer. She is known for her treatise The Second Sex (1949), an argument for the abolition of what she called the myth of the 'eternal feminine.' It became a classic of feminist literature. She also won the Prix Goncourt for her novel The Mandarins (1954).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FSimone%2Dde%2DBeauvoir&rut=49c2b5431e11144b04311418119746b2c0c5d77147dc1091ca428d2b75e7d947",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:41:35.892282"
+    },
+    {
+      "topic": "simone de beauvoir",
+      "title": "Simone de Beauvoir - Stanford Encyclopedia of Philosophy",
+      "content": "Simone de Beauvoir (1908-1986) was a philosopher, novelist, feminist, public intellectual and activist, and one of the major figures in existentialism in post-war France. She is best known for her trailblazing work in feminist philosophy, The Second Sex (1949), but her original contributions to existentialism and phenomenology can be found across her work, from her first philosophical novel ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fbeauvoir%2F&rut=5945c544ef49714810d8ee451c913bb4452785642e754ee5a9d377f7e7a5d7af",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:41:35.892346"
+    },
+    {
+      "topic": "simone de beauvoir",
+      "title": "Simone de Beauvoir - French Women & Feminists in History: A Resource ...",
+      "content": "Simone de Beauvoir was a philosopher and writer of notable range and influence whose work is central to feminist theory, French existentialism, and contemporary moral and social philosophy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fguides.loc.gov%2Ffeminism%2Dfrench%2Dwomen%2Dhistory%2Ffamous%2Fsimone%2Dde%2Dbeauvoir&rut=0e9330b3561be011de43844785a8454550d096e3d076ef66bbbd12244e4a5414",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:41:35.892408"
+    },
+    {
+      "topic": "simone de beauvoir",
+      "title": "Beauvoir, Simone de | Internet Encyclopedia of Philosophy",
+      "content": "Learn about the life and work of Simone de Beauvoir, one of the most influential French existentialist philosophers and writers. Explore her contributions to ethics, feminism, literature, and cultural studies, as well as her personal and intellectual relationships.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fsimone%2Dde%2Dbeauvoir%2F&rut=0e7f6bd826369dd0ce64e1da570ce4a90dc49aff2935cef259894fd6ead68a8a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:41:35.892469"
+    },
+    {
+      "topic": "bertrand russell",
+      "title": "Shop bertrand russell - Amazon.com Official Site",
+      "content": "Browse & discover thousands of brands. Read customer reviews & find best sellers. Find deals and low prices on bertrand russell at Amazon.com",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DNeTJ5qAlCUsTqF8AOefDL41o09ktPIxV6h6JMhxprqZpS3%252D94knPtMQI66QshNgDXhD_gNed0ib1kGtdINu2IQ%252Dbpv81ZK35S6hE0cg10yCPTXUkikzrAad8pHY9y1qRGIC4FgcneKnabTKTTWFvhmcb0ZhptttUjdWx5IpgBGo.PV3cCQr1szgeSQDr1LB43Q%26rut%3Da97b9e35445519fae97b69be70691e835008db7ac3c311b7ad8085349954c951%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8RGpcq96HZZUoDl92NHlVUzVUCUwQYnATOzyiIddUmmT8XqMuutJfefGU1MBe36u%252DqYXs4Os8jqr6qbvEUO2%252Dq9FazMcT8T8kdctX3hAvOpcXFKpj3N7HKXekQk6PfQnWblNDCkCe2kPQTNvAjj0lG4AvyImHzfsNyqRyyunlFmi_fh4dXYyqU4er_UrHNVVmaKBJUESfAKHWo2Xnx%252DoM6TbIVn4%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJlcnRyYW5kJTJicnVzc2VsbCUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzdtaHgybnFpZWFfcCUyNmFkZ3JwaWQlM2QxMjI4MTU0Nzk4NTk5NzE1JTI2aHZhZGlkJTNkNzY3NTk4NDEzOTc3MzIlMjZodm5ldHclM2RzJTI2aHZxbXQlM2RlJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjYzNSUyNmh2dGFyZ2lkJTNka3dkLTc2NzU5OTA5NjM1NjI1JTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QyODI0MF8xNDYzODA0MyUyNm1jaWQlM2RhYzQ2ZTYzYzM4ZDYzNDk5YTU1YTg5NTg2NTE1MjI3ZiUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkOTcyMzE4ZjM5NTc5MTk2ODEzNDM3MWFiODRjNzkwMzk%2526rlid%253D972318f395791968134371ab84c79039%26vqd%3D4%2D280946709704461591626287174077007563630%26iurl%3D%257B1%257DIG%253D6A13A50B6A7B4DB49C68C35424BC7A71%2526CID%253D3DC44D1F10D7627900BF5BCA110263D0%2526ID%253DDevEx%252C5045.1&rut=dbe9f3c2a1b7a974346d545340bb498799d2dd102b5e418ea0f239144f322256",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:43:10.448530"
+    },
+    {
+      "topic": "bertrand russell",
+      "title": "Bertrand Russell - Wikipedia",
+      "content": "A comprehensive biography of Bertrand Russell, a British philosopher, logician, mathematician, and Nobel laureate. Learn about his life, work, achievements, and views on various topics.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBertrand_Russell&rut=7916087967e6ccb64f31009dfdaa78d781b33c33a3c248ea78f8574ff3cb8faa",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:43:10.448582"
+    },
+    {
+      "topic": "bertrand russell",
+      "title": "Bertrand Russell | Biography, Essays, Philosophy, & Facts | Britannica",
+      "content": "Bertrand Russell, British philosopher and logician, founding figure in the analytic movement in Anglo-American philosophy, and recipient of the 1950 Nobel Prize for Literature. His contributions to logic, epistemology, and the philosophy of mathematics made him one of the foremost philosophers of the 20th century.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FBertrand%2DRussell&rut=fc36e6c453a03080fca1f651400f8a40accbba296151aef86612ea34f28c303a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:43:10.448624"
+    },
+    {
+      "topic": "bertrand russell",
+      "title": "Bertrand Russell - Stanford Encyclopedia of Philosophy",
+      "content": "Bertrand Arthur William Russell (1872-1970) was a British philosopher, logician, essayist and social critic best known for his work in mathematical logic and analytic philosophy. His most influential contributions include his championing of logicism (the view that mathematics is in some important sense reducible to logic), his refining of Gottlob Frege 's predicate calculus (which still ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Frussell%2F&rut=2ad9f507df883633c432c17953f275c4d9426b1f5d9d96b88c8f4077093695cb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:43:10.448667"
+    },
+    {
+      "topic": "bertrand russell",
+      "title": "Bertrand Russell - Biographical - NobelPrize.org",
+      "content": "Bertrand Russell was a British philosopher, mathematician, and social activist who won the Nobel Prize for Literature in 1950. He wrote many books on philosophy, logic, politics, and social issues, and was involved in several controversies and legal battles.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nobelprize.org%2Fprizes%2Fliterature%2F1950%2Frussell%2Fbiographical%2F&rut=ee2b705d182818b7f091b38608ff3f86c6469507c7acae0e806fc2439ef266ac",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:43:10.448706"
+    },
+    {
+      "topic": "mini brains reveal clear brain signals of schizophrenia and bipolar disorder",
+      "title": "Mini brains reveal clear brain signals of schizophrenia and bipolar ...",
+      "content": "Mini brains reveal clear brain signals of schizophrenia and bipolar disorder Mini-brains in a dish are exposing the hidden electrical signatures of schizophrenia and bipolar disorder, bringing ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencedaily.com%2Freleases%2F2025%2F12%2F251228074451.htm&rut=87ea3b2f03286e9d29ba8fb53525ebbd31bac9db6928a81e5540c35f9d67c195",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:31:55.693063"
+    },
+    {
+      "topic": "mini brains reveal clear brain signals of schizophrenia and bipolar disorder",
+      "title": "'Mini-Brains' Reveal Hidden Signals of Schizophrenia And Bipolar Disorder",
+      "content": "'Mini-brains' grown in the lab allow scientists to study brain wiring without interfering with brains in living people, and now a new study has used these scaled-down models to identify neural signatures associated with schizophrenia and bipolar disorder.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencealert.com%2Fmini%2Dbrains%2Dreveal%2Dhidden%2Dsignals%2Dof%2Dschizophrenia%2Dand%2Dbipolar%2Ddisorder&rut=7e8f1c741a202c9f7efb11694d6cb0490ef7a524ba8de76b018239716d85176b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:31:55.693118"
+    },
+    {
+      "topic": "mini brains reveal clear brain signals of schizophrenia and bipolar disorder",
+      "title": "Mini brains show clear signals of schizophrenia and bipolar - MSN",
+      "content": "By capturing the electrical chatter of neurons in a dish, they are now revealing clear, measurable signatures of schizophrenia and bipolar disorder that traditional brain scans have struggled to ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.msn.com%2Fen%2Dus%2Fhealth%2Fother%2Fmini%2Dbrains%2Dshow%2Dclear%2Dsignals%2Dof%2Dschizophrenia%2Dand%2Dbipolar%2Far%2DAA1TiIg4&rut=e668951e879d361f632fdfbd6dfc030c26190f5e7b271f6353ccf9a1fe7bdd82",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:31:55.693164"
+    },
+    {
+      "topic": "mini brains reveal clear brain signals of schizophrenia and bipolar disorder",
+      "title": "Scientists Discover Neural Basis of Schizophrenia and Bipolar Disorder",
+      "content": "Machine learning decodes disease specific signals Kathuria's team created the organoids, simplified versions of brain tissue, by reprogramming blood and skin cells from people with schizophrenia, bipolar disorder, and from healthy volunteers into stem cells capable of forming brain-like structures.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fscitechdaily.com%2Fscientists%2Ddiscover%2Dneural%2Dbasis%2Dof%2Dschizophrenia%2Dand%2Dbipolar%2Ddisorder%2F&rut=863a273870682f165a535271c9cf4ed5fc8de3acd6d5f94b8afc5c584716a634",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:31:55.693213"
+    },
+    {
+      "topic": "prowritingaid vs grammarly: which grammar checker is better in (2022) ?",
+      "title": "ProWritingAid - Grammar, Spelling and Style",
+      "content": "A writing coach, style editor, and grammar checker in one package. Trusted by over three million writers. Improve grammar, style, tone and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dprowritingaid.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D4n7daLvVSw5KG5V54jdyHdM2OmJ0xLkpQcvET6396P47CQJwxX8CNXePsix_vwCCnHvfWTcf_KORvdbzSIE96K%252D4Gt8u1RkrCNHyxD%252Dmoo1avQBTcocs69oPb2PLW6UiUNrizqtTWjY%252D%252D_Nggo7m3%252DctENzXYz4UOB9S1_6i4WQ.aAkae2K7Tac5f35WVsLLNQ%26rut%3D4b64bcf15805ab08e5fb793f57cca3a0c22e4aa6c8bdc0fe62fcd3494757d3e5%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8sLgXGCXeb2dHJmsTIXZxmDVUCUwQZ0brNoSLMsftPZzF1RsXJtPtmxOTa%252DSgLjMCE5hwk2P4NK5xtEHjXjE2VLKaUbbB6h47_%252D3feE3Lq9ZM6st5u2RQ9IPAayrZzpNKwidWbKpuJnBVNa6bkJfogZ%252DgGJ6Ov618RQ9yp5ANNQ8AbdBNC%252DsOxqPcXYVtHEPpKEXcVW5ZLhTjvJay9Ho%252DS4rBtwI%2526u%253DaHR0cHMlM2ElMmYlMmZwcm93cml0aW5nYWlkLmNvbSUyZmxwJTJmZGlzY292ZXIlM2Ztc2Nsa2lkJTNkNDVjMzliMjhkMWE2MWM4ZGUzNTdmMjcwY2ZhMTU2ZDglMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RCcmFuZCUyNTIwLSUyNTIwVGllciUyNTIwMSUyNnV0bV90ZXJtJTNkcHJvd3JpdGluZ2FpZCUyNnV0bV9jb250ZW50JTNkQnJhbmQlMjUyMC0lMjUyMFRpZXIlMjUyMDElMjUyMC0lMjUyMFByb1dyaXRpbmdBaWQ%2526rlid%253D45c39b28d1a61c8de357f270cfa156d8%26vqd%3D4%2D13554149795823109660065505877091150548%26iurl%3D%257B1%257DIG%253D8F1FFF97BBD34613AF1CF2C5E755CCCB%2526CID%253D394279C826106F7A2B8D6F1D27F46EF7%2526ID%253DDevEx%252C5046.1&rut=7c4127197f9b757dea34b0214b428c052cca559cd430b6569f55ff852803aef0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:35.896778"
+    },
+    {
+      "topic": "prowritingaid vs grammarly: which grammar checker is better in (2022) ?",
+      "title": "Grammar Checker for Students - Write Better & Faster",
+      "content": "QuillBot's Grammar Checker corrects mistakes and improves your writing instantly. Write confidently and effortlessly with QuillBot. Upgrade to QuillBot Premium today.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dquillbot.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DxzNN6MLtjO1zOmsYMGYWk_RSutgf%252DBOQQn4ZlbzZxHWHTrGex2p7PShGlrzic5m5RjTZeqRJq40%252DU0CN436PES4WnQS9X8AJ8yMYQjPpGgSjMCG2hOkn_z_U6S51vkfLxECsr11HD1q8GjLIbAnDF%252DdwkofUl%252DjBsttE_iGwo7o.efPraB1OeJTarSdhreMlTA%26rut%3D3a6e20afff05c3f4c41356ac924a572fea2a2ed55f00cadc7a076623e8ae8084%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8wehOC36YiTuUSrdJO_20lTVUCUwSfju_HWISm2oJkd3iFy6WkpNuDBuaXDHOQTgY1UtFdjBZE%252DWm4PN_JBniAbYBYyqPwDdT8hUCgZmXsQC5_f6dAmHfY4d3GMdp7MxXPqMf11pXcCxXIQlixgAa1xvSwXJI3iwjLmydXVqnywy4hBZOKsEbS49pMMl823_I9eJF2LTz6ettZtaWYnx4Vzh4HVw%2526u%253DaHR0cHMlM2ElMmYlMmZxdWlsbGJvdC5jb20lMmZncmFtbWFyLWNoZWNrJTNmdXRtX21lZGl1bSUzZGNwYyUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX2NhbXBhaWduJTNkRkElMjUyMC0lMjUyMFNNQSUyNTIwJTI1N0MlMjUyMFBFUkYlMjUyMC0lMjUyMFNlYXJjaCUyNTIwJTI1N0MlMjUyMFByb2R1Y3QlMjUyMC0lMjUyMEdyYW1tYXIlMjUyMCUyNTdDJTI1MjBQUkVNJTI1MjAlMjU3QyUyNTIwQ1BBJTI2dXRtX3Rlcm0lM2RhaSUyNTIwZ3JhbW1hciUyNTIwY2hlY2tlciUyNnV0bV9jb250ZW50JTNkJTI2Y2FtcGFpZ25fdHlwZSUzZHNlYXJjaC00MjgyODU5NjUlMjZjbGlja19pZCUzZDlmYmYxOTkwZTRiYzE3MTgxYWFiNzBjOGZhYmI1YWJhJTI2Y2FtcGFpZ25faWQlM2Q0MjgyODU5NjUlMjZhZGdyb3VwX2lkJTNkMTM0MjUwNTE0MTM3ODUyMyUyNmFkX2lkJTNkJTI2a2V5d29yZCUzZGFpJTI1MjBncmFtbWFyJTI1MjBjaGVja2VyJTI2cGxhY2VtZW50JTNkJTI2dGFyZ2V0JTNkJTI2bmV0d29yayUzZHMlMjZtc2Nsa2lkJTNkOWZiZjE5OTBlNGJjMTcxODFhYWI3MGM4ZmFiYjVhYmE%2526rlid%253D9fbf1990e4bc17181aab70c8fabb5aba%26vqd%3D4%2D137253809331338712778995047983532556521%26iurl%3D%257B1%257DIG%253D8F1FFF97BBD34613AF1CF2C5E755CCCB%2526CID%253D394279C826106F7A2B8D6F1D27F46EF7%2526ID%253DDevEx%252C5050.1&rut=07d85065a1ba547e4f03d0d064e4c4263be6a945120699c0059c24077d8d315d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:35.896876"
+    },
+    {
+      "topic": "prowritingaid vs grammarly: which grammar checker is better in (2022) ?",
+      "title": "ProWritingAid vs. Grammarly: Which is best? [2025] - Zapier",
+      "content": "Compare ProWritingAid and Grammarly to find out which AI grammar checker is best. Based on extensive testing, here's our ProWritingAid vs. Grammarly comparison.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fzapier.com%2Fblog%2Fprowritingaid%2Dvs%2Dgrammarly%2F&rut=f4dca511da621a8f5c6522dfa34dbba789e7b8e6ac73b6c93d833c998bd1a277",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:35.896956"
+    },
+    {
+      "topic": "prowritingaid vs grammarly: which grammar checker is better in (2022) ?",
+      "title": "ProWritingAid vs Grammarly: In-Depth Comparison for Writers",
+      "content": "Compare ProWritingAid vs Grammarly in this detailed analysis to find the best writing tool for your needs. Read the article to make an informed choice.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwritergadgets.com%2Fprowritingaid%2Dvs%2Dgrammarly%2F&rut=e985f0d9f69b14605a31a549e09c9a6fb79b099662be085bbc170ded8b0b3db3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:35.897030"
+    },
+    {
+      "topic": "prowritingaid vs grammarly: which grammar checker is better in (2022) ?",
+      "title": "ProWritingAid vs. Grammarly: Which One's Worth Paying For?",
+      "content": "We're comparing ProWritingAid vs Grammarly. See which tool actually helps you write better (and which one's best for your writing style).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fkindlepreneur.com%2Fprowritingaid%2Dvs%2Dgrammarly%2F&rut=0fa6e741b94f510c7b3bcb02331e0ae1255154e9127ab83b907509ca7c65e3b5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:35.897102"
+    },
+    {
+      "topic": "bayesian statistics",
+      "title": "Bayesian Statistics: A Beginner's Guide - QuantStart",
+      "content": "Learn the basics of Bayesian statistics, a probabilistic approach to updating beliefs in light of new evidence. Compare Bayesian and frequentist statistics, derive Bayes' rule, and apply it to a coin-flip example.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.quantstart.com%2Farticles%2FBayesian%2DStatistics%2DA%2DBeginners%2DGuide%2F&rut=1c6095b96817318dd7de425b55563a7ec236bc4dcc79112123b59be523fe151e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:44:33.226574"
+    },
+    {
+      "topic": "bayesian statistics",
+      "title": "Chapter 1 The Basics of Bayesian Statistics | An Introduction to ...",
+      "content": "Learn how to use Bayes' rule to calculate conditional probabilities and apply them to medical testing and online dating. Compare the Bayesian and frequentist approaches to probability and see real-life applications.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fstatswithr.github.io%2Fbook%2Fthe%2Dbasics%2Dof%2Dbayesian%2Dstatistics.html&rut=f869c10e472d1cbca1eaaf3980df53843ee04b93ce6866f85552df8a8669df9f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:44:33.226728"
+    },
+    {
+      "topic": "bayesian statistics",
+      "title": "Bayesian analysis | Probability Theory, Statistical Inference | Britannica",
+      "content": "Bayesian methods have been used extensively in statistical decision theory (see statistics: Decision analysis). In this context, Bayes's theorem provides a mechanism for combining a prior probability distribution for the states of nature with sample information to provide a revised (posterior) probability distribution about the states of nature.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2FBayesian%2Danalysis&rut=481548b606e46f89cc31807442d405decac8de2fe07470e7b39c4ecb12b22466",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:44:33.226801"
+    },
+    {
+      "topic": "binomial distribution",
+      "title": "Binomial distribution - Wikipedia",
+      "content": "Binomial distribution for p = 0.5 with n and k as in Pascal's triangle The probability that a ball in a Galton box with 8 layers (n = 8) ends up in the central bin (k = 4) is 70/256. In probability theory and statistics, the binomial distribution with parameters n and p is the discrete probability distribution of the number of successes in a sequence of n independent experiments, each asking a ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBinomial_distribution&rut=2a127770999262c2a20b943b71b533bc9c639061b0e75f7fa73859a90d692fb9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:52:39.877717"
+    },
+    {
+      "topic": "binomial distribution",
+      "title": "The Binomial Distribution - Math is Fun",
+      "content": "Learn how to calculate the probability of getting a certain number of successes in a series of trials with two possible outcomes. See examples, formulas, graphs and applications of the binomial distribution.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mathsisfun.com%2Fdata%2Fbinomial%2Ddistribution.html&rut=2e3971768c7ea731812c45ab07467b8c4e7c022b6df1a6b9360bc56f2d9cc3c2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:52:39.877762"
+    },
+    {
+      "topic": "binomial distribution",
+      "title": "Binomial distribution - Student Academic Success",
+      "content": "Learn how to model situations with two possible outcomes using the binomial distribution formula. Find examples, worked problems, graphs, and check your understanding with interactive questions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.monash.edu%2Fstudent%2Dacademic%2Dsuccess%2Fmathematics%2Fprobability%2Dand%2Ddistributions%2Fbinomial%2Ddistribution&rut=6fcb246306670799f8a2edd01d8dfbced381a7143c84c578268815381fe05430",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:52:39.877792"
+    },
+    {
+      "topic": "binomial distribution",
+      "title": "Binomial Distribution in Probability - GeeksforGeeks",
+      "content": "Binomial Distribution is a probability distribution used to model the number of successes in a fixed number of independent trials, where each trial has only two possible outcomes: success or failure. This distribution is useful for calculating the probability of a specific number of successes in scenarios like flipping coins, quality control, or survey predictions. Example: Imagine we toss a ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmaths%2Fbinomial%2Ddistribution%2F&rut=eae97afb7c2480e2bf688fc46de14b696f65622d23b7db38aa4b6b1f3d72524a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:52:39.877824"
+    },
+    {
+      "topic": "binomial distribution",
+      "title": "The Concise Guide to Binomial Distribution - Statology",
+      "content": "Phitter makes working with the binomial distribution and other statistical distributions straightforward and accessible, even for those new to statistical analysis. Phitter's intuitive interface allows you to quickly test distribution fits, visualize results, and make data-driven decisions without complex manual calculations.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.statology.org%2Fthe%2Dconcise%2Dguide%2Dto%2Dbinomial%2Ddistribution%2F&rut=05be507448dd1b0bf02f2fb75a4d15998017c33ecc8a0e0e6deac23b692ffc72",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:52:39.877861"
     }
   ],
-  "last_updated": "2025-11-29T12:25:46.219442"
+  "last_updated": "2026-01-02T11:52:39.883144"
 }

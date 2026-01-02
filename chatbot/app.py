@@ -35,17 +35,27 @@ path_manager = get_path_manager()
 # Legacy sys.path manipulation (to be phased out gradually)
 # TODO: Remove this once all imports use path_manager
 thor_path = str(THOR_1_1_DIR)
-if thor_path in sys.path:
-    sys.path.remove(thor_path)
-sys.path.insert(0, thor_path)
 # Also add thor-1.0 to path for stable mode
 thor_1_0_path = str(THOR_1_0_DIR)
-if thor_1_0_path not in sys.path:
-    sys.path.insert(1, thor_1_0_path)
 # Add chatbot directory to path for chatbot services
 chatbot_path = str(CHATBOT_DIR)
-if chatbot_path not in sys.path:
-    sys.path.insert(0, chatbot_path)
+atlas_root_path = str(ATLAS_ROOT)
+
+# Keep import resolution deterministic:
+# - `services` should resolve to Thor (not `chatbot/services`)
+# - `chatbot.*` should resolve via ATLAS_ROOT
+for _p in (thor_path, thor_1_0_path, atlas_root_path, chatbot_path):
+    try:
+        while _p in sys.path:
+            sys.path.remove(_p)
+    except Exception:
+        pass
+
+sys.path.insert(0, thor_path)
+sys.path.insert(1, thor_1_0_path)
+sys.path.insert(2, atlas_root_path)
+# Allow local (non-package) imports like `from refinement import ...` when not running from `chatbot/`.
+sys.path.append(chatbot_path)
 
 try:
     import torch  # type: ignore
@@ -87,6 +97,10 @@ from handlers.image_handler import get_image_handler
 from handlers.response_formatter import get_response_formatter
 from handlers.markdown_handler import get_markdown_handler
 from formatting import get_final_response_formatter
+from refinement.response_variety import get_response_variety_manager
+from refinement.emotional_intelligence import get_emotional_intelligence
+from refinement.conversation_flow import get_conversation_flow_manager
+from refinement.personalization import get_personalization_engine
 import time
 import random
 
@@ -622,6 +636,245 @@ model_instances = {
 brain_connector = BrainConnector()
 
 
+def _get_enhanced_context(all_messages: list, current_message: str, normalized_message: str, max_context_length: int = 15) -> list:
+    """
+    Enhanced context selection that goes beyond just the last N messages.
+    Selects context based on relevance, recency, and conversation threads.
+    """
+    if not all_messages:
+        return []
+
+    # Start with recent messages (minimum context)
+    recent_messages = all_messages[-8:]
+
+    # For longer conversations, analyze for relevant context
+    if len(all_messages) > 8:
+        # Extract conversation threads/topics
+        conversation_threads = _extract_conversation_threads(all_messages)
+
+        # Find relevant threads for current message
+        current_topics = _extract_message_topics(current_message, normalized_message)
+        relevant_threads = _find_relevant_threads(conversation_threads, current_topics)
+
+        # Build enhanced context from relevant threads + recent messages
+        enhanced_context = []
+        thread_messages = []
+
+        # Collect messages from relevant threads (not just recent ones)
+        for thread in relevant_threads[:3]:  # Limit to top 3 relevant threads
+            thread_messages.extend(thread.get('messages', []))
+
+        # Combine: prioritize recent messages, then add relevant older messages
+        recent_set = set((msg.get('content', ''), msg.get('role', '')) for msg in recent_messages)
+
+        # Add thread messages that aren't already in recent context
+        for msg in thread_messages[-10:]:  # Last 10 from each relevant thread
+            msg_tuple = (msg.get('content', ''), msg.get('role', ''))
+            if msg_tuple not in recent_set:
+                enhanced_context.append(msg)
+                if len(enhanced_context) >= 5:  # Limit additional context
+                    break
+
+        # Combine and sort by recency
+        all_context = recent_messages + enhanced_context
+        all_context.sort(key=lambda x: x.get('timestamp', ''), reverse=True)
+
+        # Remove duplicates while preserving order
+        seen = set()
+        deduplicated = []
+        for msg in all_context:
+            msg_key = (msg.get('content', ''), msg.get('role', ''))
+            if msg_key not in seen:
+                seen.add(msg_key)
+                deduplicated.append(msg)
+
+        # Limit total context length
+        return deduplicated[-max_context_length:]
+
+    return recent_messages
+
+
+def _extract_conversation_threads(messages: list) -> list:
+    """
+    Extract conversation threads/topics from message history.
+    Groups related messages into topic clusters.
+    """
+    if not messages:
+        return []
+
+    threads = []
+    current_thread = {'topic': None, 'messages': []}
+
+    for msg in messages:
+        content = msg.get('content', '').lower()
+        role = msg.get('role', '')
+
+        # Extract potential topics from user messages
+        if role == 'user':
+            topics = _extract_message_topics_from_content(content)
+            if topics:
+                # Start new thread if topic significantly changes
+                if current_thread['messages']:
+                    current_thread['topic'] = _determine_thread_topic(current_thread['messages'])
+                    threads.append(current_thread)
+
+                current_thread = {'topic': topics[0], 'messages': [msg]}
+            else:
+                current_thread['messages'].append(msg)
+        else:
+            current_thread['messages'].append(msg)
+
+    # Add final thread
+    if current_thread['messages']:
+        current_thread['topic'] = _determine_thread_topic(current_thread['messages'])
+        threads.append(current_thread)
+
+    return threads
+
+
+def _extract_message_topics(current_message: str, normalized_message: str) -> list:
+    """Extract key topics/concepts from current message."""
+    return _extract_message_topics_from_content(normalized_message or current_message)
+
+
+def _extract_message_topics_from_content(content: str) -> list:
+    """Extract key topics from message content."""
+    # Simple topic extraction based on noun phrases and key terms
+    content_lower = content.lower()
+
+    # Common topic indicators
+    topics = []
+
+    # Extract potential entities/topics
+    words = content.split()
+    for i, word in enumerate(words):
+        # Look for capitalized words or important terms
+        if (word[0].isupper() or word in [
+            'python', 'javascript', 'java', 'react', 'angular', 'vue',
+            'machine learning', 'ai', 'artificial intelligence', 'neural network',
+            'database', 'sql', 'mongodb', 'api', 'rest', 'graphql',
+            'docker', 'kubernetes', 'aws', 'azure', 'gcp'
+        ]):
+            topics.append(word.lower())
+
+        # Look for compound terms
+        if i < len(words) - 1:
+            bigram = f"{word} {words[i+1]}"
+            if bigram in ['machine learning', 'artificial intelligence', 'web development', 'data science']:
+                topics.append(bigram)
+
+    # Remove duplicates and common stop words
+    stop_words = {'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 'is', 'are', 'was', 'were'}
+    topics = [t for t in topics if t not in stop_words and len(t) > 2]
+
+    return list(set(topics))[:5]  # Limit to top 5 topics
+
+
+def _determine_thread_topic(messages: list) -> str:
+    """Determine the main topic of a conversation thread."""
+    all_content = ' '.join([msg.get('content', '') for msg in messages if msg.get('role') == 'user'])
+    topics = _extract_message_topics_from_content(all_content)
+    return topics[0] if topics else 'general'
+
+
+def _find_relevant_threads(threads: list, current_topics: list) -> list:
+    """Find threads most relevant to current topics."""
+    if not current_topics or not threads:
+        return threads[-3:]  # Return most recent threads if no topics
+
+    scored_threads = []
+
+    for thread in threads:
+        thread_topic = thread.get('topic', '')
+        score = 0
+
+        # Topic matching
+        for current_topic in current_topics:
+            if current_topic in thread_topic or thread_topic in current_topic:
+                score += 3
+            # Partial matches
+            current_words = set(current_topic.split())
+            thread_words = set(thread_topic.split())
+            if current_words & thread_words:
+                score += 1
+
+        # Recency boost (more recent threads slightly preferred)
+        thread_messages = thread.get('messages', [])
+        if thread_messages:
+            # Simple recency based on position in list (assuming chronological order)
+            recency_score = len(threads) - threads.index(thread)
+            score += recency_score * 0.1
+
+        scored_threads.append((score, thread))
+
+    # Sort by score and return top threads
+    scored_threads.sort(key=lambda x: x[0], reverse=True)
+    return [thread for _, thread in scored_threads[:5]]
+
+
+def _detect_multi_turn_intent(message: str, context: list) -> dict:
+    """
+    Enhanced multi-turn query detection and intent analysis.
+    """
+    intent_info = {
+        'is_follow_up': False,
+        'is_clarification': False,
+        'references_previous': False,
+        'topic_continuation': False,
+        'confidence': 0.0
+    }
+
+    message_lower = message.lower()
+
+    # Follow-up indicators
+    follow_up_indicators = [
+        'tell me more', 'explain more', 'what about', 'how about', 'why is',
+        'what do you mean', 'can you elaborate', 'give me details',
+        'what are the', 'how does', 'what is the'
+    ]
+
+    for indicator in follow_up_indicators:
+        if indicator in message_lower:
+            intent_info['is_follow_up'] = True
+            intent_info['confidence'] = 0.8
+            break
+
+    # Clarification requests
+    clarification_indicators = [
+        'what do you mean', 'i don\'t understand', 'can you clarify',
+        'what is', 'explain', 'clarify', 'what does that mean'
+    ]
+
+    if any(indicator in message_lower for indicator in clarification_indicators):
+        intent_info['is_clarification'] = True
+        intent_info['confidence'] = max(intent_info['confidence'], 0.7)
+
+    # Check if message references previous context
+    if context:
+        recent_user_messages = [msg.get('content', '') for msg in context[-6:] if msg.get('role') == 'user']
+        recent_assistant_messages = [msg.get('content', '') for msg in context[-6:] if msg.get('role') == 'assistant']
+
+        # Check for pronouns and context references
+        context_references = ['it', 'that', 'this', 'those', 'these', 'them', 'they', 'he', 'she', 'the']
+        if any(ref in message_lower.split()[:3] for ref in context_references):
+            intent_info['references_previous'] = True
+            intent_info['confidence'] = max(intent_info['confidence'], 0.6)
+
+        # Topic continuity check
+        current_topics = _extract_message_topics_from_content(message)
+        context_topics = []
+        for msg in recent_user_messages + recent_assistant_messages:
+            context_topics.extend(_extract_message_topics_from_content(msg))
+
+        if current_topics and context_topics:
+            common_topics = set(current_topics) & set(context_topics)
+            if common_topics:
+                intent_info['topic_continuation'] = True
+                intent_info['confidence'] = max(intent_info['confidence'], 0.5)
+
+    return intent_info
+
+
 def check_result_setter(query, model_name='thor-1.1'):
     """
     Check if the query has a pre-set answer in the Result Setter.
@@ -1010,6 +1263,117 @@ def list_chats():
     return chats
 
 
+# API Key Management
+API_KEYS_FILE = BASE_DIR / "api-keys.json"
+
+def _load_api_keys():
+    """Load API keys from file."""
+    try:
+        if API_KEYS_FILE.exists():
+            with open(API_KEYS_FILE, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                return data.get('keys', [])
+    except Exception as e:
+        print(f"[API Keys] Error loading API keys: {e}")
+    return []
+
+def _save_api_keys(keys):
+    """Save API keys to file."""
+    try:
+        API_KEYS_FILE.parent.mkdir(parents=True, exist_ok=True)
+        with open(API_KEYS_FILE, 'w', encoding='utf-8') as f:
+            json.dump({'keys': keys}, f, indent=2)
+    except Exception as e:
+        print(f"[API Keys] Error saving API keys: {e}")
+
+def _validate_api_key(api_key):
+    """Validate an API key and return model info if valid."""
+    keys = _load_api_keys()
+    for key_data in keys:
+        if key_data.get('key') == api_key:
+            # Update last_used timestamp
+            key_data['last_used'] = datetime.now().isoformat()
+            _save_api_keys(keys)
+            return {
+                'valid': True,
+                'model': key_data.get('model'),
+                'created_at': key_data.get('created_at'),
+                'last_used': key_data.get('last_used')
+            }
+    return {'valid': False}
+
+def _register_api_key(api_key, model):
+    """Register a new API key."""
+    if not api_key or not model:
+        return False
+
+    # Validate model
+    if model not in ['thor-1.0', 'thor-1.1']:
+        return False
+
+    keys = _load_api_keys()
+
+    # Check if key already exists
+    for key_data in keys:
+        if key_data.get('key') == api_key:
+            return False  # Key already registered
+
+    # Add new key
+    key_data = {
+        'key': api_key,
+        'model': model,
+        'created_at': datetime.now().isoformat(),
+        'last_used': None
+    }
+    keys.append(key_data)
+    _save_api_keys(keys)
+    return True
+
+
+@app.route('/api/keys/register', methods=['POST'])
+def register_api_key():
+    """Register a new API key."""
+    try:
+        data = request.json
+        if not data:
+            return jsonify({'error': 'JSON data required'}), 400
+
+        api_key = data.get('key', '').strip()
+        model = data.get('model', '').strip()
+
+        if not api_key or not model:
+            return jsonify({'error': 'key and model are required'}), 400
+
+        # Validate key format
+        if not api_key.startswith(f'{model}-'):
+            return jsonify({'error': f'Key must start with {model}-'}), 400
+
+        if _register_api_key(api_key, model):
+            return jsonify({
+                'success': True,
+                'key': api_key,
+                'model': model,
+                'message': 'API key registered successfully'
+            })
+        else:
+            return jsonify({'error': 'Failed to register API key'}), 500
+
+    except Exception as e:
+        print(f"[API Keys] Error registering key: {e}")
+        return jsonify({'error': 'Internal server error'}), 500
+
+
+@app.route('/api/keys/validate')
+def validate_api_key():
+    """Validate an API key."""
+    api_key = request.args.get('key', '').strip()
+    if not api_key:
+        return jsonify({'error': 'key parameter required'}), 400
+
+    result = _validate_api_key(api_key)
+    return jsonify(result)
+
+
 @app.route('/')
 def index():
     """Render the main chat interface."""
@@ -1260,7 +1624,17 @@ def chat():
             "error": "Rate limit exceeded. Please wait a moment before sending another message.",
             "retry_after": _rate_limit_window
         }), 429
-    
+
+    # Optional API key validation (for API packages)
+    api_key = request.json and request.json.get('api_key')
+    if api_key:
+        key_validation = _validate_api_key(api_key)
+        if not key_validation.get('valid', False):
+            return jsonify({
+                "error": "Invalid API key",
+                "message": "The provided API key is not valid or registered."
+            }), 401
+
     # Check if debug mode is enabled
     debug_mode = request.json and request.json.get('debug_mode', False)
     debug_log = []
@@ -1298,6 +1672,7 @@ def chat():
         requested_model = (data.get('model') or 'thor-1.1').strip()
         requested_tone = (data.get('tone') or 'normal').strip()
         response_language = data.get('response_language', 'en-US')  # Language to respond in (from Poseidon)
+        is_voice_mode = data.get('voice_mode', False)  # Optimize for voice mode (v4.3.0)
         
         log_debug("Request Received", {
             "message": message[:100],
@@ -1411,21 +1786,18 @@ def chat():
         research_engine = get_research_engine()
         creative_generator = get_creative_generator()
         image_processor = get_image_processor()
+
+        # Initialize enhanced conversation services
+        response_variety_manager = get_response_variety_manager()
+        emotional_intelligence = get_emotional_intelligence()
+        conversation_flow_manager = get_conversation_flow_manager()
+        personalization_engine = get_personalization_engine()
         
         # Handle image if provided
         if image_data:
             image_info = image_processor.process_image(image_data, f"image_{chat_id}.png")
             message = f"{message} [Image processed: {image_processor.describe_image(image_info)}]"
             print(f"[Image processed] {image_info.get('description', 'Image processed')}")
-        
-        # Get conversation context (previous messages)
-        conversation_context = chat_data.get("messages", [])[-10:]  # Last 10 messages for context
-        
-        # Load user memory and add context to query
-        user_memory = get_user_memory()
-        user_context = user_memory.get_relevant_context(message)
-        if user_context:
-            print(f"[User Memory] Adding context: {user_context}")
         
         # Initialize response variable to None - will be set by one of the branches
         response = None
@@ -1442,6 +1814,26 @@ def chat():
         clarifier = get_clarifier()
         conversational_analyzer = get_conversational_analyzer()
         
+        # Normalize message BEFORE using it in _get_enhanced_context
+        normalized = normalizer.normalize(message, {})
+        normalized_message = normalized.get("normalized_query", message)
+        
+        # Enhanced conversation context with intelligent selection
+        # Optimize context for voice mode: use fewer messages for faster processing (v4.3.0)
+        if is_voice_mode:
+            # For voice mode, use only last 4 messages instead of 8 for faster response
+            voice_messages = chat_data.get("messages", [])[-4:] if len(chat_data.get("messages", [])) > 4 else chat_data.get("messages", [])
+            conversation_context = _get_enhanced_context(voice_messages, message, normalized_message)
+        else:
+            conversation_context = _get_enhanced_context(chat_data.get("messages", []), message, normalized_message)
+        
+        # Load user memory and add context to query
+        user_memory = get_user_memory()
+        user_context = user_memory.get_relevant_context(message)
+        if user_context:
+            print(f"[User Memory] Adding context: {user_context}")
+        
+        # Re-normalize with full conversation_context for better accuracy
         normalized = normalizer.normalize(message, conversation_context)
         normalized_message = normalized.get("normalized_query", message)
         log_debug("Query Normalized", {
@@ -1453,30 +1845,71 @@ def chat():
         # Initialize common sense handler
         common_sense_handler = get_common_sense_handler()
         
-        # CRITICAL: Analyze conversational context BEFORE other processing
-        # This prevents conversational statements from being treated as literal queries
+        # Enhanced conversational context analysis
         conversational_analysis = conversational_analyzer.analyze_context(
             message,
             conversation_context,
             normalized_message
         )
-        log_debug("Conversational Analysis", conversational_analysis)
+
+        # Initialize conversation flow tracking
+        conversation_key = conversation_flow_manager.get_conversation_key(chat_id)
+        conversation_flow_manager.update_conversation_context(conversation_key, message)
+
+        # Analyze emotional intelligence
+        emotional_context = emotional_intelligence.get_emotional_context(message)
+
+        # Get personalization for this user
+        user_key = personalization_engine.get_user_key(chat_id)
+        personalization_style = personalization_engine.get_adapted_response_style(user_key)
+
+        # Update personalization with this interaction
+        personalization_engine.update_user_profile(user_key, message)
+
+        # Enhanced multi-turn intent detection
+        multi_turn_intent = _detect_multi_turn_intent(message, conversation_context)
+
+        # Check for conversation flow interruptions or resumptions
+        interruption = conversation_flow_manager.detect_interruption(conversation_key, message)
+        resumption = conversation_flow_manager.handle_resumption(conversation_key, message)
+
+        # Combine analyses for better context understanding
+        enhanced_context_analysis = {
+            **conversational_analysis,
+            **multi_turn_intent,
+            'enhanced_context': True,
+            'interruption': interruption,
+            'resumption': resumption
+        }
+
+        log_debug("Enhanced Context Analysis", {
+            "conversational": conversational_analysis,
+            "multi_turn": multi_turn_intent
+        })
         
-        # If this is a conversational statement that references context, handle it conversationally
-        if response is None and conversational_analysis.get('is_conversational') and conversational_analysis.get('confidence', 0) >= 0.7:
-            conversational_response = conversational_analyzer.generate_conversational_response(
-                message,
-                conversational_analysis,
-                conversation_context
+        # Enhanced conversational response handling with multi-turn awareness
+        if response is None and (enhanced_context_analysis.get('is_conversational') or enhanced_context_analysis.get('is_follow_up')):
+            confidence = max(
+                enhanced_context_analysis.get('confidence', 0),
+                conversational_analysis.get('confidence', 0)
             )
-            if conversational_response:
-                response = conversational_response
-                skip_refinement = True
-                print(f"[Conversational Context] Detected {conversational_analysis.get('conversational_response_type')} "
-                      f"(confidence: {conversational_analysis.get('confidence', 0):.2f})")
-                if conversational_analysis.get('is_context_reference'):
-                    print(f"[Conversational Context] References previous message: "
-                          f"{conversational_analysis.get('related_previous_message', '')[:60]}...")
+
+            if confidence >= 0.6:  # Lower threshold for enhanced analysis
+                conversational_response = conversational_analyzer.generate_conversational_response(
+                    message,
+                    enhanced_context_analysis,
+                    conversation_context
+                )
+                if conversational_response:
+                    response = conversational_response
+                    skip_refinement = True
+                    print(f"[Enhanced Context] Detected conversational response "
+                          f"(type: {enhanced_context_analysis.get('conversational_response_type', 'unknown')}, "
+                          f"confidence: {confidence:.2f})")
+                    if enhanced_context_analysis.get('references_previous'):
+                        print(f"[Enhanced Context] References previous conversation context")
+                    if enhanced_context_analysis.get('topic_continuation'):
+                        print(f"[Enhanced Context] Continuing previous topic")
         
         # Initialize follow-up detection variables early (accessible everywhere)
         message_lower = normalized_message.lower().strip()
@@ -1863,24 +2296,67 @@ You can also use natural language - just ask me anything!"""
                 response = qa_answer
                 from_result_setter = True
                 print(f"[Result Setter] Using pre-set answer from result setter")
-        
-        # Check if it's a math question (simple calculations) - only if no Q&A answer found
+
+        # PRIORITY 2: Check common sense BEFORE other processing (enhanced common sense prioritization)
+        if response is None:
+            # Analyze conversation context for better response selection
+            conversation_key = conversation_flow_manager.get_conversation_key(chat_id)
+            context_analysis = conversation_flow_manager.analyze_context_for_response(conversation_key, message)
+
+            # Add user key for personalization
+            personalization_engine = get_personalization_engine()
+            context_analysis['user_key'] = personalization_engine.get_user_key(chat_id)
+
+            # Enhanced common sense check with conversation context awareness
+            common_sense_response = common_sense_handler.get_response(message, conversation_context, context_analysis)
+            if common_sense_response:
+                response = common_sense_response
+                print(f"[Common Sense] Responding with context-aware common sense: {response[:50]}...")
+                skip_refinement = True
+            elif common_sense_handler.should_skip_search(message):
+                # Should skip search but no response yet - use fallback
+                response = "Thank you! How can I help you?"
+                skip_refinement = True
+                print(f"[Common Sense] Skipping search for: {message[:50]}...")
+            elif common_sense_handler.should_fallback_to_research(message, conversation_context):
+                # Common sense is insufficient - check for partial response first
+                partial_response = common_sense_handler.get_partial_response(message)
+                if partial_response:
+                    response = partial_response
+                    print(f"[Common Sense] Providing partial response before research: {response[:50]}...")
+                    # Allow research to continue and combine with partial response
+                    context_query = f"{context_query}\n[Additional context: User received partial guidance, provide specific details to complement this response]"
+                else:
+                    # No partial response - provide fallback suggestion
+                    fallback_suggestion = common_sense_handler.get_fallback_suggestion(message)
+                    if fallback_suggestion:
+                        print(f"[Common Sense] Insufficient for research query - providing suggestion: {fallback_suggestion}")
+                        # Don't set skip_refinement, allowing research to proceed
+                        # The fallback suggestion will be incorporated into the research prompt
+                        context_query = f"{context_query}\n[Context: {fallback_suggestion}]"
+                    else:
+                        print(f"[Common Sense] Insufficient for query - proceeding with research: {message[:50]}...")
+            else:
+                # No common sense response but also shouldn't skip search - allow normal processing
+                print(f"[Common Sense] No response available - proceeding with normal processing: {message[:50]}...")
+
+        # Check if it's a math question (simple calculations) - only if no common sense answer found
         if response is None:
             math_result = _evaluate_math(message)
             if math_result is not None:
                 response = f"The answer is: **{math_result}**"
                 print(f"[Math] Calculated: {message} = {math_result}")
-        
+
         if response is None:
-            # Check for identity questions first (before common sense/research)
+            # Check for identity questions (after common sense but before brain lookup)
             identity_questions = [
                 "who are you", "what are you", "who is thor", "what is thor",
                 "tell me about yourself", "introduce yourself", "what can you do",
                 "what do you do", "who am i talking to", "what's your name"
             ]
-            
+
             if any(q in message_lower for q in identity_questions):
-                response = """I'm **Thor 1.1**, your AI assistant powered by Atlas! 
+                response = """I'm **Thor 1.1**, your AI assistant powered by Atlas!
 
 I'm designed to help you with:
 - **Coding**: Python, JavaScript, and more
@@ -1890,20 +2366,6 @@ I'm designed to help you with:
 
 I'm always learning and improving through our conversations. How can I help you today?"""
                 print(f"[Identity question] Responding with introduction")
-        
-        # PRIORITY: Check common sense BEFORE research (enhanced common sense prioritization)
-        if response is None:
-            # Enhanced common sense check - prioritize common sense responses
-            common_sense_response = common_sense_handler.get_response(message, conversation_context)
-            if common_sense_response:
-                response = common_sense_response
-                print(f"[Common Sense] Responding with common sense: {response[:50]}...")
-                skip_refinement = True
-            elif common_sense_handler.should_skip_search(message):
-                # Should skip search but no response yet - use fallback
-                response = "Thank you! How can I help you?"
-                skip_refinement = True
-                print(f"[Common Sense] Skipping search for: {message[:50]}...")
         
         if response is None:
             if greetings_handler.is_greeting(message):
@@ -2569,12 +3031,12 @@ I'm always learning and improving through our conversations. How can I help you 
                 else:
                     # Generate response using model with conversation context
                     try:
-                        # Build contextual input with previous messages
+                        # Enhanced Thor 1.1: Build better contextual input with improved prompt engineering
                         contextual_input = message
                         if conversation_context and len(conversation_context) > 0:
-                            # Include last 2-3 exchanges for context
+                            # Include last 4-6 exchanges for better context (enhanced from 2-3)
                             recent_context = []
-                            for msg in conversation_context[-6:]:
+                            for msg in conversation_context[-8:]:  # Increased from 6 to 8
                                 role = msg.get('role', '')
                                 content = msg.get('content', '')
                                 if role == 'user':
@@ -2583,8 +3045,21 @@ I'm always learning and improving through our conversations. How can I help you 
                                     recent_context.append(f"Assistant: {content}")
                             
                             if recent_context:
-                                contextual_input = "\n".join(recent_context[-4:]) + f"\nUser: {message}\nAssistant:"
-                                print(f"[Model] Using conversation context ({len(recent_context)} previous messages)")
+                                # Enhanced: Better context formatting for improved understanding
+                                contextual_input = "\n".join(recent_context[-6:]) + f"\nUser: {message}\nAssistant:"
+                                print(f"[Model] Using enhanced conversation context ({len(recent_context)} previous messages)")
+                        
+                        # Enhanced Thor 1.1: Add knowledge context to prompt for better synthesis
+                        if 'knowledge' in locals() and knowledge and len(knowledge) > 0:
+                            # Add relevant knowledge as context (first 2-3 items)
+                            knowledge_context = "\n\nRelevant Information:\n"
+                            for idx, k in enumerate(knowledge[:3]):
+                                title = k.get('title', 'Source')
+                                content_snippet = (k.get('content', '') or '')[:300].strip()
+                                if content_snippet:
+                                    knowledge_context += f"{idx+1}. {title}: {content_snippet}...\n"
+                            contextual_input = contextual_input + knowledge_context
+                            print(f"[Model] Enhanced: Added {len(knowledge[:3])} knowledge items to context")
                         
                         # Apply Gem instructions as a lightweight "system prompt" prefix.
                         tone_line = _tone_profile(effective_tone)
@@ -2635,12 +3110,24 @@ I'm always learning and improving through our conversations. How can I help you 
                             contextual_input = f"System: {tone_line}{language_instruction}\n\n" + contextual_input
 
                         log_debug("Generating Response", {
-                            "description": "Synthesizing information from web search and knowledge base to generate a comprehensive answer. Using the AI model to create a natural, helpful response.",
+                            "description": "Synthesizing information from web search and knowledge base to generate a comprehensive answer. Using enhanced Thor 1.1 model with multi-step generation for natural, helpful responses.",
                             "context_length": len(contextual_input),
                             "has_knowledge": len(knowledge) > 0 if 'knowledge' in locals() else False,
-                            "knowledge_items": len(knowledge) if 'knowledge' in locals() and knowledge else 0
+                            "knowledge_items": len(knowledge) if 'knowledge' in locals() and knowledge else 0,
+                            "enhanced_generation": True
                         })
-                        result = model.predict(contextual_input, task=task)
+                        
+                        # Enhanced Thor 1.1: Use improved max_new_tokens for longer, more comprehensive responses
+                        # Optimize for voice mode: shorter, more concise responses (v4.3.0)
+                        if is_voice_mode:
+                            max_gen_tokens = 256 if think_deeper else 128  # Shorter for voice mode
+                        else:
+                            max_gen_tokens = 512 if think_deeper else 256  # Longer for think deeper mode
+                        # Pass max_new_tokens for text generation, max_length for input sequence
+                        if task == 'text_generation':
+                            result = model.predict(contextual_input, task=task, max_new_tokens=max_gen_tokens)
+                        else:
+                            result = model.predict(contextual_input, task=task)
                         
                         # Get response cleaner for validation
                         response_cleaner = get_response_cleaner()
@@ -2676,6 +3163,22 @@ I'm always learning and improving through our conversations. How can I help you 
                                 if response and len(response.strip()) > 10:
                                     # Apply cleaning to fix minor grammar issues
                                     response = response_cleaner.clean_response(response, message)
+                                    
+                                    # Optimize response length for voice mode (v4.3.0)
+                                    if is_voice_mode and len(response) > 500:
+                                        # For voice mode, prefer shorter responses - truncate intelligently
+                                        # Try to end at sentence boundary
+                                        truncated = response[:500]
+                                        last_period = truncated.rfind('.')
+                                        last_exclamation = truncated.rfind('!')
+                                        last_question = truncated.rfind('?')
+                                        last_sentence_end = max(last_period, last_exclamation, last_question)
+                                        if last_sentence_end > 300:  # Only truncate if we have enough content
+                                            response = response[:last_sentence_end + 1]
+                                        else:
+                                            response = truncated + '...'
+                                        print(f"[Voice Mode] Truncated response from {len(response_cleaner.clean_response(response, message))} to {len(response)} chars")
+                                    
                                     if response and len(response.strip()) > 10:
                                         # Check if response is too vague or unhelpful (fallback trigger)
                                         response_lower = response.lower()
@@ -3222,16 +3725,65 @@ I'm always learning and improving through our conversations. How can I help you 
             except Exception as e:
                 print(f"[Accuracy Check] Error: {e}")
         
+        # INTEGRATE ENHANCED CONVERSATION SERVICES
+        try:
+            # Apply emotional intelligence and tone matching
+            if emotional_context.get('needs_empathy') or emotional_context.get('emotion_confidence', 0) > 0.6:
+                empathy_response = emotional_intelligence.generate_empathy_response(message, emotional_context.get('primary_emotion'))
+                if empathy_response:
+                    response = empathy_response
+                    print(f"[Emotional Intelligence] Applied empathy response for {emotional_context.get('primary_emotion')}")
+
+            # Check for celebration responses
+            celebration = emotional_intelligence.generate_celebration_response(message)
+            if celebration:
+                response = celebration
+                print("[Emotional Intelligence] Applied celebration response")
+
+            # Apply personalization adaptation
+            if personalization_style and response:
+                adapted_response = personalization_engine.adapt_response(response, user_key)
+                if adapted_response != response:
+                    response = adapted_response
+                    print("[Personalization] Adapted response based on user preferences")
+
+            # Apply response variety management
+            conversation_variety_key = response_variety_manager.get_conversation_key(chat_id)
+            variety_score = response_variety_manager.get_variety_score(conversation_variety_key, response)
+
+            if variety_score < 0.7:  # Response might be too repetitive
+                alternative = response_variety_manager.suggest_alternative(conversation_variety_key, 'general', response)
+                if alternative:
+                    print(f"[Response Variety] Suggested alternative: {alternative}")
+                # Still use the original response but record it for future variety
+
+            # Record this response for variety tracking
+            response_variety_manager.record_response(conversation_variety_key, response)
+
+            # Update conversation flow with the final response
+            conversation_flow_manager.update_conversation_context(conversation_key, message, response)
+
+        except Exception as e:
+            print(f"[Conversation Services] Error in enhanced integration: {e}")
+            # Continue with original response if integration fails
+
         # Add emoji support (only when relevant or requested)
         try:
             response = _add_emoji_support(response, message)
         except Exception as e:
             print(f"[Emoji] Error adding emoji support: {e}")
-        
+
         # Model Improvement: Cache response for future use (v1.4.4)
         if response and len(response.strip()) > 20 and not skip_refinement:
             cache_response(message, model_name, effective_tone, response)
         
+        # Track user engagement for personalization
+        if response:
+            personalization_engine = get_personalization_engine()
+            user_key = personalization_engine.get_user_key(chat_id)
+            # We'll track engagement on the next interaction, so store this for later comparison
+            personalization_engine.update_user_profile(user_key, message, response)
+
         response_data = {
             "response": response,
             "chat_id": chat_id,

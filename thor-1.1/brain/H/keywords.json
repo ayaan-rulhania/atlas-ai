@@ -84,7 +84,22 @@
     "horror",
     "hi\\",
     "haryana?",
-    "hear..."
+    "hear...",
+    "heated",
+    "hubble",
+    "higgs",
+    "hiding",
+    "half-life",
+    "hydrogen",
+    "histone",
+    "hippocampus",
+    "hypothalamus",
+    "hippo",
+    "hume",
+    "hegel",
+    "husserl",
+    "heidegger",
+    "haneda"
   ],
   "knowledge": [
     {
@@ -1991,7 +2006,862 @@
       "query": "Hey, Atlas",
       "source": "research",
       "learned_at": "2025-11-29T12:03:04.860301"
+    },
+    {
+      "topic": "hyperparameter tuning",
+      "title": "Mastering the Art of Hyperparameter Tuning: Tips, Tricks, and Tools",
+      "content": "Learn how to optimize ML model performance by configuring hyperparameters, such as learning rate, network architecture, and tree depth. Explore methods like grid search, random search, cross-validation, and Bayesian optimization.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmachinelearningmastery.com%2Fmastering%2Dthe%2Dart%2Dof%2Dhyperparameter%2Dtuning%2Dtips%2Dtricks%2Dand%2Dtools%2F&rut=8d62c4b4f0daef5534f6b7d216bfecc070dff6c706873e8e19715da20ae8aa63",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T19:06:16.840125"
+    },
+    {
+      "topic": "hierarchical clustering",
+      "title": "Hierarchical clustering - Wikipedia",
+      "content": "In data mining and statistics, hierarchical clustering[1] (also called hierarchical cluster analysis or HCA) is a method of cluster analysis that seeks to build a hierarchy of clusters. Strategies for hierarchical clustering generally fall into two categories: Agglomerative: Agglomerative clustering, often referred to as a \"bottom-up\" approach, begins with each data point as an individual ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHierarchical_clustering&rut=6ffbbbf7157d3d43ee1e6b6b088384755c58688baec7852a7114c2d9e826db11",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T19:40:10.362205"
+    },
+    {
+      "topic": "hierarchical clustering",
+      "title": "Hierarchical Clustering in Machine Learning - GeeksforGeeks",
+      "content": "Hierarchical Clustering is an unsupervised learning method used to group similar data points into clusters based on their distance or similarity. Instead of choosing the number of clusters in advance, it builds a tree-like structure called a dendrogram that shows how clusters merge or split at different levels. It helps identify natural groupings in data and is commonly used in pattern ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmachine%2Dlearning%2Fhierarchical%2Dclustering%2F&rut=57feb8081cde0b7019fdd51aa516c4ae428f0bfe2ba7acf98cc272af9d74629c",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T19:40:10.362286"
+    },
+    {
+      "topic": "hierarchical clustering",
+      "title": "Hierarchical clustering explained - Towards Data Science",
+      "content": "Learn how to use hierarchical clustering to construct and analyze a dendrogram, a tree-like structure that shows the relationship between data points. Explore the methods, algorithms, and applications of agglomerative and divisive clustering.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Ftowardsdatascience.com%2Fhierarchical%2Dclustering%2Dexplained%2De59b13846da8%2F&rut=d64a5dc35a7058affe1c59aa0f5765ecbfd382fdf5b3a3e69cefe09f2cb441d2",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T19:40:10.362354"
+    },
+    {
+      "topic": "hierarchical clustering",
+      "title": "PDF Hierarchical Clustering - Princeton University",
+      "content": "Learn about hierarchical clustering, a framework for discovering groups in data using a tree structure. Compare different methods of forming the tree, such as agglomerative and divisive clustering, and explore the dendrogram visualization.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cs.princeton.edu%2Fcourses%2Farchive%2Ffall18%2Fcos324%2Ffiles%2Fhierarchical%2Dclustering.pdf&rut=020a3c25d63e851dc89ea84fd428dcb5d8f577c0cbeb838af34c1dbc24466db2",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T19:40:10.362422"
+    },
+    {
+      "topic": "hierarchical clustering",
+      "title": "What is hierarchical clustering? - IBM",
+      "content": "Hierarchical clustering is an unsupervised machine learning algorithm that groups data into a tree of nested clusters. The main types include agglomerative and divisive. Hierarchical cluster analysis helps find patterns and connections in datasets. Results are presented in a dendrogram diagram showing the distance relationships between clusters.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ibm.com%2Fthink%2Ftopics%2Fhierarchical%2Dclustering&rut=6cf79050b22f20e791665c2a5975e692fe7dc723050ce61e1ba10de5a244bc64",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T19:40:10.362512"
+    },
+    {
+      "topic": "heated rivalry",
+      "title": "Heated Rivalry - Wikipedia",
+      "content": "Heated Rivalry is a Canadian sports romance television series created, written, and directed by Jacob Tierney for Crave. Based on Rachel Reid 's Game Changers novel series, it follows two rival professional hockey players, Canadian Shane Hollander (Hudson Williams) and Russian Ilya Rozanov (Connor Storrie), whose on-ice animosity conceals a ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHeated_Rivalry&rut=2c8eda33ea37a79a5a14afc5fd56cce81fec8b2d4bdd62f91343243c25b1ab12",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:19:08.182010"
+    },
+    {
+      "topic": "heated rivalry",
+      "title": "Heated Rivalry",
+      "content": "Heated RivalryBased on the best-selling cult classic novel by Rachel Reid, Heated Rivalry is a bold, emotionally charged series that lives at the intersection of love and competition. Set against the fierce, high-stakes world of professional hockey, it tells a story of two men whose rivalry on the ice gives way to a powerful and unexpected romance. Learn more",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fheatedrivalry.com%2F&rut=fcbdbd67a74fad95ba93a0855240767c03053e0e4203ef085f37cd8d2112eb90",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:19:08.182084"
+    },
+    {
+      "topic": "heated rivalry",
+      "title": "Watch Heated Rivalry | HBO Max",
+      "content": "Watch Heated Rivalry on HBO Max. Plans start at $10.99/month. Shane Hollander and Ilya Rozanov are hockey stars drawn together by rivalry and desire. What starts as a secret fling becomes a years-long journey of love, denial and growth as they chase glory on the ice and wrestle with feelings off it.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.hbomax.com%2Fshows%2Fheated%2Drivalry%2F50cd4e99%2D04ee%2D427b%2Da3b4%2Dda721ed05d9c&rut=b50d7f41bd31521af55dc15590cd6839b77daee2ac45ac814fdb5eb1c6b3bff8",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:19:08.182138"
+    },
+    {
+      "topic": "heated rivalry",
+      "title": "Heated Rivalry (TV Series 2025- ) - IMDb",
+      "content": "Heated Rivalry: Created by Jacob Tierney. With Hudson Williams, Connor Storrie, Fran\u00e7ois Arnaud, Franco Lo Presti. Two rival hockey stars at the top of their game face an unexpected challenge when they develop feelings for each other, complicating their careers and the sport's expectations.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt35495073%2F&rut=2ce9652cb6b41775cc605075585067d8190b2a71532ee5f2a069b78b1ee49d50",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:19:08.182211"
+    },
+    {
+      "topic": "heated rivalry",
+      "title": "Heated Rivalry | Heated Rivalry Wiki | Fandom",
+      "content": "Heated Rivalry is an Canadian hockey romance series created by Jacob Tierney for the streaming platform Crave. It's an adaptation of the novel of the same name by bestselling author Rachel Reid. The series will premiere on November 28, 2025. Before its official television debut, the series' first episode will be previewed at the 2025 Image+Nation Festival on November 23, 2025.[1] The ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fheatedrivalry.fandom.com%2Fwiki%2FHeated_Rivalry&rut=5953d82f77be157ca6c1032c2fe5278a293578629d1d7bba4e84c2fa09cc1b8b",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:19:08.182263"
+    },
+    {
+      "topic": "hubble constant",
+      "title": "Hubble's law - Wikipedia",
+      "content": "Hubble's law states that galaxies are moving away from Earth at speeds proportional to their distance, and the Hubble constant measures this rate of expansion. Learn about the history, discovery, and implications of this cosmological law, and how it relates to the Big Bang model and the shape of the universe.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHubble%2527s_law&rut=b4bd61116bcf53cde309d7b963066c90cc6b8eab60263c976a842297226777a0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T01:29:52.198281"
+    },
+    {
+      "topic": "hubble constant",
+      "title": "Hubble constant | Definition, Value, Units, & Facts | Britannica",
+      "content": "Hubble constant, in cosmology, constant of proportionality in the relation between the velocities of remote galaxies and their distances. It expresses the rate at which the universe is expanding. It is denoted by the symbol H_0 and named in honor of American astronomer Edwin Hubble.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2FHubble%2Dconstant&rut=0143d388ea60d29ee432ceb4c491cbaeb3705594059d14369fd0404b8e379fa1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T01:29:52.198331"
+    },
+    {
+      "topic": "hubble constant",
+      "title": "What is the Hubble constant? | University of Chicago News",
+      "content": "The Hubble constant is one of the most important numbers in cosmology because it tells us how fast the universe is expanding, which can be used to determine the age of the universe and its history. It gets its name from UChicago alum Edwin Hubble, who was first to calculate the constant from his measurements of stars in 1929. Despite nearly a hundred years of astronomical measurements and ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fnews.uchicago.edu%2Fexplainer%2Fhubble%2Dconstant%2Dexplained&rut=4c99ff99c9d6d5792842fd394ed9daf2fed9015bec76fb8d4544b8e5de0e9c9f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T01:29:52.198369"
+    },
+    {
+      "topic": "hubble constant",
+      "title": "Hubble Constant and Tension - NASA Science",
+      "content": "Hubble and Webb space telescope observations of objects like Cepheid variable stars and Type 1a supernovae give us measurements of distances to other galaxies. But it isn't the only way to measure the Hubble Constant. Astronomers can also measure the cosmic microwave background (CMB), the first radiation to travel through space, which was released shortly after the Big Bang and is still ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fscience.nasa.gov%2Fmission%2Fhubble%2Fscience%2Fscience%2Dbehind%2Dthe%2Ddiscoveries%2Fhubble%2Dconstant%2Dand%2Dtension%2F&rut=2c02d9279aa891a631944d0609e5f5aa39b1f4b25de4448eab9f28721b18b697",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T01:29:52.198404"
+    },
+    {
+      "topic": "hubble constant",
+      "title": "The Hubble Constant - Harvard University",
+      "content": "Learn how Edwin Hubble discovered the expansion of the Universe and how the value of the Hubble Constant has changed over time. Explore the challenges and methods of determining the cosmic distance scale and the age of the Universe with HST data.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Flweb.cfa.harvard.edu%2F~dfabricant%2Fhuchra%2Fhubble%2F&rut=3346091835beccd4d7b3abae03c0ea0622bc15e5043c389e76f9ca99d9efa42c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T01:29:52.198439"
+    },
+    {
+      "topic": "higgs boson",
+      "title": "Shop higgs boson books - Amazon.com Official Site",
+      "content": "Find deals and low prices on higgs boson books at Amazon.com. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DIIigdloe5tF1LZgqcFs1qwbTd8KguWwcDXGJllkVghR%252DcZP4AIYqtxBjYDSd2yDTow%252DBp2ZbUZsN3j9gvH5pUFkOF9rfAIhMEBMOZxVOcf6BkT1U2bF6yy7ttrPkx8xvXXf3YDN_iWVyH2pk5A9FsDZuCAytvwhSnP%252DoQGRp6lQ.cKpKnprhkihyABGBGllv8w%26rut%3Dc8e3b05f003a504701d7e4dae4da8fd15778373015bf02d3fdc657aa8e02afc0%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De853hf1p6VY5YXjtdb7k6MWDVUCUwpz6zxUIz%252DN6k5HuzKdke0I7%252D12aq4__GVLFSzLeNcaO1KbTaaPBST3pJLwoiEQnIY2zP6VMG9Z5YadCmuXIjoQp0Kdtbbm3sDZEYiKmuFIIglYidh3mdOOhNlmH8HlalKV3vnOkJAbVQpYMBZTy8J9RoCMxlZTGqt3ES8lCFHvkyanDxwjc9yiyWRgvwBeAQ%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGhpZ2dzJTJiYm9zb24lMmJib29rcyUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzFqanpueWpxbGxfYiUyNmFkZ3JwaWQlM2QxMjI0ODU3MDIxNDc4NDY0JTI2aHZhZGlkJTNkNzY1NTM2OTc1NjczOTElMjZodm5ldHclM2RzJTI2aHZxbXQlM2RiJTI2aHZibXQlM2RiYiUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NzQyMiUyNmh2dGFyZ2lkJTNka3dkLTc2NTUzODk5OTcwNjA3JTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QyNzI3Nl8xNDYzNzIzNCUyNm1jaWQlM2RlYjUwNmI2YjIwOTQzNDk4OGRmNTAyZjg3Zjk3NzY5NyUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkYjIxMzQ5MzFiMDQ5MWM2NjNlNjkyMDY3MWMxOTg4Njk%2526rlid%253Db2134931b0491c663e6920671c198869%26vqd%3D4%2D174106268224812700368503902110351859249%26iurl%3D%257B1%257DIG%253D09E5EFB5B67C486382D070E296CA8E83%2526CID%253D2883A958484B6875097CBF8C49DC69CA%2526ID%253DDevEx%252C5045.1&rut=7635479d5960be2ef94fd6109c92ae3497ad977ddd2f2a10bdaeba1b0065de37",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:18:08.625466"
+    },
+    {
+      "topic": "higgs boson",
+      "title": "Higgs boson - Wikipedia",
+      "content": "The Higgs boson, sometimes called the Higgs particle, [9][10] is an elementary particle in the Standard Model of particle physics produced by the quantum excitation of the Higgs field, [11][12] one of the fields in particle physics theory. [12] In the Standard Model, the Higgs particle is a massive scalar boson that couples to (interacts with) particles whose mass arises from their ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHiggs_boson&rut=3fe8baa7e56f4b870117f60ec171a891ba004af66e70c3d637dface480628f80",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:18:08.625535"
+    },
+    {
+      "topic": "higgs boson",
+      "title": "The Higgs boson - CERN",
+      "content": "Learn about the Higgs boson, the particle that gives mass to all other particles, and how it was discovered at CERN in 2012. Explore what we have learned since then and what questions remain unanswered about this elusive field and its role in the universe.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fhome.cern%2Fscience%2Fphysics%2Fhiggs%2Dboson&rut=10797986a9baad29bd9b560743fdb362c8dcfeb5016d21f3bf92e0379d31315a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:18:08.625565"
+    },
+    {
+      "topic": "higgs boson",
+      "title": "Higgs boson | Physics, Particle Physics & Standard Model | Britannica",
+      "content": "Higgs boson, particle that is the carrier particle, or boson, of the Higgs field, a field that permeates space and endows all elementary subatomic particles with mass through its interactions with them. The field and the particle\u2014named after Peter Higgs of the University of Edinburgh, one of the physicists who in 1964 first proposed the mechanism\u2014provided a testable hypothesis for the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2FHiggs%2Dboson&rut=d52a2d9a5febea017b2b5025bdb127cdf312a6c6ebc88d8ebd66ae38ce27060a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:18:08.625760"
+    },
+    {
+      "topic": "higgs boson",
+      "title": "Higgs boson: The 'God Particle' explained - Space",
+      "content": "The Higgs boson is a fundamental particle discovered on July 4, 2012, by researchers at the Large Hadron Collider (LHC) located at CERN, Switzerland.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.space.com%2Fhiggs%2Dboson%2Dgod%2Dparticle%2Dexplained&rut=e43baa038d7c289d3b5b9cd854dba94bd112d9c37c4615a8b1fed345a4e7def6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:18:08.625789"
+    },
+    {
+      "topic": "critical minerals are hiding in plain sight in u.s. mines",
+      "title": "Critical Minerals Are Hiding in Plain Sight in U.S. Mines",
+      "content": "Critical minerals are hiding in plain sight in U.S. Mines Date: December 28, 2025 Source: American Association for the Advancement of Science (AAAS) Summary: Researchers found that U.S. metal ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencedaily.com%2Freleases%2F2025%2F12%2F251228074503.htm&rut=ab7d0e5361b562fd96977b0fb26997c5cb8445de202697bc71b780bcca3cd88c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:20:47.490839"
+    },
+    {
+      "topic": "critical minerals are hiding in plain sight in u.s. mines",
+      "title": "U.S. mines are literally throwing away critical minerals",
+      "content": "Those figures far surpass both U.S. import levels of those elements and current demand for them. Critical minerals are essential to the production of lithium-ion batteries, solar panels, and other low- or zero-carbon technologies powering the clean energy transition. Where the U.S. gets those minerals has long been a politically fraught topic.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fyaleclimateconnections.org%2F2025%2F09%2Fu%2Ds%2Dmines%2Dare%2Dliterally%2Dthrowing%2Daway%2Dcritical%2Dminerals%2F&rut=4cbe1e278718c07c2d4bdb7ba207734befae951e11acda6979c02eca4cb8b751",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:20:47.490914"
+    },
+    {
+      "topic": "critical minerals are hiding in plain sight in u.s. mines",
+      "title": "Here's a source for critical minerals \u2014 hiding in plain sight",
+      "content": "Opinion Here's a source for critical minerals \u2014 hiding in plain sight The federal government should invest in ways to recover what mines are already producing.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.washingtonpost.com%2Fopinions%2F2025%2F09%2F01%2Fcritical%2Dminerals%2Drare%2Dearths%2Drecovery%2F&rut=f666737c19b10b6893c2a71a3854bac0777d11a2f1c62fc1b4aac861e32b5a23",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:20:47.490982"
+    },
+    {
+      "topic": "critical minerals are hiding in plain sight in u.s. mines",
+      "title": "Buried treasure: The U.S. is throwing away its critical minerals",
+      "content": "A new study led by the Colorado School of Mines quantifies the opportunity. The team paired mineral production data from federally permitted metal mines with geochemical surveys from national agencies. Minerals lost in plain sight The result is a first-of-its-kind estimate of how much critical material already flows through U.S. concentrators and smelters every year, then leaves the process ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.earth.com%2Fnews%2Fburied%2Dtreasure%2Dthe%2Du%2Ds%2Dis%2Dthrowing%2Daway%2Dits%2Dcritical%2Dminerals%2F&rut=2ef020b20eea3e112176b0cd7e50530e7607f134068f70b245619a7257eedf7b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:20:47.491046"
+    },
+    {
+      "topic": "critical minerals are hiding in plain sight in u.s. mines",
+      "title": "U.S. already has the critical minerals it needs - but they're being ...",
+      "content": "The findings, published in the journal Science, show that improved recovery of critical minerals such as cobalt, lithium and rare earth elements currently being discarded as tailings of other mineral streams could meet the U.S. demand for energy, defense and technology applications.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.minesnewsroom.com%2Fnews%2Fus%2Dalready%2Dhas%2Dcritical%2Dminerals%2Dit%2Dneeds%2Dtheyre%2Dbeing%2Dthrown%2Daway%2Dnew%2Danalysis%2Dshows&rut=2b5d20263d0173b64f8dfbf2540f0d8f11216097e27734a6fdfe38813a5da286",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:20:47.491108"
+    },
+    {
+      "topic": "how i get free traffic from chatgpt in 2025 (aio vs seo)",
+      "title": "Free Website Seo - All-in-One Marketing Tool",
+      "content": "Build authority-first backlinks that drive AI mentions and SEO results. Traditional SEO tools miss AI search visibility\u2014Semrush doesn't.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dsemrush.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DCcVj3qSjX6%252DRAiHgQb_Wz2qcG0JcGH%252DZ6QgFy3UEdqlLV_ORJAJ_QsOuaD4j4EYIcw5gVX%252DPpp4fZlYMTvsXrhyi5Y_YpJbrEIubR0l0fpsf_Pb5pRkmXX4PL42HoIBFPIcJAk8dkURXTkxoEOuKXUErfi2MipNdoVLHivAYKuI.M4fuOmpXVwoVjZdWKxGTQw%26rut%3De5ac373a7759665e18210166aae40243e5f3bbd255794fad85da65aa05b7182c%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8u5G0fgcqWplrVIEO7xKd6zVUCUy9nRfMk9RnYx_evQimnwezdBAqjP7LJKZpzKKeU4jg6JS%252D9j207SYds5jW6M8WxXanfD2LJ03mrtUX6ojNtX1e_LLlmRnS%252DgK30z4csmxHf6krUnKkFmSEHQkrc%252Du3LJW4ROv%252DO6Fcbh3vSV9OSfx6zKFl9jrKM61_ufO1rh2WEWowVHUiV1K2DW1h5TUcygg%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuc2VtcnVzaC5jb20lMmZscCUyZnByb2R1Y3Qtc2VvLWNoYWxsZW5nZXMlMmZlbiUyZiUzZmJfYWRncm91cCUzZGZyZWUlMjUyMHdlYnNpdGUlMjUyMHNlbyUyNmJfYWRncm91cGlkJTNkMTMwMTgyMjA4NTAyMDIzMCUyNmJfYWRpZCUzZDgxMzYzOTk1NDQyNjI0JTI2Yl9jYW1wYWlnbiUzZENvcmUxMl9TUkNIX1NFT19Ub29sc19CSU5HJTI2Yl9jYW1wYWlnbmlkJTNkNDEyNTMyODQxJTI2Yl9pc3Byb2R1Y3QlM2QlMjZiX3Byb2R1Y3RpZCUzZCUyNmJfdGVybSUzZCUyNTJCZnJlZSUyNTIwJTI1MkJ3ZWJzaXRlJTI1MjAlMjUyQnNlbyUyNmJfdGVybWlkJTNka3dkLTgxMzY0MDUzNDM0MzEwJTNhbG9jLTE5MCUyNmt3JTNkJTI1MkJmcmVlJTI1MjAlMjUyQndlYnNpdGUlMjUyMCUyNTJCc2VvJTI2Y21wJTNkQ29yZTEyX1NSQ0hfU0VPX1Rvb2xzX0JJTkclMjZsYWJlbCUzZHNlb190b29sJTI2TmV0d29yayUzZHMlMjZEZXZpY2UlM2RjJTI2dXRtX2NvbnRlbnQlM2QlMjZrd2lkJTNka3dkLTgxMzY0MDUzNDM0MzEwJTNhbG9jLTE5MCUyNmNtcGlkJTNkNDEyNTMyODQxJTI2YWdwaWQlM2QxMzAxODIyMDg1MDIwMjMwJTI2QlUlM2RDb3JlJTI2ZXh0aWQlM2QlMjZhZHBvcyUzZCUyNm1hdGNodHlwZSUzZHAlMjZtc2Nsa2lkJTNkNDFiMDBjN2UwOTlhMTQ5MGU0NjI2NTI4YTc5MGI4Y2MlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RDb3JlMTJfU1JDSF9TRU9fVG9vbHNfQklORyUyNnV0bV90ZXJtJTNkJTI1MkJmcmVlJTI1MjAlMjUyQndlYnNpdGUlMjUyMCUyNTJCc2Vv%2526rlid%253D41b00c7e099a1490e4626528a790b8cc%26vqd%3D4%2D230848751282716186624678409723888879903%26iurl%3D%257B1%257DIG%253DD06D3ACD9C2C4CFAA49BA6D14CA085A8%2526CID%253D1CD11ADBAE7164B01A390C0FAFA46574%2526ID%253DDevEx%252C5046.1&rut=b99f64659c88362180c13d205cc7a29ef47d4dbf87531bf351829f052bedb259",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:25:30.485097"
+    },
+    {
+      "topic": "how i get free traffic from chatgpt in 2025 (aio vs seo)",
+      "title": "Free Website Traffic - *Free URL Submission*",
+      "content": "Free, Fast, Easy Submission to the Biggest Search Engines, Directorys. It's Free To Submit Your Website To The Biggest Search Engines Across The Internet",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dfree%252Dweb%252Dsubmission.co.uk%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D4zIx%252Dz1ibdARJ7wnfNdxRHNzNhrCE%252DB5CwPYNFovpt00wNpVrV8WPZxbK_KhcHZfBzSSceikJbjTcs6Yv1S6y_RdBdc9bpyyQs7jVa6AdMuWVC9jYS9IcG7qVb8yQ5FSgyEYefZZ1gk4uoL56g25dY89npq1ubArKeEx34Z7QZ0.kJJqU39%252DsAvJgxahf78rgA%26rut%3D55207f4faa6772a4b889627cb1e8628b4024118f1cffd15655a8e17f15e77f0d%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8WGq23aeI2i7kc9fq3EmT0DVUCUy7Ri4qNEl8u1GHimi_OS%252D5Jn4DXOVMDR_Djfai5GCTGypxPNqL_Oc8GEalpnzWBPVEpf1R_nIoxwVKKgA2_leLJjhfm_PSq_Mz_JehdeQJbG6VmPbrpNGqaBHNfz3ZV3C8S_oMoPw79IXdBpycjKc5Gac1mXlCAyPZPvKAVhCPI49uXEvPNdWwlSNkhWjvOBg%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuZnJlZS13ZWItc3VibWlzc2lvbi5jby51ayUyZmluZGV4MTEuaHRtbCUzZnV0bV9kZXZpY2UlM2RjJTI2dXRtX2djbGlkJTNkZjAzZDAyZmRjOTE1MTdkNjc0ZDA2YmFiNjcxZmY2MTYlMjZtc2Nsa2lkJTNkZjAzZDAyZmRjOTE1MTdkNjc0ZDA2YmFiNjcxZmY2MTYlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RGcmVlJTI1MjBXZWIlMjUyMFN1YiUyNTIwVGllcjElMjUyMENvbnYlMjUyMEt5d2RzJTI2dXRtX3Rlcm0lM2RzZWFyY2glMjUyMGVuZ2luZSUyNTIwdHJhZmZpYyUyNnV0bV9jb250ZW50JTNkQnV5ZXJzJTI1MjBLZXl3b3Jkcw%2526rlid%253Df03d02fdc91517d674d06bab671ff616%26vqd%3D4%2D261122421243572313221771921457685075420%26iurl%3D%257B1%257DIG%253DD06D3ACD9C2C4CFAA49BA6D14CA085A8%2526CID%253D1CD11ADBAE7164B01A390C0FAFA46574%2526ID%253DDevEx%252C5051.1&rut=6b95075291ed001bdd553eed9eec4fe67894c5c541ea7f9c584b15a13148d921",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:25:30.485222"
+    },
+    {
+      "topic": "how i get free traffic from chatgpt in 2025 (aio vs seo)",
+      "title": "How I Get Free Traffic from ChatGPT in 2025 (AIO vs SEO)",
+      "content": "The same thing happened in Perplexity. My website is now ranking at the top of AI responses, generating free traffic directly from AI models. This isn't luck. It's the result of implementing AI Optimization (AIO), where I optimize my content to appear in AI-generated responses. And if you're still only focusing on traditional SEO, you're missing out on a massive traffic source that's ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Flearnwithhasan.com%2Fblog%2Ffree%2Dtraffic%2Dfrom%2Dchatgpt%2F&rut=f42f7c8885c964ee28366a9768fafb3ddfa0c18ac694a2b9597c79ba42054adc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:25:30.485310"
+    },
+    {
+      "topic": "how i get free traffic from chatgpt in 2025 (aio vs seo)",
+      "title": "How I Get Free Traffic from ChatGPT in 2025 (AIO vs SEO)",
+      "content": "Traditional SEO remains the primary focus, while this emerging traffic channel grows rapidly with relatively light competition. This window won't stay open indefinitely. As more people understand AIO's value, competition will intensify and optimization will become more sophisticated.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fseotoolrank.com%2Fhow%2Di%2Dget%2Dfree%2Dtraffic%2Dfrom%2Dchatgpt%2Din%2D2025%2Daio%2Dvs%2Dseo%2F&rut=b3b22a7031a5162199e0731d3bbc9c285711f3ba0eeb002691a1f25c4ed62bbf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:25:30.485386"
+    },
+    {
+      "topic": "how i get free traffic from chatgpt in 2025 (aio vs seo)",
+      "title": "How To Get Free Traffic From ChatGPT in 2025 (AIO Course)",
+      "content": "In this video, I will show you how to optimize your website for AIO to rank on top of AI models like ChatGPT, Claude, Perplexity and Get Free Organic Traffic From AI.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DXmv22Pmu7f0&rut=82ef6f3e1dc339eb5f54fad5e1b9c39006544f527e90e19ec59ee702b02738ca",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:25:30.485474"
+    },
+    {
+      "topic": "half-life",
+      "title": "Half-life",
+      "content": "Half-life is the time required for a quantity to reduce to half of its initial value. The term is commonly used in nuclear physics to describe how quickly unstable atoms undergo radioactive decay or how long stable atoms survive. The term is also used more generally to characterize any type of exponential decay. For example, the medical sciences refer to the biological half-life of drugs and other chemicals in the human body. The converse of half-life is doubling time, an exponential property which increases by a factor of 2 rather than reducing by that factor.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Half-life",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T09:29:40.691544"
+    },
+    {
+      "topic": "half-life",
+      "title": "Shop half life counter strike - Amazon.com Official Site",
+      "content": "Browse & discover thousands of unique brands. Read customer reviews & best sellers. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DfqZYkILpEl8xyYGm3JVoCsMKM84u6jFDyBSCz1mSwgnXOXeKC6MfBYV6uP0dcnbgRH2xhTh6YLQn2eS_HwjHQilu5cHtL5hFNbTLe0Xf6FDOWAW90hLKRPso7b3aGYZgTSsiW3OC0Wtq%252DyxcKFFrupOC9QkZQsyIIDCsAx_pJdc.SwAkC2jD7gJpEXNchqsLkQ%26rut%3D7fb79398418a9b116d2ea6f7404efbe991ae32fe6738345ef2db531657a77ebb%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8TaZ2Sk_FVehWGWt20mr58DVUCUyhL7f8Ry_yaPXcVcNfTq3L7eGhWx7Zjaiyhqi30%252DSTOdRcgsrUaoabOLJiox9n3CyQAQ7X2cCrbh2cweTvSL028wJS7l1v%252DdA26olvETbl_mtH8hC8i2sQNk%252DL5yjlyCnWhfB7NDn7a0MjwszUCERBzheIz1ga%252D8iLvedj7rFq4DlTmlRaSF8j0xss6Hj07bM%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGhhbGYlMmJsaWZlJTJiY291bnRlciUyYnN0cmlrZSUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzdsbWtqYmhvYXJfcCUyNmFkZ3JwaWQlM2QxMjQwMjQ5NDc0NDcwNjIyJTI2aHZhZGlkJTNkNzc1MTU3NjA4NzEzMzYlMjZodm5ldHclM2RzJTI2aHZxbXQlM2RwJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4OTY0NCUyNmh2dGFyZ2lkJTNka3dkLTc3NTE1OTQ0ODQ3MDQ1JTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QxNTE0Nl8xMzYzMjQyNCUyNm1jaWQlM2QxMDVjYTI2MjgzMDAzNWJlYjYyMjVjMmQ0YmMwZGQzMCUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkNjQwM2U3ODZiNjNiMTA5ZWY5Nzg4ZWQwMTkzZWY5Nzk%2526rlid%253D6403e786b63b109ef9788ed0193ef979%26vqd%3D4%2D277449904222946541166880295353865350328%26iurl%3D%257B1%257DIG%253D89713C63556648128BC1CDEFEB9C52BE%2526CID%253D1EFA61DFAFEE66633668770BAE0A672B%2526ID%253DDevEx%252C5045.1&rut=cc6e260df33089dd6bf206e3c79f4b0266e9e3d5e6e638fd1bdcd5b00962241b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:29:41.579990"
+    },
+    {
+      "topic": "half-life",
+      "title": "Half-Life (video game) - Wikipedia",
+      "content": "Half-Life in many ways was a reactionary response to the trivialization of the experience of the first-person genre. Many of us had fallen in love with video games because of the phenomenological possibilities of the field and felt like the industry was reducing the experiences to least common denominators rather than exploring those possibilities. Our hope was that building worlds and ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHalf%2DLife_(video_game)&rut=1d77e1f89bb438e944128212e818b1d40696a6a6c88c3b133fc56359faea9502",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:29:41.580063"
+    },
+    {
+      "topic": "half-life",
+      "title": "Half-Life",
+      "content": "Celebrate the 25th anniversary of Half-Life with the latest updates, interviews, and extras. Experience the original game with enhanced graphics, multiplayer maps, and restored content.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.half%2Dlife.com%2Fen%2Fhalflife25%2F&rut=319bbe745903dea85a05f0761ae8bd902e7d8dff458ee9cdeb00b27417b184b1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:29:41.580115"
+    },
+    {
+      "topic": "half-life",
+      "title": "Save 80% on Half-Life on Steam",
+      "content": "Half-Life Named Game of the Year by over 50 publications, Valve's debut title blends action and adventure with award-winning technology to create a frighteningly realistic world where players must think to survive. Also includes an exciting multiplayer mode that allows you to play against friends and enemies around the world.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F70%2FHalfLife%2F&rut=fb8b16d0559e2c2d6dc5293af02255264d4b7c20e5ed82833502f9417e287c00",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:29:41.580168"
+    },
+    {
+      "topic": "half-life",
+      "title": "Half-Life | Half-Life Wiki | Fandom",
+      "content": "Half-Life, stylized as H\u03bbLF-LIFE, is a science fiction first-person shooter developed and published by Valve. The player takes the perspective of the scientist Gordon Freeman who struggles to escape an underground research facility after a failed experiment causes a massive alien invasion through a dimensional rift, AKA a resonance cascade. Designed initially for Microsoft Windows and later ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fhalf%2Dlife.fandom.com%2Fwiki%2FHalf%2DLife&rut=7cf0bc1fea4271b9a742b513b23961010364c162ab6468c047f184cc4de5595f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:29:41.580254"
+    },
+    {
+      "topic": "hydrogen bond",
+      "title": "Hydrogen bond - Wikipedia",
+      "content": "Learn about hydrogen bonding, a specific type of molecular interaction that exhibits partial covalent character and cannot be described as a purely electrostatic force. Find out its definition, characteristics, examples, strength, and role in chemistry, biology, and materials science.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHydrogen_bond&rut=f852519b77e730f73aad47071a511dfaf099458c8a90debf6347e4d828e1e9aa",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:35:28.610268"
+    },
+    {
+      "topic": "hydrogen bond",
+      "title": "Hydrogen bonding | Definition, Examples, & Facts | Britannica",
+      "content": "Hydrogen bonding, interaction involving a hydrogen atom located between a pair of other atoms having a high affinity for electrons; such a bond is weaker than an ionic bond or covalent bond but stronger than van der Waals forces. Hydrogen bonds can exist between atoms in different molecules or in the same molecule.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fhydrogen%2Dbonding&rut=fbb8a6ebe0543018659bf4291b4d11f834360208b08ba5ad70413d21a574d065",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:35:28.610315"
+    },
+    {
+      "topic": "hydrogen bond",
+      "title": "Hydrogen Bonding - Chemistry LibreTexts",
+      "content": "A hydrogen bond is a weak type of force that forms a special type of dipole-dipole attraction which occurs when a hydrogen atom bonded to a strongly electronegative atom exists in the vicinity of \u2026",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fchem.libretexts.org%2FBookshelves%2FPhysical_and_Theoretical_Chemistry_Textbook_Maps%2FSupplemental_Modules_(Physical_and_Theoretical_Chemistry)%2FPhysical_Properties_of_Matter%2FAtomic_and_Molecular_Properties%2FIntermolecular_Forces%2FSpecific_Interactions%2FHydrogen_Bonding&rut=6bf03104d7a445dc777284a7aa252b6dd30e7d8d2a96e084b8e87274ee703539",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:35:28.610382"
+    },
+    {
+      "topic": "hydrogen bond",
+      "title": "Hydrogen Bond Definition and Examples",
+      "content": "Learn what a hydrogen bond is, how it forms, and what types and effects it has. See examples of hydrogen bonds in inorganic and organic molecules, such as water, DNA, and nylon.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsciencenotes.org%2Fhydrogen%2Dbond%2Ddefinition%2Dand%2Dexamples%2F&rut=88918d187501d2ad7eb8a467f1b8c38f38af02891c452294a91b41191b1c9dd8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:35:28.610456"
+    },
+    {
+      "topic": "hydrogen bond",
+      "title": "What Is a Hydrogen Bond and Why Is It So Important?",
+      "content": "The formation of a hydrogen bond begins with an uneven distribution of electrons within a molecule, a characteristic known as polarity. This occurs when a hydrogen atom is directly bonded to a highly electronegative atom, such as oxygen, nitrogen, or fluorine.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbiologyinsights.com%2Fwhat%2Dis%2Da%2Dhydrogen%2Dbond%2Dand%2Dwhy%2Dis%2Dit%2Dso%2Dimportant%2D2%2F&rut=e9e74f11c3cd4522d00dc65fe0fca3de0cd21877ded223c5705064f1ba7a3525",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:35:28.610491"
+    },
+    {
+      "topic": "histone",
+      "title": "Histone",
+      "content": "In biology, histones are highly basic proteins abundant in lysine and arginine residues that are found in eukaryotic cell nuclei and in most Archaeal phyla. They act as spools around which DNA winds to create structural units called nucleosomes. Nucleosomes in turn are wrapped into 30-nanometer fibers that form tightly packed chromatin. Histones prevent DNA from becoming tangled and protect it from DNA damage. In addition, histones play important roles in gene regulation and DNA replication. Without histones, unwound DNA in chromosomes would be very long. For example, each human cell has about 1.8 meters of DNA if completely stretched out; however, when wound about histones, this length is reduced to about 9 micrometers (0.009\u00a0mm) of 30\u00a0nm diameter chromatin fibers.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Histone",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T09:56:05.781405"
+    },
+    {
+      "topic": "histone",
+      "title": "Histone - Wikipedia",
+      "content": "Histones are highly basic proteins that package DNA into nucleosomes in eukaryotic cell nuclei and some Archaea. Learn about the five families of histones, their chemical modifications, their roles in gene regulation and DNA replication, and their variants and pseudogenes.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHistone&rut=7b78526b191815a4f323d3236c994b259e41e18f7066b0e70dda29efb6cd73a1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:56:07.943277"
+    },
+    {
+      "topic": "histone",
+      "title": "Histone | Description, Chromatin, Structure, Functions, & Facts ...",
+      "content": "A histone is a type of protein that plays a critical role in the structural organization and regulation of DNA within the nucleus of eukaryotic cells.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fhistone&rut=fd33b1c5f4ebb152bf8705dae9f187791a2ff296770b656e7484e87c35f0b3dd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:56:07.943372"
+    },
+    {
+      "topic": "histone",
+      "title": "Histone - National Human Genome Research Institute",
+      "content": "Histone is a protein that provides structural support for a chromosome and regulates gene expression. Learn how histones wrap DNA, form nucleosomes, and have different marks that indicate gene activity.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.genome.gov%2Fgenetics%2Dglossary%2Fhistone&rut=3f1a251f5f56b0eb53351323531837cc0fe9fd1e904bc1a29a8e6bbe59c18d06",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:56:07.943442"
+    },
+    {
+      "topic": "histone",
+      "title": "What Are Histones in Biology? Their Structure and Function",
+      "content": "Histone types are categorized into two groups: core and linker histones. H2A, H2B, H3, and H4 are core histones. These assemble to form a histone octamer, consisting of two copies of each of the four core histones. This octamer forms the central protein component around which DNA wraps. H1 (or its homolog H5) is a linker histone.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbiologyinsights.com%2Fwhat%2Dare%2Dhistones%2Din%2Dbiology%2Dtheir%2Dstructure%2Dand%2Dfunction%2F&rut=453688167822af90500871d1cf3f7dc87d3515c10948d18f22f59207f51ea65d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:56:07.943516"
+    },
+    {
+      "topic": "histone",
+      "title": "histone / histones | Learn Science at Scitable - Nature",
+      "content": "histone / histones Supercoiled DNA wrapped around histone proteins (red). Histones are a family of basic proteins that associate with DNA in the nucleus and help condense it into chromatin.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nature.com%2Fscitable%2Fdefinition%2Fhistones%2D57%2F&rut=bc3dd53fdf89a23db6f3ed0ffe7c32767238ba86b7be17d359253413a8d60f21",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:56:07.943578"
+    },
+    {
+      "topic": "hippocampus",
+      "title": "Hippocampus",
+      "content": "The hippocampus, also hippocampus proper, is a major component of the brain of humans and many other vertebrates. In the human brain the hippocampus, the dentate gyrus, and the subiculum are components of the hippocampal formation located in the limbic system. \nThe hippocampus plays important roles in the consolidation of information from short-term memory to long-term memory, and in spatial memory that enables navigation. In humans and other primates the hippocampus is located in the archicortex, one of the three regions of allocortex, in each hemisphere with direct neural projections to, and reciprocal indirect projections from the neocortex. The hippocampus, as the medial pallium, is a structure found in all vertebrates.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hippocampus",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T10:32:20.568818"
+    },
+    {
+      "topic": "hippocampus",
+      "title": "Hippocampus - Wikipedia",
+      "content": "The hippocampus (pl.: hippocampi; via Latin from Greek \u1f31\u03c0\u03c0\u03cc\u03ba\u03b1\u03bc\u03c0\u03bf\u03c2, ' seahorse '), also hippocampus proper, is a major component of the brain of humans and many other vertebrates. In the human brain the hippocampus, the dentate gyrus, and the subiculum are components of the hippocampal formation located in the limbic system.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHippocampus&rut=53922f108f333dc73866d8b2ea42a5bb1ae9feec44861849ded30acab6615d04",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:32:21.480403"
+    },
+    {
+      "topic": "hippocampus",
+      "title": "Hippocampus: What It Is, Function, Location & Damage",
+      "content": "Learn about the hippocampus, a small part of your brain that regulates learning and memory. Find out how it works, where it is, what can affect it and how to care for it.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmy.clevelandclinic.org%2Fhealth%2Fbody%2Fhippocampus&rut=c4fcb6e583bf87376764e10f454176766471d987248342807bbfa56d2fc32e8f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:32:21.480532"
+    },
+    {
+      "topic": "hippocampus",
+      "title": "Hippocampus: What Is It, Location, Function, and More",
+      "content": "In psychology, the hippocampus is a crucial structure within the brain's medial temporal lobe. It plays a vital role in forming and retrieving memories, spatial navigation, and emotional responses. Damage to the hippocampus can lead to memory impairments and difficulty forming new memories, highlighting its importance in learning and cognition.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.simplypsychology.org%2Fhippocampus.html&rut=dbeb78752fff08d687d098a30470e95ddf2c732945c23bca2dbe183cb3f941c0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:32:21.480585"
+    },
+    {
+      "topic": "hippocampus",
+      "title": "What Is the Hippocampus? - Verywell Mind",
+      "content": "The hippocampus is a part of the brain involved in emotions, learning, and memory. Learn more about what the hippocampus does and how it is affected by damage.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.verywellmind.com%2Fwhat%2Dis%2Dthe%2Dhippocampus%2D2795231&rut=039be5c0299e56dda2895e6b9cae9baea37449de25760f4bad53f59f02a35876",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:32:21.480625"
+    },
+    {
+      "topic": "hippocampus",
+      "title": "What Is the Hippocampus? The Brain's Memory Center Explained",
+      "content": "The hippocampus is particularly vulnerable to damage. Oxygen deprivation, head injury, infection, and neurodegenerative diseases like Alzheimer's can impair its function.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencenewstoday.org%2Fwhat%2Dis%2Dthe%2Dhippocampus%2Dthe%2Dbrains%2Dmemory%2Dcenter%2Dexplained&rut=084c28ba475dee400f0167418921cce62b7806c1d99527016c8ed5418adf16d2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:32:21.480662"
+    },
+    {
+      "topic": "hypothalamus",
+      "title": "Hypothalamus",
+      "content": "The hypothalamus is a small part of the vertebrate brain that contains a number of nuclei with a variety of functions. One of the most important functions is to link the nervous system to the endocrine system via the pituitary gland. The hypothalamus is located below the thalamus and is part of the limbic system. It forms the basal part of the diencephalon. All vertebrate brains contain a hypothalamus. In humans, it is about the size of an almond.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hypothalamus",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T10:33:22.877511"
+    },
+    {
+      "topic": "hypothalamus",
+      "title": "Shop hypothalamus handbook - Amazon.com Official Site",
+      "content": "Find deals and low prices on hypothalamus handbook at Amazon.com. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DuHKTqiL8jrybEDPPgQKgS4fgZchFtEZmHEJalgNqhXVg7pqudad_qN1yrLeiW3c%252DnD4TiGfV0wYpzfvQCtZsvu0t3d_S4S7nIKORFdM%252DoFvxEL3%252D07fbA4d1sKSGKAfKcLhXCtmVwl%252Dagdw8dOucCTWchdEsN2IEk7ZhmpxX6hE.iwscAa5XyvdaWe_sxMF14Q%26rut%3D9f759850031e83f38c787badd96469655c8cf844b580a290e9b5ff993d5b11ea%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8KvwywHhbaOp%252DeUGQr%252D4oSjVUCUz08OaO3BkXHPjktvZxrMYPpIgGMJFBFSgm4HsQibd1dNdZlvQgSftDCPK_vsP8OInOk8TCvFSJ56R2WrMrMi5CxMcnAspm5nAhtGoOz_KhQ3RDWrvjlQ%252DjNs0jpiCbgXLO2%252DQtK8xEwGLsNWkIbQ_q20wkQnx8VX1wgHNH5VlinzwCO0am_Wj8aplXBGRuO_s%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGh5cG90aGFsYW11cyUyYmhhbmRib29rJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfOTg4dm5mdGQ0a19iJTI2YWRncnBpZCUzZDEyMjQ4NTY5NTM3NzAwMTYlMjZodmFkaWQlM2Q3NjU1MzY5MDkzNjc5MyUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGIlMjZodmJtdCUzZGJiJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg4MTEwJTI2aHZ0YXJnaWQlM2Rrd2QtNzY1NTM4MjAwNjA4NzklM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDI1NzQ4XzEzNTkyMTc3JTI2bWNpZCUzZDczODk1MGUzNWUxZjNiMDc4ZjQyOGZmMjE2ZmZiZTAyJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2RlNWNhOTM5MDBiZmYxYWY3NzQ1NGZhYzZiNjBjNTMyMw%2526rlid%253De5ca93900bff1af77454fac6b60c5323%26vqd%3D4%2D189893550806200677517535669381784583886%26iurl%3D%257B1%257DIG%253D8A1D47B52D6B45BDB94D3DEBE742CFAC%2526CID%253D1B59E7FBDF546BFA38F3F12FDEC36AC4%2526ID%253DDevEx%252C5046.1&rut=beb1b291eba8a38985a530084829395cf959ad9ab9fd373a4d459c9bb0d1598c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:33:23.707490"
+    },
+    {
+      "topic": "hypothalamus",
+      "title": "Hypothalamus: What It Is, Function, Conditions & Disorders",
+      "content": "Learn about the hypothalamus, a brain structure that controls your body's balance and hormones. Find out how it works, what can go wrong and how to treat hypothalamus conditions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmy.clevelandclinic.org%2Fhealth%2Fbody%2F22566%2Dhypothalamus&rut=b39c9d2394280156b96f9a7e219ab26060186598db9e4aac23887b17914e6874",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:33:23.707532"
+    },
+    {
+      "topic": "hypothalamus",
+      "title": "Hypothalamus - Wikipedia",
+      "content": "The hypothalamus is a small part of the brain that regulates metabolism, hormones, behavior and other processes. It consists of several nuclei with different functions and is connected to the pituitary gland, the limbic system and the autonomic nervous system.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHypothalamus&rut=8a8972a7d334fd6dfedb51e14f66481a6aa5ac0f5af11c4e12ab7f26e0a473a6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:33:23.707565"
+    },
+    {
+      "topic": "hypothalamus",
+      "title": "Hypothalamus: Function, Disorders, Treatment - WebMD",
+      "content": "Learn about the hypothalamus, a gland in your brain that controls your hormone system and keeps your body in balance. Find out how it works, what disorders can affect it, and how they are treated.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.webmd.com%2Fbrain%2Fwhat%2Dto%2Dknow%2Dabout%2Dhypothalamus&rut=ac24baad6ab7da0f30798f10757bc0e21f6979c00f0a807a3a5abf4092b35b0d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:33:23.707596"
+    },
+    {
+      "topic": "hypothalamus",
+      "title": "Hypothalamus | Definition, Anatomy, & Function | Britannica",
+      "content": "hypothalamus, region of the brain lying below the thalamus and making up the floor of the third cerebral ventricle. The hypothalamus is an integral part of the brain. It is a small cone-shaped structure that projects downward from the brain, ending in the pituitary (infundibular) stalk, a tubular connection to the pituitary gland.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fhypothalamus&rut=5ab2672af647150f529f34d94046ceda719f5808944dc39194615a816c502ec2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:33:23.707633"
+    },
+    {
+      "topic": "mental health",
+      "title": "KP\u00ae Health Treatment Options - KP\u00ae Official Site",
+      "content": "Take Control Of Your Health. Discover Kaiser Permanente\u00ae's World-Class Care. Explore Personalized Treatment Plans At Kaiser Permanente\u00ae For A Healthier You.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dkaiserpermanente.org%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DDNxx6Lz%252Dlxa8y3QsVGLiCfhBScEchXM0nTRoDZ9DIWQP0dhA2hrM7h03LPjIhlHRXT1nmz5g5FGZOmk%252Ddiwl4xOZpEZt6DR3bFiUgulzlysDK6PxVRAVJBedILKBrD3A0UjeDlpvQpbBsRUXL%252D12prCOydCBRbb49YJWGHCXOuE.T4wJRputb3zC5HNQ_4_W2g%26rut%3D4dd27374f177028aea58948bc2d89019d0495f7137fa12dd4b7e94a9bb5db8be%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8XluGx1rjbjimQRe6Cu3WazVUCUyEE%252DNBLWiNL%252DIXfd3gFdhc%252DyGccxA%252DuiLOcKTEd2do_h4ewtDWQwnw6RgmbMteJUC%252D5FsGmB%252D8Y7UcxRjEW1Rz3otLboqnS15Jug4fcIHY18ZlUGvPuFNsnLT6MDSArbLxAjzanstunj2o96UVd5MTBmsamzF5zOu%252D1HBGGi2RO3o6w96yvK4AG6KHIzZTXFs%2526u%253DaHR0cHMlM2ElMmYlMmZhZC5kb3VibGVjbGljay5uZXQlMmZzZWFyY2hhZHMlMmZsaW5rJTJmY2xpY2slM2ZsaWQlM2Q0MzcwMDA4MjUyODQwODcyMiUyNmRzX3Nfa3dnaWQlM2Q1ODcwMDAwODk0NTIxOTI0NCUyNmRzX2FfY2lkJTNkNjU2MTA3NzQxMCUyNmRzX2FfY2FpZCUzZDIyOTE1MzA4MTY4JTI2ZHNfYV9hZ2lkJTNkMTg3MjU0MDI3MDI3JTI2ZHNfYV9saWQlM2Rrd2QtMzI4NDU3ODkzJTI2JTI2ZHNfZV9hZGlkJTNkODEyMjY1NTg2ODg5NjUlMjZkc19lX3RhcmdldF9pZCUzZGt3ZC04MTIyNjc5NjA4MDMyNCUyNiUyNmRzX2VfbmV0d29yayUzZHMlMjZkc191cmxfdiUzZDIlMjZkc19kZXN0X3VybCUzZGh0dHBzJTNhJTJmJTJmaGVhbHRoeS5rYWlzZXJwZXJtYW5lbnRlLm9yZyUyZmxlYXJuJTJmaGlnaC1xdWFsaXR5LWNhcmUlM2Zwcm9tb19pZCUzZDIzOSUyNldULm1jX2lkJTNkMjM5JTI2V1Quc2VnXzElM2RCaW5nLXp6ekJORHp6el9BV1ItYy0tcC1oZWFsdGglMjUyMHRyZWF0bWVudC0lMjZjaWQlM2RjYS1icCU3Y3JlLW5jYWwlN2NjaC1wcyU3Y3BsLWJpJTdjdGEtcHJvcyU3Y2F1LWdlbiU3Y2JvLWF3ciU3YyUyNmFkX2lkJTNkJTI2cHNkJTNka2MtJTdjbXQtcCU3Y2tuLWhlYWx0aCUyNTIwdHJlYXRtZW50JTdja2kta3dkLTgxMjI2Nzk2MDgwMzI0JTdjY2ktNjI3NTYxOTM1JTdjc2tpLTMyODQ1Nzg5MyU3Y3NjaS0yMjkxNTMwODE2OCU3Y2Fkdi0zMTA4MzU5NzU2JTI2Z2NsaWQlM2Q1OGI2YWVlZDk0NGUxM2RkZTQ1NGM3YmFhYWVlNjhlZiUyNmdjbHNyYyUzZDNwLmRzJTI2JTI2bXNjbGtpZCUzZDU4YjZhZWVkOTQ0ZTEzZGRlNDU0YzdiYWFhZWU2OGVmJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkS1BfQk5EX0JORE1LVF9QU19CSU5HX05DQUxfTk9OX05PTl9BV1JfTk9OX05PTl9OQkNfUFJPU19VTkRfUGhyYXNlX0VOR19OT05fVTY1JTI2dXRtX3Rlcm0lM2RoZWFsdGglMjUyMHRyZWF0bWVudCUyNnV0bV9jb250ZW50JTNkUXVhbGl0eSUyNTIwQ2FyZQ%2526rlid%253D58b6aeed944e13dde454c7baaaee68ef%26vqd%3D4%2D236394990851986067298099575644471551609%26iurl%3D%257B1%257DIG%253D5279FF71156C419A8FEA8CB4F9BC89B2%2526CID%253D1E350FB15B306E90140119645AE56F0C%2526ID%253DDevEx%252C5045.1&rut=c6788b7afd6a71269a412e5e818909d1cbb1730a5d6b32ab8a41d3c721315c3d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:42:24.970341"
+    },
+    {
+      "topic": "mental health",
+      "title": "Behavioral Health Software - Manage Your Practice",
+      "content": "Online psychotherapy forms, scheduling, notes, billing and EHR software. therapynotes Psychotherapy Forms and EHR Software for Psychologists.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dtherapynotes.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D4p9VlZ57ZwsSRjOPwd2h8xKwvQL7moVqK5rvBBoRZe5noeaIfd3Q0S6zoutJx8izIIb96LV0Xmr6WfoGfdNfno0GXEt2RgdBWQ7npwepjyQdGfzdzARJBWanYR2RNHSAqIW6a%252DwMT548vR5PSfXD0H8%252D6NmloMTuKgyNFvLUCCU.HpydJY0kiSZlvwqb1c9lxA%26rut%3D90700c68b7bed96d68d2dc750fc238be7d828ccf8e2a4768eaf0594be011d726%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8MTf1ckT_fST7tLtx7l0XLTVUCUxRLkJE_SVXGUXh3QTy2MZO%252Df0DLAQ%252DyG1XVQhlAwhPB7RIZ2IbNGaC_Q5Lw3kibeIWSfOKvQBDsMG6u2_yjxN8dYfedna56D0pFdK5yqc_F6oPJbsxrrzWU%252D3ktUpcjQcq9FVsHvUoQ%252DEGLCnanglMLQEwrmd875h4x7c44bdP29MzYVj4kL4KjLbkhXYe7Hg%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cudGhlcmFweW5vdGVzLmNvbSUyZnIlMmZhZGNlbnRlciUyZnBzeWNob3RoZXJhcHktZm9ybXMlMmYlM2ZhZHNfY21waWQlM2Q2MTYyOTY5OSUyNmFkc19hZGlkJTNkMzU1MDQyMjM3MSUyNmFkc19tYXRjaHR5cGUlM2RiJTI2YWRzX25ldHdvcmslM2RzJTI2YWRzX2NyZWF0aXZlJTNkJTI2dXRtX3Rlcm0lM2RQc3ljaG90aGVyYXB5JTI1MjBmb3JtcyUyNmFkc190YXJnZXRpZCUzZGt3ZC03ODk1OTI4OTExMzgyNSUzYWxvYy0xOTAlMjZ1dG1fY2FtcGFpZ24lM2QlMjZ1dG1fc291cmNlJTNkYWRjZW50ZXIlMjZ1dG1fbWVkaXVtJTNkcGFpZF9zZWFyY2glMjZ0dHYlM2QyJTI2bXNjbGtpZCUzZDQ5MjQ4MjY1YmI0ZTE0ZGZmN2E2ZWIzMjg1ZWUyMmJi%2526rlid%253D49248265bb4e14dff7a6eb3285ee22bb%26vqd%3D4%2D91473729508476139006079852612239168486%26iurl%3D%257B1%257DIG%253D5279FF71156C419A8FEA8CB4F9BC89B2%2526CID%253D1E350FB15B306E90140119645AE56F0C%2526ID%253DDevEx%252C5050.1&rut=5956edba38d408886a599bc102224a9d98a6698e3f0ad1b456222d319b6fc3ef",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:42:24.970408"
+    },
+    {
+      "topic": "mental health",
+      "title": "Behavioral health urgent care (BHUC) - Santa Clara County, California",
+      "content": "Behavioral health urgent care (BHUC) Behavioral Health Urgent Care (BHUC) is a walk-in outpatient clinic for County of Santa Clara residents who are experiencing behavioral health crisis and need help. Behavioral Health Urgent Care provides screening, assessment, crisis intervention, referral and short-term treatment for adolescents and adults.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbhsd.santaclaracounty.gov%2Fservices%2Dgroup%2Fadult%2Dand%2Dolder%2Dadult%2Fbehavioral%2Dhealth%2Durgent%2Dcare%2Dbhuc&rut=598b8ac99a8a76268800c2687634a9be1624a235fadbbe28820b99766753d1fc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:42:24.970463"
+    },
+    {
+      "topic": "mental health",
+      "title": "Santa Clara County Behavioral Health Services",
+      "content": "Available mental health services include psychiatric emergency/crisis, inpatient, and outpatient care. Your eligibility for County mental health programs is based on your behavioral health needs. You can learn about your eligibility for different services by calling the Behavioral Health Call Center at 1-800-704-0900.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fnamisantaclara.org%2Fresources%2D2%2Fcounty%2Dself%2Dhelp%2Dcenters%2F&rut=31eca7122fb5074144e1ceb91a3b8de5dbe3201bb7ca661c6793d7185cc2607e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:42:24.970527"
+    },
+    {
+      "topic": "mental health",
+      "title": "Inpatient Psychiatric Hospital | San Jose Behavioral Health",
+      "content": "The Leading Mental Health Hospital in San Jose, California Why Choose San Jose Behavioral Health? San Jose Behavioral Health is a supportive and nurturing environment providing clinically superior services to adults and adolescents struggling with mental health or behavioral health issues in the Silicon Valley area and surrounding communities.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sanjosebh.com%2F&rut=bd6d90effe4b0c77c011e8ee02d2ee6c7d9ff8d02a5b3bf94972980255053caf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:42:24.970583"
+    },
+    {
+      "topic": "augustine of hippo",
+      "title": "Shop augustine of hippo book - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on augustine of hippo book at Amazon.com. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DMxKxC7W6nLRJy%252DW2kgSQd%252DeheAUJJeeDrqXKGlsIyf0X_gV6ECE3P6gmy0FX6tg8wGeTx%252DjrSKoLzKy8yRoLmjHKtY0Zj%252DyouNFY4A0MHnf6qbq9KjpP8rdAZevaYHTK48G7SUimvudKK25Apcgp7dtP0UKsrl2PA7K8GLUY9gU.X2nGyT66_Z7e6o3DPzukcA%26rut%3D3b9b6553d5875a06dfdb2cd891b0d54cb8afcb4e123c93aeef28f6c7bf486353%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8hdpjxYxrSeEdoLmARfPhvTVUCUxR1XVSqZ%252D8SS2Mwuu4GHj7zNJggROEypFgasdjVhkvdcxqV%252D17u9tvsSyNIeX1336d4ZxTKZWq%252Dg7VuuM_lWeBiUsHqxutGm9J3We2LPqZQL4dRKyqGbnCKvr93gDx_mOLlTgTXdUCei8DUZb0BV0JNGIrMsUhKpU3GTaxEZmZwSYR4knNDW887cCPVnFJUOs%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGF1Z3VzdGluZSUyYm9mJTJiaGlwcG8lMmJib29rJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfMzFrdzg5bjFsNV9iJTI2YWRncnBpZCUzZDEyMjgxNTU1NjM5NjQzMjMlMjZodmFkaWQlM2Q3Njc1OTg1NjIwMzM2MCUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGIlMjZodmJtdCUzZGJiJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2MzAzJTI2aHZ0YXJnaWQlM2Rrd2QtNzY3NjAwNzUxNDcxODIlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDkzMTVfMTM2Mzk1NzglMjZtY2lkJTNkYjllYjRiYTZiZmExMzZhOGE5MmE1ZDQyZGVkZDE3YWUlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZGE0MmNkMjcyOTRmMjE5NjMyYTU0YmIyNTBiZTRkYTM3%2526rlid%253Da42cd27294f219632a54bb250be4da37%26vqd%3D4%2D326900438329356392243754084095085181652%26iurl%3D%257B1%257DIG%253D1664FCCFE5414BB692DCB0854C6F85DF%2526CID%253D38388EB77BBF63DA254398627A5B624F%2526ID%253DDevEx%252C5045.1&rut=a7da38ea905010414042fd0b07f846a23d7c2a1da5327c1e80cd16ac586c685c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T02:33:58.621497"
+    },
+    {
+      "topic": "augustine of hippo",
+      "title": "Augustine of Hippo - Wikipedia",
+      "content": "Augustine of Hippo (/ \u0254\u02d0\u02c8\u0261\u028cst\u026an / aw-GUST-in, US also / \u02c8\u0254\u02d0\u0261\u0259sti\u02d0n / AW-g\u0259-steen; [22] Latin: Aurelius Augustinus Hipponensis; 13 November 354 - 28 August 430) [23] was a theologian and philosopher, the bishop of Hippo Regius from Thagaste in Numidia Cirtensis, (present-day Souk Ahras, Algeria).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAugustine_of_Hippo&rut=a02e241dc6c2b21a3690ab0a8fb1a07cd807fc3c81ac1c516421cf56b3d7a39d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T02:33:58.621568"
+    },
+    {
+      "topic": "augustine of hippo",
+      "title": "St. Augustine | Of Hippo, Confessions, Philosophy, & Major Works ...",
+      "content": "St. Augustine (born November 13, 354, Tagaste, Numidia [now Souk Ahras, Algeria]\u2014died August 28, 430, Hippo Regius [now Annaba, Algeria]; feast day August 28) was the bishop of Hippo from 396 to 430, one of the Latin Fathers of the Church, and perhaps the most significant Christian thinker after St. Paul. Augustine's adaptation of classical thought to Christian teaching created a ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FSaint%2DAugustine&rut=0132039709fe5d94435641ed6ced236ac642353b84fd9ce84fab596809158217",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T02:33:58.621630"
+    },
+    {
+      "topic": "augustine of hippo",
+      "title": "Augustine of Hippo (Stanford Encyclopedia of Philosophy)",
+      "content": "Augustine of Hippo was perhaps the greatest Christian philosopher of Antiquity and certainly the one who exerted the deepest and most lasting influence. He is a saint of the Catholic Church, and his authority in theological matters was universally accepted in the Latin Middle Ages and remained, in the Western Christian tradition, virtually uncontested till the nineteenth century. The impact of ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Faugustine%2F&rut=47621b1c39fd78cf798a0b9086c8fcee649b8e0f466a21604a6b7e95f2aa36a5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T02:33:58.621677"
+    },
+    {
+      "topic": "augustine of hippo",
+      "title": "Augustine of Hippo - World History Encyclopedia",
+      "content": "Learn about the life and works of Augustine of Hippo, the greatest of the Christian Church Fathers and a key figure in Western theology and literature. Explore his conversion, his struggles with sin, his role as a bishop, and his legacy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.worldhistory.org%2FAugustine_of_Hippo%2F&rut=abe95c424d56872bf97774dcdd1d3c3be6357b94d1d593c64819c9cc33951119",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T02:33:58.621721"
+    },
+    {
+      "topic": "david hume",
+      "title": "David Hume - Wikipedia",
+      "content": "David Hume (/ hju\u02d0m /; born David Home; 7 May 1711 - 25 August 1776) was a Scottish philosopher, historian, economist and essayist who is known for his highly influential system of empiricism, philosophical scepticism and metaphysical naturalism. [1]",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDavid_Hume&rut=3742f7b3cc897b37c83b44fdc1849971808dda018e40636d8b9867044772238b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T09:11:37.098324"
+    },
+    {
+      "topic": "david hume",
+      "title": "David Hume | Biography, Philosophy, Empiricism, Skepticism, & Works ...",
+      "content": "David Hume, Scottish philosopher, historian, economist, and essayist known especially for his philosophical empiricism and skepticism. Despite the enduring impact of his theory of knowledge, Hume seems to have considered himself chiefly as a moralist. Learn more about his life and ideas in this article.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FDavid%2DHume&rut=62b5acd189f7b56bcdd8ccdf7fef0364f01d8b386195d5a4347a74ba56ac1f56",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T09:11:37.098383"
+    },
+    {
+      "topic": "david hume",
+      "title": "David Hume - Stanford Encyclopedia of Philosophy",
+      "content": "Although Hume's more conservative contemporaries denounced his writings as works of scepticism and atheism, his influence is evident in the moral philosophy and economic writings of his close friend Adam Smith. Kant reported that Hume's work woke him from his \"dogmatic slumbers\" (Prolegomena, Introduction) and Jeremy Bentham remarked that reading Hume \"caused the scales to fall ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fhume%2F&rut=9b4b825f4b8ae0680647b445cc0235e36c8e9006ffd41b302b45f8eb7343c4b2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T09:11:37.098446"
+    },
+    {
+      "topic": "david hume",
+      "title": "David Hume's Life and Works - The Hume Society",
+      "content": "Learn about the most important philosopher ever to write in English, David Hume (1711-1776), and his influential works on human nature, morality, and religion. Explore his early life, education, travels, controversies, and legacy in this comprehensive overview.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fhumesociety.org%2Fabout%2Fhume&rut=e94278a7997394fd96fb8ab9575e2cb2edb7026c7e98418eafa7b09a87ed5a82",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T09:11:37.098493"
+    },
+    {
+      "topic": "david hume",
+      "title": "Hume, David | Internet Encyclopedia of Philosophy",
+      "content": "A comprehensive overview of the life and work of Scottish philosopher David Hume, who challenged common notions of personal identity, causality, religion, morality, and more. Learn about his skeptical approach, his major writings, and his influence on philosophy and history.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fhume%2F&rut=cb84fabdd74eb42749ffa2e605ea93d7fe11e1d1e0317268a08ca8fff2178cf3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T09:11:37.098846"
+    },
+    {
+      "topic": "georg hegel",
+      "title": "Georg Wilhelm Friedrich Hegel - Wikipedia",
+      "content": "Georg Wilhelm Friedrich Hegel[a] (27 August 1770 - 14 November 1831) was a German philosopher and a major figure in the tradition of German idealism. His influence on Western philosophy extends across a wide range of topics\u2014from metaphysical issues in epistemology and ontology, to political philosophy, to the philosophy of art and religion.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGeorg_Wilhelm_Friedrich_Hegel&rut=6c29ed36bc211e3bbcb0e23483b988fb43b5531c9b6151a533e8c7045fde7cbd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:37:20.020911"
+    },
+    {
+      "topic": "georg hegel",
+      "title": "Georg Wilhelm Friedrich Hegel | Biography, Books, & Facts | Britannica",
+      "content": "Georg Wilhelm Friedrich Hegel, German philosopher who developed a dialectical scheme that emphasized the progress of history and of ideas from thesis to antithesis and thence to a synthesis. He was the last of the great philosophical system builders of modern times. Learn more about Hegel's life and work.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FGeorg%2DWilhelm%2DFriedrich%2DHegel&rut=8f3646278dd85d17e38cf9fbb19a54fc51be0cc7a5b4376451f7ae6088a2d8b7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:37:20.021038"
+    },
+    {
+      "topic": "georg hegel",
+      "title": "Georg Wilhelm Friedrich Hegel - Stanford Encyclopedia of Philosophy",
+      "content": "Along with J.G. Fichte and, at least in his early work, F.W.J. von Schelling, Georg Wilhelm Friedrich Hegel (1770-1831) belongs to the period of German idealism in the decades following Kant. The most systematic of the idealists, Hegel attempted, throughout his published writings as well as in his lectures, to elaborate a comprehensive and systematic philosophy from a purportedly logical ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fhegel%2F&rut=11d92d95df1e31b7767929ff2b084ddfc10097f9a16cf9246393ed56c11e546a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:37:20.021107"
+    },
+    {
+      "topic": "georg hegel",
+      "title": "Hegel: Social and Political Thought - Internet Encyclopedia of Philosophy",
+      "content": "An overview of the life and works of Georg Wilhelm Friedrich Hegel, one of the greatest systematic thinkers in Western philosophy. Learn about his views on history, society, and the state, and his concepts of freedom, reason, self-consciousness, and recognition.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fhegelsoc%2F&rut=947433cfd047b3a86d8f53fef7b06bc5b68180ced419cdaf8e3b148be0aff81b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:37:20.021170"
+    },
+    {
+      "topic": "edmund husserl",
+      "title": "Shop edmund husserl - Amazon.com Official Site",
+      "content": "Find deals and low prices on edmund husserl at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DLiPlOPzeqKEOls91cdnGfEP1wNsfY%252DsyHJa3oJKVq9njpj_Lv6vFnBS34sKDCmMdIQrO1gc7RWmDJSaycda7lOHRu3vV_Rg6mNQj7IBRIfjoa7yYAoU7CFkyWFjRn8i%252DoH5E_mnzt2X2NsMOcMvNAhwxfysI7_x4Gj_qDt_sby0.UNKJReaZKIMHqa6FuwYOnA%26rut%3D58e4b0b8331e409d64bc2e58ffc9adc28398c03f22bf6a60f81fddf97c7d7357%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8%252Dbpupqwqp7AcqHpoVeqg%252DTVUCUwSJhNcfdEHJqmjmdQ_TSUrZieolGYHfPPVTpl5As1jQ1dJ%252DUyJSAqEWnBYV1Gu3GzKF%252DHqXuchLqDXiyeUsCMMDu568lAq7ccU%252D5Y%252D_ieReF7O%252DpxS11U6l3lRNLdy%252Dq3uLLVX6Z6zx9iJpktawCLT2H0bC5r3t5V2zJ4Ffkeu604KC07s_WQRDTSsWmLyoz0%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGVkbXVuZCUyYmh1c3NlcmwlMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF84NmNrOXM4amFyX3AlMjZhZGdycGlkJTNkMTIyOTI1NDMzMDAzMTUwOCUyNmh2YWRpZCUzZDc2ODI4NTYxNjk4NDMzJTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkZSUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY0NDglMjZodnRhcmdpZCUzZGt3ZC03NjgyODY1NTI5NTE4NSUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkMjgyNDJfMTQ2Mzg0OTUlMjZtY2lkJTNkNDQ4MmI0OGYzM2E4M2M3ZjkxYWJhZmI3YjI5ZjMzODElMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZGQ2NzU0NmQxNzI5ZTE0YzE1MmJiMmY4OTYyNjBjYjg2%2526rlid%253Dd67546d1729e14c152bb2f896260cb86%26vqd%3D4%2D53726052432347189210639446136091386742%26iurl%3D%257B1%257DIG%253D3BE1FA6E44F640DAA7CEA89C07407DAD%2526CID%253D1BA9D8F3F888625C1FB9CE26F95D63FF%2526ID%253DDevEx%252C5045.1&rut=8b36a27f7347b6d919681a4939e79d564b180b1824893fc0c0b1893bf9175736",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:39:59.057722"
+    },
+    {
+      "topic": "edmund husserl",
+      "title": "Learn Phenomenology - Edmund Husserl & Phenomenology",
+      "content": "Prepare for Your Edmund Husserl & Phenomenology with Our Practice Tests and Tutorials. Works with Your Schedule, Not in the Classroom. Start Today!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstudy.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DVRQf0zaILVi%252DSV_%252DGccmZDmfF%252D8Y8Z%252D0bSN9F_uaaVun6kOWrItoRNE%252DOTbv5p19Ae_kRVRFLmAWvP6AxXyEe7elXPZxpGTBJPfLCMQi4DSuyRagB3A%252DnXFc9tGCB7Pk4XD9QSS8LP3uGNFenwx9QpfyN0AW3eqQdamWzXFgOMo.%252DYgAUCpm_EfigHVzn9kyIA%26rut%3D8f6ddc4e1ccdf5e6b6161573f22b928ef446581c3899ff2efc057dabce2d7970%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De83wfckiOm5txCJD9aowt0xTVUCUzpS13rFdWHVENNoIZ7EjzkaZx1zgDJhsTTlmU7zWrE52Tec999XYqaD6Ke0TCO9%252Dpn2TAEUlzgfPR8PMDtUH4FwhbKapvbV6j3EiyZZNb5mIrqgMesQbW%252D2U_vfXgX3fWHgW%252De2aaqy0yc1VlTrMMNv_zXjbMEqHGPYmgQDjIVkwxBmXzfj4HhHY7%252DhB14Gj0%2526u%253DaHR0cHMlM2ElMmYlMmZzdHVkeS5jb20lMmZidXklMmZhY2FkZW15JTJmbGVzc29uJTJmZWRtdW5kLWh1c3NlcmwtcGhlbm9tZW5vbG9neS5odG1sJTNmc3JjJTNkcHBjX2Jpbmdfbm9uYnJhbmQlMjZyY250eHQlM2Rhd3MlMjZjcnQlM2QlMjZrd2QlM2RTRU8tUFBDLUJVWSUyNmt3aWQlM2RkYXQtMjMyOTA0MDUwNTg4Njk0MCUzYWxvYy0xOTAlMjZhZ2lkJTNkMTIzNTg1MTMwMjU5Njc0NiUyNm10JTNkYiUyNmRldmljZSUzZGMlMjZuZXR3b3JrJTNkcyUyNl9jYW1wYWlnbiUzZFNlb1BQQyUyNm1zY2xraWQlM2RlMzMxYWM1ZDM1Y2UxNTg5NmZiNWM1MDUyNTMwNjA5Yg%2526rlid%253De331ac5d35ce15896fb5c5052530609b%26vqd%3D4%2D334800636251013315840086808020681169226%26iurl%3D%257B1%257DIG%253D3BE1FA6E44F640DAA7CEA89C07407DAD%2526CID%253D1BA9D8F3F888625C1FB9CE26F95D63FF%2526ID%253DDevEx%252C5049.1&rut=71694c0a721bcf4179c7a17137166fd45d1fc91fe28e32ccce8acc35187fde3e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:39:59.057815"
+    },
+    {
+      "topic": "edmund husserl",
+      "title": "Edmund Husserl - Wikipedia",
+      "content": "A comprehensive overview of the life and work of Edmund Husserl, the founder of phenomenology and a prominent philosopher and mathematician. Learn about his biography, education, contributions, influences, and legacy in 20th-century philosophy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEdmund_Husserl&rut=16edf6f432f1e7fd57ea5e9b966bc59536bd1e5e8c5fef0803571d81e0f48549",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:39:59.057876"
+    },
+    {
+      "topic": "edmund husserl",
+      "title": "Edmund Husserl - Stanford Encyclopedia of Philosophy",
+      "content": "Edmund Husserl (1859-1938) is the founding father of phenomenology and a figure with a decisive impact on the development of twentieth century philosophy. He influenced not only thinkers like Martin Heidegger, Edith Stein, Maurice Merleau-Ponty and Jean-Paul Sartre, but also many other figures in European philosophy. Husserl is primarily known for his analyses of intentionality, perception ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fhusserl%2F&rut=c4ca9a67eb21318bd8afbe2b6bd96c17d69c2576918a989b9062bce4938dd30e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:39:59.057940"
+    },
+    {
+      "topic": "edmund husserl",
+      "title": "Edmund Husserl | German Philosopher & Founder of Phenomenology | Britannica",
+      "content": "Edmund Husserl (born April 8, 1859, Prossnitz, Moravia, Austrian Empire [now Prost\u011bjov, Czech Republic]\u2014died April 27, 1938, Freiburg im Breisgau, Ger.) was a German philosopher, the founder of Phenomenology, a method for the description and analysis of consciousness through which philosophy attempts to gain the character of a strict science. The method reflects an effort to resolve the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FEdmund%2DHusserl&rut=0e95e0ea477984d95851135236be622ea2b4d72a7f4af05b893c3042261bf257",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:39:59.058183"
+    },
+    {
+      "topic": "martin heidegger",
+      "title": "Shop martin heidegger - Amazon.com Official Site",
+      "content": "Browse & discover thousands of brands. Read customer reviews & find best sellers. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Df9n9gsDhWiHijOWcxmR8bWeK4vX_67UvUH%252D17VZZuj2wJ5dSNukFDAtI5u6Y9HBgBw2BsnD1kCUlJafj5KzXkPZwZGdM80%252Dn3w_9qCOMI9vwQxa_Wkcbm4Q5FIRFHnkpZLYAwAmsWfOJDvW_K5V0sMBwcgliO6Udp%252DvI7EKkb7Y.l1FXvJirS9k%252DKIvldl1vmg%26rut%3D77f1e697923f32fa2bebb0f2cf76bff6a3d9b50d50a0d94ed821a2fb05f14159%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De85JbJ%252DDeW9hUuOPpHfmq_bjVUCUxoTXlBY%252DvJ57Sji4pSY6iyMz2Vi03pUcr_n3ji2hunuxNQEeg5AGG2lI2m2m7fP4ux6%252DvgVeIFEiEEl%252DgchcTLgqR7qNOiltuoqV6JG614SvvI_zlH35nQf9MUySdnGe6Ad2So3n07A%252DMOauF%252DSp8nXOxrkreORt9egiAQ8E5RD%252DXNREfDD7akVFv%252DWHX95pc%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZG1hcnRpbiUyYmhlaWRlZ2dlciUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzNsZXUzejFqczNfcCUyNmFkZ3JwaWQlM2QxMjI4MTU0Nzk4NTk5NzE1JTI2aHZhZGlkJTNkNzY3NTk4NDEzOTc3MzIlMjZodm5ldHclM2RzJTI2aHZxbXQlM2RlJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjY1MyUyNmh2dGFyZ2lkJTNka3dkLTc2NzU5OTA5MTc3OTIxJTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QyODI0MF8xNDYzODA0MyUyNm1jaWQlM2QzMDJhNjQzYWFmY2UzOWVmYmIxZmRhYzAyNzYzYzUwNSUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkMmVlOTFhMzMzYzA5MWY1MjliZDA3MzZiMmQxNzExNTQ%2526rlid%253D2ee91a333c091f529bd0736b2d171154%26vqd%3D4%2D251307664591198036573240347400447720914%26iurl%3D%257B1%257DIG%253DE55E4FD0EF2E40968ED82678B2F2CD37%2526CID%253D16EC2A79FF13633E36C73CACFE846219%2526ID%253DDevEx%252C5045.1&rut=70efab0a90d2dea9d4173280bdb68ee011a93d2f091ed202d20fb599f042494d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:40:30.505618"
+    },
+    {
+      "topic": "martin heidegger",
+      "title": "Martin Heidegger - Learn Heidegger",
+      "content": "Buy Martin Heidegger's Life, Books & Legacy Courses Online Today! Find the Right Course for You with Our Large Selection of Options to Choose From.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstudy.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DguUCTgnSoANi21crvXEoHYSIITLRYqnZgk1CF_zE%252D766I5yn7TFMmgmZ9rMvHwpv_1YKGSLXoY2WTQtTuxbCfrMq2XTbfCDb4_UvMzp2rE7Tk0QkgNO93d9chwflQqGQ4gnagGRemvgWBeb6TEsc2zHW%252DIOpmFDYwV1toHT1DQI.qxtzZjApTf8_pxut9f2mhA%26rut%3D97bfeb96033dc07e47e849f4aa4ca78b3be1a5f66ef3c8484d6449356244f089%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8zh47iDgMlqQ0GZo%252DLX3MWDVUCUw5GSPm%252DesGLCpPOXhIjSDeoKvyn7GHxE%252DXLxetmvGCiehSTatioFTd5jrNEo_cKnTsXlTVfuihRYk3Y%252D_d3eRa4Oxopbdr1gFLC1yVRQX7Glt6jJbbq8xdXa2cyO5iTOnBRQvsJ3bfuQ1plRnZMvdVhe8LI0HpysdNAHeiohtZKi6ASQwq0loP_86_eG7CatE%2526u%253DaHR0cHMlM2ElMmYlMmZzdHVkeS5jb20lMmZidXklMmZhY2FkZW15JTJmbGVzc29uJTJmbWFydGluLWhlaWRlZ2dlci1saWZlLXBoaWxvc29waHktYm9va3MuaHRtbCUzZnNyYyUzZHBwY19iaW5nX25vbmJyYW5kJTI2cmNudHh0JTNkYXdzJTI2Y3J0JTNkJTI2a3dkJTNkU0VPLVBQQy1CVVklMjZrd2lkJTNkZGF0LTIzMjkwNDA1MDU4ODY5NDAlM2Fsb2MtMTkwJTI2YWdpZCUzZDEyMzU4NTEzMDI1OTY3NDYlMjZtdCUzZGIlMjZkZXZpY2UlM2RjJTI2bmV0d29yayUzZHMlMjZfY2FtcGFpZ24lM2RTZW9QUEMlMjZtc2Nsa2lkJTNkZjVhOWRiYmQwZGZiMTUwNTYxODViMmU1MWNlNTAzMWI%2526rlid%253Df5a9dbbd0dfb15056185b2e51ce5031b%26vqd%3D4%2D90006823894732578269871007006119045710%26iurl%3D%257B1%257DIG%253DE55E4FD0EF2E40968ED82678B2F2CD37%2526CID%253D16EC2A79FF13633E36C73CACFE846219%2526ID%253DDevEx%252C5049.1&rut=d4b71f73a8921b234cb61750adcb4c8485abfd2f8b7d13addd77d5925c35ae90",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:40:30.505691"
+    },
+    {
+      "topic": "martin heidegger",
+      "title": "Martin Heidegger - Wikipedia",
+      "content": "Martin Heidegger[a] (German: [\u02c8ma\u0281ti\u02d0n \u02c8ha\u026ad\u025b\u0261\u0250]; 26 September 1889 - 26 May 1976) was a German philosopher known for contributions to phenomenology, hermeneutics, and existentialism. His work covers a range of topics including metaphysics, art, religion, and language. In April 1933, Heidegger was elected as rector at the University of Freiburg and has been widely criticized for his ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMartin_Heidegger&rut=0e2cbce5aceb17ca6ddcd77c3579f642d4acfb7cd533508b7e7c0300994537de",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:40:30.505765"
+    },
+    {
+      "topic": "martin heidegger",
+      "title": "Martin Heidegger - Stanford Encyclopedia of Philosophy",
+      "content": "Martin Heidegger (1889-1976) is a central figure in the development of twentieth-century European Philosophy. His magnum opus, Being and Time (1927), and his many essays and lectures, profoundly influenced subsequent movements in European philosophy, including Hannah Arendt's political philosophy, Jean-Paul Sartre's existentialism, Simone de Beauvoir's feminism, Maurice Merleau-Ponty ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fheidegger%2F&rut=b5a99f54a8af158796740eddb21214fe3774b76d00bd52eb35cc2a5617db2e35",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:40:30.505836"
+    },
+    {
+      "topic": "martin heidegger",
+      "title": "Martin Heidegger | Books, Philosophy, Religion, Being and Time, Hannah ...",
+      "content": "Martin Heidegger (1889-1976) was a German philosopher whose groundbreaking work in ontology and metaphysics determined the course of 20th-century philosophy on the European continent and exerted an enormous influence on virtually every other humanistic discipline, including literary criticism, hermeneutics, psychology, and theology.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FMartin%2DHeidegger%2DGerman%2Dphilosopher&rut=6e6d32eb1025f1b0e079dd5d1bdb6545cf831f6ea34b5b9f3f785a6a70e9d08d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:40:30.505889"
+    },
+    {
+      "topic": "haneda airport",
+      "title": "Haneda Airport - Filter for direct flights - Flights to Tokyo",
+      "content": "Haneda Airport. Filter results for your perfect trip. Book flights easily. Better deals with one easy search. Compare cheap flights to find your best fit.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dkayak.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D9%252Dy1TeW8NR5rqPDVQ0J9clcir48oKXtlpT81t4_wptqcMvJnPYc6B9bunTt5STH5zbFYFg6D2VlSAigqEJU%252DNKUrmdsYIROaNiWnHt6Fcul78fMYinRM1ldse8a2BGPlFXXm8eWl_7kL5eG_VXBM0uL3%252Darr1XLQX8_OQB2d528.b6R7GyP8o0u7M%252Di9HKZVsA%26rut%3Def65eb47971dac0f218ef9aeda23503e0a48823bb862e542773266353f9ece3e%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8Lhn1Vh89bh2Kdy1VR%252DDcDzVUCUxfj4%252Dscq4E30p%252D68_os_RXZlfmgUVf968lJAv0Yu9%252DpmQLpLIxafXBL06II%252DKbC1LMxDVKvigSkjFZi08xOd4h0zpyCU1QIIpSWnogF7f8gsibypG9YD1kZJUo0NvfiKeYC3KVkeYP5A8C9BaJ1yZIJssTdeeoyKhOrcah414M7q_A4RRq66mfgmA_vYJeeLQ%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cua2F5YWsuY29tJTJmc2VtaSUyZmJpbmdhZHNzZWFyY2glMmZmbGlnaHRfZGVzdGluYXRpb24lMmZITkQlMmZlbi5odG1sJTNmdGFncyUzZHQlMjUzQTQyNCUyNm10JTNkZSUyNmJtdCUzZGJlJTI2b2lpZCUzZDc4MzQwNTc2NTM3OTI4JTI2YWlkJTNkMTI1MzQ0Mzg1ODA3Mzk0NiUyNmFkaWQlM2Q3ODM0MDQxNzQ3MDU2MiUyNnBpZCUzZCUyNnRpZCUzZGt3ZC03ODM0MDU3NjUzNzkyOCUzYWxvYy0xOTAlMjZkJTNkYyUyNm4lM2RzJTI2Y21waWQlM2QzOTY3MzIwNjUlMjZtc2Nsa2lkJTNkYzIxYjQ3MGE1OWZiMTg0NzU3YzcyZTUyNDgxZjcxMzYlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2REZXN0aW5hdGlvbiUyNTIwLSUyNTIwSlAlMjUyMC0lMjUyMFRva3lvJTI1MjAtJTI1MjBDaXR5JTI1MjMyMTAzMyUyNnV0bV90ZXJtJTNkaGFuZWRhJTI1MjBhaXJwb3J0JTI2dXRtX2NvbnRlbnQlM2RBaXJwb3J0JTI1MjAtJTI1MjBobmQlMjUyMGFpcnBvcnQlMjUyMC0lMjUyMFQlMjUzRG5vbmUlMjUyMC0lMjUyMFAlMjUzRGFpcnBvcnQlMjUyMC0lMjUyMEQlMjUzREFpcnBvcnQlMjUyM0hORCUyNTIwLSUyNTIwUyUyNTNETm9uZQ%2526rlid%253Dc21b470a59fb184757c72e52481f7136%26vqd%3D4%2D97329972800023478776944608481579574964%26iurl%3D%257B1%257DIG%253D352587DEE4A241B092D6CC2F8E7EC66C%2526CID%253D1B80C9E236AF696211D2DF37374B6841%2526ID%253DDevEx%252C5046.1&rut=bfafe67232eceedcea390b20de285c75f0bf267d47881f5df90d449e9e73e130",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:43:48.831642"
+    },
+    {
+      "topic": "haneda airport",
+      "title": "Haneda Airport - Filter for direct flights - Flights to Tokyo",
+      "content": "Haneda Airport. Filter results for your perfect trip. Book flights easily. Better deals with one easy search. Compare cheap flights to find your best fit.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dcheapflights.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DWsbngB86tPDAHs%252Dq9ZDaLalwBulUVnG45HV1gNl_vMQxBJMR%252DVNZ9CEpUlRMDkNBpGIvWQs7%252DTPJwaWcrhl_7h5%252DbaX9GPfT_BHHVLhIoIs4nyZQhOJCyAiP4MI3doFuEOGSP%252DPD_sTO6eqirJZtzofqN2iOPKJfhAfdHqXpdgQ.1pda1J6KizU7VOlkmA_u_Q%26rut%3D1796657ed4c8f350df2e5a65441d70bf24bcee7d6c753b9c2c66715414f84e53%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8QIn92X0vfanQCdrADjE_cDVUCUyM9aOZZoI7YQcyMYwqoBrwnjr7aKaneontXvmL8DjIfD9GFxHN1lbdU4LI807AcGo4LhYNBCG4kqdv2Q1O1oY98RbDDAYv4I6uknz9NVY7Ime3rws%252DLJMQOvLhsb_t3yB54xDFpEtpQAAoqtpSYMWGa9SzmzfL%252DgiHbGn3Cy1fPaSz9zY9X7VOArL1u2MBOA4%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuY2hlYXBmbGlnaHRzLmNvbSUyZnNlbWklMmZiaW5nYWRzc2VhcmNoJTJmZmxpZ2h0X2Rlc3RpbmF0aW9uJTJmSE5EJTJmZW4uaHRtbCUzZm10JTNkZSUyNmJtdCUzZGJlJTI2b2lpZCUzZDc0OTczMjE0NjY2MzEzJTI2YWlkJTNkMTE5OTU2Nzk0OTk5NDgyNSUyNmFkaWQlM2Q3Mjc3NDM5MDQ2OTA0MyUyNnBpZCUzZCUyNnRpZCUzZGt3ZC03NDk3MzIxNDY2NjMxMyUzYWxvYy0xOTAlMjZkJTNkYyUyNm4lM2RzJTI2Y21waWQlM2Q0MjE4MzE5NjElMjZtc2Nsa2lkJTNkMTk3MDAyNjVkNWU5MWUwZWExZTA2YjNkYzQwZDdhMzIlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2REZXN0aW5hdGlvbiUyNTIwLSUyNTIwSlAlMjUyMC0lMjUyMFRva3lvJTI1MjAtJTI1MjBDaXR5JTI1MjMyMTAzMyUyNnV0bV90ZXJtJTNkaGFuZWRhJTI1MjBhaXJwb3J0JTI2dXRtX2NvbnRlbnQlM2RUJTI1M0RhaXJwb3J0JTI1MjAtJTI1MjBQJTI1M0Rub25lJTI1MjAtJTI1MjBPJTI1M0ROb25lJTI1MjAtJTI1MjBEJTI1M0RBaXJwb3J0JTI1MjNITkRfSE5EJTI1MjAtJTI1MjBTJTI1M0Rub25l%2526rlid%253D19700265d5e91e0ea1e06b3dc40d7a32%26vqd%3D4%2D187151917829919317368404306830283648948%26iurl%3D%257B1%257DIG%253D352587DEE4A241B092D6CC2F8E7EC66C%2526CID%253D1B80C9E236AF696211D2DF37374B6841%2526ID%253DDevEx%252C5051.1&rut=1f8bc5958eb691330e9d2d84c666ba8fba43fcc34c2e8565fe97391b5269c74d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:43:48.831679"
+    },
+    {
+      "topic": "haneda airport",
+      "title": "Haneda Airport Passenger Terminal",
+      "content": "Haneda Airport Official website provides useful information for those visiting the airport, including the latest Flights information, services such as shopping and restaurants, and how to Access.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Ftokyo%2Dhaneda.com%2Fen%2F&rut=6990f2839bd9e6dbe2db003d0a413fcec159d4dbe2d70c452f3ff51e363d91b7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:43:48.831707"
+    },
+    {
+      "topic": "haneda airport",
+      "title": "Haneda Airport - Wikipedia",
+      "content": "Haneda Airport is the busier of the two international airports serving the Greater Tokyo Area, and the primary domestic base of Japan's major airlines. Learn about its history from a naval base to a modern airport, its facilities, and its statistics of passengers, flights, and destinations.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHaneda_Airport&rut=7d5fbe9b906dc54804172fd5679d928a0bb89ebb098e8797505279e4de2ad3fe",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:43:48.831734"
+    },
+    {
+      "topic": "haneda airport",
+      "title": "Haneda Airport - getting there, terminal info, and more",
+      "content": "Learn how to get to Haneda Airport from Tokyo and other cities, and explore the facilities and services at each terminal. Find out about Wi-Fi, SIM cards, luggage storage, observation decks, and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.gotokyo.org%2Fen%2Fplan%2Fairport%2Daccess%2Fhaneda%2Dairport%2Findex.html&rut=97063a7e003be9f1cbcdeae7d56401e351543c62b86d16cf1108867fbf6edc9d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:43:48.831760"
+    },
+    {
+      "topic": "hypothesis testing",
+      "title": "Statistical hypothesis test - Wikipedia",
+      "content": "A statistical hypothesis test is a method of statistical inference used to decide whether the data provide sufficient evidence to reject a particular hypothesis. A statistical hypothesis test typically involves a calculation of a test statistic. Then a decision is made, either by comparing the test statistic to a critical value or equivalently by evaluating a p -value computed from the test ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FStatistical_hypothesis_test&rut=184dccd998a86d6d9d1eb20dfe9c7993ead0173c2357939256b2152b3c1218b2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:46:09.240531"
     }
   ],
-  "last_updated": "2025-11-30T16:20:07.046389"
+  "last_updated": "2026-01-02T11:46:09.248525"
 }

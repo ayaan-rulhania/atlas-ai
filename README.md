@@ -4,15 +4,17 @@
 
 Atlas AI is a sophisticated AI assistant platform powered by **Thor 1.1** (latest) with **Thor 1.0** available in stable mode. The platform provides a unified chat interface, continuous learning capabilities, and advanced features for knowledge management and conversation handling.
 
-**Latest Updates (Version 1.4.4 - 2024-12-24):**
-- ✅ Response caching system for faster repeated queries (5-minute TTL)
-- ✅ Improved response quality with better error handling and fallbacks
-- ✅ Enhanced input validation and sanitization for security
-- ✅ Rate limiting protection (60 requests per minute per IP)
-- ✅ Security headers (XSS protection, content type options, frame options)
-- ✅ Better error handling and recovery mechanisms
-- ✅ Performance optimizations for faster response times
-- ✅ Improved model fallback system (Thor 1.0 backup when 1.1 fails)
+**Latest Updates (Version 1.4.5 - 2024-12-24):**
+- ✅ Thor 1.1 Major Enhancement - Multi-step autoregressive text generation (up to 512 tokens)
+- ✅ Advanced decoding strategies - nucleus sampling, top-k filtering, temperature control
+- ✅ Repetition penalty system - reduces repetitive outputs for better quality
+- ✅ Enhanced prompt engineering - better context understanding and query type detection
+- ✅ Improved model architecture - increased capacity (1280 hidden size, 20 layers, 20 attention heads)
+- ✅ Extended context window - 2048 tokens (doubled) for longer conversations
+- ✅ Better knowledge integration - knowledge items added directly to generation context
+- ✅ Enhanced reasoning capabilities - multi-step thinking for complex queries
+- ✅ Improved response quality - post-processing for coherence and completeness
+- ✅ Better conversation context - uses up to 8 previous messages for context
 - ✅ Cross-chat memory system - Atlas remembers your preferences and information across all chats
 - ✅ Enhanced command system - Added /help, /clear, /remember, /forget, /info, /think, /tone commands
 - ✅ Improved "How to use Atlas" pop-up - Beautifully redesigned with comprehensive sections
@@ -409,7 +411,7 @@ A: Answer.
 
 ## 📄 License
 
-This project is released under the **Atlas AI Internal Use License**
+This project is licensed under the **Apache 2.0 License**. See the [LICENSE](LICENSE) file for details.
 (`LICENSE` in the repo root). In short: internal evaluation and research
 use are allowed; redistribution, commercial hosting, or model-training
 derivatives outside this project are prohibited without written
@@ -546,8 +548,7 @@ CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "chatbot.app:app"]
 3. Update documentation for new features
 4. Test changes thoroughly before committing
 
-## 📄 License
-This software is Proprietary and Confidential (P&C). The Licensor grants the 
+ The Licensor grants the 
 Licensee a limited, non-exclusive, and non-transferable right to Use the compiled, 
 object-code version of this software solely for its intended purpose. The Licensee
 is strictly prohibited from accessing, viewing, copying, distributing, or 

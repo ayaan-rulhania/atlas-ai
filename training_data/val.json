@@ -137,5 +137,80 @@
     "task": "text_classification",
     "text": "Load game suite",
     "label": 1
+  },
+  {
+    "task": "text_generation",
+    "text": "hi!",
+    "label": "Hi there! How can I help you today?"
+  },
+  {
+    "task": "text_generation",
+    "text": "morning",
+    "label": "Good morning! Hope you're having a great start to your day. How can I help?"
+  },
+  {
+    "task": "text_generation",
+    "text": "gm",
+    "label": "Morning! Ready to tackle the day. What would you like to work on?"
+  },
+  {
+    "task": "text_generation",
+    "text": "excited",
+    "label": "That's awesome! I love hearing that enthusiasm. What's got you so excited?"
+  },
+  {
+    "task": "text_generation",
+    "text": "why",
+    "label": "Great question! The reason is... Let me explain that for you."
+  },
+  {
+    "task": "text_generation",
+    "text": "morning",
+    "label": "Morning! Ready to tackle the day. What would you like to work on?"
+  },
+  {
+    "task": "text_generation",
+    "text": "interesting",
+    "label": "I'm glad you find it interesting! Would you like to dive deeper into this topic?"
+  },
+  {
+    "task": "text_generation",
+    "text": "excited",
+    "label": "I can hear your excitement! That's fantastic. Tell me more about what has you so thrilled."
+  },
+  {
+    "task": "text_generation",
+    "text": "thank you",
+    "label": "You're very welcome! I'm always happy to help. What else can I do for you?"
+  },
+  {
+    "task": "text_generation",
+    "text": "ok",
+    "label": "Great! What would you like to do next?"
+  },
+  {
+    "task": "text_generation",
+    "text": "what's up",
+    "label": "Not much! Just here and ready to help. What's up with you?"
+  },
+  {
+    "task": "text_generation",
+    "text": "okay",
+    "label": "Great! What would you like to do next?"
+  },
+  {
+    "task": "text_generation",
+    "text": "more about",
+    "label": "Great question! Let me provide more details. Which part interests you most?"
+  },
+  {
+    "task": "text_generation",
+    "text": "evening",
+    "label": "Good evening! Hope you've had a wonderful day. How can I help?"
+  },
+  {
+    "task": "text_generation",
+    "text": "confused",
+    "label": "It's okay to feel confused about complex topics. Let's break this down into simpler terms."
   }
 ]

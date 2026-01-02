@@ -98,7 +98,16 @@
     "foundation",
     "frame",
     "friendship",
-    "future"
+    "future",
+    "flamingo",
+    "fermion",
+    "find",
+    "fission",
+    "forces",
+    "flying",
+    "formation",
+    "friedrich",
+    "fourier"
   ],
   "knowledge": [
     {
@@ -2893,7 +2902,916 @@
       "query": "what is life state Newton's first law of matter state Newton's first law of matter",
       "source": "research",
       "learned_at": "2025-11-28T15:46:50.987315"
+    },
+    {
+      "topic": "ryan flamingo",
+      "title": "Ryan Flamingo - Wikipedia",
+      "content": "Ryan Flamingo (born 31 December 2002) is a Dutch professional footballer who plays as a central defender for Eredivisie club PSV. [1]",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRyan_Flamingo&rut=f417ba06aaaceca186fcee5a75de8ed69151bdf1b2e932b0f537b29bbd646558",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:22:45.530181"
+    },
+    {
+      "topic": "ryan flamingo",
+      "title": "Ryan Flamingo - FBref.com",
+      "content": "Check out the latest domestic and international stats, match logs, goals, height, weight and more for PSV Eindhoven, FC Utrecht and Vitesse Arnhem playing for Ryan Flamingo in the Eredivisie and Champions League",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Ffbref.com%2Fen%2Fplayers%2F1787acb3%2FRyan%2DFlamingo&rut=89f0a1b612269f4f9d42c360670e2c87c357f6b1fdcea5de5953e50e6a7c5bb0",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:22:45.530224"
+    },
+    {
+      "topic": "ryan flamingo",
+      "title": "Ryan Flamingo - Player profile 25/26 | Transfermarkt",
+      "content": "Ryan Flamingo, 22, from Netherlands PSV Eindhoven, since 2024 Centre-Back Market value: \u20ac20.00m * 31/12/2002 in Blaricum, Netherlands",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.transfermarkt.com%2Fryan%2Dflamingo%2Fprofil%2Fspieler%2F586429&rut=c99e37107986aac888171f9e64e4ed10690ee88519ad60fd06aa78d2d89fa5e6",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:22:45.530255"
+    },
+    {
+      "topic": "ryan flamingo",
+      "title": "Ryan Flamingo - PSV Eindhoven Defender - ESPN",
+      "content": "View the profile of PSV Eindhoven Defender Ryan Flamingo on ESPN. Get the latest news, live stats and game highlights.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.espn.com%2Fsoccer%2Fplayer%2F_%2Fid%2F304478%2Fryan%2Dflamingo&rut=7b5c88f40b9869fe1cfcb920d0c48f7db99a6f8d57eae988131b5a18b939abb6",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:22:45.530282"
+    },
+    {
+      "topic": "ryan flamingo",
+      "title": "Ryan Flamingo | PSV | UEFA Champions League 2025/26",
+      "content": "Visit UEFA.com for all the latest UEFA Champions League news and statistics on Ryan Flamingo. UEFA.com is the official site of the world's greatest club competition.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.uefa.com%2Fuefachampionsleague%2Fclubs%2Fplayers%2F250189506%2D%2Dryan%2Dflamingo%2F&rut=1af5d535126710a491bb12f99390b2f1b54f87893043c33a4a0a38a785e57bb2",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:22:45.530310"
+    },
+    {
+      "topic": "activation function",
+      "title": "Activation function - Wikipedia",
+      "content": "Logistic activation function In artificial neural networks, the activation function of a node is a function that calculates the output of the node based on its individual inputs and their weights. Nontrivial problems can be solved using only a few nodes if the activation function is nonlinear. [1] Modern activation functions include the logistic (sigmoid) function used in the 2012 speech ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FActivation_function&rut=c91c3d38fdd88da86d17f5b9bc3ddb826a11d73e416174a56d940ca6df67244d",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:47:37.799535"
+    },
+    {
+      "topic": "activation function",
+      "title": "Introduction to Activation Functions in Neural Networks",
+      "content": "Activation functions are essential in deep learning because they enable neural networks to capture non-linear relationships within data. Real-world problems\u2014such as image recognition, speech processing, and sentiment analysis\u2014are inherently non-linear, and activation functions like ReLU, sigmoid, and tanh make it possible to model these complexities effectively.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.datacamp.com%2Ftutorial%2Fintroduction%2Dto%2Dactivation%2Dfunctions%2Din%2Dneural%2Dnetworks&rut=f2a25848e9638353bd5447ab0456a2f2eb01f1ac6d8b1adb5ff25e1f66d6cfd4",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:47:37.799999"
+    },
+    {
+      "topic": "activation function",
+      "title": "Activation functions in Neural Networks - GeeksforGeeks",
+      "content": "An activation function in a neural network is a mathematical function applied to the output of a neuron. It introduces non-linearity, enabling the model to learn and represent complex data patterns.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmachine%2Dlearning%2Factivation%2Dfunctions%2Dneural%2Dnetworks%2F&rut=f78084e35b7077ff4574755144439f14982bec4186ae249ecbe87019d67133f5",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:47:37.800084"
+    },
+    {
+      "topic": "activation function",
+      "title": "Activation Functions in Neural Network - Analytics Vidhya",
+      "content": "Learn about the importance of activation functions in neural networks and how they enable handling intricate tasks with non-linear computations.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.analyticsvidhya.com%2Fblog%2F2021%2F04%2Factivation%2Dfunctions%2Dand%2Dtheir%2Dderivatives%2Da%2Dquick%2Dcomplete%2Dguide%2F&rut=d30d6add76390676ac977b396ff3eb2aab85f31b91a995a53b96254256cfcc79",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:47:37.800156"
+    },
+    {
+      "topic": "activation function",
+      "title": "Activation functions in neural networks: Types and examples - MSN",
+      "content": "In this video, we will see What is Activation Function in Neural network, types of Activation function in Neural Network, why to use an Activation Function and which Activation function to use ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.msn.com%2Fen%2Dus%2Fhealth%2Fmedical%2Factivation%2Dfunctions%2Din%2Dneural%2Dnetworks%2Dtypes%2Dand%2Dexamples%2Fvi%2DAA1EqO6h&rut=907abd240d141e2893b4ac46baa3523a03976f3044732113ff3481fed4308bcc",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:47:37.800232"
+    },
+    {
+      "topic": "loss function",
+      "title": "Loss function - Wikipedia",
+      "content": "A loss function is a mathematical relation that assigns a cost to an event or a value. Learn about different types of loss functions, how they are used in optimization, statistics, economics, and other fields, and how to construct them from preferences or data.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLoss_function&rut=730fc4c3e54b4499a4dd75452fd2a1532e5e8dc2ec7c9ae97739150a58d5ed09",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:48:09.205262"
+    },
+    {
+      "topic": "loss function",
+      "title": "Loss Functions in Deep Learning - GeeksforGeeks",
+      "content": "Loss function helps in evaluation and optimization. Understanding different types of loss functions and their applications is important for designing effective deep learning models.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fdeep%2Dlearning%2Floss%2Dfunctions%2Din%2Ddeep%2Dlearning%2F&rut=201e80fa9537d4b44305dbe0e97420b8ac3f4c513f20ed27718dc4fbc7918097",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:48:09.205371"
+    },
+    {
+      "topic": "loss function",
+      "title": "Loss Functions in Machine Learning Explained - DataCamp",
+      "content": "Learn about loss functions in machine learning, including the difference between loss and cost functions, types like MSE and MAE, and their applications in ML tasks.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.datacamp.com%2Ftutorial%2Floss%2Dfunction%2Din%2Dmachine%2Dlearning&rut=dcdee90364343ab92107f97ec6161ea2fd2e59c4a71a1c106965deae09fe10d2",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:48:09.205445"
+    },
+    {
+      "topic": "loss function",
+      "title": "7 Common Loss Functions in Machine Learning",
+      "content": "A loss function is a mathematical function used to measure the difference between a machine learning model's predicted output values and actual target values. Here's the most common loss functions used in machine learning.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbuiltin.com%2Fmachine%2Dlearning%2Fcommon%2Dloss%2Dfunctions&rut=0d5d2e023e7c4c2d58e5fa1e037d6504b91970a8106d3e5def19ecca3fdddb9b",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:48:09.205518"
+    },
+    {
+      "topic": "loss function",
+      "title": "What is Loss Function? | IBM",
+      "content": "What is a loss function? In machine learning (ML), a loss function is used to measure model performance by calculating the deviation of a model's predictions from the correct, \"ground truth\" predictions. Optimizing a model entails adjusting model parameters to minimize the output of some loss function.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ibm.com%2Fthink%2Ftopics%2Floss%2Dfunction&rut=8441e99ad21d204489c5b53d26d665f4690f2abade2fb75d9fc7fe863f92aa7c",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:48:09.205599"
+    },
+    {
+      "topic": "feature engineering",
+      "title": "Shop Books - Amazon.com Official Site - Low priced products",
+      "content": "Find deals and low prices on popular products at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DGSZGnWkO3YLq4ZXpMsa6yNPbNuSARdgmBEdvUocGdzK4ACwcMcq_IWUrv9At7rPqpPwV5KWKWDIE8m4EqRWyUicW4P4J2j3W_60tIrZmxhOwUOLswhf0VGLl730cYHX4A1ZREhDSETnJq3cwvPlwNmF0w%252DY4EMtaDh0dfoBzKyk.mJbs7VsJZJ1SQthpIzOhzQ%26rut%3D1c86c06af2d8379af670fe4679b694fbba75d3c93f1bee17624f1fc9dadab2ee%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8Yrdw%252D%252DeLN%252DYQrbWvGEOGJTVUCUw3avAcWjXFwyb2mr4KQAM32osU0WWvcuC3yaIfDNao6_7Vn3Qgtqq3XY%252D3QaU99C6JDxmJ6BeqGadz4v01Gcc1pfXB6z3Mw1zCZCApfGufMkMbk4IQn8it4S%252DXGSPXf55LcwOOC9BgxUeOp1hZgLt3Qj53FgKzRxt5%252DMbzguhEner3RUWG2baktwNynvg9ucc%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGZlYXR1cmUlMmJlbmdpbmVlcmluZyUyYm1hZGUlMmJlYXN5JTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfM29hbWw2eTh3OV9wJTI2YWRncnBpZCUzZDEyMzM2NTMwNDI1Mzg1MjAlMjZodmFkaWQlM2Q3NzEwMzQ0NjAwNjA0OCUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NjM1JTI2aHZ0YXJnaWQlM2Rrd2QtNzcxMDM2MzEzODg3MjUlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDI1NTIwXzEzNTkyNDUyJTI2bWNpZCUzZDcyYWQ3ZjVjNTlhMjNlNGI5YTU5ZDZiNDRlMThlNGFhJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2RjM2U3NWUxY2VkNTExYjU4N2RjZTM3NDkwOTk2ZWM0NA%2526rlid%253Dc3e75e1ced511b587dce37490996ec44%26vqd%3D4%2D149618516824410897468770165188653446929%26iurl%3D%257B1%257DIG%253DE0CF6342A913441CA2EE56107AF1C2F5%2526CID%253D091D880A3173647627749EDE30E46526%2526ID%253DDevEx%252C5046.1&rut=bd6b33a8e04f48c1582e7dacaadbd344eb1f978f4d112bae1130b305b3d22f23",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T19:06:48.392217"
+    },
+    {
+      "topic": "feature engineering",
+      "title": "What is Feature Engineering? Methods, Tools and Best Practices",
+      "content": "Learn how to convert raw data into useful features that improve machine learning models. Explore techniques like feature selection, transformation, encoding, creation, and handling missing data.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mygreatlearning.com%2Fblog%2Fwhat%2Dis%2Dfeature%2Dengineering%2F&rut=78c8d4bd12a52e81bb3ea4a896702dfe4fa8c6252d4c704670762d95c0520053",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T19:06:48.393067"
+    },
+    {
+      "topic": "random forest",
+      "title": "Random Forest: A Complete Guide for Machine Learning - Built In",
+      "content": "Random forest is a machine learning algorithm that combines multiple decision trees to create a singular, more accurate result. Here's what to know to be a random forest pro.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbuiltin.com%2Fdata%2Dscience%2Frandom%2Dforest%2Dalgorithm&rut=7199e2bb561bd828103c44dd720e50cf6a03f788e104732451cb643d0979815c",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T19:56:27.503782"
+    },
+    {
+      "topic": "random forest",
+      "title": "Random Forest Algorithm in Machine Learning - Analytics Vidhya",
+      "content": "Learn how random forest, a popular ensemble method, combines multiple decision trees to make predictions for classification and regression tasks. Understand its working, features, advantages, disadvantages, and coding in Python with examples.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.analyticsvidhya.com%2Fblog%2F2021%2F06%2Funderstanding%2Drandom%2Dforest%2F&rut=c4e662783675a13c6daad0eadd7151d6300fae22b9431e227db6a6d6e5704c5e",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T19:56:27.503863"
+    },
+    {
+      "topic": "federated learning",
+      "title": "What Is Federated Learning? Benefits, Types & Challenges",
+      "content": "Complete federated learning guide covering types, benefits, challenges & applications. Learn distributed machine learning implementation.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Ffxis.ai%2Fedu%2Ffederated%2Dlearning%2Dcomplete%2Dguide%2F&rut=c52fa96589b0738e4666902ef888b3f4fc1217756555a226b20ace532009734c",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:24:58.399471"
+    },
+    {
+      "topic": "fermion",
+      "title": "Fermion",
+      "content": "In particle physics, a fermion is a subatomic particle that follows Fermi\u2013Dirac statistics. Fermions have a half-integer spin and obey the Pauli exclusion principle. These particles include all quarks and leptons and all composite particles made of an odd number of these, such as all baryons and many atoms and nuclei. Fermions differ from bosons, which obey Bose\u2013Einstein statistics.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fermion",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T09:24:26.423803"
+    },
+    {
+      "topic": "fermion",
+      "title": "Fermion - Wikipedia",
+      "content": "A fermion is a subatomic particle that follows Fermi-Dirac statistics and has half-integer spin. Learn about the elementary and composite fermions, their properties and applications, and the origin of the name fermion from Enrico Fermi.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFermion&rut=169f252943cb35d945597f4dd8bcd8eabc281da49b5cea0ba16bf391b81538d9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:24:27.342684"
+    },
+    {
+      "topic": "fermion",
+      "title": "Fermion | Elementary particles, Quarks, Bosons | Britannica",
+      "content": "Fermion, any member of a group of subatomic particles having odd half-integral angular momentum (spin 12, 32), named for the Fermi-Dirac statistics that describe its behaviour. Fermions include particles in the class of leptons (e.g., electrons, muons), baryons (e.g., neutrons, protons, lambda",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Ffermion&rut=4d3515a48921e9b23eaab07d3c9d29cf34c86c93d5b8216e3447b54a0e98b454",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:24:27.342736"
+    },
+    {
+      "topic": "fermion",
+      "title": "DOE Explains...Bosons and Fermions | Department of Energy",
+      "content": "Learn how bosons and fermions are the two categories of fundamental particles in nature, based on their spin properties. Find out how the Department of Energy's Office of Science researches and applies these particles in various fields of science.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.energy.gov%2Fscience%2Fdoe%2Dexplainsbosons%2Dand%2Dfermions&rut=3a1ce78fe0bf4a4c543a2f37ed7d9084922fa404f4bf299516db67a25f5ef904",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:24:27.342780"
+    },
+    {
+      "topic": "fermion",
+      "title": "Fermions Explained Simply - Andrea Minini",
+      "content": "Fermions Fermions are fundamental particles that obey the Pauli exclusion principle, which states that no two identical fermions can occupy the same quantum state simultaneously. All particles in the universe fall into one of two broad categories: fermions and bosons. Fermions make up matter itself - everything you can touch or see is composed of them. They form the atoms and molecules that ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.andreaminini.net%2Fphysics%2Ffermions&rut=a36cb52d462d98113d1caebfa546af591016fe1053510da878d55663ed589a6b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:24:27.342826"
+    },
+    {
+      "topic": "fermion",
+      "title": "Fermions | Properties, Interactions & Quantum Theory",
+      "content": "Explore the intriguing world of fermions, the fundamental particles that define the universe's structure, through their unique properties and quantum interactions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmodern%2Dphysics.org%2Ffermions%2F&rut=d777d9eb3ab428f9a3563f1834390383f14b70b7f4973c2d4b506b029c0f3b78",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:24:27.342863"
+    },
+    {
+      "topic": "how i get free traffic from chatgpt in 2025 (aio vs seo)",
+      "title": "Free Website Seo - All-in-One Marketing Tool",
+      "content": "Build authority-first backlinks that drive AI mentions and SEO results. Traditional SEO tools miss AI search visibility\u2014Semrush doesn't.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dsemrush.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DCcVj3qSjX6%252DRAiHgQb_Wz2qcG0JcGH%252DZ6QgFy3UEdqlLV_ORJAJ_QsOuaD4j4EYIcw5gVX%252DPpp4fZlYMTvsXrhyi5Y_YpJbrEIubR0l0fpsf_Pb5pRkmXX4PL42HoIBFPIcJAk8dkURXTkxoEOuKXUErfi2MipNdoVLHivAYKuI.M4fuOmpXVwoVjZdWKxGTQw%26rut%3De5ac373a7759665e18210166aae40243e5f3bbd255794fad85da65aa05b7182c%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8u5G0fgcqWplrVIEO7xKd6zVUCUy9nRfMk9RnYx_evQimnwezdBAqjP7LJKZpzKKeU4jg6JS%252D9j207SYds5jW6M8WxXanfD2LJ03mrtUX6ojNtX1e_LLlmRnS%252DgK30z4csmxHf6krUnKkFmSEHQkrc%252Du3LJW4ROv%252DO6Fcbh3vSV9OSfx6zKFl9jrKM61_ufO1rh2WEWowVHUiV1K2DW1h5TUcygg%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuc2VtcnVzaC5jb20lMmZscCUyZnByb2R1Y3Qtc2VvLWNoYWxsZW5nZXMlMmZlbiUyZiUzZmJfYWRncm91cCUzZGZyZWUlMjUyMHdlYnNpdGUlMjUyMHNlbyUyNmJfYWRncm91cGlkJTNkMTMwMTgyMjA4NTAyMDIzMCUyNmJfYWRpZCUzZDgxMzYzOTk1NDQyNjI0JTI2Yl9jYW1wYWlnbiUzZENvcmUxMl9TUkNIX1NFT19Ub29sc19CSU5HJTI2Yl9jYW1wYWlnbmlkJTNkNDEyNTMyODQxJTI2Yl9pc3Byb2R1Y3QlM2QlMjZiX3Byb2R1Y3RpZCUzZCUyNmJfdGVybSUzZCUyNTJCZnJlZSUyNTIwJTI1MkJ3ZWJzaXRlJTI1MjAlMjUyQnNlbyUyNmJfdGVybWlkJTNka3dkLTgxMzY0MDUzNDM0MzEwJTNhbG9jLTE5MCUyNmt3JTNkJTI1MkJmcmVlJTI1MjAlMjUyQndlYnNpdGUlMjUyMCUyNTJCc2VvJTI2Y21wJTNkQ29yZTEyX1NSQ0hfU0VPX1Rvb2xzX0JJTkclMjZsYWJlbCUzZHNlb190b29sJTI2TmV0d29yayUzZHMlMjZEZXZpY2UlM2RjJTI2dXRtX2NvbnRlbnQlM2QlMjZrd2lkJTNka3dkLTgxMzY0MDUzNDM0MzEwJTNhbG9jLTE5MCUyNmNtcGlkJTNkNDEyNTMyODQxJTI2YWdwaWQlM2QxMzAxODIyMDg1MDIwMjMwJTI2QlUlM2RDb3JlJTI2ZXh0aWQlM2QlMjZhZHBvcyUzZCUyNm1hdGNodHlwZSUzZHAlMjZtc2Nsa2lkJTNkNDFiMDBjN2UwOTlhMTQ5MGU0NjI2NTI4YTc5MGI4Y2MlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RDb3JlMTJfU1JDSF9TRU9fVG9vbHNfQklORyUyNnV0bV90ZXJtJTNkJTI1MkJmcmVlJTI1MjAlMjUyQndlYnNpdGUlMjUyMCUyNTJCc2Vv%2526rlid%253D41b00c7e099a1490e4626528a790b8cc%26vqd%3D4%2D230848751282716186624678409723888879903%26iurl%3D%257B1%257DIG%253DD06D3ACD9C2C4CFAA49BA6D14CA085A8%2526CID%253D1CD11ADBAE7164B01A390C0FAFA46574%2526ID%253DDevEx%252C5046.1&rut=b99f64659c88362180c13d205cc7a29ef47d4dbf87531bf351829f052bedb259",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:25:30.485097"
+    },
+    {
+      "topic": "how i get free traffic from chatgpt in 2025 (aio vs seo)",
+      "title": "Free Website Traffic - *Free URL Submission*",
+      "content": "Free, Fast, Easy Submission to the Biggest Search Engines, Directorys. It's Free To Submit Your Website To The Biggest Search Engines Across The Internet",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dfree%252Dweb%252Dsubmission.co.uk%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D4zIx%252Dz1ibdARJ7wnfNdxRHNzNhrCE%252DB5CwPYNFovpt00wNpVrV8WPZxbK_KhcHZfBzSSceikJbjTcs6Yv1S6y_RdBdc9bpyyQs7jVa6AdMuWVC9jYS9IcG7qVb8yQ5FSgyEYefZZ1gk4uoL56g25dY89npq1ubArKeEx34Z7QZ0.kJJqU39%252DsAvJgxahf78rgA%26rut%3D55207f4faa6772a4b889627cb1e8628b4024118f1cffd15655a8e17f15e77f0d%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8WGq23aeI2i7kc9fq3EmT0DVUCUy7Ri4qNEl8u1GHimi_OS%252D5Jn4DXOVMDR_Djfai5GCTGypxPNqL_Oc8GEalpnzWBPVEpf1R_nIoxwVKKgA2_leLJjhfm_PSq_Mz_JehdeQJbG6VmPbrpNGqaBHNfz3ZV3C8S_oMoPw79IXdBpycjKc5Gac1mXlCAyPZPvKAVhCPI49uXEvPNdWwlSNkhWjvOBg%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuZnJlZS13ZWItc3VibWlzc2lvbi5jby51ayUyZmluZGV4MTEuaHRtbCUzZnV0bV9kZXZpY2UlM2RjJTI2dXRtX2djbGlkJTNkZjAzZDAyZmRjOTE1MTdkNjc0ZDA2YmFiNjcxZmY2MTYlMjZtc2Nsa2lkJTNkZjAzZDAyZmRjOTE1MTdkNjc0ZDA2YmFiNjcxZmY2MTYlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RGcmVlJTI1MjBXZWIlMjUyMFN1YiUyNTIwVGllcjElMjUyMENvbnYlMjUyMEt5d2RzJTI2dXRtX3Rlcm0lM2RzZWFyY2glMjUyMGVuZ2luZSUyNTIwdHJhZmZpYyUyNnV0bV9jb250ZW50JTNkQnV5ZXJzJTI1MjBLZXl3b3Jkcw%2526rlid%253Df03d02fdc91517d674d06bab671ff616%26vqd%3D4%2D261122421243572313221771921457685075420%26iurl%3D%257B1%257DIG%253DD06D3ACD9C2C4CFAA49BA6D14CA085A8%2526CID%253D1CD11ADBAE7164B01A390C0FAFA46574%2526ID%253DDevEx%252C5051.1&rut=6b95075291ed001bdd553eed9eec4fe67894c5c541ea7f9c584b15a13148d921",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:25:30.485222"
+    },
+    {
+      "topic": "how i get free traffic from chatgpt in 2025 (aio vs seo)",
+      "title": "How I Get Free Traffic from ChatGPT in 2025 (AIO vs SEO)",
+      "content": "The same thing happened in Perplexity. My website is now ranking at the top of AI responses, generating free traffic directly from AI models. This isn't luck. It's the result of implementing AI Optimization (AIO), where I optimize my content to appear in AI-generated responses. And if you're still only focusing on traditional SEO, you're missing out on a massive traffic source that's ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Flearnwithhasan.com%2Fblog%2Ffree%2Dtraffic%2Dfrom%2Dchatgpt%2F&rut=f42f7c8885c964ee28366a9768fafb3ddfa0c18ac694a2b9597c79ba42054adc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:25:30.485310"
+    },
+    {
+      "topic": "how i get free traffic from chatgpt in 2025 (aio vs seo)",
+      "title": "How I Get Free Traffic from ChatGPT in 2025 (AIO vs SEO)",
+      "content": "Traditional SEO remains the primary focus, while this emerging traffic channel grows rapidly with relatively light competition. This window won't stay open indefinitely. As more people understand AIO's value, competition will intensify and optimization will become more sophisticated.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fseotoolrank.com%2Fhow%2Di%2Dget%2Dfree%2Dtraffic%2Dfrom%2Dchatgpt%2Din%2D2025%2Daio%2Dvs%2Dseo%2F&rut=b3b22a7031a5162199e0731d3bbc9c285711f3ba0eeb002691a1f25c4ed62bbf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:25:30.485386"
+    },
+    {
+      "topic": "how i get free traffic from chatgpt in 2025 (aio vs seo)",
+      "title": "How To Get Free Traffic From ChatGPT in 2025 (AIO Course)",
+      "content": "In this video, I will show you how to optimize your website for AIO to rank on top of AI models like ChatGPT, Claude, Perplexity and Get Free Organic Traffic From AI.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DXmv22Pmu7f0&rut=82ef6f3e1dc339eb5f54fad5e1b9c39006544f527e90e19ec59ee702b02738ca",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:25:30.485474"
+    },
+    {
+      "topic": "nasa will soon find out if the perseverance rover can really persevere on mars",
+      "title": "NASA will soon find out if the Perseverance rover can really persevere ...",
+      "content": "Long wait NASA will soon find out if the Perseverance rover can really persevere on Mars Engineers at JPL are certifying the Perseverance rover to drive up to 100 kilometers.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Farstechnica.com%2Fspace%2F2025%2F12%2Fnasa%2Dwill%2Dsoon%2Dfind%2Dout%2Dif%2Dthe%2Dperseverance%2Drover%2Dcan%2Dreally%2Dpersevere%2Don%2Dmars%2F&rut=f7d04313fec74bf202d1d65e30b8eb80e92cbbc6ced79f5fbeb6e63bf150167f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:26:33.177908"
+    },
+    {
+      "topic": "nasa will soon find out if the perseverance rover can really persevere on mars",
+      "title": "NASA will soon learn if Perseverance can keep going on Mars - MSN",
+      "content": "NASA is about to lock in a verdict on how long its Perseverance rover can keep working on Mars, and the answer will shape the next decade of planetary exploration. Engineers have spent the past ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.msn.com%2Fen%2Dus%2Fnews%2Ftechnology%2Fnasa%2Dwill%2Dsoon%2Dlearn%2Dif%2Dperseverance%2Dcan%2Dkeep%2Dgoing%2Don%2Dmars%2Far%2DAA1SMlGX&rut=0c6d805c810eaab8527c4da796cfdc592c3d433541d41210f1b95bf7f7ec5b76",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:26:33.177968"
+    },
+    {
+      "topic": "nasa will soon find out if the perseverance rover can really persevere on mars",
+      "title": "Perseverance continues science mission amid uncertainty about Mars ...",
+      "content": "NASA's Perseverance Mars rover is continuing its mission to collect samples despite uncertainty about when or if those samples will be returned to Earth.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fspacenews.com%2Fperseverance%2Dcontinues%2Dscience%2Dmission%2Damid%2Duncertainty%2Dabout%2Dmars%2Dsample%2Dreturn%2F&rut=72722df1d0f3148246003da734a330cfc046d816cab19f7a6ddc443791c76d6f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:26:33.178010"
+    },
+    {
+      "topic": "nasa will soon find out if the perseverance rover can really persevere on mars",
+      "title": "NASA predicts how far Perseverance rover can drive on Mars - Earth.com",
+      "content": "Built to last, NASA's Perseverance rover continues its long journey across Mars, collecting samples and revealing the planet's deep past.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.earth.com%2Fnews%2Fnasa%2Dpredicts%2Dhow%2Dmany%2Dmore%2Dmiles%2Dperseverance%2Drover%2Dcan%2Ddrive%2Don%2Dmars%2F&rut=ac8664510bfee79fd3d84e8d239d78f755ba7dede5664c0aa603ca5966903939",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:26:33.178051"
+    },
+    {
+      "topic": "nasa will soon find out if the perseverance rover can really persevere on mars",
+      "title": "Mars Sample Return: Perseverance Mission Continues",
+      "content": "Mars Sample Return; Perseverance continues collecting samples despite MSR program uncertainty, targeting ancient crater rim rocks with extended 100km driving capability. NASA's Perseverance rover continues its critical science mission despite uncertain timeline. Mars Sample Return remains the ultimate objective for collected geological treasures. Rover remains in excellent condition ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fnasaspacenews.com%2F2025%2F12%2Fmars%2Dsample%2Dreturn%2F&rut=128dac53c9d6902d64064c272def2b34ea0cbcc5cc5f49edc65d55611e284706",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:26:33.178103"
+    },
+    {
+      "topic": "nuclear fusion",
+      "title": "Nuclear fusion - Wikipedia",
+      "content": "Nuclear fusion is a reaction in which two or more atomic nuclei combine to form a larger nucleus. The difference in mass between the reactants and products is manifested as either the release or the absorption of energy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNuclear_fusion&rut=926e20a70f9c8945b1cbafb807b2465f7715c98dd8ed7e3f8720dc967d6c0326",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:28:07.085123"
+    },
+    {
+      "topic": "nuclear fusion",
+      "title": "Nuclear fusion | Development, Processes, Equations, & Facts | Britannica",
+      "content": "Nuclear fusion, process by which nuclear reactions between light elements form heavier elements. In cases where interacting nuclei belong to elements with low atomic numbers, substantial amounts of energy are released. The vast energy potential of nuclear fusion was first exploited in thermonuclear weapons.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fnuclear%2Dfusion&rut=350494f312c43c655eaa1c562c41ad926f0f8a622dc537b52d91a9b0701a7106",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:28:07.085159"
+    },
+    {
+      "topic": "nuclear fusion",
+      "title": "What is Nuclear Fusion? - International Atomic Energy Agency",
+      "content": "Nuclear fusion is the process by which two light atomic nuclei combine to form a single heavier one while releasing massive amounts of energy. Fusion reactions take place in a state of matter called plasma \u2014 a hot, charged gas made of positive ions and free-moving electrons with unique properties distinct from solids, liquids or gases.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.iaea.org%2Fnewscenter%2Fnews%2Fwhat%2Dis%2Dnuclear%2Dfusion&rut=e528c0310638caa755cb3f8dda834fa8dbaa84a4f8d7d2d77a29874ee77c3618",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:28:07.085197"
+    },
+    {
+      "topic": "nuclear fusion",
+      "title": "Fusion energy: Pathway to abundant power - NSF - National Science ...",
+      "content": "Learn how NSF supports fusion research and development, which aims to replicate the energy source of stars on Earth as a clean and lasting power source. Explore the challenges, approaches and benefits of fusion, as well as the projects and programs that advance this field.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nsf.gov%2Fscience%2Dmatters%2Ffusion%2Denergy%2Dpathway%2Dabundant%2Dpower&rut=cc5bf818d3b56eb3c391f88eed59900a4912e9d2e5c065c0bce736b4a2476109",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:28:07.085224"
+    },
+    {
+      "topic": "nuclear fusion",
+      "title": "DOE Explains...Fusion Reactions | Department of Energy",
+      "content": "Learn how fusion reactions power the Sun and other stars, and how scientists are working to harness fusion energy on Earth. Find out about the DOE's contributions to fusion research, the ITER experiment, and the challenges and benefits of fusion power.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.energy.gov%2Fscience%2Fdoe%2Dexplainsfusion%2Dreactions&rut=ea96b01c089aec72242fa3ec7e7d8702af44a216601b3da256cca4c6311bb62e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:28:07.085249"
+    },
+    {
+      "topic": "nuclear fission",
+      "title": "Nuclear fission - Wikipedia",
+      "content": "Nuclear fission is a reaction in which the nucleus of an atom splits into two or more smaller nuclei. The fission process often produces gamma photons, and releases a very large amount of energy even by the energetic standards of radioactive decay. Nuclear fission was discovered by chemists Otto Hahn and Fritz Strassmann and physicists Lise Meitner and Otto Robert Frisch. Hahn and Strassmann ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNuclear_fission&rut=79a73dcea7ca020786b97159acba7b510ac02f5ecfbb581002e684fee74505b1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:28:38.848939"
+    },
+    {
+      "topic": "nuclear fission",
+      "title": "Nuclear fission | Examples & Process | Britannica",
+      "content": "Nuclear fission, subdivision of a heavy atomic nucleus, such as that of uranium or plutonium, into two fragments of roughly equal mass. The process is accompanied by the release of a large amount of energy. Nuclear fission may take place spontaneously or may be induced by the excitation of the nucleus.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fnuclear%2Dfission&rut=8a3d1152f1c40f024de6a33978b82e02c41a99602624e6cbc22a1edac5a13310",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:28:38.849032"
+    },
+    {
+      "topic": "nuclear fission",
+      "title": "DOE Explains...Nuclear Fission - Department of Energy",
+      "content": "Learn what nuclear fission is, how it works, and why it is important for science and energy. Find out how DOE supports research and experiments on fission processes and materials at user facilities.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.energy.gov%2Fscience%2Fdoe%2Dexplainsnuclear%2Dfission&rut=7d4887a747d0db39326d991fb8a9210c87b5c410272ebd74ee408be59a6d59fd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:28:38.849095"
+    },
+    {
+      "topic": "nuclear fission",
+      "title": "Fission - Understand Energy Learning Hub",
+      "content": "Fission Printable PDF, 316KB Principal Energy Use: Electricity Form of Energy: Nuclear Nuclear fission is the process of splitting a large atom into two smaller atoms and releasing a LOT of heat, making it an extremely energy dense resource. That heat is used to boil water, make steam, turn a turbine and generator, and produce electricity.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Funderstand%2Denergy.stanford.edu%2Fenergy%2Dresources%2Fnuclear%2Denergy%2Ffission&rut=e0676550025f4387f7fc207643127e467a163406e489fe8d68f8d75d9f185337",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:28:38.849164"
+    },
+    {
+      "topic": "nuclear fission",
+      "title": "Nuclear Fission Definition and Examples",
+      "content": "Learn what nuclear fission is, how it differs from nuclear fusion, and how it is used in power plants and weapons. Find out the history, types, properties, and safety of fission reactions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsciencenotes.org%2Fnuclear%2Dfission%2Ddefinition%2Dand%2Dexamples%2F&rut=b311aa5ca160abe7880d72b2c75b73e1c90ec036105a59119c2ca4a961894fae",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:28:38.849233"
+    },
+    {
+      "topic": "van der waals force",
+      "title": "Van der Waals force - Wikipedia",
+      "content": "Learn about the van der Waals force, a distance-dependent interaction between atoms or molecules that is not based on chemical bonds. Find out its definition, types, examples, applications, and contrast with other intermolecular forces.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FVan_der_Waals_force&rut=a55a0ca2d1430d39cf93a4821957f407a2448dba66acf9c6af27df7fab0e98f1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:00.562981"
+    },
+    {
+      "topic": "van der waals force",
+      "title": "van der Waals forces - Encyclopedia Britannica",
+      "content": "Van der Waals forces, relatively weak electric forces that attract neutral molecules to one another in gases, in liquefied and solidified gases, and in almost all organic liquids and solids. The forces are named for the Dutch physicist Johannes Diderik van der Waals, who in 1873 first postulated",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fvan%2Dder%2DWaals%2Dforces&rut=2dcce693763b0526a5c1e2e4570515ce796438ee51cace2ef5a0b6841ae20a63",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:00.563025"
+    },
+    {
+      "topic": "van der waals force",
+      "title": "Van der Waals Force | Brilliant Math & Science Wiki",
+      "content": "Van der Waals forces are specific intermolecular interactions observed in liquids and solids. They are electrostatic in nature, arising from the interactions of positively and negatively charged species. intermolecular forces hold molecules together (in contrast to intramolecular forces, which hold atoms together within a molecule). They help determine bulk properties such as boiling point and ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbrilliant.org%2Fwiki%2Fvan%2Dder%2Dwaals%2Dforce%2F&rut=4943178af0ce7d4a52bf46e55ae653fc698dd6b8582a5b76a658b18c8b788916",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:00.563054"
+    },
+    {
+      "topic": "van der waals force",
+      "title": "Van Der Waals Force - GeeksforGeeks",
+      "content": "Van der Waals forces are intermolecular forces. They include attraction and repulsion between atoms and molecules. This force is fundamental in diverse fields which include condensed matter physics, polymer science, nanotechnology, supra-molecular chemistry, biological structure, and surface science.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fchemistry%2Fvan%2Dder%2Dwaals%2Dforce%2F&rut=9e6a33a506a661ee8b37d3af6ec53aec0e46daf6f16bdc82e0313cc799714382",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:00.563082"
+    },
+    {
+      "topic": "van der waals force",
+      "title": "Van der Waals Forces (Bond): Definition, Examples, & Diagrams",
+      "content": "Define and explain van der Waals forces. How do they hold molecules together. Learn their different types and importance, and check out a few examples.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.chemistrylearner.com%2Fchemical%2Dbonds%2Fvan%2Dder%2Dwaals%2Dforces&rut=97f6bb8fd88c5dc74b740d337f89fcf25ce1400c860ef243a89ce00bb229b425",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:00.563110"
+    },
+    {
+      "topic": "gibbs free energy",
+      "title": "Gibbs free energy - Wikipedia",
+      "content": "The Gibbs free energy change (\u2060 \u2060, measured in joules in SI) is the maximum amount of non-volume expansion work that can be extracted from a closed system (one that can exchange heat and work with its surroundings, but not matter) at fixed temperature and pressure. This maximum can be attained only in a completely reversible process.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGibbs_free_energy&rut=06b5ea32208d80a60e712fa4687a49d553f19889eebbb69a7fb3c6ca8919a9c6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:44:26.829216"
+    },
+    {
+      "topic": "gibbs free energy",
+      "title": "Gibbs (Free) Energy - Chemistry LibreTexts",
+      "content": "Gibbs free energy, denoted G , combines enthalpy and entropy into a single value. The change in free energy, &Delta;G , is equal to the sum of the enthalpy plus the product of the temperature and \u2026",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fchem.libretexts.org%2FBookshelves%2FPhysical_and_Theoretical_Chemistry_Textbook_Maps%2FSupplemental_Modules_(Physical_and_Theoretical_Chemistry)%2FThermodynamics%2FEnergies_and_Potentials%2FFree_Energy%2FGibbs_(Free)_Energy&rut=eccd0590cc6f2eea71d98709875e115338e203e12e86b7bdaa824c3446a054cb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:44:26.829321"
+    },
+    {
+      "topic": "gibbs free energy",
+      "title": "Gibbs Free Energy - Division of Chemical Education, Purdue University",
+      "content": "Learn how to define and calculate the Gibbs free energy of a system, which measures the balance between enthalpy and entropy as driving forces for chemical reactions. Explore how temperature, standard-state conditions and equilibrium constants affect the free energy of reactions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fchemed.chem.purdue.edu%2Fgenchem%2Ftopicreview%2Fbp%2Fch21%2Fgibbs.php&rut=e0a1c1f1e170deef07dcb925b60b13919c6b392c74ac169c161bad0139c735e0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:44:26.829402"
+    },
+    {
+      "topic": "gibbs free energy",
+      "title": "Gibbs Free Energy: Definition, Equation, Unit, and Example",
+      "content": "Learn how to calculate and interpret Gibbs free energy, a state function that measures the energy available to do work in a chemical process. Find out the standard-state Gibbs free energy of formation of some substances and the relationship between Gibbs free energy and equilibrium constant.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.chemistrylearner.com%2Fgibbs%2Dfree%2Denergy.html&rut=df5ec9c6579898c2871c62c39e0f4b914fec6b40b345eec33e61dc58b2bd29c3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:44:26.829483"
+    },
+    {
+      "topic": "gibbs free energy",
+      "title": "Gibbs Free Energy Equation: Predicting Spontaneity in Chemical ...",
+      "content": "Technically speaking, Gibbs free energy is the amount of energy that can be freed or extracted from the system in order to do useful work. But for us, Gibbs free energy becomes a useful mathematical tool for predicting the spontaneity of a reaction.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.physicsclassroom.com%2FChemistry%2DTutorial%2FChemical%2DThermodynamics%2FGibbs%2DFree%2DEnergy%2DEquation&rut=934bb9b014f3816c16f784d0cf4c9550574c3bf6a414f1056005c3b0df0fb87a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:44:26.829560"
+    },
+    {
+      "topic": "2025 deployment of federal forces in the united states",
+      "title": "2025 deployment of federal forces in the United States",
+      "content": "In 2025, during Donald Trump 's second presidency, federal government forces, primarily National Guard troops, have been deployed in select U.S. cities. Trump has given multiple explanations for the deployments, saying they are officially part of crackdowns on protests, civil unrest, crime, homelessness, and illegal immigration.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2F2025_deployment_of_federal_forces_in_the_United_States&rut=1bfbdb420d06883f16050980243c287e1fe42f07ba88d31926a7bd65caf76499",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:05.976161"
+    },
+    {
+      "topic": "2025 deployment of federal forces in the united states",
+      "title": "Tracking Domestic Deployments of the U.S. Military | Lawfare",
+      "content": "The map visualization displays identified federal domestic deployments for 2025. It displays locations, troop deployment size, and deployment legal authority. Hovering over a specific deployment provides additional information about each deployment, such as a description of its mission.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.lawfaremedia.org%2Fprojects%2Dseries%2Ftrials%2Dof%2Dthe%2Dtrump%2Dadministration%2Ftracking%2Ddomestic%2Ddeployments%2Dof%2Dthe%2Du.s.%2Dmilitary&rut=bf0afbadeb62b2a88e348b7eb0ca7ef7242832a2ca1a9cc9006bf9f327ec1824",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:05.976211"
+    },
+    {
+      "topic": "2025 deployment of federal forces in the united states",
+      "title": "How and Where the National Guard Has Deployed to U.S. Cities",
+      "content": "In that hybrid designation, Guard troops remain under their governor's command, but the deployment receives federal funding and comes at the request of the president or secretary of defense.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nytimes.com%2Finteractive%2F2025%2F10%2F27%2Fus%2Fus%2Dnational%2Dguard%2Ddeployments.html&rut=7313a7033c834259b0d31131b4ac1b4aefb892a7d3c98e4baa4cc448e98331a4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:05.976247"
+    },
+    {
+      "topic": "2025 deployment of federal forces in the united states",
+      "title": "Trump says he's withdrawing National Guard from Chicago, Los ... - CNN",
+      "content": "President Donald Trump announced Wednesday that he's withdrawing the National Guard from Chicago, Los Angeles and Portland but left the door open to sending federal forces \"in a much different ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cnn.com%2F2025%2F12%2F31%2Fpolitics%2Ftrump%2Dnational%2Dgaurd%2Dwithdrawl%2Dchicago%2Dlos%2Dangeles%2Dportland&rut=826bcfca4e52d37499bfb59683d1d980adf907bd875af5036e8524fd0fb9eb1a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:05.976290"
+    },
+    {
+      "topic": "2025 deployment of federal forces in the united states",
+      "title": "Pentagon Readies Rapid Deployment Force for U.S. Cities",
+      "content": "The first U.S. National Guard troops have deployed to Washington, D.C., a day after President Trump announced a federal takeover of the D.C. police force. Federal officials say some 800 National ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.democracynow.org%2F2025%2F8%2F13%2Fheadlines%2Fpentagon_readies_rapid_deployment_force_for_us_cities&rut=76e1074baa8c74ea64dae664fec8ad97560cde860223e107fefd9b0004379950",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:05.976335"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These are the flying discs the government wants you to know about",
+      "content": "These are the flying discs the government wants you to know about DiskSat's design offers \"a power-to-weight ratio unmatched by traditional aluminum satellites.\"",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Farstechnica.com%2Fscience%2F2025%2F12%2Fheres%2Dwhy%2Dnasa%2Dand%2Dthe%2Dspace%2Dforce%2Dare%2Dinterested%2Din%2Dpizza%2Dshaped%2Dsatellites%2F&rut=f211be3316a507f9820d7a3acaa1110567f349036b9c4eb0c58da797508f882c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470269"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "Government's new 'flying discs' could redefine low-orbit missions",
+      "content": "These disk-like spacecraft are not science fiction, and this morning, they successfully entered orbit under the watchful observation of NASA and the U.S. Space Force. Thursday morning, four ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.msn.com%2Fen%2Dus%2Fnews%2Ftechnology%2Fgovernment%2Ds%2Dnew%2Dflying%2Ddiscs%2Dcould%2Dredefine%2Dlow%2Dorbit%2Dmissions%2Far%2DAA1SOLCz&rut=d515a90639683d73b6113b12a111164798de7ea5292727fe29f32e50f8fbe3fb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470331"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These are the flying discs the government wants you to know about ...",
+      "content": "Rocket Lab delivers for Space Force and NASA. Four small satellites rode a Rocket Lab Electron launch vehicle into orbit from Virginia early Thursday, beginning a government-funded technology ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fjean%2Dpierre%2Dpalomba%2Dmarin%2D14508b162_these%2Dare%2Dthe%2Dflying%2Ddiscs%2Dthe%2Dgovernment%2Dactivity%2D7407712454568235008%2DUxWm&rut=7fee72c854af04723714910de3a8548826d592e7abebf9982acce37cbf8ae207",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470377"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These Are The Flying Discs The Government Wants You To Know",
+      "content": "Home \u00bb Tech News \u00bb These are the flying discs the government wants you to know about Share with your friends! these are the flying discs the government NASA and the US Space Force have initiated a groundbreaking technology demonstration mission with the launch of four innovative satellites designed to test a new spacecraft concept.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.hashe.com%2Ftech%2Dnews%2Fthese%2Dare%2Dthe%2Dflying%2Ddiscs%2Dgovernment%2Dwants%2Dyou%2Dto%2Dknow%2Dabout%2F&rut=e066b6d6ca1d75b7d6df9a185a6a0856749920e76e05246626ba11c8540c25a8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470441"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These are the flying discs the government wants you to know about",
+      "content": "These Are the Flying Discs the Government Wants You to Know About In a groundbreaking development, four small satellites designed by the Aerospace Corporation have successfully launched into orbit. The launch took place on early Thursday morning, when a Rocket Lab Electron rocket carrying the DiskSats began its journey from NASA's Wallops Flight Facility. The DiskSat project was initiated as a ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.trendynewsblog.com%2Fposts%2Fthese%2Dare%2Dthe%2Dflying%2Ddiscs%2Dthe%2Dgovernment%2Dwan%2F&rut=97788db732a3a2c4eee229d8d2e458d9fc95ca98a82e05912c84272abdb4884d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470498"
+    },
+    {
+      "topic": "air india flight 855",
+      "title": "Air India Flight 855 - Wikipedia",
+      "content": "Air India Flight 855 was a scheduled passenger flight from Bombay (now Mumbai), India, to Dubai, United Arab Emirates. On 1 January 1978, the Boeing 747 operating the flight crashed into the Arabian Sea about 3 km (1.9 mi; 1.6 nmi) off the coast of Bandra, less than two minutes after take-off, killing all 213 passengers and crew on board.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAir_India_Flight_855&rut=993442cbf50edecd6791d5f88e3db911383b105c2a9c5f2fe22ba5cc569ccde2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:30:46.908316"
+    },
+    {
+      "topic": "air india flight 855",
+      "title": "Air India Flight 855: A Tragic Accident Caused by Human Error and ...",
+      "content": "On the evening of January 1, 1978, Air India Flight 855, a Boeing 747-237B named Emperor Ashoka, departed from Bombay's Santa Cruz Airport (now Mumbai's Chhatrapati Shivaji Maharaj International Airport) en route to Dubai. Tragically, the aircraft crashed into the Arabian Sea just 101 seconds after takeoff. The crash killed all 213 passengers and crew",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.aviationfile.com%2Fair%2Dindia%2Dflight%2D855%2F&rut=bc083fa7d288e29fb14b1fb3f7a6e06ec927ad2f94c9faa6222e9aabe874ed0d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:30:46.908415"
+    },
+    {
+      "topic": "air india flight 855",
+      "title": "Accident Boeing 747-237B VT-EBD, Sunday 1 January 1978",
+      "content": "The web page provides a detailed account of the accident that killed 213 people when a Boeing 747-200 flew into the Arabian Sea near Bombay. It explains the probable cause, the investigation report, and the sources of the information.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fasn.flightsafety.org%2Fwikibase%2F328954&rut=d8eac2b1ef42b98391168f23cdc4359f683a533c65da979523b5bdfe77d0e36b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:30:46.908484"
+    },
+    {
+      "topic": "air india flight 855",
+      "title": "Ahmedabad Plane Mishap: A 1978 Air India Tragedy Which Killed All ...",
+      "content": "47 years ago, Air India flight AI-855, Emperor Ashoka, took off from Mumbai's Chhatrapati Shivaji Maharaj International Airport (then Santa Cruz International Airport). It had hardly travelled 3 km when it crashed into the Arabian Sea, killing all 213 onboard. The recent AI-171 crash near Sardar Vallabhbhai Patel International Airport in Ahmedabad on Thursday is a grim reminder of the tragedy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.timesnownews.com%2Findia%2Fa%2D1978%2Dair%2Dindia%2Dtragedy%2Dwhich%2Dkilled%2Dall%2Donboard%2Dthe%2Dstory%2Dof%2Dai%2D855%2Demperor%2Dashoka%2Darticle%2D151924641&rut=68eabd599fd302c8b08e4856c6c15abfc86c06f15e92d6e4bef2eb94fd1869e9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:30:46.908560"
+    },
+    {
+      "topic": "air india flight 855",
+      "title": "How An Instrument Malfunction Downed An Air India Boeing 747 45 Years ...",
+      "content": "Today marks 45 years since Air India flight 855 crashed off the coast of Mumbai, India. The Boeing 747 aircraft was scheduled to perform an international flight from Mumbai to Dubai, United Arab Emirates, as its final destination. However, the 747's flight instrument malfunction and the following events meant its operation ended tragically.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsimpleflying.com%2Fair%2Dindia%2Dflight%2D855%2Dcrash%2Danniversary%2F&rut=f4eb571e103d1f9b48d4b8f30f87be65121ac65c259d822100b5efeba82e7c99",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:30:46.908637"
+    },
+    {
+      "topic": "memory formation",
+      "title": "Top 5 Best Brain Supplements - 2026's 5 Best Brain Enhancers",
+      "content": "We evaluated dozens of supplements for brain enhancement & found the 5 best available now. Our research found 5 key ingredients that a quality brain health supplement must include.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dwiserlifestyles.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Dyr4mbWWJMr3UoJgiCUG6Q3tFBKVLeKjc4FlRW24CnCmoKjauxtXpPRXc4V65mReh8HDm6zOsctHmF3k1kZvjdseUcW2gvm3yshx15v1seiCsrbOk11hGLCMoJDAoJtf%252D02z1bpEG9yiduMzS5ksMCvVbxgy0Gw9FcFJGZOd_J78.Jy6JU%252D62iAmESb_PcfIcdA%26rut%3D9db26e76ca0083c27c6f2c47a22ae8a67c85a593eabd803be345285320f41a39%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8jEFSLjDk3_V8mn51C8KIbDVUCUycBtmKMDS65fiGQP4whkBOad1CMVj252cLiWXpdTwQaxOfAh11DiqVVcRHa1yhwx%252D5i9WWYFDbGX5%252DMZ1E9vZVH_v9X2SyJmbd4C7jc8TUeqLS5XmwIhiI1jd5S_6v2Vx1ued11_PrPFclNrjOMem22exZW_UqdmsmgMt9rGoGdgSFbo4jwqWkjyJrE8sobAU%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cud2lzZXJsaWZlc3R5bGVzLmNvbSUyZnRvcGljcyUyZm1lbW9yeSUzZm1zY2xraWQlM2RiMDVjNTEwZDNmOGQxZTY5M2I3NzM4NWJjOGUxY2MwZSUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZFdpc2VyTGlmZXN0eWxlcy5jb20lMjUyMC0lMjUyME1lbW9yeSUyNTIwLSUyNTIwU2VhcmNoJTI1MjBVUyUyNnV0bV90ZXJtJTNkYnJhaW4lMjUyMGZ1bmN0aW9uJTI2dXRtX2NvbnRlbnQlM2RicmFpbiUyNTIwZW5oYW5jZW1lbnQ%2526rlid%253Db05c510d3f8d1e693b77385bc8e1cc0e%26vqd%3D4%2D277043528695241311263421345995701158939%26iurl%3D%257B1%257DIG%253D38BD80676A1548C090EBDAC53B4E3CD7%2526CID%253D31492FC7C9BF6FA31A2B3913C8336EAC%2526ID%253DDevEx%252C5046.1&rut=7a6c42fff04bb7ca8893a6f2c06cc41484454b86c7a95d02e740b5b27e71cdcb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T14:38:37.058467"
+    },
+    {
+      "topic": "memory formation",
+      "title": "How are memories formed? - Queensland Brain Institute",
+      "content": "Learn how memory is the reactivation of a specific group of neurons, formed from persistent changes in the strength of connections between them. Discover how sleep, neurogenesis and other factors affect memory formation and storage.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fqbi.uq.edu.au%2Fmemory%2Fhow%2Dare%2Dmemories%2Dformed&rut=a3e9df5de5ea33f33fcf88ed3accfc8145f05505b1e3c8846badefae5e9ed104",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T14:38:37.058564"
+    },
+    {
+      "topic": "memory formation",
+      "title": "Memory - Wikipedia",
+      "content": "Stress has a significant effect on memory formation and learning. In response to stressful situations, the brain releases hormones and neurotransmitters (ex. glucocorticoids and catecholamines) which affect memory encoding processes in the hippocampus.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMemory&rut=8af2937e331b16a09fabd4ca2706cb91e50732adb8d656236b2e3a6fbaf72043",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T14:38:37.058639"
+    },
+    {
+      "topic": "memory formation",
+      "title": "Memory: Neurobiological mechanisms and assessment - PMC",
+      "content": "The steps involved in memory formation include encoding, storage, and recall (retrieval) in that order. Amnesia is a phenomenon in which there is the problem in memory formation which can be due to trauma to the brain, certain diseases, or stressors.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fpmc.ncbi.nlm.nih.gov%2Farticles%2FPMC8611531%2F&rut=aa12eb8a402de7e58202c1b48a1ef0ec6d89c8406a3c11e655a9b09b68307b6f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T14:38:37.058719"
+    },
+    {
+      "topic": "memory formation",
+      "title": "Tracking precisely how learning, memories are formed",
+      "content": "A team of Harvard researchers have unveiled a way to map the molecular underpinnings of how learning and memories are formed, a groundbreaking new technique expected to offer insights that may pave the way for new treatments for neurological disorders such as dementia. \"This technique provides a lens into the synaptic architecture of memory, something previously unattainable in such detail ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fnews.harvard.edu%2Fgazette%2Fstory%2F2025%2F05%2Ftracking%2Dprecisely%2Dhow%2Dlearning%2Dmemories%2Dare%2Dformed%2F&rut=244fd729c358226b5cd338874f5cd30f1931437cfe7e5bba647be538db915d3f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T14:38:37.058792"
+    },
+    {
+      "topic": "free will",
+      "title": "FreeWill.com - Official Site - Create a Will For Free Today",
+      "content": "Partnered with American Red Cross to Help You Prepare Your Will in 3 Easy Steps! In Partnership with American Red Cross to Help You Save Time, Money and Stress.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dfreewill.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DpmmeQxOk56J%252D0Kwv8zyhss%252DUjhWgtaoLfrBLRkCgScyA9CkTe7ePdJt3VqgaTQhg53NqR_0Q20SZY2pbUpHjBMJUiokjzoA_afpnQyKSVBl3Bd8fSd4MaV5nBg0HjWN18FJOAhIIoi1xBkZV%252DL49SH2EI5VLMJbpWWN0g9BRJoQ.SsBgzO8xkQumzWyT%252DXi_SQ%26rut%3D50d63945c163f16d461e2b67dd8b323e2c266472c0664e98937a75c34b5ca732%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8lB_2iwNQYQjBXoXP2Mg9OjVUCUyNPBrzbMNxM6P1CiEvSmVq%252DTnubXUa2gFQZId8Sz_0g7sgPKPGl%252D0ux_Xo8PsP8JwQA_lAjpJrLH%252DdQAdXpnTYdXR6o1OCaTPw5WrmdYfvhGn8X%252DRqDU2YCTAfruQXF7redJEzCz3emiCUzrUSQr_HYWflPeIpmQF2x_utgWkZ9vzJdU9363YRU75JvIhANis%2526u%253DaHR0cHMlM2ElMmYlMmZhZC5kb3VibGVjbGljay5uZXQlMmZzZWFyY2hhZHMlMmZsaW5rJTJmY2xpY2slM2ZsaWQlM2Q0MzcwMDA2Mzc4NjAxMjI1NSUyNmRzX3Nfa3dnaWQlM2Q1ODcwMDAwNzA4ODU0NzYzMSUyNmRzX2FfY2lkJTNkNzA5MjY3MzYzJTI2ZHNfYV9jYWlkJTNkMTMxNjU1MTkzODUlMjZkc19hX2FnaWQlM2QxMjEyNDE3ODg3NzQlMjZkc19hX2xpZCUzZGt3ZC00NzQzNjU3ODk0MjQlMjYlMjZkc19lX2FkaWQlM2Q4NDkzNzg2MDAzODgyNSUyNmRzX2VfdGFyZ2V0X2lkJTNka3dkLTg0OTM3ODUyNjkwNjUyJTNhbG9jLTE5MCUyNiUyNmRzX2VfbmV0d29yayUzZHMlMjZkc191cmxfdiUzZDIlMjZkc19kZXN0X3VybCUzZGh0dHBzJTNhJTJmJTJmcGFydG5lci5mcmVld2lsbC5jb20lMmZhbWVyaWNhbnJlZGNyb3NzJTJmJTNmY2lkJTNkZnJlZXdpbGwlMjZtZWQlM2RjcGMlMjZzb3VyY2UlM2RiaW5nJTI2c2NvZGUlM2RBUFAwMDAwQUQwMDIlMjZnY2xpZCUzZGQ1MDI1ZTYwMzU1NTEzYjU0ODFhMzczNzc3ZTRiZDQ4JTI2Z2Nsc3JjJTNkM3AuZHMlMjYlMjZtc2Nsa2lkJTNkZDUwMjVlNjAzNTU1MTNiNTQ4MWEzNzM3NzdlNGJkNDg%2526rlid%253Dd5025e60355513b5481a373777e4bd48%26vqd%3D4%2D327837253481128099585249323936818440072%26iurl%3D%257B1%257DIG%253D8E5F448D0FD446D688DE0A98A0C33F85%2526CID%253D1AAD8000F9616D9A3F1896D5F8F66C9C%2526ID%253DDevEx%252C5045.1&rut=0f044e858c1890facc459356ee19aaaa4caaf21d4b57e7e60b6185847353b25c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:59:46.282384"
+    },
+    {
+      "topic": "free will",
+      "title": "Free Printable Last Will - Edit, Download & Print",
+      "content": "Create Your Own Last Will with Our Simple Will Template. Fast & Simple. Try Now Online. Create, Customize and Download A Pre-prepared Last Will & Testament. Fast & Simple",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dlawdistrict.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DDehtdl4y1MUcFmkg14qgUJgEB_yRQPRGUCJM6LNAwIJqoZ1Honlxy8f4Qo0AzVsTxVmDEWq6m7Ka5U0hswf8B2qQhyhlCt7uITRAxOAoTBkDL2Nucx2CzFFra217dPKlU2AA8TsEiea7aCytAyxUUh3ZzPtjpy8l3kI1NE158ik.tYLpIOPn8geDsCE7oBo%252Dww%26rut%3D6a24150e38a15ecc2a40cbf5878bb06e4bf0bd07117a173d092f9f9314fbeaec%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8oDLw43jbel%252DvrAW3d4aIazVUCUzaTm8CXx7c3ZHnXebA994po0FDTIpba_%252DZiJdlOj9yj8ItgyUtl63bfTmjWDz4bD4mJHhUk%252DTqaavUnbw05mN6bkXAv75_%252DPI3hJ58OicS7IEaabFZ3UwgyaNJ2ldOieIqm0YNezSkYqfD6q7yR_MbONV8wg1lfzexIDxYZMQCntPBl6B78osdcsPwIsoZQ_E%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cubGF3ZGlzdHJpY3QuY29tJTJmbGFzdC13aWxsLWFuZC10ZXN0YW1lbnQlMmYlM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2Q1MzAwMTkzOTclMjZ1dG1fdGVybSUzZGxhc3QlMjUyMHdpbGwlMjUyMGFuZCUyNTIwdGVzdGFtZW50JTI1MjBmb3JtJTI1MjBmb3IlMjUyMGZyZWUlMjZ1dG1fY29udGVudCUzZCUyNnV0bV9hZGdyb3VwJTNkMTM1MzUwMDYyMzI0NTkyNSUyNnV0bV9uZXR3b3JrJTNkcyUyNnV0bV9kZXZpY2UlM2RjJTI2dXRtX2RldmljZW1vZGVsJTNkJTI2dXRtX21hdGNodHlwZSUzZGUlMjZ1dG1fbG9jX3BoeXNpY2FsX21zJTNkODc0MjIlMjZtc2Nsa2lkJTNkNDE4ZjE3ZjcxN2VlMTllZGU5ZmE3ZWEwNTU1ZmExOWM%2526rlid%253D418f17f717ee19ede9fa7ea0555fa19c%26vqd%3D4%2D131928787669377490555270501834694948057%26iurl%3D%257B1%257DIG%253D8E5F448D0FD446D688DE0A98A0C33F85%2526CID%253D1AAD8000F9616D9A3F1896D5F8F66C9C%2526ID%253DDevEx%252C5049.1&rut=6e675580a9076f9587ad8c17f9163fc80f352981c1d60baad762aef0ba3d7033",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:59:46.282457"
+    },
+    {
+      "topic": "free will",
+      "title": "Write Your Legal Will Online, Free & Simple | FreeWill",
+      "content": "FreeWill is a service that lets you create or update your last will and testament online, for free. You can also make other estate planning documents, such as living will, power of attorney, and beneficiary designations, and support nonprofits with a small gift.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.freewill.com%2F&rut=3117c31630350db848193a653a129b27e252228e4348ced07f98f013edab9924",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:59:46.282507"
+    },
+    {
+      "topic": "free will",
+      "title": "Free Last Will and Testament (Will) - PDF | Word - eForms",
+      "content": "A last will and testament, or will, is a legal document outlining how an individual (testator) wants to transfer their assets after death. It also appoints who will manage the estate during the probate process (personal representative) and guardians for minor children and pets.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Feforms.com%2Fwills%2F&rut=1bbf307fff607bcf364abcbb01492c7def967110a09c055777cc4a78809897ed",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:59:46.282553"
+    },
+    {
+      "topic": "free will",
+      "title": "Free Last Will and Testament Template | PDF & Word",
+      "content": "Use our free last will and testament template to outline asset distribution and follow state signing requirements.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Flegaltemplates.net%2Fform%2Flast%2Dwill%2Dtestament%2F&rut=0b4b6302f32c438502821cefe760bd88a1c3362e7292b92801d2821cdb647268",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:59:46.282604"
+    },
+    {
+      "topic": "avatar: fire and ash",
+      "title": "Shop avatar fire and ash - Amazon.com Official Site",
+      "content": "Find deals and low prices on avatar fire and ash at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DLCAYPmJQ7oNyMIqd52GeFn6P9cpWrlWjIPsFKMEWl%252D1EvlqHNiKFdtoGYGhqf2oC0T4L58ds07Qcu3nrBUwJYrzvPljOA9Fe9OFtjcco%252Dqhx0yOIItwhd1tCnFfi9qVulEAQ9PuXeHCcGZ4u9wKevpumhgC6%252DTvHjJ8NnY9bIxs.TSBfZtzjBopXuCjfS6gaYA%26rut%3Df45cc89d6484e5bc314047560e418044c060a751b248561797f42b9c53d41422%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8h2n8eI8dtoA4BDUGOrIf3DVUCUzXtimy4YHpkm3CbLlFWBNNYzdUT20y328NqYhQvTmAwlr%252Dw5fhB40um3Wm1tngNS7M1R4Fu181UdRGTJ0nhYCafgXtCM%252DJNHMyHktMsc0yB40cZvuzK735AXc1T9kQ9FokEbMdKpfi4nHA9bJp3LS4cQEtyzU2Lrc2AvfG_THxN5zaHNez_j4g8jlZ1sUWK60%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGF2YXRhciUyYmZpcmUlMmJhbmQlMmJhc2glMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF80NXZqY2E2YTVfZSUyNmFkZ3JwaWQlM2QxMjM5MTQ5OTUxMTMwNDI5JTI2aHZhZGlkJTNkNzc0NDcwMzk5MDc2OTglMjZodm5ldHclM2RzJTI2aHZxbXQlM2RlJTI2aHZibXQlM2RiZSUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjQ0OCUyNmh2dGFyZ2lkJTNka3dkLTc3NDQ3MjkwMjEwOTczJTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QyNTU1MV8xMzU5MjQxMCUyNm1jaWQlM2RhZTBkOGNhZDBmODIzMmMzYjU2ZDFkZGZhNGViZDc4ZCUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkYWU3NTI0OTQ1Njk5MWRkYTNjN2I0ZGMzMTU1N2QxMjQ%2526rlid%253Dae75249456991dda3c7b4dc31557d124%26vqd%3D4%2D119991211974493967152509028975756698880%26iurl%3D%257B1%257DIG%253D54E5DB1241744573AD967D84000BD40F%2526CID%253D389A4E86661963E51033585367CC62E5%2526ID%253DDevEx%252C5046.1&rut=11cbf762f21137849f8127642ee7febaa692c521cb4131bbd6b970ffa97c334c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:04:31.365557"
+    },
+    {
+      "topic": "avatar: fire and ash",
+      "title": "Avatar: Fire and Ash - Wikipedia",
+      "content": "Avatar: Fire and Ash is a 2025 American epic science fiction film directed by James Cameron, who co-wrote the screenplay with Rick Jaffa and Amanda Silver from a story the trio wrote with Josh Friedman and Shane Salerno.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAvatar%3A_Fire_and_Ash&rut=d2cb2cf938959038d72e79d50e6391aa3a96221668552301b21a536dfc46b20e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:04:31.365631"
+    },
+    {
+      "topic": "avatar: fire and ash",
+      "title": "Avatar: Fire and Ash",
+      "content": "With \"Avatar: Fire and Ash,\" James Cameron takes audiences back to Pandora in an immersive new adventure.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.avatar.com%2Fmovies%2Favatar%2Dfire%2Dand%2Dash&rut=fd6b7e1c7ab2bf7366051aa23e02c4495212dfa601ad5c8761662161ef8baa2d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:04:31.365684"
+    },
+    {
+      "topic": "avatar: fire and ash",
+      "title": "Avatar: Fire and Ash (2025) - IMDb",
+      "content": "Avatar: Fire and Ash: Directed by James Cameron. With Sam Worthington, Zoe Salda\u00f1a, Sigourney Weaver, Stephen Lang. Jake and Neytiri's family grapples with grief, encountering a new, aggressive Na'vi tribe, the Ash People, who are led by the fiery Varang, as the conflict on Pandora escalates and a new moral focus emerges.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt1757678%2F&rut=e8e61169f85f18b742fbea1fb56a73a2e6f4ae5f4dc9eb5b3ab668a639898187",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:04:31.365757"
+    },
+    {
+      "topic": "avatar: fire and ash",
+      "title": "Avatar: Fire and Ash | Tickets and Showtimes at AMC Theatres",
+      "content": "AMC has been advised that this film contains sequences with flashing lights that may affect photosensitive viewers. With AVATAR: FIRE AND ASH, James Cameron takes audiences back to Pandora in an immersive new adventure with Marine turned Na'vi leader Jake Sully (Sam Worthington), Na'vi warrior Neytiri (Zoe Saldana), and the Sully family.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.amctheatres.com%2Fmovies%2Favatar%2Dfire%2Dand%2Dash%2D53700&rut=f60dd572c450c9e7563dbb054a99bbdda3560dfaad97b72bd3c5d8b2bc66dc35",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:04:31.365811"
+    },
+    {
+      "topic": "friedrich nietzsche",
+      "title": "Shop friedrich nietzsche - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on friedrich nietzsche at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Dg67FH6pl4VG8Rr7EIeev9Gf0GTl8stIPxfqwVIMztMxXDieVK%252DOoIYtOZK2x2jE5YBT4WSDFVcp846_XwJ8Y7LFv9aT2fOfw4eziP3_rUE4%252DSGZaBPVKvhuRmlNRNthUvQ3WMVAw9xsfl10VXXruOtbj9GYGJfIgSM1Vs7IjzKs.aD2sC5oSol5ePCMjz5huOg%26rut%3D80b02558aac20dc29774f75dee83ceb1e75181a6fe028b3a4396b5e859b7993c%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8JdYA00id4vkfFcoU6It3WjVUCUwQdb90IDKi2wYQPXxdBEAU4H5Xt6q4yBvcRSiKaAcX6aN%252DJAH_IIUm7L3w_Nr2O9BL4FE%252DXS_CABZ5D0WI9FCRePg0MWo_t0WTUCH2VajKy5%252D17L9VgUaD6AZxKfb5U4axXu7hrEDLRLIjZqzfP24Wib_TcQ2KqfuWno4gdyi91ZnldRLpohl5bC%252DT9%252DLrgxU%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGZyaWVkcmljaCUyYm5pZXR6c2NoZSUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzlybGthd205enJfcCUyNmFkZ3JwaWQlM2QxMjM1ODUxMzc5ODA4NjE4JTI2aHZhZGlkJTNkNzcyNDA4NzgxNTgxNDUlMjZodm5ldHclM2RzJTI2aHZxbXQlM2RlJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjQ0OCUyNmh2dGFyZ2lkJTNka3dkLTc3MjQwOTQ2NTg4NDY0JTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QyODIzN18xNDYzODA2NSUyNm1jaWQlM2RlODA3NTA4MGYyMTIzMzk2YjkzZjkzOGU0ZmZjZGNmMSUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkMDM2ZWYwNWJjMTIxMTQxYzhkOGY5OTAzZDFiZTE2YjM%2526rlid%253D036ef05bc121141c8d8f9903d1be16b3%26vqd%3D4%2D223627938955351712324129224525398810401%26iurl%3D%257B1%257DIG%253D9395B8C4D1944A09BE1F1D7A982D81B3%2526CID%253D1247FDD5CF3D6B592317EB00CEAA6A59%2526ID%253DDevEx%252C5046.1&rut=8af56a1f692add90c4af05346eef98572e588ec030532036c6ef6d3438800a9f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:38:24.196071"
+    },
+    {
+      "topic": "friedrich nietzsche",
+      "title": "Friedrich Nietzsche - Wikipedia",
+      "content": "Friedrich Wilhelm Nietzsche[b] (15 October 1844 - 25 August 1900) was a German philosopher. He began his career as a classical philologist, turning to philosophy early in his academic career. In 1869, aged 24, Nietzsche became the youngest professor to hold the Chair of Classical Philology at the University of Basel. Plagued by health problems for most of his life, he resigned from the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFriedrich_Nietzsche&rut=aed153db5416313d8393fe9f56d7c7c4c3e782d9b4b3a970178265e989714f3e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:38:24.196169"
+    },
+    {
+      "topic": "friedrich nietzsche",
+      "title": "Friedrich Nietzsche | Biography, Books, & Facts | Britannica",
+      "content": "Friedrich Nietzsche was a German classical scholar, philosopher, and critic of culture, who became one of the most influential of all modern thinkers. His attempts to unmask the motives that underlie traditional Western religion, morality, and philosophy deeply affected generations of intellects.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FFriedrich%2DNietzsche&rut=11515c16f070a310980d5c3656e1aba5b018a1c74aeb8ca9083e0c4455e8ca45",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:38:24.196242"
+    },
+    {
+      "topic": "friedrich nietzsche",
+      "title": "Nietzsche, Friedrich | Internet Encyclopedia of Philosophy",
+      "content": "A comprehensive overview of the life and work of the German philosopher, essayist, and cultural critic. Learn about his views on truth, morality, nihilism, power, and the meaning of existence, as well as his influence and reception in Western philosophy and intellectual history.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fnietzsch%2F&rut=f2abde268629c5c7209e25f083dcd5c55db4399f7846a3683bb2b2bc419d8b5e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:38:24.196309"
+    },
+    {
+      "topic": "friedrich nietzsche",
+      "title": "Friedrich Nietzsche - Stanford Encyclopedia of Philosophy",
+      "content": "Friedrich Nietzsche (1844-1900) was a German philosopher and cultural critic who published intensively in the 1870s and 1880s. He is famous for uncompromising criticisms of traditional European morality and religion, as well as of conventional philosophical ideas and social and political pieties associated with modernity.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fnietzsche%2F&rut=571bb209d0e5a2e3ee6e4018d2e95663f49529ddfae503bbea69b27d937bb89e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:38:24.196402"
+    },
+    {
+      "topic": "field theory mathematics",
+      "title": "Shop field theory - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on field theory at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D%252Dyl4vucZMH8eamcrbid06WyesDyzzNpBgql91s6GRUhfUH533tSIDV%252Dqsiakio5YUqxmnwleEXXuaHxPoXIO0HFHPBKTQTptd4q_DPXJIiBIlfqYX8MdMWG83oF1c3gHtmVGdw27va9OC9l5cXxIeNGZP3j2vo6YAjSruN308WM.7q0mdzGGF0ye6AHgkXksSA%26rut%3D36e57878f639de0a411ae1f953e9b7491b64da7d46e39e6b52d6273dc41bddbd%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8w4G7rEvH_iznpHwoKsxUaTVUCUyL8keSYz0J77cEiT%252D5YcHOHedv901AW2q3cerOXPobor8JSO8gazSdI1Ye1Tc83LGU8XVkWyrYYFzCPw9ytPiErNAd1eS5pdfgci13J%252DrZHyr0xuZmjChETXityFzxk1MRFR4gUZwygmHYPvuSDW6DFqhYAtk5UScyroGewzPGIFbQdA88KW26AxMmTfS9MTk%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGZpZWxkJTJidGhlb3J5JTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfMjYwbjE2Z3BsdF9wJTI2YWRncnBpZCUzZDEyMjU5NTU4MTA0OTMwMjUlMjZodmFkaWQlM2Q3NjYyMjQwNjAwOTM1OCUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NDQ4JTI2aHZ0YXJnaWQlM2Rrd2QtNzY2MjI1MDUwNTA0MTQlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDI1NTU4XzEzNTkyMzk0JTI2bWNpZCUzZGZiZGMwN2JiMjE0ODNhZDc5NDM4YWMwOWJhZDk5YWRhJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2Q3MTJlYjQyMDBiMmUxNjUzZjBmMmRkNzgxODRkMmViMg%2526rlid%253D712eb4200b2e1653f0f2dd78184d2eb2%26vqd%3D4%2D181554290991606041612021339412389198446%26iurl%3D%257B1%257DIG%253D366E916911D94B35919F0516B87EBFA8%2526CID%253D04431F7AC0E76A12262909AFC1706B01%2526ID%253DDevEx%252C5046.1&rut=d05964d8fc058c360476d74674087a93ca716324bdbcae2bfcdcfd5732a014a2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:50:12.144512"
+    },
+    {
+      "topic": "field theory mathematics",
+      "title": "Field in Mathematics - Definition, Examples & Theory - Lesson",
+      "content": "Over 27,000 video lessons and other resources, you're guaranteed to find what you need. Learn faster. Stay motivated. Study smarter.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstudy.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DmNq2FHgi7ayezLYo9GvEoTXHnBsFu5htyW6fpGMTIs4My22Q5qRmmTa3J8xbKV2v_yyau0vx_Ogh5ixamEnl5HDhfB2S2zYNaZDeZ5JaAzAYWF753BmVm91zAGCj0nmRRjUnXwvTIWySiAZpRxReFKJJzG%252DWQn5URwZ6Gqo8NtI.XhI2P8zuz3K%252D2Khlq2Cttg%26rut%3Db8bb0e1e8fb2608d58b97a7da25f17e56944fc7049636163552c2394399899e9%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8hHghonF3meFWJ2vErEfUPzVUCUzvB9KFXBbvRnHcHKHlDitDl_w0ZRcHVGNV41BHEbQ8zsln1Co7nHuhwLNn%252Dt1c%252D32YjTUMWl0obOJreSapPTztrCKxygI4OXW0yoRnQ64tx5glR1ofdiuYJTB%252D_SCuqH3iWSHy_q%252D5sPfNKn1iz0kG1SP_JRvgtI7OMPgiaiBOMHvMVkqs%252DMUhdR2NFNXoT4o%2526u%253DaHR0cHMlM2ElMmYlMmZzdHVkeS5jb20lMmZidXklMmZsZWFybiUyZmxlc3NvbiUyZmZpZWxkLXRoZW9yeS1jb25jZXB0LWV4YW1wbGVzLXdoYXQtaXMtZmllbGQtdGhlb3J5Lmh0bWwlM2ZzcmMlM2RwcGNfYmluZ19ub25icmFuZCUyNnJjbnR4dCUzZGF3cyUyNmNydCUzZCUyNmt3ZCUzZFNFTy1QUEMtQlVZJTI2a3dpZCUzZGRhdC0yMzI5MDQwNTA1ODg2OTQwJTNhbG9jLTE5MCUyNmFnaWQlM2QxMjM1ODUxMzAyNTk2NzQ2JTI2bXQlM2RiJTI2ZGV2aWNlJTNkYyUyNm5ldHdvcmslM2RzJTI2X2NhbXBhaWduJTNkU2VvUFBDJTI2bXNjbGtpZCUzZDAxYzY4MmNlODg0MTFkZmZiMGM1ZWI5NjliMjI5Yjky%2526rlid%253D01c682ce88411dffb0c5eb969b229b92%26vqd%3D4%2D35465495683035577090941031441162334225%26iurl%3D%257B1%257DIG%253D366E916911D94B35919F0516B87EBFA8%2526CID%253D04431F7AC0E76A12262909AFC1706B01%2526ID%253DDevEx%252C5050.1&rut=ba0acfc6b47a77bba0d6c04c250b8cc4fd2cf12cf229e361f8d3ad610f58a586",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:50:12.144592"
+    },
+    {
+      "topic": "field theory mathematics",
+      "title": "Field (mathematics) - Wikipedia",
+      "content": "In mathematics, a field is a set on which addition, subtraction, multiplication, and division are defined and behave as the corresponding operations on rational and real numbers. A field is thus a fundamental algebraic structure which is widely used in algebra, number theory, and many other areas of mathematics.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FField_(mathematics)&rut=ddae7666b2c33f0f600357bee10d516b6db134f95a92ae54136f3fbe6ddf147e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:50:12.144667"
+    },
+    {
+      "topic": "field theory mathematics",
+      "title": "Field -- from Wolfram MathWorld",
+      "content": "A field is a set of elements that satisfies the field axioms for addition and multiplication. Learn about the history, terminology and properties of fields, and see examples of complex, rational and real numbers.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmathworld.wolfram.com%2FField.html&rut=b79984e4047b2ececd7beb0a033deb72336d3b3f2ea32b52f3f78189bf430077",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:50:12.144732"
+    },
+    {
+      "topic": "field theory mathematics",
+      "title": "PDF Fields and Galois Theory - James Milne",
+      "content": "Splitting field These notes give a concise exposition of the theory of fields, including the Galois theory of finite and infinite extensions and the theory of transcendental extensions. The first six chapters form a standard course, and the final three chapters are more advanced.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.jmilne.org%2Fmath%2FCourseNotes%2FFT.pdf&rut=dc0692e767ac908470960d128518e4b92db265e2de0376f044be919b8cb5c746",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:50:12.144797"
+    },
+    {
+      "topic": "fourier transform",
+      "title": "Fourier transform - Wikipedia",
+      "content": "Learn about the Fourier transform, an integral transform that decomposes a function into its frequency components. Find definitions, properties, applications, and generalizations of the Fourier transform for various functions and groups.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFourier_transform&rut=6178edc29cbe27379b16cae538a878599e6c1c4b4eb3496ce2837f2bfb83dae9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:58:42.978313"
+    },
+    {
+      "topic": "fourier transform",
+      "title": "PDF Lecture 16: Fourier transform - MIT OpenCourseWare",
+      "content": "Learn how to represent aperiodic signals as sums of sinusoids using Fourier transform, and how it relates to Laplace transform. See examples, properties, and frequency plots of Fourier transforms of various functions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Focw.mit.edu%2Fcourses%2F6%2D003%2Dsignals%2Dand%2Dsystems%2Dfall%2D2011%2Fd74bab2dfa6e465d61fed45763d50528_MIT6_003F11_lec16.pdf&rut=69143a2194027233174caafec51ff527379b1c68e530e91a90797cd1a6bb8853",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:58:42.978371"
+    },
+    {
+      "topic": "fourier transform",
+      "title": "Fourier Transform",
+      "content": "Learn how to decompose any waveform into sinusoids of different frequencies using the Fourier Transform. This website provides a comprehensive guide on the theory, properties, pairs, applications and background of the Fourier Transform.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.thefouriertransform.com%2F&rut=020b3dce29aa28cdd2b1ce9e29ab4129d656065c3d78f95c4666e3d0b765dbdd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:58:42.978417"
+    },
+    {
+      "topic": "fourier transform",
+      "title": "Fourier Transform -- from Wolfram MathWorld",
+      "content": "The Fourier transform is a generalization of the complex Fourier series in the limit as . Replace the discrete with the continuous while letting . Then change the sum to an integral, and the equations become",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmathworld.wolfram.com%2FFourierTransform.html&rut=3af30d6a6c614c3f6e07da07d1a6a2f3bcb685363bbdc45bf97acdc8fd22ae6c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:58:42.978507"
+    },
+    {
+      "topic": "fourier transform",
+      "title": "Fourier Transform - GeeksforGeeks",
+      "content": "Fourier transform is a mathematical model that decomposes a function or signal into its constituent frequencies. It helps to transform the signals between two different domains like transforming the frequency domain to the time domain.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmaths%2Ffourier%2Dtransform%2F&rut=07f544200b918dd15aed00dd15d7255981730e2d146b7daec0829df13d24f451",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:58:42.978609"
     }
   ],
-  "last_updated": "2025-11-28T15:46:51.035110"
+  "last_updated": "2026-01-02T11:45:04.776451"
 }

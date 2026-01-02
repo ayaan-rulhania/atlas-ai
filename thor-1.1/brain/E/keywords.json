@@ -160,7 +160,26 @@
     "expectation",
     "explanation",
     "extension",
-    "extent"
+    "extent",
+    "electron",
+    "electronegativity",
+    "entropy",
+    "enthalpy",
+    "enzyme",
+    "euro",
+    "epigenetics",
+    "episodic",
+    "eating",
+    "epistemology",
+    "existentialism",
+    "empiricism",
+    "easier",
+    "epicureanism",
+    "edmund",
+    "eigenvalue",
+    "eigenvector",
+    "equation",
+    "euclidean"
   ],
   "knowledge": [
     {
@@ -3963,7 +3982,1627 @@
       "query": "embedded systems",
       "source": "structured",
       "learned_at": "2025-11-28T08:08:04.350986"
+    },
+    {
+      "topic": "feature engineering",
+      "title": "Shop Books - Amazon.com Official Site - Low priced products",
+      "content": "Find deals and low prices on popular products at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DGSZGnWkO3YLq4ZXpMsa6yNPbNuSARdgmBEdvUocGdzK4ACwcMcq_IWUrv9At7rPqpPwV5KWKWDIE8m4EqRWyUicW4P4J2j3W_60tIrZmxhOwUOLswhf0VGLl730cYHX4A1ZREhDSETnJq3cwvPlwNmF0w%252DY4EMtaDh0dfoBzKyk.mJbs7VsJZJ1SQthpIzOhzQ%26rut%3D1c86c06af2d8379af670fe4679b694fbba75d3c93f1bee17624f1fc9dadab2ee%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8Yrdw%252D%252DeLN%252DYQrbWvGEOGJTVUCUw3avAcWjXFwyb2mr4KQAM32osU0WWvcuC3yaIfDNao6_7Vn3Qgtqq3XY%252D3QaU99C6JDxmJ6BeqGadz4v01Gcc1pfXB6z3Mw1zCZCApfGufMkMbk4IQn8it4S%252DXGSPXf55LcwOOC9BgxUeOp1hZgLt3Qj53FgKzRxt5%252DMbzguhEner3RUWG2baktwNynvg9ucc%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGZlYXR1cmUlMmJlbmdpbmVlcmluZyUyYm1hZGUlMmJlYXN5JTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfM29hbWw2eTh3OV9wJTI2YWRncnBpZCUzZDEyMzM2NTMwNDI1Mzg1MjAlMjZodmFkaWQlM2Q3NzEwMzQ0NjAwNjA0OCUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NjM1JTI2aHZ0YXJnaWQlM2Rrd2QtNzcxMDM2MzEzODg3MjUlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDI1NTIwXzEzNTkyNDUyJTI2bWNpZCUzZDcyYWQ3ZjVjNTlhMjNlNGI5YTU5ZDZiNDRlMThlNGFhJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2RjM2U3NWUxY2VkNTExYjU4N2RjZTM3NDkwOTk2ZWM0NA%2526rlid%253Dc3e75e1ced511b587dce37490996ec44%26vqd%3D4%2D149618516824410897468770165188653446929%26iurl%3D%257B1%257DIG%253DE0CF6342A913441CA2EE56107AF1C2F5%2526CID%253D091D880A3173647627749EDE30E46526%2526ID%253DDevEx%252C5046.1&rut=bd6b33a8e04f48c1582e7dacaadbd344eb1f978f4d112bae1130b305b3d22f23",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T19:06:48.392217"
+    },
+    {
+      "topic": "feature engineering",
+      "title": "What is Feature Engineering? Methods, Tools and Best Practices",
+      "content": "Learn how to convert raw data into useful features that improve machine learning models. Explore techniques like feature selection, transformation, encoding, creation, and handling missing data.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mygreatlearning.com%2Fblog%2Fwhat%2Dis%2Dfeature%2Dengineering%2F&rut=78c8d4bd12a52e81bb3ea4a896702dfe4fa8c6252d4c704670762d95c0520053",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T19:06:48.393067"
+    },
+    {
+      "topic": "ensemble learning",
+      "title": "Ensemble Learning: Boost Accuracy with Multiple Models",
+      "content": "Learn how to improve model performance and accuracy with ensemble learning, a machine learning approach that combines multiple models. Explore various ensemble techniques, such as bagging, boosting, stacking, and blending, and their real-world examples.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.simplilearn.com%2Fensemble%2Dlearning%2Darticle&rut=9f5f6d62e234ea7ac32680c7d561892ca2b56505c8a8a02b87451cd0dc0c0f8c",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:17:33.820781"
+    },
+    {
+      "topic": "ensemble learning",
+      "title": "Ensemble learning: Definition, core concepts, and how it works",
+      "content": "Ensemble learning is a technique that uses multiple models to create one powerful model. Learn the core concepts, the different types (bagging, boosting, stacking, and blending), and how they work with code examples.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cudocompute.com%2Fblog%2Fwhat%2Dis%2Densemble%2Dlearning&rut=bb07c435d3614c0660ec37edbfffd967f7e7b406a73a9fbc4bf22405644658a6",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:17:33.820854"
+    },
+    {
+      "topic": "edge computing",
+      "title": "Edge computing - Wikipedia",
+      "content": "Edge computing is a distributed computing model that brings computation and data storage closer to the sources of data, reducing latency and bandwidth. Learn about the infrastructure, challenges, and applications of edge computing, such as IoT, cloud gaming, and facial recognition.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEdge_computing&rut=ae84ba3d3b094d8dd6bc6855598706b91830bd79e386ce917d69d813d941fecc",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:25:30.172356"
+    },
+    {
+      "topic": "edge computing",
+      "title": "What is edge computing? - IBM",
+      "content": "What is edge computing? Edge computing is a distributed computing framework that brings enterprise applications closer to data sources such as IoT devices or local edge servers. This proximity to data at its source can deliver strong business benefits, including faster insights, improved response times and better bandwidth availability.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ibm.com%2Fthink%2Ftopics%2Fedge%2Dcomputing&rut=899de41837589fc3ebe2404eb49f3aa5de3fe1e38e994706d2f397569fa8f179",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:25:30.172460"
+    },
+    {
+      "topic": "edge computing",
+      "title": "What is Edge Computing? - Edge Computing Explained - AWS",
+      "content": "Edge computing is the process of bringing information storage and computing abilities closer to the devices that produce that information and the users who consume it. Traditionally, applications have transmitted data from smart devices like sensors and smartphones to a central data center for processing. However, the unprecedented complexity and scale of data have outpaced network ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Faws.amazon.com%2Fwhat%2Dis%2Fedge%2Dcomputing%2F&rut=097a2dc725d9b6b194f1bf80684a5a0ac652e6621623e29d391557b24ab681bd",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:25:30.172547"
+    },
+    {
+      "topic": "edge computing",
+      "title": "What Is Edge Computing? | Microsoft Azure",
+      "content": "Edge computing extends beyond traditional IT infrastructure and helps reshape how organizations capture value from distributed data. By processing information at the remote borders of the network\u2014rather than distant datacenters\u2014this technology enables millisecond responses, reduces costs, and unlocks new capabilities. Discover what edge computing means for modern businesses and how it ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fazure.microsoft.com%2Fen%2Dus%2Fresources%2Fcloud%2Dcomputing%2Ddictionary%2Fwhat%2Dis%2Dedge%2Dcomputing%2F&rut=4fd71b4241815159793319de4aa293106eb93e02e1098c08188347cb352df5c8",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:25:30.172856"
+    },
+    {
+      "topic": "edge computing",
+      "title": "What Is Edge Computing? - Intel",
+      "content": "Edge computing accelerates data processing by moving compute closer to the edge of the network where data is generated. Learn more about edge computing technology.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.intel.com%2Fcontent%2Fwww%2Fus%2Fen%2Flearn%2Fwhat%2Dis%2Dedge%2Dcomputing.html&rut=4beee2d9383d2fcc0f91cf55d199350208ff3f9de2e0166c4b07debff1df5cd0",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:25:30.172940"
+    },
+    {
+      "topic": "quantum entanglement",
+      "title": "What Are Quantum Entanglements & How Do They Work?",
+      "content": "Quantum entanglement is a phenomenon where particles become interconnected in a way that defies classical understanding. The quantum state of each particle in a group cannot be described independently of the others, even when vast distances separate them.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbiologyinsights.com%2Fwhat%2Dare%2Dquantum%2Dentanglements%2Dhow%2Ddo%2Dthey%2Dwork%2F&rut=6038627c8e8f149baea3a9a5fff8075c496a5cdd31bf4f78ab83f416874e9ce0",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:41:30.182248"
+    },
+    {
+      "topic": "dark energy",
+      "title": "Dark energy - Wikipedia",
+      "content": "In physical cosmology and astronomy, dark energy is a proposed form of energy that affects the universe on the largest scales. Its primary effect is to drive the accelerating expansion of the universe. It also slows the rate of structure formation. [1] Assuming that the lambda-CDM model of cosmology is correct, [2] dark energy dominates the universe, contributing 68% of the total energy in the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDark_energy&rut=443c2a8476d681e8b344aef7bed38ca0be2bd8b6da690f54a2b5c390c46d9539",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T00:18:34.479659"
+    },
+    {
+      "topic": "dark energy",
+      "title": "What Is Dark Energy? The Invisible Force Behind The Universe ... - News18",
+      "content": "Dark energy is the mysterious force thought to be accelerating the universe. But a new study hints that scientists may have misread the cosmos's speed entirely.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.news18.com%2Fexplainers%2Fwhat%2Dis%2Ddark%2Denergy%2Dthe%2Dinvisible%2Dforce%2Dbehind%2Dthe%2Duniverses%2Dend%2Dand%2Dwhy%2Dscientists%2Dare%2Dworried%2Dsbhp%2Dws%2Dl%2D9799881.html&rut=8fcdd2eb9c896678484742fb8a5c7f5d13cb3e1b84d065f6b0efd00f693b551d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T00:18:34.479745"
+    },
+    {
+      "topic": "dark energy",
+      "title": "Dark energy | Definition, Discoverers, & Facts | Britannica",
+      "content": "Dark energy, repulsive force that is the dominant component of the universe.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fdark%2Denergy&rut=76969209aeeb6aa6a000774fc63c3eca51c2a8dd3d156b50ef2506e309543c97",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T00:18:34.479810"
+    },
+    {
+      "topic": "dark energy",
+      "title": "What is Dark Energy? Inside Our Accelerating, Expanding Universe - NASA ...",
+      "content": "Dark energy is an unknown force that drives the universe's accelerating expansion. Learn how astronomers discovered it, what it means for the fate of the cosmos, and how NASA studies it with various missions and telescopes.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fscience.nasa.gov%2Fdark%2Denergy%2F&rut=1eddf566ba8eb423b15a13e93f75734a90e1b5bd2139add12a3bdf7aaec5397b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T00:18:34.479875"
+    },
+    {
+      "topic": "dark energy",
+      "title": "Dark Energy may be changing and with it the fate of the Universe",
+      "content": "A mysterious force called Dark Energy might be changing, in a way that challenges our current understanding of the nature of time and space.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.bbc.co.uk%2Fnews%2Farticles%2Fc17xe5kl78vo&rut=c3ce4418739e5498d6408fe8bb731528bbb16a0b2dd86a89379ba930e889d56a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T00:18:34.479938"
+    },
+    {
+      "topic": "electron",
+      "title": "Electron",
+      "content": "The electron is a subatomic particle whose electric charge is negative one elementary charge. It is an elementary particle that comprises the ordinary matter that makes up the universe, along with up and down quarks.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Electron",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T09:20:15.278029"
+    },
+    {
+      "topic": "electron",
+      "title": "Electron - Wikipedia",
+      "content": "The electron (e\u2212 , or \u03b2\u2212 in nuclear reactions) is a subatomic particle whose electric charge is negative one elementary charge. It is an elementary particle that comprises the ordinary matter that makes up the universe, along with up and down quarks. Electrons are extremely lightweight particles. In atoms, an electron's matter wave occupies atomic orbitals around a positively charged ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FElectron&rut=b08abb52aeeef6c43e673c7dec322f42c2a3f723e867113765a460eb68cc12fd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:20:16.208856"
+    },
+    {
+      "topic": "electron",
+      "title": "Electron | Definition, Mass, & Facts | Britannica",
+      "content": "electron, one of the three basic subatomic particles \u2014along with protons and neutrons \u2014that make up atoms, the basic building blocks of all matter and chemistry. The negatively charged electrons circle an atom's central nucleus, which is formed by positively charged protons and the electrically neutral particles called neutrons. (The nucleus of the ordinary hydrogen atom is an exception ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Felectron&rut=51d78bedaabaaf3f4dd245775a7efd8d693b8efbd71f0992e2ee11848d630b5d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:20:16.208918"
+    },
+    {
+      "topic": "electron",
+      "title": "What Is an Electron? Definition and Facts",
+      "content": "An electron is a subatomic particle with a negative electrical charge. Learn about its history, properties, and applications in this chemistry note.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsciencenotes.org%2Fwhat%2Dis%2Dan%2Delectron%2F&rut=a77fe42799e1fe66a48c2feba6d5efe65e59c2451a86c723e1f9413e421014bf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:20:16.208955"
+    },
+    {
+      "topic": "electron",
+      "title": "DOE Explains...Electrons | Department of Energy",
+      "content": "Learn about the subatomic particle that is found in all atoms, its properties, behavior, and interactions. Find out how electrons are related to the Periodic Table, quantum mechanics, and nuclear physics.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.energy.gov%2Fscience%2Fdoe%2Dexplainselectrons&rut=5a607db3586327069e38f8bf40b66c9f8562b81152754b3a5cc4c7721d5e557f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:20:16.208991"
+    },
+    {
+      "topic": "electron",
+      "title": "Build cross-platform desktop apps with JavaScript, HTML, and CSS | Electron",
+      "content": "Electron Forge Electron Forge is a batteries-included toolkit for building and publishing Electron apps. Get your Electron app started the right way with first-class support for JavaScript bundling and an extensible module ecosystem.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.electronjs.org%2F&rut=d986223d61c5dc6524bb2edd3be6015ce8b445f0535ec6d4bd75a72c5500a1fe",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:20:16.209028"
+    },
+    {
+      "topic": "chemical element",
+      "title": "Shop chemical chart of elements - Amazon.com Official Site",
+      "content": "Find deals and low prices on chemical chart of elements at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D23L25atSMKzU6e0gapRMxtH45k6ncLZOyCpeoQBdGjW51b7ECM1CdSAXT3nVEtwV4ZnpD7qWISFtYkvydWIOmmSt9qwt2637g2BFP6u5sC_XgTWbiZYO8dyLL9z4ysCmwmvhWpZ8BMaQFhcobERSpxj24ISLkNdrKobhYz4Hg_g.913BEmBsoNgKVuAPOMiEPA%26rut%3Db3ba34d5d0d738ba03ea14d8336120cbbc95aa528117e590017bec494a6c478e%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8nz50lkN9q_CCG4cKVz7VYjVUCUw3c8rrBcEPQhuqMIrTR5kuknkCtcMbk1HPw%252DGkGkvW7QVfvKbfjs1Yf6_rocC%252DJTl4WVHu2vImX32uqlEyvz3wGXkvaQvruIQeXONqjWXH1JegWmW_fXJ0aDNseT8%252D5Bove5dVnWfr2AUV4LKnu4nTRpEhGON80iX2qyNRprPPgoL2T2eCrLl4DXMHOATY9ow%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGNoZW1pY2FsJTJiY2hhcnQlMmJvZiUyYmVsZW1lbnRzJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfODBxN3VnM3YzNl9wJTI2YWRncnBpZCUzZDEyMjkyNTUwNzYwNDcwNzYlMjZodmFkaWQlM2Q3NjgyODU3NTg0NjI5MSUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2OTg1JTI2aHZ0YXJnaWQlM2Rrd2QtNzY4Mjg3OTMzNDg5OTclM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDYyMTZfMTMzMDI2MjAlMjZtY2lkJTNkNWZmZmI1MDgwZjU5M2U5NGFkZGNkMjM2YzNlYWQ1ZWUlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZDQ4OWM3NzZlMGJjNTFlZmRmZjYyMWUzOGE0YTZkMWY0%2526rlid%253D489c776e0bc51efdff621e38a4a6d1f4%26vqd%3D4%2D298243354246744942820882931829531577821%26iurl%3D%257B1%257DIG%253D7E00A10F682B453E8A319112DE46A9A8%2526CID%253D1B38D6B7328365FC3F4DC063335664AC%2526ID%253DDevEx%252C5046.1&rut=263f1f826a40e992125fcdb3fe3e9a35bff9631c76f0e65a584a04aeeb1693c2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:31:16.151115"
+    },
+    {
+      "topic": "chemical element",
+      "title": "List of chemical elements - Wikipedia",
+      "content": "A comprehensive table of 118 chemical elements with their names, symbols, atomic numbers, properties, and origins. Learn about the history, classification, and characteristics of each element from the periodic table of the elements.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FList_of_chemical_elements&rut=7e4ad4c01debeed783d894a09ff702937c8d4d2ddd881e0f20691e8fecb24a30",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:31:16.151207"
+    },
+    {
+      "topic": "chemical element",
+      "title": "Periodic Table - Ptable - Properties",
+      "content": "Interactive periodic table showing names, electrons, and oxidation states. Visualize trends, 3D orbitals, isotopes, and mix compounds. Fully descriptive writeups.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fptable.com%2F%3Flang%3Den&rut=1198829ab3f3f95ca28af4855c8221c166aa2bd4885b84c3c3f43f2405955fd6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:31:16.151275"
+    },
+    {
+      "topic": "chemical element",
+      "title": "Periodic Table of Elements - PubChem",
+      "content": "Interactive periodic table with up-to-date element property data collected from authoritative sources. Look up chemical element names, symbols, atomic masses and other properties, visualize trends, or even test your elements knowledge by playing a periodic table game!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fpubchem.ncbi.nlm.nih.gov%2Fperiodic%2Dtable%2F&rut=33f7fca8bbafa3290fa0514a6c630a3c05e7db68c38dc9531b82e0f4cb8fb784",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:31:16.151345"
+    },
+    {
+      "topic": "chemical element",
+      "title": "List of chemical elements - Periodic Table",
+      "content": "List of chemical elements Here's a list of all of the chemical elements of the periodic table ordered by increasing atomic number. Click on the column header to sort the table by that column or click on an element name to get detailed facts about the element.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.periodictable.one%2Felements%2F&rut=0b30dadeadffedb0d7aacbb6d54e858dda9cbb7227eddfc83472807f8bb30504",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:31:16.151427"
+    },
+    {
+      "topic": "electronegativity",
+      "title": "Electronegativity",
+      "content": "Electronegativity, symbolized as \u03c7, is the tendency for an atom of a given chemical element to attract shared electrons when forming a chemical bond. An atom's electronegativity is affected by both its atomic number and the distance at which its valence electrons reside from the charged nucleus. The higher the associated electronegativity, the more an atom or a substituent group attracts electrons. Electronegativity serves as a simple way to quantitatively estimate the bond energy, and the sign and magnitude of a bond's chemical polarity, which characterizes a bond along the continuous scale from covalent to ionic bonding. The loosely defined term electropositivity is the opposite of electronegativity: it characterizes an element's tendency to donate valence electrons.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Electronegativity",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T09:37:02.018841"
+    },
+    {
+      "topic": "electronegativity",
+      "title": "Electronegativity - Wikipedia",
+      "content": "Electronegativity, symbolized as \u03c7, is the tendency for an atom of a given chemical element to attract shared electrons (or electron density) when forming a chemical bond. [1] An atom's electronegativity is affected by both its atomic number and the distance at which its valence electrons reside from the charged nucleus.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FElectronegativity&rut=ce7376d7403c5a15e8a0bdd8f9b77c121aed57285a1f887385a1eb650e3e7eea",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:37:03.166675"
+    },
+    {
+      "topic": "electronegativity",
+      "title": "Electronegativity - Chemistry LibreTexts",
+      "content": "Learn about electronegativity, a measure of the tendency of an atom to attract a bonding pair of electrons. Explore the Pauling scale, the Allred-Rochow scale, and the Mulliken electronegativity.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fchem.libretexts.org%2FBookshelves%2FPhysical_and_Theoretical_Chemistry_Textbook_Maps%2FSupplemental_Modules_(Physical_and_Theoretical_Chemistry)%2FPhysical_Properties_of_Matter%2FAtomic_and_Molecular_Properties%2FElectronegativity&rut=b90a7fdfa9ccd6bc8fab1ef11d6cdd195de4fdfd9477ff1095f06847fc6f30b1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:37:03.166772"
+    },
+    {
+      "topic": "electronegativity",
+      "title": "Electronegativity Definition and Trend",
+      "content": "Learn what electronegativity is, how it varies across the periodic table, and how it affects chemical bonding. Find out the most electronegative and electropositive elements, and the factors that influence electronegativity values.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsciencenotes.org%2Felectronegativity%2Ddefinition%2Dand%2Dtrend%2F&rut=cc5b7258527fc3778c7f87b5ccf1512cdcab2c9776aba66d10e11dc1ac5f2a19",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:37:03.166848"
+    },
+    {
+      "topic": "electronegativity",
+      "title": "Electronegativity | Chemical Bonding, Intermolecular Forces & Polarity ...",
+      "content": "Electronegativity, in chemistry, the ability of an atom to attract to itself an electron pair shared with another atom in a chemical bond. The commonly used measure of the electronegativities of chemical elements is the electronegativity scale derived by Linus Pauling in 1932. In it the elements",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Felectronegativity&rut=c58789eced408647888e5dada83bb80b730d28f3335be267a8561c408f1fd5fd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:37:03.166922"
+    },
+    {
+      "topic": "electronegativity",
+      "title": "Electronegativity - UCalgary Chemistry Textbook",
+      "content": "Learn how electronegativity measures the tendency of an atom to attract electrons in a bond and how it affects bond polarity and ionic character. See the periodic table of electronegativity values by Linus Pauling and the difference between electronegativity and electron affinity.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fchem%2Dtextbook.ucalgary.ca%2Fversion2%2Fchapter%2D7a%2Dmain%2Fionic%2Dand%2Dcovalent%2Dbonding%2Felectronegativity%2F&rut=ff88b5addb29947a4aa8435a4631248e913e5074cd4f2db8372511203306b862",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:37:03.166995"
+    },
+    {
+      "topic": "entropy",
+      "title": "Entropy",
+      "content": "Entropy is a scientific concept, most commonly associated with states of disorder, randomness, or uncertainty. The term and the concept are used in diverse fields, from classical thermodynamics, where it was first recognized, to the microscopic description of nature in statistical physics, and to the principles of information theory. It has found far-ranging applications in chemistry and physics, in biological systems and their relation to life, in cosmology, economics, and information systems including the transmission of information in telecommunication.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Entropy",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T09:43:23.144228"
+    },
+    {
+      "topic": "entropy",
+      "title": "Entropy - Wikipedia",
+      "content": "Entropy is a scientific concept, most commonly associated with states of disorder, randomness, or uncertainty. The term and the concept are used in diverse fields, from classical thermodynamics, where it was first recognized, to the microscopic description of nature in statistical physics, and to the principles of information theory. It has found far-ranging applications in chemistry and ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEntropy&rut=1fe4ed1ace89d5f5df505a4dd571db84990c33bd0d3913f374ecfd49798bb2dc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:43:24.007943"
+    },
+    {
+      "topic": "entropy",
+      "title": "ENTROPY Definition & Meaning - Merriam-Webster",
+      "content": "The meaning of ENTROPY is a measure of the unavailable energy in a closed thermodynamic system that is also usually considered to be a measure of the system's disorder, that is a property of the system's state, and that varies directly with any reversible change in heat in the system and inversely with the temperature of the system; broadly : the degree of disorder or uncertainty in a system ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.merriam%2Dwebster.com%2Fdictionary%2Fentropy&rut=31aec786b5c4ddd4c86f762b9942985b5a5d6c076e0490edefebd9080d981654",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:43:24.008044"
+    },
+    {
+      "topic": "entropy",
+      "title": "What Is Entropy? Definition and Examples",
+      "content": "Entropy is defined as a measure of a system's disorder or the energy unavailable to do work. Entropy is a key concept in physics and chemistry, with application in other disciplines, including cosmology, biology, and economics. In physics, it is part of thermodynamics. In chemistry, it is part of physical chemistry.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsciencenotes.org%2Fwhat%2Dis%2Dentropy%2Ddefinition%2Dand%2Dexamples%2F&rut=7278c050af4d46573bdb713d0edf125facc6725db0997a5875580d06f1a15684",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:43:24.008128"
+    },
+    {
+      "topic": "entropy",
+      "title": "What Is Entropy? Why Everything Tends Toward Chaos",
+      "content": "The Mystery of Low Entropy Beginnings One of the deepest puzzles in physics today is why the universe began in such a low-entropy state. If high entropy is the natural, likely condition, why did the Big Bang produce a cosmos of extraordinary order? This mystery touches on the origins of time itself.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencenewstoday.org%2Fwhat%2Dis%2Dentropy%2Dwhy%2Deverything%2Dtends%2Dtoward%2Dchaos&rut=8652e831e5899eed53df56c93ac685970e821c8c9988664493d912cd127e233d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:43:24.008206"
+    },
+    {
+      "topic": "entropy",
+      "title": "What Is Entropy? Understanding Disorder, Dispersal, and Microstates",
+      "content": "Entropy is a measure of disorder, dispersal, and the number of microstates a system can occupy. Learn how entropy relates to particle arrangements, phase changes, and probability in chemical systems.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.physicsclassroom.com%2FChemistry%2DTutorial%2FChemical%2DThermodynamics%2FWhat%2Dis%2DEntropy&rut=1bb2a3671082d0458c1ef8d505a15bb212d7a4d621d118a87e7838f175726a5d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:43:24.008277"
+    },
+    {
+      "topic": "enthalpy",
+      "title": "Enthalpy",
+      "content": "Enthalpy is the sum of a thermodynamic system's internal energy and the product of its pressure and volume. It is a state function in thermodynamics used in many measurements in chemical, biological, and physical systems at a constant external pressure, which is conveniently provided by Earth's ambient atmosphere. The pressure\u2013volume term expresses the work  that was done against constant external pressure  to establish the system's physical dimensions from  to some final volume , i.e. to make room for it by displacing its surroundings.\nThe pressure-volume term is very small for solids and liquids at common conditions, and fairly small for gases. Therefore, enthalpy is a stand-in for energy in chemical systems; bond, lattice, solvation, and other chemical \"energies\" are actually enthalpy differences. As a state function, enthalpy depends only on the final configuration of internal energy, pressure, and volume, not on the path taken to achieve it.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Enthalpy",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T09:43:54.594705"
+    },
+    {
+      "topic": "enthalpy",
+      "title": "Enthalpy - Wikipedia",
+      "content": "Enthalpy (/ \u02c8\u025bn\u03b8\u0259lpi / \u24d8) is the sum of a thermodynamic system 's internal energy and the product of its pressure and volume. [1] It is a state function in thermodynamics used in many measurements in chemical, biological, and physical systems at a constant external pressure, which is conveniently provided by Earth's ambient atmosphere. The pressure-volume term expresses the work that ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEnthalpy&rut=6478c0e038c02a528e98d2ff7bb017d22a362a3e4baaadb70fcd762dcd7e24ff",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:43:55.466370"
+    },
+    {
+      "topic": "enthalpy",
+      "title": "Enthalpy | Definition, Equation, & Units | Britannica",
+      "content": "Enthalpy, the sum of the internal energy and the product of the pressure and volume of a thermodynamic system.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fenthalpy&rut=0d9d64320300942c0cd1d3c8cb905087c6d199b0dee1f0586993b4b844099482",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:43:55.466480"
+    },
+    {
+      "topic": "enthalpy",
+      "title": "What Is Enthalpy? Definition, Formula, And Applications",
+      "content": "Learn what enthalpy is, its formula, significance in thermodynamics, and real-world applications in engineering and science.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fengineersguidebook.com%2Fwhat%2Dis%2Denthalpy%2Ddefinition%2Dformula%2F&rut=58b52c7dea5df0285151a7d185aeff323a80c34406770eb2b05031b5902051e7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:43:55.466550"
+    },
+    {
+      "topic": "enthalpy",
+      "title": "Enthalpy: Definition, Formula and Reactions - GeeksforGeeks",
+      "content": "Enthalpy of Freezing Water Enthalpy of freezing water is the heat change required to change liquid ice to water and the its is equal to -6.00 kJ/mole. Ionization Enthalpy Ionization Enthalpy of an element is defined as the amount of energy required to remove an electron from the isolated gaseous in its gaseous state.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fchemistry%2Fwhat%2Dis%2Denthalpy%2F&rut=5a8a63f3aa9b0b4a35e70eafb2ef11c5240c8fedf3a6a23b8cfe68c9df73e55b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:43:55.466639"
+    },
+    {
+      "topic": "enthalpy",
+      "title": "Enthalpy: Definition, Equation, Symbol, Unit, and Sign",
+      "content": "Enthalpy is the internal energy of a system plus the work done by the pressure and volume. Learn how to calculate enthalpy change, its sign convention, and its applications for phase changes and chemical reactions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.chemistrylearner.com%2Fenthalpy.html&rut=c30e90dbeb7d515d392d019c160a7ac8826b38a57c562782cd6e52329676f1c1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:43:55.466721"
+    },
+    {
+      "topic": "gibbs free energy",
+      "title": "Gibbs free energy - Wikipedia",
+      "content": "The Gibbs free energy change (\u2060 \u2060, measured in joules in SI) is the maximum amount of non-volume expansion work that can be extracted from a closed system (one that can exchange heat and work with its surroundings, but not matter) at fixed temperature and pressure. This maximum can be attained only in a completely reversible process.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGibbs_free_energy&rut=06b5ea32208d80a60e712fa4687a49d553f19889eebbb69a7fb3c6ca8919a9c6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:44:26.829216"
+    },
+    {
+      "topic": "gibbs free energy",
+      "title": "Gibbs (Free) Energy - Chemistry LibreTexts",
+      "content": "Gibbs free energy, denoted G , combines enthalpy and entropy into a single value. The change in free energy, &Delta;G , is equal to the sum of the enthalpy plus the product of the temperature and \u2026",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fchem.libretexts.org%2FBookshelves%2FPhysical_and_Theoretical_Chemistry_Textbook_Maps%2FSupplemental_Modules_(Physical_and_Theoretical_Chemistry)%2FThermodynamics%2FEnergies_and_Potentials%2FFree_Energy%2FGibbs_(Free)_Energy&rut=eccd0590cc6f2eea71d98709875e115338e203e12e86b7bdaa824c3446a054cb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:44:26.829321"
+    },
+    {
+      "topic": "gibbs free energy",
+      "title": "Gibbs Free Energy - Division of Chemical Education, Purdue University",
+      "content": "Learn how to define and calculate the Gibbs free energy of a system, which measures the balance between enthalpy and entropy as driving forces for chemical reactions. Explore how temperature, standard-state conditions and equilibrium constants affect the free energy of reactions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fchemed.chem.purdue.edu%2Fgenchem%2Ftopicreview%2Fbp%2Fch21%2Fgibbs.php&rut=e0a1c1f1e170deef07dcb925b60b13919c6b392c74ac169c161bad0139c735e0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:44:26.829402"
+    },
+    {
+      "topic": "gibbs free energy",
+      "title": "Gibbs Free Energy: Definition, Equation, Unit, and Example",
+      "content": "Learn how to calculate and interpret Gibbs free energy, a state function that measures the energy available to do work in a chemical process. Find out the standard-state Gibbs free energy of formation of some substances and the relationship between Gibbs free energy and equilibrium constant.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.chemistrylearner.com%2Fgibbs%2Dfree%2Denergy.html&rut=df5ec9c6579898c2871c62c39e0f4b914fec6b40b345eec33e61dc58b2bd29c3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:44:26.829483"
+    },
+    {
+      "topic": "gibbs free energy",
+      "title": "Gibbs Free Energy Equation: Predicting Spontaneity in Chemical ...",
+      "content": "Technically speaking, Gibbs free energy is the amount of energy that can be freed or extracted from the system in order to do useful work. But for us, Gibbs free energy becomes a useful mathematical tool for predicting the spontaneity of a reaction.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.physicsclassroom.com%2FChemistry%2DTutorial%2FChemical%2DThermodynamics%2FGibbs%2DFree%2DEnergy%2DEquation&rut=934bb9b014f3816c16f784d0cf4c9550574c3bf6a414f1056005c3b0df0fb87a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:44:26.829560"
+    },
+    {
+      "topic": "chemical equilibrium",
+      "title": "Chemical equilibrium - Wikipedia",
+      "content": "Learn about the concept, history, and applications of chemical equilibrium, the state in which reactants and products are present in constant concentrations. Find out how equilibrium is related to reaction rates, Gibbs free energy, and Le Ch\u00e2telier's principle.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FChemical_equilibrium&rut=1b140c37a851b5f1bc629ce42324d7538e59a8159d141e775534d22033436c4a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:44:58.396394"
+    },
+    {
+      "topic": "chemical equilibrium",
+      "title": "Chemical equilibrium | Definition, Equation, & Facts | Britannica",
+      "content": "Chemical equilibrium is the condition in the course of a reversible chemical reaction in which no net change in the amounts of reactants and products occurs. A reversible chemical reaction is one in which the products, as soon as they are formed, react to produce the original reactants.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fchemical%2Dequilibrium&rut=1e057db0724b4176d74ef97cc727aa559b5d9f1dacb51a479f69d12a60296bc5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:44:58.396478"
+    },
+    {
+      "topic": "chemical equilibrium",
+      "title": "11.1: Introduction to Chemical Equilibrium - Chemistry LibreTexts",
+      "content": "Learning Objectives Define \" the equilibrium state of a chemical reaction system \". What is its practical significance? State the meaning and significance of the following terms: reversible reaction quantitative reaction kinetically inhibited reaction Explain the meaning of the statement \" equilibrium is macroscopically static, but microscopically dynamic \". Very important! Explain how the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fchem.libretexts.org%2FBookshelves%2FGeneral_Chemistry%2FChem1_(Lower)%2F11%253A_Chemical_Equilibrium%2F11.01%253A_Introduction_to_Chemical_Equilibrium&rut=d3bdfee8192b9395a1edc35e5b139f1d3af3d2374527e3add52787f2e6c5d5eb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:44:58.396546"
+    },
+    {
+      "topic": "chemical equilibrium",
+      "title": "PDF Chapter 15 Chemical Equilibrium",
+      "content": "Chapter 15 Chemical Equilibrium 15.1 The Concept of Chemical Equilibrium Chemical equilibrium occurs when a reaction and its reverse reaction proceed at the same rate. In the figure above, equilibrium is finally reached in the third picture.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww2.chemistry.msu.edu%2Fcourses%2Fcem152%2FChap15%2D2025.pdf&rut=82afdbc7aa076ebd608af6b6666371e01599eda445ae966dfe3eca0356ead922",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:44:58.396612"
+    },
+    {
+      "topic": "chemical equilibrium",
+      "title": "What Is Equilibrium in Chemistry? - sciencenewstoday.org",
+      "content": "Learn what equilibrium is in chemistry, how it works, and why it matters. Explore different types of equilibrium, such as physical, solubility, and acid-base, and how they affect reactions in industry and biology.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencenewstoday.org%2Fwhat%2Dis%2Dequilibrium%2Din%2Dchemistry&rut=1c95803d7fd8251f8c837122bc13db32c466efff2db6f84fa3275073e477c121",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:44:58.396673"
+    },
+    {
+      "topic": "enzyme",
+      "title": "Enzyme",
+      "content": "An enzyme is a biological macromolecule, usually a protein, that acts as a biological catalyst, accelerating chemical reactions without being consumed in the process. The molecules on which enzymes act are called substrates, which are converted into products. Nearly all metabolic processes within a cell depend on enzyme catalysis to occur at biologically relevant rates. Metabolic pathways are typically composed of a series of enzyme-catalyzed steps. The study of enzymes is known as enzymology, and a related field focuses on pseudoenzymes\u2014proteins that have lost catalytic activity but may retain regulatory or scaffolding functions, often indicated by alterations in their amino acid sequences or unusual 'pseudocatalytic' behavior.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Enzyme",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T09:48:08.575950"
+    },
+    {
+      "topic": "enzyme",
+      "title": "Enzyme - Wikipedia",
+      "content": "An enzyme is a biological macromolecule, usually a protein, that acts as a biological catalyst, accelerating chemical reactions without being consumed in the process. The molecules on which enzymes act are called substrates, which are converted into products. Nearly all metabolic processes within a cell depend on enzyme catalysis to occur at biologically relevant rates. [1]: 8.1 Metabolic ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEnzyme&rut=62c237e05f3ab44dbba09e925ca4f2fc733f8a866e8baa3809f31222a6fc48ff",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:48:10.582317"
+    },
+    {
+      "topic": "enzyme",
+      "title": "Enzyme | Definition, Mechanisms, & Nomenclature | Britannica",
+      "content": "Enzyme, a catalyst that regulates the rate at which chemical reactions proceed in living organisms without itself being altered in the process. Most critically, enzymes catalyze all aspects of cell metabolism. Learn more about enzymes in this article.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fenzyme&rut=d0f506ec86c345e1dc30787a7200e421f76736fe506c6c5b12f052b6f7ca4dc4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:48:10.582358"
+    },
+    {
+      "topic": "enzyme",
+      "title": "Enzymes: What Are Enzymes, Pancreas, Digestion & Liver Function",
+      "content": "Enzymes are proteins that speed up chemical reactions in our bodies. Learn about the different types of enzymes, how they work, what health conditions affect them and how to test for them.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmy.clevelandclinic.org%2Fhealth%2Farticles%2F21532%2Denzymes&rut=07c7fe6664279072bd117110e7d914362c9da10d92bce92257b701df351314d0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:48:10.582388"
+    },
+    {
+      "topic": "enzyme",
+      "title": "Enzymes - Definition, Examples, Function",
+      "content": "Learn about enzymes in biochemistry. Get the definition, examples, models of enzyme function, and see how enzymes work.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsciencenotes.org%2Fenzymes%2Ddefinition%2Dexamples%2Dfunction%2F&rut=76bd2bea5de2c621370885ebbe1cb806c891cfbd11d2fbd0d933c9e7020c5582",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:48:10.582418"
+    },
+    {
+      "topic": "bulgaria and the euro",
+      "title": "Bulgaria and the euro - Wikipedia",
+      "content": "Bulgaria adopted the euro on 1 January 2026, making it the 21st member state of the eurozone. [1] When Bulgaria joined the EU in 2007 it committed to join the eurozone and replace its currency, the lev, with the euro.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBulgaria_and_the_euro&rut=5dfe6b02c93dba91928160e236398cdaa5e1489ca006cbecd2a3367aa5e65229",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:51:55.707993"
+    },
+    {
+      "topic": "bulgaria and the euro",
+      "title": "Bulgaria introduces the euro - European Central Bank",
+      "content": "The euro officially entered into circulation in Bulgaria today, bringing the number of European Union (EU) Member States using the single European currency to 21. This follows on from the formal decision made in July, which also announced the official conversion rate of 1.95583 Bulgarian lev per 1 euro.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ecb.europa.eu%2Fpress%2Fpr%2Fdate%2F2026%2Fhtml%2Fecb.pr260101~c830245e42.en.html&rut=9c7020d73ea645c84f78fa0a020f68546ae0d14fa29bc748cf53f837a69877fc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:51:55.708034"
+    },
+    {
+      "topic": "bulgaria and the euro",
+      "title": "What Bulgaria's joining the euro countries will mean for businesses ...",
+      "content": "On New Year's Day, Bulgaria will achieve its decades-old goal of joining the euro currency union and deepening ties with the more prosperous countries of Western Europe. Membership is expected to promote cross-border trade and investment, and the Bulgarian government pressed for years to get in.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fapnews.com%2Farticle%2Fbulgaria%2Deu%2Deuro%2Drussia%2Ddisinformation%2Dexplainer%2D6af51f70dd73dcfb0f7c4e829951abbb&rut=2f92c01b3c49c4cd4d285f06e8641006cdffae17ae8e8b866f87c807772eebee",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:51:55.708066"
+    },
+    {
+      "topic": "bulgaria and the euro",
+      "title": "Bulgaria joining eurozone is big deal - DW - 12/29/2025",
+      "content": "The southeastern European country is set to ditch its national currency in favor of the euro. But while Bulgaria's economy has improved, mismanagement and corruption remain rampant.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.dw.com%2Fen%2Fbulgaria%2Djoining%2Deurozone%2Dis%2Dbig%2Ddeal%2Deuro%2Dsofia%2Fa%2D75125642&rut=a737259793bc34515aeb741ce1032d54b114667626f15a67530c9700fbc10b6d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:51:55.708097"
+    },
+    {
+      "topic": "bulgaria and the euro",
+      "title": "Bulgaria adopts the Euro in 2026, becoming the 21st member of ... - WION",
+      "content": "Bulgaria becomes the 21st eurozone member in 2026. Why the euro shift is a geopolitical signal, how the economy is performing, and public concerns.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.wionews.com%2Fworld%2Fbulgaria%2Deuro%2Dadoption%2D2026%2Deu%2Drussia%2Dsignificance%2D1767248987263&rut=b934036db39867a817b76708b66d6345478b7926905ba4cb43cec84669b5a490",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:51:55.708128"
+    },
+    {
+      "topic": "gene expression",
+      "title": "Gene expression - Wikipedia",
+      "content": "Gene expression Gene expression is the process by which the information contained within a gene is used to produce a functional gene product, such as a protein or a functional RNA molecule. This process involves multiple steps, including the transcription of the gene's sequence into RNA.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGene_expression&rut=c792dd1c0ffe167200d844705343067eb3f1b867e1aa4fe51b5fe7e91c42b2a8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:54:33.065565"
+    },
+    {
+      "topic": "gene expression",
+      "title": "Gene Expression - National Human Genome Research Institute",
+      "content": "Learn what gene expression is and how it is regulated by different conditions and cell types. See how gene expression can be measured by RNA, protein, or phenotype levels.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.genome.gov%2Fgenetics%2Dglossary%2FGene%2DExpression&rut=e1c3cc290a31a3e9875861368e097f3a393aff1edb93d03bd645936d2b476c49",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:54:33.065660"
+    },
+    {
+      "topic": "gene expression",
+      "title": "What is Gene Expression and Why It Matters for Life",
+      "content": "Gene expression is the process by which genetic information in DNA is used to make proteins or RNA. Learn how gene expression is regulated, how it changes during development and in response to the environment, and how it affects health and disease.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencenewstoday.org%2Fwhat%2Dis%2Dgene%2Dexpression%2Dand%2Dwhy%2Dit%2Dmatters%2Dfor%2Dlife&rut=94060e1b4f4c1e9bc9775f44fbfa83b3b1ccd519d4a0b05dcfc4814071ff62d2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:54:33.065727"
+    },
+    {
+      "topic": "gene expression",
+      "title": "Gene Expression - Definition, Example, Steps, and Regulation",
+      "content": "Learn how genes encode information for RNA and proteins, and how cells control gene expression in response to various signals and triggers. Explore the stages of transcription, translation, and post-transcriptional modification, and the factors that regulate them.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencefacts.net%2Fgene%2Dexpression.html&rut=7e71b9159543b321a7ee274f919df9f4faf96a66be7b32d8c4bd079c0d7b5fbf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:54:33.065790"
+    },
+    {
+      "topic": "gene expression",
+      "title": "What Are Gene Expression Studies and Why Are They Important?",
+      "content": "The Significance of Gene Expression Studies Studying gene expression provides insights into how cells differentiate, develop, and interact with their surroundings. The specific pattern of genes turned on or off dictates a cell's identity, determining whether it becomes a muscle cell, a nerve cell, or a skin cell during development.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbiologyinsights.com%2Fwhat%2Dare%2Dgene%2Dexpression%2Dstudies%2Dand%2Dwhy%2Dare%2Dthey%2Dimportant%2F&rut=8e35045bd5794318e5293bca3743b86070167278d4221bffe933b372c7234fa8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:54:33.065871"
+    },
+    {
+      "topic": "epigenetics",
+      "title": "Epigenetics",
+      "content": "Epigenetics is the study of changes in gene expression that occur without altering the DNA sequence. The Greek prefix epi- in epigenetics implies features that are \"on top of\" or \"in addition to\" the traditional DNA-sequence-based mechanism of inheritance. Epigenetics usually involves changes that persist through cell division, and affect the regulation of gene expression. Such effects on cellular and physiological traits may result from environmental factors, or be part of normal development.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Epigenetics",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T09:55:03.271171"
+    },
+    {
+      "topic": "epigenetics",
+      "title": "Shop epigenetic testing kit - Amazon.com Official Site",
+      "content": "Find deals and low prices on epigenetic testing kit at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DGARPM5pEa_vK6wLm3kTGKKonAhNQpicn_OhXTnzr8kA45%252DrdTulhhkRfHivX6fMOJVJP_AEDG6ZqXtQfdo0X%252DL8k_fICAdSDWT2pzfuq5NSX7p5i4ZIM1xefwIkUeO5_lqqu_c4vksi4yiIO_7_OUGqixg80L4HHvT6jSAkpWKA.0AtJV4RFFfQvGRqOnWPy%252DA%26rut%3D3e8e7f6cab154d9103483366eee4fb47996601d9dc218f43d7e9d460681bddab%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De88jyO1ssO0Gvz04OUF4n7QDVUCUyezqPr3sShHjBh2AWHSFM0eKAg0X1sAm5yEKnTyMC7gbxXtcMaPPJkbUS%252DA4RDjIlyUEIAvVThUgt4xQjx1lO_25rmnvmwurg5IYz4edkrQQa6hBikjy%252DhfrUMOryROsFhJtrx89Kq8SfkkLh9k7Hu1_k9euq4xGGPR7ZsAR1GW_gehYE499VlvrMvnwCOlLM%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGVwaWdlbmV0aWMlMmJ0ZXN0aW5nJTJia2l0JTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfMmQxOThoOHpmMF9iJTI2YWRncnBpZCUzZDEyMjcwNTUzMjMyNjk0NzQlMjZodmFkaWQlM2Q3NjY5MTEyNTY0OTU1MyUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGIlMjZodmJtdCUzZGJiJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NDQ4JTI2aHZ0YXJnaWQlM2Rrd2QtNzY2OTEyMzU2NDc4MzQlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDMxNzlfMTM2NDAyNzglMjZtY2lkJTNkOWQyYjI5N2RhZjc2MzhkNWFjYWMzNTcwM2FmY2Y5MzklMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZDc2ZTBjNDdhNDdiZTE1OTNlN2U0YWQyY2YzNDkxZWQ4%2526rlid%253D76e0c47a47be1593e7e4ad2cf3491ed8%26vqd%3D4%2D110228187913037489052881614521726544145%26iurl%3D%257B1%257DIG%253D20CA862B71274BF3B924969154834BB5%2526CID%253D3F2791E1ABCF6B6A11168735AA1A6A2D%2526ID%253DDevEx%252C5046.1&rut=907164264237427e4337dbb5576f7cd8c0a57bcacc4c172fd76e38892b1ccc2a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:55:04.295649"
+    },
+    {
+      "topic": "epigenetics",
+      "title": "Epigenetics, Health, and Disease | Genomics and Your Health | CDC",
+      "content": "Epigenetics refers to the way your behaviors and environment can cause changes that affect the way your genes work. Epigenetics turns genes \"on\" and \"off.\" Your epigenetics change as you age, both as part of normal development and aging and because of exposure to environmental factors that happen over the course of your life. Epigenetic changes can affect your health in different ways.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cdc.gov%2Fgenomics%2Dand%2Dhealth%2Fepigenetics%2Findex.html&rut=67372e05dea23ce1793497d624e8373447db6da8df5e4a7f53d9cdf6fcc03145",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:55:04.295696"
+    },
+    {
+      "topic": "epigenetics",
+      "title": "Epigenetics - Wikipedia",
+      "content": "Epigenetic mechanisms Epigenetics is the study of changes in gene expression that occur without altering the DNA sequence. [1] The Greek prefix epi- (\u1f10\u03c0\u03b9- \"over, outside of, around\") in epigenetics implies features that are \"on top of\" or \"in addition to\" the traditional DNA-sequence-based mechanism of inheritance. [2] Epigenetics usually involves changes that persist through cell division ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEpigenetics&rut=748df8572a9dead9f385ff0783c52f1314f13e0c9f0360be02c5920851b4f85c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:55:04.296198"
+    },
+    {
+      "topic": "epigenetics",
+      "title": "What Is Epigenetics? - Cleveland Clinic",
+      "content": "Epigenetics is the study of how our environment and lifestyle affect the chemicals attached to our genes, which can change how they work. Learn about epigenetics, its role in disease, and what you can do to improve your epigenome.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmy.clevelandclinic.org%2Fhealth%2Farticles%2Fepigenetics&rut=e42767ad328aa9ac4a81e980a29f50474024588b58dae723e873569c91b30f9f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:55:04.296285"
+    },
+    {
+      "topic": "epigenetics",
+      "title": "Epigenetics | Definition, Inheritance, & Disease | Britannica",
+      "content": "Epigenetics, the study of the chemical modification of specific genes or gene-associated proteins of an organism.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fepigenetics&rut=6aa4b1b038443dfcfee97f15e88ee04145fcec99be1d41b2cd89fc2067645a08",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:55:04.296323"
+    },
+    {
+      "topic": "tissue engineering",
+      "title": "Tissue engineering - Wikipedia",
+      "content": "Tissue engineering is a biomedical engineering discipline that uses cells, engineering materials, and biochemical and physicochemical factors to restore, maintain, improve, or replace biological tissues. Learn about the origin, development, and challenges of this interdisciplinary field, as well as its applications in various organ systems and diseases.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTissue_engineering&rut=21b9dd28787b7ac45b627c622021a9e10058b005423c171ebb221cef28511b70",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:00:20.141305"
+    },
+    {
+      "topic": "tissue engineering",
+      "title": "Tissue Engineering - an overview | ScienceDirect Topics",
+      "content": "Tissue engineering is defined as a multidisciplinary research area that employs principles from various scientific fields to restore and enhance poorly functioning or injured human organs and tissues, utilizing a scaffold combined with bioactive molecules and cells to promote tissue growth. AI generated definition based on: Polysaccharide-Based Nanocomposites for Gene Delivery and Tissue ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencedirect.com%2Ftopics%2Fengineering%2Ftissue%2Dengineering&rut=24ff04a8e6b505449df6f4a1c97b9f8075e11eed767684f77f3b1163ec56ca21",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:00:20.141369"
+    },
+    {
+      "topic": "tissue engineering",
+      "title": "What Is Tissue Engineering and How Does It Work?",
+      "content": "Tissue engineering focuses on repairing, replacing, or regenerating damaged tissues and organs. It develops biological substitutes to restore or improve function where the body's natural healing is insufficient, offering solutions for tissue loss or organ failure.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbiologyinsights.com%2Fwhat%2Dis%2Dtissue%2Dengineering%2Dand%2Dhow%2Ddoes%2Dit%2Dwork%2F&rut=46d524efcdfb8ff23ed437cb42925eb72674829c304ce2edaa6e1dfadfcae556",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:00:20.141410"
+    },
+    {
+      "topic": "tissue engineering",
+      "title": "PDF Tissue Engineering and Regenerative Medicine Fact Sheet",
+      "content": "Learn what tissue engineering and regenerative medicine are, how they work, and what NIBIB-funded researchers are developing in this field. Find out about scaffolds, cells, growth factors, stem cells, and applications for medical and non-medical purposes.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nibib.nih.gov%2Fsites%2Fdefault%2Ffiles%2F2022%2D04%2FFact%2DSheet%2DTissue%2DEngineering.pdf&rut=a0385a9328210e8727af6f718d19f94b37d8812ece669cd697c03e2673527499",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:00:20.141450"
+    },
+    {
+      "topic": "tissue engineering",
+      "title": "Tissue engineering | Regenerative Medicine, Stem Cells & Biomaterials ...",
+      "content": "Tissue engineering is a field that develops biological substitutes for diseased or damaged tissue in humans. Learn how cells, scaffolds, and growth factors are used to create skin, cartilage, heart, bone, and other tissues, and how they are applied in medicine and biotechnology.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Ftissue%2Dengineering&rut=295837902f33abda706a6dc5dfa7f3385ef51a58c07d97b9012b812b812fb3d3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:00:20.141490"
+    },
+    {
+      "topic": "genetic engineering",
+      "title": "UC San Diego Science Studies - Online Certificate Programs",
+      "content": "Sciences | UC San Diego Division of Extended Studies Sciences Programs & Certificates. Flexible online learning options to fit your schedule and interests.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Ducsd.edu%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DhyfBt3rJTub4DCb8FcGCfHSyV%252DkIm5C4NK795ODoFo3EanUElfUAV0kxL6TJljcGHJiKa2sNeeIHOtcFGIbrJmrESCFMJSpuSDfcTx0Hhtwr5LCubMTDrunaTCctveDnYH7I5l52ndymVV1scC73F5oV6p7yHsweLEc19SQZQjE.BMQYxcBpr85Hcc3BYjfZCQ%26rut%3D617ffed7a234c5feb0f1bd56fa948f94724804e7d16f7899e25fa93dac316154%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8YRoSMkWzHjfF_QmRLSf30zVUCUy9xC_ME7V4_455XdCtn05IDF9FaRf%252D9id85CfvG3P7o7MUjWDGsHoFFaq_TabEhLEGRg9uxxZpz2EKcVmACIYyvQkuce00LxHLGTeXky9yoT7DPTeSNHBBQSa5FB72Aa_xgylR5BZJ8R6VSCWo8kdIv47kR6cI7vAqTHAb50HORMiLhDBaDfl6jPpgysF5WQk%2526u%253DaHR0cHMlM2ElMmYlMmZleHRlbmRlZHN0dWRpZXMudWNzZC5lZHUlMmZjb3Vyc2VzLWNlcnRpZmljYXRlcyUyZnNjaWVuY2VzJTNmbXNjbGtpZCUzZDIyZjNjMTQxOTRiNjE1Nzc4NDE2YTgxNzIyMDQzMWI0JTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkU0NTJTI1MjAtJTI1MjBBTEwlMjUyMFNjaWVuY2VzJTI1MjBOZWlnaGJvcmhvb2QlMjZ1dG1fdGVybSUzZHNjaWVuY2UlMjUyMHN0dWRpZXMlMjZ1dG1fY29udGVudCUzZEFsbCUyNTIwU2NpZW5jZXMlMjUyME5laWdoYm9yaG9vZCUyNTIwQWQlMjUyMEdyb3Vw%2526rlid%253D22f3c14194b615778416a817220431b4%26vqd%3D4%2D56244321155290492026858679606717206271%26iurl%3D%257B1%257DIG%253D1FE29C030DA740038C930D356A8641A3%2526CID%253D1AD84290CA416DB93D315444CBCD6CC4%2526ID%253DDevEx%252C5045.1&rut=0acfd1a0572ed6a1168a487b892de1494152025d55c2e5d772bcf6b34f8e0f5d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:02:26.608713"
+    },
+    {
+      "topic": "genetic engineering",
+      "title": "Genetic engineering - Wikipedia",
+      "content": "Genetic engineering, also called genetic modification or genetic manipulation, is the modification and manipulation of an organism's genes using technology. It is a set of technologies used to change the genetic makeup of cells, including the transfer of genes within and across species boundaries to produce improved or novel organisms.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGenetic_engineering&rut=bd504e6391d9b2190cf28cddd68416839806a94fd4e09774f58a5b0e20b0d446",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:02:26.608751"
+    },
+    {
+      "topic": "genetic engineering",
+      "title": "Genetic engineering | Definition, Process, Uses, Examples, Techniques ...",
+      "content": "Genetic engineering, the artificial manipulation, modification, and recombination of DNA or other nucleic acid molecules to modify an organism. The term is generally used to refer specifically to methods of recombinant DNA technology. Learn about the history, techniques, and applications of genetic engineering.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fgenetic%2Dengineering&rut=a5862865aa0586f2114e6bca556e324b374ee8aff2eb2063fa014454593969b3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:02:26.608785"
+    },
+    {
+      "topic": "genetic engineering",
+      "title": "Genetic Engineering - National Human Genome Research Institute",
+      "content": "Learn what genetic engineering is and how it is used to modify the DNA of organisms. Find out how genetic engineering has evolved from cloning to synthetic biology and its applications in research and industry.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.genome.gov%2Fgenetics%2Dglossary%2FGenetic%2DEngineering&rut=693e437eca35d13f0ff68897930ffdb47a3f2645175d05edcfc45d2022b00cb5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:02:26.608811"
+    },
+    {
+      "topic": "genetic engineering",
+      "title": "What is Genetic Engineering? How Scientists Are Rewriting the Code of Life",
+      "content": "Learn what genetic engineering is, how it works, and what it can do. Explore the history, tools, and applications of this powerful biotechnology, from crops and animals to gene therapy and CRISPR.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencenewstoday.org%2Fwhat%2Dis%2Dgenetic%2Dengineering%2Dhow%2Dscientists%2Dare%2Drewriting%2Dthe%2Dcode%2Dof%2Dlife&rut=edef8ac4244a9ffd4f3526afcf6afe99cad5f53005a24361f7a37d27f3ad6660",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:02:26.608835"
+    },
+    {
+      "topic": "episodic memory",
+      "title": "Episodic memory - Wikipedia",
+      "content": "Episodic memory is the memory of personal experiences that can be explicitly stated or conjured. It involves recollection, mental time travel, autonoetic consciousness, and various brain regions, such as the hippocampus and the prefrontal cortex.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEpisodic_memory&rut=5c2fa7206dd49afe1d0098093f7fb6bf4401a94ea4386ff3eadc335c90a30faa",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:31:12.155512"
+    },
+    {
+      "topic": "episodic memory",
+      "title": "Episodic Memory In Psychology: Definition & Examples",
+      "content": "Episodic memory is a type of long-term memory that involves recalling personal experiences or events, including the time and place they occurred. Learn about the origin, types, and brain structures of episodic memory, and how it differs from semantic memory.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.simplypsychology.org%2Fepisodic%2Dmemory.html&rut=45e41d2005a10f0e4f7929a591ad0885abac28b2d58ed1c05d82c1b7594b6439",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:31:12.155596"
+    },
+    {
+      "topic": "episodic memory",
+      "title": "Remember That Time? All About Episodic Memory - Healthline",
+      "content": "Episodic memory is a type of long-term, explicit memory that lets you reexperience past events from your point of view. Learn how it differs from semantic and event memory, and how it declines with age.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.healthline.com%2Fhealth%2Fepisodic%2Dmemory&rut=87562360ccff50b66d49b46cab71e4e9e9d6c9f7c12dcf3ed3a15cf93fd3a53a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:31:12.155653"
+    },
+    {
+      "topic": "episodic memory",
+      "title": "What Is Episodic Memory? - WebMD",
+      "content": "Episodic memory is a type of long-term memory that helps you remember personal events and experiences. Learn how it works, what kinds of memories it involves, and what can affect it.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.webmd.com%2Fbrain%2Fepisodic%2Dmemory&rut=748b9e9f3a0845676bcf6535da2a7008c59ac73309a8d029dcb32590e5d20e78",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:31:12.155705"
+    },
+    {
+      "topic": "episodic memory",
+      "title": "Episodic Memory: Definition, Types, and Examples - Verywell Mind",
+      "content": "Episodic memory is the memory of specific events and experiences, such as your high school graduation or wedding day. Learn how episodic memory works, how it differs from semantic memory, and what factors affect it.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.verywellmind.com%2Fwhat%2Dis%2Depisodic%2Dmemory%2D2795173&rut=5a1f04dd27a90e9f53eacd848b5927958c18132e6dcf1607e918b0e995b34118",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:31:12.155766"
+    },
+    {
+      "topic": "evolutionary psychology",
+      "title": "Evolutionary Psychology - Evolution Psychology",
+      "content": "Prepare for the Evolutionary Psychology Exam with Our Online Program. Available in All Subjects - Structured Lessons to Help You Pass Your Exam Success!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstudy.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DIxVg3qhYFFRuNUMPUpYx0a1tYkOOJ8W1RcdMW9Q0DbvaUTLW7rfG9_ujgg_8RODLW1hq7OwZWm%252DvFye6VH4xOcTxaNKtFiEXJWEQ5VbtJBJriHqb35RFRq8_HaUYVituQIvHHxzUG8zRcYi_zugH1DnjDC9LaPaApzSdfVpVffw.F9XeYDmsDHKjOffATDbqVg%26rut%3D90d74760add52579f1a8e08a758ea97e27af877ee0b6ada1f71b3d9a8f02b715%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8FzaLiwDfUSJw6ueosSqKXDVUCUw8P1whwk07z2alNf%252DveRRnec5cuzgT_0%252DQvqhgsOi_TPjQ9uf7W9SJg2JKUPPEJ66L6stGB7S52EDVuOYWN7QFUvw3zbEgtVLyttXsSt6disPS_fQye0RX8aTDFZFM3AbWgGYrcR4rPSkLspF8H8VNjkJ7AjZ3L0JCnuNXornqV1QeEcScetPJkn2PSOzH4qg%2526u%253DaHR0cHMlM2ElMmYlMmZzdHVkeS5jb20lMmZidXklMmZhY2FkZW15JTJmbGVzc29uJTJmZXZvbHV0aW9uYXJ5LXBzeWNob2xvZ3ktdGhlb3J5LWxlc3Nvbi1xdWl6Lmh0bWwlM2ZzcmMlM2RwcGNfYmluZ19ub25icmFuZCUyNnJjbnR4dCUzZGF3cyUyNmNydCUzZCUyNmt3ZCUzZFNFTy1QUEMtQlVZJTI2a3dpZCUzZGRhdC0yMzI5MDQwNTA1ODg2OTQwJTNhbG9jLTE5MCUyNmFnaWQlM2QxMjM1ODUxMzAyNTk2NzQ2JTI2bXQlM2RiJTI2ZGV2aWNlJTNkYyUyNm5ldHdvcmslM2RzJTI2X2NhbXBhaWduJTNkU2VvUFBDJTI2bXNjbGtpZCUzZDQ2NjkzNDllYzRhMDE5MmFkZjJkNWRjOWZhYTJlNzI5%2526rlid%253D4669349ec4a0192adf2d5dc9faa2e729%26vqd%3D4%2D86812923287689866579316126073903432304%26iurl%3D%257B1%257DIG%253D20524A27B0364CD28181671DCEA1F92A%2526CID%253D24B458931E1F618B371A4E461FFB60F5%2526ID%253DDevEx%252C5046.1&rut=4ecafdbae62aa91fd26017c5c4e7ff50fc47353656150da7d6bde1efd174dd45",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:39:47.201557"
+    },
+    {
+      "topic": "evolutionary psychology",
+      "title": "Shop evolutionary psychology - Amazon\u00ae Official Site",
+      "content": "Find deals and compare prices on evolutionary psychology at Amazon.com. Browse & discover thousands of unique brands. Read customer reviews & best sellers.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DmJ4i56Ydzr9Ysvm0tUT3uQzhvowlEl714ZJ0fBEDC9cms1Cr%252D7h0oPSe7XEXgDm%252DMZGxpU5DDEt_R2hIG8yeEi2mdXOrj_SsErXdNKUvhWAyiRtO1lCNBes4uqv3QTrULSqhse_Qe6QQgTOKpDHf55o9qBR9vcOn2QpElkqJehQ.GExJfYRTJxWbpVNxSFpEoQ%26rut%3D625ea87cfb433de22cd5af5d761d2c6cedef711b1309139401971a2c9ee7d0e3%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8GuI1_t%252DqM4PL_O1GpK3ZejVUCUwtN14nDfCKoiz3TOmUB0%252DSNKjOasZAhxm0Yp4WSGEVp5T6LKWzqX2VFjst9MWngKZWr7P_xM8iG8cjfg6HewxsL7UpUAsCutgO2vwiPyK1Epeq8MSu4GbuMU6KhaYD4euK0K4pB1AXY9xFFylrgNcrSGSe4p1j99pkrusL61LcZNV%252DzrcjTpOpgfI9T9XhsVU%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGV2b2x1dGlvbmFyeSUyYnBzeWNob2xvZ3klMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF8ybGZtMmZpMGV1X2UlMjZhZGdycGlkJTNkMTIzMzY1MjM1NjkxOTYyNCUyNmh2YWRpZCUzZDc3MTAzNDM5MTgxNjQ4JTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkZSUyNmh2Ym10JTNkYmUlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY1MDIlMjZodnRhcmdpZCUzZGt3ZC03NzEwMzUwNzMxNDE1MyUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkMTA3MzNfMTM1ODkyNTklMjZtY2lkJTNkMWYyZmJhMGZlMTc3MzY4ZGFjMjY2MjUzNmJmNmIxYTMlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZGYwNzUxYTA5Y2ViMjFhMDQ3YmUzNzM1ZWYwYjBjNTIy%2526rlid%253Df0751a09ceb21a047be3735ef0b0c522%26vqd%3D4%2D301296697206463937320870015041959127227%26iurl%3D%257B1%257DIG%253D20524A27B0364CD28181671DCEA1F92A%2526CID%253D24B458931E1F618B371A4E461FFB60F5%2526ID%253DDevEx%252C5051.1&rut=77860c722d65682cefec0c65500b09c037d190b1d00216d6c4e36ca790a0297e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:39:47.201604"
+    },
+    {
+      "topic": "evolutionary psychology",
+      "title": "Evolutionary psychology - Wikipedia",
+      "content": "Evolutionary psychology is a theoretical approach in psychology that examines cognition and behavior from a modern evolutionary perspective. [1][2] It seeks to identify human psychological adaptations with regard to the ancestral problems they evolved to solve. In this framework, psychological traits and mechanisms are either functional products of natural and sexual selection or non-adaptive ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEvolutionary_psychology&rut=7be8c8e9680ccef468fcb019daae4028eea741e1eda94c00fea39f322e184149",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:39:47.201637"
+    },
+    {
+      "topic": "evolutionary psychology",
+      "title": "Evolutionary Psychology",
+      "content": "Learn how evolutionary psychology explains the ways in which the mind was shaped by pressures to survive and reproduce. Explore the science, concepts, and controversies of this field that studies human nature and behavior from an evolutionary perspective.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.psychologytoday.com%2Fus%2Fbasics%2Fevolutionary%2Dpsychology&rut=724edbadf5764dcbaf252708c215862f296f1d58ea07ca725593c2fe3982cc09",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:39:47.201667"
+    },
+    {
+      "topic": "evolutionary psychology",
+      "title": "Evolutionary psychology | Human Behavior & Adaptation | Britannica",
+      "content": "Evolutionary psychology, the study of behaviour, thought, and feeling as viewed through the lens of evolutionary biology. Evolutionary psychologists presume all human behaviours reflect the influence of physical and psychological predispositions that helped human ancestors survive and reproduce. In",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fevolutionary%2Dpsychology&rut=8401bf0d2e988ecac71472fd12605c5008617fcbed4938e6b449a6c8f47454a3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:39:47.201697"
+    },
+    {
+      "topic": "eating disorder",
+      "title": "Eating Disorders Center - Denver Health ACUTE - Expert Care",
+      "content": "Center of Excellence for Medical Treatment of Severe and Extreme Eating Disorders. Call ACUTE The Only Medical Inpatient Eating Disorder Treatment Center In The Country.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dacute.org%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Dxfc6eWGHUh3tU51b6tIvr0Gq9TVO4NJ9W1tGapSYq9SY68mCecF0XyfLnRYcIKnp%252DuqaTymjygreS0rLqh7kKyXV9ZruGXZrbqIHWD1EdJGUzqaJ_DMo2%252DWdkLen9pc%252DgGJixVAW0xe9Qdy3agry3prdSW6v6n0ACJSbnqGhjf0.ADMXK%252Dh2DYk%252DyZRDhkFmDg%26rut%3D813df098046952c8900c467a2f504da1c7ded56841901088ca1fe610c8d4f509%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8KFp8kqh%252DiyXR2CSLa7uzCTVUCUzb8Lg0ZeyoH_93crCHEtOcpJzqcvUdXktqTmQeGa6p2Pv0G3BLPXre42RgLnJvSnNe4b0AXlEAZ05BpWmKuyDwjfKAa1xxcIaKGvQAvQPXtBx7A9fT69fdhF9x4LLX2KTRbipHhsEXA8bDqwBndYAl1z6cMTu4vISrF%252DhnXWf5as2jiwXuAgOjdXPGSQ5UoZU%2526u%253DaHR0cHMlM2ElMmYlMmZhY3V0ZS5vcmclM2Z1dG1fY2FtcGFpZ24lM2RUaWVyJTI1MjAxJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2bXNjbGtpZCUzZGM5MTBlMjBiNzdiZjFiNWM1Y2RiOGI1YzQ4NjJlY2ZhJTI2dXRtX3Rlcm0lM2RpbnBhdGllbnQlMjUyMGVhdGluZyUyNTIwZGlzb3JkZXIlMjUyMGNsaW5pYyUyNnV0bV9jb250ZW50JTNkRUQlMjUyMEhvc3BpdGFsLUlucGF0aWVudCUyNTIwR3JvdXA%2526rlid%253Dc910e20b77bf1b5c5cdb8b5c4862ecfa%26vqd%3D4%2D241216477354716272579155148914340092968%26iurl%3D%257B1%257DIG%253D1FF5B5C2A907423BA36BC4C387153346%2526CID%253D0E99B3E50CC5676C0542A5300D526621%2526ID%253DDevEx%252C5045.1&rut=965c366d81cd5160d3ae69189de892f73293f1383f4c23ad3c0137d9aadaa70b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:47:42.386490"
+    },
+    {
+      "topic": "eating disorder",
+      "title": "Shop book eating disorder - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on book eating disorder at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DMV%252DbQgthk543w%252DkAFj5mY7XGizIrWTf%252D60tHtTwNrwgyqCdD6KxL7ezwUIT3jizDd9sN8HR3zlAYfNHTqLSY_tz4sTcHM6AqjoVGmnQJa6BRC14Q9cwZAlz7CYCakkkHLj3cP_XBIQLPkg%252DFuVttdu3_XbcaTg_KL0PpRhrpdHo.8lr2AL69zc2JOedvgjmAVw%26rut%3Dfc831261a29f9886a4a2c6f06b8e215f6ae87443142f57398c77986b34ce136d%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8MQ889iZqd1P%252DFUoDu3f59TVUCUzGhfyUFGuBtUVDIBzY4X1Q_yJOr7f3LKCVZ7g%252DhGbZPS4wx6UWFMTG3WVo_dTjrqRTrxX%252DsPyqjM1wjOZv8h4gCrTnEKovswecrNbDAChib710yknhjIQ5k%252D8Y8CFFfznPbHeWFtRIlRpvrSchazLUjw9Cw9w6FNrRN7NGZsuLC8R9No3LD2PvBq5wltw46Mo%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJvb2slMmJlYXRpbmclMmJkaXNvcmRlciUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzdibXRhdW9jM2dfYiUyNmFkZ3JwaWQlM2QxMjMzNjUzMTI3MTYzMzIwJTI2aHZhZGlkJTNkNzcxMDM0NTQ1NzE5MTElMjZodm5ldHclM2RzJTI2aHZxbXQlM2RiJTI2aHZibXQlM2RiYiUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjYzNSUyNmh2dGFyZ2lkJTNka3dkLTc3MTAzNjgxODMzNjg1JTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QyOTAzNV8xNDY5Mjk5NCUyNm1jaWQlM2RjODRhOGJhZjMwNGEzMjkwYmM1YzMzNDljYWU1MWFlNyUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkYjY5MmEwZGI4OGJmMWI0MzAyZTJjOThjYjc2MmMzMDM%2526rlid%253Db692a0db88bf1b4302e2c98cb762c303%26vqd%3D4%2D127116707323735559872191719617098807302%26iurl%3D%257B1%257DIG%253D1FF5B5C2A907423BA36BC4C387153346%2526CID%253D0E99B3E50CC5676C0542A5300D526621%2526ID%253DDevEx%252C5049.1&rut=ca3b38562b1a043feb7024420001f019b278130c28935fa9e394032b2f74e848",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:47:42.386587"
+    },
+    {
+      "topic": "eating disorder",
+      "title": "What are Eating Disorders? - Psychiatry.org",
+      "content": "Eating disorders are behavioral conditions characterized by severe and persistent disturbance in eating behaviors and associated distressing thoughts and emotions. They can be very serious conditions affecting physical, psychological and social function. Types of eating disorders include anorexia nervosa, bulimia nervosa, binge eating disorder, avoidant restrictive food intake disorder, other ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.psychiatry.org%2Fpatients%2Dfamilies%2Feating%2Ddisorders%2Fwhat%2Dare%2Deating%2Ddisorders&rut=a975fc8506656f01978dc255d833fe582f21f0362fe7d7de744f809230e084ef",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:47:42.386670"
+    },
+    {
+      "topic": "eating disorder",
+      "title": "Eating Disorders: What They Are, Symptoms, Treatment & Types",
+      "content": "Eating Disorders Eating disorders are mental health conditions that cause you to have an unhealthy relationship with food. Anyone can develop an eating disorder. Common eating disorders include anorexia nervosa, bulimia nervosa and binge-eating disorder. Treatment is available to help you feel better.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmy.clevelandclinic.org%2Fhealth%2Fdiseases%2F4152%2Deating%2Ddisorders&rut=0a55ba24a01be0dfc0c1543437847b735327cf9855247840320587540492418d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:47:42.386760"
+    },
+    {
+      "topic": "eating disorder",
+      "title": "Eating disorders - Symptoms and causes - Mayo Clinic",
+      "content": "Overview Eating disorders are serious health conditions that affect both your physical and mental health. These conditions include problems in how you think about food, eating, weight and shape, and in your eating behaviors. These symptoms can affect your health, your emotions and your ability to function in important areas of life.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mayoclinic.org%2Fdiseases%2Dconditions%2Feating%2Ddisorders%2Fsymptoms%2Dcauses%2Fsyc%2D20353603&rut=d17f6286b608ffffaa4b9c9cbc32865299b2f49341d1c97e393c27e20c8fed4a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:47:42.386843"
+    },
+    {
+      "topic": "epistemology",
+      "title": "Epistemology",
+      "content": "\n\nEpistemology is the branch of philosophy that examines the nature, origin, and limits of knowledge. Also called the theory of knowledge, it explores different types of knowledge, such as propositional knowledge about facts, practical knowledge in the form of skills, and knowledge by acquaintance as a familiarity through experience. Epistemologists study the concepts of belief, truth, and justification to understand the nature of knowledge. To discover how knowledge arises, they investigate sources of justification, such as perception, introspection, memory, reason, and testimony.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Epistemology",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T19:49:47.738444"
+    },
+    {
+      "topic": "epistemology",
+      "title": "Epistemology - Wikipedia",
+      "content": "Epistemology Epistemology is the branch of philosophy that examines the nature, origin, and limits of knowledge. Also called the theory of knowledge, it explores different types of knowledge, such as propositional knowledge about facts, practical knowledge in the form of skills, and knowledge by acquaintance as a familiarity through experience.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEpistemology&rut=391ed6e6a78b01285f6835151b9119352f1bc9c646fbfcef813d5b59ba26b2c3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:49:48.565617"
+    },
+    {
+      "topic": "epistemology",
+      "title": "Epistemology | Definition, History, Types, Examples, Philosophers ...",
+      "content": "Epistemology, the philosophical study of the nature, origin, and limits of human knowledge. The term is derived from the Greek episteme (\"knowledge\") and logos (\"reason\"). Along with metaphysics, logic, and ethics, it is one of the four main branches of philosophy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fepistemology&rut=b84bb36baf15a56a9134d22d3a456a5e4f145670e999e0bade1efaac461ac9c4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:49:48.565677"
+    },
+    {
+      "topic": "epistemology",
+      "title": "Epistemology - Stanford Encyclopedia of Philosophy",
+      "content": "Locke's epistemology was an attempt to understand the operations of human understanding, Kant's epistemology was an attempt to understand the conditions of the possibility of human understanding, and Russell's epistemology was an attempt to understand how modern science could be justified by appeal to sensory experience.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fepistemology%2F&rut=484344b9ce1d26ec01137dd3f461970af559f63831bde522167dd376dbc4f453",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:49:48.565724"
+    },
+    {
+      "topic": "epistemology",
+      "title": "Epistemology - Internet Encyclopedia of Philosophy",
+      "content": "Epistemology is the study of knowledge, including its nature, extent, sources, and criteria. Learn about the main topics, issues, and theories of epistemology, such as justification, skepticism, and externalism.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fepistemo%2F&rut=f73a480ef8a44f3195d7e0a138e511ff530fd0d575a0e0656031f66f451abe3c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:49:48.565768"
+    },
+    {
+      "topic": "epistemology",
+      "title": "EPISTEMOLOGY Definition & Meaning - Merriam-Webster",
+      "content": "The meaning of EPISTEMOLOGY is the study or a theory of the nature and grounds of knowledge especially with reference to its limits and validity.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.merriam%2Dwebster.com%2Fdictionary%2Fepistemology&rut=a74359d87e22ce49a5585ef18420ea551c750bb91306ec59ab88c738f3232893",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:49:48.565810"
+    },
+    {
+      "topic": "ethics philosophy",
+      "title": "Ethics | Definition, History, Examples, Types, Philosophy, & Facts ...",
+      "content": "Ethics, the philosophical discipline concerned with what is morally good and bad and morally right and wrong. Its subject consists of fundamental issues of practical decision making, and its major concerns include the nature of ultimate value and the standards by which human actions can be morally evaluated.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fethics%2Dphilosophy&rut=ee7a21f2135e90b72c15847e8a8883753877c4c623d611aef6f7cee4f6759a38",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:51:22.642181"
+    },
+    {
+      "topic": "ethics philosophy",
+      "title": "Ethics - Wikipedia",
+      "content": "Ethics Ethics is the philosophical study of moral phenomena. Also called moral philosophy, it investigates normative questions about what people ought to do or which behavior is morally right. Its main branches include normative ethics, applied ethics, and metaethics. Normative ethics aims to find general principles that govern how people ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEthics&rut=1c6af24b916d0b59ea59a1cdaf32170869c08fb2cda1217e2d9f66701de7703b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:51:22.642297"
+    },
+    {
+      "topic": "ethics philosophy",
+      "title": "Ethics | Internet Encyclopedia of Philosophy",
+      "content": "Hobbes, Thomas: Moral and Political Philosophy Human Dignity Human Rights Justice, Western Theories of Kant, Immanuel: Radical Evil Locke's Ethics MacIntyre Metaethics Metaethics, Constructivism in Mill, John Stuart: Ethics Modern Morality and Ancient Ethics Moral Character Moral Development Moral Egalitarianism Moral Epistemology Moral Luck ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fcategory%2Fvalue%2Fethics%2F&rut=5318ff925977e2324348b629f1fc898fc97f5c0b2d41221c65f0ddf1958159b2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:51:22.642369"
+    },
+    {
+      "topic": "ethics philosophy",
+      "title": "Ethics - By Branch / Doctrine - The Basics of Philosophy",
+      "content": "Ethics (or Moral Philosophy) is concerned with questions of how people ought to act, and the search for a definition of right conduct (identified as the one causing the greatest good) and the good life (in the sense of a life worth living or a life that is satisfying or happy). The word \"ethics\" is derived from the Greek \"ethos\" (meaning \"custom\" or \"habit\"). Ethics differs from morals and ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.philosophybasics.com%2Fbranch_ethics.html&rut=fd4a8009c79f65cfa3477c0f13da3cf8ffcad5022b76d6f534a22faeeee24d47",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:51:22.642436"
+    },
+    {
+      "topic": "ethics philosophy",
+      "title": "Ethics - explore the meaning of Ethics in Philosophy",
+      "content": "In business, codes of ethics promote fair and ethical practices, ensuring that organizations act in the best interest of their stakeholders. Understanding the role of codes of ethics is essential for maintaining high standards of conduct in professional positions, and supporting these through the promotion of ethical practices.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fblog.routledge.com%2Fhumanities%2Dand%2Dmedia%2Darts%2Fwhat%2Dis%2Dethics%2F&rut=2c1d7762867fa2c1f08760289b5502dab48cc7006f94901bd96f13acef62919f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:51:22.642500"
+    },
+    {
+      "topic": "existentialism",
+      "title": "Existentialism",
+      "content": "Existentialism is a family of philosophical views and inquiry that explore the human individual's struggle to lead an authentic life despite the apparent absurdity or incomprehensibility of existence. In examining meaning, purpose, and value, existentialist thought often includes concepts such as existential crises, angst, courage, and freedom.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Existentialism",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T19:55:02.818814"
+    },
+    {
+      "topic": "existentialism",
+      "title": "Existentialism - Wikipedia",
+      "content": "Existentialism is a family of philosophical views and inquiry that explore the human individual's struggle to lead an authentic life despite the apparent absurdity or incomprehensibility of existence. Learn about the history, concepts, and figures of existentialism, from Kierkegaard to Sartre, from Nietzsche to Camus.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FExistentialism&rut=9425440451a59faedb706326d336ba04704fe2a4c74ea5eec81fbff4dda1a91f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:55:03.869791"
+    },
+    {
+      "topic": "existentialism",
+      "title": "Existentialism | Definition, History, Characteristics, Examples, Types ...",
+      "content": "Existentialism, any of various philosophies, most influential in continental Europe from about 1930 to the mid-20th century, that have in common an interpretation of human existence in the world that stresses its concreteness and its problematic character.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fexistentialism&rut=9994025e98aec9b8232f8a3714f578f91d210d9ff6cd106e2cdad91abb4d259c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:55:03.869841"
+    },
+    {
+      "topic": "existentialism",
+      "title": "Existentialism (Stanford Encyclopedia of Philosophy)",
+      "content": "Existentialism offers a thoroughgoing rejection of this view, arguing that we cannot look down on the human condition from a detached, third-person perspective because we are already thrown into the self-interpreting event or activity of existing, an activity that is always embodied, felt, and historically situated.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fexistentialism%2F&rut=25e4c17e51d408c633659ee9f7b0800703565c221e4bef689898ec98a1e23537",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:55:03.869902"
+    },
+    {
+      "topic": "existentialism",
+      "title": "Existentialism - A Beginner's Guide to Philosophy, Meaning, and ...",
+      "content": "Learn the basics of existentialism with our easy-to-follow guide. Explore the history, ethics, and key concepts like freedom, authenticity, and meaning through relatable examples. Perfect for beginners in philosophy and those seeking to understand existentialist ideas without complex jargon.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fphilosophiesoflife.org%2Fexistentialism%2F&rut=4466dbaa440dd1cb6e23397385a1a32523a8c3e9d8f15d7c4f74e1d3f107a000",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:55:03.869941"
+    },
+    {
+      "topic": "existentialism",
+      "title": "Existentialism: An Introduction - Philosophos",
+      "content": "This article provides an introduction to existentialism, a branch of modern philosophy. Learn more about its major figures, key concepts, and applications in everyday life.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.philosophos.org%2Fmodern%2Dphilosophy%2Dexistentialism&rut=216ff29d7d244f69e71d863ff63944a687907098abe4ff2718e8143c288ebab6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:55:03.869978"
+    },
+    {
+      "topic": "empiricism",
+      "title": "Empiricism",
+      "content": "In philosophy, empiricism is an epistemological view which holds that true knowledge or justification comes only or primarily from sensory experience and empirical evidence. It is one of several competing views within epistemology, along with rationalism and skepticism. Empiricists argue that empiricism is a more reliable method of finding the truth than purely using logical reasoning, because humans have cognitive biases and limitations which lead to errors of judgement. Empiricism emphasizes the central role of empirical evidence in the formation of ideas, rather than innate ideas or traditions. Empiricists may argue that traditions arise due to relations of previous sensory experiences.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Empiricism",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T19:57:07.649113"
+    },
+    {
+      "topic": "empiricism",
+      "title": "Low priced empiricism book - Amazon.com Official Site",
+      "content": "Find deals and low prices on empiricism book at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D0Qe1YHE%252DLMnjXaOK9cK88xH_7yVHRpThsjs%252DhCOmF4AT8uxw0Lll69N0mW1RhZhaXuQFD9GeTH6kyKyS1j2PkSbvzyXl4Tzg%252DOuTC8gwE4LzBxxQz3l_JNyW9Ead2yeqN%252DOO5zoBLtaswNIDsq6Oeq3ezX8%252DzKo7nLeQSQVaY3w.zURTpkanEvu61kApsKEEXw%26rut%3Dcda1e597de4100c779245e841eb8baff95bcf81a5e5efd8cfcf0689255166356%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8D2pJ1Ies01tYwe2GipnXOTVUCUyktzWrbkdK0yLhfvMZKOvFEHFNvsVKF7OlDk4Op1rFx8%252Dk%252D2oRYKa0svHIx68NV4NxBlyPkQh4Td6bzNXSXPi6lloD3dD7mKV41Yk8%252DdM0HOHFtQ5iz9FnKhLVH88ou8Yxh8JG30wUEU4FsacUvZeNZWa8Se33vlI7XYf9hCmug9FgDc%252DJvQDWnQd4Z_o9oNI%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGVtcGlyaWNpc20lMmJib29rJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfN2xydXQzamdkYl9iJTI2YWRncnBpZCUzZDEyMjgxNTQ4NDY5MjA2NDMlMjZodmFkaWQlM2Q3Njc1OTg0NjQ5ODY2NiUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGIlMjZodmJtdCUzZGJiJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2MTE0JTI2aHZ0YXJnaWQlM2Rrd2QtNzY3NjAxMTA3MjUxMTAlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDI4MjQxXzE0NjM4MjQxJTI2bWNpZCUzZGFlMmY4ZDJiNGE1NzM5ODZhNTc2YjY2NDllODRjNWVkJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2Q0MDRkYmVjNWY3MmIxZWJhZmE2MWQ3OTJiNTNmNjdjNQ%2526rlid%253D404dbec5f72b1ebafa61d792b53f67c5%26vqd%3D4%2D277485605659570651195647130291729902401%26iurl%3D%257B1%257DIG%253D18E0A69952954B11970349190BF8FCF2%2526CID%253D020972F001B56C843769642500F96D65%2526ID%253DDevEx%252C5045.1&rut=f79c8d2c488ff36fd2b850398463daf291529e61f222cf5ace7b8a53f2eb3557",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:57:08.679620"
+    },
+    {
+      "topic": "empiricism",
+      "title": "Empiricism - Wikipedia",
+      "content": "In philosophy, empiricism is an epistemological view which holds that true knowledge or justification comes either only or primarily from sensory experience and empirical evidence. [1] It is one of several competing views within epistemology, along with rationalism and skepticism. Empiricists argue that empiricism is a more reliable method of finding the truth than relying purely on logical ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEmpiricism&rut=e98f8c956597415eb433b72c9afba7638a453a6c78aa15dfbc7a485019fc43ed",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:57:08.679713"
+    },
+    {
+      "topic": "empiricism",
+      "title": "Definition, History, Criticism, & Facts | Britannica",
+      "content": "Empiricism, in philosophy, the view that all concepts originate in experience, that all concepts are about or applicable to things that can be experienced, or that all rationally acceptable beliefs or propositions are justifiable or knowable only through experience.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fempiricism&rut=ed1bb7a48f4a43d298f50112d887acc4aa27002eeeaf55ead44797e1191b4a9d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:57:08.679780"
+    },
+    {
+      "topic": "empiricism",
+      "title": "Rationalism vs. Empiricism - Stanford Encyclopedia of Philosophy",
+      "content": "1. Introduction The dispute between rationalism and empiricism takes place primarily within epistemology, the branch of philosophy devoted to studying the nature, sources, and limits of knowledge.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Frationalism%2Dempiricism%2F&rut=a313b541182e102e4a2d7bc2462cb0094537d7b34a7a30817828da00b05e7d18",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:57:08.679842"
+    },
+    {
+      "topic": "empiricism",
+      "title": "Empiricism - New World Encyclopedia",
+      "content": "Empiricism is a philosophical position that emphasizes the role of experience in knowledge. Learn about the history, types, and applications of empiricism in science and philosophy, from Aristotle to Kant to logical positivism.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.newworldencyclopedia.org%2Fentry%2FEmpiricism&rut=f5eac88681d062efd495fc4afa8d67a928a0f430c577c082e32b90f5ccf55def",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:57:08.679908"
+    },
+    {
+      "topic": "virtue ethics",
+      "title": "Virtue Ethics - Stanford Encyclopedia of Philosophy",
+      "content": "Virtue ethics is currently one of three major approaches in normative ethics. It may, initially, be identified as the one that emphasizes the virtues, or moral character, in contrast to the approach that emphasizes duties or rules (deontology) or that emphasizes the consequences of actions (consequentialism).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fethics%2Dvirtue%2F&rut=93c8ec577780d60338a5880b29153f39191fcb4f26080dbd8720b6941ace5607",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:20.085358"
+    },
+    {
+      "topic": "virtue ethics",
+      "title": "Virtue ethics - Wikipedia",
+      "content": "Virtue ethics Virtue ethics (also aretaic ethics, [a][1] from Greek \u1f00\u03c1\u03b5\u03c4\u03ae [aret\u1e17]) is a philosophical approach that treats virtue and character as the primary subjects of ethics, in contrast to other ethical systems that put consequences of voluntary acts, principles or rules of conduct, or obedience to divine authority in the primary role.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FVirtue_ethics&rut=44791982119c1a8d438156560591ef502f994375bcd50152476482af807eb0d7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:20.085466"
+    },
+    {
+      "topic": "virtue ethics",
+      "title": "Virtue Ethics: What it is and How it Works - Philosophos",
+      "content": "Learn about virtue ethics and its history and principles, including how it differs from other ethical theories and its implications for moral decision making.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.philosophos.org%2Fethics%2Dvirtue%2Dethics&rut=4f7aba25fc15178ee7ed464ab14c9a05cfe94191b7f2f26b9ec7b0f07ef7f2f1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:20.085545"
+    },
+    {
+      "topic": "virtue ethics",
+      "title": "Virtue Ethics - Internet Encyclopedia of Philosophy",
+      "content": "An overview of virtue ethics, a normative theory that emphasizes character and virtue in moral philosophy. Learn about its history, varieties, objections, and applications from Aristotle to contemporary thinkers.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fvirtue%2F&rut=2d214df7a1d31232559720f34e11df13ea1ca3ae42c32aae69195608cb991724",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:20.085608"
+    },
+    {
+      "topic": "virtue ethics",
+      "title": "What Are Virtue Ethics? How They Relate to Moral Behavior",
+      "content": "Virtue ethics is a moral theory that focuses on the character and habits of the actor rather than the consequences or rules of the action. Learn about the origins, modern versions, and criticisms of virtue ethics from Plato, Aristotle, and contemporary philosophers.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.apu.apus.edu%2Farea%2Dof%2Dstudy%2Farts%2Dand%2Dhumanities%2Fresources%2Fwhat%2Dare%2Dvirtue%2Dethics%2F&rut=bb9b069fead26def217888a57df210acf19503c9abfddae32b8cc1efbd53ee9c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:20.085674"
+    },
+    {
+      "topic": "top 10 ai tools in 2023 that will make your life easier",
+      "title": "AI Tools for Stronger Drafts - Better Essays in Seconds",
+      "content": "Take the pain out of submitting your best work with AI-powered writing feedback. Write collaboratively with AI while developing your own authentic voice and ideas.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dgrammarly.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D82sc7M3sThGDsmWc%252DhLflgfwCxmhbKfyLOK7wCh4XXR2X3HuXnuILHLRUW9VyrYultTj5gpYkOUHOuGMX7A2P24uYjqZpto_YrwLTJuMCy6I%252DCImOyUgZ3zVb3aeftw%252D7M%252DxlSO_qSnF55REu37n_Dk0C4q08krGc5Kqh3SXWqQ.9cke4VCRI6%252DPn9RPRWyQCg%26rut%3D098497672d64af9d3770f980fe0cd5195bbd354f4b02a212a957a0e3ffef7523%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8y2uCYXdWNligNy%252DlNU_uQzVUCUzenHNCVBellss5i5PXXty1TaHx_bK1kk6yUBaqk2Ix8HpcV35dyjj9VP3_P_SFB77nGUuhMAMR8ZyNY2cm8R8Q7RZRhDMJJ3BGz69WkfHOXFoXiOwJM7Q9pipu_IqDtixiI%252Dlf10x1J_%252DMi8sFcLJTCroedPSt8H%252DOPiiWAlpMh3sYuyzJYu0kU2OJP9ILDHw%2526u%253DaHR0cHMlM2ElMmYlMmZhZC5kb3VibGVjbGljay5uZXQlMmZzZWFyY2hhZHMlMmZsaW5rJTJmY2xpY2slM2ZsaWQlM2Q0MzcwMDA3OTU4MDA4MzQ5NyUyNmRzX3Nfa3dnaWQlM2Q1ODcwMDAwODY3NDI5MTM5OSUyNmRzX2FfY2lkJTNkNTkzMjc0MTQ2JTI2ZHNfYV9jYWlkJTNkMjAwMTgyODgzNzYlMjZkc19hX2FnaWQlM2QxNTg5NTI5NDE2NTMlMjZkc19hX2xpZCUzZGt3ZC05NTAwNDc1NDkxNTMlMjYlMjZkc19lX2FkaWQlM2Q4MTIyNjU1ODcwMjM3OCUyNmRzX2VfdGFyZ2V0X2lkJTNka3dkLTgxMjI2NzM5MTgxNjkyJTNhbG9jLTE5MCUyNiUyNmRzX2VfbmV0d29yayUzZHMlMjZkc191cmxfdiUzZDIlMjZkc19kZXN0X3VybCUzZGh0dHBzJTNhJTJmJTJmd3d3LmdyYW1tYXJseS5jb20lMmZkb2NzJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkNjI3MDg0OTYwJTI2dXRtX2NvbnRlbnQlM2Q4MTIyNjU1ODcwMjM3OCUyNnV0bV90ZXJtJTNkYWklMjUyMHdyaXRlciUyNTIwb25saW5lJTI1MjBmcmVlJTI2a2V5d29yZGlkJTNkODEyMjY3MzkxODE2OTIlMjZ0YXJnZXRpZCUzZGt3ZC04MTIyNjczOTE4MTY5MiUzYWxvYy0xOTAlMjZhZGdyb3VwJTNkMTI5OTYyMzg3NTIyODI2MCUyNmRldmljZSUzZGMlMjZtYXRjaHR5cGUlM2RiJTI2bmV0d29yayUzZHMlMjZleHRlbnNpb24lM2QlMjZjbGlja2lkJTNkMGUwNDlkY2YyNDUxMTU2OGJjN2NmNDk4Njc3ZTQ1NzQlMjZnY2xpZCUzZDBlMDQ5ZGNmMjQ1MTE1NjhiYzdjZjQ5ODY3N2U0NTc0JTI2Z2Nsc3JjJTNkM3AuZHMlMjYlMjZtc2Nsa2lkJTNkMGUwNDlkY2YyNDUxMTU2OGJjN2NmNDk4Njc3ZTQ1NzQ%2526rlid%253D0e049dcf24511568bc7cf498677e4574%26vqd%3D4%2D156182713560824326927812071282145734673%26iurl%3D%257B1%257DIG%253DBB2358C1415C449F900AE89BBE3BDA4E%2526CID%253D17EB2DEBDA446F5A143B3B3EDB916ECC%2526ID%253DDevEx%252C5046.1&rut=e8dda6acac95887e526f8cee8c81290d49185e925feae6f53d42a8def2aeabff",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:51.682618"
+    },
+    {
+      "topic": "top 10 ai tools in 2023 that will make your life easier",
+      "title": "Top 10 AI Tools in 2023 That Will Make Your Life Easier",
+      "content": "In this article, we explore the top 10 AI tools that are driving innovation and efficiency in various industries. These tools are designed to automate repetitive tasks, improve workflow, and increase productivity. The tools included in our list are some of the most advanced and widely used in the market, and are suitable for a...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsmallarticles.com%2Ftop%2D10%2Dai%2Dtools%2Din%2D2023%2Dthat%2Dwill%2Dmake%2Dyour%2Dlife%2Deasier%2F&rut=3cfea5e2c6e2777e6b32c9b041a6f126b50db6e9ee0efa011a9c533e156f3161",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:51.682687"
+    },
+    {
+      "topic": "top 10 ai tools in 2023 that will make your life easier",
+      "title": "Discover the Top 10 Mind-Blowing Free AI Tools Making Life Easier in 2023",
+      "content": "The rapid advancement of AI technology has brought us an array of remarkable tools that can significantly enhance our lives. From restoring photos to generating captivating content, creating videos, and unleashing creativity, these top 10 mind-blowing free AI tools in 2023 empower individuals from all walks of life.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.dlad.io%2Fblogs%2Fdiscover%2Dthe%2Dtop%2D10%2Dmind%2Dblowing%2Dfree%2Dai%2Dtools%2Dmaking%2Dlife%2Deasier%2Din%2D2023&rut=ab4827a56b000fcdb08275fb211d1961d3efc95bac9f6e455a553c4c5a3ac5b5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:51.682754"
+    },
+    {
+      "topic": "top 10 ai tools in 2023 that will make your life easier",
+      "title": "10 Amazing AI Tools You Cannot Miss Out in 2023 - Times Now",
+      "content": "AI continues to revolutionize our daily day-to-day life activities, so here are 10 AI tools that can help you make your life easier!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.timesnownews.com%2Fweb%2Dstories%2Ftechnology%2F10%2Damazing%2Dai%2Dtools%2Dyou%2Dcannot%2Dmiss%2Dout%2Din%2D2023%2Fphotostory%2F104756000.cms&rut=8f4915878d97f321870dda0747c59a1e703e0bf87ebf8e495b2830a79b4fc048",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:51.682805"
+    },
+    {
+      "topic": "top 10 ai tools in 2023 that will make your life easier",
+      "title": "Top 10 Revolutionary AI Tools to Transform 2023!",
+      "content": "Revolutionizing Your Life: The Top 10 AI Tools of 2023 In recent years, artificial intelligence (AI) has transformed how we approach daily tasks, enhance productivity, and even have fun. With the release of tools like ChatGPT, a wave of innovative applications has emerged, each with the potential to revolutionize our lives.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fainewsera.com%2Ftop%2D10%2Drevolutionary%2Dai%2Dtools%2Dto%2Fartificial%2Dintelligence%2Dnews%2Fai%2Dagents%2F&rut=6fcd0b4a8ce9e1828f57a88084e14453a46e933771dcd61d0fc3253e9a11a352",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:51.682855"
+    },
+    {
+      "topic": "epicureanism",
+      "title": "Epicureanism",
+      "content": "Epicureanism is a system of philosophy founded in 307 BCE and based upon the teachings of Epicurus, an ancient Greek philosopher. Epicurus was an atomist and materialist, following in the steps of Democritus. His materialism led him to religious skepticism and a general attack on superstition and divine intervention. Epicureanism was originally a challenge to Platonism, and its main opponent later became Stoicism. It is a form of hedonism insofar as it declares pleasure to be its sole intrinsic goal. However, the concept that the absence of pain and fear constitutes the greatest pleasure, and its advocacy of a simple life, make it very different from hedonism as colloquially understood.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Epicureanism",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T22:06:49.883150"
+    },
+    {
+      "topic": "epicureanism",
+      "title": "Shop epicureanism books - Amazon.com Official Site",
+      "content": "Find deals and low prices on epicureanism books at Amazon.com. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DrPoFwiU7dFcsO_c04739SDCuS6Rl4fP5v0gcPQiDtADVwDcTpHPS5Azm90kyPI4c%252DgkjF7IbIUHg1veicQDiW%252D5Ofy5Jdld8ugnY%252DpBv9ic7ORZb_h0L5e4VrX0FCj5ofe8fym2h1mVvtO4PypAr1bsZ4l3gZdqPV%252DLKsBmH2Go.bbMqhQtkZzpWRCfyEkPeIA%26rut%3D6afc0f803aea132ee931527082a8ef9649b320db71dcc3332cc4aa50081bdab2%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8hWcGiMeHKasUYTNsVo3nPTVUCUz4SCP678ctmqGCk7llJuXQXXaNwxyViepYFu_FGrweXBmnLHeQUdjuoa1hl41ma%252Dhx8citJDTh0Qz7j8msD870niiItp_os6B2dxuhqNx1im4pqDIC3FTBCrhZMxk2wrshRPmq6IN3aBcJ%252D0xuVwt2%252D5QXJAfFgvDLd3QcOywovmP81M%252D_zp4jub3Xg8uAe7U%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGVwaWN1cmVhbmlzbSUyYmJvb2tzJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfNjZ6YXd2MnJvaV9iJTI2YWRncnBpZCUzZDEyMjcwNTU5Njg4OTE2MzQlMjZodmFkaWQlM2Q3NjY5MTEyODMxODAzMiUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGIlMjZodmJtdCUzZGJiJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NDQ4JTI2aHZ0YXJnaWQlM2Rrd2QtNzY2OTE0MDIwMTUwMDMlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDI4MjM4XzE0NjM3ODU0JTI2bWNpZCUzZGU2NDBlYTlhNzU4YzM4MjBiNDgxN2VkODhhYjRlNDE5JTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2RhOGUwMzY1ZGMyMjExZjlmMzEwYzVmMGFhMjViNTJiNw%2526rlid%253Da8e0365dc2211f9f310c5f0aa25b52b7%26vqd%3D4%2D331628751173506217538512532500590667324%26iurl%3D%257B1%257DIG%253DD74C9B8C54044A22A0A05ACB0083A88C%2526CID%253D297443BA947966B02EDA556F95EE6746%2526ID%253DDevEx%252C5046.1&rut=cf6dae302624f7912d2eca1a6ff5bde62c53072abffcb205f5be5cfa25b0740d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T22:06:51.245529"
+    },
+    {
+      "topic": "epicureanism",
+      "title": "Epicureanism - Wikipedia",
+      "content": "Epicureanism is a system of philosophy founded by Epicurus, an ancient Greek atomist and materialist. It teaches that pleasure is the sole intrinsic goal, but not the hedonism of modern usage, and that the universe consists of atoms and void.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEpicureanism&rut=aa3eae4b6b053332c8c068ba17941b48f8a860ea17a6c772be75a910215b484f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T22:06:51.245576"
+    },
+    {
+      "topic": "epicureanism",
+      "title": "Epicureanism | Definition, History, Examples, & Facts | Britannica",
+      "content": "Epicureanism, in a strict sense, the philosophy taught by Epicurus (341-270 BCE). In a broad sense, it is a system of ethics embracing every conception or form of life that can be traced to the principles of his philosophy. In popular parlance, Epicureanism means devotion to pleasure, comfort, and high living.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2FEpicureanism&rut=2bc099d45f80a11f287644e5b5abdab3b6abdaf14139d07f0857e14345ded4b1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T22:06:51.245615"
+    },
+    {
+      "topic": "epicureanism",
+      "title": "Epicurus (Stanford Encyclopedia of Philosophy)",
+      "content": "The philosophy of Epicurus (341-270 B.C.E.) was a complete and interdependent system, involving a view of the goal of human life (happiness, resulting from absence of physical pain and mental disturbance), an empiricist theory of knowledge (sensations, together with the perception of pleasure and pain, are infallible criteria), a description of nature based on atomistic materialism, and a ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fepicurus%2F&rut=2a02113b67f5446454ab0eae6bb224dd37a506ceb784f1a057afd2c01538adf8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T22:06:51.245651"
+    },
+    {
+      "topic": "epicureanism",
+      "title": "Epicureanism - New World Encyclopedia",
+      "content": "Epicureanism is a system of philosophy based upon the teachings of Epicurus (c. 340-c. 270 B.C.E.), and was one of the most popular schools of Hellenistic philosophy (together with Platonism and Stoicism). It was founded around 307 B.C.E., when Epicurus began to teach. He proposed that the ultimate goal of human life was happiness, and that the greatest good was to seek modest pleasures in ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.newworldencyclopedia.org%2Fentry%2FEpicureanism&rut=052f5e88c61928dd92ae57accf24d5a1e49cb897c7c2985806b977cca458c0a1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T22:06:51.245692"
+    },
+    {
+      "topic": "edmund husserl",
+      "title": "Shop edmund husserl - Amazon.com Official Site",
+      "content": "Find deals and low prices on edmund husserl at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DLiPlOPzeqKEOls91cdnGfEP1wNsfY%252DsyHJa3oJKVq9njpj_Lv6vFnBS34sKDCmMdIQrO1gc7RWmDJSaycda7lOHRu3vV_Rg6mNQj7IBRIfjoa7yYAoU7CFkyWFjRn8i%252DoH5E_mnzt2X2NsMOcMvNAhwxfysI7_x4Gj_qDt_sby0.UNKJReaZKIMHqa6FuwYOnA%26rut%3D58e4b0b8331e409d64bc2e58ffc9adc28398c03f22bf6a60f81fddf97c7d7357%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8%252Dbpupqwqp7AcqHpoVeqg%252DTVUCUwSJhNcfdEHJqmjmdQ_TSUrZieolGYHfPPVTpl5As1jQ1dJ%252DUyJSAqEWnBYV1Gu3GzKF%252DHqXuchLqDXiyeUsCMMDu568lAq7ccU%252D5Y%252D_ieReF7O%252DpxS11U6l3lRNLdy%252Dq3uLLVX6Z6zx9iJpktawCLT2H0bC5r3t5V2zJ4Ffkeu604KC07s_WQRDTSsWmLyoz0%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGVkbXVuZCUyYmh1c3NlcmwlMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF84NmNrOXM4amFyX3AlMjZhZGdycGlkJTNkMTIyOTI1NDMzMDAzMTUwOCUyNmh2YWRpZCUzZDc2ODI4NTYxNjk4NDMzJTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkZSUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY0NDglMjZodnRhcmdpZCUzZGt3ZC03NjgyODY1NTI5NTE4NSUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkMjgyNDJfMTQ2Mzg0OTUlMjZtY2lkJTNkNDQ4MmI0OGYzM2E4M2M3ZjkxYWJhZmI3YjI5ZjMzODElMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZGQ2NzU0NmQxNzI5ZTE0YzE1MmJiMmY4OTYyNjBjYjg2%2526rlid%253Dd67546d1729e14c152bb2f896260cb86%26vqd%3D4%2D53726052432347189210639446136091386742%26iurl%3D%257B1%257DIG%253D3BE1FA6E44F640DAA7CEA89C07407DAD%2526CID%253D1BA9D8F3F888625C1FB9CE26F95D63FF%2526ID%253DDevEx%252C5045.1&rut=8b36a27f7347b6d919681a4939e79d564b180b1824893fc0c0b1893bf9175736",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:39:59.057722"
+    },
+    {
+      "topic": "edmund husserl",
+      "title": "Learn Phenomenology - Edmund Husserl & Phenomenology",
+      "content": "Prepare for Your Edmund Husserl & Phenomenology with Our Practice Tests and Tutorials. Works with Your Schedule, Not in the Classroom. Start Today!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstudy.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DVRQf0zaILVi%252DSV_%252DGccmZDmfF%252D8Y8Z%252D0bSN9F_uaaVun6kOWrItoRNE%252DOTbv5p19Ae_kRVRFLmAWvP6AxXyEe7elXPZxpGTBJPfLCMQi4DSuyRagB3A%252DnXFc9tGCB7Pk4XD9QSS8LP3uGNFenwx9QpfyN0AW3eqQdamWzXFgOMo.%252DYgAUCpm_EfigHVzn9kyIA%26rut%3D8f6ddc4e1ccdf5e6b6161573f22b928ef446581c3899ff2efc057dabce2d7970%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De83wfckiOm5txCJD9aowt0xTVUCUzpS13rFdWHVENNoIZ7EjzkaZx1zgDJhsTTlmU7zWrE52Tec999XYqaD6Ke0TCO9%252Dpn2TAEUlzgfPR8PMDtUH4FwhbKapvbV6j3EiyZZNb5mIrqgMesQbW%252D2U_vfXgX3fWHgW%252De2aaqy0yc1VlTrMMNv_zXjbMEqHGPYmgQDjIVkwxBmXzfj4HhHY7%252DhB14Gj0%2526u%253DaHR0cHMlM2ElMmYlMmZzdHVkeS5jb20lMmZidXklMmZhY2FkZW15JTJmbGVzc29uJTJmZWRtdW5kLWh1c3NlcmwtcGhlbm9tZW5vbG9neS5odG1sJTNmc3JjJTNkcHBjX2Jpbmdfbm9uYnJhbmQlMjZyY250eHQlM2Rhd3MlMjZjcnQlM2QlMjZrd2QlM2RTRU8tUFBDLUJVWSUyNmt3aWQlM2RkYXQtMjMyOTA0MDUwNTg4Njk0MCUzYWxvYy0xOTAlMjZhZ2lkJTNkMTIzNTg1MTMwMjU5Njc0NiUyNm10JTNkYiUyNmRldmljZSUzZGMlMjZuZXR3b3JrJTNkcyUyNl9jYW1wYWlnbiUzZFNlb1BQQyUyNm1zY2xraWQlM2RlMzMxYWM1ZDM1Y2UxNTg5NmZiNWM1MDUyNTMwNjA5Yg%2526rlid%253De331ac5d35ce15896fb5c5052530609b%26vqd%3D4%2D334800636251013315840086808020681169226%26iurl%3D%257B1%257DIG%253D3BE1FA6E44F640DAA7CEA89C07407DAD%2526CID%253D1BA9D8F3F888625C1FB9CE26F95D63FF%2526ID%253DDevEx%252C5049.1&rut=71694c0a721bcf4179c7a17137166fd45d1fc91fe28e32ccce8acc35187fde3e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:39:59.057815"
+    },
+    {
+      "topic": "edmund husserl",
+      "title": "Edmund Husserl - Wikipedia",
+      "content": "A comprehensive overview of the life and work of Edmund Husserl, the founder of phenomenology and a prominent philosopher and mathematician. Learn about his biography, education, contributions, influences, and legacy in 20th-century philosophy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEdmund_Husserl&rut=16edf6f432f1e7fd57ea5e9b966bc59536bd1e5e8c5fef0803571d81e0f48549",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:39:59.057876"
+    },
+    {
+      "topic": "edmund husserl",
+      "title": "Edmund Husserl - Stanford Encyclopedia of Philosophy",
+      "content": "Edmund Husserl (1859-1938) is the founding father of phenomenology and a figure with a decisive impact on the development of twentieth century philosophy. He influenced not only thinkers like Martin Heidegger, Edith Stein, Maurice Merleau-Ponty and Jean-Paul Sartre, but also many other figures in European philosophy. Husserl is primarily known for his analyses of intentionality, perception ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fhusserl%2F&rut=c4ca9a67eb21318bd8afbe2b6bd96c17d69c2576918a989b9062bce4938dd30e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:39:59.057940"
+    },
+    {
+      "topic": "edmund husserl",
+      "title": "Edmund Husserl | German Philosopher & Founder of Phenomenology | Britannica",
+      "content": "Edmund Husserl (born April 8, 1859, Prossnitz, Moravia, Austrian Empire [now Prost\u011bjov, Czech Republic]\u2014died April 27, 1938, Freiburg im Breisgau, Ger.) was a German philosopher, the founder of Phenomenology, a method for the description and analysis of consciousness through which philosophy attempts to gain the character of a strict science. The method reflects an effort to resolve the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FEdmund%2DHusserl&rut=0e95e0ea477984d95851135236be622ea2b4d72a7f4af05b893c3042261bf257",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:39:59.058183"
+    },
+    {
+      "topic": "eigenvalue",
+      "title": "Eigenvalues and eigenvectors",
+      "content": "In linear algebra, an eigenvector or characteristic vector is a (nonzero) vector that has its direction unchanged by a given linear transformation. More precisely, an eigenvector  of a linear transformation  is scaled by a constant factor  when the linear transformation is applied to it: . The corresponding eigenvalue, characteristic value, or characteristic root is the multiplying factor .",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors",
+      "confidence": 0.9,
+      "learned_at": "2026-01-02T10:52:52.625949"
+    },
+    {
+      "topic": "eigenvalue",
+      "title": "Eigenvalues and eigenvectors - Wikipedia",
+      "content": "Eigenvalues and eigenvectors feature prominently in the analysis of linear transformations. The prefix eigen- is adopted from the German eigen (cognate with the English word own) for 'proper', 'characteristic', 'own'. [5][6] Originally used to study principal axes of the rotational motion of rigid bodies, eigenvalues and eigenvectors have a wide range of applications, for example in stability ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEigenvalues_and_eigenvectors&rut=e79d238e3176fb2862b3788e299bb7a3b9130a57eea467b1701597249c3ff8dd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:52:53.449185"
+    },
+    {
+      "topic": "eigenvalue",
+      "title": "Eigenvector and Eigenvalue - Math is Fun",
+      "content": "Learn how to find eigenvectors and eigenvalues of a matrix, and what they mean in geometry and physics. See examples, formulas, and applications in 2D and 3D.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mathsisfun.com%2Falgebra%2Feigenvalue.html&rut=fa7a9c54859113b7a84d9122c6f55abafb83cc9b003e2cac6a5d95ceb8c9e680",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:52:53.449232"
+    },
+    {
+      "topic": "eigenvalue",
+      "title": "7.1: Eigenvalues and Eigenvectors of a Matrix",
+      "content": "Spectral Theory refers to the study of eigenvalues and eigenvectors of a matrix. It is of fundamental importance in many areas and is the subject of our study for this chapter.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmath.libretexts.org%2FBookshelves%2FLinear_Algebra%2FA_First_Course_in_Linear_Algebra_(Kuttler)%2F07%253A_Spectral_Theory%2F7.01%253A_Eigenvalues_and_Eigenvectors_of_a_Matrix&rut=e62822408d1be24a7e21e658722afd894f9f77688e34486bc7fc45578b413092",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:52:53.449262"
+    },
+    {
+      "topic": "eigenvalue",
+      "title": "Eigenvalues and Eigenvectors - GeeksforGeeks",
+      "content": "Eigenvalues and eigenvectors are fundamental concepts in linear algebra, used in various applications such as matrix diagonalization, stability analysis, and data analysis (e.g., Principal Component Analysis). They are associated with a square matrix and provide insights into its properties.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fengineering%2Dmathematics%2Feigen%2Dvalues%2F&rut=892616f132a04e2ffc7c55ec816e91e2bbc7f5907ef8994d818ca90674159bc4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:52:53.449291"
+    },
+    {
+      "topic": "eigenvalue",
+      "title": "Eigenvalues and Eigenvectors - gatech.edu",
+      "content": "Learn the definition, geometric interpretation, and properties of eigenvalues and eigenvectors of square matrices. Find examples, pictures, and exercises to illustrate the concepts and methods.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Ftextbooks.math.gatech.edu%2Fila%2Feigenvectors.html&rut=5b9b69d1a5b05c17521fad5ed8f3dc5131fd39532ec7a6e0c518083f35089aa6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:52:53.449326"
+    },
+    {
+      "topic": "eigenvector",
+      "title": "How to Find? | Eigenvalues and Eigenvectors - Cuemath",
+      "content": "FAQs on Eigenvectors How to Find Eigenvectors? The eigenvector v of a square matrix A is a vector that satisfies A v = \u03bb v. Here, \u03bb is a scalar and is called the eigenvalue that corresponds to the eigenvector v. To find the eigenvectors of a matrix A: First find its eigenvalues by solving the equation (with determinant) |A - \u03bbI| = 0 for \u03bb.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cuemath.com%2Falgebra%2Feigenvectors%2F&rut=53071e855c05eca5c1c92ffe5f1c95c7982395ad5f9a3fc30ab64d7ac805ca20",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:53:26.389223"
+    },
+    {
+      "topic": "eigenvector",
+      "title": "3.1: Eigenvalues and Eigenvectors Definitions",
+      "content": "An eigenvector of A is a vector that is taken to a multiple of itself by the matrix transformation T (x \u2192) = A x \u2192, which perhaps explains the terminology. On the other hand, \"eigen\" is often translated as \"characteristic\"; we may think of an eigenvector as describing an intrinsic, or characteristic, property of A.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmath.libretexts.org%2FCourses%2FIrvine_Valley_College%2FMath_26%253A_Introduction_to_Linear_Algebra%2F03%253A_Eigenvalues_and_Eigenvectors%2F3.01%253A_Eigenvalues_and_Eigenvectors%2F3.1.01%253A_Eigenvalues_and_Eigenvectors_Definitions&rut=1243892ce5886431049fe0f51526df792a508b0b7ee5f50d731cce002ed0e254",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:53:26.389324"
+    },
+    {
+      "topic": "differential equation",
+      "title": "Shop differential equation book - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on differential equation book at Amazon.com. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DCForAXLPGtoWYXZ6RpO4k%252D6BGj1MzRsd1N_dYvEyluNWM2OtczZs6EZJ9vdqKA77lqV%252DJ_alhbOw7_Isn4Q4b6q1ywFZrYXamWxQyohKv7EcN4q1TmxNS%252DrLpLHJCL0D3ESP6BXA2_%252DVxjohY3wAQZCBlWNMMz%252Dz79RW66tUIg8.eRWM2pinnlE%252D9iFZCB9OsA%26rut%3Da1191eb9356bf356aa08da1c39e59ce81fe9ecd8b258d1966a42cfe45a242620%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8SRVPud7Pr99bpcLzDyP1XzVUCUxCDPVHkttcgvdCNgnQCrLzhdD9o91OtBYFjUw8rBGeT_5%252D5GOR4GwqqH8Y2zXQRnCHnpAEyfjKZWB23I%252DdE1Yn2jn%252D8OTysyXy9RjYS%252DhOCMww5rvIIOo4esBO3erbZjVbreq%252D4OUxEQobQXAG48Z0gvvGBDSrXdE94BOhHaGmzkMfwmlquGhHG8JFM9gNBng%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGRpZmZlcmVudGlhbCUyYmVxdWF0aW9uJTJiYm9vayUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzJpem00bXVveV9iJTI2YWRncnBpZCUzZDEyMzgwNTExNjc0MzY4MjglMjZodmFkaWQlM2Q3NzM3ODMzMTc5MjA4MyUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGIlMjZodmJtdCUzZGJiJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NTAyJTI2aHZ0YXJnaWQlM2Rrd2QtNzczNzg1NDYwNDI3NzAlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDUxNTVfMTMzMDAwNzElMjZtY2lkJTNkNWUwYjEwZjQ3ODIxM2Q3MjhhZjFiYTRlMjQyN2Y0NjElMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZDYzZjk4NGM3YTE4NTFkNmRlY2I5ZWQ5ZmI1Njc0NDVi%2526rlid%253D63f984c7a1851d6decb9ed9fb567445b%26vqd%3D4%2D49309120249000527469472213547894228555%26iurl%3D%257B1%257DIG%253D0CD5CF08CCEC45B5BC34685B03AD3A14%2526CID%253D1A21A1D096BB604C0F99B705975F610B%2526ID%253DDevEx%252C5045.1&rut=533dfd3264fb8cf5d5f498538138236c2897f99e4f26754f3b4128e827d2bb8b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:56:35.443922"
+    },
+    {
+      "topic": "differential equation",
+      "title": "Differential equation - Wikipedia",
+      "content": "In mathematics, a differential equation is an equation that relates one or more unknown functions and their derivatives. [1] In applications, the functions generally represent physical quantities, the derivatives represent their rates of change, and the differential equation defines a relationship between the two. Such relations are common in mathematical models and scientific laws; therefore ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDifferential_equation&rut=0e1ec2e5547b522e9ec69acd5959b82f8ac5d92449097497ef05a430c378c676",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:56:35.444001"
+    },
+    {
+      "topic": "differential equation",
+      "title": "Differential Equations - Introduction - Math is Fun",
+      "content": "Learn what differential equations are, why they are useful, and how to solve them. See examples of differential equations for rabbits, compound interest, and simple harmonic motion.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mathsisfun.com%2Fcalculus%2Fdifferential%2Dequations.html&rut=ace7645e74e33851f4841557bdd9081d443a715fb60c6f409463bdf93957965d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:56:35.444056"
+    },
+    {
+      "topic": "differential equation",
+      "title": "8.1: Basics of Differential Equations - Mathematics LibreTexts",
+      "content": "A solution to a differential equation is a function y = f (x) that satisfies the differential equation when f and its derivatives are substituted into the equation. Go to this website to explore more on this topic. Some examples of differential equations and their solutions appear in Table 8 1 1.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmath.libretexts.org%2FCourses%2FMonroe_Community_College%2FMTH_211_Calculus_II%2FChapter_8%253A_Introduction_to_Differential_Equations%2F8.1%253A_Basics_of_Differential_Equations&rut=0b60aa4c5e6428c24b50a27ea398e9e8ca8bf5ab45050c3cf29774a6308c8f68",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:56:35.444113"
+    },
+    {
+      "topic": "differential equation",
+      "title": "Differential Equations | Khan Academy",
+      "content": "Learn differential equations including separable, exact, integrating factors, and homogeneous equations with interactive lessons and practice on Khan Academy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.khanacademy.org%2Fmath%2Fdifferential%2Dequations&rut=732ba74ace7fa04047d3bfb44c07daf46c157a69ea64edfc2fd1a8988506781d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:56:35.444164"
+    },
+    {
+      "topic": "partial differential equation",
+      "title": "Partial differential equation - Wikipedia",
+      "content": "Learn about the definition, types, applications and methods of partial differential equations (PDEs), which involve multivariable functions and their derivatives. Find examples, existence and uniqueness theorems, and related topics in mathematics and physics.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPartial_differential_equation&rut=1087bf362a8a9093cdf433d79ad9035dd86a2e39f39b52b352a3b04235447071",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:07.490591"
+    },
+    {
+      "topic": "partial differential equation",
+      "title": "Partial Differential Equation - GeeksforGeeks",
+      "content": "Partial Differential Equation contains an unknown function of two or more variables and its partial derivatives with respect to these variables. The order of partial differential equations is that of the highest-order derivatives. Such equations aid in the relationship of a function with several variables to their partial derivatives. They are extremely important in analyzing natural phenomena ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fengineering%2Dmathematics%2Fpartial%2Ddifferential%2Dequations%2F&rut=9de218877adddd6de3f01e0c659d541af14cb2f270fc277375a549df4f28ce73",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:07.490634"
+    },
+    {
+      "topic": "partial differential equation",
+      "title": "PDF Partial Differential Equations",
+      "content": "This book covers the basic theory and applications of partial differential equations (PDEs) in one and several dimensions. It includes topics such as wave, heat, Laplace, and Schrodinger equations, as well as separation of variables, Fourier series and transform, and self-similar solutions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.math.toronto.edu%2Fivrii%2FPDE%2Dtextbook%2FPDE%2Dtextbook.pdf&rut=860710225b1d6ca44dd9635297a1343a984fa4646de614871eb1c0def78b250f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:07.490663"
+    },
+    {
+      "topic": "partial differential equation",
+      "title": "PDF Partial Differential Equations - University of Chicago",
+      "content": "Some undergraduate textbooks on partial diferential equations focus on the more computational aspects of the subject: the computation of analytical solutions of equations and the use of the method of separation of variables. While these topics cannot be completely excluded from a first course on PDE at the undergraduate level, we think that it is most useful to focus on the theory of PDE ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.math.uchicago.edu%2F~luis%2Fpdenotes.pdf&rut=77d85b6ca4076cbab83e2314bb28d652fe1b8cc5ccd988c0b4d08e5d4a181d79",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:07.490696"
+    },
+    {
+      "topic": "partial differential equation",
+      "title": "Partial Differential Equations - Definition, Formula, Examples",
+      "content": "Partial differential equations consist of an unknown multivariable function and its partial derivatives. Understand partial differential equations using solved examples.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cuemath.com%2Fcalculus%2Fpartial%2Ddifferential%2Dequations%2F&rut=f94772f19b6a42f7d2a8b57265b74708300b2bd9ad2ffdf3154f4ea639084fa5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:07.490723"
+    },
+    {
+      "topic": "ordinary differential equation",
+      "title": "Shop Books - Amazon\u00ae Official Site - Save on Books",
+      "content": "Find deals and low prices on popular products at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DiCHRdY5H9TAtJk3NKwAHafujnpn90tY92VO%252DWbDlQ_yDE8PBlAZ7gfScEJ6WGbHYFcNlr5Rph0g8%252DAzkgst%252DukBuUdOm7lmOPoOq48B0ebVN96_NZopgnrQl0OAj6MSZQng6vX%252DruKrRUrOe3G0gKO2WBmRAWhZyUc5xlbRewDk.OHR%252D9pNU3%252D0sUOCaSQdBdQ%26rut%3D428a4567bd8e81f380cb89d2a168daf561abf50d3b7051cbcde44a1cfb09e9aa%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De88%252DY81TcVRzJpfy_sgGbb9DVUCUwhXE_1bqUDAKrK0hoBRJHjuch6gNCh8UaDnwMRg0XGIvNJmR9j4w0W99jHShRiYodZXYSE72sN6KLzc9WCtZedU3teY%252DNHqA2V0sSUzNk0sRw9gD6EZHlz1D9LcSLSsJurypzS6S7wDqIX1K%252DFW9VM5G3xYAoVbG3sUshNnhWGlJKbY_itrivBntW72pK4vDk%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJvb2tzJTJib24lMmJkaWZmZXJlbnRpYWwlMmJlcXVhdGlvbnMlMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF81cXI1NDZqaHVsX2IlMjZhZGdycGlkJTNkMTIzOTE1MDg3MjA3NDA0NSUyNmh2YWRpZCUzZDc3NDQ3MDY5ODUyNTQzJTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkYiUyNmh2Ym10JTNkYmIlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY1MDIlMjZodnRhcmdpZCUzZGt3ZC03NzQ0NzM2NTEyNjQwOCUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkNTEyOV8xMzMwMDM1MCUyNm1jaWQlM2Q4NThkYzI3MjRlMzAzZjc4YWRiMTQ2MDE4YzMyMzJmNCUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkMzQ2NjE0MmEyNTNjMWEyYWEzYzU3ZDcyMzAxZWJhNjU%2526rlid%253D3466142a253c1a2aa3c57d72301eba65%26vqd%3D4%2D14257037398247763314100797694285074390%26iurl%3D%257B1%257DIG%253D0E924051ED4547C49FF6193AA61A9B90%2526CID%253D28200323EA2E61550D1415F6EBFB6002%2526ID%253DDevEx%252C5045.1&rut=79701cda3a5c2e5a601cebf58762094c3d6e95be68d482ac70adda7f25474dba",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:39.332013"
+    },
+    {
+      "topic": "ordinary differential equation",
+      "title": "Ordinary Differential Equations",
+      "content": "From trusted sellers around the world. Buy what you love to read. Find millions of books, textbooks, rare and collectible items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dabebooks.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DSU8iqUaWHYOOeteux7taNBlEHEcVY7eo8i3pVuk8rhWDZsg4YuHWWtgoDWCjQb_BikqwgZMbpRMObqA_KW9NNdDIvEpKxa8JxbwSL9475i1W53tRttYRyHsu1wuT4PV0ztjEr2WMwf6O0%252DyxqJ5UH5ToWWQYRy0N_KGyCBCtLRc._o5vMUkz8sbL9GLggJjoug%26rut%3D508fde8e32d873ba8c9a9d57142f5b02b6a7e27437bccaecac2f5f98eca16a51%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8OyHLShZlSOj7wdLRw06_BTVUCUwoFKT6hZUMrnCNZzoUzaHFuBVm2hoKT40bb_XWhTpGeC5nbZili39xTKC_5lru5Roi1_SQ9wPX7OY5alLNPJbSVbnbX5N6XmUMD6edDwXyYkNrU3j9Fy9qFr61dR_3e7_ztYuplRTC2SaYcUVgS1KdXmpD%252DeidOQsg0K63ZD62ApLc7efcsi78C%252DsjdIIGpaI%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYWJlYm9va3MuY29tJTJmYm9vay1zZWFyY2glMmZ0aXRsZSUyZnRleHRib29rLW9yZGluYXJ5LWRpZmZlcmVudGlhbC1lcXVhdGlvbnMlMmZib29rJTJmJTNmcmVmXyUzZHBzX21zXzI2NzY5MTc2MSUyNmNtX21tYyUzZG1zbi1fLWNvbXVzX2RzYS1fLW5hYS1fLW5hYSUyNm1zY2xraWQlM2RmYTdmMjBiNWY4NzMxOTY3NjA5MjQ5ZWRlZDUxODczMQ%2526rlid%253Dfa7f20b5f8731967609249eded518731%26vqd%3D4%2D307499946554541465377415695637880643159%26iurl%3D%257B1%257DIG%253D0E924051ED4547C49FF6193AA61A9B90%2526CID%253D28200323EA2E61550D1415F6EBFB6002%2526ID%253DDevEx%252C5049.1&rut=1e355a56aeaae4e599e9bda9cf19d80f1ddc79b91227fdc4a1ebf6ffec22a4f3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:39.332094"
+    },
+    {
+      "topic": "ordinary differential equation",
+      "title": "Ordinary differential equation - Wikipedia",
+      "content": "A linear differential equation is a differential equation that is defined by a linear polynomial in the unknown function and its derivatives, that is an equation of the form where and are arbitrary differentiable functions that do not need to be linear, and are the successive derivatives of the unknown function of the variable . [4] Among ordinary differential equations, linear differential ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FOrdinary_differential_equation&rut=5db5b5c8e5a821d5e4e500613572dfdb22a37e9ddd1832d90c8edf73b032358f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:39.332166"
+    },
+    {
+      "topic": "ordinary differential equation",
+      "title": "Ordinary Differential Equations - GeeksforGeeks",
+      "content": "Ordinary Differential Equations (ODE) is the mathematical equation that describe how a function's rate of change relates to its current state. It involves a single independent variable and its derivatives. Ordinary Differential Equations Let's know more about Ordinary Differential Equations, it's types, order and degree of Ordinary differential equation in detail below. Ordinary Differential ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmaths%2Fordinary%2Ddifferential%2Dequations%2F&rut=e52481346cb6393d021519c8f75dd0eb30fc664fe3939901ebffab42ec002296",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:39.332242"
+    },
+    {
+      "topic": "ordinary differential equation",
+      "title": "PDF Ordinary Differential Equations",
+      "content": "A comprehensive introduction to ordinary differential equations, covering linear, nonlinear, variable coefficient, and second order equations. Includes methods such as power series, Laplace transform, and Fourier series, as well as applications and exercises.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fusers.math.msu.edu%2Fusers%2Fzwang%2Fode.pdf&rut=144779a7bf092ed6edbcb3ecd474d5ef3578ab68cbb082cdae19e961bd1e82e0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:39.332306"
+    },
+    {
+      "topic": "euclidean geometry",
+      "title": "Low priced products - Amazon.com Official Site",
+      "content": "Find deals and low prices on popular products at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DUnhQTlJxxY3Irf7FriH3aYlSNQS2gvuJWruezLF731T%252DTuttm9_WfnK0LaLefMAO7pDIwA7nn4U8SAUl2bHtRPfyt_fj3e5%252DDzUyoKur01f9CRok%252DuvS9sq7gPQePrMNcRFyMaSuZNRXpSIgDZjyKlBNhavjd3FqrnixPXAT9wc.eFSdxdXNrBM1cpZkDNa5kQ%26rut%3D047351cac3c3506e1881742fda0259dac760b6222d37a8cb62046a381018655d%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8LqJru3QiqjBlrQybMv65izVUCUyvInOTDm3ZFuadj4YGocXRQ9MFvzLa7iX4zU%252DKFQI_n9lNqh0boiO7sGKYvpTcdvcwTVE0wp_Up1H_pjCEVTRjgEZInTtN3k_DwkYy99IdDUfV04XTIiECSKntGrfn%252Dof3pdkafAheqyqBpVSNQHv5BQlZo4CSMVFW8YG6m_GMRK2f6cTurSz7Rv_%252DoKynzDs%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGV1Y2xpZGVhbiUyYmdlb21ldHJ5JTJiaW50cm9kdWN0aW9uJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfNTNnNTd2cDNzMl9wJTI2YWRncnBpZCUzZDEyMjkyNTUwNjAxMTQ5ODAlMjZodmFkaWQlM2Q3NjgyODU3NDA5NTU0OSUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg3OTM2JTI2aHZ0YXJnaWQlM2Rrd2QtNzY4Mjg3NTk4Nzk3NDclM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDUxMjlfMTMzMDAzNTAlMjZtY2lkJTNkMmRlYjRjM2JiOGJlMzIzMWI5ZTAyNWQ1MWYyMTU5NWYlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZDRlNmUwNzZhYmVmMTFkNzNkMWMyNmUzMmEwNzc5NGQ2%2526rlid%253D4e6e076abef11d73d1c26e32a07794d6%26vqd%3D4%2D143476337893238825754822960835844903223%26iurl%3D%257B1%257DIG%253D00C33391CA6F4CE49C55E89729995658%2526CID%253D3141EFBFD96F6B15064DF96AD88B6AE9%2526ID%253DDevEx%252C5049.1&rut=11db035cb312652f13aca83b0f338924919fdbec68210f927bccd1bd705badaa",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:37:42.517393"
+    },
+    {
+      "topic": "euclidean geometry",
+      "title": "Euclidean geometry - Wikipedia",
+      "content": "Learn about the mathematical system attributed to ancient Greek mathematician Euclid, which consists of axioms and theorems proved from them. Explore the history, features, and applications of Euclidean geometry, as well as its relation to non-Euclidean geometries.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEuclidean_geometry&rut=2d1d1631f83736375edd883ec5c779f339ff1a512f10dbc7d3de95a27f049053",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:37:42.517443"
+    },
+    {
+      "topic": "euclidean geometry",
+      "title": "Euclidean geometry | Definition, Axioms, & Postulates | Britannica",
+      "content": "Euclidean geometry is the study of plane and solid figures on the basis of axioms and theorems employed by the ancient Greek mathematician Euclid. The term refers to the plane and solid geometry commonly taught in secondary school. Euclidean geometry is the most typical expression of general mathematical thinking.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2FEuclidean%2Dgeometry&rut=cf2db557b85d93a0e6ae9a1ce548768cd12833bfd3648891966e4c0f43d1b38e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:37:42.517489"
+    },
+    {
+      "topic": "euclidean geometry",
+      "title": "Euclidean Geometry - GeeksforGeeks",
+      "content": "Euclidean geometry is the study of 2-Dimensional geometrical shapes and figures. Euclidean geometry is based on different axioms and theorems. The word geometry is derived from the Greek words 'geo' meaning Earth and 'metrein' meaning 'To measure'. Thus, geometry is the measure of the Earth or various shapes present on the Earth. Euclidean geometry as the name suggests was first ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmaths%2Feuclidean%2Dgeometry%2F&rut=2fa946e4a0bf46e7bb89203c85b0f0f6ca5a36c7068ca2ce59915a1fb78479af",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:37:42.517539"
+    },
+    {
+      "topic": "non euclidean geometry",
+      "title": "Non-Euclidean geometry - Wikipedia",
+      "content": "In mathematics, non-Euclidean geometry consists of two geometries based on axioms closely related to those that specify Euclidean geometry. As Euclidean geometry lies at the intersection of metric geometry and affine geometry, non-Euclidean geometry arises by either replacing the parallel postulate with an alternative, or consideration of quadratic forms other than the definite quadratic forms ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNon%2DEuclidean_geometry&rut=64152474c68a527c3b634ea79a296c0c4b6c1e5d951035558907ed56b92ca364",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:38:14.136360"
+    },
+    {
+      "topic": "non euclidean geometry",
+      "title": "Non-Euclidean geometry | Definition & Types | Britannica",
+      "content": "Non-Euclidean geometry, literally any geometry that is not the same as Euclidean geometry. Although the term is frequently used to refer only to hyperbolic geometry, common usage includes those few geometries (hyperbolic and spherical) that differ from but are very close to Euclidean geometry.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fnon%2DEuclidean%2Dgeometry&rut=c1bf9ecfe89bddf635591a8c90e15d135c0356f5e5a4f72e972e86fb7f4d243a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:38:14.136431"
+    },
+    {
+      "topic": "non euclidean geometry",
+      "title": "Non Euclidean Geometry - GeeksforGeeks",
+      "content": "Non-Euclidean Geometry refers to the branch of mathematics that deals with the study of geometry on Curved Surfaces. It is a different way of studying shapes compared to what Euclid, an ancient mathematician, taught. There are two main types: hyperbolic and elliptic geometries. In these, we change the working of lines which gives us different shapes than usual. Hyperbolic shapes have a saddle ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmaths%2Fnon%2Deuclidean%2Dgeometry%2F&rut=321e61af0e1d0b9cca50819c9bcde062f99e8971f0f098bbe9279ecd9ba1f08d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:38:14.136486"
+    },
+    {
+      "topic": "non euclidean geometry",
+      "title": "Master Non-Euclidean Geometry: Types, Theorems & Uses - Vedantu",
+      "content": "Real-Life Applications of Non-Euclidean Geometry Geometry is a vital part of mathematics. It discusses the shape and structure of different geometrical figures. Greek mathematician Euclid employed a type of geometry, which studies the plane and solid figure of geometry with the help of theorems and axioms. It is known as Euclidean geometry.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.vedantu.com%2Fmaths%2Fnon%2Deuclidean%2Dgeometry&rut=e23d3ee2cd3c7195df61ccef81114c4f47ec2555f4974c3de99ea602c9609633",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:38:14.136546"
+    },
+    {
+      "topic": "nash equilibrium",
+      "title": "Nash equilibrium - Wikipedia",
+      "content": "Nash equilibrium is named after American mathematician John Forbes Nash Jr. The same idea was used in a particular application in 1838 by Antoine Augustin Cournot in his theory of oligopoly. [13] In Cournot's theory, each of several firms choose how much output to produce to maximize its profit. The best output for one firm depends on the outputs of the others. A Cournot equilibrium occurs ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNash_equilibrium&rut=8785cacbcbf0fd8fab8f0895f2835cbdf428cbcc74bf27aeb903e8ffe01fedb7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:32:58.129846"
+    },
+    {
+      "topic": "nash equilibrium",
+      "title": "Nash equilibrium | Definition, Examples, & Facts | Britannica",
+      "content": "Nash equilibrium, in game theory, an outcome in a noncooperative game for two or more players in which no player's expected outcome can be improved by changing one's own strategy. The Nash equilibrium is a key concept in game theory, in which it defines the solution of N-player noncooperative",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2FNash%2Dequilibrium&rut=0bd89303f59b605fe61bb3eb9754fe883aec6dec240bf139c42e884e64288bf1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:32:58.129916"
+    },
+    {
+      "topic": "nash equilibrium",
+      "title": "Nash Equilibrium: How It Works in Game Theory, Examples, Plus Prisoner ...",
+      "content": "Nash equilibrium is a game theory concept where optimal outcome is when there is no incentive for players to deviate from their initial strategy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.investopedia.com%2Fterms%2Fn%2Fnash%2Dequilibrium.asp&rut=e1ed54ccd08921d3c495af5e15d98626d58a33f322cc9a4899a026dec1666807",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:32:58.129962"
+    },
+    {
+      "topic": "nash equilibrium",
+      "title": "Nash Equilibrium | Brilliant Math & Science Wiki",
+      "content": "A Nash Equilibrium is a set of strategies that players act out, with the property that no player benefits from changing their strategy. Intuitively, this means that if any given player were told the strategies of all their opponents, they still would choose to retain their original strategy. For example, in the game of trying to guess 2/3 of the average guesses, the unique Nash equilibrium is ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbrilliant.org%2Fwiki%2Fnash%2Dequilibrium%2F&rut=80c64b9387ef6a6929c87ed027321cb261a22371cb005f5e0eef207348677de6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:32:58.130010"
+    },
+    {
+      "topic": "nash equilibrium",
+      "title": "Nash Equilibrium Definition - AP Microeconomics Key Term | Fiveable",
+      "content": "Nash Equilibrium is a concept in game theory where no player can benefit from changing their strategy while the other players keep theirs unchanged. In this state, each player's decision is optimal given the decisions of others, creating a situation of mutual best responses. This equilibrium is crucial for understanding how firms interact in oligopolistic markets, as it helps to predict ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Ffiveable.me%2Fkey%2Dterms%2Fap%2Dmicro%2Fnash%2Dequilibrium&rut=15256d0f9278087dda1fb34a907dc87490735094453c03ad1203d11fe97663b6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:32:58.130057"
     }
   ],
-  "last_updated": "2025-11-28T08:08:04.353506"
+  "last_updated": "2026-01-02T15:32:58.142244"
 }

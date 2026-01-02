@@ -83,7 +83,21 @@
     "gain",
     "goal",
     "growth",
-    "guarantee"
+    "guarantee",
+    "gravitational",
+    "get",
+    "gluon",
+    "gravity",
+    "gibbs",
+    "gene",
+    "gaza",
+    "gaba",
+    "glutamate",
+    "gottfried",
+    "georg",
+    "grammarly:",
+    "grammar",
+    "geometry"
   ],
   "knowledge": [
     {
@@ -2614,7 +2628,1312 @@
       "query": "greedy algorithms",
       "source": "structured",
       "learned_at": "2025-11-28T08:25:04.455377"
+    },
+    {
+      "topic": "generative adversarial network",
+      "title": "What are generative adversarial networks (GANs)? - IBM",
+      "content": "A generative adversarial network (GAN) is a machine learning model designed to generate realistic data by learning patterns from existing training datasets. It operates within an unsupervised learning framework by using deep learning techniques, where two neural networks work in opposition\u2014one generates data, while the other evaluates whether the data is real or generated.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ibm.com%2Fthink%2Ftopics%2Fgenerative%2Dadversarial%2Dnetworks&rut=e0aa399675f603ea33e4e4aeacedeb9f57ec1eeffcf9281414d5132bc7a3828a",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:28:24.903989"
+    },
+    {
+      "topic": "generative adversarial network",
+      "title": "Generative Adversarial Networks | IEEE Conference Publication - IEEE Xplore",
+      "content": "Generative Adversarial Networks (GANs) are a type of deep learning techniques that have shown remarkable success in generating realistic images, videos, and other types of data. This paper provides a comprehensive guide to GANs, covering their architecture, loss functions, training methods, applications, evaluation metrics, challenges, and future directions. We begin with an introduction to ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F10306417&rut=22dc622683e52f5102fdd00b2e9a4967756e1b072461e1715c0d043239dbebaf",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:28:24.904124"
+    },
+    {
+      "topic": "gradient descent",
+      "title": "What is gradient descent? - IBM",
+      "content": "Gradient descent is an optimization algorithm used to train machine learning models by minimizing errors between predicted and actual results.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ibm.com%2Fthink%2Ftopics%2Fgradient%2Ddescent&rut=9c1c7eff8c68a8bad3878f10d938635fb83845213632e3b5ead127a29224d0e2",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:46:34.413535"
+    },
+    {
+      "topic": "gradient descent",
+      "title": "What is the Gradient Descent Algorithm - Analytics Vidhya",
+      "content": "Learn how gradient descent helps optimize machine learning models by minimizing the cost function. Explore different types, implementations, challenges, and applications of gradient descent with examples and code.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.analyticsvidhya.com%2Fblog%2F2020%2F10%2Fhow%2Ddoes%2Dthe%2Dgradient%2Ddescent%2Dalgorithm%2Dwork%2Din%2Dmachine%2Dlearning%2F&rut=73840ce12375b86cbfc4affea4f19713c4a158b900fd3184a0df48b8053aa086",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:46:34.413691"
+    },
+    {
+      "topic": "general relativity",
+      "title": "Relativity Lesson - Special vs. General Relativity",
+      "content": "Prepare for the Special Vs. General Relativity with This Course on Study.com. Available in All Subjects, We Have a Variety of Online Courses to Help You Succeed.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstudy.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DDUeQzr0xeE7M6LJa9WukHhnbR72LiwVsyF7Y0Ibzw0ovBUiDVSY5VZGjKR63oiEDOTf4PralY6eFhvEzvFx3QBdSqvjxA5aAaBf_003Ed5gpmK1MAU9dJifodT8ch1HucT2fhZv_01uzQ2k6VFPhVjP2vYDqOS6H8oQ8F9z_Doo.EN_dZcQS6A9b7mzh1mL%252D2w%26rut%3D06d6c83a5853daf61cab6475ce55927845003ace20d6c8081ac36f2eee0d1bf9%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8LiFmHZ41xp09g4DoX%252D5miDVUCUwlrVGS6eIMmSNalZuCAaTTPrVf2%252DMa5O4YOF2%252D_IywsN%252DpBHAQvJbevPzhTknE6hD0bQ2EOmVYfSBZXjF12t%252DkaZSKkOUnV9i%252DBMl9UbT%252DikC1VJm3fXxb8UrlO_kdcH6AYJkBq%252DI6hIG%252Dn5TOjtby7TK871gJslINCgZvPXSP2CMfkvhMI1fRf3Q34V3Kaus%2526u%253DaHR0cHMlM2ElMmYlMmZzdHVkeS5jb20lMmZidXklMmZsZWFybiUyZmxlc3NvbiUyZnNwZWNpYWwtdnMtZ2VuZXJhbC1yZWxhdGl2aXR5LW92ZXJ2aWV3LWNvbXBhcmlzb24tZXhhbXBsZXMuaHRtbCUzZnNyYyUzZHBwY19iaW5nX25vbmJyYW5kJTI2cmNudHh0JTNkYXdzJTI2Y3J0JTNkJTI2a3dkJTNkU0VPLVBQQy1CVVklMjZrd2lkJTNkZGF0LTIzMjkwNDA1MDU4ODY5NDAlM2Fsb2MtMTkwJTI2YWdpZCUzZDEyMzU4NTEzMDI1OTY3NDYlMjZtdCUzZGIlMjZkZXZpY2UlM2RjJTI2bmV0d29yayUzZHMlMjZfY2FtcGFpZ24lM2RTZW9QUEMlMjZtc2Nsa2lkJTNkYTIyNGY5NDAyMjIzMTNmMDA4NGY5MDE1ZGNiMmFkOTc%2526rlid%253Da224f940222313f0084f9015dcb2ad97%26vqd%3D4%2D163224225032859402731260250674464906243%26iurl%3D%257B1%257DIG%253D3B4358DF3A1A444AAE62BA06AF168F86%2526CID%253D38E9F604A21F6C0B3299E0D0A3936D4E%2526ID%253DDevEx%252C5046.1&rut=dfcd24342e50a2a7f3049c965d57691beb21b7e4baf955bc952cccb3d5648f1b",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:56:49.404468"
+    },
+    {
+      "topic": "general relativity",
+      "title": "General relativity - Wikipedia",
+      "content": "General relativity, also known as the general theory of relativity, and as Einstein's theory of gravity, is the geometric theory of gravitation published by Albert Einstein in 1916 and is the accepted description of gravitation in modern physics.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGeneral_relativity&rut=965c05d1ea49f5b0d00019744b0be2240e3df078fba47b279cbfbe40e0c2596f",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:56:49.404521"
+    },
+    {
+      "topic": "general relativity",
+      "title": "General relativity | Gravitational Waves, Spacetime & Cosmology ...",
+      "content": "General relativity, part of the wide-ranging physical theory of relativity formed by the German-born physicist Albert Einstein. It was conceived by Einstein in 1916. General relativity is concerned with gravity, one of the fundamental forces in the universe. Gravity defines macroscopic behaviour,",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fgeneral%2Drelativity&rut=028e5c577c2cde8732b2025ab033b34132fe59e1dd571dc4341577bdf57a3198",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:56:49.404565"
+    },
+    {
+      "topic": "general relativity",
+      "title": "What is the theory of general relativity? Understanding Einstein's ...",
+      "content": "Learn how Einstein's theory of general relativity explains how massive objects warp the fabric of space-time, causing gravity. Explore the phenomena and observations that support this theory, such as gravitational lensing, frame-dragging, gravitational waves and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.space.com%2F17661%2Dtheory%2Dgeneral%2Drelativity.html&rut=18a36af97b2f259fb0c161fa636bd82ae6c4949efc34bb3dbe2ab3975fe3ec63",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:56:49.404606"
+    },
+    {
+      "topic": "general relativity",
+      "title": "Einstein's Theory of Gravitation - Harvard-Smithsonian Center for ...",
+      "content": "Learn how Einstein's general relativity explains gravity and its effects on light, space, and time. Explore how astronomers test the theory using black holes, gravitational waves, lensing, and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cfa.harvard.edu%2Fresearch%2Fscience%2Dfield%2Feinsteins%2Dtheory%2Dgravitation&rut=492dadd8f701d3e9e8ace19f86ce8422583a93e79ee7d54b5f696363a2690ec3",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:56:49.404644"
+    },
+    {
+      "topic": "gravitational wave",
+      "title": "Gravitational wave - Wikipedia",
+      "content": "Gravitational waves transport energy as gravitational radiation, a form of radiant energy similar to electromagnetic radiation. [7] Newton's law of universal gravitation, part of classical mechanics, does not provide for their existence, instead asserting that gravity has instantaneous effect everywhere.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGravitational_wave&rut=89c477c9ed976570dae688ead9b069690e6da57b344ffeb2684d1482f78c9f7a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T03:02:21.222479"
+    },
+    {
+      "topic": "gravitational wave",
+      "title": "What are Gravitational Waves? | LIGO Lab | Caltech",
+      "content": "Gravitational waves are ripples in space-time caused by violent and energetic events in the Universe, such as colliding black holes or supernovae. Learn how Einstein predicted them, how they were first observed by LIGO, and what they reveal about gravity and the cosmos.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ligo.caltech.edu%2Fpage%2Fwhat%2Dare%2Dgw&rut=0c3363173bef2b129296d8c79bb59ea00a380788a38d445c5061f3288be63b4e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T03:02:21.222652"
+    },
+    {
+      "topic": "gravitational wave",
+      "title": "What Is a Gravitational Wave? - NASA Space Place",
+      "content": "Learn about gravitational waves, the invisible ripples in space predicted by Einstein. Find out how they are created, detected, and what they can tell us about the universe.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fspaceplace.nasa.gov%2Fgravitational%2Dwaves%2Fen%2F&rut=2b10fa33c76ddae28b67005bfa9a3015fa5406ab00976feb22724ddd0de44999",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T03:02:21.222690"
+    },
+    {
+      "topic": "gravitational wave",
+      "title": "Gravitational Waves: Principle, Einstein's Prediction, Detection ...",
+      "content": "Einstein's Prediction: The Origin of Gravitational Waves The general theory of relativity, proposed by Einstein in 1915, generalized the special theory of relativity and revamped Newton's theory of gravity. Einstein's field equations concluded that the gravitational field of massive objects bends space-time, and this curvature is directly related to the energy, momentum, and radiation of ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fscienceinfo.com%2Fgravitational%2Dwaves%2F&rut=ceae9ba788815722017b3177862f0395c911a2a1cc099a10278e9d507afa44e9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T03:02:21.222730"
+    },
+    {
+      "topic": "gravitational wave",
+      "title": "Gravitational Waves - Harvard-Smithsonian Center for Astrophysics",
+      "content": "Learn how gravitational waves reveal details about black holes, neutron stars, and the evolution of the universe. Explore how astronomers use light and gravity to study these cosmic events with LIGO, LISA, and other telescopes.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cfa.harvard.edu%2Fresearch%2Ftopic%2Fgravitational%2Dwaves&rut=916e6292d82760db08e108c80fbeca4e6f3a0c6d4193dca0048c3707f9266555",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T03:02:21.222766"
+    },
+    {
+      "topic": "how i get free traffic from chatgpt in 2025 (aio vs seo)",
+      "title": "Free Website Seo - All-in-One Marketing Tool",
+      "content": "Build authority-first backlinks that drive AI mentions and SEO results. Traditional SEO tools miss AI search visibility\u2014Semrush doesn't.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dsemrush.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DCcVj3qSjX6%252DRAiHgQb_Wz2qcG0JcGH%252DZ6QgFy3UEdqlLV_ORJAJ_QsOuaD4j4EYIcw5gVX%252DPpp4fZlYMTvsXrhyi5Y_YpJbrEIubR0l0fpsf_Pb5pRkmXX4PL42HoIBFPIcJAk8dkURXTkxoEOuKXUErfi2MipNdoVLHivAYKuI.M4fuOmpXVwoVjZdWKxGTQw%26rut%3De5ac373a7759665e18210166aae40243e5f3bbd255794fad85da65aa05b7182c%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8u5G0fgcqWplrVIEO7xKd6zVUCUy9nRfMk9RnYx_evQimnwezdBAqjP7LJKZpzKKeU4jg6JS%252D9j207SYds5jW6M8WxXanfD2LJ03mrtUX6ojNtX1e_LLlmRnS%252DgK30z4csmxHf6krUnKkFmSEHQkrc%252Du3LJW4ROv%252DO6Fcbh3vSV9OSfx6zKFl9jrKM61_ufO1rh2WEWowVHUiV1K2DW1h5TUcygg%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuc2VtcnVzaC5jb20lMmZscCUyZnByb2R1Y3Qtc2VvLWNoYWxsZW5nZXMlMmZlbiUyZiUzZmJfYWRncm91cCUzZGZyZWUlMjUyMHdlYnNpdGUlMjUyMHNlbyUyNmJfYWRncm91cGlkJTNkMTMwMTgyMjA4NTAyMDIzMCUyNmJfYWRpZCUzZDgxMzYzOTk1NDQyNjI0JTI2Yl9jYW1wYWlnbiUzZENvcmUxMl9TUkNIX1NFT19Ub29sc19CSU5HJTI2Yl9jYW1wYWlnbmlkJTNkNDEyNTMyODQxJTI2Yl9pc3Byb2R1Y3QlM2QlMjZiX3Byb2R1Y3RpZCUzZCUyNmJfdGVybSUzZCUyNTJCZnJlZSUyNTIwJTI1MkJ3ZWJzaXRlJTI1MjAlMjUyQnNlbyUyNmJfdGVybWlkJTNka3dkLTgxMzY0MDUzNDM0MzEwJTNhbG9jLTE5MCUyNmt3JTNkJTI1MkJmcmVlJTI1MjAlMjUyQndlYnNpdGUlMjUyMCUyNTJCc2VvJTI2Y21wJTNkQ29yZTEyX1NSQ0hfU0VPX1Rvb2xzX0JJTkclMjZsYWJlbCUzZHNlb190b29sJTI2TmV0d29yayUzZHMlMjZEZXZpY2UlM2RjJTI2dXRtX2NvbnRlbnQlM2QlMjZrd2lkJTNka3dkLTgxMzY0MDUzNDM0MzEwJTNhbG9jLTE5MCUyNmNtcGlkJTNkNDEyNTMyODQxJTI2YWdwaWQlM2QxMzAxODIyMDg1MDIwMjMwJTI2QlUlM2RDb3JlJTI2ZXh0aWQlM2QlMjZhZHBvcyUzZCUyNm1hdGNodHlwZSUzZHAlMjZtc2Nsa2lkJTNkNDFiMDBjN2UwOTlhMTQ5MGU0NjI2NTI4YTc5MGI4Y2MlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RDb3JlMTJfU1JDSF9TRU9fVG9vbHNfQklORyUyNnV0bV90ZXJtJTNkJTI1MkJmcmVlJTI1MjAlMjUyQndlYnNpdGUlMjUyMCUyNTJCc2Vv%2526rlid%253D41b00c7e099a1490e4626528a790b8cc%26vqd%3D4%2D230848751282716186624678409723888879903%26iurl%3D%257B1%257DIG%253DD06D3ACD9C2C4CFAA49BA6D14CA085A8%2526CID%253D1CD11ADBAE7164B01A390C0FAFA46574%2526ID%253DDevEx%252C5046.1&rut=b99f64659c88362180c13d205cc7a29ef47d4dbf87531bf351829f052bedb259",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:25:30.485097"
+    },
+    {
+      "topic": "how i get free traffic from chatgpt in 2025 (aio vs seo)",
+      "title": "Free Website Traffic - *Free URL Submission*",
+      "content": "Free, Fast, Easy Submission to the Biggest Search Engines, Directorys. It's Free To Submit Your Website To The Biggest Search Engines Across The Internet",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dfree%252Dweb%252Dsubmission.co.uk%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D4zIx%252Dz1ibdARJ7wnfNdxRHNzNhrCE%252DB5CwPYNFovpt00wNpVrV8WPZxbK_KhcHZfBzSSceikJbjTcs6Yv1S6y_RdBdc9bpyyQs7jVa6AdMuWVC9jYS9IcG7qVb8yQ5FSgyEYefZZ1gk4uoL56g25dY89npq1ubArKeEx34Z7QZ0.kJJqU39%252DsAvJgxahf78rgA%26rut%3D55207f4faa6772a4b889627cb1e8628b4024118f1cffd15655a8e17f15e77f0d%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8WGq23aeI2i7kc9fq3EmT0DVUCUy7Ri4qNEl8u1GHimi_OS%252D5Jn4DXOVMDR_Djfai5GCTGypxPNqL_Oc8GEalpnzWBPVEpf1R_nIoxwVKKgA2_leLJjhfm_PSq_Mz_JehdeQJbG6VmPbrpNGqaBHNfz3ZV3C8S_oMoPw79IXdBpycjKc5Gac1mXlCAyPZPvKAVhCPI49uXEvPNdWwlSNkhWjvOBg%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuZnJlZS13ZWItc3VibWlzc2lvbi5jby51ayUyZmluZGV4MTEuaHRtbCUzZnV0bV9kZXZpY2UlM2RjJTI2dXRtX2djbGlkJTNkZjAzZDAyZmRjOTE1MTdkNjc0ZDA2YmFiNjcxZmY2MTYlMjZtc2Nsa2lkJTNkZjAzZDAyZmRjOTE1MTdkNjc0ZDA2YmFiNjcxZmY2MTYlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RGcmVlJTI1MjBXZWIlMjUyMFN1YiUyNTIwVGllcjElMjUyMENvbnYlMjUyMEt5d2RzJTI2dXRtX3Rlcm0lM2RzZWFyY2glMjUyMGVuZ2luZSUyNTIwdHJhZmZpYyUyNnV0bV9jb250ZW50JTNkQnV5ZXJzJTI1MjBLZXl3b3Jkcw%2526rlid%253Df03d02fdc91517d674d06bab671ff616%26vqd%3D4%2D261122421243572313221771921457685075420%26iurl%3D%257B1%257DIG%253DD06D3ACD9C2C4CFAA49BA6D14CA085A8%2526CID%253D1CD11ADBAE7164B01A390C0FAFA46574%2526ID%253DDevEx%252C5051.1&rut=6b95075291ed001bdd553eed9eec4fe67894c5c541ea7f9c584b15a13148d921",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:25:30.485222"
+    },
+    {
+      "topic": "how i get free traffic from chatgpt in 2025 (aio vs seo)",
+      "title": "How I Get Free Traffic from ChatGPT in 2025 (AIO vs SEO)",
+      "content": "The same thing happened in Perplexity. My website is now ranking at the top of AI responses, generating free traffic directly from AI models. This isn't luck. It's the result of implementing AI Optimization (AIO), where I optimize my content to appear in AI-generated responses. And if you're still only focusing on traditional SEO, you're missing out on a massive traffic source that's ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Flearnwithhasan.com%2Fblog%2Ffree%2Dtraffic%2Dfrom%2Dchatgpt%2F&rut=f42f7c8885c964ee28366a9768fafb3ddfa0c18ac694a2b9597c79ba42054adc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:25:30.485310"
+    },
+    {
+      "topic": "how i get free traffic from chatgpt in 2025 (aio vs seo)",
+      "title": "How I Get Free Traffic from ChatGPT in 2025 (AIO vs SEO)",
+      "content": "Traditional SEO remains the primary focus, while this emerging traffic channel grows rapidly with relatively light competition. This window won't stay open indefinitely. As more people understand AIO's value, competition will intensify and optimization will become more sophisticated.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fseotoolrank.com%2Fhow%2Di%2Dget%2Dfree%2Dtraffic%2Dfrom%2Dchatgpt%2Din%2D2025%2Daio%2Dvs%2Dseo%2F&rut=b3b22a7031a5162199e0731d3bbc9c285711f3ba0eeb002691a1f25c4ed62bbf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:25:30.485386"
+    },
+    {
+      "topic": "how i get free traffic from chatgpt in 2025 (aio vs seo)",
+      "title": "How To Get Free Traffic From ChatGPT in 2025 (AIO Course)",
+      "content": "In this video, I will show you how to optimize your website for AIO to rank on top of AI models like ChatGPT, Claude, Perplexity and Get Free Organic Traffic From AI.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DXmv22Pmu7f0&rut=82ef6f3e1dc339eb5f54fad5e1b9c39006544f527e90e19ec59ee702b02738ca",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:25:30.485474"
+    },
+    {
+      "topic": "gluon",
+      "title": "Gluon",
+      "content": "A gluon is a type of massless elementary particle that mediates the strong interaction between quarks, acting as the exchange particle for the interaction. Gluons are massless vector bosons, thereby having a spin of 1. Through the strong interaction, gluons bind quarks into groups according to quantum chromodynamics (QCD), forming hadrons such as protons and neutrons.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gluon",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T09:26:00.796133"
+    },
+    {
+      "topic": "gluon",
+      "title": "Gluon - Wikipedia",
+      "content": "The gluon is a vector boson, which means it has a spin of 1 \u0127. While massive spin-1 particles have three polarization states, massless gauge bosons like the gluon have only two polarization states because gauge invariance requires the field polarization to be transverse to the direction that the gluon is traveling. In quantum field theory, unbroken gauge invariance requires that gauge bosons ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGluon&rut=ea24c670243d24a92aaeb16ea5c97d173b45ab9b2f221f6ac29fd5c02cd67981",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:26:01.697549"
+    },
+    {
+      "topic": "gluon",
+      "title": "DOE Explains...Quarks and Gluons | Department of Energy",
+      "content": "Learn about quarks and gluons, the indivisible particles that make up protons and neutrons, and the strong nuclear force that binds them. Find out how DOE supports research on quark-gluon plasma, the theory of quantum chromodynamics, and the history of quark discovery.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.energy.gov%2Fscience%2Fdoe%2Dexplainsquarks%2Dand%2Dgluons&rut=f2ff70bff5b901a33a7332186c604893f1ce00512c6486a197d3597a384afa8b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:26:01.697592"
+    },
+    {
+      "topic": "gluon",
+      "title": "Gluon | Quark, Color Force & Interaction | Britannica",
+      "content": "Gluon, the so-called messenger particle of the strong nuclear force, which binds subatomic particles known as quarks within the protons and neutrons of stable matter as well as within heavier, short-lived particles created at high energies. Quarks interact by emitting and absorbing gluons, just as",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fgluon&rut=2b59c10901dcc00e689a194882935d85d0773517b39e0d90bb060e2ed573738f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:26:01.697625"
+    },
+    {
+      "topic": "gluon",
+      "title": "What Is a Gluon and What Does It Do? - Biology Insights",
+      "content": "A gluon is an elementary boson that acts as a force-carrying particle, mediating one of the four fundamental forces of nature. Mediating the Strong Force Gluons are the force carriers of the strong nuclear force, the most powerful of the four fundamental forces. This force binds together the quarks that make up protons and neutrons. The strong force operates over extremely short distances ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbiologyinsights.com%2Fwhat%2Dis%2Da%2Dgluon%2Dand%2Dwhat%2Ddoes%2Dit%2Ddo%2F&rut=e0717d4f3c3646f541ed09836e9507c877541126c0e6e302ee2a9e9ab0d1b638",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:26:01.697658"
+    },
+    {
+      "topic": "gluon",
+      "title": "What are gluons? | Space",
+      "content": "Discover how gluons bind quarks together to form protons and neutrons and explore the form weird form of matter in which they existed just after the Big Bang.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.space.com%2Fgluons%2Dcarriers%2Dstrong%2Dforce%2Dexplained&rut=620582d98c08a4a5da008b864b61a68528ee1437039f0bfd2ca91a78228b92a4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:26:01.697688"
+    },
+    {
+      "topic": "gravity",
+      "title": "Gravity",
+      "content": "In physics, gravity, also known as gravitation or a gravitational interaction, is a fundamental interaction, which may be described as the effect of a field that is generated by a gravitational source such as mass.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gravity",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T09:36:30.838591"
+    },
+    {
+      "topic": "gravity",
+      "title": "Gravity - Wikipedia",
+      "content": "Gravity is the word used to describe a physical law, a fundamental physical interaction that derives primarily from mass, and the observed consequences of that interaction on objects. Gravity is the law that every object with mass attracts every other object in the universe in proportion to each mass and inversely proportional to the square of the distance between them. The force of gravity, F ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGravity&rut=dae2e7dcbbb80eb3ac8880e6345835b550a91610a906a083e1a1a708633d8019",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:31.644811"
+    },
+    {
+      "topic": "gravity",
+      "title": "Gravity | Definition, Physics, & Facts | Britannica",
+      "content": "Gravity, in mechanics, is the universal force of attraction acting between all bodies of matter. It is by far the weakest force known in nature and thus plays no role in determining the internal properties of everyday matter. Yet, it also controls the trajectories of bodies in the universe and the structure of the whole cosmos.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fgravity%2Dphysics&rut=d3595b822f7c3dce9433751d83ad3962b655ab11e8dd689b250b3067111553cd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:31.644941"
+    },
+    {
+      "topic": "gravity",
+      "title": "What Is Gravity? | NASA Space Place - NASA Science for Kids",
+      "content": "Learn how gravity works, what it does, and how it affects us and the universe. Find out about gravity's effects on Earth, the sun, the moon, the planets, the stars, and black holes.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fspaceplace.nasa.gov%2Fwhat%2Dis%2Dgravity%2Fen%2F&rut=b85fde02cc3fc28da293a7cf2089ef77591c016e58ebc716b2862ea7da5854b7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:31.645066"
+    },
+    {
+      "topic": "gravity",
+      "title": "What Is Gravity? Definition, Formulas, Facts - Science Notes and Projects",
+      "content": "Gravity is one of the fundamental forces of nature, governing the motion of celestial bodies, the behavior of objects on Earth, and even the structure of the universe. From keeping planets in orbit to pulling apples to the ground, gravity is a force that affects everything with mass. But what is gravity, and how does it work?",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsciencenotes.org%2Fwhat%2Dis%2Dgravity%2Ddefinition%2Dformulas%2Dfacts%2F&rut=9ac19009a5a16150af0329667580574e04f5515bfadd9ab01eab56b6f4e67a15",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:31.645134"
+    },
+    {
+      "topic": "gibbs free energy",
+      "title": "Gibbs free energy - Wikipedia",
+      "content": "The Gibbs free energy change (\u2060 \u2060, measured in joules in SI) is the maximum amount of non-volume expansion work that can be extracted from a closed system (one that can exchange heat and work with its surroundings, but not matter) at fixed temperature and pressure. This maximum can be attained only in a completely reversible process.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGibbs_free_energy&rut=06b5ea32208d80a60e712fa4687a49d553f19889eebbb69a7fb3c6ca8919a9c6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:44:26.829216"
+    },
+    {
+      "topic": "gibbs free energy",
+      "title": "Gibbs (Free) Energy - Chemistry LibreTexts",
+      "content": "Gibbs free energy, denoted G , combines enthalpy and entropy into a single value. The change in free energy, &Delta;G , is equal to the sum of the enthalpy plus the product of the temperature and \u2026",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fchem.libretexts.org%2FBookshelves%2FPhysical_and_Theoretical_Chemistry_Textbook_Maps%2FSupplemental_Modules_(Physical_and_Theoretical_Chemistry)%2FThermodynamics%2FEnergies_and_Potentials%2FFree_Energy%2FGibbs_(Free)_Energy&rut=eccd0590cc6f2eea71d98709875e115338e203e12e86b7bdaa824c3446a054cb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:44:26.829321"
+    },
+    {
+      "topic": "gibbs free energy",
+      "title": "Gibbs Free Energy - Division of Chemical Education, Purdue University",
+      "content": "Learn how to define and calculate the Gibbs free energy of a system, which measures the balance between enthalpy and entropy as driving forces for chemical reactions. Explore how temperature, standard-state conditions and equilibrium constants affect the free energy of reactions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fchemed.chem.purdue.edu%2Fgenchem%2Ftopicreview%2Fbp%2Fch21%2Fgibbs.php&rut=e0a1c1f1e170deef07dcb925b60b13919c6b392c74ac169c161bad0139c735e0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:44:26.829402"
+    },
+    {
+      "topic": "gibbs free energy",
+      "title": "Gibbs Free Energy: Definition, Equation, Unit, and Example",
+      "content": "Learn how to calculate and interpret Gibbs free energy, a state function that measures the energy available to do work in a chemical process. Find out the standard-state Gibbs free energy of formation of some substances and the relationship between Gibbs free energy and equilibrium constant.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.chemistrylearner.com%2Fgibbs%2Dfree%2Denergy.html&rut=df5ec9c6579898c2871c62c39e0f4b914fec6b40b345eec33e61dc58b2bd29c3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:44:26.829483"
+    },
+    {
+      "topic": "gibbs free energy",
+      "title": "Gibbs Free Energy Equation: Predicting Spontaneity in Chemical ...",
+      "content": "Technically speaking, Gibbs free energy is the amount of energy that can be freed or extracted from the system in order to do useful work. But for us, Gibbs free energy becomes a useful mathematical tool for predicting the spontaneity of a reaction.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.physicsclassroom.com%2FChemistry%2DTutorial%2FChemical%2DThermodynamics%2FGibbs%2DFree%2DEnergy%2DEquation&rut=934bb9b014f3816c16f784d0cf4c9550574c3bf6a414f1056005c3b0df0fb87a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:44:26.829560"
+    },
+    {
+      "topic": "genetic code",
+      "title": "Genetic code - Wikipedia",
+      "content": "Learn how the genetic code translates DNA or RNA sequences of nucleotide triplets (codons) into proteins. Explore the history of the discovery of the codons, the standard and variant codes, and the synthetic biology of expanding the code.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGenetic_code&rut=cb6df85a02a3065e4edfa9b252aae64f9d95374fe8ce75cb550750ece391793f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:52:58.225511"
+    },
+    {
+      "topic": "genetic code",
+      "title": "Genetic code | Definition, Characteristics, Table, & Facts | Britannica",
+      "content": "Genetic code, the sequence of nucleotides in DNA and RNA that determines the amino acid sequence of proteins. Though the linear sequence of nucleotides in DNA contains the information for protein sequences, proteins are not made directly from DNA but by messenger RNA molecules that direct protein formation.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fgenetic%2Dcode&rut=5d9e9fcfbaf896e403df3b894b7e77c18185ad592e2c166ff5679b1311fcaa84",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:52:58.225552"
+    },
+    {
+      "topic": "genetic code",
+      "title": "Genetic Code - National Human Genome Research Institute",
+      "content": "Learn what genetic code is and how it works from the four nucleotide bases of DNA. Listen to a narration of the history and significance of the genetic code by a historian of genetics.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.genome.gov%2Fgenetics%2Dglossary%2FGenetic%2DCode&rut=73b9b368a3e49b2593481c9b731a0889330d5ed337a9dadea7bf4fb71935bcaa",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:52:58.225582"
+    },
+    {
+      "topic": "genetic code",
+      "title": "genetic code | Learn Science at Scitable - Nature",
+      "content": "Learn how the genetic code is a set of rules that maps DNA codons to amino acids or stop signals. Discover how the genetic code was deciphered by Nirenberg, Leder, and Khorana in 1961 and how it is nearly universal.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nature.com%2Fscitable%2Fdefinition%2Fgenetic%2Dcode%2D13%2F&rut=ff6b489c8f27dc7f14fd77adf02cf7b6c861ed5046cb7440b100d2d4df937e9d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:52:58.225610"
+    },
+    {
+      "topic": "genetic code",
+      "title": "9.2: The Genetic Code - Biology LibreTexts",
+      "content": "The genetic code refers to the DNA alphabet (A, T, C, G), the RNA alphabet (A, U, C, G), and the polypeptide alphabet (20 amino acids). The Central Dogma describes the flow of genetic information in the cell from genes to mRNA to proteins.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbio.libretexts.org%2FCourses%2FCuyahoga_Community_College%2FBio_1110%253A_Biological_Fundamentals%2F09%253A_DNA_Structure_and_Function%2F9.02%253A_The_Genetic_Code&rut=4fbf647cfd39d1794f4794d161e2474610df211d58a330d686bb733b2a57ab8d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:52:58.225638"
+    },
+    {
+      "topic": "gene expression",
+      "title": "Gene expression - Wikipedia",
+      "content": "Gene expression Gene expression is the process by which the information contained within a gene is used to produce a functional gene product, such as a protein or a functional RNA molecule. This process involves multiple steps, including the transcription of the gene's sequence into RNA.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGene_expression&rut=c792dd1c0ffe167200d844705343067eb3f1b867e1aa4fe51b5fe7e91c42b2a8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:54:33.065565"
+    },
+    {
+      "topic": "gene expression",
+      "title": "Gene Expression - National Human Genome Research Institute",
+      "content": "Learn what gene expression is and how it is regulated by different conditions and cell types. See how gene expression can be measured by RNA, protein, or phenotype levels.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.genome.gov%2Fgenetics%2Dglossary%2FGene%2DExpression&rut=e1c3cc290a31a3e9875861368e097f3a393aff1edb93d03bd645936d2b476c49",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:54:33.065660"
+    },
+    {
+      "topic": "gene expression",
+      "title": "What is Gene Expression and Why It Matters for Life",
+      "content": "Gene expression is the process by which genetic information in DNA is used to make proteins or RNA. Learn how gene expression is regulated, how it changes during development and in response to the environment, and how it affects health and disease.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencenewstoday.org%2Fwhat%2Dis%2Dgene%2Dexpression%2Dand%2Dwhy%2Dit%2Dmatters%2Dfor%2Dlife&rut=94060e1b4f4c1e9bc9775f44fbfa83b3b1ccd519d4a0b05dcfc4814071ff62d2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:54:33.065727"
+    },
+    {
+      "topic": "gene expression",
+      "title": "Gene Expression - Definition, Example, Steps, and Regulation",
+      "content": "Learn how genes encode information for RNA and proteins, and how cells control gene expression in response to various signals and triggers. Explore the stages of transcription, translation, and post-transcriptional modification, and the factors that regulate them.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencefacts.net%2Fgene%2Dexpression.html&rut=7e71b9159543b321a7ee274f919df9f4faf96a66be7b32d8c4bd079c0d7b5fbf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:54:33.065790"
+    },
+    {
+      "topic": "gene expression",
+      "title": "What Are Gene Expression Studies and Why Are They Important?",
+      "content": "The Significance of Gene Expression Studies Studying gene expression provides insights into how cells differentiate, develop, and interact with their surroundings. The specific pattern of genes turned on or off dictates a cell's identity, determining whether it becomes a muscle cell, a nerve cell, or a skin cell during development.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbiologyinsights.com%2Fwhat%2Dare%2Dgene%2Dexpression%2Dstudies%2Dand%2Dwhy%2Dare%2Dthey%2Dimportant%2F&rut=8e35045bd5794318e5293bca3743b86070167278d4221bffe933b372c7234fa8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:54:33.065871"
+    },
+    {
+      "topic": "gene therapy",
+      "title": "Gene therapy - Wikipedia",
+      "content": "Learn about the medical technology that aims to modify gene expression or biological properties of living cells for therapeutic purposes. Explore the background, history, methods and applications of gene therapy, as well as the challenges and controversies it faces.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGene_therapy&rut=75b7609760fb8f6282482c92eeb3962cdb52f72b3b76049628cf581ba45d0505",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:01:23.822654"
+    },
+    {
+      "topic": "gene therapy",
+      "title": "Gene therapy - Mayo Clinic",
+      "content": "Gene therapy aims to fix a faulty gene or replace it with a healthy gene to try to cure disease or make the body better able to fight disease. It holds promise as a treatment for a wide range of diseases, such as cancer, cystic fibrosis, heart disease, diabetes, hemophilia and AIDS. The U.S. Food and Drug Administration (FDA) has approved gene therapy products for several conditions, including ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mayoclinic.org%2Ftests%2Dprocedures%2Fgene%2Dtherapy%2Fabout%2Fpac%2D20384619&rut=139b664a8afeac0b60350c6ed0e0cc657454542ccc8366b2b473fc3d7643b5e8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:01:23.822738"
+    },
+    {
+      "topic": "gene therapy",
+      "title": "Gene Therapy - National Human Genome Research Institute",
+      "content": "Gene therapy is a technique that uses a gene (s) to treat, prevent or cure a disease or medical disorder. Learn how gene therapy works, what types of diseases it can treat, and what are the challenges and benefits of this approach.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.genome.gov%2Fgenetics%2Dglossary%2FGene%2DTherapy&rut=be6000467aae767d8f075415c48d317c207e76e975ca71a9770b31b37336f3c5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:01:23.822793"
+    },
+    {
+      "topic": "gene therapy",
+      "title": "What is gene therapy?: MedlinePlus Genetics",
+      "content": "Gene therapy is a medical approach that treats or prevents disease by correcting the underlying genetic problem. Learn about the different gene therapy techniques, such as gene transfer and genome editing, and how they are being used to treat various disorders.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmedlineplus.gov%2Fgenetics%2Funderstanding%2Ftherapy%2Fgenetherapy%2F&rut=bec3183407c4db1266c77a10309b22c5def85a1b0b80367c13bda795ee7c1355",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:01:23.822847"
+    },
+    {
+      "topic": "gene therapy",
+      "title": "What Is Gene Therapy? Pros, Cons & Examples - Cleveland Clinic",
+      "content": "What is gene therapy? Gene therapy is a type of treatment for genetic disorders. It works by either changing a disease-causing gene or giving you a working copy of that gene. Genes are instructions for making proteins that help your body work.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmy.clevelandclinic.org%2Fhealth%2Ftreatments%2F17984%2Dgene%2Dtherapy&rut=c0c5943b1c616b491fc5f117dc2e4016ecc2048d8343c8dea8cb2ef760eb3102",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:01:23.822903"
+    },
+    {
+      "topic": "genetic engineering",
+      "title": "UC San Diego Science Studies - Online Certificate Programs",
+      "content": "Sciences | UC San Diego Division of Extended Studies Sciences Programs & Certificates. Flexible online learning options to fit your schedule and interests.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Ducsd.edu%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DhyfBt3rJTub4DCb8FcGCfHSyV%252DkIm5C4NK795ODoFo3EanUElfUAV0kxL6TJljcGHJiKa2sNeeIHOtcFGIbrJmrESCFMJSpuSDfcTx0Hhtwr5LCubMTDrunaTCctveDnYH7I5l52ndymVV1scC73F5oV6p7yHsweLEc19SQZQjE.BMQYxcBpr85Hcc3BYjfZCQ%26rut%3D617ffed7a234c5feb0f1bd56fa948f94724804e7d16f7899e25fa93dac316154%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8YRoSMkWzHjfF_QmRLSf30zVUCUy9xC_ME7V4_455XdCtn05IDF9FaRf%252D9id85CfvG3P7o7MUjWDGsHoFFaq_TabEhLEGRg9uxxZpz2EKcVmACIYyvQkuce00LxHLGTeXky9yoT7DPTeSNHBBQSa5FB72Aa_xgylR5BZJ8R6VSCWo8kdIv47kR6cI7vAqTHAb50HORMiLhDBaDfl6jPpgysF5WQk%2526u%253DaHR0cHMlM2ElMmYlMmZleHRlbmRlZHN0dWRpZXMudWNzZC5lZHUlMmZjb3Vyc2VzLWNlcnRpZmljYXRlcyUyZnNjaWVuY2VzJTNmbXNjbGtpZCUzZDIyZjNjMTQxOTRiNjE1Nzc4NDE2YTgxNzIyMDQzMWI0JTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkU0NTJTI1MjAtJTI1MjBBTEwlMjUyMFNjaWVuY2VzJTI1MjBOZWlnaGJvcmhvb2QlMjZ1dG1fdGVybSUzZHNjaWVuY2UlMjUyMHN0dWRpZXMlMjZ1dG1fY29udGVudCUzZEFsbCUyNTIwU2NpZW5jZXMlMjUyME5laWdoYm9yaG9vZCUyNTIwQWQlMjUyMEdyb3Vw%2526rlid%253D22f3c14194b615778416a817220431b4%26vqd%3D4%2D56244321155290492026858679606717206271%26iurl%3D%257B1%257DIG%253D1FE29C030DA740038C930D356A8641A3%2526CID%253D1AD84290CA416DB93D315444CBCD6CC4%2526ID%253DDevEx%252C5045.1&rut=0acfd1a0572ed6a1168a487b892de1494152025d55c2e5d772bcf6b34f8e0f5d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:02:26.608713"
+    },
+    {
+      "topic": "genetic engineering",
+      "title": "Genetic engineering - Wikipedia",
+      "content": "Genetic engineering, also called genetic modification or genetic manipulation, is the modification and manipulation of an organism's genes using technology. It is a set of technologies used to change the genetic makeup of cells, including the transfer of genes within and across species boundaries to produce improved or novel organisms.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGenetic_engineering&rut=bd504e6391d9b2190cf28cddd68416839806a94fd4e09774f58a5b0e20b0d446",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:02:26.608751"
+    },
+    {
+      "topic": "genetic engineering",
+      "title": "Genetic engineering | Definition, Process, Uses, Examples, Techniques ...",
+      "content": "Genetic engineering, the artificial manipulation, modification, and recombination of DNA or other nucleic acid molecules to modify an organism. The term is generally used to refer specifically to methods of recombinant DNA technology. Learn about the history, techniques, and applications of genetic engineering.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fgenetic%2Dengineering&rut=a5862865aa0586f2114e6bca556e324b374ee8aff2eb2063fa014454593969b3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:02:26.608785"
+    },
+    {
+      "topic": "genetic engineering",
+      "title": "Genetic Engineering - National Human Genome Research Institute",
+      "content": "Learn what genetic engineering is and how it is used to modify the DNA of organisms. Find out how genetic engineering has evolved from cloning to synthetic biology and its applications in research and industry.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.genome.gov%2Fgenetics%2Dglossary%2FGenetic%2DEngineering&rut=693e437eca35d13f0ff68897930ffdb47a3f2645175d05edcfc45d2022b00cb5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:02:26.608811"
+    },
+    {
+      "topic": "genetic engineering",
+      "title": "What is Genetic Engineering? How Scientists Are Rewriting the Code of Life",
+      "content": "Learn what genetic engineering is, how it works, and what it can do. Explore the history, tools, and applications of this powerful biotechnology, from crops and animals to gene therapy and CRISPR.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencenewstoday.org%2Fwhat%2Dis%2Dgenetic%2Dengineering%2Dhow%2Dscientists%2Dare%2Drewriting%2Dthe%2Dcode%2Dof%2Dlife&rut=edef8ac4244a9ffd4f3526afcf6afe99cad5f53005a24361f7a37d27f3ad6660",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:02:26.608835"
+    },
+    {
+      "topic": "genomics",
+      "title": "Genomics",
+      "content": "Genomics is an interdisciplinary field of molecular biology focusing on the structure, function, evolution, mapping, and editing of genomes. A genome is an organism's complete set of DNA, including all of its genes as well as its hierarchical, three-dimensional structural configuration. In contrast to genetics, which refers to the study of individual genes and their roles in inheritance, genomics aims at the collective characterization and quantification of all of an organism's genes, their interrelations and influence on the organism. Genes may direct the production of proteins with the assistance of enzymes and messenger molecules. In turn, proteins make up body structures such as organs and tissues as well as control chemical reactions and carry signals between cells. Genomics also involves the sequencing and analysis of genomes through uses of high throughput DNA sequencing and bioinformatics to assemble and analyze the function and structure of entire genomes. Advances in genomics have triggered a revolution in discovery-based research and systems biology to facilitate understanding of even the most complex biological systems such as the brain.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Genomics",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T10:03:58.920885"
+    },
+    {
+      "topic": "genomics",
+      "title": "Genomics - Wikipedia",
+      "content": "Genomics is the study of the structure, function, evolution, mapping, and editing of genomes, the complete set of DNA of an organism. Learn about the origins, methods, and achievements of genomics, from the first nucleic acid sequences to the human genome project and beyond.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGenomics&rut=9f690a6c9752019bc3ebf2b336a055b3476de9c05baa608eb5bed2fa82738b13",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:03:59.815042"
+    },
+    {
+      "topic": "genomics",
+      "title": "A Brief Guide to Genomics - National Human Genome Research Institute",
+      "content": "Learn the basics of genomics, the study of all of a person's genes and their interactions with the environment. Find out how DNA sequencing, the Human Genome Project, and genomic medicine are advancing our understanding of health and disease.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.genome.gov%2Fabout%2Dgenomics%2Ffact%2Dsheets%2FA%2DBrief%2DGuide%2Dto%2DGenomics&rut=1be5da44c1fcb443c98e91997bbddcc1bf0e5ef537a69fef24e8b494a522c25f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:03:59.815111"
+    },
+    {
+      "topic": "genomics",
+      "title": "Genomics | Description, Sequencing, Applications, & Facts | Britannica",
+      "content": "Genomics is one of several omic branches of biological study, concentrates on the structure, function, and inheritance of an organism's genome (its entire set of genetic material) .",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fgenomics&rut=f873372d4d186781f05b4337925f1d292dbcf38856c8f6f39580bdaf8403cffc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:03:59.815161"
+    },
+    {
+      "topic": "genomics",
+      "title": "Genomics | Journal | ScienceDirect.com by Elsevier",
+      "content": "Genomics is a forum for describing the development of genome-scale technologies and their application to all areas of biological investigation. As a journal that has evolved with the field that carries its name, Genomics focuses on the development and application of cutting-edge methods, addressing \u2026 View full aims & scope",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencedirect.com%2Fjournal%2Fgenomics&rut=132088fda9cdf12d7afe5ad67e4fe6044aaaa7f62ad2e99632cda49a7b0b2c07",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:03:59.815647"
+    },
+    {
+      "topic": "genomics",
+      "title": "What is Genomics | Carl R. Woese Institute for Genomic Biology",
+      "content": "In the broadest sense, genomics is the study of the DNA within organisms. DNA is the classic double helix molecule you probably saw in a biology class, often called the \"blueprint for life\". This is because DNA contains instructions for an organism's life story \u2014 how it develops, grows, survives, and reproduces.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.igb.illinois.edu%2FaboutIGB%2Fwhatisgenomics&rut=efbbf75e73fba67449e50b41b145760277540c4e0fe20e1b32d07f9d0ad07f83",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:03:59.815756"
+    },
+    {
+      "topic": "gaza peace plan",
+      "title": "Gaza peace plan - Wikipedia",
+      "content": "The Gaza peace plan (officially the Comprehensive Plan to End the Gaza Conflict) is a multilateral agreement between Israel and Hamas that aims to address the ongoing Gaza war and broader Middle Eastern crisis. Led by United States president Donald Trump, it was negotiated in consultation with many Arab and Muslim countries. The plan was announced by Trump on September 29, 2025, during a press ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGaza_peace_plan&rut=a19a9218e180bd89a6d8b62f9028282ca0ad28207e9f5c5d555eca12da8a2488",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:09:46.650311"
+    },
+    {
+      "topic": "gaza peace plan",
+      "title": "A Guide to the Gaza Peace Deal | Council on Foreign Relations",
+      "content": "On November 17, the UN Security Council approved a U.S.-drafted resolution for peace in the Gaza Strip, a breakthrough for the Trump administration's twenty-point plan to broker peace in the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cfr.org%2Farticle%2Fguide%2Dtrumps%2Dtwenty%2Dpoint%2Dgaza%2Dpeace%2Ddeal&rut=f0f762572fcc076635c592df168e3e1964988a68f2eb58fcbb1b7e58c66112a6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:09:46.650357"
+    },
+    {
+      "topic": "gaza peace plan",
+      "title": "Full text: Trump's 20-point 'comprehensive plan to end the Gaza ...",
+      "content": "The White House on Monday released US President Donald Trump's \"Comprehensive Plan to End the Gaza Conflict,\" shortly before Trump's joint press conference alongside Prime Minister ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.timesofisrael.com%2Ffull%2Dtext%2Dtrumps%2Dcomprehensive%2Dplan%2Dto%2Dend%2Dthe%2Dgaza%2Dconflict%2F&rut=cab6feb51dccb57dab4b8df0b4c2b957929175cf056c3175f84dd73483978bd0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:09:46.650387"
+    },
+    {
+      "topic": "gaza peace plan",
+      "title": "Here's the full text of Trump's 20-point plan to end Israel's war on Gaza",
+      "content": "Here's the full text of Trump's 20-point plan to end Israel's war on Gaza The White House says its proposal would end the war in Gaza immediately if both sides accept.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.aljazeera.com%2Fnews%2F2025%2F9%2F29%2Fheres%2Dthe%2Dfull%2Dtext%2Dof%2Dtrumps%2D20%2Dpoint%2Dplan%2Dto%2Dend%2Disraels%2Dwar%2Don%2Dgaza&rut=14b4fc82235994c9e08a3096303c335eb7217368fb142df19f101558ad039c2b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:09:46.650422"
+    },
+    {
+      "topic": "gaza peace plan",
+      "title": "Trump's Gaza Peace Plan Explained - GovFacts",
+      "content": "President Donald Trump unveiled a 20-point peace plan at the White House alongside Israeli Prime Minister Benjamin Netanyahu aimed at ending the nearly two-year war in Gaza. The proposal represents a comprehensive American-led effort to address the immediate cessation of hostilities while laying out a vision for the territory's post-war security, governance, and reconstruction.ContentsThe ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fgovfacts.org%2Fpolicy%2Dsecurity%2Fglobal%2Dsecurity%2Dchallenges%2Fregional%2Dconflicts%2Dwars%2Ftrumps%2Dgaza%2Dpeace%2Dplan%2Dexplained%2F&rut=6948004545ba357247f7ce7bed81038f9d52f353ec92a744320577766d2d420a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:09:46.650454"
+    },
+    {
+      "topic": "tumor suppressor gene",
+      "title": "Tumor suppressor gene - Wikipedia",
+      "content": "Learn about the definition, history, functions and classification of tumor suppressor genes, which regulate cell division and replication. Find out how they differ from oncogenes and how they follow the two-hit hypothesis.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTumor_suppressor_gene&rut=59ae14fc3c2f60fac18ca5da464210cc94f72f9992abfff0577a8828ddc7aa66",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:19:12.602210"
+    },
+    {
+      "topic": "tumor suppressor gene",
+      "title": "Tumor-Suppressor Genes - StatPearls - NCBI Bookshelf",
+      "content": "Tumor suppressor genes are important genes that act within the genome to regulate several cellular functions. These genes can be broadly classified based on their role in cell growth/cell cycle progression, cell proliferation, DNA repair mechanisms, and other crucial cellular signaling functions such as the apoptosis induction. Without functional tumor suppressor genes, there is a high risk of ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fsites%2Fbooks%2FNBK532243%2F&rut=cecc909f5e713ecee9497bac12ae530cecdb15845a378675594057a4498d5693",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:19:12.602268"
+    },
+    {
+      "topic": "tumor suppressor gene",
+      "title": "Tumor Suppressor Genes: Types & Function - Cleveland Clinic",
+      "content": "Tumor suppressor genes protect your body from cancer. When these genes mutate, your cells may multiply uncontrollably and become tumors.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmy.clevelandclinic.org%2Fhealth%2Fbody%2F24833%2Dtumor%2Dsuppressor%2Dgenes&rut=3c19fdedd49c502cbb03addd0a53d1e2ff67ac8f1bf5c905e897cfcbba403804",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:19:12.602297"
+    },
+    {
+      "topic": "tumor suppressor gene",
+      "title": "Tumor Suppressor Gene - National Human Genome Research Institute",
+      "content": "A tumor suppressor gene directs the production of a protein that is part of the system that regulates cell division.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.genome.gov%2Fgenetics%2Dglossary%2FTumor%2DSuppressor%2DGene&rut=50a19628d3ce9681e96861797489796764bcfb014170e90e3630cc63430d0d34",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:19:12.602349"
+    },
+    {
+      "topic": "tumor suppressor gene",
+      "title": "Oncogenes, Tumor Suppressor Genes, and DNA Repair Genes",
+      "content": "The main types of genes that play a role in cancer are oncogenes, tumor suppressor genes, and DNA repair genes. Learn more here.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cancer.org%2Fcancer%2Funderstanding%2Dcancer%2Fgenes%2Dand%2Dcancer%2Foncogenes%2Dtumor%2Dsuppressor%2Dgenes.html&rut=c269dfcfadb6e4fb299fff9326e00651531db23a58fc958c5ee8f3e63ceccdcb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:19:12.602377"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These are the flying discs the government wants you to know about",
+      "content": "These are the flying discs the government wants you to know about DiskSat's design offers \"a power-to-weight ratio unmatched by traditional aluminum satellites.\"",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Farstechnica.com%2Fscience%2F2025%2F12%2Fheres%2Dwhy%2Dnasa%2Dand%2Dthe%2Dspace%2Dforce%2Dare%2Dinterested%2Din%2Dpizza%2Dshaped%2Dsatellites%2F&rut=f211be3316a507f9820d7a3acaa1110567f349036b9c4eb0c58da797508f882c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470269"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "Government's new 'flying discs' could redefine low-orbit missions",
+      "content": "These disk-like spacecraft are not science fiction, and this morning, they successfully entered orbit under the watchful observation of NASA and the U.S. Space Force. Thursday morning, four ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.msn.com%2Fen%2Dus%2Fnews%2Ftechnology%2Fgovernment%2Ds%2Dnew%2Dflying%2Ddiscs%2Dcould%2Dredefine%2Dlow%2Dorbit%2Dmissions%2Far%2DAA1SOLCz&rut=d515a90639683d73b6113b12a111164798de7ea5292727fe29f32e50f8fbe3fb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470331"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These are the flying discs the government wants you to know about ...",
+      "content": "Rocket Lab delivers for Space Force and NASA. Four small satellites rode a Rocket Lab Electron launch vehicle into orbit from Virginia early Thursday, beginning a government-funded technology ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fjean%2Dpierre%2Dpalomba%2Dmarin%2D14508b162_these%2Dare%2Dthe%2Dflying%2Ddiscs%2Dthe%2Dgovernment%2Dactivity%2D7407712454568235008%2DUxWm&rut=7fee72c854af04723714910de3a8548826d592e7abebf9982acce37cbf8ae207",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470377"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These Are The Flying Discs The Government Wants You To Know",
+      "content": "Home \u00bb Tech News \u00bb These are the flying discs the government wants you to know about Share with your friends! these are the flying discs the government NASA and the US Space Force have initiated a groundbreaking technology demonstration mission with the launch of four innovative satellites designed to test a new spacecraft concept.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.hashe.com%2Ftech%2Dnews%2Fthese%2Dare%2Dthe%2Dflying%2Ddiscs%2Dgovernment%2Dwants%2Dyou%2Dto%2Dknow%2Dabout%2F&rut=e066b6d6ca1d75b7d6df9a185a6a0856749920e76e05246626ba11c8540c25a8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470441"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These are the flying discs the government wants you to know about",
+      "content": "These Are the Flying Discs the Government Wants You to Know About In a groundbreaking development, four small satellites designed by the Aerospace Corporation have successfully launched into orbit. The launch took place on early Thursday morning, when a Rocket Lab Electron rocket carrying the DiskSats began its journey from NASA's Wallops Flight Facility. The DiskSat project was initiated as a ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.trendynewsblog.com%2Fposts%2Fthese%2Dare%2Dthe%2Dflying%2Ddiscs%2Dthe%2Dgovernment%2Dwan%2F&rut=97788db732a3a2c4eee229d8d2e458d9fc95ca98a82e05912c84272abdb4884d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470498"
+    },
+    {
+      "topic": "gaba",
+      "title": "Taking GABA for Better Memory? - Take GABA for a Sharper Mind?",
+      "content": "Our experts rated these 5 brain supplements higher than GABA in safety & effectiveness. Out of hundreds of brain-boosting memory supplements, we rated these 5 higher than GABA.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dwiserlifestyles.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DlP44s6I58pQ9Nmme4xebxQMqtFp5N4yh0aIgrNex1YHDgcAzNGdKc2GSr3xHwptuwavWWLR9q9XT9LFUN6TkQil4keXn0g0mqw3531X0QCvc4nSTdSrs8tKoMBd%252D58t1IR2h4ctDDxag_gy1Trwnfkevah1pWEatIgBSsjuOHPY.s09uw5O2NhUh57NppWZcVw%26rut%3Ddf003cee323ae98a845aa96bb2cf15143d1d405b1b382e156bb32e7f867084b3%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8fT7zWY1Cbf3YLh5jgjq6ZTVUCUzolMLUVeTvhCiOrq5jTTCut2U6tVqTyPFbmg0C_ySJMSkhfwpCeFq4MmucOMjyO6k8rou6062fKKb6oDW76s2vC5Ov%252D9LVor_dHHW0o4_hgqcMgPp3DPow%252DUcGANdKCI0mQnaNU5b7E8WIgnTw_nTblBYX89lE8d914K19YtqgBiRnHWy3TIME5ZqfLAIpRd8%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cud2lzZXJsaWZlc3R5bGVzLmNvbSUyZnRvcGljcyUyZm1lbW9yeSUzZm1zY2xraWQlM2RmYmM0NWI2NmU1ZGQxYjNkN2MwYzMyMzA1OGNhNTZmNCUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZFdpc2VyTGlmZXN0eWxlcy5jb20lMjUyMC0lMjUyME1lbW9yeSUyNTIwLSUyNTIwU2VhcmNoJTI1MjBVUyUyNnV0bV90ZXJtJTNkZ2FiYSUyNnV0bV9jb250ZW50JTNkaW5ncmVkaWVudHMlMjUyMGdhYmE%2526rlid%253Dfbc45b66e5dd1b3d7c0c323058ca56f4%26vqd%3D4%2D318308798208593172655266043408537265722%26iurl%3D%257B1%257DIG%253DCE1501809AFF4676BBF1CE397EB22E40%2526CID%253D3F21833AAA9D6141318995EEABD160B5%2526ID%253DDevEx%252C5046.1&rut=7cb01af82d46f169346ccfc66cd40fc660fb2b1bf0d5e35b9fd295e6c2951b82",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:29:43.964146"
+    },
+    {
+      "topic": "gaba",
+      "title": "10 Best Gaba Supplement - Top 10 Gaba Supplement",
+      "content": "Your one-stop shop for easy product comparisons and informed purchasing decisions! Your smart choice starts here! Use user reviews to guide your purchasing decisions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dbuyereviews.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DKGVLjsj8n6mO4cDhIfWArQQyoTOuei%252Dw6b0nZCNo0wxlGZEmNtMSLmuOZ7fsN04dcNrPBBnHX1D3Zl6J6HBx8z2OuIcIvAY5CvNNiaNB5vsq3dG0wTmrFymeUAvC2LBdf6fgrbzBtbEpGwao0pLqR4oKWylI3Js8PrPXqeWOfLU.b5iIykuO4rI1yD%252D3mGpLZA%26rut%3Dc8569527d547b583e7a6609497803154e4f2281162e6d275a2a3c27428652e81%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8os8ggaRtmCs3jEIieDWy6zVUCUw4G5meu3SZfmIxg3%252Du9WkAEJ_8xRe7mpZsTFTdVAaThZRDhNpFC%252DcwYv26EPVkEFpE8gptgNcYKgnz%252D2EhBiafYwscOpPD_n_rrlQHtl2vsaxFbHb_Vg844gJgNYHG1eA8%252D8RKjgx%252DMv_AUtBkYghjwP6xG4Ft2GH8i0lVZpC2fWNIOx%252DS_Vr3%252DP523IIpaZw%2526u%253DaHR0cHMlM2ElMmYlMmZidXllcmV2aWV3cy5jb20lMmZHQUJBLVN1cHBsZW1lbnQlM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZjaWQlM2Q1NzA2NzAxNzglMjZhZGdyb3VwaWQlM2QxMTg3NDc0NTY2MTkyNjIyJTI2Y3JlYXRpdmUlM2QlMjZtc2Nsa2lkJTNkM2ExNzZlNjUxMmFmMWE5M2EzMGQwNzMzYWZiODAzNjI%2526rlid%253D3a176e6512af1a93a30d0733afb80362%26vqd%3D4%2D214429593643805131015988899381981025852%26iurl%3D%257B1%257DIG%253DCE1501809AFF4676BBF1CE397EB22E40%2526CID%253D3F21833AAA9D6141318995EEABD160B5%2526ID%253DDevEx%252C5051.1&rut=fa79fa12c7118064c7dac4b14a5662e9ccfed8847febdd28e3d068158e790d70",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:29:43.964246"
+    },
+    {
+      "topic": "gaba",
+      "title": "Gamma-aminobutyric acid - GABA - benefits, information on supplements ...",
+      "content": "Learn about GABA, a non-essential amino acid that acts as an inhibitory neurotransmitter in the brain. Find out its functions, benefits, side effects, food sources, and how to use it as a supplement.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Faminoacidsguide.com%2Fgamma%2Daminobutyric%2Dacid%2Dgaba.html&rut=90e4926a3b2c737b9bbbf918e789fd06c427db6ad2dc034eb7cfd5733b14c17b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:29:43.964319"
+    },
+    {
+      "topic": "gaba",
+      "title": "Gamma-Aminobutyric Acid (GABA): What It Is, Function & Benefits",
+      "content": "GABA is an inhibitory neurotransmitter that slows down your brain and reduces stress, anxiety and fear. Learn about its role in various medical conditions, how medications target it and whether GABA supplements or foods can help.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmy.clevelandclinic.org%2Fhealth%2Farticles%2F22857%2Dgamma%2Daminobutyric%2Dacid%2Dgaba&rut=0e3353d09d73e488ef0b6ad9033922b81bc2bf1b68e3fe6970e34f47b6782b20",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:29:43.964390"
+    },
+    {
+      "topic": "gaba",
+      "title": "GABA: Uses and Risks - WebMD",
+      "content": "GABA is a neurotransmitter that may have mood-boosting or relaxing effects. Learn about the possible benefits, sources, and side effects of GABA supplements.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.webmd.com%2Fvitamins%2Dand%2Dsupplements%2Fgaba%2Duses%2Dand%2Drisks&rut=c2e5faa76ea2fba8193f4da0986a6754d5619dd8533558f8e335edda986306ae",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:29:43.964469"
+    },
+    {
+      "topic": "glutamate",
+      "title": "Glutamic acid",
+      "content": "Glutamic acid is an \u03b1-amino acid that is used by almost all living beings in the biosynthesis of proteins. It is a non-essential nutrient for humans, meaning that the human body can synthesize enough for its use. It is also the most abundant excitatory neurotransmitter in the vertebrate nervous system. It serves as the precursor for the synthesis of the inhibitory gamma-aminobutyric acid (GABA) in GABAergic neurons.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Glutamic_acid",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T10:30:14.267237"
+    },
+    {
+      "topic": "glutamate",
+      "title": "Glutamic Acid | Glutamate - Glu - structure, properties, function, benefits",
+      "content": "Glutamic acid is a non-essential amino acid that can ionize to glutamate, a neurotransmitter and flavor enhancer. Learn about its chemical structure, biological role, food sources, and health effects.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Faminoacidsguide.com%2FGlu.html&rut=5920fa6c29c0759e5412d081ef0370d5bde81fbfd191c0ca6cc1c79b435b9d92",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:30:15.204493"
+    },
+    {
+      "topic": "glutamate",
+      "title": "Glutamate (neurotransmitter) - Wikipedia",
+      "content": "Glutamate is an amino acid, and a neurotransmitter (a chemical that nerve cells use to send signals to other cells). It is by a wide margin the most abundant excitatory neurotransmitter in the vertebrate nervous system. [1] It is used by every major excitatory function in the vertebrate brain, accounting in total for well over 90% of the synaptic connections in the human brain. It also serves ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGlutamate_(neurotransmitter)&rut=c2f3df1d664cd75210133e69b2c91e6550f8b4fe80a8ef876394460098048d15",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:30:15.204545"
+    },
+    {
+      "topic": "glutamate",
+      "title": "Function of Glutamate, Healthy Levels, and More - Verywell Health",
+      "content": "Glutamate plays a significant role in brain function, mood regulation, learning, and memory. It's the body's most abundant neurotransmitter and levels may be affected by diet and physical activity.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.verywellhealth.com%2Fwhat%2Dis%2Dglutamate%2D5188294&rut=f5340a317d09d5649c7d69aace9d3253107842cbceaef51404c9d33db32e0d3e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:30:15.204584"
+    },
+    {
+      "topic": "glutamate",
+      "title": "Glutamate: What It Is & Function - Cleveland Clinic",
+      "content": "Glutamate is the most abundant neurotransmitter in your brain. It plays an important role in learning and memory.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmy.clevelandclinic.org%2Fhealth%2Farticles%2F22839%2Dglutamate&rut=a95c1941f1fb1d8654cc0456cfe981616dba657c1856d340de6ba5b871b79481",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:30:15.204621"
+    },
+    {
+      "topic": "glutamate",
+      "title": "What is Glutamate? - Mental Health America",
+      "content": "Glutamate is an amino acid that acts as a neurotransmitter in your brain, exciting other neurons to perform their functions. Learn about glutamate's role in learning, memory, pain, taste, and how it relates to GABA and mental health conditions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mhanational.org%2Fresources%2Fwhat%2Dis%2Dglutamate%2F&rut=86cb381eb4ae68fccdcdd703fdbd31143b23e2ffefc5d76198b7eb66cf899acf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:30:15.204660"
+    },
+    {
+      "topic": "gottfried leibniz",
+      "title": "Save on gottfried leibniz - Amazon.com Official Site",
+      "content": "Browse & discover thousands of unique brands. Read customer reviews & best sellers. Find deals and compare prices on gottfried leibniz at Amazon.com",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DCES9WIq3ETY54pJLB2H8yLcJccZUS8Qf1LStw_6_ZfSKuPTdQwMoFJFino7nkfY25vRaSxBMkSaY7lGxpAF1%252DrAayPsdlZHZ1c5QSb%252DpAWBJyzV%252DxcQj%252DJN4W2505ERvuEe2JN0W3aThFhE2khvwQY61mDkwD0LCrg1O3plGSBY.Er8_CnnB_QhjI0V9RAMjQQ%26rut%3Def5cfe0f472022c3adeebcce80b6f300828f4540b0894d9456cc9b776ddda5df%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8FPFLj8EG_1tPisFBqxkzzzVUCUxw%252DUixpXIOiHqFA0QJRdPz9wSr7Cvrs6c4mHmj97shqBLe6QLusXvdH2QXjSbocf3MVQedob6o3HDv5XzEIIeIs7bRHjWlFsv%252DfyIzPqfoewmN7rBcaEKTcFJ0TktIN9wMMrx0PL4j%252DoFDx%252DglkmQhBvzCGYTrHArXmD9iP6MymFCKZuwIP%252D8J0fNaBUuhIJk%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGdvdHRmcmllZCUyYmxlaWJuaXolMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF8zZHNvY3JuMzFuX3AlMjZhZGdycGlkJTNkMTIzMjU1MzUzNzI4NDQwNyUyNmh2YWRpZCUzZDc3MDM0NzI2ODY3MDA2JTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkZSUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY2NTMlMjZodnRhcmdpZCUzZGt3ZC03NzAzNDg1NzgyMTAxMyUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkMTA3NjBfMTM1ODkyNDQlMjZtY2lkJTNkMjg0MmVhMGNjZjNmMzMzYmExNDBjMDQ3NDczMGNhZjAlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZGFkY2VkMDVlYzljYzExMzcyYzI1YjkwOTI0MzJiODcx%2526rlid%253Dadced05ec9cc11372c25b9092432b871%26vqd%3D4%2D224614511312349512641635073599954727855%26iurl%3D%257B1%257DIG%253DFDE30B7F6DC04F299A971414E7C996F0%2526CID%253D397FA5B5BF0A69EB33DBB360BEDF6874%2526ID%253DDevEx%252C5046.1&rut=2afbc16b46978cc34407ca34baf499fd57a39e631ae8719cb4fce22fba299a30",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T08:10:39.155408"
+    },
+    {
+      "topic": "gottfried leibniz",
+      "title": "Gottfried Wilhelm Leibniz - Wikipedia",
+      "content": "Gottfried Wilhelm Leibniz (or Leibnitz; [a] 1 July 1646 [O.S. 21 June] - 14 November 1716) was a German polymath active as a mathematician, philosopher, scientist and diplomat who is credited, alongside Isaac Newton, with the creation of calculus in addition to many other branches of mathematics, such as binary arithmetic and statistics.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGottfried_Wilhelm_Leibniz&rut=925a1712606dbbedbb9a3e25d5a141357bea48f7efb7768c6e919fb139f21d91",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T08:10:39.155512"
+    },
+    {
+      "topic": "gottfried leibniz",
+      "title": "Gottfried Wilhelm Leibniz | Biography & Facts | Britannica",
+      "content": "Gottfried Wilhelm Leibniz, German philosopher, mathematician, and political adviser, important both as a metaphysician and as a logician and distinguished also for his invention of the differential and integral calculus independent of Sir Isaac Newton.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FGottfried%2DWilhelm%2DLeibniz&rut=bbccdf4b1cb2b29f4f9774b4b3e5cb29f79374904ffe5d51713d626092877771",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T08:10:39.155566"
+    },
+    {
+      "topic": "gottfried leibniz",
+      "title": "Leibniz, Gottfried Wilhelm | Internet Encyclopedia of Philosophy",
+      "content": "A comprehensive overview of the life and works of the universal genius and early modern rationalist philosopher. Learn about his metaphysical idealism, his theory of possible worlds, his logic, his ethics, and his influence on Christian theology.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fleib%2Dove%2F&rut=58a0650512d7fe5e47d3c226f8740aecb71b249dd842e3b1ef5e521885c9e261",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T08:10:39.155616"
+    },
+    {
+      "topic": "gottfried leibniz",
+      "title": "Gottfried Wilhelm Leibniz - Stanford Encyclopedia of Philosophy",
+      "content": "Gottfried Wilhelm Leibniz (1646-1716) was one of the great thinkers of the seventeenth and eighteenth centuries and is known as the last \"universal genius\". He made deep and important contributions to the fields of metaphysics, epistemology, logic, philosophy of religion, as well as mathematics, physics, geology, jurisprudence, and history.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fleibniz%2F&rut=219dfc080b805776b3b0930d907415dd0c0608dd5e6fb43c27c315c035ace76c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T08:10:39.155667"
+    },
+    {
+      "topic": "georg hegel",
+      "title": "Georg Wilhelm Friedrich Hegel - Wikipedia",
+      "content": "Georg Wilhelm Friedrich Hegel[a] (27 August 1770 - 14 November 1831) was a German philosopher and a major figure in the tradition of German idealism. His influence on Western philosophy extends across a wide range of topics\u2014from metaphysical issues in epistemology and ontology, to political philosophy, to the philosophy of art and religion.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGeorg_Wilhelm_Friedrich_Hegel&rut=6c29ed36bc211e3bbcb0e23483b988fb43b5531c9b6151a533e8c7045fde7cbd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:37:20.020911"
+    },
+    {
+      "topic": "georg hegel",
+      "title": "Georg Wilhelm Friedrich Hegel | Biography, Books, & Facts | Britannica",
+      "content": "Georg Wilhelm Friedrich Hegel, German philosopher who developed a dialectical scheme that emphasized the progress of history and of ideas from thesis to antithesis and thence to a synthesis. He was the last of the great philosophical system builders of modern times. Learn more about Hegel's life and work.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FGeorg%2DWilhelm%2DFriedrich%2DHegel&rut=8f3646278dd85d17e38cf9fbb19a54fc51be0cc7a5b4376451f7ae6088a2d8b7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:37:20.021038"
+    },
+    {
+      "topic": "georg hegel",
+      "title": "Georg Wilhelm Friedrich Hegel - Stanford Encyclopedia of Philosophy",
+      "content": "Along with J.G. Fichte and, at least in his early work, F.W.J. von Schelling, Georg Wilhelm Friedrich Hegel (1770-1831) belongs to the period of German idealism in the decades following Kant. The most systematic of the idealists, Hegel attempted, throughout his published writings as well as in his lectures, to elaborate a comprehensive and systematic philosophy from a purportedly logical ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fhegel%2F&rut=11d92d95df1e31b7767929ff2b084ddfc10097f9a16cf9246393ed56c11e546a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:37:20.021107"
+    },
+    {
+      "topic": "georg hegel",
+      "title": "Hegel: Social and Political Thought - Internet Encyclopedia of Philosophy",
+      "content": "An overview of the life and works of Georg Wilhelm Friedrich Hegel, one of the greatest systematic thinkers in Western philosophy. Learn about his views on history, society, and the state, and his concepts of freedom, reason, self-consciousness, and recognition.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fhegelsoc%2F&rut=947433cfd047b3a86d8f53fef7b06bc5b68180ced419cdaf8e3b148be0aff81b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:37:20.021170"
+    },
+    {
+      "topic": "group theory",
+      "title": "Shop group theory in physics - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on group theory in physics at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DPxmSs9ROS6YbF0jGLuWN%252DmWmYNkfKVXADvhuJRlNSXC9zzp%252Dbg5quJ30kpnIvzVO9Eo0GVsnPBel2_aAmrEbr2RdhCrPSGxFgKYIYsCDFKtN_wMRjpy9E2UtNvVxRDkfVdGcbE3jADJAIGuouNPdWJkSRIZ82nGQ80EjHHvYQ3w.pDw4cPiXfWw8wLbqHWvgZQ%26rut%3Dcdc1e04042808d807f36d126f9d36315d945558f9352209d47fb91b3bef211bd%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8sGwI31dnVsYAz3YDD0A_vjVUCUwP3a7j8ARO_8SQiSXZ%252DY11XqVuqCTiese2mbeqWEWC%252D2cPIJoV3rZnPPVMjvMQG3qZBbwf6HYRjtHqLWgQoCg9L5%252DwX0PN9cyGX7R972yXwgpx2eesDMNAXh4TdHjMGsdo_G6r3Kr2Dcf9BbPsSlzbb6tM8vm5MfSOWRRs2ZzvGX5JU5NxLLaDzYLgEJcG5yA%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGdyb3VwJTJidGhlb3J5JTJiaW4lMmJwaHlzaWNzJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfMnVhdWF0bzdxYl9wJTI2YWRncnBpZCUzZDEyMzY5NTE1OTkzMzI3NjMlMjZodmFkaWQlM2Q3NzMwOTYwNjc3NDQxOSUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NDQ4JTI2aHZ0YXJnaWQlM2Rrd2QtNzczMDk3NTQwMTI5NzYlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDI3MjQ5XzE0NjM3MjI3JTI2bWNpZCUzZDZmMGJjZDMyMzc1NDNmNDRiYjFiZTE4ZWJmNGEwODgxJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2RmYmE4NjFiYTU2MWYxZmUwNjQwMjA4ZTI0NTNjZDJkZg%2526rlid%253Dfba861ba561f1fe0640208e2453cd2df%26vqd%3D4%2D301332686809867201343560742915122850720%26iurl%3D%257B1%257DIG%253D8B750E01AAAD4BC89A97D2B6D58D3603%2526CID%253D28F815BCB40966BB23960369B5CD6742%2526ID%253DDevEx%252C5045.1&rut=142a60ed8599a1c57c65d0963fd12b9e23395ede2f9d941b1c39f6ed58149517",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:49:07.955267"
+    },
+    {
+      "topic": "group theory",
+      "title": "Group theory - Wikipedia",
+      "content": "Group theory has three main historical sources: number theory, the theory of algebraic equations, and geometry. The number-theoretic strand was begun by Leonhard Euler, and developed by Gauss's work on modular arithmetic and additive and multiplicative groups related to quadratic fields. Early results about permutation groups were obtained by Lagrange, Ruffini, and Abel in their quest for ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGroup_theory&rut=caac6848f657a4c5cbc837e39a444824b7a2c6e03436e105cc5dd8a812097c81",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:49:07.955303"
+    },
+    {
+      "topic": "group theory",
+      "title": "PDF Group Theory - James Milne",
+      "content": "A PDF document that covers the basic definitions, results, and examples of abstract groups and their subgroups, homomorphisms, quotients, products, and extensions. The notes are intended for beginning graduate students in mathematics, physics, and related fields.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.jmilne.org%2Fmath%2FCourseNotes%2FGT.pdf&rut=3e4842e45717d86f52bd7563088cd7e8e6c007bc237c4ee6dce844bf9768d0b7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:49:07.955328"
+    },
+    {
+      "topic": "group theory",
+      "title": "PDF Group Theory - MIT Mathematics",
+      "content": "Learn the basics of group theory, such as definitions, examples, properties, and applications, from a research paper written by high school students in the MIT PRIMES Circle program. Explore topics like cyclic groups, subgroups, quotient groups, homomorphisms, generators, and relations.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmath.mit.edu%2Fresearch%2Fhighschool%2Fprimes%2Fcircle%2Fdocuments%2F2022%2FSophia%2520%26%2520Jaeyi.pdf&rut=4ac434a3fd5845b2fadbcfaf9198047625f32f47fe02e2bc2501df5afa666082",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:49:07.955353"
+    },
+    {
+      "topic": "group theory",
+      "title": "Group Theory - GeeksforGeeks",
+      "content": "Group theory is a branch of mathematics that studies algebraic structures known as groups. A group is a set of elements combined with an operation that satisfies four fundamental properties: closure, associativity, identity, and inverses. Groups can be found in various areas of mathematics and science. They are fundamental in studying symmetries, solving polynomial equations, and analyzing ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmaths%2Fgroup%2Dtheory%2F&rut=311c8611e590864b2326180d710567f59b074c552bbf679c05ea01c7a6e53724",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:49:07.955378"
+    },
+    {
+      "topic": "prowritingaid vs grammarly: which grammar checker is better in (2022) ?",
+      "title": "ProWritingAid - Grammar, Spelling and Style",
+      "content": "A writing coach, style editor, and grammar checker in one package. Trusted by over three million writers. Improve grammar, style, tone and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dprowritingaid.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D4n7daLvVSw5KG5V54jdyHdM2OmJ0xLkpQcvET6396P47CQJwxX8CNXePsix_vwCCnHvfWTcf_KORvdbzSIE96K%252D4Gt8u1RkrCNHyxD%252Dmoo1avQBTcocs69oPb2PLW6UiUNrizqtTWjY%252D%252D_Nggo7m3%252DctENzXYz4UOB9S1_6i4WQ.aAkae2K7Tac5f35WVsLLNQ%26rut%3D4b64bcf15805ab08e5fb793f57cca3a0c22e4aa6c8bdc0fe62fcd3494757d3e5%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8sLgXGCXeb2dHJmsTIXZxmDVUCUwQZ0brNoSLMsftPZzF1RsXJtPtmxOTa%252DSgLjMCE5hwk2P4NK5xtEHjXjE2VLKaUbbB6h47_%252D3feE3Lq9ZM6st5u2RQ9IPAayrZzpNKwidWbKpuJnBVNa6bkJfogZ%252DgGJ6Ov618RQ9yp5ANNQ8AbdBNC%252DsOxqPcXYVtHEPpKEXcVW5ZLhTjvJay9Ho%252DS4rBtwI%2526u%253DaHR0cHMlM2ElMmYlMmZwcm93cml0aW5nYWlkLmNvbSUyZmxwJTJmZGlzY292ZXIlM2Ztc2Nsa2lkJTNkNDVjMzliMjhkMWE2MWM4ZGUzNTdmMjcwY2ZhMTU2ZDglMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RCcmFuZCUyNTIwLSUyNTIwVGllciUyNTIwMSUyNnV0bV90ZXJtJTNkcHJvd3JpdGluZ2FpZCUyNnV0bV9jb250ZW50JTNkQnJhbmQlMjUyMC0lMjUyMFRpZXIlMjUyMDElMjUyMC0lMjUyMFByb1dyaXRpbmdBaWQ%2526rlid%253D45c39b28d1a61c8de357f270cfa156d8%26vqd%3D4%2D13554149795823109660065505877091150548%26iurl%3D%257B1%257DIG%253D8F1FFF97BBD34613AF1CF2C5E755CCCB%2526CID%253D394279C826106F7A2B8D6F1D27F46EF7%2526ID%253DDevEx%252C5046.1&rut=7c4127197f9b757dea34b0214b428c052cca559cd430b6569f55ff852803aef0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:35.896778"
+    },
+    {
+      "topic": "prowritingaid vs grammarly: which grammar checker is better in (2022) ?",
+      "title": "Grammar Checker for Students - Write Better & Faster",
+      "content": "QuillBot's Grammar Checker corrects mistakes and improves your writing instantly. Write confidently and effortlessly with QuillBot. Upgrade to QuillBot Premium today.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dquillbot.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DxzNN6MLtjO1zOmsYMGYWk_RSutgf%252DBOQQn4ZlbzZxHWHTrGex2p7PShGlrzic5m5RjTZeqRJq40%252DU0CN436PES4WnQS9X8AJ8yMYQjPpGgSjMCG2hOkn_z_U6S51vkfLxECsr11HD1q8GjLIbAnDF%252DdwkofUl%252DjBsttE_iGwo7o.efPraB1OeJTarSdhreMlTA%26rut%3D3a6e20afff05c3f4c41356ac924a572fea2a2ed55f00cadc7a076623e8ae8084%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8wehOC36YiTuUSrdJO_20lTVUCUwSfju_HWISm2oJkd3iFy6WkpNuDBuaXDHOQTgY1UtFdjBZE%252DWm4PN_JBniAbYBYyqPwDdT8hUCgZmXsQC5_f6dAmHfY4d3GMdp7MxXPqMf11pXcCxXIQlixgAa1xvSwXJI3iwjLmydXVqnywy4hBZOKsEbS49pMMl823_I9eJF2LTz6ettZtaWYnx4Vzh4HVw%2526u%253DaHR0cHMlM2ElMmYlMmZxdWlsbGJvdC5jb20lMmZncmFtbWFyLWNoZWNrJTNmdXRtX21lZGl1bSUzZGNwYyUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX2NhbXBhaWduJTNkRkElMjUyMC0lMjUyMFNNQSUyNTIwJTI1N0MlMjUyMFBFUkYlMjUyMC0lMjUyMFNlYXJjaCUyNTIwJTI1N0MlMjUyMFByb2R1Y3QlMjUyMC0lMjUyMEdyYW1tYXIlMjUyMCUyNTdDJTI1MjBQUkVNJTI1MjAlMjU3QyUyNTIwQ1BBJTI2dXRtX3Rlcm0lM2RhaSUyNTIwZ3JhbW1hciUyNTIwY2hlY2tlciUyNnV0bV9jb250ZW50JTNkJTI2Y2FtcGFpZ25fdHlwZSUzZHNlYXJjaC00MjgyODU5NjUlMjZjbGlja19pZCUzZDlmYmYxOTkwZTRiYzE3MTgxYWFiNzBjOGZhYmI1YWJhJTI2Y2FtcGFpZ25faWQlM2Q0MjgyODU5NjUlMjZhZGdyb3VwX2lkJTNkMTM0MjUwNTE0MTM3ODUyMyUyNmFkX2lkJTNkJTI2a2V5d29yZCUzZGFpJTI1MjBncmFtbWFyJTI1MjBjaGVja2VyJTI2cGxhY2VtZW50JTNkJTI2dGFyZ2V0JTNkJTI2bmV0d29yayUzZHMlMjZtc2Nsa2lkJTNkOWZiZjE5OTBlNGJjMTcxODFhYWI3MGM4ZmFiYjVhYmE%2526rlid%253D9fbf1990e4bc17181aab70c8fabb5aba%26vqd%3D4%2D137253809331338712778995047983532556521%26iurl%3D%257B1%257DIG%253D8F1FFF97BBD34613AF1CF2C5E755CCCB%2526CID%253D394279C826106F7A2B8D6F1D27F46EF7%2526ID%253DDevEx%252C5050.1&rut=07d85065a1ba547e4f03d0d064e4c4263be6a945120699c0059c24077d8d315d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:35.896876"
+    },
+    {
+      "topic": "prowritingaid vs grammarly: which grammar checker is better in (2022) ?",
+      "title": "ProWritingAid vs. Grammarly: Which is best? [2025] - Zapier",
+      "content": "Compare ProWritingAid and Grammarly to find out which AI grammar checker is best. Based on extensive testing, here's our ProWritingAid vs. Grammarly comparison.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fzapier.com%2Fblog%2Fprowritingaid%2Dvs%2Dgrammarly%2F&rut=f4dca511da621a8f5c6522dfa34dbba789e7b8e6ac73b6c93d833c998bd1a277",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:35.896956"
+    },
+    {
+      "topic": "prowritingaid vs grammarly: which grammar checker is better in (2022) ?",
+      "title": "ProWritingAid vs Grammarly: In-Depth Comparison for Writers",
+      "content": "Compare ProWritingAid vs Grammarly in this detailed analysis to find the best writing tool for your needs. Read the article to make an informed choice.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwritergadgets.com%2Fprowritingaid%2Dvs%2Dgrammarly%2F&rut=e985f0d9f69b14605a31a549e09c9a6fb79b099662be085bbc170ded8b0b3db3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:35.897030"
+    },
+    {
+      "topic": "prowritingaid vs grammarly: which grammar checker is better in (2022) ?",
+      "title": "ProWritingAid vs. Grammarly: Which One's Worth Paying For?",
+      "content": "We're comparing ProWritingAid vs Grammarly. See which tool actually helps you write better (and which one's best for your writing style).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fkindlepreneur.com%2Fprowritingaid%2Dvs%2Dgrammarly%2F&rut=0fa6e741b94f510c7b3bcb02331e0ae1255154e9127ab83b907509ca7c65e3b5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:35.897102"
+    },
+    {
+      "topic": "geometry",
+      "title": "Geometry",
+      "content": "Geometry is a branch of mathematics concerned with properties of space such as the distance, shape, size, and relative position of figures. Geometry is, along with arithmetic, one of the oldest branches of mathematics. A mathematician who works in the field of geometry is called a geometer. Until the 19th century, geometry was almost exclusively devoted to Euclidean geometry, which includes the notions of point, line, plane, distance, angle, surface, and curve, as fundamental concepts.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Geometry",
+      "confidence": 0.9,
+      "learned_at": "2026-01-02T11:37:09.239264"
+    },
+    {
+      "topic": "geometry",
+      "title": "Save on learning geometry - Amazon.com Official Site",
+      "content": "Find deals and low prices on learning geometry at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DxsEpocNZrAOttNxJ0Pd39JyhQu0313QosR2lVbiSfgR%252Dm7Eg97tlttt8YFRkj4Ou6bbC2TRWHC0JNmGH6Kn0H_b4GKa9ZTAJkjBPh8CRvCPYdGzrxjOOhQ6zcfXDkK5IOtEzIiRDxHieoUGAWQnQ0wVq0vs2IWal15n28SsWWL0.sJESN3P3NKdRKMb5M0pPlw%26rut%3D10290e9176968413e65fd287d62e2ed3acd08200c767254c586f1caef41dbe84%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8BwsquR_KtRjoZ9FZIaA2fTVUCUzNk8sC_MQj94T7vrAN53HiMc9uylYSE3XbvNe31%252D6cB6w0Nnx359R3u5qjW%252DcAQCj_y7v%252D6UrfRLeuV5m%252Dq55AyA%252Ds297aMRBJjsUdKUKSBRt2iWB0dhj0ONdEVj756ce_XghEbzIKN588aIFYCUsMFF7Tbo0vD29atTSaRK8zt0C4Q4ty6AxBjiIzxAvvoto%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGxlYXJuaW5nJTJiZ2VvbWV0cnklMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF80cGJ2bnQ0cXlqX3AlMjZhZGdycGlkJTNkMTIzMTQ1NDAxMTEzMTE5MCUyNmh2YWRpZCUzZDc2OTY2MDA1NTM1MzQwJTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkZSUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODc3NDclMjZodnRhcmdpZCUzZGt3ZC03Njk2NjExOTcxMjEzNSUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkNjAyNl8xMzMwMzE0MyUyNm1jaWQlM2RkNjA5NjA0Y2E0NmMzMWY5ODZlNjJlZDU0MmY0ZjVkNyUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkN2I5MGIwNzk4Y2ZiMTAzOGNlNGRkOTIxOTI5ZTJmMjA%2526rlid%253D7b90b0798cfb1038ce4dd921929e2f20%26vqd%3D4%2D160281429798843526360548979873293764009%26iurl%3D%257B1%257DIG%253D8C0C3542028F4FE48BB0A7159062C97E%2526CID%253D0238E31BFF3B65812DF8F5CEFEEE6488%2526ID%253DDevEx%252C5046.1&rut=c37a0ac72a75dd45cee1d8b008bda5e4bac0e4949a14bf364ca0d81364fc6988",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:37:10.326807"
+    },
+    {
+      "topic": "geometry",
+      "title": "Oakland Math Tutors - In-Home or Online - Tutors.com",
+      "content": "Affordable Math Tutors - Join other happy students. Find your perfect math tutor today! Top-rated and affordable math tutors for all ages and skill levels.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dtutors.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DvWcAWsssdVD__GBcmmiwIi282%252De0Y5FSglgjYmciQnkl8eYmvuSgRFkvBdNiQyt%252DAGSbOLihiwtYbdzvYdIbj_sSk%252D9sCxjH6H_gm0GkpiAKbEUY%252DdVJMRczm_04hQADqWfD9obX8rSf9acGhdNJNhJ5dP86WgsvVYO2mo6r4FI.BL6WU0NZet_9TvahwViI5g%26rut%3De4541e5001fddc68f82b9da3537732275ce0f93c82c97a3ab104e6d4b3937254%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8mFL7vU6hFaglpqa1l1jiXzVUCUwkpRHCZ55S90skyb_Xnt7tgnDhlB8rkXndQ3YBSBwOpFL_cZ7cPK5IdgyI99MUCyviD8HQ4AVeh957y%252DZkBmVm1PjGo%252DxctYudfXWOSZieQD3fK7fk6z0JzhjGZUeU5_886IFofatNQdv21lBYisR1rPltklhEnyxgspYdbGbEwizq6W9PdZ5XOBdWPOXpAuM%2526u%253DaHR0cHMlM2ElMmYlMmZ0dXRvcnMuY29tJTJmbWF0aC10dXRvcnMlM2Z1dG1fc291cmNlJTNkbWljcm9zb2Z0JTI2dXRtX21lZGl1bSUzZHNlYXJjaCUyNnV0bV9jb250ZW50JTNkc2VhcmNoJTI2dXRtX2NhbXBhaWduJTNkdHV0b3JzJTNhbWF0aCUzYXNhbl9mcmFuY2lzY28lM2FjYSUzYXNlYXJjaCUyNm1zY2xraWQlM2Q4YTFhMjBlNzNlMWQxYzY4MzUwYjQ5YmYyMDc4ZDAwMg%2526rlid%253D8a1a20e73e1d1c68350b49bf2078d002%26vqd%3D4%2D178762550658613753871932337483815120079%26iurl%3D%257B1%257DIG%253D8C0C3542028F4FE48BB0A7159062C97E%2526CID%253D0238E31BFF3B65812DF8F5CEFEEE6488%2526ID%253DDevEx%252C5050.1&rut=e0302edeaa20d846093794be9582a4091d261b1d8fa8ce97d4645177079a7432",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:37:10.326887"
+    },
+    {
+      "topic": "geometry",
+      "title": "Geometry - Wikipedia",
+      "content": "Geometry[a][1] is a branch of mathematics concerned with properties of space such as the distance, shape, size, and relative position of figures. [2] Geometry is, along with arithmetic, one of the oldest branches of mathematics. A mathematician who works in the field of geometry is called a geometer. Until the 19th century, geometry was almost exclusively devoted to Euclidean geometry, [b ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGeometry&rut=380849675fc5cf98f3f642a423279194beeeb3aa78897bffd7d023b818988c5a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:37:10.326958"
+    },
+    {
+      "topic": "geometry",
+      "title": "Geometry (all content) - Khan Academy",
+      "content": "Explore geometry concepts including angles, shapes, transformations, and proofs with Khan Academy's engaging resources.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.khanacademy.org%2Fmath%2Fgeometry%2Dhome&rut=92656de02b3a9cd343472cf1bfc3673e48f2d08ba9444ef3aa2bc0089984d60f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:37:10.327017"
+    },
+    {
+      "topic": "geometry",
+      "title": "Geometry | Definition, History, Basics, Branches, & Facts | Britannica",
+      "content": "Geometry, the branch of mathematics concerned with the shape of individual objects, spatial relationships among various objects, and the properties of surrounding space. It is one of the oldest branches of mathematics, having arisen in response to such practical problems as those found in",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fgeometry&rut=05e758c3687eff506abcabe5e0e35644b674588100385c27a352656f0e13134f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:37:10.327077"
+    },
+    {
+      "topic": "euclidean geometry",
+      "title": "Low priced products - Amazon.com Official Site",
+      "content": "Find deals and low prices on popular products at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DUnhQTlJxxY3Irf7FriH3aYlSNQS2gvuJWruezLF731T%252DTuttm9_WfnK0LaLefMAO7pDIwA7nn4U8SAUl2bHtRPfyt_fj3e5%252DDzUyoKur01f9CRok%252DuvS9sq7gPQePrMNcRFyMaSuZNRXpSIgDZjyKlBNhavjd3FqrnixPXAT9wc.eFSdxdXNrBM1cpZkDNa5kQ%26rut%3D047351cac3c3506e1881742fda0259dac760b6222d37a8cb62046a381018655d%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8LqJru3QiqjBlrQybMv65izVUCUyvInOTDm3ZFuadj4YGocXRQ9MFvzLa7iX4zU%252DKFQI_n9lNqh0boiO7sGKYvpTcdvcwTVE0wp_Up1H_pjCEVTRjgEZInTtN3k_DwkYy99IdDUfV04XTIiECSKntGrfn%252Dof3pdkafAheqyqBpVSNQHv5BQlZo4CSMVFW8YG6m_GMRK2f6cTurSz7Rv_%252DoKynzDs%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGV1Y2xpZGVhbiUyYmdlb21ldHJ5JTJiaW50cm9kdWN0aW9uJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfNTNnNTd2cDNzMl9wJTI2YWRncnBpZCUzZDEyMjkyNTUwNjAxMTQ5ODAlMjZodmFkaWQlM2Q3NjgyODU3NDA5NTU0OSUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg3OTM2JTI2aHZ0YXJnaWQlM2Rrd2QtNzY4Mjg3NTk4Nzk3NDclM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDUxMjlfMTMzMDAzNTAlMjZtY2lkJTNkMmRlYjRjM2JiOGJlMzIzMWI5ZTAyNWQ1MWYyMTU5NWYlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZDRlNmUwNzZhYmVmMTFkNzNkMWMyNmUzMmEwNzc5NGQ2%2526rlid%253D4e6e076abef11d73d1c26e32a07794d6%26vqd%3D4%2D143476337893238825754822960835844903223%26iurl%3D%257B1%257DIG%253D00C33391CA6F4CE49C55E89729995658%2526CID%253D3141EFBFD96F6B15064DF96AD88B6AE9%2526ID%253DDevEx%252C5049.1&rut=11db035cb312652f13aca83b0f338924919fdbec68210f927bccd1bd705badaa",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:37:42.517393"
+    },
+    {
+      "topic": "euclidean geometry",
+      "title": "Euclidean geometry - Wikipedia",
+      "content": "Learn about the mathematical system attributed to ancient Greek mathematician Euclid, which consists of axioms and theorems proved from them. Explore the history, features, and applications of Euclidean geometry, as well as its relation to non-Euclidean geometries.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEuclidean_geometry&rut=2d1d1631f83736375edd883ec5c779f339ff1a512f10dbc7d3de95a27f049053",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:37:42.517443"
+    },
+    {
+      "topic": "euclidean geometry",
+      "title": "Euclidean geometry | Definition, Axioms, & Postulates | Britannica",
+      "content": "Euclidean geometry is the study of plane and solid figures on the basis of axioms and theorems employed by the ancient Greek mathematician Euclid. The term refers to the plane and solid geometry commonly taught in secondary school. Euclidean geometry is the most typical expression of general mathematical thinking.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2FEuclidean%2Dgeometry&rut=cf2db557b85d93a0e6ae9a1ce548768cd12833bfd3648891966e4c0f43d1b38e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:37:42.517489"
+    },
+    {
+      "topic": "euclidean geometry",
+      "title": "Euclidean Geometry - GeeksforGeeks",
+      "content": "Euclidean geometry is the study of 2-Dimensional geometrical shapes and figures. Euclidean geometry is based on different axioms and theorems. The word geometry is derived from the Greek words 'geo' meaning Earth and 'metrein' meaning 'To measure'. Thus, geometry is the measure of the Earth or various shapes present on the Earth. Euclidean geometry as the name suggests was first ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmaths%2Feuclidean%2Dgeometry%2F&rut=2fa946e4a0bf46e7bb89203c85b0f0f6ca5a36c7068ca2ce59915a1fb78479af",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:37:42.517539"
+    },
+    {
+      "topic": "non euclidean geometry",
+      "title": "Non-Euclidean geometry - Wikipedia",
+      "content": "In mathematics, non-Euclidean geometry consists of two geometries based on axioms closely related to those that specify Euclidean geometry. As Euclidean geometry lies at the intersection of metric geometry and affine geometry, non-Euclidean geometry arises by either replacing the parallel postulate with an alternative, or consideration of quadratic forms other than the definite quadratic forms ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNon%2DEuclidean_geometry&rut=64152474c68a527c3b634ea79a296c0c4b6c1e5d951035558907ed56b92ca364",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:38:14.136360"
+    },
+    {
+      "topic": "non euclidean geometry",
+      "title": "Non-Euclidean geometry | Definition & Types | Britannica",
+      "content": "Non-Euclidean geometry, literally any geometry that is not the same as Euclidean geometry. Although the term is frequently used to refer only to hyperbolic geometry, common usage includes those few geometries (hyperbolic and spherical) that differ from but are very close to Euclidean geometry.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fnon%2DEuclidean%2Dgeometry&rut=c1bf9ecfe89bddf635591a8c90e15d135c0356f5e5a4f72e972e86fb7f4d243a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:38:14.136431"
+    },
+    {
+      "topic": "non euclidean geometry",
+      "title": "Non Euclidean Geometry - GeeksforGeeks",
+      "content": "Non-Euclidean Geometry refers to the branch of mathematics that deals with the study of geometry on Curved Surfaces. It is a different way of studying shapes compared to what Euclid, an ancient mathematician, taught. There are two main types: hyperbolic and elliptic geometries. In these, we change the working of lines which gives us different shapes than usual. Hyperbolic shapes have a saddle ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmaths%2Fnon%2Deuclidean%2Dgeometry%2F&rut=321e61af0e1d0b9cca50819c9bcde062f99e8971f0f098bbe9279ecd9ba1f08d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:38:14.136486"
+    },
+    {
+      "topic": "non euclidean geometry",
+      "title": "Master Non-Euclidean Geometry: Types, Theorems & Uses - Vedantu",
+      "content": "Real-Life Applications of Non-Euclidean Geometry Geometry is a vital part of mathematics. It discusses the shape and structure of different geometrical figures. Greek mathematician Euclid employed a type of geometry, which studies the plane and solid figure of geometry with the help of theorems and axioms. It is known as Euclidean geometry.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.vedantu.com%2Fmaths%2Fnon%2Deuclidean%2Dgeometry&rut=e23d3ee2cd3c7195df61ccef81114c4f47ec2555f4974c3de99ea602c9609633",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:38:14.136546"
+    },
+    {
+      "topic": "projective geometry",
+      "title": "An Introduction to Projective Geometry",
+      "content": "From trusted sellers around the world. Buy what you love to read. Find millions of books, textbooks, rare and collectible items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dabebooks.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DZhzqaHaEL_3%252DEaEYi_AnrFUzIh%252D1GF24LJIoaJdCZLHXw4cUBGM63WztdvN_mfP3Wbc_L2u_AtXmFiKR9FrBHd2c4qNDyw7Ztkzo63uBlZQlRyPRPNvqJ_on4Iwe17u0cS46vwFkJD2QfH7_rYVz6mNnDKXW9pnzp8O%252DEDW7Z6c.Yr3WFj88Ww7ghiXR6GZa9Q%26rut%3D18a2d4dff74c0f9cd2ecdc30b7d2dc9151a564410ebd0012b7c9d5d98581c3df%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8zMerX84%252Dta7WRmxPYV56LzVUCUzTAbMJC99MvKmgFM%252Dxbog0Dxy2ucQSTnmwhnf_6al4ep5YqLFPsIQJDSSiccxLzeD1jBOu%252Dys_Bvpdwza2ig6RMLaKPib0u0f1rVMue3I9VRtVWt_jP3TaHmHUmG6qCHqDbjtPM_teGtu0x2q_AepkhsNMmptSDakG5CR14ZDpeRSlbQZEvGxs2c4YjctH3Qs%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYWJlYm9va3MuY29tJTJmYm9vay1zZWFyY2glMmZ0aXRsZSUyZmFuLWludHJvZHVjdGlvbi10by1wcm9qZWN0aXZlLWdlb21ldHJ5JTJmJTNmcmVmXyUzZHBzX21zXzI2NzY5MTc2MSUyNmNtX21tYyUzZG1zbi1fLWNvbXVzX2RzYS1fLW5hYS1fLW5hYSUyNm1zY2xraWQlM2QwOWQ1N2EyMTQ3YzIxOWZmYjM3NDEzNzk1OTA3NmVlZg%2526rlid%253D09d57a2147c219ffb374137959076eef%26vqd%3D4%2D273512522787645987624207183140265971863%26iurl%3D%257B1%257DIG%253DFAA349824F8441A38B7255F09491725E%2526CID%253D35232D5D783664B929043B8879BA65D0%2526ID%253DDevEx%252C5045.1&rut=d072f5b1ddcbe1386a8d7f0487e79c7771412349a70e4613971b81ce360ff55d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:38:46.085701"
+    },
+    {
+      "topic": "projective geometry",
+      "title": "Projective geometry - Wikipedia",
+      "content": "Projective geometry ... In mathematics, projective geometry is the study of geometric properties that are invariant with respect to projective transformations. This means that, compared to elementary Euclidean geometry, projective geometry has a different setting (projective space) and a selective set of basic geometric concepts.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FProjective_geometry&rut=ea008db1cfd3c4517835a3e263f75746c44bc622b4f0c1c733749d6a9694b3c4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:38:46.085800"
+    },
+    {
+      "topic": "projective geometry",
+      "title": "PDF Basics of Projective Geometry",
+      "content": "Learn the motivation, definition, and properties of projective spaces and projective maps. See how projective geometry simplifies the study of rational curves and surfaces, and how it relates to affine geometry and duality.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cis.upenn.edu%2F~jean%2Fgma%2Dv2%2Dchap5.pdf&rut=c6ec8ce28b8a118e2b0cfd39cb4c8b2044a6a566a4e395c46405e72b90fc49c4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:38:46.085857"
+    },
+    {
+      "topic": "projective geometry",
+      "title": "Projective geometry | Points, Lines & Planes | Britannica",
+      "content": "Projective geometry, branch of mathematics that deals with the relationships between geometric figures and the images, or mappings, that result from projecting them onto another surface. Common examples of projections are the shadows cast by opaque objects and motion pictures displayed on a screen.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fprojective%2Dgeometry&rut=c2eb22dd90438a05ea61a183796ba57fd5be0f3e21e6d835f250b90549a21460",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:38:46.085909"
+    },
+    {
+      "topic": "projective geometry",
+      "title": "PDF Foundations of Projective Geometry - Columbia University",
+      "content": "A book of notes on projective geometry, covering synthetic and analytic approaches, groups, coordinates, and examples. The notes are based on a course taught by the author at Harvard in 1966-1967.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.math.columbia.edu%2F~dejong%2Freu%2Flib%2Fexe%2Ffetch.php%253Fmedia%3Dhartshorne_foundations_of_projective_geometry.pdf&rut=befc31957079a36aa26c7929c4c3f57e1716a18e600a1485fc61b1fba39c21f9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:38:46.085961"
+    },
+    {
+      "topic": "differential geometry",
+      "title": "Shop differential geometry - Amazon.com Official Site",
+      "content": "Find deals and low prices on differential geometry at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DeVlnNGmlg4pfgI1rGrGb6srH595ELyztKRm__BGoqnJolOVcYw2WTFUp8prLMlTTNId84qs299OFtTFzG%252D1xw5pOsxxbMePINJvhoL9rAtjeM6cMySOLy8eq64za9Cy8oyb4ksAvOxcg3AaA_YCD2mvVvN137MnDHlut8WBy49s.2H1FVUG2aK90yr2JgjSHMA%26rut%3D3c782bdda65edde3819cf3702941ca09d2edc971493935b7aba1f87a7536a7c9%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8UQTLaakj1dtFMbgRcFGL6jVUCUzLmbfxVoMdOvaZKYdG1aIZdT9kPizAGdd_Hl7eBfx2OnkXogHvMXyXWq10GG0QAAA7ZRvxPK1M0tfTLGHtsoTi2i1G%252D6BMmJ2dUhShZE4wRZITFI11IfcPSebHBpqTmViW7M57xwQ4KsEVHQ3mFFzfaHD68y7IdAdiluZokQRI3xA7tP%252DLBGF5bIEzAOrbyMQ%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGRpZmZlcmVudGlhbCUyYmdlb21ldHJ5JTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfMTBkOW00cXc2eV9wJTI2YWRncnBpZCUzZDEyMzQ3NTE4ODQyMjg5ODUlMjZodmFkaWQlM2Q3NzE3MjE1ODQzNzE2MSUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGUlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NTU5JTI2aHZ0YXJnaWQlM2Rrd2QtNzcxNzIyNTc5Mzc4MjElM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDUxNjBfMTMyOTk5MjYlMjZtY2lkJTNkYTg5NzJhMDU0M2ZkMzVmMDhiMTU3MDJhMzI2NGMxZWQlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZGI1NDM0OGU4MTdiYTEwNDMwYzJiMjFiMDA5NWY5MGYy%2526rlid%253Db54348e817ba10430c2b21b0095f90f2%26vqd%3D4%2D148839845557317868896185108715671546460%26iurl%3D%257B1%257DIG%253DA953C568E3824B0D9D235CFC32434BFB%2526CID%253D277F3601C71467892FA020D4C6C166D8%2526ID%253DDevEx%252C5045.1&rut=4c484c7eb4b6cf7dac706315bd36716e456106c7e6d4008ca1ce323badd138b4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:39:17.737543"
+    },
+    {
+      "topic": "differential geometry",
+      "title": "Differential Geometry - Textbook Differential",
+      "content": "Shop at AbeBooks\u00ae Marketplace. Search from 200+ million listings. Secure transaction. Price comparison. Worldwide inventory.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dabebooks.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D6yd2QflQIs6w9Y4Q8Km8C9R4G4t_8efLwHnfKDWyLyCLQvGaE9m0324gsAzysc6dRIrrwcgksxHy7PhQnEDARxjv5ARcJw0C8oZLPYgKoE7w6GC5wei5StQVaYb0MDfALNArXJqE4LwIy_sdHTs%252D2UcgwjR%252DNe3gZhh9b6sEy4A.dSVPZw4hkkCR_BgwzHr3Uw%26rut%3D115cf0432dfd8369d8b6d661ea561a5eba901dc366d0b1fa9d78672dc9999e36%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8bDS6YmfrJXp8TnDy4ie6qjVUCUzvdqNnDQ_B4sTvTeLCYC2yK1SplIEjUprTC1aIUyoBMV2rPYKyOFhv694mzkpANNBICcAoeAai_te2fKzZWy3CLlRGzOl4Y4dPIZ2eyxTfbe0ABFnauNdP3YTIGd9rFRXAGLgYZ9FuOlVcL4zNq8ijneQKdXI_tdVNIWV80N8HjsZmq5az6ACfqOtOgO0uuBU%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYWJlYm9va3MuY29tJTJmYm9vay1zZWFyY2glMmZ0aXRsZSUyZnRleHRib29rLWRpZmZlcmVudGlhbC1nZW9tZXRyeSUyZiUzZnJlZl8lM2Rwc19tc18yNjc2OTE3NjElMjZjbV9tbWMlM2Rtc24tXy1jb211c19kc2EtXy1uYWEtXy1uYWElMjZtc2Nsa2lkJTNkZDZkNmFiZDJiYTNjMWQ0MDZjNWRjMjhhYTRkOTJiZmI%2526rlid%253Dd6d6abd2ba3c1d406c5dc28aa4d92bfb%26vqd%3D4%2D118542357180954820130477012134677705313%26iurl%3D%257B1%257DIG%253DA953C568E3824B0D9D235CFC32434BFB%2526CID%253D277F3601C71467892FA020D4C6C166D8%2526ID%253DDevEx%252C5049.1&rut=7963091c66482c5c0bdbfa8cb98480ce3ceb95e8d324c7fbca398f42f701b57e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:39:17.737663"
+    },
+    {
+      "topic": "differential geometry",
+      "title": "Differential geometry - Wikipedia",
+      "content": "Differential geometry is a mathematical discipline that studies the geometry of smooth shapes and smooth spaces, otherwise known as smooth manifolds. It uses the techniques of vector calculus, linear algebra and multilinear algebra.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDifferential_geometry&rut=a0fbac7b75146b60a5333ec94fad172e7cfa48ffcab247d1adb5616c2c151c1c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:39:17.737736"
+    },
+    {
+      "topic": "differential geometry",
+      "title": "PDF Lecture 1: What is differential geometry? - people.math.harvard.edu",
+      "content": "The focus of differential geometry is to investigate relations between local quan-tities and global properties. An important example to observe what happens if curvature is integrated up.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fpeople.math.harvard.edu%2F~knill%2Fteaching%2Fmath136_2025%2Fhandouts%2Flecture01.pdf&rut=77e78c3a64cf64eca1f619e4d7f6f6e9587dbcecddf209f164e9285a1e99b2e1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:39:17.737806"
+    },
+    {
+      "topic": "differential geometry",
+      "title": "Differential Geometry | Mathematics | MIT OpenCourseWare",
+      "content": "This course is an introduction to differential geometry. The course itself is mathematically rigorous, but still emphasizes concrete aspects of geometry, centered on the notion of curvature.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Focw.mit.edu%2Fcourses%2F18%2D950%2Ddifferential%2Dgeometry%2Dfall%2D2008%2F&rut=0333e18716df0b25acc5eee738c9b7f73139d5e1f7e5eea9561daa84ea5ef5da",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:39:17.737876"
+    },
+    {
+      "topic": "algebraic geometry",
+      "title": "Introduction Algebraic - Algebraic Geometry",
+      "content": "Shop at AbeBooks\u00ae Marketplace. Search from 200+ million listings. Secure transaction. Price comparison. Worldwide inventory.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dabebooks.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D39W2a3SEBV3s_Gai_L2zfd4LBNKxHw_eeLzpT87xU%252D08RCiQZ5tH7ztlBtodAQjOaJZ1WgjUt0qLFJlIE9JVawsaGib1V52kCx035VI9WG_6H18nllqlmbEBRsAq5KwaAdlSUTy8DUqIAYLAjX5oiHXxW1CIHkrobc3nSDl_lwU.znYaLUfEqofd2Aqw6w_GwQ%26rut%3Dbd663d27a823fc908a77ce0a5c5e29c0cae01fcf3c7b44209162bc7bd287c7fe%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8dks_hSzDta56HZiOte0Z4jVUCUzj4DZNkZfIpT8BCSeRLApXQ6lFtiSqEATzOmdMlX3eG2X_oEBiVAIXswF0Iq5ex6JxX3_CoY2AkxmPtqeNLLs5b5tgjZ%252Dp4ZKWWBuYUsm0FRXBG9Jd9m2bjOCx_HTFTQ%252DwXMPme8NeVIS515gpkOv7a%252D3%252Db%252DE4V4w5LsruDtKY30iPrx3yKK3I_yo5X9mLyPo%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYWJlYm9va3MuY29tJTJmYm9vay1zZWFyY2glMmZ0aXRsZSUyZmludHJvZHVjdGlvbi1hbGdlYnJhaWMtZ2VvbWV0cnklMmYlM2ZyZWZfJTNkcHNfbXNfMjY3NjkxNzYxJTI2Y21fbW1jJTNkbXNuLV8tY29tdXNfZHNhLV8tbmFhLV8tbmFhJTI2bXNjbGtpZCUzZDQyYzg5Yzk5MGFiNjE5ZmZmMWM1ZjVjMTE1YjNkZjdk%2526rlid%253D42c89c990ab619fff1c5f5c115b3df7d%26vqd%3D4%2D256004181490488127507109337195252262006%26iurl%3D%257B1%257DIG%253D8D5810B3CAAF4DA680A9BB1D7CD682B4%2526CID%253D056C3362B6C06F3402E825B7B7156E58%2526ID%253DDevEx%252C5045.1&rut=5e05f3ccc72d9e1720bfae63e643b010f5a4b63ab60cefbde3d06f07dbea0df8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:39:50.025328"
+    },
+    {
+      "topic": "algebraic geometry",
+      "title": "IXL for High Schoolers - Algebra, Geometry, Calc, More",
+      "content": "Struggling with algebra, angles, or trigonometry? Get the step-by-step guidance you need. Everything you need to master high school math, all on one site. Visit IXL.com today.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dixl.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Dw70UJwLr7EekO8GgMwiF1yEerQkgP2Xf59DApfbWEDOz2xilsqKrdU0pW1QnKK5hDnDiARiHESGIV1ozTFd71PU4SwD7z4MlJNul8EcjloqoBgB8TMkrTrSv0uBwBtIspKXjTaitQVGjPdSvaKT%252DOWtpDYktVeJK_my8Np0NRoQ.GCinxP4EyI7RNxo0uPywkA%26rut%3D070fd27f9761149ae1956d9dca91546a4153202368704f77feff52aa08f11b32%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8VTxcbScYe_hjl5cBiqu6_TVUCUwVY71zayDqtdyoodwrsS3OVwdrf__OWHBoHSIjLA3Q4FlYL73zGt8XK5HT8jh40LbrCuuxuYVqyFJX71%252DDfptx6r1gh0imHcNt1mnnFpPw%252D%252Djmja9YFj8PYgdhMoV%252DsBaW2vxQa2mCjSy46HWR7psQyCMI35vWhDHRVszy_Rft3_KzZkNo2R2zBdgdiJOfZX4%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuaXhsLmNvbSUyZmhpZ2gtc2Nob29sJTNmcGFydG5lciUzZGJpbmclMjZjYW1wYWlnbiUzZDYyNjk1MTY0MSUyNmFkR3JvdXAlM2QxMzEwNjE4OTYxNjM3NjYyJTI2bXNjbGtpZCUzZDg3YzNmOWM5ZDRkMjExNjgzNzJjOTA5MWNiZDczZmI1JTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkU2VhcmNoJTI1MjAtJTI1MjBIaWdoJTI1MjBTY2hvb2wlMjUyMC0lMjUyME1vZCUyNTIwQnJvYWQlMjUyMC0lMjUyMFVTJTI2dXRtX3Rlcm0lM2RtYXRoZW1hdGljcyUyNTIwaGlnaCUyNTIwc2Nob29sJTI2dXRtX2NvbnRlbnQlM2RoaWdoJTI1MjBzY2hvb2wlMjUyMG1hdGg%2526rlid%253D87c3f9c9d4d21168372c9091cbd73fb5%26vqd%3D4%2D55494619744424467954275914692291488697%26iurl%3D%257B1%257DIG%253D8D5810B3CAAF4DA680A9BB1D7CD682B4%2526CID%253D056C3362B6C06F3402E825B7B7156E58%2526ID%253DDevEx%252C5049.1&rut=e65a1aaf48586ce7102cc180e28eace6d8c332056bffc50fe1ab2c022767a76e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:39:50.025417"
+    },
+    {
+      "topic": "algebraic geometry",
+      "title": "Algebraic geometry - Wikipedia",
+      "content": "Algebraic geometry is a branch of mathematics which uses abstract algebraic techniques, mainly from commutative algebra, to solve geometrical problems. Classically, it studies zeros of multivariate polynomials; the modern approach generalizes this in a few different aspects.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAlgebraic_geometry&rut=eac3835bf218b1800f8b87aac911c42542e1997601a920b9a33622ecd6c712fe",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:39:50.025483"
+    },
+    {
+      "topic": "algebraic geometry",
+      "title": "PDF 18.721: Introduction to Algebraic Geometry - Stanford University",
+      "content": "Learn the basics of algebraic geometry from Professor Mike Artin and Andrew Lin. Topics include affine and projective space, polynomial equations, zero loci, and examples.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fweb.stanford.edu%2F~lindrew%2F18.721.pdf&rut=d99d4073677019b89b7b2bd51d8cb6fe9ac6c92a3f55694eaf7af6e5db4b1242",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:39:50.025546"
+    },
+    {
+      "topic": "algebraic geometry",
+      "title": "Algebraic geometry | Curves, Surfaces & Varieties | Britannica",
+      "content": "Algebraic geometry emerged from analytic geometry after 1850 when topology, complex analysis, and algebra were used to study algebraic curves. An algebraic curve C is the graph of an equation f (x, y) = 0, with points at infinity added, where f (x, y) is a polynomial, in two complex variables, that cannot be factored.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Falgebraic%2Dgeometry&rut=354e26a8363e80c2ad9dd7817dcb0b745389e90bd42d5597fdac40f25b6ef173",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:39:50.025619"
+    },
+    {
+      "topic": "graph theory",
+      "title": "Shop algebraic graph theory - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on algebraic graph theory at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DBezqxtL7yYDvNrXEHrugb329H83WWKO0vnvJlJg76qd14KLGWSw1uoQMjUNUFA0dwPs_ZdZnxRFhKGaPAt3RdbUeTPjYA%252DYhtdgig3BkCshYaW6wU4g5SwEiSvfJcmqFXMCTZxyz1_k9mPXhgNKHIaQWn9PoBpAnQZ3eSrf3rgU.sgEuJCoyF1DJS8uBVejXZA%26rut%3D75e54953e8e913eb3853eb2a5829478b57bedb2d54dd1cc81f0114996e426ee5%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8SasR5zfUcPOmK9zpIft52zVUCUwFpN8ttYYKd5VfJi9McZOXMw1no%252DJTTa1ODWh68lIgKXw1zbVLzygOlPByA7Zoa23Uzsemp4eiOJpMQGvRftKfzOiGGnqGL6mFBQr8fvVnm3y5ibktdM%252DzVbgdRSkAjtv%252DZXyseZQRQHkThYpEzoIqE0TBwKORKxnFx5p%252DWWDDmTeE%252DUyvrQ%252D6vIHOG90_sDo%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGFsZ2VicmFpYyUyYmdyYXBoJTJidGhlb3J5JTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfNDF3bzR1d2czX3AlMjZhZGdycGlkJTNkMTIzODA1MTE3MDU5MTA1MiUyNmh2YWRpZCUzZDc3Mzc4MzMyMzE0OTE3JTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkcCUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY0NDglMjZodnRhcmdpZCUzZGt3ZC03NzM3ODU1MzQ1MTEyNSUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkNTE1OV8xMzMwMDE2NCUyNm1jaWQlM2RlOTlkMjNjNDFmODYzNGZmOWFlMDIwODA1Y2M1OTY1NiUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkZjEyNmQwYjljNzFkMTczZDdjYTBiOWUxZDhkZjRhZDc%2526rlid%253Df126d0b9c71d173d7ca0b9e1d8df4ad7%26vqd%3D4%2D309451288439007000990484434840562450542%26iurl%3D%257B1%257DIG%253D2E41B0FFF5EF40E3921AF301AA09BCE2%2526CID%253D36E8BE4E7C9969620533A89B7D7D688B%2526ID%253DDevEx%252C5046.1&rut=867542ccb37ad06101f5b9a50ffad681ce123363581386e657d9590e450488b8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:42:59.321692"
+    },
+    {
+      "topic": "graph theory",
+      "title": "Graph theory - Wikipedia",
+      "content": "Learn about graphs, mathematical structures that model pairwise relations between objects. Explore different types of graphs, such as undirected, directed, multigraphs and pseudographs, and their properties and applications.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGraph_theory&rut=da86ba6d70aed747ea8105695b5c8d07551859e64573a9b81fe9724d4f336d12",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:42:59.321749"
+    },
+    {
+      "topic": "graph theory",
+      "title": "Fundamentals of Graph Theory - GeeksforGeeks",
+      "content": "Graph theory is a branch of mathematics that studies the properties and applications of graphs. A graph is a collection of vertices (also called nodes) connected by edges (also called links). Graphs are used to model pairwise relations between objects, making them a powerful tool for representing and analyzing complex systems in various fields. In this article, we will discuss all the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmaths%2Ffundamentals%2Dof%2Dgraph%2Dtheory%2F&rut=f08fb706a4ed26b7a271c18441a4adb9f8cdf1842b80b1bcdabc003b26df081a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:42:59.321805"
+    },
+    {
+      "topic": "graph theory",
+      "title": "Graph theory | Problems & Applications | Britannica",
+      "content": "Graph theory, branch of mathematics concerned with networks of points connected by lines. The subject had its beginnings in recreational math problems, but it has grown into a significant area of mathematical research, with applications in chemistry, social sciences, and computer science.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fgraph%2Dtheory&rut=0b5e77e68f6c48b7830a1ba95b2d330157e1ba9676334f8e428c0dc411e393e4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:42:59.321852"
+    },
+    {
+      "topic": "graph theory",
+      "title": "An introduction to graph theory - arXiv.org",
+      "content": "Spring 2025 edition, June 7, 2025 Abstract. This is a graduate-level introduction to graph theory, corresponding to a quarter-long course. It covers simple graphs, multigraphs as well as their directed analogues, and more restrictive classes such as tournaments, trees and arborescences. Among the features discussed are Eulerian circuits, Hamiltonian cycles, span-ning trees, the matrix-tree and ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Farxiv.org%2Fpdf%2F2308.04512&rut=b9feee12e440a4292d00b1b98c8c44517a37081899df7f54aca3fa604f52c9dc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:42:59.321898"
+    },
+    {
+      "topic": "game theory",
+      "title": "Game theory - Wikipedia",
+      "content": "Game theory is the study of mathematical models of strategic interactions. [1] It has applications in many fields of social science, and is used extensively in economics, logic, systems science and computer science. [2]",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGame_theory&rut=00b3a786766808adf06ce35f76bd00f471df94ea1906738b7c2310145d42a6fb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T14:55:59.579226"
+    },
+    {
+      "topic": "game theory",
+      "title": "Game Theory (Stanford Encyclopedia of Philosophy)",
+      "content": "Game theory is the study of the ways in which interacting choices of economic agents produce outcomes with respect to the preferences (or utilities) of those agents, where the outcomes in question might have been intended by none of the agents. The meaning of this statement will not be clear to the non-expert until each of the italicized words and phrases has been explained and featured in ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fgame%2Dtheory%2F&rut=3d6206e4e60ff498e21ef0be989979550a4b4a1c73a7dfeab56346b96130c52a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T14:55:59.579310"
+    },
+    {
+      "topic": "game theory",
+      "title": "Game theory | Definition, Facts, & Examples | Britannica",
+      "content": "Game theory, branch of applied mathematics that provides tools for analyzing situations in which parties, called players, make decisions that are interdependent. This interdependence causes each player to consider the other player's possible decisions, or strategies, in formulating strategy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fgame%2Dtheory&rut=e36f8713040ae9f81f37a0b69223248a7fe0d479fd2f02a6f33dc95b2c0eef7f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T14:55:59.579374"
+    },
+    {
+      "topic": "game theory",
+      "title": "PDF Game Theory, Lecture Notes - MIT OpenCourseWare",
+      "content": "Basic Framework Game theory is the analysis of strategic situations in which there are multiple decision makers (i.e. players) and a decision maker's optimal action can depend on what the other players do. Such decision problems are formalized as games. A game can be formulated in two ways. First, one can describe the scenarios that players find it possible, describing who the players are ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Focw.mit.edu%2Fcourses%2F14.126%2Dgame%2Dtheory%2Dspring%2D2024%2Fmit14_126_s24_yildiz%2Dlecture%2Dnotes.pdf&rut=dc3deacc2524afe3421150790a634646023b56167a5f143d4795b94e0fcc1c1e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T14:55:59.579441"
+    },
+    {
+      "topic": "game theory",
+      "title": "Ultimate Guide to Game Theory: Principles and Applications",
+      "content": "Discover how game theory helps model strategic scenarios in diverse fields like business, economics, and politics. Learn key concepts and practical applications today.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.investopedia.com%2Fterms%2Fg%2Fgametheory.asp&rut=c866582db0b450dc16996328137a412855405fc964909c47ab7a9d65cd5829d0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T14:55:59.579503"
     }
   ],
-  "last_updated": "2025-11-30T16:20:07.018772"
+  "last_updated": "2026-01-02T14:55:59.589076"
 }

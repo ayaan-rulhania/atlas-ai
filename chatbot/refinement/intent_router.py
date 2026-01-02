@@ -75,7 +75,134 @@ def _detect_modal_intent(text: str) -> Dict[str, bool]:
     return {
         "asks_for_examples": any(p in lower for p in ["example", "sample", "show me", "demo", "snippet"]),
         "asks_for_steps": any(p in lower for p in ["how do i", "how to", "steps", "guide", "tutorial", "walkthrough"]),
-        "asks_for_def": any(p in lower for p in ["what is", "definition", "define"]),
+        "asks_for_def": any(p in lower for p in ["what is", "definition", "define", "meaning of", "explain what"]),
+    }
+
+
+def _detect_conversational_intent(text: str) -> Dict[str, bool]:
+    """Detect if query is conversational rather than factual"""
+    lower = text.lower()
+
+    # Conversational patterns that suggest common sense responses
+    conversational_indicators = [
+        # Personal feelings and thoughts
+        "i think", "i feel", "i believe", "i wonder", "i'm curious",
+        "what do you think", "how do you feel", "what's your opinion",
+
+        # Acknowledgments and reactions
+        "that's interesting", "that's cool", "that makes sense", "i see",
+        "i understand", "that sounds good", "that seems right",
+
+        # Personal statements
+        "i'm working on", "i'm learning", "i'm trying to", "i need help",
+        "i want to", "i'm confused", "i'm not sure", "i agree", "i disagree",
+
+        # Social interactions
+        "thank you", "thanks", "please", "sorry", "excuse me",
+
+        # Simple questions that don't need research
+        "how are you", "what are you doing", "what's up", "what's new",
+        "tell me about yourself", "who are you", "what can you do",
+
+        # Time and basic info
+        "what time is it", "what's the time", "what day is it",
+        "what's today's date", "what's the weather",
+
+        # Simple math
+        "what is 2+2", "calculate", "what's 5 times 3",
+
+        # Simple acknowledgments
+        "ok", "okay", "sure", "alright", "got it", "understood",
+        "yes", "no", "maybe", "perhaps"
+    ]
+
+    # Check if query is very short (likely conversational)
+    word_count = len(text.split())
+    is_very_short = word_count <= 3
+
+    # Check for question marks vs statements
+    has_question_mark = '?' in text
+    is_statement = not has_question_mark and word_count > 1
+
+    # Check for conversational patterns
+    has_conversational_patterns = any(indicator in lower for indicator in conversational_indicators)
+
+    # Determine if this is primarily conversational
+    is_conversational = (
+        has_conversational_patterns or
+        is_very_short or
+        (is_statement and word_count <= 5 and not any(word in lower for word in [
+            'who', 'what', 'when', 'where', 'why', 'how', 'which', 'explain'
+        ]))
+    )
+
+    return {
+        "is_conversational": is_conversational,
+        "is_statement": is_statement,
+        "is_very_short": is_very_short,
+        "has_conversational_patterns": has_conversational_patterns,
+        "word_count": word_count
+    }
+
+
+def _detect_factual_intent(text: str) -> Dict[str, bool]:
+    """Detect if query requires factual research"""
+    lower = text.lower()
+
+    # Factual/research indicators
+    factual_indicators = [
+        # Research questions
+        "what is the difference", "how does it work", "why does", "when did",
+        "where is", "who invented", "who discovered", "how to make",
+        "recipe for", "what are the benefits", "what causes",
+
+        # Technical/programming
+        "how do i", "how to", "tutorial", "guide", "documentation",
+        "api", "function", "class", "method", "variable",
+
+        # Historical/scientific
+        "history of", "science of", "theory of", "principle of",
+
+        # Comparisons
+        "vs", "versus", "better than", "comparison between",
+
+        # Lists and explanations
+        "list of", "types of", "kinds of", "examples of", "best practices",
+
+        # Complex questions
+        "explain", "describe", "analyze", "evaluate", "assess"
+    ]
+
+    # Check for research question patterns
+    research_questions = [
+        "what are", "how do", "why do", "when was", "where can",
+        "who was", "which is", "can you explain"
+    ]
+
+    has_research_indicators = any(indicator in lower for indicator in factual_indicators)
+    has_research_questions = any(question in lower for question in research_questions)
+
+    # Length-based assessment
+    word_count = len(text.split())
+    is_long_query = word_count > 8
+
+    # Complex question markers
+    complex_markers = ['because', 'although', 'however', 'therefore', 'moreover', 'furthermore']
+    has_complex_structure = any(marker in lower for marker in complex_markers)
+
+    is_factual = (
+        has_research_indicators or
+        has_research_questions or
+        (is_long_query and has_question_mark) or
+        has_complex_structure
+    )
+
+    return {
+        "is_factual": is_factual,
+        "has_research_indicators": has_research_indicators,
+        "has_research_questions": has_research_questions,
+        "is_long_query": is_long_query,
+        "has_complex_structure": has_complex_structure
     }
 
 
@@ -86,6 +213,67 @@ def _detect_safety_sensitive(text: str) -> bool:
         "violent", "gore", "harm", "self-harm", "suicide", "kill", "murder",
     ]
     return any(ind in lower for ind in nsfw_indicators)
+
+
+def _detect_music_video_intent(text: str) -> bool:
+    """Detect if the user is explicitly asking about music or video content"""
+    lower = text.lower()
+
+    # Explicit music/video intent indicators
+    music_video_indicators = [
+        "music", "song", "songs", "video", "videos", "youtube", "spotify",
+        "listen", "play", "watch", "album", "artist", "band", "concert",
+        "musical", "singer", "playlist", "track", "tracks", "audio",
+        "film", "movie", "cinema", "tv show", "series", "episode",
+        "entertainment", "hollywood", "bollywood", "netflix", "hulu",
+        "streaming", "vlog", "tutorial video"
+    ]
+
+    # Check for explicit intent words
+    intent_words = ["tell me about", "show me", "recommend", "find", "search for",
+                   "what's", "who's", "where can i", "how do i", "play me",
+                   "watch", "listen to", "recommend me"]
+
+    # Combine intent + music/video for stronger detection
+    has_intent = any(intent in lower for intent in intent_words)
+    has_music_video = any(indicator in lower for indicator in music_video_indicators)
+
+    # If user explicitly mentions music/video topics, consider it music/video intent
+    if has_music_video:
+        return True
+
+    # If they have intent words + music/video, definitely music/video intent
+    if has_intent and has_music_video:
+        return True
+
+    return False
+
+
+def _detect_greeting_intent(text: str) -> bool:
+    """Detect if query is a greeting or farewell"""
+    lower = text.lower()
+
+    greeting_patterns = [
+        # Greetings
+        "hi", "hello", "hey", "good morning", "good afternoon",
+        "good evening", "good night", "greetings", "howdy",
+
+        # Farewells
+        "bye", "goodbye", "see you", "farewell", "take care",
+        "talk to you later", "catch you later", "bye bye",
+
+        # Well-being inquiries
+        "how are you", "how do you do", "how's it going",
+        "what's up", "what's new", "how have you been"
+    ]
+
+    # Very short queries that are likely greetings
+    word_count = len(text.split())
+    is_very_short_greeting = word_count <= 2 and any(word in lower for word in [
+        "hi", "hey", "hello", "bye", "sup"
+    ])
+
+    return any(pattern in lower for pattern in greeting_patterns) or is_very_short_greeting
 
 
 def _detect_tone(text: str) -> str:
@@ -144,6 +332,38 @@ class IntentRouter:
         # Modal asks (examples, steps, definition)
         hints.update(_detect_modal_intent(normalized_query))
 
+        # Conversational vs factual intent detection
+        hints.update(_detect_conversational_intent(normalized_query))
+        hints.update(_detect_factual_intent(normalized_query))
+
+        # Greeting detection (highest priority)
+        hints["is_greeting"] = _detect_greeting_intent(normalized_query)
+        if hints["is_greeting"]:
+            hints["prefer_conversational_response"] = True
+            hints["skip_research"] = True
+            hints["is_greeting_response"] = True
+
+        # Overall intent classification (only if not a greeting)
+        if not hints["is_greeting"]:
+            conversational_analysis = hints.get("is_conversational", False)
+            factual_analysis = hints.get("is_factual", False)
+
+            # Prioritize conversational intent for borderline cases
+            if conversational_analysis and not factual_analysis:
+                hints["prefer_conversational_response"] = True
+                hints["skip_research"] = True
+            elif factual_analysis and not conversational_analysis:
+                hints["prefer_research"] = True
+                hints["skip_conversational"] = True
+            else:
+                # Ambiguous case - use additional heuristics
+                if hints.get("word_count", 0) <= 4:
+                    hints["prefer_conversational_response"] = True
+                    hints["skip_research"] = True
+                elif hints.get("has_complex_structure", False):
+                    hints["prefer_research"] = True
+                    hints["skip_conversational"] = True
+
         # Code-specific routing
         hints["has_code_signals"] = overrides.get("has_code_signals", _has_code_signals(normalized_query))
         if hints["has_code_signals"]:
@@ -156,6 +376,9 @@ class IntentRouter:
         # Safety / sensitive data
         hints["mentions_sensitive_data"] = _detect_sensitive(normalized_query)
         hints["nsfw_risk"] = _detect_safety_sensitive(normalized_query)
+
+        # Music/Video intent detection
+        hints["is_music_video_intent"] = _detect_music_video_intent(normalized_query)
 
         # Multi-question: suggest splitting or clarifying
         hints["is_multi_question"] = _detect_multi_question(normalized_query)

@@ -25,7 +25,12 @@
     "kingdom",
     "kenya",
     "khan",
-    "kohli?"
+    "kohli?",
+    "kinetics",
+    "know",
+    "kant",
+    "karl",
+    "kierkegaard"
   ],
   "knowledge": [
     {
@@ -1035,7 +1040,259 @@
       "query": "Who is Virat Kohli?",
       "source": "research",
       "learned_at": "2025-11-29T12:11:14.233486"
+    },
+    {
+      "topic": "k-means clustering",
+      "title": "KMeans \u2014 scikit-learn 1.8.0 documentation",
+      "content": "Learn how to use KMeans, a Python module for k-means clustering, a popular unsupervised learning algorithm. See parameters, attributes, examples, and notes on the algorithm and its complexity.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fscikit%2Dlearn.org%2Fstable%2Fmodules%2Fgenerated%2Fsklearn.cluster.KMeans.html&rut=143400294f3f94deb77b1cc27742fb5934c669a132bac8cd469ad6bee9a99e5f",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T19:24:26.136325"
+    },
+    {
+      "topic": "k-means clustering",
+      "title": "K-Means Clustering Algorithm - Analytics Vidhya",
+      "content": "K-means clustering is a popular method for grouping data by assigning observations to clusters based on proximity to the cluster's center. This article explores k-means clustering, its importance, applications, and workings, providing a clear understanding of its role in data analysis.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.analyticsvidhya.com%2Fblog%2F2019%2F08%2Fcomprehensive%2Dguide%2Dk%2Dmeans%2Dclustering%2F&rut=31b65d7eef71b7fee7574af99ecce4e1e6fef875d35a521f5a215fd3869a8497",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T19:24:26.136402"
+    },
+    {
+      "topic": "k-means clustering",
+      "title": "What is k-means clustering? - IBM",
+      "content": "K-Means clustering is an unsupervised learning algorithm used for data clustering, which groups unlabeled data points into groups or clusters.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ibm.com%2Fthink%2Ftopics%2Fk%2Dmeans%2Dclustering&rut=fb1eb2d99691d650cc2e16954cb483ea58d61125520c30e198ab6b644b4bb037",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T19:24:26.136474"
+    },
+    {
+      "topic": "reaction kinetics",
+      "title": "Fast free delivery with Prime - Amazon.com Official Site",
+      "content": "Find deals and low prices on book of chemical reactions at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DkdwUhXyL8Ld3fL3otKPZ2oeEFUkOnHePIjIwgDx8E8Bqz1QHn2FdOf1EDOdzLsvWy29l99%252Dv4PtbqXKxZKHt3EpzjlwfaW5xufU6c4fLp0wHsg5OnghxI87lk5ZYyT0lR0H2BxXvpZYbki1CWRYjyhuHpzUnJUjsEhoY%252DxnNpnI.GtxByod58BF_m9qWHMprMg%26rut%3D1cc99993d921c55c295e6912307ccb264016ff3f02d794312007413a31a3749d%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8U7nJRGvNk8inP0t983CrEzVUCUyNPJEsWlih73aK7CtwnPVbkEVtFnmepHf4%252DmkB_SRl_gPtNlH2kplNooYsrM0%252D0aV%252DvysBt2jDBm5_4UWAq0Zp6%252DX4paZj6Mek5V75dpSR4KVFCbYWno4AuTu5Y2ZJzHwEy%252DEK40QTHxy8fg1PRcEP5XHVwixLF_L0g%252DUiX5RR9Zobc9Y4cuPHrHuOIQvXz9c%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJvb2slMmJvZiUyYmNoZW1pY2FsJTJicmVhY3Rpb25zJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfMWg5ZGxubDN6NF9wJTI2YWRncnBpZCUzZDEyMjU5NTY0NjI5MDQ1NDUlMjZodmFkaWQlM2Q3NjYyMjQwOTUyMTc0OSUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg3NDU1JTI2aHZ0YXJnaWQlM2Rrd2QtNzY2MjI2ODkyOTExNTMlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDQ5MzVfMTMyOTkzMzElMjZtY2lkJTNkM2RhZDUzZjJiZTY0MzA5ZDhlMWYwZjg0ZjY2OGJkNTElMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZDQxNDJhODEzZDU2MzFlOWVmYWJmYzE0NTY3ZGFlMDhj%2526rlid%253D4142a813d5631e9efabfc14567dae08c%26vqd%3D4%2D99245611166511705121988495432262398438%26iurl%3D%257B1%257DIG%253DF69DCB7EBF684B9A81A26C7BB6E9B56A%2526CID%253D26A42E7956556206343538AD57C263AC%2526ID%253DDevEx%252C5045.1&rut=852bfeb9c6e678112137bafd2bc0dddfa4fb7291ba7a2f157e2e60f8b8b8977a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:45:30.778187"
+    },
+    {
+      "topic": "reaction kinetics",
+      "title": "Chemical kinetics - Wikipedia",
+      "content": "Chemical kinetics is the branch of physical chemistry that studies the rates and mechanisms of chemical reactions. Learn about the pioneers, the laws, the rate laws, the activation energy and the factors that affect the reaction rate, such as nature, state, concentration and temperature of the reactants.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FChemical_kinetics&rut=33602005dd8d71447b0f34e983f2927a6cc921d959f566aea7f6701b71e42f94",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:45:30.778278"
+    },
+    {
+      "topic": "reaction kinetics",
+      "title": "Chemical kinetics | Definition, Equations, & Facts | Britannica",
+      "content": "Chemical kinetics, the branch of physical chemistry that is concerned with understanding how fast or how slow chemical reactions occur (that is, their rates). The principles of chemical kinetics apply to purely physical processes as well as to chemical reactions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fchemical%2Dkinetics&rut=5c4bf052fe1b1ea8640bd5d45d14c673e9703f9f4ab962e98f471fc73427fd16",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:45:30.778319"
+    },
+    {
+      "topic": "reaction kinetics",
+      "title": "PDF Reaction Kinetics",
+      "content": "Learn the basics of chemical reaction kinetics, including rate of reaction, rate laws, rate constants, half lives, and experimental techniques. Explore the mechanisms and kinetics of complex reactions, such as consecutive, chain, and catalytic reactions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fvallance.chem.ox.ac.uk%2Fpdfs%2FKineticsLectureNotes.pdf&rut=3e7e5327ac3858c812e2b58548c1b42d6d99d591f970b292a0c568e734520650",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:45:30.778359"
+    },
+    {
+      "topic": "reaction kinetics",
+      "title": "Reaction Kinetics - an overview | ScienceDirect Topics",
+      "content": "Reaction kinetics is defined as the study of the rates of chemical reactions and the factors influencing these rates, often involving the relationship between the microscopic mechanisms of reactions and their macroscopic kinetics. It encompasses empirical expressions for design purposes, mechanistic investigations, and the deduction of kinetics from proposed reaction mechanisms. AI generated ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencedirect.com%2Ftopics%2Fearth%2Dand%2Dplanetary%2Dsciences%2Freaction%2Dkinetics&rut=2fe100bcf8939f18ea641def17a097a4660c0fd0db929f47e99ca6859bbb95aa",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:45:30.778400"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These are the flying discs the government wants you to know about",
+      "content": "These are the flying discs the government wants you to know about DiskSat's design offers \"a power-to-weight ratio unmatched by traditional aluminum satellites.\"",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Farstechnica.com%2Fscience%2F2025%2F12%2Fheres%2Dwhy%2Dnasa%2Dand%2Dthe%2Dspace%2Dforce%2Dare%2Dinterested%2Din%2Dpizza%2Dshaped%2Dsatellites%2F&rut=f211be3316a507f9820d7a3acaa1110567f349036b9c4eb0c58da797508f882c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470269"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "Government's new 'flying discs' could redefine low-orbit missions",
+      "content": "These disk-like spacecraft are not science fiction, and this morning, they successfully entered orbit under the watchful observation of NASA and the U.S. Space Force. Thursday morning, four ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.msn.com%2Fen%2Dus%2Fnews%2Ftechnology%2Fgovernment%2Ds%2Dnew%2Dflying%2Ddiscs%2Dcould%2Dredefine%2Dlow%2Dorbit%2Dmissions%2Far%2DAA1SOLCz&rut=d515a90639683d73b6113b12a111164798de7ea5292727fe29f32e50f8fbe3fb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470331"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These are the flying discs the government wants you to know about ...",
+      "content": "Rocket Lab delivers for Space Force and NASA. Four small satellites rode a Rocket Lab Electron launch vehicle into orbit from Virginia early Thursday, beginning a government-funded technology ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fjean%2Dpierre%2Dpalomba%2Dmarin%2D14508b162_these%2Dare%2Dthe%2Dflying%2Ddiscs%2Dthe%2Dgovernment%2Dactivity%2D7407712454568235008%2DUxWm&rut=7fee72c854af04723714910de3a8548826d592e7abebf9982acce37cbf8ae207",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470377"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These Are The Flying Discs The Government Wants You To Know",
+      "content": "Home \u00bb Tech News \u00bb These are the flying discs the government wants you to know about Share with your friends! these are the flying discs the government NASA and the US Space Force have initiated a groundbreaking technology demonstration mission with the launch of four innovative satellites designed to test a new spacecraft concept.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.hashe.com%2Ftech%2Dnews%2Fthese%2Dare%2Dthe%2Dflying%2Ddiscs%2Dgovernment%2Dwants%2Dyou%2Dto%2Dknow%2Dabout%2F&rut=e066b6d6ca1d75b7d6df9a185a6a0856749920e76e05246626ba11c8540c25a8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470441"
+    },
+    {
+      "topic": "these are the flying discs the government wants you to know about",
+      "title": "These are the flying discs the government wants you to know about",
+      "content": "These Are the Flying Discs the Government Wants You to Know About In a groundbreaking development, four small satellites designed by the Aerospace Corporation have successfully launched into orbit. The launch took place on early Thursday morning, when a Rocket Lab Electron rocket carrying the DiskSats began its journey from NASA's Wallops Flight Facility. The DiskSat project was initiated as a ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.trendynewsblog.com%2Fposts%2Fthese%2Dare%2Dthe%2Dflying%2Ddiscs%2Dthe%2Dgovernment%2Dwan%2F&rut=97788db732a3a2c4eee229d8d2e458d9fc95ca98a82e05912c84272abdb4884d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:20:15.470498"
+    },
+    {
+      "topic": "immanuel kant",
+      "title": "Immanuel Kant - Wikipedia",
+      "content": "Immanuel Kant[a] (born Emanuel Kant; 22 April 1724 - 12 February 1804) was a German philosopher. Born in K\u00f6nigsberg, he is considered one of the central thinkers of the Enlightenment.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FImmanuel_Kant&rut=e655013f9e096830ad0bfa9a825c59cbad11bd256c5d1478c67d1fcbba235f3b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T09:54:16.613592"
+    },
+    {
+      "topic": "immanuel kant",
+      "title": "Immanuel Kant | Biography, Philosophy, Books, & Facts - Britannica",
+      "content": "Immanuel Kant, German philosopher who was one of the foremost thinkers of the Enlightenment and who inaugurated a new era of philosophical thought. His comprehensive and systematic work in epistemology, ethics, and aesthetics greatly influenced all subsequent philosophy. Learn more about Kant's life and work.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FImmanuel%2DKant&rut=dc7af9103f64561a9b70ec8946ff9154c02eefb88e0050626649c4243252fd48",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T09:54:16.613694"
+    },
+    {
+      "topic": "immanuel kant",
+      "title": "Immanuel Kant - Stanford Encyclopedia of Philosophy",
+      "content": "Immanuel Kant (1724-1804) is the central figure in modern philosophy. He synthesized early modern rationalism and empiricism, set the terms for much of nineteenth and twentieth century philosophy, and continues to exercise a significant influence today in metaphysics, epistemology, ethics, political philosophy, aesthetics, and other fields.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fkant%2F&rut=4cdac36eb7c7090a1ee54fd89b10a3b89a13d449b7bbb9707a478d5b4f5c1c7c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T09:54:16.613759"
+    },
+    {
+      "topic": "immanuel kant",
+      "title": "Immanuel Kant - Internet Encyclopedia of Philosophy",
+      "content": "An overview of Kant's life and philosophy, covering his contributions to metaphysics, epistemology, ethics, political theory, and more. Learn about his doctrine of transcendental idealism, his categorical imperative, his Copernican shift, and his influence on modern thought.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fkantview%2F&rut=de071d040933b25e6848410d27a0b38ee5d6ac87b8ab37def79bea35b6814f26",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T09:54:16.613829"
+    },
+    {
+      "topic": "immanuel kant",
+      "title": "Immanuel Kant | Introduction to Philosophy - Lumen Learning",
+      "content": "Immanuel Kant Immanuel Kant (1724-1804) The monumental Kritik der reinen Vernunft (Critique of Pure Reason) (1781, 1787) Immanuel Kant was born in the East Prussian city of K\u00f6nigsberg, studied at its university, and worked there as a tutor and professor for more than forty years, never travelling more than fifty miles from home.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fcourses.lumenlearning.com%2Felpaso%2Dintrophilosophy%2Fchapter%2Fimmanuel%2Dkant%2F&rut=cf2816bd67ea49979c24fcd9dd28708e8bdeb117e6d0be64c24191898fee783e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T09:54:16.613905"
+    },
+    {
+      "topic": "karl marx",
+      "title": "Shop karl marx - Amazon\u00ae Official Site",
+      "content": "Browse & discover thousands of brands. Read customer reviews & find best sellers. Find deals and low prices on karl marx at Amazon.com",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DBKFmZXe6NmC1cnmiC84diQUmUeKJUXdr7qjVmXoxx%252D3TUOneC5KL6teuyHSUq4CwvwlDtbWqRYGI1sC8yeBNO%252Dktu0UFzxDa6iAqNeAY_mxfZXtLXrSEPOee95hxTo68edyF8u9i7GqNhQaLq7wuQMS83qZ%252DAmAOTAT8xw1xmp8.yexo_ETUOgK5tJw_aQiAlg%26rut%3D1e8d1bf7ebf0b65c0532fc79cf25ad0124cc17c44b9b87e6c9b79dbee3423917%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De87dk1aAhUGgYq39pANNfZ%252DzVUCUy2IZ2w4a3EmeuOubBtBCjNXfyU2112M%252DiMVKZ93wCyMN%252DivxQmsf0HDUKTMFFIgiyopOjo07oPWXfubGJCsBi0jmxTVbCCjeikyAwXBNSCeeDrU9hsQFhgU0MoLSbIJgA_xlDeQI4sLZCUZHFLQhxLL%252Dj9etDnpHZZJQJPaMugDr93o%252DuLIrq43W0v3RnmtxU%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGthcmwlMmJtYXJ4JTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfNm1kam55cHRial9wJTI2YWRncnBpZCUzZDEyMzU4NTEzNzk4MjUwMDIlMjZodmFkaWQlM2Q3NzI0MDg3ODE1NTg2NCUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGUlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NDQ4JTI2aHZ0YXJnaWQlM2Rrd2QtNzcyNDA5NDYzNDc4NzQlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDE0NjcxXzEzNDk2NDAyJTI2bWNpZCUzZDVhNjVkODU2NGJjZDNjNjlhMGJkZWFjODljMTA0OWQyJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2RhOWIyNzdjMGE3MWExNGNhMjM3NDFlOThiNzY1ODJhZA%2526rlid%253Da9b277c0a71a14ca23741e98b76582ad%26vqd%3D4%2D145204924949170610082762930318324316214%26iurl%3D%257B1%257DIG%253D3DF8FDEFCE9C46BEB42EA8E4FDF32FD9%2526CID%253D35815C8DD50F6C1E20244A58D4DA6D97%2526ID%253DDevEx%252C5045.1&rut=6b8bf3b717d658ef2b2ed9ac770a8cb76273a9b6e0d780e8b63bc162aedceb8f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:37:51.637477"
+    },
+    {
+      "topic": "karl marx",
+      "title": "Karl Marx - Wikipedia",
+      "content": "Karl Marx[a] (German: [\u02c8ka\u0281l \u02c8ma\u0281ks]; 5 May 1818 - 14 March 1883) was a German philosopher, political theorist, economist, journalist, and revolutionary socialist. He is best-known for the 1848 pamphlet The Communist Manifesto (written with Friedrich Engels), and his three-volume Das Kapital (1867-1894), a critique of classical political economy which employs his theory of historical ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKarl_Marx&rut=7137980a9a1e8407ef22fb7a48ac6c6eff3002d90b48d8a62d9c74bab7e77f34",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:37:51.637604"
+    },
+    {
+      "topic": "karl marx",
+      "title": "Karl Marx | Books, Theory, Beliefs, Children, Communism, Religion ...",
+      "content": "Karl Marx (1818-83) was a revolutionary, socialist, historian, and economist who wrote the works, including Das Kapital and (with Friedrich Engels) The Communist Manifesto, that formed the basis of the body of thought and belief known as Marxism.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FKarl%2DMarx&rut=3009f4c3900b73e47b78160d964a74be1952f075c44f110a9fc1c9f2bab7fe3f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:37:51.637670"
+    },
+    {
+      "topic": "karl marx",
+      "title": "Karl Marx - Stanford Encyclopedia of Philosophy",
+      "content": "Karl Marx (1818-1883) is often treated as an activist rather than a philosopher, a revolutionary whose works inspired the foundation of communist regimes in the twentieth century. However\u2014without denying that considerable, if complex, historical impact\u2014Marx was trained academically as a philosopher (with a doctorate in ancient philosophy); he engaged directly with philosophical ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fmarx%2F&rut=c2d47ca6c9c5a9f5a0180eb2db367c864ee77f03c32a893a565385401ad67d2c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:37:51.637747"
+    },
+    {
+      "topic": "karl marx",
+      "title": "Karl Marx - Communist Manifesto, Theories & Beliefs | HISTORY",
+      "content": "Karl Marx was born in 1818 in Trier, Prussia; he was the oldest surviving boy in a family of nine children. Both of his parents were Jewish, and descended from a long line of rabbis, but his ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.history.com%2Farticles%2Fkarl%2Dmarx&rut=b9167025021ec8145511737ce367fece2282216e37eacb4cd38f2ac3ed7b10b1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:37:51.637806"
+    },
+    {
+      "topic": "soren kierkegaard",
+      "title": "Soren Kierkegaard - A Biography - Joakim Garff - 9780691127880",
+      "content": "Shop Our Wide Selection of Soren Kierkegaard at Christianbook Today! Fast Shipping on Most Orders. Great Service and Expertise.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dchristianbook.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Dm2pqdOpRkmNpW4K1m18Ky3ci53neb7VdRBylzdgzPR71hf0FgL6YXX3ZQVVGTlxShxVa0xiJ0M9O6iHX5AoUiLjduWXt1TLErcSFFeT01UEe61koiKCY4HOpp5ebG_q2YCc60lHsawkkD%252DmiIU_V0OLfcpWJ5k9jOZbxorCbHC8.1k8IbV0wt%252Dm%252Dt6pPLd8R9g%26rut%3D11b2eb9ac54bf3e020d5b8c631692efa45235e8ca5fd0f06185f53a35fc542df%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De86vsnsDoYuC03I_yqfbAkjTVUCUzTz5Nahm73jFJWYjXruAUpUm52IHegFion93vG6VOgUeN7BNA7wc0k5%252DmefjnpeL5mwqapZu8sbr4nAhy69P3htKuS0BBIaM0WHjtnLinKZKv5PWJmDw88mVAAid8O7BCnFCygB3N5DBMAQ2qsBQ5GHOR5W5CYGXiM0nlFxD7ira_GJPd2WI9BR1fk8pAETJM%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuY2hyaXN0aWFuYm9vay5jb20lMmZzb3Jlbi1raWVya2VnYWFyZC1hLWJpb2dyYXBoeSUyZmpvYWtpbS1nYXJmZiUyZjk3ODA2OTExMjc4ODAlMmZwZCUyZjEyNzg4MyUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2a3clM2QlMjUyRnBkJTI1MkYlMjZtdCUzZGIlMjZkdiUzZGMlMjZldmVudCUzZFBQQ1NSQyUyNnAlM2QxMjE1OTA0JTI2Y2Jfc3JjJTNkYmluZyUyNmNiX3R5cCUzZHNlYXJjaCUyNmNiX2NtcCUzZDMxMzEwNzQ4MiUyNmNiX2FkZyUzZDEyNDEzNDg3MTIyMDI0MTUlMjZjYl9reXclM2QlMjUyRnBkJTI1MkYlMjZtc2Nsa2lkJTNkOGI2YjM0YzM3MTMzMTI1ZDAyZGI1ZDliNjE4Y2U1OWQlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RCX1NlYXJjaCUyNTNBJTI1MjBOQiUyNTIwRHluYW1pYyUyNTIwU2VhcmNoJTI1MjBBZHMlMjZ1dG1fdGVybSUzZCUyNTJGcGQlMjUyRiUyNnV0bV9jb250ZW50JTNkRFNBJTI1MjBkZXRhaWwlMjUyMHBhZ2Vz%2526rlid%253D8b6b34c37133125d02db5d9b618ce59d%26vqd%3D4%2D12052612935068372731247210130968837588%26iurl%3D%257B1%257DIG%253D7A2817ACF46D4AE18276492F5289814E%2526CID%253D212D118E843B6E8A230F075B85B76FCB%2526ID%253DDevEx%252C5046.1&rut=cd00d56c96ef90d4b3f079c3be149185f3640cc6ff09fadcd2557c09fa96476d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:38:55.552775"
+    },
+    {
+      "topic": "soren kierkegaard",
+      "title": "S\u00f8ren Kierkegaard - Wikipedia",
+      "content": "S\u00f8ren Aabye Kierkegaard (/ \u02c8s\u0252r\u0259n \u02c8k\u026a\u0259rk\u0259\u0261\u0251\u02d0rd / SORR-\u0259n KEER-k\u0259-gard, US also /- \u0261\u0254\u02d0r / -\u2060gor; Danish: [\u02c8s\u0276\u02d0\u0250n \u02c8\u0254\u02c0\u02ccpy\u02c0 \u02c8k\u02b0i\u0250\u032fk\u0259\u02cck\u0252\u02d0\u02c0] \u24d8; [1] 5 May 1813 - 11 November 1855 [2]) was a Danish theologian, philosopher, poet, social critic, and religious author who is widely considered to be the first existentialist philosopher. [3] He wrote critical texts on ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FS%25C3%25B8ren_Kierkegaard&rut=287c16037f3387bb33edac137aa6da491b31667eff1137278969aa815d371964",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:38:55.552844"
+    },
+    {
+      "topic": "soren kierkegaard",
+      "title": "S\u00f8ren Kierkegaard | Danish Philosopher & Existentialist | Britannica",
+      "content": "S\u00f8ren Kierkegaard was a Danish philosopher, theologian, and cultural critic who was a major influence on existentialism and Protestant theology in the 20th century. He attacked the literary, philosophical, and ecclesiastical establishments of his day for misrepresenting the highest task of human",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FSoren%2DKierkegaard&rut=e3c50fb42d7013543b0073309303a4244f82dbd6336ff2e6e8994567644f9de1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:38:55.552882"
+    },
+    {
+      "topic": "soren kierkegaard",
+      "title": "S\u00f8ren Kierkegaard (Stanford Encyclopedia of Philosophy)",
+      "content": "S\u00f8ren Aabye Kierkegaard (1813-1855) was an astonishingly prolific writer whose work\u2014almost all of which was written in the 1840s\u2014is difficult to categorize, spanning philosophy, theology, religious and devotional writing, literary criticism, psychology and social critique. Kierkegaard's mode of philosophizing opposes system-building and owes more in its approach to the ancients ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fkierkegaard%2F&rut=da5937c9d1df913964a583eb47f6ac0bcd8271635a8a70f99aa730ef745463d7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:38:55.552922"
+    },
+    {
+      "topic": "soren kierkegaard",
+      "title": "Kierkegaard, S\u00f8ren | Internet Encyclopedia of Philosophy",
+      "content": "A comprehensive overview of the life and works of the Danish philosopher, theologian and existentialist. Learn about his authorship, influences, categories, themes, and legacy in this online encyclopedia article.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fkierkega%2F&rut=4bb0359e57e33eb4fd799dfc33c00170748702c69642cd41e5fdee5a937e8bdc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:38:55.552951"
     }
   ],
-  "last_updated": "2025-11-29T12:11:14.272310"
+  "last_updated": "2026-01-02T10:38:55.581917"
 }

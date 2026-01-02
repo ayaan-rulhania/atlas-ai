@@ -48,7 +48,12 @@
     "vote",
     "vertical",
     "venezuela",
-    "virat"
+    "virat",
+    "van",
+    "virology",
+    "vaccine",
+    "virtue",
+    "valais"
   ],
   "knowledge": [
     {
@@ -1506,7 +1511,502 @@
       "query": "Who is Virat Kohli?",
       "source": "research",
       "learned_at": "2025-11-29T12:11:14.233486"
+    },
+    {
+      "topic": "computer vision",
+      "title": "What is Computer Vision in 2025? A Beginners Guide - OpenCV",
+      "content": "Learn what is Computer Vision, its history, how it works, and its key features and tasks. Explore how companies leverage Computer Vision for various applications and industries.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fopencv.org%2Fblog%2Fwhat%2Dis%2Dcomputer%2Dvision%2F&rut=de0bbed932fe23407f001e0f349b432641a0dbe25fff29222048032ce5351d2e",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:21:00.763686"
+    },
+    {
+      "topic": "computer vision",
+      "title": "What Is Computer Vision? | Microsoft Azure",
+      "content": "What is computer vision? Computer vision recognizes objects, people, and patterns Computer vision enables machines to interpret, analyze, and pull meaningful data from images and videos. This field of AI uses deep learning and neural networks to recognize objects, people, and patterns with high degrees of accuracy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fazure.microsoft.com%2Fen%2Dus%2Fresources%2Fcloud%2Dcomputing%2Ddictionary%2Fwhat%2Dis%2Dcomputer%2Dvision%2F&rut=3f44c56d94201f8e416614478111cab8ecf4177edf85414ddb66c43b11310dbd",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:21:00.763716"
+    },
+    {
+      "topic": "computer vision",
+      "title": "What is Computer Vision? - Image recognition AI/ML Explained - AWS",
+      "content": "Computer vision is a technology that machines use to automatically recognize images and describe them accurately and efficiently. Today, computer systems have access to a large volume of images and video data sourced from or created by smartphones, traffic cameras, security systems, and other devices. Computer vision applications use artificial intelligence and machine learning (AI/ML) to ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Faws.amazon.com%2Fwhat%2Dis%2Fcomputer%2Dvision%2F&rut=ea6b751475e9815aac603e9d2cccb65c9fcf56d53cca1c6d194fa76ec79424f5",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:21:00.763744"
+    },
+    {
+      "topic": "support vector machine",
+      "title": "1.4. Support Vector Machines \u2014 scikit-learn 1.8.0 documentation",
+      "content": "Learn how to use support vector machines (SVMs) for classification, regression and outliers detection with scikit-learn. Find out the advantages, disadvantages, parameters and examples of SVMs and their variants.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fscikit%2Dlearn.org%2Fstable%2Fmodules%2Fsvm.html&rut=1c2e2cc6c1887d03dbd8a1e07aab298170c075964b244fac51b195ea5d14ba1c",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:01:13.707047"
+    },
+    {
+      "topic": "support vector machine",
+      "title": "PDF An Idiot's guide to Support vector machines (SVMs) - MIT",
+      "content": "Learn the basic ideas and concepts of SVMs, a learning algorithm that finds optimal hyperplanes for linearly separable patterns. See examples, diagrams, and equations for linear and non-linear SVMs, and how to use kernel functions to transform data.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fweb.mit.edu%2F6.034%2Fwwwbob%2Fsvm.pdf&rut=bcb7f0888267da43c91fb502081e5fd93b7a30c74a4e240d88427bb197995f93",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:01:13.707109"
+    },
+    {
+      "topic": "support vector machine",
+      "title": "PDF Part V Support Vector Machines - Stanford Engineering Everywhere",
+      "content": "Learn about the SVM algorithm, which is a supervised learning method for binary classification. The notes cover margins, optimal margin classifier, duality, kernels and SMO algorithm.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsee.stanford.edu%2Fmaterials%2Faimlcs229%2Fcs229%2Dnotes3.pdf&rut=541df93bca5ece4972566ba583226c066624bade3ed59974fb890b69e2d80af6",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:01:13.707229"
+    },
+    {
+      "topic": "how i get free traffic from chatgpt in 2025 (aio vs seo)",
+      "title": "Free Website Seo - All-in-One Marketing Tool",
+      "content": "Build authority-first backlinks that drive AI mentions and SEO results. Traditional SEO tools miss AI search visibility\u2014Semrush doesn't.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dsemrush.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DCcVj3qSjX6%252DRAiHgQb_Wz2qcG0JcGH%252DZ6QgFy3UEdqlLV_ORJAJ_QsOuaD4j4EYIcw5gVX%252DPpp4fZlYMTvsXrhyi5Y_YpJbrEIubR0l0fpsf_Pb5pRkmXX4PL42HoIBFPIcJAk8dkURXTkxoEOuKXUErfi2MipNdoVLHivAYKuI.M4fuOmpXVwoVjZdWKxGTQw%26rut%3De5ac373a7759665e18210166aae40243e5f3bbd255794fad85da65aa05b7182c%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8u5G0fgcqWplrVIEO7xKd6zVUCUy9nRfMk9RnYx_evQimnwezdBAqjP7LJKZpzKKeU4jg6JS%252D9j207SYds5jW6M8WxXanfD2LJ03mrtUX6ojNtX1e_LLlmRnS%252DgK30z4csmxHf6krUnKkFmSEHQkrc%252Du3LJW4ROv%252DO6Fcbh3vSV9OSfx6zKFl9jrKM61_ufO1rh2WEWowVHUiV1K2DW1h5TUcygg%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuc2VtcnVzaC5jb20lMmZscCUyZnByb2R1Y3Qtc2VvLWNoYWxsZW5nZXMlMmZlbiUyZiUzZmJfYWRncm91cCUzZGZyZWUlMjUyMHdlYnNpdGUlMjUyMHNlbyUyNmJfYWRncm91cGlkJTNkMTMwMTgyMjA4NTAyMDIzMCUyNmJfYWRpZCUzZDgxMzYzOTk1NDQyNjI0JTI2Yl9jYW1wYWlnbiUzZENvcmUxMl9TUkNIX1NFT19Ub29sc19CSU5HJTI2Yl9jYW1wYWlnbmlkJTNkNDEyNTMyODQxJTI2Yl9pc3Byb2R1Y3QlM2QlMjZiX3Byb2R1Y3RpZCUzZCUyNmJfdGVybSUzZCUyNTJCZnJlZSUyNTIwJTI1MkJ3ZWJzaXRlJTI1MjAlMjUyQnNlbyUyNmJfdGVybWlkJTNka3dkLTgxMzY0MDUzNDM0MzEwJTNhbG9jLTE5MCUyNmt3JTNkJTI1MkJmcmVlJTI1MjAlMjUyQndlYnNpdGUlMjUyMCUyNTJCc2VvJTI2Y21wJTNkQ29yZTEyX1NSQ0hfU0VPX1Rvb2xzX0JJTkclMjZsYWJlbCUzZHNlb190b29sJTI2TmV0d29yayUzZHMlMjZEZXZpY2UlM2RjJTI2dXRtX2NvbnRlbnQlM2QlMjZrd2lkJTNka3dkLTgxMzY0MDUzNDM0MzEwJTNhbG9jLTE5MCUyNmNtcGlkJTNkNDEyNTMyODQxJTI2YWdwaWQlM2QxMzAxODIyMDg1MDIwMjMwJTI2QlUlM2RDb3JlJTI2ZXh0aWQlM2QlMjZhZHBvcyUzZCUyNm1hdGNodHlwZSUzZHAlMjZtc2Nsa2lkJTNkNDFiMDBjN2UwOTlhMTQ5MGU0NjI2NTI4YTc5MGI4Y2MlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RDb3JlMTJfU1JDSF9TRU9fVG9vbHNfQklORyUyNnV0bV90ZXJtJTNkJTI1MkJmcmVlJTI1MjAlMjUyQndlYnNpdGUlMjUyMCUyNTJCc2Vv%2526rlid%253D41b00c7e099a1490e4626528a790b8cc%26vqd%3D4%2D230848751282716186624678409723888879903%26iurl%3D%257B1%257DIG%253DD06D3ACD9C2C4CFAA49BA6D14CA085A8%2526CID%253D1CD11ADBAE7164B01A390C0FAFA46574%2526ID%253DDevEx%252C5046.1&rut=b99f64659c88362180c13d205cc7a29ef47d4dbf87531bf351829f052bedb259",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:25:30.485097"
+    },
+    {
+      "topic": "how i get free traffic from chatgpt in 2025 (aio vs seo)",
+      "title": "Free Website Traffic - *Free URL Submission*",
+      "content": "Free, Fast, Easy Submission to the Biggest Search Engines, Directorys. It's Free To Submit Your Website To The Biggest Search Engines Across The Internet",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dfree%252Dweb%252Dsubmission.co.uk%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D4zIx%252Dz1ibdARJ7wnfNdxRHNzNhrCE%252DB5CwPYNFovpt00wNpVrV8WPZxbK_KhcHZfBzSSceikJbjTcs6Yv1S6y_RdBdc9bpyyQs7jVa6AdMuWVC9jYS9IcG7qVb8yQ5FSgyEYefZZ1gk4uoL56g25dY89npq1ubArKeEx34Z7QZ0.kJJqU39%252DsAvJgxahf78rgA%26rut%3D55207f4faa6772a4b889627cb1e8628b4024118f1cffd15655a8e17f15e77f0d%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8WGq23aeI2i7kc9fq3EmT0DVUCUy7Ri4qNEl8u1GHimi_OS%252D5Jn4DXOVMDR_Djfai5GCTGypxPNqL_Oc8GEalpnzWBPVEpf1R_nIoxwVKKgA2_leLJjhfm_PSq_Mz_JehdeQJbG6VmPbrpNGqaBHNfz3ZV3C8S_oMoPw79IXdBpycjKc5Gac1mXlCAyPZPvKAVhCPI49uXEvPNdWwlSNkhWjvOBg%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuZnJlZS13ZWItc3VibWlzc2lvbi5jby51ayUyZmluZGV4MTEuaHRtbCUzZnV0bV9kZXZpY2UlM2RjJTI2dXRtX2djbGlkJTNkZjAzZDAyZmRjOTE1MTdkNjc0ZDA2YmFiNjcxZmY2MTYlMjZtc2Nsa2lkJTNkZjAzZDAyZmRjOTE1MTdkNjc0ZDA2YmFiNjcxZmY2MTYlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RGcmVlJTI1MjBXZWIlMjUyMFN1YiUyNTIwVGllcjElMjUyMENvbnYlMjUyMEt5d2RzJTI2dXRtX3Rlcm0lM2RzZWFyY2glMjUyMGVuZ2luZSUyNTIwdHJhZmZpYyUyNnV0bV9jb250ZW50JTNkQnV5ZXJzJTI1MjBLZXl3b3Jkcw%2526rlid%253Df03d02fdc91517d674d06bab671ff616%26vqd%3D4%2D261122421243572313221771921457685075420%26iurl%3D%257B1%257DIG%253DD06D3ACD9C2C4CFAA49BA6D14CA085A8%2526CID%253D1CD11ADBAE7164B01A390C0FAFA46574%2526ID%253DDevEx%252C5051.1&rut=6b95075291ed001bdd553eed9eec4fe67894c5c541ea7f9c584b15a13148d921",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:25:30.485222"
+    },
+    {
+      "topic": "how i get free traffic from chatgpt in 2025 (aio vs seo)",
+      "title": "How I Get Free Traffic from ChatGPT in 2025 (AIO vs SEO)",
+      "content": "The same thing happened in Perplexity. My website is now ranking at the top of AI responses, generating free traffic directly from AI models. This isn't luck. It's the result of implementing AI Optimization (AIO), where I optimize my content to appear in AI-generated responses. And if you're still only focusing on traditional SEO, you're missing out on a massive traffic source that's ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Flearnwithhasan.com%2Fblog%2Ffree%2Dtraffic%2Dfrom%2Dchatgpt%2F&rut=f42f7c8885c964ee28366a9768fafb3ddfa0c18ac694a2b9597c79ba42054adc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:25:30.485310"
+    },
+    {
+      "topic": "how i get free traffic from chatgpt in 2025 (aio vs seo)",
+      "title": "How I Get Free Traffic from ChatGPT in 2025 (AIO vs SEO)",
+      "content": "Traditional SEO remains the primary focus, while this emerging traffic channel grows rapidly with relatively light competition. This window won't stay open indefinitely. As more people understand AIO's value, competition will intensify and optimization will become more sophisticated.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fseotoolrank.com%2Fhow%2Di%2Dget%2Dfree%2Dtraffic%2Dfrom%2Dchatgpt%2Din%2D2025%2Daio%2Dvs%2Dseo%2F&rut=b3b22a7031a5162199e0731d3bbc9c285711f3ba0eeb002691a1f25c4ed62bbf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:25:30.485386"
+    },
+    {
+      "topic": "how i get free traffic from chatgpt in 2025 (aio vs seo)",
+      "title": "How To Get Free Traffic From ChatGPT in 2025 (AIO Course)",
+      "content": "In this video, I will show you how to optimize your website for AIO to rank on top of AI models like ChatGPT, Claude, Perplexity and Get Free Organic Traffic From AI.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DXmv22Pmu7f0&rut=82ef6f3e1dc339eb5f54fad5e1b9c39006544f527e90e19ec59ee702b02738ca",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:25:30.485474"
+    },
+    {
+      "topic": "van der waals force",
+      "title": "Van der Waals force - Wikipedia",
+      "content": "Learn about the van der Waals force, a distance-dependent interaction between atoms or molecules that is not based on chemical bonds. Find out its definition, types, examples, applications, and contrast with other intermolecular forces.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FVan_der_Waals_force&rut=a55a0ca2d1430d39cf93a4821957f407a2448dba66acf9c6af27df7fab0e98f1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:00.562981"
+    },
+    {
+      "topic": "van der waals force",
+      "title": "van der Waals forces - Encyclopedia Britannica",
+      "content": "Van der Waals forces, relatively weak electric forces that attract neutral molecules to one another in gases, in liquefied and solidified gases, and in almost all organic liquids and solids. The forces are named for the Dutch physicist Johannes Diderik van der Waals, who in 1873 first postulated",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fvan%2Dder%2DWaals%2Dforces&rut=2dcce693763b0526a5c1e2e4570515ce796438ee51cace2ef5a0b6841ae20a63",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:00.563025"
+    },
+    {
+      "topic": "van der waals force",
+      "title": "Van der Waals Force | Brilliant Math & Science Wiki",
+      "content": "Van der Waals forces are specific intermolecular interactions observed in liquids and solids. They are electrostatic in nature, arising from the interactions of positively and negatively charged species. intermolecular forces hold molecules together (in contrast to intramolecular forces, which hold atoms together within a molecule). They help determine bulk properties such as boiling point and ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbrilliant.org%2Fwiki%2Fvan%2Dder%2Dwaals%2Dforce%2F&rut=4943178af0ce7d4a52bf46e55ae653fc698dd6b8582a5b76a658b18c8b788916",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:00.563054"
+    },
+    {
+      "topic": "van der waals force",
+      "title": "Van Der Waals Force - GeeksforGeeks",
+      "content": "Van der Waals forces are intermolecular forces. They include attraction and repulsion between atoms and molecules. This force is fundamental in diverse fields which include condensed matter physics, polymer science, nanotechnology, supra-molecular chemistry, biological structure, and surface science.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fchemistry%2Fvan%2Dder%2Dwaals%2Dforce%2F&rut=9e6a33a506a661ee8b37d3af6ec53aec0e46daf6f16bdc82e0313cc799714382",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:00.563082"
+    },
+    {
+      "topic": "van der waals force",
+      "title": "Van der Waals Forces (Bond): Definition, Examples, & Diagrams",
+      "content": "Define and explain van der Waals forces. How do they hold molecules together. Learn their different types and importance, and check out a few examples.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.chemistrylearner.com%2Fchemical%2Dbonds%2Fvan%2Dder%2Dwaals%2Dforces&rut=97f6bb8fd88c5dc74b740d337f89fcf25ce1400c860ef243a89ce00bb229b425",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:36:00.563110"
+    },
+    {
+      "topic": "virology",
+      "title": "Virology",
+      "content": "Virology is the scientific study of biological viruses. It is a subfield of microbiology that focuses on their detection, structure, classification and evolution, their methods of infection and exploitation of host cells for reproduction, their interaction with host organism physiology and immunity, the diseases they cause, the techniques to isolate and culture them, and their use in research and therapy.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Virology",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T10:08:11.189962"
+    },
+    {
+      "topic": "virology",
+      "title": "Shop books on virology - Amazon.com Official Site",
+      "content": "Find deals and low prices on books on virology at Amazon.com. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Dujfm_9ytRKbzPeP2NoCAmAp1H_CvoMzkDAvNwkurdJzHWjHpu9ZKkliqLPpNPTnH_GFHWC1OsRiDTZjsuqn1O_OyexZ1GQLO%252DIvqlo_O2KXnCRPcvwUQl3YRnt1Kv25x3y9CLKUA5qk4T5vypvHxMd8V38zT0PtrSOq9vXzp_nc.KYi3sjfC3ic1VXBJG2VZ8w%26rut%3D5fe9f69fcfb34625d539ecf5db8547a159450540626ce5c56645def431926592%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8dsZ7QFHUF4Oc8vrkRUxdrTVUCUy__uW5YIxGtsNmrCWSkUOBBr3I1z3ys0eETMJNAnvupewsSyBwKTKNo16zRcf_0I9yv_h3Nf1jLaZIcwzN8ZYxz8vFa4QmjpB9nj0CuAFoDMWkZ5_3EWoQReXN2ShvSToKyD_OB0CM0tQCygeMU69tn9Nbgi5AmdFi1WRYEQWouL5hhvS64HLtzOXWnqHc5Ng%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJvb2tzJTJib24lMmJ2aXJvbG9neSUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzc1bW5xOGhnM3NfYiUyNmFkZ3JwaWQlM2QxMjI3MDU1OTczNjg1NzQ2JTI2aHZhZGlkJTNkNzY2OTExMjg4Njk3NjUlMjZodm5ldHclM2RzJTI2aHZxbXQlM2RiJTI2aHZibXQlM2RiYiUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NDkwOSUyNmh2dGFyZ2lkJTNka3dkLTc2NjkxMjU0NDUyMDk2JTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QyNjY1M18xMTczNTc1MyUyNm1jaWQlM2QxNGNmOWIyMTE5MDQzNTUwOWZhYjQ0ZDM0NDU5MWZhNyUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkN2I2NjkzNWM3MGM1MTk5YWYzZGVmYTBhYzhjZWM3YzI%2526rlid%253D7b66935c70c5199af3defa0ac8cec7c2%26vqd%3D4%2D324266305361501337765492980097017576626%26iurl%3D%257B1%257DIG%253D54E4CAE43F61479B80625807AA9CA122%2526CID%253D115AA9D230B863D2160ABF06312F620F%2526ID%253DDevEx%252C5045.1&rut=c6806a74d026884b61d96448818a12f91163257776db143fd134a18f2e2b2d23",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:08:12.216135"
+    },
+    {
+      "topic": "virology",
+      "title": "Virology - Wikipedia",
+      "content": "Virology is the scientific study of biological viruses, their structure, classification, infection, diseases, and applications. Learn about the origins, methods, and discoveries of virology from the 19th to the 21st century.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FVirology&rut=5fe94bd3f3a8020969162e13a1d44e298839ae8c5a68e56530964eceb86bc828",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:08:12.216172"
+    },
+    {
+      "topic": "virology",
+      "title": "Virology | viruses, pathogens, disease | Britannica",
+      "content": "Virology is a discipline of immediate interest because many human diseases, including smallpox, influenza, the common cold, and AIDS, as well as a host of economically important plant and animal diseases, are caused by viruses.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fvirology&rut=48755b4dd49d09474c0edca29bd34cdf3157970d0c048adb2f64424604d6e568",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:08:12.216198"
+    },
+    {
+      "topic": "virology",
+      "title": "Virology | Journal | ScienceDirect.com by Elsevier",
+      "content": "An Affiliated Journal of the World Society for Virology Launched in 1955, Virology is a broad and inclusive journal that welcomes submissions on all aspects of virology including plant, animal, microbial and human viruses. The journal publishes basic research as well as pre-clinical and clinical studies of vaccines, anti-viral drugs and their development, anti-viral therapies, and ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencedirect.com%2Fjournal%2Fvirology&rut=47db739baf9252bb74f8bc3d50b08c70c230849715613ac8965d7086632dd4dc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:08:12.216239"
+    },
+    {
+      "topic": "virology",
+      "title": "Virology | Microbiology Immunology & Molecular Genetics",
+      "content": "Learn about the virus, its evolution, structure, life cycle, function, diseases, and host defenses. Meet the affiliated faculty and their research interests in virology at UCLA.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmimg.ucla.edu%2Fresearch%2Fvirology&rut=55780c446db6f8043d70a78b3cd1450a0a2b682f553320c84e69a05ca850ade0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:08:12.216266"
+    },
+    {
+      "topic": "vaccine",
+      "title": "Vaccine",
+      "content": "A vaccine is a biological preparation that provides active acquired immunity to a particular infectious or malignant disease. The safety and effectiveness of vaccines has been widely studied and verified. A vaccine typically contains an agent that resembles a disease-causing microorganism and is often made from weakened or killed forms of the microbe, its toxins, or one of its surface proteins. The agent stimulates the immune system to recognize the agent as a threat, destroy it, and recognize further and destroy any of the microorganisms associated with that agent that it may encounter in the future.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vaccine",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T10:11:19.477648"
+    },
+    {
+      "topic": "vaccine",
+      "title": "No-cost vaccinations - Get vaccinated for MMR & more",
+      "content": "Shop & get the vaccines you need. Restrictions apply. Ask your pharmacist for details. Make an appointment or stop by today. Restrictions apply. Ask your pharmacist for details.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dwalmart.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DvQayRRcHIxV5yF0MC9oUI8lz8K0B7IvpimLCRVvB1ONrXUMDdOBWBFvIgpkz5jCmTFkGzokIsda1kNsbqeDNZyfitzb6YkMr6LjhL9oNkYoezGFUaVBJmEzgcWnOnTCEitM7wt8sUtjot03vInY9MH0Ro3x5SURlQjGuAUurjiA._Pbco82OQodMscvhrLH0bQ%26rut%3Df4bdc0eb038e16843b198d6b33c4be31746315c61adc263487dbb0292745759e%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De85QCxpxas5wdjqRc7FGKLjjVUCUzYOTejWmSYCCKNBA68wtrdCeuRO5%252DClCNwzcVhGrSF8aI1ucbHQ7qHT7fKL3dmwmlaUWq6Ihy6egtqhTSobWmLnFo%252DKuHPQHaBVw4CjIsIXMs62zxVzmMLJHu2ovp9Fk9%252DllVV6hyWFS4YPRGVuP7LDBv2DrdN3UVAfTMAXEkHWvYm6LbbWzF7rNhqC3wlPn8%2526u%253DaHR0cHMlM2ElMmYlMmZjbGlja3NlcnZlLmRhcnRzZWFyY2gubmV0JTJmbGluayUyZmNsaWNrJTNmJTI2ZHNfYV9jaWQlM2QxOTYwMTc4MjElMjZkc19hX2NhaWQlM2Q1NzAwODkzODclMjZkc19hX2FnaWQlM2QxMTQwMTk1MzU5MjI1Nzk1JTI2ZHNfYV9maWlkJTNkJTI2ZHNfYV9saWQlM2Rrd2QtNzEyNjI5MzE1OTE5MDclM2Fsb2MtMTkwJTI2ZHNfYV9leHRpZCUzZCU3YmV4dGVuc2lvbmlkJTdkJTI2JTI2ZHNfZV9hZGlkJTNkJTI2ZHNfZV9tYXRjaHR5cGUlM2RzZWFyY2glMjZkc19lX2RldmljZSUzZGMlMjZkc19lX25ldHdvcmslM2RzJTI2JTI2ZHNfdXJsX3YlM2QyJTI2ZHNfZGVzdF91cmwlM2RodHRwcyUzYSUyZiUyZnd3dy53YWxtYXJ0LmNvbSUyZmNwJTJmZmx1LXNob3RzLWltbXVuaXphdGlvbnMlMmYxMjI4MzAyJTNmYWRpZCUzZDIyMjIyMjIyMjI0NTE5MzQ3Nzc4JTI2d21sc3BhcnRuZXIlM2R3bXRsYWJzJTI2d2wwJTNkcCUyNndsMSUzZHMlMjZ3bDIlM2RjJTI2d2wzJTNkNzEyNjIzNzYyOTAyMjUlMjZ3bDQlM2Rrd2QtNzEyNjI5MzE1OTE5MDclM2Fsb2MtMTkwJTI2d2w1JTNkODYzMDMlMjZ3bDYlM2QlMjZ3bDclM2QlMjZ3bDE0JTNkdmFjY2luZSUyNnZlaCUzZHNlbSUyNm1zY2xraWQlM2RkYTI5MTVhNDQ3NWIxZGRkNTI4YjdjZjJmZjkzZjk3OA%2526rlid%253Dda2915a4475b1ddd528b7cf2ff93f978%26vqd%3D4%2D276547219668519848669833285804129904428%26iurl%3D%257B1%257DIG%253D29CC5598E99444AF9760236E9A6D000B%2526CID%253D3FF8741C28716801390D62C829A46984%2526ID%253DDevEx%252C5045.1&rut=85d38e75a55075d33e2c1161c3c89d873fccb75db7b62dab565de44a5bd449c9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:11:20.400244"
+    },
+    {
+      "topic": "vaccine",
+      "title": "Vaccines & Immunizations | Vaccines & Immunizations | CDC",
+      "content": "Find information related to Vaccines and Immunizations.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cdc.gov%2Fvaccines%2Findex.html&rut=05f143b544e8adb46b26d1f1c742d596d179920ddf85b5b3de0a9b1f30b7351c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:11:20.400285"
+    },
+    {
+      "topic": "vaccine",
+      "title": "Vaccine - Wikipedia",
+      "content": "A vaccine is a biological preparation that provides active acquired immunity to a particular infectious or malignant disease. [1][2] The safety and effectiveness of vaccines has been widely studied and verified. [3][4] A vaccine typically contains an agent that resembles a disease-causing microorganism and is often made from weakened or killed forms of the microbe, its toxins, or one of its ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FVaccine&rut=9549d797f994829866e815e15776499790e13682945dde20cf4f439a449701c7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:11:20.400318"
+    },
+    {
+      "topic": "vaccine",
+      "title": "Vaccine | Definition, Types, History, & Facts | Britannica",
+      "content": "A vaccine is a suspension of weakened or killed microorganisms or toxins or other biological preparation, such as those consisting of antibodies, lymphocytes, or mRNA, that is administered to prevent disease. Vaccines work by stimulating the immune system to attack specific harmful agents.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fvaccine&rut=442421ca597be53247d3cea9f914a9a14d216f8b564e0f0a0d3dc06298a6c594",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:11:20.400351"
+    },
+    {
+      "topic": "vaccine",
+      "title": "Schedule Vaccine Appointments | Schedule Vaccinations | Walgreens",
+      "content": "Schedule a vaccination appointment online at Walgreens.com. Get a Flu, COVID-19, or travel vaccine at a Walgreens near you.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.walgreens.com%2Ffindcare%2Fschedule%2Dvaccine&rut=d8b5bb779881513cb7cbf144e7f627b2fba1f03044aec8bccda66dd2bcc9be49",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:11:20.400380"
+    },
+    {
+      "topic": "virtue ethics",
+      "title": "Virtue Ethics - Stanford Encyclopedia of Philosophy",
+      "content": "Virtue ethics is currently one of three major approaches in normative ethics. It may, initially, be identified as the one that emphasizes the virtues, or moral character, in contrast to the approach that emphasizes duties or rules (deontology) or that emphasizes the consequences of actions (consequentialism).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fethics%2Dvirtue%2F&rut=93c8ec577780d60338a5880b29153f39191fcb4f26080dbd8720b6941ace5607",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:20.085358"
+    },
+    {
+      "topic": "virtue ethics",
+      "title": "Virtue ethics - Wikipedia",
+      "content": "Virtue ethics Virtue ethics (also aretaic ethics, [a][1] from Greek \u1f00\u03c1\u03b5\u03c4\u03ae [aret\u1e17]) is a philosophical approach that treats virtue and character as the primary subjects of ethics, in contrast to other ethical systems that put consequences of voluntary acts, principles or rules of conduct, or obedience to divine authority in the primary role.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FVirtue_ethics&rut=44791982119c1a8d438156560591ef502f994375bcd50152476482af807eb0d7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:20.085466"
+    },
+    {
+      "topic": "virtue ethics",
+      "title": "Virtue Ethics: What it is and How it Works - Philosophos",
+      "content": "Learn about virtue ethics and its history and principles, including how it differs from other ethical theories and its implications for moral decision making.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.philosophos.org%2Fethics%2Dvirtue%2Dethics&rut=4f7aba25fc15178ee7ed464ab14c9a05cfe94191b7f2f26b9ec7b0f07ef7f2f1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:20.085545"
+    },
+    {
+      "topic": "virtue ethics",
+      "title": "Virtue Ethics - Internet Encyclopedia of Philosophy",
+      "content": "An overview of virtue ethics, a normative theory that emphasizes character and virtue in moral philosophy. Learn about its history, varieties, objections, and applications from Aristotle to contemporary thinkers.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fvirtue%2F&rut=2d214df7a1d31232559720f34e11df13ea1ca3ae42c32aae69195608cb991724",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:20.085608"
+    },
+    {
+      "topic": "virtue ethics",
+      "title": "What Are Virtue Ethics? How They Relate to Moral Behavior",
+      "content": "Virtue ethics is a moral theory that focuses on the character and habits of the actor rather than the consequences or rules of the action. Learn about the origins, modern versions, and criticisms of virtue ethics from Plato, Aristotle, and contemporary philosophers.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.apu.apus.edu%2Farea%2Dof%2Dstudy%2Farts%2Dand%2Dhumanities%2Fresources%2Fwhat%2Dare%2Dvirtue%2Dethics%2F&rut=bb9b069fead26def217888a57df210acf19503c9abfddae32b8cc1efbd53ee9c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T20:01:20.085674"
+    },
+    {
+      "topic": "valais",
+      "title": "Valais",
+      "content": "Valais, more formally, the Canton of Valais or Wallis, is one of the 26 cantons forming the Swiss Confederation. It is composed of thirteen districts and its capital and largest city is Sion.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Valais",
+      "confidence": 0.9,
+      "learned_at": "2026-01-02T10:50:45.140315"
+    },
+    {
+      "topic": "valais",
+      "title": "Canton Of Valais Lodging - The 10 Best Hotels (2026)",
+      "content": "Always Great Deals: Search for The Best Canton of Valais Hotel Prices on Tripadvisor. Tripadvisor Always Has Low Prices on Hotels in Canton of Valais. Spend Less Here.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dtripadvisor.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DMTDIl2l6kI45TdA6gOY6EoG_Nam0MMOcI4Ho_ILqxN%252DS6jcazRw20oZPv%252DuPfXkTSvNFosSs57CudSA4IapG3i0IL6RoKF_WnWfTQDoKkUy_mvEyYvEvoKTO01Wd1UYWbMguD5rBjg27im9FT8XjbLo32SzH3t96adQLL7l0340.07gwTsLh8QjzMsSoF9o7Qw%26rut%3Dc5a689f5d7b5db5c88950001cf5326761e84c91239dd24fac011d3f968378b58%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8WfnvGoky6gTIaRvd6iuqbTVUCUwSbhvNHtQCmWWn0rJE7l1qwFvcs5Cxo0l0Tt0ZDJa0XuXo4Uiq3SB7RRybvILyzoyyGXNkQnG_YkqtudpBGehiPCTnKLfAD6Qly_htaOvioKkj6lsjHTinHfdVLTCm1NKEhczjXyuLwd2Ic1CYJkr1yWHYd_58sd2DKbxTYkT5Ued%252D7FgcfQLVvWR2esa1s9Y%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cudHJpcGFkdmlzb3IuY29tJTJmU21hcnREZWFscyUzZmdlbyUzZDE4ODA5NiUyNm0lM2QxMTAwNCUyNnN1cGNtJTNkMjk1MDA2NzgzJTI2c3VwYWclM2QxMjY1NTM3OTcwNTk2NDUzJTI2c3VwdGklM2Rrd2QtNzkwOTY2NDYwNjEwMjUlM2Fsb2MtMTkwJTI2c3VwYWklM2Q3OTA5NjMyNDk0MDM2NiUyNnN1cGR2JTNkYyUyNnN1cG50JTNkcyUyNnN1cGt3JTNkdmFsYWlzJTI2bXNjbGtpZCUzZDdmZmZhZTIxZTIyMzFmMWRjZTY4Yzc3OWYxYTY2MGIz%2526rlid%253D7fffae21e2231f1dce68c779f1a660b3%26vqd%3D4%2D77428703487705266421022749907294666341%26iurl%3D%257B1%257DIG%253DD16A6B0FE7FE4BBAB1B64AC28E8902F9%2526CID%253D20857CF3063D688D39266A2607AA6901%2526ID%253DDevEx%252C5045.1&rut=0b599a780535da7998224072b969a753c30f7e417030c582f27f22591bb466e8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:50:46.258155"
+    },
+    {
+      "topic": "valais",
+      "title": "Valais - Wikipedia",
+      "content": "Valais (UK: / \u02c8v\u00e6le\u026a / VAL-ay, US: / v\u00e6\u02c8le\u026a / val-AY; French: [val\u025b] \u24d8), [a] more formally, the Canton of Valais or Wallis, [b] is one of the 26 cantons forming the Swiss Confederation. It is composed of thirteen districts and its capital and largest city is Sion. Valais is situated in the southwestern part of the country.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FValais&rut=504b4945d6ab38f34e19fb445baa02196ec1fd54fd6ccb8bbb506ee9cdb29fc0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:50:46.258755"
+    },
+    {
+      "topic": "valais",
+      "title": "Valais - Switzerland Tourism",
+      "content": "Valais and its mountains Valais has over 40 4,000m peaks: Switzerland's most famous landmark is the Matterhorn (also known as Cervin or Horu), the highest point is the Dufourspitze at 4,634m. Whether you choose a mountain tour by car or a mountain railway ride: enjoy the fresh air and the majestic beauty of the Valais Alps.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.myswitzerland.com%2Fen%2Dus%2Fdestinations%2Fvalais%2F&rut=4528fa65b1df4d70125eab2e6b67d26d35bbe453dcac1fedb90ecf374e873dae",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:50:46.258821"
+    },
+    {
+      "topic": "valais",
+      "title": "Valais | Switzerland, Matterhorn, Skiing, Winemaking, Tourism, Facts ...",
+      "content": "Valais is a canton located in southern Switzerland. It is the country's main wine-producing region and is home to the famous Matterhorn.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fplace%2FValais&rut=54a1c3817e660e2cb9d5466e444597b19d1e5d527c44bd32a746d23008360fe1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:50:46.258873"
+    },
+    {
+      "topic": "valais",
+      "title": "Holidays, Leisure, Gastronomy, Live & Work | Valais Switzerland",
+      "content": "In the heart of the Alps, discover unique destinations, winter and summer activities, regional products, a diversified industry and universities.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.valais.ch%2Fen&rut=a198a67e03d6eec3d064ce094f27cb2de0c2361924f7e4689ab3755702ec75d7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:50:46.258917"
+    },
+    {
+      "topic": "vector space",
+      "title": "Vector space - Wikipedia",
+      "content": "A vector space is a set of elements that can be added and multiplied by scalars, satisfying certain axioms. Learn about the types, dimensions, bases and subspaces of vector spaces, and how they are used in mathematics and physics.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FVector_space&rut=bad4f931617c120bca75ecd5b8e926bd35354ee821583c824a91630d9644247b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:51:18.202500"
+    },
+    {
+      "topic": "vector space",
+      "title": "Vector Space -- from Wolfram MathWorld",
+      "content": "A vector space is a set that is closed under finite vector addition and scalar multiplication. Learn the basic conditions, examples and applications of vector spaces, and how they relate to modules and fields.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmathworld.wolfram.com%2FVectorSpace.html&rut=89d6ddfceccd2c14cf88a909c7bec121502f7c29e562c83c17d76caee501f811",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:51:18.202610"
+    },
+    {
+      "topic": "vector space",
+      "title": "Vector space | Linear Algebra, Basis & Dimension | Britannica",
+      "content": "Vector spaces are fundamental to linear algebra and appear throughout mathematics and physics. The idea of a vector space developed from the notion of ordinary two- and three-dimensional spaces as collections of vectors {u, v, w, \u2026} with an associated field of real numbers {a, b, c, \u2026}.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fvector%2Dspace&rut=6b7af4c98ed7a9f287a11db7e2112f1431d66312c2ea124f54d490d2cd749350",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:51:18.202738"
+    },
+    {
+      "topic": "vector space",
+      "title": "Vector Space - GeeksforGeeks",
+      "content": "A vector space V over a field F is a collection of vectors closed under addition and scalar multiplication. These operations obey ten specific properties (axioms) that ensure the structure is well-defined and widely applicable in various mathematical and real-world contexts, such as linear algebra, geometry, physics, and computer science. Vector Addition - An operation that takes two vectors u ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmaths%2Fvector%2Dspace%2F&rut=ca3de8a02fabed3682e081a294c5a8d144c0e2e5d1c938082dd44e83e3692255",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:51:18.202823"
+    },
+    {
+      "topic": "vector space",
+      "title": "7.1: Vector Space - Definition - Mathematics LibreTexts",
+      "content": "Definition 7 1 1: Vector Space A vector space V is a set of vectors with two operations defined, addition and scalar multiplication, which satisfy the axioms of addition and scalar multiplication.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmath.libretexts.org%2FCourses%2FDe_Anza_College%2FLinear_Algebra%253A_A_First_Course%2F07%253A_Vector_Spaces%2F7.01%253A_Vector_Space_%2D_Definition&rut=eba6d7d054a219a759c8d1cb0e9639af3bd0d0699c40d0503ab9a3fbf3def1c0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:51:18.202894"
+    },
+    {
+      "topic": "prowritingaid vs grammarly: which grammar checker is better in (2022) ?",
+      "title": "ProWritingAid - Grammar, Spelling and Style",
+      "content": "A writing coach, style editor, and grammar checker in one package. Trusted by over three million writers. Improve grammar, style, tone and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dprowritingaid.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D4n7daLvVSw5KG5V54jdyHdM2OmJ0xLkpQcvET6396P47CQJwxX8CNXePsix_vwCCnHvfWTcf_KORvdbzSIE96K%252D4Gt8u1RkrCNHyxD%252Dmoo1avQBTcocs69oPb2PLW6UiUNrizqtTWjY%252D%252D_Nggo7m3%252DctENzXYz4UOB9S1_6i4WQ.aAkae2K7Tac5f35WVsLLNQ%26rut%3D4b64bcf15805ab08e5fb793f57cca3a0c22e4aa6c8bdc0fe62fcd3494757d3e5%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8sLgXGCXeb2dHJmsTIXZxmDVUCUwQZ0brNoSLMsftPZzF1RsXJtPtmxOTa%252DSgLjMCE5hwk2P4NK5xtEHjXjE2VLKaUbbB6h47_%252D3feE3Lq9ZM6st5u2RQ9IPAayrZzpNKwidWbKpuJnBVNa6bkJfogZ%252DgGJ6Ov618RQ9yp5ANNQ8AbdBNC%252DsOxqPcXYVtHEPpKEXcVW5ZLhTjvJay9Ho%252DS4rBtwI%2526u%253DaHR0cHMlM2ElMmYlMmZwcm93cml0aW5nYWlkLmNvbSUyZmxwJTJmZGlzY292ZXIlM2Ztc2Nsa2lkJTNkNDVjMzliMjhkMWE2MWM4ZGUzNTdmMjcwY2ZhMTU2ZDglMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RCcmFuZCUyNTIwLSUyNTIwVGllciUyNTIwMSUyNnV0bV90ZXJtJTNkcHJvd3JpdGluZ2FpZCUyNnV0bV9jb250ZW50JTNkQnJhbmQlMjUyMC0lMjUyMFRpZXIlMjUyMDElMjUyMC0lMjUyMFByb1dyaXRpbmdBaWQ%2526rlid%253D45c39b28d1a61c8de357f270cfa156d8%26vqd%3D4%2D13554149795823109660065505877091150548%26iurl%3D%257B1%257DIG%253D8F1FFF97BBD34613AF1CF2C5E755CCCB%2526CID%253D394279C826106F7A2B8D6F1D27F46EF7%2526ID%253DDevEx%252C5046.1&rut=7c4127197f9b757dea34b0214b428c052cca559cd430b6569f55ff852803aef0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:35.896778"
+    },
+    {
+      "topic": "prowritingaid vs grammarly: which grammar checker is better in (2022) ?",
+      "title": "Grammar Checker for Students - Write Better & Faster",
+      "content": "QuillBot's Grammar Checker corrects mistakes and improves your writing instantly. Write confidently and effortlessly with QuillBot. Upgrade to QuillBot Premium today.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dquillbot.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DxzNN6MLtjO1zOmsYMGYWk_RSutgf%252DBOQQn4ZlbzZxHWHTrGex2p7PShGlrzic5m5RjTZeqRJq40%252DU0CN436PES4WnQS9X8AJ8yMYQjPpGgSjMCG2hOkn_z_U6S51vkfLxECsr11HD1q8GjLIbAnDF%252DdwkofUl%252DjBsttE_iGwo7o.efPraB1OeJTarSdhreMlTA%26rut%3D3a6e20afff05c3f4c41356ac924a572fea2a2ed55f00cadc7a076623e8ae8084%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8wehOC36YiTuUSrdJO_20lTVUCUwSfju_HWISm2oJkd3iFy6WkpNuDBuaXDHOQTgY1UtFdjBZE%252DWm4PN_JBniAbYBYyqPwDdT8hUCgZmXsQC5_f6dAmHfY4d3GMdp7MxXPqMf11pXcCxXIQlixgAa1xvSwXJI3iwjLmydXVqnywy4hBZOKsEbS49pMMl823_I9eJF2LTz6ettZtaWYnx4Vzh4HVw%2526u%253DaHR0cHMlM2ElMmYlMmZxdWlsbGJvdC5jb20lMmZncmFtbWFyLWNoZWNrJTNmdXRtX21lZGl1bSUzZGNwYyUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX2NhbXBhaWduJTNkRkElMjUyMC0lMjUyMFNNQSUyNTIwJTI1N0MlMjUyMFBFUkYlMjUyMC0lMjUyMFNlYXJjaCUyNTIwJTI1N0MlMjUyMFByb2R1Y3QlMjUyMC0lMjUyMEdyYW1tYXIlMjUyMCUyNTdDJTI1MjBQUkVNJTI1MjAlMjU3QyUyNTIwQ1BBJTI2dXRtX3Rlcm0lM2RhaSUyNTIwZ3JhbW1hciUyNTIwY2hlY2tlciUyNnV0bV9jb250ZW50JTNkJTI2Y2FtcGFpZ25fdHlwZSUzZHNlYXJjaC00MjgyODU5NjUlMjZjbGlja19pZCUzZDlmYmYxOTkwZTRiYzE3MTgxYWFiNzBjOGZhYmI1YWJhJTI2Y2FtcGFpZ25faWQlM2Q0MjgyODU5NjUlMjZhZGdyb3VwX2lkJTNkMTM0MjUwNTE0MTM3ODUyMyUyNmFkX2lkJTNkJTI2a2V5d29yZCUzZGFpJTI1MjBncmFtbWFyJTI1MjBjaGVja2VyJTI2cGxhY2VtZW50JTNkJTI2dGFyZ2V0JTNkJTI2bmV0d29yayUzZHMlMjZtc2Nsa2lkJTNkOWZiZjE5OTBlNGJjMTcxODFhYWI3MGM4ZmFiYjVhYmE%2526rlid%253D9fbf1990e4bc17181aab70c8fabb5aba%26vqd%3D4%2D137253809331338712778995047983532556521%26iurl%3D%257B1%257DIG%253D8F1FFF97BBD34613AF1CF2C5E755CCCB%2526CID%253D394279C826106F7A2B8D6F1D27F46EF7%2526ID%253DDevEx%252C5050.1&rut=07d85065a1ba547e4f03d0d064e4c4263be6a945120699c0059c24077d8d315d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:35.896876"
+    },
+    {
+      "topic": "prowritingaid vs grammarly: which grammar checker is better in (2022) ?",
+      "title": "ProWritingAid vs. Grammarly: Which is best? [2025] - Zapier",
+      "content": "Compare ProWritingAid and Grammarly to find out which AI grammar checker is best. Based on extensive testing, here's our ProWritingAid vs. Grammarly comparison.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fzapier.com%2Fblog%2Fprowritingaid%2Dvs%2Dgrammarly%2F&rut=f4dca511da621a8f5c6522dfa34dbba789e7b8e6ac73b6c93d833c998bd1a277",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:35.896956"
+    },
+    {
+      "topic": "prowritingaid vs grammarly: which grammar checker is better in (2022) ?",
+      "title": "ProWritingAid vs Grammarly: In-Depth Comparison for Writers",
+      "content": "Compare ProWritingAid vs Grammarly in this detailed analysis to find the best writing tool for your needs. Read the article to make an informed choice.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwritergadgets.com%2Fprowritingaid%2Dvs%2Dgrammarly%2F&rut=e985f0d9f69b14605a31a549e09c9a6fb79b099662be085bbc170ded8b0b3db3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:35.897030"
+    },
+    {
+      "topic": "prowritingaid vs grammarly: which grammar checker is better in (2022) ?",
+      "title": "ProWritingAid vs. Grammarly: Which One's Worth Paying For?",
+      "content": "We're comparing ProWritingAid vs Grammarly. See which tool actually helps you write better (and which one's best for your writing style).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fkindlepreneur.com%2Fprowritingaid%2Dvs%2Dgrammarly%2F&rut=0fa6e741b94f510c7b3bcb02331e0ae1255154e9127ab83b907509ca7c65e3b5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:35:35.897102"
+    },
+    {
+      "topic": "variance",
+      "title": "Variance",
+      "content": "In probability theory and statistics, variance is the expected value of the squared deviation from the mean of a random variable. The standard deviation is obtained as the square root of the variance. Variance is a measure of dispersion, meaning it is a measure of how far a set of numbers are spread out from their average value. It is the second central moment of a distribution, and the covariance of the random variable with itself, and it is often represented by \u2060\u2060, \u2060\u2060, \u2060\u2060, \u2060\u2060, or \u2060\u2060.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Variance",
+      "confidence": 0.9,
+      "learned_at": "2026-01-02T11:48:13.850892"
+    },
+    {
+      "topic": "variance",
+      "title": "Variance - Wikipedia",
+      "content": "Variance is a measure of how far a set of numbers is spread out from their mean. Learn how to calculate variance for discrete and continuous random variables, and see its applications in statistics and probability theory.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FVariance&rut=851b5d373489d8df5bed7a1be454ba878dc2c8d983b9069815359a163f7ad2be",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:48:14.674903"
+    },
+    {
+      "topic": "variance",
+      "title": "What Is Variance in Statistics? Definition, Formula, and Example",
+      "content": "Variance is a measurement of the spread between numbers in a data set. Investors use the variance equation to evaluate a portfolio's asset allocation.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.investopedia.com%2Fterms%2Fv%2Fvariance.asp&rut=c273027db779709d14042b334e7155d496672acca717dba646ed83542d99e453",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:48:14.674940"
+    },
+    {
+      "topic": "variance",
+      "title": "How to Calculate Variance | Calculator, Analysis & Examples",
+      "content": "Learn what variance is, how to calculate it by hand or with a calculator, and why it matters for statistical tests. Find examples, formulas, and tips for population and sample variance.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.scribbr.com%2Fstatistics%2Fvariance%2F&rut=4196541065e6654ea8a3bb95f7b3a7e4adfc83d7be614fe133eaef084b13d487",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:48:14.674968"
+    },
+    {
+      "topic": "variance",
+      "title": "Variance: Definition, Formulas & Calculations - Statistics by Jim",
+      "content": "Learn how to calculate and interpret variance, a measure of variability that assesses the average squared difference between data values and the mean. Compare the population and sample variance formulas and see examples of variance calculations.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fstatisticsbyjim.com%2Fbasics%2Fvariance%2F&rut=1f2aab4c7a0017ac905570271ed7f8bde68080d114136af583f30e73da2f5795",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:48:14.675006"
+    },
+    {
+      "topic": "variance",
+      "title": "Variance - Definition, Symbol, Formula, Properties, and Examples",
+      "content": "Learn what variance is and how to calculate it for ungrouped and grouped data. See the difference between population variance and sample variance, and the properties of variance.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmathmonks.com%2Fvariance&rut=2ea4ace092c7b368922f80305b3e6fe4766d22f8c2ee82ec81a7428bdc16ffa9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:48:14.675034"
     }
   ],
-  "last_updated": "2025-11-29T12:11:14.258645"
+  "last_updated": "2026-01-02T11:48:14.678273"
 }

@@ -62,7 +62,12 @@
     "outcome",
     "output",
     "ownership",
-    "odin"
+    "odin",
+    "out",
+    "oxidation",
+    "oncogene",
+    "obsessive",
+    "ordinary"
   ],
   "knowledge": [
     {
@@ -2591,7 +2596,628 @@
       "query": "What is Law of Diminishing Marginal Utility",
       "source": "research",
       "learned_at": "2025-11-28T21:22:27.715030"
+    },
+    {
+      "topic": "optimization algorithm",
+      "title": "Optimization Algorithm - an overview | ScienceDirect Topics",
+      "content": "An optimization algorithm is a tool used in deep learning to update model parameters and minimize the defined loss function, with the aim of improving the performance of combinatorial models by minimizing the objective function value.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencedirect.com%2Ftopics%2Fcomputer%2Dscience%2Foptimization%2Dalgorithm&rut=fead841761cd4f2c30167eb4745cc67288afe0aa8f6691540022a5e92fc582b0",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:48:40.865851"
+    },
+    {
+      "topic": "overfitting",
+      "title": "What is overfitting in machine learning? - California Learning Resource ...",
+      "content": "Overfitting is a pervasive challenge in applied machine learning, manifesting as a model's inability to generalize effectively beyond its training dataset. While achieving high accuracy on training data is a primary objective, overfitting indicates a critical failure: the model has learned the noise and specificities of the training set ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.clrn.org%2Fwhat%2Dis%2Doverfitting%2Din%2Dmachine%2Dlearning%2F&rut=ccbcc0be51c83ac1c2292bbeea4efcc6257b3243b75054b293fe00ca39b92326",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T18:49:43.958900"
+    },
+    {
+      "topic": "internet of things",
+      "title": "Microsoft Azure Official Site - Internet of Things Technology",
+      "content": "Connect, Monitor, and Manage Billions Of IoT Assets With Microsoft Azure. Start Putting Your Ideas Into Action With Our Products and Services.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dmicrosoft.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Dqt_1t0zE0iXDd2fG1Dzgw8391pKZMtKjwmfZhymSs7DtyB9bODTlud_Cav6bK7GKuju6pJpp7E3TBodXpruAqpUB4_mEOhIOaHgEI%252DVPt2N_jw5JvY75zvNYsBXx0SDvbRZlNAoH7ecKqrbscX3TTlXnXUZFVFwIGo6SeGslhgM.50okhOztxvRcZfNe0BupgQ%26rut%3D3cdf2c854e13aa01851189323649c78e3d6d7e65041ef03152702e6425240ede%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8G15qDqLzPVwQZIqF4nKudTVUCUzcisFaA5Dile3nEZTNWH39KaVPLnlXcXGgs82kBVxZ_U5z9ls7L0shKIFArthomlscSw6TqdAVASZrdtTCSDp1mE6tzIGRnitzDbRlcl31izUBtTpVJBd70JyDIrgEm7XVjQ6_k9jkLgBFA0YPHiY7KnX%252D5ufTtS1Lvv_seFZ30X0mX959adZKePaeT6eAGZU%2526u%253DaHR0cHMlM2ElMmYlMmY1MzUwLnhnNGtlbi5jb20lMmZ0cmslMmZ2MSUzZnByb2YlM2Q0MzklMjZjYW1wJTNkMTY4ODA2JTI2a2N0JTNkbXNuJTI2a2NoaWQlM2QxNTkwMDE5MjElMjZjcml0ZXJpYWlkJTNka3dkLTc5MTY1NDQzNTI4NTE3JTNhbG9jLTE5MCUyNmNhbXBhaWduaWQlM2Q1OTAyMzczNTclMjZsb2NwaHklM2Q4NjQ0OCUyNmFkZ3JvdXBpZCUzZDEyNjY2MzkwNDc1NjAyNzglMjZjaWQlM2Q3OTE2NTA0NTM1MTU1MCUyNmtkdiUzZGMlMjZrZXh0JTNkJTI2a3BnJTNkJTI2a3BpZCUzZCUyNnF1ZXJ5U3RyJTNkaW50ZXJuZXQlMjUyMG9mJTI1MjB0aGluZ3MlMjZ1cmwlM2RodHRwcyUzYSUyZiUyZmF6dXJlLm1pY3Jvc29mdC5jb20lMmZlbi11cyUyZnByb2R1Y3RzJTJmaW90LWh1YiUyZiUzZmVmX2lkJTNkX2tfNGUwMWQxMTg3NTMwMTllOWY0NjhiODRkODI1MGU2ZmZfa18lMjZPQ0lEJTNkQUlEY21tNWVkc3dkdXVfU0VNX19rXzRlMDFkMTE4NzUzMDE5ZTlmNDY4Yjg0ZDgyNTBlNmZmX2tfJTI2bXNjbGtpZCUzZDRlMDFkMTE4NzUzMDE5ZTlmNDY4Yjg0ZDgyNTBlNmZm%2526rlid%253D4e01d118753019e9f468b84d8250e6ff%26vqd%3D4%2D145811992932454602144660053809112065704%26iurl%3D%257B1%257DIG%253D4437A7ACC1CA48B78E257DED62DA79D6%2526CID%253D22C2BE4057DC6D7B2DCAA89456906C37%2526ID%253DDevEx%252C5045.1&rut=83b196d508db650fa83882b3a1d67821457784f6ceb786ac216fc7aef511e6dc",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:26:08.971968"
+    },
+    {
+      "topic": "internet of things",
+      "title": "Windows 10 IoT Enterprise - Kontron IoT Licensing",
+      "content": "More information for your business IT solutions at Kontron! Gain a trusted Windows IoT partner get support even after license delivery with Kontron.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dkontron%252Damericas.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DGZnLd6lrT8ihsBHmOzOWxYkqmr1%252D_LVeiAfezqzaYsDQUkrdZel0ydCKtsvYwKFpGgcgL9ItKwbcqKl7FXVANwvCOijyohpBHtTEsThDbqprz1kx5yDa424f6F2GJtedTsCMFDQifRt9apmnAsddLoFp1bP5ZiR8bzEawg6g_xI.vDvdI0KG5LA42fyw_5nP9A%26rut%3D6b04e39c3dd0afe2082c3357a3b1e363ea5bb53d22744779fd76bd2b14a2e81a%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De87MANA5evKfgtd88SbkTE%252DTVUCUy_Ie_Di0xFQmxfxxydzeVhIK7zpWY6%252DARKlaggWg3oMD0lvfsnIEyU4f9JwuOuyNP9kiVW30sSB0sndus8TONdlD7_8WyE44jEXGV97Uv77gCqtyB8jvECwsHoDk7pBqcnjX3Q6RsgUYADMxayB6Wh7xqMdLnkCGBaTxqs8G1qXknYMnD427H0577mrznWFuU%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cua29udHJvbi1hbWVyaWNhcy5jb20lMmZ3aW5kb3dzLWlvdC1saWNlbnNpbmclMmYlM2Z1dG1fdGVybSUzZGlvdCUyNTIwcGxhdGZvcm0lMjZ1dG1fY2FtcGFpZ24lM2RJSW9UJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkcHBjJTI2aHNhX2FjYyUzZDExNTcyNDQ4MDclMjZoc2FfY2FtJTNkMTY0NTY3NzI4NjclMjZoc2FfZ3JwJTNkMTMxNjExNzgwMTM2NjI1OSUyNmhzYV9hZCUzZCUyNmhzYV9zcmMlM2RzJTI2aHNhX3RndCUzZGt3ZC04MjI1ODQ2NTk5MzgzMCUzYWxvYy0xOTAlMjZoc2Ffa3clM2Rpb3QlMjUyMHBsYXRmb3JtJTI2aHNhX210JTNkcCUyNmhzYV9uZXQlM2RhZHdvcmRzJTI2aHNhX3ZlciUzZDMlMjZtc2Nsa2lkJTNkZWU2MTE5Mjk5YjU0MTJmZTYyNDY3MDdjNmMzNDEyYTYlMjZ1dG1fY29udGVudCUzZEVudGVycHJpc2UlMjUyMElvVCUyNTIwU29sdXRpb25z%2526rlid%253Dee6119299b5412fe6246707c6c3412a6%26vqd%3D4%2D31160831227277007227097833737581898930%26iurl%3D%257B1%257DIG%253D4437A7ACC1CA48B78E257DED62DA79D6%2526CID%253D22C2BE4057DC6D7B2DCAA89456906C37%2526ID%253DDevEx%252C5049.1&rut=6f1b8574b02fab22dde6f9398dcc4e231adde242be4e80d2093ae6d296b43c88",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:26:08.972051"
+    },
+    {
+      "topic": "internet of things",
+      "title": "What Is the Internet of Things (IoT)? With Examples - Coursera",
+      "content": "Learn what IoT is, how it works, and why it's important. Explore IoT devices, applications, and platforms with Coursera courses and programs.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.coursera.org%2Farticles%2Finternet%2Dof%2Dthings&rut=131161476cf13a6ff84332ddc738f41078d193f51b25d630e96657952eb24c71",
+      "confidence": 0.7,
+      "learned_at": "2025-12-31T20:26:08.972245"
+    },
+    {
+      "topic": "nasa will soon find out if the perseverance rover can really persevere on mars",
+      "title": "NASA will soon find out if the Perseverance rover can really persevere ...",
+      "content": "Long wait NASA will soon find out if the Perseverance rover can really persevere on Mars Engineers at JPL are certifying the Perseverance rover to drive up to 100 kilometers.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Farstechnica.com%2Fspace%2F2025%2F12%2Fnasa%2Dwill%2Dsoon%2Dfind%2Dout%2Dif%2Dthe%2Dperseverance%2Drover%2Dcan%2Dreally%2Dpersevere%2Don%2Dmars%2F&rut=f7d04313fec74bf202d1d65e30b8eb80e92cbbc6ced79f5fbeb6e63bf150167f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:26:33.177908"
+    },
+    {
+      "topic": "nasa will soon find out if the perseverance rover can really persevere on mars",
+      "title": "NASA will soon learn if Perseverance can keep going on Mars - MSN",
+      "content": "NASA is about to lock in a verdict on how long its Perseverance rover can keep working on Mars, and the answer will shape the next decade of planetary exploration. Engineers have spent the past ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.msn.com%2Fen%2Dus%2Fnews%2Ftechnology%2Fnasa%2Dwill%2Dsoon%2Dlearn%2Dif%2Dperseverance%2Dcan%2Dkeep%2Dgoing%2Don%2Dmars%2Far%2DAA1SMlGX&rut=0c6d805c810eaab8527c4da796cfdc592c3d433541d41210f1b95bf7f7ec5b76",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:26:33.177968"
+    },
+    {
+      "topic": "nasa will soon find out if the perseverance rover can really persevere on mars",
+      "title": "Perseverance continues science mission amid uncertainty about Mars ...",
+      "content": "NASA's Perseverance Mars rover is continuing its mission to collect samples despite uncertainty about when or if those samples will be returned to Earth.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fspacenews.com%2Fperseverance%2Dcontinues%2Dscience%2Dmission%2Damid%2Duncertainty%2Dabout%2Dmars%2Dsample%2Dreturn%2F&rut=72722df1d0f3148246003da734a330cfc046d816cab19f7a6ddc443791c76d6f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:26:33.178010"
+    },
+    {
+      "topic": "nasa will soon find out if the perseverance rover can really persevere on mars",
+      "title": "NASA predicts how far Perseverance rover can drive on Mars - Earth.com",
+      "content": "Built to last, NASA's Perseverance rover continues its long journey across Mars, collecting samples and revealing the planet's deep past.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.earth.com%2Fnews%2Fnasa%2Dpredicts%2Dhow%2Dmany%2Dmore%2Dmiles%2Dperseverance%2Drover%2Dcan%2Ddrive%2Don%2Dmars%2F&rut=ac8664510bfee79fd3d84e8d239d78f755ba7dede5664c0aa603ca5966903939",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:26:33.178051"
+    },
+    {
+      "topic": "nasa will soon find out if the perseverance rover can really persevere on mars",
+      "title": "Mars Sample Return: Perseverance Mission Continues",
+      "content": "Mars Sample Return; Perseverance continues collecting samples despite MSR program uncertainty, targeting ancient crater rim rocks with extended 100km driving capability. NASA's Perseverance rover continues its critical science mission despite uncertain timeline. Mars Sample Return remains the ultimate objective for collected geological treasures. Rover remains in excellent condition ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fnasaspacenews.com%2F2025%2F12%2Fmars%2Dsample%2Dreturn%2F&rut=128dac53c9d6902d64064c272def2b34ea0cbcc5cc5f49edc65d55611e284706",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:26:33.178103"
+    },
+    {
+      "topic": "oxidation reduction",
+      "title": "Oxidation Lesson - Learn Oxidation & Reduction",
+      "content": "Find the Right Materials You Need to Succeed in School and on the Course at Study.com! Prepare for Oxidation & Reduction with Our Online Program.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstudy.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DEHAIKvj8RdiP3nZnjJsFsgbmJ0CF2X5vgtRCWeajL3QNaCQxTNtnhaYB3qXz95m2gdtkT4SRW54pn%252DS7pNHn__MxUA_8utIUkdTavYi_c0dtmGT4kZ4JR9nJG2xElEMpGocndbEkw1VS1BvboYGarj23Hr4lpjRSmrncdSfPc4Q.3d5%252DZa8TUd1Ae61V9RlWaQ%26rut%3Df01ac3d0e3350314aa0207f3c939198cd0bb22d5fa723a8e11989a00b27a2ef2%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8rLtcjMiVqOm7%252DlZPB%252DU9XjVUCUxvxSDYeYVo26ERsFfcjJpRpwtrCiMjMEEZexK4wRcemAC_CfDgyNWDn05EKkvfl2VfMlnR6FZlQThMWc7MWut%252DlFkzIVA8DK3n15Q27kpDJJtS2YD770X7scn8HWLVJ3Y7OPUtJgN_36NffI2R_hDQIhvwpJRaAyzcpeLmAtjo3CvOkowClwMyy3DNSme1YnQ%2526u%253DaHR0cHMlM2ElMmYlMmZzdHVkeS5jb20lMmZidXklMmZsZWFybiUyZmxlc3NvbiUyZm94aWRhdGlvbi1yZWR1Y3Rpb24tZWZmZWN0cy1mdW5jdGlvbi5odG1sJTNmc3JjJTNkcHBjX2Jpbmdfbm9uYnJhbmQlMjZyY250eHQlM2Rhd3MlMjZjcnQlM2QlMjZrd2QlM2RTRU8tUFBDLUJVWSUyNmt3aWQlM2RkYXQtMjMyOTA0MDUwNTg4Njk0MCUzYWxvYy0xOTAlMjZhZ2lkJTNkMTIzNTg1MTMwMjU5Njc0NiUyNm10JTNkYiUyNmRldmljZSUzZGMlMjZuZXR3b3JrJTNkcyUyNl9jYW1wYWlnbiUzZFNlb1BQQyUyNm1zY2xraWQlM2QxMTFiNGZmNGFiNzYxODk1OGM5MTI2YTIxYmE4Y2QxMw%2526rlid%253D111b4ff4ab7618958c9126a21ba8cd13%26vqd%3D4%2D40141156132775989306254607978072149284%26iurl%3D%257B1%257DIG%253D282BE97FBA39416E8BE24AEB0893FF1D%2526CID%253D0B6AC5DA2073612D2393D30E21E460F4%2526ID%253DDevEx%252C5045.1&rut=87625144b9a14c356cf81222569a37d9c4930a2f6764f7d14856fa6bef5759dc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:37:35.402937"
+    },
+    {
+      "topic": "oxidation reduction",
+      "title": "Oxidation-reduction reaction | Definition, Examples, & Facts | Britannica",
+      "content": "Oxidation-reduction reaction, any chemical reaction in which the oxidation number of a participating chemical species changes. Many such reactions are as common and familiar as fire, the rusting and dissolution of metals, the browning of fruit, and respiration and photosynthesis\u2014basic life functions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Foxidation%2Dreduction%2Dreaction&rut=35ae687ca333e8a4e8400b3a100e6079f2aa3cefee03af22d9981affd459d65f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:37:35.403043"
+    },
+    {
+      "topic": "oxidation reduction",
+      "title": "Oxidation-Reduction Reactions - Chemistry LibreTexts",
+      "content": "An oxidation-reduction (redox) reaction is a type of chemical reaction that involves a transfer of electrons between two species. An oxidation-reduction reaction is any chemical reaction in which the oxidation number of a molecule, atom, or ion changes by gaining or losing an electron. Redox reactions are common and vital to some of the basic functions of life, including photosynthesis ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fchem.libretexts.org%2FBookshelves%2FAnalytical_Chemistry%2FSupplemental_Modules_(Analytical_Chemistry)%2FElectrochemistry%2FRedox_Chemistry%2FOxidation%2DReduction_Reactions&rut=d34b33d072174c5c75ab685f8e14fbe515718545d27dedc5e93f55dae13fc8be",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:37:35.403118"
+    },
+    {
+      "topic": "oxidation reduction",
+      "title": "Redox - Wikipedia",
+      "content": "Redox is a type of chemical reaction in which the oxidation states of the reactants change. Learn the meaning of oxidation, reduction, oxidant, reductant, and related terms, and see examples of redox reactions with electron transfer and atom transfer.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRedox&rut=2cdd03a51ad727c7e62e16b3db64249f1e3ca227ef41eecd9a13ce30cc02774a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:37:35.403191"
+    },
+    {
+      "topic": "oxidation reduction",
+      "title": "Oxidation-reduction (redox) reactions (article) | Khan Academy",
+      "content": "An oxidation-reduction or redox reaction is a reaction that involves the transfer of electrons between chemical species (the atoms, ions, or molecules involved in the reaction). Redox reactions are all around us: the burning of fuels, the corrosion of metals, and even the processes of photosynthesis and cellular respiration involve oxidation and reduction. Some examples of common redox ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.khanacademy.org%2Fscience%2Fap%2Dchemistry%2Dbeta%2Fx2eef969c74e0d802%3Achemical%2Dreactions%2Fx2eef969c74e0d802%3Aoxidation%2Dreduction%2Dredox%2Dreactions%2Fa%2Foxidation%2Dnumber&rut=597dfa654c6cb30a593fc10e70c46679be01b45a82748c55d57835e83b6aa43a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:37:35.403264"
+    },
+    {
+      "topic": "organic chemistry",
+      "title": "Organic Chemistry College - Sciences Continuing Education",
+      "content": "UC San Diego - Therapeutic Discovery and Development. Sciences Programs & Certificates. Earn transferrable credits and boost your career at UC San Diego.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Ducsd.edu%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DRW7FsdkSumddxNyDma5Umd%252DsSvWPrSp5tjjCmGLzEjjsWPc95CLnhYYIiLlGuhBRWp4lGtk_A7pAC3cRjJMHfmc_UPJ5x9vioJOFIHomuq_cYmpY%252DfrqhvJ%252D3x_U9zlQa1RYlGEVKxxBFOLqjrUbmB%252Dqdun6V9heYDj6hDqk%252DCw.9buH1fdLys4feYYgKagzYQ%26rut%3D7a5595994b8d20e9f202c5d45e7def6586ec81ac377f22b1cc5e602eaa937b3a%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8uDb8ZQLAWCA5QB_AN67QnzVUCUw5mfI21QeYiRxj_dehUIGsRcPmkkYBW0sIvhcdF1imwJobNSyjlYAw9KzHnvtk1AmUAILq9WVAqAAHD3NlEy1UqVF9TngW1PpX6x4m2oKBU5d%252D_VzedBCkDWdtq%252D4ptrC1ZLL8npWMFebhq29TlDjfuKmH5ISUPMxTtyYJLInxO_8aCfKnVKA1EbPpNuflxxU%2526u%253DaHR0cHMlM2ElMmYlMmZleHRlbmRlZHN0dWRpZXMudWNzZC5lZHUlMmZjb3Vyc2VzLWNlcnRpZmljYXRlcyUyZnNjaWVuY2VzJTNmbXNjbGtpZCUzZDk4MDg3ODZiMzc4NTE1MjYwZGQyMTEzZDg2ZDg2NzBlJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkU0NTJTI1MjAtJTI1MjBBTEwlMjUyMFNjaWVuY2VzJTI1MjBOZWlnaGJvcmhvb2QlMjZ1dG1fdGVybSUzZG9yZ2FuaWMlMjUyMGNoZW1pc3RyeSUyNTIwY29sbGVnZSUyNnV0bV9jb250ZW50JTNkQWxsJTI1MjBTY2llbmNlcyUyNTIwTmVpZ2hib3Job29kJTI1MjBBZCUyNTIwR3JvdXA%2526rlid%253D9808786b378515260dd2113d86d8670e%26vqd%3D4%2D277511133275122877158587945170414603910%26iurl%3D%257B1%257DIG%253D428E0AF16AEB4EC59D453183DFD3B5AD%2526CID%253D0ECF2E6E933C660A2D0338BA92E96762%2526ID%253DDevEx%252C5045.1&rut=551278494bf79c35acfcd9a6874ac53fcf70add26572c7fd6ae992eb383abcd6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:39:42.282180"
+    },
+    {
+      "topic": "organic chemistry",
+      "title": "Shop beginner organic chemistry - Amazon.com Official Site",
+      "content": "Find deals and low prices on beginner organic chemistry at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DoEkq9yI5MONeIJ1g6ahYb7Em_V6FrIvnI2K1Jd8NYV7LIzllssG%252DbKK36bOo3lBQ9kkn4GDE_9YPJ9sesY7ttc97iJT88Os3vsBwTjuMXaJEQ1albE7dxs6uW7C1MQWwKbJKduZ8HxEtNRouLsl4Zv%252DRNvxUKQYFqIDCpghVXRs.Cwfp6QAToeqdoV5OB3iPdw%26rut%3De9fb40ac08f15b965c762226d3a3cd26f8c05781248319299501877fc1a59520%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8e_NN7ZK%252D3ui2ELY9Y0KYCTVUCUyunze37ShITty3woAlCp7LrO85zOsGJYzDKCld3qG7bR2iX%252DYOrpU_RJl3tMG_nlNvaTmLE85yI6FZIgMSclM3lvEZ7E4aTzLeSD9MPkwPMGBo%252DSKkA3phO_NgNDW8ofO7cVtFeQWNj7ivMWmSS3FANS9ZYRFsczKvPqBN%252D6hwoiggYcgnMOABMEMXRRrS2II%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJlZ2lubmVyJTJib3JnYW5pYyUyYmNoZW1pc3RyeSUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzZsOHdpMXpieHVfcCUyNmFkZ3JwaWQlM2QxMjMyNTUzNTQwNjQ5NzgzJTI2aHZhZGlkJTNkNzcwMzQ3MjcxMjY4MDYlMjZodm5ldHclM2RzJTI2aHZxbXQlM2RwJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjQ0OCUyNmh2dGFyZ2lkJTNka3dkLTc3MDM0ODU5NzgzNTM0JTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QyNzI0Nl8xNDYzNzk3MyUyNm1jaWQlM2QwNDQ4OGEwNWE4ZmEzNDllYTQxMjFlOTVlMDU0ODNiNiUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkZTdkMjc4OGUwM2Y1MTQxNzQyZjQxMWQ4YjJhODAxOTg%2526rlid%253De7d2788e03f5141742f411d8b2a80198%26vqd%3D4%2D272391040658554256029348605343572331516%26iurl%3D%257B1%257DIG%253D428E0AF16AEB4EC59D453183DFD3B5AD%2526CID%253D0ECF2E6E933C660A2D0338BA92E96762%2526ID%253DDevEx%252C5049.1&rut=1f497b81bcb81963e7a86efbc218bdb81e8d079badfacbd6ce5fdd254a3f0d6a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:39:42.282240"
+    },
+    {
+      "topic": "organic chemistry",
+      "title": "Organic chemistry - Wikipedia",
+      "content": "Learn about the scientific study of organic compounds and materials, their structure, properties, reactions, and applications. Explore the history, branches, and educational aspects of organic chemistry, from vitalism to synthesis.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FOrganic_chemistry&rut=60bcae51358320fc8e5318bfb7d022c85ad978088bb36ec668a5fc374f3cb168",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:39:42.282281"
+    },
+    {
+      "topic": "organic chemistry",
+      "title": "Organic chemistry | Science | Khan Academy",
+      "content": "Sal and Jay cover topics covered in college organic chemistry course. Basic understanding of basic high school or college chemistry assumed (although there is some review).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.khanacademy.org%2Fscience%2Forganic%2Dchemistry&rut=f86ec5134e02d4ea9f062724d1ca77ce2ba8714e83f4412ad3e257c5d402ff04",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:39:42.282317"
+    },
+    {
+      "topic": "organic chemistry",
+      "title": "Master Organic Chemistry - An Online Organic Chemistry Resource",
+      "content": "400+ free articles on undergraduate organic chemistry topics plus free (and paid) study guides, a reaction encyclopedia, practice problems, tutoring & more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.masterorganicchemistry.com%2F&rut=a93c4d5e1789af0be23fe1f2df3600da2369b831cfd0a64831051f9ac038806e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:39:42.282368"
+    },
+    {
+      "topic": "2025 deployment of federal forces in the united states",
+      "title": "2025 deployment of federal forces in the United States",
+      "content": "In 2025, during Donald Trump 's second presidency, federal government forces, primarily National Guard troops, have been deployed in select U.S. cities. Trump has given multiple explanations for the deployments, saying they are officially part of crackdowns on protests, civil unrest, crime, homelessness, and illegal immigration.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2F2025_deployment_of_federal_forces_in_the_United_States&rut=1bfbdb420d06883f16050980243c287e1fe42f07ba88d31926a7bd65caf76499",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:05.976161"
+    },
+    {
+      "topic": "2025 deployment of federal forces in the united states",
+      "title": "Tracking Domestic Deployments of the U.S. Military | Lawfare",
+      "content": "The map visualization displays identified federal domestic deployments for 2025. It displays locations, troop deployment size, and deployment legal authority. Hovering over a specific deployment provides additional information about each deployment, such as a description of its mission.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.lawfaremedia.org%2Fprojects%2Dseries%2Ftrials%2Dof%2Dthe%2Dtrump%2Dadministration%2Ftracking%2Ddomestic%2Ddeployments%2Dof%2Dthe%2Du.s.%2Dmilitary&rut=bf0afbadeb62b2a88e348b7eb0ca7ef7242832a2ca1a9cc9006bf9f327ec1824",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:05.976211"
+    },
+    {
+      "topic": "2025 deployment of federal forces in the united states",
+      "title": "How and Where the National Guard Has Deployed to U.S. Cities",
+      "content": "In that hybrid designation, Guard troops remain under their governor's command, but the deployment receives federal funding and comes at the request of the president or secretary of defense.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nytimes.com%2Finteractive%2F2025%2F10%2F27%2Fus%2Fus%2Dnational%2Dguard%2Ddeployments.html&rut=7313a7033c834259b0d31131b4ac1b4aefb892a7d3c98e4baa4cc448e98331a4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:05.976247"
+    },
+    {
+      "topic": "2025 deployment of federal forces in the united states",
+      "title": "Trump says he's withdrawing National Guard from Chicago, Los ... - CNN",
+      "content": "President Donald Trump announced Wednesday that he's withdrawing the National Guard from Chicago, Los Angeles and Portland but left the door open to sending federal forces \"in a much different ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cnn.com%2F2025%2F12%2F31%2Fpolitics%2Ftrump%2Dnational%2Dgaurd%2Dwithdrawl%2Dchicago%2Dlos%2Dangeles%2Dportland&rut=826bcfca4e52d37499bfb59683d1d980adf907bd875af5036e8524fd0fb9eb1a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:05.976290"
+    },
+    {
+      "topic": "2025 deployment of federal forces in the united states",
+      "title": "Pentagon Readies Rapid Deployment Force for U.S. Cities",
+      "content": "The first U.S. National Guard troops have deployed to Washington, D.C., a day after President Trump announced a federal takeover of the D.C. police force. Federal officials say some 800 National ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.democracynow.org%2F2025%2F8%2F13%2Fheadlines%2Fpentagon_readies_rapid_deployment_force_for_us_cities&rut=76e1074baa8c74ea64dae664fec8ad97560cde860223e107fefd9b0004379950",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T09:47:05.976335"
+    },
+    {
+      "topic": "oncogene",
+      "title": "Oncogene",
+      "content": "An oncogene is a gene that has the potential to cause cancer. In tumor cells, these genes are often mutated, or expressed at high levels.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Oncogene",
+      "confidence": 0.9,
+      "learned_at": "2026-01-01T10:18:40.032327"
+    },
+    {
+      "topic": "oncogene",
+      "title": "Oncogene - Nature",
+      "content": "Oncogene aims to make substantial advances in our knowledge of processes that contribute to cancer by publishing outstanding research. Oncogene propagates ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nature.com%2Fonc%2F&rut=304d8efad577c817f4e3d5e2e382a05b098283558c275c8f63f8dcce9cb24fbf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:18:40.995454"
+    },
+    {
+      "topic": "oncogene",
+      "title": "Oncogene - Wikipedia",
+      "content": "Proto-oncogene A proto-oncogene is a normal gene that could become an oncogene due to mutations or increased expression. Proto-oncogenes code for proteins that help to regulate the cell growth and differentiation. Proto-oncogenes are often involved in signal transduction and execution of mitogenic signals, usually through their protein products.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FOncogene&rut=885fe33ab97484664801a79b427e37348d005709b32d2c6c41c5066fdaaf0a8f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:18:40.995498"
+    },
+    {
+      "topic": "oncogene",
+      "title": "Oncogene | Description, Discovery, Proto-oncogene, Cancer, & Facts ...",
+      "content": "oncogene, genetic material that carries the ability to induce cancer. An oncogene is a sequence of deoxyribonucleic acid (DNA) that has been altered or mutated from its original form, the proto-oncogene. Operating as a positive growth regulator, the proto-oncogene is involved in promoting the differentiation and proliferation of normal cells.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Foncogene&rut=2b18a73ad7790229f8bcb162512562bdbcf00993bff0bc637291dc1865fa16f5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:18:40.995533"
+    },
+    {
+      "topic": "oncogene",
+      "title": "Oncogene - National Human Genome Research Institute",
+      "content": "Oncogene. The name of oncogene suggests it is a gene that can cause cancer. Initially, oncogenes were identified in viruses, which could cause cancers in animals. Later, it was found that oncogenes can be mutated copies of certain normal cellular genes also called proto-oncogenes. Intact proto-oncogenes play important functions, regulating normal cellular growth, division, and apoptosis, which ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.genome.gov%2Fgenetics%2Dglossary%2FOncogene&rut=7aa560524d1fb2197729f2798eabe618f31043aafa9bff20f424a91761c0cac7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:18:40.995569"
+    },
+    {
+      "topic": "oncogene",
+      "title": "Oncogene: What They Are & What They Do - Cleveland Clinic",
+      "content": "Oncogenes are mutated forms of genes that control cell growth and division. They cause cancer by sending abnormal signals to cells and can be targeted by specific drugs. Learn more about oncogenes and their role in cancer.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmy.clevelandclinic.org%2Fhealth%2Fbody%2F24949%2Doncogenes&rut=ccf5116a9a8f637832dd4cc48534edb77765c0abef793c9986fa2a673d9e86b1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T10:18:40.995600"
+    },
+    {
+      "topic": "obsessive compulsive disorder",
+      "title": "Shop medicine for ocd - Amazon.com Official Site",
+      "content": "Get deals and low prices on medicine for ocd in Health & Personal Care on Amazon. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DH9pmlVrY554UnZ2gGAnY17ez5Zn7e4GsS5YTCLPLEEYKTLDrNRtSAdxTqI2EnWgZ65bAvLq8akTk6Ff4P_8y0vNg563LOKDoiDtlQek8x_ACPu_xjUaFpUxWTN81xefLyYvEvNg%252Dz00u0kErdGUVgND6QdIUf_6r_hj1gvQY4NU.OAam58zembqxwAtXz6jANA%26rut%3D03a8e04b99c40da1b79c92d5eb6b8940074e84f5512be92b9352cb2988f292df%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8qXniVAc7kehO8oXTJ0iOzjVUCUzOWANO1KIIiZ0HrYqGSLxNKg9j0c5HwD7UBXdLYKiJVfwa1dd0RZAA31UR%252DeWB2Q3%252D5HVQ3YRRe7SYV8gp6Cv2dawITNsyZLrQZpodNgwHIipu6Fal9jFV%252DEVtWLGSV5VMKwfv40lSf7SLISO5OQlNWIuDZfvN7jOKJ0nFDqQ9NQeskhF893QYofmiwCyP0LE%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZG1lZGljaW5lJTJiZm9yJTJib2NkJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfMTE2dWozcHZjbF9wJTI2YWRncnBpZCUzZDEyNDEzNDk2NTg3NzIyNzElMjZodmFkaWQlM2Q3NzU4NDQ4NTYyOTQ4MiUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2Njk4JTI2aHZ0YXJnaWQlM2Rrd2QtNzc1ODQ2NDE1NTYyMjAlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDE1NTEwXzEzNjMzMDA3JTI2bWNpZCUzZDQ0YjY3YjA5ZDY2NjM0M2M4ODFlMmNhMzYyM2YyMDVlJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2QyODcwNTE1MzU4NzUxNDk2YjM4ZjM4MDQ2N2ViZjM0Nw%2526rlid%253D2870515358751496b38f380467ebf347%26vqd%3D4%2D134997233792103485917757686521124161489%26iurl%3D%257B1%257DIG%253D0FEC36E457244D8FB5EF4253A533B6E0%2526CID%253D1473A6F0A4486A040A78B025A5AC6B75%2526ID%253DDevEx%252C5046.1&rut=a5904fcb782131dde9732091366db16216eb370a8505c7c5ad5e1e54be2bd856",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:46:39.419353"
+    },
+    {
+      "topic": "obsessive compulsive disorder",
+      "title": "Obsessive-compulsive disorder (OCD) - Symptoms and causes",
+      "content": "Overview Obsessive-compulsive disorder (OCD) features a pattern of unwanted thoughts and fears known as obsessions. These obsessions lead you to do repetitive behaviors, also called compulsions. These obsessions and compulsions get in the way of daily activities and cause a lot of distress.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mayoclinic.org%2Fdiseases%2Dconditions%2Fobsessive%2Dcompulsive%2Ddisorder%2Fsymptoms%2Dcauses%2Fsyc%2D20354432&rut=6a55d26f47baf2d56305ff9379669a6f72a3d73ec3ee637c104bb645f47e51f9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:46:39.419446"
+    },
+    {
+      "topic": "obsessive compulsive disorder",
+      "title": "Obsessive-compulsive disorder - Wikipedia",
+      "content": "Obsessive-compulsive disorder (OCD) is a mental disorder in which an individual has intrusive thoughts (an obsession) and feels the need to perform certain behaviors (compulsions) repeatedly to relieve the distress caused by the obsession, to the extent where it impairs general function. [1][2][7]",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FObsessive%25E2%2580%2593compulsive_disorder&rut=1111e9b683eac3e266ede8bf60c0db1770c2e6bba6c8d74ca2cec1e64576972b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:46:39.419529"
+    },
+    {
+      "topic": "obsessive compulsive disorder",
+      "title": "Obsessive-Compulsive Disorder (OCD): Signs and Treatment",
+      "content": "Learn about obsessive-compulsive disorder (OCD), a mental illness that causes unwanted thoughts or urges and repetitive behaviors. Find out how OCD is diagnosed, what treatments are available, and what complications it can cause.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.webmd.com%2Fmental%2Dhealth%2Fobsessive%2Dcompulsive%2Ddisorder&rut=eefcd37f2e60307baded9cac2fb42fb325cdb650a841d8acdb370ede128d2023",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:46:39.419602"
+    },
+    {
+      "topic": "obsessive compulsive disorder",
+      "title": "Obsessive-Compulsive Disorder (OCD) - National Institute of Mental ...",
+      "content": "Learn about NIMH research on obsessive-compulsive disorder (OCD). Find resources on the signs and symptoms of OCD and potential treatments and therapies.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nimh.nih.gov%2Fhealth%2Ftopics%2Fobsessive%2Dcompulsive%2Ddisorder%2Docd&rut=941c6055df2ebe7040bbb65b85024b142c22850283c765a5ed3c253d5b3837e9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:46:39.419671"
+    },
+    {
+      "topic": "philosophy of mind",
+      "title": "Philosophy of Mind - Philosophy of Mind",
+      "content": "Prepare for Your Philosophy of Mind with Our Selection of Courses! Find the Right Course to Suit Your Needs and Budget. Start Today at Study.com!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstudy.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DHDbst4oTPlp9WCzxQEbzcvD0tRgjo183ss8Kq20McnqWbz5YV0rkgEgBp4orB9xJPF89CzTeRaTO1RyA6lPIEuRV7JLQY2mTEeukW8HaTAeQmSj7yzqJMRO5asqrF6T5EYTtse4HxO8Em3dvKA9FkagntEowYho_3l%252D%252DhkiOLrc.yXjhfwqt%252DA05iGJbUk8V7A%26rut%3Df46188b182c4a0f18ca4ed9a085d01a09c480e35c6a836852d4daf4a2d88dc1f%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8tFA%252DP2x0PaFG6uQd3yBpPjVUCUx5yEL3j3pbPFHIfkSgnjS%252DJTHyxoPLhEVC0TUKhYa8ojOpYYCIcQIZpRPevCnACIj0KuGgmHMlcCqPoKHGetJU0CNjdpU2ztA43S5Po9tEpv9agdNj56AdUWDiS7H6ilbbEQTD3WWLXTcjUGOM8BGwi78yTXf62_FLbqCSp7mekNDg0GkXBns2EG6JZxOS5Cg%2526u%253DaHR0cHMlM2ElMmYlMmZzdHVkeS5jb20lMmZidXklMmZhY2FkZW15JTJmbGVzc29uJTJmcGhpbG9zb3BoeS1taW5kLW92ZXJ2aWV3LWNvbmNlcHRzLWV4YW1wbGVzLmh0bWwlM2ZzcmMlM2RwcGNfYmluZ19ub25icmFuZCUyNnJjbnR4dCUzZGF3cyUyNmNydCUzZCUyNmt3ZCUzZFNFTy1QUEMtQlVZJTI2a3dpZCUzZGRhdC0yMzI5MDQwNTA1ODg2OTQwJTNhbG9jLTE5MCUyNmFnaWQlM2QxMjM1ODUxMzAyNTk2NzQ2JTI2bXQlM2RiJTI2ZGV2aWNlJTNkYyUyNm5ldHdvcmslM2RzJTI2X2NhbXBhaWduJTNkU2VvUFBDJTI2bXNjbGtpZCUzZGVhMWIwYzRhZTYxNjFlYjc1OTZjNjUxZGE3MjE3YzQ3%2526rlid%253Dea1b0c4ae6161eb7596c651da7217c47%26vqd%3D4%2D119990685118971082434588019430784341280%26iurl%3D%257B1%257DIG%253D51AB9D5C758B4C19B8FF7B74948614C3%2526CID%253D18A2A7032EAD6DFA21EBB1D62F496C03%2526ID%253DDevEx%252C5045.1&rut=848bd7b7ffbc753474fff3c639cbded678a17bfe6440367d28bedaa82c80e51c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:53:28.181799"
+    },
+    {
+      "topic": "philosophy of mind",
+      "title": "Philosophy of mind - Wikipedia",
+      "content": "Learn about the branch of philosophy that deals with the nature and relation of the mind and the body. Explore the main schools of thought, problems and theories on the mind-body problem, such as dualism, monism, physicalism, idealism and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPhilosophy_of_mind&rut=714022bdb0dab471ccd7dc7a9e8973b07c10073e446a72f6ad4ce156d27bc77f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:53:28.181895"
+    },
+    {
+      "topic": "philosophy of mind",
+      "title": "Philosophy of mind | Definition, Summary, Examples, Philosophers ...",
+      "content": "Philosophy of mind, philosophical reflection on the nature of mental phenomena and especially on the relation of the mind to the body and to the rest of the physical world. It is specifically concerned with the nature of thought, feeling, perception, consciousness, and sensory experience.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fphilosophy%2Dof%2Dmind&rut=8fe69a4baec5ba8bd0cd308753e4f776a491d231d7f16b44309ce5c1efff679e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:53:28.181943"
+    },
+    {
+      "topic": "philosophy of mind",
+      "title": "Philosophy of mind - New World Encyclopedia",
+      "content": "An overview of the branch of philosophy that studies the nature and relationship of mind and body. Learn about the mind-body problem, dualism, monism, physicalism, idealism, and other topics in philosophy of mind.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.newworldencyclopedia.org%2Fentry%2FPhilosophy_of_mind&rut=b7da308aafcfbbff47ce6057110e111059314f4b553ca7fe3bd6dd4e3fb6b115",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:53:28.181989"
+    },
+    {
+      "topic": "philosophy of science",
+      "title": "Shop Books - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on popular products at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DLaT4C9Ifi3yUKEJ36tLiKwV3exC7Ga3grNaHL40Y7c7oe99lmxflWB%252DW%252D3cLg13AXgL12EZLp_%252DAlRoy6lqgh6f2dqFiySuc30b1IMYSeqCf7iEh_U4iAt8A%252DFRgpkO1z_RssC2kcSamjkxQnIWVqlG1YTrlPFhLewlcnSbnhDc.oq86FqZpkCN7gxu92gHKcQ%26rut%3Db1170ad507b24cd9abf4b1b4f2f19b1431cbb9ddd4fefdfa5d9dd617833c80c7%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8T7mPH1ODn5PFgEhtn5CrKTVUCUxI1ojf%252D%252DA9Lh2g1Ide1As8lKHgwXx0hJAsq9bUV55MpR4Ryb%252D21zffh_YhjpHtCmA7nYB6sB8pxjfacnzgkIOx8RbtTpbqbD9TWjsBtkB0mvYi9OBNTrJbzzbFQt95gkhv5koB3t6a8MCKkr3Txubj%252D2tVDmxHDjCJIl6l933E0njX1%252DNmKImo9bXvrSdK0LQ%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGFuJTJiaW50cm9kdWN0aW9uJTJidG8lMmJ0aGUlMmJwaGlsb3NvcGh5JTJib2YlMmJzY2llbmNlJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfOHhuYTM4dHVkaV9wJTI2YWRncnBpZCUzZDEyMzI1NTM1MzEzMDQ3OTElMjZodmFkaWQlM2Q3NzAzNDcyNjE4MjkxMiUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDExMTQ5NCUyNmh2dGFyZ2lkJTNka3dkLTc3MDM0ODUwMzU3NzIwJTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QyMTk4OV8xMzQzNTY4MCUyNm1jaWQlM2RhNGZjMzFjMDZkMDgzZWIyOGJjMDU4MjFlMTQ3MmVmYyUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkZTExNDM2N2RiMjJjMTgzODcxNTA1ZjJhZjM3NDliYmU%2526rlid%253De114367db22c183871505f2af3749bbe%26vqd%3D4%2D81972131765558216398046168712011347141%26iurl%3D%257B1%257DIG%253D4069CB1D64894E3DABD8EF08CBAA543B%2526CID%253D019110FFDFCD6F2A2315062ADE416E2F%2526ID%253DDevEx%252C5045.1&rut=cba42cf7968e3c3bd13d9e601cef13e43aed1461c10284c0e40ae532fc22d1f1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:54:00.354862"
+    },
+    {
+      "topic": "philosophy of science",
+      "title": "Philosophy of science - Wikipedia",
+      "content": "Philosophy of science is the branch of philosophy concerned with the foundations, methods, and implications of science. Amongst its central questions are the difference between science and non-science, the reliability of scientific theories, and the ultimate purpose and meaning of science as a human endeavour.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPhilosophy_of_science&rut=7f97c908fc92423eada8d0fb2940f9f89f139c9b68191355093c4dc2dd7c9b61",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:54:00.354922"
+    },
+    {
+      "topic": "philosophy of science",
+      "title": "Philosophy of science | Definition, History, Books, Importance, & Facts ...",
+      "content": "Philosophy of science, the study, from a philosophical perspective, of the elements of scientific inquiry. This article discusses metaphysical, epistemological, and ethical issues related to the practice and goals of modern science. For treatment of philosophical issues raised by the problems and",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fphilosophy%2Dof%2Dscience&rut=aaf2879fcfdd96537e8ce094b64091c8d315ef1dfb17b3998200bc83bf35636b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:54:00.354964"
+    },
+    {
+      "topic": "philosophy of science",
+      "title": "PDF Philosophy of science",
+      "content": "The philosophy of science is concerned with all the assumptions, foundations, methods, implications of science, and with the use and merit of science. This discipline sometimes overlaps metaphysics, ontology and epistemology, viz., when it explores whether scientific results comprise a study of truth. In addition to these central problems of science as a whole, many philosophers of science ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fweb.stanford.edu%2Fclass%2Fsymsys130%2FPhilosophy%2520of%2520science.pdf&rut=fc38ff4eafb24db7a776721fb0a6ed2015296ef6bf82d34423342afa7a4538e5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:54:00.355008"
+    },
+    {
+      "topic": "philosophy of science",
+      "title": "Philosophy of Science | Internet Encyclopedia of Philosophy",
+      "content": "George Berkeley: Philosophy of Science Hempel, Carl Induction, The Problem of Kuhn, Thomas S. Laws of Nature Leibniz, Gottfried: Causation Medicine, Philosophy of Metaphysics of Quantum Gravity Metaphysics of Science Meyerson, Emile Models Natural Kinds Perspectivism in Science Phenomenology and Natural Science Philosophy of Biology Philosophy ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fcategory%2Fs%2Dl%2Dm%2Fscience%2F&rut=6f6b057ec789c6e38d11eeb3b665f976c3bdc17bfd40d0c62a8695f4fed23732",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:54:00.355053"
+    },
+    {
+      "topic": "philosophy of language",
+      "title": "Save on philosophy of language - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on philosophy of language at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D1UZnKl85kJejudWPVj1aqbVQ6wdbGzTWQQU5ArrWbW_eTWH_7swwMJZSnLsxQeomaTfXEsiP1EsAOyb76WAmi2Ft8CLqET47HIzMzYMgQToWb6UBX_0vvbwW4w%252Dj2CY4GAtO1QQ0nMRgLwJ9Xt1Vv%252DPvtCfI_6npq9Egjd2ljBw.hq1BTpM0t2sz%252DMXxJ8cOGQ%26rut%3Deca9297a9a03a006f17fc1a7c316dfb09e0ef58387dbf760b33fc0d7882091d9%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8vi9z0zbR8RIVbdQwpuNkcDVUCUyoHaIv7cOvEWwE6qsy3GxYFK77YiqsMn6FWr24wolDOSCVTaiYVAeX9t1SgxFmuGPpk%252DpQeMH3YF3RqHaottwugl1MwaiawqFz7JgRuVO_bGhk57nZ%252DW78jMRAMThY7N7h07LkxkYGD%252D32Y2SZ_g5vgy4LYrMgo6oj4bK5eHhEC3TpubWne_EmZWVdU_NRWiY%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZHBoaWxvc29waHklMmJvZiUyYmxhbmd1YWdlJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfYXQ0ZHMwcXA2X3AlMjZhZGdycGlkJTNkMTIyNzA1NTMyMzU0MTU4NiUyNmh2YWRpZCUzZDc2NjkxMTI1NzE0NDI5JTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkZSUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY0NDglMjZodnRhcmdpZCUzZGt3ZC03NjY5MTIzNjIyNTA4OCUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkMjgyMTNfMTQ2MzgwMDclMjZtY2lkJTNkMmEyNDkxZmFiODNhMzcwZmJjYjQwODM5ZGJiZDdhODIlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZGI0MDk1ODgwZmQ3NjFhYWIxYThjMzFkN2JjMDEyMDE5%2526rlid%253Db4095880fd761aab1a8c31d7bc012019%26vqd%3D4%2D232793531719668736154982776550060648948%26iurl%3D%257B1%257DIG%253D2DCEB51302634FEFAE272C96B86908A3%2526CID%253D125EC35CC72E610A1B0FD589C6FB6001%2526ID%253DDevEx%252C5045.1&rut=7b19ded058c93d4ae5e44d04c134294df4b27da72840ba16fba7557033b7c1f4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:54:31.802183"
+    },
+    {
+      "topic": "philosophy of language",
+      "title": "Philosophy of language - Wikipedia",
+      "content": "An overview of the philosophical study of the nature of language and its relationship with language users and the world. Learn about the history, main topics, and key figures of philosophy of language from ancient to modern times.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPhilosophy_of_language&rut=29707184fc9beb5777f39b6bd58d908d17c8d0e8b587a5a91bd2a5c982e2b5af",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:54:31.802286"
+    },
+    {
+      "topic": "philosophy of language",
+      "title": "Philosophy of language | Summary, Books, Topics, Philosophers, & Facts ...",
+      "content": "Philosophy of language, philosophical investigation of the nature of language; the relations between language, language users, and the world; and the concepts with which language is described and analyzed, both in everyday speech and in scientific linguistic studies. Because its investigations are",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fphilosophy%2Dof%2Dlanguage&rut=18c5f98ea7b405ae7484359be11d9afe24a1d296f3d47e3b94d79cae042a1253",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:54:31.802316"
+    },
+    {
+      "topic": "philosophy of language",
+      "title": "Philosophy of Language - Internet Encyclopedia of Philosophy",
+      "content": "Philosophy of Language Those who use the term \"philosophy of language\" typically use it to refer to work within the field of Anglo-American analytical philosophy and its roots in German and Austrian philosophy of the early twentieth century. Many philosophers outside this tradition have views on the nature and use of language, and the border between \"analytical\" and \"continental ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Flang%2Dphi%2F&rut=bae97cfaabbc9237207fffaad147e1facc4f68c955ab65836afa163e2b0368d3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-01T19:54:31.802366"
+    },
+    {
+      "topic": "augustine of hippo",
+      "title": "Shop augustine of hippo book - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on augustine of hippo book at Amazon.com. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DMxKxC7W6nLRJy%252DW2kgSQd%252DeheAUJJeeDrqXKGlsIyf0X_gV6ECE3P6gmy0FX6tg8wGeTx%252DjrSKoLzKy8yRoLmjHKtY0Zj%252DyouNFY4A0MHnf6qbq9KjpP8rdAZevaYHTK48G7SUimvudKK25Apcgp7dtP0UKsrl2PA7K8GLUY9gU.X2nGyT66_Z7e6o3DPzukcA%26rut%3D3b9b6553d5875a06dfdb2cd891b0d54cb8afcb4e123c93aeef28f6c7bf486353%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8hdpjxYxrSeEdoLmARfPhvTVUCUxR1XVSqZ%252D8SS2Mwuu4GHj7zNJggROEypFgasdjVhkvdcxqV%252D17u9tvsSyNIeX1336d4ZxTKZWq%252Dg7VuuM_lWeBiUsHqxutGm9J3We2LPqZQL4dRKyqGbnCKvr93gDx_mOLlTgTXdUCei8DUZb0BV0JNGIrMsUhKpU3GTaxEZmZwSYR4knNDW887cCPVnFJUOs%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGF1Z3VzdGluZSUyYm9mJTJiaGlwcG8lMmJib29rJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfMzFrdzg5bjFsNV9iJTI2YWRncnBpZCUzZDEyMjgxNTU1NjM5NjQzMjMlMjZodmFkaWQlM2Q3Njc1OTg1NjIwMzM2MCUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGIlMjZodmJtdCUzZGJiJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2MzAzJTI2aHZ0YXJnaWQlM2Rrd2QtNzY3NjAwNzUxNDcxODIlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDkzMTVfMTM2Mzk1NzglMjZtY2lkJTNkYjllYjRiYTZiZmExMzZhOGE5MmE1ZDQyZGVkZDE3YWUlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZGE0MmNkMjcyOTRmMjE5NjMyYTU0YmIyNTBiZTRkYTM3%2526rlid%253Da42cd27294f219632a54bb250be4da37%26vqd%3D4%2D326900438329356392243754084095085181652%26iurl%3D%257B1%257DIG%253D1664FCCFE5414BB692DCB0854C6F85DF%2526CID%253D38388EB77BBF63DA254398627A5B624F%2526ID%253DDevEx%252C5045.1&rut=a7da38ea905010414042fd0b07f846a23d7c2a1da5327c1e80cd16ac586c685c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T02:33:58.621497"
+    },
+    {
+      "topic": "augustine of hippo",
+      "title": "Augustine of Hippo - Wikipedia",
+      "content": "Augustine of Hippo (/ \u0254\u02d0\u02c8\u0261\u028cst\u026an / aw-GUST-in, US also / \u02c8\u0254\u02d0\u0261\u0259sti\u02d0n / AW-g\u0259-steen; [22] Latin: Aurelius Augustinus Hipponensis; 13 November 354 - 28 August 430) [23] was a theologian and philosopher, the bishop of Hippo Regius from Thagaste in Numidia Cirtensis, (present-day Souk Ahras, Algeria).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAugustine_of_Hippo&rut=a02e241dc6c2b21a3690ab0a8fb1a07cd807fc3c81ac1c516421cf56b3d7a39d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T02:33:58.621568"
+    },
+    {
+      "topic": "augustine of hippo",
+      "title": "St. Augustine | Of Hippo, Confessions, Philosophy, & Major Works ...",
+      "content": "St. Augustine (born November 13, 354, Tagaste, Numidia [now Souk Ahras, Algeria]\u2014died August 28, 430, Hippo Regius [now Annaba, Algeria]; feast day August 28) was the bishop of Hippo from 396 to 430, one of the Latin Fathers of the Church, and perhaps the most significant Christian thinker after St. Paul. Augustine's adaptation of classical thought to Christian teaching created a ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FSaint%2DAugustine&rut=0132039709fe5d94435641ed6ced236ac642353b84fd9ce84fab596809158217",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T02:33:58.621630"
+    },
+    {
+      "topic": "augustine of hippo",
+      "title": "Augustine of Hippo (Stanford Encyclopedia of Philosophy)",
+      "content": "Augustine of Hippo was perhaps the greatest Christian philosopher of Antiquity and certainly the one who exerted the deepest and most lasting influence. He is a saint of the Catholic Church, and his authority in theological matters was universally accepted in the Latin Middle Ages and remained, in the Western Christian tradition, virtually uncontested till the nineteenth century. The impact of ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Faugustine%2F&rut=47621b1c39fd78cf798a0b9086c8fcee649b8e0f466a21604a6b7e95f2aa36a5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T02:33:58.621677"
+    },
+    {
+      "topic": "augustine of hippo",
+      "title": "Augustine of Hippo - World History Encyclopedia",
+      "content": "Learn about the life and works of Augustine of Hippo, the greatest of the Christian Church Fathers and a key figure in Western theology and literature. Explore his conversion, his struggles with sin, his role as a bishop, and his legacy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.worldhistory.org%2FAugustine_of_Hippo%2F&rut=abe95c424d56872bf97774dcdd1d3c3be6357b94d1d593c64819c9cc33951119",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T02:33:58.621721"
+    },
+    {
+      "topic": "ordinary differential equation",
+      "title": "Shop Books - Amazon\u00ae Official Site - Save on Books",
+      "content": "Find deals and low prices on popular products at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DiCHRdY5H9TAtJk3NKwAHafujnpn90tY92VO%252DWbDlQ_yDE8PBlAZ7gfScEJ6WGbHYFcNlr5Rph0g8%252DAzkgst%252DukBuUdOm7lmOPoOq48B0ebVN96_NZopgnrQl0OAj6MSZQng6vX%252DruKrRUrOe3G0gKO2WBmRAWhZyUc5xlbRewDk.OHR%252D9pNU3%252D0sUOCaSQdBdQ%26rut%3D428a4567bd8e81f380cb89d2a168daf561abf50d3b7051cbcde44a1cfb09e9aa%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De88%252DY81TcVRzJpfy_sgGbb9DVUCUwhXE_1bqUDAKrK0hoBRJHjuch6gNCh8UaDnwMRg0XGIvNJmR9j4w0W99jHShRiYodZXYSE72sN6KLzc9WCtZedU3teY%252DNHqA2V0sSUzNk0sRw9gD6EZHlz1D9LcSLSsJurypzS6S7wDqIX1K%252DFW9VM5G3xYAoVbG3sUshNnhWGlJKbY_itrivBntW72pK4vDk%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJvb2tzJTJib24lMmJkaWZmZXJlbnRpYWwlMmJlcXVhdGlvbnMlMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF81cXI1NDZqaHVsX2IlMjZhZGdycGlkJTNkMTIzOTE1MDg3MjA3NDA0NSUyNmh2YWRpZCUzZDc3NDQ3MDY5ODUyNTQzJTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkYiUyNmh2Ym10JTNkYmIlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY1MDIlMjZodnRhcmdpZCUzZGt3ZC03NzQ0NzM2NTEyNjQwOCUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkNTEyOV8xMzMwMDM1MCUyNm1jaWQlM2Q4NThkYzI3MjRlMzAzZjc4YWRiMTQ2MDE4YzMyMzJmNCUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkMzQ2NjE0MmEyNTNjMWEyYWEzYzU3ZDcyMzAxZWJhNjU%2526rlid%253D3466142a253c1a2aa3c57d72301eba65%26vqd%3D4%2D14257037398247763314100797694285074390%26iurl%3D%257B1%257DIG%253D0E924051ED4547C49FF6193AA61A9B90%2526CID%253D28200323EA2E61550D1415F6EBFB6002%2526ID%253DDevEx%252C5045.1&rut=79701cda3a5c2e5a601cebf58762094c3d6e95be68d482ac70adda7f25474dba",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:39.332013"
+    },
+    {
+      "topic": "ordinary differential equation",
+      "title": "Ordinary Differential Equations",
+      "content": "From trusted sellers around the world. Buy what you love to read. Find millions of books, textbooks, rare and collectible items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dabebooks.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DSU8iqUaWHYOOeteux7taNBlEHEcVY7eo8i3pVuk8rhWDZsg4YuHWWtgoDWCjQb_BikqwgZMbpRMObqA_KW9NNdDIvEpKxa8JxbwSL9475i1W53tRttYRyHsu1wuT4PV0ztjEr2WMwf6O0%252DyxqJ5UH5ToWWQYRy0N_KGyCBCtLRc._o5vMUkz8sbL9GLggJjoug%26rut%3D508fde8e32d873ba8c9a9d57142f5b02b6a7e27437bccaecac2f5f98eca16a51%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8OyHLShZlSOj7wdLRw06_BTVUCUwoFKT6hZUMrnCNZzoUzaHFuBVm2hoKT40bb_XWhTpGeC5nbZili39xTKC_5lru5Roi1_SQ9wPX7OY5alLNPJbSVbnbX5N6XmUMD6edDwXyYkNrU3j9Fy9qFr61dR_3e7_ztYuplRTC2SaYcUVgS1KdXmpD%252DeidOQsg0K63ZD62ApLc7efcsi78C%252DsjdIIGpaI%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYWJlYm9va3MuY29tJTJmYm9vay1zZWFyY2glMmZ0aXRsZSUyZnRleHRib29rLW9yZGluYXJ5LWRpZmZlcmVudGlhbC1lcXVhdGlvbnMlMmZib29rJTJmJTNmcmVmXyUzZHBzX21zXzI2NzY5MTc2MSUyNmNtX21tYyUzZG1zbi1fLWNvbXVzX2RzYS1fLW5hYS1fLW5hYSUyNm1zY2xraWQlM2RmYTdmMjBiNWY4NzMxOTY3NjA5MjQ5ZWRlZDUxODczMQ%2526rlid%253Dfa7f20b5f8731967609249eded518731%26vqd%3D4%2D307499946554541465377415695637880643159%26iurl%3D%257B1%257DIG%253D0E924051ED4547C49FF6193AA61A9B90%2526CID%253D28200323EA2E61550D1415F6EBFB6002%2526ID%253DDevEx%252C5049.1&rut=1e355a56aeaae4e599e9bda9cf19d80f1ddc79b91227fdc4a1ebf6ffec22a4f3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:39.332094"
+    },
+    {
+      "topic": "ordinary differential equation",
+      "title": "Ordinary differential equation - Wikipedia",
+      "content": "A linear differential equation is a differential equation that is defined by a linear polynomial in the unknown function and its derivatives, that is an equation of the form where and are arbitrary differentiable functions that do not need to be linear, and are the successive derivatives of the unknown function of the variable . [4] Among ordinary differential equations, linear differential ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FOrdinary_differential_equation&rut=5db5b5c8e5a821d5e4e500613572dfdb22a37e9ddd1832d90c8edf73b032358f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:39.332166"
+    },
+    {
+      "topic": "ordinary differential equation",
+      "title": "Ordinary Differential Equations - GeeksforGeeks",
+      "content": "Ordinary Differential Equations (ODE) is the mathematical equation that describe how a function's rate of change relates to its current state. It involves a single independent variable and its derivatives. Ordinary Differential Equations Let's know more about Ordinary Differential Equations, it's types, order and degree of Ordinary differential equation in detail below. Ordinary Differential ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmaths%2Fordinary%2Ddifferential%2Dequations%2F&rut=e52481346cb6393d021519c8f75dd0eb30fc664fe3939901ebffab42ec002296",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:39.332242"
+    },
+    {
+      "topic": "ordinary differential equation",
+      "title": "PDF Ordinary Differential Equations",
+      "content": "A comprehensive introduction to ordinary differential equations, covering linear, nonlinear, variable coefficient, and second order equations. Includes methods such as power series, Laplace transform, and Fourier series, as well as applications and exercises.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fusers.math.msu.edu%2Fusers%2Fzwang%2Fode.pdf&rut=144779a7bf092ed6edbcb3ecd474d5ef3578ab68cbb082cdae19e961bd1e82e0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T10:57:39.332306"
+    },
+    {
+      "topic": "mini brains reveal clear brain signals of schizophrenia and bipolar disorder",
+      "title": "Bipolar 1 Treatment Option - Recognizing Bipolar Symptoms",
+      "content": "See The Full Prescribing Information, Including Boxed Warning, On The Official Site. Find Important Safety Information For An FDA Approved Bipolar Treatment.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dschizophrenia%252Dmanagement.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DSJSB2jPxkXzVxqAPt0sU3SPAtYcWRj5WDPFEqJlgt_eWJsSgZ%252DlXLVS_APgz0XFTli4AbosjQ64AfUvkxJQfg_Ur4gA7AtiEW_Mzh_hFWtwFwcvzQmBV4d2%252DA_qzbKHpEnW0mAGZqqesRVP56tHLeV85ShudfOzTSUZO9NlQeS4.zlBIIwPsY7nG7mrFxQAi9g%26rut%3D562b092448a9348b720dd115c9cfdff0c6ea1d3f52d05d88a9e5bfad03274ea7%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8V_m2AVXiNYnUF0Y5NupPGDVUCUwrUPUYFqyuPTTXTDTjBYSjASbNzhMHjczCzt8MZMzp2sq1Ecw04Kxtj_NaPEoS_wyzWXLa7ljxPV0hzA1o2d%252DRmh7ExbF%252DXlAUsehE8bZpE4iLqnzl0ORm5PD6SnhHQ2O9DkMkWTe9C8n32sU%252D%252DLHKkyiSP1_OR85olrA933jjPX1xeQHmYskQLpZ0NQaKFt4%2526u%253DaHR0cHMlM2ElMmYlMmZhZC5kb3VibGVjbGljay5uZXQlMmZzZWFyY2hhZHMlMmZsaW5rJTJmY2xpY2slM2ZsaWQlM2Q0MzcwMDA4Mjg3MjYyNzQ0NCUyNmRzX3Nfa3dnaWQlM2Q1ODcwMDAwODk3NTE1MTI3OCUyNmRzX2FfY2lkJTNkODg3NTc5NDE1JTI2ZHNfYV9jYWlkJTNkMjMyMzk1ODgyNzYlMjZkc19hX2FnaWQlM2QxOTM5OTQ2NTY3MzElMjZkc19hX2xpZCUzZGt3ZC0xNDYxMjc5MjkzNDA4JTI2JTI2ZHNfZV9hZGlkJTNkODE2Mzg4NzY0MTY3ODIlMjZkc19lX3RhcmdldF9pZCUzZGt3ZC04MTYzOTEyMTI3NTUwOSUzYWxvYy0xOTAlMjYlMjZkc19lX25ldHdvcmslM2RzJTI2ZHNfdXJsX3YlM2QyJTI2ZHNfZGVzdF91cmwlM2RodHRwcyUzYSUyZiUyZnd3dy51emVkeS5jb20lMmZsaXZpbmctd2l0aC1iaXBvbGFyLUktZGlzb3JkZXIlMmYlM2ZnY2xpZCUzZDdmN2I5NzhiMTEzNjFiZGFmNTFiZmVkMzBjMWRkYmQxJTI2Z2Nsc3JjJTNkM3AuZHMlMjYlMjZtc2Nsa2lkJTNkN2Y3Yjk3OGIxMTM2MWJkYWY1MWJmZWQzMGMxZGRiZDElMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RVU0FfTUFfU0VNX05CX1BIX1VaRURZLURUQy1Db25kaXRpb24tQmlwb2xhci1BbGwtQWxsLU5BLU5CQS1BbGwlMjZ1dG1fdGVybSUzZGJpcG9sYXIlMjUyMGFuZCUyNTIwdGhlJTI1MjBicmFpbiUyNnV0bV9jb250ZW50JTNkQmlwb2xhciUyNTIwVHlwZQ%2526rlid%253D7f7b978b11361bdaf51bfed30c1ddbd1%26vqd%3D4%2D138137871546276406429584794066950979927%26iurl%3D%257B1%257DIG%253DB64065DB3E7D48C883E8D29C757CE889%2526CID%253D39928F74626B63B61B5499A163BE62E8%2526ID%253DDevEx%252C5046.1&rut=66f59aa98f283d48ed1606add3580631261732a5e8acc0c224eb989bc5490b7f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:31:55.692996"
+    },
+    {
+      "topic": "mini brains reveal clear brain signals of schizophrenia and bipolar disorder",
+      "title": "Mini brains reveal clear brain signals of schizophrenia and bipolar ...",
+      "content": "Mini brains reveal clear brain signals of schizophrenia and bipolar disorder Mini-brains in a dish are exposing the hidden electrical signatures of schizophrenia and bipolar disorder, bringing ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencedaily.com%2Freleases%2F2025%2F12%2F251228074451.htm&rut=87ea3b2f03286e9d29ba8fb53525ebbd31bac9db6928a81e5540c35f9d67c195",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:31:55.693063"
+    },
+    {
+      "topic": "mini brains reveal clear brain signals of schizophrenia and bipolar disorder",
+      "title": "'Mini-Brains' Reveal Hidden Signals of Schizophrenia And Bipolar Disorder",
+      "content": "'Mini-brains' grown in the lab allow scientists to study brain wiring without interfering with brains in living people, and now a new study has used these scaled-down models to identify neural signatures associated with schizophrenia and bipolar disorder.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencealert.com%2Fmini%2Dbrains%2Dreveal%2Dhidden%2Dsignals%2Dof%2Dschizophrenia%2Dand%2Dbipolar%2Ddisorder&rut=7e8f1c741a202c9f7efb11694d6cb0490ef7a524ba8de76b018239716d85176b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:31:55.693118"
+    },
+    {
+      "topic": "mini brains reveal clear brain signals of schizophrenia and bipolar disorder",
+      "title": "Mini brains show clear signals of schizophrenia and bipolar - MSN",
+      "content": "By capturing the electrical chatter of neurons in a dish, they are now revealing clear, measurable signatures of schizophrenia and bipolar disorder that traditional brain scans have struggled to ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.msn.com%2Fen%2Dus%2Fhealth%2Fother%2Fmini%2Dbrains%2Dshow%2Dclear%2Dsignals%2Dof%2Dschizophrenia%2Dand%2Dbipolar%2Far%2DAA1TiIg4&rut=e668951e879d361f632fdfbd6dfc030c26190f5e7b271f6353ccf9a1fe7bdd82",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:31:55.693164"
+    },
+    {
+      "topic": "mini brains reveal clear brain signals of schizophrenia and bipolar disorder",
+      "title": "Scientists Discover Neural Basis of Schizophrenia and Bipolar Disorder",
+      "content": "Machine learning decodes disease specific signals Kathuria's team created the organoids, simplified versions of brain tissue, by reprogramming blood and skin cells from people with schizophrenia, bipolar disorder, and from healthy volunteers into stem cells capable of forming brain-like structures.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fscitechdaily.com%2Fscientists%2Ddiscover%2Dneural%2Dbasis%2Dof%2Dschizophrenia%2Dand%2Dbipolar%2Ddisorder%2F&rut=863a273870682f165a535271c9cf4ed5fc8de3acd6d5f94b8afc5c584716a634",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T11:31:55.693213"
+    },
+    {
+      "topic": "law of large numbers",
+      "title": "Law of Large Numbers - Law of Large Numbers",
+      "content": "Learn About Law of Large Numbers, Definition & Significance in a Lesson",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstudy.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Dn8YjooePU7_UpQDniHM2gUPvlp1Y0wgAGE7L7DEIjpyAbNOhNT31QQvkdmPOrhoriDUWXd1r%252D6NdvOuFaKV9_A0RGzM0nEfCaY0arzCXtUqX3VBCDQULtt0lk_xstRpptN4fbdVs9p4ciUEBAElEC_3ey1TfEw5NxEqfepN9z6o.4226JcRwusgb3nCIIjrSrw%26rut%3D032cce7ac352dc29397c04d61570fc148adfdbea3cf1b1f4fb11e778af4da51b%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De89qJJezYUKT8Nea53_Y0X1zVUCUzixJ2jKcg5UCN77dcF7dZPSm39iSM0C9W3R54B5OIiZBZ4RcoyfG6Zvt6BozPrLbaes4uUM7N0XMszNrTW8ayLl%252D7JIZbdGXpDqw3iI4xizGIYoxVBEX3nGtNXE__9VUFHf5nz5uvroC5V4x_ZUmSj0oONOPtRzJVvy610w1Si2Q38CrBF4Fo6H2Kqcn%252Dw1Vk%2526u%253DaHR0cHMlM2ElMmYlMmZzdHVkeS5jb20lMmZidXklMmZsZWFybiUyZmxlc3NvbiUyZmxhdy1vZi1sYXJnZS1udW1iZXJzLmh0bWwlM2ZzcmMlM2RwcGNfYmluZ19ub25icmFuZCUyNnJjbnR4dCUzZGF3cyUyNmNydCUzZCUyNmt3ZCUzZFNFTy1QUEMtQlVZJTI2a3dpZCUzZGRhdC0yMzI5MDQwNTA1ODg2OTQwJTNhbG9jLTE5MCUyNmFnaWQlM2QxMjM1ODUxMzAyNTk2NzQ2JTI2bXQlM2RiJTI2ZGV2aWNlJTNkYyUyNm5ldHdvcmslM2RzJTI2X2NhbXBhaWduJTNkU2VvUFBDJTI2bXNjbGtpZCUzZDBhZWY3ODcyNjkwNzEwOWJiMWNhMTEyYTU4YjQyNjIy%2526rlid%253D0aef78726907109bb1ca112a58b42622%26vqd%3D4%2D97845391095386934831147308232396865642%26iurl%3D%257B1%257DIG%253D9A4A3818D9044418801D6BCB8170FCCB%2526CID%253D0FDC2395E50865DA27FB3540E49F6478%2526ID%253DDevEx%252C5046.1&rut=42c1fe83622eb142b0bde1cd997a4e595d12ee4d9b2e29ed9861efddc4745b31",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T12:59:32.343146"
+    },
+    {
+      "topic": "law of large numbers",
+      "title": "Law of large numbers - Wikipedia",
+      "content": "An illustration of the law of large numbers using a particular run of rolls of a single die. As the number of rolls in this run increases, the average of the values of all the results approaches 3.5. Although each run would show a distinctive shape over a small number of throws (at the left), over a large number of rolls (to the right) the shapes would be extremely similar.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLaw_of_large_numbers&rut=616e27a54d18d57713efc3e6df45fb91741d8fb748900f67051a63724c482f2a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T12:59:32.343228"
+    },
+    {
+      "topic": "law of large numbers",
+      "title": "Law of Large Numbers: What It Is, How It's Used, and Examples",
+      "content": "Discover how the law of large numbers explains why larger samples lead to more accurate estimates of a population's true average.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.investopedia.com%2Fterms%2Fl%2Flawoflargenumbers.asp&rut=cf1623fa599baa244545571ff396a6e7f00caa83b062bc1b147156dfa63b2df5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T12:59:32.343277"
+    },
+    {
+      "topic": "law of large numbers",
+      "title": "Law of large numbers | Probability, Sampling & Estimation | Britannica",
+      "content": "The law of large numbers is closely related to what is commonly called the law of averages. In coin tossing, the law of large numbers stipulates that the fraction of heads will eventually be close to 1/2.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Flaw%2Dof%2Dlarge%2Dnumbers&rut=f6c4abdbc7b94fb18a1b6373eb5c86a0b37559b23a7a15cc0310f3d78a542458",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T12:59:32.343328"
+    },
+    {
+      "topic": "law of large numbers",
+      "title": "Law of Large Numbers | Strong and weak, with proofs and exercises",
+      "content": "Learn about the weak and strong laws of large numbers for sequences of random variables and vectors. See the conditions, proofs and exercises for each law, and how they relate to ergodicity and covariance.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.statlect.com%2Fasymptotic%2Dtheory%2Flaw%2Dof%2Dlarge%2Dnumbers&rut=f6417f55f265277d7b08738c037a5694927ab1733167172d854c7cf8e303f55e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T12:59:32.343373"
     }
   ],
-  "last_updated": "2025-11-28T21:22:27.729984"
+  "last_updated": "2026-01-02T12:59:32.357238"
 }

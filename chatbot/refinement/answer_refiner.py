@@ -70,14 +70,47 @@ def _shorten_code_blocks(text: str, max_lines: int = 40) -> str:
 
 def _prepend_follow_up_note(hints: Dict) -> Optional[str]:
     """
-    Older versions surfaced an explicit `_Context-aware:_ follow-up detected`
-    line for follow-up turns. This read like internal debug text in the UI, so
-    we now suppress it entirely.
-
-    Follow-up awareness is still used internally via `hints`; it just is no
-    longer rendered as a visible note.
+    Enhanced follow-up handling that provides contextual awareness without
+    visible debug text. Instead, we ensure the response feels natural and
+    connected to the conversation context.
     """
+    if not hints.get('is_follow_up'):
+        return None
+
+    # Instead of visible notes, we can modify response starters or tone
+    # This is handled in the main refinement process now
     return None
+
+
+def _enhance_follow_up_context(answer: str, hints: Dict) -> str:
+    """
+    Enhance responses for follow-up questions to feel more contextual and natural.
+    """
+    if not hints.get('is_follow_up'):
+        return answer
+
+    # Add natural conversational connectors for follow-ups
+    follow_up_starters = [
+        "Based on what you asked earlier,",
+        "Following up on that,",
+        "To elaborate,",
+        "Additionally,",
+        "Regarding your question,",
+        "To continue from where we left off,"
+    ]
+
+    # Only add if the answer doesn't already start with a connector
+    existing_starters = ['based on', 'following up', 'to elaborate', 'additionally', 'regarding', 'to continue']
+    if not any(starter in answer.lower()[:50] for starter in existing_starters):
+        # Choose a starter that fits the context
+        if len(answer.split()) > 15:  # Longer answers benefit from context setting
+            starter = "To elaborate on that:"
+        else:
+            starter = "Sure, here's more detail:"
+
+        return f"{starter} {answer}"
+
+    return answer
 
 
 def _render_sections(sections: List[str]) -> str:
@@ -94,48 +127,95 @@ def _short_title_from_text(text: str) -> str:
 
 def _apply_rich_formatting(answer: str, hints: Dict) -> str:
     """
-    Add lightweight rich formatting (titles/headers) when helpful.
-    Triggers only for longer answers or when structure is requested.
-    Titles are concise (1-3 words).
+    Enhanced rich formatting with better structure detection and section headers.
+    More intelligent about when to add formatting and what type to use.
     """
     text = answer.strip()
     if not text:
         return text
-    
+
     if text.startswith("#"):
         return text  # already formatted
-    
-    # Only add headings/sections when the user *asked* for structure.
-    # Otherwise keep responses simple to avoid cluttering the UI.
-    wants_structure = bool(hints.get("asks_for_steps") or hints.get("wants_structure"))
-    if not wants_structure:
-        return text
-    
+
     sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()]
     if not sentences:
         return text
-    
+
+    # Enhanced structure detection
+    wants_structure = bool(
+        hints.get("asks_for_steps") or
+        hints.get("wants_structure") or
+        len(sentences) > 8 or  # Long answers benefit from structure
+        len(text) > 600 or     # Long text needs organization
+        any(keyword in text.lower() for keyword in [
+            'steps', 'process', 'guide', 'tutorial', 'how to',
+            'comparison', 'versus', 'vs', 'differences', 'alternatives'
+        ])
+    )
+
+    if not wants_structure:
+        return text
+
+    # Better title detection
     title = (
-        hints.get("detected_subject")
-        or hints.get("primary_topic")
-        or hints.get("topic")
-        or _short_title_from_text(sentences[0])
+        hints.get("detected_subject") or
+        hints.get("primary_topic") or
+        hints.get("topic") or
+        _short_title_from_text(sentences[0])
     )
     title = _short_title_from_text(title)
-    
+
+    # Enhanced content analysis for better structuring
+    has_steps = any(word in text.lower() for word in ['first', 'then', 'next', 'after', 'finally', 'step'])
+    has_comparison = any(word in text.lower() for word in ['versus', 'vs', 'compared to', 'unlike', 'whereas', 'better than', 'worse than'])
+    has_list = '\n-' in text or '\n*' in text or '•' in text
+    has_examples = any(word in text.lower() for word in ['example', 'for instance', 'such as', 'like'])
+
     intro = sentences[0]
-    key_points = sentences[1:6]
-    if len(key_points) < 2:
-        return f"## {title}\n\n{intro}"
+    remaining_sentences = sentences[1:]
 
-    # Keep it compact: no forced "Key points" section unless explicitly asked for bullets.
-    if hints.get("allow_bullets"):
-        bullets = "\n".join(f"- {point}" for point in key_points)
-        return f"## {title}\n\n{intro}\n\n{bullets}"
+    # Structured formatting based on content type
+    if has_steps and len(remaining_sentences) >= 3:
+        # Format as step-by-step guide
+        return f"## {title}\n\n{intro}\n\n**Steps:**\n" + "\n".join(f"{i+1}. {sent}" for i, sent in enumerate(remaining_sentences[:8]))
 
-    # Otherwise use short paragraphs.
-    body = "\n\n".join(key_points[:3])
-    return f"## {title}\n\n{intro}\n\n{body}"
+    elif has_comparison and len(remaining_sentences) >= 4:
+        # Format as comparison
+        mid_point = len(remaining_sentences) // 2
+        option1_sentences = remaining_sentences[:mid_point]
+        option2_sentences = remaining_sentences[mid_point:]
+
+        formatted = f"## {title}\n\n{intro}\n\n"
+        if option1_sentences:
+            formatted += "**Option 1:**\n" + "\n".join(f"- {sent}" for sent in option1_sentences[:4]) + "\n\n"
+        if option2_sentences:
+            formatted += "**Option 2:**\n" + "\n".join(f"- {sent}" for sent in option2_sentences[:4])
+        return formatted
+
+    elif has_list or hints.get("allow_bullets"):
+        # Format with bullets for clarity
+        if len(remaining_sentences) >= 2:
+            bullets = "\n".join(f"- {sent}" for sent in remaining_sentences[:6])
+            return f"## {title}\n\n{intro}\n\n{bullets}"
+
+    else:
+        # Default structured paragraph format
+        if len(remaining_sentences) < 2:
+            return f"## {title}\n\n{intro}"
+        elif len(remaining_sentences) <= 4:
+            body = "\n\n".join(remaining_sentences)
+            return f"## {title}\n\n{intro}\n\n{body}"
+        else:
+            # Split into sections for very long content
+            summary_sentences = remaining_sentences[:3]
+            details_sentences = remaining_sentences[3:6]
+
+            formatted = f"## {title}\n\n{intro}\n\n"
+            if summary_sentences:
+                formatted += "**Summary:**\n" + "\n\n".join(summary_sentences) + "\n\n"
+            if details_sentences:
+                formatted += "**Details:**\n" + "\n\n".join(details_sentences)
+            return formatted
 
 
 def _add_structuring(answer: str, hints: Dict) -> str:
@@ -154,9 +234,141 @@ def _add_structuring(answer: str, hints: Dict) -> str:
     return answer
 
 
+def _detect_contradictions(text: str) -> List[Dict]:
+    """Detect potential contradictory statements in the text."""
+    contradictions = []
+    sentences = re.split(r'(?<=[.!?])\s+', text.strip())
+
+    # Common contradiction patterns
+    contradiction_pairs = [
+        (r'\bis\b', r'\bis not\b'),
+        (r'\bcan\b', r'\bcannot\b'),
+        (r'\bdoes\b', r'\bdoes not\b'),
+        (r'\bhas\b', r'\bdoes not have\b'),
+        (r'\bworks\b', r'\bdoes not work\b'),
+        (r'\bsupports\b', r'\bdoes not support\b'),
+    ]
+
+    for i, sentence1 in enumerate(sentences):
+        for j, sentence2 in enumerate(sentences[i+1:], i+1):
+            s1_lower = sentence1.lower()
+            s2_lower = sentence2.lower()
+
+            # Check for direct contradictions
+            for pos_pattern, neg_pattern in contradiction_pairs:
+                if (re.search(pos_pattern, s1_lower) and re.search(neg_pattern, s2_lower)) or \
+                   (re.search(neg_pattern, s1_lower) and re.search(pos_pattern, s2_lower)):
+                    contradictions.append({
+                        'sentence1': sentence1.strip(),
+                        'sentence2': sentence2.strip(),
+                        'type': 'direct_contradiction'
+                    })
+
+            # Check for conflicting numbers/dates
+            s1_nums = re.findall(r'\b\d+\b', s1_lower)
+            s2_nums = re.findall(r'\b\d+\b', s2_lower)
+            if s1_nums and s2_nums and s1_nums != s2_nums:
+                # Check if they're talking about the same topic
+                s1_words = set(s1_lower.split())
+                s2_words = set(s2_lower.split())
+                if len(s1_words & s2_words) >= 2:  # Significant word overlap
+                    contradictions.append({
+                        'sentence1': sentence1.strip(),
+                        'sentence2': sentence2.strip(),
+                        'type': 'numeric_conflict'
+                    })
+
+    return contradictions
+
+
+def _fix_contradictions(text: str, contradictions: List[Dict]) -> str:
+    """Attempt to resolve detected contradictions."""
+    if not contradictions:
+        return text
+
+    # For now, add a caution note about potential inconsistencies
+    # More sophisticated resolution could be added later
+    caution_note = "\n\n*Note: Some details in this response may vary by context or source. For precise information, please specify the exact scenario or timeframe.*"
+
+    return text + caution_note
+
+
+def _improve_answer_flow(text: str, hints: Dict) -> str:
+    """Improve the logical flow and structure of complex answers."""
+    # Detect if this is a complex multi-part answer
+    sentences = re.split(r'(?<=[.!?])\s+', text.strip())
+    if len(sentences) < 4:
+        return text  # Keep simple answers as-is
+
+    # Check for different answer types that benefit from better structure
+    has_steps = any(word in text.lower() for word in ['first', 'then', 'next', 'after', 'finally', 'step'])
+    has_comparison = any(word in text.lower() for word in ['versus', 'vs', 'compared to', 'unlike', 'whereas'])
+    has_list = '\n-' in text or '\n*' in text
+
+    if has_steps and not has_list:
+        # Convert step-based content to numbered list
+        parts = re.split(r'(first|then|next|after|finally|step \d+)', text, flags=re.IGNORECASE)
+        if len(parts) > 3:
+            structured = []
+            current_step = []
+            for part in parts:
+                part_lower = part.lower()
+                if any(indicator in part_lower for indicator in ['first', 'then', 'next', 'after', 'finally']) or 'step' in part_lower:
+                    if current_step:
+                        structured.append(' '.join(current_step).strip())
+                        current_step = []
+                    structured.append(part.strip())
+                else:
+                    current_step.append(part)
+            if current_step:
+                structured.append(' '.join(current_step).strip())
+
+            return '\n'.join(structured)
+
+    elif has_comparison and not has_list:
+        # Add section headers for comparison content
+        if ' vs ' in text.lower() or ' versus ' in text.lower():
+            return text  # Already has comparison structure
+        elif len(sentences) > 5:
+            # Split into pros/cons or alternative sections if applicable
+            return text
+
+    return text
+
+
+def _enhance_tone_consistency(text: str, hints: Dict) -> str:
+    """Ensure consistent tone throughout the response."""
+    # Detect requested tone from hints
+    requested_tone = hints.get('tone', 'normal').lower()
+
+    # Simple tone adjustments (more sophisticated tone control could be added)
+    if requested_tone == 'formal':
+        # Ensure more formal language
+        text = re.sub(r'\bI think\b', 'It appears', text, flags=re.IGNORECASE)
+        text = re.sub(r'\bprobably\b', 'likely', text, flags=re.IGNORECASE)
+    elif requested_tone == 'friendly':
+        # Add warmth where appropriate
+        if not text.startswith(('Hi', 'Hello', 'Hey')) and len(text.split()) > 10:
+            text = "Here's what I found: " + text
+
+    return text
+
+
 def _clean_and_structure(answer: str, hints: Dict) -> str:
     cleaned = _clean_response_text(answer)
+
+    # Enhanced coherence checking
+    contradictions = _detect_contradictions(cleaned)
+    cleaned = _fix_contradictions(cleaned, contradictions)
+
+    # Improved structure and flow
+    cleaned = _improve_answer_flow(cleaned, hints)
     cleaned = _add_structuring(cleaned, hints)
+
+    # Tone consistency
+    cleaned = _enhance_tone_consistency(cleaned, hints)
+
+    # Existing cleaning steps
     cleaned = _shorten_code_blocks(cleaned)
     cleaned = _trim_bullets(cleaned)
     cleaned = _ensure_sentence_spacing(cleaned)
@@ -185,6 +397,7 @@ class AnswerRefiner:
         sections = []
 
         core = _clean_and_structure(answer, hints)
+        core = _enhance_follow_up_context(core, hints)  # Enhanced follow-up handling
         core = _apply_rich_formatting(core, hints)
         sections.append(core.strip())
 
@@ -424,4 +637,5 @@ Answer refinement notes:
 
 def refiner_long_notes_text() -> str:
     return REFINER_LONG_NOTES.strip()
+
 

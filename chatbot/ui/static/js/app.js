@@ -1398,7 +1398,7 @@ function initializeBackgroundCustomization() {
     const previewImage = document.getElementById('customBackgroundImage');
     const removeBtn = document.getElementById('removeCustomBg');
     const fullPageToggle = document.getElementById('fullPageBackgroundToggle');
-    
+
     // If elements don't exist, they're probably in the settings modal which isn't loaded yet
     // This is fine - the function will be called again when settings modal opens
     if (!uploadInput && !previewContainer) {
@@ -1414,22 +1414,22 @@ function initializeBackgroundCustomization() {
         preset.addEventListener('click', () => {
             const bg = preset.dataset.bg;
             const bgType = preset.dataset.bgType;
-            
+
             // Update active state
             document.querySelectorAll('.background-preset').forEach(p => p.classList.remove('active'));
             preset.classList.add('active');
-            
+
             // Remove active state from custom background preview
             if (previewContainer) previewContainer.classList.remove('active');
-            
+
             // Apply background
             currentBackground = bg;
             currentBackgroundType = bgType;
             // Don't clear customBackgroundUrl - keep it in localStorage so user can re-select it
-            
+
             localStorage.setItem('chatBackground', bg);
             localStorage.setItem('chatBackgroundType', bgType);
-            
+
             applyBackground(bg, bgType, currentBackgroundOpacity, null, fullPageBackground);
         });
     });
@@ -1461,20 +1461,20 @@ function initializeBackgroundCustomization() {
                 console.log('[Background] No file selected');
                 return;
             }
-            
+
             if (!file.type.startsWith('image/')) {
                 alert('Please select an image file');
                 return;
             }
-            
+
             console.log('[Background] Processing uploaded file:', file.name, file.type);
             const reader = new FileReader();
-            
+
             reader.onload = (event) => {
                 const url = event.target.result;
                 console.log('[Background] File loaded, applying background');
                 customBackgroundUrl = url;
-                
+
                 // Show preview
                 const currentPreviewImage = document.getElementById('customBackgroundImage');
                 const currentPreviewContainer = document.getElementById('customBackgroundPreview');
@@ -1484,30 +1484,30 @@ function initializeBackgroundCustomization() {
                     currentPreviewContainer.style.display = 'block';
                     currentPreviewContainer.classList.add('active');
                 }
-                
+
                 // Update active state
                 document.querySelectorAll('.background-preset').forEach(p => p.classList.remove('active'));
-                
+
                 // Save and apply
                 localStorage.setItem('customBackgroundUrl', url);
                 localStorage.setItem('chatBackground', 'custom');
                 localStorage.setItem('chatBackgroundType', 'custom');
                 currentBackground = 'custom';
                 currentBackgroundType = 'custom';
-                
+
                 const currentFullPage = localStorage.getItem('fullPageBackground') === 'true';
                 applyBackground('custom', 'custom', currentBackgroundOpacity, url, currentFullPage);
                 console.log('[Background] Custom background applied successfully');
             };
-            
+
             reader.onerror = (error) => {
                 console.error('[Background] Error reading file:', error);
                 alert('Error reading image file. Please try again.');
             };
-            
+
             reader.readAsDataURL(file);
         });
-        
+
         // Also add click handler to label as backup
         const uploadLabel = document.querySelector('label[for="customBackgroundUpload"]');
         if (uploadLabel) {
@@ -1530,19 +1530,19 @@ function initializeBackgroundCustomization() {
             if (e.target.closest('.remove-custom-bg') || e.target.id === 'removeCustomBg') {
                 return;
             }
-            
+
             if (customBackgroundUrl) {
                 console.log('[Background] Re-selecting custom background');
                 // Re-apply custom background
                 document.querySelectorAll('.background-preset').forEach(p => p.classList.remove('active'));
                 previewContainer.classList.add('active');
-                
+
                 // Update state
                 currentBackground = 'custom';
                 currentBackgroundType = 'custom';
                 localStorage.setItem('chatBackground', 'custom');
                 localStorage.setItem('chatBackgroundType', 'custom');
-                
+
                 // Re-apply background
                 const currentFullPage = localStorage.getItem('fullPageBackground') === 'true';
                 applyBackground('custom', 'custom', currentBackgroundOpacity, customBackgroundUrl, currentFullPage);
@@ -1550,7 +1550,7 @@ function initializeBackgroundCustomization() {
                 console.log('[Background] No custom background URL found');
             }
         });
-        
+
         // Also make the image clickable
         if (previewImage) {
             previewImage.style.cursor = 'pointer';
@@ -1586,21 +1586,21 @@ function initializeBackgroundCustomization() {
     // Setup opacity slider
     const opacitySlider = document.getElementById('backgroundOpacity');
     const opacityValue = document.getElementById('backgroundOpacityValue');
-    
+
     if (opacitySlider) {
         opacitySlider.value = currentBackgroundOpacity;
         if (opacityValue) {
             opacityValue.textContent = Math.round(currentBackgroundOpacity * 100) + '%';
         }
-        
+
         opacitySlider.addEventListener('input', (e) => {
             const opacity = parseFloat(e.target.value);
             currentBackgroundOpacity = opacity;
-            
+
             if (opacityValue) {
                 opacityValue.textContent = Math.round(opacity * 100) + '%';
             }
-            
+
             localStorage.setItem('chatBackgroundOpacity', opacity.toString());
             const currentFullPage = localStorage.getItem('fullPageBackground') === 'true';
             applyBackground(currentBackground, currentBackgroundType, opacity, customBackgroundUrl, currentFullPage);
@@ -2703,13 +2703,642 @@ let audioLevelCheckInterval = null;
 let recognitionRestartTimeout = null;
 let pendingTranscript = '';
 let transcriptProcessing = false;
-let recognitionState = 'idle'; // 'idle', 'starting', 'listening', 'processing', 'stopped'
+// Recognition State Machine (v4.1.0)
+const RECOGNITION_STATES = {
+    IDLE: 'idle',
+    STARTING: 'starting',
+    LISTENING: 'listening',
+    PROCESSING: 'processing',
+    STOPPED: 'stopped',
+    ERROR: 'error',
+    PAUSED: 'paused'
+};
+
+const RECOGNITION_TRANSITIONS = {
+    [RECOGNITION_STATES.IDLE]: [RECOGNITION_STATES.STARTING],
+    [RECOGNITION_STATES.STARTING]: [RECOGNITION_STATES.LISTENING, RECOGNITION_STATES.ERROR],
+    [RECOGNITION_STATES.LISTENING]: [RECOGNITION_STATES.PROCESSING, RECOGNITION_STATES.STOPPED, RECOGNITION_STATES.ERROR, RECOGNITION_STATES.PAUSED],
+    [RECOGNITION_STATES.PROCESSING]: [RECOGNITION_STATES.LISTENING, RECOGNITION_STATES.STOPPED, RECOGNITION_STATES.ERROR],
+    [RECOGNITION_STATES.STOPPED]: [RECOGNITION_STATES.IDLE, RECOGNITION_STATES.STARTING],
+    [RECOGNITION_STATES.ERROR]: [RECOGNITION_STATES.IDLE, RECOGNITION_STATES.STARTING],
+    [RECOGNITION_STATES.PAUSED]: [RECOGNITION_STATES.LISTENING, RECOGNITION_STATES.STOPPED]
+};
+
+let recognitionState = RECOGNITION_STATES.IDLE;
+let recognitionStateHistory = []; // Track state transitions for debugging
+let recognitionRestartCount = 0; // Track restart attempts to prevent infinite loops
+const MAX_RESTART_ATTEMPTS = 10; // Maximum restart attempts before giving up
+
+// Centralized Poseidon State Manager (v4.2.0)
+const poseidonStateManager = {
+    // Core state
+    active: false,
+    paused: false,
+    initialized: false,
+
+    // Recognition state
+    recognition: {
+        state: RECOGNITION_STATES.IDLE,
+        restartCount: 0,
+        lastStartTime: 0,
+        transcriptProcessing: false
+    },
+
+    // Audio state
+    audio: {
+        streamActive: false,
+        level: 0,
+        speechDetected: false,
+        lastSpeechTime: 0,
+        analyserActive: false
+    },
+
+    // UI state
+    ui: {
+        overlayVisible: false,
+        statusText: 'Ready',
+        statusIndicator: 'ready',
+        visualizerActive: false
+    },
+
+    // Error state
+    errors: {
+        lastError: null,
+        errorCount: 0,
+        circuitBreakerActive: false
+    },
+
+    // State history for debugging
+    history: [],
+    maxHistorySize: 50,
+
+    /**
+     * Initialize state manager
+     */
+    initialize() {
+        console.log('[StateManager] Initializing Poseidon state manager');
+        this.reset();
+        this.addToHistory('initialized', {});
+        this.initialized = true;
+    },
+
+    /**
+     * Reset all state to defaults
+     */
+    reset() {
+        this.active = false;
+        this.paused = false;
+        this.initialized = false;
+
+        this.recognition = {
+            state: RECOGNITION_STATES.IDLE,
+            restartCount: 0,
+            lastStartTime: 0,
+            transcriptProcessing: false
+        };
+
+        this.audio = {
+            streamActive: false,
+            level: 0,
+            speechDetected: false,
+            lastSpeechTime: 0,
+            analyserActive: false
+        };
+
+        this.ui = {
+            overlayVisible: false,
+            statusText: 'Ready',
+            statusIndicator: 'ready',
+            visualizerActive: false
+        };
+
+        this.errors = {
+            lastError: null,
+            errorCount: 0,
+            circuitBreakerActive: false
+        };
+
+        this.history = [];
+        console.log('[StateManager] State reset to defaults');
+    },
+
+    /**
+     * Update recognition state
+     */
+    updateRecognitionState(newState, context = {}) {
+        const oldState = this.recognition.state;
+        this.recognition.state = newState;
+
+        // Update global variable for compatibility
+        recognitionState = newState;
+
+        this.addToHistory('recognition-state-change', {
+            from: oldState,
+            to: newState,
+            ...context
+        });
+
+        console.log(`[StateManager] Recognition state: ${oldState} -> ${newState}`);
+    },
+
+    /**
+     * Update audio state
+     */
+    updateAudioState(updates) {
+        Object.assign(this.audio, updates);
+        this.addToHistory('audio-state-update', updates);
+    },
+
+    /**
+     * Update UI state
+     */
+    updateUIState(updates) {
+        Object.assign(this.ui, updates);
+        this.addToHistory('ui-state-update', updates);
+    },
+
+    /**
+     * Record an error
+     */
+    recordError(error, context = {}) {
+        this.errors.lastError = error;
+        this.errors.errorCount++;
+        this.addToHistory('error-recorded', { error, ...context });
+    },
+
+    /**
+     * Set active state
+     */
+    setActive(active, context = {}) {
+        this.active = active;
+        poseidonActive = active; // Keep global in sync
+        this.addToHistory('active-state-change', { active, ...context });
+    },
+
+    /**
+     * Set paused state
+     */
+    setPaused(paused, context = {}) {
+        this.paused = paused;
+        poseidonPaused = paused; // Keep global in sync
+        this.addToHistory('paused-state-change', { paused, ...context });
+    },
+
+    /**
+     * Validate current state consistency
+     */
+    validateState() {
+        const issues = [];
+
+        // Check recognition state consistency
+        if (this.recognition.state !== recognitionState) {
+            issues.push({
+                type: 'inconsistency',
+                message: `Recognition state mismatch: manager=${this.recognition.state}, global=${recognitionState}`
+            });
+        }
+
+        // Check active state consistency
+        if (this.active !== poseidonActive) {
+            issues.push({
+                type: 'inconsistency',
+                message: `Active state mismatch: manager=${this.active}, global=${poseidonActive}`
+            });
+        }
+
+        // Check paused state consistency
+        if (this.paused !== poseidonPaused) {
+            issues.push({
+                type: 'inconsistency',
+                message: `Paused state mismatch: manager=${this.paused}, global=${poseidonPaused}`
+            });
+        }
+
+        // Check stream state consistency
+        const streamManagerHealth = audioStreamManager.getHealthStatus();
+        if (this.audio.streamActive !== streamManagerHealth.isActive) {
+            issues.push({
+                type: 'inconsistency',
+                message: `Stream state mismatch: manager=${this.audio.streamActive}, streamManager=${streamManagerHealth.isActive}`
+            });
+        }
+
+        if (issues.length > 0) {
+            console.warn('[StateManager] State validation found issues:', issues);
+            this.addToHistory('validation-issues', { issues });
+            return { valid: false, issues };
+        }
+
+        return { valid: true };
+    },
+
+    /**
+     * Attempt to recover from invalid state
+     */
+    recoverState() {
+        console.log('[StateManager] Attempting state recovery');
+
+        // Sync global variables with manager state
+        recognitionState = this.recognition.state;
+        poseidonActive = this.active;
+        poseidonPaused = this.paused;
+
+        // Sync stream state
+        const streamHealth = audioStreamManager.getHealthStatus();
+        this.audio.streamActive = streamHealth.isActive;
+
+        this.addToHistory('state-recovery', {
+            syncedGlobals: true,
+            streamHealth: streamHealth
+        });
+
+        console.log('[StateManager] State recovery completed');
+    },
+
+    /**
+     * Add event to history
+     */
+    addToHistory(event, data) {
+        this.history.push({
+            timestamp: Date.now(),
+            event: event,
+            data: data
+        });
+
+        // Keep history size manageable
+        if (this.history.length > this.maxHistorySize) {
+            this.history.shift();
+        }
+    },
+
+    /**
+     * Get current state snapshot
+     */
+    getStateSnapshot() {
+        return {
+            ...this,
+            history: this.history.slice(-10) // Last 10 events
+        };
+    },
+
+    /**
+     * Export state for debugging
+     */
+    exportState() {
+        return {
+            core: {
+                active: this.active,
+                paused: this.paused,
+                initialized: this.initialized
+            },
+            recognition: { ...this.recognition },
+            audio: { ...this.audio },
+            ui: { ...this.ui },
+            errors: { ...this.errors },
+            streamHealth: audioStreamManager.getHealthStatus(),
+            recognitionHistory: recognitionStateManager.getHistory().slice(-5),
+            recentHistory: this.history.slice(-10)
+        };
+    }
+};
+
+// Recognition State Manager (legacy - now integrated into poseidonStateManager)
+const recognitionStateManager = {
+    currentState: RECOGNITION_STATES.IDLE,
+
+    /**
+     * Transition to a new state
+     * @param {string} newState - The target state
+     * @param {Object} context - Context information for the transition
+     * @returns {boolean} True if transition was successful
+     */
+    transition(newState, context = {}) {
+        const currentState = this.currentState;
+        const allowedTransitions = RECOGNITION_TRANSITIONS[currentState] || [];
+
+        if (!allowedTransitions.includes(newState)) {
+            console.error(`[RecognitionState] ❌ Invalid transition: ${currentState} -> ${newState}`);
+            console.error('[RecognitionState] Allowed transitions:', allowedTransitions);
+            console.error('[RecognitionState] Context:', context);
+            return false;
+        }
+
+        // Update state
+        this.currentState = newState;
+        recognitionState = newState; // Keep global variable in sync
+
+        // Track transition history
+        recognitionStateHistory.push({
+            from: currentState,
+            to: newState,
+            timestamp: Date.now(),
+            context: context
+        });
+
+        // Keep only recent history (last 20 transitions)
+        if (recognitionStateHistory.length > 20) {
+            recognitionStateHistory.shift();
+        }
+
+        console.log(`[RecognitionState] ✅ ${currentState} -> ${newState}`, context);
+        return true;
+    },
+
+    /**
+     * Check if a transition is valid
+     * @param {string} targetState - The target state
+     * @returns {boolean} True if transition is valid
+     */
+    canTransition(targetState) {
+        const allowedTransitions = RECOGNITION_TRANSITIONS[this.currentState] || [];
+        return allowedTransitions.includes(targetState);
+    },
+
+    /**
+     * Reset state to idle
+     */
+    reset() {
+        this.transition(RECOGNITION_STATES.IDLE, { reason: 'reset' });
+        recognitionRestartCount = 0;
+        recognitionStateHistory = [];
+    },
+
+    /**
+     * Check if we're in a valid restart state
+     * @returns {boolean} True if restart is allowed
+     */
+    canRestart() {
+        // Don't restart if we're already trying too many times
+        if (recognitionRestartCount >= MAX_RESTART_ATTEMPTS) {
+            console.error(`[RecognitionState] ❌ Max restart attempts (${MAX_RESTART_ATTEMPTS}) exceeded`);
+            return false;
+        }
+
+        // Don't restart if we're not in a restartable state
+        const restartableStates = [RECOGNITION_STATES.STOPPED, RECOGNITION_STATES.ERROR, RECOGNITION_STATES.IDLE];
+        if (!restartableStates.includes(this.currentState)) {
+            console.warn(`[RecognitionState] ⚠️ Cannot restart from state: ${this.currentState}`);
+            return false;
+        }
+
+        return true;
+    },
+
+    /**
+     * Get state transition history
+     * @returns {Array} State transition history
+     */
+    getHistory() {
+        return recognitionStateHistory;
+    }
+};
 let speechDetected = false;
 let consecutiveNoSpeechCount = 0;
 let serviceNotAllowedRetryCount = 0; // Track retries for service-not-allowed errors
 let lastServiceNotAllowedTime = 0; // Track when last service-not-allowed occurred
 let rapidErrorTimes = []; // Track recent error times for circuit breaker
 let serviceNotAllowedDisabled = false; // Circuit breaker flag - stop retrying if too many rapid errors
+
+// Enhanced Error Tracker (v4.3.0)
+const poseidonErrorTracker = {
+    errors: [],
+    errorCounts: {},
+    circuitBreakerActive: false,
+    circuitBreakerTriggeredAt: 0,
+    lastError: null,
+    errorHistory: [],
+    maxHistorySize: 100,
+    
+    // Error categories
+    ERROR_TYPES: {
+        PERMISSION: 'permission',
+        NETWORK: 'network',
+        SERVICE: 'service',
+        STATE: 'state',
+        AUDIO: 'audio',
+        UNKNOWN: 'unknown'
+    },
+    
+    /**
+     * Classify error type
+     */
+    classifyError(error) {
+        const errorName = error?.name || '';
+        const errorMessage = (error?.message || '').toLowerCase();
+        
+        if (errorName === 'NotAllowedError' || errorName === 'PermissionDeniedError' || 
+            errorMessage.includes('permission') || errorMessage.includes('not allowed')) {
+            return this.ERROR_TYPES.PERMISSION;
+        }
+        
+        if (errorName === 'NetworkError' || errorMessage.includes('network') || 
+            errorMessage.includes('failed to fetch') || errorMessage.includes('econnrefused')) {
+            return this.ERROR_TYPES.NETWORK;
+        }
+        
+        if (errorMessage.includes('service') || errorName === 'service-not-allowed') {
+            return this.ERROR_TYPES.SERVICE;
+        }
+        
+        if (errorName === 'InvalidStateError' || errorMessage.includes('state')) {
+            return this.ERROR_TYPES.STATE;
+        }
+        
+        if (errorName === 'NotFoundError' || errorName === 'DevicesNotFoundError' ||
+            errorMessage.includes('microphone') || errorMessage.includes('audio')) {
+            return this.ERROR_TYPES.AUDIO;
+        }
+        
+        return this.ERROR_TYPES.UNKNOWN;
+    },
+    
+    /**
+     * Record an error
+     */
+    recordError(error, context = {}) {
+        const errorType = this.classifyError(error);
+        const now = Date.now();
+        
+        const errorRecord = {
+            timestamp: now,
+            type: errorType,
+            name: error?.name || 'Unknown',
+            message: error?.message || 'Unknown error',
+            context: context,
+            error: error
+        };
+        
+        this.errors.push(errorRecord);
+        this.lastError = errorRecord;
+        
+        // Track error counts by type
+        this.errorCounts[errorType] = (this.errorCounts[errorType] || 0) + 1;
+        
+        // Add to history
+        this.errorHistory.push(errorRecord);
+        if (this.errorHistory.length > this.maxHistorySize) {
+            this.errorHistory.shift();
+        }
+        
+        // Update state manager
+        if (poseidonStateManager) {
+            poseidonStateManager.recordError(errorRecord, context);
+        }
+        
+        console.log(`[ErrorTracker] Recorded ${errorType} error:`, errorRecord);
+        
+        // Check for circuit breaker conditions
+        this.checkCircuitBreaker();
+        
+        return errorRecord;
+    },
+    
+    /**
+     * Check if circuit breaker should be activated
+     */
+    checkCircuitBreaker() {
+        const now = Date.now();
+        const windowMs = 5000; // 5 second window
+        const threshold = 5; // 5 errors in window
+        
+        // Filter recent errors
+        const recentErrors = this.errorHistory.filter(e => now - e.timestamp < windowMs);
+        
+        // Don't trigger circuit breaker for permission errors (user action needed)
+        const nonPermissionErrors = recentErrors.filter(e => e.type !== this.ERROR_TYPES.PERMISSION);
+        
+        if (nonPermissionErrors.length >= threshold && !this.circuitBreakerActive) {
+            console.error(`[ErrorTracker] 🛑 Circuit breaker triggered: ${nonPermissionErrors.length} errors in ${windowMs}ms`);
+            this.circuitBreakerActive = true;
+            this.circuitBreakerTriggeredAt = now;
+            
+            // Update state manager
+            if (poseidonStateManager) {
+                poseidonStateManager.errors.circuitBreakerActive = true;
+            }
+        }
+    },
+    
+    /**
+     * Reset circuit breaker (with exponential backoff)
+     */
+    resetCircuitBreaker() {
+        const now = Date.now();
+        const timeSinceTrigger = now - this.circuitBreakerTriggeredAt;
+        
+        // Exponential backoff: wait 10s, 20s, 40s...
+        const backoffTime = Math.min(10000 * Math.pow(2, this.getCircuitBreakerAttempts()), 60000);
+        
+        if (timeSinceTrigger >= backoffTime) {
+            console.log(`[ErrorTracker] ✅ Circuit breaker reset after ${timeSinceTrigger}ms`);
+            this.circuitBreakerActive = false;
+            this.circuitBreakerTriggeredAt = 0;
+            
+            // Clear recent error history
+            const windowMs = 5000;
+            this.errorHistory = this.errorHistory.filter(e => now - e.timestamp < windowMs);
+            
+            // Update state manager
+            if (poseidonStateManager) {
+                poseidonStateManager.errors.circuitBreakerActive = false;
+            }
+            
+            return true;
+        }
+        
+        return false;
+    },
+    
+    /**
+     * Get circuit breaker attempts count
+     */
+    getCircuitBreakerAttempts() {
+        // Count how many times circuit breaker has been triggered recently
+        const now = Date.now();
+        const windowMs = 60000; // 1 minute window
+        return this.errorHistory.filter(e => 
+            e.type !== this.ERROR_TYPES.PERMISSION && 
+            now - e.timestamp < windowMs
+        ).length;
+    },
+    
+    /**
+     * Get recovery strategy for error type
+     */
+    getRecoveryStrategy(errorType) {
+        const strategies = {
+            [this.ERROR_TYPES.PERMISSION]: {
+                retry: false,
+                delay: 0,
+                userAction: true,
+                message: 'Microphone permission is required. Please enable microphone access.'
+            },
+            [this.ERROR_TYPES.NETWORK]: {
+                retry: true,
+                delay: 1000,
+                maxRetries: 3,
+                exponentialBackoff: true,
+                message: 'Network error. Retrying...'
+            },
+            [this.ERROR_TYPES.SERVICE]: {
+                retry: true,
+                delay: 2000,
+                maxRetries: 2,
+                exponentialBackoff: true,
+                message: 'Service error. Retrying...'
+            },
+            [this.ERROR_TYPES.STATE]: {
+                retry: true,
+                delay: 300,
+                maxRetries: 3,
+                exponentialBackoff: false,
+                message: 'State error. Retrying...'
+            },
+            [this.ERROR_TYPES.AUDIO]: {
+                retry: true,
+                delay: 1000,
+                maxRetries: 2,
+                exponentialBackoff: true,
+                message: 'Audio device error. Retrying...'
+            },
+            [this.ERROR_TYPES.UNKNOWN]: {
+                retry: true,
+                delay: 1000,
+                maxRetries: 2,
+                exponentialBackoff: true,
+                message: 'Unknown error. Retrying...'
+            }
+        };
+        
+        return strategies[errorType] || strategies[this.ERROR_TYPES.UNKNOWN];
+    },
+    
+    /**
+     * Get error statistics
+     */
+    getStats() {
+        return {
+            totalErrors: this.errors.length,
+            errorCounts: { ...this.errorCounts },
+            circuitBreakerActive: this.circuitBreakerActive,
+            lastError: this.lastError,
+            recentErrors: this.errorHistory.slice(-10)
+        };
+    },
+    
+    /**
+     * Reset error tracking
+     */
+    reset() {
+        this.errors = [];
+        this.errorCounts = {};
+        this.circuitBreakerActive = false;
+        this.circuitBreakerTriggeredAt = 0;
+        this.lastError = null;
+        this.errorHistory = [];
+        console.log('[ErrorTracker] Error tracking reset');
+    }
+};
 let lastHighVolumeTime = 0; // Track when we last detected high volume
 let currentAudioLevel = 0; // Current audio level (0-1)
 let audioLevelHistory = []; // History of audio levels for trend analysis and adaptive sensitivity (v3.0.0)
@@ -2720,10 +3349,18 @@ const MAX_SERVICE_NOT_ALLOWED_RETRIES = 2; // Max retries for service-not-allowe
 const SERVICE_NOT_ALLOWED_COOLDOWN_MS = 10000; // Cooldown period between retries (10 seconds - increased to prevent loops)
 const MAX_RAPID_ERRORS = 5; // Stop if we get this many errors in quick succession (circuit breaker)
 const RAPID_ERROR_WINDOW_MS = 3000; // Time window for rapid error detection (3 seconds)
-const AUDIO_CHECK_INTERVAL_MS = 100; // Check audio levels every 100ms
+// Performance optimized audio constants (v4.2.0)
+const AUDIO_CHECK_INTERVAL_MS = 150; // Increased from 100ms - check audio levels every 150ms (better performance)
+const AUDIO_CHECK_INTERVAL_ACTIVE_MS = 100; // Faster checks when actively speaking (100ms)
+const AUDIO_CHECK_INTERVAL_IDLE_MS = 300; // Slower checks when idle (300ms)
 const AUDIO_LEVEL_THRESHOLD = 0.05; // Minimum audio level to consider as speech
 const VOLUME_DECLINE_THRESHOLD = 0.02; // Volume must drop below this to trigger processing
 const MIN_VOLUME_DECLINE_DURATION = 800; // How long volume must be low before processing (ms)
+
+// Performance optimization: Debounced operations
+let audioProcessingDebounceTimeout = null;
+const AUDIO_PROCESSING_DEBOUNCE_MS = 50; // Debounce audio processing operations
+let lastAudioProcessingTime = 0;
 let isSpeaking = false; // Track if Poseidon is currently speaking
 let lastSpokenText = ''; // Track the last text that Poseidon spoke (cleaned version)
 let lastSpokenTime = 0; // Track when Poseidon last finished speaking
@@ -2884,7 +3521,7 @@ function initializePoseidon() {
                         recognition.onspeechend = null;
                         
                         recognition = null;
-                        recognitionState = 'idle';
+                        recognitionStateManager.transition(RECOGNITION_STATES.IDLE, { reason: 'circuit-breaker-reset' });
                         
                         // Recreate recognition instance with new language
                         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -3261,7 +3898,7 @@ function speakText(text, speed = null, volume = null) {
                 if (currentState === 'listening' || currentState === 'starting') {
                     console.log('[Poseidon] Stopping recognition BEFORE speaking to prevent self-hearing (state:', currentState, ')');
                     recognition.stop();
-                    recognitionState = 'paused';
+                    recognitionStateManager.transition(RECOGNITION_STATES.PAUSED, { reason: 'speech-start' });
                     // Give recognition a moment to fully stop and clear any queued results
                     // Use setTimeout instead of await since this is in a callback
                     setTimeout(() => {
@@ -3303,17 +3940,23 @@ function speakText(text, speed = null, volume = null) {
                         isSpeaking
                     });
                 }
-            }, resumeDelay);
+            }, Math.max(250, resumeDelay)); // Optimized: Reduced minimum delay from 300ms to 250ms for faster response
         }
         
-        // Helper function to restart recognition after speech
+        // Helper function to restart recognition after speech (unified restart logic)
         function restartRecognitionAfterSpeech() {
-            // Check circuit breaker first
-            if (serviceNotAllowedDisabled) {
-                console.warn('[Poseidon] Circuit breaker active - not restarting recognition after speech');
-                return;
+            // Check circuit breaker first - try to reset if enough time has passed
+            const isElectron = window.electronAPI !== undefined;
+            if (poseidonErrorTracker.circuitBreakerActive) {
+                if (poseidonErrorTracker.resetCircuitBreaker()) {
+                    console.log('[Poseidon] ✅ Circuit breaker reset, allowing restart after speech');
+                } else if (!isElectron) {
+                    console.warn('[Poseidon] Circuit breaker active - not restarting recognition after speech');
+                    return;
+                }
             }
             
+            // Validate state before restart
             if (!recognition || !poseidonActive || poseidonPaused || isSpeaking) {
                 console.log('[Poseidon] Cannot restart recognition - conditions not met:', {
                     hasRecognition: !!recognition,
@@ -3324,14 +3967,21 @@ function speakText(text, speed = null, volume = null) {
                 return;
             }
             
+            // Check state machine constraints
+            if (!recognitionStateManager.canRestart()) {
+                console.warn('[Poseidon] Cannot restart - state machine constraints');
+                return;
+            }
+            
             try {
                 console.log('[Poseidon] Resuming recognition after speech ended');
-                // Use startRecognitionWithRetry instead of direct start for better error handling
-                // This ensures proper initialization and error handling
+                // Use unified startRecognitionWithRetry for consistent error handling
                 startRecognitionWithRetry();
                 console.log('[Poseidon] ✅ Recognition restart initiated after speech');
             } catch (e) {
-                console.warn('[Poseidon] Error resuming recognition, will retry:', e);
+                console.warn('[Poseidon] Error resuming recognition:', e);
+                // Record error and retry with error handling
+                poseidonErrorTracker.recordError(e, { context: 'restartAfterSpeech' });
                 startRecognitionWithRetry();
             }
         }
@@ -3353,7 +4003,18 @@ function speakText(text, speed = null, volume = null) {
         }
         
         // Return to listening on error, but only restart if not in circuit breaker mode
-        if (poseidonActive && !poseidonPaused && !serviceNotAllowedDisabled) {
+        const isElectron = window.electronAPI !== undefined;
+        if (poseidonActive && !poseidonPaused) {
+            // Check circuit breaker - try to reset if enough time has passed
+            if (poseidonErrorTracker.circuitBreakerActive) {
+                if (poseidonErrorTracker.resetCircuitBreaker()) {
+                    console.log('[Poseidon] ✅ Circuit breaker reset, allowing restart after speech error');
+                } else if (!isElectron) {
+                    updatePoseidonStatus('ready', 'Speech Error');
+                    return;
+                }
+            }
+            
             // Schedule restart after a delay using startRecognitionWithRetry (has circuit breaker checks)
             setTimeout(() => {
                 if (poseidonActive && !poseidonPaused && !isSpeaking) {
@@ -3391,15 +4052,17 @@ async function openPoseidonOverlay() {
     poseidonOverlay.classList.add('active');
     updatePoseidonStatus('ready', 'Initializing...');
     
-    // Reset circuit breaker for Electron apps - network errors shouldn't persist
-    const isElectron = window.electronAPI !== undefined;
-    if (isElectron && serviceNotAllowedDisabled) {
-        console.log('[Poseidon] Electron: Resetting circuit breaker on overlay open');
-        serviceNotAllowedDisabled = false;
-        rapidErrorTimes = []; // Clear error tracking
-        serviceNotAllowedRetryCount = 0;
-        lastServiceNotAllowedTime = 0;
-    }
+            // Reset circuit breaker for Electron apps - network errors shouldn't persist
+            const isElectron = window.electronAPI !== undefined;
+            if (isElectron && poseidonErrorTracker.circuitBreakerActive) {
+                console.log('[Poseidon] Electron: Resetting circuit breaker on overlay open');
+                poseidonErrorTracker.reset();
+                serviceNotAllowedRetryCount = 0;
+                lastServiceNotAllowedTime = 0;
+            } else {
+                // Try to reset circuit breaker (exponential backoff)
+                poseidonErrorTracker.resetCircuitBreaker();
+            }
     
     try {
         // Version 3.0.0: Initialize session
@@ -3549,32 +4212,16 @@ async function openPoseidonOverlay() {
         });
         console.log('[Poseidon] Microphone permission granted');
         
-        // IMPORTANT: Keep the stream alive for speech recognition to work
-        // Don't stop it immediately - speech recognition needs active microphone access
-        // Store it globally so it doesn't get garbage collected
-        window.poseidonAudioStream = stream;
-        
-        // CRITICAL: Ensure stream stays active - prevent garbage collection
-        // Keep a reference to at least one track to prevent it from being stopped
-        const audioTracks = stream.getAudioTracks();
-        if (audioTracks.length > 0) {
-            // Ensure track is enabled and not muted
-            audioTracks[0].enabled = true;
-            audioTracks[0].muted = false;
-            console.log('[Poseidon] Stream track ensured active:', {
-                label: audioTracks[0].label,
-                readyState: audioTracks[0].readyState,
-                enabled: audioTracks[0].enabled,
-                muted: audioTracks[0].muted
-            });
-        }
+        // Initialize and set up stream with the stream manager
+        audioStreamManager.initialize();
+        audioStreamManager.setStream(stream);
         
         if (poseidonOverlay) {
             // Overlay already shown at the start of function
             poseidonActive = true;
             console.log('[Poseidon] Overlay visible, setting poseidonActive=true');
             poseidonPaused = false;
-            recognitionState = 'starting';
+            recognitionStateManager.transition(RECOGNITION_STATES.STARTING, { reason: 'initialization' });
             
             // Reset all state
             pendingTranscript = '';
@@ -3583,11 +4230,19 @@ async function openPoseidonOverlay() {
             consecutiveNoSpeechCount = 0;
             serviceNotAllowedRetryCount = 0; // Reset retry counter
             lastServiceNotAllowedTime = 0;
-            rapidErrorTimes = []; // Reset rapid error tracking
-            serviceNotAllowedDisabled = false; // Reset circuit breaker
+            rapidErrorTimes = []; // Reset rapid error tracking (legacy)
+            serviceNotAllowedDisabled = false; // Reset circuit breaker (legacy)
+            
+            // Reset error tracker
+            poseidonErrorTracker.reset();
             lastSpeechTime = Date.now();
             clearTimeout(silenceTimeout);
             clearTimeout(recognitionRestartTimeout);
+
+        // Reset state machine, error tracker, and stream manager
+        poseidonStateManager.reset();
+        poseidonStateManager.initialize();
+        audioStreamManager.initialize();
             
             // CRITICAL: Start recognition IMMEDIATELY after permission
             // Browsers require speech recognition to start in direct response to user action
@@ -3819,8 +4474,8 @@ async function openPoseidonOverlay() {
                     audioContext = new (window.AudioContext || window.webkitAudioContext)();
                     analyser = audioContext.createAnalyser();
                     microphone = audioContext.createMediaStreamSource(stream);
-                    analyser.fftSize = 256;
-                    analyser.smoothingTimeConstant = 0.8;
+                    analyser.fftSize = 128; // Optimized: Reduced from 256 for better performance
+                    analyser.smoothingTimeConstant = 0.6; // Optimized: Reduced smoothing for faster response
                     microphone.connect(analyser);
                     startAudioLevelMonitoring();
                     console.log('[Poseidon] Audio context and monitoring setup complete');
@@ -3847,242 +4502,179 @@ async function openPoseidonOverlay() {
             alert('Error starting Poseidon: ' + (error.message || 'Unknown error') + '\n\nPlease check your browser settings and try again.');
             updatePoseidonStatus('ready', 'Error');
         }
-        recognitionState = 'idle';
+        recognitionStateManager.transition(RECOGNITION_STATES.IDLE, { reason: 'inactive' });
     }
 }
 
-async function startRecognitionWithRetry(maxRetries = 3) {
-    // CRITICAL: Check circuit breaker FIRST to prevent infinite loops
-    // NOTE: Circuit breaker should NOT block Electron apps - network errors in Electron are often transient
+/**
+ * Simplified recognition start function with state machine integration
+ * @param {Object} options - Start options
+ * @returns {Promise<boolean>} True if recognition started successfully
+ */
+async function startRecognitionWithRetry(options = {}) {
+    const maxRetries = options.maxRetries || 3;
+    const forceRestart = options.forceRestart || false;
+
+    // Check circuit breaker first - try to reset if enough time has passed
     const isElectron = window.electronAPI !== undefined;
-    if (serviceNotAllowedDisabled && !isElectron) {
-        // Only apply circuit breaker to browser, not Electron
-        console.warn('[Poseidon] 🛑 Circuit breaker is ACTIVE - stopping all recognition attempts to prevent infinite loop');
-        updatePoseidonStatus('ready', 'Service Unavailable (Circuit Breaker Active)');
-        if (poseidonAssistantTranscript) {
-            poseidonAssistantTranscript.textContent = 'Speech recognition service is temporarily unavailable. Please close and reopen Poseidon to try again.';
+    if (poseidonErrorTracker.circuitBreakerActive) {
+        // Try to reset circuit breaker (exponential backoff)
+        if (poseidonErrorTracker.resetCircuitBreaker()) {
+            console.log('[Poseidon] ✅ Circuit breaker reset, allowing recognition start');
+        } else if (!isElectron) {
+            console.warn('[Poseidon] 🛑 Circuit breaker active - blocking recognition start');
+            updatePoseidonStatus('ready', 'Service Unavailable');
+            return false;
         }
-        return; // Exit immediately - do not attempt to start
-    } else if (serviceNotAllowedDisabled && isElectron) {
-        // Reset circuit breaker for Electron - network errors shouldn't trigger it
-        console.log('[Poseidon] Electron: Resetting circuit breaker (network errors are transient in Electron)');
-        serviceNotAllowedDisabled = false;
-        rapidErrorTimes = []; // Clear error tracking
     }
-    
-    if (!recognition) {
-        console.error('[Poseidon] ERROR: Cannot start recognition - recognition is null');
-        updatePoseidonStatus('ready', 'Error: Recognition not initialized');
-        return;
+
+    // Check state machine constraints
+    if (!recognitionStateManager.canRestart() && !forceRestart) {
+        console.warn('[Poseidon] ❌ Cannot restart recognition - state constraints');
+        return false;
     }
-    
-    // CRITICAL: Ensure poseidonActive is true if overlay is open
-    // This prevents the infinite listening issue where recognition can't start
-    // This is the PRIMARY fix for the infinite listening problem
-    // Check multiple ways to detect if overlay is open
-    const overlayVisible = poseidonOverlay && (
-        poseidonOverlay.style.display !== 'none' ||
-        poseidonOverlay.style.display === 'flex' ||
-        poseidonOverlay.offsetParent !== null || // Element is visible
-        window.getComputedStyle(poseidonOverlay).display !== 'none'
-    );
-    
-    if (overlayVisible) {
-        poseidonActive = true;
-        poseidonPaused = false;
-        console.log('[Poseidon] ✅ Ensured poseidonActive=true (overlay is visible) - PRIMARY FIX for infinite listening');
-    } else {
-        console.warn('[Poseidon] ⚠️ Overlay check failed in startRecognitionWithRetry:', {
-            overlayExists: !!poseidonOverlay,
-            displayStyle: poseidonOverlay?.style?.display,
-            computedDisplay: poseidonOverlay ? window.getComputedStyle(poseidonOverlay).display : 'N/A',
-            offsetParent: poseidonOverlay?.offsetParent !== null
-        });
-    }
-    
-    // Double-check and force if needed
-    if (!poseidonActive && poseidonOverlay && poseidonOverlay.style.display !== 'none') {
-        console.error('[Poseidon] ❌ CRITICAL: poseidonActive is false but overlay is open! Forcing active...');
-        poseidonActive = true;
-        poseidonPaused = false;
-    }
-    
+
+    // Ensure Poseidon is active
     if (!poseidonActive) {
-        console.warn('[Poseidon] Cannot start recognition - Poseidon is not active', {
-            overlayOpen: poseidonOverlay && poseidonOverlay.style.display !== 'none',
-            overlayExists: !!poseidonOverlay
-        });
-        return;
+        console.warn('[Poseidon] ❌ Cannot start recognition - Poseidon is not active');
+        return false;
     }
-    
-    // CRITICAL: Verify audio stream is active before starting recognition
-    if (!window.poseidonAudioStream) {
-        console.error('[Poseidon] ERROR: No audio stream available!');
-        updatePoseidonStatus('ready', 'Error: No microphone access');
-        return;
+
+    // Validate recognition instance
+    if (!recognition) {
+        console.error('[Poseidon] ❌ Cannot start recognition - recognition instance is null');
+        updatePoseidonStatus('ready', 'Error: Recognition not initialized');
+        return false;
     }
-    
-    // Check stream and tracks
-    const stream = window.poseidonAudioStream;
-    const tracks = stream.getAudioTracks();
-    const activeTracks = tracks.filter(t => t.readyState === 'live' && t.enabled && !t.muted);
-    
-    console.log('[Poseidon] Stream verification:', {
-        streamActive: stream.active,
-        totalTracks: tracks.length,
-        activeTracks: activeTracks.length,
-        tracksState: tracks.map(t => ({
-            label: t.label,
-            readyState: t.readyState,
-            enabled: t.enabled,
-            muted: t.muted
-        }))
-    });
-    
-    if (!stream.active || activeTracks.length === 0) {
-        console.error('[Poseidon] ERROR: Audio stream is not active!');
-        console.error('[Poseidon] Stream state:', {
-            active: stream.active,
-            activeTracks: activeTracks.length,
-            allTracks: tracks.length
+
+    // Validate audio stream
+    if (!await validateAudioStream()) {
+        console.error('[Poseidon] ❌ Cannot start recognition - audio stream validation failed');
+        updatePoseidonStatus('ready', 'Error: Audio stream unavailable');
+        return false;
+    }
+
+    // Validate configuration
+    validateRecognitionConfig();
+
+    // Increment restart counter
+    recognitionRestartCount++;
+
+    // Attempt to start recognition
+    try {
+        recognitionStateManager.transition(RECOGNITION_STATES.STARTING, {
+            attempt: recognitionRestartCount,
+            maxRetries: maxRetries
         });
-        
-        // Try to re-enable tracks first
-        if (tracks.length > 0) {
-            console.log('[Poseidon] Attempting to re-enable tracks...');
-            tracks.forEach(track => {
-                if (track.readyState !== 'ended') {
-                    track.enabled = true;
-                    track.muted = false;
-                    console.log('[Poseidon] Re-enabled track:', track.label, 'state:', track.readyState);
-                }
-            });
-            
-            // Wait a moment and check again
-            await new Promise(resolve => setTimeout(resolve, 500));
-            const recheckTracks = stream.getAudioTracks().filter(t => t.readyState === 'live' && t.enabled && !t.muted);
-            if (recheckTracks.length > 0 && stream.active) {
-                console.log('[Poseidon] Stream recovered after re-enabling tracks');
-            } else {
-                console.error('[Poseidon] Stream still not active after re-enabling - re-requesting stream...');
-                
-                // Re-request the stream
-                try {
-                    // Stop old tracks
-                    tracks.forEach(track => track.stop());
-                    
-                    const newStream = await navigator.mediaDevices.getUserMedia({ 
-                        audio: {
-                            echoCancellation: true,
-                            noiseSuppression: true,
-                            autoGainControl: true
-                        }
-                    });
-                    
-                    window.poseidonAudioStream = newStream;
-                    
-                    // Verify new stream
-                    const newTracks = newStream.getAudioTracks();
-                    const newActiveTracks = newTracks.filter(t => t.readyState === 'live' && t.enabled && !t.muted);
-                    
-                    if (!newStream.active || newActiveTracks.length === 0) {
-                        console.error('[Poseidon] Re-requested stream is still not active!');
-                        updatePoseidonStatus('ready', 'Error: Microphone not active');
-                        return;
-                    }
-                    
-                    console.log('[Poseidon] Stream re-requested and verified active');
-                    
-                    // Update audio context if needed
-                    if (audioContext && audioContext.state !== 'closed') {
-                        try {
-                            if (microphone) {
-                                microphone.disconnect();
-                            }
-                            microphone = audioContext.createMediaStreamSource(newStream);
-                            analyser = audioContext.createAnalyser();
-                            analyser.fftSize = 256;
-                            analyser.smoothingTimeConstant = 0.8;
-                            microphone.connect(analyser);
-                        } catch (audioErr) {
-                            console.warn('[Poseidon] Could not reconnect audio context:', audioErr);
-                        }
-                    }
-                } catch (streamErr) {
-                    console.error('[Poseidon] ERROR re-requesting stream:', streamErr);
-                    updatePoseidonStatus('ready', 'Error: Microphone not active');
-                    return;
-                }
-            }
-        } else {
-            console.error('[Poseidon] No tracks available - re-requesting stream...');
-            try {
-                const newStream = await navigator.mediaDevices.getUserMedia({ 
-                    audio: {
-                        echoCancellation: true,
-                        noiseSuppression: true,
-                        autoGainControl: true
-                    }
+
+        console.log(`[Poseidon] Starting recognition (attempt ${recognitionRestartCount})`);
+
+        recognition.start();
+
+        // Verify start after a short delay
+        setTimeout(() => {
+            if (recognitionStateManager.currentState === RECOGNITION_STATES.STARTING) {
+                recognitionStateManager.transition(RECOGNITION_STATES.LISTENING, {
+                    verified: true
                 });
-                window.poseidonAudioStream = newStream;
-                console.log('[Poseidon] Stream re-requested successfully');
-            } catch (streamErr) {
-                console.error('[Poseidon] ERROR re-requesting stream:', streamErr);
-                updatePoseidonStatus('ready', 'Error: No microphone tracks');
-                return;
+                updatePoseidonStatus('listening', 'Listening...');
+                console.log('[Poseidon] ✅ Recognition started successfully');
             }
+        }, 500);
+
+        return true;
+
+    } catch (error) {
+        console.error(`[Poseidon] ❌ Failed to start recognition (attempt ${recognitionRestartCount}):`, error);
+
+        // Record error with error tracker
+        const errorRecord = poseidonErrorTracker.recordError(error, {
+            attempt: recognitionRestartCount,
+            function: 'startRecognitionWithRetry'
+        });
+        const recoveryStrategy = poseidonErrorTracker.getRecoveryStrategy(errorRecord.type);
+
+        recognitionStateManager.transition(RECOGNITION_STATES.ERROR, {
+            error: error.message,
+            attempt: recognitionRestartCount,
+            errorType: errorRecord.type
+        });
+
+        // Handle specific error types using recovery strategy
+        if (recoveryStrategy.retry && recognitionRestartCount <= (recoveryStrategy.maxRetries || maxRetries)) {
+            const delay = recoveryStrategy.exponentialBackoff 
+                ? recoveryStrategy.delay * Math.pow(2, recognitionRestartCount)
+                : recoveryStrategy.delay;
+            
+            console.log(`[Poseidon] Retrying recognition start in ${delay}ms (attempt ${recognitionRestartCount + 1}) - ${errorRecord.type} error`);
+            setTimeout(() => {
+                if (!poseidonErrorTracker.circuitBreakerActive || isElectron) {
+                    startRecognitionWithRetry({ maxRetries, forceRestart: true });
+                }
+            }, delay);
+            return false;
+        } else if (recoveryStrategy.userAction) {
+            updatePoseidonStatus('ready', 'Permission Required');
+            alert(recoveryStrategy.message || 'Microphone permission is required. Please allow microphone access and try again.');
+            return false;
+        }
+
+        // Max retries exceeded or unrecoverable error
+        console.error('[Poseidon] ❌ Giving up on recognition start after', recognitionRestartCount, 'attempts');
+        updatePoseidonStatus('ready', 'Error: Cannot start recognition');
+        recognitionStateManager.transition(RECOGNITION_STATES.IDLE, {
+            reason: 'max-retries-exceeded',
+            finalError: error.message
+        });
+
+        return false;
+    }
+}
+
+/**
+ * Validate audio stream before starting recognition
+ * @returns {Promise<boolean>} True if stream is valid
+ */
+async function validateAudioStream() {
+    const healthStatus = audioStreamManager.getHealthStatus();
+
+    if (!healthStatus.hasStream) {
+        console.error('[AudioStream] No audio stream available');
+        return false;
+    }
+
+    if (!healthStatus.isActive || healthStatus.activeTracks === 0) {
+        console.warn('[AudioStream] Stream not healthy, health status:', healthStatus);
+
+        // Try stream recovery
+        await new Promise(resolve => setTimeout(resolve, 1000)); // Give recovery a moment
+
+        const newHealthStatus = audioStreamManager.getHealthStatus();
+        if (!newHealthStatus.isActive || newHealthStatus.activeTracks === 0) {
+            console.error('[AudioStream] Stream still not healthy after recovery attempt');
+            return false;
         }
     }
-    
-    console.log('[Poseidon] ✅ Audio stream verified -', activeTracks.length, 'active track(s) before starting recognition');
-    
-    let retryCount = 0;
-    
-    const attemptStart = async () => {
-        if (!poseidonActive || poseidonPaused) {
-            console.log('[Poseidon] Start attempt cancelled - inactive or paused');
-            recognitionState = 'idle';
-            return;
-        }
-        
-        // CRITICAL: Verify and FORCE configuration before starting
-        // Some browsers reset properties, so we must set them right before start
+
+    console.log(`[AudioStream] ✅ Validated: ${healthStatus.activeTracks} active track(s)`);
+    return true;
+}
+
+/**
+ * Validate and fix recognition configuration
+ */
+function validateRecognitionConfig() {
+    if (!recognition) return;
+
         let configChanged = false;
         
+    // Ensure correct configuration
         if (recognition.continuous !== true) {
-            console.warn('[Poseidon] Recognition continuous mode incorrect, fixing...', {
-                current: recognition.continuous,
-                expected: true
-            });
             recognition.continuous = true;
             configChanged = true;
         }
         if (recognition.interimResults !== true) {
-            console.warn('[Poseidon] Recognition interimResults incorrect, fixing...', {
-                current: recognition.interimResults,
-                expected: true
-            });
             recognition.interimResults = true;
-            configChanged = true;
-        }
-        if (recognition.lang !== voiceSettings.accent) {
-            console.warn('[Poseidon] Recognition lang incorrect, fixing...', {
-                current: recognition.lang,
-                expected: voiceSettings.accent
-            });
-            // MAJOR ENHANCEMENT: Explicit Hindi recognition language
-            if (voiceSettings.accent === 'hi-IN' || currentLanguage === 'hi-IN') {
-                recognition.lang = 'hi-IN';
-                console.log('[Poseidon Hindi] Recognition language explicitly set to Hindi (hi-IN) in onstart');
-            } else {
-                // MAJOR ENHANCEMENT: Explicit Hindi recognition language
-                if (voiceSettings.accent === 'hi-IN' || currentLanguage === 'hi-IN') {
-                    recognition.lang = 'hi-IN';
-                    console.log('[Poseidon Hindi] Recognition language explicitly set to Hindi (hi-IN)');
-                } else {
-                    recognition.lang = voiceSettings.accent || currentLanguage || 'en-US';
-                }
-            }
             configChanged = true;
         }
         if (recognition.maxAlternatives !== 1) {
@@ -4090,153 +4682,19 @@ async function startRecognitionWithRetry(maxRetries = 3) {
             configChanged = true;
         }
         
-        if (configChanged) {
-            console.log('[Poseidon] Configuration was corrected before start');
-        }
-        
-        // Set configuration one more time to be absolutely sure
-        recognition.continuous = true;
-        recognition.interimResults = true;
-        recognition.lang = voiceSettings.accent;
-        recognition.maxAlternatives = 1;
-        
-        try {
-            console.log(`[Poseidon] Starting recognition attempt ${retryCount + 1}/${maxRetries + 1}...`);
-            
-            // CRITICAL: Final verification - ensure audio stream is active before starting
-            if (!window.poseidonAudioStream) {
-                throw new Error('Audio stream is null - cannot start recognition');
-            }
-            
-            if (!window.poseidonAudioStream.active) {
-                console.error('[Poseidon] ERROR: Stream is not active before start!');
-                throw new Error('Audio stream is not active - cannot start recognition');
-            }
-            
-            const finalTracks = window.poseidonAudioStream.getAudioTracks();
-            const finalActiveTracks = finalTracks.filter(t => t.readyState === 'live' && t.enabled && !t.muted);
-            
-            if (finalActiveTracks.length === 0) {
-                console.error('[Poseidon] ERROR: No active tracks before start!');
-                throw new Error('No active audio tracks - cannot start recognition');
-            }
-            
-            console.log('[Poseidon] Recognition state before start:', {
-                continuous: recognition.continuous,
-                interimResults: recognition.interimResults,
-                lang: recognition.lang,
-                maxAlternatives: recognition.maxAlternatives,
-                hasAudioStream: !!window.poseidonAudioStream,
-                audioStreamActive: window.poseidonAudioStream.active,
-                activeTracks: finalActiveTracks.length,
-                totalTracks: finalTracks.length
-            });
-            
-            console.log('[Poseidon] Audio tracks status:', finalTracks.map(t => ({
-                label: t.label,
-                readyState: t.readyState,
-                enabled: t.enabled,
-                muted: t.muted
-            })));
-            
-            recognitionState = 'starting';
-            
-            // Start immediately - no delay, we need to maintain user gesture context
-            recognition.start();
-            console.log('[Poseidon] Recognition.start() called successfully');
-            
-            // Verify it started
-            setTimeout(() => {
-                if (recognitionState === 'starting' && poseidonActive) {
-                    console.log('[Poseidon] Recognition appears to have started - state verified');
-                    recognitionState = 'listening';
-                } else {
-                    console.warn('[Poseidon] Recognition state check - state:', recognitionState, 'active:', poseidonActive);
-                    if (recognitionState !== 'listening' && poseidonActive) {
-                        console.error('[Poseidon] WARNING: Recognition may not have started properly');
-                    }
-                }
-            }, 500);
-            
-        } catch (err) {
-            console.error(`[Poseidon] ERROR starting recognition (attempt ${retryCount + 1}):`, err);
-            console.error('[Poseidon] Start error details:', {
-                name: err?.name,
-                message: err?.message,
-                stack: err?.stack,
-                recognitionState: recognitionState,
-                hasRecognition: !!recognition,
-                recognitionConfig: recognition ? {
-                    continuous: recognition.continuous,
-                    interimResults: recognition.interimResults,
-                    lang: recognition.lang
-                } : null
-            });
-            
-            if (err.name === 'InvalidStateError') {
-                // Recognition might already be running, try to stop and restart
-                console.log('[Poseidon] InvalidStateError - recognition may already be running');
-                try {
-                    recognition.stop();
-                    console.log('[Poseidon] Stopped existing recognition, will retry...');
-                    // Wait for it to fully stop
-                    await new Promise(resolve => setTimeout(resolve, 300));
-                } catch (stopErr) {
-                    console.error('[Poseidon] ERROR stopping recognition:', stopErr);
-                    console.error('[Poseidon] Stop error details:', {
-                        name: stopErr?.name,
-                        message: stopErr?.message,
-                        recognitionState: recognitionState
-                    });
-                }
-                
-                // CRITICAL: Don't retry if circuit breaker is active
-                if (serviceNotAllowedDisabled) {
-                    console.warn('[Poseidon] Circuit breaker active - not retrying recognition start');
-                    updatePoseidonStatus('ready', 'Service Unavailable');
-                    return;
-                }
-                
-                if (retryCount < maxRetries) {
-                    retryCount++;
-                    const delay = 300 * retryCount; // Increased delay
-                    console.log(`[Poseidon] Retrying in ${delay}ms (attempt ${retryCount + 1}/${maxRetries + 1})`);
-                    setTimeout(() => {
-                        // Check circuit breaker again before retry
-                        if (!serviceNotAllowedDisabled && poseidonActive) {
-                            attemptStart();
-                        } else {
-                            console.warn('[Poseidon] Retry cancelled - circuit breaker active or Poseidon inactive');
-                        }
-                    }, delay); // Exponential backoff
-                } else {
-                    console.error('[Poseidon] ERROR: Max retries reached, giving up');
-                    console.error('[Poseidon] Final retry error details:', {
-                        maxRetries: maxRetries,
-                        finalError: err,
-                        errorName: err?.name,
-                        errorMessage: err?.message,
-                        recognitionState: recognitionState,
-                        poseidonActive: poseidonActive,
-                        poseidonPaused: poseidonPaused
-                    });
-                    updatePoseidonStatus('ready', 'Error starting');
-                    recognitionState = 'idle';
-                }
-            } else if (err.name === 'NotAllowedError' || err.message?.includes('permission')) {
-                console.error('[Poseidon] Permission error - user needs to grant microphone access');
-                updatePoseidonStatus('ready', 'Permission Required');
-                recognitionState = 'idle';
-                alert('Microphone permission is required. Please allow microphone access and try again.');
-            } else {
-                console.error('[Poseidon] Unknown error starting recognition');
-                updatePoseidonStatus('ready', 'Error: ' + (err.message || 'Unknown'));
-                recognitionState = 'idle';
-            }
-        }
-    };
-    
-    attemptStart();
+    // Set language
+    const targetLang = voiceSettings.accent === 'hi-IN' || currentLanguage === 'hi-IN'
+        ? 'hi-IN'
+        : (voiceSettings.accent || currentLanguage || 'en-US');
+
+    if (recognition.lang !== targetLang) {
+        recognition.lang = targetLang;
+        configChanged = true;
+    }
+
+    if (configChanged) {
+        console.log('[RecognitionConfig] ✅ Configuration validated and corrected');
+    }
 }
 
 function startAudioLevelMonitoring() {
@@ -4250,42 +4708,73 @@ function startAudioLevelMonitoring() {
         return;
     }
     
-    console.log('[Poseidon] Starting audio level monitoring with volume decline detection');
+    console.log('[Poseidon] Starting optimized audio level monitoring');
     
     // Reset audio tracking
     lastHighVolumeTime = Date.now();
     currentAudioLevel = 0;
     audioLevelHistory = [];
+    lastAudioProcessingTime = 0;
     
     try {
         const dataArray = new Uint8Array(analyser.frequencyBinCount);
         let volumeDeclineStartTime = null;
         let wasSpeaking = false;
         
-        audioLevelCheckInterval = setInterval(() => {
+        let currentCheckInterval = AUDIO_CHECK_INTERVAL_MS;
+
+        const performAudioCheck = () => {
             if (!analyser || !poseidonActive || poseidonPaused) return;
+
+            const now = Date.now();
+
+            // Performance optimization: Debounce rapid audio processing
+            if (now - lastAudioProcessingTime < AUDIO_PROCESSING_DEBOUNCE_MS) {
+                return;
+            }
             
             try {
                 analyser.getByteFrequencyData(dataArray);
-                const average = dataArray.reduce((a, b) => a + b) / dataArray.length;
-                const audioLevel = average / 255;
+
+                // Enhanced audio analysis: Focus on speech frequencies (300Hz-3400Hz)
+                // FFT bin 128 covers ~0-24000Hz, we want bins ~3-42 (roughly 300Hz-3400Hz)
+                const speechBins = dataArray.slice(3, 43); // Optimized frequency range
+                const average = speechBins.reduce((a, b) => a + b, 0) / speechBins.length;
+                let audioLevel = average / 255;
+
+                // Apply noise gate to reduce false positives
+                const noiseGateThreshold = 0.008; // Very low level noise filtering
+                if (audioLevel < noiseGateThreshold) {
+                    audioLevel = 0;
+                }
+
+                // Apply dynamic range compression for better sensitivity
+                if (audioLevel > 0.1) {
+                    audioLevel = 0.1 + (audioLevel - 0.1) * 0.3; // Soft compression above 0.1
+                }
                 currentAudioLevel = audioLevel;
+                lastAudioProcessingTime = now;
                 
-                // Keep history (last 20 samples = ~2 seconds) - v3.0.0: Enhanced
+                // Keep history (optimized: last 15 samples = ~2-3 seconds)
                 audioLevelHistory.push(audioLevel);
-                if (audioLevelHistory.length > 20) {
+                if (audioLevelHistory.length > 15) {
                     audioLevelHistory.shift();
                 }
                 
-                // Version 3.0.0: Adaptive sensitivity
-                if (audioLevelHistory.length >= 10) {
+                // Adaptive sensitivity (only when we have enough data)
+                if (audioLevelHistory.length >= 8) {
                     adaptListeningSensitivity(audioLevelHistory);
                 }
                 
-                // Update visualizer if available
+                // Batch DOM updates for better performance
                 if (poseidonVisualizer) {
                     const level = Math.min(audioLevel * 100, 100);
+                    // Use requestAnimationFrame for smooth visual updates
+                    requestAnimationFrame(() => {
+                        if (poseidonVisualizer) {
                     poseidonVisualizer.style.setProperty('--audio-level', `${level}%`);
+                        }
+                    });
                 }
                 
                 // Detect speech and volume decline
@@ -4359,9 +4848,12 @@ function startAudioLevelMonitoring() {
                     poseidonPaused: poseidonPaused
                 });
             }
-        }, AUDIO_CHECK_INTERVAL_MS);
+        };
         
-        console.log('[Poseidon] Audio level monitoring started successfully');
+        // Start with default interval
+        audioLevelCheckInterval = setInterval(performAudioCheck, AUDIO_CHECK_INTERVAL_MS);
+
+        console.log('[Poseidon] Optimized audio level monitoring started successfully');
     } catch (startErr) {
         console.error('[Poseidon] ERROR starting audio level monitoring:', startErr);
         console.error('[Poseidon] Start monitoring error details:', {
@@ -5042,7 +5534,7 @@ async function handlePoseidonTranscript(transcript) {
     
     console.log('[Poseidon] Processing transcript:', textToProcess);
     transcriptProcessing = true;
-    recognitionState = 'processing';
+    recognitionStateManager.transition(RECOGNITION_STATES.PROCESSING, { reason: 'transcript-processing' });
     
     // Don't stop recognition in continuous mode - just mark as processing
     clearTimeout(silenceTimeout);
@@ -5073,6 +5565,7 @@ async function handlePoseidonTranscript(transcript) {
             tone: getEffectiveTone(),
             system_mode: systemMode,  // Include system mode (latest/stable)
             response_language: detectedLanguage,  // Tell backend to respond in this language
+            voice_mode: true  // Optimize for voice mode (v4.3.0)
         };
         
         if (currentModel === 'gem:preview' && activeGemDraft) {
@@ -5368,7 +5861,7 @@ async function handlePoseidonTranscript(transcript) {
         // In continuous mode, recognition should still be running
         // Just reset state and continue listening
         if (poseidonActive && !poseidonPaused) {
-            recognitionState = 'listening';
+            recognitionStateManager.transition(RECOGNITION_STATES.LISTENING, { reason: 'transcript-end' });
             updatePoseidonStatus('listening', 'Listening...');
             lastSpeechTime = Date.now();
             pendingTranscript = '';
@@ -5389,7 +5882,7 @@ async function handlePoseidonTranscript(transcript) {
                 }
             }
         } else {
-            recognitionState = 'idle';
+            recognitionStateManager.transition(RECOGNITION_STATES.IDLE, { reason: 'inactive' });
         }
     }
 }
@@ -5733,12 +6226,12 @@ function setupRecognitionHandlers() {
     recognition.onend = () => {
         console.log('[Poseidon] Recognition ended - state was:', recognitionState);
         clearTimeout(silenceTimeout);
-        recognitionState = 'stopped';
+        recognitionStateManager.transition(RECOGNITION_STATES.STOPPED, { reason: 'recognition-end' });
         
         if (!poseidonActive || poseidonPaused) {
             console.log('[Poseidon] Not restarting - inactive or paused');
             updatePoseidonStatus('ready', 'Ready');
-            recognitionState = 'idle';
+            recognitionStateManager.transition(RECOGNITION_STATES.IDLE, { reason: 'inactive' });
             return;
         }
         
@@ -5757,11 +6250,16 @@ function setupRecognitionHandlers() {
                     console.log('[Poseidon] Auto-restarting recognition...');
                     startRecognitionWithRetry();
                 }
-            }, 500); // Wait before restarting
+            }, 150); // Optimized: Further reduced restart delay from 200ms to 150ms for faster recovery
         }
     };
     
+    /**
+     * Unified recognition restart function (v4.3.0)
+     * Consolidates all restart logic into a single function with proper state management
+     */
     function restartRecognition() {
+        // Validate state before restart
         if (!poseidonActive || poseidonPaused || transcriptProcessing) {
             console.warn('[Poseidon] Cannot restart recognition - conditions not met:', {
                 poseidonActive: poseidonActive,
@@ -5771,18 +6269,46 @@ function setupRecognitionHandlers() {
             return;
         }
         
+        // Check state machine constraints
+        if (!recognitionStateManager.canRestart()) {
+            console.warn('[Poseidon] Cannot restart - state machine constraints');
+            return;
+        }
+        
+        // Check circuit breaker
+        const isElectron = window.electronAPI !== undefined;
+        if (poseidonErrorTracker.circuitBreakerActive) {
+            if (poseidonErrorTracker.resetCircuitBreaker()) {
+                console.log('[Poseidon] ✅ Circuit breaker reset, allowing restart');
+            } else if (!isElectron) {
+                console.warn('[Poseidon] Circuit breaker active - not restarting');
+                return;
+            }
+        }
+        
         console.log('[Poseidon] Restarting recognition...');
+        
+        // Transition to stopped state first
+        if (recognitionStateManager.canTransition(RECOGNITION_STATES.STOPPED)) {
+            recognitionStateManager.transition(RECOGNITION_STATES.STOPPED, { reason: 'restart-initiated' });
+        }
+        
         try {
             if (recognition) {
                 recognition.stop();
                 console.log('[Poseidon] Recognition stopped for restart');
             } else {
                 console.error('[Poseidon] ERROR: Cannot restart - recognition is null');
+                recognitionStateManager.transition(RECOGNITION_STATES.ERROR, { reason: 'recognition-null' });
+                return;
             }
         } catch (e) {
             console.error('[Poseidon] ERROR stopping recognition for restart:', e);
+            poseidonErrorTracker.recordError(e, { context: 'restartRecognition-stop' });
+            recognitionStateManager.transition(RECOGNITION_STATES.ERROR, { reason: 'stop-error', error: e.message });
         }
         
+        // Use unified start function with delay
         clearTimeout(recognitionRestartTimeout);
         recognitionRestartTimeout = setTimeout(() => {
             if (poseidonActive && !poseidonPaused) {
@@ -5793,8 +6319,9 @@ function setupRecognitionHandlers() {
                     poseidonActive: poseidonActive,
                     poseidonPaused: poseidonPaused
                 });
+                recognitionStateManager.transition(RECOGNITION_STATES.IDLE, { reason: 'restart-cancelled' });
             }
-        }, 300);
+        }, 250); // Optimized: Reduced delay from 300ms to 250ms for faster restart
     }
     
     recognition.onerror = (event) => {
@@ -5812,6 +6339,21 @@ function setupRecognitionHandlers() {
         });
         console.error('[Poseidon] Full error event object:', event);
         
+        // Create error object for error tracker
+        const errorObj = {
+            name: event.error || 'UnknownError',
+            message: event.message || `Recognition error: ${event.error}`,
+            error: event.error
+        };
+        
+        // Record error with error tracker
+        const errorRecord = poseidonErrorTracker.recordError(errorObj, {
+            eventType: event.type,
+            recognitionState: recognitionState,
+            poseidonActive: poseidonActive
+        });
+        const recoveryStrategy = poseidonErrorTracker.getRecoveryStrategy(errorRecord.type);
+        
         let errorMsg = '';
         let shouldSpeak = true;
         let shouldRestart = false;
@@ -5822,7 +6364,7 @@ function setupRecognitionHandlers() {
             shouldRestart = true;
         } else if (event.error === 'not-allowed') {
             console.error('[Poseidon] ERROR: Microphone permission denied');
-            errorMsg = 'Microphone permission denied. Please enable microphone access.';
+            errorMsg = recoveryStrategy.message || 'Microphone permission denied. Please enable microphone access.';
             alert('Please enable microphone access in your browser settings to use Poseidon.');
             updatePoseidonStatus('ready', 'Permission Required');
         } else if (event.error === 'network') {
@@ -5833,34 +6375,22 @@ function setupRecognitionHandlers() {
             // Network errors in Electron are often transient and not related to speech recognition service
             const isElectron = window.electronAPI !== undefined;
             
-            if (serviceNotAllowedDisabled && !isElectron) {
+            if (poseidonErrorTracker.circuitBreakerActive && !isElectron) {
                 // Only apply circuit breaker to network errors in browser, not Electron
                 console.warn('[Poseidon] Circuit breaker active - not restarting on network error');
-                errorMsg = 'Network error. Speech recognition service is temporarily unavailable.';
+                errorMsg = recoveryStrategy.message || 'Network error. Speech recognition service is temporarily unavailable.';
                 shouldRestart = false;
                 shouldSpeak = true;
-            } else if (!isElectron) {
-                // Track network errors for circuit breaker (browser only)
-                const now = Date.now();
-                rapidErrorTimes.push(now);
-                rapidErrorTimes = rapidErrorTimes.filter(time => now - time < RAPID_ERROR_WINDOW_MS);
-                
-                // If too many network errors, trigger circuit breaker (browser only)
-                if (rapidErrorTimes.length >= MAX_RAPID_ERRORS) {
-                    console.error(`[Poseidon] 🛑 CIRCUIT BREAKER TRIGGERED: ${rapidErrorTimes.length} network errors in ${RAPID_ERROR_WINDOW_MS}ms`);
-                    serviceNotAllowedDisabled = true;
-                    errorMsg = 'Multiple network errors detected. Speech recognition service is temporarily unavailable. Please close and reopen Poseidon.';
+            } else {
+                // Use recovery strategy for network errors
+                if (recoveryStrategy.retry && !poseidonErrorTracker.circuitBreakerActive) {
+                    errorMsg = recoveryStrategy.message || 'Network error. Retrying...';
+                    shouldRestart = true;
+                } else {
+                    errorMsg = recoveryStrategy.message || 'Network error. Service temporarily unavailable.';
                     shouldRestart = false;
                     shouldSpeak = true;
-                } else {
-                    errorMsg = 'Network error. Retrying...';
-                    shouldRestart = true;
                 }
-            } else {
-                // Electron: Don't trigger circuit breaker on network errors, just retry
-                console.log('[Poseidon] Electron: Network error detected, will retry (circuit breaker disabled for Electron)');
-                errorMsg = 'Network error. Retrying...';
-                shouldRestart = true;
             }
         } else if (event.error === 'aborted') {
             // Recognition was stopped, don't show error
@@ -6446,10 +6976,10 @@ function closePoseidonOverlay() {
     console.log('[Poseidon] Closing overlay...');
     
     // Set inactive FIRST to prevent any async operations from continuing
-    poseidonActive = false;
-    poseidonPaused = false;
-    transcriptProcessing = false;
-    recognitionState = 'idle';
+    poseidonStateManager.setActive(false, { reason: 'overlay-closed' });
+    poseidonStateManager.setPaused(false, { reason: 'overlay-closed' });
+    poseidonStateManager.recognition.transcriptProcessing = false;
+    poseidonStateManager.updateRecognitionState(RECOGNITION_STATES.IDLE, { reason: 'overlay-closed' });
     
     // Clear all timeouts
     clearTimeout(silenceTimeout);
@@ -6475,19 +7005,8 @@ function closePoseidonOverlay() {
     stopAudioLevelMonitoring();
     
     // Stop and release audio stream LAST
-    if (window.poseidonAudioStream) {
-        try {
-            const tracks = window.poseidonAudioStream.getAudioTracks();
-            tracks.forEach(track => {
-                track.stop();
-                console.log('[Poseidon] Stopped audio track:', track.label);
-            });
-            window.poseidonAudioStream = null;
-            console.log('[Poseidon] Audio stream released');
-        } catch (e) {
-            console.warn('[Poseidon] Error releasing audio stream:', e);
-        }
-    }
+    // Release audio stream using stream manager
+    audioStreamManager.releaseStream();
     
     // Clean up 3D animation if enabled
     if (poseidon3D) {
@@ -7224,3 +7743,342 @@ if (document.readyState === 'loading') {
         }
     });
 }
+
+// Audio Stream Lifecycle Manager (v4.1.0)
+let audioStreamManager = {
+    stream: null,
+    healthCheckInterval: null,
+    recoveryAttempts: 0,
+    lastHealthCheck: 0,
+    streamHealth: 'unknown', // 'healthy', 'degraded', 'failed', 'unknown'
+
+    /**
+     * Initialize stream manager
+     */
+    initialize() {
+        console.log('[StreamManager] Initializing audio stream manager');
+        this.stream = null;
+        this.recoveryAttempts = 0;
+        this.streamHealth = 'unknown';
+        this.stopHealthMonitoring();
+    },
+
+    /**
+     * Set the active audio stream
+     * @param {MediaStream} stream - The audio stream
+     */
+    setStream(stream) {
+        console.log('[StreamManager] Setting new audio stream');
+
+        // Clean up existing stream
+        if (this.stream && this.stream !== stream) {
+            this.releaseStream();
+        }
+
+        this.stream = stream;
+        this.recoveryAttempts = 0;
+        this.streamHealth = 'healthy';
+        this.lastHealthCheck = Date.now();
+
+        // Ensure stream stays active
+        this.preserveStream();
+
+        // Start health monitoring
+        this.startHealthMonitoring();
+
+        console.log('[StreamManager] ✅ Audio stream set and monitoring started');
+    },
+
+    /**
+     * Preserve stream from garbage collection and ensure tracks stay active
+     */
+    preserveStream() {
+        if (!this.stream) return;
+
+        try {
+            const tracks = this.stream.getAudioTracks();
+            if (tracks.length > 0) {
+                // Ensure at least one track is active
+                const activeTrack = tracks.find(t => t.readyState === 'live') || tracks[0];
+                if (activeTrack) {
+                    activeTrack.enabled = true;
+                    activeTrack.muted = false;
+
+                    // Add event listeners for track state changes
+                    activeTrack.onended = () => {
+                        console.warn('[StreamManager] Audio track ended unexpectedly');
+                        this.handleTrackFailure();
+                    };
+
+                    activeTrack.onmute = () => {
+                        console.warn('[StreamManager] Audio track muted unexpectedly');
+                        // Try to unmute
+                        setTimeout(() => {
+                            if (activeTrack.muted) {
+                                activeTrack.muted = false;
+                                console.log('[StreamManager] Attempted to unmute track');
+                            }
+                        }, 100);
+                    };
+                }
+            }
+
+            // Keep global reference to prevent garbage collection
+            window.poseidonAudioStream = this.stream;
+
+        } catch (error) {
+            console.error('[StreamManager] Error preserving stream:', error);
+        }
+    },
+
+    /**
+     * Start periodic health monitoring
+     */
+    startHealthMonitoring() {
+        this.stopHealthMonitoring(); // Stop any existing monitoring
+
+        this.healthCheckInterval = setInterval(() => {
+            this.performHealthCheck();
+        }, 5000); // Check every 5 seconds
+
+        console.log('[StreamManager] Health monitoring started');
+    },
+
+    /**
+     * Stop health monitoring
+     */
+    stopHealthMonitoring() {
+        if (this.healthCheckInterval) {
+            clearInterval(this.healthCheckInterval);
+            this.healthCheckInterval = null;
+            console.log('[StreamManager] Health monitoring stopped');
+        }
+    },
+
+    /**
+     * Perform a health check on the audio stream
+     */
+    performHealthCheck() {
+        if (!this.stream) {
+            this.streamHealth = 'failed';
+            return;
+        }
+
+        try {
+            const now = Date.now();
+            const tracks = this.stream.getAudioTracks();
+            const activeTracks = tracks.filter(t =>
+                t.readyState === 'live' && t.enabled && !t.muted
+            );
+
+            if (!this.stream.active || activeTracks.length === 0) {
+                console.warn('[StreamManager] Health check failed - stream not active or no active tracks');
+                this.streamHealth = 'failed';
+                this.handleStreamFailure();
+                return;
+            }
+
+            // Check for track state changes
+            const endedTracks = tracks.filter(t => t.readyState === 'ended');
+            if (endedTracks.length > 0) {
+                console.warn(`[StreamManager] ${endedTracks.length} track(s) have ended`);
+                this.streamHealth = 'degraded';
+            } else {
+                this.streamHealth = 'healthy';
+            }
+
+            this.lastHealthCheck = now;
+            
+            // Update state manager with current stream health
+            if (poseidonStateManager) {
+                poseidonStateManager.updateAudioState({ 
+                    streamActive: this.stream.active && activeTracks.length > 0 
+                });
+            }
+
+        } catch (error) {
+            console.error('[StreamManager] Error during health check:', error);
+            this.streamHealth = 'failed';
+            this.handleStreamFailure();
+        }
+    },
+
+    /**
+     * Handle stream failure with automatic recovery (v4.3.0: Enhanced with error tracking)
+     */
+    async handleStreamFailure() {
+        if (this.recoveryAttempts >= 3) {
+            console.error('[StreamManager] ❌ Max stream recovery attempts reached');
+            this.streamHealth = 'failed';
+            
+            // Record error with error tracker
+            const error = new Error('Stream recovery failed after max attempts');
+            poseidonErrorTracker.recordError(error, {
+                context: 'stream-recovery',
+                recoveryAttempts: this.recoveryAttempts,
+                streamHealth: this.streamHealth
+            });
+            
+            // Notify error handler
+            if (poseidonActive) {
+                updatePoseidonStatus('ready', 'Audio stream failed');
+            }
+            
+            // Update state manager
+            if (poseidonStateManager) {
+                poseidonStateManager.updateAudioState({ streamActive: false });
+            }
+            
+            return;
+        }
+
+        console.log(`[StreamManager] Attempting stream recovery (attempt ${this.recoveryAttempts + 1})`);
+        this.recoveryAttempts++;
+
+        try {
+            // Try to re-enable existing tracks
+            if (this.stream) {
+                const tracks = this.stream.getAudioTracks();
+                tracks.forEach(track => {
+                    if (track.readyState !== 'ended') {
+                        track.enabled = true;
+                        track.muted = false;
+                    }
+                });
+
+                // Wait and check if recovery worked
+                await new Promise(resolve => setTimeout(resolve, 1000));
+
+                const activeTracks = tracks.filter(t =>
+                    t.readyState === 'live' && t.enabled && !t.muted
+                );
+
+                if (activeTracks.length > 0 && this.stream.active) {
+                    console.log('[StreamManager] ✅ Stream recovered by re-enabling tracks');
+                    this.recoveryAttempts = 0;
+                    this.streamHealth = 'healthy';
+                    
+                    // Update state manager
+                    if (poseidonStateManager) {
+                        poseidonStateManager.updateAudioState({ streamActive: true });
+                    }
+                    
+                    return;
+                }
+            }
+
+            // If re-enabling didn't work, request new stream
+            console.log('[StreamManager] Re-enabling failed, requesting new stream');
+            const newStream = await navigator.mediaDevices.getUserMedia({
+                audio: {
+                    echoCancellation: true,
+                    noiseSuppression: true,
+                    autoGainControl: true
+                }
+            });
+
+            this.setStream(newStream);
+            console.log('[StreamManager] ✅ Stream recovered with new stream');
+            
+            // Update state manager
+            if (poseidonStateManager) {
+                poseidonStateManager.updateAudioState({ streamActive: true });
+            }
+
+        } catch (error) {
+            console.error('[StreamManager] ❌ Stream recovery failed:', error);
+            
+            // Record error with error tracker
+            poseidonErrorTracker.recordError(error, {
+                context: 'stream-recovery',
+                attempt: this.recoveryAttempts
+            });
+            
+            // Exponential backoff for retries
+            const backoffDelay = Math.min(1000 * Math.pow(2, this.recoveryAttempts), 10000);
+            setTimeout(() => {
+                // Only retry if circuit breaker is not active
+                const isElectron = window.electronAPI !== undefined;
+                if (!poseidonErrorTracker.circuitBreakerActive || isElectron) {
+                    this.handleStreamFailure();
+                } else {
+                    console.warn('[StreamManager] Circuit breaker active - stopping stream recovery');
+                }
+            }, backoffDelay);
+        }
+    },
+
+    /**
+     * Handle individual track failure
+     */
+    handleTrackFailure() {
+        console.warn('[StreamManager] Track failure detected');
+        if (this.stream) {
+            const tracks = this.stream.getAudioTracks();
+            const activeTracks = tracks.filter(t =>
+                t.readyState === 'live' && t.enabled && !t.muted
+            );
+
+            if (activeTracks.length === 0) {
+                console.error('[StreamManager] No active tracks remaining');
+                this.handleStreamFailure();
+            }
+        }
+    },
+
+    /**
+     * Release the current stream and clean up resources
+     */
+    releaseStream() {
+        console.log('[StreamManager] Releasing audio stream');
+
+        this.stopHealthMonitoring();
+
+        if (this.stream) {
+            try {
+                // Stop all tracks
+                const tracks = this.stream.getTracks();
+                tracks.forEach(track => {
+                    try {
+                        track.stop();
+                        console.log('[StreamManager] Stopped track:', track.kind, track.label);
+                    } catch (e) {
+                        console.warn('[StreamManager] Error stopping track:', e);
+                    }
+                });
+            } catch (error) {
+                console.warn('[StreamManager] Error stopping stream tracks:', error);
+            }
+
+            this.stream = null;
+        }
+
+        // Clear global reference
+        if (window.poseidonAudioStream) {
+            window.poseidonAudioStream = null;
+        }
+
+        this.streamHealth = 'unknown';
+        this.recoveryAttempts = 0;
+
+        console.log('[StreamManager] ✅ Audio stream released');
+    },
+
+    /**
+     * Get stream health status
+     * @returns {Object} Health status information
+     */
+    getHealthStatus() {
+        return {
+            health: this.streamHealth,
+            hasStream: !!this.stream,
+            isActive: this.stream?.active || false,
+            activeTracks: this.stream ? this.stream.getAudioTracks().filter(t =>
+                t.readyState === 'live' && t.enabled && !t.muted
+            ).length : 0,
+            totalTracks: this.stream ? this.stream.getAudioTracks().length : 0,
+            recoveryAttempts: this.recoveryAttempts,
+            lastHealthCheck: this.lastHealthCheck
+        };
+    }
+};
