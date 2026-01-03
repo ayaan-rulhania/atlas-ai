@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas AI - Advertising Poster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Exo+2:wght@300;400;600;700;900&family=Bebas+Neue&family=Audiowide&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0d1117 100%);
+            color: #ffffff;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .poster-container {
+            width: 100%;
+            max-width: 1920px;
+            margin: 0 auto;
+            position: relative;
+            background: radial-gradient(ellipse at top, #1e3a5f 0%, #0a0e27 50%);
+        }
+
+        /* Animated background particles */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #58a6ff;
+            border-radius: 50%;
+            animation: float 20s infinite;
+            opacity: 0.6;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) translateX(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.6;
+            }
+            90% {
+                opacity: 0.6;
+            }
+            100% {
+                transform: translateY(-100vh) translateX(100px);
+                opacity: 0;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 40px;
+            z-index: 1;
+            background: linear-gradient(180deg, rgba(13, 17, 23, 0.9) 0%, rgba(30, 58, 95, 0.3) 100%);
+        }
+
+        .logo-container {
+            margin-bottom: 40px;
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                filter: drop-shadow(0 0 20px rgba(88, 166, 255, 0.5));
+            }
+            50% {
+                transform: scale(1.05);
+                filter: drop-shadow(0 0 40px rgba(88, 166, 255, 0.8));
+            }
+        }
+
+        .logo {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #00AEEF 0%, #005FCE 100%);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 20px 60px rgba(88, 166, 255, 0.4),
+                        0 0 100px rgba(88, 166, 255, 0.2);
+            position: relative;
+        }
+
+        .logo::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border-radius: 32px;
+            padding: 2px;
+            background: linear-gradient(135deg, #00AEEF, #005FCE, #58a6ff);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            animation: rotate 3s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .logo svg {
+            width: 120px;
+            height: 120px;
+            color: white;
+        }
+
+        .hero-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(48px, 8vw, 120px);
+            font-weight: 900;
+            background: linear-gradient(135deg, #58a6ff 0%, #00AEEF 50%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            text-shadow: 0 0 80px rgba(88, 166, 255, 0.5);
+            letter-spacing: 8px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                filter: drop-shadow(0 0 20px rgba(88, 166, 255, 0.5));
+            }
+            to {
+                filter: drop-shadow(0 0 40px rgba(88, 166, 255, 0.9));
+            }
+        }
+
+        .hero-subtitle {
+            font-family: 'Exo 2', sans-serif;
+            font-size: clamp(24px, 3vw, 48px);
+            font-weight: 300;
+            color: #c9d1d9;
+            margin-bottom: 15px;
+            letter-spacing: 4px;
+        }
+
+        .hero-tagline {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: clamp(18px, 2vw, 32px);
+            font-weight: 400;
+            color: #8b949e;
+            margin-bottom: 50px;
+            max-width: 800px;
+            line-height: 1.6;
+        }
+
+        .version-badge {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, rgba(88, 166, 255, 0.2), rgba(0, 174, 239, 0.2));
+            border: 2px solid #58a6ff;
+            border-radius: 50px;
+            font-family: 'Audiowide', cursive;
+            font-size: 20px;
+            color: #58a6ff;
+            margin-bottom: 40px;
+            box-shadow: 0 0 30px rgba(88, 166, 255, 0.3);
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% {
+                box-shadow: 0 0 30px rgba(88, 166, 255, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 50px rgba(88, 166, 255, 0.6);
+            }
+        }
+
+        /* Features Grid */
+        .features-section {
+            position: relative;
+            padding: 100px 40px;
+            z-index: 1;
+            background: linear-gradient(180deg, rgba(13, 17, 23, 0.95) 0%, rgba(10, 14, 39, 0.95) 100%);
+        }
+
+        .section-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(36px, 5vw, 72px);
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 60px;
+            background: linear-gradient(135deg, #58a6ff, #00AEEF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 4px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, rgba(30, 58, 95, 0.3), rgba(13, 17, 23, 0.5));
+            border: 2px solid rgba(88, 166, 255, 0.3);
+            border-radius: 20px;
+            padding: 40px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(88, 166, 255, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .feature-card:hover::before {
+            left: 100%;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: #58a6ff;
+            box-shadow: 0 20px 60px rgba(88, 166, 255, 0.3);
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .feature-title {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #58a6ff;
+            margin-bottom: 15px;
+        }
+
+        .feature-description {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 18px;
+            color: #c9d1d9;
+            line-height: 1.6;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            position: relative;
+            padding: 80px 40px;
+            z-index: 1;
+            background: linear-gradient(135deg, rgba(88, 166, 255, 0.1), rgba(0, 174, 239, 0.1));
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .stat-number {
+            font-family: 'Audiowide', cursive;
+            font-size: clamp(36px, 5vw, 64px);
+            font-weight: 400;
+            color: #00AEEF;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(88, 166, 255, 0.5);
+        }
+
+        .stat-label {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 20px;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            position: relative;
+            padding: 100px 40px;
+            z-index: 1;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(10, 14, 39, 0.95) 0%, rgba(13, 17, 23, 0.95) 100%);
+        }
+
+        .cta-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(32px, 5vw, 64px);
+            font-weight: 700;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, #58a6ff, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .cta-button {
+            padding: 20px 50px;
+            font-family: 'Exo 2', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button-primary {
+            background: linear-gradient(135deg, #58a6ff, #00AEEF);
+            color: white;
+            box-shadow: 0 10px 40px rgba(88, 166, 255, 0.4);
+        }
+
+        .cta-button-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(88, 166, 255, 0.6);
+        }
+
+        .cta-button-secondary {
+            background: transparent;
+            color: #58a6ff;
+            border: 2px solid #58a6ff;
+        }
+
+        .cta-button-secondary:hover {
+            background: rgba(88, 166, 255, 0.1);
+            transform: translateY(-5px);
+        }
+
+        /* Code Example */
+        .code-section {
+            position: relative;
+            padding: 80px 40px;
+            z-index: 1;
+            background: rgba(13, 17, 23, 0.95);
+        }
+
+        .code-block {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #0d1117;
+            border: 2px solid rgba(88, 166, 255, 0.3);
+            border-radius: 15px;
+            padding: 30px;
+            overflow-x: auto;
+        }
+
+        .code-block pre {
+            font-family: 'Courier New', monospace;
+            font-size: 16px;
+            color: #58a6ff;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .code-block .keyword { color: #ff7b72; }
+        .code-block .string { color: #a5d6ff; }
+        .code-block .function { color: #d2a8ff; }
+        .code-block .comment { color: #8b949e; }
+
+        /* Footer */
+        .footer {
+            position: relative;
+            padding: 60px 40px;
+            z-index: 1;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(13, 17, 23, 0.95) 0%, #0a0e27 100%);
+            border-top: 2px solid rgba(88, 166, 255, 0.2);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .footer-link {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 18px;
+            color: #8b949e;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #58a6ff;
+        }
+
+        .footer-text {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 16px;
+            color: #6e7681;
+            margin-top: 30px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 40px 20px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    
+    <div class="poster-container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="logo-container">
+                <div class="logo">
+                    <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M256 120 L356 220 L256 320 L156 220 Z" fill="currentColor" stroke="currentColor" stroke-width="2"/>
+                        <path d="M120 340 Q120 340 120 360 L120 420 Q120 420 140 420 L372 420 Q392 420 392 400 L392 360 Q392 340 372 340 L140 340 Q120 340 120 360 Z" fill="currentColor" stroke="currentColor" stroke-width="2"/>
+                        <path d="M100 380 Q100 380 100 400 L100 460 Q100 460 120 460 L392 460 Q412 460 412 440 L412 400 Q412 380 392 380 L120 380 Q100 380 100 400 Z" fill="currentColor" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="version-badge">v1.0.0</div>
+            
+            <h1 class="hero-title">ATLAS AI</h1>
+            <h2 class="hero-subtitle">OPEN-SOURCE MULTIMODAL ASSISTANT</h2>
+            <p class="hero-tagline">
+                The future of transparent, self-hosted AI. Powered by Thor 1.1, 
+                featuring continuous learning, image understanding, and full control.
+            </p>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <h2 class="section-title">POWERFUL FEATURES</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🤖</span>
+                    <h3 class="feature-title">Dual Model Architecture</h3>
+                    <p class="feature-description">
+                        Thor 1.0 (stable) and Thor 1.1 (latest) with 1.2B parameters, 
+                        20 layers, and 2K token context window for powerful AI capabilities.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🖼️</span>
+                    <h3 class="feature-title">Image Understanding</h3>
+                    <p class="feature-description">
+                        Advanced image processing and generation via TrainX DSL. 
+                        Upload, analyze, and create images with style and angle control.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🧠</span>
+                    <h3 class="feature-title">Continuous Learning</h3>
+                    <p class="feature-description">
+                        Auto-training every 30 minutes. Brain system organizes knowledge 
+                        A-Z. Research engine with web search integration for unknown topics.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">💎</span>
+                    <h3 class="feature-title">Custom Gems</h3>
+                    <p class="feature-description">
+                        Create specialized AI assistants with custom instructions, 
+                        tone control, and knowledge sources. Try before you save.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🔌</span>
+                    <h3 class="feature-title">Multi-Language SDKs</h3>
+                    <p class="feature-description">
+                        Python and JavaScript SDKs with REST APIs. 
+                        Integrate Atlas AI into any application in minutes.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🔒</span>
+                    <h3 class="feature-title">Full Transparency</h3>
+                    <p class="feature-description">
+                        Apache 2.0 licensed. Inspect, fork, and improve every layer. 
+                        Self-hosted with complete control over your data.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">1.2B</div>
+                    <div class="stat-label">Parameters</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2K</div>
+                    <div class="stat-label">Token Context</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">20</div>
+                    <div class="stat-label">Transformer Layers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Open Source</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Code Example Section -->
+        <section class="code-section">
+            <h2 class="section-title">GET STARTED IN SECONDS</h2>
+            <div class="code-block">
+                <pre><span class="comment"># Python SDK</span>
+<span class="keyword">pip</span> <span class="function">install</span> atlas-ai
+<span class="keyword">atlas</span>-chat
+
+<span class="comment"># JavaScript SDK</span>
+<span class="keyword">import</span> { Chatbot } <span class="keyword">from</span> <span class="string">'@atlas-ai/sdk'</span>;
+<span class="keyword">const</span> bot = <span class="keyword">new</span> <span class="function">Chatbot</span>();
+<span class="function">console.log</span>(<span class="keyword">await</span> bot.<span class="function">ask</span>(<span class="string">'Hello Atlas!'</span>));</pre>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2 class="cta-title">READY TO BUILD THE FUTURE?</h2>
+            <p class="hero-tagline" style="max-width: 600px; margin: 0 auto 50px;">
+                Join thousands of developers building transparent, 
+                self-hosted AI solutions with Atlas AI.
+            </p>
+            <div class="cta-buttons">
+                <a href="https://github.com/atlas-ai/atlas-ai" class="cta-button cta-button-primary">
+                    ⭐ Star on GitHub
+                </a>
+                <a href="https://discord.gg/atlas-ai" class="cta-button cta-button-secondary">
+                    💬 Join Discord
+                </a>
+                <a href="#" class="cta-button cta-button-secondary">
+                    📚 View Docs
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="#" class="footer-link">GitHub</a>
+                <a href="#" class="footer-link">Documentation</a>
+                <a href="#" class="footer-link">Discord</a>
+                <a href="#" class="footer-link">Blog</a>
+                <a href="#" class="footer-link">License</a>
+            </div>
+            <p class="footer-text">
+                Atlas AI v1.0.0 • Apache 2.0 License • Built with ❤️ by the Atlas AI Team
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Create animated particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Initialize particles on load
+        window.addEventListener('load', createParticles);
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe feature cards
+        document.querySelectorAll('.feature-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+
+        // Observe stat items
+        document.querySelectorAll('.stat-item').forEach(stat => {
+            stat.style.opacity = '0';
+            stat.style.transform = 'scale(0.8)';
+            stat.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(stat);
+        });
+    </script>
+</body>
+</html>
