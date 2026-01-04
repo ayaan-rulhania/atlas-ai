@@ -76,7 +76,32 @@
     "north",
     "non",
     "normal",
-    "numbers"
+    "numbers",
+    "np",
+    "next",
+    "nuxt",
+    "node",
+    "nft",
+    "nat",
+    "norman",
+    "napoleon",
+    "napoleonic",
+    "nazi",
+    "nagasaki",
+    "nelson",
+    "nile",
+    "noriega",
+    "nino",
+    "nina",
+    "neoclassicism",
+    "novel",
+    "noir",
+    "neoclassical",
+    "nouveau",
+    "nancy",
+    "nutrient",
+    "nitrogen",
+    "nationalism"
   ],
   "knowledge": [
     {
@@ -3327,7 +3352,2095 @@
       "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Ffiveable.me%2Fkey%2Dterms%2Fap%2Dmicro%2Fnash%2Dequilibrium&rut=15256d0f9278087dda1fb34a907dc87490735094453c03ad1203d11fe97663b6",
       "confidence": 0.7,
       "learned_at": "2026-01-02T15:32:58.130057"
+    },
+    {
+      "topic": "p versus np",
+      "title": "P versus NP problem - Wikipedia",
+      "content": "The P versus NP problem is a major unsolved problem in theoretical computer science. Informally, it asks whether every problem whose solution can be quickly verified can also be quickly solved.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FP_versus_NP_problem&rut=fa1777fe4237c90aa2aa46eb1d84dc915d223be28224a878755560e00019e22f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:37:45.579031"
+    },
+    {
+      "topic": "p versus np",
+      "title": "P versus NP - AoPS Wiki - Art of Problem Solving",
+      "content": "Examples of P, NP, NP-complete problems The following problems are examples of problems in (i.e. ones we can answer in polynomial time as a function of input): Given a list of integers, is it sorted in non-decreasing order? Given a weighted, undirected graph and two vertices , does there exist a path from to of weight at most ?",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fartofproblemsolving.com%2Fwiki%2Findex.php%2FP_versus_NP&rut=31c5d9b95e82d0abf17bc378161431dbcfd7d4a5cd93b2ed3d088d5330d44c07",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:37:45.579105"
+    },
+    {
+      "topic": "p versus np",
+      "title": "P versus NP problem - Encyclopedia Britannica",
+      "content": "P versus NP problem, in computational complexity (a subfield of theoretical computer science and mathematics), the question of whether all so-called NP problems are actually P problems. A P problem is one that can be solved in \"polynomial time,\" which means that an algorithm exists for its solution",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2FP%2Dversus%2DNP%2Dproblem&rut=ef3a2595e79f747452655ffb91252edb55846cb87b12f5ec1c272ccf08ccaea5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:37:45.579135"
+    },
+    {
+      "topic": "p versus np",
+      "title": "P vs NP Problems - GeeksforGeeks",
+      "content": "We have two categories: P for problems with quick solutions, and NP for problems where checking is fast, but solving might not be. This article explores these P vs NP problems, trying to understand why some things are easy to check but hard to figure out, and why it matters for how computers work. What is P problems?",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fdsa%2Fp%2Dvs%2Dnp%2Dproblems%2F&rut=e5e408b138f5fa5504548fe658eea90e5f2fc1d21ef0b76c303a1e3a68359228",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:37:45.579167"
+    },
+    {
+      "topic": "p versus np",
+      "title": "P versus NP | Brilliant Math & Science Wiki",
+      "content": "Learn about the famous open problem of whether P = NP, which has implications for cryptography and complexity theory. Compare the algorithms and examples of P and NP classes, and explore the status of research and references.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbrilliant.org%2Fwiki%2Fp%2Dversus%2Dnp%2F&rut=3f0937134c3d5329a2e611bf1a972a8a1ef6a5ebda6a08edee7e40936da33da2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:37:45.579197"
+    },
+    {
+      "topic": "big o notation",
+      "title": "PDF Microsoft Word - Big O notation.doc",
+      "content": "Learn how to use Big O notation to describe the asymptotic behavior of functions, especially in computer science and mathematics. See the formal definition, the common notations, and the examples of time complexity analysis.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fweb.mit.edu%2F16.070%2Fwww%2Flecture%2Fbig_o.pdf&rut=4ef13316b2340be782207b596c185e114cb03a8fb89fd99fce5292261dd11938",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:38:49.205333"
+    },
+    {
+      "topic": "big o notation",
+      "title": "Big-O notation (article) | Algorithms | Khan Academy",
+      "content": "Here's how to think of a running time that is O (f (n)) : We say that the running time is \"big-O of f (n) \" or just \"O of f (n) .\" We use big-O notation for asymptotic upper bounds, since it bounds the growth of the running time from above for large enough input sizes. Now we have a way to characterize the running time of binary search in all ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.khanacademy.org%2Fcomputing%2Fcomputer%2Dscience%2Falgorithms%2Fasymptotic%2Dnotation%2Fa%2Fbig%2Do%2Dnotation&rut=bd18debd4c19556357130c6821124ac642922bb7635a0c89883a13f92bd1a197",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:38:49.205396"
+    },
+    {
+      "topic": "what is blockchain: everything you need to know (2022)",
+      "title": "Low priced blockchains for dummies - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on blockchains for dummies at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DzLpm4sHQmPW35b5OvXSx%252Dn5TtHbSO2Y59yPVpYsoaSFujFBWnOlql3QjatlDaYtPu_MqXRHX54tdbnHyv_BAuz6UWxwviTDOYlaR7CvWCtyS7tDwKdo8XXJCckyjdIQnJeKMX9fTCgOkJ7rsy0puOPoBwJjw2huImTf_cqpFIiA.pyiEOgA%252DOQY_GacB1Dw1gg%26rut%3Dc759eb4765f9c81eb9a8bee2f6742aa136fc1f6e7383a4ae28adad69c7d252d9%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8JWCgpDahkUz7ukFoX%252Dw0bDVUCUzlL36_gwZa4knVTwD0uYNefbGuE4ZP%252DMq_ZakX71yaON5qKfZU_o9Ozl1QVO4jp4n94n8zFsJnxap9NZoxzdQW3oMozMVazE8v4S%252DvHSJIaqBhr_g%252DESO4crIajBw2k5DLMvMcQwY17jDyifU7wN54jjDxkvxmSOy_1EdXEYoGmZCXo7RINPt_NswwcRSYZA8%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJsb2NrY2hhaW5zJTJiZm9yJTJiZHVtbWllcyUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzc1a2luNG43YXhfcCUyNmFkZ3JwaWQlM2QxMjM0NzUyNjM2MDQ3OTc3JTI2aHZhZGlkJTNkNzcxNzIxNzM1MDA5OTglMjZodm5ldHclM2RzJTI2aHZxbXQlM2RwJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjUzOSUyNmh2dGFyZ2lkJTNka3dkLTc3MTcyMzk0OTQ4NTMzJTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QxMzIyOV8xMzUwMzQwMiUyNm1jaWQlM2QwYjdmZjEwMTdkNzEzYjFhYmNmOWYyODhjZjk4MjczOCUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkODY2MjIzOGM4MjRiMTIwNDAwYTM0YWQ0MGIwMjUzOTE%2526rlid%253D8662238c824b120400a34ad40b025391%26vqd%3D4%2D171302156096976964208214783728264153469%26iurl%3D%257B1%257DIG%253D0DE6147E25E74F24AF7C0CB9B486BA07%2526CID%253D0CD993DD42416C3C3892850B43946DFE%2526ID%253DDevEx%252C5046.1&rut=199d2e877e7fc78383f286dddc787ff10b9e94d81d5a6bd9af253f6995956f6e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:13:13.687150"
+    },
+    {
+      "topic": "what is blockchain: everything you need to know (2022)",
+      "title": "What is Blockchain?",
+      "content": "Learn everything you need to know about Blockchain. From its decentralized nature to its potential for revolutionizing industries.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.blockchain%2Dcouncil.org%2Fguide%2Fblockchain%2Dguide%2Deverything%2Dyou%2Dneed%2Dto%2Dknow%2F&rut=c68887c6dbccfcfef7ec26d4afb6a8581ebbb42803d5358166f5c3ec27609227",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:13:13.687208"
+    },
+    {
+      "topic": "what is blockchain: everything you need to know (2022)",
+      "title": "Blockchain Facts: What Is It, How It Works, and How It Can Be Used",
+      "content": "How Does a Blockchain Work? You might be familiar with spreadsheets or databases. A blockchain is somewhat similar because it is a database where information is entered and stored.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.investopedia.com%2Fterms%2Fb%2Fblockchain.asp&rut=de0c6d72dc8ac09e0ccd8fb45f1929bb6533c3badced30f7c12f2e55e404672e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:13:13.687254"
+    },
+    {
+      "topic": "what is blockchain: everything you need to know (2022)",
+      "title": "What is Blockchain? A Beginner's Guide - osl.com",
+      "content": "Final Thoughts: Why Blockchain Matters Blockchain is reshaping the way we store, share, and verify information. Its decentralized, transparent, and secure nature makes it ideal for a variety of industries, not just finance. As the technology matures, its potential to revolutionize everything from supply chains to voting systems is immense.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.osl.com%2Fen%2Fbits%2Farticle%2Fwhat%2Dis%2Dblockchain&rut=95c90e7e2839e200daf6fab1731652b539ba397d27232a586b7f75738495f8ca",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:13:13.687312"
+    },
+    {
+      "topic": "what is blockchain: everything you need to know (2022)",
+      "title": "Blockchain Made Easy: A Beginner's Guide to How It Works",
+      "content": "# A Simple Guide to Blockchain: How It Works for Beginners Blockchain is a groundbreaking distributed ledger technology that delivers secure and transparent data storage without the need for intermediaries. This guide offers newcomers a thorough overview of blockchain fundamentals, its historical evolution, and real-world uses in finance, supply chain management, healthcare, and government ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fweb3.gate.com%2Fen%2Fcrypto%2Dwiki%2Farticle%2Fa%2Dsimple%2Dguide%2Dto%2Dblockchain%2Dhow%2Dit%2Dworks%2Dfor%2Dbeginners%2D20251227&rut=b83a268ef8bccdc4e49fdb887b542eba73749a9e0472888ced2ba2a6aa6e4d77",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:13:13.687361"
+    },
+    {
+      "topic": "nosql database",
+      "title": "What is NoSQL? Databases Explained | Google Cloud",
+      "content": "Learn what NoSQL databases are, how they differ from relational databases, and when to use them. Explore the five main types of NoSQL databases and their benefits for scalability, flexibility, and performance.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fcloud.google.com%2Fdiscover%2Fwhat%2Dis%2Dnosql&rut=5ee061b1a6f45e233877a02bb380d8186c92f425f5907cef519debff3eb802df",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:23:48.376849"
+    },
+    {
+      "topic": "database normalization",
+      "title": "What is database normalization? - IBM",
+      "content": "Database normalization is a database design process that organizes data into specific table structures. It helps to improve data integrity, prevent data anomalies, minimize data redundancy and bolster query performance. Normalization optimizes tables in database management systems (DBMS) to meet what are known as normal forms: sets of rules governing how attributes are organized within a table ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ibm.com%2Fthink%2Ftopics%2Fdatabase%2Dnormalization&rut=3d2482c3c2645e1a62a59d0a3723bd1f201ef380f3950285667b0df9366ee7d7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T20:50:52.457696"
+    },
+    {
+      "topic": "database normalization",
+      "title": "Database normalization description - Microsoft 365 Apps",
+      "content": "Description of normalization Normalization is the process of organizing data in a database. It includes creating tables and establishing relationships between those tables according to rules designed both to protect the data and to make the database more flexible by eliminating redundancy and inconsistent dependency.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Flearn.microsoft.com%2Fen%2Dus%2Ftroubleshoot%2Fmicrosoft%2D365%2Dapps%2Faccess%2Fdatabase%2Dnormalization%2Ddescription&rut=d93fa99fdff317203eeb9b76281459eb4cbad922cf249f3d9af143065e89e136",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T20:50:52.457730"
+    },
+    {
+      "topic": "astronomers ring in the new year with a stunning galaxy collision",
+      "title": "Astronomers Ring in the New Year with a Stunning Galaxy Collision",
+      "content": "Astronomers ring in the new year with a stunning galaxy collision Discovered on New Year's Eve, the Champagne Cluster reveals a bubbly but violent collision between two massive galaxy clusters.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencedaily.com%2Freleases%2F2025%2F12%2F251231203753.htm&rut=6a21b6870a04fb3e0df3a53e04481b0716f11a414401a473d2ec14d59278f436",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T22:14:14.819035"
+    },
+    {
+      "topic": "astronomers ring in the new year with a stunning galaxy collision",
+      "title": "Space Rings in the New Year With the Champagne Cluster",
+      "content": "A New Year's View of the \"Champagne Cluster\" Ring in the New Year with a striking space scene known as the \"Champagne Cluster,\" revealed in a new image that blends data from NASA's Chandra X-ray Observatory with optical telescopes. Astronomers first identified this galaxy cluster on December 31, 2020.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fscitechdaily.com%2Fspace%2Drings%2Din%2Dthe%2Dnew%2Dyear%2Dwith%2Dthe%2Dchampagne%2Dcluster%2F&rut=cf5e521a2eb25660184338594dce7bfdc6acd629fd76fcaf22dff89309403786",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T22:14:14.819102"
+    },
+    {
+      "topic": "astronomers ring in the new year with a stunning galaxy collision",
+      "title": "Astronomers Celebrate New Year with Galaxy Collision",
+      "content": "Ring in the New Year with the \"Champagne Cluster,\" a distant galaxy cluster featured in a new image that combines data from NASA's Chandra X-ray Observatory and optical telescopes. Astronomers first identified this galaxy cluster on Dec. 31, 2020. That date, along with the cluster's bubbly look and the superheated gas detected by Chandra (represented in purple), led researchers to give it the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.miragenews.com%2Fastronomers%2Dcelebrate%2Dnew%2Dyear%2Dwith%2Dgalaxy%2D1596758%2F&rut=967387e4a9ced1a2966f8955562e2e80a908ac2ff68c439f4f0bd51683a14265",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T22:14:14.819155"
+    },
+    {
+      "topic": "astronomers ring in the new year with a stunning galaxy collision",
+      "title": "Astronomers Ring in the New Year with a Stunning Galaxy Collision ...",
+      "content": "In this video, we explain how astronomers ring in the new year with a stunning galaxy collision, why the Champagne Cluster is so rare, and how this galaxy collision helps scientists study dark ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DTOhSDUtaem8&rut=feb46cfb2ab10ec893e360fbef99f97a5939bdaed04ad6721d26d3b900b9fd71",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T22:14:14.819208"
+    },
+    {
+      "topic": "astronomers ring in the new year with a stunning galaxy collision",
+      "title": "Cheers! Ring in the New Year with Glittering 'Champagne Cluster' Image",
+      "content": "Raise a toast to another orbit around the sun with a new NASA image of sparkling galaxy clusters fittingly dubbed the \"Champagne Cluster.\" The object was first discovered on December 31, 2020.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.scientificamerican.com%2Farticle%2Fcheers%2Dnasa%2Drings%2Din%2Dthe%2Dnew%2Dyear%2Dwith%2Dsparkling%2Dchampagne%2Dcluster%2Dimage%2F&rut=4accc4c0c93c1d8fb79febac57a632a305a1f5229cacef9c6e76b2b96bed2e10",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T22:14:14.819252"
+    },
+    {
+      "topic": "next js",
+      "title": "Js cms next - Official Next.js Intergration",
+      "content": "A customizable solution that treats content as data to power your digital business. Sanity - Powering remarkable digital experiences everywhere.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dsanity.io%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DdMntB4HoMLBjGkB6owOh7Vwo0vxg6BYGQBBFoQNV7MqQ4FOzKJl4XeyK68sce9aWZcGdFmfNJK1H45v7n0GzlQ4DJN9_eB9eEeYlM2ewIAkcwNYs4rCUVLwc2RCnqOqyaJipLjlpmo1J0f0RjihHwIeQwt30THAdBi5XD9B6IJA.3kyCzwUZmpuOdOS9WvFXLA%26rut%3Dca60471fe0a522734709a108547f01f24b204500f805939b76fe8e2f0382fa38%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8EW7GDYg6kuiVbQ0AQ9PzljVUCUx8eQPG1Zp40Y2lHHSKt0UuVbzeG_HWNH0MW6crytH94M0hxRDcaf445OBViO3oaTCL4adu%252Ds7GGyI1vcR30sDBDs1pB56TFLBx37BNzD3gJAbFIwrRD1qx9mpXCzV%252DIUnRHvgAYOmauLFPc2aGgzs8ZgVOc4l_LbCzHX2sXmUH6rbsFYkz54Ugd6nYo%252DKzbMQ%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuc2FuaXR5LmlvJTJmYmVzdC1uZXh0anMtY21zJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkR2VuQ29uc19OZXR3b3JrJTI2dXRtX2NvbnRlbnQlM2ROZXh0Q01TX05ldHdvcmslMjZ1dG1fdGVybSUzZGpzJTI1MjBjbXMlMjUyMG5leHQlMjZ1dG1faWQlM2Q0ODY1NzM3MDglMjZtc2Nsa2lkJTNkZjA0YTNmZWRlNDJlMTM1OTQ3Y2M1NmI1MTI2ZThmZWQ%2526rlid%253Df04a3fede42e135947cc56b5126e8fed%26vqd%3D4%2D191825092560196666208679145241405068523%26iurl%3D%257B1%257DIG%253D28DE2922E08D411D9049C7CF217842DB%2526CID%253D1C9027C1A4F7678430283117A5136654%2526ID%253DDevEx%252C5046.1&rut=f38d2442f30ebd8f6b8050ee6424ebae73817d1fac5b9ab56d32bbd19583969a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T02:58:09.048397"
+    },
+    {
+      "topic": "next js",
+      "title": "Next.js Tutorial - GeeksforGeeks",
+      "content": "Next.js is a powerful React framework for building fast, scalable, and SEO-friendly web applications. It provides built-in features like server-side rendering, static site generation, routing, and API handling to make development easier and production-ready.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fnextjs%2Fnextjs%2Dtutorial%2F&rut=b06e2556e9639d67870bda10477049bfa194e48ba12f509e505f96e79e5eb054",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T02:58:09.048715"
+    },
+    {
+      "topic": "node js",
+      "title": "How to Download and Install Node.js and NPM - GeeksforGeeks",
+      "content": "To run a Node.js project on your system, you first need to install Node.js and NPM. Once installed, you can use the Node.js runtime to execute JavaScript code and NPM to manage project dependencies and packages. Note: We do not need to download NodeJS and NPM separately.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fnode%2Djs%2Fhow%2Dto%2Ddownload%2Dand%2Dinstall%2Dnode%2Djs%2Dand%2Dnpm%2F&rut=a85a73c4abeda11a94fdab8b82d21f172eccf425b3cd8374378c7599622bb12a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T03:12:55.390506"
+    },
+    {
+      "topic": "node js",
+      "title": "Node.js - Server-Side JavaScript Runtime",
+      "content": "Comprehensive Node.js guide with tutorials, API documentation, and interactive playground. Learn server-side JavaScript development with Node.js.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=http%3A%2F%2Fnodejs.md%2F&rut=e02ffa8fafbb9fd7b3e303b10092a51c39156e8bbe75b0d0b415077ed422feb0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T03:12:55.390574"
+    },
+    {
+      "topic": "asp net",
+      "title": "ASP.NET Core, an open-source web development framework | .NET",
+      "content": "ASP.NET Core comes with everything you need to build web apps including Blazor, a web UI framework for quickly creating fast, secure, and robust web apps that run anywhere.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.asp.net%2F&rut=cb5b9f1d8000efe25e9892b59207d095eabb45f2fd07cc7f5ea0c8fa09fec227",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T04:34:27.808317"
+    },
+    {
+      "topic": "asp net",
+      "title": "ASP.NET overview | Microsoft Learn",
+      "content": "Introduction to ASP.NET, a free framework for creating websites, web applications, and web APIs.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Flearn.microsoft.com%2Fen%2Dus%2Faspnet%2Foverview&rut=02ae969512ae988476c833ffa33f5fe5e6b208e56b4700f1fcb134c9cf0578e6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T04:34:27.808354"
+    },
+    {
+      "topic": "asp net",
+      "title": "ASP.NET - Wikipedia",
+      "content": "ASP.NET is a server-side web-application framework designed for web development to produce dynamic web pages. It was developed by Microsoft to allow programmers to build dynamic web sites, applications and services.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FASP.NET&rut=d7e563b70b39cffb08516a5afaa9d1f5181d4b5c725d434c8b8e1b01f79ed789",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T04:34:27.808382"
+    },
+    {
+      "topic": "asp net",
+      "title": "Introduction to ASP.NET Core \u2014 ASP.NET documentation",
+      "content": "ASP.NET Core comes with everything you need to build web apps including Blazor, a web UI framework for quickly creating fast, secure, and robust web apps that run anywhere.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Faspnetcore.readthedocs.io%2Fen%2Fstable%2Fintro.html&rut=68d108ae567e3845616d147ad5c2db519c8e7e494387cf820b13e87808593229",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T04:34:27.808408"
+    },
+    {
+      "topic": "react native",
+      "title": "How to Start a React Native Project and Build Your First \"Hello World ...",
+      "content": "React Native allows you to build native Android and iOS apps using JavaScript and React. Instead of maintaining separate codebases for each platform, you write once and ship everywhere.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fdev.to%2Fluckychauhan%2Fhow%2Dto%2Dstart%2Da%2Dreact%2Dnative%2Dproject%2Dand%2Dbuild%2Dyour%2Dfirst%2Dhello%2Dworld%2Dapp%2D4bhe&rut=916c1d1045c14191ee0636041a8a2a82d9a8fa9d283f862713c2567d01b741d5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T05:24:10.699734"
+    },
+    {
+      "topic": "react native",
+      "title": "What Is React Native? Beginner's Guide + FAQ - Coursera",
+      "content": "React Native is a framework for building native mobile applications with JavaScript. Learn about its features, benefits, examples, and career opportunities in this beginner's guide.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.coursera.org%2Farticles%2Fwhat%2Dis%2Dreact%2Dnative&rut=de97809f4040726a8653f3cea24840b8265ac1e363999fc16c171422be539b7b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T05:24:10.699809"
+    },
+    {
+      "topic": "network security",
+      "title": "Shop firewall and internet security - Amazon.com\u00ae Official Site",
+      "content": "Find deals and compare prices on firewall and internet security at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D8IU6qkDzQxU0jrzl9ZgnIiwWg3XxgUlTH6VYmcN6HllXe3U86hvxurQMRPVVPiiqIFfP4udfX7qh1L4g6rGnL5iuDglvi9MQdcWY05lweB7goaFYw9vYXlFw8bwqR4Yfn_jVaAmha9nBWbnjyYnJIXJKHWmYdC%252DHqE8mbwHBsvI.CkE4XvQRlPk62mmkKQn6SQ%26rut%3D35ae921b93e282cd3d66cc97680b8db0d17dee704f78a9c27e2386fbc4d04a2b%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De88YkAWlb27vtYjfOpA6bQODVUCUzIp_dw8qzMTgu3getaUXHaH1Ddn%252D%252D68ALZ1vuKhGDBD%252DbhriNA6HHUvZqsRTznP_34AC%252DIDcWQt6rPtj%252DJJuaZdukC0tW4FpXjWBb7qnrsE0PSARi6VMZG5dF_vTrMTvc5jd23IfPbFoCPgK9jXUn1E89soX5%252DkJ50pWdhouv7uI_RME6ZLHK8eiJ2QYzmALY%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGZpcmV3YWxsJTJiYW5kJTJiaW50ZXJuZXQlMmJzZWN1cml0eSUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzdjbDllNW91NXhfcCUyNmFkZ3JwaWQlM2QxMjM4MDUxMTczMTczNzA4JTI2aHZhZGlkJTNkNzczNzgzMzI1NjE0MjUlMjZodm5ldHclM2RzJTI2aHZxbXQlM2RwJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjQ0OCUyNmh2dGFyZ2lkJTNka3dkLTc3Mzc4NTU3MzA1MTIzJTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QyNTMwMF8xMzU5MzUzMCUyNm1jaWQlM2Q5NTY1MGY3M2E5ZDkzY2IwODBkZWFkMmM5Y2IyOTM5YiUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkNzI3NmU4MjA4NjJjMTMzMmMwY2U4MTc5YzI4YWU1YzE%2526rlid%253D7276e820862c1332c0ce8179c28ae5c1%26vqd%3D4%2D66711543575940492183399425768038425731%26iurl%3D%257B1%257DIG%253DDF4822D441314196AE4ED6B8BABAF63F%2526CID%253D0FDCF142380A6FAD05C1E79439866EB0%2526ID%253DDevEx%252C5050.1&rut=256c7cbd2f26490d448920a5635194e28958c2da328382334e70d436fe1e2427",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T08:32:38.956169"
+    },
+    {
+      "topic": "network security",
+      "title": "Network security - Wikipedia",
+      "content": "Learn about network security, a term that covers various controls, policies and practices to protect computer networks and resources from unauthorized access, misuse or denial. Explore the different types of attacks, security management and tools, and related topics on Wikipedia.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNetwork_security&rut=6d4e46398980bc3b5d9a2c12e2918bb14a541830c9b1fb50ea10e51d57e9d6a4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T08:32:38.956234"
+    },
+    {
+      "topic": "network security",
+      "title": "What is network security? Definition and best practices",
+      "content": "Network security is a critical part of overall IT security. Learn how it works, the various tools available, benefits it provides and challenges it poses.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.techtarget.com%2Fsearchnetworking%2Fdefinition%2Fnetwork%2Dsecurity&rut=5fce841b4bdca9cc89529b5dc84b8eeda1e70168a8831ca395a3b5f5e2e57c31",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T08:32:38.956353"
+    },
+    {
+      "topic": "nft",
+      "title": "Non-fungible token",
+      "content": "A non-fungible token (NFT) is a unique digital identifier that is recorded on a blockchain and is used to certify ownership and authenticity. It cannot be copied, substituted, or subdivided. The ownership of an NFT is recorded in the blockchain and can be transferred by the owner, allowing NFTs to be sold and traded. Initially pitched in 2017 as a new class of investment asset, by September 2023 one report claimed that over 95% of NFT collections had zero monetary value.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Non-fungible_token",
+      "confidence": 0.9,
+      "learned_at": "2026-01-03T09:05:08.703527"
+    },
+    {
+      "topic": "nft",
+      "title": "Top Crypto Wallet App - Trusted Crypto Exchange",
+      "content": "Coinbase is the Safe and Trusted Place to Buy and Sell Bitcoin, Ethereum, and More. Millions Of People Use Coinbase to Buy, Sell and Store Their Cryptocurrency.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dcoinbase.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DAAK6PTUYyCv2Wpwg4v1pYpJNgKDEU4DpVyItCSAO4GGcXd3w1DRer_M_f6saGB2IF1FbHSpW0J3TprOQt0bXL%252Dx8u0YQa4aacmZkdPwy9IJrf%252DhcC5kH02ERBNBMRkMS24er6EN6EAp0SUWKg_PSxaok1NB6OdzYd8zwJS7aWW0._WlKS365gaQfWgdUGcjD5w%26rut%3D28578ff506fc5340eff12d734139933a0fb92771ef8d777a7cb84dc7166698b3%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8IBGyE2AR4%252DxjvEul4W98NDVUCUwbyF_w_ft4LamUwCTNFNnWOXjrY9Ew4dV6k5%252DefVxDiQNyRUc9ernsOhbLN9JajuH8DqOag21NMkarMper5hBvMDIfYAo4_VnSvi%252DDsoqxWlBpWrcOt_c6vm0Si2L4MjNoAKMCE9FrEHhe3uhy2oCnSNE8utxirKH73VpO6eBfkKLC3Lr4j8scFDxmzSql2Bc%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuY29pbmJhc2UuY29tJTJmJTNmdXRtX2NyZWF0aXZlJTNkJTI2dXRtX2RldmljZSUzZGMlMjZ1dG1fcGxhY2VtZW50JTNkJTI2dXRtX25ldHdvcmslM2RzJTI2dXRtX2xvY2F0aW9uJTNkODY0NDglMjZtc2Nsa2lkJTNkMWYzYThmNjI2ZmMwMTVlNmE1N2JlNjNiMjM4NWVlNWIlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RydF9wX3VzX3dfbV9hY3FfYmluX3NlYV9ub25fQXBwJTI2dXRtX3Rlcm0lM2RiZXN0JTI1MjBjcnlwdG8lMjUyMHdhbGxldCUyNTIwb3V0JTI2dXRtX2NvbnRlbnQlM2RDcnlwdG8tV2FsbGV0LUFwcC1NQg%2526rlid%253D1f3a8f626fc015e6a57be63b2385ee5b%26vqd%3D4%2D127934524863306347675857354777680845199%26iurl%3D%257B1%257DIG%253D5C95E6E967E64605A338653336737A0A%2526CID%253D3943CE985F12600A0DA5D84E5EF661A3%2526ID%253DDevEx%252C5046.1&rut=39f05d3bd3b0daa9440ddf52507c3c5af1a80544e2b010e63a9dfc506a01e633",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:05:09.518604"
+    },
+    {
+      "topic": "nft",
+      "title": "Shop books on nfts - Amazon.com Official Site",
+      "content": "Find deals and low prices on books on nfts at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DbPQhhG8PqV5SMYNpp0g49EK0ev9BTxPXQRAxkKYsoM2aM4GnbqbURbLRzJnoRkgz1r1d3_Bj5eaHGXGXm2y1vCxlDUhbuEshKmhlKCFNvQydvhXWrp0gjIFGl_iM7HSoMp6LItFH7SYzk9AVT5QwuWNCHZXjF53liGvXzLisM7A.2ABcJtrX5k%252DAJczU8DcjMg%26rut%3Dbb69654c75749245b75cf9402c3697582363af32cc0e10c996dd70bcc964817d%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8eL6o6gowbaNKe5ezwcBFgzVUCUyA3gatS12anCP7inM8C_lq8zHOWATDQxGc60g4bl_CxiEPYrJ_gMU%252DSfmTzXcVmK8DzgvziYQyao1VzylPQPJbqVdBv8X6vlgf8fmeACiOA8VdFUVEXsl3XSU_IZntJbnfMhnCzi398Wortb_ykgaGyC5Hj8mWtAorna4i6yONQe9WBkDyvaNptJYGjA96UpE%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJvb2tzJTJib24lMmJuZnRzJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfMXJnNzF1anMzNl9iJTI2YWRncnBpZCUzZDEyNDAyNTAxMDQ3NDkyMzAlMjZodmFkaWQlM2Q3NzUxNTc2MTYwOTQ1NSUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGIlMjZodmJtdCUzZGJiJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NDQ4JTI2aHZ0YXJnaWQlM2Rrd2QtNzc1MTU4NzY4NDc5NTYlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDI3OTYzXzE0NjM3OTgyJTI2bWNpZCUzZGI2NWIxOTNkN2VhNTNlYWFhNjZiNDc5Mjc5ZjVjZDJlJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2RmMjUxNTQ2MGQ0Y2IxMmIyNDFjMzNkMzk5ODhlZmY2ZA%2526rlid%253Df2515460d4cb12b241c33d39988eff6d%26vqd%3D4%2D109233072485261020184716843179154927800%26iurl%3D%257B1%257DIG%253D5C95E6E967E64605A338653336737A0A%2526CID%253D3943CE985F12600A0DA5D84E5EF661A3%2526ID%253DDevEx%252C5051.1&rut=8fb21ffadeb8d1e4b7bde6e12e497cf7ee66171a4b128cbf46a8b1b730629cb1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:05:09.518687"
+    },
+    {
+      "topic": "nft",
+      "title": "Non-fungible token - Wikipedia",
+      "content": "An NFT is a data file, stored on a type of digital ledger called a blockchain, which can be sold and traded. [8] The NFT can be associated with a particular asset - digital or physical - such as an image, art, music, or recording of a sports event. [9] It may confer licensing rights to use the asset for a specified purpose. [10] An NFT (and, if applicable, the associated license to use ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNon%2Dfungible_token&rut=d789801e3de420a7c112d1cc0e5aef2b30ba8c1e398669512646e6768e781993",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:05:09.518742"
+    },
+    {
+      "topic": "nft",
+      "title": "What Is an NFT? Your Guide to Non-Fungible Tokens in 2026",
+      "content": "What is an NFT? NFT stands for non-fungible token. Although non-fungible tokens are widely regarded as a new technology, the first NFT was minted in 2014 by digital artist Kevin McCoy and tech entrepreneur Anil Dash. You can trace the origins of NFTs even further back to 2012 when Meni Rosenfeld published the \" Colored Coins\" whitepaper.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.coursera.org%2Farticles%2Fwhat%2Dis%2Dan%2Dnft&rut=8eb3be4fb00db882dc311a880694768ac7bbc648f0a72fdcce174e6356b9232d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:05:09.518796"
+    },
+    {
+      "topic": "nft",
+      "title": "Non-Fungible Token (NFT): What It Means and How It Works",
+      "content": "A non-fungible token (NFT) is the opposite of a fungible token, which describes the interchangeability of a token. For example, say you had three notes with identical smiley faces drawn on them.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.investopedia.com%2Fnon%2Dfungible%2Dtokens%2Dnft%2D5115211&rut=f473b512bf813572636c73981000ed8928c9c316e913b4c79ac5dd711efc0f1b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:05:09.518855"
+    },
+    {
+      "topic": "computer network",
+      "title": "Shop computer networks books - Amazon.com Official Site",
+      "content": "Find deals and low prices on computer networks books at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D_iOb_rgEPNGVOlO%252Dw92n4hj9ZUg9jPM_QezO6AAVTUwhMsFvYCxqzpJDCHV2XBv843iE6N1W02rFtPNE_blsYsOeJZ3Y9ud32EzCouOkf48pCwcuOnzpNH9YZIQH81%252D4WvIv9fiIZ2jk%252DhyTaBz4GAw4fsSj%252DC1SubRnMRGnGTo.XaganRDhDMkrgNytgBxLoQ%26rut%3D8de89606271096bac9168cf7a4197b3fdf0d80a12dfb75b0f66c4919d2a4a9e1%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8gMVHtMRqH1LKLr4RRBSPijVUCUxVH9J%252DaZBPU72SoY0_%252DJ2Z5o9JNWxUdNPhHGz2m1R3gWYDBMMJmMiuU1gzRONSCtszvJMZFSIT926bx3X6wYAIbfAl9QzySGZvKdHuZgTf_SlF37QMsfhWXkesbCdHQABF6s323i9ha9n6JFc921SoLxB85woPg8CpY93QoOSV%252Da4caM9Ng%252DLSOMxXNtC5k20%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGNvbXB1dGVyJTJibmV0d29ya3MlMmJib29rcyUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzE0NWt6eTYwNl9iJTI2YWRncnBpZCUzZDEyNDEzNDk2NDgxMjE3NzUlMjZodmFkaWQlM2Q3NzU4NDQ4NDY3MTI5MyUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGIlMjZodmJtdCUzZGJiJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NDQ4JTI2aHZ0YXJnaWQlM2Rrd2QtNzc1ODQ3Mjk2NDg5MDUlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDIwOTI5XzEzNTIwNDY3JTI2bWNpZCUzZDQ5MTcxMDYzNDU1ODM3YjlhMDI0MzdjODJhZTAzMjkyJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2RmYzYyNjJlY2U1MDUxNmQwNzkwZjBiYjVhYWU4NTY3Yw%2526rlid%253Dfc6262ece50516d0790f0bb5aae8567c%26vqd%3D4%2D206187407182991453978624546690863947408%26iurl%3D%257B1%257DIG%253DFBD144E306F24B3989AC215A589C4ACB%2526CID%253D1483F77585C665562F50E1A3842264BF%2526ID%253DDevEx%252C5045.1&rut=31fa95b3c9a2978513f6d8fc074328efda24c65b56c40267340c03cdf0acfc05",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:20:45.639047"
+    },
+    {
+      "topic": "computer network",
+      "title": "Computer network - Wikipedia",
+      "content": "Learn about computer networks, their features, applications, and classifications. Explore the history of computer networking from the first modems to the Internet Protocol and beyond.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FComputer_network&rut=77e90fcb456045a5b36f903521da383559b4d22810169b862fbba33d48db931d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:20:45.639104"
+    },
+    {
+      "topic": "computer network",
+      "title": "Computer network | Definition & Types | Britannica",
+      "content": "A computer network consists of two or more computers that are connected to each other to communicate data electronically. Two basic network types are local area networks (LANs) and wide area networks (WANs).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftechnology%2Fcomputer%2Dnetwork&rut=5b374a97a8908345007f4af72db559d0a54ce09f6eadbc22ca96b9bbaa938d3e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:20:45.639148"
+    },
+    {
+      "topic": "computer network",
+      "title": "What is computer networking? - IBM",
+      "content": "Computer networking is the process of connecting two or more computing devices to enable the transmission and exchange of information and resources.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ibm.com%2Fthink%2Ftopics%2Fnetworking&rut=09a40cd3b23b62a9cd847e2b5989de5238fcac271ba36c91b95058b3aebb733d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:20:45.639186"
+    },
+    {
+      "topic": "computer network",
+      "title": "What Is Computer Networking? - Cisco",
+      "content": "What is computer networking? Computer networking refers to connected computing devices (such as laptops, desktops, servers, smartphones, and tablets) and an ever-expanding array of IoT devices (such as cameras, door locks, doorbells, refrigerators, audio/visual systems, thermostats, and various sensors) that communicate with one another.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cisco.com%2Fsite%2Fus%2Fen%2Flearn%2Ftopics%2Fnetworking%2Fwhat%2Dis%2Dcomputer%2Dnetworking.html&rut=9dc2ea3fa7ef7954844d665d4e8dd70931286634a20d75d3c445c821a23dfba1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:20:45.639228"
+    },
+    {
+      "topic": "network topology",
+      "title": "Network topology - Wikipedia",
+      "content": "Learn about the arrangement of the elements of a communication network, such as links, nodes, and transmission media. Compare physical and logical topologies, and explore different types of network topologies with examples and diagrams.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNetwork_topology&rut=6255c9ce695c0eccd14b1e9cf791b61e35ba23e53017a2916c62de803d43d07e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:21:17.143789"
+    },
+    {
+      "topic": "network topology",
+      "title": "Types of Network Topology - GeeksforGeeks",
+      "content": "A network topology is the arrangement of devices (nodes) and connections (links) in a computer network. It shows how computers, servers, and other devices are connected and how data flows between them. There are two main types of topology: Physical Topology: The actual physical layout of cables and devices.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fcomputer%2Dnetworks%2Ftypes%2Dof%2Dnetwork%2Dtopology%2F&rut=4d8f465fbea04706cd056b9df9ec3e332c48ed8f6f5f364ea651e00123ea6228",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:21:17.143855"
+    },
+    {
+      "topic": "network topology",
+      "title": "Network Topology Guide: All You Need to Know - phoenixNAP",
+      "content": "Learn what network topology is, why it matters, and how to choose the best one for your network. Compare different topology types, see diagrams, and understand their pros and cons.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fphoenixnap.com%2Fkb%2Fnetwork%2Dtopology&rut=112ba52b49bc187373ee91ebbfe49bfac16b9aba693a969e401c5829e89f4cbb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:21:17.143902"
+    },
+    {
+      "topic": "network topology",
+      "title": "What is Network Topology? | Definition from TechTarget",
+      "content": "Examine what a network topology is and how physical and logical network topologies compare. Learn how to diagram the different types of network topologies.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.techtarget.com%2Fsearchnetworking%2Fdefinition%2Fnetwork%2Dtopology&rut=31c55c09037789b0fa4e283c0e3533ae1d87ef723adf38168be111a1043c4e0c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:21:17.143948"
+    },
+    {
+      "topic": "network topology",
+      "title": "What is network topology? - IBM",
+      "content": "Network topology refers to the physical and logical arrangement of nodes and connections in a computer network, which governs how data flows between devices.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ibm.com%2Fthink%2Ftopics%2Fnetwork%2Dtopology&rut=3e1af35bab4449671ce8f432def64ee0a2039052df6aa309cf3c0ab073b98c0f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:21:17.143991"
+    },
+    {
+      "topic": "switch networking",
+      "title": "Shop 1gbs ethernet switch - Amazon.com\u00ae Official Site",
+      "content": "Find deals and compare prices on 1gbs ethernet switch at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DqYocP1QWoisN88p8vmFVauy6k0oLoq6oyjUpQk9tjJj6Cv_3B737Jo1%252DgH8bAp_rSfPJ9SArvrWu_V_FOoopHlJ%252DaIKHk0eV7ioCARgvEEynMJjsD8YWiuku%252Dk2CnV4xrk2SCmoWrZP7U%252DHiVuF2IqhkJDbYonz1qLBshdT22rw.gmFDiAPn3r0PxybdaqIiDw%26rut%3D1f8e9574b19cc5190b78651ce9029840a6d04f9278588f06704650a7b85b40a4%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De83qpOsIF8b81%252DDwfyQ5pZizVUCUwC5Ha91kESaxo96xuIH21foygpPg7XeIiNRqw%252DtIv426IPcHdG_qDygCdBmT6irtQuIRSqLOq7zIOMII_g9w0EVkXj2EcP4%252D5QEqLNQHaGYBkElp8svzxiynbDDXuEYEn5Yx7PEaPtbTad9yEpOl0PNI3hQWx_erwNql_saWxlnhnSCwAGtWR1DINyOTWOlUE%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZDFnYnMlMmJldGhlcm5ldCUyYnN3aXRjaCUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzI5bWJoZTA1MWFfcCUyNmFkZ3JwaWQlM2QxMjI0ODU2OTUwMzA2NTc2JTI2aHZhZGlkJTNkNzY1NTM2OTA0NzUxMjYlMjZodm5ldHclM2RzJTI2aHZxbXQlM2RwJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NzQyMiUyNmh2dGFyZ2lkJTNka3dkLTc2NTUzOTY2NTA3MDk1JTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QyNTMzMV8xMzU5MzQ4MiUyNm1jaWQlM2RkMTY2ZDU3ZGQ2MzIzZjc5YWJjMzAxZDdlM2MxZTc2NiUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkNjAwZjYwYmM5ZmFhMTM1YmM4MWYwOWU1Y2U4MmQ0YTc%2526rlid%253D600f60bc9faa135bc81f09e5ce82d4a7%26vqd%3D4%2D138402181807993754069723747646511958577%26iurl%3D%257B1%257DIG%253DEA82F36084E943178AF433F5565F6EB8%2526CID%253D29B868EB7C1E615E33187E3D7D92609F%2526ID%253DDevEx%252C5045.1&rut=6ef5cdbb49943101c7d9d0bb723ad647fdcee9ddd894c60416e12f09bdd6fbe8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:26:01.382028"
+    },
+    {
+      "topic": "switch networking",
+      "title": "5 Best Ethernet Switches 2025 - There's One Clear Winner",
+      "content": "Read the #1 Guide for the Best Ethernet Switches 2025. Free 2-Day Shipping & Returns. We Did The Research For You. Read Our Guide for the Best Ethernet Switches of 2025.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dbestreviews.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DACDDFTRmkmpyUa2%252DA0t3DDPXbRFQZzvknlsFZYgpjQGmG3ayIhFyEbLALdu1U5rlGR0tKDFimN0j_v7G9ow2Zapt07zszo5zjKHDqmbjak5weT3GS4X5BpJ675Cq1FuSZxIwqaUv8uGfYp4oAyMsfQgUbOmDVYkugSD5ueM7LMk.gecs89KWWCEbxXjCQOsEGg%26rut%3Dc0ab2cbb73fee93aa004dc30efec5a6728cd86f945bc9dd7cfdd0570aecd9c1f%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8gx1_zdl6gq38AsCdpwiJvTVUCUyzbsD47hKqyuqyVdhuEb_mDmB3n5XiT_n9o4a9i_SWHVMWkvXRnTnvw5MGFvlW%252DkuuvLAtG5iS%252D11X5w3aKLXsXL5SXHQpgoMVds2N5mkxmVhdzld_mCBZQTc2Fi3xksibp5vXmNbUiXkSY0d4kgyd0byl6KeC48pEt_8og98kT3zQPg37BB2IAo5K9K6oUbo%2526u%253DaHR0cHMlM2ElMmYlMmZiZXN0cmV2aWV3cy5jb20lMmZiZXN0LWV0aGVybmV0LXN3aXRjaGVzJTNmeWIlMjZjaWQlM2QzNjc3NzE5MDYlMjZhaWQlM2QxMjE0OTYwODQxNjcxNzk5JTI2ZWlkJTNkJTI2dGlkJTNka3dkLTc1OTM1NDE1MTgyOTUyJTNhbG9jLTQwODQlMjZ1bCUzZDg3NDIyJTI2bXQlM2RiJTI2biUzZHMlMjZkJTNkYyUyNmRtJTNkJTI2ZHQlMjZzbiUyNmFkaWQlM2QlMjZrJTNkJTI1MkJldGhlcm5ldCUyNTIwJTI1MkJzd2l0Y2hlcyUyNTIwJTI1MkJyYXRpbmdzJTI2cCUzZCUyNnBjJTNkJTI2YXAlM2QlMjZtc2Nsa2lkJTNkZTM5ZGUxOGViODJmMTM5ZDViZWI4OGQ3ZTkwNzVlYTElMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RCUiUyNTIwQ29yZSUyNTIwLSUyNTIwRWxlY3Ryb25pY3MlMjUyMC0lMjUyMEJpbmclMjZ1dG1fdGVybSUzZCUyNTJCZXRoZXJuZXQlMjUyMCUyNTJCc3dpdGNoZXMlMjUyMCUyNTJCcmF0aW5ncyUyNnV0bV9jb250ZW50JTNkQmVzdCUyNTIwRXRoZXJuZXQlMjUyMFN3aXRjaGVz%2526rlid%253De39de18eb82f139d5beb88d7e9075ea1%26vqd%3D4%2D206540244475319823197732298408726233909%26iurl%3D%257B1%257DIG%253DEA82F36084E943178AF433F5565F6EB8%2526CID%253D29B868EB7C1E615E33187E3D7D92609F%2526ID%253DDevEx%252C5048.1&rut=ba9b89daadb340352460e0d2fd5e607c34fdfb44b1cb31cd00b7f539b7733e90",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:26:01.382086"
+    },
+    {
+      "topic": "switch networking",
+      "title": "What Is Network Switching? - Cisco",
+      "content": "Switching in IT and computer networking is the transfer of data packets, or blocks of data, through a network switch.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cisco.com%2Fsite%2Fus%2Fen%2Flearn%2Ftopics%2Fnetworking%2Fwhat%2Dis%2Dnetwork%2Dswitching.html&rut=b200f39d7015312c67c2963b54fa2b96ffe452cd7491cb6d3174b43758520802",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:26:01.382123"
+    },
+    {
+      "topic": "switch networking",
+      "title": "Network switch - Wikipedia",
+      "content": "A network switch is a device that connects and forwards data between devices on a computer network. Learn about the history, features and applications of different types of switches, such as Ethernet, Fibre Channel and multilayer switches.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNetwork_switch&rut=337427110a0e47b9c3f2423ed7f60ebf58e7e3aa192a178d5aebe7794b8e243c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:26:01.382160"
+    },
+    {
+      "topic": "switch networking",
+      "title": "What is a network switch? | Switch vs. router - Cloudflare",
+      "content": "A network switch connects devices within a network and forwards data packets to and from them. Learn the difference between switch and router, layer 2 and layer 3 switches, and how to protect switches from DDoS attacks.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cloudflare.com%2Flearning%2Fnetwork%2Dlayer%2Fwhat%2Dis%2Da%2Dnetwork%2Dswitch%2F&rut=6ef57782c1410897f31591dbb507961c687dd09087bb7a252570b39f5dcb4ef3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:26:01.382196"
+    },
+    {
+      "topic": "nat",
+      "title": "Network address translation - Wikipedia",
+      "content": "Network address translation (NAT) is a method of mapping an IP address space into another by modifying network address information in the IP header of packets. Learn about the history, types, and methods of NAT, and how it conserves IPv4 address space.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNetwork_address_translation&rut=a4859de31e6923fcd0742b7f5acca971e09ff4909a028c2b5a3b488d89b8a34b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:27:35.711024"
+    },
+    {
+      "topic": "nat",
+      "title": "What Is Network Address Translation (NAT)? - Cisco",
+      "content": "Network Address Translation (NAT) is a service that enables private IP networks to use the internet and cloud. NAT translates private IP addresses in an internal network to a public IP address before packets are sent to an external network.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cisco.com%2Fsite%2Fus%2Fen%2Flearn%2Ftopics%2Fnetworking%2Fwhat%2Dis%2Dnetwork%2Daddress%2Dtranslation%2Dnat.html&rut=359f79de896a8348065b51e3837fc9f0de307d8ae1532662939d6a71fcbde143",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:27:35.711062"
+    },
+    {
+      "topic": "nat",
+      "title": "What NAT Type Is & How To Change It - T-Mobile",
+      "content": "Want to know how to change NAT type? If you love gaming on PlayStation or Xbox, using Discord, streaming on Twitch, and more, learn how NAT type plays a role.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.t%2Dmobile.com%2Fhome%2Dinternet%2Fthe%2Dsignal%2Finternet%2Dhelp%2Fwhat%2Dnat%2Dtype%2Dis%2Dand%2Dhow%2Dto%2Dchange%2Dit&rut=fd19d15b2b2ed4cb18a327c55ea32e376104064e5158e2c4d30204b95a1e4aee",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:27:35.711087"
+    },
+    {
+      "topic": "nat",
+      "title": "Basic Concepts of NAT Explained in Easy Language",
+      "content": "Learn what NAT (Network Address Translation) is, how it works and why it is used in networking. Explore different types of NAT (Static, Dynamic and PAT) and see how to configure them in Cisco router with packet tracer examples.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.computernetworkingnotes.com%2Fccna%2Dstudy%2Dguide%2Fbasic%2Dconcepts%2Dof%2Dnat%2Dexplained%2Din%2Deasy%2Dlanguage.html&rut=27bbde34dc3281a1a6b1ade60939cec7f17d32af8b6154b55b0f2e7177c6a82e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:27:35.711111"
+    },
+    {
+      "topic": "nat",
+      "title": "What Is NAT And Why Is It Important? - network-guides.com",
+      "content": "NAT facilitates the transition from IPv4 to IPv6 Understanding NAT is essential for grasping modern network operations Understanding NAT Networking Basics Network Address Translation (NAT) is a key technology in modern networking. It lets many devices on a private network share one public IP address. This is key for using IP addresses efficiently.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fnetwork%2Dguides.com%2Fwhat%2Dis%2Dnat%2Dand%2Dwhy%2Dis%2Dit%2Dimportant%2F&rut=5aaa7a58bf65ec021e602c08b44c83fe22554b5d9883243e286e6577365e93d1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:27:35.711137"
+    },
+    {
+      "topic": "network layer",
+      "title": "Network layer - Wikipedia",
+      "content": "The network layer provides the means of transferring variable-length network packets from a source to a destination host via one or more networks. Within the service layering semantics of the OSI (Open Systems Interconnection) network architecture, the network layer responds to service requests from the transport layer and issues service requests to the data link layer. Functions of the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNetwork_layer&rut=f883cc6873ceeaf06367981602ea6e7b6e63750257a5ce6e29a60d903fe66f54",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:29:11.791713"
+    },
+    {
+      "topic": "network layer",
+      "title": "What is the network layer? | Network vs. Internet layer",
+      "content": "The network layer is layer 3 in the OSI model, and it makes the Internet possible by connecting different networks. It is also called the Internet layer.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cloudflare.com%2Flearning%2Fnetwork%2Dlayer%2Fwhat%2Dis%2Dthe%2Dnetwork%2Dlayer%2F&rut=aeb74b3f64b7272f5ad7e469e52a333145df633fb2bcd2dbd8265e6cd1b245d0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:29:11.791779"
+    },
+    {
+      "topic": "network layer",
+      "title": "What Is the Network Layer? Definition and Practical Applications",
+      "content": "Learn what the network layer is and how it enables communication between devices and networks. Explore the functions, protocols, and applications of the network layer in the OSI model and the TCP/IP suite.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.coursera.org%2Farticles%2Fnetwork%2Dlayer&rut=3e75450fed5b57d4e0f285387a09b81003ce24a57605e2428b80b8bc3cbde997",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:29:11.791813"
+    },
+    {
+      "topic": "network layer",
+      "title": "Network Layer in OSI Model - GeeksforGeeks",
+      "content": "Network Layer is the third layer from the bottom (Layer 3) and the fifth layer from the top in the OSI (Open Systems Interconnection) Model. It is responsible for ensuring end-to-end packet delivery across multiple interconnected networks. Network Layer in OSI Model Note: Unlike the Data Link Layer, which focuses only on node-to-node delivery within a single network segment, the Network Layer ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fcomputer%2Dnetworks%2Fnetwork%2Dlayer%2Din%2Dosi%2Dmodel%2F&rut=64da974962f41caa9fb3ca7293c836a8bb8afaf6dd5066da58cfa7f32b23c226",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:29:11.791849"
+    },
+    {
+      "topic": "network layer",
+      "title": "Network Layer | NetworkAcademy.IO",
+      "content": "Explore the Network Layer (Layer 3) of the OSI model, focusing on IPv4 and IPv6, IP addressing, routing, and how routers forward packets using destination IPs.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.networkacademy.io%2Fccna%2Fnetwork%2Dfundamentals%2Fnetwork%2Dlayer&rut=a26dbae2d710de99ad83ca68f56ecd972f6416b1096184d4b2df279507b18f80",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:29:11.791877"
+    },
+    {
+      "topic": "norman conquest",
+      "title": "Norman Conquest - Wikipedia",
+      "content": "The Norman Conquest of England (or the Conquest) was an 11th-century invasion by an army made up of thousands of Norman, French, Flemish, and Breton troops, all led by the Duke of Normandy, later styled William the Conqueror. William's claim to the English throne derived from his familial relationship with the childless Anglo-Saxon king Edward the Confessor, who may have encouraged William's ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNorman_Conquest&rut=6b2af1f5a6166154c25f24a9455eaf0e290f5514da53d31a50b65e526a91a706",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:08:17.183321"
+    },
+    {
+      "topic": "norman conquest",
+      "title": "Norman Conquest | Definition, Summary, & Facts | Britannica",
+      "content": "Norman Conquest, the military conquest of England by William, duke of Normandy, primarily effected by his decisive victory at the Battle of Hastings (October 14, 1066) and resulting ultimately in profound political, administrative, and social changes in the British Isles.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fevent%2FNorman%2DConquest&rut=c4caf0089e8a2148d455162d76a5f24ba1ba89b53e456062851e309f32f7d2e7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:08:17.183423"
+    },
+    {
+      "topic": "norman conquest",
+      "title": "Norman conquest of England - New World Encyclopedia",
+      "content": "Learn about the invasion of England by William the Conqueror in 1066 and the impact of the Norman rule on English history, culture, and language. Explore the origins, events, significance, and legacy of the Norman conquest.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.newworldencyclopedia.org%2Fentry%2FNorman_conquest_of_England&rut=aeaa9d5fbcdd237df8ae2281b1211c28ed03b00ea63590048b6826a09af39e7c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:08:17.183495"
+    },
+    {
+      "topic": "norman conquest",
+      "title": "BBC - History: Normans",
+      "content": "The Norman Conquest of Britain The Conquest and its Aftermath As the Normans settled England, they faced treachery, collusion and foreign threats.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.bbc.com%2Fhistory%2Fbritish%2Fnormans%2F&rut=4d5132570eab648e006918500baeec7fd9f69599aa2b9436e4d258a2d09fdc51",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:08:17.183567"
+    },
+    {
+      "topic": "norman conquest",
+      "title": "Who Were the Normans and Why Did They Conquer England in 1066? A ...",
+      "content": "Learn about the Norman Conquest of England in 1066, when Duke William II of Normandy defeated King Harold II and became King William I. Explore the origins, rise, and legacy of the Normans, a mixed ethnic group of Scandinavians, Franks and Celts.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.historytools.org%2Fstories%2Fwho%2Dwere%2Dthe%2Dnormans%2Dand%2Dwhy%2Ddid%2Dthey%2Dconquer%2Dengland%2Din%2D1066%2Da%2Dhistorians%2Dperspective&rut=e013ee62a145b1fe57a0f2124c8443f405a7800e31508d2a492bf1f889034cd2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:08:17.183638"
+    },
+    {
+      "topic": "new york yankees",
+      "title": "New York Yankees - Get New York Tickets Now - 2026 MLB Tickets",
+      "content": "Compare Prices on the Worlds Largest Ticket Marketplace. Tickets On Sale Today And Selling Fast, Secure Your Seats Now. USA Tickets 2026",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstubhub.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DaZHrHdQVKhMeOUyW81iwWoWk6iRrBzrx58lxrkLur3_6OPnoWYfdU4AB57Y7Uvjp%252D64VOlNs6Ke4KEAPqfLuCiDW_6S0QuqGcm2MieXZkGDYAZ3BARK%252Da_GEuo62FOXd9myudji%252DIP2dDHOGkG0RLRzLKD3wYe5FO%252DrGzPV6MGA.f9pe_3koRRekTqezN5umDQ%26rut%3D7cba0e535dbf1ed08a36dd6cb3cd42a0f9ee418cb710bb6130e9d1be01261b98%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8v2cZcDzdrR771Zl7%252DwQmDzVUCUx3x0Dn91afhm9MiOrEo2FaTJPJQ%252DFk8j5X5rInurVIK9Y5lS5gruMSB6O5pL64tyB0lI5ClKc34wILbj6VHqkkzDUs_pfuDqph7RV2I%252DwSsSG18dsOCqbU_6cnp3IPXAVF1oO4YJdZvLj90HnQY2lTufMvTBYKZZS%252DLXEOAj5_f9GXzaJFVfnv5uhomJqh5Mw%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuc3R1Ymh1Yi5jb20lMmZuZXcteW9yay15YW5rZWVzLXRpY2tldHMlMmZwZXJmb3JtZXIlMmY1NjUwJTNmJTNkJTI2UENJRCUzZFBTVVNCSU5IT01FNDQwMjk1MzQxMTZGNTIlMjZwcyUzZCUyNnBzX3AlM2QxJTI2cHNfYyUzZDQ3MTEzMzY0MCUyNnBzX2FnJTNkMTMwMTgyMjkzMzA4MTIyMiUyNnBzX3RnJTNka3dkLTgxMzY0MjA1NjI5NzQ2JTNhbG9jLTcxMjg0JTI2cHNfYWQlM2Q4MTM2Mzk5OTkwNTU5MSUyNnBzX24lM2RzJTI2cHNfZCUzZGMlMjZnY2xpZCUzZDQwYWY0MGViODk4YjE0MjBkZmQxMjliMmUwY2I4YmE5JTI2Z2NpZCUzZEMxMjI4OVgwMjElMjZrZXl3b3JkJTNkMTMwMTgyMjkzMzA4MTIyMmt3ZC04MTM2NDIwNTYyOTc0NiUzYWxvYy03MTI4NF9jJTI2Y3JlYXRpdmUlM2QlMjZ1dG1fa3hjb25maWQlM2RzMnJzaHNibXYlMjZ1dG1fY2FtcGFpZ24lM2Q0NzExMzM2NDAlMjZrd3QlM2RuYiUyNm10JTNkZSUyNmt3JTNkbmV3JTI1MjB5b3JrJTI1MjB5YW5rZWVzJTI2YXAlM2QlMjZwbG9jJTNkODYzMDMlMjZpbG9jJTNkJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkcGFpZC1zZWFyY2glMjZ1dG1fc3ViX21lZGl1bSUzZHByb3NwZWN0aW5nJTI2dXRtX3Rlcm0lM2RuYiUyNnV0bV9jb250ZW50JTNkZGVmYXVsdCUyNmdjbHNyYyUzZDNwLmRzJTI2bXNjbGtpZCUzZDQwYWY0MGViODk4YjE0MjBkZmQxMjliMmUwY2I4YmE5JTI2%2526rlid%253D40af40eb898b1420dfd129b2e0cb8ba9%26vqd%3D4%2D273756356604130890938159072648560811633%26iurl%3D%257B1%257DIG%253D8997077E0EAC4A0E84D1E88B80373C9B%2526CID%253D2884BA1012D068DD2B0AACC6133469DD%2526ID%253DDevEx%252C5046.1&rut=b20110ceee4ac8b8a36dbb76fafddaad819d13f22077b8c394f7644d8efde7d0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:08:48.746526"
+    },
+    {
+      "topic": "new york yankees",
+      "title": "New York Yankees Tickets - View Prices & Buy Online",
+      "content": "Buy 2026 New York Yankees Tickets at Vivid Seats\u00ae | Order Online Today. Pick Your Seats For New York Yankees With Vivid Seats, Safe and Secure Transaction.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dvividseats.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DswrJo9VI2hHdCD%252DbNOVd3Qxcs%252DLONz3%252DW_Az8Bk0Ytmtf8MMELQR1OUOf179dxFMSROopK%252Da%252DcPIStfZJExQdOoFTul0VC3G1blYI23CHXtVjXmE4_SvqjCDLc6nn7dlEHPvR7QSQaOg4mMuCM3Xj5W8ulfWG1yeJU9cDFsBd5c.4AxagUnWXu8A3bqzaXzNvA%26rut%3D018800f411d54972c9ff22da4a609da2e96db9937e6767802569fb9416c0b0aa%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8q6Fzaba4I_wiM5UKhTJshTVUCUzB%252D1msX4ugt4ZqaUhkk_%252DtyYFYVii0CMliW9TeUK9UXNXsHVsfu61fxCzZPIW1czRAo1pHfGTRsMmE1Fd_p1W1OsZhs5OGXaKTW9lD0274teKcjOILgSoD0v9qTGbKnMvnakl6IQxZaTBhgeksqd32zQKVssSE67Zz0QBZj8qwZqSpMHb7Q_d2lKyaiuJ77yg%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cudml2aWRzZWF0cy5jb20lMmZuZXcteW9yay15YW5rZWVzLXRpY2tldHMtLXNwb3J0cy1tbGItYmFzZWJhbGwlMmZwZXJmb3JtZXIlMmY2MDclM2Z1dG1fc291cmNlJTNkbXNuJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZDQ1ODI3NDg0OCUyNnV0bV90ZXJtJTNkbmV3JTI1MjB5b3JrJTI1MjB5YW5rZWVzJTI2YWRncm91cCUzZDExODQxNzU3NzE5Mzk3MjMlMjZ0YXJnZXQlM2Rrd2QtNzQwMTEyNzIyNzQyODQlM2Fsb2MtMTkwJTI2bG9jX2klM2QlMjZsb2NfcCUzZDg2MzAzJTI2bXNjbGtpZCUzZGMxNmZhZDkyYjU1YTEwYzQ1MzE2YzRjYmRjMWFiNmFh%2526rlid%253Dc16fad92b55a10c45316c4cbdc1ab6aa%26vqd%3D4%2D111053277536329166327605743535063892852%26iurl%3D%257B1%257DIG%253D8997077E0EAC4A0E84D1E88B80373C9B%2526CID%253D2884BA1012D068DD2B0AACC6133469DD%2526ID%253DDevEx%252C5051.1&rut=c9f70b28d3e11f8b75029335a6d5699f0bb0b6795d63323a2509f35c4fb780a6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:08:48.746569"
+    },
+    {
+      "topic": "new york yankees",
+      "title": "Official New York Yankees Website | MLB.com",
+      "content": "The official website of the New York Yankees with the most up-to-date information on news, tickets, schedule, stadium, roster, rumors, scores, and stats.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mlb.com%2Fyankees&rut=7c5b1decf1d407c7b9bde8534caa10d8d8478718d3dacc3f3af447e65d94ab33",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:08:48.746596"
+    },
+    {
+      "topic": "new york yankees",
+      "title": "New York Yankees News, Scores, Stats & Standings | New York Post",
+      "content": "Get the latest New York Yankees news, scores, standings, stats, trade rumors, expert analysis and more from the New York Post.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fnypost.com%2Fnew%2Dyork%2Dyankees%2F&rut=b15b277a8ccb6ea0be2cc365f6be4a4dc53f36f7c69b2f073dd3ecb2f1d611a1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:08:48.746623"
+    },
+    {
+      "topic": "new york yankees",
+      "title": "New York Yankees Scores, Stats and Highlights - ESPN",
+      "content": "Visit ESPN for New York Yankees live scores, video highlights, and latest news. Find standings and the full 2026 season schedule.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.espn.com%2Fmlb%2Fteam%2F_%2Fname%2Fnyy%2Fnew%2Dyork%2Dyankees&rut=7d6a71a5ca2b78d7b8d2638acff6f5d617a945a5862953806831143a93b7c0d2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:08:48.746649"
+    },
+    {
+      "topic": "napoleon bonaparte",
+      "title": "Napoleon - Wikipedia",
+      "content": "Napoleon Bonaparte[b] (born Napoleone di Buonaparte; [1][c] 15 August 1769 - 5 May 1821), later known by his regnal name Napoleon I, was a French general and statesman who rose to prominence during the French Revolution and led a series of military campaigns across Europe during the French Revolutionary and Napoleonic Wars from 1796 to 1815.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNapoleon&rut=7c5646cd71e4279366482b6f19c3ab5b253039ded02115304c8d2fa0910a5096",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:09:47.456085"
+    },
+    {
+      "topic": "napoleon bonaparte",
+      "title": "Napoleon I | Biography, Achievements, & Facts | Britannica",
+      "content": "Napoleon I, the ambitious French emperor and military genius, reshaped Europe's political landscape through his conquests and introduced significant reforms that continue to influence modern society.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FNapoleon%2DI&rut=c5ab3c21bd7e7948cfca29bef9daac37f446ebef8dfabce4fcbbd12a4a25b741",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:09:47.456166"
+    },
+    {
+      "topic": "napoleon bonaparte",
+      "title": "Napoleon Bonaparte - Biography, Facts & Death | HISTORY",
+      "content": "Learn about the life and achievements of Napoleon Bonaparte, the French military leader and emperor who conquered much of Europe in the early 19th century. Explore his rise to power, his wars, his marriages, his downfall and his legacy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.history.com%2Farticles%2Fnapoleon&rut=4160c7953841b7fdf253b4e2a821ec9d7782a74d02b07097e15797db8464bd29",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:09:47.456227"
+    },
+    {
+      "topic": "napoleon bonaparte",
+      "title": "Napoleon Bonaparte - World History Encyclopedia",
+      "content": "Napoleon Bonaparte (1769-1821) was a Corsican-born French general and politician who reigned as Emperor of the French with the regnal name Napoleon I from 1804 to 1814 and then again briefly in 1815...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.worldhistory.org%2FNapoleon_Bonaparte%2F&rut=6fc4c6fecaa756d79b605d2f48adcbb70d9b6229549e34974d94761dd65951f2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:09:47.456288"
+    },
+    {
+      "topic": "napoleon bonaparte",
+      "title": "Napoleon Bonaparte: Biography, Military General, French Emperor",
+      "content": "Napoleon Bonaparte was a French military general and emperor of France from 1804 to 1815. Read about his height, rise to power, quotes, exile, death, and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.biography.com%2Fpolitical%2Dfigures%2Fnapoleon&rut=c5fcf90702acefeb12e85c7ebe0603144bd1d5844f9c6c1f3a3413b8332cedd0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:09:47.456346"
+    },
+    {
+      "topic": "napoleonic wars",
+      "title": "Low prices napoleonic wars - Amazon\u00ae Official Site",
+      "content": "Browse & discover thousands of unique brands. Read customer reviews & best sellers. Find deals and compare prices on napoleonic wars at Amazon.com",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DuGpChxNPoHaopWCqhDhmKNWtTjhMLmVx46d0BXCfcgeACL2D6bsL%252Ds%252DmDLIEYc5a2ukju_lMxQPsFRaLa8xVvxAJiFzVRX%252DAeNjZI3tL2ejaO2EYrP30pFr0mkfUC7ymtNvLWMOIXWNnFCF%252D3w05spcgYIIQSgenuMfaMRKUXPw.PjW_QeRatZQBhFrgNbHHOw%26rut%3D9519ec08b82a275d9026d030957a2ce47910e78bac9df5671339e4e1a1bdb612%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8Fl04UOTR5FnnTf%252DhNXhaPzVUCUzj3T6hJx7myTfGRgJW9RiswR52aZ%252DdIyPsktb6a45aj1eBAAdH0rCtvD9539FywHF80ZuQfv7s1zGR9hZ2sKb2hK42Rwdyyd1Y%252DlJ6%252D14ggIfh9xk0XFMqrZ1SX7NPz8JROxi5isgPZQR9RQ7zxaerVGE3Q6mr_VPYwy8WO%252DKR7eqEzZ%252Dny3G7KMzwyhLCFJY%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZG5hcG9sZW9uaWMlMmJ3YXJzJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfMXNrdTZsb3l2Z19wJTI2YWRncnBpZCUzZDEyMjcwNTUyOTY2ODEwMjYlMjZodmFkaWQlM2Q3NjY5MTEyMjAxNjM4MyUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGUlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg4OTg0JTI2aHZ0YXJnaWQlM2Rrd2QtNzY2OTEyMDM0NTIyNzIlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDEwNzYyXzEzNTg5MjE4JTI2bWNpZCUzZGU1NzY1ZjhiZWExZjNmNjQ4ZTRlOTcwYjFkZDg3OTJlJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2Q5NWU1YzU5MGJlZWQxMmNiMDAwMmFjYzljOTQ2ZWM3ZQ%2526rlid%253D95e5c590beed12cb0002acc9c946ec7e%26vqd%3D4%2D16857529573457416202620768057522171303%26iurl%3D%257B1%257DIG%253D75FA7BD0582E40DB92C6998A1E207399%2526CID%253D34B6C1A8091A6C4722AED77E08DE6D4E%2526ID%253DDevEx%252C5046.1&rut=13c2d3b2be308e9fbd1af25a42dfa98dac72905408875564da207e5a7d1fab47",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:10:19.982696"
+    },
+    {
+      "topic": "napoleonic wars",
+      "title": "Napoleonic Wars - Wikipedia",
+      "content": "The Napoleonic Wars (1803-1815) were a global series of conflicts fought by a fluctuating array of European coalitions against the French First Republic (1803-1804) under the First Consul followed by the First French Empire (1804-1815) under the Emperor of the French, Napoleon Bonaparte. The wars originated in political forces arising from the French Revolution (1789-1799) and from the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNapoleonic_Wars&rut=53a4ec888739bb3627f504cc5c1928e55bb1016578eab7a392578e640018cedd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:10:19.982777"
+    },
+    {
+      "topic": "napoleonic wars",
+      "title": "Napoleonic Wars | Summary, Combatants, & Maps | Britannica",
+      "content": "Napoleonic Wars, series of wars between Napoleonic France and other European powers that produced a brief French hegemony over most of Europe. Along with the French Revolutionary wars, the Napoleonic Wars constitute a 23-year period of recurrent conflict that ended with the Battle of Waterloo.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fevent%2FNapoleonic%2DWars&rut=3e90607d929026f2df44626ceeb51e9b973b26c53bb438d263d2aabf0f9674cb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:10:19.982835"
+    },
+    {
+      "topic": "napoleonic wars",
+      "title": "Napoleonic Wars: History, Causes & Major Outcomes",
+      "content": "Learn about the 12-year period of bloody conflicts between France and other European powers from 1803 to 1815. Find out how the French Revolution, Napoleon Bonaparte, and the Coalitions shaped the course of history and the modern world.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fworldhistoryedu.com%2Fnapoleonic%2Dwars%2Dhistory%2Dcauses%2Dmajor%2Doutcomes%2F&rut=550291cfd8f41fb56be676a413a25ec8f20be789a6bf6508f0f79621b80a9b3f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:10:19.982884"
+    },
+    {
+      "topic": "napoleonic wars",
+      "title": "The Napoleonic Wars: History, Battles, and Legacy",
+      "content": "Learn about the causes, key phases, and consequences of the Napoleonic Wars, a defining period in European history. Explore the clash between revolutionary France and the coalitions of Europe, the battles that shaped the era, and the impact of Napoleon's legacy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fhyperhistory.org%2Fnapoleonic%2Dwars%2Doverview%2F&rut=225f6962f5cd930ab4914b6844268d2239a601533d3d15bf594321b99c830526",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:10:19.982936"
+    },
+    {
+      "topic": "league of nations",
+      "title": "League of Nations - Wikipedia",
+      "content": "The League of Nations (LN or LoN; French: Soci\u00e9t\u00e9 des Nations [s\u0254sjete de n\u0251sj\u0254\u0303], SdN) was the first worldwide intergovernmental organisation whose principal mission was to maintain world peace. [2] It was founded on 10 January 1920 by the Paris Peace Conference that ended the First World War. The main organisation ceased operations on 18 April 1946 when many of its components were ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLeague_of_Nations&rut=aa14139522fe0a9ab70ab9665c16ffc7f256a44a7a4af1af7e3230bbdf727ef2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:22:10.915321"
+    },
+    {
+      "topic": "league of nations",
+      "title": "League of Nations | History, Definition & Purpose | Britannica",
+      "content": "League of Nations, organization for international cooperation established at the initiative of the victorious Allied powers after World War I. Although the League was unable to fulfill the hopes of its founders, its creation was an event of decisive importance in the history of international relations.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2FLeague%2Dof%2DNations&rut=d112c0734348374704fb36049e4a6f121913dc2a28948cdd4674949ca0ae0e49",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:22:10.915416"
+    },
+    {
+      "topic": "league of nations",
+      "title": "The League of Nations - The United Nations Office at Geneva",
+      "content": "Learn about the history, purpose, membership and functions of the League of Nations, the first intergovernmental organization for international cooperation and peace. Explore the archives and resources of the League of Nations and its successor, the United Nations.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ungeneva.org%2Fen%2Fabout%2Fleague%2Dof%2Dnations%2Foverview&rut=89b46a89df80103a2bea4e632cb4a5d96de7bb803afe0579eb99a0fa3531ccf1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:22:10.915470"
+    },
+    {
+      "topic": "league of nations",
+      "title": "The League of Nations: Definition, WW1 & Failure - HISTORY",
+      "content": "Learn about the origins, achievements and failures of the League of Nations, an international diplomatic group created after World War I. Find out how the League tried to resolve disputes, disarm nations and prevent another global conflict.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.history.com%2Farticles%2Fleague%2Dof%2Dnations&rut=e52e328d1bdfb315a79db194db5838b2f4f56aa6d0c75effd3c40c462f869b29",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:22:10.915512"
+    },
+    {
+      "topic": "league of nations",
+      "title": "Predecessor: The League of Nations | United Nations",
+      "content": "Learn about the League of Nations, the international organization established in 1919 after World War I to promote cooperation and peace. Find out how it was replaced by the United Nations in 1946 and what are its legacy and achievements.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.un.org%2Fen%2Fabout%2Dus%2Fhistory%2Dof%2Dthe%2Dun%2Fpredecessor&rut=c995943302a244cd4dedfec97e797be602cb7bc0ca209bff19dc61ac403e46ff",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:22:10.915550"
+    },
+    {
+      "topic": "new deal",
+      "title": "New Deal - Wikipedia",
+      "content": "The New Deal was a 1933-1938 series of economic, social, and political reforms in response to the Great Depression in the United States under President Franklin D. Roosevelt.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNew_Deal&rut=ebb3ecdbe1f7eee13f723710fcac350ea116aee99c0c254858dec9f55ae0810d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:49:11.504625"
+    },
+    {
+      "topic": "new deal",
+      "title": "New Deal | Definition, History, Programs, Summary, & Facts | Britannica",
+      "content": "New Deal, domestic program of U.S. President Franklin D. Roosevelt between 1933 and 1939, which took action to bring about immediate economic relief from the Great Depression as well as reforms in industry, agriculture, and finance, vastly increasing the scope of the federal government's activities.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fevent%2FNew%2DDeal&rut=96e5a236544b7f95c2a0e57910558ec7b6e1ba890d0106ebfe1a45365c98f99f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:49:11.504701"
+    },
+    {
+      "topic": "new deal",
+      "title": "The New Deal - National Museum of American History",
+      "content": "The New Deal Campaign cane, 1932 View object record Franklin Delano Roosevelt ran for president of the United States in 1932 on a promise to end the Great Depression and bring Americans a \"New Deal.\" The Great Depression made Americans question free-market capitalism.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Famericanhistory.si.edu%2Fexplore%2Fexhibitions%2Famerican%2Denterprise%2Fonline%2Fcorporate%2Dera%2Fnew%2Ddeal&rut=2350fa844cb160ae955b341bf10a20b24230a3a168174c2cf615b368f012b68d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:49:11.504731"
+    },
+    {
+      "topic": "new deal",
+      "title": "What Was the New Deal? - Living New Deal",
+      "content": "Learn about the New Deal, the programs and policies that President Franklin D. Roosevelt launched to recover from the Great Depression and transform America. Explore the economic, social, and civic benefits of the New Deal and its enduring legacy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Flivingnewdeal.org%2Fhistory%2Dof%2Dthe%2Dnew%2Ddeal%2Fwhat%2Dwas%2Dthe%2Dnew%2Ddeal%2F&rut=99370fe7b40fbaf950d5b2b7b03f76ddc1368d0d7b112f93625a7519e4815c36",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:49:11.504759"
+    },
+    {
+      "topic": "new deal",
+      "title": "New Deal - Programs, Social Security & FDR - HISTORY",
+      "content": "Learn about the New Deal, the series of programs and projects instituted by President Franklin D. Roosevelt during the Great Depression to restore prosperity and expand the federal government's role in the economy. Explore the First and Second New Deal, the Social Security Act, the TVA, the WPA and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.history.com%2Farticles%2Fnew%2Ddeal&rut=82a947caa1492716dba91ad32b3cb52477b4341e9b6a397204ed0fc06897603c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:49:11.504786"
+    },
+    {
+      "topic": "nazi germany",
+      "title": "Low priced germany history book - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on germany history book at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DjPGYGwGGyMttCC4UyGXgsKSEvu0%252D_4LDpdd7gqHftBvW0a0MzoiX66%252Dymrllv8ZDJvGsImiKzGJvgZDQXlagsNd2ObxjZPzAkzZa55pGzRwGi0krEkrX74IltALKDt%252DgM8%252DLdsd3ef5m1UcAIxawsMIb6RP94Jsm2SlfPSru7KU.RX2QsmTYa8ZYiPrTowJpow%26rut%3D7f618bddd76399552325bb76f219793c2e67a057af27acd89982370d08f41be5%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8Bvg1PojSsEgSdGnGOMp4cjVUCUyeM%252DUfz4gltA_KeZ5YhdNpNpnL4HgAYyCBFgijuQJW41G0iet5UxUcAnk8686x4f1B_qzRlxkWXtqhlfmv7hFvZWE9s0giZlzMx5gLjkho490o%252D0VpaXwLDer%252DEz%252DQlldaMTEJ62msTh2LqbkWxzhbXOk3fkuKLt_lfNGgMg3uR9fdtjVDk_Q7HSMcyiNbdzA%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGdlcm1hbnklMmJoaXN0b3J5JTJiYm9vayUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzNicHBsZ2lxazRfcCUyNmFkZ3JwaWQlM2QxMjM5MTUwNjY1OTY4MjM3JTI2aHZhZGlkJTNkNzc0NDcwNDk1NTk3NTQlMjZodm5ldHclM2RzJTI2aHZxbXQlM2RwJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkNzIlMjZodmxvY3BoeSUzZDg2NDQ4JTI2aHZ0YXJnaWQlM2Rrd2QtNzc0NDcyNDMwMDQ0NjQlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDI0MzQ2XzEzNjQ2ODQ1JTI2bWNpZCUzZDdlYmQzNmZhNDFmZjMyODY4ZGE2ZDM3OWU1ZjYxN2MxJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2QxMjNjMjM2MTFjZWUxZDQ5YWE3NjRhMzg5ZGE4NGE2ZA%2526rlid%253D123c23611cee1d49aa764a389da84a6d%26vqd%3D4%2D316381275917808666189043583565756786981%26iurl%3D%257B1%257DIG%253D9F24F8941D624798A8E2E0E9218FC500%2526CID%253D24E0163CE86A6C61203600EAE98E6D40%2526ID%253DDevEx%252C5045.1&rut=04540f949eb265762ee7ca3efd57214f8391ce893ff5c88d92e2e53bc6a45f7f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:51:18.451111"
+    },
+    {
+      "topic": "nazi germany",
+      "title": "Nazi Germany - Wikipedia",
+      "content": "Nazi Germany, [i] officially the German Reich[j] and later the Greater German Reich, [k] was the German state between 1933 and 1945, when Adolf Hitler and the Nazi Party controlled the country, transforming it into a totalitarian dictatorship.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNazi_Germany&rut=3d0af162613ef413772d46fc1012e7187dedb5227a7de04c242338fed8a6f8dd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:51:18.451221"
+    },
+    {
+      "topic": "nazi germany",
+      "title": "Nazi Party | Beliefs, Rise, Leadership, & History | Britannica",
+      "content": "The Nazi Party was the political party of the mass movement known as National Socialism. Under the leadership of Adolf Hitler, the party came to power in Germany in 1933 and governed by totalitarian methods until 1945. Antisemitism was fundamental to the party's ideology and led to the Holocaust, the systematic, state-sponsored killing of six million Jews and millions of others.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2FNazi%2DParty&rut=e605d97a140b919dfde3eb3f66b0638ae845ef03166ec4ed6210753114722792",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:51:18.451297"
+    },
+    {
+      "topic": "nazi germany",
+      "title": "The Nazi Party | Holocaust Encyclopedia",
+      "content": "The Nazi Party The National Socialist German Workers' Party\u2014also known as the Nazi Party\u2014was the far-right racist and antisemitic political party led by Adolf Hitler. The Nazi Party came to power in Germany in 1933. It controlled all aspects of German life and persecuted German Jews. Its power only ended when Germany lost World War II.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fencyclopedia.ushmm.org%2Fcontent%2Fen%2Farticle%2Fthe%2Dnazi%2Dparty%2D1&rut=648504d6a625e89ee76a8dba681867395922aa71118a25daa94f2371ba889c53",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:51:18.451597"
+    },
+    {
+      "topic": "nazi germany",
+      "title": "What was Nazi Germany? - About Holocaust",
+      "content": "Nazi Germany was the [totalitarian] regime that ran Germany, countries and regions annexed by Germany, and countries occupied by Germany during World War II, between January 30, 1933, when Adolf Hitler was named Chancellor of Germany, and May 8, 1945, when Germany surrendered to the Allied troops led by the United States, the United Kingdom, and the Soviet Union.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Faboutholocaust.org%2Fen%2Ffacts%2Fwhat%2Dwas%2Dnazi%2Dgermany&rut=459769c7f82f41dac9b634c2de7131fe6290ed3f3fe8926e3efb04ead7cb62fb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:51:18.451681"
+    },
+    {
+      "topic": "nagasaki",
+      "title": "Nagasaki",
+      "content": "Nagasaki , officially Nagasaki City , is the capital and the largest city of Nagasaki Prefecture on the island of Kyushu in Japan.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nagasaki",
+      "confidence": 0.9,
+      "learned_at": "2026-01-03T12:54:28.872707"
+    },
+    {
+      "topic": "nagasaki",
+      "title": "Nagasaki - Wikipedia",
+      "content": "Nagasaki (\u9577\u5d0e, Nagasaki; Japanese pronunciation: [na.\u0261a\ua71c.sa.k\u02b2i, na.\u014ba-],[2] lit. 'Long Cape'), officially Nagasaki City (\u9577\u5d0e\u5e02, Nagasaki-shi; [na.\u0261a.sa.k\u02b2i\u0325\ua71c.\u0255i, na.\u0261a.sa\ua71c.k\u02b2i\u0325.\u0255i, na.\u014ba-] [2]), is the capital and the largest city of Nagasaki Prefecture on the island of Kyushu in Japan. [3] Founded by the Portuguese, [4] the port of Nagasaki became the sole port used ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNagasaki&rut=be246e6694560b565cddf5951d07a900bf33bb264f6a13229d3453ab16c0a911",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:54:29.675719"
+    },
+    {
+      "topic": "nagasaki",
+      "title": "Nagasaki | Japan, History, Bombing, Map, & Facts | Britannica",
+      "content": "Nagasaki, capital and largest city of Nagasaki prefecture, western Kyushu, Japan, at the mouth of the Urakami-gawa (Urakami River) where it empties into Nagasaki-ko (Nagasaki Harbor). On August 9, 1945, it was the target for the second atomic bomb dropped on Japan by the United States during World War II.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fplace%2FNagasaki%2DJapan&rut=37fb65428478d02ab99f0db83ea19aaf92bc85138c93b839dd82d89e55006df0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:54:29.675769"
+    },
+    {
+      "topic": "nagasaki",
+      "title": "Nagasaki Travel Guide - What to do in Nagasaki City",
+      "content": "Nagasaki (\u9577\u5d0e) is an important port city on the island of Kyushu and the capital of Nagasaki Prefecture. Its rich history and culture and attractive location around a narrow inlet make Nagasaki one of Japan's most interesting travel destinations. Thanks to its proximity to the Asian mainland, the port city of Nagasaki has played a prominent role in foreign trade relations for many centuries ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.japan%2Dguide.com%2Fe%2Fe2162.html&rut=0b508fcb80a2f78a113c9a5af674bdab4b129203509a92e323ecb7acf9eeccbd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:54:29.675808"
+    },
+    {
+      "topic": "nagasaki",
+      "title": "Nagasaki - Travel Japan - Japan National Tourism Organization",
+      "content": "Nagasaki was Japan's early gateway to trade with the West, and this influence still shines through in its districts of stately European-style homes and a large Christian population. Historically strong links to China and Korea further inflect modern Nagasaki, although the prefecture features tombs and ruins dating back to the third century B.C. Unspoiled beaches and island getaways surrounded ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.japan.travel%2Fen%2Fdestinations%2Fkyushu%2Fnagasaki%2F&rut=8ac4614694c194bedc4cb2bbfaba3ef4fbaeee97888afb9e30ac2d7ca7fdc1df",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:54:29.675839"
+    },
+    {
+      "topic": "nagasaki",
+      "title": "DISCOVER NAGASAKI/The Official Visitors' Guide",
+      "content": "Nagasaki Prefecture's official sightseeing and travel information website. Nagasaki Prefecture has an abundance of spots that capture people's imaginations, such as night views, hot springs, world heritage sites, churches, and remote islands. This website is full of information on traveling in Nagasaki, including featured articles, sightseeing spots, model courses, gourmet food, accomodation ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.discover%2Dnagasaki.com%2Fen&rut=52702555d12c39c16020081ee5d841bcb596b8ac7ba23f4680355de031ff04d2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:54:29.675869"
+    },
+    {
+      "topic": "united nations",
+      "title": "United Nations | Peace, dignity and equality <BR>on a healthy planet",
+      "content": "The United Nations came into being in 1945, following the devastation of the Second World War, with one central mission: the maintenance of international peace and security.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.un.org%2Fen%2F&rut=69108702ef322ede14a1c5804d229c0796545ec58256b0ad436cda3e3897d07a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:55:01.100735"
+    },
+    {
+      "topic": "united nations",
+      "title": "United Nations - Wikipedia",
+      "content": "The United Nations (UN) is a global intergovernmental organization established by the signing of the UN Charter on 26 June 1945 with the articulated mission of maintaining international peace and security, to develop friendly relations among states, to promote international cooperation, and to serve as a centre for harmonizing the actions of states in achieving those goals. The United Nations ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FUnited_Nations&rut=7f2b4bab8618bccf04929684faeab786817565c7047b10fbca5aa1dc401fe9b6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:55:01.100832"
+    },
+    {
+      "topic": "united nations",
+      "title": "The UN in General - United Nations",
+      "content": "Learn about the history, purposes, organs and work of the United Nations, an international organization founded in 1945. Explore topics such as peace and security, human rights, sustainable development, and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Funis.unvienna.org%2Funis%2Fen%2Ftopics%2Fthe%2Dun%2Din%2Dgeneral.html&rut=49a7a0b69ec0ce0ae3d040986258cc2dde949a683e667a7322f78cb7cc9e06e3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:55:01.100906"
+    },
+    {
+      "topic": "united nations",
+      "title": "United Nations (UN) | Definition, History, Founders, Flag, & Facts ...",
+      "content": "United Nations (UN), international organization established on October 24, 1945. The United Nations (UN) was the second multipurpose international organization established in the 20th century that was worldwide in scope and membership. Its predecessor, the League of Nations, was created by the Treaty of Versailles in 1919 and disbanded in 1946.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2FUnited%2DNations&rut=652f18d8ecec8d6925dac8acbd6186cd5af1c6bc6eb645d906e9929cc0dbc65d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:55:01.100983"
+    },
+    {
+      "topic": "nelson mandela",
+      "title": "Nelson Mandela - Wikipedia",
+      "content": "Nelson Rolihlahla Mandela (/ m\u00e6n\u02c8d\u025bl\u0259 / man-DEL-\u0259, [1] Xhosa: [xol\u00ed\u026ca\u026ca mand\u025b\u0302\u02d0la]; born Rolihlahla Mandela; 18 July 1918 - 5 December 2013) was a South African anti-apartheid activist and statesman who was the first president of South Africa from 1994 to 1999. He was the country's first Black head of state and the first elected in a fully representative democratic election. His ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNelson_Mandela&rut=1fe62fb9245c8a2bcf1d270763c22bd5178b713df5b1f8791b711a30b31b54d1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:09:53.396246"
+    },
+    {
+      "topic": "nelson mandela",
+      "title": "Nelson Mandela | Born, Death, Quotes, Biography, Story, & Education ...",
+      "content": "Nelson Mandela was a Black nationalist and the first Black president of South Africa (1994-99). A revered anti-apartheid activist, he fought for equality and reconciliation, leaving an enduring legacy of peace and social justice.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FNelson%2DMandela&rut=49ad93b1cf9cf7fec9b8cf98177ef1fecdb1bdfb6f17f73a100e65be048d600d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:09:53.396302"
+    },
+    {
+      "topic": "nelson mandela",
+      "title": "Biography of Nelson Mandela",
+      "content": "Learn about the life and struggle of Nelson Mandela, from his childhood in the Eastern Cape to his imprisonment and release, and his role in the ANC and Umkhonto weSizwe. Explore his achievements, awards, marriages, and legacy through the Nelson Mandela Foundation.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nelsonmandela.org%2Fbiography&rut=560e579a10aed4876588ff515d4fb1ff1776b16d82e70d21c7e49c2ac7a75950",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:09:53.396338"
+    },
+    {
+      "topic": "nelson mandela",
+      "title": "Nelson Mandela - Biographical - NobelPrize.org",
+      "content": "Learn about the life and achievements of Nelson Mandela, the Nobel Peace Prize laureate and the leader of the anti-apartheid movement in South Africa. Read his autobiography, speeches, and other sources on his struggle, imprisonment, and legacy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nobelprize.org%2Fprizes%2Fpeace%2F1993%2Fmandela%2Fbiographical%2F&rut=ccf34ea3626f6e43b1b25ed44a810ffe20c7eae4ea013923a85270c3f5b3c908",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:09:53.396372"
+    },
+    {
+      "topic": "nelson mandela",
+      "title": "Nelson Mandela - Quotes, Biography & Death | HISTORY",
+      "content": "Nelson Mandela was born on July 18, 1918, into a royal family of the Xhosa-speaking Thembu tribe in the South African village of Mvezo, where his father, Gadla Henry Mphakanyiswa (c. 1880-1928 ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.history.com%2Farticles%2Fnelson%2Dmandela&rut=45a79066799c925e2b85fc2c4fa7ff548f99563698d490431a906f05f84aeaae",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:09:53.396404"
+    },
+    {
+      "topic": "nile river",
+      "title": "Nile River - Flexible Cancellation Options - Cairo Top 10 Tours",
+      "content": "Find & Book the Best Rated Cairo Tours on Tripadvisor! Wide Selection Available. Quick & Easy Purchase with Flexibility to Cancel up to 24 Hours Before the Tour Starts.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dtripadvisor.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DJ3jEiB2jNX4rHv4XYG11DjeGLsjM_gWDz%252DW2s7VRdgsAAI8UKizogGViqZ%252D%252DF9o3bJ77krNjVqTcwRw9S8LD6MuhiJecBBT68cqdUFlzj0TUyXHHRMqoCeo%252D9nMuEh9OZUYul1KGazT6Y2rn3cS4hlr3d4TvirdhSIkn_AjiGwQ.EU_f26r39IuAcWY7D015CA%26rut%3D2b65c561e0ca6391fc2341e4cafcbc2d92c550d25228216af1e8297cdc6718af%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8JOOtPffMcPTW3VJHYkm2BTVUCUxqyV2bWB8Szv3APy3XG4gcjQLKXEPqedgtyGD6Vw%252D63ifm37Ydp2B2RABH8iHdI4UNRSdD4qiXl6SoisDq%252DZhYUzqdbLOmgvAMRM_xvs7dr07JO1ZpNAv86d4VFF9ge57UqjRv2wDgYj%252DfugG24g_ORRr2fjt8LLenKXSoSqTBQjhR3o0DPZ_LilyJXDvSEus%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cudHJpcGFkdmlzb3IuY29tJTJmQXR0cmFjdGlvbl9Qcm9kdWN0cyUzZmdlbyUzZDI5NDIwMSUyNmRldGFpbCUzZDQ3MjA4NCUyNm0lM2QxMTAwNCUyNnN1cGNtJTNkMjY4MjYwODgzJTI2c3VwYWclM2QxMTgzMDc0Njc4OTM1ODM0JTI2c3VwdGklM2Rrd2QtNzM5NDIyMDg4NTI0NDYlM2Fsb2MtMTkwJTI2c3VwYWklM2Q3Mzk0MjQ5NjIwMjEwMiUyNnN1cGR2JTNkYyUyNnN1cG50JTNkcyUyNnN1cGt3JTNkbmlsZSUyNTIwcml2ZXIlMjZtc2Nsa2lkJTNkYjM0Mjk3Y2E5MGVjMWNjNDFhN2FmZTkzMTk5ZjkxMWE%2526rlid%253Db34297ca90ec1cc41a7afe93199f911a%26vqd%3D4%2D134976196266163434287210176677794722568%26iurl%3D%257B1%257DIG%253D184077EEA2BF4C05B212CC506EA2D180%2526CID%253D321544D09E296B9C3C5D52069F656A25%2526ID%253DDevEx%252C5045.1&rut=dfd009fdb564a7c3b97312e835d080969444bf0bff1b9573177f64a3439df9ed",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:26:11.668463"
+    },
+    {
+      "topic": "nile river",
+      "title": "Nile - Wikipedia",
+      "content": "The Nile[b] (also known as the Nile River or River Nile) is a major north-flowing river in northeastern Africa. It flows into the Mediterranean Sea. At roughly 6,650 km (4,130 mi) long, it is often ranked the longest river in the world, a title that is sometimes disputed with the Amazon. Its drainage basin covers eleven countries: the Democratic Republic of the Congo, Tanzania, Burundi, Rwanda ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNile&rut=8ffc56677b5ae868307d9518a1d77420ed93ade4f805552ca436f4074793798f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:26:11.668557"
+    },
+    {
+      "topic": "nile river",
+      "title": "Nile River | Start, Map, Length, Facts, Continent, History, & Location ...",
+      "content": "Nile River, the longest river in the world, called the father of African rivers. It rises south of the Equator and flows northward through northeastern Africa to drain into the Mediterranean Sea.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fplace%2FNile%2DRiver&rut=ebc6b143e133cb21df668741a8e2e6a895d43c592277045438691ac02e9d1165",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:26:11.668620"
+    },
+    {
+      "topic": "nile river",
+      "title": "Nile - World History Encyclopedia",
+      "content": "Nile Delta Jacques Descloitres (NASA) (CC BY-NC-SA) The world's longest river, located in Egypt, the Nile flows 4,132 miles (6,650 kilometres) northward to the Mediterranean Sea (a very unusual direction for a river to take). It was considered the source of life by the ancient Egyptians and has played a vital role in the country's history.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.worldhistory.org%2Fnile%2F&rut=8965d5adf462a20238a62057e2bcbaa6f082dd10ea48f5a9d7c66b50d6d68070",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:26:11.668690"
+    },
+    {
+      "topic": "nile river",
+      "title": "Nile River - National Geographic Society",
+      "content": "Learn about the longest river in the world, its history, geography, ecology and challenges. Explore the Nile River basin, its tributaries, its role in ancient Egypt and its current water issues.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Feducation.nationalgeographic.org%2Fresource%2Fnile%2Driver%2F&rut=f8c7a338577fedfd2c5b2e4ffae17ebcdc6ed82559bbde55cbb1a5491cb98c9b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:26:11.668753"
+    },
+    {
+      "topic": "manuel noriega",
+      "title": "Manuel Noriega - Wikipedia",
+      "content": "Manuel Noriega was a Panamanian dictator, drug lord, and military officer who ruled Panama from 1983 to 1989. He had ties with U.S. intelligence agencies, but was ousted by a U.S. invasion in 1989 and imprisoned in several countries.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FManuel_Noriega&rut=84a518c768cf1b41b5c4062cdf5592e55a71801a48fad9048db3fd14fc196fac",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:39:26.177337"
+    },
+    {
+      "topic": "manuel noriega",
+      "title": "Maduro's capture comes 36 years after U.S. arrested Panama's Noriega",
+      "content": "A one-time U.S. ally and CIA informant, Manuel Noriega led Panama for much of the 1980s.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cbsnews.com%2Fnews%2Fvenzeula%2Dleader%2Darrest%2Dmaduro%2Dmanuel%2Dnoriega%2F&rut=ec76e6225469efe9d1e57b86be271dd415bc51ebff6213450a5c757ff27f3006",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:39:26.177406"
+    },
+    {
+      "topic": "manuel noriega",
+      "title": "Manuel Noriega | Facts & Biography | Britannica",
+      "content": "Manuel Noriega (born February 11, 1934?, Panama City, Panama\u2014died May 29, 2017, Panama City) was a Panamanian military leader, commander of the Panamanian Defense Forces (1983-89), who, for the years of his command, was the actual power behind the civilian president.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FManuel%2DNoriega&rut=7a083db9b6560a2808fc696f95da6ec1e441c11ea340e169227f4fa96ad884cc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:39:26.177471"
+    },
+    {
+      "topic": "manuel noriega",
+      "title": "History repeats itself: How US captured Panama's leader Noriega nearly ...",
+      "content": "News Explained Explained Global History repeats itself: How US captured Panama's leader Noriega nearly 36 years ago, much like it arrested Maduro History repeats itself: How US captured Panama's leader Noriega nearly 36 years ago, much like it arrested Maduro This is not the first time that the US has gone into a Latin American country and captured its leader for drug trafficking. Nearly 36 ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Findianexpress.com%2Farticle%2Fexplained%2Fexplained%2Dglobal%2Fpanama%2Dnoriega%2Dmaduro%2D10453762%2F&rut=05b135601605c50a00525504c62c3b892dc32b226cbade72f6c17a26dac69460",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:39:26.177526"
+    },
+    {
+      "topic": "manuel noriega",
+      "title": "Maduro's capture draws echoes of Noriega in 1990 - Axios",
+      "content": "Manuel Noriega's mug shot after his capture by U.S. forces in 1990. Photo: Bettmann / Getty Images Saturday's capture of Venezuela's Nicol\u00e1s Maduro isn't the first time the U.S. entered a Latin American country by force to seize its leader on drugs charges.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.axios.com%2F2026%2F01%2F03%2Ftrump%2Dvenezuela%2Dmaduro%2Dpanama%2Dnoriega&rut=835a27a2d38adde3618dee1e2555c22dd87f54617d665588857f1ee407690315",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:39:26.177583"
+    },
+    {
+      "topic": "el nino",
+      "title": "What are El Nino and La Nina? - NOAA's National Ocean Service",
+      "content": "El Ni\u00f1o and La Ni\u00f1a are opposite phenomena that affect weather worldwide by changing the ocean temperatures and currents in the Pacific. Learn how they work, when they occur, and what impacts they have on ecosystems and economies.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Foceanservice.noaa.gov%2Ffacts%2Fninonina.html&rut=fcc79d1d9c7f16e160b1dd2fa0b27dd8ef52f710e5bc5e83e306eca33c948a38",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:40:29.340925"
+    },
+    {
+      "topic": "el nino",
+      "title": "El Ni\u00f1o-Southern Oscillation - Wikipedia",
+      "content": "Southern Oscillation Index timeseries from 1876 to 2025. The Southern Oscillation is the atmospheric component of El Ni\u00f1o. This component is an oscillation in surface air pressure between the tropical eastern and the western Pacific Ocean waters. The El Ni\u00f1o-Southern Oscillation is a single climate phenomenon that periodically fluctuates between three phases: Neutral, La Ni\u00f1a or El Ni\u00f1o ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEl_Ni%25C3%25B1o%25E2%2580%2593Southern_Oscillation&rut=3beb6757a5103d2f6af4b0ca6fbcde305499209aa6f5a0a40fc86b2cb0d57741",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:40:29.341053"
+    },
+    {
+      "topic": "el nino",
+      "title": "El Ni\u00f1o & La Ni\u00f1a (El Ni\u00f1o-Southern Oscillation) - NOAA Climate.gov",
+      "content": "El Ni\u00f1o and La Ni\u00f1a are the warm and cool phases of a natural climate pattern across the tropical Pacific known as the El Ni\u00f1o-Southern Oscillation, or \"ENSO\" for short. The pattern shifts back and forth irregularly every two to seven years, bringing predictable changes in ocean temperature and disrupting the normal wind and rainfall patterns across the tropics. These changes in the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.climate.gov%2Fenso&rut=8fa0a9d1683c8c44594a3a645f3d19ecc3e99866c6dc3d40b50bfb8a87339037",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:40:29.341132"
+    },
+    {
+      "topic": "el nino",
+      "title": "El Ni\u00f1o | Causes, Effects, Weather, Meaning, & Years | Britannica",
+      "content": "The term El Ni\u00f1o, in oceanography and climatology, describes the anomalous appearance, every few years, of unusually warm ocean conditions along the tropical west coast of South America. This event is associated with wide-reaching adverse effects on fishing, agriculture, and local weather.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2FEl%2DNino&rut=e4c95238f5cc9938a47138a94cf4a052afc62c7c5ebcf3901e05b7ad6b316384",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:40:29.341210"
+    },
+    {
+      "topic": "el nino",
+      "title": "El Ni\u00f1o/La Ni\u00f1a Information - National Weather Service",
+      "content": "El Ni \u00f1o/ La Ni \u00f1a Information Persistent below-average sea surface temperatures across the central and eastern Pacific signal that La Ni\u00f1a conditions are favored to continue for the next month or two, with a transition to ENSO-neutral most likely in January-March 2026 (68% chance) in response to weakening subsurface temperature anomalies.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.weather.gov%2Ffwd%2Fenso&rut=6a840fdb1ea6acbcdc07c4d9c49c71d76e6b1a61743e4fc73ee2d94e92bd57cf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:40:29.341292"
+    },
+    {
+      "topic": "la nina",
+      "title": "January 2025 update: La Ni\u00f1a is here - NOAA Climate.gov",
+      "content": "La Ni\u00f1a conditions emerged in the tropical Pacific in December 2024 and are likely to persist through February-April 2025. Learn about the observations, predictions, and impacts of this ENSO phase on global climate.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.climate.gov%2Fnews%2Dfeatures%2Fblogs%2Fenso%2Fjanuary%2D2025%2Dupdate%2Dla%2Dnina%2Dhere&rut=0b32a1c86bc5ae58dec091e95a4036ab4f5497321ce7d12a407c5beb5a1094ff",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:41:00.817692"
+    },
+    {
+      "topic": "la nina",
+      "title": "La Ni\u00f1a Has Formed; Here's What That Means | Weather.com",
+      "content": "The criteria for La Ni\u00f1a conditions have been met, according to NOAA's Climate Prediction Center, and are expected to persist through the winter.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fweather.com%2Fnews%2Fweather%2Fnews%2F2025%2D10%2D09%2Dla%2Dnina%2Ddevelopment%2Deffect%2Don%2Dwinter%2Dweather&rut=ad50f175e0e9b695b0a973eed1d769aa9408999e643fbb83e7fe83d81ff05131",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:41:00.817772"
+    },
+    {
+      "topic": "la nina",
+      "title": "La Ni\u00f1a on the way, forecasters say. What does this mean?",
+      "content": "Feds say La Ni\u00f1a is coming. What does this mean for hurricanes and our weather? There's a 71% chance of La Ni\u00f1a during October to December, the Climate Prediction Center said.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.usatoday.com%2Fstory%2Fnews%2Fweather%2F2025%2F09%2F15%2Fla%2Dnina%2Dforecasters%2Dwhat%2Dto%2Dexpect%2Dweather%2F86164763007%2F&rut=11d60d6810c6c87870c820f578a2bc9c80a900eb12e0da1454076a2cdb3ec4b7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:41:00.817862"
+    },
+    {
+      "topic": "la nina",
+      "title": "La Ni\u00f1a - Education",
+      "content": "La Ni\u00f1a is a climate pattern that describes the cooling of surface-ocean water along the tropical west coast of South America. Learn about its causes, effects, and monitoring methods, and see how it differs from El Ni\u00f1o.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Feducation.nationalgeographic.org%2Fresource%2Fla%2Dnina%2F&rut=15f24391d52e38f1f93ec2bd2659f7de9235f48c7889f3185269a8777f896642",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:41:00.817941"
+    },
+    {
+      "topic": "north america geography",
+      "title": "Geography of America - Why North American Geography?",
+      "content": "Prepare Your Geography of North America Activities for High School with Study.com! We Have the Resources You're Looking for Right Here - Shop Our Great Selection Today!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstudy.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DxHoJj30AfHzTvV7bHQMGUnsjl1dyX9zvqj9ax7O4w_jAPbn0Qt4UEAMsbBRxe%252DSyOM4V4ZGRLvNsO7O_n6IhWzQvShb1780AGfvZ6AZoYNdcFkHjW%252Df28ITZ8EE6LNT4XmGvfXzj6x2tZzC9_RBDL__UeS2YoQG6VAuIyzmc5OQ.Mopeig02vySwzAb4SXS_sA%26rut%3D9cfaf2fac431da386064c860a80ae7fb65b407acc96250aa9520c7bc87d3dbe7%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8M3B6Qd47b1c_9iG0itHlGTVUCUxeED4WNHlPkQ3OHHtToQQP1R45fi_w9QPxhxDEDxJcedOTIFUwLk4RG%252DNSudrCrUZcsUFbZOfxvnLKREhgSn7BApVhUi3NZe7oaai3Xdf2lScJFyhfxcbPGkMGplNH7tUTBNew%252D9FJgVz98xPFbZFLJDYbQA8UJAofyqUExvPqPU0wRd4l1EHsI22Mp%252DRiLbI%2526u%253DaHR0cHMlM2ElMmYlMmZzdHVkeS5jb20lMmZidXklMmZhY2FkZW15JTJmbGVzc29uJTJmZ2VvZ3JhcGh5LW9mLW5vcnRoLWFtZXJpY2EtYWN0aXZpdGllcy1mb3ItaGlnaC1zY2hvb2wuaHRtbCUzZnNyYyUzZHBwY19iaW5nX25vbmJyYW5kJTI2cmNudHh0JTNkYXdzJTI2Y3J0JTNkJTI2a3dkJTNkU0VPLVBQQy1CVVklMjZrd2lkJTNkZGF0LTIzMjkwNDA1MDU4ODY5NDAlM2Fsb2MtMTkwJTI2YWdpZCUzZDEyMzU4NTEzMDI1OTY3NDYlMjZtdCUzZGIlMjZkZXZpY2UlM2RjJTI2bmV0d29yayUzZHMlMjZfY2FtcGFpZ24lM2RTZW9QUEMlMjZtc2Nsa2lkJTNkY2VlODU3YzQ5ZmFkMTg2MTZlOGQzZTlkMGQ1YmJmZWQ%2526rlid%253Dcee857c49fad18616e8d3e9d0d5bbfed%26vqd%3D4%2D178554336655843914756889650880189152948%26iurl%3D%257B1%257DIG%253DFDD456AD3FF24D5CAA67DDA958D8864A%2526CID%253D0F07E1A18885682511BFF777891269A8%2526ID%253DDevEx%252C5045.1&rut=aff5b9c56e0ab3ac51672471aabdb25b185761f64f7cc60b8decbf355c31a3bd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T14:06:46.576106"
+    },
+    {
+      "topic": "north america geography",
+      "title": "Geography Books - North America Geography",
+      "content": "Buy Geography North America by T S Denison & Co. On Sale Today at AbeBooks!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dabebooks.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Dl1doO%252D0gPOuK09843cLqPrYXVfvMiraD6zFV8jM2l9lxOEcV%252DjOr7Z69_RGbfWgtJhKcnB3fK0hSuKhWJsgScWrwVyxfNM9Is18Kt9lMP7SXoSWB%252D_tMCjF3bIpPuzXhKFlZAXBpZaKwxUWe7HUtRvYNu8_6sX0_6uG2StRmMro.c1OCyHLg5i4bcJF4wNltXA%26rut%3D12aba1d3de0ce9d87ed700f67ff5a407b89779d3ac0223bce2170eb9f2e77c98%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8AC8WdEvinonIxYb7UY%252D9vDVUCUyRaJ9ItG8TVxdONJ_GtroQzR59g8nhCaO2UTlZXTdQJ3W1sKXPmNHTSSnE0mS1VzfQDpCea3HJ2XlQrhgwnvfRWZ7aZCln14p3LUZYQySjjbzXEaWNjyDbutZwaalhYmamfsJCysArna2msvgmTKTFHPfwRh1CXbwdC0M7E9Dw4l5pkT7KHC5BtRMxrE94xXc%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYWJlYm9va3MuY29tJTJmYm9vay1zZWFyY2glMmZ0aXRsZSUyZmdlb2dyYXBoeS1ub3J0aC1hbWVyaWNhJTJmJTNmcmVmXyUzZHBzX21zXzI2NzY5MTc2MSUyNmNtX21tYyUzZG1zbi1fLWNvbXVzX2RzYS1fLW5hYS1fLW5hYSUyNm1zY2xraWQlM2Q5NmFjMjg1NmY5OWMxZjkzMDFkMTQxMGY2YjZhYTJiMQ%2526rlid%253D96ac2856f99c1f9301d1410f6b6aa2b1%26vqd%3D4%2D202471863987496257767314585470865819301%26iurl%3D%257B1%257DIG%253DFDD456AD3FF24D5CAA67DDA958D8864A%2526CID%253D0F07E1A18885682511BFF777891269A8%2526ID%253DDevEx%252C5050.1&rut=8db8fca06bea675341746a0c6ba4b713793ff26a6b9445a66dab930b6a64283a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T14:06:46.576193"
+    },
+    {
+      "topic": "north america geography",
+      "title": "Geography of North America - Wikipedia",
+      "content": "Learn about the continent of North America, its location, size, population, natural features, climate, and paleogeography. Explore the four major regions and five physiographic regions of the continent, and their geological history and diversity.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGeography_of_North_America&rut=cfbf1cfa829083992a5fa064dbce50a1592ded363889d4f6f9377e9691884749",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T14:06:46.576256"
+    },
+    {
+      "topic": "north america geography",
+      "title": "North America | Countries, Regions, Map, Geography, & Facts - Britannica",
+      "content": "This is a geographical treatment of North America, including maps and statistics as well as a survey of its geologic history, land, people, and economy. It occupies the northern portion of the 'New World.' North America is the world's third largest continent, lies mainly between the Arctic Circle and the Tropic of Cancer.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fplace%2FNorth%2DAmerica&rut=1b25d2e82123d599cbbe7e7226cafe62b359a8d6acc9d1867cfda07de0570be6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T14:06:46.576331"
+    },
+    {
+      "topic": "north america geography",
+      "title": "North America: Physical Geography - Education",
+      "content": "North America, the third-largest continent, extends from the tiny Aleutian Islands in the northwest to the Isthmus of Panama in the south.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Feducation.nationalgeographic.org%2Fresource%2Fnorth%2Damerica%2Dphysical%2Dgeography%2F&rut=6d57f9319d839c44429d84d62f12dd8ed826039996c50c0e01bf7464b94cac85",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T14:06:46.576392"
+    },
+    {
+      "topic": "nation state",
+      "title": "Nation state - Wikipedia",
+      "content": "A nation state, or nation-state, is a political entity in which the state (a centralized political organization ruling over a population within a territory) and the nation (a community based on a common identity) are broadly or ideally congruent. [1][2][3][4] \"Nation state\" is a more precise concept than \"country\" or \"state\", since a country or ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNation_state&rut=de8c36d74fc2cf4aa2b252cff80c4536ce7b2a2ed401b447cf2ce917f6535706",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T15:16:46.171942"
+    },
+    {
+      "topic": "nation state",
+      "title": "Nation-state | Definition, Characteristics, & Politics | Britannica",
+      "content": "Nation-state, a territorially bounded sovereign polity, or state, that is ruled in the name of a community of citizens who identify themselves as a nation. The legitimacy of a nation-state's rule over a territory and over the population inhabiting it stems from the right of a core national group to self-determination.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fnation%2Dstate&rut=3133ca98ec20362184ec48ffb688133532ab72f1400c821253d7d3bdb8a2eb53",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T15:16:46.172025"
+    },
+    {
+      "topic": "nation state",
+      "title": "Introduction to Nation-States | World History - Lumen Learning",
+      "content": "Nation-Station: Challenges of Definition The concept of a nation-state is notoriously difficult to define. Anthony Smith, one of the most influential scholars of nation-states and nationalism, argued that a state is a nation-state only if and when a single ethnic and cultural population inhabits the boundaries of a state, and the boundaries of that state are coextensive with the boundaries of ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fcourses.lumenlearning.com%2Fsuny%2Dworldhistory%2Fchapter%2Fintroduction%2Dto%2Dnation%2Dstates%2F&rut=ee54aeda0f447b6b17807090a88002403209317330ca703a5f31fb8f2fda2203",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T15:16:46.172065"
+    },
+    {
+      "topic": "nation state",
+      "title": "Nation-States Definition - AP US History Key Term | Fiveable",
+      "content": "Nation-states are political entities characterized by a defined territory, a permanent population, a government, and the capacity to enter into relations with other states. This concept combines the cultural identity of a nation with the political structure of a state, often leading to a sense of shared identity among the populace and a sovereign authority that governs them.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Ffiveable.me%2Fkey%2Dterms%2Fapush%2Fnation%2Dstates&rut=4595d2d169e57a8dbd587bf9a50c597bcac933ac04a8c9d1b26edd49e2208e0c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T15:16:46.172103"
+    },
+    {
+      "topic": "nation state",
+      "title": "NATION-STATE Definition & Meaning - Merriam-Webster",
+      "content": "The meaning of NATION-STATE is a form of political organization under which a relatively homogeneous people inhabits a sovereign state; especially : a state containing one as opposed to several nationalities.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.merriam%2Dwebster.com%2Fdictionary%2Fnation%2Dstate&rut=d3c2383fa914a865ab854a9bda826930b19031b9953101c655fada405b7b7d4c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T15:16:46.172139"
+    },
+    {
+      "topic": "neoclassicism",
+      "title": "Neoclassicism",
+      "content": "Neoclassicism, also spelled Neo-classicism, emerged as a Western cultural movement in the decorative and visual arts, literature, theatre, music, and architecture that drew inspiration from the art and culture of classical antiquity. Neoclassicism was born in Rome, largely due to the writings of Johann Joachim Winckelmann during the rediscovery of Pompeii and Herculaneum. Its popularity expanded throughout Europe as a generation of European art students finished their Grand Tour and returned from Italy to their home countries with newly rediscovered Greco-Roman ideals. The main Neoclassical movement emerged from the 18th-century Age of Enlightenment, and reached its peak in the early-to-mid-19th century, eventually competing with Romanticism. In architecture, the style endured throughout the 19th, 20th, and into the 21st century.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Neoclassicism",
+      "confidence": 0.9,
+      "learned_at": "2026-01-03T15:35:54.027727"
+    },
+    {
+      "topic": "neoclassicism",
+      "title": "What Is Neoclassicism? - Characteristics of Neoclassicism",
+      "content": "We Have a Variety of Online Resources Available to Help You Succeed. Start Today! Find the Characteristics of Neoclassicism in Your Studies Here.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstudy.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D0dFGUIdB0hgMHRzhfQwExwyI6k_8F7th6ClLujL1JTpLFNcC7PCAxJQXk7hU3hFeYpEQloyqI3IOLnhmhdaL4e5WbbMWUXoTQkhTRVDIScpxJreI%252DcNRMcmZxVWBi9vCpxv70xVTGOGs2OagW00g8Co3Ci6WMLdkrUbfk_OH5bQ.juxketuuOnTl8pDrFhGK3A%26rut%3D739f59931aaf8c2c88e9cf971d57d0122d2a9b4daf863342fadc6bb45a9985d6%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8k9yDTmU1HXKqVnTnGpwMqDVUCUzddSFjQfXpb44dkOvCPxP_ch9WB8iGZHj5fp7aZWxFWCMkMk9l4vkSmJcmmRO31t8loiw8k4tjgRWjJPJeFlMn4DIf0OJtUylSrTMobVp8o2U_1d1zvP3Nd3ALfz47qWosb2h3VP9bn6yQ4Ryr4IdD72NHSCLIoFMlX2l5EszXr1q4TibU4Uu6ro5z0JVblKs%2526u%253DaHR0cHMlM2ElMmYlMmZzdHVkeS5jb20lMmZidXklMmZhY2FkZW15JTJmbGVzc29uJTJmbmVvY2xhc3NpY2lzbS1kZWZpbml0aW9uLWNoYXJhY3RlcmlzdGljcy5odG1sJTNmc3JjJTNkcHBjX2Jpbmdfbm9uYnJhbmQlMjZyY250eHQlM2Rhd3MlMjZjcnQlM2QlMjZrd2QlM2RTRU8tUFBDLUJVWSUyNmt3aWQlM2RkYXQtMjMyOTA0MDUwNTg4Njk0MCUzYWxvYy0xOTAlMjZhZ2lkJTNkMTIzNTg1MTMwMjU5Njc0NiUyNm10JTNkYiUyNmRldmljZSUzZGMlMjZuZXR3b3JrJTNkcyUyNl9jYW1wYWlnbiUzZFNlb1BQQyUyNm1zY2xraWQlM2Q3ZTBkOTQ5MDc2YjgxOTllZmY5OWZkYzlkMTYyNDNkOA%2526rlid%253D7e0d949076b8199eff99fdc9d16243d8%26vqd%3D4%2D138260612697918293474324371485791999290%26iurl%3D%257B1%257DIG%253D26170EDFBDC04A1C817A382AA79656FB%2526CID%253D23D606C42DEC65452E2D10122C7B6456%2526ID%253DDevEx%252C5045.1&rut=f086ac4b7bdc52abfe357cb947f8143a87c3182639b209e3687a38673c8613fa",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T15:35:55.151016"
+    },
+    {
+      "topic": "neoclassicism",
+      "title": "Neoclassicism - Wikipedia",
+      "content": "Neoclassicism, also spelled Neo-classicism, emerged as a Western cultural movement in the decorative and visual arts, literature, theatre, music, and architecture that drew inspiration from the art and culture of classical antiquity. Neoclassicism was born in Rome, largely due to the writings of Johann Joachim Winckelmann during the rediscovery of Pompeii and Herculaneum. Its popularity ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNeoclassicism&rut=228d8495d2b3a8dcb6cc02ce07b69aad60234e8edb5ce5adc5a4dda66ddbdf17",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T15:35:55.151057"
+    },
+    {
+      "topic": "neoclassicism",
+      "title": "Neoclassical art | History, Characteristics & Artists | Britannica",
+      "content": "Neoclassical art, a widespread and influential movement in painting and the other visual arts that began in the 1760s, reached its height in the 1780s and '90s, and lasted until the 1840s and '50s. In painting it generally took the form of an emphasis on austere linear design in the depiction of",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fart%2FNeoclassicism&rut=47e3634f9d058b5fe9187d30c49cbee7d1dc7432543f949c07fc78a2a84b265d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T15:35:55.151083"
+    },
+    {
+      "topic": "neoclassicism",
+      "title": "Neoclassicism Movement Overview | TheArtStory",
+      "content": "Summary of Neoclassicism New classics of the highest rank! This was the rallying cry of populations immersed in the 18 th century Age of Enlightenment who wanted their artwork and architecture to mirror, and carry the same set of standards, as the idealized works of the Greeks and Romans. In conjunction with the exciting archaeological rediscoveries of Pompeii and Herculaneum in Rome ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.theartstory.org%2Fmovement%2Fneoclassicism%2F&rut=9256c24ece486645932f7851d77e8e929ced5d55d55622db2340ac0bf2841762",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T15:35:55.151113"
+    },
+    {
+      "topic": "neoclassicism",
+      "title": "Neoclassicism - Definition and Examples - Poem Analysis",
+      "content": "Neoclassicism was a movement interested in reviving Greco-Roman literature, art, architecture, philosophy, and theatre in the 18th century.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fpoemanalysis.com%2Fmovement%2Fneoclassicism%2F&rut=cde7d3e13a3729d856ccd086e4cf8980d1b00f033e258677de1bbf7c50feff15",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T15:35:55.151138"
+    },
+    {
+      "topic": "musical notation",
+      "title": "List of musical symbols - Wikipedia",
+      "content": "Learn about the marks and symbols in musical notation that indicate various aspects of how a piece of music is to be performed. Find out the meanings and functions of clefs, lines, bars, braces, brackets, and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FList_of_musical_symbols&rut=2d05eba3175ed59dd518b16c8747a1b7d4e6ab43d33479bf5d102dae74ead777",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:09:41.286445"
+    },
+    {
+      "topic": "musical notation",
+      "title": "List of Musical Symbols | Notation, Meanings, Examples, & Facts ...",
+      "content": "Music notation uses symbols to guide musicians. These symbols dictate when to play and pause as well as how notes sound, adding emotion and expression.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fart%2FList%2Dof%2DMusical%2DSymbols&rut=a841d3046050b3b9406f73b3665332e067e6d79651aa3f7b6763ce74ca90db67",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:09:41.286587"
+    },
+    {
+      "topic": "musical notation",
+      "title": "60 Music Symbols and Their Meanings Explained - LANDR Blog",
+      "content": "Learn how to read sheet music with this comprehensive guide to music symbols and their meanings. Find out how to interpret and apply symbols for pitch, rhythm, tempo, dynamics, and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fblog.landr.com%2Fmusic%2Dsymbols%2F&rut=510a08a89aad6cd3818a901ccc1347944057f67832229a50ed48e2c94e7129f4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:09:41.286651"
+    },
+    {
+      "topic": "musical notation",
+      "title": "Music Symbols: The Essential Library - J.Scalco",
+      "content": "Discover our collection of 200+ music symbols with clear explanations for beginners and pros alike. Search, learn, and master musical notation.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.jscalco.com%2Fmusic%2Dsymbols%2F&rut=634d65bca56881152c24b750f005e11298483b53a2d423755ba2f57702a51ad1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:09:41.286713"
+    },
+    {
+      "topic": "musical notation",
+      "title": "How to Read Sheet Music: A Step-by-Step Guide - Musicnotes",
+      "content": "Learn the basic symbols of musical notation, such as the staff, the clefs, and the notes, and how to read them on sheet music. Follow along with examples and free tools to practice and improve your music skills.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.musicnotes.com%2Fblog%2Fhow%2Dto%2Dread%2Dsheet%2Dmusic%2F&rut=22a495675db009af993413a75d17f08abf2583ffc4716ab073d94d9a6bfd3424",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:09:41.286776"
+    },
+    {
+      "topic": "novel",
+      "title": "Novel",
+      "content": "A novel is an extended work of narrative fiction usually written in prose and published as a book. The word derives from the Italian: novella for 'new', 'news', or 'short story ', itself from the Latin: novella, a singular noun use of the neuter plural of novellus, diminutive of novus, meaning 'new'. According to Margaret Doody, the novel has \"a continuous and comprehensive history of about two thousand years\", with its origins in the Ancient Greek and Roman novel, Medieval chivalric romance, and the tradition of the Italian Renaissance novella. The ancient romance form was revived by Romanticism, in the historical romances of Walter Scott and the Gothic novel. Some novelists, including Nathaniel Hawthorne, Herman Melville, Ann Radcliffe, and John Cowper Powys, preferred the term romance. Such romances should not be confused with the genre fiction romance novel, which focuses on romantic love. M. H. Abrams and Walter Scott have argued that a novel is a fiction narrative that displays a realistic depiction of the state of a society, like Harper Lee's To Kill a Mockingbird. The romance, on the other hand, encompasses any fictitious narrative that emphasizes marvellous or uncommon incidents. In reality, such works are nevertheless also commonly called novels, including Mary Shelley's Frankenstein and J. R. R. Tolkien's The Lord of the Rings.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Novel",
+      "confidence": 0.9,
+      "learned_at": "2026-01-03T16:35:56.307719"
+    },
+    {
+      "topic": "novel",
+      "title": "Novel - Wikipedia",
+      "content": "A novel is a long, fictional narrative usually written in prose and published as a book. Learn about the origins, development and features of the novel genre, from ancient to modern times, and its variations in different media and cultures.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNovel&rut=005fc79f3ac867951a3a3b85b224f2c4b5473ef64ccac8b69bb9ea914c1bba0d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:35:57.103833"
+    },
+    {
+      "topic": "novel",
+      "title": "NOVEL Definition & Meaning - Merriam-Webster",
+      "content": "The meaning of NOVEL is an invented prose narrative that is usually long and complex and deals especially with human experience through a usually connected sequence of events. How to use novel in a sentence. Did you know? Synonym Discussion of Novel.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.merriam%2Dwebster.com%2Fdictionary%2Fnovel&rut=19ab80a4c4233a010d78f1070e4aef53e21d668524c53272a5a3f27cc0d2c111",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:35:57.103916"
+    },
+    {
+      "topic": "novel",
+      "title": "What Is a Novel? Definition and Characteristics - ThoughtCo",
+      "content": "Learn the key traits and types of novels, one of the most popular forms of literature. Novels are narrative works of prose fiction that tell a story about specific human or character experiences over a considerable length.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.thoughtco.com%2Fwhat%2Dis%2Da%2Dnovel%2D4685632&rut=e424371fa989e0ec897c32ab61e5a797e7a1a0674e795f9ff18186faf86e6ed0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:35:57.103982"
+    },
+    {
+      "topic": "novel",
+      "title": "Novel | Definition, Elements, Examples, Types, & Facts | Britannica",
+      "content": "A novel is an invented prose narrative of considerable length and a certain complexity that deals imaginatively with human experience, usually through a connected sequence involving a group of persons in a specific setting. Learn more about the elements, development, and types of novels in this article.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fart%2Fnovel&rut=b0e2faccbac287fd5e288ee5a704332eb9dc380dd23effbc37ac1566dea97c1f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:35:57.104045"
+    },
+    {
+      "topic": "novel",
+      "title": "The 29 Best Fiction Books of 2025, According to Editors - ELLE",
+      "content": "The titular novel is a western tall tale, following a turn-of-the-century lumberjack who yearns to be perceived as a woman, while the other stories provide doses of sci-fi, horror, coming-of-age ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.elle.com%2Fculture%2Fbooks%2Fg69874348%2Fbest%2Dfiction%2Dbooks%2D2025%2F&rut=bfee42e63b13f2d1bab0b37b72c4b9b6fe1a974b8f24bc6fc3c297a538d5b3a1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:35:57.104104"
+    },
+    {
+      "topic": "non fiction",
+      "title": "Shop Books - Amazon\u00ae Official Site",
+      "content": "Browse & discover thousands of brands. Read customer reviews & find best sellers. Find deals and low prices on popular products at Amazon.com",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D1u5o3zMHcav2JuqjVwn09mdR732oinsjnbW1gIM8Ww%252DqMDnv%252DnwzroEv50GVZ__WqYl%252D7U%252DisQV2fSESEbMXgeYqwAD34C0wIH5fyihKeVSxJ5q2Fu%252Dhbk8eLynHd8EmGNh45jGES39IWXR0BKaPB7meekTN4BLUm%252Du9Ir%252DMNlA.TLTJUPVnY3EKEnqM06Np%252DA%26rut%3D384704fa780935f523f5096eac9f3249604b6f21514d1747e88171a37e15df63%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De81AkGfF9CCqQX2OSXabDwfjVUCUxjqBMLzADFD5gR0Gdxb3IRwsFrSmKPxkSeBN7z1eMgITtiWfAD9MJ1rPbdLngiRSH4yRbIbUm2SaGtdYK8j3BnwVXHu9K6mBaMvjBGBZii4sgWQ75dMkZLZohyzdWD_KnV21uAEI33OEKfk2GuptA%252DFjri7bElQUDaGw5Z%252DftAFyZBgn7b9YG8JiKpRB7IYMg%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGN1cnJlbnQlMmJiZXN0JTJic2VsbGVycyUyYmxpc3QlMmJub24lMmJmaWN0aW9uJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfODJuNnRyemJ6d19wJTI2YWRncnBpZCUzZDEyMzM2NTMxMjQ0NjYwODglMjZodmFkaWQlM2Q3NzEwMzQ1NDI3NzI1NyUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2ODQxJTI2aHZ0YXJnaWQlM2Rrd2QtNzcxMDM2NzcxMzQyMTklM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDEzMzMxXzEzNTAyODY4JTI2bWNpZCUzZDAxZjAzNjcyM2U2MzNhOWI4ZjVmOTQxN2Y4Yzg2MWY3JTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2QwYmZhODliYjIyNmQxYTMwYjUwYWUwZTI5NTQ0NWY4Nw%2526rlid%253D0bfa89bb226d1a30b50ae0e295445f87%26vqd%3D4%2D135056219634420416064876185539431233976%26iurl%3D%257B1%257DIG%253D153D8542622541E1B3B06003C410960D%2526CID%253D3386D553671B60BF3901C384668C6126%2526ID%253DDevEx%252C5046.1&rut=888468877e75b8484037e6e2a96c825eefb73ce43109594501018bcffdf306aa",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:41:13.866511"
+    },
+    {
+      "topic": "non fiction",
+      "title": "Non-fiction - Wikipedia",
+      "content": "Non-fiction is any document or media content that conveys information only about the real world, rather than being grounded in imagination. Learn about the main genres, features, and distinctions of non-fiction, as well as some common literary examples and related terms.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNon%2Dfiction&rut=4d2144ad96917214f18376aeed0d9fe318922c1d08ac1e6846b6b98f0eb521df",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:41:13.866594"
+    },
+    {
+      "topic": "non fiction",
+      "title": "NONFICTION Definition & Meaning - Merriam-Webster",
+      "content": "The meaning of NONFICTION is writing or cinema that is about facts and real events. How to use nonfiction in a sentence.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.merriam%2Dwebster.com%2Fdictionary%2Fnonfiction&rut=aed5f152574c2b2c9285e11349f427bac67d9100328131bb19ce23a786dc7cb9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:41:13.866653"
+    },
+    {
+      "topic": "non fiction",
+      "title": "What Is Nonfiction: Definition and Examples - ProWritingAid",
+      "content": "Learn what nonfiction is, how it differs from fiction, and what types of nonfiction books exist. Find out how ProWritingAid can help you write nonfiction with less grammar errors and more readability.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fprowritingaid.com%2Fwhat%2Dis%2Dnonfiction&rut=b416ec55f8e51b97f38227fc6682d3e4be4d653aa21a7e80254f1de5888bf31c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:41:13.866715"
+    },
+    {
+      "topic": "non fiction",
+      "title": "NON-FICTION | definition in the Cambridge English Dictionary",
+      "content": "NON-FICTION meaning: writing that is about real events and facts, rather than stories that have been invented. Learn more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fdictionary.cambridge.org%2Fus%2Fdictionary%2Fenglish%2Fnon%2Dfiction&rut=fe0c6f829b035039ac460f964c6d2469593d522ca85308aab209d9c09b43dfd4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:41:13.866771"
+    },
+    {
+      "topic": "narrative",
+      "title": "Narrative",
+      "content": "A narrative, story, or tale is any account of a series of related events or experiences, whether non-fictional or fictional. Narratives can be presented through a sequence of written or spoken words, through still or moving images, or through any combination of these.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Narrative",
+      "confidence": 0.9,
+      "learned_at": "2026-01-03T16:46:29.999875"
+    },
+    {
+      "topic": "narrative",
+      "title": "NARRATIVE Definition & Meaning - Merriam-Webster",
+      "content": "The meaning of NARRATIVE is something that is narrated : story, account. How to use narrative in a sentence.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.merriam%2Dwebster.com%2Fdictionary%2Fnarrative&rut=4b264c6e8a65b9d205eb446338c237a3d19d6634d2b6a120db5e574ce2f6c64b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:46:30.927939"
+    },
+    {
+      "topic": "narrative",
+      "title": "Narrative - Wikipedia",
+      "content": "Narrative is expressed in all mediums of human creativity, art, and entertainment, including speech, literature, theatre, dance, music and song, comics, journalism, animation, video (including film and television), video games, radio, structured and unstructured recreation, and potentially even purely visual arts like painting, sculpture ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNarrative&rut=02760f02b7fbf58568d3cf7235459579c3cb96d0360257ea1142ec5724a28a42",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:46:30.927989"
+    },
+    {
+      "topic": "narrative",
+      "title": "Narrative - Definition and Examples | LitCharts",
+      "content": "Narrative Definition What is narrative? Here's a quick and simple definition: A narrative is an account of connected events. Two writers describing the same set of events might craft very different narratives, depending on how they use different narrative elements, such as tone or point of view. For example, an account of the American Civil War written from the perspective of a white ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.litcharts.com%2Fliterary%2Ddevices%2Dand%2Dterms%2Fnarrative&rut=011a1f711fb61fc1fb970656c18fd8eb020d70d030769f49efbcd3c7d612664d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:46:30.928032"
+    },
+    {
+      "topic": "narrative",
+      "title": "NARRATIVE | English meaning - Cambridge Dictionary",
+      "content": "Learn the meaning of narrative as a noun and an adjective, and see how it is used in different contexts and genres. Find synonyms, collocations, and translations of narrative in various languages.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fdictionary.cambridge.org%2Fdictionary%2Fenglish%2Fnarrative&rut=359c416f16bb42aea7c93c7b233443863165abbc187e258366f6baf481e5e070",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:46:30.928065"
+    },
+    {
+      "topic": "narrative",
+      "title": "NARRATIVE definition and meaning | Collins English Dictionary",
+      "content": "Learn the meaning of narrative as a story or an account of events, and see how to use it in different contexts. Find synonyms, related words, and examples of narrative in sentences and literature.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.collinsdictionary.com%2Fdictionary%2Fenglish%2Fnarrative&rut=e2cb9289dfe65eaf2524569ecf2ae145f69c8a478cdebc76a651ac4a0e167c3e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:46:30.928096"
+    },
+    {
+      "topic": "film noir",
+      "title": "Shop film noir - Amazon\u00ae Official Site - Low prices film noir",
+      "content": "Get deals and low prices on film noir in Home Improvement on Amazon. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DT8IpAf7lKiywL5NhIjiZl5PPfeHvsoc%252DmM6X28JR8Fgff5oB05MZ5cWVa92B6EsBe47Q%252DSYvHxxkr5sQVNMrm3aSNOhpHJ5CELhLHETAwEZ3NbNMs37jeM9DoWTWdYjxf3q9zScyqprQ4TBR22UcOMHeQdGmh4_dwpNwtRNdI7Y.TDchfVinMhS8CM4TJydMig%26rut%3D821c542495e3250915289ca6d6008c62d31104729a27a93f182508d035c07257%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8uW9zAm0QLa1lwexAk_pVojVUCUwcVVRpWuYr%252D3TL%252DqdmlrHfhWcO3OtumiDv1TbYfYZEmIWI0zL2FZt3GsNK4eCIPYBYpOggRs5CjGPxaLe9mT_ZGRJPnTikPG%252D%252DtyLxTnPFmBb6ogwj3UaG5TspX81Jt%252DAUJ1yRTJufw1gec1Kt3PHgsI8LziJtEXreTETDT6E2GhdubMc5BZel1%252D2Cbed8luU%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGZpbG0lMmJub2lyJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfOWp6MnU1MXU1Y19wJTI2YWRncnBpZCUzZDEyMzkxNDk5MjI3Njc3MjUlMjZodmFkaWQlM2Q3NzQ0NzAzNjI3ODgwNiUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGUlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NTU5JTI2aHZ0YXJnaWQlM2Rrd2QtNzc0NDcxMTIwNTIyNTklM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDI2Mzg3XzExNzM2ODU0JTI2bWNpZCUzZDRjNTZmYWU3ZTkzODMyYmQ4OWUxOWVlMzU0Y2I1MWM2JTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2RkY2M5ZmFhMjE2NmYxYmQ5NzRlZDkzZmJmZjRkZDhjZg%2526rlid%253Ddcc9faa2166f1bd974ed93fbff4dd8cf%26vqd%3D4%2D192232823355817642065583937924256766534%26iurl%3D%257B1%257DIG%253D9341378CB9444486B9E9CEC440FB664A%2526CID%253D096F0B721DD2613729411DA51C5E6072%2526ID%253DDevEx%252C5045.1&rut=8dca0ed36ec180b5135b4c8b1162d6071b7e654795c193735037d445c3ea7bad",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T20:14:26.914087"
+    },
+    {
+      "topic": "film noir",
+      "title": "Film noir - Wikipedia",
+      "content": "Film noir is a style of Hollywood crime dramas that emphasizes cynical attitudes and motivations, often with a low-key, black-and-white visual style. Learn about the origins, influences, characteristics, and variations of film noir, from the classic period of the 1940s and 1950s to the neo-noir of later decades.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFilm_noir&rut=7ea4a21541cae27c8b6fa884e9405921797c8a85b48172325754dec6bcfd367b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T20:14:26.914153"
+    },
+    {
+      "topic": "film noir",
+      "title": "Film noir | Definition, Movies, & Facts | Britannica",
+      "content": "Film noir, style of filmmaking characterized by such elements as cynical heroes, stark lighting effects, and frequent use of flashbacks.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fart%2Ffilm%2Dnoir&rut=209fbe7d56153a2cd451efef1f847954f9c9900d30fa9eff6dac1396f39817d8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T20:14:26.914204"
+    },
+    {
+      "topic": "film noir",
+      "title": "100 Best Film Noir Movies Ranked | Rotten Tomatoes",
+      "content": "100 Best Film Noir Movies Ranked by Tomatometer The latest: The Lost Weekend celebrates its 80th anniversary! Billy Wilder's landmark film won 4 Academy Awards, including Best Picture, Best Director, Best Screenplay, and Ray Milland won Best Actor. The film is notable for being one of cinema's earliest and rawest looks at alcoholism.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Feditorial.rottentomatoes.com%2Fguide%2Fbest%2Dfilm%2Dnoirs%2F&rut=fbc3118e5a651f1c9ee30b172c2d05e28f10fbd544b22bd94ca3a1eb7c3dad58",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T20:14:26.914262"
+    },
+    {
+      "topic": "film noir",
+      "title": "What Is Film Noir? Movies, Directors + Characteristics | Backstage",
+      "content": "Film noir movies, directors, and characteristics The misanthropic morality of noir\u2014and the visual style that accompanies it\u2014separates it from typical crime movies.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.backstage.com%2Fmagazine%2Farticle%2Ffilm%2Dnoir%2Dmovie%2Dgenre%2Dexplained%2D79297%2F&rut=f008d14b22651956bc979ce315b3600669ac062966bc363cfaa9f879f3f6b3df",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T20:14:26.914495"
+    },
+    {
+      "topic": "neoclassical architecture",
+      "title": "Neoclassical architecture - Wikipedia",
+      "content": "Neoclassical architecture, sometimes referred to as Classical Revival architecture, is an architectural style produced by the Neoclassical movement that began in the mid-18th century in Italy, France and Germany. [1] It became one of the most prominent architectural styles in the Western world. [2] The prevailing styles of architecture in most of Europe for the previous two centuries ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNeoclassical_architecture&rut=f98a136b6cb98c5fc458b4ed4970b2c31dd763a5615c118b22c5ae15104b6e28",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:49:34.198155"
+    },
+    {
+      "topic": "neoclassical architecture",
+      "title": "Neoclassical architecture | Definition, Characteristics, Examples ...",
+      "content": "Neoclassical architecture, revival of Classical architecture during the 18th and early 19th centuries. It is characterized by grandeur of scale, simplicity of geometric forms, Greek\u2014especially Doric\u2014or Roman detail, dramatic use of columns, and a preference for blank walls.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fart%2FNeoclassical%2Darchitecture&rut=56250e8843940d96f974aacd08bafff06b424046c6b70bba45ea772f9a030434",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:49:34.199556"
+    },
+    {
+      "topic": "neoclassical architecture",
+      "title": "Neoclassical Architecture: Everything You Need to Know",
+      "content": "According to Encyclopedia Britannica, neoclassical architecture is defined as the \"revival of classical architecture during the 18th and early 19th centuries.\" The aesthetic is a distinct ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.architecturaldigest.com%2Fgallery%2Fneoclassical%2Darchitecture%2Dexplained&rut=526e940ae57972c180b4eb3c1e7e9231595ba05b11db2b6f7e97b876a7178246",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:49:34.199597"
+    },
+    {
+      "topic": "neoclassical architecture",
+      "title": "Neoclassical Architecture: Everything to Know About This Style",
+      "content": "Learn fundamentals of neoclassical architecture, including the history behind this 18th-century style and famous architectural examples, like the White House.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.housebeautiful.com%2Fdesign%2Dinspiration%2Fa64511634%2Fneoclasical%2Darchitecture%2Dexamples%2Dhistory%2F&rut=9ffe10aea8e736822d48dea0bb4e203d7e621b88c531fcef06fad92c743c817f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:49:34.199635"
+    },
+    {
+      "topic": "neoclassical architecture",
+      "title": "Top 25 Examples of Neoclassical Architecture",
+      "content": "Learn about the Neoclassical Style, which borrowed from ancient Greek and Roman monuments and dominated architecture from the 18th to the 19th century. Explore 25 of the greatest Neoclassical Buildings and how they exemplify the thinking behind the Neoclassical Age.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Farchitectureofcities.com%2Fneoclassical%2Darchitecture&rut=1561956ae1d796cae896de6df9a6a8c5d7083a13ad9cbdd4369787a54df8a764",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:49:34.199667"
+    },
+    {
+      "topic": "art nouveau",
+      "title": "Art Nouveau Wallart",
+      "content": "Etsy Has The Perfect Art & Collectibles For Your Unique Style & Interests. Made Just For You By A Small Business Owner.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Detsy.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Ddhn0stwzfhuqv63RTvmaIpmhRcE4M_1298N2nht6PSpaMvJ7yLm4JfxY3KLFCVJM0z1lJwVqg_4IWXqK_yHHVEbDBuGaYt2yi7thvwwGzBOavHa9QDUKCkOqVuqOVXlxGC2N%252DMfjkEMasC5thpcz1zr2nyGAOkiC8Z55Qj5apus.yMotiCOj94hnJFI9RI1eQA%26rut%3Dd8dd75bebef48cd511c6ae235a30a4d745ff67723eaef3529e72b05ae65ad4ef%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8LQToeqVssP5fo7VlqJh0pTVUCUwTqRsq33ZKIOcqq6S0vfkywtXyP%252DbDkYKNyO2heSnPS7Hg045F4PTxIPmObfS1YJlDWG5p8t4b%252DXU0TsV%252DJgloUBANw24D%252DRbGOrSBYsw7bsCJws_MbLMAJUC8sPIbdtJxFxLtQTcDNlilSDcD0CNNmLmzqu5sc%252DGGq8Ko82Tl0vDnyqaO6NPmo%252D0_d6hcXGc%2526u%253DaHR0cHMlM2ElMmYlMmY1MjAzLnhnNGtlbi5jb20lMmZ0cmslMmZ2MSUzZnByb2YlM2Q0MDUlMjZjYW1wJTNkNTI5MTElMjZrY3QlM2Rtc24lMjZrY2hpZCUzZDE3MDAwMDc2OSUyNmNyaXRlcmlhaWQlM2RkYXQtMjMzMzA5NDk1NDkzNTg4MyUzYWxvYy0xOTAlMjZjYW1wYWlnbmlkJTNkNTU1MDg4NzgzJTI2bG9jcGh5JTNkODcwNjUlMjZhZGdyb3VwaWQlM2QxMzAwNzIzNDA3NzE2NTQ5JTI2Y2lkJTNkODEyOTUyNjg4MDY2ODAlMjZrZHYlM2RjJTI2a2V4dCUzZCUyNmtwZyUzZCUyNmtwaWQlM2QlMjZxdWVyeVN0ciUzZGFydCUyNTIwbm91dmVhdSUyNnVybCUzZGh0dHBzJTNhJTJmJTJmd3d3LmV0c3kuY29tJTJmbWFya2V0JTJmYXJ0X25vdXZlYXVfd2FsbGFydCUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZFNlYXJjaF9VU19EU0FfQk5HX0VOR19NYWxlX0NhdGVnb3JpZXNfQWxsJTI2dXRtX2FnJTNkQXJ0LUNvbGxlY3RpYmxlcyUyNnV0bV9jdXN0b20xJTNkX2tfZDZlZGY5Nzg5Njk3MWI5ZjY0ZmE5MDIxNjkxYWI0N2Vfa18lMjZ1dG1fY29udGVudCUzZGJpbmdfNTU1MDg4NzgzXzEzMDA3MjM0MDc3MTY1NDlfODEyOTUyNjg4MDY2ODBfZGF0LTIzMzMwOTQ5NTQ5MzU4ODMlM2Fsb2MtMTkwX2NfJTI2dXRtX2N1c3RvbTIlM2Q1NTUwODg3ODMlMjZtc2Nsa2lkJTNkZDZlZGY5Nzg5Njk3MWI5ZjY0ZmE5MDIxNjkxYWI0N2U%2526rlid%253Dd6edf97896971b9f64fa9021691ab47e%26vqd%3D4%2D224031389043862162535545992570140381617%26iurl%3D%257B1%257DIG%253D7C6A3DFBE1F64E45AE362168940EA4C7%2526CID%253D30EEE99E1DE46DC1158AFF491C736C22%2526ID%253DDevEx%252C5046.1&rut=2d9db048a80457468790fd9af01178ec949fc4f98c22f488b6b43c0924220e33",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:50:05.540822"
+    },
+    {
+      "topic": "art nouveau",
+      "title": "Art Nouveau - Wikipedia",
+      "content": "Art Nouveau (/ \u02cc\u0251\u02d0r (t) nu\u02d0\u02c8vo\u028a / AR (T) noo-VOH; French: [a\u0281 nuvo] \u24d8; lit. 'New Art'), Jugendstil in German, is an international style of art, architecture, and applied art, especially the decorative arts. It was often inspired by natural forms such as the sinuous curves of plants and flowers. [1] Other characteristics of Art Nouveau were a sense of dynamism and movement, often given ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FArt_Nouveau&rut=5762c39c60f43277a4f3179ee9ffb8c3f838435a97ccc24206b136301a8fb0cc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:50:05.540973"
+    },
+    {
+      "topic": "art nouveau",
+      "title": "Art Nouveau | History, Characteristics, Artists, & Facts | Britannica",
+      "content": "Art Nouveau is characterized by its use of a long, sinuous, organic line and was employed most often in architecture, interior design, jewelry and glass design, posters, and illustration. It was a deliberate attempt to create a new style, free of the imitative historicism that dominated much of 19th-century art and design.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fart%2FArt%2DNouveau&rut=a675351f2d1162b80fc3142cec2f5216e114861a4f5fbb04c6005e485d902ef0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:50:05.541069"
+    },
+    {
+      "topic": "art nouveau",
+      "title": "Art Nouveau Movement Overview | TheArtStory",
+      "content": "Learn about the origins, characteristics, and legacy of Art Nouveau, a modernist movement in the decorative and graphic arts and architecture that flourished in Europe from 1890 to 1905. Explore the key artists, works, and concepts of Art Nouveau, such as organic forms, linear contours, and total works of art.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.theartstory.org%2Fmovement%2Fart%2Dnouveau%2F&rut=284f7663cccf5d1b411ea27123677885878341a5d17e113e9dc2dc61aa8c7188",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:50:05.541148"
+    },
+    {
+      "topic": "art nouveau",
+      "title": "Art Nouveau \u2014 History, Style, Artists & Works Explained",
+      "content": "Art Nouveau is a style characterized by long, sinuous lines, asymmetry, and natural objects such as vines, insect wings, and flower stalks.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.studiobinder.com%2Fblog%2Fwhat%2Dis%2Dart%2Dnouveau%2Ddefinition%2F&rut=a9317cd64557f94eb658f7707ac403557ad237307af704905c8fbc081625bbf9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:50:05.541218"
+    },
+    {
+      "topic": "nancy pelosi",
+      "title": "Nancy Pelosi - Wikipedia",
+      "content": "Learn about the life and career of Nancy Pelosi, the first woman to serve as U.S. House Speaker and leader of the House Democrats. Find out her achievements, controversies, awards, and personal details.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNancy_Pelosi&rut=5ad97dae425f52dfb2a1557649872f2e037da8f346802671af2d161413ced7de",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T09:30:48.756317"
+    },
+    {
+      "topic": "nancy pelosi",
+      "title": "Nancy Pelosi | Biography, Book, Age, & Facts | Britannica",
+      "content": "Nancy Pelosi is an American Democratic politician who is a congresswoman from California in the U.S. House of Representatives (1987- ). In 2007 she became the first woman to serve as speaker of the House (2007-11 and 2019-23). Her other posts have included House minority leader (2003-07 and 2011-19).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FNancy%2DPelosi&rut=fe994e336d2648930c66a6c4220f1b9da0a63e66e3d845dd042ea6187827ff6a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T09:30:48.756357"
+    },
+    {
+      "topic": "nancy pelosi",
+      "title": "Nancy Pelosi's Rise From Stay-at-Home Mom to House Speaker - The New ...",
+      "content": "The Rise of Nancy Pelosi: From Stay-at-Home Mom to Speaker of the House The daughter of a politician, she didn't expect to become one. But once she ran for office in 1987, there was no stopping her.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nytimes.com%2F2025%2F11%2F06%2Fus%2Fnancy%2Dpelosi%2Dcareer%2Dhighlights.html&rut=be3e86da2f9f65be8f71fab92e0b9f20a634a6fe78a683d68990855c37fed3c6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T09:30:48.756385"
+    },
+    {
+      "topic": "nancy pelosi",
+      "title": "Biography - Representative Nancy Pelosi",
+      "content": "Learn about Nancy Pelosi's historic achievements as the first woman Speaker of the House and the chief architect of generation-defining legislation. Read about her leadership on health care, climate, voting rights, national security and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fpelosi.house.gov%2Fbiography&rut=41922410607d8115a162a500b819cb38257e957f19396e6e7db4fe02c38c3f24",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T09:30:48.756412"
+    },
+    {
+      "topic": "nancy pelosi",
+      "title": "Nancy Pelosi's top 10 moments that shaped her groundbreaking career",
+      "content": "WASHINGTON - For Nancy Pelosi, her 40-year career in Washington, DC is packed with groundbreaking and viral moments that solidified her legacy as one of the most powerful women in U.S. politics.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.usatoday.com%2Fstory%2Fnews%2Fpolitics%2F2025%2F11%2F07%2Fnancy%2Dpelosis%2Dtop%2D10%2Dmoments%2Dthat%2Dshaped%2Dher%2Dgroundbreaking%2Dcareer%2F87125066007%2F&rut=61d4d39d9649da9172e6e5836419638ab3c72b99856625fa98510a5e0ff190e3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T09:30:48.756439"
+    },
+    {
+      "topic": "nutrient cycle",
+      "title": "Nutrient cycle - Wikipedia",
+      "content": "Learn about the movement and exchange of inorganic and organic matter in ecological systems, also known as nutrient cycle or ecological recycling. Explore the different types of nutrient cycles, such as carbon, nitrogen, phosphorus, and water, and their roles in ecosystems and human societies.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNutrient_cycle&rut=5081b6fd53d0cabc66775c5df0d791956b1c5bdd99cba13d2d04ae4643f20beb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:13:53.288084"
+    },
+    {
+      "topic": "nutrient cycle",
+      "title": "Nutrient Cycles: How They Work and Why They Are Essential",
+      "content": "Nutrient cycles, or biogeochemical cycles, are processes that move essential chemical elements through the planet's living and non-living components. This continuous recycling ensures that the building blocks of life are consistently available to sustain organisms and entire ecosystems. Why Nutrient Cycles Are Essential for Life The cycling of nutrients is fundamental to all ecosystems ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbiologyinsights.com%2Fnutrient%2Dcycles%2Dhow%2Dthey%2Dwork%2Dand%2Dwhy%2Dthey%2Dare%2Dessential%2F&rut=279d7c16eb5fec2c0d3822aacaefb00286d5bc7c27fa88bd49def31ba86f9c1c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:13:53.288148"
+    },
+    {
+      "topic": "nutrient cycle",
+      "title": "Nutrient Cycling, Ecosystems, Atmosphere - Britannica",
+      "content": "Biosphere - Nutrient Cycling, Ecosystems, Atmosphere: The cells of all organisms are made up primarily of six major elements that occur in similar proportions in all life-forms. These elements\u2014hydrogen, oxygen, carbon, nitrogen, phosphorus, and sulfur\u2014form the core protoplasm of organisms, and the first four of these elements make up about 99 percent of the mass of most cells. Additional ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fbiosphere%2FNutrient%2Dcycling&rut=84bc4bc1271f1654fe88efe83cba346a6dd0d0152b49c2dc2bcc39854906a988",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:13:53.288209"
+    },
+    {
+      "topic": "nutrient cycle",
+      "title": "What is Nutrient Cycling? - GeeksforGeeks",
+      "content": "To survive, organisms need nutrients. The natural recycling process is called the nutrient cycle. From one organism to the next, an element travels in a circular pattern. Recycling is the ecological process that supports and makes additional contributions to human welfare. Nutrient Cycle The term \"nutrient cycle\" or \"biogeochemical cycle\" refers to the movement or exchange of nutrients among ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fbiology%2Fnutrient%2Dcycling%2F&rut=0809ebeb88f8fb8a6c97d3f5992184499774937701a29af670482081b6c87481",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:13:53.288260"
+    },
+    {
+      "topic": "nutrient cycle",
+      "title": "Nutrient Cycles: Carbon, Nitrogen, Water, Sulphur & More",
+      "content": "Learn about the concept, types and importance of nutrient cycles in ecosystems. Explore the carbon, nitrogen, water, phosphorus and sulphur cycles with examples and diagrams.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nextias.com%2Fblog%2Fnutrient%2Dcycle%2F&rut=1944566116a44856b74cac236c35d794ae02a989ee5a36e5c877ecef52c7950e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:13:53.288305"
+    },
+    {
+      "topic": "nitrogen cycle",
+      "title": "Nitrogen cycle - Wikipedia",
+      "content": "Learn how nitrogen is converted and cycled among atmospheric, terrestrial, and marine ecosystems through biological and physical processes. Find out how human activities have altered the global nitrogen cycle and its impacts on the environment and health.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNitrogen_cycle&rut=433bdd7aca205f5da9c9ab35063bbc0eab2ed49e486e3d5b05b400942946e956",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:14:56.695750"
+    },
+    {
+      "topic": "nitrogen cycle",
+      "title": "Nitrogen Cycle - Science Notes and Projects",
+      "content": "Learn how nitrogen is converted into different forms in the atmosphere, land, and oceans through various biological and chemical processes. Explore how human activities alter the natural nitrogen balance and cause environmental and health problems.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsciencenotes.org%2Fnitrogen%2Dcycle%2F&rut=0f0cb908827b2430ad347307cddcf35141cc66339f8c3c69c03dec82309a7508",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:14:56.695814"
+    },
+    {
+      "topic": "nitrogen cycle",
+      "title": "Nitrogen Cycle: Steps, Process, Significance, Human Influence",
+      "content": "Nitrogen Cycle- Steps and Significance. Its is the movement of nitrogen between the atmosphere, biosphere, and geosphere in different forms.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmicrobenotes.com%2Fnitrogen%2Dcycle%2Dsteps%2Dand%2Dsignificance%2F&rut=c2dc5808645cf9a6b80f8fb51709f068c1b9f7642c9a0804e6eef0000b5206af",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:14:56.695860"
+    },
+    {
+      "topic": "nitrogen cycle",
+      "title": "Nitrogen cycle | Definition & Steps | Britannica",
+      "content": "Nitrogen cycle, circulation of nitrogen in various forms through nature. Nitrogen, a component of proteins and nucleic acids, is essential to life on Earth. Although 78 percent of the atmosphere is nitrogen gas, this gas is unusable by most organisms until it is made available by a series of microbial transformations.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fnitrogen%2Dcycle&rut=e1ba05e24313647269a0bccab05a6a13fbf6cb90b96bcacac07438d77ade124b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:14:56.695944"
+    },
+    {
+      "topic": "nitrogen cycle",
+      "title": "What is the Nitrogen Cycle and How Does It Sustain Life on Earth",
+      "content": "Learn how nitrogen, the most abundant element in the atmosphere, is transformed into usable forms by bacteria and plants. Discover the role of the nitrogen cycle in sustaining life, regulating ecosystems, and influencing climate change.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencenewstoday.org%2Fwhat%2Dis%2Dthe%2Dnitrogen%2Dcycle%2Dand%2Dhow%2Ddoes%2Dit%2Dsustain%2Dlife%2Don%2Dearth&rut=9aabd1f2a20840bf5e53cd1ea0f7c9067f65d684e0c6153c10c4efc826bb4b34",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:14:56.695990"
+    },
+    {
+      "topic": "noise pollution",
+      "title": "Noise Pollution - Quiet Conservation Area - Quiet Park",
+      "content": "We are committed to preserving the land and the sounds that come of a natural landscape. Soundscapes are a resource worth preserving, especially with a rise in noise pollution.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dtheabf.org%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DaSHkQT4c183yoJL0to1mJJl%252DPPgpYN1tp5q7zRMsj_kr__3_HSnnhdnJ1%252DGRcpElkvZzg8GHSFLFf865vIYaronrPDo4VX0CQHOLBcd6ON3RvmqVApgriQkIUKpvyV3sbXDNmGM7547UdcbrZi2DCAwpvsu8IkAgAU40labdTOU.d3hyhmchOjVVkGVRVKBomQ%26rut%3D130538e7d7cc4ce6292c85124598e61b1587146b76740de24be9fa272d998fa9%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8fVBi3Vm_lS5kx%252DzHD4dI4zVUCUxkKUTNi9jyICvyGdbUj9ZUNN7NrILn5nTM98D7b5gCSct80HXGpuopS_UOayEYOEL95jphA9MYU0pug4aCmSSCOxkZl3GEZGfr6dw607xzZKudKcpQ0iAXC2StqgRkv7IlkQQG5%252DIZdEC%252D1vLVWfkl0xhA%252D1ASIKDXP9k7RvAWXRjf06fSOMV84m2F44vr2ls%2526u%253DaHR0cHMlM2ElMmYlMmZ0aGVhYmYub3JnJTJmb3VyLXdvcmslMmZrZXktaW5pdGlhdGl2ZXMlMmZxdWlldC1kYXJrLXBhcmstaW5pdGlhdGl2ZXMlMmYlM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZtc2Nsa2lkJTNkYzJiNTQ4YWMwOWEyMTQ2MzQ5NDMyMWY2YjcyOGM1ODklMjZ1dG1fY2FtcGFpZ24lM2RCcmFuZGVkJTI1MjBLZXl3b3JkcyUyNTIwLSUyNTIwTmF0aW9uYWwlMjUyMC0lMjUyMENsaWNrcyUyNnV0bV90ZXJtJTNkbm9pc2UlMjUyMHBvbGx1dGlvbiUyNnV0bV9jb250ZW50JTNkUXVpZXQlMjUyMERhcmslMjUyMFBhcms%2526rlid%253Dc2b548ac09a21463494321f6b728c589%26vqd%3D4%2D14811366505777168301809948842700094113%26iurl%3D%257B1%257DIG%253D4ED2EF74F08847D9A07F73364D0D07EA%2526CID%253D1AB102E628396E0F384C143129B56F24%2526ID%253DDevEx%252C5046.1&rut=a740f565808cc00898aa81e7898b0e50fd7319bb0f3862e1e398183f9956a288",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:24:59.387261"
+    },
+    {
+      "topic": "noise pollution",
+      "title": "Effective Sound Reduction - Sound Masking Technology",
+      "content": "Office Noise Disturbing You? Call Today For Quality Sound Solutions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dlogison.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D1BJdYHtdXP_uHCgddXmB3fdVD7bAWorXPfRZtuGa03wG4Ebb8ea7H33JrQkOYn%252D_v8GtR3VRzrEeKGhp4Q0Y%252DMueumrraEW9a3a5kZRcQJd0QaZuVP4CU3EACF9lXi1bJj%252DastYhYuMQ9fgO6lm1ikK4CORRPZUpsbKv44EaO3c.KWBKzpykgaFXCFMJZz8Z8A%26rut%3D84d6554d6268cd99df94287b52c32b6f4a75b1cbe1d2e573b5090d21a996a2d2%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8CZ5YXOwPvmy7aPqD5drm6TVUCUxrFwvyHoKz1109Ya4kWkL0FiXeGVm5ocjnyMSIO8tQejNILDyZ_7r01g9V9cLU4XiviYP8d6bODJNCuzJJ0PVKIBtp7GFk8n3J%252DLfGw8fWEgLjOybsXeosRand3X4CDpKxycbNELpGO8kNAkVPhRQQNXVzyzUIFnZ0Gmlunr2QLEoIXjG6J7BvgvB%252DZxI6MPw%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cubG9naXNvbi5jb20lMmZIb21lLmh0bWwlM2Z1dG1fc291cmNlJTNkYWRjZW50ZXIlMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX3Rlcm0lM2RvZmZpY2Vfbm9pc2UlMjZ1dG1fY2FtcGFpZ24lM2RhZGNlbnRlcl9nZW5lcmFsX2NhbXBhaWduJTI2bXNjbGtpZCUzZGYzNjE2Nzg4NWVmYjE1NjA1N2RmMGVkMmUwNzEyOGRi%2526rlid%253Df36167885efb156057df0ed2e07128db%26vqd%3D4%2D161213007802217559975247253130657846300%26iurl%3D%257B1%257DIG%253D4ED2EF74F08847D9A07F73364D0D07EA%2526CID%253D1AB102E628396E0F384C143129B56F24%2526ID%253DDevEx%252C5050.1&rut=10e7e0326b87fe9f364e83252840b5f817121a9592ea4fbb1077118a5715a7a1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:24:59.387371"
+    },
+    {
+      "topic": "noise pollution",
+      "title": "Noise pollution | Definition, Examples, Effects, Control, & Facts ...",
+      "content": "Noise pollution, unwanted or excessive sound that can have deleterious effects on human health, wildlife, and environmental quality. Noise pollution is commonly generated inside many industrial facilities and some other workplaces, but it also comes from road, rail, and air traffic and from construction activities.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fnoise%2Dpollution&rut=f1afcaa46d93f86bb0368f916ada53d63b4d57f9033f647242d82b04bb7b0c2b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:24:59.387427"
+    },
+    {
+      "topic": "noise pollution",
+      "title": "Noise pollution - Wikipedia",
+      "content": "Noise pollution is the harmful sound propagation caused by machines, transport, and other human activities. Learn about the metrics, assessment, and health and environmental impacts of noise pollution.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNoise_pollution&rut=ecb40d3d2d2ddf694f87ff459ca9beaf41d1572291554ec7d4e5c65e6d7c67f6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:24:59.387473"
+    },
+    {
+      "topic": "noise pollution",
+      "title": "What's Noise Pollution? Types, Causes, and Prevention",
+      "content": "Learn what noise pollution is, how it affects human health and the environment, and what are the main sources and solutions. Explore the different types of noise pollution, such as man-made, environmental, occupational, and residential, and their impacts.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.hseblog.com%2Fnoise%2Dpollution%2F&rut=1702fa6dfc326d538c299464ed3a74efcacdc750f0c964fd84071c894d407644",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:24:59.387519"
+    },
+    {
+      "topic": "national parks board",
+      "title": "National Parks Board (NParks)",
+      "content": "Dedicated to transforming Singapore into a City in Nature and to create the best living environment through nature conservation, greenery and recreation, and veterinary care",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nparks.gov.sg%2F&rut=da010c5c3c2d297d1495e463a05a233cb2c6640aa612af809d743c16842b5b7a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:30:50.206593"
+    },
+    {
+      "topic": "national parks board",
+      "title": "National Parks Board - Wikipedia",
+      "content": "The National Parks Board (NParks) is a statutory board under the Ministry of National Development of Singapore. It manages parks, nature reserves, and animal and veterinary services, and aims to transform Singapore into a \"City in Nature\" by 2030.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNational_Parks_Board&rut=6d1fcbbfc5913b235954f6ac697515aa8e3102d2b6e7ac0878e2bb63544a33f9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:30:50.206637"
+    },
+    {
+      "topic": "national parks board",
+      "title": "National Park System Advisory Board",
+      "content": "The National Park System Advisory Board's charter expired on May 24, 2025. The Board has been terminated pending the approval of a new charter. Background The National Park System Advisory Board was first authorized in 1935 under the Historic Sites, Buildings, and Antiquities Act. The Board advises the Director of the National Park Service and the Secretary of the Interior on matters relating ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nps.gov%2Fresources%2Fadvisoryboard.htm&rut=e20371ddd53e47eb33ca36d64c499dfae290fb913e1acd5a52cfd995f77d6abc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:30:50.206668"
+    },
+    {
+      "topic": "national parks board",
+      "title": "Board of Directors & National Council | National Park Foundation",
+      "content": "The National Park Foundation's Board of Directors and National Council are dedicated champions for the national parks.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nationalparks.org%2Fabout%2Dfoundation%2Fnational%2Dcouncil%2Dand%2Dboard%2Dof%2Ddirectors&rut=d6aaef80e43f47a94bec0fd0ad88a35023e58df4fa81fa9bef85caa1c66b6ee9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:30:50.206695"
+    },
+    {
+      "topic": "national parks board",
+      "title": "Advisory Board Members (U.S. National Park Service)",
+      "content": "The Board's membership consists of individuals selected from among citizens of the United States having a demonstrated commitment to the mission of the National Park Service. Board members are selected to represent various geographic regions across the United States of America.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nps.gov%2Fresources%2Fadvisoryboardmembers.htm&rut=94e391cffa22451ed3cec6c9b7717f8b50c627825661cfeee973dabfd24efb2a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:30:50.206725"
+    },
+    {
+      "topic": "nuclear energy",
+      "title": "Nuclear power - Wikipedia",
+      "content": "Nuclear power is a safe, sustainable energy source that reduces carbon emissions. This is because nuclear power generation causes one of the lowest levels of fatalities per unit of energy generated compared to other energy sources. \"Economists estimate that each nuclear plant built could save more than 800,000 life years.\" [6]",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNuclear_power&rut=5b4ecd4103b5ffa3de4aff9c3016a533775bfa22bd3f96c6e7a2cfaa2e0c6a3d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:37:09.821476"
+    },
+    {
+      "topic": "nuclear energy",
+      "title": "What is Nuclear Energy? The Science of Nuclear Power",
+      "content": "Nuclear energy is a form of energy released from the nucleus, the core of atoms, made up of protons and neutrons. This source of energy can be produced in two ways: fission - when nuclei of atoms split into several parts - or fusion - when nuclei fuse together.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.iaea.org%2Fnewscenter%2Fnews%2Fwhat%2Dis%2Dnuclear%2Denergy%2Dthe%2Dscience%2Dof%2Dnuclear%2Dpower&rut=3af4f98e2922f49e331d8690b3342838a3182ed2b4e8e618cec342af6c558e67",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:37:09.821558"
+    },
+    {
+      "topic": "nuclear energy",
+      "title": "Nuclear energy | Definition, Sources, Uses, & Facts | Britannica",
+      "content": "Nuclear energy, energy that is released in significant amounts in processes that affect atomic nuclei, the dense cores of atoms. One method of releasing nuclear energy is by controlled nuclear fission, used in nuclear power plants around the world. Another method, controlled nuclear fusion, has not yet been perfected.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fnuclear%2Denergy&rut=7ba7b8f6654181c90ac0b0c544f590e9379be90beaf1d36893dc6aa6fa136b91",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:37:09.821611"
+    },
+    {
+      "topic": "nuclear energy",
+      "title": "Advantages and Challenges of Nuclear Energy",
+      "content": "Learn how nuclear energy protects air quality, creates jobs, supports national security, and faces public awareness, used fuel, and construction challenges. The Office of Nuclear Energy within DOE works to improve the sustainability and affordability of nuclear power through research and innovation.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.energy.gov%2Fne%2Farticles%2Fadvantages%2Dand%2Dchallenges%2Dnuclear%2Denergy&rut=84b172e755831efedfc17e33b06415cb48db9f4fe08d2a17818777658b97fb4e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:37:09.821653"
+    },
+    {
+      "topic": "nuclear energy",
+      "title": "What Is Nuclear Energy? | Nuclear Regulatory Commission",
+      "content": "Printable Version What is Nuclear Energy? Electricity can be generated in different ways. For example, it can be made using solar panels or by burning coal or by capturing the heat from atoms that split apart. When the electricity is made from atoms splitting apart, it's called nuclear energy. All power plants convert heat into electricity ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fww2.nrc.gov%2Freading%2Drm%2Fbasic%2Dref%2Fstudents%2Fwhat%2Dis%2Dnuclear%2Denergy&rut=d50154afd11096b46c0f73451f592ce79e5cb24ad0384cc6527dcea5e79c4c55",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:37:09.821691"
+    },
+    {
+      "topic": "natural gas",
+      "title": "Natural gas - Wikipedia",
+      "content": "Natural gas burning on a gas stove Burning of natural gas coming out of the ground Natural gas (also methane gas, and gas) is a naturally occurring compound of gaseous hydrocarbons, primarily methane (95%), [1] small amounts of higher alkanes, and traces of carbon dioxide and nitrogen, hydrogen sulfide and helium. [2] Methane is a colorless and odorless gas, and, after carbon dioxide, is the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNatural_gas&rut=4f36c8557e444f0b31414d23089eaffdf082990974d416272ee82590f3d4b519",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:39:15.995024"
+    },
+    {
+      "topic": "natural gas",
+      "title": "Natural gas explained - U.S. Energy Information Administration (EIA)",
+      "content": "Natural gas also contains smaller amounts of natural gas liquids (NGLs, which are also hydrocarbon gas liquids), and nonhydrocarbon gases, such as carbon dioxide and water vapor. We use natural gas as a fuel and to make materials and chemicals.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.eia.gov%2Fenergyexplained%2Fnatural%2Dgas%2F&rut=36c43c6fe6cbb4e9e630591df89345e4a74e1c826bb65b56593b5f69e6990982",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:39:15.995109"
+    },
+    {
+      "topic": "natural gas",
+      "title": "Natural Gas - Understand Energy Learning Hub",
+      "content": "Natural gas (NG) is the most versatile and fastest-growing fossil fuel \u2014used in all areas of the economy (industrial, residential, commercial, and transportation). It is a depletable, non-renewable resource composed primarily of methane gas (CH 4), with smaller amounts of natural gas liquids, carbon dioxide (CO 2), and water vapor.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Funderstand%2Denergy.stanford.edu%2Fenergy%2Dresources%2Ffossil%2Dfuel%2Denergy%2Fnatural%2Dgas&rut=103063fa8d72544453d4437fd6e6e4a212903f65d5fa0cd1d5195b92c447a872",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:39:15.995728"
+    },
+    {
+      "topic": "natural gas",
+      "title": "California Natural Gas Plans and Prices | XOOM Energy",
+      "content": "California Residential Natural Gas Plans Energy Choice from XOOM Energy Since 2011, XOOM Energy has been providing natural gas supply to residential consumers in California that are serviced by Pacific Gas & Electric, San Diego Gas & Electric and SoCal Gas. With XOOM Energy, natural gas consumers throughout California have the freedom to choose a natural gas supplier for their home with the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fxoomenergy.com%2Fen%2Fresidential%2Fcalifornia&rut=64fb9d50cb2f3ae5d8cd436cb7fbdd977e63ccd7e2528863666e1007938034fd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:39:15.995847"
+    },
+    {
+      "topic": "natural gas",
+      "title": "Natural Gas and California - California Public Utilities Commission",
+      "content": "In 2018, California gas utilities forecasted that they would deliver about 4740 million cubic feet per day (MMcfd) of gas to their customers, on average, under normal weather conditions. The overwhelming majority of natural gas utility customers in California are residential and small commercials customers, referred to as \"core\" customers.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cpuc.ca.gov%2Findustries%2Dand%2Dtopics%2Fnatural%2Dgas%2Fnatural%2Dgas%2Dand%2Dcalifornia&rut=fc372bdf718943dad75e3fe053ad29ba6df9bd39e918002af68108a1c0e2e80d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:39:15.995929"
+    },
+    {
+      "topic": "social norm",
+      "title": "Training Material for Trainers - Online Training",
+      "content": "Training materials to teach Social Learning workshops. Social Learning Course",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dcorporatetrainingmaterials.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DQBszdSJkIzOqkKj5d9IHzIWpFBv94fMRc5ybW%252DcgtRnCpWTraZLugvcxK0Bl5FDUfMJGf94g1glxGUeJ_kVDvmjhGj7xDk_DviEuC69Qb9F9seJj4tDmHv38BDIgQ3mhCzgiVSCyb0gtrV7BeAdgtwu9xd7kIr2gvksbsrukA8I.%252Dh5NmeF5V5_SQIlOe3HB6w%26rut%3Dca242b8dcb5b2f26cda871f03ea7ee505261d0bc0b12e205eea6f53dba45a62a%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8g4_HZvGQLWjUeMU9Zdo2xzVUCUz76E2AKpBpGdHuEAaX6OlCjmdZMAluqAfl3UqGSEO6u0PyGJTsWrp3V4XjwL86QxY9yjI8zt0b937HIfTVUv%252DNj0v3qoA_L4rQOVJtCNpVAUA_X4WJ9JoJmmrdWQhchWeWmsRp7NxamdQzUJhhnp8FYh7oKctqXLTI%252DyVHAxwvqRbHUQw8v0UGnQCVwZhFTdo%2526u%253DaHR0cHMlM2ElMmYlMmZjb3Jwb3JhdGV0cmFpbmluZ21hdGVyaWFscy5jb20lMmZwcm9kdWN0cyUyZnNvY2lhbC1sZWFybmluZyUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2Y2FtcGFpZ24tbmFtZSUzZDAxUyUyNmRldmljZSUzZGMlMjZhZGdyb3VwJTNkMTE2MTA4NDc5OTI0MzQ0NiUyNmtleXdvcmQlM2RsZWFybmluZyUyNTIwc29jaWFsJTI1MjBza2lsbHMlMjZtYXRjaHR5cGUlM2RiJTI2bXNjbGtpZCUzZDlkNjdmNzRkMmNjNjE5MDQzNDc1OWUxN2U5YmZmMmZhJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZDAxcyUyNTNBJTI1MjB1cyUyNnV0bV90ZXJtJTNkbGVhcm5pbmclMjUyMHNvY2lhbCUyNTIwc2tpbGxzJTI2dXRtX2NvbnRlbnQlM2RTb2NpYWwlMjUyMExlYXJuaW5n%2526rlid%253D9d67f74d2cc6190434759e17e9bff2fa%26vqd%3D4%2D49152694447943153712085222040326667956%26iurl%3D%257B1%257DIG%253DEFE72E4F82FB4DDEA84E2A9E13A8DB0C%2526CID%253D2B47625A5411612E31F4748D5586605B%2526ID%253DDevEx%252C5045.1&rut=f176023a2840d78f57e3c2dd968d9a0897b59099244bbb018f3d37a5af1a3029",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:54:33.478879"
+    },
+    {
+      "topic": "social norm",
+      "title": "Social norm - Wikipedia",
+      "content": "A social norm is a shared standard of acceptable behavior by a group, which can be informal or formal, proscriptive or prescriptive. Learn how norms emerge, transmit, and change over time and across contexts, and how they differ from other concepts such as rules, laws, and customs.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSocial_norm&rut=df115e7915823c1117189b75fb7572ad310fd589d8a7a106ac8bb12f4bcd6264",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:54:33.478959"
+    },
+    {
+      "topic": "social norm",
+      "title": "Social Norms in Sociology - Simply Psychology",
+      "content": "Social norms are the unwritten rules that guide how people are expected to behave in a group or society. They include everyday habits like saying hello, waiting your turn in line, or dressing appropriately for an event. These norms help create order and predictability, and breaking them can lead to disapproval or even punishment.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.simplypsychology.org%2Fsocial%2Dnorms%2Dexamples.html&rut=2abac966e7beca047ea1ccfb2fbbf0e777f8f6cfc2ae68d53b4650cd2b070ee4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:54:33.479024"
+    },
+    {
+      "topic": "social norm",
+      "title": "Social Norms (Stanford Encyclopedia of Philosophy)",
+      "content": "Social norms, the informal rules that govern behavior in groups and societies, have been extensively studied in the social sciences. Anthropologists have described how social norms function in different cultures (Geertz 1973), sociologists have focused on their social functions and how they motivate people to act (Durkheim 1895 [1982], 1950 [1957]; Parsons 1937; Parsons & Shils 1951; James ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fsocial%2Dnorms%2F&rut=0ee5d87cabdbe551109b2f169a15039b98c0ab10e2f6ba30f2e52daa3ab44b4c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:54:33.479091"
+    },
+    {
+      "topic": "social norm",
+      "title": "Defining Social Norms and Related Concepts - Unicef",
+      "content": "Social norms are the perceived informal, mostly unwritten, rules that define acceptable and appropriate actions within a given group or community, thus guiding human behaviour.1,2,3 They consist of what we do, what we believe others do, and what we believe others approve of and expect us to do. Social norms are therefore situated at the interplay between behaviour, beliefs and expectations.4",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.unicef.org%2Fmedia%2F111061%2Ffile%2FSocial%2Dnorms%2Ddefinitions%2D2021.pdf%26quot&rut=01611c3a8fb83f3a5f0b5eeb0dd8938a62f651b7999057ad98cc90e16a574e73",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:54:33.479155"
+    },
+    {
+      "topic": "nationalism",
+      "title": "Nationalism",
+      "content": "Nationalism is an ideology or movement that holds that the nation should be congruent with the state. As a movement, it presupposes the existence and tends to promote the interests of a particular nation, especially with the aim of gaining and maintaining its sovereignty (self-determination) over its perceived homeland to create a nation-state. It holds that the nation should govern itself, free from outside interference (self-governance), that a nation is a natural and ideal basis for a polity, and that the nation is the only rightful source of political power. It further aims to build, and maintain, a single national identity, based on a combination of shared social characteristics such as culture, ethnicity, homeland, language, politics, religion, traditions, or belief in a shared singular history, and to promote national unity or solidarity. There are various definitions of a \"nation\", which leads to different types of nationalism. The two main divergent forms are ethnic nationalism and civic nationalism.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nationalism",
+      "confidence": 0.9,
+      "learned_at": "2026-01-04T12:14:31.069936"
+    },
+    {
+      "topic": "nationalism",
+      "title": "Nationalism - Wikipedia",
+      "content": "Nationalism is an ideology or movement that holds that the nation should be congruent with the state. [1][2] As a movement, it presupposes the existence [3] and tends to promote the interests of a particular nation, [4] especially with the aim of gaining and maintaining its sovereignty (self-determination) over its perceived homeland to create a nation-state. It holds that the nation should ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNationalism&rut=14dbe7b7886bffa0d73d68665dd91ffcb770f3b9b5e2dea8a861c81920bd64ac",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T12:14:32.048758"
+    },
+    {
+      "topic": "nationalism",
+      "title": "Nationalism | Definition, History, Examples, Principles, & Facts ...",
+      "content": "Nationalism, ideology based on the idea that the individual's loyalty and devotion to the nation-state surpass other individual or group interests. Although it is often thought to be very old, nationalism did not become a great determining factor in history until the end of the 18th century.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fnationalism&rut=369b51f16a81cfbb941ff9c9417799a18fceb3f931cbf4c613535fee10b2d386",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T12:14:32.048821"
+    },
+    {
+      "topic": "nationalism",
+      "title": "NATIONALISM Definition & Meaning - Merriam-Webster",
+      "content": "The meaning of NATIONALISM is an ideology that elevates one nation or nationality above all others and that places primary emphasis on promotion of its culture and interests as opposed to those of other nations, nationalities, or supranational groups. How to use nationalism in a sentence. Frequently Asked Questions About nationalism.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.merriam%2Dwebster.com%2Fdictionary%2Fnationalism&rut=3d0353fff259e47f6c71ddd5ca65551b90602ec4627117e7d38d9a3c5fd3bd7a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T12:14:32.048874"
+    },
+    {
+      "topic": "nationalism",
+      "title": "What Is Nationalism? Definition and Examples - ThoughtCo",
+      "content": "Nationalism is an ideology of loyalty and devotion to one's country, often based on shared ethnicity, language, religion, or culture. Learn about the origins, types, and impacts of nationalism in history and today.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.thoughtco.com%2Fnationalism%2Ddefinition%2D4158265&rut=3d6f7277a182d8aa1743d4f24535e050bac70df1729cff0aa228b4eef49e8bf2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T12:14:32.048926"
+    },
+    {
+      "topic": "nationalism",
+      "title": "Nationalism (Stanford Encyclopedia of Philosophy)",
+      "content": "Nationalism as a system of beliefs, or ideology, comes in many different shapes and forms, and can be combined with other belief systems. Thus one can be a conservative nationalist or a socialist nationalist; one can also be a Christian nationalist, an Arab nationalist, and so forth.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fnationalism%2F&rut=a87f9a7661a6959c539f50e72da24ce1e90f172ac23021efa511dcc3bd37b473",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T12:14:32.048976"
     }
   ],
-  "last_updated": "2026-01-02T15:32:58.137071"
+  "last_updated": "2026-01-04T12:14:32.054494"
 }

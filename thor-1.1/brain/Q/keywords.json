@@ -17,7 +17,9 @@
     "qt",
     "quarrying",
     "quasar",
-    "quark"
+    "quark",
+    "queue",
+    "qing"
   ],
   "knowledge": [
     {
@@ -997,7 +999,169 @@
       "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.merriam%2Dwebster.com%2Fdictionary%2Fquark&rut=a5b05bf6b4c1dc58444237788eef866e06e0d7d13ac87d64301b149f7531a268",
       "confidence": 0.7,
       "learned_at": "2026-01-01T09:22:22.034458"
+    },
+    {
+      "topic": "queue data structure",
+      "title": "DSA Queues - W3Schools",
+      "content": "Learn what a queue is, how it works and how to implement it using arrays or linked lists. See examples of queue operations in Python and compare the advantages and disadvantages of different implementations.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.w3schools.com%2Fdsa%2Fdsa_data_queues.php&rut=4071d532cae1f894248418fe1989c47dfce8ee06de1ff89e4ce32712c294d0b9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:41:28.023732"
+    },
+    {
+      "topic": "queue data structure",
+      "title": "Queue Data Structure and Implementation in Java, Python and C/C++",
+      "content": "Learn what a queue is, how it works, and how to implement it in different programming languages. A queue follows the FIFO rule and has basic operations such as enqueue, dequeue, isEmpty, isFull and peek.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.programiz.com%2Fdsa%2Fqueue&rut=d0bfdce63953f269c95130f0f822440b596700594241310f45950400940989ed",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:41:28.023771"
+    },
+    {
+      "topic": "quick sort",
+      "title": "Quick Sort Algorithm Explained: Steps, Code Examples and Use Cases",
+      "content": "Learn the Quick Sort Algorithm with clear steps, partition logic, Python & C++ code examples, and time complexity explained for students and developers.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ccbp.in%2Fblog%2Farticles%2Fquick%2Dsort%2Dalgorithm&rut=02ae40599a34a2cac0dee5e115d2489f4d0f8f962ebf60497348ed62a0c5844a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T16:40:48.540050"
+    },
+    {
+      "topic": "rocket report: russia pledges quick fix for soyuz launch pad; ariane 6 aims high",
+      "title": "Rocket Report: Russia pledges quick fix for Soyuz launch pad; Ariane 6 ...",
+      "content": "305 and counting Rocket Report: Russia pledges quick fix for Soyuz launch pad; Ariane 6 aims high South Korean rocket startup Innospace is poised to debut a new nano-launcher.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Farstechnica.com%2Fspace%2F2025%2F12%2Frocket%2Dreport%2Drussia%2Dpledges%2Dquick%2Dfix%2Dfor%2Dsoyuz%2Dlaunch%2Dpad%2Dariane%2D6%2Daims%2Dhigh%2F&rut=4db8001da7f8dba197c459eb98594fddfccedd045fca20f139230eacaee5d6cc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T23:47:52.915736"
+    },
+    {
+      "topic": "rocket report: russia pledges quick fix for soyuz launch pad; ariane 6 aims high",
+      "title": "Rocket Report Russia Pledges Quick Fix For - Rocket Report:",
+      "content": "rocket report russia pledges quick fix for In a significant development for the space industry, Russia has announced plans to expedite repairs to its Soyuz launch pad, while the European Space Agency's Ariane 6 rocket is set to make ambitious strides in the coming months.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.hashe.com%2Ftech%2Dnews%2Frocket%2Dreport%2Drussia%2Dpledges%2Dquick%2Dfix%2Dfor%2Dsoyuz%2Dlaunch%2Dpad%2Dariane%2D6%2Daims%2F&rut=a68b178ae17b2fa3097045780cfe4e530cf3e6ffe65756dfee72b1b47b5eda03",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T23:47:52.915851"
+    },
+    {
+      "topic": "rocket report: russia pledges quick fix for soyuz launch pad; ariane 6 aims high",
+      "title": "Rocket Report: Russia Accelerates Soyuz Launch Pad Fix; Ariane 6 ...",
+      "content": "Ariane 6 completed four successful flights this year, including a recent mission carrying the Galileo navigation constellation. All launches used the Ariane 62 configuration; the more powerful Ariane 64 is slated for early 2026.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fnews.tosunkaya.com%2Frocket%2Dreport%2Drussia%2Daccelerates%2Dsoyuz%2Dlaunch%2Dpad%2Dfix%2Dariane%2D6%2Dtargets%2Dambitious%2Dlaunch%2Dgoals%2F&rut=0c359032d9e7e99bc42dc12f27891720e6b5ac704306c6a2f66e398e3a32d393",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T23:47:52.915916"
+    },
+    {
+      "topic": "rocket report: russia pledges quick fix for soyuz launch pad; ariane 6 aims high",
+      "title": "Rocket Report: Russia pledges quick fix for Soyuz launch pad; Ariane 6 ...",
+      "content": "China's Long March 12A may also debut by year-end. Rocket Lab launched four small satellites for a government-funded mission testing DiskSats, a new flat, stackable satellite design co-developed by NASA and the US Space Force to optimize rideshare launches and enhance power and payload capacity.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fcashwalklabs.io%2Fnews%2Frocket%2Dreport%2Drussia%2Dpledges%2Dquick%2Dfix%2Dfor%2Dsoyuz%2Dlaunch%2Dpad%2Dariane%2D6%2Daims%2Dhigh&rut=b6e0c1cebe0f091f558d58c1e68c1432572b7bd4b8c3119d141190e564af3efd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T23:47:52.915978"
+    },
+    {
+      "topic": "rocket report: russia pledges quick fix for soyuz launch pad; ariane 6 aims high",
+      "title": "Russia says damaged launch pad crucial to its space programme will be ...",
+      "content": "Russia's space agency said on Tuesday that work was underway to repair a damaged launch pad at the Baikonur cosmodrome in Kazakhstan that underpins its space programme and that the facility should ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.reuters.com%2Fscience%2Frussia%2Dsays%2Ddamaged%2Dlaunch%2Dpad%2Dcrucial%2Dits%2Dspace%2Dprogramme%2Dwill%2Dbe%2Dfixed%2Dby%2D2025%2D12%2D16%2F&rut=ec9705e05b17c95ab35558a373a56d66af31baf4a2978f660943d8967eb6ed7b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T23:47:52.916039"
+    },
+    {
+      "topic": "qing dynasty",
+      "title": "Shop chinese books history - Amazon.com Official Site",
+      "content": "Find deals and low prices on chinese books history at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DOCszh3%252DwTv9lbvJe6oDzG3LlJXpyBJBE90X0XI76JelMu98C193dFf5lw5ucI%252DYZuUZISBkXUkYzjuOa4j85ak9g0s1PQs8nMMa5UNf0qmZ9k2H_2FKoLkrxVEY3ACT3W%252D8kKJhtRFNXVNsu2JyFgYxyVUFCD59zCZPwTET8VNU.rpxOvsqkrBFaayiZCBzdTw%26rut%3D53c97dc5089d33994f3b1ae83bc8844aebc9349153245deb8649f909be2dad51%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8OOpGQEGMBMQFJdpobvqp6DVUCUxMZ%252DokEA_wSFvUl_rh6icogL9b6iN5CuZLRHnawEGEkt_B4F5w6EXW_JNPtqejFAXEp9G8bdWJT4JghmyS7XUoOzSTnXPVnYbjXnLIQu7v0vTs8guSjaFnlSXSAb39jvEqI9LUJ9eMEoiVBzfPq7MPFcIcVY1PkyEzOahu2ax7iO63F_2WXXtW6z2IBSMY0Pg%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGNoaW5lc2UlMmJib29rcyUyYmhpc3RvcnklMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF84ZjV2eGN5b291X3AlMjZhZGdycGlkJTNkMTIyOTI1NTAxODUwNzM4MCUyNmh2YWRpZCUzZDc2ODI4NTcwMjQ1Njk0JTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkcCUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY0NDglMjZodnRhcmdpZCUzZGt3ZC03NjgyODg1OTU4NDU4NSUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkNzE0XzEwMTUwOTc1ODQlMjZtY2lkJTNkNTQ2MTgxMDY5ODUxMzVlODhjNWExYmU5MWFiZjM0ZDYlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZDkzYTMzNTMwOTk5YjEyMGMyMjk4NWM2OWZlOTljNGQ2%2526rlid%253D93a33530999b120c22985c69fe99c4d6%26vqd%3D4%2D238271197470005462831803889361897623942%26iurl%3D%257B1%257DIG%253D2858F4D541DC42E6A3EA460DACC0A319%2526CID%253D32AEA307C01F6B862CE2B5D1C1CA6A01%2526ID%253DDevEx%252C5046.1&rut=a10b4e1309e4b00ff6acbea090a1862421e72412dfa680665165fae9f55e3a9e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:59:14.707341"
+    },
+    {
+      "topic": "qing dynasty",
+      "title": "Qing dynasty - Wikipedia",
+      "content": "The Qing dynasty (/ t\u0283\u026a\u014b / CHING), officially the Great Qing, [b] also known as the Qing Empire or Qing China, was a Manchu -led imperial dynasty of China and an early modern empire in East Asia. The last imperial dynasty in Chinese history, the Qing dynasty was preceded by the Ming dynasty and succeeded by the Republic of China.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FQing_dynasty&rut=34d801850d0ac6bf1d5a4c5f90d234da58439e09ba808f6830cb7bdfa219db10",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:59:14.707419"
+    },
+    {
+      "topic": "qing dynasty",
+      "title": "Qing dynasty | Definition, History, Map, Time Period, Emperors ...",
+      "content": "Qing dynasty, the last of the imperial dynasties of China, spanning the years 1644 to 1911/12. Under the Qing the territory of the empire and its population grew significantly, many of the non-Chinese minorities within the empire were Sinicized, and an integrated national economy was established.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2FQing%2Ddynasty&rut=011d944d8712b980146906c3e0ab8007e5136979dfa26c9eb440b28ae9a20da5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:59:14.707467"
+    },
+    {
+      "topic": "qing dynasty",
+      "title": "Qing dynasty, 1644-1911 - Smithsonian's National Museum of Asian Art",
+      "content": "Learn about the Qing dynasty, the last imperial dynasty of China, founded by the Manchus and influenced by Chinese culture. Explore the art, history, and challenges of the Qing period through lessons and activities for educators.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fasia%2Darchive.si.edu%2Flearn%2Ffor%2Deducators%2Fteaching%2Dchina%2Dwith%2Dthe%2Dsmithsonian%2Fexplore%2Dby%2Ddynasty%2Fqing%2Ddynasty%2F&rut=0138da0419eef1d07e6985bb81893cb0b605358911e63e2b5c2755cb37b21245",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:59:14.707512"
+    },
+    {
+      "topic": "qing dynasty",
+      "title": "Qing Dynasty: Manchu, Key Events, Emperors, Achievements",
+      "content": "Learn about the last Chinese dynasty ruled by the Manchus, from its rise to its fall, and its achievements and challenges. Explore the key events, emperors, and achievements of the Qing Dynasty, such as the golden age, the Opium Wars, and the Taiping Rebellion.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.chinahighlights.com%2Ftravelguide%2Fchina%2Dhistory%2Fthe%2Dqing%2Ddynasty.htm&rut=61c7ba3c00e0bd1c1ebf912a33edf709a2db339be9619caa8e38ee861381fe00",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:59:14.707556"
+    },
+    {
+      "topic": "quality management",
+      "title": "Enterprise Quality Management - ISO Quality Management Soft",
+      "content": "Fully customizable Audit Management Software with built-in CAPA. Root Cause Analysis isn't just a template! Learn the effective root cause analysis here.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dqitconsulting.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DOoEtnp76RK4b98rVVxVycapwCfVUq4h69zXC3hHxVp7lRuEJINbElILnWZ4W7r82%252D_9ngtNc%252DtBN%252DE1KTv15PMGPO2qQf9fXsRRGZf6suvKxJgD%252DVEctl71TNNmEB3egheEfY5ngoRArBgr73j0Y4g3vmn_SQ_s%252DPdaG7zUN8Gk.3GviIERT4qenZTKVpLZT0Q%26rut%3D0aad137d01a46e2e15413ad380c3614c5989500b0dc902e47851abb6e5e1138b%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8nJxPE1EvmvHv01_5TNcmqDVUCUyYrHZ2v3XDGMYrNikrn7xrzzj5w7VFEW9v%252DNTY1GSRHmodm4TKBpoy64w4yFS5PU2sgGIE5rfgo6CIlXJyfWhZP49KzX0RMkPhsHlHJCiPL1ISkGG5gOixzp2cSbBU%252DB1ZGUONb9Pmial9tBNqSOwPKeT6gpM%252DaqIoN_cinkCRHYeA61rTH%252DH3nB42NFnASwU%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cucWl0Y29uc3VsdGluZy5jb20lMmZzb2x1dGlvbnMlMmZxdWFsaXR5LW1hbmFnZW1lbnQlMmYlM2Ztc2Nsa2lkJTNkZjRhY2FlN2RjMzg5MWRiNjUzNDRjNzI3N2FkMDY1NzA%2526rlid%253Df4acae7dc3891db65344c7277ad06570%26vqd%3D4%2D114972383096652126723629895646648247213%26iurl%3D%257B1%257DIG%253DC42EF8D9066A4E4D82FF42B44B6B1B7B%2526CID%253D0CA191417EEA640B284A87967F7D65E0%2526ID%253DDevEx%252C5045.1&rut=9036ba9aa6625e2c3254c59fcc66a59e8d8d0ba1cde6e886701efb88a237c22b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:02:50.019046"
+    },
+    {
+      "topic": "quality management",
+      "title": "Quality management - Wikipedia",
+      "content": "Quality management (QM) ensures that an organization, product, or service consistently performs as intended. It has four main components: quality planning, quality assurance, quality control, and quality improvement. [1] Customers recognize that quality is an important attribute when choosing and purchasing products and services. Suppliers can recognize that quality is an important ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FQuality_management&rut=e526bff9c2d11463faffcd59c7dbfd88eb9b62c5a5570d15055c56741b0eef59",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:02:50.019116"
+    },
+    {
+      "topic": "quality management",
+      "title": "Quality management: The path to continuous improvement - ISO",
+      "content": "Learn what a quality management system (QMS) is, how it works, and why it is important for your business. Explore the quality management principles, quality assurance and quality control, and the benefits of QMS software and ISO 9001 certification.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.iso.org%2Fquality%2Dmanagement%2F&rut=50c554360b3e0e87564cd30dd3b476c083e75e653cf3bc3599c1e2d980734987",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:02:50.019165"
+    },
+    {
+      "topic": "quality management",
+      "title": "What is a Quality Management System (QMS)? | ASQ",
+      "content": "Overview A quality management system (QMS) is a structured framework that defines and documents an organization's processes, procedures, and responsibilities for achieving quality policies, practices, and objectives. The goal of a QMS is to reduce waste, increase efficiency, and improve customer satisfaction.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fasq.org%2Fquality%2Dresources%2Fquality%2Dmanagement%2Dsystem&rut=b1c3ec5b3b96c11b56951daa04a769c541bb6f9424a6d77a266296e33599ce8c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:02:50.019211"
+    },
+    {
+      "topic": "quality management",
+      "title": "Quality Management: Definition and Example - Investopedia",
+      "content": "Learn what quality management (TQM) is, how it evolved from statistical theory and became a business philosophy, and how Toyota applied it with the Kanban system. Quality management is the act of overseeing all activities and tasks needed to maintain a desired level of excellence.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.investopedia.com%2Fterms%2Fq%2Fquality%2Dmanagement.asp&rut=1ff244419ca03e990ee24c7b7c8db5905d778c4b9eda77159bb466fee67c0b7a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:02:50.019257"
     }
   ],
-  "last_updated": "2026-01-01T09:22:22.040430"
+  "last_updated": "2026-01-04T11:02:50.024102"
 }

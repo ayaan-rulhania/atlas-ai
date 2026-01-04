@@ -7,7 +7,12 @@
     "yield",
     "your",
     "you?",
-    "yes."
+    "yes.",
+    "year",
+    "years",
+    "york",
+    "yankees",
+    "yangtze"
   ],
   "knowledge": [
     {
@@ -424,7 +429,250 @@
       "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fainewsera.com%2Ftop%2D10%2Drevolutionary%2Dai%2Dtools%2Dto%2Fartificial%2Dintelligence%2Dnews%2Fai%2Dagents%2F&rut=6fcd0b4a8ce9e1828f57a88084e14453a46e933771dcd61d0fc3253e9a11a352",
       "confidence": 0.7,
       "learned_at": "2026-01-01T20:01:51.682855"
+    },
+    {
+      "topic": "yagni principle",
+      "title": "What Is YAGNI (\"You Aren't Gonna Need It\") Principle? | Built In",
+      "content": "Engineering leaders share their thoughts on the programming principle YAGNI (\"You Aren't Gonna Need It\"), and how it helps developers stay efficient.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbuiltin.com%2Fsoftware%2Dengineering%2Dperspectives%2Fyagni&rut=a6ccd1fb9d17cccbc603be3c2115a743499e5b49a514f843e624f50e96b4003f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:05:17.183128"
+    },
+    {
+      "topic": "yagni principle",
+      "title": "YAGNI - Under the Hood",
+      "content": "YAGNI Principle What ? YAGNI stands for \"You Aren't Gonna Need It.\" It is one of the core principles of Extreme Programming (XP) and Agile development. The principle advises developers not to add any functionality or code until it is truly needed. Essentially, YAGNI promotes simplicity and avoids speculative development.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fluci%2Dmg.github.io%2FUnder%2Dthe%2DHood%2Ffundamentaldives%2FFundamentalPrinciples%2FYAGNI%2F&rut=7b8242f8630485f205bad79512de0228d772690e38c494790cc30fe28cc83778",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:05:17.183205"
+    },
+    {
+      "topic": "what is blockchain: everything you need to know (2022)",
+      "title": "Low priced blockchains for dummies - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on blockchains for dummies at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DzLpm4sHQmPW35b5OvXSx%252Dn5TtHbSO2Y59yPVpYsoaSFujFBWnOlql3QjatlDaYtPu_MqXRHX54tdbnHyv_BAuz6UWxwviTDOYlaR7CvWCtyS7tDwKdo8XXJCckyjdIQnJeKMX9fTCgOkJ7rsy0puOPoBwJjw2huImTf_cqpFIiA.pyiEOgA%252DOQY_GacB1Dw1gg%26rut%3Dc759eb4765f9c81eb9a8bee2f6742aa136fc1f6e7383a4ae28adad69c7d252d9%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8JWCgpDahkUz7ukFoX%252Dw0bDVUCUzlL36_gwZa4knVTwD0uYNefbGuE4ZP%252DMq_ZakX71yaON5qKfZU_o9Ozl1QVO4jp4n94n8zFsJnxap9NZoxzdQW3oMozMVazE8v4S%252DvHSJIaqBhr_g%252DESO4crIajBw2k5DLMvMcQwY17jDyifU7wN54jjDxkvxmSOy_1EdXEYoGmZCXo7RINPt_NswwcRSYZA8%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJsb2NrY2hhaW5zJTJiZm9yJTJiZHVtbWllcyUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzc1a2luNG43YXhfcCUyNmFkZ3JwaWQlM2QxMjM0NzUyNjM2MDQ3OTc3JTI2aHZhZGlkJTNkNzcxNzIxNzM1MDA5OTglMjZodm5ldHclM2RzJTI2aHZxbXQlM2RwJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjUzOSUyNmh2dGFyZ2lkJTNka3dkLTc3MTcyMzk0OTQ4NTMzJTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QxMzIyOV8xMzUwMzQwMiUyNm1jaWQlM2QwYjdmZjEwMTdkNzEzYjFhYmNmOWYyODhjZjk4MjczOCUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkODY2MjIzOGM4MjRiMTIwNDAwYTM0YWQ0MGIwMjUzOTE%2526rlid%253D8662238c824b120400a34ad40b025391%26vqd%3D4%2D171302156096976964208214783728264153469%26iurl%3D%257B1%257DIG%253D0DE6147E25E74F24AF7C0CB9B486BA07%2526CID%253D0CD993DD42416C3C3892850B43946DFE%2526ID%253DDevEx%252C5046.1&rut=199d2e877e7fc78383f286dddc787ff10b9e94d81d5a6bd9af253f6995956f6e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:13:13.687150"
+    },
+    {
+      "topic": "what is blockchain: everything you need to know (2022)",
+      "title": "What is Blockchain?",
+      "content": "Learn everything you need to know about Blockchain. From its decentralized nature to its potential for revolutionizing industries.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.blockchain%2Dcouncil.org%2Fguide%2Fblockchain%2Dguide%2Deverything%2Dyou%2Dneed%2Dto%2Dknow%2F&rut=c68887c6dbccfcfef7ec26d4afb6a8581ebbb42803d5358166f5c3ec27609227",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:13:13.687208"
+    },
+    {
+      "topic": "what is blockchain: everything you need to know (2022)",
+      "title": "Blockchain Facts: What Is It, How It Works, and How It Can Be Used",
+      "content": "How Does a Blockchain Work? You might be familiar with spreadsheets or databases. A blockchain is somewhat similar because it is a database where information is entered and stored.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.investopedia.com%2Fterms%2Fb%2Fblockchain.asp&rut=de0c6d72dc8ac09e0ccd8fb45f1929bb6533c3badced30f7c12f2e55e404672e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:13:13.687254"
+    },
+    {
+      "topic": "what is blockchain: everything you need to know (2022)",
+      "title": "What is Blockchain? A Beginner's Guide - osl.com",
+      "content": "Final Thoughts: Why Blockchain Matters Blockchain is reshaping the way we store, share, and verify information. Its decentralized, transparent, and secure nature makes it ideal for a variety of industries, not just finance. As the technology matures, its potential to revolutionize everything from supply chains to voting systems is immense.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.osl.com%2Fen%2Fbits%2Farticle%2Fwhat%2Dis%2Dblockchain&rut=95c90e7e2839e200daf6fab1731652b539ba397d27232a586b7f75738495f8ca",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:13:13.687312"
+    },
+    {
+      "topic": "what is blockchain: everything you need to know (2022)",
+      "title": "Blockchain Made Easy: A Beginner's Guide to How It Works",
+      "content": "# A Simple Guide to Blockchain: How It Works for Beginners Blockchain is a groundbreaking distributed ledger technology that delivers secure and transparent data storage without the need for intermediaries. This guide offers newcomers a thorough overview of blockchain fundamentals, its historical evolution, and real-world uses in finance, supply chain management, healthcare, and government ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fweb3.gate.com%2Fen%2Fcrypto%2Dwiki%2Farticle%2Fa%2Dsimple%2Dguide%2Dto%2Dblockchain%2Dhow%2Dit%2Dworks%2Dfor%2Dbeginners%2D20251227&rut=b83a268ef8bccdc4e49fdb887b542eba73749a9e0472888ced2ba2a6aa6e4d77",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:13:13.687361"
+    },
+    {
+      "topic": "astronomers ring in the new year with a stunning galaxy collision",
+      "title": "Astronomers Ring in the New Year with a Stunning Galaxy Collision",
+      "content": "Astronomers ring in the new year with a stunning galaxy collision Discovered on New Year's Eve, the Champagne Cluster reveals a bubbly but violent collision between two massive galaxy clusters.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencedaily.com%2Freleases%2F2025%2F12%2F251231203753.htm&rut=6a21b6870a04fb3e0df3a53e04481b0716f11a414401a473d2ec14d59278f436",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T22:14:14.819035"
+    },
+    {
+      "topic": "astronomers ring in the new year with a stunning galaxy collision",
+      "title": "Space Rings in the New Year With the Champagne Cluster",
+      "content": "A New Year's View of the \"Champagne Cluster\" Ring in the New Year with a striking space scene known as the \"Champagne Cluster,\" revealed in a new image that blends data from NASA's Chandra X-ray Observatory with optical telescopes. Astronomers first identified this galaxy cluster on December 31, 2020.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fscitechdaily.com%2Fspace%2Drings%2Din%2Dthe%2Dnew%2Dyear%2Dwith%2Dthe%2Dchampagne%2Dcluster%2F&rut=cf5e521a2eb25660184338594dce7bfdc6acd629fd76fcaf22dff89309403786",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T22:14:14.819102"
+    },
+    {
+      "topic": "astronomers ring in the new year with a stunning galaxy collision",
+      "title": "Astronomers Celebrate New Year with Galaxy Collision",
+      "content": "Ring in the New Year with the \"Champagne Cluster,\" a distant galaxy cluster featured in a new image that combines data from NASA's Chandra X-ray Observatory and optical telescopes. Astronomers first identified this galaxy cluster on Dec. 31, 2020. That date, along with the cluster's bubbly look and the superheated gas detected by Chandra (represented in purple), led researchers to give it the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.miragenews.com%2Fastronomers%2Dcelebrate%2Dnew%2Dyear%2Dwith%2Dgalaxy%2D1596758%2F&rut=967387e4a9ced1a2966f8955562e2e80a908ac2ff68c439f4f0bd51683a14265",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T22:14:14.819155"
+    },
+    {
+      "topic": "astronomers ring in the new year with a stunning galaxy collision",
+      "title": "Astronomers Ring in the New Year with a Stunning Galaxy Collision ...",
+      "content": "In this video, we explain how astronomers ring in the new year with a stunning galaxy collision, why the Champagne Cluster is so rare, and how this galaxy collision helps scientists study dark ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DTOhSDUtaem8&rut=feb46cfb2ab10ec893e360fbef99f97a5939bdaed04ad6721d26d3b900b9fd71",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T22:14:14.819208"
+    },
+    {
+      "topic": "astronomers ring in the new year with a stunning galaxy collision",
+      "title": "Cheers! Ring in the New Year with Glittering 'Champagne Cluster' Image",
+      "content": "Raise a toast to another orbit around the sun with a new NASA image of sparkling galaxy clusters fittingly dubbed the \"Champagne Cluster.\" The object was first discovered on December 31, 2020.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.scientificamerican.com%2Farticle%2Fcheers%2Dnasa%2Drings%2Din%2Dthe%2Dnew%2Dyear%2Dwith%2Dsparkling%2Dchampagne%2Dcluster%2Dimage%2F&rut=4accc4c0c93c1d8fb79febac57a632a305a1f5229cacef9c6e76b2b96bed2e10",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T22:14:14.819252"
+    },
+    {
+      "topic": "hundred years war",
+      "title": "Shop hundred years war - Amazon.com Official Site",
+      "content": "Browse & discover thousands of unique brands. Read customer reviews & best sellers. Find deals and compare prices on hundred years war at Amazon.com",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DgCKCAXTxiNCEc%252DIO66FanvUk6kBDFD6pB0x%252DpqZdCDcHsNzqGYg5kLDho8L5m9khVb1fusdpWj_Xn1cq_GxxUNb2s34SVZPgqYvkh3hYsI7SUhf6SqzcRJKaT2w4ttIf07m%252DNSbN_YSaJ2H1fIQ6Q4k4bAGwTmgGIHdEeZRGPmU.fM0SAP3ReOs3mViazkfXFg%26rut%3Dbd0265a2715b96e53d46769e185cd1b28782db58bd6a18be1136b5de35cfe5e8%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8WIbDTVBX8MSlTXjABOOLgzVUCUzJPa1K8hzPDN%252DbcB7bLECotcAUp0sU7rjLEE8BrQ6jkes5tZOcvdPZbUecRYdPK9M5on1_mPSUFDr0kCEMgPyZv6TSKvfJt41DugB7yOWAK2bS7xUByND3Me0QjXocCG2CjQ7xPehuZysg30gnoUCI2sN1FcvwiMbdrEFC_Eya4KTIr2Uw01wkx21fQy_Ff%252Dw%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGh1bmRyZWQlMmJ5ZWFycyUyYndhciUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzZ3NGdlNnBsYnpfcCUyNmFkZ3JwaWQlM2QxMjMwMzUzODMyMjA2NjkzJTI2aHZhZGlkJTNkNzY4OTcyODA1OTEzMTElMjZodm5ldHclM2RzJTI2aHZxbXQlM2RlJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjUyMSUyNmh2dGFyZ2lkJTNka3dkLTc2ODk3MzYwNjY4NTc2JTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QxMDc2MF8xMzU4OTI0NCUyNm1jaWQlM2Q4YWQ4Yzk5Njc3MmMzODE1YjhlYmY3YzBkZmJkNGJlYyUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkMTVmNjVkNzc4ZWRlMTQ5ZGI2OTkzNDJlZTY1Y2Y0MDc%2526rlid%253D15f65d778ede149db699342ee65cf407%26vqd%3D4%2D222155028275086190826172030854253581055%26iurl%3D%257B1%257DIG%253D47B37E49D2FC4047B6C30C668EE9A48C%2526CID%253D179BD8E0D0916B2701EACE36D11D6A79%2526ID%253DDevEx%252C5045.1&rut=d432e33f353b90119fb48889a91436993edb135d48208fc010b679d498262330",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:05:39.358051"
+    },
+    {
+      "topic": "hundred years war",
+      "title": "Hundred Years' War - Wikipedia",
+      "content": "The Hundred Years' War was a significant conflict in the Middle Ages. During the war, five generations of kings from two rival dynasties fought for the throne of France, then the wealthiest and most populous kingdom in Western Europe.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHundred_Years%2527_War&rut=361b22df25473bb27310b6a37bc52dea35600dd9d091206a9bab4a467dbde00c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:05:39.358230"
+    },
+    {
+      "topic": "hundred years war",
+      "title": "Hundred Years' War | Summary, Causes, Effects, Combatants, Timeline ...",
+      "content": "Hundred Years' War, intermittent struggle between England and France in the 14th-15th century over a series of disputes, including the question of the legitimate succession to the French crown. By convention it is said to have lasted from 1337 to 1453, but there had been periodic fighting since the 12th century.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fevent%2FHundred%2DYears%2DWar&rut=022c09f2e6810b97c1e9b00e5833495c8078ddca11510180f6c548383760cff1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:05:39.358316"
+    },
+    {
+      "topic": "hundred years war",
+      "title": "Hundred Years' War - World History Encyclopedia",
+      "content": "Learn about the causes, phases and outcomes of the intermittent conflict between England and France from 1337 to 1453. Explore the battles, personalities and events that shaped the war and its legacy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.worldhistory.org%2FHundred_Years%27_War%2F&rut=1916ee03c84ed29636408e9d256a6cff48eeb420463cc732ab68fa83e70efb94",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:05:39.358388"
+    },
+    {
+      "topic": "hundred years war",
+      "title": "Hundred Years' War - Winner, Definition & Period | HISTORY",
+      "content": "The Hundred Years' War (1337-1453) was a complicated ongoing conflict between the kingdoms of England and France, rooted in territorial disputes and control of the French crown. Spanning about ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.history.com%2Farticles%2Fhundred%2Dyears%2Dwar&rut=12e0fbc904d40ae9eb8838a84bffecde7fcc69ccf597c11a5e7e7b299e8bf019",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:05:39.358461"
+    },
+    {
+      "topic": "new york yankees",
+      "title": "New York Yankees - Get New York Tickets Now - 2026 MLB Tickets",
+      "content": "Compare Prices on the Worlds Largest Ticket Marketplace. Tickets On Sale Today And Selling Fast, Secure Your Seats Now. USA Tickets 2026",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstubhub.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DaZHrHdQVKhMeOUyW81iwWoWk6iRrBzrx58lxrkLur3_6OPnoWYfdU4AB57Y7Uvjp%252D64VOlNs6Ke4KEAPqfLuCiDW_6S0QuqGcm2MieXZkGDYAZ3BARK%252Da_GEuo62FOXd9myudji%252DIP2dDHOGkG0RLRzLKD3wYe5FO%252DrGzPV6MGA.f9pe_3koRRekTqezN5umDQ%26rut%3D7cba0e535dbf1ed08a36dd6cb3cd42a0f9ee418cb710bb6130e9d1be01261b98%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8v2cZcDzdrR771Zl7%252DwQmDzVUCUx3x0Dn91afhm9MiOrEo2FaTJPJQ%252DFk8j5X5rInurVIK9Y5lS5gruMSB6O5pL64tyB0lI5ClKc34wILbj6VHqkkzDUs_pfuDqph7RV2I%252DwSsSG18dsOCqbU_6cnp3IPXAVF1oO4YJdZvLj90HnQY2lTufMvTBYKZZS%252DLXEOAj5_f9GXzaJFVfnv5uhomJqh5Mw%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuc3R1Ymh1Yi5jb20lMmZuZXcteW9yay15YW5rZWVzLXRpY2tldHMlMmZwZXJmb3JtZXIlMmY1NjUwJTNmJTNkJTI2UENJRCUzZFBTVVNCSU5IT01FNDQwMjk1MzQxMTZGNTIlMjZwcyUzZCUyNnBzX3AlM2QxJTI2cHNfYyUzZDQ3MTEzMzY0MCUyNnBzX2FnJTNkMTMwMTgyMjkzMzA4MTIyMiUyNnBzX3RnJTNka3dkLTgxMzY0MjA1NjI5NzQ2JTNhbG9jLTcxMjg0JTI2cHNfYWQlM2Q4MTM2Mzk5OTkwNTU5MSUyNnBzX24lM2RzJTI2cHNfZCUzZGMlMjZnY2xpZCUzZDQwYWY0MGViODk4YjE0MjBkZmQxMjliMmUwY2I4YmE5JTI2Z2NpZCUzZEMxMjI4OVgwMjElMjZrZXl3b3JkJTNkMTMwMTgyMjkzMzA4MTIyMmt3ZC04MTM2NDIwNTYyOTc0NiUzYWxvYy03MTI4NF9jJTI2Y3JlYXRpdmUlM2QlMjZ1dG1fa3hjb25maWQlM2RzMnJzaHNibXYlMjZ1dG1fY2FtcGFpZ24lM2Q0NzExMzM2NDAlMjZrd3QlM2RuYiUyNm10JTNkZSUyNmt3JTNkbmV3JTI1MjB5b3JrJTI1MjB5YW5rZWVzJTI2YXAlM2QlMjZwbG9jJTNkODYzMDMlMjZpbG9jJTNkJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkcGFpZC1zZWFyY2glMjZ1dG1fc3ViX21lZGl1bSUzZHByb3NwZWN0aW5nJTI2dXRtX3Rlcm0lM2RuYiUyNnV0bV9jb250ZW50JTNkZGVmYXVsdCUyNmdjbHNyYyUzZDNwLmRzJTI2bXNjbGtpZCUzZDQwYWY0MGViODk4YjE0MjBkZmQxMjliMmUwY2I4YmE5JTI2%2526rlid%253D40af40eb898b1420dfd129b2e0cb8ba9%26vqd%3D4%2D273756356604130890938159072648560811633%26iurl%3D%257B1%257DIG%253D8997077E0EAC4A0E84D1E88B80373C9B%2526CID%253D2884BA1012D068DD2B0AACC6133469DD%2526ID%253DDevEx%252C5046.1&rut=b20110ceee4ac8b8a36dbb76fafddaad819d13f22077b8c394f7644d8efde7d0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:08:48.746526"
+    },
+    {
+      "topic": "new york yankees",
+      "title": "New York Yankees Tickets - View Prices & Buy Online",
+      "content": "Buy 2026 New York Yankees Tickets at Vivid Seats\u00ae | Order Online Today. Pick Your Seats For New York Yankees With Vivid Seats, Safe and Secure Transaction.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dvividseats.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DswrJo9VI2hHdCD%252DbNOVd3Qxcs%252DLONz3%252DW_Az8Bk0Ytmtf8MMELQR1OUOf179dxFMSROopK%252Da%252DcPIStfZJExQdOoFTul0VC3G1blYI23CHXtVjXmE4_SvqjCDLc6nn7dlEHPvR7QSQaOg4mMuCM3Xj5W8ulfWG1yeJU9cDFsBd5c.4AxagUnWXu8A3bqzaXzNvA%26rut%3D018800f411d54972c9ff22da4a609da2e96db9937e6767802569fb9416c0b0aa%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8q6Fzaba4I_wiM5UKhTJshTVUCUzB%252D1msX4ugt4ZqaUhkk_%252DtyYFYVii0CMliW9TeUK9UXNXsHVsfu61fxCzZPIW1czRAo1pHfGTRsMmE1Fd_p1W1OsZhs5OGXaKTW9lD0274teKcjOILgSoD0v9qTGbKnMvnakl6IQxZaTBhgeksqd32zQKVssSE67Zz0QBZj8qwZqSpMHb7Q_d2lKyaiuJ77yg%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cudml2aWRzZWF0cy5jb20lMmZuZXcteW9yay15YW5rZWVzLXRpY2tldHMtLXNwb3J0cy1tbGItYmFzZWJhbGwlMmZwZXJmb3JtZXIlMmY2MDclM2Z1dG1fc291cmNlJTNkbXNuJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZDQ1ODI3NDg0OCUyNnV0bV90ZXJtJTNkbmV3JTI1MjB5b3JrJTI1MjB5YW5rZWVzJTI2YWRncm91cCUzZDExODQxNzU3NzE5Mzk3MjMlMjZ0YXJnZXQlM2Rrd2QtNzQwMTEyNzIyNzQyODQlM2Fsb2MtMTkwJTI2bG9jX2klM2QlMjZsb2NfcCUzZDg2MzAzJTI2bXNjbGtpZCUzZGMxNmZhZDkyYjU1YTEwYzQ1MzE2YzRjYmRjMWFiNmFh%2526rlid%253Dc16fad92b55a10c45316c4cbdc1ab6aa%26vqd%3D4%2D111053277536329166327605743535063892852%26iurl%3D%257B1%257DIG%253D8997077E0EAC4A0E84D1E88B80373C9B%2526CID%253D2884BA1012D068DD2B0AACC6133469DD%2526ID%253DDevEx%252C5051.1&rut=c9f70b28d3e11f8b75029335a6d5699f0bb0b6795d63323a2509f35c4fb780a6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:08:48.746569"
+    },
+    {
+      "topic": "new york yankees",
+      "title": "Official New York Yankees Website | MLB.com",
+      "content": "The official website of the New York Yankees with the most up-to-date information on news, tickets, schedule, stadium, roster, rumors, scores, and stats.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mlb.com%2Fyankees&rut=7c5b1decf1d407c7b9bde8534caa10d8d8478718d3dacc3f3af447e65d94ab33",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:08:48.746596"
+    },
+    {
+      "topic": "new york yankees",
+      "title": "New York Yankees News, Scores, Stats & Standings | New York Post",
+      "content": "Get the latest New York Yankees news, scores, standings, stats, trade rumors, expert analysis and more from the New York Post.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fnypost.com%2Fnew%2Dyork%2Dyankees%2F&rut=b15b277a8ccb6ea0be2cc365f6be4a4dc53f36f7c69b2f073dd3ecb2f1d611a1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:08:48.746623"
+    },
+    {
+      "topic": "new york yankees",
+      "title": "New York Yankees Scores, Stats and Highlights - ESPN",
+      "content": "Visit ESPN for New York Yankees live scores, video highlights, and latest news. Find standings and the full 2026 season schedule.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.espn.com%2Fmlb%2Fteam%2F_%2Fname%2Fnyy%2Fnew%2Dyork%2Dyankees&rut=7d6a71a5ca2b78d7b8d2638acff6f5d617a945a5862953806831143a93b7c0d2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:08:48.746649"
+    },
+    {
+      "topic": "yangtze river",
+      "title": "Yangtze River - Tripadvisor Official Site",
+      "content": "Read reviews and view photos. Book a Yangtze River tour! Tripadvisor Official Site",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dtripadvisor.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DPWHXDXY5TtinN9c8RIyRHNdtkGUlUrURXixn1tw8BPdzdhm_4IPdCr7aGFgJQpk0flK8SJ1gMehUcHcfZaNS5ppfogdMKUQRluF0tEZFARlG%252Dv8s03cT3WU8vqokhauJ7GgkC_vmed%252DlxRtEHuW1qUbuvMyWX9RiD4Uv2aZv%252D6U.QIXHm70qg9aG15A_cIVOew%26rut%3D9dcdca3758dd2c8ae4e29ca431be9b4c04e3dee0cac7fb7be17a61d6c7e3d3a6%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8ddysOwhYECMhq_Vj8SzEjDVUCUzbH4KcwA3l19me2ZR0wa_MhnyRT3iGdjfypmsxJh%252D_XlEgqTvk9aiE5kAiIOuaZhu_5C8Y2kSseMjKJtZtuOAsYhBYSxEpwOQEC4Jm%252Df5urivhxNouWZy39hZjZHrzuJ9ZtEX7xEf1lY1dy7OAoy4Q5BzW0yf560pSATqR9JWR8HAklfvOcrBQ_ZODGpUxkww%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cudHJpcGFkdmlzb3IuY29tJTJmQXR0cmFjdGlvbl9Qcm9kdWN0cyUzZmdlbyUzZDExNTI0MjYlMjZkZXRhaWwlM2QzMjEwMTglMjZtJTNkMTEwMDQlMjZzdXBjbSUzZDI2ODI2MDYwMSUyNnN1cGFnJTNkMTE3ODY3NjYzMjI1OTEyNiUyNnN1cHRpJTNka3dkLTczNjY3MzMxMTc5MjQ4JTNhbG9jLTE5MCUyNnN1cGFpJTNkNzM2Njc1NDE3NzYyOTElMjZzdXBkdiUzZGMlMjZzdXBudCUzZHMlMjZzdXBrdyUzZHlhbmd0emUlMjUyMHJpdmVyJTI2bXNjbGtpZCUzZDc5Njk1ZWExYzdiZTFiNjJlMGU5MzdmODRlNmY1MzAy%2526rlid%253D79695ea1c7be1b62e0e937f84e6f5302%26vqd%3D4%2D80640891935847053601097777873090331557%26iurl%3D%257B1%257DIG%253D628D19DBAA7D4B908B546A3D5F4E3B2C%2526CID%253D2CDC39B889596DBE0DAC2F6E88156C6F%2526ID%253DDevEx%252C5045.1&rut=fe62f34900ed23e36b642d9e8bd345c783e94dec81e50a3a9a4d653c2b0cc788",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:27:46.492414"
+    },
+    {
+      "topic": "yangtze river",
+      "title": "Yangtze - Wikipedia",
+      "content": "The Yangtze Delta generates as much as 20% of China's GDP, and the Three Gorges Dam on the Yangtze is the largest hydro-electric power station in the world. [11][12] In mid-2014, the Chinese government announced it was building a multi-tier transport network, comprising railways, roads and airports to create a new economic belt alongside the river.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FYangtze&rut=4c549ed9e3e477dad2aeeedd1c84a305b996d122b081bcf34418944367236643",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:27:46.492497"
+    },
+    {
+      "topic": "yangtze river",
+      "title": "Yangtze River | Location, Map, Flood, & Facts | Britannica",
+      "content": "Yangtze River (Chang Jiang), longest river in both China and Asia and third longest river in the world, with a length of 3,915 miles (6,300 km). From its source on the Plateau of Tibet to its mouth on the East China Sea, the river traverses or serves as the border between 10 provinces or regions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fplace%2FYangtze%2DRiver&rut=274bf13cd3f7a33aad115ce5f651b4cf545213b5645f81baf9cd67074e25ce7c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:27:46.492563"
+    },
+    {
+      "topic": "yangtze river",
+      "title": "10 Key Yangtze River Facts: 6,300 km Long, 3rd Longest in the World",
+      "content": "Learn 10 key facts about Yangtze River, the longest river in Asia and the third longest in the world. Discover its source, drainage basin, major cities, cruise route, Three Gorges Dam and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.travelchinaguide.com%2Friver%2Fyangtze%2F&rut=f5c56e3e11527e1d590f7530e93f085f68d01a7af7a870cc3c006bfee5c5800e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:27:46.492625"
+    },
+    {
+      "topic": "yangtze river",
+      "title": "Yangtze River - New World Encyclopedia",
+      "content": "The Yangtze River or Chang Jiang (Simplified Chinese: \u957f \u6c5f; Traditional Chinese: \u9577 \u6c5f; pinyin: Ch\u00e1ng Ji\u0101ng) is the longest river in Asia and the third longest in the world, after the Nile in Africa, and the Amazon in South America. The river is about 3,964 miles (6,380 km) long and flows from its source in a glacier in Qinghai Province, eastwards into the East China Sea at Shanghai ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.newworldencyclopedia.org%2Fentry%2FYangtze_River&rut=ac68542198ba299922210cafe437ab26e0933ac9b74024362a0463d861a0513a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:27:46.493127"
     }
   ],
-  "last_updated": "2026-01-01T20:01:51.743045"
+  "last_updated": "2026-01-03T13:27:46.497372"
 }

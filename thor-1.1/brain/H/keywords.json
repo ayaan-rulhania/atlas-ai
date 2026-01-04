@@ -99,7 +99,25 @@
     "hegel",
     "husserl",
     "heidegger",
-    "haneda"
+    "haneda",
+    "hexagonal",
+    "hieroglyphics",
+    "hellenistic",
+    "han",
+    "hundred",
+    "holy",
+    "holocaust",
+    "hitler",
+    "harbor",
+    "hiroshima",
+    "hurricane",
+    "hip",
+    "hop",
+    "heavy",
+    "hemingway",
+    "haruki",
+    "hedge",
+    "habitat"
   ],
   "knowledge": [
     {
@@ -2861,7 +2879,1897 @@
       "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FStatistical_hypothesis_test&rut=184dccd998a86d6d9d1eb20dfe9c7993ead0173c2357939256b2152b3c1218b2",
       "confidence": 0.7,
       "learned_at": "2026-01-02T11:46:09.240531"
+    },
+    {
+      "topic": "heap data structure",
+      "title": "Heap Data Structure - Programiz",
+      "content": "Learn what a heap is, how to create and manipulate it, and how to use it for priority queue and heap sort. See Python, Java, and C/C++ codes for heapify, insert, delete, peek, and extract operations.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.programiz.com%2Fdsa%2Fheap%2Ddata%2Dstructure&rut=e137b9ff9ac068b1e993da122a889f93c122ea24b7d4acdc38dcec2ef759c2ef",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:45:47.712597"
+    },
+    {
+      "topic": "heap data structure",
+      "title": "What is Heap Data Structure? Types, Examples, Full Guide",
+      "content": "Understand what is a heap data structure, its types, examples, and operations in this complete tutorial. Learn everything you need to know about heaps!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.wscubetech.com%2Fresources%2Fdsa%2Fheap%2Ddata%2Dstructure&rut=1cf9fd23fd2cd2160573bdcbd7a2d79c49ccf2c5c93bb1c606c475689a9c567b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:45:47.712657"
+    },
+    {
+      "topic": "hash table",
+      "title": "Hash Table Data Structure - Programiz",
+      "content": "Learn how to store and retrieve key-value pairs using hashing, collision resolution and good hash functions. See examples in Python, Java and C/C++.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.programiz.com%2Fdsa%2Fhash%2Dtable&rut=0ab8ad601031c3e6cc048ed6834c607325cf523f149d4c27b9d8cbf57c54a8ed",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:46:19.139682"
+    },
+    {
+      "topic": "hash table",
+      "title": "Hash Table Data structure - Online Tutorials Library",
+      "content": "Learn how to use hash table to store data in an associative manner with fast insertion and search operations. See examples of hashing, linear probing, and basic operations in C, C++, and Java.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.tutorialspoint.com%2Fdata_structures_algorithms%2Fhash_data_structure.htm&rut=385a2133b7bea7793692ae245cf8c5bef4d29d586a53a34f7ce5606e17a51e91",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:46:19.139725"
+    },
+    {
+      "topic": "heap sort",
+      "title": "Heapsort - Algorithm, Source Code, Time Complexity",
+      "content": "How does Heapsort work? With illustrations and source code. How to determine its time complexity (without complicated maths)?",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.happycoders.eu%2Falgorithms%2Fheapsort%2F&rut=d1839329ad53fdff28cbab9b2ac2ebd0b3e1bb543a76e7d4d9ba0be121395bfe",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T17:51:54.280221"
+    },
+    {
+      "topic": "haskell programming",
+      "title": "Haskell Programming Books - AbeBooks",
+      "content": "From trusted sellers around the world. Buy what you love to read. Find millions of books, textbooks, rare and collectible items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dabebooks.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DZeQS%252D8IkOGhX9s2x_jXMjO0NiLKwYGxTW62l0oNTr0ryeFuGabta0liWk_lElp0Ni719ECu_8eP07QEHCs3GAg6NnpYtHNUhwOMwm6yAccsVGgEi3Y2pEI_4XEE1hUnNoGyBNov2YDe_cN0UQi4etwyE0RqVcAyjYzxoOFtPLPg.hp1oTgSnvT2aIBqVt_m%252Dag%26rut%3D57f600f0ccf9d702a2fe3f26274a5e5a7b83f227688a4e78c4153ffed1cd6309%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8IWmZS8HJtzq6kN5BdRkjATVUCUznAcJzgfWFpjq66PtETqraBIkINDtWY0Ya5vGbweItI5BisCG5a1H%252DtBOx4EzuZ_hdwi1kifjEje%252D5igNWFo4LqUCvTZDzSR8onSL_HsaqypwOiiey5IxwkfdDM3Cz%252D5eBcEMeRYqqgKdxmNjBNcuVKJzDPTYqDGvN9TQzRHIdF6bqpwigFuyDehBxdqZH5IQ%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYWJlYm9va3MuY29tJTJmYm9vay1zZWFyY2glMmZ0aXRsZSUyZnByb2dyYW1taW5nLWluLWhhc2tlbGwlMmYlM2ZyZWZfJTNkcHNfbXNfMjY3NjkxNzYxJTI2Y21fbW1jJTNkbXNuLV8tY29tdXNfZHNhLV8tbmFhLV8tbmFhJTI2bXNjbGtpZCUzZGFlYmE2N2UzYmY4ZTFjMjIxZjk3MGViYmMxNjUyODVi%2526rlid%253Daeba67e3bf8e1c221f970ebbc165285b%26vqd%3D4%2D172404123243344226002547275765242382219%26iurl%3D%257B1%257DIG%253D929B9B2F495A4650A87585D0A9E9B654%2526CID%253D2902272EC28A6359082831F8C3066214%2526ID%253DDevEx%252C5046.1&rut=df2a1a9c54865d1e8c6262d3275d5062fbdc6c0b18b6fe3e53acc62b116542f2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T18:29:00.257114"
+    },
+    {
+      "topic": "haskell programming",
+      "title": "Shop haskell programming books - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on haskell programming books at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DICievCfvXRbZOWy5VeBfFtvoPLh8Ms7fwlp%252D5WPp2rfMu9vJwRcniB9AjtzrvzNOSxEqhjZTxBLNjIeAErIzM8ORQ5_mSYa8%252D9d_qRYZXCqNbJENpshVF4mi4s7diI_D7fNMZmtv2LgntO8MBRFPmwjSG0poztSm0npLX2%252Ddw6Q.0jbGoN3xP%252DYcTfcI7DyPSQ%26rut%3Dc37360fe901641d532d35252b473c611c66ae3d0d00437f2a41f8ac12e00284e%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De84NlZaOPVrYojVcnM9u5EITVUCUw1hgEJlD8blGEbnw1BQgidZpdkDdHr2JIu0z76Jok2i5CxZDRXtvswCOKTSZ%252D9rP8g23WiGOAhBwlsv2EIJBYAoM5lNcw%252Dkax_n2WosXbPDOTltjiIpySzO0EGjIn7BlNZ5fSzG9zxmfjap%252DjkuTyvcKaNiREqXGXtV7kOBaMZFRwpHUaUu4Jpp_Lpghw1jG4%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGhhc2tlbGwlMmJwcm9ncmFtbWluZyUyYmJvb2tzJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfMmlpN3hjYjc1cl9iJTI2YWRncnBpZCUzZDEyMjU5NTY1MzMyMjg1NjElMjZodmFkaWQlM2Q3NjYyMjQxNjQ5MzgyNCUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGIlMjZodmJtdCUzZGJiJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2MjM4JTI2aHZ0YXJnaWQlM2Rrd2QtNzY2MjI2MTc3ODc1NzklM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDIxMTQ3XzEzNDI3MDY4JTI2bWNpZCUzZDdiNzkzYjMzOGRkYjMxNGQ5MjE5MWU3NzNmYWQwNGVjJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2RjMTVmYjMwMjVmM2MxZGNlN2NlMWRhNWEyMWQ3YmI2OA%2526rlid%253Dc15fb3025f3c1dce7ce1da5a21d7bb68%26vqd%3D4%2D226502031074603715874567807247315662857%26iurl%3D%257B1%257DIG%253D929B9B2F495A4650A87585D0A9E9B654%2526CID%253D2902272EC28A6359082831F8C3066214%2526ID%253DDevEx%252C5050.1&rut=d8a3322f04199312eaea8ecccbb185db05e5924f2fce82f90bdce39f5fee6b0b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T18:29:00.257221"
+    },
+    {
+      "topic": "hexagonal architecture",
+      "title": "Hexagonal architecture (software) - Wikipedia",
+      "content": "Learn about the hexagonal architecture, an architectural pattern for software design that aims at creating loosely coupled components with ports and adapters. Compare it with other variants such as onion and clean architecture.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHexagonal_architecture_(software)&rut=3cc6c62de5aaa128f0c7b06c5e5c76fa89780ca4020242b0b567ee74fa72cac3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:11:36.638047"
+    },
+    {
+      "topic": "hexagonal architecture",
+      "title": "Hexagonal Architecture: A Complete Guide to Building Flexible and ...",
+      "content": "Hexagonal Architecture, also known as Ports and Adapters pattern, is a software design approach that creates loosely coupled, testable, and maintainable applications. If you've ever struggled with tangled dependencies or found it difficult to swap out frameworks, this architecture might be your solution. What is Hexagonal Architecture?",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fdev.to%2Fsizan_mahmud0_e7c3fd0cb68%2Fhexagonal%2Darchitecture%2Da%2Dcomplete%2Dguide%2Dto%2Dbuilding%2Dflexible%2Dand%2Dtestable%2Dapplications%2Dk1l&rut=4f8e23a3a5ecaaa108f4e37f395b43fe281d7c6fb65a3bafcd7550b329ce42e5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:11:36.638176"
+    },
+    {
+      "topic": "hexagonal architecture",
+      "title": "Hexagonal Architecture - System Design - GeeksforGeeks",
+      "content": "Hexagonal Architecture, also known as Ports and Adapters Architecture, is a design pattern used in system development. It focuses on making software flexible and adaptable by separating the core logic from external dependencies, like databases or user interfaces. In this approach, the core system communicates with the outside world through well-defined \"ports\" interfaces, while \"adapters ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fsystem%2Ddesign%2Fhexagonal%2Darchitecture%2Dsystem%2Ddesign%2F&rut=575293985c3f9eb064fda4c8c104166d0a1a48ba6adf0502083ecebeb421bcae",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:11:36.638258"
+    },
+    {
+      "topic": "hexagonal architecture",
+      "title": "Hexagonal architecture pattern - AWS Prescriptive Guidance",
+      "content": "The hexagonal architecture pattern enables you to design your systems and applications by purpose rather than by technology. This strategy results in easily exchangeable application components such as databases, UX, and service components.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fdocs.aws.amazon.com%2Fprescriptive%2Dguidance%2Flatest%2Fcloud%2Ddesign%2Dpatterns%2Fhexagonal%2Darchitecture.html&rut=6ca5112c570af13783450e4e31983e026f76a295358bb219692a47003f43a761",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:11:36.638328"
+    },
+    {
+      "topic": "hexagonal architecture",
+      "title": "Hexagonal Architecture (Ports and Adapters) Explained: A ... - Medium",
+      "content": "Learn Hexagonal Architecture (Ports and Adapters) with a clear breakdown of core principles, real-world Java examples, and tips for clean, testable microservices. Perfect for developers looking to ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmedium.com%2F%40tejasrawat_82721%2Fhexagonal%2Darchitecture%2Dports%2Dand%2Dadapters%2Dexplained%2Da%2Dpractical%2Dguide%2Dfrom%2Dconcept%2Dto%2Dcode%2D7903053f38f4&rut=afd8177f7cd0035e51f6691cd2013d7eea714cd9df186695caec526bc7fb8aa5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:11:36.638398"
+    },
+    {
+      "topic": "http protocol",
+      "title": "What is HTTP - W3Schools",
+      "content": "Learn the basics of HTTP, the protocol that enables communication between web clients and servers. Find out how HTTP requests and responses work, and how to use XHR and AJAX for data transfer.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.w3schools.com%2Fwhatis%2Fwhatis_http.asp&rut=8cbed00fab904f09d9562b715b2f9bcd369d17edc412817ac0d09259c1699a91",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:14:51.241466"
+    },
+    {
+      "topic": "https protocol",
+      "title": "The HTTPS-Only Standard - Introduction to HTTPS",
+      "content": "Learn what HTTPS is and how it protects web services and users from various attacks and threats. Find answers to common questions about HTTPS, HTTP/2, SEO, referrer policy, and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fhttps.cio.gov%2Ffaq%2F&rut=747d3efe6412632c0cb40ddd0f6fe949e24f5bf893c96b813f4b142a47a51075",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:15:55.143374"
+    },
+    {
+      "topic": "apache hadoop",
+      "title": "Introduction to Apache Hadoop - Baeldung",
+      "content": "Learn what Apache Hadoop is, how it works, and how to set up and run it on Linux. Explore its core components, such as HDFS, YARN, and MapReduce, and see examples of basic operations.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.baeldung.com%2Fapache%2Dhadoop%2Dintroduction&rut=262d2be47f9cf66532e09205a1bc8a5f2bebf74cd9fd74966aca330da88524f1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T21:57:42.362155"
+    },
+    {
+      "topic": "rocket report: russia pledges quick fix for soyuz launch pad; ariane 6 aims high",
+      "title": "Rocket Report: Russia pledges quick fix for Soyuz launch pad; Ariane 6 ...",
+      "content": "305 and counting Rocket Report: Russia pledges quick fix for Soyuz launch pad; Ariane 6 aims high South Korean rocket startup Innospace is poised to debut a new nano-launcher.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Farstechnica.com%2Fspace%2F2025%2F12%2Frocket%2Dreport%2Drussia%2Dpledges%2Dquick%2Dfix%2Dfor%2Dsoyuz%2Dlaunch%2Dpad%2Dariane%2D6%2Daims%2Dhigh%2F&rut=4db8001da7f8dba197c459eb98594fddfccedd045fca20f139230eacaee5d6cc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T23:47:52.915736"
+    },
+    {
+      "topic": "rocket report: russia pledges quick fix for soyuz launch pad; ariane 6 aims high",
+      "title": "Rocket Report Russia Pledges Quick Fix For - Rocket Report:",
+      "content": "rocket report russia pledges quick fix for In a significant development for the space industry, Russia has announced plans to expedite repairs to its Soyuz launch pad, while the European Space Agency's Ariane 6 rocket is set to make ambitious strides in the coming months.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.hashe.com%2Ftech%2Dnews%2Frocket%2Dreport%2Drussia%2Dpledges%2Dquick%2Dfix%2Dfor%2Dsoyuz%2Dlaunch%2Dpad%2Dariane%2D6%2Daims%2F&rut=a68b178ae17b2fa3097045780cfe4e530cf3e6ffe65756dfee72b1b47b5eda03",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T23:47:52.915851"
+    },
+    {
+      "topic": "rocket report: russia pledges quick fix for soyuz launch pad; ariane 6 aims high",
+      "title": "Rocket Report: Russia Accelerates Soyuz Launch Pad Fix; Ariane 6 ...",
+      "content": "Ariane 6 completed four successful flights this year, including a recent mission carrying the Galileo navigation constellation. All launches used the Ariane 62 configuration; the more powerful Ariane 64 is slated for early 2026.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fnews.tosunkaya.com%2Frocket%2Dreport%2Drussia%2Daccelerates%2Dsoyuz%2Dlaunch%2Dpad%2Dfix%2Dariane%2D6%2Dtargets%2Dambitious%2Dlaunch%2Dgoals%2F&rut=0c359032d9e7e99bc42dc12f27891720e6b5ac704306c6a2f66e398e3a32d393",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T23:47:52.915916"
+    },
+    {
+      "topic": "rocket report: russia pledges quick fix for soyuz launch pad; ariane 6 aims high",
+      "title": "Rocket Report: Russia pledges quick fix for Soyuz launch pad; Ariane 6 ...",
+      "content": "China's Long March 12A may also debut by year-end. Rocket Lab launched four small satellites for a government-funded mission testing DiskSats, a new flat, stackable satellite design co-developed by NASA and the US Space Force to optimize rideshare launches and enhance power and payload capacity.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fcashwalklabs.io%2Fnews%2Frocket%2Dreport%2Drussia%2Dpledges%2Dquick%2Dfix%2Dfor%2Dsoyuz%2Dlaunch%2Dpad%2Dariane%2D6%2Daims%2Dhigh&rut=b6e0c1cebe0f091f558d58c1e68c1432572b7bd4b8c3119d141190e564af3efd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T23:47:52.915978"
+    },
+    {
+      "topic": "rocket report: russia pledges quick fix for soyuz launch pad; ariane 6 aims high",
+      "title": "Russia says damaged launch pad crucial to its space programme will be ...",
+      "content": "Russia's space agency said on Tuesday that work was underway to repair a damaged launch pad at the Baikonur cosmodrome in Kazakhstan that underpins its space programme and that the facility should ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.reuters.com%2Fscience%2Frussia%2Dsays%2Ddamaged%2Dlaunch%2Dpad%2Dcrucial%2Dits%2Dspace%2Dprogramme%2Dwill%2Dbe%2Dfixed%2Dby%2D2025%2D12%2D16%2F&rut=ec9705e05b17c95ab35558a373a56d66af31baf4a2978f660943d8967eb6ed7b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T23:47:52.916039"
+    },
+    {
+      "topic": "html",
+      "title": "HTML",
+      "content": "Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/HTML",
+      "confidence": 0.9,
+      "learned_at": "2026-01-03T01:38:05.443461"
+    },
+    {
+      "topic": "html",
+      "title": "Easiest HTML Website Builder - HTML Builder, Made Simple",
+      "content": "Create a beautiful HTML website with Wix. Start free, no credit card required. Build a beautiful HTML website with our intuitive drag and drop builder.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dwix.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DTJV6XKFiI1ueTGSyQu3HNE75exJWplprfv4foG%252DOSV4uBS0miql0pkUOn8cBmkFMGNBYGPeRrZDmhOYvhOp4HItITCcfs_jD05S5CHFXD8mvLp5wz__tTBjwOZdotd5RqPbSAXB44BVdoYx6fXKmfAntw3NGLImCC7LIkQNtuB4.dLo07jA15qpD_vHRGtSUMw%26rut%3Da89117927ae5ce256b7b99bdbccc660c40f9adee085a1abca96047ef1093792c%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8IpvdYcFKvRo8XlEa3NsQ%252DjVUCUw61f74NzoHEqPaW3s34TSKQjDrlkuYumXAtSHln3aFun1Vh0IJNkBXzngr7fkRb%252DfqrGQv5tPrY5dTylk3zSlB4EdTxyH_h14_1iu%252DzB6sNd%252DBmcf98UxYIDm_yjhOw6wqhleNz4_yBffyUSraB7FkIDhM%252D7wx7Simfqbm2VrhCZYPJLlDq3aHCR8AOj4BRlU%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cud2l4LmNvbSUyZmxwLWVuJTJmd2Vic2l0ZS1idWlsZGVyJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkNTA2MjE0NzM5JTVlMTI2MDA0MTk4OTE2NDgzMiU1ZXNlYXJjaCUyNTIwLSUyNTIwYmluZyUyNTIwdXMlMjZleHBlcmltZW50X2lkJTNkaHRtbCUyNTIwY29kZSU1ZWUlNWUlNWUlMjZtc2Nsa2lkJTNkNWUxMTY1NmUxMmI1MTNjOWZiZjcwYzM2ZjFjODgzZTg%2526rlid%253D5e11656e12b513c9fbf70c36f1c883e8%26vqd%3D4%2D229660490261383134885310212002073422433%26iurl%3D%257B1%257DIG%253D65B9EEC0D64A497386C269874349D1B9%2526CID%253D2B72154FF4DE6A7C06BB0399F53A6BFD%2526ID%253DDevEx%252C5045.1&rut=5f528f17cb0375c15eed29092497fcb26875a2c48121f67e1386363c33785cdd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T01:38:06.146252"
+    },
+    {
+      "topic": "html",
+      "title": "HTMLPad: Code Made Easy - Quick HTML Code Editor",
+      "content": "The Best HTML Editor with a Twist. No Coding Skills Required. Try It Now! The only all-in-one HTML, CSS, JavaScript code editor for Windows.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dhtmlpad.net%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D%252DCvdXX9fFAa9zLqwD%252DQeH%252Dag4zSSWwz3NTdZrwBYXlvk_rjUJrm7voqj16Jm4JJbiT_QPO2EqNjYBP30X%252DqUQsYZUiJoe2xGXFmjodqYNzDaK_2CWYjeeyHiVlxiSHdQ1UVQ5gXHizXtxEFLzn_JncU_fMj57xn1x73qyJ0R2gs.AMLSHg47KV8u3VhMoYFTvw%26rut%3Ddc7f3652d5ad390ebaa7981b4d1f7f62a8d7611569439d10a3a5c1b1c9c90e41%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8iXn2p61WwY1iVHsVZIjuBjVUCUzSDcm%252DKjtjuavaBFhzPZFPDFwWuT_AJLYFl20ppAlUmsZ3qzZrZD_pTdxrgkL6WUqCkytAzBEKRcBwjvt7d%252DbZN41fpjdFEBAPp1GkT6R11eA_Qg8P8tXPevxRlMLj_SFfk6MBNN5bulVt3wtp_S9WCyX912hgBGGZHRrzbgvu7p029G%252DhMMki2wpSm1bHhs8%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuaHRtbHBhZC5uZXQlMmYlM2Ztc2Nsa2lkJTNkNzU1NjAxOGIyNGI5MTdiYWQ1MWM2OGQzYzdjNDlkMjA%2526rlid%253D7556018b24b917bad51c68d3c7c49d20%26vqd%3D4%2D231033363232120041456193066715176577974%26iurl%3D%257B1%257DIG%253D65B9EEC0D64A497386C269874349D1B9%2526CID%253D2B72154FF4DE6A7C06BB0399F53A6BFD%2526ID%253DDevEx%252C5050.1&rut=c49ffd2b526f03a6394772e716eac901f917c153321aa9959bf108313e20c70e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T01:38:06.146334"
+    },
+    {
+      "topic": "html",
+      "title": "HTML Tutorial - W3Schools",
+      "content": "Learn HTML HTML is the standard markup language for Web pages. With HTML you can create your own Website. HTML is easy to learn - You will enjoy it!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.w3schools.com%2Fhtml%2F&rut=97c28bb00be64c13bb296ffdb96a07ddf1f83b482f71b232bd7d1cc11da0ae30",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T01:38:06.146396"
+    },
+    {
+      "topic": "html",
+      "title": "HTML: HyperText Markup Language - MDN",
+      "content": "HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fdeveloper.mozilla.org%2Fen%2DUS%2Fdocs%2FWeb%2FHTML&rut=f6b318dd31d5bccdaea9b60dda2c81a293de00a945d252a5bd3387a3082046f4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T01:38:06.146458"
+    },
+    {
+      "topic": "html",
+      "title": "HTML - Wikipedia",
+      "content": "HTML (Hypertext Markup Language) is the standard markup language for creating web pages and web applications, defining the structure and layout of content.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHtml&rut=63e40b154f0df86464b608294b1869fc3cdb93445229b49716b897cf255c734d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T01:38:06.146515"
+    },
+    {
+      "topic": "hash function",
+      "title": "Hash Function -- from Wolfram MathWorld",
+      "content": "A hash function is a mapping from a large set to a smaller set that is not reversible. Learn how hash functions are used for database lookups, checksums, cryptography and more with Wolfram MathWorld.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmathworld.wolfram.com%2FHashFunction.html&rut=ddd31e7118f442aca03ea4440a5b9fe49e58b67a51fad82f141092f289a0312e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T08:59:18.505618"
+    },
+    {
+      "topic": "world history",
+      "title": "Shop history story of the world - Amazon.com Official Site",
+      "content": "Find deals and low prices on history story of the world at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Dq8SmiDanT2MwpaoQQH6HYBc3opwaUT4hNcjxek67m78E%252DqzFRH%252DSutqonwBxC_2K_PnebfyDcKokbAugmAjiijuaA8BPWjVLvRfcvVwhWiEjSughv4d9smlv_S33VUBP_YQqZKGC56Tv8AMiAzP4C1XYm6V_zdCqVCA_ZPxIVUk.D5waKZqOZxuVpGzfsXbgtA%26rut%3D8ec79e12f511b3bac2141c2bf02d9f96a14aa9f37a0fbd13f6707d54bebae1e5%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8kwY%252DopRVH8gFcnmtpcUfGTVUCUwkct%252DuDPDxcO3UyK_JUgmRhemOgbPbbS5zGPBhVwQiT6ko7TjK4L_tL2YvW%252DNNvhNGgIU8PNmI4K5jwYnz8YnOpPXvEeyicRO0tPJHNUYJcrESBJBGoFGKlnw5MJh5Fp0caogvdqpsVPr2xgMGlT5p78sDDpCbhZu1JDazuy3OFo6rK9TF3hqLpr5Dy00Bomo%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGhpc3RvcnklMmJzdG9yeSUyYm9mJTJidGhlJTJid29ybGQlMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF83ZnBnMGo2MjYyX3AlMjZhZGdycGlkJTNkMTIzMTQ1NDEwMzA4OTI3MCUyNmh2YWRpZCUzZDc2OTY2MDE1MTU5MzQyJTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkcCUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY1MDIlMjZodnRhcmdpZCUzZGt3ZC03Njk2NjIzOTcxNDY0MyUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkMTA5MjBfMTM2MDA2MDMlMjZtY2lkJTNkOTdmZGMyOWUyZTIzMzA3Mzk1MjEwMDJiY2RjZmQ4ZjIlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZDk0ZmViZmNhMzg4YjFhNTczODExZDY5MzZhY2M0MGM4%2526rlid%253D94febfca388b1a573811d6936acc40c8%26vqd%3D4%2D328842137731944537343315839214969198539%26iurl%3D%257B1%257DIG%253D2A95394817714E38A5F5A81F0EE482FA%2526CID%253D3BF6CAA06F30610325E6DC766EBC6045%2526ID%253DDevEx%252C5045.1&rut=d80d50bc3388297f3cb1e824f3ec3513c148128b799a27d398a4b3ad933c287d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:30:47.554180"
+    },
+    {
+      "topic": "world history",
+      "title": "Online World History Course - An Inspiring View of History",
+      "content": "Explore centuries of world history with fantastic videos from Dave Raymond. A complete Christian homeschool curriculum\u201427 lessons, 47 hours of videos.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dcompassclassroom.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Dr31NRNqseB56VaEVSPxIRvLJDARhoQcMva7w6LIxuJ7pxLQWHty05JHzjKoVwLAJEby34TWQMYd735TgZuzC1l9upT_tlzVPUBcjXGcvGEL3JYO5yy0JdXcYWFv4BW4aX6JBpTEsDipe9nstS7Gf%252DdFh4PWS0R_gi9fjjbQHHw8.QDU4QpNu58D5O5JjBHLL6g%26rut%3Dad862ecf8fe894859b8be53f5126d47e6b07469da84c98f7c92023612f5d354a%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8R9g4%252D%252DnT0Q%252DGFxHjn3yraDVUCUyEVrL9ZtYILsBMZCuO6t63jZKArL_Z3p9c1yp6CmRDGx8pTlkczg7PxRfCihG4mUzU_ntmc_SXIdUfhAZL37NTUNveyeV8W15muM4YtKHOqFyfozMakYUa1QPPwVKcyUAtTzQde5hCRXLDF7dOQzTAMivcLHzWqt3W18%252D3h_hM%252D28afzenDwrekNAAw54oi4s%2526u%253DaHR0cHMlM2ElMmYlMmZjb21wYXNzY2xhc3Nyb29tLmNvbSUyZnNob3AlMmZwcm9kdWN0JTJmbW9kZXJuaXR5LXdvcmxkLWhpc3RvcnktY3VycmljdWx1bSUyZiUzZm1zY2xraWQlM2RlZjJhODY5Nzc1MmQxYzY4NjE2MmVmY2UyNzZhYzMwNCUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZFNlYXJjaCUyNTIwLSUyNTIwTW9kZXJuaXR5JTI1MjAoMiUyNTJGMjQpJTI2dXRtX3Rlcm0lM2R2aWRlby1iYXNlZCUyNTIwaGlzdG9yeSUyNTIwY3VycmljdWx1bSUyNnV0bV9jb250ZW50JTNkTW9kZXJuaXR5JTI1MjBTZWFyY2g%2526rlid%253Def2a8697752d1c686162efce276ac304%26vqd%3D4%2D122517380171911767651550464494943415247%26iurl%3D%257B1%257DIG%253D2A95394817714E38A5F5A81F0EE482FA%2526CID%253D3BF6CAA06F30610325E6DC766EBC6045%2526ID%253DDevEx%252C5049.1&rut=f0cfc9023899e1a53956cc3e75f87ef203c5dd950685397b1aab644f735dc859",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:30:47.554456"
+    },
+    {
+      "topic": "world history",
+      "title": "World History Encyclopedia",
+      "content": "The free online history encyclopedia with fact-checked articles, images, videos, maps, timelines and more; operated as a non-profit organization.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.worldhistory.org%2F&rut=4304f9161b863954aaf23065c94b25dc60f621a12fdcd69ee1959ad4d124bfcd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:30:47.554521"
+    },
+    {
+      "topic": "world history",
+      "title": "World history | Definition, Theories, Historians, & Facts | Britannica",
+      "content": "World history, branch of history concerned with the study of historical phenomena that transcend national, regional, or cultural boundaries or distinctions between peoples or with the study of history from a global, comparative, or cross-cultural perspective. Although the academic study of world",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fworld%2Dhistory&rut=d923fbc89553b0aa77f95ceb866792ed20530057663ddbd3925e26e27b81d73c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:30:47.554587"
+    },
+    {
+      "topic": "world history",
+      "title": "History - Wikipedia",
+      "content": "History is a broad discipline encompassing many branches. Some focus on specific time periods, such as ancient history, while others concentrate on particular geographic regions, such as the history of Africa. Thematic categorizations include political history, military history, social history, and economic history.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHistory&rut=0f98550ebedfe58c6faa997daa68ad1387916ec31c9ed7974adbc133abf41508",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:30:47.554661"
+    },
+    {
+      "topic": "ancient history",
+      "title": "Ancient Civilizations - What is Ancient History?",
+      "content": "Buy Ancient History Definition, Civilizations & Timeline. Shop Our Wide Selection of Courses Online Today!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstudy.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DtA2MubTEN21Gf4BPVNH%252D%252DnhPkRvay2_W0ZpIxV5ecHB8PILG1bC3Dj2QAPCpMQDsoViMBRmLVhIGxJt1EWENrWB2P_7CuSvtBDNt2bDSAu8QyOi27q6%252D5BrzDEopGu7RnWfjZw6TRCyyx35%252DRENlVHtlN7BVU%252DRzRreDwfqItKA.MN7h9KRZ1MYVkzrFzGQinA%26rut%3D6dbd4a2c5905938b8a60d0b7b67eb0e6d42f212186d6b39e7e2b195c0a2cd84c%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8uN_JzzBiBqip9QNt9pDxITVUCUw0WKQESD9VEk1soJGXRN8qbFV9Wh4tjRc3xZ0Q3Y_8YjqUy4iDfuRwidezkPrlnYc5TlC1XHFVr7r9etkK0X%252DjEVmuKtIlLTlOCZ_gyi9ROmwJmv9YhpGODDIQCoxhuLClZQ7u3GCLoF7_Trl4_Vq6PnaRqoozru54DjTrXF2V0nX5pVG9QI0cMzHxQ2%252D0ujc%2526u%253DaHR0cHMlM2ElMmYlMmZzdHVkeS5jb20lMmZidXklMmZhY2FkZW15JTJmbGVzc29uJTJmYW5jaWVudC1oaXN0b3J5LW92ZXJ2aWV3LWNpdmlsaXphdGlvbnMtZXZlbnRzLmh0bWwlM2ZzcmMlM2RwcGNfYmluZ19ub25icmFuZCUyNnJjbnR4dCUzZGF3cyUyNmNydCUzZCUyNmt3ZCUzZFNFTy1QUEMtQlVZJTI2a3dpZCUzZGRhdC0yMzI5MDQwNTA1ODg2OTQwJTNhbG9jLTE5MCUyNmFnaWQlM2QxMjM1ODUxMzAyNTk2NzQ2JTI2bXQlM2RiJTI2ZGV2aWNlJTNkYyUyNm5ldHdvcmslM2RzJTI2X2NhbXBhaWduJTNkU2VvUFBDJTI2bXNjbGtpZCUzZDZiZTFiODQ4ZDExZjFhYTlkOTZjZDExMTgzNzllMTFh%2526rlid%253D6be1b848d11f1aa9d96cd1118379e11a%26vqd%3D4%2D211576217826571978735694199405926333007%26iurl%3D%257B1%257DIG%253DF43106DE18BC48E987D8232E36CB4AF2%2526CID%253D213D82D6639669AD1885940062016896%2526ID%253DDevEx%252C5045.1&rut=d8d478caa854542b7a1f54bcf636e6048d1b62e62cf2112233b4d732069a7d2f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:31:19.266464"
+    },
+    {
+      "topic": "ancient history",
+      "title": "Shop ancient rome a history - Amazon.com Official Site",
+      "content": "Find deals and low prices on ancient rome a history at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DKB4bRz7bGOSbYVHxNbY8zaFcBEMkQh4pODmbSMabggSV4Y%252DzTH5cEjfMxkjfkR57KzBbMTxp12dz2Tcv2s5TiZt3eT2c86EwSpiiEj4ivQUutkjpiRsSj88hbb8NPoZhStmWhbC_4J7zk1ESxlj0vl6CMPhws0X5gKaaRcAsOLY.Q6mC7xgyytEC3T%252DnabCccA%26rut%3D5e8a9707352da999a97f7602500fc0f381febb2bc483913d517e9a6daf3da5e5%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8q288y_8LfV1XF_mYU4gOsjVUCUwZ8xgwVjApdGtQTJ2g_xf2tYzKGb%252D0q1Uo2wGoWFJulIIaGgicWpIb9Z5qh_cxBCH3LecErG_KBFQFyIsBH8a%252Dl_172dOO7vsTdAe9Yov61aJ5FcaE%252DdRMbKfCX9NmUTaAAdOmBfZ7nBe_ClM91N4WGoF8eknPOG9pefAAaK%252DUCEhHgj0UTyl6aZcDCkCs58c%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGFuY2llbnQlMmJyb21lJTJiYSUyYmhpc3RvcnklMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF81YXBvbjAzMmF6X3AlMjZhZGdycGlkJTNkMTIzNDc1MjYxOTY0NzI3MyUyNmh2YWRpZCUzZDc3MTcyMTcxNzQ4OTEyJTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkcCUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODc0MjIlMjZodnRhcmdpZCUzZGt3ZC03NzE3MjM2OTc3Mzg3NyUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkMTU5M18xMzU4NjkwOCUyNm1jaWQlM2Q4ZDJkZjkwYWVjMmEzMGU2YjdiODg3YmRiNDQ3Y2EwZiUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkYmRlODM2Yzc4MTU4MTA0NDE5ZWY1ZjllZDMzZTg4Yzg%2526rlid%253Dbde836c78158104419ef5f9ed33e88c8%26vqd%3D4%2D150882050036964439416564206360120178641%26iurl%3D%257B1%257DIG%253DF43106DE18BC48E987D8232E36CB4AF2%2526CID%253D213D82D6639669AD1885940062016896%2526ID%253DDevEx%252C5050.1&rut=0c87dfdf0de291926d1c57d5782f7b01bd4d5dcb1ab381a98c66ca68591b2ea5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:31:19.266592"
+    },
+    {
+      "topic": "ancient history",
+      "title": "Ancient history - Wikipedia",
+      "content": "Ancient history is a time period from the beginning of writing and recorded human history through late antiquity. The span of recorded history is roughly 5,000 years, beginning with the development of Sumerian cuneiform script. Ancient history covers all continents inhabited by humans in the period 3000 BC - AD 500, ending with the expansion of Islam in late antiquity. [1] The three-age ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAncient_history&rut=a478de33036bea96a926e2ac823e26f6d29289f955516bda0e4007d3521ef117",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:31:19.266668"
+    },
+    {
+      "topic": "ancient history",
+      "title": "The Ancient World Portal | Britannica",
+      "content": "Explore the history and culture of ancient civilizations, sites, people, and events from around the world. Learn about the ancient Middle East, Greece, Rome, China, Egypt, and more with Britannica articles and videos.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbrowse%2FAncient%2DWorld&rut=ae73d78dd087c20cabc0d508aff693ec8756a94fff25579a8559bc5428d9fed3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:31:19.266731"
+    },
+    {
+      "topic": "medieval history",
+      "title": "Shop medieval history iew - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on medieval history iew at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D8MNGez5f1aDLE7fVVURR0RDleFLT9WtxPF9tp9sVCE4YdzzG5562LYa60czr8t1%252D1Nsz3Oi8KELTtoCsvqg0LfwKHzi23_G3dqS4SyQ9jPD8%252D9NZIU1iTcgx3D7l_kZmGaEdF7UXoECVLGYA32RMEhmQr2Ew7J3Ow3IkeYElGas.4sTpWuWs1x3gTzLqn3cO%252DQ%26rut%3D0dc469679fdb736aa703c453f0c96b35ea65dbe8fc334e57d8415a2601c8eb73%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8jR%252DzaQaohRrPgWDg0jAphDVUCUwDgoQg2EPltSxjnlZt0uBiH%252DhKSacexFnNLg4PnSkOKRe6O5%252Dgemm%252D_4G97BYSSJlJNA6JQC4qnXtXGHtd_rzZWBTuExkouV6O%252DaMq8fRRiRX447PeXLyUSf1LRokAmxqkJ3yaEkxMI7uWwVrH7C5Z2A08BbDAu5qgnlA_Sjoh8dd7samjwr%252D0ZuT1oBwc_c0%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZG1lZGlldmFsJTJiaGlzdG9yeSUyYmlldyUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzg1dTZxMmFmMF9wJTI2YWRncnBpZCUzZDEyMjU5NTY1Mjc0OTUxMDUlMjZodmFkaWQlM2Q3NjYyMjQxNTkyOTk5MyUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg4NDgzJTI2aHZ0YXJnaWQlM2Rrd2QtNzY2MjI2MDQ5NTA5MzYlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDIzNjg2XzEzNTk5NTU0JTI2bWNpZCUzZDljNzYzZjIyNjBiMjM4NGU5NDYzMWQ0YThiZmI4ZjYzJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2RlMGZiMmZiM2U4OGMxYTVkNjljOTQ2ZWFiYTBhYjJmOA%2526rlid%253De0fb2fb3e88c1a5d69c946eaba0ab2f8%26vqd%3D4%2D161618736754578471038358578930420919951%26iurl%3D%257B1%257DIG%253D7604EFC1BBF34BA1B8E0B2E752A2C81C%2526CID%253D23AEB100A80260F11E6AA7D6A9E661A1%2526ID%253DDevEx%252C5045.1&rut=1ad7902b11c11ca36d778a09a6bfc0fe6489b1d519590c140bd23a9f373a3209",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:31:50.640046"
+    },
+    {
+      "topic": "medieval history",
+      "title": "The Middle Ages History - Medieval History",
+      "content": "Official site for Christianbook.com. AOP, Abeka, BJU Press & more. Homeschool Curriculum for less",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dchristianbook.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DiUDs0U6Ruub2YZXBBBzLr1_p1nKV_auUTChak4gYcW4LH19ZHGPYNuiZ%252DJZSwrxmnta1MWEuV6A1Czd61ADgAY_MZIcnJ2Lh9eVVV3DCwoRp8f7m0i4Ynw2v03RL%252DONwvJS9QhIfprx%252D8a1CWGoTnj%252D3QyNRKm4emKl6fRjY2Rw.oj8XcXGdPtVC3BmxJtDylQ%26rut%3D63a4c32d3e5ccbaa614cb1b40df3b424434ed09db752fda1abb080a3d634daa7%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8AIpPvdCeYCksFKFh8f3jwDVUCUyPOoLMclmNJeOXEc4LJUWCzrV%252DCFiyYICZENIYTdEpXptHvev0bjBVXkECBuhUKvunyMFdmYR7K3aHoFYxvfB1y8lL1oLbjT6ELUZPcEOR57Nn7wUcXVZGghisF%252DFvrPYt4yKkDUVwn244HXTTrsAAk9_UxbI%252DfFYh0QUXRsS6oBYncDwU51JNPGzSnwmZimo%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuY2hyaXN0aWFuYm9vay5jb20lMmZwYWdlJTJmaG9tZXNjaG9vbCUyZmhpc3RvcnklMmZ3b3JsZC1oaXN0b3J5JTJmbWVkaWV2YWwtaGlzdG9yeSUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2a3clM2Rob21lc2Nob29sJTI1MjAlMjZtdCUzZGIlMjZkdiUzZGMlMjZldmVudCUzZFBQQ1NSQyUyNnAlM2QxMjE1OTA0JTI2Y2Jfc3JjJTNkYmluZyUyNmNiX3R5cCUzZHNlYXJjaCUyNmNiX2NtcCUzZDMxMzEwNzQ4MiUyNmNiX2FkZyUzZDEyMzM2NTIxOTUwMTQ3NzYlMjZjYl9reXclM2Rob21lc2Nob29sJTI1MjAlMjZtc2Nsa2lkJTNkYzQ1ZWRhM2QzNjQ4MTk2OTVlMThiMzY0NjRjZTVlOTMlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RCX1NlYXJjaCUyNTNBJTI1MjBOQiUyNTIwRHluYW1pYyUyNTIwU2VhcmNoJTI1MjBBZHMlMjZ1dG1fdGVybSUzZGhvbWVzY2hvb2wlMjUyMCUyNnV0bV9jb250ZW50JTNkRFNBJTI1MjBob21lc2Nob29sJTI1MjBjYXRlZ29yeQ%2526rlid%253Dc45eda3d364819695e18b36464ce5e93%26vqd%3D4%2D163500464895652635008942654134511814332%26iurl%3D%257B1%257DIG%253D7604EFC1BBF34BA1B8E0B2E752A2C81C%2526CID%253D23AEB100A80260F11E6AA7D6A9E661A1%2526ID%253DDevEx%252C5049.1&rut=b956ad28c419d9b8c9c054fb5f00c3b332a46ba6950050ecdba5dd558229a27e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:31:50.640239"
+    },
+    {
+      "topic": "medieval history",
+      "title": "Middle Ages - Wikipedia",
+      "content": "In the history of Europe, the Middle Ages or medieval period lasted approximately from the 5th to the late 15th centuries, comparable with the post-classical period of global history. It began with the fall of the Western Roman Empire and transitioned into the Renaissance and the Age of Discovery. The Middle Ages is the middle period of the three traditional divisions of Western history ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMiddle_Ages&rut=49e010afee046105993892c2735a3096f33f92406cd1e69bdeb8ca13162e00c4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:31:50.640310"
+    },
+    {
+      "topic": "medieval history",
+      "title": "Middle Ages | Definition, Dates, Characteristics, & Facts | Britannica",
+      "content": "Middle Ages, the period in European history from the collapse of Roman civilization in the 5th century CE to the dawn of the Renaissance (variously interpreted as beginning in the 13th, 14th, or 15th century, depending on the region of Europe and other factors).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fevent%2FMiddle%2DAges&rut=e07d5c942f52d9f4e1ff64d1077d33dc33f17454119cab375120472c88f3135d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:31:50.640372"
+    },
+    {
+      "topic": "medieval history",
+      "title": "A Complete Guide To Life And History In The Medieval Era",
+      "content": "Our comprehensive guide to Medieval Times History brings together over 100 in-depth articles on events, people, inventions, and daily life\u2014illuminating the enduring legacy of this transformative age.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.medievalchronicles.com%2Fmedieval%2Dhistory%2F&rut=99201ef4d5f767b3c146845168c6d7416fafdd26895b8a490d2967db916a5f10",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:31:50.640613"
+    },
+    {
+      "topic": "modern history",
+      "title": "Shop advanced world history modern - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on advanced world history modern at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DHSpuYlINw%252DgJ8QnGl4llWZa6ENJxoRv0cj7c0xLqzBWQ5omcKQ1SgOxBzXtxa9jX1WXLxeh62yIzg6EWb5Lw9TkC1OVBFJmf_Pw9KumYLXlA7JxrJDLo3ARsGF7Qd_0iRrIXogsll3VsFk43_9pv6DC0YMsBSBIUMdPMqf8FsZc.lvixYBSsIXVoOsGo8zBtGQ%26rut%3D943c23e4288a432b41b1171506e123772ae2e4265f82a35c4e512a5c547be8d2%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8JDRzzhZlhudzdFuzB153vjVUCUyYstqciCJP2rlrJQpyoKcQwmYEZXO8vj%252Du3uuvqbVn74JCXXZ34eMiOFZjFfczw8JoOaX2vXDzWQt_O9Kci39puCGeuIcM8%252Db3rwWQyCYKZRz57fHBVSyRrsxmfA1ZCMZboBNbdiymHYRL61NEvxmCPQ4a%252D6XLX%252DKQu%252DjE74zxc5dK60ZULej68kXLy3Erq78%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGFkdmFuY2VkJTJid29ybGQlMmJoaXN0b3J5JTJibW9kZXJuJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfMXZrdmczNmkwdF9wJTI2YWRncnBpZCUzZDEyMjgxNTU1MDU0MzQzMDclMjZodmFkaWQlM2Q3Njc1OTg1MDUwNDYwOSUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDc5MTEwJTI2aHZ0YXJnaWQlM2Rrd2QtNzY3NjAxNDY1MzczMzUlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDIzNjc3XzEzNTk5NjIxJTI2bWNpZCUzZDFmOTVhMGE5YjEzZjMzM2JhN2M4N2Q2OTBhNTY5ODAxJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2QwNTcxOWM5ZTg3NTExNjQ1YTZhZmY1YzdkNWY3NDEzMA%2526rlid%253D05719c9e87511645a6aff5c7d5f74130%26vqd%3D4%2D216637194270636332873108037959185004437%26iurl%3D%257B1%257DIG%253D0C81CD06D4EB4F8FA674D114A9CED218%2526CID%253D2A2FC58BAD336FC80894D35DACBF6EDF%2526ID%253DDevEx%252C5045.1&rut=47650950e135129c1a1fbdb20582104b7704bdb02a775fee66457a96e8dc0e5d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:32:22.627558"
+    },
+    {
+      "topic": "modern history",
+      "title": "History Book - Modern American History",
+      "content": "Save on Modern American History Books and More at Christianbook Today!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dchristianbook.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DwQtd11L%252DjVq10hoiR0okD7wcuB0lkbC7Wy2gNNtg3NpmxwftOZod0HNAQJFvd_LkLZ0rnevTSw2dlDUOH9X00r7lxQUpA0wAjrKCvXmCp9iTQ_tzZfid5SJFnaUlj31FgN0e5DeG2j6A36ncOaXc1VXogY6xkFzFl%252DrT9skk%252D9Y.tbSX30JWZ9TcyPQuUqazxA%26rut%3D417fc5fc550a4b423498f731c9e87bb7fd36b5cf76213003b17a267a96593bee%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8A5rYzQ2o6wCsSA8RwNc8tzVUCUz7WbeAlGsH57v7RTvozYTCRPwtGsvE5fIFuAPg8_nUv3LLT9ojloSaUEqlPJYy0xntFNd8PiX66EQnmBFJ_omA_BtDrXIjtbHqyduUXGtdxHq1SXy6qnQVehoXbCbqJ4qznO3VY%252D0kTUgcH6kET1ki7coVLYzuq44vLIDhQW7ke3UhG1F_vwhYZA4S6%252DWuCnI%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuY2hyaXN0aWFuYm9vay5jb20lMmZwYWdlJTJmaG9tZXNjaG9vbCUyZmxpdGVyYXR1cmUlMmZib29rLWxpc3RzJTJmYW1lcmljYW4tbW9kZXJuLWhpc3RvcnktbGlzdCUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2a3clM2Rob21lc2Nob29sJTI1MjAlMjZtdCUzZGIlMjZkdiUzZGMlMjZldmVudCUzZFBQQ1NSQyUyNnAlM2QxMjE1OTA0JTI2Y2Jfc3JjJTNkYmluZyUyNmNiX3R5cCUzZHNlYXJjaCUyNmNiX2NtcCUzZDMxMzEwNzQ4MiUyNmNiX2FkZyUzZDEyMzM2NTIxOTUwMTQ3NzYlMjZjYl9reXclM2Rob21lc2Nob29sJTI1MjAlMjZtc2Nsa2lkJTNkODcyYWI5NTc0NjdiMTk0NzA1OWNkMDBlMTRkZDhmMmQlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RCX1NlYXJjaCUyNTNBJTI1MjBOQiUyNTIwRHluYW1pYyUyNTIwU2VhcmNoJTI1MjBBZHMlMjZ1dG1fdGVybSUzZGhvbWVzY2hvb2wlMjUyMCUyNnV0bV9jb250ZW50JTNkRFNBJTI1MjBob21lc2Nob29sJTI1MjBjYXRlZ29yeQ%2526rlid%253D872ab957467b1947059cd00e14dd8f2d%26vqd%3D4%2D137424926721992698388443564095775342126%26iurl%3D%257B1%257DIG%253D0C81CD06D4EB4F8FA674D114A9CED218%2526CID%253D2A2FC58BAD336FC80894D35DACBF6EDF%2526ID%253DDevEx%252C5048.1&rut=2bb5e6896aab68ea4e6ec776d3ffc2e142df035e65f4fd8ef90f02a73d19975f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:32:22.627702"
+    },
+    {
+      "topic": "modern history",
+      "title": "english furniture - british furniture - contemporary furniture ...",
+      "content": "Modern History offers a range of contemporary and traditional furniture for various rooms and styles. Explore new introductions, wood finishes, designer resources and more on their website.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmodernhistoryhome.com%2F&rut=eb72e8ef92d7101ffaa4a53047208fc7df5c415a337803e9b00dd1d99be364ef",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:32:22.627769"
+    },
+    {
+      "topic": "modern history",
+      "title": "Modern era - Wikipedia",
+      "content": "The modern era or the modern period is considered the current historical period of human history. It was originally applied to the history of Europe and Western history for events that came after the Classical antiquity and the Middle Ages, often from around the year 1500, like the Reformation in Germany giving rise to Protestantism.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FModern_era&rut=5b5bdfcb4daddecdf66b4ce1faed827979f426fab2c1ddecd2b177a933797e3e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:32:22.627836"
+    },
+    {
+      "topic": "modern history",
+      "title": "What is modern history? - California Learning Resource Network",
+      "content": "Modern history, viewed through a technological lens, isn't merely a recounting of dates and events. It represents a period of accelerated change driven by the iterative application of increasingly complex technological innovations. This period, generally spanning from the late 15th century to the present day, is defined by its departure from slower, more cyclical historical [\u2026]",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.clrn.org%2Fwhat%2Dis%2Dmodern%2Dhistory%2F&rut=58200bf405ce1152288edeae0623863ac52bd0ddd6bcf04a3ece0b4c7a67576f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:32:22.627939"
+    },
+    {
+      "topic": "contemporary history",
+      "title": "Contemporary history - Wikipedia",
+      "content": "Contemporary history ... Contemporary history, in English-language historiography, is a subset of modern history that describes the historical period from about 1945 to the present. [1] In the social sciences, contemporary history is also continuous with, and related to, the rise of postmodernity.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FContemporary_history&rut=1131e41a21796379c9c9789483238e00d47a218ef30c4306e55b99ebfee1af14",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:32:54.069869"
+    },
+    {
+      "topic": "contemporary history",
+      "title": "What is contemporary history? - California Learning Resource Network",
+      "content": "Contemporary history, in the context of our rapidly evolving technological landscape, refers to the study of the historical period from approximately the end of the 20th century to the present day. While traditional historical analysis focused on events decades or centuries past, contemporary history grapples with the immediate consequences of technological advancements, geopolitical shifts ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.clrn.org%2Fwhat%2Dis%2Dcontemporary%2Dhistory%2F&rut=d9eb4c6aef3cd89fbd60f1752018cbf72f61c230f81dcab4d841d87a7e7848da",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:32:54.069915"
+    },
+    {
+      "topic": "contemporary history",
+      "title": "What is Contemporary History? Understanding the Post-1945 Era",
+      "content": "What is Contemporary History? Contemporary history is an academic discipline within the broader field of modern history, focusing on events and circumstances that still influence our current world. This study typically encompasses the post-1945 era, examining pivotal developments that have shaped global and societal structures. Universities like the University of Nottingham have dedicated ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mindrevolt.org%2Fwhat%2Dis%2Dcontemporary%2Dhistory%2Dunderstanding%2Dthe%2Dpost%2D1945%2Dera%2F&rut=8400eb15c39831d48d24a44e05f4c0833381feae684ecc5b2beee2e7632b78b5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:32:54.069951"
+    },
+    {
+      "topic": "contemporary history",
+      "title": "Contemporary History - Articles - Making History",
+      "content": "Contemporary history is a discipline that studies the recent past or current trends using historical methods. Learn about its origins, institutions, challenges and archival sources from a UK perspective.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Farchives.history.ac.uk%2Fmakinghistory%2Fresources%2Farticles%2Fcontemporary_history.html&rut=819cf0bfd5bc47ccd257a9d01c6e24ec0f3e4ffd817643c195ceb65023709ad4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:32:54.069983"
+    },
+    {
+      "topic": "contemporary history",
+      "title": "Contemporary History - an overview | ScienceDirect Topics",
+      "content": "Contemporary history is defined as the study of recent past events and processes, often pursued to understand their origins and effects, and is characterized by the use of various analytical techniques, including interviews and contemporary documents, to capture the experiences and opinions of those directly involved.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencedirect.com%2Ftopics%2Fsocial%2Dsciences%2Fcontemporary%2Dhistory&rut=6e8da34b69ccf6e5b620e72e5e59694dd9296864eaf648e21aa47ba58c810e5f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:32:54.070016"
+    },
+    {
+      "topic": "hieroglyphics",
+      "title": "Egyptian hieroglyphs",
+      "content": "Ancient Egyptian hieroglyphs were the formal writing system used in Ancient Egypt for writing the Egyptian language. Hieroglyphs combined ideographic, logographic, syllabic, and alphabetic elements, with more than 1,000 distinct characters. Cursive hieroglyphs were used for religious literature on papyrus and wood. The later hieratic and demotic Egyptian scripts were derived from hieroglyphic writing, as was the Proto-Sinaitic script that later evolved into the Phoenician alphabet. Egyptian hieroglyphs are the ultimate ancestor of the Phoenician alphabet, the first widely adopted phonetic writing system. Moreover, owing in large part to the Greek and Aramaic scripts that descended from Phoenician, the majority of the world's living writing systems are descendants of Egyptian hieroglyphs\u2014most prominently the Latin and Cyrillic scripts through Greek, and the Arabic and Brahmic scripts through Aramaic. Hieroglyphs are thought to be one of four writing systems developed without outside influence, the others being Cuneiforms, Chinese characters, and Mayan script.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Egyptian_hieroglyphs",
+      "confidence": 0.9,
+      "learned_at": "2026-01-03T10:45:32.707578"
+    },
+    {
+      "topic": "hieroglyphics",
+      "title": "Shop hieroglyphs dictionary - Amazon.com Official Site",
+      "content": "Find deals and low prices on hieroglyphs dictionary at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D2UBM7_q4y_%252DDs6880jm2eQ0nVP4aGgYgXFlmIdO0DoxOcCyrvjYcSyBd01WikUP0FUNfjx49_QQdrN%252DEkspMS3LpP2igd6vfF3cMJy25Ys6LopkcLLMxIe6X9ibxNRrIZewFngj6MlCMXyy1s5PGNl_l6bwDSJiXFztCQ6yfHCE.KDZIoUp9k8%252DprQ5kg7zdyQ%26rut%3D4c77795010ad6c8a89a5ba62f2627f67392118643c20436644b3f0e2efe028c7%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8hZp1Wko5Vq4z3XFoeirrwTVUCUyGSW%252DCv0ZbzEfuvk3BpZ0TdeGuCDOdrdxXKj2e9mMtYWjRVTyMUhTFVkIBcjdVu__J3A2G09YSpy4aOe2AAaoDHzakqZCkCV7hY7hroKYtA3Y4Z7kQPtR_IiMx8hfdKqt_Pw_cvT4ZC3EXW1DDPid6jEkIJ00JL5sKXLwpO1ypYjDOuiyzw2UcQ11GA_GYdao%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGhpZXJvZ2x5cGhzJTJiZGljdGlvbmFyeSUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzZoeDJtNjg4aG5fcCUyNmFkZ3JwaWQlM2QxMjI0ODU2OTQ0NzIzNDg4JTI2aHZhZGlkJTNkNzY1NTM2ODk4MTUxODMlMjZodm5ldHclM2RzJTI2aHZxbXQlM2RwJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjQ0OCUyNmh2dGFyZ2lkJTNka3dkLTc2NTUzODEwNDAzNzg5JTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QxODYwMl8xMzU3NjAyMyUyNm1jaWQlM2Q3NDVjOTE4ODA4MGEzNDAzYjIzMzdjZmI4MTc5YTQ0NSUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkZTZkMGE3Mzg2ZjljMWM4YzY1NDFjZTYxMGM1MTEwZDY%2526rlid%253De6d0a7386f9c1c8c6541ce610c5110d6%26vqd%3D4%2D97170012851923418338935846054004359306%26iurl%3D%257B1%257DIG%253DA5A7B3BCD0E3485A90CB179B503E47B9%2526CID%253D10E9ED104209661526EEFBC643856766%2526ID%253DDevEx%252C5045.1&rut=f1a9a72269a9250da40a28bcba9b806b09a521a651cba0c4f57b2ad1d018b5f5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:45:33.734214"
+    },
+    {
+      "topic": "hieroglyphics",
+      "title": "Egyptian hieroglyphs - Wikipedia",
+      "content": "Egyptra - Egyptian Hieroglyphic Guide and Name Translator Ancient Egyptian Hieroglyphics - Aldokkan Glyphs and Grammars - Resources for those interested in learning hieroglyphs, compiled by Aayko Eyma Hieroglyphics! - Annotated directory of popular and scholarly resources Egyptian Language and Writing Full-text of The stela of Menthu-weser",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEgyptian_hieroglyphs&rut=3d35f061f256b530f613042c3b91e7e48ba4048c3ef8c89dbb342342362b02e9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:45:33.734368"
+    },
+    {
+      "topic": "hieroglyphics",
+      "title": "Hieroglyph | Definition, History, & Facts | Britannica",
+      "content": "Hieroglyph, a character used in a system of pictorial writing, particularly that form used on ancient Egyptian monuments. Hieroglyphic symbols may represent the objects that they depict but usually stand for particular sounds or groups of sounds. Learn more about hieroglyphs.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fhieroglyph&rut=b0fef4d594ed7a27d7e70e044fed90cb6903a89618ca1a9d5eb24d4867c2d91c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:45:33.734433"
+    },
+    {
+      "topic": "hieroglyphics",
+      "title": "Egyptian Hieroglyphs - World History Encyclopedia",
+      "content": "Learn about the origin, material, and development of the ancient Egyptian hieroglyphic script, one of the writing systems used by the Egyptians. Discover how hieroglyphs were deciphered, read, and used for various purposes in different contexts.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.worldhistory.org%2FEgyptian_Hieroglyphs%2F&rut=4bbcdf3c998b9ef95dc3693eae90598fb7965d7a15593c33ffcd6a2136747400",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:45:33.734492"
+    },
+    {
+      "topic": "hellenistic period",
+      "title": "Hellenistic period - Wikipedia",
+      "content": "The Hellenistic period was followed by the ascendancy of the Roman Empire, the Battle of Actium in 31 BC, and the Roman conquest of Ptolemaic Egypt the following year, which eliminated the last major Hellenistic kingdom. [1][2] Its name stems from the Ancient Greek word Hellas (\u1f19\u03bb\u03bb\u03ac\u03c2, Hell\u00e1s), which was gradually recognized as the name ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHellenistic_period&rut=bd76711542eeaa517d35341181ca9a88cda49269aafae09ed0df0d67c7f2cde2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:49:45.953421"
+    },
+    {
+      "topic": "hellenistic period",
+      "title": "Hellenistic age | History, Characteristics, Art, Philosophy, Religion ...",
+      "content": "Hellenistic age, in the eastern Mediterranean and Middle East, the period between the death of Alexander the Great in 323 bce and the conquest of Egypt by Rome in 30 bce. For some purposes the period is extended for a further three and a half centuries, to the move by Constantine the Great of his",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fevent%2FHellenistic%2DAge&rut=f96bbc50637a90914615518686205c1859423bb9b8fa86f1515f811bf57d2c0b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:49:45.953485"
+    },
+    {
+      "topic": "hellenistic period",
+      "title": "Hellenistic Period - World History Encyclopedia",
+      "content": "The Hellenistic Period is a part of the Ancient Period for the European and Near Asian space. The use of this period is justified by the extent of the Hellenic culture in most of these areas, due to...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.worldhistory.org%2FHellenistic_Period%2F&rut=9e6631de94f7ed7002d8784bc3aefb1f5406162270727ee3ff59eb111cb597eb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:49:45.953523"
+    },
+    {
+      "topic": "hellenistic period",
+      "title": "Hellenistic Greece - Ancient Greece, Timeline & Definition | HISTORY",
+      "content": "The Hellenistic period lasted from 323 B.C. until 31 B.C. Alexander the Great built an empire that stretched from Gre...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.history.com%2Farticles%2Fhellenistic%2Dgreece&rut=968ead4a6838f732ade9b5e016f2c29b5e6e492256c384b3163186c1b55a48a2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:49:45.953555"
+    },
+    {
+      "topic": "hellenistic period",
+      "title": "Hellenistic Period: characteristics, history and culture",
+      "content": "The Hellenistic Period, or Hellenism, is the name given to the period in Ancient History spanning from the death of Alexander the Great, in 323 BC, to the conquest of the Eastern Mediterranean and Asia Minor by the Roman Republic, in 31 BC.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fhumanidades.com%2Fen%2Fhellenistic%2Dperiod%2F&rut=c128d9a877ed2d454bdb2be2f137ec39690f87ed636c7f567b868f87b025ce53",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:49:45.953593"
+    },
+    {
+      "topic": "han dynasty",
+      "title": "Han dynasty - Wikipedia",
+      "content": "The Han dynasty[a] was an imperial dynasty of China (202 BC - 9 AD, 25-220 AD) established by Liu Bang and ruled by the House of Liu. The dynasty was preceded by the short-lived Qin dynasty (221-206 BC) and a warring interregnum known as the Chu-Han Contention (206-202 BC), and it was succeeded by the Three Kingdoms period (220-280 AD). The dynasty was briefly interrupted by the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHan_dynasty&rut=30d2b970b16a945c4d40581a317cc1d716e9b8c1a171dc7e47bafe21d4baed96",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:56:36.888404"
+    },
+    {
+      "topic": "han dynasty",
+      "title": "Han dynasty | Definition, Map, Time Period, Achievements, & Facts ...",
+      "content": "Han dynasty, the second great imperial dynasty of China (206 BCE-220 CE), after the Zhou dynasty (1046-256 BCE). So thoroughly did the Han dynasty establish what was thereafter considered Chinese culture that 'Han' became the Chinese word denoting someone who is ethnically Chinese.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2FHan%2Ddynasty&rut=1520600fb0ebb3c5faa92ad0d6a0fc4ecba18caa63185c8337c63a0c1be49838",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:56:36.888507"
+    },
+    {
+      "topic": "han dynasty",
+      "title": "Han Dynasty - Dates, Rulers & Legacy | HISTORY",
+      "content": "Learn about the Han Dynasty, the second imperial dynasty of China that ruled from 206 B.C. to 220 A.D. Discover its achievements in Confucianism, trade, art and paper.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.history.com%2Farticles%2Fhan%2Ddynasty&rut=430dc63912673b92a34707d999a4f6f744c6538540ee05d40502c855d352fd8e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:56:36.888578"
+    },
+    {
+      "topic": "han dynasty",
+      "title": "Han Dynasty: History, Han Wudi Emperors, Events...",
+      "content": "Learn about the history, culture, and achievements of the Han Dynasty (206 BC - 220 AD), which was the second imperial dynasty in China. Explore the Western, Eastern, and Xin periods, the Silk Road trade, the Confucian philosophy, and the famous emperors and events.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.chinahighlights.com%2Ftravelguide%2Fchina%2Dhistory%2Fthe%2Dhan%2Ddynasty.htm&rut=abc08be4a29f98da9206a6c949e5884b6c86fabf81ca7431c6caddabdf6c1733",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:56:36.888661"
+    },
+    {
+      "topic": "han dynasty",
+      "title": "Han Dynasty - World History Encyclopedia",
+      "content": "The Han Dynasty (202 BCE - 220 CE) was the second dynasty of Imperial China (the era of centralized, dynastic government, 221 BCE - 1912 CE) which established the paradigm for all succeeding dynasties...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.worldhistory.org%2FHan_Dynasty%2F&rut=f05fd71ce23c620bf8a4202a1cfe0c849cf2f515e5fcc8b460232c8a89ae1768",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:56:36.888730"
+    },
+    {
+      "topic": "hundred years war",
+      "title": "Shop hundred years war - Amazon.com Official Site",
+      "content": "Browse & discover thousands of unique brands. Read customer reviews & best sellers. Find deals and compare prices on hundred years war at Amazon.com",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DgCKCAXTxiNCEc%252DIO66FanvUk6kBDFD6pB0x%252DpqZdCDcHsNzqGYg5kLDho8L5m9khVb1fusdpWj_Xn1cq_GxxUNb2s34SVZPgqYvkh3hYsI7SUhf6SqzcRJKaT2w4ttIf07m%252DNSbN_YSaJ2H1fIQ6Q4k4bAGwTmgGIHdEeZRGPmU.fM0SAP3ReOs3mViazkfXFg%26rut%3Dbd0265a2715b96e53d46769e185cd1b28782db58bd6a18be1136b5de35cfe5e8%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8WIbDTVBX8MSlTXjABOOLgzVUCUzJPa1K8hzPDN%252DbcB7bLECotcAUp0sU7rjLEE8BrQ6jkes5tZOcvdPZbUecRYdPK9M5on1_mPSUFDr0kCEMgPyZv6TSKvfJt41DugB7yOWAK2bS7xUByND3Me0QjXocCG2CjQ7xPehuZysg30gnoUCI2sN1FcvwiMbdrEFC_Eya4KTIr2Uw01wkx21fQy_Ff%252Dw%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGh1bmRyZWQlMmJ5ZWFycyUyYndhciUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzZ3NGdlNnBsYnpfcCUyNmFkZ3JwaWQlM2QxMjMwMzUzODMyMjA2NjkzJTI2aHZhZGlkJTNkNzY4OTcyODA1OTEzMTElMjZodm5ldHclM2RzJTI2aHZxbXQlM2RlJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjUyMSUyNmh2dGFyZ2lkJTNka3dkLTc2ODk3MzYwNjY4NTc2JTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QxMDc2MF8xMzU4OTI0NCUyNm1jaWQlM2Q4YWQ4Yzk5Njc3MmMzODE1YjhlYmY3YzBkZmJkNGJlYyUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkMTVmNjVkNzc4ZWRlMTQ5ZGI2OTkzNDJlZTY1Y2Y0MDc%2526rlid%253D15f65d778ede149db699342ee65cf407%26vqd%3D4%2D222155028275086190826172030854253581055%26iurl%3D%257B1%257DIG%253D47B37E49D2FC4047B6C30C668EE9A48C%2526CID%253D179BD8E0D0916B2701EACE36D11D6A79%2526ID%253DDevEx%252C5045.1&rut=d432e33f353b90119fb48889a91436993edb135d48208fc010b679d498262330",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:05:39.358051"
+    },
+    {
+      "topic": "hundred years war",
+      "title": "Hundred Years' War - Wikipedia",
+      "content": "The Hundred Years' War was a significant conflict in the Middle Ages. During the war, five generations of kings from two rival dynasties fought for the throne of France, then the wealthiest and most populous kingdom in Western Europe.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHundred_Years%2527_War&rut=361b22df25473bb27310b6a37bc52dea35600dd9d091206a9bab4a467dbde00c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:05:39.358230"
+    },
+    {
+      "topic": "hundred years war",
+      "title": "Hundred Years' War | Summary, Causes, Effects, Combatants, Timeline ...",
+      "content": "Hundred Years' War, intermittent struggle between England and France in the 14th-15th century over a series of disputes, including the question of the legitimate succession to the French crown. By convention it is said to have lasted from 1337 to 1453, but there had been periodic fighting since the 12th century.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fevent%2FHundred%2DYears%2DWar&rut=022c09f2e6810b97c1e9b00e5833495c8078ddca11510180f6c548383760cff1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:05:39.358316"
+    },
+    {
+      "topic": "hundred years war",
+      "title": "Hundred Years' War - World History Encyclopedia",
+      "content": "Learn about the causes, phases and outcomes of the intermittent conflict between England and France from 1337 to 1453. Explore the battles, personalities and events that shaped the war and its legacy.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.worldhistory.org%2FHundred_Years%27_War%2F&rut=1916ee03c84ed29636408e9d256a6cff48eeb420463cc732ab68fa83e70efb94",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:05:39.358388"
+    },
+    {
+      "topic": "hundred years war",
+      "title": "Hundred Years' War - Winner, Definition & Period | HISTORY",
+      "content": "The Hundred Years' War (1337-1453) was a complicated ongoing conflict between the kingdoms of England and France, rooted in territorial disputes and control of the French crown. Spanning about ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.history.com%2Farticles%2Fhundred%2Dyears%2Dwar&rut=12e0fbc904d40ae9eb8838a84bffecde7fcc69ccf597c11a5e7e7b299e8bf019",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:05:39.358461"
+    },
+    {
+      "topic": "holy roman empire",
+      "title": "Holy Roman Empire - Wikipedia",
+      "content": "The Holy Roman Empire, [e] also known as the Holy Roman Empire of the German Nation after 1512, was a polity in Central and Western Europe, usually headed by the Holy Roman Emperor. [8] It developed in the Early Middle Ages (beginning in either 800 or 962), and lasted for a millennium until its dissolution in 1806 during the Napoleonic Wars. [9]",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHoly_Roman_Empire&rut=74f9ba3c989211fb9a3fd0c1ca7e7e088076f0a1e324142d67d6846094dfb0c7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:06:11.157482"
+    },
+    {
+      "topic": "holy roman empire",
+      "title": "Holy Roman Empire | Definition, History, Maps, & Significance - Britannica",
+      "content": "The Holy Roman Empire was the varying complex of lands in western and central Europe ruled over first by Frankish and then by German kings for 10 centuries (800-1806). Learn more about the origins, history, and significance of the Holy Roman Empire in this article.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fplace%2FHoly%2DRoman%2DEmpire&rut=8ce35da8d953849bdab3b785a1f880542d59e5fcfd278b214a95f5632b6770d3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:06:11.157579"
+    },
+    {
+      "topic": "holy roman empire",
+      "title": "Holy Roman Empire - World History Encyclopedia",
+      "content": "Learn about the history, structure, and conflicts of the Holy Roman Empire, a medieval and early modern state that lasted from 962 to 1806. Explore its foundation, dynasties, territories, and relations with the papacy and other powers.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.worldhistory.org%2FHoly_Roman_Empire%2F&rut=303708595530565f8dcc759351362c785db0c61576dbdc5a89e2aab25f64d890",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:06:11.157640"
+    },
+    {
+      "topic": "holy roman empire",
+      "title": "What Was the Holy Roman Empire? - HISTORY",
+      "content": "The Holy Roman Empire was a sprawling political entity that dominated central Europe\u2014including, at various times, much of what is now Germany, France, Austria, Switzerland, Italy and the Czech ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.history.com%2Farticles%2Fholy%2Droman%2Dempire&rut=9c859f94a3769c79cf76ff9eb76b9e0bf8ee32c37a2fc82684f9081f00c4759b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:06:11.158142"
+    },
+    {
+      "topic": "holy roman empire",
+      "title": "Holy Roman Empire - New World Encyclopedia",
+      "content": "The Holy Roman Empire was a mainly Germanic conglomeration of lands in Central Europe during the Middle Ages and the early modern period. It was also known as the Holy Roman Empire of the German Nation from the late fifteenth century onwards.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.newworldencyclopedia.org%2Fentry%2FHoly_Roman_Empire&rut=7270c6f0b5c1dfe0fa65b1ab6608310a61593d7f40cc552f704b37480b914955",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:06:11.158214"
+    },
+    {
+      "topic": "humanism",
+      "title": "Humanism",
+      "content": "Humanism is a philosophical stance that emphasizes the individual and social potential, and agency of human beings, whom it considers the starting point for serious moral and philosophical inquiry.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Humanism",
+      "confidence": 0.9,
+      "learned_at": "2026-01-03T11:59:11.142900"
+    },
+    {
+      "topic": "humanism",
+      "title": "Shop introduction to humanism - Amazon.com Official Site",
+      "content": "Browse & discover thousands of unique brands. Read customer reviews & best sellers. Find deals and compare prices on introduction to humanism at Amazon.com",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DtNEt0YdY72TUUDFdcpXTVFfOvbziegiQ8G5tNaL2Mt_hY9WVr7sOUhRyiPX0_uYVBRdNl6Qkzkga%252DY5qfIKXplTZ74ubwkK4l18%252DOPAGZwWUk5Fbu81sjst%252D1Bw7ZBU7H2LEGy_eDQZGHo_h%252DJvEhZXGITaFOxDDAjY2dYOHgbs.9Zu0GKimwc4ZtPP09l4_2w%26rut%3D75765f9dcc9cb5791d3017f307ecd0b44a55b56f3eed0e4ece61d130c73b00c8%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8UmQr9ZNMVyNs9_5YkMR35DVUCUyZuIbUAkoZ%252Dz897V%252D5efPnq7eMYcvqsevoGeg1i91hyqdTYgAf5yUN85DVtoQqy%252DTdC3y3C9uRACXV1rRfOH0ZGKHMqi2mRxOM%252D3J3kzhljqOI6ZUm1LiUGS8mx3l7B9mEV5O2zR1c70ablVr3vZkJie69uTNQAUzKTvMytZwSTGX71GxRPtgGl3pOSFpkOvM%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGludHJvZHVjdGlvbiUyYnRvJTJiaHVtYW5pc20lMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF80ZXdyM2czYmM5X3AlMjZhZGdycGlkJTNkMTIyOTI1NTAwNDYxNDc0MCUyNmh2YWRpZCUzZDc2ODI4NTY4NjU1MzY4JTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkcCUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY1NTklMjZodnRhcmdpZCUzZGt3ZC03NjgyODY5ODk3NjQ2OSUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkMTA3MzJfMTM1ODkxNzYlMjZtY2lkJTNkYzIwMWU5ZTJlN2VmM2NlOGFlNmIwMzZiNWNlZDAwNzQlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZDVhNzUyODhlOTQwMTE0MTljM2UyNDFkN2UxMGViZTdl%2526rlid%253D5a75288e94011419c3e241d7e10ebe7e%26vqd%3D4%2D83482590510856779060256417364630970259%26iurl%3D%257B1%257DIG%253DF6C8B68A34D9456F8AF21B4A2BE7C126%2526CID%253D2592024E83786B1A097C149882F46A01%2526ID%253DDevEx%252C5045.1&rut=2bd97c943c4b1725167a852743f41b0a680d46cd4645444c01e0d72badf319d4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:59:12.610144"
+    },
+    {
+      "topic": "humanism",
+      "title": "Humanism - Wikipedia",
+      "content": "Humanism is a democratic and ethical life stance, which affirms that human beings have the right and responsibility to give meaning and shape to their own lives. It stands for the building of a more humane society through an ethic based on human and other natural values in the spirit of reason and free inquiry through human capabilities.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHumanism&rut=955597acf643e6f1684b1d9baf3da93e70c846c772f1ccb5a6ff595fa0808741",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:59:12.610267"
+    },
+    {
+      "topic": "humanism",
+      "title": "Humanism | Definition, Principles, History, & Influence | Britannica",
+      "content": "Humanism, system of education and mode of inquiry that originated in northern Italy during the 13th and 14th centuries and later spread through western Europe. The term is alternatively applied to a variety of Western beliefs, methods, and philosophies that place central emphasis on the human realm.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fhumanism&rut=ce2e0606644662efc8bd62fe5aefc54333aa9a12f692862843a0c665262b0a99",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:59:12.610292"
+    },
+    {
+      "topic": "humanism",
+      "title": "Definition of Humanism - American Humanist Association",
+      "content": "Humanism is a philosophy of life that affirms human dignity, reason, and compassion, and rejects supernatural beliefs. Learn how different humanist groups and individuals define humanism and its values, goals, and ethics.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Famericanhumanist.org%2Fwhat%2Dis%2Dhumanism%2Fdefinition%2Dof%2Dhumanism%2F&rut=f76a5ea6b45e5f8e00e9502c5cfd7451c3aae3ff8664f068d13ceb871bb6c30c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:59:12.610315"
+    },
+    {
+      "topic": "humanism",
+      "title": "A Comprehensive History of Humanism: Origins to Today",
+      "content": "Learn how humanism evolved from ancient Greece to modern times, influencing education, politics, and science. Explore the key figures, ideas, and impacts of humanism in different eras and contexts.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fabouthumanism.com%2Fhistory%2Dof%2Dhumanism%2F&rut=ad3efdcb99e1dcb95fadc3461f1ae8a328149bbb393529ef0eeaf27b80d307ff",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:59:12.610339"
+    },
+    {
+      "topic": "holocaust",
+      "title": "The Holocaust",
+      "content": "The Holocaust, known in Hebrew as the Shoah, was the genocide of European Jews during World War\u00a0II. From 1941 to 1945, Nazi Germany and its collaborators systematically murdered some six million Jews across German-occupied Europe, around two-thirds of Europe's Jewish population. The murders were committed primarily through mass shootings across Eastern Europe and poison gas chambers in extermination camps, chiefly Auschwitz-Birkenau, Treblinka, Belzec, Sobibor, and Che\u0142mno in occupied Poland. Separate Nazi persecutions killed millions of other non-Jewish civilians and prisoners of war (POWs); the term Holocaust is sometimes used to include the murder and persecution of non-Jewish groups.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Holocaust",
+      "confidence": 0.9,
+      "learned_at": "2026-01-03T12:50:45.132474"
+    },
+    {
+      "topic": "holocaust",
+      "title": "The Holocaust - Wikipedia",
+      "content": "The Holocaust (/ \u02c8h\u0252l\u0259k\u0254\u02d0st / \u24d8 HOL-\u0259-kawst), [1] known in Hebrew as the Shoah (/ \u02c8\u0283o\u028a\u0259 / \u24d8 SHOH-\u0259; Hebrew: \u05e9\u05bc\u05c1\u05d5\u05b9\u05d0\u05b8\u05d4, romanized: Shoah, IPA: [\u0283o\u02c8\u0294a], lit. 'Catastrophe'), was the genocide of European Jews during World War II. From 1941 to 1945, Nazi Germany and its collaborators systematically murdered some six million Jews across German-occupied Europe, around two ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FThe_Holocaust&rut=cccc8187d1b5c65772cb458236b75e2d1e82d0b3be3ba7ca71e989e2c1d3e363",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:50:45.941436"
+    },
+    {
+      "topic": "holocaust",
+      "title": "Holocaust: Definition, Death Tolls & Legacy - HISTORY",
+      "content": "The Holocaust was the state-sponsored persecution and mass murder of millions of European Jews, Romani people, the intellectually disabled, political dissidents and homosexuals by the German Nazi ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.history.com%2Farticles%2Fthe%2Dholocaust&rut=6d0e2babf7a586563d97dd80d676f761b277c26c298e78acce0c41cd5a1e79c4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:50:45.941483"
+    },
+    {
+      "topic": "holocaust",
+      "title": "Holocaust | Definition, Concentration Camps, History, & Facts | Britannica",
+      "content": "The Holocaust was the systematic state-sponsored killing of six million Jewish men, women, and children and millions of others by Nazi Germany and its collaborators during World War II. Today the Holocaust is viewed as the emblematic manifestation of absolute evil.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fevent%2FHolocaust&rut=1ae60f72a3c5f048ff633bfeac7d7b320ece3d3561017be737db4841b61181db",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:50:45.941522"
+    },
+    {
+      "topic": "holocaust",
+      "title": "What was the Holocaust? How Vast was the Crime",
+      "content": "The Holocaust was unprecedented genocide, total and systematic, perpetrated by Nazi Germany and its collaborators, with the aim of annihilating the Jewish people. The primary motivation was the Nazis&#39; anti-Semitic racist ideology. Between 1933 and 1941 Nazi Germany pursued a policy that dispossessed the Jews of their rights and their property, followed by the branding and the concentration ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.yadvashem.org%2Fholocaust%2Fabout%2Fwhat%2Dwas%2Dthe%2Dholocaust.html&rut=a761e5e67a6f2813316d36fd5c8e2f4d9d0920ca9b9a6679c5c5cfaf72fc439b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:50:45.941560"
+    },
+    {
+      "topic": "holocaust",
+      "title": "Introduction to the Holocaust: What was the Holocaust? | Holocaust ...",
+      "content": "Introduction to the Holocaust The Holocaust was the systematic, state-sponsored persecution and murder of six million European Jews by the Nazi German regime and its allies and collaborators. The Holocaust was an evolving process that took place throughout Europe between 1933 and 1945.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fencyclopedia.ushmm.org%2Fcontent%2Fen%2Farticle%2Fintroduction%2Dto%2Dthe%2Dholocaust&rut=a2c67ff7624f4fdceb56df4cc69eba9f9a94dfd515a98392fed89ffb075e6080",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:50:45.941600"
+    },
+    {
+      "topic": "adolf hitler",
+      "title": "Shop adolph hitler biographies - Amazon\u00ae Official Site",
+      "content": "Browse & discover thousands of brands. Read customer reviews & find best sellers. Find deals and low prices on adolph hitler biographies at Amazon.com",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DDCl9ZifOu7r9legJWrk%252DY2PuoU_bKhmT8dUhtORaz3biKMWwXtzjKGt0nQzQ4aXdP8fRE6sFV1nM5rASQW9J1NgmlK279eFra8Acgz76pgVflapwcxLX%252D34OxW1_enawPVbl01PgO_xGLCOGZDWkFsMYqLXfB1walMGOBdkjyqY.GgPm4kWR2cRKOat_uPwzrA%26rut%3D803096ef6db9d331da6cc553119ffe083867f479ef74d67fb179cf2b8dad1a01%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8aBhj6YUo0Q8QEHMFZYXHLTVUCUxB_dZSuWtpS3rhLdaxg_g%252DYsJ5Ttuu4UjBoTpfNi4UryyJNzlTZAMwDnnF5NVnPGhEA_YBEGBc_xYZVZ%252DXupgdgVrsQ2KT9HMtOLESgRlePKiVBMENe7D4PHFhsWvInzmvc_2TUBzPmASieO2srd_I_pLwWP7j5jje2sPBv2xG5rsBJ_kxMu2hoIBdRxJshjk%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGFkb2xwaCUyYmhpdGxlciUyYmJpb2dyYXBoaWVzJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfODByaGp6djdoZF9wJTI2YWRncnBpZCUzZDEyMjQ4NTcwMjkzOTI2ODglMjZodmFkaWQlM2Q3NjU1MzY5ODQ3NzQ0NSUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg3NDU1JTI2aHZ0YXJnaWQlM2Rrd2QtNzY1NTM5MTU3ODAzODglM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDI0MzQxXzEzNjQ2Njk1JTI2bWNpZCUzZDQ4MzIyM2Q1MGE3NzMxYjBhYTIwZDRhMWI0OTU3NDFiJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2Q1NjViZjk0M2VjODUxMzNmY2MxNDkwMWE2ZGUwY2QyMA%2526rlid%253D565bf943ec85133fcc14901a6de0cd20%26vqd%3D4%2D38273724548090936480541026082651980527%26iurl%3D%257B1%257DIG%253D44031CAB7D1D4689B6AC8423D715F692%2526CID%253D1B9FDEED1A94637A1C49C83B1B18621D%2526ID%253DDevEx%252C5045.1&rut=d7e3724db5851518be59e50567ba5a36f0212c7d0bebaf42f70a2e8f7edf57f3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:51:49.908218"
+    },
+    {
+      "topic": "adolf hitler",
+      "title": "Adolf Hitler - Wikipedia",
+      "content": "Adolf Hitler[a] (20 April 1889 - 30 April 1945) was an Austrian-born German politician who was the dictator of Germany during the Nazi era, which lasted from 1933 until his suicide in 1945. He rose to power as the leader of the Nazi Party, [b] becoming the chancellor of Germany in 1933 and then taking the title of F\u00fchrer und Reichskanzler in 1934. [c] Germany's invasion of Poland on 1 ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAdolf_Hitler&rut=dc653fda464d7807fb9fbc8404d6fe3a5048143e6b3870382f0a5155261a845a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:51:49.908342"
+    },
+    {
+      "topic": "adolf hitler",
+      "title": "Adolf Hitler | History, Biography, Actions, & Facts | Britannica",
+      "content": "Adolf Hitler was the dictator of Nazi Germany who rose to power with his radical ideology. He was responsible for starting World War II and initiating the Holocaust.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FAdolf%2DHitler&rut=c6270ff69bb3f85f4d56e6bc38e00ed1b9ec56604a3fa41dc4a2feaa31e9bcb0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:51:49.908397"
+    },
+    {
+      "topic": "adolf hitler",
+      "title": "Adolf Hitler - World History Encyclopedia",
+      "content": "Adolf Hitler (1889-1945) was the dictator of Nazi Germany from 1933. He gained power by making popular promises like improving Germany's economy and status in Europe, but when he took these policies...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.worldhistory.org%2FAdolf_Hitler%2F&rut=e4096b5e105993984b7367b5dc69ccc41fed92b9e2fd47b0571982f6d39e7066",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:51:49.908447"
+    },
+    {
+      "topic": "adolf hitler",
+      "title": "Adolf Hitler | Holocaust Encyclopedia",
+      "content": "Adolf Hitler was the undisputed leader of the National Socialist German Workers Party\u2014known as Nazis\u2014since 1921. In 1923, he was arrested and imprisoned for trying to overthrow the German government. His trial brought him fame and followers. He used the subsequent jail time to dictate his political ideas in a book, Mein Kampf \u2014My Struggle. Hitler's ideological goals included ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fencyclopedia.ushmm.org%2Fcontent%2Fen%2Farticle%2Fadolf%2Dhitler&rut=baabb4e6c5cfa67b25c18f8f234807faa170d4fa5b444cbd2203c6d075c46613",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:51:49.908696"
+    },
+    {
+      "topic": "pearl harbor",
+      "title": "Visit Pearl Harbor - Plan Your Visit - Pearl Harbor Tours",
+      "content": "Visit Pearl Harbor and explore the memorials with affordable, self-guided tickets. Uncover Pearl Harbor's legacy through captivating guided and self-guided tours.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dpearlharbor.org%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DZo6D%252DbR8R4Qcx8r0C6YIp_chKkn0HzUAUErQZMC7dqTfV7ZOo7mJTiM5LEKwITs6MDwWwn_8iUxd_jOL%252DaxpeOHfzIolLL3dsoI7jthvpiop3JyaM0Y8Mvpagruc6pSVe6IgTso6p7KTEvraaglMJsWLwsHZX9t6lO1yUIls2QM.eluRzXswqs8r5SMOndTh4w%26rut%3Db60cbe0fcef4e5e5370c0cfb575862305845f89eaba004ffdf6fa7e0afcec8d8%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8JqhTbZxsHtGfof9uaEqUmTVUCUx4ZOasDHhG7ZCB_gTq12n1hQ%252DGRrUopso%252DZ4KK9g6QRBy_zE2c7MDeZu5cfKd5Zgv3lJS8FmjagiDMZggKu2jAMiWh_vM3ys28LHjXrRobMfBCS2n7oDjq_b2jAcYIhrBuHmHJ%252D4fHoPtILWCP7OjY70C8ujOYVQ4a1RevBUr2qvwiquWl2i8%252D95hmsFBxiiA%2526u%253DaHR0cHMlM2ElMmYlMmZwZWFybGhhcmJvci5vcmclMmYlM2Ztc2Nsa2lkJTNkNzNkNWQ4YTlkZTAwMTNhOGQzNTJiMWYwNWY4NGY3OWMlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RQTUFYJTI1MjAtJTI1MjBJRCUyNTIwLSUyNTIwTkIlMjZ1dG1fdGVybSUzZHBlYXJsaGFyYm9yLm9yZyUyNnV0bV9jb250ZW50JTNkQnJhbmQlMjUyME1lc3NhZ2luZyUyNTIwLSUyNTIwMDYtMjAtMjAyNA%2526rlid%253D73d5d8a9de0013a8d352b1f05f84f79c%26vqd%3D4%2D59534957550483317848081884848059880951%26iurl%3D%257B1%257DIG%253D827209D81C664857937BF5423974431D%2526CID%253D3DE32D3F9CC36A9701113BE99D166B4A%2526ID%253DDevEx%252C5045.1&rut=ba1a64effcfd12c7247a2ff57619c3425728dd31b69582c6c318ba829e397596",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:52:21.348667"
+    },
+    {
+      "topic": "pearl harbor",
+      "title": "Visit Pearl Harbor - Official Website - Historic Pearl Journey",
+      "content": "Uncover Pearl Harbor's past on our exclusive small group tours. Journey through Pearl Harbor's pivotal moments in history.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dpearlharbortours.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DU9Ies5x9nP3DIfBM_MMck7Zg2xAIlkm%252D4uZTkBoyWpWOEL_H3k703ncLjANs5IVNQEgH0NGZxhABMUaMpnnjxuLl24bIZeRsho%252DXkK3O2w3cy0xTMnm8b7Kdn2xRZBjmtKcl7fyG3uZgExb9RgzaL0nbsLQyaVCWMLTQLbx22yA.S04xB32Cltm3HP%252DXwCzb3A%26rut%3D963ac83c3862eff8ed43363ee184b3a77ee19cd2f2528c4eb754d6484e3353a7%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8BSrbb0o4JoC23dH7yJOYijVUCUzBuL9eT_%252DKOOwyzNhSBTbX1%252DlBABQQnl6%252DykeBnK0Vvd7drP9JJMx6Kb1iAD7E18FjTA6kjJ6rrme4UXiPxsyybm6ru44WwwFOFr1cHnYa2IddTrhh25X21PCTm_SHcvtVwJKX6Dx8Rs4eQG%252DWTKq7cuwKtfvfYJmtQSFRN55OcxvWYPUtUIGBUAYoUNmb1jQ%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cucGVhcmxoYXJib3J0b3Vycy5jb20lMmZ0aWNrZXRzJTJmJTNmaHNhX2FjYyUzZEYxMTFTNUI1JTI2aHNhX2NhbSUzZDQ3MTIyMzQyMSUyNmhzYV9ncnAlM2QxMjk3NDI0OTExNDc2MzIyJTI2aHNhX2FkJTNkJTI2aHNhX3NyYyUzZHMlMjZoc2FfdGd0JTNka3dkLTIzMzI4ODg3OTY2MjgwMTMlM2Fsb2MtNDA4NCUyNmhzYV9rdyUzZHd3dy5wZWFybGhhcmJvcnRvdXJzLmNvbSUyNmhzYV9tdCUzZGIlMjZoc2FfbmV0JTNkYWR3b3JkcyUyNmhzYV92ZXIlM2QzJTI2bXNjbGtpZCUzZDlhMWQ0ZjJkZjBmMzExMTgyOTA0MjY3NDcxNzdjZGI2JTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkUEhUJTI1MjAtJTI1MjBCaW5nQWRzJTI1MjAtJTI1MjBQTWF4JTI1MjAtJTI1MjBVcyUyNTJGQ2FuJTI1MjAtJTI1MjBUaWNrZXQlMjUyMFBhZ2UlMjZ1dG1fdGVybSUzZHd3dy5wZWFybGhhcmJvcnRvdXJzLmNvbSUyNnV0bV9jb250ZW50JTNkVGlja2V0JTI1MjBQYWdlJTI1MjAtJTI1MjAyNS02NSUyNTIwLSUyNTIwU2VhcmNoJTI1MjB0aGVtZXMlMjUyMCUyNTJCJTI1MjBBdWRpZW5jZQ%2526rlid%253D9a1d4f2df0f31118290426747177cdb6%26vqd%3D4%2D24698119365184525528076536682418094124%26iurl%3D%257B1%257DIG%253D827209D81C664857937BF5423974431D%2526CID%253D3DE32D3F9CC36A9701113BE99D166B4A%2526ID%253DDevEx%252C5049.1&rut=8c0a0422b51d6874a46a1f7395671d9e751fb24754a61b615d90b8175ec2ff88",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:52:21.348737"
+    },
+    {
+      "topic": "pearl harbor",
+      "title": "Attack on Pearl Harbor - Wikipedia",
+      "content": "The attack on Pearl Harbor[nb 3] was a surprise military strike by the Empire of Japan on the United States Pacific Fleet at its naval base at Pearl Harbor on Oahu, Hawaii, on December 7, 1941. At the time, the U.S. was a neutral country in World War II.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAttack_on_Pearl_Harbor&rut=4b3a6921054898a9ecd52f624f5c3c05308ed5642c62421f4a19f4aa3fc3c4d2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:52:21.348791"
+    },
+    {
+      "topic": "pearl harbor",
+      "title": "Pearl Harbor attack | Date, History, Map, Casualties, Timeline, & Facts ...",
+      "content": "The Pearl Harbor attack was a surprise aerial attack on the U.S. naval base at Pearl Harbor on Oahu Island, Hawaii, by the Japanese on December 7, 1941, which precipitated the entry of the United States into World War II.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fevent%2FPearl%2DHarbor%2Dattack&rut=ff17ec76b43c531aac7ddf3d7b6cbec13af6e73abeeeeb38e05445e4a24781dc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:52:21.348844"
+    },
+    {
+      "topic": "pearl harbor",
+      "title": "Pearl Harbor National Memorial (U.S. National Park Service)",
+      "content": "At Pearl Harbor National Memorial, we honor the lives affected by the December 7, 1941, attack. This pivotal moment in global history marked the United States' entry into World War II, impacting nations and communities worldwide. Join us in reflecting on this shared history and its lasting significance in the pursuit of peace.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nps.gov%2Fvalr%2Findex.htm&rut=7809e0f68a77be2a81724fc6866ae1c80365bfc88d0afe7ee9493ba3d4a3f12e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:52:21.348900"
+    },
+    {
+      "topic": "hiroshima",
+      "title": "Hiroshima",
+      "content": "Hiroshima  is the capital of Hiroshima Prefecture in Japan. As of June\u00a01, 2019, the city had an estimated population of 1,199,391. The gross domestic product (GDP) in Greater Hiroshima, Hiroshima Urban Employment Area, was US$61.3 billion as of 2010. Kazumi Matsui has been the city's mayor since April 2011. The Hiroshima metropolitan area is the second largest urban area in the Chugoku Region of Japan, following the Okayama metropolitan area.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hiroshima",
+      "confidence": 0.9,
+      "learned_at": "2026-01-03T12:53:54.524215"
+    },
+    {
+      "topic": "hiroshima",
+      "title": "The 10 Best Hotels - The 10 Best Hotels (2026)",
+      "content": "Find discounts on the best Saeki Hiroshima Prefecture Hotels. Tripadvisor helps you spend less. Save money & book with Tripadvisor, the world's largest travel website.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dtripadvisor.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Dc4bmun5fNZIqIjnAAJup9jEqCQshyqNgo5yo4W0TgGLAClY9MouQ_3bmRMbHglwx7medepJ1pATxxZctE7dSUqais6If6EkPlF3fZrtGFfvpad0uQwM%252Dqwawn7y_r9OsXzNpgCXuAQe%252DJ2fZzPB3WksOHuczZi_3LKZYFD4TmhM.O_pT3BvidxJNl6xTJNOo3w%26rut%3D2d10179841c02fec11de211dc9f155c10f7bb69e98c3101adf8cd163ce2ba809%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8aQDXNvMdU5ucymvf7bkl_TVUCUxhDlcWLzahUE67GetfcoZK%252DsiQyUJ_iraVCfjIu7J4g62GMJeQNB%252DkUsPASolduXyUjNJ0No18f%252DJVqalX3hF1KDWi0E4%252DhOWmbKX9V8gKmMpSkcCBGBYIzUDjNnNsW9fLmCIt8yCAla8XnLCn0cCMP%252DZeY2Z%252D12zcTRr2AEMiEJWWmb24%252DmmuydbvAW1XYK4%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cudHJpcGFkdmlzb3IuY29tJTJmU21hcnREZWFscyUzZmdlbyUzZDI5ODU2MSUyNm0lM2QxMTAwNCUyNnN1cGNtJTNkMjk1MDA2NzgxJTI2c3VwYWclM2QxMjc1NDMzNzQ2NTA3OTM0JTI2c3VwdGklM2Rrd2QtNzk3MTQ3NzQ4NTM3NTYlM2Fsb2MtMTkwJTI2c3VwYWklM2Q3OTcxNDc5OTc4MDE4MyUyNnN1cGR2JTNkYyUyNnN1cG50JTNkcyUyNnN1cGt3JTNkaGlyb3NoaW1hJTI2bXNjbGtpZCUzZDM1ZDNhODE4ODdkMDE2MDU4NWMzYzE0MTA2MzNjMWYy%2526rlid%253D35d3a81887d0160585c3c1410633c1f2%26vqd%3D4%2D19452057649313388848678937308074361687%26iurl%3D%257B1%257DIG%253D14B9845E07AC41B1920AF837729A5FC1%2526CID%253D042C7A7B8D92602E1DE86CAD8C05611A%2526ID%253DDevEx%252C5046.1&rut=96d514359990ec3ae833c74717f2d8a083f00d27b348444077cfcb8b754da94f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:53:55.359405"
+    },
+    {
+      "topic": "hiroshima",
+      "title": "Atomic bombings of Hiroshima and Nagasaki - Wikipedia",
+      "content": "Hiroshima was the primary target of the first atomic bombing mission on 6 August, with Kokura and Nagasaki as alternative targets. The 393rd Bombardment Squadron B-29 Enola Gay, named after Tibbets's mother and piloted by Tibbets, took off from North Field, Tinian, about six hours' flight time from Japan, [128] at 02:45 local time. [129]",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAtomic_bombings_of_Hiroshima_and_Nagasaki&rut=55bee58e4983271266b5a09c62bfe355cb5ceccbc3af588f466f02563cee8a5e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:53:55.359485"
+    },
+    {
+      "topic": "hiroshima",
+      "title": "Atomic bombings of Hiroshima and Nagasaki | Date, Significance ...",
+      "content": "Atomic bombings of Hiroshima and Nagasaki, during World War II, American bombing raids on the Japanese cities of Hiroshima (August 6, 1945) and Nagasaki (August 9, 1945) that marked the first use of atomic weapons in war. Tens of thousands were killed in the blasts and thousands more would die of radiation poisoning.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fevent%2Fatomic%2Dbombings%2Dof%2DHiroshima%2Dand%2DNagasaki&rut=012b7b3813cf10ad450dc1264789538ab0ccfad632aba76c53426899e5645ff0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:53:55.359546"
+    },
+    {
+      "topic": "hiroshima",
+      "title": "The Most Fearsome Sight: The Atomic Bombing of Hiroshima",
+      "content": "On the morning of August 6, 1945, the American B-29 bomber Enola Gay dropped an atomic bomb on the Japanese city of Hiroshima.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nationalww2museum.org%2Fwar%2Farticles%2Fatomic%2Dbomb%2Dhiroshima&rut=22c003d77bf8532028f1eec66e554a9e5fd24f91be0fa08634a356a2a43d4c48",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:53:55.359596"
+    },
+    {
+      "topic": "hiroshima",
+      "title": "Bombing of Hiroshima and Nagasaki - Causes, Impact & Deaths",
+      "content": "In August 1945, the United States dropped two atomic bombs over the Japanese cities of Hiroshima and Nagasaki. What happened to people on the fringes of the blasts?",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.history.com%2Farticles%2Fbombing%2Dof%2Dhiroshima%2Dand%2Dnagasaki&rut=bb231f01d4826733d8338b836a980d83a5ae97e831bc993ef2539a2b308ddd70",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:53:55.359644"
+    },
+    {
+      "topic": "feminism history",
+      "title": "Save on feminism history - Amazon.com Official Site",
+      "content": "Find deals and low prices on feminism history at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DmR88heUro3vpWGiPq3vnROTQdyyddK3ncso7Bw79c8O%252D_s7pQYyujWVHUBA1C_jzpE%252DdRb%252DMEET0Kj58YyjCzDi5rJLW0ffVYUYce0dMSyi2KtkBetGvQfPK6oUZrfqralxT%252DgLrT24lLcGhfRzLXK1rXcDUEjwgNBXlEnd3Atw.IdUUwH6wa2IofynuOTj9ow%26rut%3D7067137669a2a84471d7307759e282eff6df4f97fd2d89e037a299133fd33036%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8WljXzvXheSSK8FJfjPwQXDVUCUyVaeaKwOPjJBY1wmNdM0AUrSCyjWnBEgJm%252D%252DyVJpzIv_Le2EAXAD8YV15l8oojxmpYAU1ngsQItsyJdsTlNRbo53sXP_c9iJvTY_pPtpu%252DFlCHUBWqShLaEZ3sNkNZxyM_GrYaMrqYGgW5_Hn9Ri%252DX9cOaPl2Z0Oo9LBnRUQ2Kpz3tyYkPb9Wm_dRsV254mhU%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGZlbWluaXNtJTJiaGlzdG9yeSUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzd0OXJjbnJiazNfcCUyNmFkZ3JwaWQlM2QxMjI0ODU2OTQzMDk3ODA4JTI2aHZhZGlkJTNkNzY1NTM2ODk1ODA4MDYlMjZodm5ldHclM2RzJTI2aHZxbXQlM2RlJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjQ0OCUyNmh2dGFyZ2lkJTNka3dkLTc2NTUzODA3MjYyMTM4JTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QyMjk2MF8xMzU5OTMzMiUyNm1jaWQlM2RkMDhjY2I3MWYxMTEzNWYzODgzY2JmNDRmMTI4ODFhZSUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkM2Q0MzY1Mjg5MzNiMWJhNmJmZTQwYzcxMTYzYjE3YmU%2526rlid%253D3d436528933b1ba6bfe40c71163b17be%26vqd%3D4%2D61641169132754750193395109189741100452%26iurl%3D%257B1%257DIG%253D37C2C50CB89145399A7D982852B51430%2526CID%253D379CFD552097607325C5EB832173619F%2526ID%253DDevEx%252C5046.1&rut=817823ef647d35931aea19710916fc9b5da441f305f184b74e9b98bc3001e4f8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:07:13.176259"
+    },
+    {
+      "topic": "feminism history",
+      "title": "Feminist History Reader",
+      "content": "From trusted sellers around the world. Buy what you love to read. Find millions of books, textbooks, rare and collectible items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dabebooks.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D2FZI%252DT1%252D_6a37dy0dtG1IpmB%252D%252DeZjD4IPPQCediZFZvdcGJTwFhGlbf8uLtB5aFh2_xcRd7py1q2lZ1GguDhldaLrL%252DvdisfZPY4AENiN9359mob6vonX8oXObL0nvzJOHBhQBgHo63_hfnDjk2GLVmI10HhSOJnKha2DoVMI60.FpDjVhRZY4ynVYlritpMNQ%26rut%3D4dbeab0aecbcadec2ed0160cf3b8ae27896a9b2e3757cbc625785b44932499d9%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8O2063H46vLhbAXvE08CV9TVUCUwmNc9WfaF5LZfxTPfPPZRj0QJ7DwXoxBi7H3KD%252DpTpcauqy9Sk7CoeOxzlUxwl2g8KyJbLQt38QKrdog9b%252De%252DRs%252DMZoDGCxAwdgBlcMPHjUHJTHu1LKeKrzykfEleA1EVt535J1DIxYRuyDs9I1C616Mye_rXa2uA6u7dwa%252Dumi_8IlweriXoYif8FsKVcHwY%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYWJlYm9va3MuY29tJTJmYm9vay1zZWFyY2glMmZ0aXRsZSUyZmZlbWluaXN0LWhpc3RvcnktcmVhZGVyJTJmJTNmcmVmXyUzZHBzX21zXzI2NzY5MTc2MSUyNmNtX21tYyUzZG1zbi1fLWNvbXVzX2RzYS1fLW5hYS1fLW5hYSUyNm1zY2xraWQlM2Q2ODY4ZWNiZmVhOWExNGM0ZDBiYTg1ZTY2ZjlhYTU5ZA%2526rlid%253D6868ecbfea9a14c4d0ba85e66f9aa59d%26vqd%3D4%2D217085399807091390199180177913067654955%26iurl%3D%257B1%257DIG%253D37C2C50CB89145399A7D982852B51430%2526CID%253D379CFD552097607325C5EB832173619F%2526ID%253DDevEx%252C5050.1&rut=05c68296e5c0451e7b6a9b379dd19848aac3992bd4302bb46bee05da9a2d88ff",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:07:13.176320"
+    },
+    {
+      "topic": "feminism history",
+      "title": "History of feminism - Wikipedia",
+      "content": "The history of feminism comprises the narratives (chronological or thematic) of the movements and ideologies which have aimed at equal rights for women. While feminists around the world have differed in causes, goals, and intentions depending on time, culture, and country, most Western feminist historians assert that all movements that work to obtain women's rights should be considered ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHistory_of_feminism&rut=1d33c7ba8572b9e44c3b9c572cb0450218f26fb01b7abd9c7d43fac4d4b9d583",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:07:13.176355"
+    },
+    {
+      "topic": "feminism history",
+      "title": "Feminism | Definition, History, Types, Waves, Examples, & Facts ...",
+      "content": "Feminism is the belief in social, economic, and political equality of the sexes. Although largely originating in the West, feminism is manifested worldwide and is represented by various institutions committed to activity on behalf of women's rights and interests.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Ffeminism&rut=462d8c113f055297fd4457b43d3038bb9c4a92315e637acf5d2ef7f8fd70773d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:07:13.176387"
+    },
+    {
+      "topic": "feminism history",
+      "title": "Feminism's Long History",
+      "content": "Feminism, a belief in the political, economic and cultural equality of women, has roots in the earliest eras of human civilization. It is typically separated into three waves: first wave feminism ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.history.com%2Farticles%2Ffeminism%2Dwomens%2Dhistory&rut=f52c6644c8ec068213cd0353d5511dcaeec7b6f0bb46c6e40ed0ccea9a867ab9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:07:13.176417"
+    },
+    {
+      "topic": "climate change history",
+      "title": "Climate Change History - Timeline, Events & Earth | HISTORY",
+      "content": "Climate change is the long-term alteration in Earth's climate and weather patterns. It took nearly a century of research and data to convince the vast majority of the scientific community that ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.history.com%2Farticles%2Fhistory%2Dof%2Dclimate%2Dchange&rut=3bc9e5015819f6564b0ab24c76fb6c6d1d93d8955c3c91a48fc0eabb3b165440",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:14:07.139423"
+    },
+    {
+      "topic": "climate change history",
+      "title": "Timeline of Climate Change - Encyclopedia Britannica",
+      "content": "Learn more about climate change with this timeline of notable events and rising temperatures.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fstory%2Ftimeline%2Dof%2Dclimate%2Dchange&rut=ef7f922684df3685dfcc8002ebca56d050af872f57626ae38ff252cd807142a5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:14:07.139494"
+    },
+    {
+      "topic": "climate change history",
+      "title": "History of climate change science - Wikipedia",
+      "content": "History of climate change science John Tyndall 's ratio spectrophotometer (drawing from 1861) measured how much infrared radiation was absorbed and emitted by various gases filling its central tube. [1] Such measurements furthered understanding of the greenhouse effect that underlies global warming and climate change.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHistory_of_climate_change_science&rut=3d3ac44edd2ebca096778b0eaa4043f3ade7b46e6640223daeec6592a524fd50",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:14:07.139551"
+    },
+    {
+      "topic": "climate change history",
+      "title": "Global Warming Timeline - AIP",
+      "content": "A hypertext history of how scientists came to (partly) understand what people are doing to cause climate change. An abridged web version of Spencer R. Weart's book presented by the American Institute of Physics.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fhistory.aip.org%2Fclimate%2Ftimeline.htm&rut=555d824153e97245aac356a21b753c2ee063c6f431dd0390bab2d5425048b7c7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:14:07.139604"
+    },
+    {
+      "topic": "climate change history",
+      "title": "PDF Climate Change: An Evolution of Understanding",
+      "content": "1985 - Climate experts call for an international framework to slow warming. 1988 - The Intergovernmental Panel on Climate Change is formed. 1990 - IPCC releases its first assessment. 1991 - Countries begin negotiating the U.N. Framework Convention on Climate Change. 1992 - President George Bush signs the treaty; U.S. Senate ratifies it.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fspia.princeton.edu%2Fsites%2Fdefault%2Ffiles%2Fcontent%2FClimate_Change_Timeline_Summary.pdf&rut=58e69360bda4f7e03b91cd639058a3e009b84eaaa771938fd00e99eca8216d3f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:14:07.139667"
+    },
+    {
+      "topic": "human geography",
+      "title": "Human geography - Wikipedia",
+      "content": "Human geography, also known as anthropogeography, is a branch of geography that studies how people interact with places. It focuses on the spatial relationships between human communities, cultures, economies, people, lifestyle and their environments.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHuman_geography&rut=34c0f4f8c99c7c363125572cdfcb4254b5fe7e3bf7cf18f3abb65f969d4a2325",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:16:13.879322"
+    },
+    {
+      "topic": "human geography",
+      "title": "Geography - Human, Population, Landscape | Britannica",
+      "content": "Geography - Human, Population, Landscape: Since 1945 human geography has contained five main divisions. The first four\u2014economic, social, cultural, and political\u2014reflect both the main areas of contemporary life and the social science disciplines with which geographers interact (i.e., economics, sociology, anthropology, and political science and international relations, respectively); the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fgeography%2FHuman%2Dgeography&rut=c592db59ed9df8017ce7e26890daba4878ae93dc0bee4da59aa2959be6cc28fa",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:16:13.879842"
+    },
+    {
+      "topic": "human geography",
+      "title": "Human Geography - an Overview (Cultural Geography) - ThoughtCo",
+      "content": "Learn what human geography is, how it developed, and what topics it covers. Explore the cultural aspects of language, religion, art, and more, and how they relate to the physical environment and globalization.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.thoughtco.com%2Fhuman%2Dgeography%2Doverview%2D1434505&rut=947cd6811de4255925461614ce9f669327550fdf19be7bb820f399c6868c6f43",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:16:13.879899"
+    },
+    {
+      "topic": "human geography",
+      "title": "Defining human geography - Human Geography - Research Guides at ...",
+      "content": "This guide highlights the resources for Human Geography, the study of human settlements in their places.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fresearchguides.dartmouth.edu%2Fhuman_geography&rut=4b226044d0e7c2e996ee107c7c12f3f9646382570d925ce45bad09b3fa526b94",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:16:13.879943"
+    },
+    {
+      "topic": "hurricane",
+      "title": "Tropical cyclone",
+      "content": "A tropical cyclone is a rapidly rotating storm system with a low-pressure area, a closed low-level atmospheric circulation, strong winds, and a spiral arrangement of thunderstorms that produce heavy rain and squalls. Depending on its location and strength, a tropical cyclone is called a hurricane, typhoon, tropical storm, cyclonic storm, tropical depression, or simply cyclone. A hurricane is a strong tropical cyclone that occurs in the Atlantic Ocean or northeastern Pacific Ocean. A typhoon is the same thing which occurs in the northwestern Pacific Ocean. In the Indian Ocean and South Pacific, comparable storms are referred to as \"tropical cyclones\". In modern times, on average around 80 to 90 named tropical cyclones form each year around the world, over half of which develop hurricane-force winds of 65\u00a0kn or more.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tropical_cyclone",
+      "confidence": 0.9,
+      "learned_at": "2026-01-03T13:41:31.015155"
+    },
+    {
+      "topic": "hurricane",
+      "title": "National Hurricane Center",
+      "content": "Get the latest forecasts, advisories, and outlooks for Atlantic, Eastern Pacific, and Central Pacific tropical cyclones. Learn how to prepare for hurricanes, access marine products, and find educational resources.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nhc.noaa.gov%2F&rut=de10801b3d92ec6f6221afafd390fa57e3c3a09d0ec19a7fda0a727a08da3905",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:41:32.050720"
+    },
+    {
+      "topic": "hurricane",
+      "title": "Hurricane Tracking & Storm Radar | AccuWeather",
+      "content": "Keep up with the latest hurricane watches and warnings with AccuWeather's Hurricane Center. Hurricane tracking maps, current sea temperatures, and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.accuweather.com%2Fen%2Fhurricane&rut=6386de9779814d1810f69e951d5bd5adaeb7b89927dc5b46c885e106613e5e14",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:41:32.050785"
+    },
+    {
+      "topic": "hurricane",
+      "title": "Latest Hurricane News | weather.com",
+      "content": "Read the latest hurricane, tropical storm, and tropical development news from The Weather Channel.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fweather.com%2Fstorms%2Fhurricane%3Fpg%3D1&rut=d36464eb1ef3bfb955570301e9398c77f5ec839105a2997f0896423676cb09f8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:41:32.050827"
+    },
+    {
+      "topic": "hurricane",
+      "title": "Hurricane Melissa: Jamaica braces for Category 5 storm - NBC News",
+      "content": "Hurricane Melissa: Category 5 storm threatens Jamaica with devastation Jamaica is bracing for what the National Hurricane Center said would be catastrophic flash flooding and landslides caused by ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nbcnews.com%2Fweather%2Fhurricanes%2Flive%2Dblog%2Fhurricane%2Dmelissa%2Dlive%2Dupdates%2Dstorm%2Dthreatens%2Djamaica%2Ddeva%2Drcna239996&rut=d2bc91fc10a519f36d7686d7d42fb56b754467ad84d0c39130f945366f441a9f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:41:32.050858"
+    },
+    {
+      "topic": "hurricane",
+      "title": "Zoom Earth | Weather Map & Hurricane Tracker",
+      "content": "Interactive weather & radar map. Track hurricanes, cyclones, storms. View LIVE satellite images, rain maps, forecast maps of wind, temperature for your location.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fzoom.earth%2F&rut=eb58749e0c28850927431a4f46a1ba2fcc313a9d677dbd402bdc2c4c7bddfef3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:41:32.050886"
+    },
+    {
+      "topic": "art history",
+      "title": "Shop beginner art history book - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on beginner art history book at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D0zs8saL_7JmIgpxQ7nkQY%252DkIW%252D82GVQnBQXkL1pozpyNUJioQH7iWWMQKzpBFNRfMP4CXx732CSq4bfbrxDAn6ruyhAX3FVjPnbnOVb21Lk9pAMjso3dqgiHggZfKJ7m7psuCyp68eyGwmL0aKKaq8wNjWYN85Gg7JiNfFhwEWo.9ZhjShsuUVQ5xcTN45goEg%26rut%3Daa4a803583e28da49ee4c2870e172f4e4cc3225ff543e38d5a5869945e04ffa3%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8UrCHEyMx1IBMrN4uHZtVlzVUCUx2ElkUvGiitEfF6vuy0N_GEZ6odS5RPmD7SS0sJ_fAfLUmSk5cnb6wQPkntpkE1UNZJH8tpAqA0D7WOU_ZP7edFTI10AZvpTEIW70n1iwpzw2l4McpJNiD4GmSC5bA6vU4IUPCHgOUP_Is%252Dp9iqbwfiAXAY0D0Z1WAePyVkUWAIw6t_VIcoGeaGe9a6Y0Z23g%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJlZ2lubmVyJTJiYXJ0JTJiaGlzdG9yeSUyYmJvb2slMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF82emFsYXdqZ2psX2IlMjZhZGdycGlkJTNkMTIzNjk1MTYzMjIxODg3NSUyNmh2YWRpZCUzZDc3MzA5NjA5NjkxNDE4JTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkYiUyNmh2Ym10JTNkYmIlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY0NDglMjZodnRhcmdpZCUzZGt3ZC03NzMwOTc5NTQ4ODY0MSUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkNzI4N18xMzMxNTI1OCUyNm1jaWQlM2Q5MWFjMzFmZTI4ZDgzNTcxYmFlNjgxNTFmOTY5ZGIzZCUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkMzBjMTNkZDA2ZGJlMTU4MjlkMWI1NDg5Y2IyOWZjYWQ%2526rlid%253D30c13dd06dbe15829d1b5489cb29fcad%26vqd%3D4%2D297208809216338959172109939036086674603%26iurl%3D%257B1%257DIG%253D61BF1B55F8794EA4AB74F278D370FE99%2526CID%253D0CF769568AF06D422ED07F808B676CFB%2526ID%253DDevEx%252C5046.1&rut=05f48b49c5252e24b8b7435a91734e4e7efab8c8724a012a4736aae439b775df",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T15:30:32.210614"
+    },
+    {
+      "topic": "art history",
+      "title": "Master of Arts in Art History - Criticism Graduate Studies",
+      "content": "Pursue Graduate Research in a Prestigious Art School Connected to a Major American Museum. Earn A Master Of Arts In Modern and Contemporary Art History at SAIC. Apply by Jan 10.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dsaic.edu%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D7vhz4lQI4NxJ4VwJchRF3_PvGj1WY328QDzyuNk9WPK73kk43n6wgKdj6RNomNW1AkRJ4r%252DN2khPRFSlofs9_%252DOhkVCsBcxa895tPr6_LloQS92s0XHiBWBQq%252Dp6snpTbO2G2TtlDn1UgALZ1rMEBbPowbpmD50bR3iVbhCb3v8.OG7aU6U53LvjVuj2s%252D5ywQ%26rut%3Da6d711af03f32d268f098ebb226fb92f64ee28868d9080ea4965c1df4902a26e%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8zsiwOyul63EWgFs74rF1%252DzVUCUx9O8se2lxizKHJDUt%252DNT4eiETBfwF_ZYY0loeUv_C7mjl6OP4KNLo41Ni0pAtliTdVW7o%252DtfomeRaP5QDmC_FX8C3d2nExIjbsjQ3_aWRuTWUA7voDvz%252DrDUkMnfxroxsBHl%252D3HiVPFsbITQKZsSu4XbYnBygYtt0tChORmVh2G3PkayIhl_njFbzZl0eRhPs%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuc2FpYy5lZHUlMmZhcnQtaGlzdG9yeS10aGVvcnktY3JpdGljaXNtJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkbWFhaCUyNnV0bV9jb250ZW50JTNkbWFhaCUyNm1zY2xraWQlM2RiZjc4OGU3NzczOWUxNGU5MTE0N2U3MmVkNTA5YjUzZQ%2526rlid%253Dbf788e77739e14e91147e72ed509b53e%26vqd%3D4%2D323559816949660549266135888814218193654%26iurl%3D%257B1%257DIG%253D61BF1B55F8794EA4AB74F278D370FE99%2526CID%253D0CF769568AF06D422ED07F808B676CFB%2526ID%253DDevEx%252C5050.1&rut=22906260339dc1532057eacb116bc34391b032cc8ea9799696007654c2f79a50",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T15:30:32.210705"
+    },
+    {
+      "topic": "art history",
+      "title": "Art history - Wikipedia",
+      "content": "Art historians use a historical method or a philosophy, such as historical materialism or critical theory, to analyze artworks. [1] Among other topics, they study art's impact on societies and cultures, the relationship between art and politics, and how artistic styles and formal characteristics of works of art have changed throughout history.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FArt_history&rut=303a780dac35a13c2f55ec72d26c969b2ab740179355df3a11f3c75e6921532b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T15:30:32.210782"
+    },
+    {
+      "topic": "art history",
+      "title": "Art history | Painting, Sculpture & Architecture | Britannica",
+      "content": "Art history, historical study of the visual arts, being concerned with identifying, classifying, describing, evaluating, interpreting, and understanding the art products and historic development of the fields of painting, sculpture, architecture, the decorative arts, drawing, printmaking,",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fart%2Fart%2Dhistory&rut=17aab5e31619483cc50f84f268a88f34469bf7d4aac0d53deb66ba14324ad702",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T15:30:32.210853"
+    },
+    {
+      "topic": "art history",
+      "title": "Art Periods - A Detailed Look at the Art History Timeline",
+      "content": "Learn about the major art periods and movements from prehistory to the present, with dates, styles, and historical contexts. Explore the evolution of human artistic expression and its cultural significance across time and space.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fartincontext.org%2Fart%2Dperiods%2F&rut=66b7fb77699548daf6a4bd3becc3e75f3b4c9fcdb821e2b681a63ed543b66301",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T15:30:32.210912"
+    },
+    {
+      "topic": "renaissance art history",
+      "title": "Shop historical art book - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on historical art book at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DQVV3tSld2ql1stcFIiI4aidvUnQTKVegnSqDMZkmVA3S85Nm68StA0JrRXU7izDMHBBn4A6OzYQ4tlUpgHA5c6qhTFFkKMpD4lRBwKKgcbTUQ96uw7kiLaZFKAwrZyfzHODR_qLKroB7uQkoWBmbNAGWYKftbgm_OLvXq4Lo2b4.C6DHgmaYal%252DDM6yEERuu%252Dg%26rut%3D1d6a21b20014eba9cfa6ce356288765fcd4731f0a27923ac5a334e0469ab0df4%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8jKE3n_4Ajl0k2S_fwmOPDjVUCUwkYNUaUZeayluF_5u_XfrdqKB5jreKtuCh3AfnROH4gPNZbLoHja_nLgQd0U%252DYwBw8pPZOFDNuEZlSKEanKdNGoWVr9i9wGZY2%252DjTpdpd%252Dva2fWRVLV2T10J6wd1ufnylbhQHRORg8mV_eKkNL4veHohNSTYkuZcrrsvZ1rVnezf5WVjWskqs0_W58j79kNyI%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGhpc3RvcmljYWwlMmJhcnQlMmJib29rJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfN3ExeDQ5amg5OF9wJTI2YWRncnBpZCUzZDEyMzM2NTMwOTc0MTI4ODglMjZodmFkaWQlM2Q3NzEwMzQ1MTM0OTE3OCUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NDQ4JTI2aHZ0YXJnaWQlM2Rrd2QtNzcxMDM2MjQ2NzkxNDglM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDI0MTI1XzEzNjQ2NjY0JTI2bWNpZCUzZDg0ZDIwMTJmZTJjZjNlMzRiYzA4YmE5M2RiN2UxNzIzJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2QzYTJiYmMwODk3MzYxMjFjOGY5OWQ1NTEzMDQwNmJmZg%2526rlid%253D3a2bbc089736121c8f99d55130406bff%26vqd%3D4%2D316727795833315351061415956403691218334%26iurl%3D%257B1%257DIG%253D1A5F0E0EB8CA48E59450B22435C1E48F%2526CID%253D0382E10E8A346F072FE0F7D88BD06E0F%2526ID%253DDevEx%252C5045.1&rut=123822c36c98881e82f208a2a58125c72ebd40bb8cffae060e13e547d6a54dbf",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T15:34:14.971868"
+    },
+    {
+      "topic": "renaissance art history",
+      "title": "Famous Renaissance Art - History, Artists & Examples - Lesson",
+      "content": "Prepare for the Renaissance Art History with Our Video Lesson. We Have a Variety of Online Lessons That You and Your Student Will Love.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstudy.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DicIBaXRhVRCuWMFDukYEojI9KGXxAC4JFx0wOzFw8WaPEW9nQIb5v4IX5EaiOMBRUyvicNPXwOW0Jv1sKibjiqdfParAwerBc2LgjBBtLD1foUCSQk%252D4S4KjEshHOCY1muHmTTiN2jQGJ695Ls_MBpNw_9qRrV%252D_rxguvOA%252DpzE.8iOnqRu7GEp0E9g0sJQ5Qg%26rut%3Dc3d92df2f48606fdfdc4995279c0079f70539a885a0e7b9664b1b1ce63d95346%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8wd4QBsTFkvalFuW7KwM32zVUCUzAhPu42R6xstQvQeSLQ65Zx5uIN33dTcsTj8nBZo_VcIv3UDieX%252DCrK4_xiQasFnqHPCRYyACbYSwnKk7BJr_VugdpVlYaJ%252D7qQAGLqqe1PCBjkTYRXxa4un03yjzWo3SzlIiz6N2eRVDERtIlqeQoYlRBgF0wA%252Db8Bk7LwbtOeQDIYiRQiQplTKXXHmxkNXs%2526u%253DaHR0cHMlM2ElMmYlMmZzdHVkeS5jb20lMmZidXklMmZhY2FkZW15JTJmbGVzc29uJTJmcmVuYWlzc2FuY2UtYXJ0LWFydGlzdHMtcGFpbnRpbmdzLXNjdWxwdHVyZXMtYXJjaGl0ZWN0dXJlLmh0bWwlM2ZzcmMlM2RwcGNfYmluZ19ub25icmFuZCUyNnJjbnR4dCUzZGF3cyUyNmNydCUzZCUyNmt3ZCUzZFNFTy1QUEMtQlVZJTI2a3dpZCUzZGRhdC0yMzI5MDQwNTA1ODg2OTQwJTNhbG9jLTE5MCUyNmFnaWQlM2QxMjM1ODUxMzAyNTk2NzQ2JTI2bXQlM2RiJTI2ZGV2aWNlJTNkYyUyNm5ldHdvcmslM2RzJTI2X2NhbXBhaWduJTNkU2VvUFBDJTI2bXNjbGtpZCUzZDIyMGQ5MGY3YTdlYTE2ODI5NWNmZjlhZTAwOWM4NjQ1%2526rlid%253D220d90f7a7ea168295cff9ae009c8645%26vqd%3D4%2D13182649623730008203207481960124680133%26iurl%3D%257B1%257DIG%253D1A5F0E0EB8CA48E59450B22435C1E48F%2526CID%253D0382E10E8A346F072FE0F7D88BD06E0F%2526ID%253DDevEx%252C5048.1&rut=7e47c5b0cf898f3c7342989659261f3ac1d27c4cd788a697cc1007d386b2591a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T15:34:14.971964"
+    },
+    {
+      "topic": "renaissance art history",
+      "title": "Renaissance art | Definition, Characteristics, Style, Examples, & Facts ...",
+      "content": "Renaissance art, painting, sculpture, architecture, music, and literature produced during the 14th, 15th, and 16th centuries in Europe under the combined influences of an increased awareness of nature, a revival of classical learning, and a more individualistic view of humans.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fart%2FRenaissance%2Dart&rut=fc2d55493cca0db3d5d6129217d83b6f9e44f1ee46bf739acea290c928f7d636",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T15:34:14.972029"
+    },
+    {
+      "topic": "renaissance art history",
+      "title": "Renaissance art - Wikipedia",
+      "content": "Renaissance art (1350 - 1620 [1]) is the painting, sculpture, and decorative arts of the period of European history known as the Renaissance, which emerged as a distinct style in Italy in about AD 1400, in parallel with developments which occurred in philosophy, literature, music, science, and technology. [2]",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRenaissance_art&rut=ef1d34b2dc502e929dbb3a8f729aec5a553cc6a89254262aee8f3e8f405a501e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T15:34:14.972094"
+    },
+    {
+      "topic": "renaissance art history",
+      "title": "Renaissance Art - World History Encyclopedia",
+      "content": "Learn about the art of the Renaissance period in Europe (1400-1600 CE), which revived the classical art of antiquity and developed new techniques and styles. Explore the features, origins, patrons, and themes of Renaissance art, from religious frescos to mythological scenes.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.worldhistory.org%2FRenaissance_Art%2F&rut=6f13e8e97ccb22bd2b9eb48137359fdce092f9cd87e5c43aacce2408d4199011",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T15:34:14.972157"
+    },
+    {
+      "topic": "harmony music",
+      "title": "Releases \u00b7 anandnet/Harmony-Music - GitHub",
+      "content": "A cross platform App for streaming Music. Contribute to anandnet/Harmony-Music development by creating an account on GitHub.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fgithub.com%2Fanandnet%2FHarmony%2DMusic%2Freleases&rut=b907feef8ff54ca5c8abf2df99703dac3eea33320ba79e58c286a06c7783674e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:10:43.973600"
+    },
+    {
+      "topic": "harmony music",
+      "title": "Harmony Music | F-Droid - Free and Open Source Android App Repository",
+      "content": "Harmony Music is a free and open source app that lets you play songs from Ytube/Ytube Music, create playlists, download songs, and more. It has features like equalizer, lyrics, sleep timer, and Android Auto support, but also depends on a non-free network service.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Ff%2Ddroid.org%2Fpackages%2Fcom.anandnet.harmonymusic%2F&rut=90aacb54d8892f1f5b6d04c0b5a01d90cc0ca44fe59ebe02ad032ee195edd674",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:10:43.973683"
+    },
+    {
+      "topic": "harmony music",
+      "title": "Harmony Music - Download - Softpedia",
+      "content": "Download Harmony Music 1.12.2 - A modern music player where you can enjoy listening to music from various sources, be it from your local library or online streaming services",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.softpedia.com%2Fget%2FMultimedia%2FAudio%2FAudio%2DPlayers%2FHarmony%2DMusic.shtml&rut=2fbc057624ff224747c631f4693a3ff480f8354a1970c0280479e2d6df14a233",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:10:43.973747"
+    },
+    {
+      "topic": "harmony music",
+      "title": "Harmony Music for Android - Download the APK from Uptodown",
+      "content": "Harmony Music is an open-source music player app with which you can listen to all kinds of music for free from the comfort of your smartphone. You can play music online or listen to the songs stored on your device. Enjoy millions of songs Harmony Music uses YouTube and YouTube Music as sources for its multimedia content, resulting in a large catalog of available music. Each song provides ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fharmony%2Dmusic.en.uptodown.com%2Fandroid&rut=b6c92d21c6ad16162e80da44abb66d1abb4ca9202eea079b3609dfb72532189c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:10:43.973816"
+    },
+    {
+      "topic": "harmony music",
+      "title": "Harmony | Definition, History, & Musical Tones | Britannica",
+      "content": "Harmony, in music, the sound of two or more notes heard simultaneously.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fart%2Fharmony%2Dmusic&rut=979998673d840640782e2a2c09b9bb855216ee885460e41e4ab1421209dd250c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:10:43.973874"
+    },
+    {
+      "topic": "hip hop music",
+      "title": "Shop gospel of hip hop - Amazon.com Official Site",
+      "content": "Browse & discover thousands of unique brands. Read customer reviews & best sellers. Find deals and compare prices on gospel of hip hop at Amazon.com",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DW2mBufsoOvlAL5KEmWPl0ZRM6Q6quqk0CRy7E%252DurgNsJ0bJtS0CR7sdYOBZ0W8_1G4rR7ok3gYzsUIHzO6hV1f853JlTYMZ2JmFo5Ik10BzjzJHJm68x55GlUdonVTeUwLl0qml9N3FH4jC3sDHqNTPAhE9zy1USvsT8dvqvG%252Dc.FJ%252DP8KKa0n8%252Dn7wED8LZiw%26rut%3Db9eb787decc6e08e4b2351da8df35ce67847ada8a19c33f20d48635f9d5fb8e7%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8FzOLssOS0B0ozNl1lGTN9jVUCUyYfAg7UXRV_Hts6bNN4fjnzagSqJkIhX2i%252DWsPxAFgj%252Dd_CGdScJqYUk9Qm32iNAY5xxT%252DFUjlSSevgKWOKCEnVMcsSVnudg3QV3eKxoKz7YzbleDMfONmlO9HaksdzhuxXOmcbwhHig8P14Rd06YOOdhdABKzHVJTvzkKN2ees0o8eW7E7EiPTa1Rx7vTeQM%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGdvc3BlbCUyYm9mJTJiaGlwJTJiaG9wJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfODBibzhlaTI5el9wJTI2YWRncnBpZCUzZDEyMzkxNDk5Mjc4NTk3NTclMjZodmFkaWQlM2Q3NzQ0NzAzNjI3MDUzMyUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NTAyJTI2aHZ0YXJnaWQlM2Rrd2QtNzc0NDcxMTk1NjIxNTIlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDIwMzM0XzEzNDI4MjcwJTI2bWNpZCUzZGEzMDNiNTdjOGJmNzM4OGNhOWNlNWIyNmEwNDc0ZGUyJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2Q3MjQ0MDZkNDVkMzYxYTBiY2EwNjZmOGRlZjhmMjBhMg%2526rlid%253D724406d45d361a0bca066f8def8f20a2%26vqd%3D4%2D4613213102436321148387490006670717084%26iurl%3D%257B1%257DIG%253D82C822D8D00B43BEB829373B83698CA4%2526CID%253D2D379C2538BF674806248AF2393366CC%2526ID%253DDevEx%252C5045.1&rut=28fd6c790aff951cc914464e3adc44ba0283f4fee400938184bf4d9c475f8708",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:22:18.004802"
+    },
+    {
+      "topic": "hip hop music",
+      "title": "Hip-hop - Wikipedia",
+      "content": "Hip-hop (also known as rap music or simply rap) is a genre of popular music that emerged in the early 1970s alongside an associated subculture in the African-American and Hispanic communities of New York City. The musical style is characterized by the synthesis of a wide range of techniques, but rapping is frequent enough that it has become a defining characteristic. Other key markers of the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHip%2Dhop&rut=564e794097651db8e3c3d0a65901c9db99cace9037f7d1ed7cb3ff5c246179ae",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:22:18.004864"
+    },
+    {
+      "topic": "hip hop music",
+      "title": "Elliott Wilson's Best Of Hip-Hop 2025 - UPROXX",
+      "content": "The best hip-hop albums, songs, and more of 2025, as picked by Elliott Wilson.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fuproxx.com%2Fmusic%2Fbest%2Dhip%2Dhop%2D2025%2Delliott%2Dwilson%2F&rut=4a460c16fc9f4a6a9e109a2f345ad1a4041c47c4a1cb44bfd8d66fca4fd368fd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:22:18.004904"
+    },
+    {
+      "topic": "hip hop music",
+      "title": "Most Popular Hip Hop Songs of All Time - YouTube Music",
+      "content": "Most Popular Hip Hop Songs of All Time - Biggest Hip Hop Hits Playlist You can also find us with: most popular hip hop songs of all time top 10 most popular hip hop songs most popular hip hop songs ever most popular hip hop songs each year most popular hip hop songs now the most popular hip hop songs most popular hip hop songs of the last 10 years most popular hip hop songs right now most ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmusic.youtube.com%2Fplaylist%3Flist%3DPLGBuKfnErZlCetw2EtOhtcl90NS%2DRTyHe&rut=ae59121a6bd0a092b6afaa48c59e4cc3cf7f64f2107a82a0e90cba00e2a0b096",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:22:18.004957"
+    },
+    {
+      "topic": "hip hop music",
+      "title": "Top 100 Hip-Hop Songs - Charting Hits and Trends - HotNewHipHop",
+      "content": "Discover the hottest Top 100 hip-hop songs on HotNewHipHop. From viral hits to underground gems, this definitive chart ranks the best in hip-hop music. Updated weekly to keep you at the forefront ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.hotnewhiphop.com%2Ftop100&rut=db0cdff1bbed98b869e5927c0aa4e1b82e1cb1b789d2a50c9b37643985d0208e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:22:18.004999"
+    },
+    {
+      "topic": "heavy metal music",
+      "title": "Shop heavy metal music on cd - Amazon.com Official Site",
+      "content": "Find deals and low prices on heavy metal music on cd at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D8ctZMqAO_k7lupqslq_ZpzAv_wFsRiGUabCPdw4rCVM5KXdcwqsm51LQ3MR8JuIZZjyxl42nPQBTNHq%252DJmAlTN_DdFBzkXPx_QG_gJO9iaRp%252D2nZFxGGc3JRcuX1tp7n1dIRnkTpoJeI6m5fLOQxCIryLdWAgPCkkxBrfQBTYW4.TGjzjGhSQtsGzJ3b_Udd5w%26rut%3Ded2e36513c531f7c841c555068718bdfb9ab1197404cafc2220b06bb7f25d757%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8hoYvtFsgFCyQqwsXJ7ZcfTVUCUwfejiiPHRvR5qQarQvGOoJtWld0VM4C8JDwvXJgtbGrG2I8dq6t7VwTlKSbxU8B0%252DULSO5GAvZAy9V7gkDzf2WVrnl1wy0MX2fuepxbQ630Sm_JjDl%252D6I2KMfPYmgldmISZqXXskS63gw07Phb9FtN7YpSsEhzV_s8_2u%252DlzyKr5wNnFgAIUusp1HT6zDooD4%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGhlYXZ5JTJibWV0YWwlMmJtdXNpYyUyYm9uJTJiY2QlMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF80ZGViZ2tmZW5pX2IlMjZhZGdycGlkJTNkMTIzNDc1MjYzODQ1OTUyOSUyNmh2YWRpZCUzZDc3MTcyMTczNzUxMjM5JTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkYiUyNmh2Ym10JTNkYmIlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY0NDglMjZodnRhcmdpZCUzZGt3ZC03NzE3MjQwMDE5NzgzNiUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkNjg0OV8xMzMxNTE3NiUyNm1jaWQlM2RkYzhmMWE4MjhkMDAzZDUyOWYwODJlYmIyYmExMTc4ZSUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkYzhiODIxM2Y1NzFmMTA1NzY2ODk0ODY2ZTRjYmQxZjE%2526rlid%253Dc8b8213f571f105766894866e4cbd1f1%26vqd%3D4%2D8509324617041141969193371686728296858%26iurl%3D%257B1%257DIG%253D06EE6C505EA84BC196B08B47B04A72F8%2526CID%253D0A9D94199BC56C770E6382CE9A526D68%2526ID%253DDevEx%252C5045.1&rut=6ec26eef051d50ad9ae4d9d58f22c46804f7f85fc702a5b1e0c8f7f25c4a816c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:27:01.071943"
+    },
+    {
+      "topic": "heavy metal music",
+      "title": "Heavy metal music - Wikipedia",
+      "content": "Heavy metal (or simply metal) is a genre of rock music that developed in the late 1960s and early 1970s, largely in the United Kingdom and United States. [2] With roots in blues rock, psychedelic rock and acid rock, heavy metal bands developed a thick, monumental sound characterized by distorted guitars, extended guitar solos, emphatic beats and loudness. In 1968, three of the genre's most ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHeavy_metal_music&rut=a7997279c8004f352624d7ebf7f11f3f14fcecb83e71e12ad429ae77d243b9f6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:27:01.072036"
+    },
+    {
+      "topic": "heavy metal music",
+      "title": "Heavy metal | Bands, Songs, Music, Rock, & Facts | Britannica",
+      "content": "Heavy metal is a genre of rock music that includes a group of related styles that are intense, virtuosic, and powerful. Driven by the aggressive sounds of the distorted electric guitar, heavy metal is one of the most commercially successful genres of rock music.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fart%2Fheavy%2Dmetal%2Dmusic&rut=392c0ca00545201b9804e12a27c950f77ff096ce4444be76212bb18425ecd778",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:27:01.072102"
+    },
+    {
+      "topic": "heavy metal music",
+      "title": "Home - Encyclopaedia Metallum: The Metal Archives",
+      "content": "For those users submitting bands, if you have a band suspected of having AI generated music, we may call upon you to provide evidence to prove otherwise, whether it's behind-the-scenes material, statements from the band or its label, evidence the band played live, promotional material showing the band is genuine, and so on.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.metal%2Darchives.com%2F%3F%25FB%251F&rut=8d49f82502751ffe21c96658ce07e4dd39217392b30a10e1cf8780cfbce5948e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:27:01.072175"
+    },
+    {
+      "topic": "heavy metal music",
+      "title": "The 50 best metal songs of 2025 - Louder",
+      "content": "And that's a wrap! All year we've been bringing you regular round-ups of the best metal songs around, asking you to vote for your favourite, with the top three being added to our massive Best Metal Songs playlist and put in the running for our big end of year vote. And now, the results are in! We've ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.loudersound.com%2Fmusic%2Ftracks%2Dsingles%2Fthe%2D50%2Dbest%2Dmetal%2Dsongs%2Dof%2D2025&rut=3df0f05c8bf02ec0895362d2cc93af4bf7571a98d1299aec7f11b37578c7b6bb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:27:01.072237"
+    },
+    {
+      "topic": "horror fiction",
+      "title": "Shop horror fiction - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on horror fiction at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DNxJeGU786ES4hAm3Ay6OhSop7nOP2rmoCjMqx_oYUaKbAPnlYVgwdVk_edOpcvgiJo%252DVHyEKamcdjw3ustFzjyt1qfirsg9k_K%252DDZJcq1mEW2ZaUcFjyobiNqbCjddIWHmayN24rzPrsXn0kVSXluFxF6FnJOT01XTcYdhw6yTo.SNeSXY6UPNI9Z5983k7a9Q%26rut%3D729d44c4dc97e6435f1a50dbc1cff233801605b3106a3377931369c9705eeb55%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8AGmP%252DW5cHXBYidU7befXsDVUCUzmdDOKH%252D%252DeOtTo4bt4Z216wT8ORRphcXP6P8w07vJywCplLEerXLZdnAaiCxyJz79QUgxyVuancQgMI5HgdcdeBmSylhKjpRIbbRrNSt1zQoYMCSmRXoS0v62dhzvVdl536HmPgoiyuDL7jx1fcpiFhhxDYxmPrg57zBXDKEHgYWQl0N_Lyzy_qPJg7l5Vw8A%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGhvcnJvciUyYmZpY3Rpb24lMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF84dWswYjBteXZtX2UlMjZhZGdycGlkJTNkMTI0MTM0ODk0NTQzMjA0NyUyNmh2YWRpZCUzZDc3NTg0NDc1MjUzNTU1JTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkZSUyNmh2Ym10JTNkYmUlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY4MDclMjZodnRhcmdpZCUzZGt3ZC03NzU4NDU1MDM2MTI2OCUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkMTY2NTBfMTM1MjgwMDglMjZtY2lkJTNkZTNmZGQxM2E0MDkxMzhiOGI4MGI2NWE4YjRhNjcwZmQlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZGJkN2RhOGYwYjZlOTFkYzAyZGRiYzFhOTBlZTFmZTI5%2526rlid%253Dbd7da8f0b6e91dc02ddbc1a90ee1fe29%26vqd%3D4%2D38282687256937796913797928956744547230%26iurl%3D%257B1%257DIG%253D5B26DC1C2D4743C2A831937414C22A86%2526CID%253D011B522973766FD4015644FE72E16E42%2526ID%253DDevEx%252C5046.1&rut=34bd8346ff0c6aaf0d02c6a1794b733e2d67dd284cefd0ff3d8c09a438cfd3ee",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:44:56.448050"
+    },
+    {
+      "topic": "horror fiction",
+      "title": "Horror fiction - Wikipedia",
+      "content": "Horror is a genre of speculative fiction that is intended to disturb, frighten, or scare an audience. Horror is often divided into the sub-genres of psychological horror and supernatural horror.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHorror_fiction&rut=310dc4a70b22a3e3829b8f6d8df1ca7e493059cf43b4e98326f0bae9cf36ae7b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:44:56.448145"
+    },
+    {
+      "topic": "horror fiction",
+      "title": "Horror Books - Goodreads",
+      "content": "Horror fiction is fiction in any medium intended to scare, unsettle, or horrify the audience. Historically, the cause of the \"horror\" experience has often been the intrusion of a supernatural element into everyday human experience. Since the 1960s, any work of fiction with a morbid, gruesome, surreal, or exceptionally suspenseful or frightening theme has come to be called \"horror\". Horror ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.goodreads.com%2Fgenres%2Fhorror&rut=f07d1c2d6b18e7ae41934edc4d1a28f4494f09e6d548d6effb7deec7e0dbe3bc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:44:56.448227"
+    },
+    {
+      "topic": "horror fiction",
+      "title": "100 Best (and Scariest) Horror Books of All Time - Reedsy",
+      "content": "A list of the most terrifying and influential horror novels from Frankenstein to The Shining, with summaries and recommendations. Whether you prefer ghosts, vampires, serial killers, or cosmic horror, you'll find something to keep you up at night.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Freedsy.com%2Fdiscovery%2Fblog%2Fbest%2Dhorror%2Dbooks&rut=c6c76b3e354b5935ff5002bfb29b42571afca98671c473eaa85fbc28dd6ffaee",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:44:56.448299"
+    },
+    {
+      "topic": "horror fiction",
+      "title": "25 of the best horror books and ghost stories - Pan Macmillan",
+      "content": "Feel the chills with our pick of the scariest horror books and ghost stories stories to read right now.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.panmacmillan.com%2Fblogs%2Ffiction%2Fthe%2Dbest%2Dhorror%2Dbooks%2Dand%2Dhorror%2Dstories%2Dto%2Dread&rut=0121a33b8f38130db593c5059152af5e63cf70c3c33f020dcf1ce4bf2403a0ad",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:44:56.448389"
+    },
+    {
+      "topic": "historical fiction",
+      "title": "Shop historical fiction - Amazon\u00ae Official Site",
+      "content": "Browse & discover thousands of brands. Read customer reviews & find best sellers. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DkmidarH2XMIDjaS995osjtKrRfREXF2PsFc_8RJ5K7KMoc27sbpK8L9yMn14TN8C0jE4k2G9bQCPF4AEyiTgISPkc93RIP%252DGDJvf1DTI0SvqLxZXuQiA%252D6LnqfzZouj6zH1Lm3XMLBPf9bsPhHUQ84UUCtCS9OmX4Lp2JX7ye7Q.YnJJHRRhTrgDAwGRsMaIFg%26rut%3Dbf1bea0155443c7d6d47a032b8fc5638b1332f56df56eb8c52163489cfe48e56%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8uX4b9c0Zk90nXD6mh79UATVUCUyDG1FIMC_a7ngEw0%252D1qQibdoiT1jsTzFEX3lz0S6bVwWipdpC%252DZgg8R4d6ojAlyiNbYJuseEYgVao4ddLWn342lXcPst_B%252DhBPjLlPzeoXT0OMxrZcpSB6PoBTJ1zAubZoRwB2n14d5aosil3BOjdsAzp4NMyY_zJaCqGJlGhIy0N2RJkO08WWz3otvWCijIA%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGhpc3RvcmljYWwlMmJmaWN0aW9uJTI2aW5kZXglM2RzdHJpcGJvb2tzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzUzdXQzdzZxZjhfZSUyNmFkZ3JwaWQlM2QxMjQwMjUwMzU0Nzg1Mzc0JTI2aHZhZGlkJTNkNzc1MTU3ODc1Njk1NzElMjZodm5ldHclM2RzJTI2aHZxbXQlM2RlJTI2aHZibXQlM2RiZSUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjQ0OCUyNmh2dGFyZ2lkJTNka3dkLTc3NTE2MDcxOTg5NDYyJTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QyNTU1Ml8xMzU5MjQxMyUyNm1jaWQlM2RiOGFjOThmMzVkZjkzNWJmOGQyZjBiODYzMmRlYzdjZCUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkOWIwNTFkMDFjOWNlMWVhNjFhYjI3NDU4NzFlOTZlYzQ%2526rlid%253D9b051d01c9ce1ea61ab2745871e96ec4%26vqd%3D4%2D130339163135956684134426085257762128774%26iurl%3D%257B1%257DIG%253D39C9366E46554DE7B647ED10CC101FFF%2526CID%253D09158BBAF7FF6DDB02699D6DF6686C75%2526ID%253DDevEx%252C5046.1&rut=a3661c5569286bcc6c2d2b77ea87dfecd3cbd07c239c8b491f2a0c6afd190f89",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:45:28.298225"
+    },
+    {
+      "topic": "historical fiction",
+      "title": "Historical fiction - Wikipedia",
+      "content": "Learn about the definition, history, and examples of historical fiction, a subgenre of speculative fiction that depicts fictional plots in real historical settings. Explore how historical fiction can explore themes, characters, and events of the past, and how it can be criticized or praised for its authenticity and creativity.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHistorical_fiction&rut=23148ef9da6e7a2232ea757bfd75a8633fc3c1be10d0d85c55a5ee91b0bcd22e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:45:28.298318"
+    },
+    {
+      "topic": "historical fiction",
+      "title": "The 50 Best Historical Fiction Books of All Time - Barnes & Noble",
+      "content": "Discover 50 of the best historical fiction books of all time, recommended by Barnes & Noble booksellers. From Pulitzer Prize winners to international bestsellers, these novels transport you to different times and places with rich storytelling and historical detail.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.barnesandnoble.com%2Fblog%2F50%2Dbest%2Dhistorical%2Dfiction%2Dbooks%2F&rut=4dcccb8f29b17cd6a8942299da94e15984e19acbd9ac84b810c1cfc4366e9dfc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:45:28.298385"
+    },
+    {
+      "topic": "historical fiction",
+      "title": "Great New Historical Fiction - The New York Times",
+      "content": "These novels usher readers into fascinating, long-ago worlds.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nytimes.com%2F2025%2F12%2F31%2Fbooks%2Freview%2Fnew%2Dhistorical%2Dfiction.html&rut=a6b10f4fc0ca5a00e3a14d2e309a3675599fb2cc0f7222a21dc1d62b810db7cb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:45:28.298442"
+    },
+    {
+      "topic": "historical fiction",
+      "title": "Historical Fiction Books - Goodreads",
+      "content": "Historical fiction presents a story set in the past, often during a significant time period. In historical fiction, the time period is an important part of the setting and often of the story itself. Historical fiction may include fictional characters, well-known historical figures or a mixture of the two. Authors of historical fiction usually pay close attention to the details of their stories ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.goodreads.com%2Fgenres%2Fhistorical%2Dfiction&rut=71c348406bccb34f42c0a6ad882c58af9114f7912aaeccb5fc7a87767ab29577",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:45:28.298512"
+    },
+    {
+      "topic": "ernest hemingway",
+      "title": "Shop ernest hemingway - Amazon.com Official Site",
+      "content": "Browse & discover thousands of brands. Read customer reviews & find best sellers. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Dt4GuGph3lWGUPXEPXqFwbb1lR2SIXdbkhjgfAHu4ULhsRNIzZVwcpYMu5cwRBLQeBJIDdzEVPeX8vYHJu8NjrFIlF4j9piQMyMOb_rRwjLK_yrnQ%252DuffxbxPl3cDzfzE66OZLOSjTrJ_rSwCngHlGz5zTBK_FXSAGlje6V1amr8.jbbncE7nYeGv7W3HLHmZWw%26rut%3Dda9717531b2fd81f5b650ed83dd2d1e11bd6f6b3afc0e47ca8363786bf330c07%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8bsrp5MZRaVnsgAFYPqhbZjVUCUxySl7H4fA9qiL6Maa9b43mrJJLh0rSCJMQGfGLHzfVQ8q7MgfyEEtebVY%252DoQhNDmRs5op2SC8SikR_PSzShLZwk6D7zIG2Sr0523fxX4aTaA%252DTRFTDwAHK4MVo41w4ZkTd_vGfhWWBlB5gkq23MqAWGlNnwYUB9igBdP_QcnRnk6JtzcSUSusVKBhpltDKlpY%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGVybmVzdCUyYmhlbWluZ3dheSUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzh4MWh0NDFsd3lfcCUyNmFkZ3JwaWQlM2QxMjQwMjQ5NDM4OTExMjc4JTI2aHZhZGlkJTNkNzc1MTU3NTU3NTQwNDklMjZodm5ldHclM2RzJTI2aHZxbXQlM2RlJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NzYzMiUyNmh2dGFyZ2lkJTNka3dkLTc3NTE1ODQwMDA3NDQzJTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QxMDA0OF8xMzU4NzQ3MCUyNm1jaWQlM2QxN2YwYjljYmQ3MDUzMmI3OWU2OTI5NjM3NjFlMmY0NSUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkZTc5YTZjNDA4ZjkyMTMzZjY5YzUwNTE5MzJhNTlmZjA%2526rlid%253De79a6c408f92133f69c5051932a59ff0%26vqd%3D4%2D320801498124852051241027587555351383268%26iurl%3D%257B1%257DIG%253DFABDF205341446F8A2E6134F0E5D669C%2526CID%253D10FEB75308936F463F5AA18409466EB9%2526ID%253DDevEx%252C5045.1&rut=f4117ea363ad61996d5a7e20ae02b8ad5fd8f08d5e4d8ee5133d98721e76f542",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T17:07:03.838191"
+    },
+    {
+      "topic": "ernest hemingway",
+      "title": "Ernest Hemingway - Wikipedia",
+      "content": "Ernest Miller Hemingway (/ \u02c8h\u025bm\u026a\u014bwe\u026a / HEM-ing-way; July 21, 1899 - July 2, 1961) was an American novelist, short-story writer and journalist. Known for an economical, understated style that influenced later 20th-century writers, he has been romanticized for his adventurous lifestyle and outspoken, blunt public image.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FErnest_Hemingway&rut=f6f91312e81e2c792aeff0bb468ac2145868106dd40036091432afbd86449df5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T17:07:03.838308"
+    },
+    {
+      "topic": "ernest hemingway",
+      "title": "Ernest Hemingway | Biography, Books, Death, & Facts | Britannica",
+      "content": "Ernest Hemingway was an American novelist and short-story writer who was awarded the Nobel Prize for Literature in 1954. He was noted both for the intense masculinity of his writing and for his adventurous and widely publicized life. His succinct and lucid prose style exerted a powerful influence on American and British fiction.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FErnest%2DHemingway&rut=e75801b4438ee2defb7d1c6a77b669d94e037d6408f1a62b74b7860c8845fe7a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T17:07:03.838393"
+    },
+    {
+      "topic": "ernest hemingway",
+      "title": "Ernest Hemingway: Biography, Author, Nobel Prize Winner, Books",
+      "content": "Nobel Prize winner Ernest Hemingway was one of the great 20th-century American novelists, and is known for works such as A Farewell to Arms and The Old Man and the Sea.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.biography.com%2Fauthors%2Dwriters%2Fernest%2Dhemingway&rut=432838542625748770acd8287ab48ede5f3fb98f6490fdd242dc2da2d7bbaf05",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T17:07:03.838466"
+    },
+    {
+      "topic": "ernest hemingway",
+      "title": "Ernest Hemingway - Biographical - NobelPrize.org",
+      "content": "Learn about the life and works of Ernest Hemingway, the American writer who won the Nobel Prize in Literature in 1954. Explore his experiences as a journalist, a soldier, and a novelist, and his themes of courage, disillusionment, and hope.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nobelprize.org%2Fprizes%2Fliterature%2F1954%2Fhemingway%2Fbiographical%2F&rut=73e496f0d76db9767e87ef4cb13ccf326577a5cab0065119d3bd453e2638b59a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T17:07:03.838536"
+    },
+    {
+      "topic": "haruki murakami",
+      "title": "Murakami Lessons - Haruki Murakami",
+      "content": "Find the Perfect Book for Your School or Work with a Variety of Options to Choose From. Browse Our Selection of Books, Short Stories and Style from Around the World!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dstudy.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DGznciW48drReJCFV7mMz%252DjuLfaoV_D0xdAkVn7V7vTeMGBCkPh2zZeUKp62yKMG231_%252DHxWH8GbWPkA2T5lGu5iN1qr0KDVrczi8UU_vW%252DJsMAosMz52kFTPHLbua8btFPrs2UMoiBkfHJXP%252D6AzQwFcORrmzLok4j13frXW%252D20.WgDak2F3Bk1thWZddGaP6Q%26rut%3D44ab2e5d03e1f3ad39c3533e57e619c42024a81536d90c665aff10ea7a22f817%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8lL06Q0flFaWaUphZcFmFVzVUCUzmJxNtH_RjSlUZ19x5GR9iDnLzU6wLzKMDreDh6_eoxhJaS2Ak87Dr4tpfIDcSDKLRLJ4JwNvpwrK9wPhA9YWkCXIX6FDZdows3sIWYIUD4W48mxNxZxfTmchYPMWHrpasmjtoy13cXNEZt5tnGvsQbmLuSIIgm1KKXrDKpayc%252DWE4SrxrZBSVbmQRrEPZb7E%2526u%253DaHR0cHMlM2ElMmYlMmZzdHVkeS5jb20lMmZidXklMmZsZWFybiUyZmxlc3NvbiUyZmhhcnVraS1tdXJha2FtaS1ib29rcy1zaG9ydC1zdG9yaWVzLXRoZW1lcy5odG1sJTNmc3JjJTNkcHBjX2Jpbmdfbm9uYnJhbmQlMjZyY250eHQlM2Rhd3MlMjZjcnQlM2QlMjZrd2QlM2RTRU8tUFBDLUJVWSUyNmt3aWQlM2RkYXQtMjMyOTA0MDUwNTg4Njk0MCUzYWxvYy0xOTAlMjZhZ2lkJTNkMTIzNTg1MTMwMjU5Njc0NiUyNm10JTNkYiUyNmRldmljZSUzZGMlMjZuZXR3b3JrJTNkcyUyNl9jYW1wYWlnbiUzZFNlb1BQQyUyNm1zY2xraWQlM2RiODMyMGRkMjE0MmMxYzU3M2M3ZDY0OGJhYTE4YzU4Yg%2526rlid%253Db8320dd2142c1c573c7d648baa18c58b%26vqd%3D4%2D227044441768373725839343826199497681626%26iurl%3D%257B1%257DIG%253DF3D718DB4D4B46BFAA30C42871E0D573%2526CID%253D1C6D4D28C442673E101F5BFFC5CE669C%2526ID%253DDevEx%252C5046.1&rut=fe368ba1df7067fbab53ed8e92f9adfd8b9a48f45c85dcf90bf6a1355a07c210",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T17:11:16.835277"
+    },
+    {
+      "topic": "haruki murakami",
+      "title": "Shop haruki murakami collection - Amazon.com Official Site",
+      "content": "Find deals and low prices on haruki murakami collection at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Do7MJ8U7RkTwK8NTIBBN7SDrI4GauXYVxgNjQe4tf7k4JjFgHI26zo2ZWtzkneZx0f5dYLUvrdOOk6Ac0wAUaaOrFUvP1ygTufgxOkxubyb_fQax5UcE2hoziK4JpHWuNUariNpFpPLD%252DsvP6EerO3YYoZj6NcP7bvndfAGL%252DD00.ifdNJj8AW57t7pHnt3Udcg%26rut%3Dc0d45acc281f10b8da87492c840cbf5b6cc16fa98e09120cc38f59f7d97ef34c%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8kKi3XCbz8MZoVVNTW84H%252DTVUCUzn2EHvRZaVMXgGN%252D%252Dc3crt2wKlT2PhFfSFhqt_h_JCrUL76u8vacsbnRgFiYRgti1on2kjf5ihYhtx2a7%252DxX67mMw6QuAsYbeFdJ7xQjnzka1nzfV7eFo00rQtHNjZMxnzs4YyJcBi_wmhu_fh6zicEr993LxWgLHReW3hg3fIK34y3VnC7fuGm7jiRVBViTY%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGhhcnVraSUyYm11cmFrYW1pJTJiY29sbGVjdGlvbiUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsX3pvdjB2bHFld19iJTI2YWRncnBpZCUzZDEyMzkxNDk5NDY1MTMzNTclMjZodmFkaWQlM2Q3NzQ0NzAzOTEwMjA5OSUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGIlMjZodmJtdCUzZGJiJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QxNDAxNjYlMjZodmxvY3BoeSUzZDg3ODExJTI2aHZ0YXJnaWQlM2Rrd2QtNzc0NDcyMjUzMDQ0NjIlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDIyOTk3XzEzNTk5MjIzJTI2bWNpZCUzZGI2YWRmN2M1NTQ3NjMwNDNhOWM0MjA5Mzc2OWIyZDYxJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2RkODlkYmIyYmI4YmUxYWE2NmQxZWQyNzIwNjhhODViYQ%2526rlid%253Dd89dbb2bb8be1aa66d1ed272068a85ba%26vqd%3D4%2D304663256064600821074012159180917855321%26iurl%3D%257B1%257DIG%253DF3D718DB4D4B46BFAA30C42871E0D573%2526CID%253D1C6D4D28C442673E101F5BFFC5CE669C%2526ID%253DDevEx%252C5050.1&rut=93351c078575006dc2f07fd1dbe2953a9061fe4883a250c42ec0dc62fe2571fd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T17:11:16.835331"
+    },
+    {
+      "topic": "haruki murakami",
+      "title": "Haruki Murakami - Wikipedia",
+      "content": "Haruki Murakami (\u6751\u4e0a \u6625\u6a39, Murakami Haruki; born January 12, 1949[1]) is a Japanese writer. His novels, essays, and short stories have been best-sellers in Japan and internationally, with his work translated into 50 languages [2] and having sold millions of copies outside Japan. [3][4] He has received numerous awards for his work, including the Gunzo Prize for New Writers, the World ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHaruki_Murakami&rut=701fcb16249a6c70efd9afab71a505bf5bf4d3f928ccdbbd64a248cc4995b832",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T17:11:16.835783"
+    },
+    {
+      "topic": "haruki murakami",
+      "title": "Haruki Murakami | Books, Famous Works, Genre, & Norwegian Wood - Britannica",
+      "content": "Haruki Murakami is a Japanese novelist, short-story writer, and translator whose deeply imaginative and often ambiguous books became international bestsellers. His notable novels included Norwegian Wood, The Wind-Up Bird Chronicle, and 1Q84.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FHaruki%2DMurakami&rut=463b8cf0aa11077cea7a9c87714dea605572ca270cd76b8b5406bfc735953bf4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T17:11:16.835819"
+    },
+    {
+      "topic": "haruki murakami",
+      "title": "About Haruki Murakami - Haruki Murakami",
+      "content": "Learn about the life and works of Haruki Murakami, one of the most acclaimed and influential contemporary writers. Explore his novels, short stories, nonfiction, interviews, and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fharukimurakami.com%2Fauthor%2F&rut=c910bdbc3aa92d32e3adf6294116775464a040d662b20f2e9ee6c850b31e67dd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T17:11:16.835852"
+    },
+    {
+      "topic": "cinema history",
+      "title": "History of film - Wikipedia",
+      "content": "Learn about the development of film as a visual art form from the late 19th century to the present day. Explore the precursors, pioneers, genres, and innovations of film history.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHistory_of_film&rut=c7db62cfc9d9c7bcb8a8e8b8f2f62e7b7ca6bcb7dfeb7c99d7cd793d8e38ee23",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T17:12:19.849529"
+    },
+    {
+      "topic": "cinema history",
+      "title": "History of film | Summary, Industry, History, Technology, Directors ...",
+      "content": "This article details the history of cinema, a popular form of mass media, from the 19th century to the present.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fart%2Fhistory%2Dof%2Dfilm&rut=bce6c773d9f57e58006e3d64da6dd477aaff7608922edbff4aaa3424160b7e5a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T17:12:19.849580"
+    },
+    {
+      "topic": "cinema history",
+      "title": "History Of Film Timeline \u2014 A Visual Guide to the History of Film: From ...",
+      "content": "The history of film is a fascinating journey through time, where technological advancements and artistic expressions blend to create the enchanting world of cinema. From the early flickers of silent images to the immersive experience of modern masterpieces, film has continuously evolved, capturing the imagination of audiences worldwide.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Ffilmlifestyle.com%2Fhistory%2Dof%2Dfilm%2Dtimeline%2F&rut=4a96d72c27fcc7594433efbce36c421450238a7b5727f8f1fcbb71769ba7d507",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T17:12:19.849617"
+    },
+    {
+      "topic": "cinema history",
+      "title": "History of Film Timeline \u2014 All Eras of Film History Explained",
+      "content": "Learn about the major movements and technical breakthroughs that have defined cinema worldwide from pre-film to the current state of film. Explore the history of film by era, from the first motion pictures to the New Hollywood and beyond.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.studiobinder.com%2Fblog%2Fthe%2Dhistory%2Dof%2Dfilm%2Dtimeline%2F&rut=5df16a20df507bbe19c6b4ad5cdf7627f16583e7b41f37487967a501fc42c4eb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T17:12:19.849648"
+    },
+    {
+      "topic": "cinema history",
+      "title": "History and development of film - MoMA",
+      "content": "History and development of film Film History and development of film Advent of Cinema Experimentation with Sound Documentary and Propaganda Experimentation in Film / The Avant-Garde The first motion pictures flickered to life in Thomas Alva Edison's New Jersey laboratory in the early 1890s.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.moma.org%2Fcollection%2Fterms%2Ffilm%2Fhistory%2Dand%2Ddevelopment%2Dof%2Dfilm&rut=528e5cb697942fd78cc3c2347b70e65a54c23c8484588d5966720554eceba51b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T17:12:19.849687"
+    },
+    {
+      "topic": "hip hop dance",
+      "title": "Affordable Dance Classes - Affordable Dance Fun",
+      "content": "Find local dance classes for all ages and skill levels on a budget. Learn new dance moves with affordable classes near you\u2014join today!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dgroupon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Dw3JqfIHvxhrLJYwE79chtjVy_PkJen32OcjSeyUFOA1pGdbHDNEByKUcmq_skLXPr6xvKqiok_YtKWkU8c4rMrT3N5kbfTy%252DgO%252DctAW%252DoCTVaZVgqKU_0VJUThTTFDcd1VZcDsHMKuOT2qpME2E4co7lFS%252D9UA7nbJe2Q59uwVg.YwCrpj2Sap3l6oQwATezEQ%26rut%3Dc6d0efd2f2b3e23e908e69b488eaec444bd1c69134d160120cce1d7d52ef7539%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8dtMUgQQYpVxmG2Igscx7GDVUCUwDw05XcLJ457uqDBeX0oVdy9xUuHJNay5GoAyNGa1m3lWMu0XsRPDFSTHmMpVqDVzjQaBPN1TO5U6M4dIxGGZu3Q3PHBm8GMxfW8HCbCrfQg1QSLU8GAebpkQtX6pZJXvMiAk4Xq0OZXtLvfyADxpwPg8zF1ATfwuzdv5ICIrzVIbj5zVZi3xRpD7upfe%252D2eA%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuZ3JvdXBvbi5jb20lMmZsb2NhbCUyZmRhbmNlLWNsYXNzZXMlM2ZhZHNhZmUlM2R0cnVlJTI2dXRtX2NhbXBhaWduJTNkY181NjkwMTEzNTclMjZ1dG1fY29udGVudCUzZDc0MTQ4NjMzNDEwNjY2JTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2bXNjbGtpZCUzZDcwYzc5MWE3MjZmMzFjOTNlOGE2ZjhmZWQ4YzI3ZjE3%2526rlid%253D70c791a726f31c93e8a6f8fed8c27f17%26vqd%3D4%2D90311458783594544851172287512301103129%26iurl%3D%257B1%257DIG%253D3E81400234524D89B67A9EF6CCF2C35F%2526CID%253D1510B0A9E0EF6D7D3947A67EE1786C3D%2526ID%253DDevEx%252C5046.1&rut=fd87d19195fbfd058e86ca7b4056e5105465d7a7796f6f22c38540ca73261f47",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:44:17.600616"
+    },
+    {
+      "topic": "hip hop dance",
+      "title": "Hip-hop dance - Wikipedia",
+      "content": "Learn about the origins, influences, and evolution of hip-hop dance, a range of street dance styles performed to hip hop music or that have evolved as part of hip hop culture. Explore the different styles, such as breaking, locking, popping, and social dancing, and their cultural markers, attributes, and derivatives.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHip%2Dhop_dance&rut=69800d937c45384bde331d45f7de7ac704410d43b8e12290078b332e82f88562",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:44:17.600714"
+    },
+    {
+      "topic": "hip hop dance",
+      "title": "What Is Hip Hop Dance? Learn the History & Moves at Home",
+      "content": "Learn about the origins, culture, and evolution of Hip Hop dance, from its roots in African American communities in the 70s to its global impact today. Discover the 5 elements of Hip Hop, the types of Hip Hop dances, and how to join online classes with STEEZY.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.steezy.co%2Fposts%2Fwhat%2Dis%2Dhip%2Dhop%2Ddance&rut=2fb4ae312d9aabdf5b8065bf7a60485b39bf0f63a879aaa2a12ba92533d03ae0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:44:17.600796"
+    },
+    {
+      "topic": "hip hop dance",
+      "title": "HIP HOP Dance Tutorial for Beginners - Easy & Step by Step",
+      "content": "Try this new hip hop dance tutorial for beginners! This choreography tutorial is perfect if you want to learn how to dance hip hop. Let's go through these fun and easy moves together step by step.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D1sD51hC0yRg&rut=293400ccb55d3f09ade31f587355c4dddcc74bd916c1c89d01905c75a2ee6534",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:44:17.600870"
+    },
+    {
+      "topic": "hip hop dance",
+      "title": "iconic hip hop dance moves - Red Bull",
+      "content": "Step into the rhythm with 14 legendary hip hop dance moves! Explore old-school classics and modern favorites. With a little practice, you'll groove like a pro in no time.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.redbull.com%2Fus%2Den%2Fwhat%2Dmakes%2Dhip%2Dhop%2Ddance%2Dmoves%2Diconic&rut=7a18979f79cd9a50e0595bb3f76682d3e2b3c0c007bedeb23d80e31ab5153ded",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:44:17.600941"
+    },
+    {
+      "topic": "architectural history",
+      "title": "20th Century Architecture Book - Free Shipping on ebay",
+      "content": "Buy 20th Century Architecture Book on ebay. Money Back Guarantee!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Debay.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DRBthHbI1zAvjrccJsbM1AL0yXYe7PD%252DGYdtsqMkzvrul3SfGzyg5eCvBxeppMRb15qevQ%252DMUHHwsK0zYjLfU6jlbQiSrekxYvHLgpXJOvpy4y9_cn8UJnZSTYBTk8Cv9z7%252DrOuOwlYABD1L0R2NVbFoCzW79CcKHrxHGQTPMiys.Xh1uxGZd0vq8dvkJPwWCyA%26rut%3D3c968b2aed91ea9a6c84ed21e6fc73f8a8fd129dd5c16d7bb05b5c41ddb455ed%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8j881MSOQvzn8n2iN2_IiGDVUCUyKt_aGZm9Omoh09YPnn1qRq5VpL3KrqlwEKSs%252DH5LdQuJsL5OaGYWm0dWhsc9MqgsiVMpnQCloamqIaUKCiqpjEEKlHEkOeKyCiB8IhN2HjURT7fflRRfnEuH_qkTWv9QG3pitttGMRplPcoxXh6KH1s6XSeuDWjh2Aog4cGPALZJmO%252DlB1jyKURDDgyoVedQ%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuZWJheS5jb20lMmZzY2glMmZpLmh0bWwlM2Zfbmt3JTNkMjB0aCUyNTIwY2VudHVyeSUyNTIwYXJjaGl0ZWN0dXJlJTI1MjBib29rJTI2bm9yb3ZlciUzZDElMjZta2V2dCUzZDElMjZta3JpZCUzZDcxMS0zNDAwMi0xMzA3OC0wJTI2bWtjaWQlM2QyJTI2bWtzY2lkJTNkMTAyJTI2a2V5d29yZCUzZDIwdGglMjUyMGNlbnR1cnklMjUyMGFyY2hpdGVjdHVyZSUyNTIwYm9vayUyNmNybHAlM2RfNTA3NyUyNk1UX0lEJTNkJTI2Z2VvX2lkJTNkJTI2cmxzYXRhcmdldCUzZGt3ZC03NzMwOTU5MjA0OTAwMCUzYWxvYy0xOTAlMjZhZHBvcyUzZCUyNmRldmljZSUzZGMlMjZta3R5cGUlM2QlMjZsb2MlM2Q4NzQyMiUyNnBvaSUzZCUyNmFiY0lkJTNkJTI2Y21wZ24lM2QzOTU0Mzc5NTklMjZzaXRlbG5rJTNkJTI2YWRncm91cGlkJTNkMTIzNjk1MDc4ODQ0MDg1OSUyNm5ldHdvcmslM2RzJTI2bWF0Y2h0eXBlJTNkYiUyNm1zY2xraWQlM2QyYTA3MDI4NDhlMWIxZTM4ODBkODZiZGQ3MGI0YzRiMA%2526rlid%253D2a0702848e1b1e3880d86bdd70b4c4b0%26vqd%3D4%2D269738880267480851751687685538502293875%26iurl%3D%257B1%257DIG%253DD4B9BAF846AC44B1927FB9E023E14953%2526CID%253D2A648ADA333866E800139C0D32AF673A%2526ID%253DDevEx%252C5045.1&rut=64984da6473e525d43e178fe656b7897382e9d125885be025d74d27ee927f34a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:46:23.704471"
+    },
+    {
+      "topic": "architectural history",
+      "title": "History of architecture - Wikipedia",
+      "content": "The history of architecture traces the changes in architecture through various traditions, regions, overarching stylistic trends, and dates. The beginnings of all these traditions is thought to be humans satisfying the very basic need of shelter and protection. [1] The term \"architecture\" generally refers to buildings, but in its essence is much broader, including fields we now consider ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHistory_of_architecture&rut=73954ac7ae7f2ef28919b1363bf9bc3d46f8270a8a3d127fd301c5cc2bc07c60",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:46:23.704524"
+    },
+    {
+      "topic": "architectural history",
+      "title": "Architectural History | Cambridge Core",
+      "content": "Architectural History is a double-blind, peer-reviewed international journal that publishes significant original and interpretive research on buildings, the built environment, the history of architectural theory, and architectural historiography, in all places and periods.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cambridge.org%2Fcore%2Fjournals%2Farchitectural%2Dhistory&rut=cbff9a4699e88d881501ebc2d21ac7c778441c475c9eed06ad4107c5303e89df",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:46:23.704553"
+    },
+    {
+      "topic": "architectural history",
+      "title": "Architecture Timeline: History and Style Evolution - ThoughtCo",
+      "content": "Explore the origins and influences of Western architecture from prehistoric times to modernism. Learn about the Classical orders, the Pyramids, the Parthenon, and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.thoughtco.com%2Farchitecture%2Dtimeline%2Dhistoric%2Dperiods%2Dstyles%2D175996&rut=8bb0e2d4ec7eab2498c5297574abd729c2055189ab5e66a41dc33ff665cd76a3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:46:23.704583"
+    },
+    {
+      "topic": "architectural history",
+      "title": "Evolution of Architecture: 18 Eras That Shaped Architecture Across History",
+      "content": "A full history of architecture, from ancient temples to modern skyscrapers, explained in 14 key eras.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.architecturecourses.org%2Flearn%2Fevolution%2Darchitecture&rut=e1e5a8ced5b512f30682fd258951b0f52e8c39c6ddac76fa288217bb489e6e12",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:46:23.704607"
+    },
+    {
+      "topic": "hedge fund",
+      "title": "Top Hedge Fund Lists - Download Hedge Fund Lists .xls",
+      "content": "Search 4,400 Hedge Funds in Excel. Full Contact Details, AUM, Email, and More",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dhedgelists.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D%252DYuebr436xPN5b8SMFlz0ufPeGvHHKIbMf16lFs95PtJCy756kRHQeWfVCNGNCE%252DHF%252DmhS6HPuR58WxTRGRzImwF7y9mqLobatAvWKxTByTXWh97hDtnLubPBtjE_HjSyTspTkq5JX2oCXgvVuzX7mercBh5ErOIPQN1TqRqo3g.oMLPdnDHW1Yz87lHq%252DpSCg%26rut%3D65700e457b35136c042ea2ab1e125c7eb620f85b8bdc9eafdf826c6734254500%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8EZnKwpizR7bQGPjavCHmIDVUCUwjMriLAUrhoIw_TMgRT%252Dn6GAvhlGAxQbLkN3LEbpQhLKa06us%252DAFfa4bHhxjiHSNeeeRx_Pt_YuyeZT5ccVgohOwIGjyS8NVn7U8clsewLJGbJvRl792ivoQYFF1f4Eg1DTT4ZSR%252DYJuoEKqtdyS1ahHIOI%252DJJjpJMi02nEvv2BpR89C5nRvdY%252DIdT%252De4m3XA%2526u%253DaHR0cHMlM2ElMmYlMmZoZWRnZWxpc3RzLmNvbSUzZm1zY2xraWQlM2Q4NTBjZDYwMGNmZDAxZWIyMjE4NWJmNWE3ZGUzMmY2ZQ%2526rlid%253D850cd600cfd01eb22185bf5a7de32f6e%26vqd%3D4%2D78486087283578956650816015598206901042%26iurl%3D%257B1%257DIG%253D143EA7BF76E94C4885ADA96FE1E85183%2526CID%253D080AD5CA15AD6FE327CBC31D14786E9A%2526ID%253DDevEx%252C5045.1&rut=c1fb0c107b10b4f3dc3dc500ac05249c77b73865c939ff02ac546145978ae12c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T10:32:19.777486"
+    },
+    {
+      "topic": "hedge fund",
+      "title": "Hedge fund - Wikipedia",
+      "content": "A hedge fund is a pooled investment fund that uses complex trading and risk management techniques to aim to improve investment performance and insulate returns from market risk. Learn about the etymology, history, strategies, regulation and performance of hedge funds, as well as their role in the financial crisis and activism.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHedge_fund&rut=5f9b1ae1915f3e320c32cf19f6e30aadfa8112f840285640fbbf4bda476c0a06",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T10:32:19.777584"
+    },
+    {
+      "topic": "hedge fund",
+      "title": "Hedge Fund: Definition, Examples, and Strategies - Investopedia",
+      "content": "Learn what a hedge fund is, how it works, and why it is attractive to accredited investors. Explore the different types and strategies of hedge funds, and see examples of the largest and most successful ones.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.investopedia.com%2Fterms%2Fh%2Fhedgefund.asp&rut=c32f4f09ae9e17c18d3b02239efb37897725468372f42f9736d0048e7b10d2f8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T10:32:19.777634"
+    },
+    {
+      "topic": "hedge fund",
+      "title": "What Is a Hedge Fund? Strategies, Managers, & How to Invest ...",
+      "content": "Learn what hedge funds are, how they work, and why they are limited to accredited investors. Explore different types of hedge fund strategies, such as equity, global macro, and volatility arbitrage, and some of the famous managers and their returns.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fmoney%2Fhedge%2Dfund%2Dinvestment&rut=1691bb13839bd7b56812b6c95c110ba2cde396518e29717a23ffcb1f42992596",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T10:32:19.777681"
+    },
+    {
+      "topic": "hedge fund",
+      "title": "Hedge Funds - Investor.gov",
+      "content": "What are hedge funds? A hedge fund is a private, unregistered investment fund. Hedge funds pool money from investors and invest in securities or other types of assets with the goal of getting positive returns. As discussed below, hedge funds are generally limited to individuals and institutional investors who meet certain sophistication criteria.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.investor.gov%2Fintroduction%2Dinvesting%2Finvesting%2Dbasics%2Finvestment%2Dproducts%2Fprivate%2Dinvestment%2Dfunds%2Fhedge%2Dfunds&rut=c2ed602ff8088221b1127fb23ea6e4477663196655c7596b80c501ac5545f7a9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T10:32:19.777733"
+    },
+    {
+      "topic": "human resources",
+      "title": "Small Business Payroll & HR - Receive 3 Months Free Payroll",
+      "content": "Explore ADP\u00ae For Payroll, Benefits, Time, Talent, HR, & More. Over 1 Million Businesses Utilize Our Fast & Easy Payroll. Join The Team.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dadp.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DQFWA70sl%252DCMTwZqBHrRSdE6mTgKiBVBIX2IkkEqKlRKQN2QJnAljtjVXOkoPqCHmIdLUVd7mv3YTtAdg_KOwws1QO0iVem9YaF6oSVkD4LkFoukwyX%252Dm9SkpAmTZGzyqocXixGdD_wnbtWonyXNvjI82GwaXHz6kaWPk397hJ74.f7z99bj5iYehDJk_YVWfpA%26rut%3D5a839027dceb6fa3034ed17b51fae62882c71547b1903be31bf51b536ee4994b%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8amzFlCtbKNKHdZ_5G0aqnjVUCUw4nZXHMPsqsw9TrYafJAIcosMMxLMi5Lx9KIcXofBe5Sr_rpGQCIEPgGkoeugGr6iyBkQITxPZbSS1b4FBiqSCXaVD0TrREOowqe3x_WOi9swkCrEl2cT43ga6%252DBWUGDcocTL5GUvAilGDkjLMvU4V5dDhQmBASbK5IsHEzgzR%252DjSJZSq6q7D2sd13AHxBAmQ%2526u%253DaHR0cHMlM2ElMmYlMmZhZC5kb3VibGVjbGljay5uZXQlMmZzZWFyY2hhZHMlMmZsaW5rJTJmY2xpY2slM2ZsaWQlM2Q0MzcwMDA3NDQ3NTI3OTc3NyUyNmRzX3Nfa3dnaWQlM2Q1ODcwMDAwNzkwNTEzNzMyNyUyNmRzX2FfY2lkJTNkNDA1NTE1MjI0JTI2ZHNfYV9jYWlkJTNkOTIxNzk4MjA2MyUyNmRzX2FfYWdpZCUzZDEzODc5MDEzNDkxMiUyNmRzX2FfbGlkJTNka3dkLTE5MjYzMjEzNDQyOTclMjYlMjZkc19lX2FkaWQlM2Q3ODA2NTU0MjE5Njk4MSUyNmRzX2VfdGFyZ2V0X2lkJTNka3dkLTc4MDY1NzI2NTUzMjMzJTNhbG9jLTQwODQlMjYlMjZkc19lX25ldHdvcmslM2RzJTI2ZHNfdXJsX3YlM2QyJTI2ZHNfZGVzdF91cmwlM2RodHRwcyUzYSUyZiUyZnd3dy5hZHAuY29tJTJmc2VtbHBzJTJmMDAwMSUyZmhyLmFzcHglM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RDb3JlX0VHX0VHX0hDTV9OdWxsX0FsbF9CcmFuZF9BbGxfRU4lMjZDSUQlM2RBRFBfU0VNX0JpbmdfQWxsX1NFTV9UZXh0X0NPUkVfTnVsbF9IUl9KdWxfMjJfTnVsbF9CX0Jyb2FkJTI2cTElM2QxOTI2MzIxMzQ0Mjk3JTI2S2V5d29yZCUzZGFkcCUyNTIwaGNtJTI1MjBzZXJ2aWNlcyUyNktleXdvcmRfTWF0Y2hfVHlwZSUzZGIlMjZBZF9JRCUzZDc4MDY1NTQyMTk2OTgxJTI2ZGV2aWNlJTNkYyUyNlJlZmVycmluZ19Tb3VyY2UlM2RCaW5nJTI2cG9zaXRpb24lM2QlMjZ0YXJnZXRpZCUzZGt3ZC03ODA2NTcyNjU1MzIzMyUzYWxvYy00MDg0JTI2bmV0d29yayUzZHMlMjZkY19jYW1waWQlM2Q5MjE3OTgyMDYzJTI2ZGNfYWRncm91cGlkJTNkMTM4NzkwMTM0OTEyJTI2Z2NsaWQlM2QyOTQ5ODUwMGI3NWExYjk3YjJkOWVjNWEwZTIzZTE0MyUyNmdjbHNyYyUzZDNwLmRzJTI2JTI2bXNjbGtpZCUzZDI5NDk4NTAwYjc1YTFiOTdiMmQ5ZWM1YTBlMjNlMTQz%2526rlid%253D29498500b75a1b97b2d9ec5a0e23e143%26vqd%3D4%2D301471422046565367131302567099515977648%26iurl%3D%257B1%257DIG%253D1F38E95793164F81B329B511747B233A%2526CID%253D0820C35E9032610833CFD58991E7606A%2526ID%253DDevEx%252C5045.1&rut=64f82a085f432ea4e7babe83c5e2379ebf8d5748794b1801575aecf4d974448b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:03:21.698370"
+    },
+    {
+      "topic": "human resources",
+      "title": "Training Material for HR - Training For HR Managers",
+      "content": "Complete Training Materials to Teach 1 day HR Management Workshops. Customizable Training Materials to teach Human Resource Management skills.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dcorporatetrainingmaterials.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D0xLRODxtWkEVCxzXn5oBDklF2tHBwS9QxmB%252DGNvcERHnH_gJk7RSqdRtS7rVZEfFzSD_LYnR2tE7iMlQ_XgRM6qpH16O_TQ5A84RcllWdfV6I8jqLXzxy3nlkjXJEWoE1P4DtA%252DFrtXbB0ZW6vPm3mZYSvYaYP%252D6V2K9yERq7k8.PKBYc2kIHbw177HSxgEq4w%26rut%3De1c573e46f7a50f2ef82f6033f2c30279155e7d1407ace282ad1137f8d0280bf%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8oBnR368tMZUA9qu44SAlwTVUCUxvHjSU3bjtYV2VyE_3BxqNYngtTNQMosBBswuCHBUjwRPtfYJUFIHK4v3iUsD01b6aJaIOZsZERKSWjOokfM5uX9pOijJNHuo_ag%252DS13N136BZh52iLK7nT5jxr4kxP%252D0ahDuxUCjJvU4tBrB7OJovdKUZAg8ZK2kYrwimtBEmf71ei5JUT1hvswQl_WX01hs%2526u%253DaHR0cHMlM2ElMmYlMmZjb3Jwb3JhdGV0cmFpbmluZ21hdGVyaWFscy5jb20lMmZwcm9kdWN0cyUyZkh1bWFuLVJlc291cmNlLU1hbmFnZW1lbnQlM2Z1dG1fc291cmNlJTNkYmluZyUyNmNhbXBhaWduLW5hbWUlM2QwMVMlMjZkZXZpY2UlM2RjJTI2YWRncm91cCUzZDExNTU1ODcyNDExNTM3MTMlMjZrZXl3b3JkJTNkaHVtYW4lMjUyMHJlc291cmNlcyUyNTIwZGV2ZWxvcG1lbnQlMjZtYXRjaHR5cGUlM2RwJTI2bXNjbGtpZCUzZGJkOGFlNDAyNjI5NzEzMWYwZjY2OGQ1OGRiZWVmZWM3JTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZDAxcyUyNTNBJTI1MjB1cyUyNnV0bV90ZXJtJTNkaHVtYW4lMjUyMHJlc291cmNlcyUyNTIwZGV2ZWxvcG1lbnQlMjZ1dG1fY29udGVudCUzZGh1bWFuJTI1MjByZXNvdXJjZXMlMjUyMG1hbmFnZW1lbnQlMjUyMCUyNTIzNA%2526rlid%253Dbd8ae4026297131f0f668d58dbeefec7%26vqd%3D4%2D264930812996935507533464796337752412923%26iurl%3D%257B1%257DIG%253D1F38E95793164F81B329B511747B233A%2526CID%253D0820C35E9032610833CFD58991E7606A%2526ID%253DDevEx%252C5049.1&rut=16dcc62ea62d96c93270a1c15613507ba20a92a5b688e1b71f23fce99eb21189",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:03:21.698421"
+    },
+    {
+      "topic": "human resources",
+      "title": "Human Resources | Sunnyvale, CA - California",
+      "content": "The Human Resources Department manages services and programs in recruitment, employee benefits, employee and labor relations, and volunteers. Department staff administer workers' compensation, and liability and safety programs.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sunnyvale.ca.gov%2Fyour%2Dgovernment%2Fdepartments%2Fhuman%2Dresources&rut=9c26f4d9cf5408a25ef75a436d893a03de4a6358af8cccead97627c179f20d02",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:03:21.698460"
+    },
+    {
+      "topic": "human resources",
+      "title": "Human resources - Wikipedia",
+      "content": "Human resources (HR) is the set of people who make up the workforce of an organization, business sector, industry, or economy. [1][2] A narrower concept is human capital, the knowledge and skills which the individuals command.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHuman_resources&rut=b5d9a9df2dbd3527b7218411067d6522acb71c4ba19847948f6adcfdcc6b88cd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:03:21.698497"
+    },
+    {
+      "topic": "human resources",
+      "title": "Sunnyvale Human Resources - Sunnyvale, CA (Address and Phone)",
+      "content": "The Sunnyvale Human Resources Department, located at the Sunnyvale Office Center, offers a range of services to support the organization's workforce. These services include recruitment, employee benefits administration, employee and labor relations management, and volunteer coordination.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.countyoffice.org%2Fsunnyvale%2Dhuman%2Dresources%2Dsunnyvale%2Dca%2Da13%2F&rut=cee02bf346840347aa4b44e5406902247bfe1f4fefe695962ac77ed4840f70c6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:03:21.698534"
+    },
+    {
+      "topic": "habitat",
+      "title": "Habitat",
+      "content": "In ecology, habitat refers to the array of resources, biotic factors that are present in an area, such as to support the survival and reproduction of a particular species. A species' habitat can be seen as the physical manifestation of its ecological niche. Thus \"habitat\" is a species-specific term, fundamentally different from concepts such as environment or vegetation assemblages, for which the term \"habitat-type\" is more appropriate.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Habitat",
+      "confidence": 0.9,
+      "learned_at": "2026-01-04T11:10:43.303454"
+    },
+    {
+      "topic": "habitat",
+      "title": "Habitat For Humanity\u00ae Official - Donate To Habitat For Humanity",
+      "content": "Help Families Build Safe, Affordable Homes And A Foundation For A Better Future. Support Habitat To Help Families Thrive In Safe, Affordable Homes.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dhabitat.org%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DOHaIdt1oB5lDnCjb1FVx10K6ukS15jy9lih3REPmDFAk0srpYuvOalDYmLdu38H3BoMkRTT8LaTjWwk9IyLb%252D6vH5xtnmlVB4L6%252DBQYWHCcho88%252D4wE3N7ux9VkeN_7rWeioI4kq9tFtEOtd3Lq0u9Z7Tj8I3tOeAXwsA3YRyLA.MuVIZlBuondFX%252DkKQF_yTA%26rut%3Dcb8694e9d352b97a505c2b3da3fb2f1f04c3e038bb7a5d6b202dded95b84d773%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8j4qswk4VeYA_EhhLiBgPRDVUCUzSIPJ8VxmbXq5iabEfhyKjy58CslGnU%252DJ0QYpGEg7LWNLZMXBa8cx1U2VVliYyZd95CwxCiqFhB7JkW9THlu2dww_QWGWPw5DSk8%252D88nkvYXuMLH8gvSBdw7xVqmyaQlDUqqFwx61behc3bsZyUmwkwAF1X7odKXH_ET%252DokU0Ou3VIKD4woN5uczVqws7atFg%2526u%253DaHR0cHMlM2ElMmYlMmZhZC5kb3VibGVjbGljay5uZXQlMmZzZWFyY2hhZHMlMmZsaW5rJTJmY2xpY2slM2ZsaWQlM2Q0MzcwMDA4MDM5MDY1MjEwMiUyNmRzX3Nfa3dnaWQlM2Q1ODcwMDAwNjE2ODEwNDkyNCUyNmRzX2FfY2lkJTNkNTkzMjcyOTM2JTI2ZHNfYV9jYWlkJTNkMTE1NjE1ODMyNTclMjZkc19hX2FnaWQlM2QxMTM0OTAwMTI5NTUlMjZkc19hX2xpZCUzZGt3ZC05Nzc0OTAwNzclMjYlMjZkc19lX2FkaWQlM2Q3OTc4MzUyMjE0MTcxOCUyNmRzX2VfdGFyZ2V0X2lkJTNka3dkLTc5NzgzOTE4MjI1NDU0JTNhbG9jLTE5MCUyNiUyNmRzX2VfbmV0d29yayUzZHMlMjZkc191cmxfdiUzZDIlMjZkc19kZXN0X3VybCUzZGh0dHBzJTNhJTJmJTJmc2VjdXJlLmhhYml0YXQub3JnJTJmc2l0ZSUyZkRvbmF0aW9uMiUzZmRmX2lkJTNkNzczMiUyNjc3MzIuZG9uYXRpb24lM2Rmb3JtMSUyNnNfc3JjJTNkRE5BSjI1MDMxMjIxMDAwJTI2bXJrZ2FkaWQlM2QxMDAwMDAwJTI2bXJrZ2NsJTNkMTAwNSUyNm1ya2dlbiUzZG10ZXh0JTI2bXJrZ2JmbGFnJTNkMSUyNm1ya2djYXQlM2R0b3BwZXJmb3JtZXIlMjZhY2N0aWQlM2QyMTcwMDAwMDAwMTcxOTQyMiUyNmRldmljZSUzZGMlMjZuZXR3b3JrJTNkcyUyNm1hdGNodHlwZSUzZGUlMjZsb2NhdGlvbmlkJTNkJTdibG9jX3BoeWlzY2FsX21zJTdkJTI2Y3JlYXRpdmUlM2QlMjZ0YXJnZXRpZCUzZGt3ZC03OTc4MzkxODIyNTQ1NCUzYWxvYy0xOTAlMjZjYW1wYWlnbmlkJTNkNjEyODI3NTAlMjZhZGdyb3VwaWQlM2QxNjQxNDI0NDMxJTI2Z2NsaWQlM2QxN2M2ZDgyMTBkZGQxNDUzYjczZmIxN2JiNmVlZTkzZCUyNmdjbHNyYyUzZDNwLmRzJTI2JTI2Z2NsaWQlM2QxN2M2ZDgyMTBkZGQxNDUzYjczZmIxN2JiNmVlZTkzZCUyNmdjbHNyYyUzZDNwLmRzJTI2bXNjbGtpZCUzZDE3YzZkODIxMGRkZDE0NTNiNzNmYjE3YmI2ZWVlOTNk%2526rlid%253D17c6d8210ddd1453b73fb17bb6eee93d%26vqd%3D4%2D54062079262653603382288937921341379101%26iurl%3D%257B1%257DIG%253D827027843B984B63BC11EE9D6699C61F%2526CID%253D12B3F8EEED2F61A6237DEE39ECB860F5%2526ID%253DDevEx%252C5045.1&rut=37790f2023aad8b2b48b383ca4f489f86b077201b9a17fa7183970e3113c83d1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:10:44.122862"
+    },
+    {
+      "topic": "habitat",
+      "title": "Habitat - Wikipedia",
+      "content": "Habitat is the array of resources and biotic factors that support the survival and reproduction of a species. Learn about the different habitat types on land and in water, and how they change over time and with human activities.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHabitat&rut=73bb9c5870f13e8d251d0e17101ed54a199ff58e580cca81f5dfd8d8bb59ae60",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:10:44.122940"
+    },
+    {
+      "topic": "habitat",
+      "title": "Habitat for Humanity",
+      "content": "Habitat for Humanity is a nonprofit organization that helps people in your community and around the world build or improve a place they can call home. Donate, volunteer and raise your voice in support of decent and affordable housing.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.habitat.org%2F&rut=d6b801c27a4e40a49b0979ea72d9ce006dfadd10b1170f29bddc7571a3e07e98",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:10:44.123000"
+    },
+    {
+      "topic": "habitat",
+      "title": "Habitat East Bay/Silicon Valley: Providing Low Income Housing in the ...",
+      "content": "Habitat for Humanity East Bay/Silicon Valley works with volunteers and donors to provide families affordable housing in the Bay Area.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.habitatebsv.org%2F&rut=08cb9aee3b429eec7d04f9aaeed960c9a5acecdbc9c84c0ffdd7037e9026554a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:10:44.123057"
+    },
+    {
+      "topic": "habitat",
+      "title": "Find Your Local Affiliate | Habitat for Humanity California",
+      "content": "There are 42 Habitat affiliates in California representing all urban areas and most suburban and rural counties. Find a Habitat an affiliate near you!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.habitatca.org%2Fabout%2Ffind%2Dyour%2Dlocal%2Daffiliate%2F&rut=30a69ba6db48772a25bdb62b552038e12f3aa82a9ddaed3195ef9b0449045375",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:10:44.123115"
+    },
+    {
+      "topic": "hydroelectric power",
+      "title": "Shop hydroelectric power - Amazon.com Official Site",
+      "content": "Browse & discover thousands of brands. Read customer reviews & find best sellers. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D9gLw5_IBlwtxX3vDn%252Dacwnsc5JqdSEu6m%252DA1G1lHUdB9iRqegm4Y2wduNWiVjKp1xj%252DN8v41i4Axh96O0dPJssWZz1ksV4MocKNWdvazySsba77P1xhnPZaEYskIS349l1kQFjqUKwZSQEB3OBFMqFiDMTShIeiqaQuHlUTSVIM.jMv%252DeiAvNoviOcR9e2vC8w%26rut%3D1fea6786fd5080f487e08e450be58bde9c1f5679e69e4a2868036f521625fa67%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8JQmRkdfIQb1Thr4b0x6BnjVUCUzdJD8EtA89BS7RdeDHD4L%252Ddmr3dPAgYVPK1sPrGpIl4xmMggxwkKq09ClZOOmeKIpxYNRQtzevKaAd1XEgnbV1OfMm_5SctjI_bhM565lpPbjLkUZxlZ3mk0mqT2kpZ%252DF4ZfOF4Q3PEh6b_n81lZ2OYQxXcmTmtDxtIHOOx6h_HseGoji_e1yVKEMMTEszUR8%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGh5ZHJvZWxlY3RyaWMlMmJwb3dlciUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzJ3NHlzNWtkcGJfcCUyNmFkZ3JwaWQlM2QxMjI5MjU0MzE4MzYxMDkyJTI2aHZhZGlkJTNkNzY4Mjg1NjEwNDkwNTAlMjZodm5ldHclM2RzJTI2aHZxbXQlM2RlJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2QxMTE0OTQlMjZodnRhcmdpZCUzZGt3ZC03NjgyODY0MTA2NDQ4NCUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkMjk2NzBfMTQ2OTU5MDIlMjZtY2lkJTNkMGY2YjljYmJiMzk4MzE3ZTg3NmEzNjkyYmQ0ZTc1NDIlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZGM0OGE2N2I2YmY3MTFkYzc3MGEwMGVlYzdlNzc4NjQ1%2526rlid%253Dc48a67b6bf711dc770a00eec7e778645%26vqd%3D4%2D88250115402044438588516284441126062349%26iurl%3D%257B1%257DIG%253D9D619A8DDF084F609F695B1CBC00D14A%2526CID%253D10D2F2F652B7655427EFE42153626490%2526ID%253DDevEx%252C5045.1&rut=9ffb34e546c273d14b9fd23e8e1975576e6dfb275112a5c1d190923dea9febf3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:35:35.215656"
+    },
+    {
+      "topic": "hydroelectric power",
+      "title": "Hydroelectric Power: Basics & Benefits",
+      "content": "Choose BLUETTI for off-grid energy solutions! Portable power you can rely on",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dbluettipower.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DKI4m5xIXuWXR4pl3tRRiYbfhL%252DGi4tOaH25swR4MwwCtcH59uap2ygIaAgluCZm_8QqC07DafnPwo7vZzbIbtYELV%252DC%252Dsck%252DQ_q6KdXOVlT_qbkP9fJMLdmiz0LJGDfztdbUThtSr29ZuvR5FCQoxrh004%252DgaflQIKdcKG9FQoY.SmSGUZvns7OjtRZuMGIEng%26rut%3D578f102925d7050f1e937daa4e6cee70a3fa7d72507f36bfd288992e4f275555%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8EBIPzTPKt08HzFxe5jBsTjVUCUwrD%252DstpONgHA_egKMZeOhqmHcYyRxxtiWzAGqx4vt3FHkz5AYLbwUzppZ__CS8MAMmTdjNvogkN0FvlBC7mTE%252D6SUMM53ket9LfwhjerLKvK3gs1qN9dhcfyqzEzl8ipNE9V60R8tyl5VYqvCIIFEWoLsJSD82akNhc33JZwTd6wFsjr%252DiiJg%252DEMv436a7b40%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYmx1ZXR0aXBvd2VyLmNvbSUyZmJsb2dzJTJmbmV3cyUyZnRoZS1iYXNpY3Mtb2YtaHlkcm9lbGVjdHJpYy1wb3dlciUzZmNtcF9pZCUzZDUzMTIzNjg4NiUyNmFkZ19pZCUzZDEzNTM1MDEzNDI4NTQwODUlMjZrd2QlM2R3d3cuYmx1ZXR0aXBvd2VyLmNvbSUyNmRldmljZSUzZGMlMjZtc2Nsa2lkJTNkNmRjYTM3M2I3OGMxMTVmZGM4YTI1ZTYxYjljN2I2ZDMlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RQTUFYLTIwMjUxMS1CbGFja2ZyaWRheS0lZTUlYjglYjglZTglYTclODQlMjZ1dG1fdGVybSUzZHd3dy5ibHVldHRpcG93ZXIuY29tJTI2dXRtX2NvbnRlbnQlM2RjaGFuZ2d1aQ%2526rlid%253D6dca373b78c115fdc8a25e61b9c7b6d3%26vqd%3D4%2D71951409575301544751494549201352250811%26iurl%3D%257B1%257DIG%253D9D619A8DDF084F609F695B1CBC00D14A%2526CID%253D10D2F2F652B7655427EFE42153626490%2526ID%253DDevEx%252C5049.1&rut=a22ad384e68c88cc29100f2a5aab555ed9de380118a081230889f66a06403d5d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:35:35.215717"
+    },
+    {
+      "topic": "hydroelectric power",
+      "title": "Hydroelectricity - Wikipedia",
+      "content": "Hydroelectricity, or hydroelectric power, is electricity generated from hydropower (water power). Hydropower supplies 15% of the world's electricity, almost 4,210 TWh in 2023, [1] which is more than all other renewable sources combined and also more than nuclear power. [2] Hydropower can provide large amounts of low-carbon electricity on demand, making it a key element for creating secure and ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHydroelectricity&rut=0d00cd867a32d8b6874a9d2ce99c1cfa94bd3429fb3359476c22dbe7842c93ba",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:35:35.215748"
+    },
+    {
+      "topic": "hydroelectric power",
+      "title": "Hydroelectric power | Definition, Renewable Energy, Advantages ...",
+      "content": "Hydroelectric power is a form of renewable energy in which electricity is produced from generators driven by turbines that convert the potential energy of moving water into mechanical energy. Hydroelectric power plants usually are located in dams that impound rivers, though tidal action is used in some coastal areas.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fscience%2Fhydroelectric%2Dpower&rut=56b0a81e7f2ceee1a2a7b6bdebc9e56187cc6d597de0d19f3c1dc2317a359247",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:35:35.215788"
+    },
+    {
+      "topic": "hydroelectric power",
+      "title": "How Hydropower Works - Department of Energy",
+      "content": "Learn how hydropower, or hydroelectric power, uses the kinetic energy of flowing water to produce electricity. Find out about different types of hydropower facilities, their benefits and challenges, and the latest news and funding opportunities.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.energy.gov%2Feere%2Fwater%2Fhow%2Dhydropower%2Dworks&rut=4359fdbb4b24fd7fa840921eb82dc7addfcbc20523b6cb9f827a8f5d9971cd5f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:35:35.215817"
+    },
+    {
+      "topic": "health sociology",
+      "title": "Sociology of health and illness - Wikipedia",
+      "content": "The sociology of health and illness, sociology of health and wellness, or health sociology examines the interaction between society and health. As a field of study it is interested in all aspects of life, including contemporary as well as historical influences, that impact and alter health and wellbeing. [1][2] It establishes that, from birth to death, social processes interweave and influence ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSociology_of_health_and_illness&rut=27dfcc41a670b16b8b9d0f4aa31d585e023b387dbe860ac2fccf9abca2370b65",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T12:01:56.434228"
+    },
+    {
+      "topic": "health sociology",
+      "title": "Health Sociology Review | Journal | Taylor & Francis Online",
+      "content": "Health Sociology Review is an international peer-reviewed journal, which publishes high quality conceptual and empirical research in the sociology of health, illness and medicine.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.tandfonline.com%2Fjournals%2Frhsr20&rut=67efd0e9412399542e91790cfe02eae154bd9a7741b6f9b282f3f36e2e266cb9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T12:01:56.434309"
+    },
+    {
+      "topic": "health sociology",
+      "title": "Sociology of Health & Illness - Wiley Online Library",
+      "content": "Follow journal Sociology of Health & Illness journal publishes sociological articles on all aspects of health, illness, medicine, and healthcare - particularly those that recognise the diverse nature of society and that address diversity when discussing sampling, recruitment, data analysis, and the implications of findings.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fonlinelibrary.wiley.com%2Fjournal%2F14679566&rut=68542992580e61600d7068d7b37a1092ea268ec1909af6e9a43aa468bc27849a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T12:01:56.434383"
+    },
+    {
+      "topic": "health sociology",
+      "title": "Health Sociology | SpringerLink",
+      "content": "This chapter reflects on the contribution health sociology can make to an understanding of health behavior and health promotion in the context of public health research and advocacy. It begins with a short history of public health to demonstrate the shift in focus of...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Flink.springer.com%2Frwe%2F10.1007%2F978%2D981%2D97%2D0821%2D5_124%2D1&rut=d29676701d825223dcca4b41e5ab0181b982395afbf8986f2082f195d410cf34",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T12:01:56.434450"
+    },
+    {
+      "topic": "health sociology",
+      "title": "Sociology of health and illness | Research Starters - EBSCO",
+      "content": "The sociology of health and illness examines how societal factors influence health outcomes and healthcare experiences. This field explores the social determinants of health, which encompass the complex interplay of age, gender, socioeconomic status, ethnicity, and sexuality that shape individuals' health opportunities and risks.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ebsco.com%2Fresearch%2Dstarters%2Fconsumer%2Dhealth%2Fsociology%2Dhealth%2Dand%2Dillness&rut=8e1bff51a3e952598938ab598c9ffb12872e1174e7a55149f74a368b8cd5630f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T12:01:56.434523"
     }
   ],
-  "last_updated": "2026-01-02T11:46:09.248525"
+  "last_updated": "2026-01-04T12:01:56.441080"
 }

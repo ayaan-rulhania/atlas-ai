@@ -36,7 +36,11 @@
     "universe",
     "utility",
     "u.s.",
-    "utilitarianism"
+    "utilitarianism",
+    "up",
+    "udp",
+    "urbanization",
+    "unemployment"
   ],
   "knowledge": [
     {
@@ -1224,7 +1228,673 @@
       "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fphilosophiesoflife.org%2Futilitarianism%2F&rut=face418d97eb54f235a8cef53d98aacf541308933c4001ba5a3c587c3feb4aed",
       "confidence": 0.7,
       "learned_at": "2026-01-01T20:00:17.389239"
+    },
+    {
+      "topic": "trump admin threatens to break up major climate research center",
+      "title": "Trump move to break up research center threatens wildfire predictions",
+      "content": "Scientists, California state officials say the Trump administration's plans to dismantle a key climate science hub will put public safety at risk.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.usatoday.com%2Fstory%2Fnews%2Flocal%2Fcalifornia%2F2026%2F01%2F01%2Ftrump%2Dmove%2Dto%2Dbreak%2Dup%2Dresearch%2Dcenter%2Dthreatens%2Dwildfire%2Dpredictions%2F87929790007%2F&rut=6a0194a99777311b0cb59ad56df9b07aef15808506c211f83167fe394ede7806",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:42:34.558883"
+    },
+    {
+      "topic": "trump admin threatens to break up major climate research center",
+      "title": "Trump admin threatens to break up major climate research center",
+      "content": "Heads in the sand Trump admin threatens to break up major climate research center Major research institution dismissed as a source of \"climate alarmism.\"",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Farstechnica.com%2Fscience%2F2025%2F12%2Ftrump%2Dadmin%2Dthreatens%2Dto%2Dbreak%2Dup%2Dmajor%2Dclimate%2Dresearch%2Dcenter%2F&rut=d60c9f81e4f51b0417e2b1d1ef67ccec251fc3e6782e5cf306bebacc29558f38",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:42:34.558962"
+    },
+    {
+      "topic": "trump admin threatens to break up major climate research center",
+      "title": "Trump team 'breaking up' top climate research center - POLITICO",
+      "content": "The White House's planned elimination of a major scientific research center is the latest step in the Trump administration's quest to obliterate federal climate change programs. The National ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.politico.com%2Fnews%2F2025%2F12%2F17%2Ftrump%2Dteam%2Dbreaking%2Dup%2Dtop%2Dclimate%2Dresearch%2Dcenter%2D00694887&rut=f8585db72eafdc45fcf3d1ae2e9b5f06e92e4fe683979444d2bf689cc1346151",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:42:34.559019"
+    },
+    {
+      "topic": "trump admin threatens to break up major climate research center",
+      "title": "Trump Administration Plans to Break Up Premier Weather and Climate ...",
+      "content": "The Trump administration said it will be dismantling the National Center for Atmospheric Research in Colorado, one of the world's leading Earth science research institutions.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nytimes.com%2F2025%2F12%2F17%2Fclimate%2Fnational%2Dcenter%2Dfor%2Datmospheric%2Dresearch%2Dtrump.html&rut=e98feb305c0840147a782b2407c525076dbe6271497af2b4fd33d630cb5b0a8a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:42:34.559074"
+    },
+    {
+      "topic": "trump admin threatens to break up major climate research center",
+      "title": "Trump administration to break up major climate research center",
+      "content": "The Trump administration plans to break up Colorado's National Center for Atmospheric Research, the largest federal climate research lab. Russell Vought, director of the White House Office of ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nbcnews.com%2Fscience%2Fclimate%2Dchange%2Ftrump%2Dadministration%2Dbreak%2Dclimate%2Dresearch%2Dcenter%2Dncar%2Drcna249668&rut=ee035fe495efd4030782243a9f7ff4d6c989bd9772848a5e37ac9c6db54249b1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T15:42:34.559128"
+    },
+    {
+      "topic": "udp protocol",
+      "title": "User Datagram Protocol - Wikipedia",
+      "content": "UDP is a simple and fast communication protocol that sends messages without guaranteeing delivery or ordering. It is used for time-sensitive applications, multicast, and datagram-based protocols.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FUser_Datagram_Protocol&rut=6b634b2938c6c4e4895eb84fd6d7d37b5a6145394f7ca1f4d5c2850cd0812e66",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:16:58.120388"
+    },
+    {
+      "topic": "udp protocol",
+      "title": "What is the User Datagram Protocol (UDP)? | Cloudflare",
+      "content": "The User Datagram Protocol (UDP) is a connectionless communication protocol for transporting packets across networks. Learn all about UDP/IP.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cloudflare.com%2Flearning%2Fddos%2Fglossary%2Fuser%2Ddatagram%2Dprotocol%2Dudp%2F&rut=f4f30accdd6d5769bd60fb0846da6aa6143547aef61300c266d3ee80d9d9231f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:16:58.120456"
+    },
+    {
+      "topic": "udp protocol",
+      "title": "User Datagram Protocol - UDP - GeeksforGeeks",
+      "content": "User Datagram Protocol (UDP) is a Transport Layer protocol of the Internet Protocol (IP) that provides fast, connectionless, and lightweight communication between processes.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fcomputer%2Dnetworks%2Fuser%2Ddatagram%2Dprotocol%2Dudp%2F&rut=56cca619b442a40ca4bcc89c071f57c09862572e9a1ffe384d81cae8c0e9a38a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:16:58.120509"
+    },
+    {
+      "topic": "udp protocol",
+      "title": "RFC 768: User Datagram Protocol",
+      "content": "Introduction ------------ This User Datagram Protocol (UDP) is defined to make available a datagram mode of packet-switched computer communication in the environment of an interconnected set of computer networks. This protocol assumes that the Internet Protocol (IP) [1] is used as the underlying protocol.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.rfc%2Deditor.org%2Frfc%2Frfc768&rut=d37124baef825e7bade88656de18bb2dd17052e7c2f610c3424d25e6a066872a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:16:58.120563"
+    },
+    {
+      "topic": "udp protocol",
+      "title": "What Is User Datagram Protocol (UDP)? - Fortinet",
+      "content": "User Datagram Protocol (UDP) is a protocol used for communication throughout the internet. Learn how UDP works, the difference between UDP and TCP, and how it is used in DDoS attacks.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.fortinet.com%2Fresources%2Fcyberglossary%2Fuser%2Ddatagram%2Dprotocol%2Dudp&rut=128b12e88cf302351cc6abbee113032d878b61c8147c14df3d78f9ae3d2a2ef4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:16:58.120614"
+    },
+    {
+      "topic": "unit testing",
+      "title": "Unit testing - Wikipedia",
+      "content": "Unit testing, a.k.a. component or module testing, is a form of software testing by which isolated source code is tested to validate expected behavior. [1] Unit testing describes tests that are run at the unit-level to contrast testing at the integration or system level. [2]",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FUnit_testing&rut=90135fd5912b1da7ab4b0c19a949e157304dd4fc0d8aa5ce5d0c6d481f08390d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T00:11:36.161205"
+    },
+    {
+      "topic": "unit testing",
+      "title": "What is Unit Testing? - Unit Testing Explained - AWS",
+      "content": "Unit testing is the process where you test the smallest functional unit of code. Software testing helps ensure code quality, and it's an integral part of software development. It's a software development best practice to write software as small, functional units then write a unit test for each code unit. You can first write unit tests as code.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Faws.amazon.com%2Fwhat%2Dis%2Funit%2Dtesting%2F&rut=092f5d36e1f8fb21b7b40f3455b45070f0b687c79157466957390cd5c56a1bc5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T00:11:36.161297"
+    },
+    {
+      "topic": "unit testing",
+      "title": "How to do Unit Testing | Detailed Guide with Best Practices",
+      "content": "Also, write the test cases with relevant information in the test code as well. Common Unit Testing Frameworks Unit Testing Frameworks are needed to run the unit tests. Let's see some common unit testing frameworks. JUnit: It is an open-source framework that is used to provide test runners and execute the accurate results of each test.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fsoftware%2Dtesting%2Fhow%2Dto%2Ddo%2Dunit%2Dtesting%2Ddetailed%2Dguide%2Dwith%2Dbest%2Dpractices%2F&rut=a158f3088e21ffa41ae60faf69021b343661c109ef466c991481e1f77f8d5e9c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T00:11:36.161366"
+    },
+    {
+      "topic": "unit testing",
+      "title": "What Is Unit Testing? (Definition, Benefits, How-To) | Built In",
+      "content": "What Is Unit Testing? A unit test is a functional test of an application's smallest possible source code unit. The unit test aims to test the individual components of the software independent of other parts of the code.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbuiltin.com%2Fsoftware%2Dengineering%2Dperspectives%2Funit%2Dtesting&rut=a58695c62f58f64cc0e3a235237456e5c57da67b7383d8721627cd52ff2f824d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T00:11:36.161428"
+    },
+    {
+      "topic": "unit testing",
+      "title": "What is unit testing? - IBM",
+      "content": "Unit testing is a test-driven development (TDD) method for evaluating software that pays special attention to an individual component or unit of code.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ibm.com%2Fthink%2Ftopics%2Funit%2Dtesting&rut=55444b8d321301a48f8bba926cc74f490bc04189e8f98c06da1229e766bbdde0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T00:11:36.161486"
+    },
+    {
+      "topic": "united states invasion of panama",
+      "title": "United States invasion of Panama - Wikipedia",
+      "content": "The United Nations General Assembly, the Organization of American States and the European Parliament condemned the invasion as a violation of international law. [10][11] Meanwhile, the United States government cited a responsibility to protect American citizens residing in Panama, along with a need to enforce democracy and human rights, as ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FUnited_States_invasion_of_Panama&rut=2fb6a19c7b8e9f5d873e958853a43a53f8cc308c04baffbaadc558edef10471a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T00:49:18.699409"
+    },
+    {
+      "topic": "united states invasion of panama",
+      "title": "Operation Just Cause | U.S. Invasion of Panama, History, Casualties ...",
+      "content": "Operation Just Cause (1989-90) was a U.S. military action that involved the invasion of Panama to remove dictator Manuel Noriega and bring him to the U.S. on drug charges.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2FUnited%2DStates%2Dinvasion%2Dof%2DPanama&rut=868e5c6cb954a1860e78cd66d42507c9fa514fbcfb504e82a122a05ffafc914a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T00:49:18.699487"
+    },
+    {
+      "topic": "united states invasion of panama",
+      "title": "PDF Operation Just Cause: The Incursion into Panama - GovInfo",
+      "content": "Almost 26,000 U.S. military personnel participated in Operation JUST CAUSE; half of these men and women deployed with virtually no notice to Panama from home stations in the United States. The rapid deployment and the speed with which the conflict was resolved is a tribute to the training and leadership of these personnel, as is the com-passion and effectiveness with which they assumed their ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.govinfo.gov%2Fcontent%2Fpkg%2FGOVPUB%2DD114%2DPURL%2Dgpo91210%2Fpdf%2FGOVPUB%2DD114%2DPURL%2Dgpo91210.pdf&rut=f0779642678dc945e71a5eaf78798c5b957e14ac3fe639971bca3cfb9b07b1e5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T00:49:18.699553"
+    },
+    {
+      "topic": "united states invasion of panama",
+      "title": "United States Invasion of Panama - War History",
+      "content": "CASUALTIES: United States, 19 killed, 303 wounded; PDF, 314 killed, 124 wounded, 5,313 taken prisoner; numerous collateral civilian casualties The 1989 invasion of Panama was unique in American military history as an act of war essentially directed against an individual, Manuel Antonio Noriega (b. 1938), the president of Panama.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwarhistory.org%2F%40msw%2Farticle%2Funited%2Dstates%2Dinvasion%2Dof%2Dpanama&rut=3ac156c11ff64f3ab4a3c66689a9c7312d6436cd854644e083c3dc8e273c1388",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T00:49:18.699624"
+    },
+    {
+      "topic": "united states invasion of panama",
+      "title": "The U.S. invades Panama | December 20, 1989 | HISTORY",
+      "content": "The United States invades Panama in an attempt to overthrow military dictator Manuel Noriega, who had been indicted in the United States on drug trafficking charges and was accused of suppressing ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.history.com%2Fthis%2Dday%2Din%2Dhistory%2FDecember%2D20%2Fthe%2Du%2Ds%2Dinvades%2Dpanama&rut=1066e51b708cd6a88299de4398011a01f24f36047954b4c601ea9c75bce72654",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T00:49:18.699687"
+    },
+    {
+      "topic": "unity engine",
+      "title": "Unity Real-Time Development Platform | .NET",
+      "content": "Unity is a real-time 3D development platform for building 2D and 3D application, like games and simulations, using .NET and the C# programming language. Unity can target 25+ platforms across mobile, desktop, console, TV, VR, AR, and the web.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fdotnet.microsoft.com%2Fen%2Dus%2Fapps%2Fgames%2Funity&rut=79008d599ccf94ad5055b5b09eaa5c7d03c9539f84efabf2aa279c6f5ca7e56c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T06:15:10.888646"
+    },
+    {
+      "topic": "unity engine",
+      "title": "What is Unity? A Beginner's Introduction to the Game Engine",
+      "content": "Curious about the Unity game engine? This beginner-friendly guide explains how Unity works, its ecosystem, and why it's the go-to platform for indie developers.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmages%2Dinstitute.com%2Fblog%2Funity%2Da%2Dbeginners%2Dintroduction%2Dto%2Dthe%2Dgame%2Dengine%2F&rut=b89ae34f4e8fd00bada1ac66ef302edc066e3b19a58cb1d58ad4c34cabbbf7fd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T06:15:10.888678"
+    },
+    {
+      "topic": "unity engine",
+      "title": "What Is Unity? - Coursera",
+      "content": "Unity is a real-time development platform commonly used by game developers for its game engine and ability to create 2D and 3D applications. Unity powers 28 percent of the top 1,000 PC games and 70 percent of the top-selling VR Steam experiences [1]. Unity uses C# to help digital designers create complex gaming and simulation experiences.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.coursera.org%2Farticles%2Fwhat%2Dis%2Dunity&rut=ae3dd6d32a43d494f49be411413002608151987648ad4901d8df20615c3d7b5e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T06:15:10.888717"
+    },
+    {
+      "topic": "unreal engine",
+      "title": "How to Learn Unreal Engine (2026 Complete Beginner Guide)",
+      "content": "Master Unreal Engine with our complete 2026 beginner guide. Learn fundamentals, practice with simple games, and build consistent learning routines for success.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.unreal%2Duniversity.blog%2Fhow%2Dto%2Dlearn%2Dunreal%2Dengine%2D2026%2Dcomplete%2Dbeginner%2Dguide%2F&rut=e529e3dade5388e5fc3b31758354ae535e84bda004941c76c505f5328e332a3e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T06:31:23.713820"
+    },
+    {
+      "topic": "unreal engine",
+      "title": "What Is Unreal Engine? - Coursera",
+      "content": "Unreal Engine is a versatile and powerful game engine developed by Epic Games for creating 3D graphics and immersive virtual experiences. Learn what Unreal Engine is, how to get it, how to learn it, and what games and applications use it.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.coursera.org%2Farticles%2Fwhat%2Dis%2Dunreal%2Dengine&rut=5db3d3c1e18590a9128dd6dc896810d70901e6b2ed99188901c5d645987e77c4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T06:31:23.713866"
+    },
+    {
+      "topic": "unix",
+      "title": "Unix",
+      "content": "Unix is a family of multitasking, multi-user computer operating systems that derive from the original AT&T Unix, whose development started in 1969 at the Bell Labs research center by Ken Thompson, Dennis Ritchie, and others. Initially intended for use inside the Bell System, AT&T licensed Unix to outside parties in the late 1970s, leading to a variety of both academic and commercial Unix variants from vendors including University of California, Berkeley (BSD), Microsoft (Xenix), Sun Microsystems (SunOS/Solaris), HP/HPE (HP-UX), and IBM (AIX).",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Unix",
+      "confidence": 0.9,
+      "learned_at": "2026-01-03T09:14:09.072495"
+    },
+    {
+      "topic": "unix",
+      "title": "UNIX | Definition, Meaning, History, & Facts | Britannica",
+      "content": "UNIX, multiuser computer operating system. In the late 20th century UNIX was widely used for Internet servers, workstations, and mainframe computers. The main features of UNIX were its simplicity, portability, multitasking and multiuser capabilities, and hierarchical file system.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftechnology%2FUNIX&rut=0e51430f39fedf51c37ca001ced4d104e269b3f3e8d97a1c2bd0ae3adb40febc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:14:09.871755"
+    },
+    {
+      "topic": "unix",
+      "title": "What is Unix? A Beginner's Guide to the Operating System",
+      "content": "What Is Unix? A Complete Guide Pearl Williams 28 November 2025 This blog on What Is Unix explores the Unix operating system, unravelling its fundamental concepts, history, and significance. Learn the core principles, file structure, and command-line interface that make Unix a powerful and versatile platform. This blog provides a solid foundation for understanding the essence of Unix and its ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.theknowledgeacademy.com%2Fblog%2Fwhat%2Dis%2Dunix%2F&rut=1692e65cd36278bb5b58cadb37b799beb0b463ea8f332154e8b1e3037c5a5af0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:14:09.871821"
+    },
+    {
+      "topic": "urbanization",
+      "title": "Urbanization",
+      "content": "Urbanization is the population shift from rural to urban areas, the corresponding decrease in the proportion of people living in rural areas, and the ways in which societies adapt to this change. It can also mean population growth in urban areas instead of rural ones. It is predominantly the process by which towns and cities are formed and become larger as more people begin to live and work in central areas.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Urbanization",
+      "confidence": 0.9,
+      "learned_at": "2026-01-03T12:13:59.591793"
+    },
+    {
+      "topic": "urbanization",
+      "title": "Urbanization - Wikipedia",
+      "content": "Urbanization is the population shift from rural to urban areas and the ways societies adapt to this change. Learn about the causes, effects and patterns of urbanization across time and space, from ancient civilizations to modern times.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FUrbanization&rut=460f1a8b9aa670f22df83cff45293f0914ccc88853504b0872e8f9d6951aa857",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:14:00.587319"
+    },
+    {
+      "topic": "urbanization",
+      "title": "Urbanization | Definition, History, Examples, & Facts | Britannica",
+      "content": "Urbanization, the process by which large numbers of people become permanently concentrated in relatively small areas, forming cities. Whatever the numerical definition of an 'urban place,' it is clear that the course of human history has been marked by a process of accelerated urbanization.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Furbanization&rut=500ed96f4b97345ca98358b74e998e7136db1d06d7ae2d83a631abc0ea44f8ee",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:14:00.587371"
+    },
+    {
+      "topic": "urbanization",
+      "title": "Urbanization - National Geographic Society",
+      "content": "Learn about the process of urbanization, which is the increase in the number of people living and working in cities. Explore the effects of urbanization, such as megacities, urban sprawl, and challenges for the future.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Feducation.nationalgeographic.org%2Fresource%2Furbanization%2F&rut=de37f4e6a9ee2d8ee7e174d2aa4628372778a176675f19f40d0a77f884a118f9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:14:00.587411"
+    },
+    {
+      "topic": "urbanization",
+      "title": "Urbanization - Our World in Data",
+      "content": "Learn how urbanization has transformed the world population, economy, and environment over time and across regions. Explore the different definitions, estimates, and projections of urbanization based on various indicators and sources.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fourworldindata.org%2Furbanization&rut=708add424c6fc31a9a885f0efe9c9e1cc547d45cbd8d47d02c63e31c3ef0964d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:14:00.587451"
+    },
+    {
+      "topic": "urbanization",
+      "title": "Urbanization - Understanding Global Change",
+      "content": "Urbanization is the transformation of unoccupied or sparsely occupied land into densely occupied cities. Urban areas can grow from increases in human populations or from migration into urban areas. Urbanization often results in deforestation, habitat loss, and the extraction of freshwater from the environment, which can decrease biodiversity and alter species ranges and interactions. Human ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fugc.berkeley.edu%2Fbackground%2Dcontent%2Furbanization%2F&rut=bf73ba80533a8a70d0e2e938b0fbd4c46b7a68744fe528da40261404a3c47d0f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:14:00.587491"
+    },
+    {
+      "topic": "soviet union",
+      "title": "Soviet Union - Wikipedia",
+      "content": "The Union of Soviet Socialist Republics[u] (USSR), [v] commonly known as the Soviet Union, [w] was a transcontinental country that spanned much of Eurasia from 1922 until its dissolution in 1991. During its existence, it was the largest country by area, extending across eleven time zones and sharing borders with twelve countries, [x] and the third-most populous country. A diverse multinational ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSoviet_Union&rut=0ab411c4224dffbc2eb8e40c3bd75f08b1c3fecf1b5626b90b5c7f933f961581",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:23:47.218497"
+    },
+    {
+      "topic": "soviet union",
+      "title": "Soviet Union | History, Leaders, Flag, Map, & Anthem | Britannica",
+      "content": "Soviet Union (Union of Soviet Socialist Republics; U.S.S.R.), former northern Eurasian empire (1917/22-1991) stretching from the Baltic and Black seas to the Pacific Ocean and, in its final years, consisting of 15 Soviet Socialist Republics. The capital was Moscow, then and now the capital of Russia.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fplace%2FSoviet%2DUnion&rut=2ffb82cb98f381bdae67e7ae5fe77fc136d1ad4111609277fc0a8cc64680e7ee",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:23:47.218580"
+    },
+    {
+      "topic": "soviet union",
+      "title": "Soviet Union - Countries, Cold War & Collapse | HISTORY",
+      "content": "Learn about the origins, rise and fall of the Soviet Union, the world's first Marxist-Communist state that dominated Eastern Europe for decades. Explore the key events, leaders and challenges that shaped the history of the USSR, from the Russian Revolution to the Cold War and beyond.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.history.com%2Farticles%2Fhistory%2Dof%2Dthe%2Dsoviet%2Dunion&rut=623af1a7ebd95f6a07ee2dd59b77bf7acea8cd0347b7e1e8172aa59e693701af",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:23:47.218641"
+    },
+    {
+      "topic": "soviet union",
+      "title": "Soviet Union - New World Encyclopedia",
+      "content": "The Soviet Union was one of the dominant political entities of the twentieth century. The official name was the Union of Soviet Socialist Republics (USSR). The Russian Revolution brought to power the first communist party in history. Lenin and his Bolshevik Party took full advantage of the collapse of the Russian autocracy, followed by the ineffectiveness of the provisional government, to ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.newworldencyclopedia.org%2Fentry%2FSoviet_Union&rut=9b3389b44a8b053fcc3709d35f7f94c15552e3e190815affd1229d6a572391cc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:23:47.218705"
+    },
+    {
+      "topic": "soviet union",
+      "title": "Formation of the Soviet Union | World History - Lumen Learning",
+      "content": "The Soviet Union, officially the Union of Soviet Socialist Republics, was a socialist state in Eurasia that existed from 1922 to 1991. It was nominally a supranational union of national republics, but its government and economy were highly centralized in a state that was unitary in most respects.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fcourses.lumenlearning.com%2Fsuny%2Dworldhistory%2Fchapter%2F30%2D2%2D6%2Dformation%2Dof%2Dthe%2Dsoviet%2Dunion%2F&rut=c015ea0653417f265aef18d6630ffc1b139b416b99f32024a142e134a9fa3bea",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:23:47.218767"
+    },
+    {
+      "topic": "united nations",
+      "title": "United Nations | Peace, dignity and equality <BR>on a healthy planet",
+      "content": "The United Nations came into being in 1945, following the devastation of the Second World War, with one central mission: the maintenance of international peace and security.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.un.org%2Fen%2F&rut=69108702ef322ede14a1c5804d229c0796545ec58256b0ad436cda3e3897d07a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:55:01.100735"
+    },
+    {
+      "topic": "united nations",
+      "title": "United Nations - Wikipedia",
+      "content": "The United Nations (UN) is a global intergovernmental organization established by the signing of the UN Charter on 26 June 1945 with the articulated mission of maintaining international peace and security, to develop friendly relations among states, to promote international cooperation, and to serve as a centre for harmonizing the actions of states in achieving those goals. The United Nations ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FUnited_Nations&rut=7f2b4bab8618bccf04929684faeab786817565c7047b10fbca5aa1dc401fe9b6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:55:01.100832"
+    },
+    {
+      "topic": "united nations",
+      "title": "The UN in General - United Nations",
+      "content": "Learn about the history, purposes, organs and work of the United Nations, an international organization founded in 1945. Explore topics such as peace and security, human rights, sustainable development, and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Funis.unvienna.org%2Funis%2Fen%2Ftopics%2Fthe%2Dun%2Din%2Dgeneral.html&rut=49a7a0b69ec0ce0ae3d040986258cc2dde949a683e667a7322f78cb7cc9e06e3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:55:01.100906"
+    },
+    {
+      "topic": "united nations",
+      "title": "United Nations (UN) | Definition, History, Founders, Flag, & Facts ...",
+      "content": "United Nations (UN), international organization established on October 24, 1945. The United Nations (UN) was the second multipurpose international organization established in the 20th century that was worldwide in scope and membership. Its predecessor, the League of Nations, was created by the Treaty of Versailles in 1919 and disbanded in 1946.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2FUnited%2DNations&rut=652f18d8ecec8d6925dac8acbd6186cd5af1c6bc6eb645d906e9929cc0dbc65d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:55:01.100983"
+    },
+    {
+      "topic": "fall of soviet union",
+      "title": "Dissolution of the Soviet Union - Wikipedia",
+      "content": "Gorbachev resigned on 25 December 1991 and what was left of the Soviet parliament voted to dissolve the union the following day. The process began with growing unrest in the country's various constituent national republics developing into an incessant political and legislative conflict between them and the central government.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDissolution_of_the_Soviet_Union&rut=bdfad6c7e714701e8ad7206a7dba21416ab6a2f295329d15268bb44931d60d76",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:10:57.115946"
+    },
+    {
+      "topic": "fall of soviet union",
+      "title": "Collapse of the Soviet Union | Causes, Facts, Events, & Effects ...",
+      "content": "Collapse of the Soviet Union, sequence of events that led to the dissolution of the U.S.S.R. on December 31, 1991. The reforms implemented by President Mikhail Gorbachev and the backlash against them hastened the demise of the Soviet state. Learn more about one of the key events of the 20th century in this article.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fevent%2Fthe%2Dcollapse%2Dof%2Dthe%2DSoviet%2DUnion&rut=bfcf9cd2b28bc8430d8cc6c9eea604c99829afe6ed86031545cab0a65fc112b1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:10:57.116002"
+    },
+    {
+      "topic": "fall of soviet union",
+      "title": "Collapse of the Soviet Union - Causes, Dates, Facts | HISTORY",
+      "content": "Learn how the Soviet Union fell apart in 1991 after decades of Communist rule and Cold War rivalry with the West. Explore the origins, evolution and reforms of the Soviet state, and the role of Mikhail Gorbachev and other leaders.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.history.com%2Farticles%2Ffall%2Dof%2Dsoviet%2Dunion&rut=fd8c90d54f82b3870040ab1bc73c66e4257deb51bf99e619aed8c8405cb9dabd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:10:57.116040"
+    },
+    {
+      "topic": "fall of soviet union",
+      "title": "The Collapse of the Soviet Union: A Historical Overview",
+      "content": "The collapse of the Soviet Union in 1991 was a pivotal historical moment shaped by a combination of political, economic, and nationalist factors. Internal political strife and economic decline severely weakened central authority, particularly under Mikhail Gorbachev's reform policies of Perestroika and Glasnost. The introduction of these policies encouraged public dissent and nationalist ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fworldhistoryjournal.com%2F2025%2F06%2F24%2Fthe%2Dcollapse%2Dof%2Dthe%2Dsoviet%2Dunion%2Da%2Dhistorical%2Doverview%2F&rut=34b19eaf13d723c86e99cc6b4140f82be8fc539959d91f28145e6e23e28ce5c2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:10:57.116080"
+    },
+    {
+      "topic": "fall of soviet union",
+      "title": "The End of the Cold War: The Fall of the Soviet Union",
+      "content": "The end of the Cold War, symbolized by the fall of the Soviet Union in 1991, represents one of the most dramatic and transformative moments in world history. For nearly five decades, the world was divided between two superpowers\u2014the United States and the Soviet Union\u2014locked in a geopolitical struggle for influence.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fpolsci.institute%2Finternational%2Drelations%2Dworld%2Dhistory%2Fend%2Dof%2Dcold%2Dwar%2Dsoviet%2Dunion%2Dfall%2F&rut=68ba7c93374cd3a2f33cc6dcfa011828e3dc846f8260a27df771c6ad38251b58",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:10:57.116144"
+    },
+    {
+      "topic": "european union",
+      "title": "Your gateway to the EU, News, Highlights | European Union",
+      "content": "Discover how the EU functions, its principles, priorities; find out about its history and member states; learn about its legal basis and your EU rights.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Feuropean%2Dunion.europa.eu%2Findex_en&rut=c9336f378ae21304d838963edbed1e3f042c6696b112f6682c8f0eb57f0e9b64",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:11:28.798988"
+    },
+    {
+      "topic": "european union",
+      "title": "European Union - Wikipedia",
+      "content": "European Union ... The European Union (EU) is a supranational political and economic union of 27 member states that are located primarily in Europe. [8][9] The Union has a total area of 4,233,255 km 2 (1,634,469 sq mi) and an estimated population of more than 450 million as of 2025.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEuropean_Union&rut=e05684b5f95ea674c847e503a5bd39f161b3786c563825c0e83a20ca7f0fee24",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:11:28.799056"
+    },
+    {
+      "topic": "european union",
+      "title": "European Union (EU) | Definition, Flag, Purpose, History, & Members ...",
+      "content": "The European Union (EU) is an international organization that governs economic, social, and security policies common to its 27 member countries. The EU was created by the Maastricht Treaty, which entered into force on November 1, 1993. The EU's common currency is the euro.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2FEuropean%2DUnion&rut=a4e4685e9c8c241879b76a2628900c0c01690fca5c34a785b8dbad89703abe1c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:11:28.799104"
+    },
+    {
+      "topic": "european union",
+      "title": "European Union Explained: Purpose, History, and Member Countries",
+      "content": "Discover the European Union's purpose, history, and its 27 member countries. Learn how it functions as a major political and economic bloc promoting democracy and trade.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.investopedia.com%2Fterms%2Fe%2Feuropeanunion.asp&rut=7562a75cb893987224068dbfa2cde71a48a3062ff88090134bfa8f5764954d1c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:11:28.799148"
+    },
+    {
+      "topic": "urbanization geography",
+      "title": "What is urbanisation? - Internet Geography",
+      "content": "What is urbanisation? Urbanisation is the increase in the proportion of people living in towns and cities. Find out why here.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.internetgeography.net%2Ftopics%2Fwhat%2Dis%2Durbanisation%2F&rut=b427418b335725d1579832be53df4c5cea0846b0f0fcdf93cce8a4d4910985bc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T15:18:22.443709"
+    },
+    {
+      "topic": "urban planning",
+      "title": "UC San Diego Environment Mgmt - Sustainable Energy Programs",
+      "content": "Discover flexible learning options in environment and sustainability at UC San Diego. Discover sustainability with our comprehensive environmental courses.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Ducsd.edu%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D_HsUeo8KCZqgCHCM3GcFUULnrirh9MoHYE4q6GbYPCp8KieUP%252DVQJgQrE9A_bPyq2IDMqkhhmQNJc%252DGLUYu8SWii_B67v9sAljoU2Lh972IQDueRTFUAmP_8FC7ceRQOYTEp3k7dOgDrg8DVtNHv7vrsgD44OKw%252D3RF_ap91tSM.Ium_ARZlg1SmwkqlHFgV%252DQ%26rut%3D87d57bd0618c922c870e0ead68146798608a08c898abd6be94d025d094e80816%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8HGsBk5ExjiYLf4nhZNL_uzVUCUwWshPE9ra0D047XT_ut0f1S2k7Sw2%252Dx_TGTe4VNIx0j1t9zFcR1e8dk8fe%252DZRuZuqlgRtDipyxTyxB2qKNe7530Wt5ndZct0U5cycbML8f2UAt6iVTBMPmgfE%252DeL1B41puFq7a7T%252D6EC6vxjyjbUCpgOS3Gvs%252DxUPzn2%252DsrNMY2Om3vPoZFPwhqHyAWp8MwCA%2526u%253DaHR0cHMlM2ElMmYlMmZleHRlbmRlZHN0dWRpZXMudWNzZC5lZHUlMmZjb3Vyc2VzLWNlcnRpZmljYXRlcyUyZmVudmlyb25tZW50LXN1c3RhaW5hYmlsaXR5JTNmbXNjbGtpZCUzZGRhNTIxNmQyMTgyYzFmNGQ1MjczN2Y4ODE4MDEyY2RkJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkRU5WJTI1MjAtJTI1MjBFbnZpcm9ubWVudCUyNTIwJTI1MjYlMjUyMFN1c3RhaW5hYmlsaXR5JTI1MjBOZWlnaGJvcmhvb2QlMjUyMENhbXBhaWduJTI2dXRtX3Rlcm0lM2R1cmJhbiUyNTIwcGxhbm5pbmclMjUyMHVuaXZlcnNpdGllcyUyNnV0bV9jb250ZW50JTNkRW52aXJvbm1lbnQlMjUyMCUyNTI2JTI1MjBTdXN0YWluYWJpbGl0eSUyNTIwTmVpZ2hib3Job29kJTI1MjBBZCUyNTIwR3JvdXA%2526rlid%253Dda5216d2182c1f4d52737f8818012cdd%26vqd%3D4%2D139153118021558774141524900450610403066%26iurl%3D%257B1%257DIG%253D24EC5B37B2F34B93B3F7C06ADE27D23A%2526CID%253D0069C145E07C627C2AC6D792E1986329%2526ID%253DDevEx%252C5046.1&rut=11c6d67c7c14e6be637fae1a7cce02982cf73983ac33390f56a7c884bce35bc3",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:52:45.558695"
+    },
+    {
+      "topic": "urban planning",
+      "title": "Urban planning - Wikipedia",
+      "content": "Urban planners work with the cognate fields of civil engineering, landscape architecture, architecture, and public administration to achieve strategic, policy and sustainability goals. Early urban planners were often members of these cognate fields though in the 21st century, urban planning is a separate, independent professional discipline.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FUrban_planning&rut=5af93f43ae9a6275c7cd1991d9985fe5ddee270430e88e8cced7d247522dadf5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:52:45.558748"
+    },
+    {
+      "topic": "urban planning",
+      "title": "Urban planning | Definition, History, Examples, Importance, & Facts ...",
+      "content": "Urban planning, design and regulation of the uses of space that focus on the physical form, economic functions, and social impacts of the urban environment and on the location of different activities within it. Learn more about urban planning in this article.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Furban%2Dplanning&rut=74ee9104ab732a69988fdb4cc4893f0fe95c6892e6fd5a7074bcd18c425c6f02",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:52:45.558784"
+    },
+    {
+      "topic": "urban planning",
+      "title": "What is Urban Planning? Its Meaning, Importance, and Key Processes",
+      "content": "Explore urban planning: Learn how cities are designed for sustainability, infrastructure, and livability. Discover its importance and key principles.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Furbanstudies.institute%2Fintroduction%2Dto%2Durban%2Ddevelopment%2Furban%2Dplanning%2Dmeaning%2Dimportance%2Dprocesses%2F&rut=aaccc91e308dd91e90950fc251abfe0236c5ec8e77bc2ff3710fd1ff8194ca60",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:52:45.558817"
+    },
+    {
+      "topic": "urban planning",
+      "title": "What Is Urban Planning Today? | Georgetown SCS",
+      "content": "Urban planning's architectural and engineering roots embrace physical infrastructure and the spatial delineation of what is public and private within a city. Decision-making is informed by the objectives of creating durable and functional systems, as well as the generation of cultural significance for communities.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fscs.georgetown.edu%2Fnews%2Dand%2Devents%2Farticle%2F9824%2Fwhat%2Dis%2Durban%2Dplanning%2Dtoday&rut=f0361ec0e187dc423b3047b6f514f4cfd539b4c01b6ad34eddaf2594eb78f7bb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T21:52:45.558856"
+    },
+    {
+      "topic": "unemployment",
+      "title": "Unemployment",
+      "content": "Unemployment is the state not being in paid employment or self-employment but currently available for work. Unemployment is measured by the unemployment rate, which is the number of people who are unemployed as a percentage of the labour force during the reference period.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Unemployment",
+      "confidence": 0.9,
+      "learned_at": "2026-01-04T10:21:16.380333"
+    },
+    {
+      "topic": "unemployment",
+      "title": "Unemployment Benefits - Employment Development Department",
+      "content": "Apply for unemployment benefits in California, get the support you need during job loss, and learn the steps to access and maintain your benefits.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fedd.ca.gov%2Funemployment%2F&rut=a63d83317b417316fca12d6b54123a023f6a192fef393110d3e5ebf0c7cdcf5c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T10:21:17.350475"
+    },
+    {
+      "topic": "unemployment",
+      "title": "Unemployment Offices - Santa Clara County, CA (Benefits & Claims)",
+      "content": "Looking for unemployment benefits & claims in Santa Clara County, CA? Quickly access services from 7 Unemployment Offices near you!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.countyoffice.org%2Fca%2Dsanta%2Dclara%2Dcounty%2Dunemployment%2Doffices%2F&rut=9e342e6ab117075ca7acc6c5a012b3dc9f356678f560dee9d13a19cdaf03f327",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T10:21:17.350520"
+    },
+    {
+      "topic": "unemployment",
+      "title": "Sunnyvale CA Unemployment Career Center Office",
+      "content": "Sunnyvale CA Unemployment Career Center Office provide individuals seeking employment all the latest tools to find and keep that special job. Employers will find assistance in recruiting new employees including a national job listing network, applicant screening, and space in the centers to conduct testing and employment interviews.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Funemploymentoffice.us%2Fcalifornia%2Dunemployment%2Doffices%2Fsunnyvale%2Dca%2Dunemployment%2Dcareer%2Dcenter%2Doffice%2F&rut=cf65e6a73427e661140cd16cf090309f94d722db8db5dee8ac9103f3af3e9f85",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T10:21:17.350554"
+    },
+    {
+      "topic": "unemployment",
+      "title": "How Do I File for Unemployment Insurance? - U.S. Department of Labor",
+      "content": "The U.S. Department of Labor's unemployment insurance programs provide unemployment benefits to eligible workers who become unemployed through no fault of their own and meet certain other eligibility requirements. Unemployment insurance is a joint state-federal program that provides cash benefits to eligible workers. Each state administers a separate unemployment insurance program, but all ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.dol.gov%2Findex.php%2Fgeneral%2Ftopic%2Funemployment%2Dinsurance&rut=0c17294bdcb05a8fa7bc7c477e4771acfcd074c80b5f2c2942fdc3a3f3be807f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T10:21:17.350588"
+    },
+    {
+      "topic": "unemployment",
+      "title": "CA Unemployment Offices in Santa Clara County - List and Info",
+      "content": "The full list of Unemployment Offices in Santa Clara County, California with Contact Information and Public Records.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fcaliforniacountyoffices.com%2Fsanta%2Dclara%2Funemployment%2Doffices&rut=c105adac9f63b9cf41ad58c8f70be4d851a3dc26457052c935ecaedbf5d3eae8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T10:21:17.350619"
+    },
+    {
+      "topic": "2026 united states strikes in venezuela",
+      "title": "2026 United States strikes in Venezuela - Wikipedia",
+      "content": "On 3 January 2026, the United States launched a series of airstrikes in Venezuela and captured sitting president Nicol\u00e1s Maduro. [9][10] Codenamed Operation Absolute Resolve, it began around 2:00 a.m. local time, when more than 150 United States Armed Forces aircrafts conducted airstrikes across northern Venezuela and in areas around the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2F2026_United_States_strikes_in_Venezuela&rut=b4e44c6e7066633c5e488fc809e80a6bcbc3cd081cb09c1560b830f50d08742f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:25:31.197810"
+    },
+    {
+      "topic": "2026 united states strikes in venezuela",
+      "title": "What the U.S. Military Strike on Venezuela and Capture of Maduro Means ...",
+      "content": "U.S. special forces struck Venezuela before dawn on January 3, 2026, bombing installations across the capital and extracting President Nicol\u00e1s Maduro in an operation that lasted roughly thirty minutes. By Saturday afternoon, President Trump announced Maduro was in U.S. custody, facing drug trafficking charges in New York. The strike\u2014framed by the administration as executing an [\u2026]",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fgovfacts.org%2Fpolicy%2Dsecurity%2Fmilitary%2Foperations%2Dstrategy%2Fwhat%2Dthe%2Du%2Ds%2Dmilitary%2Dstrike%2Don%2Dvenezuela%2Dand%2Dcapture%2Dof%2Dmaduro%2Dmeans%2Dfor%2Damerican%2Dforeign%2Dpolicy%2F&rut=305a80fe6218c316dc94dbe7d3bc3bbec74f382b782ed5e065610a1ddee49f0c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:25:31.197905"
+    },
+    {
+      "topic": "2026 united states strikes in venezuela",
+      "title": "United States strikes Venezuela, captures President Maduro",
+      "content": "On January 3, at around 2 am, the United States military began a wave of airstrikes on the Venezuelan capital of Caracas and surrounding areas. Major military installations were targeted, including Venezuela's largest army base, Fuerte Tiuna, and the La Carlota airfield. At around 4:30 am, US President Donald Trump wrote that \"The United States of America successfully carried out a large ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.longwarjournal.org%2Farchives%2F2026%2F01%2Funited%2Dstates%2Dstrikes%2Dvenezuela%2Dcaptures%2Dpresident%2Dmaduro.php&rut=3a646dc40ede0adfa8cd804626e2c92a7c81ca94949afba51cdbaf1fcf42674c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:25:31.197965"
+    },
+    {
+      "topic": "2026 united states strikes in venezuela",
+      "title": "A timeline of the U.S. military's strike against Venezuela - NBC4 ...",
+      "content": "A timeline of the U.S. military's buildup and strikes against Venezuela leading to Maduro's capture Here is a timeline of the U.S. military actions and related developments:",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nbcwashington.com%2Fnews%2Fnational%2Dinternational%2Ftimeline%2Dus%2Dmilitary%2Dstrike%2Dvenezuela%2Dmaduro%2Dcapture%2F4036632%2F&rut=40fdf39184835b7845aa7f8937322d90c5913f97f1545b9648e12708db36dc85",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:25:31.198018"
+    },
+    {
+      "topic": "2026 united states strikes in venezuela",
+      "title": "2026 United States strikes in Venezuela - Wikiwand",
+      "content": "On 3 January 2026, the United States launched a series of airstrikes on Venezuela and captured sitting President Nicol\u00e1s Maduro. The attack, codenamed Operation...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.wikiwand.com%2Fen%2Farticles%2F2026_United_States_strikes_in_Venezuela&rut=f54d0153745879b0ce2eb9946035c2d92dbdf085e5a6a4fe9796c3c082d49c23",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:25:31.198076"
+    },
+    {
+      "topic": "urban sociology",
+      "title": "Shop book sociology - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on book sociology at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DsyLaZSGnDFyhs1bWvBfjpRyBwWFx0A1uyyCp9QUmIRqizhlRWjJRmW_nTYtaqJTsJZgixrXAOl%252DoeWwphy_ydCrxxaC_OETVHjMCqBeNG2IktJthmLToMyas0ibje2692fxRdeH%252D4ZZrbodmYYaRzwnbLg3ZB6xKeNbWh3szubw.8IBVztUU5Tiq9Xpg8KrWdA%26rut%3D832284a0640049c174d6b647274c9706223458042fbfb31ef8df79e766c3015a%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De81cKVQHQcU2_r_cr1OzZ2LTVUCUwpbPMDjl5y6EdCRwPZibi_Yti73n14n%252DrZjTjK0YnXzN7vC38I10mkKeedWShj4FEZhPWWBEJM8C0_2dgp7YkME9PSSWdGXiMHqYimE3BU3ATYZ0PaOMVvKlG%252DhyO0IO87wPbjiAwWrGoYRT2dFfAt3hzk5uKfanFnWoG523gx7zQYzegTPvDAtC5JQSwZRKo%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJvb2slMmJzb2Npb2xvZ3klMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF8zdmZiYzA3OGQ4X3AlMjZhZGdycGlkJTNkMTI0MDI0OTQyNjg2ODU1OCUyNmh2YWRpZCUzZDc3NTE1NzU1NzU1MTA0JTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkcCUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODYzMDMlMjZodnRhcmdpZCUzZGt3ZC03NzUxNjAwMzI5ODQyOSUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkMjI5NjJfMTM1OTkxMDklMjZtY2lkJTNkYWU1YjgwMjRkYjcxMzI3YTkyNDliZDE4M2VjZDdkMGQlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZGEyZDM1MDMxMjNkZTFlOWIwYTE5Mzk2YmU0OGFmMTc0%2526rlid%253Da2d3503123de1e9b0a19396be48af174%26vqd%3D4%2D221006093754286722048972875144227245339%26iurl%3D%257B1%257DIG%253DE4EE57E37D204F33A2B28F75E549E793%2526CID%253D0ECE4448F88F66CF396A529FF95A670C%2526ID%253DDevEx%252C5046.1&rut=897a0f920d6fe50998a74cc563092ece723cd878bc47f41f49a018e9746ad9e6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T12:02:28.577106"
+    },
+    {
+      "topic": "urban sociology",
+      "title": "Urban sociology - Wikipedia",
+      "content": "Learn about the origins, development and evolution of urban sociology, the branch of sociology that studies cities and urban life. Explore the key concepts, theories and methods used by urban sociologists to examine social, economic, cultural and environmental issues in urban environments.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FUrban_sociology&rut=5739faa2058626442c717079230a7ba77d3cc271ccce31b792db3c20e36516bd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T12:02:28.577194"
+    },
+    {
+      "topic": "urban sociology",
+      "title": "What is Urban Sociology? History, Concepts, and Examples",
+      "content": "Urban sociology is the study of cities and urban life from a sociological perspective. Learn about its history, major concepts, and current issues, such as urbanization, gentrification, and sustainability.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fappliedworldwide.com%2Fwhat%2Dis%2Durban%2Dsociology%2Dhistory%2Dconcepts%2Dand%2Dexamples%2F&rut=21ead7a10a8f5a8fa54c38e18de5687e6aca81b0cd0cd44145bb4d3c5c26309b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T12:02:28.577257"
+    },
+    {
+      "topic": "urban sociology",
+      "title": "Urban Sociology - an overview | ScienceDirect Topics",
+      "content": "Urban sociology is defined as the study that describes and interprets the causal connections between the elements of a city and the factors that give rise to them, providing insights into the complexities of urban life, social structures, and the evolution of human settlements.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.sciencedirect.com%2Ftopics%2Fsocial%2Dsciences%2Furban%2Dsociology&rut=511fb2cb7df30bd7f74b9ff672606b2baf244fcc416428cd02a3e0fb53a76165",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T12:02:28.577319"
+    },
+    {
+      "topic": "urban sociology",
+      "title": "Understanding Urban Sociology and Community Dynamics",
+      "content": "Urban sociology examines these intricate relationships between people and their city environments. When sociologists study urban spaces, they are not just looking at buildings and streets. They are exploring how these physical structures influence social behavior, community formation, and individual identity. The field reveals that cities are far more than collections of concrete and steel ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fsociologyinc.com%2Fhow%2Dcities%2Dshape%2Dour%2Dlives%2Dunderstanding%2Durban%2Dsociology%2Dand%2Dcommunity%2Ddynamics%2F&rut=0e7704efbf56950c67df6bdf891a73f55058afe6c7354171908a0285f8540e09",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T12:02:28.577381"
     }
   ],
-  "last_updated": "2026-01-01T20:00:17.393616"
+  "last_updated": "2026-01-04T12:02:28.585925"
 }

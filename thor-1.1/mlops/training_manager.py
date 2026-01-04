@@ -5,6 +5,7 @@ import os
 import json
 import torch
 import torch.nn as nn
+import copy
 from pathlib import Path
 from typing import Dict, List, Optional, Any
 from datetime import datetime
@@ -59,8 +60,9 @@ class TrainingManager:
             # Default target modules for transformer models
             target_modules = ["query", "key", "value", "dense"]
         
+        # For chat SFT, treat this as causal language modeling.
         config = LoraConfig(
-            task_type=TaskType.FEATURE_EXTRACTION,
+            task_type=TaskType.CAUSAL_LM,
             r=r,
             lora_alpha=lora_alpha,
             lora_dropout=lora_dropout,
@@ -92,7 +94,9 @@ class TrainingManager:
         learning_rate: float = 1e-4,
         lora_r: int = 8,
         lora_alpha: int = 16,
-        output_name: Optional[str] = None
+        output_name: Optional[str] = None,
+        task: str = "text_generation",
+        max_batches_per_epoch: Optional[int] = None
     ) -> Dict[str, Any]:
         """
         Train model with LoRA adapters.
@@ -110,7 +114,6 @@ class TrainingManager:
         
         # Setup training
         optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate)
-        criterion = nn.CrossEntropyLoss()
         
         training_history = {
             "train_loss": [],
@@ -122,19 +125,55 @@ class TrainingManager:
         for epoch in range(num_epochs):
             model.train()
             epoch_train_loss = 0.0
+            batches_seen = 0
             
             for batch in train_loader:
                 # Move batch to device
-                inputs = batch.get('input_ids', batch.get('inputs')).to(device)
-                labels = batch.get('labels', batch.get('targets')).to(device)
+                input_ids = batch.get("input_ids", batch.get("inputs")).to(device)
+                attention_mask = batch.get("attention_mask")
+                if attention_mask is not None:
+                    attention_mask = attention_mask.to(device)
+                labels = batch.get("labels", batch.get("targets"))
+                if labels is not None:
+                    labels = labels.to(device)
                 
                 optimizer.zero_grad()
-                outputs = model(inputs)
-                loss = criterion(outputs, labels)
+                # Prefer model-native loss (AllRounderModel computes shifted LM loss for text_generation).
+                outputs = None
+                loss = None
+                try:
+                    if attention_mask is not None and labels is not None:
+                        outputs = model(input_ids=input_ids, attention_mask=attention_mask, task=task, labels=labels)
+                    elif attention_mask is not None:
+                        outputs = model(input_ids=input_ids, attention_mask=attention_mask, task=task)
+                    else:
+                        outputs = model(input_ids=input_ids, task=task, labels=labels) if labels is not None else model(input_ids=input_ids, task=task)
+                    if isinstance(outputs, dict):
+                        loss = outputs.get("loss")
+                except TypeError:
+                    # Fallback for non-AllRounder models with a simpler forward signature
+                    outputs = model(input_ids)
+
+                if loss is None:
+                    # Generic fallback: compute token-level CE over logits and masked labels.
+                    if isinstance(outputs, dict) and "logits" in outputs:
+                        logits = outputs["logits"]
+                    else:
+                        logits = outputs
+                    if labels is None:
+                        raise ValueError("Training requires labels for supervised fine-tuning.")
+                    loss_fct = nn.CrossEntropyLoss()  # default ignore_index=-100
+                    shift_logits = logits[..., :-1, :].contiguous()
+                    shift_labels = labels[..., 1:].contiguous()
+                    loss = loss_fct(shift_logits.view(-1, shift_logits.size(-1)), shift_labels.view(-1))
+
                 loss.backward()
                 optimizer.step()
                 
                 epoch_train_loss += loss.item()
+                batches_seen += 1
+                if max_batches_per_epoch is not None and batches_seen >= max_batches_per_epoch:
+                    break
             
             avg_train_loss = epoch_train_loss / len(train_loader)
             training_history["train_loss"].append(avg_train_loss)
@@ -146,10 +185,40 @@ class TrainingManager:
                 val_loss = 0.0
                 with torch.no_grad():
                     for batch in val_loader:
-                        inputs = batch.get('input_ids', batch.get('inputs')).to(device)
-                        labels = batch.get('labels', batch.get('targets')).to(device)
-                        outputs = model(inputs)
-                        loss = criterion(outputs, labels)
+                        input_ids = batch.get("input_ids", batch.get("inputs")).to(device)
+                        attention_mask = batch.get("attention_mask")
+                        if attention_mask is not None:
+                            attention_mask = attention_mask.to(device)
+                        labels = batch.get("labels", batch.get("targets"))
+                        if labels is not None:
+                            labels = labels.to(device)
+
+                        outputs = None
+                        loss = None
+                        try:
+                            if attention_mask is not None and labels is not None:
+                                outputs = model(input_ids=input_ids, attention_mask=attention_mask, task=task, labels=labels)
+                            elif attention_mask is not None:
+                                outputs = model(input_ids=input_ids, attention_mask=attention_mask, task=task)
+                            else:
+                                outputs = model(input_ids=input_ids, task=task, labels=labels) if labels is not None else model(input_ids=input_ids, task=task)
+                            if isinstance(outputs, dict):
+                                loss = outputs.get("loss")
+                        except TypeError:
+                            outputs = model(input_ids)
+
+                        if loss is None:
+                            if isinstance(outputs, dict) and "logits" in outputs:
+                                logits = outputs["logits"]
+                            else:
+                                logits = outputs
+                            if labels is None:
+                                raise ValueError("Validation requires labels for supervised fine-tuning.")
+                            loss_fct = nn.CrossEntropyLoss()
+                            shift_logits = logits[..., :-1, :].contiguous()
+                            shift_labels = labels[..., 1:].contiguous()
+                            loss = loss_fct(shift_logits.view(-1, shift_logits.size(-1)), shift_labels.view(-1))
+
                         val_loss += loss.item()
                 avg_val_loss = val_loss / len(val_loader)
                 training_history["val_loss"].append(avg_val_loss)
@@ -199,17 +268,19 @@ class TrainingManager:
             print("[TrainingManager] Optuna not available, skipping hyperparameter tuning")
             return {"error": "Optuna not available"}
         
+        base_model_copy = copy.deepcopy(model).cpu()
+
         def objective(trial):
             # Suggest hyperparameters
             lr = trial.suggest_loguniform('learning_rate', 1e-5, 1e-3)
-            batch_size = trial.suggest_categorical('batch_size', [8, 16, 32])
             num_epochs = trial.suggest_int('num_epochs', 2, 5)
             lora_r = trial.suggest_categorical('lora_r', [4, 8, 16])
             lora_alpha = trial.suggest_categorical('lora_alpha', [8, 16, 32])
             
             # Train with these hyperparameters
+            trial_model = copy.deepcopy(base_model_copy)
             result = self.train_with_lora(
-                model=model,
+                model=trial_model,
                 train_loader=train_loader,
                 val_loader=val_loader,
                 num_epochs=num_epochs,

@@ -1,0 +1,35 @@
+{
+  "iterations": [
+    {
+      "iteration": 0,
+      "adapter_path": "thor-1.1/models/adapters/social_advice_iter_0_20260104_113428",
+      "registered_version": "20260104_113429",
+      "metrics": {
+        "train_loss": 0.12041840729890047,
+        "val_loss": 2.29655385017395
+      },
+      "eval_summary": {
+        "overall_mean": null,
+        "must_not_violation_rate": null,
+        "top_issues": []
+      }
+    },
+    {
+      "iteration": 1,
+      "adapter_path": "thor-1.1/models/adapters/social_advice_iter_1_20260104_113429",
+      "registered_version": "20260104_113429",
+      "metrics": {
+        "train_loss": 0.12416008666709617,
+        "val_loss": 2.3182504971822104
+      },
+      "eval_summary": {
+        "overall_mean": null,
+        "must_not_violation_rate": null,
+        "top_issues": []
+      }
+    }
+  ],
+  "timestamp": "2026-01-04T11:34:28.710651",
+  "promoted_version": null,
+  "promoted_score": null
+}

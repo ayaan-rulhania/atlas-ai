@@ -6,7 +6,7 @@ import argparse
 import yaml
 import os
 import math
-from typing import Dict, Optional
+from typing import Dict, Optional, List
 import torch.nn.functional as F
 
 from models import AllRounderModel
@@ -215,8 +215,28 @@ class AllRounderInference:
             elif solving_approach == 'mathematical_reasoning':
                 result = self._solve_with_math_solver(text)
             elif solving_approach == 'multi_step_problem_solving':
-                result = self._solve_with_problem_solver(text, input_ids, attention_mask,
-                                                       generation_params, context_text, knowledge)
+                # Check if multi-topic and get multi-topic knowledge
+                is_multi_topic = self._is_multi_topic_query(text, query_analysis)
+                multi_topic_knowledge = None
+                
+                if is_multi_topic:
+                    try:
+                        from .multi_topic_retriever import get_multi_topic_retriever
+                        retriever = get_multi_topic_retriever()
+                        multi_topic_data = retriever.get_enhanced_multi_topic_knowledge(
+                            text,
+                            max_topics=5,
+                            max_knowledge_per_topic=5
+                        )
+                        multi_topic_knowledge = multi_topic_data.get('knowledge_by_topic', {})
+                    except Exception as e:
+                        print(f"[Inference] Multi-topic retrieval error: {e}")
+                
+                result = self._solve_with_problem_solver(
+                    text, input_ids, attention_mask,
+                    generation_params, context_text, knowledge,
+                    multi_topic_knowledge=multi_topic_knowledge
+                )
             elif solving_approach == 'reasoning':
                 result = self._generate_with_reasoning(text, input_ids, attention_mask,
                                                      generation_params, context_text, knowledge)
@@ -250,6 +270,9 @@ class AllRounderInference:
         logical_reasoner = get_logical_reasoner()
         math_solver = get_math_solver()
 
+        # Check for multi-topic queries (requires multiple domains/topics)
+        is_multi_topic = self._is_multi_topic_query(text, query_analysis)
+        
         # Check for logical reasoning
         logical_analysis = logical_reasoner.analyze_logical_query(text)
         if logical_analysis['is_logical'] and logical_analysis['requires_proof']:
@@ -265,8 +288,9 @@ class AllRounderInference:
         decomposed_queries = query_analysis.get('decomposed_queries', [])
         reasoning_type = query_analysis.get('reasoning_type')
 
-        # Multi-step problem solving for highly complex queries
-        if (complexity > 0.8 or
+        # Multi-step problem solving for highly complex queries or multi-topic queries
+        if (is_multi_topic or
+            complexity > 0.8 or
             len(decomposed_queries) > 2 or
             reasoning_type in ['mathematical', 'causal', 'comparative'] or
             self._requires_multi_step_solving(text, query_analysis)):
@@ -274,15 +298,65 @@ class AllRounderInference:
             # Additional check: query length and structure
             if (len(text.split()) > 20 or
                 any(word in text.lower() for word in ['how to', 'explain why', 'analyze', 'solve', 'determine']) or
-                text.count('?') > 1):
+                text.count('?') > 1 or
+                is_multi_topic):
 
                 return 'multi_step_problem_solving'
 
-        # Chain-of-thought reasoning for moderately complex queries
+        # Chain-of-thought reasoning for moderately complex queries or multi-topic causal queries
+        if is_multi_topic and reasoning_type == 'causal':
+            return 'reasoning'  # Use reasoning with multi-topic support
+        
         if reasoning_engine.should_use_reasoning(text, query_analysis):
             return 'reasoning'
 
         return 'standard'
+    
+    def _is_multi_topic_query(self, text: str, query_analysis: Dict) -> bool:
+        """Detect if query requires knowledge from multiple topics/domains."""
+        try:
+            from .multi_topic_retriever import get_multi_topic_retriever
+            
+            retriever = get_multi_topic_retriever()
+            topics = retriever.identify_topics(text, max_topics=3)
+            
+            # Check if multiple topics from different domains were identified
+            if len(topics) >= 2:
+                domains = set(t['domain'] for t in topics if t['domain'] != 'general')
+                # Multi-topic if we have 2+ topics or 2+ different domains
+                return len(domains) >= 2 or len(topics) >= 2
+            
+            # Also check query patterns that indicate multi-topic
+            text_lower = text.lower()
+            multi_topic_patterns = [
+                'how does', 'how do', 'why does', 'what causes',
+                'affect', 'impact', 'influence', 'relate to',
+                'compare', 'versus', 'vs', 'difference between',
+                'relationship between', 'connection between'
+            ]
+            
+            if any(pattern in text_lower for pattern in multi_topic_patterns):
+                return True
+            
+            return False
+        except ImportError:
+            # Fallback: simple heuristic
+            text_lower = text.lower()
+            # Count distinct domain keywords
+            domain_keywords = {
+                'science': ['science', 'physics', 'chemistry', 'biology'],
+                'economics': ['economic', 'economy', 'market', 'finance'],
+                'technology': ['technology', 'tech', 'computer', 'software'],
+                'environment': ['climate', 'environment', 'pollution'],
+                'politics': ['politics', 'government', 'policy', 'law']
+            }
+            
+            domains_found = set()
+            for domain, keywords in domain_keywords.items():
+                if any(kw in text_lower for kw in keywords):
+                    domains_found.add(domain)
+            
+            return len(domains_found) >= 2
 
     def _requires_multi_step_solving(self, text: str, query_analysis: Dict) -> bool:
         """Check if query specifically requires multi-step problem solving"""
@@ -315,13 +389,26 @@ class AllRounderInference:
         attention_mask: torch.Tensor,
         generation_params: Optional[Dict] = None,
         context: str = "",
-        knowledge: List[Dict] = None
+        knowledge: List[Dict] = None,
+        multi_topic_knowledge: Optional[Dict[str, List[Dict]]] = None
     ) -> Dict:
         """
         Solve complex problems using the multi-step problem solver.
         """
         try:
             problem_solver = get_problem_solver()
+
+            # Convert multi_topic_knowledge to list format if provided
+            if multi_topic_knowledge:
+                # Flatten multi-topic knowledge into a list
+                all_knowledge = []
+                for items in multi_topic_knowledge.values():
+                    all_knowledge.extend(items)
+                # Combine with provided knowledge
+                if knowledge:
+                    knowledge = knowledge + all_knowledge
+                else:
+                    knowledge = all_knowledge
 
             # Solve the problem
             solution = problem_solver.solve_problem(text, context, knowledge)
@@ -1644,24 +1731,85 @@ Detailed analysis:"""
         """
         Generate text using chain-of-thought reasoning for complex queries.
         Integrates reasoning engine with enhanced knowledge retrieval and text generation.
+        Enhanced with multi-topic knowledge retrieval for cross-domain reasoning.
         """
         try:
             from brain import BrainConnector
+            from .multi_topic_retriever import get_multi_topic_retriever
+            from .knowledge_synthesizer import get_knowledge_synthesizer
+            from .causal_reasoner import get_causal_reasoner
 
             reasoning_engine = get_reasoning_engine()
             brain_connector = BrainConnector()
+            
+            # Check if this is a multi-topic query
+            query_analyzer = get_query_intent_analyzer()
+            query_analysis = query_analyzer.analyze(text)
+            is_multi_topic = self._is_multi_topic_query(text, query_analysis)
+            
+            # Initialize variables
+            enhanced_knowledge = {}
+            multi_topic_data = {}
+            
+            # Use causal reasoner for causal multi-topic queries
+            if is_multi_topic and query_analysis.get('reasoning_type') == 'causal':
+                try:
+                    causal_reasoner = get_causal_reasoner()
+                    reasoning_chain = causal_reasoner.solve_causal_query(text, context)
+                except Exception as e:
+                    print(f"[Inference] Causal reasoner error, falling back: {e}")
+                    is_multi_topic = False  # Fall back to standard reasoning
+            
+            if is_multi_topic:
+                # Multi-topic retrieval and reasoning
+                multi_topic_retriever = get_multi_topic_retriever()
+                knowledge_synthesizer = get_knowledge_synthesizer()
+                
+                # Get multi-topic knowledge
+                multi_topic_data = multi_topic_retriever.get_enhanced_multi_topic_knowledge(
+                    text,
+                    max_topics=5,
+                    max_knowledge_per_topic=5
+                )
+                
+                knowledge_by_topic = multi_topic_data.get('knowledge_by_topic', {})
+                
+                # Synthesize knowledge
+                synthesis_result = knowledge_synthesizer.synthesize_knowledge(
+                    knowledge_by_topic,
+                    text,
+                    context
+                )
+                
+                # Generate reasoning chain with multi-topic knowledge
+                reasoning_chain = reasoning_engine.generate_reasoning_chain(
+                    text,
+                    context,
+                    knowledge=None,
+                    multi_topic_knowledge=knowledge_by_topic,
+                    use_iterative_retrieval=True
+                )
+                
+                injection_context = synthesis_result.get('synthesized_context', '')
+                knowledge_items = []
+                for items in knowledge_by_topic.values():
+                    knowledge_items.extend(items)
+            else:
+                # Standard single-topic retrieval
+                enhanced_knowledge = brain_connector.get_enhanced_knowledge(
+                    text, context, max_results=5, include_citations=True
+                )
 
-            # Get enhanced knowledge with semantic search and ranking
-            enhanced_knowledge = brain_connector.get_enhanced_knowledge(
-                text, context, max_results=5, include_citations=True
-            )
+                # Use the enhanced knowledge for reasoning
+                knowledge_items = enhanced_knowledge.get('knowledge_items', [])
+                injection_context = enhanced_knowledge.get('injection_context', '')
 
-            # Use the enhanced knowledge for reasoning
-            knowledge_items = enhanced_knowledge.get('knowledge_items', [])
-            injection_context = enhanced_knowledge.get('injection_context', '')
-
-            # Generate reasoning chain with enhanced knowledge
-            reasoning_chain = reasoning_engine.generate_reasoning_chain(text, context, knowledge_items)
+                # Generate reasoning chain with enhanced knowledge
+                reasoning_chain = reasoning_engine.generate_reasoning_chain(
+                    text, context, knowledge_items,
+                    multi_topic_knowledge=None,
+                    use_iterative_retrieval=False
+                )
 
             # Format reasoning output
             reasoning_output = reasoning_engine.format_reasoning_output(reasoning_chain)
@@ -1714,12 +1862,23 @@ Detailed analysis:"""
                     'verification_passed': reasoning_chain.verification_result
                 }
 
-                result['knowledge_integration'] = {
+                # Prepare knowledge integration metadata
+                knowledge_metadata = {
                     'knowledge_items_used': len(knowledge_items),
-                    'total_candidates': enhanced_knowledge.get('total_candidates', 0),
-                    'citations': enhanced_knowledge.get('citations', []),
-                    'semantic_ranking_applied': True
+                    'semantic_ranking_applied': True,
+                    'multi_topic': is_multi_topic
                 }
+                
+                if is_multi_topic:
+                    knowledge_metadata['total_candidates'] = len(knowledge_items)
+                    knowledge_metadata['citations'] = []
+                    knowledge_metadata['topics_covered'] = [t['topic'] for t in multi_topic_data.get('topics', [])]
+                    knowledge_metadata['domains'] = multi_topic_data.get('domains', [])
+                else:
+                    knowledge_metadata['total_candidates'] = enhanced_knowledge.get('total_candidates', 0)
+                    knowledge_metadata['citations'] = enhanced_knowledge.get('citations', [])
+                
+                result['knowledge_integration'] = knowledge_metadata
 
                 return result
             else:

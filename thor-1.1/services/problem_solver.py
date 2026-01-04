@@ -112,9 +112,12 @@ class ProblemSolver:
         knowledge: List[Dict]
     ) -> SolutionPlan:
         """Create a comprehensive solution plan for the problem"""
+        
+        # Detect if this is a multi-topic problem
+        is_multi_topic = self._detect_multi_topic_problem(problem, problem_analysis)
 
         # Determine solution strategy based on problem type
-        strategy = self._determine_solution_strategy(problem_analysis)
+        strategy = self._determine_solution_strategy(problem_analysis, is_multi_topic)
 
         # Decompose problem into steps
         steps = self._decompose_problem(problem, problem_analysis, strategy)
@@ -134,12 +137,16 @@ class ProblemSolver:
             risk_assessment=risk_assessment
         )
 
-    def _determine_solution_strategy(self, problem_analysis: Dict) -> str:
+    def _determine_solution_strategy(self, problem_analysis: Dict, is_multi_topic: bool = False) -> str:
         """Determine the best solution strategy based on problem analysis"""
         reasoning_type = problem_analysis.get('reasoning_type', ReasoningType.NONE)
         intent = problem_analysis.get('intent', 'general')
         complexity = problem_analysis.get('query_complexity', 0.0)
 
+        # Multi-topic problems should use decomposition_and_synthesis
+        if is_multi_topic:
+            return "decomposition_and_synthesis"
+        
         if complexity > 0.7:
             return "decomposition_and_synthesis"
         elif reasoning_type == ReasoningType.DEDUCTIVE:
@@ -156,6 +163,29 @@ class ProblemSolver:
             return "multi_part_solution"
         else:
             return "analytical_reasoning"
+    
+    def _detect_multi_topic_problem(self, problem: str, problem_analysis: Dict) -> bool:
+        """Detect if problem requires knowledge from multiple topics/domains."""
+        try:
+            from .multi_topic_retriever import get_multi_topic_retriever
+            
+            retriever = get_multi_topic_retriever()
+            topics = retriever.identify_topics(problem, max_topics=3)
+            
+            # Check if multiple topics from different domains
+            if len(topics) >= 2:
+                domains = set(t['domain'] for t in topics if t['domain'] != 'general')
+                return len(domains) >= 2 or len(topics) >= 2
+            
+            return False
+        except ImportError:
+            # Fallback heuristic
+            problem_lower = problem.lower()
+            multi_topic_indicators = [
+                'how does', 'how do', 'affect', 'impact', 'influence',
+                'compare', 'versus', 'relationship between', 'connection between'
+            ]
+            return any(indicator in problem_lower for indicator in multi_topic_indicators)
 
     def _decompose_problem(self, problem: str, analysis: Dict, strategy: str) -> List[ProblemStep]:
         """Decompose the problem into solvable steps"""
@@ -478,7 +508,7 @@ class ProblemSolver:
         knowledge: List[Dict],
         previous_steps: List[ProblemStep]
     ) -> Dict[str, Any]:
-        """Execute a single solution step"""
+        """Execute a single solution step with multi-topic knowledge support"""
         import time
         start_time = time.time()
 
@@ -493,9 +523,37 @@ class ProblemSolver:
                 if previous_results:
                     enhanced_context += "\n\nPrevious steps completed:\n" + "\n".join(previous_results)
 
+            # Check if step requires multi-topic knowledge
+            try:
+                from .multi_topic_retriever import get_multi_topic_retriever
+                
+                retriever = get_multi_topic_retriever()
+                step_topics = retriever.identify_topics(step.sub_problem, max_topics=3)
+                
+                # Use multi-topic retrieval if multiple topics identified
+                multi_topic_knowledge = None
+                if len(step_topics) >= 2:
+                    multi_topic_data = retriever.get_enhanced_multi_topic_knowledge(
+                        step.sub_problem,
+                        max_topics=3,
+                        max_knowledge_per_topic=3
+                    )
+                    multi_topic_knowledge = multi_topic_data.get('knowledge_by_topic', {})
+                    
+                    # Also add to knowledge list
+                    if multi_topic_knowledge:
+                        for items in multi_topic_knowledge.values():
+                            knowledge.extend(items)
+            except ImportError:
+                multi_topic_knowledge = None
+
             # Use reasoning engine to solve the step
             reasoning_chain = self.reasoning_engine.generate_reasoning_chain(
-                step.sub_problem, enhanced_context, knowledge
+                step.sub_problem,
+                enhanced_context,
+                knowledge,
+                multi_topic_knowledge=multi_topic_knowledge,
+                use_iterative_retrieval=multi_topic_knowledge is not None
             )
 
             execution_time = time.time() - start_time

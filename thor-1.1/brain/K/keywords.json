@@ -30,7 +30,16 @@
     "know",
     "kant",
     "karl",
-    "kierkegaard"
+    "kierkegaard",
+    "kruskal",
+    "kvevlax",
+    "karine",
+    "korean",
+    "king",
+    "keery",
+    "kahlo",
+    "khalifa",
+    "kinship"
   ],
   "knowledge": [
     {
@@ -1292,7 +1301,880 @@
       "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fiep.utm.edu%2Fkierkega%2F&rut=4bb0359e57e33eb4fd799dfc33c00170748702c69642cd41e5fdee5a937e8bdc",
       "confidence": 0.7,
       "learned_at": "2026-01-02T10:38:55.552951"
+    },
+    {
+      "topic": "kruskal algorithm",
+      "title": "Kruskal's algorithm - Wikipedia",
+      "content": "Learn how to find a minimum spanning forest or tree of an undirected edge-weighted graph using a greedy algorithm and a disjoint-set data structure. See the pseudocode, complexity, and examples of Kruskal's algorithm.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKruskal%2527s_algorithm&rut=2ebce657361027ba8ba77788d202418f829e235b59d5e9eac20ed8b0a6b7a0d4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T18:15:45.027247"
+    },
+    {
+      "topic": "kruskal algorithm",
+      "title": "Kruskal's Minimum Spanning Tree (MST) Algorithm",
+      "content": "A minimum spanning tree (MST) or minimum weight spanning tree for a weighted, connected, and undirected graph is a spanning tree (no cycles and connects all vertices) that has minimum weight. The weight of a spanning tree is the sum of all edges in the tree. Below are the steps for finding MST using Kruskal's algorithm: Sort all the edges in a non-decreasing order of their weight. Pick the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Fdsa%2Fkruskals%2Dminimum%2Dspanning%2Dtree%2Dalgorithm%2Dgreedy%2Dalgo%2D2%2F&rut=d981f6fd8efae456a97208b93eabcfe213219332178c9ee7247bda14e56831b7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T18:15:45.027320"
+    },
+    {
+      "topic": "kruskal algorithm",
+      "title": "Kruskals Minimal Spanning Tree Algorithm - Online Tutorials Library",
+      "content": "Learn how to find the minimum spanning tree of a graph using Kruskal's algorithm, which sorts the edges in ascending order and adds them to the forest without cycles. See examples, pseudocode, and C++, Java, and Python implementations.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.tutorialspoint.com%2Fdata_structures_algorithms%2Fkruskals_spanning_tree_algorithm.htm&rut=f895feea345f14e4d4b2398af3386e6d400376f8a3bc35ad62ea97ec70e178d6",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T18:15:45.027372"
+    },
+    {
+      "topic": "kruskal algorithm",
+      "title": "Kruskal's Algorithm - Programiz",
+      "content": "Learn how to use Kruskal's algorithm to find the minimum spanning tree of a graph. See the steps, the example, the pseudocode and the complexity of this greedy algorithm.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.programiz.com%2Fdsa%2Fkruskal%2Dalgorithm&rut=200a03db726eed1e653d6855f6c80c4904bcdd36546c3478bcbe6a8c84bc5ab9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T18:15:45.027422"
+    },
+    {
+      "topic": "kruskal algorithm",
+      "title": "Kruskal's Algorithm | Brilliant Math & Science Wiki",
+      "content": "Learn how to find minimal spanning trees using Kruskal's algorithm, a greedy algorithm that picks the edge with the least label that does not create a cycle. See the pseudocode, the proof of correctness, and the running time analysis of the algorithm.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fbrilliant.org%2Fwiki%2Fkruskals%2Dalgorithm%2F&rut=ddaa39cfbd6bb573296dc526e5dd2e2e8e1d4eff824e1cb2ea3642cb77e6814f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T18:15:45.027480"
+    },
+    {
+      "topic": "kotlin programming",
+      "title": "Shop kotlin programming - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on kotlin programming at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DIRodKORrsenUONGUQxwO_8znNS5k6TzmdEt_nka11XCD_5kWWx0Fwm7%252DUsyZD72yW9tcBteqIEzioscDe8ebgSxIT2veL0zozBlpz9mQdPjTmgC1DeQxF9R5S7N%252D%252D1Dv%252DI0HnSsf%252Dqiv95T19PWwHXvrqN5CULnsv8RuqJK%252DFzU.vKTkS8syewAtHG34PzQknQ%26rut%3D5294be6243dda5affcdc72ce47c2b6fabe42c008cb67cb479ff1b943abbdc918%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8tWaCV6DqhcSZ%252D6ePbw8MOTVUCUyhpXJrtDupSQA8sHAJR1sl7XUx3UhZ89zCDJZFbgs%252DOQPuz8G2j1tKTkjVUzDiXliWaDdumDGCDb8B7OCcy6jDuoxdpPaLrBuPa%252Dt3O8SXXSotz%252D6CWtJO8EP8HLJbAj5Ov5vi0KZw3uV8hx7gZRigTCPZo_9nNT8QB68Bcmf47b2ZUV8CtzeOE4ITsjbuY8M%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGtvdGxpbiUyYnByb2dyYW1taW5nJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfNnprZTJxOGhscF9wJTI2YWRncnBpZCUzZDEyMzkxNDk5MzA4MzMzNDElMjZodmFkaWQlM2Q3NzQ0NzAzNjI2OTUwNCUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZGUlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg3NDI4JTI2aHZ0YXJnaWQlM2Rrd2QtNzc0NDcxMjE1NDQwNjMlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDE5NjM1XzEzNDkxOTU4JTI2bWNpZCUzZDJiNzI1NWU5MjZlMTM4NGU4MjdhMDU3OTI1ZDM1MzZiJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2Q5NThhMjZlMDgxZTMxZmZkMmY1ZTRmYjhmZmE4YzU2YQ%2526rlid%253D958a26e081e31ffd2f5e4fb8ffa8c56a%26vqd%3D4%2D2720463541784132369792246483032866667%26iurl%3D%257B1%257DIG%253D5ECD088DBE7A4B9191337F5284586685%2526CID%253D06920EDB00BD60620153180D012A612F%2526ID%253DDevEx%252C5045.1&rut=882a7a8e88d96b28d38743df83da87c969265d771de683fa94753ce8c9325011",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T18:26:20.155524"
+    },
+    {
+      "topic": "kotlin programming",
+      "title": "Beginner Kotlin - Kotlin Programming for Beginners",
+      "content": "Compare Price and Edition Great Selection and Amazing Prices",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dabebooks.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D4TJP2jmaZ7awpf_L9ld9vXdFd9nz%252DRBz9dza2qtg1JZr_RvoGM8gnpIMOXeQK0hUzFQ6wWO4WZ9YywSpL0evS5hEzu8rH2gZMS4kQ3G1UtY4h4FKYQUcYSOCMaBuuSdly_M4EJJYf_09UvYAkyEnoGmHnMBV4dtrruuwLBzknk8.d08XTZkrMLa_2gJKkPnDxg%26rut%3D291c07149b10bc716bbc8d1913a200f9911cccae91386bad3ddc7a95fa7dfce6%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8e7j7jlwsg%252D9tFz5WdCR7jTVUCUyGcOnRjhzGWuS6up%252Db38KjsnME2GhvZsiuIR6cJme5nnmBTc_4nH_uj6CzLXNB5mKy7FCCDkOHfHZcePylY2MkyhWF%252D76YYTMHByK4zT6Ms_w6jCw9w%252D%252DcmLDZ6Tf8QV9z%252DJ7F83atrcIa5WLy5ziNyPmRtAO5J_84dUSB_tk0DcaJxcR2QEVq6eYwcfGPcPg%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYWJlYm9va3MuY29tJTJmOTc5ODcxMTkzNDQyNCUyZktvdGxpbi1Qcm9ncmFtbWluZy1CZWdpbm5lcnMtSW50cm9kdWN0aW9uLUxlYXJuJTJmcGxwJTNmcmVmXyUzZHBzX21zXzI2NzY5MTc2MSUyNmNtX21tYyUzZG1zbi1fLWNvbXVzX2RzYS1fLW5hYS1fLW5hYSUyNm1zY2xraWQlM2RkNTM4MTdjYTUzZGQxZDFlNmEwNzdlOTIyZDk2NGEyNg%2526rlid%253Dd53817ca53dd1d1e6a077e922d964a26%26vqd%3D4%2D55341846512024970014700213089480510192%26iurl%3D%257B1%257DIG%253D5ECD088DBE7A4B9191337F5284586685%2526CID%253D06920EDB00BD60620153180D012A612F%2526ID%253DDevEx%252C5048.1&rut=d1b6c5539f75eded6fea1e98b9410b6bebc84dda01d23399c645c88295e2df9f",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T18:26:20.155603"
+    },
+    {
+      "topic": "kiss principle",
+      "title": "Understanding the \"KISS\" Principle in Software Design ... - Medium",
+      "content": "The KISS principle, short for \"Keep It Simple, Stupid,\" is a fundamental software design philosophy that stresses simplicity as the key to solving problems. It emphasizes that systems work ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmedium.com%2F%40Masoncoding%2Funderstanding%2Dthe%2Dkiss%2Dprinciple%2Din%2Dsoftware%2Ddesign%2Dkeep%2Dit%2Dsimple%2Dstupid%2D6f5fcd8913f3&rut=8b88dcaa87b98a41c008cb6e4d55fbd69fea9054e73a612425d7d728777933a5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:04:45.700392"
+    },
+    {
+      "topic": "list of exports of south korea",
+      "title": "South Korea's Top Exports 2024",
+      "content": "The Republic of South Korea's weaker local currency made Korean exports paid for in stronger US dollars relatively less expensive in 2024. South Korea's 5 biggest export products by value in 2024 were electronic integrated circuits, cars, refined petroleum oils, cruise or cargo ships and barges, then automobile parts or accessories,.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.worldstopexports.com%2Fsouth%2Dkoreas%2Dtop%2D10%2Dexports%2F&rut=e67b2ac1886db8bd028469f40149cdbd2ffaf3de45fa01cbb12f31bb092ae3e5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:11:05.170011"
+    },
+    {
+      "topic": "list of exports of south korea",
+      "title": "South Korea (KOR) Exports, Imports, and Trade Partners | The ...",
+      "content": "This section shows exports and imports data at subnational level for South Korea. Click any date in the line plot, any product, destination or origin country in the treemaps to explore the exports or imports behavior of South Korea over time. For full datasets download visit Bulk Download page.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Foec.world%2Fen%2Fprofile%2Fcountry%2Fkor&rut=1888187e4cf8a1616672eeed0be8c88a474fca78b5fe61cae5a49870446eb008",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:11:05.170097"
+    },
+    {
+      "topic": "list of exports of south korea",
+      "title": "South Korea Exports By Category - TRADING ECONOMICS",
+      "content": "South Korea's total Exports in 2024 were valued at US$683.13 Billion, according to the United Nations COMTRADE database on international trade. South Korea's main export partners were: China, the United States and Vietnam.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Ftradingeconomics.com%2Fsouth%2Dkorea%2Fexports%2Dby%2Dcategory&rut=945d7fa13f2f5dbeffd5e089038507051eeaaec781a4bd1f6b0694b27ea0323e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:11:05.170163"
+    },
+    {
+      "topic": "list of exports of south korea",
+      "title": "List of exports of South Korea - Wikipedia",
+      "content": "The following is a list of the exports of South Korea. Data is for 2012, in millions of United States dollars, as reported by The Observatory of Economic Complexity. Currently the top twenty exports are listed.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FList_of_exports_of_South_Korea&rut=9b8d7b0eee198033fe77bea0fbda5e1025622fbba4d69a3467c0afd3f215aed5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:11:05.170227"
+    },
+    {
+      "topic": "list of exports of south korea",
+      "title": "Exports from South Korea - statistics & facts | Statista",
+      "content": "South Korea's international trade is the main driver of its economic growth. After the Korean War from 1950 to 1953, it developed into a net export country. The importance of exports for the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.statista.com%2Ftopics%2F11932%2Fexports%2Dfrom%2Dsouth%2Dkorea%2F&rut=644068587f0e4d5ab5c0f38d9549471fced8d171a6361c38aa7785696702dd47",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:11:05.170288"
+    },
+    {
+      "topic": "what is blockchain: everything you need to know (2022)",
+      "title": "Low priced blockchains for dummies - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on blockchains for dummies at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DzLpm4sHQmPW35b5OvXSx%252Dn5TtHbSO2Y59yPVpYsoaSFujFBWnOlql3QjatlDaYtPu_MqXRHX54tdbnHyv_BAuz6UWxwviTDOYlaR7CvWCtyS7tDwKdo8XXJCckyjdIQnJeKMX9fTCgOkJ7rsy0puOPoBwJjw2huImTf_cqpFIiA.pyiEOgA%252DOQY_GacB1Dw1gg%26rut%3Dc759eb4765f9c81eb9a8bee2f6742aa136fc1f6e7383a4ae28adad69c7d252d9%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8JWCgpDahkUz7ukFoX%252Dw0bDVUCUzlL36_gwZa4knVTwD0uYNefbGuE4ZP%252DMq_ZakX71yaON5qKfZU_o9Ozl1QVO4jp4n94n8zFsJnxap9NZoxzdQW3oMozMVazE8v4S%252DvHSJIaqBhr_g%252DESO4crIajBw2k5DLMvMcQwY17jDyifU7wN54jjDxkvxmSOy_1EdXEYoGmZCXo7RINPt_NswwcRSYZA8%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGJsb2NrY2hhaW5zJTJiZm9yJTJiZHVtbWllcyUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzc1a2luNG43YXhfcCUyNmFkZ3JwaWQlM2QxMjM0NzUyNjM2MDQ3OTc3JTI2aHZhZGlkJTNkNzcxNzIxNzM1MDA5OTglMjZodm5ldHclM2RzJTI2aHZxbXQlM2RwJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjUzOSUyNmh2dGFyZ2lkJTNka3dkLTc3MTcyMzk0OTQ4NTMzJTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QxMzIyOV8xMzUwMzQwMiUyNm1jaWQlM2QwYjdmZjEwMTdkNzEzYjFhYmNmOWYyODhjZjk4MjczOCUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkODY2MjIzOGM4MjRiMTIwNDAwYTM0YWQ0MGIwMjUzOTE%2526rlid%253D8662238c824b120400a34ad40b025391%26vqd%3D4%2D171302156096976964208214783728264153469%26iurl%3D%257B1%257DIG%253D0DE6147E25E74F24AF7C0CB9B486BA07%2526CID%253D0CD993DD42416C3C3892850B43946DFE%2526ID%253DDevEx%252C5046.1&rut=199d2e877e7fc78383f286dddc787ff10b9e94d81d5a6bd9af253f6995956f6e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:13:13.687150"
+    },
+    {
+      "topic": "what is blockchain: everything you need to know (2022)",
+      "title": "What is Blockchain?",
+      "content": "Learn everything you need to know about Blockchain. From its decentralized nature to its potential for revolutionizing industries.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.blockchain%2Dcouncil.org%2Fguide%2Fblockchain%2Dguide%2Deverything%2Dyou%2Dneed%2Dto%2Dknow%2F&rut=c68887c6dbccfcfef7ec26d4afb6a8581ebbb42803d5358166f5c3ec27609227",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:13:13.687208"
+    },
+    {
+      "topic": "what is blockchain: everything you need to know (2022)",
+      "title": "Blockchain Facts: What Is It, How It Works, and How It Can Be Used",
+      "content": "How Does a Blockchain Work? You might be familiar with spreadsheets or databases. A blockchain is somewhat similar because it is a database where information is entered and stored.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.investopedia.com%2Fterms%2Fb%2Fblockchain.asp&rut=de0c6d72dc8ac09e0ccd8fb45f1929bb6533c3badced30f7c12f2e55e404672e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:13:13.687254"
+    },
+    {
+      "topic": "what is blockchain: everything you need to know (2022)",
+      "title": "What is Blockchain? A Beginner's Guide - osl.com",
+      "content": "Final Thoughts: Why Blockchain Matters Blockchain is reshaping the way we store, share, and verify information. Its decentralized, transparent, and secure nature makes it ideal for a variety of industries, not just finance. As the technology matures, its potential to revolutionize everything from supply chains to voting systems is immense.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.osl.com%2Fen%2Fbits%2Farticle%2Fwhat%2Dis%2Dblockchain&rut=95c90e7e2839e200daf6fab1731652b539ba397d27232a586b7f75738495f8ca",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:13:13.687312"
+    },
+    {
+      "topic": "what is blockchain: everything you need to know (2022)",
+      "title": "Blockchain Made Easy: A Beginner's Guide to How It Works",
+      "content": "# A Simple Guide to Blockchain: How It Works for Beginners Blockchain is a groundbreaking distributed ledger technology that delivers secure and transparent data storage without the need for intermediaries. This guide offers newcomers a thorough overview of blockchain fundamentals, its historical evolution, and real-world uses in finance, supply chain management, healthcare, and government ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fweb3.gate.com%2Fen%2Fcrypto%2Dwiki%2Farticle%2Fa%2Dsimple%2Dguide%2Dto%2Dblockchain%2Dhow%2Dit%2Dworks%2Dfor%2Dbeginners%2D20251227&rut=b83a268ef8bccdc4e49fdb887b542eba73749a9e0472888ced2ba2a6aa6e4d77",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:13:13.687361"
+    },
+    {
+      "topic": "key value database",
+      "title": "Key-value database - Wikipedia",
+      "content": "A key-value database, or key-value store, is a data storage paradigm designed for storing, retrieving, and managing associative arrays, a data structure more commonly known today as a dictionary or hash table. Dictionaries contain a collection of objects, or records, which in turn have many different fields within them, each containing data.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKey%25E2%2580%2593value_database&rut=b328287bcc9caee1125a885076ca7608e6c79612e6a6b8dbfc8a68a21a26a596",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:25:24.017857"
+    },
+    {
+      "topic": "key value database",
+      "title": "What is a Key Value Database? - MongoDB",
+      "content": "A key-value database is a NoSQL database that stores data by assigning an identifier to a single value. Come and learn how MongoDB Atlas supports key-value stores.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mongodb.com%2Fresources%2Fbasics%2Fdatabases%2Fkey%2Dvalue%2Ddatabase&rut=85604e46d7fd5448e43e4556391aa7d308be449d35adc153656127e2181ff7bc",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:25:24.017941"
+    },
+    {
+      "topic": "key value database",
+      "title": "What is a Key Value Database? - Key Value DB and Pairs Explained - AWS",
+      "content": "Key-Value Databases A key-value database is a type of non-relational database, also known as NoSQL database, that uses a simple key-value method to store data. It stores data as a collection of key-value pairs in which a key serves as a unique identifier. Both keys and values can be anything, ranging from simple objects to complex compound objects.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Faws.amazon.com%2Fnosql%2Fkey%2Dvalue%2F&rut=eec7b1e5639d7708634abef9d0f02fff21ac1978b7afec77358fea1793502f63",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:25:24.018013"
+    },
+    {
+      "topic": "key value database",
+      "title": "What Is a Key Value Database? Benefits and Use Cases Explained",
+      "content": "Discover what a key value database is, its benefits, and use cases in our comprehensive blog post. Unlock the potential of efficient data storage today!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwhatisdatabase.com%2Fwhat%2Dis%2Da%2Dkey%2Dvalue%2Ddatabase%2Dbenefits%2Dand%2Duse%2Dcases%2Dexplained&rut=b0d693a09691adf9b7840d58a0e73c1f6a48f9c02075d83e089410d9181aad68",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:25:24.018075"
+    },
+    {
+      "topic": "key value database",
+      "title": "Top 26 Key-Value Databases Compared - DragonflyDB",
+      "content": "Explore the top key-value databases! Compare strengths/weaknesses and more so you can choose the right key-value database for your next project.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.dragonflydb.io%2Fguides%2Fkey%2Dvalue%2Ddatabases&rut=f45dfb9d35e29e2153de86db621c14d5a17910d6af4cbde24bd9f0bbe4791118",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T19:25:24.018134"
+    },
+    {
+      "topic": "apache kafka",
+      "title": "What is Kafka? - Apache Kafka Explained - AWS",
+      "content": "Apache Kafka is a distributed data store optimized for ingesting and processing streaming data in real-time. Streaming data is data that is continuously generated by thousands of data sources, which typically send the data records in simultaneously. A streaming platform needs to handle this constant influx of data, and process the data sequentially and incrementally. Kafka provides three main ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Faws.amazon.com%2Fwhat%2Dis%2Fapache%2Dkafka%2F&rut=dfaf3ef67ae8dd6c711b095b53d92e2b94a29c2aa8397fd5cfc885ef0115206c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T21:41:40.999930"
+    },
+    {
+      "topic": "kubernetes",
+      "title": "Kubernetes",
+      "content": "Kubernetes, also known as K8s, is an open-source container orchestration system for automating software deployment, scaling, and management. Originally designed by Google, the project is now maintained by a worldwide community of contributors, and the trademark is held by the Cloud Native Computing Foundation.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kubernetes",
+      "confidence": 0.9,
+      "learned_at": "2026-01-02T23:51:16.346611"
+    },
+    {
+      "topic": "kubernetes",
+      "title": "Shop kubernetes for dummies - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on kubernetes for dummies at Amazon.com. Free shipping on qualified orders. Free, easy returns on millions of items.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D3W2uPnwQI_os9K_ZBIki6uyMjPSnuHykDLdtjiUM28HMfflyDFeKA0MkjU6u2zkCTOjSvNZ755Zxyuphv2IAM6Zun3TIaaK%252DdYmUbPNhCOj5u99tRS4OyFosuseP810QusWgTUBDm6L%252DrWiaAGN4lkbIXpWiCfPl0p_NrIgD6gY.VNX13iYcPRwRI5Ldrgoydg%26rut%3D5119fb97107780c84e424b9f55b061a5791fc9498e5b1b8ee55e1779afdbd64c%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8DzrHcmot4GFcR1LsQvjEIjVUCUxBXujPvgz%252DpWtUFCxcyjHCKIj%252D0mSoxqwNb7DhWaA48eUPZJBk9UK6Uey%252D7xkx5vMMn2t9ZxYpJzcfwDnx1PJZaPfh6HF7tChNLuutQ3dx0dPFzq8lSU3Sh818y45q1Zef9MWI3RTq1Fqtf1YpuU3YkOit6cioWxmFYTuUeoiB_XXKAMljmTkFemLZdcWF_h0%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGt1YmVybmV0ZXMlMmJmb3IlMmJkdW1taWVzJTI2aW5kZXglM2RhcHMlMjZ0YWclM2R0eHRzdGRiZ2R0LTIwJTI2cmVmJTNkcGRfc2xfN3R0MmQ5ZTZzc19wJTI2YWRncnBpZCUzZDEyMzAzNTQ1MzIwNDQwMDUlMjZodmFkaWQlM2Q3Njg5NzI5MDAwOTQ2NyUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDg2NDQ4JTI2aHZ0YXJnaWQlM2Rrd2QtNzY4OTc0Mzg2NzUzODMlM2Fsb2MtMTkwJTI2aHlkYWRjciUzZDE5NjEwXzEzNDkyMDIzJTI2bWNpZCUzZGMyYTI3N2MyZGU5YTMzZmM5YmFhMTc2ODQxYzg5YjcxJTI2bGFuZ3VhZ2UlM2Rlbl9VUyUyNm1zY2xraWQlM2RhMjk3MmQ3ODk1MmUxOTJlMmMxYzQ0MjA1ZjVhYTk5ZQ%2526rlid%253Da2972d78952e192e2c1c44205f5aa99e%26vqd%3D4%2D126527015460001830172865123210179147187%26iurl%3D%257B1%257DIG%253D9F3CD62F6C2C4DCEBCAE85D0E1BCA828%2526CID%253D235AEF3CDBA864151E4CF9EADA6C65BC%2526ID%253DDevEx%252C5046.1&rut=b26779e119630ed17323e1ecd0ffb6eb014308e2ab3ab294022dc58d2a26dd92",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T23:51:17.376228"
+    },
+    {
+      "topic": "kubernetes",
+      "title": "Kubernetes vs OpenShift: What's the Difference?",
+      "content": "Transform your business operations with BMC's efficient solutions today! Your business is unique; let us create custom solutions just for you today!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dbmc.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DlfFCtXdcF3vT%252DUOjD3oKCStiufTrz26vWzvLS7CYgm3WUyq5CmrlQXP9pRECqxd0Ds7OGfVyBa29_StP8rTETrbIORsxPb6jk9DtWgKJaRP2cAtKMZnx82YGoo_4Cq1MTv4Q_CKKPlje2d1KRH8M351G9YHXkztAZjXNamcVY4w.n%252D3T8nTC3OymfHLOs_9qig%26rut%3Dc6bafde2b5f4b11ba0eafba84150eb8e5dba4fc0a034507d15e08176ea6e7d1b%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8LjuOEFqHMShKfnz9AKg7jTVUCUzGHH5mnKdLRF4FwiqT_EVghgnZRRIYhj24Tp0kA71x5leNS_iEvSHVKi4GcphK9wc6SwSHwPBHOruMTtPK%252DQ2D9UoqwmdxBZq49JIT1eRePEhX4E0UX5_VZJHJY_lHmG1PJIwBje7ERbStfNxrYRt0Ht8qAqR4MMLhhQjNhycV5EZbq8rkKenh3HJLfYgjeaI%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYm1jLmNvbSUyZmJsb2dzJTJma3ViZXJuZXRlcy12cy1vcGVuc2hpZnQlMmYlM2Ztc2Nsa2lkJTNkMzRmNTFkZDNiZmY4MTg4ZmEwMzA3NDhiNzU4YzdiYmQ%2526rlid%253D34f51dd3bff8188fa030748b758c7bbd%26vqd%3D4%2D170240373936345123683773777572169779382%26iurl%3D%257B1%257DIG%253D9F3CD62F6C2C4DCEBCAE85D0E1BCA828%2526CID%253D235AEF3CDBA864151E4CF9EADA6C65BC%2526ID%253DDevEx%252C5049.1&rut=19e56e43d87d08efabab0f520f964fc9c8f7051e8358352333cf2d9aeec6ba1b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T23:51:17.376310"
+    },
+    {
+      "topic": "kubernetes",
+      "title": "Kubernetes",
+      "content": "Kubernetes, also known as K8s, is an open source system for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery. Kubernetes builds upon 15 years of experience of running production workloads at Google, combined with best-of-breed ideas and practices from the community ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fkubernetes.io%2F&rut=cd10e3cff1147221d1d467273d449b9da6577bd92791dc36f92c33a63d1774c9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T23:51:17.376389"
+    },
+    {
+      "topic": "kubernetes",
+      "title": "Kubernetes - Wikipedia",
+      "content": "Kubernetes (/ \u02cck (j) u\u02d0b\u0259r\u02c8n\u025bt\u026as, - \u02c8ne\u026at\u026as, - \u02c8ne\u026ati\u02d0z, - \u02c8n\u025bti\u02d0z /), also known as K8s, is an open-source container orchestration system for automating software deployment, scaling, and management. [3][4] Originally designed by Google, the project is now maintained by a worldwide community of contributors, and the trademark is held by the Cloud Native Computing Foundation. The ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKubernetes&rut=683088c9456719d75ea24369fb4bf62abdd1e1ba489c45bfccd8c0c8c146f07a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T23:51:17.376471"
+    },
+    {
+      "topic": "kubernetes",
+      "title": "What is Kubernetes? | Microsoft Azure",
+      "content": "Learn how to build, deliver, and scale containerized apps faster with open source orchestration from Kubernetes.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fazure.microsoft.com%2Fen%2Dus%2Fresources%2Fcloud%2Dcomputing%2Ddictionary%2Fwhat%2Dis%2Dkubernetes%2F&rut=333c70e5c9c572b1110ad8cc37496e0f58df1996d71bd72be766426d203c3089",
+      "confidence": 0.7,
+      "learned_at": "2026-01-02T23:51:17.376529"
+    },
+    {
+      "topic": "kanban methodology",
+      "title": "The Official Guide to The Kanban Method | Kanban University",
+      "content": "Method, Methodology, or Framework? Kanban is often confused with a methodology or framework. In software engineering a methodology is a process definition approach to software development and project management (a bit of a misnomer, as \"methodology\" should mean \"the study of methods\"). Methodologies contain prescriptive, defined workflows and processes, including roles, and ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fkanban.university%2Fkanban%2Dguide%2F&rut=f24dfab2df83762f4113a1bed67fb4d8f4a6f3ad86ac467650448ce11378f027",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T00:33:11.338764"
+    },
+    {
+      "topic": "kanban methodology",
+      "title": "What is Kanban methodology? The ultimate guide for 2026 - Wrike",
+      "content": "Learn what Kanban is, how it works, and why it's a popular Agile framework for project management. Discover the benefits, principles, practices, and tools of Kanban, and how to implement it with Wrike.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.wrike.com%2Fkanban%2Dguide%2Fwhat%2Dis%2Dkanban%2F&rut=8070bbbde1a0c5d9af93a5b8514f9099e0672656953270e5d52039e9df0436cd",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T00:33:11.338836"
+    },
+    {
+      "topic": "public key cryptography",
+      "title": "Public-key cryptography - Wikipedia",
+      "content": "Public-key cryptography An unpredictable (typically large and random) number is used to begin generation of an acceptable pair of keys suitable for use by an asymmetric key algorithm. In this example the message is digitally signed with Alice's private key, but the message itself is not encrypted. 1) Alice signs a message with her private key.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPublic%2Dkey_cryptography&rut=74008575cd5a9d3a4aaefe4034d173f2acfca180d34ad5e2550ce3d773e839e5",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T08:58:15.591946"
+    },
+    {
+      "topic": "public key cryptography",
+      "title": "Public-key cryptography | Encryption, Decryption & Security | Britannica",
+      "content": "Public-key cryptography, asymmetric form of cryptography in which the transmitter of a message and its recipient use different keys (codes), thereby eliminating the need for the sender to transmit the code and risk its interception. It is commonly used in cryptocurrency transactions. In 1976, in",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fpublic%2Dkey%2Dcryptography&rut=c4bc37cea2b478cf6417ef5490b7a50c3e13b17174181101179bdc48b140b47c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T08:58:15.592041"
+    },
+    {
+      "topic": "public key cryptography",
+      "title": "How does public key cryptography work? - Cloudflare",
+      "content": "How does public key cryptography work? Public key cryptography, also known as asymmetric cryptography, uses two separate keys instead of one shared one: a public key and a private key. Public key cryptography is an important technology for Internet security.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cloudflare.com%2Flearning%2Fssl%2Fhow%2Ddoes%2Dpublic%2Dkey%2Dencryption%2Dwork%2F&rut=9bbaf671ca434210dc7f95b562ec6d7dc307fbd5d1d61f19a0b1b9d2ba6a1dc7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T08:58:15.592115"
+    },
+    {
+      "topic": "public key cryptography",
+      "title": "What is public key encryption? - IBM",
+      "content": "Public key encryption is a type of cryptographic system that uses a mathematically linked pair of keys\u2014one public, one private\u2014to encrypt and decrypt data.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ibm.com%2Fthink%2Ftopics%2Fpublic%2Dkey%2Dencryption&rut=8e5e76ed34d46673748dc3a5ce157e3c133fbfa62aac7539810d2a72a2b037b4",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T08:58:15.592208"
+    },
+    {
+      "topic": "public key cryptography",
+      "title": "What is a public key and how does it work? - TechTarget",
+      "content": "How public key encryption works A cryptographic key is a mathematical algorithm implemented in software or hardware and used to encrypt or decrypt data. It is a string of bits that are combined with the data to create ciphertext. The cryptographic key can also be used to unencrypt data back to plaintext. The same key can be used to both encrypt and decrypt the message, or different keys can be ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.techtarget.com%2Fsearchsecurity%2Fdefinition%2Fpublic%2Dkey&rut=e35f40735dc1342060ffdbe2cfe233f3336b0dc30c8bb2e4f47c75f2d878f39d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T08:58:15.592288"
+    },
+    {
+      "topic": "kernel",
+      "title": "Kernel (operating system) - Wikipedia",
+      "content": "A kernel is a core program that controls hardware and software resources and mediates conflicts between processes. Learn about kernel architecture, memory management, device management, and more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKernel_%2528operating_system%2529&rut=0dc22af33f8c972e2598e601de5b6d426ec12b1aabda3bc43ceba452e61c660c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:14:41.078797"
+    },
+    {
+      "topic": "kernel",
+      "title": "The Linux Kernel Archives",
+      "content": "This site is operated by the Linux Kernel Organization, a 501 (c)3 nonprofit corporation, with support from the following sponsors.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.kernel.org%2F&rut=710772346db54a73cd3b12ccfc99fb906f36b422838f0a32627b98b1be04cef8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:14:41.078840"
+    },
+    {
+      "topic": "kernel",
+      "title": "What is the Linux kernel? - Red Hat",
+      "content": "The Linux kernel is the main component of a Linux operating system (OS) and is the core interface between a computer's hardware and its processes.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.redhat.com%2Fen%2Ftopics%2Flinux%2Fwhat%2Dis%2Dthe%2Dlinux%2Dkernel&rut=34b1ffbb2000a34b88946cea7c61d8bbb1485bdea8fcb0b3fc7819726fadc6b7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:14:41.078873"
+    },
+    {
+      "topic": "kernel",
+      "title": "Linux Kernel Highlights For 2025: Schedulers, Rust & Torvalds ...",
+      "content": "The Linux kernel mailing list drama around the Rust programming language use within the kernel continues... Linus Torvalds has largely refrained from the ongoing LKML discussions around a Rust policy for the Linux kernel and in-fighting between kernel developers and maintainers with differing views over Rust.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.phoronix.com%2Fnews%2FLinux%2DKernel%2DHighlights%2D2025&rut=1e4c7b5ad57e15435363f84a2b9e71e1ef895f913e2fe1006cf1fa85e18f274b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:14:41.078910"
+    },
+    {
+      "topic": "kernel",
+      "title": "Kernel in Operating System - GeeksforGeeks",
+      "content": "The kernel is the first part of the OS loaded into memory during boot, and it stays resident while the system is running. It operates in a privileged mode (kernel mode), separate from user mode for applications; user apps can't directly access hardware or critical resources.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geeksforgeeks.org%2Foperating%2Dsystems%2Fkernel%2Din%2Doperating%2Dsystem%2F&rut=2f48903dd64a7f1e28e917a8c4271a1df15ed537850395583bc7fec4ca7aef46",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T09:14:41.078945"
+    },
+    {
+      "topic": "genghis khan",
+      "title": "Genghis Khan: Books - AbeBooks",
+      "content": "Find the Perfect Book for You and Your Loved Ones at AbeBooks. Buy & Save Today!",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dabebooks.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DJ4E2xotX_oh9WUAZA3VLbBN%252Dsu0NqYnY4ODsjPJYJk8FIOpGpKF%252DBNGWrRJZqZzMISdg%252D%252DUuS56BpNeU5AmzC8WnxBwrc3%252Dohb9s8%252D2A5xA7X%252Dtlvm2_ciRNr3b1JHQYMaBHafcui8Wqbct2byBpOrrebqlOxM__wu7LqWnrqu0.loxf0q%252DmLPjDjcXZng1ntw%26rut%3Df0ce546f27d5d1fa6e3f8bca08eee6839a66b7ef4eacb11efd9e80f173fa3075%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8pzj2KeY4kovlPvL_U2qrjzVUCUwyLC1FqaR_D0XujZG0JZtoUIgDFCtxABkR573x89E_mTmDERVcJkjFrP_3WrYY3GFwaCSXR1Z8qdJU%252DhTMV8nw6f9_cGOletnHcVmfSsa41qpmN21PjZ1RwgoSZeCRrR1HzLsMFhk1ARe2SPHagG2wks6ZkKRh%252DnH7BI9jnEYbzD9ABUxc6UWOAl4JYJy5WkA%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYWJlYm9va3MuY29tJTJmYm9vay1zZWFyY2glMmZ0aXRsZSUyZmdlbmdoaXMta2hhbiUyZmJvb2slMmYlM2ZyZWZfJTNkcHNfbXNfMjY3NjkxNzYxJTI2Y21fbW1jJTNkbXNuLV8tY29tdXNfZHNhLV8tbmFhLV8tbmFhJTI2bXNjbGtpZCUzZGFjOTJjOTNkZmViZTE2NmYxZTMwYTA2NDk4OWIyODBi%2526rlid%253Dac92c93dfebe166f1e30a064989b280b%26vqd%3D4%2D206835805569694542010951774977273663690%26iurl%3D%257B1%257DIG%253D9AF23554225A4B9694143CFEEE374D31%2526CID%253D0E9634D7CFD16E702F6E2201CE046F79%2526ID%253DDevEx%252C5045.1&rut=1100e12e6dab044b1d0702d7b4592fbaf830438edf03db030621219e4166b922",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:55:33.706873"
+    },
+    {
+      "topic": "genghis khan",
+      "title": "Genghis Khan - Wikipedia",
+      "content": "Genghis Khan[a] (born Tem\u00fcjin; c. 1162 - August 1227), also known as Chinggis Khan, [b] was the founder and first khan of the Mongol Empire. After spending most of his life uniting the Mongol tribes, he launched a series of military campaigns, conquering large parts of China and Central Asia.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGenghis_Khan&rut=7588194ea09a069abcf58202fee904f69361806be69e4f1b320940dceb907c8a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:55:33.706975"
+    },
+    {
+      "topic": "genghis khan",
+      "title": "Genghis Khan | Biography, Conquests, Achievements, & Facts | Britannica",
+      "content": "Genghis Khan, the fearsome Mongol conqueror and visionary leader, forged the largest contiguous empire in history through his military prowess and innovative strategies.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FGenghis%2DKhan&rut=3297cd408943a5b2699a082b693f49b84c94bf7740600d917cc7b51dec6c3ce2",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:55:33.707037"
+    },
+    {
+      "topic": "genghis khan",
+      "title": "Genghis Khan - World History Encyclopedia",
+      "content": "Learn about the life and achievements of Genghis Khan, the founder of the Mongol Empire that conquered large parts of Asia and Europe. Discover how he unified the Mongol tribes, created a written language, a law code, and a postal system, and became a fearsome warrior and administrator.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.worldhistory.org%2FGenghis_Khan%2F&rut=146d63c78e5e855727c49df0d79e7a61b1fd1cb6ebe87d6babe23ac0cc3e3b78",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:55:33.707098"
+    },
+    {
+      "topic": "genghis khan",
+      "title": "Genghis Khan - Descendants, Empire & Facts | HISTORY",
+      "content": "Mongol leader Genghis Khan (1162-1227) rose from humble beginnings to establish the largest land empire in history. A...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.history.com%2Farticles%2Fgenghis%2Dkhan&rut=8182072678d552f6ee44dfc336ffa2174f3d281bb34481cfd626fa80360d8cb0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T10:55:33.707157"
+    },
+    {
+      "topic": "kvevlax",
+      "title": "Kvevlax",
+      "content": "Kvevlax is a church village in the municipality of Korsholm, Finland. It is located approximately 15 kilometres (9\u00a0mi) north of the city of Vaasa. Kvevlax became an independent parish in 1857. Until 1 January 1973 it was an independent municipality. Kvevlax has a lower grade primary education school, a kindergarten, a running track, a football pitch and an ice rink. There are two local grocery shops, a library and a bank.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kvevlax",
+      "confidence": 0.9,
+      "learned_at": "2026-01-03T11:01:52.480129"
+    },
+    {
+      "topic": "kvevlax",
+      "title": "Kvevlax - Wikipedia",
+      "content": "Kvevlax (Finnish: Koivulahti) is a church village in the municipality of Korsholm, Finland. It is located approximately 15 kilometres (9 mi) north of the city of Vaasa.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKvevlax&rut=71eb0e6f1ea54e8fc38d0d5ae5da08a6ff43af1f51542ecf539ddb5418c10651",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:01:53.296537"
+    },
+    {
+      "topic": "kvevlax",
+      "title": "Kvevlax - Swedish Finn Historical Society",
+      "content": "The parish of Kvevlax sets on the shore of the Gulf of Bothnia. The landscape is flat and is characterized primarily by the valley of the Kyr\u00f6 River and its delta. The river flows into the Vassor Bay of the Gulf of Bothnia. 4 This map of the Kevlax parish in 1938 displays on the HisKi project website, made available by the Genealogical Society of Finland.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.swedishfinnhistoricalsociety.org%2Fparish%2Dprimer%2Fkvevlax%2F&rut=350468d7c2db5bdb2d3e837b85159946f96a25f1b8c970638ab433ab09654285",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:01:53.296594"
+    },
+    {
+      "topic": "kvevlax",
+      "title": "Kvevlax, Finland: All You Must Know Before You Go (2025) - Tripadvisor",
+      "content": "Kvevlax Tourism: Tripadvisor has 9 reviews of Kvevlax Hotels, Attractions, and Restaurants making it your best Kvevlax resource.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.tripadvisor.com%2FTourism%2Dg7786314%2DKvevlax_Ostrobothnia%2DVacations.html&rut=d956bdad71512433d73ceae0b384f1738a292b81a9aae5fb2ad75372be7d0f66",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:01:53.296622"
+    },
+    {
+      "topic": "kvevlax",
+      "title": "Church of Kvevlax - Discovering Finland",
+      "content": "Kvevlax church was built between 1691-93, by the peasant farmer Hans Larsson Qweflander. The main timbering work would have been completed in 1692, and the inauguration took place on the fourth day of Christmas the same year.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.discoveringfinland.com%2Fdestination%2Fchurch%2Dof%2Dkvevlax%2F&rut=8fcd92abe9e9edaf6393a1eeaa8d3784ba2ad78a5ad41944491ee8c05f35722e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:01:53.296649"
+    },
+    {
+      "topic": "kvevlax",
+      "title": "Kvevlax Map - Town - Korsholm, Ostrobothnia, Finland",
+      "content": "Kvevlax is a church village in the municipality of Korsholm, Finland. It is located approximately 15 kilometres north of the city of Vaasa. Kvevlax became an independent parish in 1857.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fmapcarta.com%2F13645252&rut=c907f1ce5a7d7b44c04d7cb3023e7c52393939d75d569774a065601b2d5e24c7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T11:01:53.296674"
+    },
+    {
+      "topic": "karine a affair",
+      "title": "Karine A affair - Wikipedia",
+      "content": "The Karine A affair, also known as Operation \"Noah's Ark\" (Hebrew: \u05de\u05d1\u05e6\u05e2 \u05ea\u05d9\u05d1\u05ea \u05e0\u05d5\u05d7, romanized: Mivtza Teyvat Noah), was an Israeli military action in January 2002 in which the Israel Defense Forces (IDF) forces seized MV Karine A, which, according to the IDF, was a Palestinian freighter in the Red Sea. [1] The vessel was found to be carrying 50 tons of weapons, including short-range ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKarine_A_Affair&rut=57bf0b261675f5f3d87197a2c1436bfbd00a7149d7c2546d9140e35195dbc2d1",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:10:52.386635"
+    },
+    {
+      "topic": "karine a affair",
+      "title": "The Karine-A Affair and the War on Terrorism",
+      "content": "The Karine-A affair represents the worst nightmare of the Arab-Israeli peace process; namely, that well-meaning diplomacy could have morphed from a means to make peace irreversible into a tool to ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fnationalinterest.org%2Flegacy%2Fthe%2Dkarine%2Da%2Daffair%2Dand%2Dthe%2Dwar%2Don%2Dterrorism%2D1175&rut=00e615556b4056fd6528a5715dc36a92f86d002822bcc17584307eeaa8984e4c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:10:52.386744"
+    },
+    {
+      "topic": "karine a affair",
+      "title": "When Israeli intelligence, CIA caught mega-arms boat and changed ...",
+      "content": "Gal (full names kept secret to prevent identification) had just updated him on the first intelligence breakthrough in the Karine A Affair, which would eventually change history.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.jpost.com%2Fisrael%2Dnews%2Fwhen%2Disraeli%2Dintelligence%2Dcia%2Dcaught%2Dmega%2Darms%2Dboat%2Dand%2Dchanged%2Dhistory%2D505794&rut=751ec325fca5cb4ed3105b28a054f44d37a2e050d4c6ffe781207c81b4c69953",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:10:52.386821"
+    },
+    {
+      "topic": "karine a affair",
+      "title": "January 2-3, 2002 - Karine A - The Interception of a Lethal Cargo Ship",
+      "content": "The Karine A Affair, was a military action in January 2002 in which Israeli forces seized the MV Karine A, a Palestinian freighter found to be carrying 50 tons of weapons, including short-range Katyusha rockets, antitank missiles, and high explosives.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.iicc.org.il%2F%3Fmodule%3Darticles%26item_id%3D16%26article_id%3D390%26art_category_id%3D3&rut=f846a2fa2e4cbcc3a823c42c17af7a9077d9cd6d006cfeb74eb84d7f7b22aa74",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:10:52.386910"
+    },
+    {
+      "topic": "karine a affair",
+      "title": "About: Karine A affair - DBpedia Association",
+      "content": "The Karine A affair, also known as Operation \"Noah's Ark\" (Hebrew: \u05de\u05d1\u05e6\u05e2 \u05ea\u05d9\u05d1\u05ea \u05e0\u05d5\u05d7, romanized: Mivtza Teyvat Noah), was an Israeli military action in January 2002 in which the Israel Defense Forces (IDF) forces seized MV Karine A, which, according to the IDF, was a Palestinian freighter in the Red Sea. The vessel was found to be carrying 50 tons of weapons, including short-range ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fdbpedia.org%2Fpage%2FKarine_A_affair&rut=1aeecedea7f130fabd10ddc303064316f5ab7a9f084fd509da7d1787dadb7378",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:10:52.387003"
+    },
+    {
+      "topic": "korean war",
+      "title": "Korean War - Wikipedia",
+      "content": "The Korean War (25 June 1950 - 27 July 1953) was an armed conflict on the Korean Peninsula fought between North Korea (Democratic People's Republic of Korea; DPRK) and South Korea (Republic of Korea; ROK) and their allies. North Korea was supported by China and the Soviet Union, while South Korea was supported by the United Nations Command (UNC) led by the United States. The conflict was one ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKorean_War&rut=221155c9d989dfcb1323e1f920268480391b970bb4e9645bda86d36ced9c6410",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:58:12.492788"
+    },
+    {
+      "topic": "korean war",
+      "title": "Korean War | Dates, Countries, Summary, Map, Casualties, & Facts ...",
+      "content": "The Korean War was a conflict (1950-53) between North Korea, aided by China, and South Korea, aided by the UN with the U.S. as the principal participant. At least 2.5 million people lost their lives in the fighting, which ended in July 1953 with Korea still divided into two hostile states separated by the 38th parallel.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fevent%2FKorean%2DWar&rut=d89e268d2bc20861ebe2003fc135a9dd593eb57d5d1385075d8ed32c43bf2c51",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:58:12.492897"
+    },
+    {
+      "topic": "korean war",
+      "title": "Korean War - Causes, Timeline & Veterans | HISTORY",
+      "content": "On June 25, 1950, the Korean War began when some 75,000 soldiers from the North Korean People's Army poured across th...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.history.com%2Farticles%2Fkorean%2Dwar&rut=94aa1a35193334b8f72766b61498561cff46256c3ebe3f3b694e73979ff7a696",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:58:12.493016"
+    },
+    {
+      "topic": "korean war",
+      "title": "Korean War Overview - U.S. National Park Service",
+      "content": "The Korean War began with a surprise attack June 25, 1950, when eight divisions and an armored brigade (90,000 soldiers) of the North Korean People's Army (NKPA) attacked in three columns across the 38th parallel and invaded the Republic of Korea (ROK).",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nps.gov%2Fkowa%2Flearn%2Fhistoryculture%2Fkorean%2Dwar%2Doverview.htm&rut=35146bd9fa4b831db30f05474f7710c1bbc90ef4ef9d6a7c4308daa65991aff9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:58:12.493103"
+    },
+    {
+      "topic": "korean war",
+      "title": "A Short History Of The Korean War - The Cold War | IWM",
+      "content": "The Korean War started on 25 June 1950 and ended on 27 July 1953, after the signing of an armistice agreeing that the country would remain divided. At the end of the Second World War, Korea - which had formerly been occupied by the Japanese - was divided along the 38th Parallel. This was an internal border between North and South Korea based on a circle of latitude.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.iwm.org.uk%2Fhistory%2Fcold%2Dwar%2Fkorean%2Dwar&rut=86f90546bfc8451b09b7ab7696f0e9fb013376609b5c7219ba1d41c8519ca13d",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T12:58:12.493211"
+    },
+    {
+      "topic": "martin luther king jr",
+      "title": "Shop martin luther king biography - Amazon.com Official Site",
+      "content": "Find deals and low prices on martin luther king biography at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DpzMYPF%252DmPwYOjZCJBCPCV7Lcld0WXetqE3qbQADk0lTovwSd53uOmXIAnAS0kPvcv5ioSdktrBy0Yzdzf5VS1HkMjiCaOSYPftKTwxmuOoiLX%252D%252D3l9EUTsEtmz8gDwxQHZpVdqs2%252Dos1O3eo1Oq6jlPwb3ezHegb70AI3vMltrA.JfAtQ9x0jXUJsyZdz9iDqw%26rut%3Df698d51a41d757a99537a44b4be6fe9169c25c671eeb498b5d130fdcbb304dc6%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De881nRYqRacKl9K4frUoLHVjVUCUxCavTcSEjVk5wRl4nt3%252DmO%252DJoX8ozYNy7ZUqRQydwoSGJB2M0kcCoD9R8FuLGT7QT0kvGHK3ZX1m0MkLDJ5MxHUKltI6HZ%252DYqQ1YMrxJ_qTxrlQyn4oD7qiGHVeqJqbEtTHiB024mJRMKImFBfo88Liiyp05RQprx1Cc%252Dhil68mYxXRjiWU0JrJBsyS09ilUU%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZG1hcnRpbiUyYmx1dGhlciUyYmtpbmclMmJiaW9ncmFwaHklMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF8xcGFscmhkYnNrX3AlMjZhZGdycGlkJTNkMTIzNDc1MjU1NjM2ODU4NSUyNmh2YWRpZCUzZDc3MTcyMTY1NDc4ODU3JTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkZSUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY0NDglMjZodnRhcmdpZCUzZGt3ZC03NzE3MjI5MjA0ODE4MCUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkMTkwODFfMTM0OTE5NDElMjZtY2lkJTNkNTY4ODRmM2NlYzMwMzU0YTlmOGNmZjdhOGI5N2U1ZDklMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZGZmMDcwZjdhNmZiZDEzMDQ0NjAwNjYyM2ViMWNjODUw%2526rlid%253Dff070f7a6fbd130446006623eb1cc850%26vqd%3D4%2D213701575001222387676353268322686439769%26iurl%3D%257B1%257DIG%253D3784AB8030DE4D7EBCC4BBB03A8B19E2%2526CID%253D3C85B49D78A3601D091FA24B79766121%2526ID%253DDevEx%252C5045.1&rut=1fd44d2f861680bbde325cd5f0a4905110f9db66c771cd14b6b7ba88079b8b99",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:05:37.553823"
+    },
+    {
+      "topic": "martin luther king jr",
+      "title": "Martin Luther King Jr. Day - Free Educational Resources",
+      "content": "Teach kids all about Martin Luther King Jr. Day with printable worksheets & lesson plans. Access the most comprehensive library of resources for learning at school and at home.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Deducation.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DnUtwLJ%252DSvMSwUedCo6cwiGoIqIp0UUEb_91463oVYipTvi__LvEgGmbayIun7BviR6960zJHCvt7ILebonzwRYlyJq%252DOx0oDjvS4NHc9MW3wcTEinJHdT237jiItiJlMbTXta%252DNVizR55LOM9LJQvM4JZeZSZzTuGSknGD4qEwU.TTsjHlemjgvom6BLXTQA5w%26rut%3D7f5ccbe30517917c3ba1ae1af7938db2a6ca8e5547f3cd34349d81de6b74f054%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8wnX%252DvA8xs1EKx%252Dz8PdjVADVUCUyAwFK0ZJ5eggma1_2SooGja3QzTbYWXZFu5BAtPAql5AyG6KEsjfG7CFYhr4G9KQTHNnUMbq_ALkKaP0bPMQ9sdNqhfrkf5_dTLuZ9knIbX6qgiGx9BmMxY4Lc81ZCX78WKij%252D_w8s2173C7E4LaXeAEkqiCdEPTbKro6_GXnLpL9zpwSU0qOI3it6wW14nFY%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuZWR1Y2F0aW9uLmNvbSUyZnJlc291cmNlcyUyZm1hcnRpbi1sdXRoZXIta2luZy1qci1kYXklMmYlM2Ztc2Nsa2lkJTNkNjZkZjU1MGJkMDNhMWQ4N2Y1NWYzYzUyNTQ5YjU4MTUlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RTZWFyY2glMjUyMC0lMjUyMFNwcmluZyUyNTIwSG9saWRheXMlMjUyMC0lMjUyMEJNTSUyNnV0bV90ZXJtJTNkJTI1MkJtbGslMjUyMCUyNTJCcmVzb3VyY2VzJTI2dXRtX2NvbnRlbnQlM2RNYXJ0aW4lMjUyMEx1dGhlciUyNTIwS2luZyUyNTIwSnIuJTI1MjBEYXk%2526rlid%253D66df550bd03a1d87f55f3c52549b5815%26vqd%3D4%2D34318121000003728537535247416886994630%26iurl%3D%257B1%257DIG%253D3784AB8030DE4D7EBCC4BBB03A8B19E2%2526CID%253D3C85B49D78A3601D091FA24B79766121%2526ID%253DDevEx%252C5048.1&rut=d432706fe94ae197cd44b6947a376ad2e782b4d8267dd74c8e63087822d5c49c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:05:37.553934"
+    },
+    {
+      "topic": "martin luther king jr",
+      "title": "Martin Luther King Jr. - Wikipedia",
+      "content": "Martin Luther King Jr. (born Michael King Jr.; January 15, 1929 - April 4, 1968) was an American civil rights activist and Baptist minister who was a leader of the civil rights movement from 1955 until his assassination in 1968.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMartin_Luther_King_Jr.&rut=f2c97478a1c54892c002b7a274d74f9371258a051ae4d63a31b1d525df43a125",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:05:37.553969"
+    },
+    {
+      "topic": "martin luther king jr",
+      "title": "Martin Luther King, Jr. | Biography, Speeches, Facts, & Assassination ...",
+      "content": "Martin Luther King, Jr. (born January 15, 1929, Atlanta, Georgia, U.S.\u2014died April 4, 1968, Memphis, Tennessee) was a Baptist minister and social activist who led the civil rights movement in the United States from the mid-1950s until his death by assassination in 1968.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FMartin%2DLuther%2DKing%2DJr&rut=f47f427c51f2418f7e3aa68da46d6f89dd878994139a37a106975f1c13d1e180",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:05:37.554183"
+    },
+    {
+      "topic": "joe keery",
+      "title": "Joe Keery - Wikipedia",
+      "content": "Joseph David Keery, also known professionally in music as Djo, is an American actor, singer and musician. He first gained international recognition for playing Steve Harrington in the science fiction series Stranger Things (2016-2025), and has since starred in the comedy horror film Spree (2020), the comedy film Free Guy (2021), and in the ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FJoe_Keery&rut=5f92b913ffd97a7ea0188b796528e60424f9ad2ac20a25ad5db3096695411607",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:45:47.595536"
+    },
+    {
+      "topic": "joe keery",
+      "title": "Joe Keery - IMDb",
+      "content": "Joe Keery is an American actor and musician who plays Steve Harrington in the hit sci-fi series Stranger Things. He also composes and performs music for the band Post Animal and has appeared in movies like Free Guy and Spree.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.imdb.com%2Fname%2Fnm6564737%2F&rut=5b36f239a3cf4841f3753771f93014a3952962c6d4aa69151fd47362864d0940",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:45:47.595604"
+    },
+    {
+      "topic": "joe keery",
+      "title": "What Joe Keery plans to do after Stranger Things? A closer look at his ...",
+      "content": "Joe Keery reflects on life after Stranger Things, his emotional farewell to Steve Harrington, upcoming film Cold Storage, and how he's shaping his career with bold, genre-defying roles.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.primetimer.com%2Ffeatures%2Fwhat%2Djoe%2Dkeery%2Dplans%2Dto%2Ddo%2Dafter%2Dstranger%2Dthings%2Da%2Dcloser%2Dlook%2Dat%2Dhis%2Dcareer%2Dahead&rut=e3c413cd8be8c9162b6643fbab719a76645eadc03c530c5575c1deb816725433",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:45:47.595657"
+    },
+    {
+      "topic": "joe keery",
+      "title": "\"The cast is actually still as close\": Joe Keery reveals what he's ...",
+      "content": "Joe Keery recently appeared on Josh Horowitz's podcast for a heartwarming interview to celebrate the release of the successful finale and the epic conclusion of the sci-fi hit. When asked about the one thing he is proud of, the actor was quick to reflect on the friendships and bonds that he created on the way, revealing that the Stranger Things cast is equally close in real life as the Hawkins ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.soapcentral.com%2Fshows%2Fthe%2Dcast%2Dactually%2Dstill%2Dclose%2Djoe%2Dkeery%2Dreveals%2Dreally%2Dproud%2Dlooking%2Dback%2Dstranger%2Dthings%2Djourney&rut=c2ec2bfd0a7b65fa4cdb7edabcb23c6a967a0f8c652539df491834dc31a1c9f7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T13:45:47.595711"
+    },
+    {
+      "topic": "frida kahlo",
+      "title": "Shop art frida kahlo - Amazon\u00ae Official Site",
+      "content": "Get deals and low prices on art frida kahlo in Home Improvement on Amazon. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DexkJc5wych1K_vQu3s2jtlgB2yFchKsHrpWBC3HKhni1wvbyFPfaQXSoNl%252D4teAKCW3a8f43YUA7R3FTEajQx27hEsS7KTsF5ePJtZgTXCh73Pby0XESvHJlabe5ik9J%252DEyCBx6nOaxBGVsDe4rRaZytmVIt46MMHHojnauXYZU.envkc3Zbv2eSwoje5Wv69w%26rut%3D568edb1f57d148ea6b91693b1de30593c334d4db8df4fa8dcebcc3981a090068%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8Z9zReTMN2lXaCLYBlVkULjVUCUy5b1y5eR2NDDFumOjlLOZu8UUDjuh9NsIhSgebZ4KeaJYe7rePQJV2EFGW6zginYgU5Q9xXL6wPcuqqK%252DvfTPO6hEqCvNpKILKEBmfHHDjtDDORosKJncVWO2w_jmCI7zkdKqWPYynd3RsZbCMMFYFO8p5bxZwLrp2y_JsrScBUXrHwENdcGzTt%252DqHCUL7osQ%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGFydCUyYmZyaWRhJTJia2FobG8lMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF81djNhNXMwb2E1X3AlMjZhZGdycGlkJTNkMTIzODA1MDQ0NzA4OTMyNCUyNmh2YWRpZCUzZDc3Mzc4MzIxOTQ1MzA1JTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkcCUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY0NDglMjZodnRhcmdpZCUzZGt3ZC03NzM3ODUxMDI4NTI4OCUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkMjUxNDVfMTM1OTQzNjglMjZtY2lkJTNkZDUzMDVkNjUzNjM2MzUwYjgyYjg1MjlmNGRkYTUzM2ElMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZDNjMzlmMzQ0MzM1ODFkYzI4NGFkOWExZDljN2VlYjJk%2526rlid%253D3c39f34433581dc284ad9a1d9c7eeb2d%26vqd%3D4%2D26519098650714979810124474705726797200%26iurl%3D%257B1%257DIG%253D6FB312396F9A48CF8E2A5AE543769143%2526CID%253D3BB7291FD56E682F0AAF3FC8D4F969CC%2526ID%253DDevEx%252C5045.1&rut=7f81828845865e0095035836cfa37874719eee52e5381ab94f0fa0c059db4a3c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:07:03.493883"
+    },
+    {
+      "topic": "frida kahlo",
+      "title": "Frida Kahlo - Wikipedia",
+      "content": "Frida Kahlo ... Magdalena Carmen Frida Kahlo y Calder\u00f3n (Spanish pronunciation: [\u02c8f\u027ei\u00f0a \u02c8kalo]; 6 July 1907 - 13 July 1954 [1]) was a Mexican painter known for her many portraits, self-portraits, and works inspired by the nature and artifacts of Mexico.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFrida_Kahlo&rut=baca2b38701b44d078035a12932292b1cfa851d4e749f2dba5a17437a2dec74e",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:07:03.495887"
+    },
+    {
+      "topic": "frida kahlo",
+      "title": "Frida Kahlo | Biography, Paintings, Self-Portrait, Accident, Husband ...",
+      "content": "Frida Kahlo was a Mexican painter known for her uncompromising and brilliantly colored self-portraits that confront such themes as identity, the human body, and death. Some of her notable paintings included Frieda and Diego Rivera (1931) and The Two Fridas (1939). Read more about Kahlo's life and career.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FFrida%2DKahlo&rut=683f4b320b17eb3be3ca2eaf50307a68fbc57c5c6838adee4447921a4304c728",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:07:03.495960"
+    },
+    {
+      "topic": "frida kahlo",
+      "title": "Frida Kahlo",
+      "content": "Learn about the life and work of Mexican artist Frida Kahlo, who is famous for her self-portraits, pain and passion, and Mexican and indigenous culture. Explore her paintings, diaries, photos, quotes and fun facts on this website.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.fridakahlo.org%2F&rut=cf78e9344076b291b84990fd77d7317504dff8c633a741d191e4a5b79e11ccce",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:07:03.496002"
+    },
+    {
+      "topic": "frida kahlo",
+      "title": "Frida Kahlo - Paintings, Quotes & Art - Biography",
+      "content": "Painter Frida Kahlo was a Mexican artist who was married to Diego Rivera and is still admired as a feminist icon.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.biography.com%2Fartists%2Ffrida%2Dkahlo&rut=781edf8061858743cfc1d5402ff4b18bbd201a8bf6f6853e0139009cb65ce9f7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:07:03.496039"
+    },
+    {
+      "topic": "key signature",
+      "title": "Learn Piano Fast as an Adult - Premium Online Piano Lessons",
+      "content": "In My Class, You'll Learn 3 Piano Techniques Used By Pros. My Chord Based, Modern Method Will Have You Playing Piano In A Flash! Register Now.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dpianoinaflash.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3Dg0D9S5iFVkzo4f7w7rVCgAHceBBcBZ59cc2m9DdktiKUYtvRXbRxeenJ7adbAuTpeOqgPNJKRUHZ8yOK92cK%252DUjUUbkEqxTa3evo7TSm_7QbiMw1UvVIob3eY2qkuiSKj7b2tLosadkMUeZ0gL0pA4gEuFMAq5JTVLgkFHA8YfI.B6OnPq%252DY9JWbjuTlI3_wcg%26rut%3D8ea2a08d964ae6cb2c29369a1cb851f46a47156c43053884a8dd38076b49cbca%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De85E2clLy7Y25_4jJTruuelzVUCUx3eZKCQ4LPUQiQ2CbhXS4G8xQHblx%252DqQMiOr_hNKb_tWquBZ6OxMZtmoS9p08cndmvX_q6YOD2xhBY%252DQd3mFGMp2CbX%252D1pFIP%252DveEILd7jIombKXQNperY%252DNpeC8Yk6u1Rzp1qrJQcaqgpejtnkSNbZnTe7EQzadW2pgTxe3k70aH8pxmV4%252DY9h9ufk1MIJ1c%2526u%253DaHR0cHMlM2ElMmYlMmZwbGF5LnBpYW5vaW5hZmxhc2guY29tJTJmMy1zZWNyZXRzLXJlZ2lzdHJhdGlvbiUzZmNhbXBhaWduaWQlM2Q0MTMxNjMwNjQlMjZhZGdyb3VwaWQlM2QxMzU2ODAwMDA4Mzg5ODgwJTI2YWRpZCUzZDg0ODAwNDE2NzMyMjY5JTI2bmV0d29yayUzZHMlMjZkZXZpY2UlM2RjJTI2YmlkbWF0Y2h0eXBlJTNkYmIlMjZrZXl3b3JkJTNkcGlhbm8lMjUyMGxlc3NvbnMlMjZsb2NwaHlzaWNhbCUzZDg2NjUzJTI2bG9jaW50ZXJlc3QlM2QlMjZtc2Nsa2lkJTNkMzQ5ZjE0MWRhNTZjMTUzNTk2ZGQ3ZDQ0MTViMmRjNjklMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2QoU0VBUkNIKSUyNTIwLSUyNTIwUFJPU1BFQ1RJTkclMjUyMC0lMjUyMFBpYW5vJTI1MjBMZXNzb25zJTI1MjAobGFyZ2UlMjUyMGxpc3QpJTI1MjAtJTI1MjBVUyUyNnV0bV90ZXJtJTNkcGlhbm8lMjUyMGxlc3NvbnMlMjZ1dG1fY29udGVudCUzZFdlYWx0aHklMjUyMFppcCUyNTIwQ29kZSUyNTIwVGFyZ2V0aW5n%2526rlid%253D349f141da56c153596dd7d4415b2dc69%26vqd%3D4%2D216643119390845846348345877783437151804%26iurl%3D%257B1%257DIG%253DD20E3513744D4D12A7D911DD297D3A92%2526CID%253D3DA6CA0744BA69B10DE9DCD0452D6860%2526ID%253DDevEx%252C5045.1&rut=391bc67e6d9aba98514d1e2985c31444db196327c287cf43ec4910a3de8e1266",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:14:22.666264"
+    },
+    {
+      "topic": "key signature",
+      "title": "Low prices key signature chord chart - Amazon.com Official Site",
+      "content": "Browse & discover thousands of unique brands. Read customer reviews & best sellers. Find deals and compare prices on key signature chord chart at Amazon.com",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DKLg7y9t68zh5F7WqiANbUOKkgb85UN4hjc5ywbRcXy9jb_nszI0WQSA2HFRL%252D9UV8Lej4_XkaruLaY_hbshiJd4EPWQByDI%252DbviFCSZrz4y%252Do2%252DUDVfGFnejEI0Wldw8dg0LzEfZHItZVtUrxwUDojHo8MSHATw9pMZBYu5VCDY.UYsrnudPXSOjThNLDRLvdg%26rut%3Dd49ee47ea6defcebe2269f56b5e9721edad2ad2a4b5c74c07316768bd733f76d%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8SxG%252DD6QrZqlUIAk%252DfcIP%252DTVUCUzvBzWoLDr9AoT_s2hFKZjCe%252D0K8WXRSBEup7AfVkAcSOAxOUHuJxjYNE_jKNoTJFQslbN0XY9%252DbU1jpH60%252DCwkQJGnM9Gfg5No8iBKmnKwZXGEcPqFuFyCxicV3XkQfXXEMaLDjc9qX%252DXHRmD_1DV%252Do4H9g3v6ZDcy99ITU3R_l7T4mG8vXBkEzTHdjHsdj5s%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGtleSUyYnNpZ25hdHVyZSUyYmNob3JkJTJiY2hhcnQlMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF81aXJkZGN6Y2pnX2IlMjZhZGdycGlkJTNkMTIyNzA1NjA0NTEyNTM0NiUyNmh2YWRpZCUzZDc2NjkxMTM1OTc3MTMyJTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkYiUyNmh2Ym10JTNkYmIlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODY2NTMlMjZodnRhcmdpZCUzZGt3ZC03NjY5MTM0MDkwMzg5NiUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkMjc3NTVfMTQ2NTI5MzMlMjZtY2lkJTNkOWZjYzc3ODA0NTExMzkwNjg2MGQzMTZlYzc0Y2Q2ODUlMjZsYW5ndWFnZSUzZGVuX1VTJTI2bXNjbGtpZCUzZGJjNmYwOWM1MzJlNTEyYTgxNTFlNjA5YzgyM2I4MTZm%2526rlid%253Dbc6f09c532e512a8151e609c823b816f%26vqd%3D4%2D121703023432969322541427685329818777570%26iurl%3D%257B1%257DIG%253DD20E3513744D4D12A7D911DD297D3A92%2526CID%253D3DA6CA0744BA69B10DE9DCD0452D6860%2526ID%253DDevEx%252C5050.1&rut=f832feee45c924afab0748dfc1c398dd08bbdc7111a8203f2e9f53b4114108e0",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:14:22.666328"
+    },
+    {
+      "topic": "key signature",
+      "title": "Key signature - Wikipedia",
+      "content": "In Western musical notation, a key signature is a set of sharp (\u266f), flat (\u266d), or rarely, natural (\u266e) symbols placed on the staff at the beginning of a section of music. The initial key signature in a piece is placed immediately after the clef at the beginning of the first line. If the piece contains a section in a different key, the new key signature is placed at the beginning of that ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKey_signature&rut=cc9a89899d34f5aa7eab7065977c5be669fcdf6039317793411b563a48ea4e24",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:14:22.666801"
+    },
+    {
+      "topic": "key signature",
+      "title": "What Is A Key Signature In Music: A Beginner's Guide",
+      "content": "Learn what a key signature is, how to write it, and where to place it in music. Find out the rules and examples of key signatures for major scales and the different clefs.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fhellomusictheory.com%2Flearn%2Fkey%2Dsignatures%2F&rut=3b47e04334dd753e42b779febb070f33006b5ebd7b85eb3af5f5127e7cf16382",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:14:22.666856"
+    },
+    {
+      "topic": "key signature",
+      "title": "Key signature | Sharps, Flats & Enharmonic Keys | Britannica",
+      "content": "Key signature, in musical notation, the arrangement of sharp or flat signs on particular lines and spaces of a musical staff to indicate that the corresponding notes, in every octave, are to be consistently raised (by sharps) or lowered (by flats) from their natural pitches. (The keys of C major",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fart%2Fkey%2Dsignature&rut=3f4558053e79f6f03f371b22b5021fb82832de72082d40558272f1b89eae15b9",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T16:14:22.666902"
+    },
+    {
+      "topic": "franz kafka",
+      "title": "Shop franz kafka books - Amazon\u00ae Official Site",
+      "content": "Find deals and low prices on franz kafka books at Amazon.com. Browse & discover thousands of brands. Read customer reviews & find best sellers",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DxYgcm%252Dn76__VXddlTpZzt6YIvKpHOWUc80PiGw%252DeQaZ%252DEaTFm%252Dl2vFcx2sxc2u5Kb2noWOEp6Ai3H6AYmQx6jkWxy_ui4oeRivnJR_yE_pSY0bJ1iPYQF4Mi39igu9EbDUmi8s3ml07f3JnEo8zdgkFU4QiPfNpMye50MTnooA0.4zVo88QFf7iObfjpDQm1Cw%26rut%3Daaad8979a616484b59f25249af14f546982720a711d8f7d79c57adcde19b401f%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De89gOKGu6wHMFQCTWRNoy5WDVUCUwbk9QKo_ZDHd4hLdBuqFpFlz1aRQdEWbc%252Dd8W7DKGCMSJCGyx%252Dorjb3WUBbJc58i9XaBFeU0H%252DxYU9t86LnMHCRsw9I6UHsGr7rkKHoud32Q_nEjTuLRb3dS0TmOuShjIL6iLBnYBuQ8gXAVKbUAsujzn4CFbZzPAHLo%252DFH%252DdwB2tu1gFGs6hoxd6o4KIwtRQ%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGZyYW56JTJia2Fma2ElMmJib29rcyUyNmluZGV4JTNkYXBzJTI2dGFnJTNkdHh0c3RkYmdkdC0yMCUyNnJlZiUzZHBkX3NsXzd4emdscDdicHRfcCUyNmFkZ3JwaWQlM2QxMjM4MDUwNDE5NzEzMDA0JTI2aHZhZGlkJTNkNzczNzgzMTczMjEyMzglMjZodm5ldHclM2RzJTI2aHZxbXQlM2RwJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q4NjQ0OCUyNmh2dGFyZ2lkJTNka3dkLTc3Mzc4NDAyODQxNjM5JTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QxMDQ4N18xMzU4Nzk5MCUyNm1jaWQlM2QzMzVjZTU4OTE5MTkzOTJlYTA0YTIwYmZlOTMwYmM0ZiUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkNGZhNWM0ZjQ0NDQ4MWU0ZGY5YzZhZGFkZjlkZWQwZDI%2526rlid%253D4fa5c4f444481e4df9c6adadf9ded0d2%26vqd%3D4%2D284757013385461009510172102396690053295%26iurl%3D%257B1%257DIG%253DCF2FDE35150243B7975D2847AB82BFD5%2526CID%253D1FDC41AC04F065451839577B05146400%2526ID%253DDevEx%252C5045.1&rut=d4b22fa2d19167e4fc1c9c2a8253332c80354c1d5d54d73bad8a4650cd78542a",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T17:08:38.600378"
+    },
+    {
+      "topic": "franz kafka",
+      "title": "Franz Kafka Books - AbeBooks - AbeBooks",
+      "content": "Shop at AbeBooks\u00ae Marketplace. Search from 200+ million listings. Secure transaction. Price comparison. Worldwide inventory.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dabebooks.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DCqRWToq2FBKhEaERPgf8MLKQHuP%252D9MWforYrM2f0zN7A0kwa2NcDAcRGWsjvl5gAqDY4r7gejo%252Dre2vYMpDDKiVTcmrZtaK5yXrJRoFLfFfPESCuAAqa%252Dk3diikxbJmFw6xHzR%252DOfKm5BhP6cTSJdc5zrYQdZjTnzQrr6SRldbQ.w6RLZqd064BcVist37srcw%26rut%3D01f13b67b2c74f78a8172d716c1f7defcba33b38bdd3426aae09ffb9a98fce67%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8x9n9cTactRxPzFXMgRztbzVUCUxAHZakSzw2HEbY_ry1fC1cTjIbjWKsE%252D%252Dc9D6i8r0BeYybBmgrJZ2D_4ln55EKhJC86a0P%252DfYLsqL7RSOZhAZtvK9vjjqs4HZON%252DTFoEmvMV0b%252DMkgDZ3xSli7ZusGllKyVHuZYySpFihp7R1QNAZrz0%252DNPnjox1%252DUIzZfp0gdx94BSVCBhuS119zC30d0m5U%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYWJlYm9va3MuY29tJTJmYm9vay1zZWFyY2glMmZ0aXRsZSUyZmZyYW56LWthZmthJTJmYm9vayUyZiUzZnJlZl8lM2Rwc19tc18yNjc2OTE3NjElMjZjbV9tbWMlM2Rtc24tXy1jb211c19kc2EtXy1uYWEtXy1uYWElMjZtc2Nsa2lkJTNkNjRiZGM2MTA3ODkwMTZhZWU2NDBhZjQ5YzUwNmU2ZTk%2526rlid%253D64bdc610789016aee640af49c506e6e9%26vqd%3D4%2D155919222053442643327926578279469176543%26iurl%3D%257B1%257DIG%253DCF2FDE35150243B7975D2847AB82BFD5%2526CID%253D1FDC41AC04F065451839577B05146400%2526ID%253DDevEx%252C5048.1&rut=65f25257f9b379937d25f91205698a607d564152ba4ccaea5327498d48fd58db",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T17:08:38.600426"
+    },
+    {
+      "topic": "franz kafka",
+      "title": "Franz Kafka - Wikipedia",
+      "content": "Kafka was born into a middle-class German- and Yiddish -speaking Czech Jewish family in Prague, the capital of the Kingdom of Bohemia, which belonged to the Austro-Hungarian Empire (later the capital of Czechoslovakia and the Czech Republic). [16][17] He trained as a lawyer, and after completing his legal education was employed full-time in ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFranz_Kafka&rut=c9e0d1efd7705ee07d06283973ac285b341efecad1aa8599a8a1cee6ec11190c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T17:08:38.600461"
+    },
+    {
+      "topic": "franz kafka",
+      "title": "Franz Kafka | Biography, Books, The Metamorphosis, The Trial, & Facts ...",
+      "content": "Franz Kafka (1883-1924) was a German-language writer of visionary fiction whose works, especially The Trial and The Metamorphosis, express the anxieties and the alienation felt by many in 20th-century Europe and North America. Many of Kafka's fables contain an inscrutable, baffling mixture of the normal and the fantastic.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FFranz%2DKafka&rut=849908bed867a75ddda4218d27c5b41879d7ca90b2f92601085a4a4415dddec7",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T17:08:38.600502"
+    },
+    {
+      "topic": "franz kafka",
+      "title": "Franz Kafka - Quotes, Books & Works - Biography",
+      "content": "Author Franz Kafka explored the human struggle for understanding and security in his novels such as 'Amerika,' 'The Trial' and 'The Castle.'",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.biography.com%2Fauthors%2Dwriters%2Ffranz%2Dkafka&rut=ade9729b0b096610afda53481c54b899d617a35593f895705ea7ef74540e7376",
+      "confidence": 0.7,
+      "learned_at": "2026-01-03T17:08:38.600535"
+    },
+    {
+      "topic": "burj khalifa",
+      "title": "Burj Khalifa - Burj Khalifa Observation Deck",
+      "content": "Ultimate Flexibility: Free Cancellation Available on Burj Khalifa. Quick & Easy Purchase Process! Full Refund Available up to 24 Hours Before Your Tour Date",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dviator.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DXAQbibl3lJMnJ_1UMDxVDyekrgb6pTjIrQZvCzRz7AOeEWdAEHtyjpuBe_tL_fR3ym_EgrHJKWicsfIBRvhUfrEHWnm31dx_t9z3zYStJNLiWUVYvsdOF3f8bdMaE_HO8HA3mLwyQ3vvTBe_JtYFhlvrcJaCBA_hhr_MvLszj3Y.YyHzII78Xf%252DjotIo7bxGyQ%26rut%3D1b7106af8444fe7f34986a0d8487cf988536be32338741938ea5b67e635986ef%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De89zPC4wVRqC9UobGVK39l2TVUCUwGqN9lFyZ3KoHnlRfxdAPZug3XQfV_adjKVFRgoAF0EKGxTcLgKsDi7FOVxFoljcCVR0eceiTKCXaW5VeWYz4FYA3YruYJjMx3Lj2OP0BwubLyDSX2GQ6nZU50_uG8PmSOmdLY8clQGTRQ87oZ1d5UFD38I9w0tu8xnHgt%252DKlegp_8jehGGdkuTchYKQOIpJU%2526u%253DaHR0cHMlM2ElMmYlMmZhZC5kb3VibGVjbGljay5uZXQlMmZzZWFyY2hhZHMlMmZsaW5rJTJmY2xpY2slM2ZsaWQlM2Q0MzcwMDA4MTg4NDQ4MzQ2OCUyNmRzX3Nfa3dnaWQlM2Q1ODcwMDAwODg4NDQ0MTg3MSUyNmRzX2FfY2lkJTNkNzA3NDgzMzcxNSUyNmRzX2FfY2FpZCUzZDIyNDc0NzAzOTI3JTI2ZHNfYV9hZ2lkJTNkMTc1NzYyNTU1NTgyJTI2ZHNfYV9saWQlM2Rrd2QtMTU5MTYxMjM0NTElMjYlMjZkc19lX2FkaWQlM2Q3NzAzNDczNDc3MDkyNiUyNmRzX2VfdGFyZ2V0X2lkJTNka3dkLTc3MDM0OTU5OTA3OTY4JTI2JTI2ZHNfZV9uZXR3b3JrJTNkcyUyNmRzX3VybF92JTNkMiUyNmRzX2Rlc3RfdXJsJTNkaHR0cHMlM2ElMmYlMmZ3d3cudmlhdG9yLmNvbSUyZkR1YmFpLXRvdXJpc20lMmZkODI4LXIxNzI3MDc1MTczMS1zMjEyMDgxNTMxJTNmbSUzZDMzOTUzJTI2c3VwYWclM2QxMjMyNTUzNjE2MTIxMTc1JTI2c3VwY2ElM2Q2NzY5OTQ1NDIlMjZzdXBzYyUzZGt3ZC03NzAzNDk1OTkwNzk2OCUyNnN1cGFpJTNkNzcwMzQ3MzQ3NzA5MjYlMjZzdXBkdiUzZGMlMjZzdXBudCUzZG50JTNhcyUyNnN1cGxwJTNkODY0NDglMjZzdXBsaSUzZDE0MzE4MyUyNnN1cHRpJTNka3dkLTc3MDM0OTU5OTA3OTY4JTI2dHNlbSUzZHRydWUlMjZzdXBjaSUzZGt3ZC03NzAzNDk1OTkwNzk2OCUyNnN1cGt3JTNkYnVyaiUyNTIwa2hhbGlmYSUyNmdjbGlkJTNkZGY4YWQ3Yzg0NjEyMTExNjVlYTBiZTkyMWMzNmNiNWIlMjZnY2xzcmMlM2QzcC5kcyUyNiUyNm1zY2xraWQlM2RkZjhhZDdjODQ2MTIxMTE2NWVhMGJlOTIxYzM2Y2I1Yg%2526rlid%253Ddf8ad7c8461211165ea0be921c36cb5b%26vqd%3D4%2D19383156382978187617421109395026930485%26iurl%3D%257B1%257DIG%253D1D58CEE2929C4AD391D94168DDC92192%2526CID%253D3BEA59D587C76B0F3BB74F0286126A33%2526ID%253DDevEx%252C5046.1&rut=527754ac69b976bda15a1aa9aa8639cf20324ec521a877f7292b69bd545a178b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T04:16:36.496025"
+    },
+    {
+      "topic": "burj khalifa",
+      "title": "Burj Khalifa Top Floor Tickets - Burj & Aquarium Combo Offers",
+      "content": "Get access to the top of Burj Khalifa and enjoy the panoramic views of Dubai. Book now! Book SKY lounge access on the 148th floor for a truly elevated experience. Limited slots.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Ddubai%252Dtickets.co%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D2jvMUQYFrTuWG3nuIOJKqZvYjEgndV82IL4GU6E6J7eMVKnODNldLrAZ8jf6gnBwPZ7HDN0XAG2DQZ0PIqFnWWGj6VJlhG8BG1dHrpiDtcMhhQNjmnRMe6czG%252Dfdr0vWcS9mxvG%252DOsLGTSU2lbHeCiQYtO6HQHqFUWcmsBd1tAo.2_qKtGThNzSvkjfpisdn_w%26rut%3D9b19d217b60470ff29d68e110196b174895c1918723f46ba3516cb3f6c14863f%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8Of%252DWg7KYG4TNJaLMOgOrQTVUCUzb8NWRV2Rt06fkuIh8KyaeHlMXhsmHXEUVXam0WxEGm5gORK3U7ALG5DoE_%252DqRtxyYQOu8PqymeVmnZ6zlN4NJQ8FRjBxhUnrv9OoEU7vRePBmWQmwMbxhArN6gQ7zCXb5E_kCINyCgeejKrt0guitpIWJ0Xzq95WLjluFqmzJwwbRRnV5uPadbvungNxpMxI%2526u%253DaHR0cHMlM2ElMmYlMmZidXJqLWtoYWxpZmEuZHViYWktdGlja2V0cy5jbyUyZiUzZmNpJTNkMSUyNmNtJTNkNTU1NjM2Nzc0XzEzMDA3MjM0OTY0MTMzODFfY19zX2J1cmolMjUyMGtoYWxpZmFfZV8lN2JleHRlbnNpb25pZCU3ZF8lMjZtc2Nsa2lkJTNkZTVjNTlmMzU4NGM2MWMzODdmZWVmNjZmZGVlMjUzNDklMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2REdWJhaSUyNTIwLSUyNTIwQnVyaiUyNTIwS2hhbGlmYSUyNTIwLSUyNTIwRW5nbGlzaCUyNTIwLSUyNTIwUmVzdCUyNTIwb2YlMjUyMFdvcmxkJTI1MjAtJTI1MjBTZWFyY2glMjUyMC0lMjUyMEFsbCUyNTIwLSUyNTIwQWxsJTI1MjAtJTI1MjBjaWQxNTglMjZ1dG1fdGVybSUzZGJ1cmolMjUyMGtoYWxpZmElMjZ1dG1fY29udGVudCUzZEdlbmVyaWMlMjUyMC0lMjUyMEV4YWN0JTI1MjAtJTI1MjBFbmdsaXNoJTI1MjAtJTI1MjBBbGw%2526rlid%253De5c59f3584c61c387feef66fdee25349%26vqd%3D4%2D66034146952858634124069433369417084210%26iurl%3D%257B1%257DIG%253D1D58CEE2929C4AD391D94168DDC92192%2526CID%253D3BEA59D587C76B0F3BB74F0286126A33%2526ID%253DDevEx%252C5051.1&rut=ec03b3b8517c4855b18f3dbacb605806c48167d33b3bfc261586e704cd65c1a8",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T04:16:36.496099"
+    },
+    {
+      "topic": "burj khalifa",
+      "title": "Burj Khalifa - Wikipedia",
+      "content": "Burj Khalifa was designed to be the centerpiece of a large-scale, mixed-use development to include 30,000 homes, [16] nine hotels (including The Address Downtown Dubai), 3 hectares (7.4 acres) of parkland, at least 19 residential skyscrapers, the Dubai Mall, and the 12-hectare (30-acre) artificial Burj Khalifa Lake. The decision to build Burj Khalifa was reportedly based on the government's ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBurj_Khalifa&rut=d1b91b4ce0651da0497200443d7d4c113a5a042db9ac1cb8dff5e4aa459d96de",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T04:16:36.496157"
+    },
+    {
+      "topic": "burj khalifa",
+      "title": "Burj Khalifa | Height, Architect, Top Floor, & Facts | Britannica",
+      "content": "Burj Khalifa, the world's tallest building, inaugurated in 2010, is a mixed-use skyscraper in Dubai.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2FBurj%2DKhalifa&rut=de2915df3b8911b0d2b99bd67b55560a658318c8391e7634188a383f4ae4e5eb",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T04:16:36.496208"
+    },
+    {
+      "topic": "burj khalifa",
+      "title": "Burj Khalifa Official - Tickets, Tours, and Information Online",
+      "content": "Discover the Burj Khalifa, Dubai's iconic skyscraper. Explore breathtaking views, dining experiences, and exclusive attractions in the world's tallest building.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.burjkhalifa.ae%2F&rut=27931a48d67676c169045f2774013e3760a7a69061d06b7d022e54ae90219578",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T04:16:36.496258"
+    },
+    {
+      "topic": "kinship",
+      "title": "Kinship",
+      "content": "In anthropology, kinship is the web of social relationships that form an important part of the lives of all humans in all societies, although its exact meanings even within this discipline are often debated. Anthropologist Robin Fox says that the study of kinship is the study of what humans do with these basic facts of life\u00a0\u2013 mating, gestation, parenthood, socialization, siblingship etc. Human society is unique, he argues, in that we are \"working with the same raw material as exists in the animal world, but [we] can conceptualize and categorize it to serve social ends\". These social ends include the socialization of children and the formation of basic economic, political and religious groups.",
+      "source": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kinship",
+      "confidence": 0.9,
+      "learned_at": "2026-01-04T11:47:41.173259"
+    },
+    {
+      "topic": "kinship",
+      "title": "Official: Kinship\u2122 - Maison Margiela Replicas",
+      "content": "Discover Luxury Footwear At Kinship.JP. Shop Loro Piana, Common Projects & Maison Margiela. Authentic Designer Shoes Sourced From Official Retailers. Shop With Confidence At Kinship",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Dkinship.jp%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3D7NxsiXpfR3PhKpjzR_8b3WZkaz8jMsBEGVWqBbcZJt2PMSMM9Rxa87P2rWZvRuoGXPkwxF2SW0cQz1xibTIr2o11y7qPk_4Xs2yay8bFCV1gPHfurh7wsShTA_vFY6poZQ0r1eMMsHI_gSO4L8xjd91KTdreuwQmTV9Luu4DiWw.73Tc0H_SzPfOpJHziz4I5g%26rut%3D6545ff28da95b2b3e5baae51c1403f2352e4c88bcdeeeed5271394e321fcad25%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8tSsC1nZGXVo7i0aBK2ri3DVUCUz_3i2LR3PIpuGMy1ldX3t%252DJmwPfqh8utogTxjDuGCIvuPsFovFtedxMSeLZ%252D6pky0aeh2IxGZLW9olZ736mTftJpIbgECsxQW%252DSnXcQMYulHoJPCueKKeo4jwxV2hdOOBrdND01znbwTCJ9rV%252DSuQAY0aB01c0VhEKYdRaIa38BsH%252DIWf2CdZgfQWxP8NuvyQ%2526u%253DaHR0cHMlM2ElMmYlMmZraW5zaGlwLmpwJTJmJTNmbXNjbGtpZCUzZDUzNmE3ODZlZWY1YTFhYmZjMWU2MTEzNDJjODc0YTI5JTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkQ0olMjUyMC0lMjUyMEtpbnNoaXAlMjUyMChCKSUyNnV0bV90ZXJtJTNkS2luc2hpcCUyNnV0bV9jb250ZW50JTNkS2luc2hpcA%2526rlid%253D536a786eef5a1abfc1e611342c874a29%26vqd%3D4%2D213601298477460885577467640960752013446%26iurl%3D%257B1%257DIG%253D3F04A7313B4243BCBC29F546598EB1F7%2526CID%253D204F68872C43694C17867E502DA76819%2526ID%253DDevEx%252C5045.1&rut=79506f857cee7c25649d64584de69bba3f730014d54538e3371f17822b479f19",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:47:42.057972"
+    },
+    {
+      "topic": "kinship",
+      "title": "Kinship - Wikipedia",
+      "content": "In anthropology, kinship is the web of social relationships that form an important part of the lives of all humans in all societies, although its exact meanings even within this discipline are often debated. Anthropologist Robin Fox says that the study of kinship is the study of what humans do with these basic facts of life - mating, gestation, parenthood, socialization, siblingship etc ...",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKinship&rut=8788543587a177828c3a0fe8a447c0fefd7a716f5d6ccf7322d49c2df442022b",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:47:42.058030"
+    },
+    {
+      "topic": "kinship",
+      "title": "Kinship | Definition, Theories, Sociology, & Facts | Britannica",
+      "content": "Kinship is a system of social organization based on real or putative family ties.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fkinship&rut=cbb4af43e2c54f40a1a7debcedbd982bdba076e55b1488b43906582dfc3326df",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:47:42.058069"
+    },
+    {
+      "topic": "kinship",
+      "title": "KINSHIP | English meaning - Cambridge Dictionary",
+      "content": "KINSHIP definition: 1. the relationship between members of the same family: 2. a feeling of being close or similar to\u2026. Learn more.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fdictionary.cambridge.org%2Fdictionary%2Fenglish%2Fkinship&rut=5a391be72168ba0cf6b789918b64a0fdfb33f76303d94d741c8cf7aae7637c21",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:47:42.058111"
+    },
+    {
+      "topic": "kinship",
+      "title": "KINSHIP Definition & Meaning - Merriam-Webster",
+      "content": "The meaning of KINSHIP is the quality or state of being kin : relationship. How to use kinship in a sentence.",
+      "source": "duckduckgo",
+      "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.merriam%2Dwebster.com%2Fdictionary%2Fkinship&rut=849c19afca703816a89d99f159ff097cd66772e8e8cf543e2b8e024be328bb9c",
+      "confidence": 0.7,
+      "learned_at": "2026-01-04T11:47:42.058149"
     }
   ],
-  "last_updated": "2026-01-02T10:38:55.581917"
+  "last_updated": "2026-01-04T11:47:42.062955"
 }

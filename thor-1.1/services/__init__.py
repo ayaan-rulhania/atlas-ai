@@ -61,3 +61,23 @@ try:
 except ImportError:
     get_response_cleaner = None
 
+try:
+    from .multi_topic_retriever import get_multi_topic_retriever  # noqa: F401
+except ImportError:
+    get_multi_topic_retriever = None
+
+try:
+    from .knowledge_synthesizer import get_knowledge_synthesizer  # noqa: F401
+except ImportError:
+    get_knowledge_synthesizer = None
+
+try:
+    from .topic_relationship_mapper import get_topic_relationship_mapper  # noqa: F401
+except ImportError:
+    get_topic_relationship_mapper = None
+
+try:
+    from .causal_reasoner import get_causal_reasoner  # noqa: F401
+except ImportError:
+    get_causal_reasoner = None
+

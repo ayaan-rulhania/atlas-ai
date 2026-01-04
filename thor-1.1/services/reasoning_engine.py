@@ -1,6 +1,7 @@
 """
 Chain-of-Thought Reasoning Engine for Thor 1.1
 Implements step-by-step reasoning with self-verification and multi-step generation
+Enhanced with multi-topic knowledge retrieval and iterative reasoning
 """
 import re
 from typing import Dict, List, Optional, Tuple, Any
@@ -143,14 +144,23 @@ class ReasoningEngine:
         # Default: use reasoning for queries longer than 10 words
         return len(query.split()) > 10
 
-    def generate_reasoning_chain(self, query: str, context: str = "", knowledge: List[Dict] = None) -> ReasoningChain:
+    def generate_reasoning_chain(
+        self, 
+        query: str, 
+        context: str = "", 
+        knowledge: List[Dict] = None,
+        multi_topic_knowledge: Optional[Dict[str, List[Dict]]] = None,
+        use_iterative_retrieval: bool = False
+    ) -> ReasoningChain:
         """
         Generate a complete reasoning chain for the query
 
         Args:
             query: The user's query
             context: Conversation context
-            knowledge: Relevant knowledge from brain
+            knowledge: Relevant knowledge from brain (legacy parameter)
+            multi_topic_knowledge: Dictionary mapping topic -> knowledge items
+            use_iterative_retrieval: Whether to retrieve knowledge iteratively per step
 
         Returns:
             ReasoningChain with steps and conclusion
@@ -160,11 +170,38 @@ class ReasoningEngine:
         # Create initial reasoning steps
         steps = self._decompose_query_into_steps(query, reasoning_type, context, knowledge)
 
-        # Generate step-by-step reasoning
+        # Accumulate knowledge across steps for iterative reasoning
+        accumulated_knowledge = {}
+        previous_step_contexts = []
+
+        # Generate step-by-step reasoning with iterative knowledge retrieval
         for i, step in enumerate(steps):
             if step.reasoning == "":  # Only fill in empty reasoning
-                step.reasoning = self._generate_step_reasoning(query, step, steps[:i], context, knowledge)
-                step.confidence = self._assess_step_confidence(step, knowledge)
+                # Get knowledge for this step (iterative if enabled)
+                step_knowledge = self._get_step_knowledge(
+                    step,
+                    query,
+                    multi_topic_knowledge,
+                    accumulated_knowledge,
+                    previous_step_contexts,
+                    use_iterative_retrieval
+                )
+                
+                # Generate reasoning using step-specific knowledge
+                step.reasoning = self._generate_step_reasoning(
+                    query, 
+                    step, 
+                    steps[:i], 
+                    context, 
+                    step_knowledge,
+                    previous_step_contexts
+                )
+                step.confidence = self._assess_step_confidence(step, step_knowledge)
+                
+                # Accumulate knowledge and context for next steps
+                if step_knowledge:
+                    accumulated_knowledge.update(step_knowledge)
+                    previous_step_contexts.append(step.reasoning)
 
         # Generate conclusion
         conclusion = self._synthesize_conclusion(steps, query, reasoning_type)
@@ -259,13 +296,45 @@ class ReasoningEngine:
         return steps
 
     def _decompose_causal_query(self, query: str) -> List[ReasoningStep]:
-        """Decompose causal queries into reasoning steps"""
-        steps = [
-            ReasoningStep(1, "Identify potential causes", "", 0.7),
-            ReasoningStep(2, "Evaluate causal relationships", "", 0.7),
-            ReasoningStep(3, "Assess evidence strength", "", 0.8),
-            ReasoningStep(4, "Determine most likely cause", "", 0.7)
+        """Decompose causal queries into reasoning steps with multi-topic support"""
+        # Enhanced causal decomposition for multi-topic problems
+        query_lower = query.lower()
+        
+        # Detect if this is a multi-topic causal query
+        # Look for patterns like "how does X affect Y" or "why does X cause Y"
+        multi_topic_patterns = [
+            r'how does (.+?) affect (.+)',
+            r'how do (.+?) affect (.+)',
+            r'why does (.+?) cause (.+)',
+            r'what causes (.+?) to (.+)',
+            r'how does (.+?) impact (.+)',
+            r'how does (.+?) influence (.+)'
         ]
+        
+        is_multi_topic = False
+        for pattern in multi_topic_patterns:
+            if re.search(pattern, query_lower):
+                is_multi_topic = True
+                break
+        
+        if is_multi_topic:
+            # Multi-topic causal chain steps
+            steps = [
+                ReasoningStep(1, "Identify the initial cause or factor", "", 0.7),
+                ReasoningStep(2, "Identify the affected domain or outcome", "", 0.7),
+                ReasoningStep(3, "Retrieve knowledge about the causal mechanism", "", 0.8),
+                ReasoningStep(4, "Evaluate the causal relationship between domains", "", 0.7),
+                ReasoningStep(5, "Assess evidence and strength of causal link", "", 0.8),
+                ReasoningStep(6, "Determine the complete causal chain", "", 0.7)
+            ]
+        else:
+            # Single-topic causal steps
+            steps = [
+                ReasoningStep(1, "Identify potential causes", "", 0.7),
+                ReasoningStep(2, "Evaluate causal relationships", "", 0.7),
+                ReasoningStep(3, "Assess evidence strength", "", 0.8),
+                ReasoningStep(4, "Determine most likely cause", "", 0.7)
+            ]
         return steps
 
     def _decompose_comparative_query(self, query: str) -> List[ReasoningStep]:
@@ -298,26 +367,119 @@ class ReasoningEngine:
         ]
         return steps
 
-    def _generate_step_reasoning(self, query: str, current_step: ReasoningStep,
-                               previous_steps: List[ReasoningStep], context: str = "",
-                               knowledge: List[Dict] = None) -> str:
-        """Generate reasoning for a specific step"""
-        # This would typically use the model's generation capabilities
-        # For now, provide template-based reasoning
-
+    def _generate_step_reasoning(
+        self, 
+        query: str, 
+        current_step: ReasoningStep,
+        previous_steps: List[ReasoningStep], 
+        context: str = "",
+        knowledge: List[Dict] = None,
+        previous_step_contexts: List[str] = None
+    ) -> str:
+        """Generate reasoning for a specific step with multi-topic knowledge support"""
         step_num = current_step.step_number
         description = current_step.description
+        
+        # Build context from previous steps
+        previous_context = ""
+        if previous_step_contexts:
+            previous_context = " ".join(previous_step_contexts[-2:])  # Last 2 steps
+        
+        # Use knowledge to enhance reasoning
+        knowledge_context = ""
+        if knowledge:
+            # Extract key information from knowledge items
+            key_facts = []
+            for item in knowledge[:3]:  # Use top 3 knowledge items
+                content = item.get('content', '')
+                if content:
+                    # Extract first sentence or first 100 chars
+                    first_sentence = content.split('.')[0]
+                    if len(first_sentence) > 100:
+                        first_sentence = content[:100] + "..."
+                    key_facts.append(first_sentence)
+            if key_facts:
+                knowledge_context = " ".join(key_facts)
 
+        # Generate reasoning with context
         if "identify" in description.lower():
-            return f"To answer '{query}', I need to first {description.lower()}."
+            base_reasoning = f"To answer '{query}', I need to first {description.lower()}."
+            if knowledge_context:
+                base_reasoning += f" Based on available knowledge: {knowledge_context[:200]}"
+            if previous_context:
+                base_reasoning += f" Building on previous analysis: {previous_context[:150]}"
+            return base_reasoning
         elif "evaluate" in description.lower() or "analyze" in description.lower():
-            return f"For this step, I {description.lower()} by considering relevant factors and evidence."
+            base_reasoning = f"For this step, I {description.lower()} by considering relevant factors and evidence."
+            if knowledge_context:
+                base_reasoning += f" Relevant information: {knowledge_context[:200]}"
+            if previous_context:
+                base_reasoning += f" Previous findings: {previous_context[:150]}"
+            return base_reasoning
         elif "apply" in description.lower():
-            return f"I {description.lower()} the appropriate method based on the problem requirements."
+            base_reasoning = f"I {description.lower()} the appropriate method based on the problem requirements."
+            if knowledge_context:
+                base_reasoning += f" Using knowledge: {knowledge_context[:200]}"
+            return base_reasoning
         elif "determine" in description.lower():
-            return f"Based on the analysis so far, I can {description.lower()}."
+            base_reasoning = f"Based on the analysis so far, I can {description.lower()}."
+            if previous_context:
+                base_reasoning += f" From previous steps: {previous_context[:150]}"
+            if knowledge_context:
+                base_reasoning += f" With supporting knowledge: {knowledge_context[:200]}"
+            return base_reasoning
         else:
-            return f"This step involves {description.lower()} to progress toward the answer."
+            base_reasoning = f"This step involves {description.lower()} to progress toward the answer."
+            if knowledge_context:
+                base_reasoning += f" Knowledge available: {knowledge_context[:200]}"
+            return base_reasoning
+    
+    def _get_step_knowledge(
+        self,
+        step: ReasoningStep,
+        query: str,
+        multi_topic_knowledge: Optional[Dict[str, List[Dict]]],
+        accumulated_knowledge: Dict[str, List[Dict]],
+        previous_step_contexts: List[str],
+        use_iterative_retrieval: bool
+    ) -> Optional[Dict[str, List[Dict]]]:
+        """
+        Get knowledge relevant to a specific reasoning step.
+        
+        Returns:
+            Dictionary mapping topic -> knowledge items, or None if not using multi-topic
+        """
+        if not use_iterative_retrieval:
+            # Use provided multi_topic_knowledge if available
+            return multi_topic_knowledge
+        
+        # Iterative retrieval: get knowledge for this specific step
+        try:
+            from .multi_topic_retriever import get_multi_topic_retriever
+            from .knowledge_synthesizer import get_knowledge_synthesizer
+            
+            retriever = get_multi_topic_retriever()
+            synthesizer = get_knowledge_synthesizer()
+            
+            # Create step-specific query
+            step_query = f"{query} {step.description}"
+            
+            # Retrieve knowledge for this step
+            step_knowledge_data = retriever.get_enhanced_multi_topic_knowledge(
+                step_query,
+                max_topics=3,
+                max_knowledge_per_topic=3
+            )
+            
+            # Merge with accumulated knowledge
+            step_knowledge = step_knowledge_data.get('knowledge_by_topic', {})
+            merged_knowledge = {**accumulated_knowledge, **step_knowledge}
+            
+            return merged_knowledge if merged_knowledge else None
+            
+        except ImportError:
+            # Fallback to provided knowledge
+            return multi_topic_knowledge
 
     def _assess_step_confidence(self, step: ReasoningStep, knowledge: List[Dict] = None) -> float:
         """Assess confidence in a reasoning step"""

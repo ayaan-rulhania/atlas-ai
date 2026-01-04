@@ -176,6 +176,41 @@ class KnowledgeDatabase:
                 )
             """)
             
+            # Topic relationships table - comprehensive relationship storage
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS topic_relationships (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    topic1 TEXT NOT NULL,
+                    topic2 TEXT NOT NULL,
+                    relationship_type TEXT NOT NULL,
+                    strength REAL DEFAULT 0.5,
+                    confidence REAL DEFAULT 0.5,
+                    evidence TEXT,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    last_verified TIMESTAMP,
+                    verification_count INTEGER DEFAULT 0,
+                    UNIQUE(topic1, topic2, relationship_type)
+                )
+            """)
+            
+            # Create indexes for topic relationships
+            cursor.execute("""
+                CREATE INDEX IF NOT EXISTS idx_relationships_topic1 
+                ON topic_relationships(topic1)
+            """)
+            cursor.execute("""
+                CREATE INDEX IF NOT EXISTS idx_relationships_topic2 
+                ON topic_relationships(topic2)
+            """)
+            cursor.execute("""
+                CREATE INDEX IF NOT EXISTS idx_relationships_type 
+                ON topic_relationships(relationship_type)
+            """)
+            cursor.execute("""
+                CREATE INDEX IF NOT EXISTS idx_relationships_strength 
+                ON topic_relationships(strength DESC)
+            """)
+            
             # Statistics table - aggregate stats
             cursor.execute("""
                 CREATE TABLE IF NOT EXISTS statistics (
@@ -666,6 +701,121 @@ class KnowledgeDatabase:
             """, (topic_id, limit))
             
             return [row['related_topic'] for row in cursor.fetchall()]
+    
+    # ==================== Topic Relationships ====================
+    
+    def add_topic_relationship(
+        self,
+        topic1: str,
+        topic2: str,
+        relationship_type: str,
+        strength: float = 0.5,
+        confidence: float = 0.5,
+        evidence: str = None
+    ):
+        """Add or update a relationship between two topics."""
+        with self._cursor() as cursor:
+            cursor.execute("""
+                INSERT OR REPLACE INTO topic_relationships 
+                (topic1, topic2, relationship_type, strength, confidence, evidence, 
+                 last_verified, verification_count)
+                VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP, 
+                        COALESCE((SELECT verification_count FROM topic_relationships 
+                                 WHERE topic1 = ? AND topic2 = ? AND relationship_type = ?), 0) + 1)
+            """, (topic1.lower().strip(), topic2.lower().strip(), relationship_type,
+                  strength, confidence, evidence,
+                  topic1.lower().strip(), topic2.lower().strip(), relationship_type))
+    
+    def get_topic_relationships(
+        self,
+        topic: str,
+        relationship_type: str = None,
+        min_strength: float = 0.0
+    ) -> List[Dict]:
+        """Get relationships for a topic."""
+        with self._cursor() as cursor:
+            if relationship_type:
+                cursor.execute("""
+                    SELECT * FROM topic_relationships
+                    WHERE (topic1 = ? OR topic2 = ?)
+                    AND relationship_type = ?
+                    AND strength >= ?
+                    ORDER BY strength DESC, confidence DESC
+                """, (topic.lower().strip(), topic.lower().strip(), 
+                      relationship_type, min_strength))
+            else:
+                cursor.execute("""
+                    SELECT * FROM topic_relationships
+                    WHERE topic1 = ? OR topic2 = ?
+                    AND strength >= ?
+                    ORDER BY strength DESC, confidence DESC
+                """, (topic.lower().strip(), topic.lower().strip(), min_strength))
+            
+            rows = cursor.fetchall()
+            return [dict(row) for row in rows]
+    
+    def find_causal_path(
+        self,
+        topic1: str,
+        topic2: str,
+        max_depth: int = 3
+    ) -> Optional[List[Dict]]:
+        """Find a causal path between two topics."""
+        # Simple BFS implementation
+        from collections import deque
+        
+        topic1_lower = topic1.lower().strip()
+        topic2_lower = topic2.lower().strip()
+        
+        queue = deque([(topic1_lower, [])])
+        visited = {topic1_lower}
+        
+        while queue and len(queue[0][1]) < max_depth:
+            current_topic, path = queue.popleft()
+            
+            # Get causal relationships from current topic
+            relationships = self.get_topic_relationships(
+                current_topic,
+                relationship_type='causal',
+                min_strength=0.3
+            )
+            
+            for rel in relationships:
+                # Determine next topic (could be topic1 or topic2)
+                next_topic = rel['topic2'] if rel['topic1'] == current_topic else rel['topic1']
+                
+                if next_topic == topic2_lower:
+                    # Found path!
+                    return path + [rel]
+                
+                if next_topic not in visited:
+                    visited.add(next_topic)
+                    queue.append((next_topic, path + [rel]))
+        
+        return None
+    
+    def get_related_topics_by_relationship(
+        self,
+        topic: str,
+        relationship_type: str,
+        limit: int = 10
+    ) -> List[str]:
+        """Get topics related to a topic by specific relationship type."""
+        relationships = self.get_topic_relationships(
+            topic,
+            relationship_type=relationship_type
+        )
+        
+        related = []
+        topic_lower = topic.lower().strip()
+        
+        for rel in relationships[:limit]:
+            if rel['topic1'] == topic_lower:
+                related.append(rel['topic2'])
+            else:
+                related.append(rel['topic1'])
+        
+        return related
     
     # ==================== Statistics ====================
     

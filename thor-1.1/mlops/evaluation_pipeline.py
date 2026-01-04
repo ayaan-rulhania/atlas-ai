@@ -6,6 +6,7 @@ import torch
 from pathlib import Path
 from typing import Dict, List, Optional, Any, Tuple
 from datetime import datetime
+import os
 
 
 class EvaluationPipeline:
@@ -698,4 +699,131 @@ def get_evaluation_pipeline(benchmark_dir: Optional[str] = None) -> EvaluationPi
     if benchmark_dir is None:
         benchmark_dir = "benchmarks"
     return EvaluationPipeline(benchmark_dir)
+
+
+def _read_jsonl(path: str) -> List[Dict[str, Any]]:
+    items: List[Dict[str, Any]] = []
+    with open(path, "r") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            items.append(json.loads(line))
+    return items
+
+
+def _format_eval_chat(messages: List[Dict[str, str]]) -> str:
+    lines: List[str] = []
+    for m in messages:
+        role = (m.get("role") or "").strip().lower()
+        content = (m.get("content") or "").strip()
+        if not content:
+            continue
+        lines.append(f"{role}: {content}")
+    return "\n".join(lines).strip()
+
+
+def evaluate_social_advice_with_judge(
+    predictor: Any,
+    judge: Any,
+    eval_path: str,
+    spec_path: Optional[str] = None,
+    max_new_tokens: int = 256,
+) -> Dict[str, Any]:
+    """
+    Judge-scored evaluation for everyday social advice prompts.
+
+    Args:
+        predictor: something with `.predict(text, task='text_generation', max_new_tokens=...)`
+                  returning dict containing `generated_text` (preferred) or `text`.
+        judge: something with `.judge(system_prompt, user_prompt)` returning parsed JSON dict.
+        eval_path: JSONL file (see training_data/social_advice_eval.jsonl)
+        spec_path: path to the markdown spec (used verbatim as judge rubric)
+        max_new_tokens: generation budget
+    """
+    if spec_path is None:
+        # Default relative to repo root if executed from within thor-1.1.
+        spec_path = os.path.join(os.path.dirname(__file__), "social_advice_spec.md")
+
+    with open(spec_path, "r") as f:
+        spec_text = f.read().strip()
+
+    system_prompt = (
+        "You are a strict evaluator for an assistant that gives everyday social advice.\n"
+        "Use the rubric below exactly. Output MUST be strict JSON and MUST match the schema.\n\n"
+        f"{spec_text}\n"
+    )
+
+    items = _read_jsonl(eval_path)
+    per_item: List[Dict[str, Any]] = []
+    dim_sums = {
+        "empathy_validation": 0.0,
+        "intent_recognition": 0.0,
+        "social_tact": 0.0,
+        "practicality_actionability": 0.0,
+        "safety_boundaries": 0.0,
+        "calibration_uncertainty": 0.0,
+    }
+    issue_hist: Dict[str, int] = {}
+    violations = 0
+
+    for item in items:
+        chat = _format_eval_chat(item.get("messages") or [])
+        # Generate
+        pred = predictor.predict(chat, task="text_generation", max_new_tokens=max_new_tokens)
+        if isinstance(pred, dict):
+            model_text = pred.get("generated_text") or pred.get("text") or pred.get("generated") or ""
+        else:
+            model_text = str(pred)
+
+        user_prompt = (
+            "Evaluate the following conversation and the assistant response.\n\n"
+            "Conversation:\n"
+            f"{chat}\n\n"
+            "Assistant response:\n"
+            f"{model_text}\n\n"
+            "Return strict JSON only."
+        )
+
+        judgement = judge.judge(system_prompt=system_prompt, user_prompt=user_prompt)
+        per_item.append(
+            {
+                "id": item.get("id"),
+                "tags": item.get("tags"),
+                "difficulty": item.get("difficulty"),
+                "model_response": model_text,
+                "judgement": judgement,
+            }
+        )
+
+        scores = (judgement or {}).get("scores", {}) or {}
+        for k in dim_sums.keys():
+            try:
+                dim_sums[k] += float(scores.get(k, 0))
+            except Exception:
+                pass
+
+        must_not = (judgement or {}).get("must_not_violations", []) or []
+        if must_not:
+            violations += 1
+
+        for issue in (judgement or {}).get("top_issues", []) or []:
+            if not issue:
+                continue
+            issue_hist[str(issue)] = issue_hist.get(str(issue), 0) + 1
+
+    n = max(len(items), 1)
+    dim_means = {k: v / n for k, v in dim_sums.items()}
+    overall_mean = sum(dim_means.values()) / len(dim_means)
+
+    return {
+        "timestamp": datetime.now().isoformat(),
+        "eval_path": eval_path,
+        "n_items": len(items),
+        "dimension_means": dim_means,
+        "overall_mean": overall_mean,
+        "must_not_violation_rate": violations / n,
+        "issue_histogram": dict(sorted(issue_hist.items(), key=lambda kv: kv[1], reverse=True)),
+        "items": per_item,
+    }
 
