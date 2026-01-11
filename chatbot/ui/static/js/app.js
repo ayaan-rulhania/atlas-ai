@@ -1,4 +1,5 @@
 // Atlas AI - Thor 1.1 Frontend
+// Version 2.0.0 - Major UI/UX overhaul with modern navigation, orange theme, responsive design
 let currentChatId = null;
 let isLoading = false;
 let thinkDeeperMode = false;
@@ -21,7 +22,7 @@ let smartSuggestions = [];
 let notifications = [];
 let quickActionsMenu = null;
 
-// Background Customization v1.4.5
+// Background Customization v1.4.5 (Enhanced in v2.0.0 with sidebar support)
 let currentBackground = localStorage.getItem('chatBackground') || 'default';
 let currentBackgroundType = localStorage.getItem('chatBackgroundType') || 'default';
 let currentBackgroundOpacity = parseFloat(localStorage.getItem('chatBackgroundOpacity') || '1');
@@ -86,6 +87,8 @@ function setupEventListeners() {
     const sendBtn = document.getElementById('sendBtn');
     const messageInput = document.getElementById('messageInput');
     const newChatBtn = document.getElementById('newChatBtn');
+    const recentChatsBtn = document.getElementById('recentChatsBtn');
+    const gemsDashboardBtn = document.getElementById('gemsDashboardBtn');
     const attachBtn = document.getElementById('attachBtn');
     const thinkDeeperToggle = document.getElementById('thinkDeeperToggle');
     const historyBtn = document.getElementById('historyBtn');
@@ -101,9 +104,11 @@ function setupEventListeners() {
     const customizeBtn = document.getElementById('customizeBtn');
     const installBtn = document.getElementById('installBtn');
     const newGemBtn = document.getElementById('newGemBtn');
+    const deleteAllChatsBtn = document.getElementById('deleteAllChatsBtn');
     
     sendBtn.addEventListener('click', handleSendMessage);
     newChatBtn.addEventListener('click', startNewChat);
+    if (recentChatsBtn) recentChatsBtn.addEventListener('click', openRecentChatsModal);
     attachBtn.addEventListener('click', handleAttach);
     thinkDeeperToggle.addEventListener('click', toggleThinkDeeper);
     if (historyBtn) historyBtn.addEventListener('click', handleHistory);
@@ -115,15 +120,20 @@ function setupEventListeners() {
     if (newProjectBtn) newProjectBtn.addEventListener('click', () => openProjectModal());
     if (helpBtn) helpBtn.addEventListener('click', openHelpModal);
     if (customizeBtn) customizeBtn.addEventListener('click', openCustomizeModal);
+    if (gemsDashboardBtn) gemsDashboardBtn.addEventListener('click', openCustomizeModal);
+    if (deleteAllChatsBtn) deleteAllChatsBtn.addEventListener('click', handleDeleteAllChats);
     if (installBtn) installBtn.addEventListener('click', () => {
         // Check if running in Electron app (macOS app)
         const isElectron = window.electronAPI !== undefined;
-        if (isElectron) {
-            window.location.href = '/update';
-        } else {
-            // On website, navigate to install page normally
-            window.location.href = '/install';
-        }
+        const targetUrl = isElectron ? '/update' : '/install';
+        
+        // Smooth fade-out transition
+        document.body.style.transition = 'opacity 0.3s ease';
+        document.body.style.opacity = '0';
+        
+        setTimeout(() => {
+            window.location.href = targetUrl;
+        }, 300);
     });
     if (newGemBtn) newGemBtn.addEventListener('click', () => {
         openCustomizeModal();
@@ -174,6 +184,10 @@ function setupEventListeners() {
     // History modal
     const closeHistoryModal = document.getElementById('closeHistoryModal');
     if (closeHistoryModal) closeHistoryModal.addEventListener('click', closeHistoryModalFunc);
+
+    // Recent chats dashboard modal
+    const closeRecentChatsModal = document.getElementById('closeRecentChatsModal');
+    if (closeRecentChatsModal) closeRecentChatsModal.addEventListener('click', closeRecentChatsModalFunc);
     
     // Quick prompts on welcome screen
     document.querySelectorAll('.quick-prompt-btn').forEach(btn => {
@@ -193,6 +207,18 @@ function setupEventListeners() {
             messageInput.focus();
         });
     });
+
+    // Embedded apps (Gaming / Office)
+    document.querySelectorAll('.welcome-action-card--embed').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const url = btn.getAttribute('data-embed-url') || '';
+            const title = btn.getAttribute('data-embed-title') || 'App';
+            openEmbeddedAppModal(url, title);
+        });
+    });
+
+    const closeEmbeddedAppModalBtn = document.getElementById('closeEmbeddedAppModal');
+    if (closeEmbeddedAppModalBtn) closeEmbeddedAppModalBtn.addEventListener('click', closeEmbeddedAppModalFunc);
     
     messageInput.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' && !e.shiftKey) {
@@ -366,6 +392,11 @@ function displayChats(chats) {
             if (e.target.closest('.chat-delete-btn')) return;
             const chatId = item.dataset.chatId;
             loadChat(chatId);
+            // If selecting from the Recent Chats dashboard, close it after navigation
+            const recentModal = document.getElementById('recentChatsModal');
+            if (recentModal && recentModal.style.display === 'flex' && typeof closeRecentChatsModalFunc === 'function') {
+                closeRecentChatsModalFunc();
+            }
         });
     });
     
@@ -405,9 +436,8 @@ async function loadChat(chatId) {
         displayMessages(data.messages);
         updateChatList();
         
-        // Hide welcome screen, show messages
-        document.getElementById('welcomeScreen').style.display = 'none';
-        document.getElementById('messagesContainer').style.display = 'block';
+        // Show messages container (welcome screen stays visible above)
+        document.getElementById('messagesContainer').style.display = 'flex';
     } catch (error) {
         console.error('Error loading chat:', error);
     }
@@ -439,7 +469,7 @@ function displayMessages(messages) {
 
 function startNewChat() {
     currentChatId = null;
-    document.getElementById('welcomeScreen').style.display = 'block';
+    document.getElementById('welcomeScreen').style.display = 'flex';
     document.getElementById('messagesContainer').style.display = 'none';
     document.getElementById('messagesContainer').innerHTML = '';
     document.getElementById('messageInput').value = '';
@@ -510,14 +540,12 @@ async function handleSendMessage() {
     isLoading = true;
     updateSendButton(true);
     
-    // Hide welcome screen if showing
+    // Keep welcome screen visible, just show messages container below it
     const welcomeScreen = document.getElementById('welcomeScreen');
     const messagesContainer = document.getElementById('messagesContainer');
     
-    if (welcomeScreen.style.display !== 'none') {
-        welcomeScreen.style.display = 'none';
-        messagesContainer.style.display = 'block';
-    }
+    // Always show messages container (it will appear below welcome screen)
+    messagesContainer.style.display = 'flex';
     
     // Add user message to UI (show the transformed command)
     addMessageToUI('user', messageToSend);
@@ -899,6 +927,38 @@ async function deleteChat(chatId) {
     }
 }
 
+async function handleDeleteAllChats() {
+    if (!confirm('Are you absolutely sure you want to delete ALL chats? This action cannot be undone.')) {
+        return;
+    }
+    
+    const originalContent = this.innerHTML;
+    this.disabled = true;
+    this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Deleting...';
+    
+    try {
+        const response = await fetch('/api/chats', {
+            method: 'DELETE'
+        });
+        
+        if (response.ok) {
+            showNotification('All chats deleted successfully', 'success');
+            startNewChat();
+            loadChats();
+            closeSettingsModalFunc();
+        } else {
+            const data = await response.json();
+            alert(data.error || 'Error deleting all chats');
+        }
+    } catch (error) {
+        console.error('Error deleting all chats:', error);
+        alert('Error deleting all chats');
+    } finally {
+        this.disabled = false;
+        this.innerHTML = originalContent;
+    }
+}
+
 function handleAttach() {
     // Create file input for attachments (text and images)
     const input = document.createElement('input');
@@ -1013,6 +1073,68 @@ function toggleThinkDeeper() {
 
 function handleHistory() {
     openHistoryModal();
+}
+
+function openRecentChatsModal() {
+    const modal = document.getElementById('recentChatsModal');
+    if (modal) {
+        modal.style.display = 'flex';
+        // Refresh chat list for the gallery view
+        loadChats();
+    }
+}
+
+function closeRecentChatsModalFunc() {
+    const modal = document.getElementById('recentChatsModal');
+    if (modal) {
+        modal.style.display = 'none';
+    }
+}
+
+function openEmbeddedAppModal(url, title = 'App') {
+    const modal = document.getElementById('embeddedAppModal');
+    const frame = document.getElementById('embeddedAppFrame');
+    const titleEl = document.getElementById('embeddedAppTitle');
+    const openLink = document.getElementById('embeddedAppOpenLink');
+    const fallback = document.getElementById('embeddedAppFallback');
+
+    if (!modal || !frame || !titleEl || !openLink) return;
+    if (!url) return;
+
+    titleEl.textContent = title;
+    openLink.href = url;
+
+    // Reset fallback + load
+    if (fallback) fallback.style.display = 'none';
+    modal.style.display = 'flex';
+
+    // If the app blocks iframe embedding, browsers typically prevent rendering; we can't
+    // reliably detect X-Frame-Options, but we can show a helper only if the frame doesn't load.
+    let loaded = false;
+    frame.onload = () => {
+        loaded = true;
+        if (fallback) fallback.style.display = 'none';
+    };
+
+    frame.src = url;
+    setTimeout(() => {
+        if (!loaded && modal.style.display === 'flex' && fallback) {
+            fallback.style.display = 'grid';
+        }
+    }, 1500);
+}
+
+function closeEmbeddedAppModalFunc() {
+    const modal = document.getElementById('embeddedAppModal');
+    const frame = document.getElementById('embeddedAppFrame');
+    const fallback = document.getElementById('embeddedAppFallback');
+
+    if (modal) modal.style.display = 'none';
+    if (frame) {
+        frame.onload = null;
+        frame.src = '';
+    }
+    if (fallback) fallback.style.display = 'none';
 }
 
 function openHistoryModal() {
@@ -1175,43 +1297,11 @@ function openSettingsModal() {
     if (modal) {
         modal.style.display = 'flex';
         // Re-initialize background customization when settings open
-        // This ensures elements exist and settings are properly loaded
+        // This ensures elements exist and settings are properly loaded with event listeners
         setTimeout(() => {
             if (typeof initializeBackgroundCustomization === 'function') {
-                // Just refresh the active state, don't re-setup all listeners
-                const activeBg = localStorage.getItem('chatBackground') || 'default';
-                const activePreset = document.querySelector(`[data-bg="${activeBg}"]`);
-                if (activePreset) {
-                    document.querySelectorAll('.background-preset').forEach(p => p.classList.remove('active'));
-                    activePreset.classList.add('active');
-                }
-                
-                // Update opacity slider
-                const opacity = parseFloat(localStorage.getItem('chatBackgroundOpacity') || '1');
-                const opacitySlider = document.getElementById('backgroundOpacity');
-                const opacityValue = document.getElementById('backgroundOpacityValue');
-                if (opacitySlider) opacitySlider.value = opacity;
-                if (opacityValue) opacityValue.textContent = Math.round(opacity * 100) + '%';
-                
-                // Show custom preview if exists
-                const customUrl = localStorage.getItem('customBackgroundUrl');
-                const previewContainer = document.getElementById('customBackgroundPreview');
-                const previewImage = document.getElementById('customBackgroundImage');
-                const fullPageToggle = document.getElementById('fullPageBackgroundToggle');
-                if (customUrl && previewContainer && previewImage) {
-                    previewImage.src = customUrl;
-                    previewContainer.style.display = 'block';
-                    // Mark as active if custom background is currently selected
-                    if (activeBg === 'custom') {
-                        previewContainer.classList.add('active');
-                    } else {
-                        previewContainer.classList.remove('active');
-                    }
-                }
-                // Update full page toggle
-                if (fullPageToggle) {
-                    fullPageToggle.checked = localStorage.getItem('fullPageBackground') === 'true';
-                }
+                // Fully re-initialize to set up event listeners
+                initializeBackgroundCustomization();
             }
         }, 100);
     }
@@ -1410,8 +1500,17 @@ function initializeBackgroundCustomization() {
     applyBackground(currentBackground, currentBackgroundType, currentBackgroundOpacity, customBackgroundUrl, fullPageBackground);
     
     // Setup preset background selection
-    document.querySelectorAll('.background-preset').forEach(preset => {
-        preset.addEventListener('click', () => {
+    // Use event delegation on the grid to handle all presets with a single listener
+    const presetsGrid = document.querySelector('.background-preset-grid');
+    if (presetsGrid && !presetsGrid._backgroundListenerAttached) {
+        // Mark that we've attached the listener to avoid duplicates
+        presetsGrid._backgroundListenerAttached = true;
+        
+        // Use event delegation
+        presetsGrid.addEventListener('click', (e) => {
+            const preset = e.target.closest('.background-preset');
+            if (!preset) return;
+            
             const bg = preset.dataset.bg;
             const bgType = preset.dataset.bgType;
 
@@ -1432,7 +1531,7 @@ function initializeBackgroundCustomization() {
 
             applyBackground(bg, bgType, currentBackgroundOpacity, null, fullPageBackground);
         });
-    });
+    }
     
     // Mark active preset or custom background
     if (currentBackground === 'custom' && customBackgroundUrl) {
@@ -1632,6 +1731,7 @@ function applyBackground(bg, bgType, opacity, customUrl, fullPage = false) {
     const chatContainer = document.getElementById('chatContainer');
     const mainContent = document.querySelector('.main-content');
     const body = document.body;
+    const sidebar = document.querySelector('.sidebar, .nav-rail')?.closest('.sidebar') || document.querySelector('.sidebar');
     
     // Determine target based on fullPage setting
     const target = fullPage ? body : (mainContent || chatContainer || body);
@@ -1644,8 +1744,9 @@ function applyBackground(bg, bgType, opacity, customUrl, fullPage = false) {
     
     console.log('[Background] Applying:', { bg, bgType, opacity, customUrl: customUrl ? 'yes' : 'no', fullPage });
     
-    // Remove all background classes from both targets
-    [target, body].forEach(el => {
+    // Remove all background classes from targets (including sidebar if fullPage)
+    const targetsToClean = fullPage && sidebar ? [target, body, sidebar] : [target, body];
+    targetsToClean.forEach(el => {
         if (el) {
             el.classList.remove(
                 'bg-default', 'bg-gradient-1', 'bg-gradient-2', 'bg-gradient-3', 
@@ -1672,7 +1773,7 @@ function applyBackground(bg, bgType, opacity, customUrl, fullPage = false) {
         target.style.backgroundPosition = 'center';
         target.style.backgroundRepeat = 'no-repeat';
         
-        // If full page, also apply to body
+        // If full page, also apply to body and sidebar
         if (fullPage && body !== target) {
             body.classList.add('bg-custom');
             body.style.setProperty('--custom-bg-image', `url(${customUrl})`);
@@ -1682,6 +1783,12 @@ function applyBackground(bg, bgType, opacity, customUrl, fullPage = false) {
             body.style.backgroundPosition = 'center';
             body.style.backgroundRepeat = 'no-repeat';
             body.style.backgroundAttachment = 'fixed';
+            
+            // Also apply to sidebar
+            if (sidebar) {
+                sidebar.style.background = 'transparent';
+                sidebar.style.backgroundColor = 'transparent';
+            }
         }
         
         console.log('[Background] Custom background applied:', customUrl.substring(0, 50) + '...', fullPage ? '(full page)' : '(chat area)');
@@ -1691,6 +1798,10 @@ function applyBackground(bg, bgType, opacity, customUrl, fullPage = false) {
         if (fullPage && body !== target) {
             body.classList.add(`bg-${bg}`);
             body.style.setProperty('--bg-opacity', opacity);
+            if (sidebar) {
+                sidebar.style.background = 'transparent';
+                sidebar.style.backgroundColor = 'transparent';
+            }
         }
     } else if (bgType === 'pattern') {
         target.classList.add(`bg-${bg}`);
@@ -1698,6 +1809,10 @@ function applyBackground(bg, bgType, opacity, customUrl, fullPage = false) {
         if (fullPage && body !== target) {
             body.classList.add(`bg-${bg}`);
             body.style.setProperty('--bg-opacity', opacity);
+            if (sidebar) {
+                sidebar.style.background = 'transparent';
+                sidebar.style.backgroundColor = 'transparent';
+            }
         }
     } else if (bgType === 'liquid') {
         target.classList.add('bg-liquid');
@@ -1705,6 +1820,10 @@ function applyBackground(bg, bgType, opacity, customUrl, fullPage = false) {
         if (fullPage && body !== target) {
             body.classList.add('bg-liquid');
             body.style.setProperty('--bg-opacity', opacity);
+            if (sidebar) {
+                sidebar.style.background = 'transparent';
+                sidebar.style.backgroundColor = 'transparent';
+            }
         }
     } else {
         // Default
@@ -1714,6 +1833,10 @@ function applyBackground(bg, bgType, opacity, customUrl, fullPage = false) {
         target.style.removeProperty('--bg-opacity');
         if (fullPage && body !== target) {
             body.classList.add('bg-default');
+            if (sidebar) {
+                sidebar.style.background = 'transparent';
+                sidebar.style.backgroundColor = 'transparent';
+            }
         }
     }
 }
@@ -1817,6 +1940,8 @@ document.addEventListener('click', (e) => {
     const upgradeModal = document.getElementById('upgradeModal');
     const helpModal = document.getElementById('helpModal');
     const customizeModal = document.getElementById('customizeModal');
+    const recentChatsModal = document.getElementById('recentChatsModal');
+    const embeddedAppModal = document.getElementById('embeddedAppModal');
     
     if (settingsModal && e.target === settingsModal) {
         closeSettingsModalFunc();
@@ -1829,6 +1954,12 @@ document.addEventListener('click', (e) => {
     }
     if (customizeModal && e.target === customizeModal) {
         closeCustomizeModalFunc();
+    }
+    if (recentChatsModal && e.target === recentChatsModal) {
+        closeRecentChatsModalFunc();
+    }
+    if (embeddedAppModal && e.target === embeddedAppModal) {
+        closeEmbeddedAppModalFunc();
     }
 });
 
@@ -8082,3 +8213,4 @@ let audioStreamManager = {
         };
     }
 };
+
