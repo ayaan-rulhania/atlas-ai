@@ -1,0 +1,27 @@
+{
+  "chat_id": "4ac91142-6254-4923-84a8-48b9e0a512a9",
+  "created_at": "2026-01-28T20:47:47.886249",
+  "name": "Ai?",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What is AI?",
+      "timestamp": "2026-01-28T20:47:47.874596"
+    },
+    {
+      "role": "assistant",
+      "content": "## Apple'S Liquid Glass\n\nApple's Liquid Glass design language for i.\n\nOS 26.\n\nUI principles, Swift.\n\nUI implementation, comparisons and accessibility.\n\n_Model:_ Thor 1.2",
+      "timestamp": "2026-01-28T20:47:47.874605"
+    },
+    {
+      "role": "user",
+      "content": "What?",
+      "timestamp": "2026-01-28T20:47:53.674153"
+    },
+    {
+      "role": "assistant",
+      "content": "## To Elaborate On\n\nTo elaborate on that: Imagine you're at a party, spot a great guy across the room, but your nerves kick in and words vanish.\n\nWhat if a few simple tweaks\u2014like a warm smile and bold eye contact\u2014could turn that moment into an exciting chat?\n\nHow to a conversation with a guy with confidence in these 30 science-backed tips.\n\n_Model:_ Thor 1.2",
+      "timestamp": "2026-01-28T20:47:53.674262"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "chat_id": "61b043d0-4272-49ff-a30f-3160dbde106f",
+  "created_at": "2026-01-10T17:04:31.366287",
+  "name": "10 + 10",
+  "messages": [
+    {
+      "role": "user",
+      "content": "10 + 10",
+      "timestamp": "2026-01-10T17:04:31.365317"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you! How can I help you?",
+      "timestamp": "2026-01-10T17:04:31.365348"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+<svg width="1000" height="1400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Title -->
+    <ellipse cx="500" cy="100" rx="200" ry="40" fill="#e1f5ff" stroke="#000" stroke-width="2"/>
+    <text x="500" y="110" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial, sans-serif">User Models [BETA]</text>
+    
+    <!-- Thor 1.2 -->
+    <rect x="350" y="200" width="300" height="60" rx="10" fill="#fff4e1" stroke="#000" stroke-width="2"/>
+    <text x="500" y="235" text-anchor="middle" font-size="16" font-weight="bold" font-family="Arial, sans-serif">Thor 1.2 ¡</text>
+    
+    <!-- Custom Thor 1.2 -->
+    <rect x="250" y="400" width="500" height="60" rx="10" fill="#e8f5e9" stroke="#000" stroke-width="2"/>
+    <text x="500" y="435" text-anchor="middle" font-size="16" font-weight="bold" font-family="Arial, sans-serif">Custom Thor 1.2</text>
+    
+    <!-- Arrows from Thor to Custom Thor -->
+    <!-- Left path -->
+    <path d="M 400 260 Q 300 330 300 400" fill="none" stroke="#666" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+    <rect x="250" y="310" width="100" height="50" rx="5" fill="white" fill-opacity="0.9" stroke="none"/>
+    <text x="300" y="330" text-anchor="middle" font-size="10" fill="#333" font-family="Arial, sans-serif">
+        <tspan x="300" dy="0">Specific Task</tspan>
+        <tspan x="300" dy="12">+ Heads Added</tspan>
+    </text>
+    
+    <!-- Right path -->
+    <path d="M 600 260 Q 700 330 700 400" fill="none" stroke="#666" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+    <rect x="650" y="310" width="100" height="50" rx="5" fill="white" fill-opacity="0.9" stroke="none"/>
+    <text x="700" y="330" text-anchor="middle" font-size="10" fill="#333" font-family="Arial, sans-serif">
+        <tspan x="700" dy="0">Unused Task</tspan>
+        <tspan x="700" dy="12">- Heads Summarized</tspan>
+    </text>
+    
+    <!-- Modifications XML -->
+    <rect x="50" y="600" width="250" height="60" rx="10" fill="#fff9c4" stroke="#000" stroke-width="1.5"/>
+    <text x="175" y="625" text-anchor="middle" font-size="13" font-family="Arial, sans-serif">modifications.xml</text>
+    <text x="175" y="645" text-anchor="middle" font-size="13" font-family="Arial, sans-serif">=Ä</text>
+    
+    <!-- Atlas Chat -->
+    <rect x="375" y="600" width="250" height="60" rx="10" fill="#e3f2fd" stroke="#000" stroke-width="1.5"/>
+    <text x="500" y="625" text-anchor="middle" font-size="13" font-family="Arial, sans-serif">Used In Atlas Chat</text>
+    <text x="500" y="645" text-anchor="middle" font-size="13" font-family="Arial, sans-serif">=¬</text>
+    
+    <!-- API Purchase -->
+    <rect x="700" y="600" width="250" height="60" rx="10" fill="#fce4ec" stroke="#000" stroke-width="1.5"/>
+    <text x="825" y="625" text-anchor="middle" font-size="13" font-family="Arial, sans-serif">Available for API</text>
+    <text x="825" y="645" text-anchor="middle" font-size="13" font-family="Arial, sans-serif">Purchase =°</text>
+    
+    <!-- Arrows from Custom Thor -->
+    <line x1="300" y1="460" x2="175" y2="600" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    <line x1="500" y1="460" x2="500" y2="600" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    <line x1="700" y1="460" x2="825" y2="600" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    
+    <!-- Modification actions -->
+    <rect x="80" y="850" width="90" height="50" rx="5" fill="#fff9c4" stroke="#000" stroke-width="1"/>
+    <text x="125" y="875" text-anchor="middle" font-size="10" font-family="Arial, sans-serif">Download</text>
+    <text x="125" y="890" text-anchor="middle" font-size="10" font-family="Arial, sans-serif"></text>
+    
+    <rect x="180" y="850" width="90" height="50" rx="5" fill="#fff9c4" stroke="#000" stroke-width="1"/>
+    <text x="225" y="875" text-anchor="middle" font-size="10" font-family="Arial, sans-serif">Modify</text>
+    <text x="225" y="890" text-anchor="middle" font-size="10" font-family="Arial, sans-serif"></text>
+    
+    <rect x="280" y="850" width="90" height="50" rx="5" fill="#fff9c4" stroke="#000" stroke-width="1"/>
+    <text x="325" y="875" text-anchor="middle" font-size="10" font-family="Arial, sans-serif">Self-Updates</text>
+    <text x="325" y="890" text-anchor="middle" font-size="10" font-family="Arial, sans-serif">=</text>
+    
+    <!-- Arrows from mod_xml -->
+    <line x1="175" y1="660" x2="125" y2="850" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)"/>
+    <line x1="175" y1="660" x2="225" y2="850" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)"/>
+    <line x1="175" y1="660" x2="325" y2="850" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)"/>
+    
+    <!-- API options -->
+    <rect x="720" y="850" width="90" height="50" rx="5" fill="#fce4ec" stroke="#000" stroke-width="1"/>
+    <text x="765" y="875" text-anchor="middle" font-size="10" font-family="Arial, sans-serif">Default</text>
+    <text x="765" y="890" text-anchor="middle" font-size="10" font-family="Arial, sans-serif">™</text>
+    
+    <rect x="820" y="850" width="90" height="50" rx="5" fill="#fce4ec" stroke="#000" stroke-width="1"/>
+    <text x="865" y="875" text-anchor="middle" font-size="10" font-family="Arial, sans-serif">Custom</text>
+    <text x="865" y="890" text-anchor="middle" font-size="10" font-family="Arial, sans-serif"><×</text>
+    
+    <!-- Arrows from API Purchase -->
+    <line x1="825" y1="660" x2="765" y2="850" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)"/>
+    <line x1="825" y1="660" x2="865" y2="850" stroke="#000" stroke-width="1" marker-end="url(#arrowhead)"/>
+    
+    <!-- Enhances User Experience -->
+    <ellipse cx="500" cy="1100" rx="200" ry="50" fill="#f3e5f5" stroke="#000" stroke-width="2"/>
+    <text x="500" y="1095" text-anchor="middle" font-size="15" font-weight="bold" font-family="Arial, sans-serif">Enhances User Experience</text>
+    <text x="500" y="1115" text-anchor="middle" font-size="15" font-family="Arial, sans-serif">PP</text>
+    
+    <!-- Arrows to Enhance -->
+    <line x1="500" y1="660" x2="500" y2="1050" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="325" y1="900" x2="450" y2="1070" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    
+    <!-- Arrow marker definition -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+            <polygon points="0 0, 10 3, 0 6" fill="#000"/>
+        </marker>
+    </defs>
+</svg>

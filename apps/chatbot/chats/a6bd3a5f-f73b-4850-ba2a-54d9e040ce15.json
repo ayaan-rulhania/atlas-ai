@@ -1,0 +1,27 @@
+{
+  "chat_id": "a6bd3a5f-f73b-4850-ba2a-54d9e040ce15",
+  "created_at": "2026-01-21T20:15:12.201139",
+  "name": "Thank you! how can",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Hi",
+      "timestamp": "2026-01-21T20:15:12.199806"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you! How can I help you?",
+      "timestamp": "2026-01-21T20:15:12.199816"
+    },
+    {
+      "role": "user",
+      "content": "What is quantum computing?",
+      "timestamp": "2026-01-21T20:15:19.937641"
+    },
+    {
+      "role": "assistant",
+      "content": "To elaborate on that: Quantum computing holds the promise of solving some of our planet's biggest challenges - in the areas of environment, agriculture, health, energy, climate, materials science, and more. For some of these problems, classical computing is increasingly challenged as the size of the system grows. When designed to scale, quantum systems will likely have capabilities that exceed those of today's most.\n\n_Model:_ Thor 1.0",
+      "timestamp": "2026-01-21T20:15:19.937672"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+[
+  {
+    "task": "text_classification",
+    "text": "who is niharika",
+    "label": 1
+  },
+  {
+    "task": "text_classification",
+    "text": "Where is Haryana?",
+    "label": 1
+  },
+  {
+    "task": "text_classification",
+    "text": "what is computer",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "I find programming interesting and valuable.",
+    "label": 2
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Sarah has 10 apples. She gives 4 to her friend. How many does she have left?",
+    "label": 2
+  },
+  {
+    "task": "text_generation",
+    "text": "Sarah has 10 apples. She gives 4 to her friend. How many does she have left?",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "to continue",
+    "label": 0
+  },
+  {
+    "task": "text_generation",
+    "text": "Explain quantum computing in simple terms",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "Billy has 5 cookies. Jack takes away 3. How many does he have left?",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Do you know Niharika?",
+    "label": 0
+  },
+  {
+    "task": "text_generation",
+    "text": "Explain computer science",
+    "label": null
+  },
+  {
+    "task": "text_classification",
+    "text": "hello I'm feeling pretty good today",
+    "label": 1
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Billy has 5 cookies. Tam takes away 3 of them. How many cookies does billy have left?",
+    "label": 0
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "hello I'm feeling pretty good today",
+    "label": 2
+  },
+  {
+    "task": "text_classification",
+    "text": "tell her that's good Carla canopy",
+    "label": 0
+  },
+  {
+    "task": "text_generation",
+    "text": "I came back.",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "What is the capital of India?",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "Explain programming",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "I find natural language processing interesting and valuable.",
+    "label": 2
+  },
+  {
+    "task": "text_classification",
+    "text": "What is photosynthesis?",
+    "label": 1
+  },
+  {
+    "task": "text_generation",
+    "text": "who is niharika",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "What is quantum plane?",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "who is sharukh khan",
+    "label": null
+  },
+  {
+    "task": "text_classification",
+    "text": "Learn sometimes!",
+    "label": 1
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "What is the capital of India?",
+    "label": 0
+  },
+  {
+    "task": "text_classification",
+    "text": "What is machine learning?",
+    "label": 1
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "guys to talk hello",
+    "label": 0
+  },
+  {
+    "task": "text_generation",
+    "text": "Explain artificial intelligence",
+    "label": null
+  },
+  {
+    "task": "text_classification",
+    "text": "who is sharukh khan",
+    "label": 0
+  },
+  {
+    "task": "text_generation",
+    "text": "What is photosynthesis?",
+    "label": null
+  },
+  {
+    "task": "sentiment_analysis",
+    "text": "Explain quantum computing in simple terms",
+    "label": 1
+  },
+  {
+    "task": "text_classification",
+    "text": "What is natural language processing?",
+    "label": 1
+  },
+  {
+    "task": "text_generation",
+    "text": "How's it going!",
+    "label": null
+  },
+  {
+    "task": "text_generation",
+    "text": "what's the time",
+    "label": null
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "chat_id": "194c455e-37ad-4632-9832-85464cc56bdf",
+  "created_at": "2026-01-18T20:09:07.682808",
+  "name": "The Capital Of France?",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What is the capital of France?",
+      "timestamp": "2026-01-18T20:09:07.682363"
+    },
+    {
+      "role": "assistant",
+      "content": "Paris is the capital of France.; The capital of France is Paris.; The capital of France is Paris. Paris is not only the capital but also the largest city in France, known for its art, fashion, gastronomy, and culture.",
+      "timestamp": "2026-01-18T20:09:07.682374"
+    }
+  ]
+}

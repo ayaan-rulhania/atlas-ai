@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Atlas</title>
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <link rel="alternate icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=15">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/poseidon3d.css') }}?v=1">
+    <!-- PWA Manifest (Phase 5.3) -->
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+    <meta name="theme-color" content="#1a1a1a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Atlas AI">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body data-theme="light">
+    <div class="app-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <nav class="nav-rail" aria-label="Primary navigation">
+                <button class="nav-rail-btn nav-rail-btn--primary" id="newChatBtn" type="button" aria-label="New Chat">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span class="nav-rail-tooltip">New Chat</span>
+                </button>
+
+                <button class="nav-rail-btn" id="recentChatsBtn" type="button" aria-label="Recent Chats">
+                    <svg width="22" height="22" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                        <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.8"/>
+                        <path d="M10 6V10L12 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                        </svg>
+                    <span class="nav-rail-tooltip">Recent Chats</span>
+                    </button>
+
+                <button class="nav-rail-btn" id="gemsDashboardBtn" type="button" aria-label="Gems">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M6 3H18L21 9L12 21L3 9L6 3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M3 9H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M10 9L12 21L14 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    <span class="nav-rail-tooltip">Gems</span>
+                    </button>
+            
+                <div class="nav-rail-spacer" aria-hidden="true"></div>
+
+                    <button class="nav-rail-btn beta-feature-btn" id="tasksBtn" type="button" aria-label="Tasks" style="display: none;">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M9 11H5C4.44772 11 4 11.4477 4 12V20C4 20.5523 4.44772 21 5 21H19C19.5523 21 20 20.5523 20 20V12C20 11.4477 19.5523 11 19 11H15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 11V7H16V11" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="nav-rail-tooltip">Tasks <span class="beta-badge">BETA</span></span>
+                    </button>
+
+                    <button class="nav-rail-btn beta-feature-btn" id="analyticsBtn" type="button" aria-label="Analytics" style="display: none;">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M3 3V21H21" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 6L12 11L17 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="nav-rail-tooltip">Analytics <span class="beta-badge">BETA</span></span>
+                    </button>
+
+                <button class="nav-rail-btn" id="settingsBtn" type="button" aria-label="Settings">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19.4 15C19.2669 15.3016 19.2272 15.6362 19.286 15.9606C19.3448 16.285 19.4995 16.5843 19.73 16.82L19.79 16.88C19.976 17.0657 20.1235 17.2863 20.2241 17.5291C20.3248 17.7719 20.3766 18.0322 20.3766 18.295C20.3766 18.5578 20.3248 18.8181 20.2241 19.0609C20.1235 19.3037 19.976 19.5243 19.79 19.71C19.6043 19.896 19.3837 20.0435 19.1409 20.1441C18.8981 20.2448 18.6378 20.2966 18.375 20.2966C18.1122 20.2966 17.8519 20.2448 17.6091 20.1441C17.3663 20.0435 17.1457 19.896 16.96 19.71L16.9 19.65C16.6643 19.4195 16.365 19.2648 16.0406 19.206C15.7162 19.1472 15.3816 19.1869 15.08 19.32C14.7842 19.4468 14.532 19.6572 14.3543 19.9255C14.1766 20.1938 14.0813 20.5082 14.08 20.83V21C14.08 21.5304 13.8693 22.0391 13.4942 22.4142C13.1191 22.7893 12.6104 23 12.08 23C11.5496 23 11.0409 22.7893 10.6658 22.4142C10.2907 22.0391 10.08 21.5304 10.08 21V20.91C10.0723 20.579 9.96512 20.258 9.77251 19.9887C9.5799 19.7194 9.31074 19.5143 9 19.4C8.69838 19.2669 8.36381 19.2272 8.03941 19.286C7.71502 19.3448 7.41568 19.4995 7.18 19.73L7.12 19.79C6.93425 19.976 6.71368 20.1235 6.47088 20.2241C6.22808 20.3248 5.96783 20.3766 5.705 20.3766C5.44217 20.3766 5.18192 20.3248 4.93912 20.2241C4.69632 20.1235 4.47575 19.976 4.29 19.79C4.10405 19.6043 3.95653 19.3837 3.85588 19.1409C3.75523 18.8981 3.70343 18.6378 3.70343 18.375C3.70343 18.1122 3.75523 17.8519 3.85588 17.6091C3.95653 17.3663 4.10405 17.1457 4.29 16.96L4.35 16.9C4.58054 16.6643 4.73519 16.365 4.794 16.0406C4.85282 15.7162 4.81312 15.3816 4.68 15.08C4.55324 14.7842 4.34276 14.532 4.07447 14.3543C3.80618 14.1766 3.49179 14.0813 3.17 14.08H3C2.46957 14.08 1.96086 13.8693 1.58579 13.4942C1.21071 13.1191 1 12.6104 1 12.08C1 11.5496 1.21071 11.0409 1.58579 10.6658C1.96086 10.2907 2.46957 10.08 3 10.08H3.09C3.42099 10.0723 3.742 9.96512 4.0113 9.77251C4.28059 9.5799 4.48572 9.31074 4.6 9C4.73312 8.69838 4.77282 8.36381 4.714 8.03941C4.65519 7.71502 4.50054 7.41568 4.27 7.18L4.21 7.12C4.02405 6.93425 3.87653 6.71368 3.77588 6.47088C3.67523 6.22808 3.62343 5.96783 3.62343 5.705C3.62343 5.44217 3.67523 5.18192 3.77588 4.93912C3.87653 4.69632 4.02405 4.47575 4.21 4.29C4.39575 4.10405 4.61632 3.95653 4.85912 3.85588C5.10192 3.75523 5.36217 3.70343 5.625 3.70343C5.88783 3.70343 6.14808 3.75523 6.39088 3.85588C6.63368 3.95653 6.85425 4.10405 7.04 4.29L7.1 4.35C7.33568 4.58054 7.63502 4.73519 7.95941 4.794C8.28381 4.85282 8.61838 4.81312 8.92 4.68H9C9.29577 4.55324 9.54802 4.34276 9.72569 4.07447C9.90337 3.80618 9.99872 3.49179 10 3.17V3C10 2.46957 10.2107 1.96086 10.5858 1.58579C10.9609 1.21071 11.4696 1 12 1C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V3.09C14.0013 3.41179 14.0966 3.72618 14.2743 3.99447C14.452 4.26276 14.7042 4.47324 15 4.6C15.3016 4.73312 15.6362 4.77282 15.9606 4.714C16.285 4.65519 16.5843 4.50054 16.82 4.27L16.88 4.21C17.0657 4.02405 17.2863 3.87653 17.5291 3.77588C17.7719 3.67523 18.0322 3.62343 18.295 3.62343C18.5578 3.62343 18.8181 3.67523 19.0609 3.77588C19.3037 3.87653 19.5243 4.02405 19.71 4.21C19.896 4.39575 20.0435 4.61632 20.1441 4.85912C20.2448 5.10192 20.2966 5.36217 20.2966 5.625C20.2966 5.88783 20.2448 6.14808 20.1441 6.39088C20.0435 6.63368 19.896 6.85425 19.71 7.04L19.65 7.1C19.4195 7.33568 19.2648 7.63502 19.206 7.95941C19.1472 8.28381 19.1869 8.61838 19.32 8.92V9C19.4468 9.29577 19.6572 9.54802 19.9255 9.72569C20.1938 9.90337 20.5082 9.99872 20.83 10H21C21.5304 10 22.0391 10.2107 22.4142 10.5858C22.7893 10.9609 23 11.4696 23 12C23 12.5304 22.7893 13.0391 22.4142 13.4142C22.0391 13.7893 21.5304 14 21 14H20.91C20.5882 14.0013 20.2738 14.0966 20.0055 14.2743C19.7372 14.452 19.5268 14.7042 19.4 15Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="nav-rail-tooltip">Settings</span>
+                </button>
+            </nav>
+        </aside>
+        
+        <!-- Main Content Area -->
+        <main class="main-content" id="main-content" role="main">
+            <!-- Header -->
+            <div class="content-header">
+                <div class="header-left">
+                    <div class="logo-container">
+                        <svg class="atlas-logo" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="app-name">Atlas</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <button class="header-icon-btn beta-feature-btn" id="globalSearchBtn" title="Global Search" style="display: none;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="1.8"/>
+                            <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <button class="header-icon-btn" id="installBtn" title="Install/Updates">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="7 10 12 15 17 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <button class="header-icon-btn" id="helpBtn" title="Help">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
+                            <path d="M9.5 9.25C9.5 7.87 10.62 6.75 12 6.75C13.38 6.75 14.5 7.87 14.5 9.25C14.5 10.22 13.95 11.02 13.14 11.42C12.55 11.72 12 12.2 12 13.25V13.75" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="17.25" r="1" fill="currentColor"/>
+                        </svg>
+                    </button>
+                    <button class="theme-toggle-btn" id="themeToggleBtn" title="Toggle theme" data-theme="light">
+                        <span class="theme-icon sun-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 2V4M12 20V22M4 12H2M22 12H20M5.636 5.636L4.222 4.222M19.778 19.778L18.364 18.364M5.636 18.364L4.222 19.778M19.778 4.222L18.364 5.636" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <span class="theme-icon moon-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                <path d="M21 15.5C19.59 16.46 17.92 17 16.13 17C10.61 17 6.13 12.52 6.13 7C6.13 5.21 6.67 3.52 7.63 2.12C4.2 3.19 2 6.33 2 10C2 15.52 6.48 20 12 20C15.67 20 18.81 17.8 19.88 14.37C19.63 14.59 19.36 14.79 19.07 14.96C19.68 15.16 20.33 15.32 21 15.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="upgrade-btn" id="upgradeBtn">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 2L10 6L14 7L10 8L8 12L6 8L2 7L6 6L8 2Z" fill="currentColor"/>
+                        </svg>
+                        <span>Upgrade</span>
+                    </button>
+                    <div class="user-avatar" id="userAvatar">A</div>
+                </div>
+            </div>
+            
+            <!-- Chat Container -->
+            <div class="chat-container" id="chatContainer">
+                <div class="welcome-screen" id="welcomeScreen">
+                    <h1 class="welcome-title">Hello</h1>
+                    <p class="welcome-subtitle">I'm your AI assistant powered by Atlas. How can I help you today?</p>
+                    <div class="welcome-actions" aria-label="Quick actions">
+                        <button
+                            class="welcome-action-card welcome-action-card--embed"
+                            type="button"
+                            data-embed-title="Gaming"
+                            data-embed-url="https://arcade-indol-six.vercel.app"
+                        >
+                            <div class="welcome-action-icon" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M7 14h.01M10 12h.01M17 14h.01M14 12h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                                    <path d="M8 10l-2 2 2 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 10l2 2-2 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7 17h10a4 4 0 0 0 4-4v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2a4 4 0 0 0 4 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="welcome-action-text">
+                                <div class="welcome-action-title">Gaming</div>
+                                <div class="welcome-action-desc">Open the Arcade suite</div>
+                            </div>
+                        </button>
+
+                        <button
+                            class="welcome-action-card welcome-action-card--embed"
+                            type="button"
+                            data-embed-title="Office"
+                            data-embed-url="https://quantumwebsolutions.netlify.app"
+                        >
+                            <div class="welcome-action-icon" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 22V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M3 22V5a2 2 0 0 1 2-2h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M7 10h.01M7 14h.01M7 18h.01M13 10h.01M13 14h.01M13 18h.01M17 10h.01M17 14h.01M17 18h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="welcome-action-text">
+                                <div class="welcome-action-title">Office</div>
+                                <div class="welcome-action-desc">Open the Office suite</div>
+                            </div>
+                        </button>
+
+                        <button
+                            class="welcome-action-card beta-feature-btn"
+                            type="button"
+                            id="templatesBtn"
+                            style="display: none;"
+                        >
+                            <div class="welcome-action-icon" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <polyline points="10,9 9,9 8,9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="welcome-action-text">
+                                <div class="welcome-action-title">Templates <span class="beta-badge">BETA</span></div>
+                                <div class="welcome-action-desc">Start from a conversation template</div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="messages-container" id="messagesContainer" style="display: none;">
+                    <!-- Messages will be inserted here -->
+                </div>
+            </div>
+            
+            <!-- Input Container -->
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <div class="input-left-actions">
+                        <button class="poseidon-launch-btn input-btn-with-tooltip" id="poseidonLaunchBtn" aria-label="Launch Poseidon Voice Assistant">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M12 14a3 3 0 0 0 3-3V7a3 3 0 0 0-6 0v4a3 3 0 0 0 3 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19 11a7 7 0 0 1-14 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 19v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M8 22h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span class="input-tooltip">Voice</span>
+                        </button>
+                        <button class="input-icon-btn input-btn-with-tooltip" id="attachBtn" aria-label="Upload files">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 10L12 5L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 5V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="input-tooltip">Upload</span>
+                        </button>
+                    </div>
+                    <textarea 
+                        id="messageInput" 
+                        class="message-input" 
+                        placeholder="Ask Atlas"
+                        rows="1"
+                    ></textarea>
+                    <div class="input-right-actions">
+                        <button class="input-icon-btn input-btn-with-tooltip" id="thinkDeeperToggle">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 2.5C6.96243 2.5 4.5 4.96243 4.5 8C4.5 9.92209 5.56683 11.5852 7.14944 12.4634C7.38096 12.5911 7.5 12.8458 7.5 13.107V14C7.5 14.5523 7.94772 15 8.5 15H11.5C12.0523 15 12.5 14.5523 12.5 14V13.107C12.5 12.8458 12.619 12.5911 12.8506 12.4634C14.4332 11.5852 15.5 9.92209 15.5 8C15.5 4.96243 13.0376 2.5 10 2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 17H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M9 19H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <span class="input-tooltip">Think Deeper</span>
+                        </button>
+                        <button class="input-icon-btn input-btn-with-tooltip beta-feature-btn" id="compareModelsBtn" style="display: none;">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 4V16M7 7L10 4L13 7M7 13L10 16L13 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="input-tooltip">Compare Models <span class="beta-badge">BETA</span></span>
+                        </button>
+                        <div class="output-format-selector input-btn-with-tooltip beta-feature-btn" id="outputFormatSelector" style="display: none;">
+                            <span class="output-format-label">Text</span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="input-tooltip">Output Format <span class="beta-badge">BETA</span></span>
+                            <div class="output-format-dropdown" id="outputFormatDropdown">
+                                <div class="output-format-option active" data-format="">
+                                    <span>Text</span>
+                                </div>
+                                <div class="output-format-option" data-format="json">
+                                    <span>JSON</span>
+                                </div>
+                                <div class="output-format-option" data-format="table">
+                                    <span>Table</span>
+                                </div>
+                                <div class="output-format-option" data-format="csv">
+                                    <span>CSV</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="model-selector input-btn-with-tooltip" id="modelSelector">
+                            <span class="model-name">Thor 1.1</span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="input-tooltip">Model</span>
+                            <div class="model-dropdown" id="modelDropdown">
+                                <div class="model-option active" data-model="thor-1.1">
+                                    <div class="model-option-info">
+                                        <span class="model-option-name">Thor 1.1</span>
+                                        <span class="model-option-note">Latest model</span>
+                                    </div>
+                                    <span class="model-option-status">✓</span>
+                                </div>
+                                <div class="model-option" data-model="thor-1.0">
+                                    <div class="model-option-info">
+                                        <span class="model-option-name">Thor 1.0</span>
+                                        <span class="model-option-note">Stable version</span>
+                                    </div>
+                                    <span class="model-option-status"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="send-btn input-btn-with-tooltip" id="sendBtn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="input-tooltip">Send</span>
+                        </button>
+                    </div>
+                </div>
+                <p class="input-disclaimer">Atlas can make mistakes, so double-check important information.</p>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Poseidon Voice Assistant Overlay -->
+    <div class="poseidon-overlay" id="poseidonOverlay" style="display: none;">
+        <div class="poseidon-container">
+            <div class="poseidon-header">
+                <div class="poseidon-status">
+                    <div class="poseidon-status-indicator" id="poseidonStatusIndicator"></div>
+                    <span class="poseidon-status-text" id="poseidonStatusText">Ready</span>
+                </div>
+                <button class="poseidon-close-btn" id="poseidonCloseBtn" title="Close Poseidon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="poseidon-content">
+                <div class="poseidon-visualizer" id="poseidonVisualizer">
+                    <div class="poseidon-wave">
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                    </div>
+                </div>
+                <div class="poseidon-transcript" id="poseidonTranscript">
+                    <div class="transcript-label">Your message:</div>
+                    <div class="transcript-text" id="poseidonUserTranscript"></div>
+                    <div class="transcript-label" style="margin-top: 16px;">Poseidon:</div>
+                    <div class="transcript-text" id="poseidonAssistantTranscript"></div>
+                </div>
+            </div>
+            <div class="poseidon-controls">
+                <button class="poseidon-control-btn hold-btn" id="poseidonHoldBtn" title="Hold">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 4H10V20H6V4ZM14 4H18V20H14V4Z" fill="currentColor"/>
+                    </svg>
+                    <span>Hold</span>
+                </button>
+                <button class="poseidon-control-btn end-btn" id="poseidonEndBtn" title="End">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>End</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Customize (Gems) Modal -->
+    <div class="modal modal-dashboard" id="customizeModal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="customizeModalTitle">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h2 id="customizeModalTitle">Customize Thor — Gems</h2>
+                <button class="modal-close" id="closeCustomizeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="settings-section">
+                    <h3>Try a Gem (no save)</h3>
+                    <div class="gems-try-grid" id="gemsTryGrid"></div>
+                    <p class="input-disclaimer" style="text-align:left; margin-top:10px;">
+                        Trying a Gem won’t create or save it. You can save it later if you like.
+                    </p>
+                </div>
+
+                <div class="settings-section">
+                    <h3>My Gems</h3>
+                    <div class="gems-manage-list" id="gemsManageList">
+                        <div class="chats-loading">Loading gems...</div>
+                    </div>
+                    <div class="form-actions" style="justify-content:flex-start;">
+                        <button type="button" class="btn-primary" id="createGemBtn">Create Gem</button>
+                    </div>
+                </div>
+
+                <div class="settings-section hidden" id="gemEditorSection">
+                    <h3 id="gemEditorTitle">New Gem</h3>
+                    <form id="gemForm">
+                        <input type="hidden" id="gemId" />
+                        <div class="form-group">
+                            <label for="gemName">Name</label>
+                            <input type="text" id="gemName" placeholder="e.g., Study Buddy" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="gemDescription">Description</label>
+                            <input type="text" id="gemDescription" placeholder="Short tagline shown in the model dropdown" />
+                        </div>
+                        <div class="form-group">
+                            <label for="gemInstructions">Instructions</label>
+                            <textarea id="gemInstructions" rows="5" placeholder="How should this Gem behave? Tone, constraints, format, etc."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Tone</label>
+                            <div class="tone-options tone-options-gem">
+                                <label class="tone-option tone-normal"><input type="radio" name="gemTone" value="normal" checked><span>Normal</span></label>
+                                <label class="tone-option tone-friendly"><input type="radio" name="gemTone" value="friendly"><span>Friendly</span></label>
+                                <label class="tone-option tone-calm"><input type="radio" name="gemTone" value="calm"><span>Calm</span></label>
+                                <label class="tone-option tone-formal"><input type="radio" name="gemTone" value="formal"><span>Formal</span></label>
+                                <label class="tone-option tone-critical"><input type="radio" name="gemTone" value="critical"><span>Critical</span></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="gemLinks">Sources (links)</label>
+                            <textarea id="gemLinks" rows="3" placeholder="One URL per line"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="gemFiles">Sources (files)</label>
+                            <input type="file" id="gemFiles" multiple accept="text/*,.txt,.md,.json" />
+                            <p class="input-disclaimer" style="text-align:left; margin-top:8px;">
+                                Tip: keep files small. Text is used as extra context when this Gem is selected.
+                            </p>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="btn-secondary" id="cancelGemEditBtn">Cancel</button>
+                            <button type="button" class="btn-secondary" id="tryGemBtn">Try</button>
+                            <button type="submit" class="btn-primary" id="saveGemBtn">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div class="modal modal-dashboard" id="settingsModal" style="display: none;">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h2>Settings</h2>
+                <button class="modal-close" id="closeSettingsModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="settings-section">
+                    <h3>Theme</h3>
+                    <div class="theme-options">
+                        <label class="theme-option">
+                            <input type="radio" name="theme" value="light" checked>
+                            <span>Light</span>
+                        </label>
+                        <label class="theme-option">
+                            <input type="radio" name="theme" value="dark">
+                            <span>Dark</span>
+                        </label>
+                        <label class="theme-option">
+                            <input type="radio" name="theme" value="system">
+                            <span>System</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="settings-section">
+                    <h3>Appearance (Phase 4.3)</h3>
+                    <div class="form-group">
+                        <label for="accentColorInput">Accent Color</label>
+                        <div style="display: flex; gap: 12px; align-items: center;">
+                            <input type="color" id="accentColorInput" value="#1a1a1a" style="width: 60px; height: 40px; border-radius: var(--radius-md); border: 1px solid var(--border-color); cursor: pointer;">
+                            <input type="text" id="accentColorText" placeholder="#1a1a1a" style="flex: 1; padding: 8px 12px; border: 1px solid var(--border-color); border-radius: var(--radius-md); font-family: monospace; font-size: 13px;">
+                        </div>
+                        <label style="display: flex; align-items: center; gap: 8px; margin-top: 8px; cursor: pointer;">
+                            <input type="checkbox" id="useCustomAccentAsPrimary">
+                            <span style="font-size: 13px;">Use as primary accent color</span>
+                        </label>
+                        <p class="input-disclaimer" style="text-align:left; margin-top:8px;">
+                            Customize the accent color used throughout the interface.
+                        </p>
+                    </div>
+                    <div class="form-group" style="margin-top: 16px;">
+                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                            <input type="checkbox" id="highContrastToggle">
+                            <span>High Contrast Mode</span>
+                        </label>
+                        <p class="input-disclaimer" style="text-align:left; margin-top:8px;">
+                            Increases contrast for better visibility and accessibility.
+                        </p>
+                    </div>
+                </div>
+                <div class="settings-section">
+                    <h3>Default Model</h3>
+                    <div class="model-options">
+                        <label class="model-option-setting">
+                            <input type="radio" name="defaultModel" value="thor-1.1" checked>
+                            <span>Thor 1.1</span>
+                            <input type="radio" name="defaultModel" value="thor-1.0">
+                            <span>Thor 1.0 (Stable)</span>
+                            <span class="status-badge">Active</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="settings-section">
+                    <h3>Thor Tone</h3>
+                    <div class="tone-options tone-options-global">
+                        <label class="tone-option tone-normal"><input type="radio" name="tone" value="normal" checked><span>Normal</span></label>
+                        <label class="tone-option tone-friendly"><input type="radio" name="tone" value="friendly"><span>Friendly</span></label>
+                        <label class="tone-option tone-calm"><input type="radio" name="tone" value="calm"><span>Calm</span></label>
+                        <label class="tone-option tone-formal"><input type="radio" name="tone" value="formal"><span>Formal</span></label>
+                        <label class="tone-option tone-critical"><input type="radio" name="tone" value="critical"><span>Critical</span></label>
+                    </div>
+                    <p class="input-disclaimer" style="text-align:left; margin-top:8px;">
+                        Tone changes the style of Thor's replies. Gems can override this.
+                    </p>
+                </div>
+                <div class="settings-section">
+                    <h3>System Mode</h3>
+                    <div class="form-group">
+                        <label for="systemMode">Mode</label>
+                        <select id="systemMode" class="form-select">
+                            <option value="latest">Latest (Default)</option>
+                            <option value="stable">Stable Mode</option>
+                        </select>
+                        <p class="input-disclaimer" style="text-align:left; margin-top:8px;">
+                            <strong>Latest:</strong> Access to all newest features and improvements.<br>
+                            <strong>Stable:</strong> Older, thoroughly tested version with guaranteed stability. Some latest features may be unavailable.
+                        </p>
+                    </div>
+                </div>
+                <div class="settings-section">
+                    <h3>UI Mode</h3>
+                    <div class="form-group">
+                        <label for="uiMode">Interface Style</label>
+                        <select id="uiMode" class="form-select">
+                            <option value="standard">Standard UI</option>
+                            <option value="simple">Simpler UI Mode</option>
+                        </select>
+                        <p class="input-disclaimer" style="text-align:left; margin-top:8px;">
+                            <strong>Standard:</strong> Full-featured interface with all options visible.<br>
+                            <strong>Simpler UI:</strong> Minimalist interface with essential features only for a cleaner experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="settings-section">
+                    <h3>Poseidon Voice Assistant</h3>
+                    <div class="form-group">
+                        <label for="voiceAccent">Language</label>
+                        <select id="voiceAccent" class="form-select">
+                            <optgroup label="English">
+                                <option value="en-US">US English</option>
+                                <option value="en-GB">UK English</option>
+                                <option value="en-AU">Australian English</option>
+                                <option value="en-IN">Indian English</option>
+                            </optgroup>
+                            <optgroup label="Indian Languages">
+                                <option value="hi-IN">Hindi</option>
+                                <option value="ta-IN">Tamil</option>
+                                <option value="te-IN">Telugu</option>
+                            </optgroup>
+                            <optgroup label="Other Languages">
+                                <option value="es-ES">Spanish</option>
+                                <option value="fr-FR">French</option>
+                                <option value="zh-CN">Mandarin (Chinese)</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="voiceGender">Voice Gender</label>
+                        <select id="voiceGender" class="form-select">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                            <input type="checkbox" id="poseidon3DEnabled" style="width: 18px; height: 18px; cursor: pointer;">
+                            <div style="flex: 1;">
+                                <div style="font-weight: 500; margin-bottom: 4px;">3D Poseidon UI (Beta)</div>
+                                <div style="font-size: 12px; color: var(--text-tertiary);">Enable advanced 3D animation. Experimental feature.</div>
+                            </div>
+                        </label>
+                    </div>
+                    <p class="input-disclaimer" style="text-align:left; margin-top:8px;">
+                        Configure Poseidon's voice settings. Changes take effect on the next voice interaction.
+                    </p>
+                </div>
+                <div class="settings-section">
+                    <h3>Chat Management</h3>
+                    <div class="form-group">
+                        <button class="btn-danger" id="deleteAllChatsBtn" style="background-color: var(--error-color, #dc3545); color: white; border: none; padding: 10px 16px; border-radius: var(--radius-md); cursor: pointer; display: flex; align-items: center; gap: 8px;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M10 11v6M14 11v6" />
+                            </svg>
+                            Delete All Chats
+                        </button>
+                        <p class="input-disclaimer" style="text-align:left; margin-top:8px;">
+                            This will permanently delete all your conversation history. This action cannot be undone.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h3>Beta Features <span class="beta-badge" style="display: none;">BETA</span></h3>
+                    <div class="form-group">
+                        <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                            <input type="checkbox" id="betaModeToggle" style="width: 18px; height: 18px; cursor: pointer;">
+                            <div style="flex: 1;">
+                                <div style="font-weight: 500; margin-bottom: 4px;">Enable Beta Mode</div>
+                                <div style="font-size: 12px; color: var(--text-tertiary);">Access experimental features that are still in development</div>
+                            </div>
+                        </label>
+                        <p class="input-disclaimer" style="text-align:left; margin-top:8px;">
+                            Beta features may be unstable and are subject to change or removal without notice.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Beta Features Sections (hidden by default) -->
+                <!-- Productivity & Workflow Features -->
+                <div class="beta-settings-section" id="betaProductivitySection" style="display: none;">
+                    <h3>Productivity & Workflow</h3>
+                    <div class="beta-feature-list">
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-task_management" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Task Management</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Parse tasks from conversations and create to-do lists</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-workflow_automation" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Workflow Automation</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Multi-step workflows with conditional logic</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-quick_actions" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Quick Actions & Snippets</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Custom response templates and saved prompts</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-smart_summaries" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Smart Summaries</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Auto-summarize conversations with different formats</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="beta-settings-section" id="betaCollaborationSection" style="display: none;">
+                    <h3>Collaboration & Sharing</h3>
+                    <div class="beta-feature-list">
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-shared_chats" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Shared Chats</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Share chats with others and collaborate in real-time</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-gem_marketplace" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Gem Marketplace</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Public gallery to share and discover custom Gems</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-enhanced_exports" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Enhanced Export Formats</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">PDF, Markdown, and HTML export options</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-chat_templates" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Chat Templates</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Save and reuse conversation templates</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="beta-settings-section" id="betaProductivitySection" style="display: none;">
+                    <h3>Productivity & Workflow</h3>
+                    <div class="beta-feature-list">
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-task_management" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Task Management</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Parse tasks from conversations and create to-do lists</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-workflow_automation" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Workflow Automation</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Multi-step workflows with conditional logic</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-quick_actions" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Quick Actions & Snippets</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Custom response templates and saved prompts</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-smart_summaries" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Smart Summaries</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Auto-summarize conversations with different formats</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="beta-settings-section" id="betaAICapabilitiesSection" style="display: none;">
+                    <h3>Enhanced AI Capabilities</h3>
+                    <div class="beta-feature-list">
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-multi_model_comparison" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Multi-Model Comparison</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Compare responses across different models</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-structured_output" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Structured Output Mode</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Generate JSON, tables, and formatted data</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-code_execution" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Code Execution</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Run Python and JavaScript code snippets</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-agent_mode" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Agent Mode</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Multi-step reasoning with tool use</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="beta-settings-section" id="betaSearchDiscoverySection" style="display: none;">
+                    <h3>Search & Discovery</h3>
+                    <div class="beta-feature-list">
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-global_search" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Global Search</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Search across all chats, projects, gems, and knowledge</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-insights_dashboard" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Insights Dashboard</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Analytics and usage statistics</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-smart_suggestions" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Smart Suggestions</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Context-aware prompt and follow-up suggestions</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="beta-settings-section" id="betaIntegrationsSection" style="display: none;">
+                    <h3>Integrations & Extensibility</h3>
+                    <div class="beta-feature-list">
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-api_integrations" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">API Integrations</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Webhooks and external service integrations</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-browser_extension" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Browser Extension</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Quick access from any website</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-plugin_system" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Plugin System</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Custom plugins and marketplace</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="beta-settings-section" id="betaDocumentManagementSection" style="display: none;">
+                    <h3>Document & Content Management</h3>
+                    <div class="beta-feature-list">
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-advanced_processing" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Advanced Document Processing</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">PDF parsing, OCR, and table extraction</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-document_library" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Document Library</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Centralized document storage and search</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-knowledge_base" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Knowledge Base Builder</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Auto-generate KB from conversations</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="beta-settings-section" id="betaUXEnhancementsSection" style="display: none;">
+                    <h3>UX Enhancements</h3>
+                    <div class="beta-feature-list">
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-custom_themes" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Custom Themes</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Theme builder with export/import</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-keyboard_navigation" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Keyboard Navigation</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Enhanced shortcuts and Vim-style navigation</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-accessibility" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Accessibility Improvements</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Screen reader and high contrast enhancements</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="beta-settings-section" id="betaAdvancedFeaturesSection" style="display: none;">
+                    <h3>Advanced Features</h3>
+                    <div class="beta-feature-list">
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-version_control" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Version Control for Chats</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Git-like branching and diff viewer</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-encrypted_chats" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Private/Encrypted Chats</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Password-protected and encrypted conversations</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="beta-feature-item">
+                            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" id="betaFeature-team_management" class="beta-feature-toggle" disabled style="width: 16px; height: 16px; cursor: pointer;">
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 500; margin-bottom: 2px;">Team Management</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Organizations, roles, and team analytics</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tasks Panel (Beta Feature) -->
+    <div class="tasks-panel" id="tasksPanel" style="display: none;">
+        <div class="tasks-header">
+            <h3>Tasks <span class="beta-badge">BETA</span></h3>
+            <button class="tasks-close-btn" id="closeTasksPanel">&times;</button>
+        </div>
+        <div class="tasks-content">
+            <div class="tasks-controls">
+                <button class="btn-secondary" id="extractTasksBtn">Extract from Chat</button>
+                <button class="btn-secondary" id="refreshTasksBtn">Refresh</button>
+            </div>
+            <div class="tasks-list" id="tasksList">
+                <div class="chats-loading">Loading tasks...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Global Search Modal (Beta Feature) -->
+    <div class="modal" id="globalSearchModal" style="display: none;">
+        <div class="modal-content glass-card" style="max-width: 800px; max-height: 80vh;">
+            <div class="modal-header">
+                <h2>Global Search <span class="beta-badge">BETA</span></h2>
+                <button class="modal-close" id="closeGlobalSearchModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="search-input-container">
+                    <div class="search-input-wrapper">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="search-icon">
+                            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="1.8"/>
+                            <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                        </svg>
+                        <input type="text" id="globalSearchInput" placeholder="Search across all chats, projects, gems, and knowledge..." class="search-input">
+                        <div class="search-filters">
+                            <select id="searchTypeFilter" class="search-filter">
+                                <option value="all">All</option>
+                                <option value="chats">Chats</option>
+                                <option value="projects">Projects</option>
+                                <option value="gems">Gems</option>
+                                <option value="brain">Knowledge</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-results" id="searchResults">
+                    <div class="search-loading">Enter a search term to begin...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Analytics Modal (Beta Feature) -->
+    <div class="modal" id="analyticsModal" style="display: none;">
+        <div class="modal-content glass-card" style="max-width: 1000px; max-height: 80vh;">
+            <div class="modal-header">
+                <h2>Insights Dashboard <span class="beta-badge">BETA</span></h2>
+                <button class="modal-close" id="closeAnalyticsModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="analytics-dashboard" id="analyticsDashboard">
+                    <div class="analytics-loading">Loading analytics...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Templates Modal (Beta Feature) -->
+    <div class="modal" id="templatesModal" style="display: none;">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h2>Templates <span class="beta-badge">BETA</span></h2>
+                <button class="modal-close" id="closeTemplatesModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="templates-grid" id="templatesGrid">
+                    <div class="chats-loading">Loading templates...</div>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn-primary" id="createTemplateBtn">Create Template</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Help Modal -->
+    <div class="modal" id="helpModal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="helpModalTitle">
+        <div class="modal-content glass-card" style="max-width: 700px;">
+            <div class="modal-header">
+                <h2 id="helpModalTitle">How to use Atlas</h2>
+                <button class="modal-close" id="closeHelpModal">&times;</button>
+            </div>
+            <div class="modal-body" style="max-height: 80vh; overflow-y: auto;">
+                <div class="settings-section">
+                    <h3 style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px;">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10 2.5C6.96243 2.5 4.5 4.96243 4.5 8C4.5 9.92209 5.56683 11.5852 7.14944 12.4634C7.38096 12.5911 7.5 12.8458 7.5 13.107V14C7.5 14.5523 7.94772 15 8.5 15H11.5C12.0523 15 12.5 14.5523 12.5 14V13.107C12.5 12.8458 12.619 12.5911 12.8506 12.4634C14.4332 11.5852 15.5 9.92209 15.5 8C15.5 4.96243 13.0376 2.5 10 2.5Z"/>
+                            <path d="M8 17H12" stroke-linecap="round"/>
+                        </svg>
+                        Getting Started
+                    </h3>
+                    <p style="margin-bottom: 16px; color: var(--text-secondary); line-height: 1.6;">
+                        Atlas is an AI assistant powered by Thor models. Simply type your question or request in the input field and press Enter or click Send. You can ask questions, request help with tasks, generate content, and much more.
+                    </p>
+                </div>
+                
+                <div class="settings-section">
+                    <h3 style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px; margin-top: 24px;">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="14" height="12" rx="2"/>
+                            <path d="M3 8H17M7 12H13" stroke-linecap="round"/>
+                        </svg>
+                        Quick Commands
+                    </h3>
+                    <div style="display: grid; gap: 12px;">
+                        <div style="padding: 12px; background: var(--bg-tertiary); border-radius: var(--radius-md); border-left: 3px solid var(--accent-primary);">
+                            <div style="font-weight: 600; margin-bottom: 4px; color: var(--text-primary);">
+                                <code style="background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px; font-size: 13px;">/office</code> or <code style="background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px; font-size: 13px;">Load Office Suite</code>
+                            </div>
+                            <div style="color: var(--text-secondary); font-size: 14px;">Opens the integrated office suite interface with productivity tools</div>
+                        </div>
+                        <div style="padding: 12px; background: var(--bg-tertiary); border-radius: var(--radius-md); border-left: 3px solid var(--accent-primary);">
+                            <div style="font-weight: 600; margin-bottom: 4px; color: var(--text-primary);">
+                                <code style="background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px; font-size: 13px;">/arcade</code> or <code style="background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px; font-size: 13px;">Load Game Suite</code>
+                            </div>
+                            <div style="color: var(--text-secondary); font-size: 14px;">Opens the integrated arcade interface for interactive games</div>
+                        </div>
+                        <div style="padding: 12px; background: var(--bg-tertiary); border-radius: var(--radius-md); border-left: 3px solid var(--accent-primary);">
+                            <div style="font-weight: 600; margin-bottom: 4px; color: var(--text-primary);">
+                                <code style="background: var(--bg-secondary); padding: 2px 6px; border-radius: 4px; font-size: 13px;">/image &lt;description&gt;</code>
+                            </div>
+                            <div style="color: var(--text-secondary); font-size: 14px;">Generates and displays an image based on your description. You can refine with phrases like "Another angle", "Watercolor style", or "Make it red"</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="settings-section">
+                    <h3 style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px; margin-top: 24px;">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10 2.5V10M10 17.5C13.866 17.5 17 14.366 17 10.5C17 6.63401 13.866 3.5 10 3.5C6.13401 3.5 3 6.63401 3 10.5C3 14.366 6.13401 17.5 10 17.5Z"/>
+                            <circle cx="10" cy="10" r="1.5" fill="currentColor"/>
+                        </svg>
+                        Features & Tips
+                    </h3>
+                    <ul class="plan-features" style="list-style: none; padding: 0; display: grid; gap: 10px;">
+                        <li style="padding: 10px; background: var(--bg-tertiary); border-radius: var(--radius-md); display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: var(--accent-primary); font-weight: 600; flex-shrink: 0;">✓</span>
+                            <div>
+                                <strong>Think Deeper Mode</strong> — Toggle this for more comprehensive, thorough responses to complex queries. Great for detailed analysis and deep reasoning.
+                            </div>
+                        </li>
+                        <li style="padding: 10px; background: var(--bg-tertiary); border-radius: var(--radius-md); display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: var(--accent-primary); font-weight: 600; flex-shrink: 0;">✓</span>
+                            <div>
+                                <strong>Custom Gems</strong> — Create personalized AI models tailored to your needs. Access via the sidebar or Customize button.
+                            </div>
+                        </li>
+                        <li style="padding: 10px; background: var(--bg-tertiary); border-radius: var(--radius-md); display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: var(--accent-primary); font-weight: 600; flex-shrink: 0;">✓</span>
+                            <div>
+                                <strong>Voice Assistant (Poseidon)</strong> — Click the microphone icon to start voice conversations. Perfect for hands-free interactions.
+                            </div>
+                        </li>
+                        <li style="padding: 10px; background: var(--bg-tertiary); border-radius: var(--radius-md); display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: var(--accent-primary); font-weight: 600; flex-shrink: 0;">✓</span>
+                            <div>
+                                <strong>Model Selection</strong> — Switch between Thor 1.1 (latest) and Thor 1.0 (stable) from the model dropdown.
+                            </div>
+                        </li>
+                        <li style="padding: 10px; background: var(--bg-tertiary); border-radius: var(--radius-md); display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: var(--accent-primary); font-weight: 600; flex-shrink: 0;">✓</span>
+                            <div>
+                                <strong>Structured Output</strong> — Request bullets, steps, lists, or tables when you need organized information.
+                            </div>
+                        </li>
+                        <li style="padding: 10px; background: var(--bg-tertiary); border-radius: var(--radius-md); display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: var(--accent-primary); font-weight: 600; flex-shrink: 0;">✓</span>
+                            <div>
+                                <strong>Chat History</strong> — All your conversations are saved. Access them via the History button or sidebar.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="settings-section">
+                    <h3 style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px; margin-top: 24px;">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10 2.5L3 6.5V10C3 14.9706 7.02944 19 12 19C16.9706 19 21 14.9706 21 10V6.5L14 2.5M10 2.5L17 6.5M10 2.5V19"/>
+                        </svg>
+                        Best Practices
+                    </h3>
+                    <div style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                        <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 8px;">
+                            <li style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">• Be specific in your requests — the more details you provide, the better the response</li>
+                            <li style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">• Use natural language — you don't need to use special syntax or commands</li>
+                            <li style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">• Ask follow-up questions to refine responses or dive deeper into topics</li>
+                            <li style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">• Take advantage of projects to organize related conversations with shared context</li>
+                            <li style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">• Experiment with different models and tones to find what works best for your needs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Upgrade Modal -->
+    <div class="modal" id="upgradeModal" style="display: none;">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h2>Upgrade Plan</h2>
+                <button class="modal-close" id="closeUpgradeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="plan-options">
+                        <div class="plan-card active" id="freePlanCard">
+                            <div class="plan-header">
+                                <h3>Free Plan</h3>
+                                <span class="plan-badge-current">Current</span>
+                            </div>
+                            <div class="plan-price">$0<span class="plan-period">/month</span></div>
+                            <ul class="plan-features">
+                                <li>✓ Basic AI assistance</li>
+                                <li>✓ Standard responses</li>
+                                <li>✓ Thor 1.1 model access (Thor 1.0 in stable mode)</li>
+                                <li>✓ Think Deeper mode</li>
+                                <li>✓ Unlimited chats</li>
+                            </ul>
+                        </div>
+                        <div class="plan-card">
+                            <div class="plan-header">
+                                <h3>Pro Plan</h3>
+                                <span class="plan-badge-coming">Limited Access</span>
+                            </div>
+                            <div class="plan-price">$5<span class="plan-period">/month</span></div>
+                            <ul class="plan-features">
+                                <li>✓ Advanced AI capabilities</li>
+                                <li>✓ Priority responses</li>
+                                <li>✓ Priority support</li>
+                                <li>✓ Custom models</li>
+                                <li>✓ API access</li>
+                            </ul>
+                            <p class="plan-note" style="margin-bottom: 20px;">Limited access. Provide your access code to unlock.</p>
+                            <button class="upgrade-plan-btn" id="proAccessBtn">Limited Access</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal" style="display: none;">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h2 id="projectModalTitle">New Project</h2>
+                <button class="modal-close" id="closeProjectModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="projectForm">
+                    <input type="hidden" id="projectId">
+                    <div class="form-group">
+                        <label for="projectName">Project Name</label>
+                        <input type="text" id="projectName" placeholder="Enter project name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectDescription">Description</label>
+                        <textarea id="projectDescription" placeholder="Enter project description" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectContext">Context</label>
+                        <textarea id="projectContext" placeholder="Enter project context (shared knowledge for all chats in this project)" rows="4"></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn-secondary" id="cancelProjectBtn">Cancel</button>
+                        <button type="submit" class="btn-primary">Save Project</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- History Modal -->
+    <div class="modal" id="historyModal" style="display: none;">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h2>History</h2>
+                <button class="modal-close" id="closeHistoryModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="history-list" id="historyList">
+                    <div class="chats-loading">Loading history...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Chats Dashboard -->
+    <div class="modal modal-dashboard" id="recentChatsModal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="recentChatsModalTitle">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h2 id="recentChatsModalTitle">Recent Chats</h2>
+                <button class="modal-close" id="closeRecentChatsModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="chats-list" id="chatsList">
+                    <div class="chats-loading">No chats yet</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Embedded Apps Modal (Gaming / Office) -->
+    <div class="modal" id="embeddedAppModal" style="display: none;">
+        <div class="modal-content glass-card embedded-app-card">
+            <div class="modal-header embedded-app-header">
+                <h2 id="embeddedAppTitle">App</h2>
+                <div class="embedded-app-actions">
+                    <a class="embedded-app-open" id="embeddedAppOpenLink" href="#" target="_blank" rel="noopener noreferrer">Open in new tab</a>
+                    <button class="modal-close" id="closeEmbeddedAppModal">&times;</button>
+                </div>
+            </div>
+            <div class="modal-body embedded-app-body">
+                <iframe
+                    id="embeddedAppFrame"
+                    title="Embedded App"
+                    src=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer"
+                    allow="clipboard-read; clipboard-write; fullscreen"
+                ></iframe>
+                <div class="embedded-app-fallback" id="embeddedAppFallback" style="display:none;">
+                    <div class="embedded-app-fallback-title">This app can’t be embedded.</div>
+                    <div class="embedded-app-fallback-desc">Some sites block being loaded in an iframe. Use “Open in new tab”.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Analytics Dashboard Modal -->
+    <div class="modal" id="analyticsModal" style="display: none;">
+        <div class="modal-content glass-card" style="max-width: 800px;">
+            <div class="modal-header">
+                <h2>Conversation Analytics</h2>
+                <button class="modal-close" id="closeAnalyticsModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="analytics-dashboard" id="analyticsDashboard">
+                    <div class="chats-loading">Loading analytics...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Command Palette (Phase 3.2) -->
+    <div class="command-palette" id="commandPalette" style="display: none;">
+        <div class="command-palette-overlay"></div>
+        <div class="command-palette-content">
+            <div class="command-palette-header">
+                <input type="text" class="command-input" id="commandInput" placeholder="Type a command or search..." autocomplete="off" />
+            </div>
+            <div class="command-list" id="commandList">
+                <!-- Commands will be populated here -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- User Profile Modal -->
+    <div class="modal" id="userProfileModal" style="display: none;">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h2>User Profile</h2>
+                <button class="modal-close" id="closeUserProfileModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="settings-section">
+                    <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
+                        <div class="user-avatar" style="width: 64px; height: 64px; font-size: 24px;">A</div>
+                        <div>
+                            <h3 style="margin: 0 0 4px 0; font-size: 20px; font-weight: 600; color: var(--text-primary);">Atlas User</h3>
+                            <p style="margin: 0; color: var(--text-secondary); font-size: 14px;">Free Plan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings-section">
+                    <h3>Account Settings</h3>
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <button class="btn-secondary" style="justify-content: flex-start; text-align: left;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="margin-right: 8px;">
+                                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.4 15C19.2669 15.3016 19.2272 15.6362 19.286 15.9606C19.3448 16.285 19.4995 16.5843 19.73 16.82L19.79 16.88C19.976 17.0657 20.1235 17.2863 20.2241 17.5291C20.3248 17.7719 20.3766 18.0322 20.3766 18.295C20.3766 18.5578 20.3248 18.8181 20.2241 19.0609C20.1235 19.3037 19.976 19.5243 19.79 19.71C19.6043 19.896 19.3837 20.0435 19.1409 20.1441C18.8981 20.2448 18.6378 20.2966 18.375 20.2966C18.1122 20.2966 17.8519 20.2448 17.6091 20.1441C17.3663 20.0435 17.1457 19.896 16.96 19.71L16.9 19.65C16.6643 19.4195 16.365 19.2648 16.0406 19.206C15.7162 19.1472 15.3816 19.1869 15.08 19.32C14.7842 19.4468 14.532 19.6572 14.3543 19.9255C14.1766 20.1938 14.0813 20.5082 14.08 20.83V21C14.08 21.5304 13.8693 22.0391 13.4942 22.4142C13.1191 22.7893 12.6104 23 12.08 23C11.5496 23 11.0409 22.7893 10.6658 22.4142C10.2907 22.0391 10.08 21.5304 10.08 21V20.91C10.0723 20.579 9.96512 20.258 9.77251 19.9887C9.5799 19.7194 9.31074 19.5143 9 19.4C8.69838 19.2669 8.36381 19.2272 8.03941 19.286C7.71502 19.3448 7.41568 19.4995 7.18 19.73L7.12 19.79C6.93425 19.976 6.71368 20.1235 6.47088 20.2241C6.22808 20.3248 5.96783 20.3766 5.705 20.3766C5.44217 20.3766 5.18192 20.3248 4.93912 20.2241C4.69632 20.1235 4.47575 19.976 4.29 19.79C4.10405 19.6043 3.95653 19.3837 3.85588 19.1409C3.75523 18.8981 3.70343 18.6378 3.70343 18.375C3.70343 18.1122 3.75523 17.8519 3.85588 17.6091C3.95653 17.3663 4.10405 17.1457 4.29 16.96L4.35 16.9C4.58054 16.6643 4.73519 16.365 4.794 16.0406C4.85282 15.7162 4.81312 15.3816 4.68 15.08C4.55324 14.7842 4.34276 14.532 4.07447 14.3543C3.80618 14.1766 3.49179 14.0813 3.17 14.08H3C2.46957 14.08 1.96086 13.8693 1.58579 13.4942C1.21071 13.1191 1 12.6104 1 12.08C1 11.5496 1.21071 11.0409 1.58579 10.6658C1.96086 10.2907 2.46957 10.08 3 10.08H3.09C3.42099 10.0723 3.742 9.96512 4.0113 9.77251C4.28059 9.5799 4.48572 9.31074 4.6 9C4.73312 8.69838 4.77282 8.36381 4.714 8.03941C4.65519 7.71502 4.50054 7.41568 4.27 7.18L4.21 7.12C4.02405 6.93425 3.87653 6.71368 3.77588 6.47088C3.67523 6.22808 3.62343 5.96783 3.62343 5.705C3.62343 5.44217 3.67523 5.18192 3.77588 4.93912C3.87653 4.69632 4.02405 4.47575 4.21 4.29C4.39575 4.10405 4.61632 3.95653 4.85912 3.85588C5.10192 3.75523 5.36217 3.70343 5.625 3.70343C5.88783 3.70343 6.14808 3.75523 6.39088 3.85588C6.63368 3.95653 6.85425 4.10405 7.04 4.29L7.1 4.35C7.33568 4.58054 7.63502 4.73519 7.95941 4.794C8.28381 4.85282 8.61838 4.81312 8.92 4.68H9C9.29577 4.55324 9.54802 4.34276 9.72569 4.07447C9.90337 3.80618 9.99872 3.49179 10 3.17V3C10 2.46957 10.2107 1.96086 10.5858 1.58579C10.9609 1.21071 11.4696 1 12 1C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V3.09C14.0013 3.41179 14.0966 3.72618 14.2743 3.99447C14.452 4.26276 14.7042 4.47324 15 4.6C15.3016 4.73312 15.6362 4.77282 15.9606 4.714C16.285 4.65519 16.5843 4.50054 16.82 4.27L16.88 4.21C17.0657 4.02405 17.2863 3.87653 17.5291 3.77588C17.7719 3.67523 18.0322 3.62343 18.295 3.62343C18.5578 3.62343 18.8181 3.67523 19.0609 3.77588C19.3037 3.87653 19.5243 4.02405 19.71 4.21C19.896 4.39575 20.0435 4.61632 20.1441 4.85912C20.2448 5.10192 20.2966 5.36217 20.2966 5.625C20.2966 5.88783 20.2448 6.14808 20.1441 6.39088C20.0435 6.63368 19.896 6.85425 19.71 7.04L19.65 7.1C19.4195 7.33568 19.2648 7.63502 19.206 7.95941C19.1472 8.28381 19.1869 8.61838 19.32 8.92V9C19.4468 9.29577 19.6572 9.54802 19.9255 9.72569C20.1938 9.90337 20.5082 9.99872 20.83 10H21C21.5304 10 22.0391 10.2107 22.4142 10.5858C22.7893 10.9609 23 11.4696 23 12C23 12.5304 22.7893 13.0391 22.4142 13.4142C22.0391 13.7893 21.5304 14 21 14H20.91C20.5882 14.0013 20.2738 14.0966 20.0055 14.2743C19.7372 14.452 19.5268 14.7042 19.4 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Preferences
+                        </button>
+                        <button class="btn-secondary" style="justify-content: flex-start; text-align: left;" onclick="document.getElementById('upgradeBtn').click(); document.getElementById('closeUserProfileModal').click();">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="margin-right: 8px;">
+                                <path d="M8 2L10 6L14 7L10 8L8 12L6 8L2 7L6 6L8 2Z" fill="currentColor"/>
+                            </svg>
+                            Upgrade Plan
+                        </button>
+                    </div>
+                </div>
+                <div class="settings-section">
+                    <h3>Statistics</h3>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;">
+                        <div style="padding: 16px; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-lg);">
+                            <div style="font-size: 24px; font-weight: 700; color: var(--text-primary);">0</div>
+                            <div style="font-size: 12px; color: var(--text-secondary); margin-top: 4px;">Total Chats</div>
+                        </div>
+                        <div style="padding: 16px; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-lg);">
+                            <div style="font-size: 24px; font-weight: 700; color: var(--text-primary);">0</div>
+                            <div style="font-size: 12px; color: var(--text-secondary); margin-top: 4px;">Messages Sent</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Poseidon 3D Animation System -->
+    <script src="{{ url_for('static', filename='js/poseidon3d.js') }}?v=1"></script>
+    <!-- Cache-bust to ensure latest UI JS is loaded -->
+    <script src="{{ url_for('static', filename='js/app.js') }}?v=15"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+{
+  "currentVersion": "2.5.0",
+  "latestVersion": "2.5.0",
+  "updates": [
+    {
+      "version": "2.5.0",
+      "date": "2026-01-29",
+      "description": "Release refresh - Thor 1.2 docs, R-series tooling, and repo cleanup",
+      "features": [
+        "Thor 1.2 is the default model on the server (see apps/chatbot/app.py)",
+        "Thor 1.2 architecture documentation and diagrams (docs/thor-1.2-brain-architecture.md)",
+        "R-series weight compaction tooling (scripts/compact_r_weights.py)",
+        "Repo cleanup: avoid committed build artifacts (node_modules, Python build outputs)",
+        "Version alignment across app + SDK metadata for this release"
+      ]
+    },
+    {
+      "version": "2.2.1",
+      "date": "2026-01-03",
+      "description": "UI Refinements - Fixed dark mode background, removed blur from header and input, enhanced system theme detection",
+      "features": [
+        "Fixed dark mode background - now displays fully black background as intended",
+        "Removed blur effects from header and input box for better clarity and readability",
+        "Enhanced system theme detection - automatically syncs with OS theme changes",
+        "Improved theme toggle responsiveness and system integration",
+        "Better visual clarity on primary UI elements (header and input)",
+        "Maintained liquid glass effects on other UI components (sidebar, modals, cards)"
+      ]
+    },
+    {
+      "version": "2.2.0",
+      "date": "2026-01-03",
+      "description": "Liquid Glass UI - Enhanced glassmorphism effects throughout the app for a more native, modern feel",
+      "features": [
+        "Liquid glassmorphism effects on sidebar, header, and modals",
+        "Transparent glass surfaces with backdrop blur for depth",
+        "Enhanced visual hierarchy with glass effects on cards and components",
+        "Improved native app feel with translucent UI elements",
+        "Dark theme support for glass effects",
+        "Smooth transitions and animations on glass surfaces",
+        "Better visual depth and layering throughout the interface"
+      ]
+    },
+    {
+      "version": "2.1.0",
+      "date": "2026-01-03",
+      "description": "Overall Update - Dependency upgrades, performance improvements, bug fixes, enhanced stability, updated documentation, and code quality improvements",
+      "features": [
+        "Dependency updates to latest stable versions",
+        "Improved code quality and maintainability",
+        "Enhanced stability and error handling",
+        "Updated documentation and version tracking",
+        "Security improvements and vulnerability fixes",
+        "Performance optimizations across the platform",
+        "Better error recovery mechanisms"
+      ]
+    },
+    {
+      "version": "2.0.0mini",
+      "date": "2025-12-28",
+      "description": "Major MLOps Upgrade - Advanced Training, Evaluation & Model Management",
+      "features": [
+        "Parameter-Efficient Fine-Tuning (PEFT/LoRA) - Train lightweight adapter models with 10x fewer parameters",
+        "Automated Hyperparameter Tuning - Optuna integration for finding optimal training settings",
+        "Model Evaluation Pipeline - Standardized benchmarks for QA, summarization, and classification",
+        "Model Registry System - Track versions, metrics, and manage production deployments",
+        "Advanced Quantization Support - AWQ and GPTQ for faster inference with minimal accuracy loss",
+        "Inference Server Abstraction - Unified interface supporting PyTorch, vLLM, and TensorRT backends",
+        "Whisper Speech Recognition - State-of-the-art speech-to-text replacing custom implementation",
+        "Separate MLOps Infrastructure - Clean separation of model management from application logic",
+        "MLflow Integration Ready - Production-grade model tracking and registry",
+        "Improved Training Efficiency - LoRA adapters reduce training time and memory requirements",
+        "Better Model Comparison - Automated evaluation and version comparison tools",
+        "Enhanced Poseidon - Higher accuracy speech recognition with Whisper integration"
+      ]
+    },
+    {
+      "version": "1.4.5",
+      "date": "2024-12-24",
+      "description": "Thor 1.1 Major Enhancement - Massive improvements to model capabilities, generation quality, and reasoning",
+      "features": [
+        "Multi-step autoregressive text generation - generates longer, more coherent responses (up to 512 tokens)",
+        "Advanced decoding strategies - nucleus sampling (top-p), top-k filtering, temperature control",
+        "Repetition penalty system - reduces repetitive outputs for better quality",
+        "Enhanced prompt engineering - better context understanding and query type detection",
+        "Improved model architecture - increased capacity (1280 hidden size, 20 layers, 20 attention heads)",
+        "Extended context window - 2048 tokens (doubled from 1024) for longer conversations",
+        "Better knowledge integration - knowledge items added directly to generation context",
+        "Enhanced reasoning capabilities - multi-step thinking for complex queries",
+        "Improved response quality - post-processing for coherence and completeness",
+        "Context-aware fallbacks - smarter fallback responses based on query type",
+        "Better conversation context - uses up to 8 previous messages (increased from 6)",
+        "Think Deeper mode enhancement - generates up to 512 tokens for comprehensive answers"
+      ]
+    },
+    {
+      "version": "1.4.4",
+      "date": "2024-12-24",
+      "description": "Model Improvements & Security Enhancements - Better performance, response quality, and security",
+      "features": [
+        "Response caching system for faster repeated queries (5-minute TTL)",
+        "Improved response quality with better error handling and fallbacks",
+        "Enhanced input validation and sanitization for security",
+        "Rate limiting protection (60 requests per minute per IP)",
+        "Security headers (XSS protection, content type options, frame options)",
+        "Better error handling and recovery mechanisms",
+        "Performance optimizations for faster response times",
+        "Improved model fallback system (Thor 1.0 backup when 1.1 fails)"
+      ]
+    },
+    {
+      "version": "1.4.3o",
+      "date": "2024-12-24",
+      "description": "Security & Structure Improvements - Enhanced security and code organization",
+      "features": [
+        "Input validation and sanitization to prevent XSS attacks",
+        "Rate limiting to prevent abuse (60 requests/minute)",
+        "Security headers on all responses (XSS, frame options, content type)",
+        "Better error handling with specific error types",
+        "Improved code structure and organization",
+        "Enhanced logging for security events"
+      ]
+    },
+    {
+      "version": "1.4.3",
+      "date": "2024-12-24",
+      "description": "Custom Backgrounds - Personalize your chat space with beautiful presets and custom uploads",
+      "features": [
+        "Custom background customization for main chat space",
+        "9 beautiful preset backgrounds (gradients, patterns, liquid effects)",
+        "Custom background upload with image preview",
+        "Adjustable background opacity for better readability",
+        "Liquid transparent wallpaper effect with animated gradients",
+        "All backgrounds accessible in Settings modal",
+        "Backgrounds persist across sessions",
+        "Optimized for both light and dark themes"
+      ]
+    },
+    {
+      "version": "1.4.1",
+      "date": "2025-12-26",
+      "description": "Poseidon Hindi Fix - Simplified Hindi language handling to work like other languages",
+      "features": [
+        "Fixed Hindi speech synthesis by removing special handling",
+        "Hindi now uses standard voice selection and speech settings",
+        "Simplified language support for consistent behavior across all languages"
+      ]
+    },
+    {
+      "version": "1.4.0",
+      "date": "2025-12-26",
+      "description": "Poseidon Multi-Language Support & Network Fixes - Full translation support for Indian languages, improved Electron network handling, and enhanced speech synthesis.",
+      "features": [
+        "Added automatic translation for Poseidon responses to match detected language",
+        "Full support for Hindi, Tamil, Telugu, and other Indian languages",
+        "Fixed network errors in Electron app with improved URL handling",
+        "Enhanced speech synthesis with proper voice selection for all languages",
+        "Translation API endpoint for real-time response translation",
+        "Improved language detection from user transcripts"
+      ]
+    },
+    {
+      "version": "1.3.3",
+      "date": "2025-12-26",
+      "description": "Major Enhancements - Memory System, Enhanced Commands, Improved Help, Hindi Support, and Common Sense Improvements",
+      "features": [
+        "Cross-chat memory system - Atlas remembers your preferences and information across all chats",
+        "Enhanced command system - Added /help, /clear, /remember, /forget, /info, /think, /tone commands",
+        "Improved 'How to use Atlas' pop-up - Beautifully redesigned with comprehensive sections and better formatting",
+        "Fixed gems localStorage saving - Gems now properly cached for faster loading",
+        "Major Hindi language enhancements - Advanced text processing, better voice selection, optimized speech synthesis",
+        "Enhanced common sense prioritization - Better reasoning before web searches for natural conversation flow"
+      ]
+    },
+    {
+      "version": "1.3.1",
+      "date": "2025-12-24",
+      "description": "Poseidon 3D UI Beta - Added advanced 3D Poseidon animation option",
+      "features": [
+        "Added 3D Poseidon UI (Beta) option in settings",
+        "Enhanced Poseidon voice assistant with optional 3D animation",
+        "Improved update checking to only show uninstalled updates",
+        "Better network error handling for Electron app"
+      ]
+    },
+    {
+      "version": "1.3.0",
+      "date": "2025-12-23",
+      "description": "Poseidon Fixes - Fixed infinite loop, network errors, and slow pop-up opening",
+      "features": [
+        "Fixed Poseidon infinite loop (speaking and listening to itself)",
+        "Fixed network errors in Electron app",
+        "Improved Poseidon pop-up opening speed (shows UI immediately)",
+        "Better self-speech filtering and recognition management"
+      ]
+    },
+    {
+      "version": "1.2.0",
+      "date": "2025-12-22",
+      "description": "Extended and Enhanced Commands - Install custom commands to extend Atlas functionality",
+      "features": [
+        "Custom command system",
+        "User-installable commands",
+        "Enhanced command parsing"
+      ]
+    },
+    {
+      "version": "1.1.0",
+      "date": "2025-12-22",
+      "description": "Poseidon Hindi Speaking Skills - Enhanced voice assistant with improved Hindi language support",
+      "features": [
+        "Improved Hindi text-to-speech",
+        "Better Hindi voice selection",
+        "Enhanced language switching"
+      ]
+    }
+  ]
+}
+

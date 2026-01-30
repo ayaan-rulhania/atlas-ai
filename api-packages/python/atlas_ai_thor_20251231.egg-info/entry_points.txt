@@ -1,2 +1,0 @@
-[console_scripts]
-atlas-api = atlas_ai.api_key:api

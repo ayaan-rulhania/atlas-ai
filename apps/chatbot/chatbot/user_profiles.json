@@ -1,0 +1,777 @@
+{
+  "last_updated": 1769740431.1755111,
+  "profiles": {
+    "chat:13920be2-a68f-4f86-9a66-3c4ce8150fd1": {
+      "created_at": 1767987590.823154,
+      "last_updated": 1767987590.8519769,
+      "interaction_count": 2,
+      "communication_style": {
+        "formality": 0.32000000000000006,
+        "verbosity": 0.5,
+        "confidence": 0.1
+      },
+      "topic_interests": {},
+      "preferred_response_length": "short",
+      "interaction_patterns": {
+        "greeting_preference": null,
+        "response_engagement": [],
+        "topic_persistence": [],
+        "question_frequency": 0,
+        "emotional_range": []
+      },
+      "response_preferences": {
+        "technical_detail": 0.5,
+        "examples": 0.5,
+        "humor": 0.3,
+        "empathy": 0.5,
+        "structure": 0.5,
+        "variety": 0.5
+      },
+      "interaction_history": [
+        {
+          "timestamp": 1767987590.82324,
+          "message_length": 14,
+          "has_questions": true,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1767987590.852005,
+          "message_length": 14,
+          "has_questions": true,
+          "topics_detected": []
+        }
+      ]
+    },
+    "chat:1acff672-e6d9-4ab2-8c42-d968c37790bf": {
+      "created_at": 1767987613.869466,
+      "last_updated": 1767987615.7875998,
+      "interaction_count": 2,
+      "communication_style": {
+        "formality": 0.5,
+        "verbosity": 0.48,
+        "confidence": 0.1
+      },
+      "topic_interests": {},
+      "preferred_response_length": "short",
+      "interaction_patterns": {
+        "greeting_preference": null,
+        "response_engagement": [],
+        "topic_persistence": [],
+        "question_frequency": 0,
+        "emotional_range": []
+      },
+      "response_preferences": {
+        "technical_detail": 0.5,
+        "examples": 0.5,
+        "humor": 0.3,
+        "empathy": 0.5,
+        "structure": 0.5,
+        "variety": 0.5
+      },
+      "interaction_history": [
+        {
+          "timestamp": 1767987613.869544,
+          "message_length": 3,
+          "has_questions": true,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1767987615.787626,
+          "message_length": 3,
+          "has_questions": true,
+          "topics_detected": []
+        }
+      ]
+    },
+    "chat:b7aed048-a277-4d58-8fa9-01638838fa56": {
+      "created_at": 1767987689.3442152,
+      "last_updated": 1767987731.050003,
+      "interaction_count": 10,
+      "communication_style": {
+        "formality": 0.5,
+        "verbosity": 0.45999999999999996,
+        "confidence": 0.49999999999999994
+      },
+      "topic_interests": {
+        "business": 0.18178993224924456
+      },
+      "preferred_response_length": "short",
+      "interaction_patterns": {
+        "greeting_preference": null,
+        "response_engagement": [],
+        "topic_persistence": [],
+        "question_frequency": 0,
+        "emotional_range": []
+      },
+      "response_preferences": {
+        "technical_detail": 0.5,
+        "examples": 0.55,
+        "humor": 0.3,
+        "empathy": 0.5,
+        "structure": 0.5,
+        "variety": 0.5
+      },
+      "interaction_history": [
+        {
+          "timestamp": 1767987689.344377,
+          "message_length": 4,
+          "has_questions": false,
+          "topics_detected": [
+            "business"
+          ]
+        },
+        {
+          "timestamp": 1767987690.6947231,
+          "message_length": 4,
+          "has_questions": false,
+          "topics_detected": [
+            "business"
+          ]
+        },
+        {
+          "timestamp": 1767987699.840818,
+          "message_length": 7,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1767987701.2668421,
+          "message_length": 7,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1767987709.1854541,
+          "message_length": 3,
+          "has_questions": true,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1767987709.247203,
+          "message_length": 3,
+          "has_questions": true,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1767987719.716932,
+          "message_length": 8,
+          "has_questions": true,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1767987719.736486,
+          "message_length": 8,
+          "has_questions": true,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1767987731.033803,
+          "message_length": 6,
+          "has_questions": true,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1767987731.0500321,
+          "message_length": 6,
+          "has_questions": true,
+          "topics_detected": []
+        }
+      ]
+    },
+    "chat:556198a8-fad6-4b13-8036-c711e19dacb6": {
+      "created_at": 1768007031.026643,
+      "last_updated": 1768007031.102313,
+      "interaction_count": 2,
+      "communication_style": {
+        "formality": 0.5,
+        "verbosity": 0.48,
+        "confidence": 0.1
+      },
+      "topic_interests": {},
+      "preferred_response_length": "short",
+      "interaction_patterns": {
+        "greeting_preference": null,
+        "response_engagement": [],
+        "topic_persistence": [],
+        "question_frequency": 0,
+        "emotional_range": []
+      },
+      "response_preferences": {
+        "technical_detail": 0.5,
+        "examples": 0.5,
+        "humor": 0.3,
+        "empathy": 0.5,
+        "structure": 0.5,
+        "variety": 0.5
+      },
+      "interaction_history": [
+        {
+          "timestamp": 1768007031.0271192,
+          "message_length": 1,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1768007031.102334,
+          "message_length": 1,
+          "has_questions": false,
+          "topics_detected": []
+        }
+      ]
+    },
+    "chat:2fa66412-6fc2-46f6-ad92-85e797fb3ce2": {
+      "created_at": 1768071652.4036238,
+      "last_updated": 1768071655.0535371,
+      "interaction_count": 2,
+      "communication_style": {
+        "formality": 0.32000000000000006,
+        "verbosity": 0.5,
+        "confidence": 0.1
+      },
+      "topic_interests": {},
+      "preferred_response_length": "medium",
+      "interaction_patterns": {
+        "greeting_preference": null,
+        "response_engagement": [],
+        "topic_persistence": [],
+        "question_frequency": 0,
+        "emotional_range": []
+      },
+      "response_preferences": {
+        "technical_detail": 0.5,
+        "examples": 0.5,
+        "humor": 0.3,
+        "empathy": 0.5,
+        "structure": 0.5,
+        "variety": 0.5
+      },
+      "interaction_history": [
+        {
+          "timestamp": 1768071652.404408,
+          "message_length": 13,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1768071655.053597,
+          "message_length": 13,
+          "has_questions": false,
+          "topics_detected": []
+        }
+      ]
+    },
+    "chat:6800cbef-1e78-4fcd-b9aa-6e84beac649e": {
+      "created_at": 1768071681.623741,
+      "last_updated": 1768071681.660309,
+      "interaction_count": 2,
+      "communication_style": {
+        "formality": 0.5,
+        "verbosity": 0.48,
+        "confidence": 0.1
+      },
+      "topic_interests": {},
+      "preferred_response_length": "short",
+      "interaction_patterns": {
+        "greeting_preference": null,
+        "response_engagement": [],
+        "topic_persistence": [],
+        "question_frequency": 0,
+        "emotional_range": []
+      },
+      "response_preferences": {
+        "technical_detail": 0.5,
+        "examples": 0.5,
+        "humor": 0.3,
+        "empathy": 0.5,
+        "structure": 0.5,
+        "variety": 0.5
+      },
+      "interaction_history": [
+        {
+          "timestamp": 1768071681.623889,
+          "message_length": 1,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1768071681.660327,
+          "message_length": 1,
+          "has_questions": false,
+          "topics_detected": []
+        }
+      ]
+    },
+    "chat:c030995e-a8d8-4d6a-ad71-fd0405c48d0c": {
+      "created_at": 1768092893.793055,
+      "last_updated": 1768092893.879403,
+      "interaction_count": 2,
+      "communication_style": {
+        "formality": 0.5,
+        "verbosity": 0.48,
+        "confidence": 0.1
+      },
+      "topic_interests": {},
+      "preferred_response_length": "short",
+      "interaction_patterns": {
+        "greeting_preference": null,
+        "response_engagement": [],
+        "topic_persistence": [],
+        "question_frequency": 0,
+        "emotional_range": []
+      },
+      "response_preferences": {
+        "technical_detail": 0.5,
+        "examples": 0.5,
+        "humor": 0.3,
+        "empathy": 0.5,
+        "structure": 0.5,
+        "variety": 0.5
+      },
+      "interaction_history": [
+        {
+          "timestamp": 1768092893.793657,
+          "message_length": 1,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1768092893.879424,
+          "message_length": 1,
+          "has_questions": false,
+          "topics_detected": []
+        }
+      ]
+    },
+    "chat:13adfc4e-eece-418a-ac1e-5ae52492e340": {
+      "created_at": 1768093423.499409,
+      "last_updated": 1768093445.3144078,
+      "interaction_count": 10,
+      "communication_style": {
+        "formality": 0.5,
+        "verbosity": 0.3999999999999999,
+        "confidence": 0.49999999999999994
+      },
+      "topic_interests": {},
+      "preferred_response_length": "short",
+      "interaction_patterns": {
+        "greeting_preference": null,
+        "response_engagement": [],
+        "topic_persistence": [],
+        "question_frequency": 0,
+        "emotional_range": []
+      },
+      "response_preferences": {
+        "technical_detail": 0.5,
+        "examples": 0.5,
+        "humor": 0.3,
+        "empathy": 0.5,
+        "structure": 0.5,
+        "variety": 0.5
+      },
+      "interaction_history": [
+        {
+          "timestamp": 1768093423.499973,
+          "message_length": 2,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1768093423.551487,
+          "message_length": 2,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1768093430.237462,
+          "message_length": 2,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1768093430.244202,
+          "message_length": 2,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1768093432.633281,
+          "message_length": 2,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1768093432.6413991,
+          "message_length": 2,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1768093437.7564428,
+          "message_length": 3,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1768093437.772141,
+          "message_length": 3,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1768093445.2666938,
+          "message_length": 4,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1768093445.314442,
+          "message_length": 4,
+          "has_questions": false,
+          "topics_detected": []
+        }
+      ]
+    },
+    "chat:a9a0a979-7e3e-4cc8-8d4f-fc13e2050a07": {
+      "created_at": 1769056456.883564,
+      "last_updated": 1769056457.222995,
+      "interaction_count": 2,
+      "communication_style": {
+        "formality": 0.5,
+        "verbosity": 0.48,
+        "confidence": 0.1
+      },
+      "topic_interests": {},
+      "preferred_response_length": "short",
+      "interaction_patterns": {
+        "greeting_preference": null,
+        "response_engagement": [],
+        "topic_persistence": [],
+        "question_frequency": 0,
+        "emotional_range": []
+      },
+      "response_preferences": {
+        "technical_detail": 0.5,
+        "examples": 0.5,
+        "humor": 0.3,
+        "empathy": 0.5,
+        "structure": 0.5,
+        "variety": 0.5
+      },
+      "interaction_history": [
+        {
+          "timestamp": 1769056456.88715,
+          "message_length": 3,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769056457.223022,
+          "message_length": 3,
+          "has_questions": false,
+          "topics_detected": []
+        }
+      ]
+    },
+    "chat:cb2546a3-4d6d-4077-88bf-ab043329e17f": {
+      "created_at": 1769056461.740434,
+      "last_updated": 1769056461.7710469,
+      "interaction_count": 2,
+      "communication_style": {
+        "formality": 0.5,
+        "verbosity": 0.48,
+        "confidence": 0.1
+      },
+      "topic_interests": {},
+      "preferred_response_length": "short",
+      "interaction_patterns": {
+        "greeting_preference": null,
+        "response_engagement": [],
+        "topic_persistence": [],
+        "question_frequency": 0,
+        "emotional_range": []
+      },
+      "response_preferences": {
+        "technical_detail": 0.5,
+        "examples": 0.5,
+        "humor": 0.3,
+        "empathy": 0.5,
+        "structure": 0.5,
+        "variety": 0.5
+      },
+      "interaction_history": [
+        {
+          "timestamp": 1769056461.740561,
+          "message_length": 1,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769056461.771282,
+          "message_length": 1,
+          "has_questions": false,
+          "topics_detected": []
+        }
+      ]
+    },
+    "chat:04ec1f29-87c7-4850-91b8-e9232d4320e9": {
+      "created_at": 1769056469.411241,
+      "last_updated": 1769056469.9542131,
+      "interaction_count": 2,
+      "communication_style": {
+        "formality": 0.5,
+        "verbosity": 0.48,
+        "confidence": 0.1
+      },
+      "topic_interests": {},
+      "preferred_response_length": "short",
+      "interaction_patterns": {
+        "greeting_preference": null,
+        "response_engagement": [],
+        "topic_persistence": [],
+        "question_frequency": 0,
+        "emotional_range": []
+      },
+      "response_preferences": {
+        "technical_detail": 0.5,
+        "examples": 0.5,
+        "humor": 0.3,
+        "empathy": 0.5,
+        "structure": 0.5,
+        "variety": 0.5
+      },
+      "interaction_history": [
+        {
+          "timestamp": 1769056469.414669,
+          "message_length": 1,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769056469.9542432,
+          "message_length": 1,
+          "has_questions": false,
+          "topics_detected": []
+        }
+      ]
+    },
+    "chat:8378e859-fe58-4381-8828-8291e0fb879a": {
+      "created_at": 1769056660.622794,
+      "last_updated": 1769056660.644293,
+      "interaction_count": 2,
+      "communication_style": {
+        "formality": 0.32000000000000006,
+        "verbosity": 0.48,
+        "confidence": 0.1
+      },
+      "topic_interests": {},
+      "preferred_response_length": "short",
+      "interaction_patterns": {
+        "greeting_preference": null,
+        "response_engagement": [],
+        "topic_persistence": [],
+        "question_frequency": 0,
+        "emotional_range": []
+      },
+      "response_preferences": {
+        "technical_detail": 0.5,
+        "examples": 0.5,
+        "humor": 0.3,
+        "empathy": 0.5,
+        "structure": 0.5,
+        "variety": 0.5
+      },
+      "interaction_history": [
+        {
+          "timestamp": 1769056660.623232,
+          "message_length": 1,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769056660.64431,
+          "message_length": 1,
+          "has_questions": false,
+          "topics_detected": []
+        }
+      ]
+    },
+    "chat:820d9f5d-89f7-4557-aca9-37358bec57f0": {
+      "created_at": 1769056665.866129,
+      "last_updated": 1769056706.322011,
+      "interaction_count": 10,
+      "communication_style": {
+        "formality": 0.5,
+        "verbosity": 0.3999999999999999,
+        "confidence": 0.49999999999999994
+      },
+      "topic_interests": {},
+      "preferred_response_length": "short",
+      "interaction_patterns": {
+        "greeting_preference": null,
+        "response_engagement": [],
+        "topic_persistence": [],
+        "question_frequency": 0,
+        "emotional_range": []
+      },
+      "response_preferences": {
+        "technical_detail": 0.55,
+        "examples": 0.5,
+        "humor": 0.3,
+        "empathy": 0.5,
+        "structure": 0.5,
+        "variety": 0.5
+      },
+      "interaction_history": [
+        {
+          "timestamp": 1769056665.8663192,
+          "message_length": 3,
+          "has_questions": true,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769056667.988826,
+          "message_length": 3,
+          "has_questions": true,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769056674.223797,
+          "message_length": 2,
+          "has_questions": true,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769056675.6783712,
+          "message_length": 2,
+          "has_questions": true,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769056695.84652,
+          "message_length": 3,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769056698.500305,
+          "message_length": 3,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769056701.2922308,
+          "message_length": 3,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769056701.2954628,
+          "message_length": 3,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769056706.3139222,
+          "message_length": 1,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769056706.3220742,
+          "message_length": 1,
+          "has_questions": false,
+          "topics_detected": []
+        }
+      ]
+    },
+    "chat:9682076e-a34a-4f40-8c91-9f1f9f0c1c64": {
+      "created_at": 1769740400.1910741,
+      "last_updated": 1769740431.174738,
+      "interaction_count": 10,
+      "communication_style": {
+        "formality": 0.20480000000000007,
+        "verbosity": 0.3999999999999999,
+        "confidence": 0.49999999999999994
+      },
+      "topic_interests": {},
+      "preferred_response_length": "short",
+      "interaction_patterns": {
+        "greeting_preference": null,
+        "response_engagement": [],
+        "topic_persistence": [],
+        "question_frequency": 0,
+        "emotional_range": []
+      },
+      "response_preferences": {
+        "technical_detail": 0.5,
+        "examples": 0.5,
+        "humor": 0.3,
+        "empathy": 0.5,
+        "structure": 0.5,
+        "variety": 0.5
+      },
+      "interaction_history": [
+        {
+          "timestamp": 1769740400.191591,
+          "message_length": 1,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769740400.2100182,
+          "message_length": 1,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769740405.084852,
+          "message_length": 3,
+          "has_questions": true,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769740405.100227,
+          "message_length": 3,
+          "has_questions": true,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769740411.344076,
+          "message_length": 4,
+          "has_questions": true,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769740411.382325,
+          "message_length": 4,
+          "has_questions": true,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769740419.715281,
+          "message_length": 1,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769740419.7213628,
+          "message_length": 1,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769740431.169306,
+          "message_length": 3,
+          "has_questions": false,
+          "topics_detected": []
+        },
+        {
+          "timestamp": 1769740431.174769,
+          "message_length": 3,
+          "has_questions": false,
+          "topics_detected": []
+        }
+      ]
+    }
+  }
+}

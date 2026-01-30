@@ -1,0 +1,47 @@
+{
+  "chat_id": "41f600f7-5bcc-4496-9da1-46b091aa6dd3",
+  "created_at": "2026-01-21T20:28:24.092258",
+  "name": "Hey There.",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Hey there.",
+      "timestamp": "2026-01-21T20:28:24.086131"
+    },
+    {
+      "role": "assistant",
+      "content": "I'd love to help, but could you provide a bit more context? What specifically are you referring to?",
+      "timestamp": "2026-01-21T20:28:24.086142"
+    },
+    {
+      "role": "user",
+      "content": "What is electric charge?",
+      "timestamp": "2026-01-21T20:28:35.540209"
+    },
+    {
+      "role": "assistant",
+      "content": "To elaborate on that: Electric charges produce electric fields. A moving charge also produces a magnetic field. The interaction of electric charges with an electromagnetic field (a combination of an electric and a magnetic field) is the source of the electromagnetic (or Lorentz) force, which is one of the four fundamental interactions in physics.\n\n_Model:_ Thor 1.0",
+      "timestamp": "2026-01-21T20:28:35.540211"
+    },
+    {
+      "role": "user",
+      "content": "5 + 7",
+      "timestamp": "2026-01-21T20:28:40.048362"
+    },
+    {
+      "role": "assistant",
+      "content": "I'd be happy to continue. What specific aspect would you like to explore further?",
+      "timestamp": "2026-01-21T20:28:40.048384"
+    },
+    {
+      "role": "user",
+      "content": "Why",
+      "timestamp": "2026-01-21T20:28:56.936757"
+    },
+    {
+      "role": "assistant",
+      "content": "## To Elaborate On\n\nTo elaborate on that: The meaning of WHY is for what cause, reason, or purpose.\n\n_Model:_ Thor 1.0",
+      "timestamp": "2026-01-21T20:28:56.936759"
+    }
+  ]
+}

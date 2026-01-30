@@ -1,0 +1,17 @@
+{
+  "chat_id": "8cdeba3e-808e-4ca6-9cac-aa0d4ffd6613",
+  "created_at": "2026-01-23T19:04:10.308214",
+  "name": "Hi, Say Hello In One",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Hi, say hello in one sentence.",
+      "timestamp": "2026-01-23T19:04:10.303751"
+    },
+    {
+      "role": "assistant",
+      "content": "Hi in! Great to see you. What can I do for you?\n\n_Model:_ Thor 1.0",
+      "timestamp": "2026-01-23T19:04:10.303758"
+    }
+  ]
+}

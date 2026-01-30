@@ -2,15 +2,24 @@
 
 ## 🚀 Overview
 
-Atlas AI is a sophisticated AI assistant platform powered by **Thor 1.1** (latest) with **Thor 1.0** available in stable mode. The platform provides a unified chat interface, continuous learning capabilities, and advanced features for knowledge management and conversation handling.
+Atlas AI is a sophisticated AI assistant platform powered by **Thor 1.2** (latest) with **Thor 1.0** available in stable mode. The platform provides a unified chat interface, continuous learning capabilities, and advanced features for knowledge management and conversation handling.
 
-**Latest Updates (Version 1.4.5 - 2024-12-24):**
+**Thor 1.1 Expansion (historical):** Thor 1.1 was expanded from 800M to **1.5B parameters** (+700M parameters) with enhanced architecture for improved reasoning and longer context.
+
+**Latest Updates (Version 2.5.0 - 2026-01-29):**
+- ✅ **Thor 1.2 as default model** (server-side default; see `apps/chatbot/app.py`)
+- ✅ **Thor 1.2 architecture docs** (see `docs/thor-1.2-brain-architecture.md`)
+- ✅ **R-series weight compaction tooling** (see `scripts/compact_r_weights.py`)
+- ✅ **Repo cleanup**: avoids committed build artifacts (e.g. `node_modules/`, Python build outputs)
+- ✅ **Version alignment** across apps + SDK metadata for this release
+
+**Previous Updates (Version 1.4.5 - 2024-12-24):**
 - ✅ Thor 1.1 Major Enhancement - Multi-step autoregressive text generation (up to 512 tokens)
 - ✅ Advanced decoding strategies - nucleus sampling, top-k filtering, temperature control
 - ✅ Repetition penalty system - reduces repetitive outputs for better quality
 - ✅ Enhanced prompt engineering - better context understanding and query type detection
-- ✅ Improved model architecture - increased capacity (1280 hidden size, 20 layers, 20 attention heads)
-- ✅ Extended context window - 2048 tokens (doubled) for longer conversations
+- ✅ **Expanded Model Architecture** - Major capacity increase (2048 hidden size, 28 layers, 32 attention heads, 1.5B parameters)
+- ✅ **Extended Context Window** - Further expanded to 2816 tokens for comprehensive long-form analysis
 - ✅ Better knowledge integration - knowledge items added directly to generation context
 - ✅ Enhanced reasoning capabilities - multi-step thinking for complex queries
 - ✅ Improved response quality - post-processing for coherence and completeness
@@ -19,7 +28,7 @@ Atlas AI is a sophisticated AI assistant platform powered by **Thor 1.1** (lates
 - ✅ Enhanced command system - Added /help, /clear, /remember, /forget, /info, /think, /tone commands
 - ✅ Improved "How to use Atlas" pop-up - Beautifully redesigned with comprehensive sections
 - ✅ Fixed gems localStorage saving - Gems now properly cached for faster loading
-- ✅ Major Hindi language enhancements - Advanced text processing, better voice selection, optimized speech
+- ✅ Major multilingual enhancements - Advanced text processing, better voice selection, optimized speech
 - ✅ Enhanced common sense prioritization - Better reasoning before web searches for natural conversation
 - ✅ Thor 1.1 released with enhanced model architecture and improved inference
 - ✅ Poseidon voice assistant with comprehensive multi-language support
@@ -28,20 +37,31 @@ Atlas AI is a sophisticated AI assistant platform powered by **Thor 1.1** (lates
 
 ```
 atlas-ai/
-├── chatbot/                # Main Flask app (UI + API)
-│   ├── app.py              # Main server (serves UI + /api/chat)
-│   ├── ui/                 # Frontend (templates + static)
-│   ├── refinement/         # Refinement + accuracy checks
-│   ├── handlers/           # Image + markdown helpers
-│   ├── gems/               # Gems store (custom sub-models)
-│   └── thor_result_setter_server.py  # Optional result-setter tool (port 5004)
-├── thor-1.0/               # Thor 1.0 model (stable mode)
-├── thor-1.1/               # Thor 1.1 model (latest, default)
-├── trainx/                 # TrainX tooling (Q/A and image pairs)
-├── brain/                  # Knowledge store
-├── training_data/          # Training datasets
-├── VERSION.MD              # Major change log (keep updated)
-└── requirements.txt
+├── apps/                   # All application code
+│   ├── chatbot/           # Main Flask app (UI + API)
+│   ├── app/               # Desktop application
+│   ├── cli/               # Command-line interface
+│   ├── api-packages/      # API client packages
+│   ├── tools/             # Development tools and scripts
+│   └── assets/            # Static assets and images
+├── models/                 # Model directories
+│   ├── thor-1.0/          # Thor 1.0 model (stable mode)
+│   ├── thor-1.1/          # Thor 1.1 model (legacy)
+│   ├── thor/thor-1.2/     # Thor 1.2 model (latest, default)
+│   ├── thor-lite-1.1/      # Thor Lite 1.1 model (400M parameters)
+│   └── r-series/          # R-series models (see `scripts/compact_r_weights.py`)
+├── data/                   # Data directories
+│   ├── brain/             # Knowledge store
+│   ├── training_data/     # Training datasets
+│   ├── conversations/     # Conversation history
+│   ├── processed_images/  # Processed image cache
+│   ├── logs/              # Runtime log files
+│   └── metrics/           # Metrics data
+├── docs/                   # Documentation
+├── config/                 # Configuration files
+├── LICENSE
+├── setup.py
+└── README.md
 ```
 
 ## 🛠️ Installation & Setup
@@ -148,11 +168,34 @@ Make it executable:
 chmod +x start_all_servers.sh
 ```
 
+### Quick test Thor 1.2 (CLI or UI)
+
+To **talk to Thor 1.2** (or Thor 1.0 / Thor 1.1) right away:
+
+1. **Start the chatbot** on port 5002 (avoids conflict with port 5000, e.g. AirPlay on macOS):
+   ```bash
+   ./start_chatbot_thor11.sh
+   ```
+   Then open **http://localhost:5002** in your browser for the full chat UI.
+
+2. **Or use the CLI** (requires the chatbot to be running):
+   ```bash
+   # One-shot message
+   python ask_model.py "What is 2+2?"
+
+   # Interactive mode
+   python ask_model.py
+
+   # Use Thor 1.0 if needed
+   python ask_model.py --model thor-1.0 "Hello"
+   ```
+
 ## 🎯 Key Features
 
 ### 1. Model Support
 
-- **Thor 1.1**: Latest model with enhanced features (default)
+- **Thor 1.2**: Latest model (default) — see `docs/thor-1.2-brain-architecture.md`
+- **Thor 1.1**: Legacy model (still supported)
 - **Thor 1.0**: Stable model with proven reliability (used in stable mode)
 - **Gems**: Custom sub-models that you can create, customize, and use for specialized tasks
   - **Try Before Create**: Test gem configurations without saving
@@ -213,7 +256,7 @@ A: https://upload.wikimedia.org/wikipedia/en/3/3c/Chris_Hemsworth_as_Thor.jpg
 ### 5. Conversation Management
 
 - **Chat History**: All conversations saved in `chatbot/chats/`
-- **Conversation Archive**: Backup copies in `chatbot/conversations/`
+- **Conversation Archive**: Backup copies in `apps/chatbot/conversations/`
 - **Project Organization**: Group related chats into projects
 - **History Tracking**: Comprehensive history system
 
@@ -340,11 +383,11 @@ Type exactly `"I am in C5."` in the chat interface to trigger a celebratory anim
 
 ### Model Configuration
 
-**Thor 1.0:** `thor-1.0/config/config.yaml`
+**Thor 1.0:** `models/thor-1.0/config/config.yaml`
 
 ### Chatbot Configuration
 
-Configuration is managed in `chatbot/app.py`:
+Configuration is managed in `apps/chatbot/app.py`:
 - Model directories
 - Chat storage paths
 - Result setter file paths
@@ -364,7 +407,7 @@ MODEL_PATH=path/to/models
 The Brain System organizes knowledge by letters and keywords:
 
 ```
-brain/
+data/brain/
 ├── A/
 │   └── keywords.json
 ├── B/
@@ -455,8 +498,8 @@ limitations, and warranty disclaimers.
 
 1. **Check model files exist:**
    ```bash
-   ls -la thor-1.0/models/final_model.pt
-   ls -la thor-1.0/models/tokenizer.json
+   ls -la models/thor-1.0/models/final_model.pt
+   ls -la models/thor-1.0/models/tokenizer.json
    ```
 
 2. **Verify config paths:**
@@ -468,7 +511,7 @@ limitations, and warranty disclaimers.
 1. **Check directory permissions:**
    ```bash
    ls -la chatbot/chats/
-   ls -la chatbot/conversations/
+   ls -la apps/chatbot/conversations/
    ```
 
 2. **Verify directory creation:**
@@ -538,7 +581,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . .
-CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "chatbot.app:app"]
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "apps.chatbot.app:app"]
 ```
 
 ## 🤝 Contributing
@@ -576,5 +619,6 @@ For issues, questions, or contributions:
 
 ---
 
-**Last Updated:** December 18, 2025
+**Last Updated:** January 29, 2026
+**Current Version:** 2.5.0
 **Maintained by:** Atlas AI Development Team

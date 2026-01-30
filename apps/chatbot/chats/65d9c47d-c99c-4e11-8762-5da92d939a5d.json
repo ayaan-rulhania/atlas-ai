@@ -1,0 +1,27 @@
+{
+  "chat_id": "65d9c47d-c99c-4e11-8762-5da92d939a5d",
+  "created_at": "2026-01-18T19:57:12.362815",
+  "name": "Hell Yeah!",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Hell yeah!",
+      "timestamp": "2026-01-18T19:57:12.358153"
+    },
+    {
+      "role": "assistant",
+      "content": "\ud83d\udc4d Got it. What would you like to do next?",
+      "timestamp": "2026-01-18T19:57:12.358179"
+    },
+    {
+      "role": "user",
+      "content": "Write a hello world code",
+      "timestamp": "2026-01-18T19:57:18.320167"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello world! Nice to meet you. How can I help?\n\n_Model:_ Antelope 1.0",
+      "timestamp": "2026-01-18T19:57:18.320566"
+    }
+  ]
+}

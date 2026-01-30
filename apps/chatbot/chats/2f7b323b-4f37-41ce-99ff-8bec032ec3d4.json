@@ -1,0 +1,17 @@
+{
+  "chat_id": "2f7b323b-4f37-41ce-99ff-8bec032ec3d4",
+  "created_at": "2026-01-18T19:52:03.575453",
+  "name": "Where Is Haryana?",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Where is Haryana?",
+      "timestamp": "2026-01-18T19:52:03.574520"
+    },
+    {
+      "role": "assistant",
+      "content": "Haryana is a state located in the northwestern part of India. It was carved out after the linguistic reorganisation of Punjab on 1 November 1966. It is ranked 21st in terms of area, with less than 1.4% (44,212 km 2 or 17,070 sq mi) of India's land area. The state capital is Chandigarh, which it shares with the neighbouring .\n\n*Note: Some details in this response may vary by context or source. For precise information, please specify the exact scenario or timeframe.*\n\n_Model:_ Thor 1.1",
+      "timestamp": "2026-01-18T19:52:03.574522"
+    }
+  ]
+}

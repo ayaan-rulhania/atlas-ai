@@ -1,0 +1,17 @@
+{
+  "chat_id": "67f20660-da61-4283-98a1-122d287c2948",
+  "created_at": "2026-01-16T07:19:24.833270",
+  "name": "Hello",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Hello",
+      "timestamp": "2026-01-16T07:19:24.832099"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you! How can I help you?",
+      "timestamp": "2026-01-16T07:19:24.832108"
+    }
+  ]
+}

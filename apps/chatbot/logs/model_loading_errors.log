@@ -1,0 +1,681 @@
+
+================================================================================
+[Model Loading Error] qwen3-thor (Progress: 60%, Status: loading)
+Error: Parameter.__new__() got an unexpected keyword argument '_is_hf_initialized'
+Type: TypeError
+Traceback:
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/apps/chatbot/app.py", line 1209, in get_model
+    model_instances[model_name] = AllRounderInference(
+                                  ~~~~~~~~~~~~~~~~~~~^
+        model_path="",  # Not used - Qwen3 loaded from local path or HuggingFace
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        tokenizer_path="",  # Not used - Qwen3 tokenizer loaded from local path or HuggingFace
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        config_path=config_file
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/inference.py", line 79, in __init__
+    self.model = self._load_model()
+                 ~~~~~~~~~~~~~~~~^^
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/inference.py", line 171, in _load_model
+    model = Qwen3ThorWrapper(
+        model_name="Qwen/Qwen3-4B",  # Will be resolved to local path if available
+    ...<3 lines>...
+        max_position_embeddings=self.config.get('hyperparameters', {}).get('max_position_embeddings', 32768)
+    )
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/models/qwen3_wrapper.py", line 85, in __init__
+    self.adapter = Qwen3ThorAdapter(
+                   ~~~~~~~~~~~~~~~~^
+        model_name=model_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        enable_thinking=enable_thinking
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/models/qwen3_adapter.py", line 83, in __init__
+    self.model, self.tokenizer = Qwen3Loader.load_model_and_tokenizer(
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_name=model_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        cache_dir=self.cache_dir
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/utils/qwen3_loader.py", line 192, in load_model_and_tokenizer
+    model = Qwen3Loader.load_model(
+        model_name=model_name,
+    ...<4 lines>...
+        **kwargs
+    )
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/utils/qwen3_loader.py", line 113, in load_model
+    raise e
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/utils/qwen3_loader.py", line 93, in load_model
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name,
+        **load_kwargs
+    )
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/transformers/modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/transformers/modeling_utils.py", line 5065, in from_pretrained
+    model.tie_weights()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/transformers/modeling_utils.py", line 3018, in tie_weights
+    module.tie_embeddings_and_encoder_decoder()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/transformers/modeling_utils.py", line 2997, in tie_embeddings_and_encoder_decoder
+    self._tie_or_clone_weights(output_embeddings, self.get_input_embeddings())
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/transformers/modeling_utils.py", line 3118, in _tie_or_clone_weights
+    output_embeddings.weight = input_embeddings.weight
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1989, in __setattr__
+    self.register_parameter(name, value)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/transformers/integrations/accelerate.py", line 106, in register_empty_parameter
+    module._parameters[name] = param_cls(module._parameters[name].to(device), **kwargs)
+                               ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Parameter.__new__() got an unexpected keyword argument '_is_hf_initialized'
+
+
+================================================================================
+[Model Loading Error] qwen3-thor (Progress: 60%, Status: loading)
+Error: Parameter.__new__() got an unexpected keyword argument '_is_hf_initialized'
+Type: TypeError
+Traceback:
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/apps/chatbot/app.py", line 1209, in get_model
+    model_instances[model_name] = AllRounderInference(
+                                  ~~~~~~~~~~~~~~~~~~~^
+        model_path="",  # Not used - Qwen3 loaded from local path or HuggingFace
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        tokenizer_path="",  # Not used - Qwen3 tokenizer loaded from local path or HuggingFace
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        config_path=config_file
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/inference.py", line 79, in __init__
+    self.model = self._load_model()
+                 ~~~~~~~~~~~~~~~~^^
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/inference.py", line 171, in _load_model
+    model = Qwen3ThorWrapper(
+        model_name="Qwen/Qwen3-4B",  # Will be resolved to local path if available
+    ...<3 lines>...
+        max_position_embeddings=self.config.get('hyperparameters', {}).get('max_position_embeddings', 32768)
+    )
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/models/qwen3_wrapper.py", line 85, in __init__
+    self.adapter = Qwen3ThorAdapter(
+                   ~~~~~~~~~~~~~~~~^
+        model_name=model_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        enable_thinking=enable_thinking
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/models/qwen3_adapter.py", line 83, in __init__
+    self.model, self.tokenizer = Qwen3Loader.load_model_and_tokenizer(
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_name=model_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        cache_dir=self.cache_dir
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/utils/qwen3_loader.py", line 192, in load_model_and_tokenizer
+    model = Qwen3Loader.load_model(
+        model_name=model_name,
+    ...<4 lines>...
+        **kwargs
+    )
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/utils/qwen3_loader.py", line 113, in load_model
+    raise e
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/utils/qwen3_loader.py", line 93, in load_model
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name,
+        **load_kwargs
+    )
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/transformers/modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/transformers/modeling_utils.py", line 5065, in from_pretrained
+    model.tie_weights()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/transformers/modeling_utils.py", line 3018, in tie_weights
+    module.tie_embeddings_and_encoder_decoder()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/transformers/modeling_utils.py", line 2997, in tie_embeddings_and_encoder_decoder
+    self._tie_or_clone_weights(output_embeddings, self.get_input_embeddings())
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/transformers/modeling_utils.py", line 3118, in _tie_or_clone_weights
+    output_embeddings.weight = input_embeddings.weight
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1989, in __setattr__
+    self.register_parameter(name, value)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/transformers/integrations/accelerate.py", line 106, in register_empty_parameter
+    module._parameters[name] = param_cls(module._parameters[name].to(device), **kwargs)
+                               ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Parameter.__new__() got an unexpected keyword argument '_is_hf_initialized'
+
+
+================================================================================
+[Model Loading Error] qwen3-thor (Progress: 60%, Status: loading)
+Error: You are trying to offload the whole model to the disk. Please use the `disk_offload` function instead.
+Type: ValueError
+Traceback:
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/apps/chatbot/app.py", line 1209, in get_model
+    model_instances[model_name] = AllRounderInference(
+                                  ~~~~~~~~~~~~~~~~~~~^
+        model_path="",  # Not used - Qwen3 loaded from local path or HuggingFace
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        tokenizer_path="",  # Not used - Qwen3 tokenizer loaded from local path or HuggingFace
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        config_path=config_file
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/inference.py", line 79, in __init__
+    self.model = self._load_model()
+                 ~~~~~~~~~~~~~~~~^^
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/inference.py", line 171, in _load_model
+    model = Qwen3ThorWrapper(
+        model_name="Qwen/Qwen3-4B",  # Will be resolved to local path if available
+    ...<3 lines>...
+        max_position_embeddings=self.config.get('hyperparameters', {}).get('max_position_embeddings', 32768)
+    )
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/models/qwen3_wrapper.py", line 85, in __init__
+    self.adapter = Qwen3ThorAdapter(
+                   ~~~~~~~~~~~~~~~~^
+        model_name=model_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        enable_thinking=enable_thinking
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/models/qwen3_adapter.py", line 83, in __init__
+    self.model, self.tokenizer = Qwen3Loader.load_model_and_tokenizer(
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_name=model_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        cache_dir=self.cache_dir
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/utils/qwen3_loader.py", line 252, in load_model_and_tokenizer
+    model = Qwen3Loader.load_model(
+        model_name=model_name,
+    ...<4 lines>...
+        **kwargs
+    )
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/utils/qwen3_loader.py", line 173, in load_model
+    raise e
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/utils/qwen3_loader.py", line 140, in load_model
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name,
+        **load_kwargs
+    )
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/transformers/modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/transformers/modeling_utils.py", line 5140, in from_pretrained
+    dispatch_model(model, **device_map_kwargs)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/accelerate/big_modeling.py", line 504, in dispatch_model
+    raise ValueError(
+        "You are trying to offload the whole model to the disk. Please use the `disk_offload` function instead."
+    )
+ValueError: You are trying to offload the whole model to the disk. Please use the `disk_offload` function instead.
+
+
+================================================================================
+[Model Loading Error] qwen3-thor (Progress: 60%, Status: loading)
+Error: weight is on the meta device, we need a `value` to put in on mps.
+Type: ValueError
+Traceback:
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/apps/chatbot/app.py", line 1209, in get_model
+    model_instances[model_name] = AllRounderInference(
+                                  ~~~~~~~~~~~~~~~~~~~^
+        model_path="",  # Not used - Qwen3 loaded from local path or HuggingFace
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        tokenizer_path="",  # Not used - Qwen3 tokenizer loaded from local path or HuggingFace
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        config_path=config_file
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/inference.py", line 79, in __init__
+    self.model = self._load_model()
+                 ~~~~~~~~~~~~~~~~^^
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/inference.py", line 171, in _load_model
+    model = Qwen3ThorWrapper(
+        model_name="Qwen/Qwen3-4B",  # Will be resolved to local path if available
+    ...<3 lines>...
+        max_position_embeddings=self.config.get('hyperparameters', {}).get('max_position_embeddings', 32768)
+    )
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/models/qwen3_wrapper.py", line 85, in __init__
+    self.adapter = Qwen3ThorAdapter(
+                   ~~~~~~~~~~~~~~~~^
+        model_name=model_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        enable_thinking=enable_thinking
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/models/qwen3_adapter.py", line 83, in __init__
+    self.model, self.tokenizer = Qwen3Loader.load_model_and_tokenizer(
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_name=model_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        cache_dir=self.cache_dir
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/utils/qwen3_loader.py", line 254, in load_model_and_tokenizer
+    model = Qwen3Loader.load_model(
+        model_name=model_name,
+    ...<4 lines>...
+        **kwargs
+    )
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/utils/qwen3_loader.py", line 175, in load_model
+    raise e
+  File "/Users/arulhania/Coding/atlas-ai/models/thor-1.1/utils/qwen3_loader.py", line 140, in load_model
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name,
+        **load_kwargs
+    )
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/transformers/modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/transformers/modeling_utils.py", line 5140, in from_pretrained
+    dispatch_model(model, **device_map_kwargs)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/accelerate/big_modeling.py", line 426, in dispatch_model
+    attach_align_device_hook_on_blocks(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model,
+        ^^^^^^
+    ...<6 lines>...
+        tied_params_map=tied_params_map,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/accelerate/hooks.py", line 676, in attach_align_device_hook_on_blocks
+    attach_align_device_hook_on_blocks(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        tied_params_map=tied_params_map,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/accelerate/hooks.py", line 676, in attach_align_device_hook_on_blocks
+    attach_align_device_hook_on_blocks(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        tied_params_map=tied_params_map,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/accelerate/hooks.py", line 634, in attach_align_device_hook_on_blocks
+    add_hook_to_module(module, hook)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/accelerate/hooks.py", line 166, in add_hook_to_module
+    module = hook.init_hook(module)
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/accelerate/hooks.py", line 288, in init_hook
+    set_module_tensor_to_device(module, name, self.execution_device, tied_params_map=self.tied_params_map)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arulhania/Coding/atlas-ai/.venv/lib/python3.14/site-packages/accelerate/utils/modeling.py", line 289, in set_module_tensor_to_device
+    raise ValueError(f"{tensor_name} is on the meta device, we need a `value` to put in on {device}.")
+ValueError: weight is on the meta device, we need a `value` to put in on mps.
+
+
+================================================================================
+[Model Loading Error] thor-1.0 (Progress: 10%, Status: loading)
+Error: Model files not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/final_model.pt, /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/tokenizer.json
+Type: FileNotFoundError
+Traceback:
+NoneType: None
+
+
+================================================================================
+[Model Loading Error] qwen3-thor (Progress: 60%, Status: loading)
+Error: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+Type: FileNotFoundError
+Traceback:
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/apps/chatbot/app.py", line 1209, in get_model
+    raise FileNotFoundError(f"Config file not found: {config_file}")
+FileNotFoundError: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+
+
+================================================================================
+[Model Loading Error] thor-1.0 (Progress: 10%, Status: loading)
+Error: Model files not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/final_model.pt, /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/tokenizer.json
+Type: FileNotFoundError
+Traceback:
+NoneType: None
+
+
+================================================================================
+[Model Loading Error] qwen3-thor (Progress: 60%, Status: loading)
+Error: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+Type: FileNotFoundError
+Traceback:
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/apps/chatbot/app.py", line 1209, in get_model
+    raise FileNotFoundError(f"Config file not found: {config_file}")
+FileNotFoundError: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+
+
+================================================================================
+[Model Loading Error] thor-1.0 (Progress: 10%, Status: loading)
+Error: Model files not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/final_model.pt, /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/tokenizer.json
+Type: FileNotFoundError
+Traceback:
+NoneType: None
+
+
+================================================================================
+[Model Loading Error] thor-1.0 (Progress: 10%, Status: loading)
+Error: Model files not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/final_model.pt, /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/tokenizer.json
+Type: FileNotFoundError
+Traceback:
+NoneType: None
+
+
+================================================================================
+[Model Loading Error] thor-1.0 (Progress: 10%, Status: loading)
+Error: Model files not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/final_model.pt, /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/tokenizer.json
+Type: FileNotFoundError
+Traceback:
+NoneType: None
+
+
+================================================================================
+[Model Loading Error] thor-1.0 (Progress: 10%, Status: loading)
+Error: Model files not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/final_model.pt, /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/tokenizer.json
+Type: FileNotFoundError
+Traceback:
+NoneType: None
+
+
+================================================================================
+[Model Loading Error] thor-1.0 (Progress: 10%, Status: loading)
+Error: Model files not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/final_model.pt, /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/tokenizer.json
+Type: FileNotFoundError
+Traceback:
+NoneType: None
+
+
+================================================================================
+[Model Loading Error] thor-1.0 (Progress: 10%, Status: loading)
+Error: Model files not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/final_model.pt, /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/tokenizer.json
+Type: FileNotFoundError
+Traceback:
+NoneType: None
+
+
+================================================================================
+[Model Loading Error] qwen3-thor (Progress: 60%, Status: loading)
+Error: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+Type: FileNotFoundError
+Traceback:
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/apps/chatbot/app.py", line 1209, in get_model
+    raise FileNotFoundError(f"Config file not found: {config_file}")
+FileNotFoundError: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+
+
+================================================================================
+[Model Loading Error] thor-1.0 (Progress: 10%, Status: loading)
+Error: Model files not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/final_model.pt, /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/tokenizer.json
+Type: FileNotFoundError
+Traceback:
+NoneType: None
+
+
+================================================================================
+[Model Loading Error] thor-1.0 (Progress: 10%, Status: loading)
+Error: Model files not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/final_model.pt, /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/tokenizer.json
+Type: FileNotFoundError
+Traceback:
+NoneType: None
+
+
+================================================================================
+[Model Loading Error] qwen3-thor (Progress: 60%, Status: loading)
+Error: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+Type: FileNotFoundError
+Traceback:
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/apps/chatbot/app.py", line 1209, in get_model
+    raise FileNotFoundError(f"Config file not found: {config_file}")
+FileNotFoundError: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+
+
+================================================================================
+[Model Loading Error] thor-1.0 (Progress: 10%, Status: loading)
+Error: Model files not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/final_model.pt, /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/tokenizer.json
+Type: FileNotFoundError
+Traceback:
+NoneType: None
+
+
+================================================================================
+[Model Loading Error] thor-1.0 (Progress: 10%, Status: loading)
+Error: Model files not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/final_model.pt, /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/tokenizer.json
+Type: FileNotFoundError
+Traceback:
+NoneType: None
+
+
+================================================================================
+[Model Loading Error] thor-1.0 (Progress: 10%, Status: loading)
+Error: Model files not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/final_model.pt, /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/tokenizer.json
+Type: FileNotFoundError
+Traceback:
+NoneType: None
+
+
+================================================================================
+[Model Loading Error] qwen3-thor (Progress: 60%, Status: loading)
+Error: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+Type: FileNotFoundError
+Traceback:
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/apps/chatbot/app.py", line 1209, in get_model
+    raise FileNotFoundError(f"Config file not found: {config_file}")
+FileNotFoundError: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+
+
+================================================================================
+[Model Loading Error] thor-1.0 (Progress: 10%, Status: loading)
+Error: Model files not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/final_model.pt, /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/tokenizer.json
+Type: FileNotFoundError
+Traceback:
+NoneType: None
+
+
+================================================================================
+[Model Loading Error] qwen3-thor (Progress: 60%, Status: loading)
+Error: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+Type: FileNotFoundError
+Traceback:
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/apps/chatbot/app.py", line 1209, in get_model
+    raise FileNotFoundError(f"Config file not found: {config_file}")
+FileNotFoundError: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+
+
+================================================================================
+[Model Loading Error] thor-1.0 (Progress: 10%, Status: loading)
+Error: Model files not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/final_model.pt, /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/tokenizer.json
+Type: FileNotFoundError
+Traceback:
+NoneType: None
+
+
+================================================================================
+[Model Loading Error] qwen3-thor (Progress: 60%, Status: loading)
+Error: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+Type: FileNotFoundError
+Traceback:
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/apps/chatbot/app.py", line 1209, in get_model
+    raise FileNotFoundError(f"Config file not found: {config_file}")
+FileNotFoundError: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+
+
+================================================================================
+[Model Loading Error] thor-1.0 (Progress: 10%, Status: loading)
+Error: Model files not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/final_model.pt, /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/tokenizer.json
+Type: FileNotFoundError
+Traceback:
+NoneType: None
+
+
+================================================================================
+[Model Loading Error] qwen3-thor (Progress: 60%, Status: loading)
+Error: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+Type: FileNotFoundError
+Traceback:
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/apps/chatbot/app.py", line 1209, in get_model
+    raise FileNotFoundError(f"Config file not found: {config_file}")
+FileNotFoundError: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+
+
+================================================================================
+[Model Loading Error] thor-1.0 (Progress: 10%, Status: loading)
+Error: Model files not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/final_model.pt, /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/tokenizer.json
+Type: FileNotFoundError
+Traceback:
+NoneType: None
+
+
+================================================================================
+[Model Loading Error] qwen3-thor (Progress: 60%, Status: loading)
+Error: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+Type: FileNotFoundError
+Traceback:
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/apps/chatbot/app.py", line 1209, in get_model
+    raise FileNotFoundError(f"Config file not found: {config_file}")
+FileNotFoundError: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+
+
+================================================================================
+[Model Loading Error] thor-1.0 (Progress: 10%, Status: loading)
+Error: Model files not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/final_model.pt, /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/tokenizer.json
+Type: FileNotFoundError
+Traceback:
+NoneType: None
+
+
+================================================================================
+[Model Loading Error] qwen3-thor (Progress: 60%, Status: loading)
+Error: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+Type: FileNotFoundError
+Traceback:
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/apps/chatbot/app.py", line 1209, in get_model
+    raise FileNotFoundError(f"Config file not found: {config_file}")
+FileNotFoundError: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+
+
+================================================================================
+[Model Loading Error] thor-1.0 (Progress: 10%, Status: loading)
+Error: Model files not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/final_model.pt, /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/tokenizer.json
+Type: FileNotFoundError
+Traceback:
+NoneType: None
+
+
+================================================================================
+[Model Loading Error] qwen3-thor (Progress: 60%, Status: loading)
+Error: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+Type: FileNotFoundError
+Traceback:
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/apps/chatbot/app.py", line 1209, in get_model
+    raise FileNotFoundError(f"Config file not found: {config_file}")
+FileNotFoundError: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+
+
+================================================================================
+[Model Loading Error] thor-1.0 (Progress: 10%, Status: loading)
+Error: Model files not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/final_model.pt, /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/tokenizer.json
+Type: FileNotFoundError
+Traceback:
+NoneType: None
+
+
+================================================================================
+[Model Loading Error] qwen3-thor (Progress: 60%, Status: loading)
+Error: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+Type: FileNotFoundError
+Traceback:
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/apps/chatbot/app.py", line 1209, in get_model
+    raise FileNotFoundError(f"Config file not found: {config_file}")
+FileNotFoundError: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+
+
+================================================================================
+[Model Loading Error] thor-1.0 (Progress: 10%, Status: loading)
+Error: Model files not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/final_model.pt, /Users/arulhania/Coding/atlas-ai/models/thor-1.0/models/tokenizer.json
+Type: FileNotFoundError
+Traceback:
+NoneType: None
+
+
+================================================================================
+[Model Loading Error] qwen3-thor (Progress: 60%, Status: loading)
+Error: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+Type: FileNotFoundError
+Traceback:
+Traceback (most recent call last):
+  File "/Users/arulhania/Coding/atlas-ai/apps/chatbot/app.py", line 1209, in get_model
+    raise FileNotFoundError(f"Config file not found: {config_file}")
+FileNotFoundError: Config file not found: /Users/arulhania/Coding/atlas-ai/models/thor-1.1/config/config.yaml
+

@@ -1,0 +1,31 @@
+
+    User Models [BETA]
+           |
+           v
+      Thor 1.2 ⚡
+      /        \
+     /          \
+    /            \
+   v              v
+   (Specific Task + Heads Added)  (Unused Task - Heads Summarized)
+   \            /
+    \          /
+     \        /
+      v      v
+   Custom Thor 1.2
+      /  |  \
+     /   |   \
+    /    |    \
+   v     v     v
+   mod.xml  Atlas Chat  API Purchase
+   / | \      |         /  \
+  /  |  \     |        /    \
+ v   v   v    v       v      v
+Dwn  Mod  Up  Enhance Default Custom
+     |    |    |
+     |    |    |
+     +----+----+
+           |
+           v
+   Enhances User Experience ⭐⭐
+    

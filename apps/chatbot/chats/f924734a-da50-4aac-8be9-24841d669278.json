@@ -1,0 +1,17 @@
+{
+  "chat_id": "f924734a-da50-4aac-8be9-24841d669278",
+  "created_at": "2026-01-16T07:19:36.860600",
+  "name": "I Am Ayaan.",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I am ayaan.",
+      "timestamp": "2026-01-16T07:19:36.858206"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you! How can I help you?",
+      "timestamp": "2026-01-16T07:19:36.858214"
+    }
+  ]
+}

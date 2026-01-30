@@ -1,0 +1,2 @@
+# Python SDK dependencies - Updated: 2026-01-03 (v2.1.0)
+requests>=2.32.0,<3.0.0

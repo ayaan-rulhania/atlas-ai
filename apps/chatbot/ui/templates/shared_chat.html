@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shared Chat - Atlas AI</title>
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=15">
+    <style>
+        body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: var(--font-chat);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .shared-chat-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .shared-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .shared-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .shared-meta {
+            color: var(--text-tertiary);
+            font-size: 14px;
+        }
+
+        .shared-messages {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .message {
+            padding: 16px;
+            border-radius: var(--radius-md);
+            border-left: 4px solid;
+        }
+
+        .message.user {
+            background: var(--bg-tertiary);
+            border-left-color: var(--accent-primary);
+        }
+
+        .message.assistant {
+            background: var(--bg-secondary);
+            border-left-color: var(--accent-secondary);
+        }
+
+        .message-header {
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .message.user .message-header {
+            color: var(--accent-primary);
+        }
+
+        .message.assistant .message-header {
+            color: var(--accent-secondary);
+        }
+
+        .message-content {
+            line-height: 1.6;
+        }
+
+        .message-content p {
+            margin: 0 0 12px 0;
+        }
+
+        .message-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .shared-footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-tertiary);
+            font-size: 14px;
+        }
+
+        .shared-actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 16px;
+            border-radius: var(--radius-md);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--accent-primary);
+            color: white;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-primary-hover);
+        }
+
+        .btn-secondary {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--bg-tertiary);
+        }
+
+        .beta-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #ED556A, #C04657);
+            color: white;
+            font-size: 10px;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="shared-chat-container">
+        <div class="shared-header">
+            <h1 class="shared-title">{{ share_data.chat_name }}</h1>
+            <div class="shared-meta">
+                Shared on {{ share_data.shared_at[:10] }} • {{ share_data.message_count }} messages
+            </div>
+        </div>
+
+        <div class="shared-messages">
+            {% for message in chat_data.messages %}
+            <div class="message {{ 'user' if message.role == 'user' else 'assistant' }}">
+                <div class="message-header">
+                    {{ 'You' if message.role == 'user' else 'Atlas AI' }}
+                </div>
+                <div class="message-content">
+                    {{ message.content | markdown }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="shared-footer">
+            <p>This chat was shared using Atlas AI <span class="beta-badge">BETA</span></p>
+            <div class="shared-actions">
+                <a href="/" class="btn btn-primary">Try Atlas AI</a>
+                <button onclick="window.print()" class="btn btn-secondary">Print Chat</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

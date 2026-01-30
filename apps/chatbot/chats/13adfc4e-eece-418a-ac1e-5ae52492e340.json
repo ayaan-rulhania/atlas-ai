@@ -1,0 +1,67 @@
+{
+  "chat_id": "13adfc4e-eece-418a-ac1e-5ae52492e340",
+  "created_at": "2026-01-10T17:03:43.531793",
+  "name": "Assistant Hello",
+  "messages": [
+    {
+      "role": "user",
+      "content": "assistant hello",
+      "timestamp": "2026-01-10T17:03:43.529253"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you! How can I help you?",
+      "timestamp": "2026-01-10T17:03:43.529265"
+    },
+    {
+      "role": "user",
+      "content": "assistant hello",
+      "timestamp": "2026-01-10T17:03:50.237977"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm here to help! What would you like to know?",
+      "timestamp": "2026-01-10T17:03:50.238033"
+    },
+    {
+      "role": "user",
+      "content": "assistant hello",
+      "timestamp": "2026-01-10T17:03:52.633383"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm here to help! What would you like to know?",
+      "timestamp": "2026-01-10T17:03:52.633394"
+    },
+    {
+      "role": "user",
+      "content": "what's the time",
+      "timestamp": "2026-01-10T17:03:57.766273"
+    },
+    {
+      "role": "assistant",
+      "content": "Today is **January 10, 2026** and the current time is **05:03 PM**.",
+      "timestamp": "2026-01-10T17:03:57.766278"
+    },
+    {
+      "role": "user",
+      "content": "\u2753 what's the time",
+      "timestamp": "2026-01-10T17:04:05.274806"
+    },
+    {
+      "role": "assistant",
+      "content": "Today is **January 10, 2026** and the current time is **05:04 PM**.",
+      "timestamp": "2026-01-10T17:04:05.274809"
+    },
+    {
+      "role": "user",
+      "content": "10 + 10",
+      "timestamp": "2026-01-10T17:04:21.092840"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you! How can I help you?",
+      "timestamp": "2026-01-10T17:04:21.092874"
+    }
+  ]
+}

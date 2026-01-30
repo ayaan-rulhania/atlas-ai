@@ -8,6 +8,12 @@ __pycache__/
 # Cursor / editor
 .cursor/
 
+# Node / JS
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
 # Local data (generated)
 chatbot/chats/
 chatbot/conversations/
@@ -16,6 +22,10 @@ chatbot/history/history.json
 learning_stats.json
 chatbot/learning_stats.json
 chatbot/gems/gems.json
+
+# Runtime logs / pids (generated)
+data/logs/
+data/*.pid
 
 # Large model artifacts
 *.pt
@@ -29,6 +39,16 @@ thor-1.0/models/
 *.db-shm
 *.whl
 *.gz
+
+# Python build artifacts
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+.eggs/
 
 # Vercel local folder
 .vercel/

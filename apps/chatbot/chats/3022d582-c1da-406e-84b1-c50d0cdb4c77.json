@@ -1,0 +1,17 @@
+{
+  "chat_id": "3022d582-c1da-406e-84b1-c50d0cdb4c77",
+  "created_at": "2026-01-13T18:27:21.819398",
+  "name": "Hey There",
+  "messages": [
+    {
+      "role": "user",
+      "content": "hey there",
+      "timestamp": "2026-01-13T18:27:21.818076"
+    },
+    {
+      "role": "assistant",
+      "content": "I'd love to help, but could you provide a bit more context? What specifically are you referring to?",
+      "timestamp": "2026-01-13T18:27:21.818104"
+    }
+  ]
+}
